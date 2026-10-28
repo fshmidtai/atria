@@ -30,6 +30,9 @@ jobs:
       - name: selftest (ядро без сети — сначала здоровье, потом добыча)
         run: python archaea/selftest.py
 
+      - name: soak (12 тиков офлайн — то, что проявляется только во времени)
+        run: python archaea/soak.py 12
+
       - name: run hive cycle
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}   # поднимает rate-limit GitHub-источника

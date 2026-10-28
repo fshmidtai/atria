@@ -74,12 +74,18 @@ class Treasury:
 
     # --- операции -------------------------------------------------------
     def spend(self, agent_id: str, amount_u: int, note: str = "") -> bool:
-        """Списать расход. Вернёт False, если лимит исчерпан → агент под апоптоз."""
+        """Списать расход. Вернёт False, если лимит исчерпан → агент под апоптоз.
+
+        Клетка не в 'active' (overrun/apoptosed) — блок: деньги не уходят,
+        даже если апоптоз по какой-то причине задержался.
+        """
         cell = self._cell(agent_id)
         if cell is None:
             return False
         self._rollover_day(cell)
         cell = self._cell(agent_id)
+        if cell["status"] != "active":
+            return False
         new_spent = cell["spent_u"] + amount_u
         self.conn.execute(
             "INSERT INTO transactions (ts, agent_id, kind, amount_u, note) VALUES (?, ?, 'spend', ?, ?)",

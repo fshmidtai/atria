@@ -404,6 +404,10 @@ def test_treasury():
           any(v["agent_id"] == "probe" for v in t.victims()))
     t.revenue("probe", 250, "first dollar")
     check("treasury: выручка считается", t.summary()["revenue_u"] == 250)
+    # клетка под апоптозом блокируется: деньги не уходят, даже если
+    # ретайр задержался (поведение, найденное soak-тестом)
+    over_blocked = t.spend("probe", 1) is False
+    check("treasury: overrun-клетка не тратит", over_blocked)
     t.close()
 
 
