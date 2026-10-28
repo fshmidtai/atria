@@ -11,6 +11,7 @@ from __future__ import annotations
 import sys
 import tempfile
 import time
+import urllib.robotparser
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -64,6 +65,62 @@ def test_snapshot():
     check("snapshot: totals считаются", snap["totals"]["items"] == 1)
     check("snapshot: by_recipe считается", snap["totals"]["by_recipe"].get("show_hn") == 1,
           snap["totals"]["by_recipe"])
+
+
+# ---------------------------------------------------------------- rss + guard
+def test_rss_parse():
+    from colonies.phosphor import sources as S
+
+    rss = (
+        '<?xml version="1.0"?><rss version="2.0"><channel><title>X</title>'
+        "<item><title>Alpha launch</title><link>https://a.example/1</link>"
+        "<pubDate>Wed, 21 Oct 2026 10:00:00 GMT</pubDate>"
+        "<description>Big news about AI agents</description>"
+        "<dc:creator xmlns:dc=\"http://purl.org/dc/elements/1.1/\">jane</dc:creator>"
+        "</item></channel></rss>"
+    )
+    items = S._parse_feed(rss)
+    check("rss: парсит RSS 2.0", len(items) == 1 and items[0]["title"] == "Alpha launch",
+          [i.get("title") for i in items])
+    check("rss: uid стабильного формата", items and items[0]["uid"].startswith("rss:"),
+          items[0]["uid"] if items else "none")
+    check("rss: author+description приехали",
+          items and items[0]["author"] == "jane" and "AI agents" in items[0]["summary"])
+
+    atom = (
+        '<?xml version="1.0"?><feed xmlns="http://www.w3.org/2005/Atom"><entry>'
+        "<title>Beta paper</title><link href='https://b.example/2' rel='alternate'/>"
+        "<updated>2026-10-21T10:00:00Z</updated><summary>Quantum thing</summary>"
+        "</entry></feed>"
+    )
+    items = S._parse_feed(atom)
+    check("rss: парсит Atom", len(items) == 1 and items[0]["title"] == "Beta paper",
+          [i.get("title") for i in items])
+    check("rss: битый XML даёт []", S._parse_feed("<not<xml") == [])
+
+
+def test_robots_guard():
+    from colonies.phosphor import sources as S
+
+    rp = urllib.robotparser.RobotFileParser()
+    rp.parse(["User-agent: *", "Disallow: /private"])
+    S._ROBOTS_CACHE["https://example.com"] = rp
+    check("robots: запрещает /private", S._robots_allowed("https://example.com/private/feed") is False)
+    check("robots: разрешает публичное", S._robots_allowed("https://example.com/feed") is True)
+    S._ROBOTS_CACHE["https://gone.example"] = None
+    check("robots: нет файла → разрешаем", S._robots_allowed("https://gone.example/feed") is True)
+
+
+def test_pii_scrub():
+    from colonies.phosphor.pipeline import scrub_pii
+
+    t = "Write to ceo@evilcorp.com or call +1 (415) 555 0132, card 4111111111111111 today"
+    s = scrub_pii(t)
+    check("pii: email вычищен", "@" not in s and "[email]" in s, s)
+    check("pii: телефон вычищен", "555 0132" not in s and "[phone]" in s, s)
+    check("pii: карта вычищена", "4111" not in s, s)
+    check("pii: чистый текст не калечится", scrub_pii("AI agents everywhere") == "AI agents everywhere")
+    check("pii: None не роняет", scrub_pii(None) == "")
 
 
 # ---------------------------------------------------------------- core
@@ -121,6 +178,7 @@ def test_registry():
 
 def main() -> int:
     for fn in (test_clean_dedup, test_score_and_tags, test_snapshot,
+               test_rss_parse, test_robots_guard, test_pii_scrub,
                test_treasury, test_orchestrator, test_registry):
         try:
             fn()

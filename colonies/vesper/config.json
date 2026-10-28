@@ -10,7 +10,8 @@
   "sources": [
     {"kind": "hn_search", "label": "show_hn", "query": "Show HN", "limit": 60},
     {"kind": "github_search", "label": "github_ai", "q": "topic:ai stars:>30", "days": 14, "limit": 40},
-    {"kind": "github_search", "label": "github_llm", "q": "topic:llm stars:>20", "days": 14, "limit": 30}
+    {"kind": "github_search", "label": "github_llm", "q": "topic:llm stars:>20", "days": 14, "limit": 30},
+    {"kind": "rss", "label": "tc_ai", "url": "https://techcrunch.com/category/artificial-intelligence/feed/", "limit": 25}
   ],
   "top_items_home": 30,
   "top_items_topic": 30,

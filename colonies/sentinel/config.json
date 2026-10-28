@@ -1,0 +1,23 @@
+{
+  "name": "sentinel",
+  "site": {
+    "title": "Sentinel Post",
+    "tagline": "Автономная радиостанция кибербезопасности: живые CVE, угрозы и защита — без сенсаций",
+    "base_url": "https://sentinel-post.pages.dev",
+    "lang": "ru",
+    "contact": "https://github.com/"
+  },
+  "sources": [
+    {"kind": "github_advisories", "label": "gh_advisories", "limit": 30},
+    {"kind": "rss", "label": "krebs", "url": "https://krebsonsecurity.com/feed/", "limit": 25},
+    {"kind": "rss", "label": "schneier", "url": "https://www.schneier.com/feed/atom/", "limit": 25},
+    {"kind": "hn_search", "label": "hn_sec", "query": "security", "limit": 40},
+    {"kind": "github_search", "label": "github_sec", "q": "topic:security stars:>20", "days": 14, "limit": 30}
+  ],
+  "top_items_home": 30,
+  "top_items_topic": 30,
+  "top_item_pages": 60,
+  "topics": [
+    "security", "ai", "biz", "hardware"
+  ]
+}

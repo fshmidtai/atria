@@ -42,7 +42,26 @@ SOURCE_LABELS = {
     "hn": "Hacker News",
     "arxiv": "arXiv",
     "github": "GitHub",
+    "rss": "СМИ/RSS",
+    "cve": "CVE",
 }
+
+# ---------------------------------------------------------------- очистка PII
+# Рафинёр обязан вычищать персональные данные перед упаковкой датасета
+# (Конституция §4.2). Регекспы — не идеальная защита, но первый щит.
+_PII_PATTERNS = [
+    (re.compile(r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}"), "[email]"),
+    (re.compile(r"\+?\d{1,3}[\s().-]?\(?\d{2,4}\)?[\s.-]?\d{3}[\s.-]?\d{2,4}"), "[phone]"),
+    (re.compile(r"\b(?:\d[ -]*?){13,19}\b"), "[card]"),
+]
+
+
+def scrub_pii(text: str | None) -> str:
+    if not text:
+        return text or ""
+    for rx, sub in _PII_PATTERNS:
+        text = rx.sub(sub, text)
+    return text
 
 
 # ---------------------------------------------------------------- обработка
@@ -97,6 +116,7 @@ def clean(items: list[dict], now: float | None = None) -> list[dict]:
             by_uid.pop(prev["uid"], None)
         it = dict(it)
         it["uid"] = uid
+        it["summary"] = scrub_pii(it.get("summary", ""))
         it["buzz"] = buzz_score(it, now)
         it["topics"] = tag_topics(it)
         it["date"] = datetime.fromtimestamp(
@@ -182,7 +202,8 @@ task_categories: [text-classification, summarization]
 ## Условия
 
 Данные собираются только из публичных источников без ключей. Соблюдается
-robots.txt и ToS площадок. Датасет обновляется автоматически каждые 6 часов.
+robots.txt и ToS площадок. Персональные данные (e-mail, телефоны, номера карт)
+автоматически вычищаются перед упаковкой. Датасет обновляется автоматически каждые 6 часов.
 """,
         encoding="utf-8",
     )

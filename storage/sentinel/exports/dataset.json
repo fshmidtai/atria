@@ -1,0 +1,2016 @@
+{
+  "generated_at": "2026-10-28T21:45:13+00:00",
+  "sources_used": [
+    "github_advisories",
+    "rss",
+    "rss",
+    "hn_search",
+    "github_search"
+  ],
+  "totals": {
+    "items": 105,
+    "by_source": {
+      "hn": 40,
+      "cve": 30,
+      "github": 25,
+      "rss": 10
+    },
+    "by_recipe": {
+      "hn_sec": 40,
+      "gh_advisories": 30,
+      "github_sec": 25,
+      "krebs": 10
+    },
+    "by_topic": {
+      "security": 89,
+      "ai": 48,
+      "dev": 43,
+      "hardware": 8,
+      "crypto": 7,
+      "biz": 5,
+      "science": 3
+    },
+    "top_domains": [
+      [
+        "github.com",
+        57
+      ],
+      [
+        "krebsonsecurity.com",
+        11
+      ],
+      [
+        "news.ycombinator.com",
+        3
+      ],
+      [
+        "techcrunch.com",
+        2
+      ],
+      [
+        "theatlantic.com",
+        1
+      ],
+      [
+        "openai.com",
+        1
+      ],
+      [
+        "bbc.com",
+        1
+      ],
+      [
+        "saveflipper.ca",
+        1
+      ],
+      [
+        "cybernews.com",
+        1
+      ],
+      [
+        "php.net",
+        1
+      ],
+      [
+        "blog.malwarebytes.com",
+        1
+      ],
+      [
+        "ian.sh",
+        1
+      ],
+      [
+        "theverge.com",
+        1
+      ],
+      [
+        "washingtonpost.com",
+        1
+      ],
+      [
+        "milk.com",
+        1
+      ],
+      [
+        "utkusen.com",
+        1
+      ],
+      [
+        "docs.google.com",
+        1
+      ],
+      [
+        "lwn.net",
+        1
+      ],
+      [
+        "plus.google.com",
+        1
+      ],
+      [
+        "bleepingcomputer.com",
+        1
+      ],
+      [
+        "nytimes.com",
+        1
+      ],
+      [
+        "grapheneos.social",
+        1
+      ],
+      [
+        "rekken.github.io",
+        1
+      ],
+      [
+        "thephp.foundation",
+        1
+      ],
+      [
+        "reportcybercrime.com",
+        1
+      ]
+    ]
+  },
+  "items": [
+    {
+      "uid": "hn:37392676",
+      "source": "hn",
+      "title": "Ask HN: I’m an FCC Commissioner proposing regulation of IoT security updates",
+      "url": "https://news.ycombinator.com/item?id=37392676",
+      "ts": 1693926441.0,
+      "points": 3387,
+      "comments": 925,
+      "author": "SimingtonFCC",
+      "summary": "Hi everyone, I’m FCC Commissioner Nathan Simington, and I’m here to discuss security updates for IoT devices and how you can make a difference by filing comments with the FCC.<p>As you know, serious vulnerabilities are common in IoT, and it often takes too long for these to be patched on end-user devices—if the manufacturer even bothers to release an update, and if the device was even designed to",
+      "recipe": "hn_sec",
+      "buzz": 6162,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2023-09-05"
+    },
+    {
+      "uid": "hn:43462783",
+      "source": "hn",
+      "title": "U.S. national-security leaders included me in a group chat",
+      "url": "https://www.theatlantic.com/politics/archive/2025/03/trump-administration-accidentally-texted-me-its-war-plans/682151/",
+      "ts": 1742833435.0,
+      "points": 2283,
+      "comments": 1291,
+      "author": "_tk_",
+      "summary": "",
+      "recipe": "hn_sec",
+      "buzz": 6156,
+      "topics": [
+        "security"
+      ],
+      "date": "2025-03-24"
+    },
+    {
+      "uid": "cve:GHSA-6jp4-8v48-cc5v",
+      "source": "cve",
+      "title": "CVE-2026-117601: Electrum: Malicious server can replace a just-broadcast tx and try to trick user into RBF-ing it",
+      "url": "https://github.com/advisories/GHSA-6jp4-8v48-cc5v",
+      "ts": 1793222624.0,
+      "points": 6000,
+      "comments": 0,
+      "author": "electrum",
+      "summary": "Severity: critical. ### Summary\n\nThe main Electrum server the client connects to is trusted with mempool (\"unconfirmed\") transactions. This is documented [design](https://electrum.readthedocs.io/en/latest/faq.html#does-electrum-trust-servers). [0]\n\nHowever now someone figured out a way to practically exploit it:\n- when",
+      "recipe": "gh_advisories",
+      "buzz": 6080,
+      "topics": [
+        "ai",
+        "dev",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-10-28"
+    },
+    {
+      "uid": "cve:GHSA-mghf-wjfp-p5xm",
+      "source": "cve",
+      "title": "CVE-2026-115893: Wasmtime: Cranelift backend on aarch64 can jump to incorrect target on large Wasm `br_table` instruction",
+      "url": "https://github.com/advisories/GHSA-mghf-wjfp-p5xm",
+      "ts": 1793222054.0,
+      "points": 6000,
+      "comments": 0,
+      "author": "wasmtime",
+      "summary": "Severity: critical. ## Summary\n\nWhen running with the Cranelift compiler backend on an aarch64 target, Wasmtime can compile a Wasm module with more than ~256k targets on one `br_table` instruction in a way that results in an incorrect conditional branch target. This conditional branch could then jump to arbitrary other",
+      "recipe": "gh_advisories",
+      "buzz": 6080,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-10-28"
+    },
+    {
+      "uid": "hn:48997548",
+      "source": "hn",
+      "title": "OpenAI and Hugging Face address security incident during model evaluation",
+      "url": "https://openai.com/index/hugging-face-model-evaluation-security-incident/",
+      "ts": 1784664592.0,
+      "points": 1632,
+      "comments": 1157,
+      "author": "mfiguiere",
+      "summary": "<a href=\"https:&#x2F;&#x2F;www.axios.com&#x2F;2026&#x2F;07&#x2F;21&#x2F;openai-says-hugging-face-breach-caused-by-one-its-models\" rel=\"nofollow\">https:&#x2F;&#x2F;www.axios.com&#x2F;2026&#x2F;07&#x2F;21&#x2F;openai-says-hugging-face-br...</a><p>See also <i>Security incident disclosure – July 2026</i> - <a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=[phone]\">https:&#x2F;&#x2F;news.yc",
+      "recipe": "hn_sec",
+      "buzz": 5103,
+      "topics": [
+        "ai",
+        "dev",
+        "biz",
+        "security"
+      ],
+      "date": "2026-07-21"
+    },
+    {
+      "uid": "hn:43128253",
+      "source": "hn",
+      "title": "Apple pulls data protection tool after UK government security row",
+      "url": "https://www.bbc.com/news/articles/cgj54eq4vejo",
+      "ts": 1740150324.0,
+      "points": 1770,
+      "comments": 1068,
+      "author": "helsinkiandrew",
+      "summary": "",
+      "recipe": "hn_sec",
+      "buzz": 4974,
+      "topics": [
+        "security"
+      ],
+      "date": "2025-02-21"
+    },
+    {
+      "uid": "hn:39452494",
+      "source": "hn",
+      "title": "Insecure vehicles should be banned, not security tools like the Flipper Zero",
+      "url": "https://saveflipper.ca/",
+      "ts": 1708514449.0,
+      "points": 1496,
+      "comments": 878,
+      "author": "pabs3",
+      "summary": "",
+      "recipe": "hn_sec",
+      "buzz": 4130,
+      "topics": [
+        "security"
+      ],
+      "date": "2024-02-21"
+    },
+    {
+      "uid": "hn:30051054",
+      "source": "hn",
+      "title": "Ask HN: Gmail account security",
+      "url": "https://news.ycombinator.com/item?id=30051054",
+      "ts": 1642976125.0,
+      "points": 1508,
+      "comments": 774,
+      "author": "caseyf7",
+      "summary": "I have a gmail account that I rarely use, but I know the password.  I enter it correctly and get the following message:<p>You’re trying to sign in on a device Google doesn’t recognize, and we don’t have enough information to verify that it’s you. For your protection, you can’t sign in here right now.\nTry again from a device or location where you’ve signed in before.<p>Even if I get the code from t",
+      "recipe": "hn_sec",
+      "buzz": 3830,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2022-01-23"
+    },
+    {
+      "uid": "hn:25729088",
+      "source": "hn",
+      "title": "70TB of Parler users’ messages, videos, and posts leaked by security researchers",
+      "url": "https://cybernews.com/news/70tb-of-parler-users-messages-videos-and-posts-leaked-by-security-researchers/",
+      "ts": 1610374689.0,
+      "points": 892,
+      "comments": 951,
+      "author": "joiguru",
+      "summary": "",
+      "recipe": "hn_sec",
+      "buzz": 3745,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2021-01-11"
+    },
+    {
+      "uid": "cve:GHSA-97r2-qh9m-474h",
+      "source": "cve",
+      "title": "CVE-2026-116581: Seroval: fromJSON deserializer trusts node-supplied array length and sequence doneAt (unauthenticated event-loop DoS)",
+      "url": "https://github.com/advisories/GHSA-97r2-qh9m-474h",
+      "ts": 1793222247.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "seroval",
+      "summary": "Severity: high. ### Summary\n\n`fromJSON` and `fromCrossJSON` used two node fields without checking them.\n\n- An array node's element list was not checked to be an array. A small payload could set the length the decoder looped over. This part is also tracked in GHSA-wp97-x4hv-qvhp.\n- A sequence node's done index was n",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-10-28"
+    },
+    {
+      "uid": "cve:GHSA-wp97-x4hv-qvhp",
+      "source": "cve",
+      "title": "CVE-2026-116584: Seroval `fromJSON`/`fromCrossJSON` denial of service via unvalidated array node length",
+      "url": "https://github.com/advisories/GHSA-wp97-x4hv-qvhp",
+      "ts": 1793222240.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "seroval",
+      "summary": "Severity: high. ### Summary\n\n`fromJSON` and `fromCrossJSON` did not check that an array node's element list is an array. A small crafted payload could set the length the decoder used. That length controlled how much memory was allocated and how many times the decoder looped, and it did not depend on the size of the",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-10-28"
+    },
+    {
+      "uid": "cve:GHSA-7rv5-mrxv-xcr9",
+      "source": "cve",
+      "title": "CVE-2026-116580: Seroval: Deserialization invokes attacker-chosen callables: AsyncIteratorFactoryInstance calls source.on(listener) without type check",
+      "url": "https://github.com/advisories/GHSA-7rv5-mrxv-xcr9",
+      "ts": 1793222235.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "seroval",
+      "summary": "Severity: high. ### Summary\n\nWhen `fromJSON` rebuilt an async iterator, it called `on()` on the iterator's source without checking that the source was a seroval stream. A crafted payload could pick another value as the source, such as a function returned by an application plugin. The deserializer then called that v",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-10-28"
+    },
+    {
+      "uid": "cve:GHSA-h3rc-j82p-2c3h",
+      "source": "cve",
+      "title": "CVE-2026-115915: vLLM: Untrusted EPS inputs can trigger denial of service or Ghostscript RCE",
+      "url": "https://github.com/advisories/GHSA-h3rc-j82p-2c3h",
+      "ts": 1793222129.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "vllm",
+      "summary": "Severity: high. ### Summary\n\nIn vLLM 0.30.0, `ImageMediaIO` passes attacker-controlled image bytes to Pillow's format autodetection without restricting the accepted formats; the request's MIME label does not constrain decoder selection. An EPS payload labeled `image/png` reached the host's Ghostscript executable. O",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-10-28"
+    },
+    {
+      "uid": "cve:GHSA-6757-hggm-hp2w",
+      "source": "cve",
+      "title": "CVE-2026-115912: vLLM: Public multimodal SHM handle forgery reaches worker-side `pickle.loads()` with insecure serialization disabled",
+      "url": "https://github.com/advisories/GHSA-6757-hggm-hp2w",
+      "ts": 1793222115.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "vllm",
+      "summary": "Severity: high. ## Affected\n\n- **Ecosystem / package:** pip / `vllm`\n- **Affected versions:** vLLM < 0.32.0.\n\n## Summary\n\nWhen `--mm-processor-cache-type shm` is enabled, vLLM's multimodal SHM cache represents a cached item with an `address` and `monotonic_id` pair and treats that pair as authority to dereference s",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-10-28"
+    },
+    {
+      "uid": "cve:GHSA-x8rm-f576-gq67",
+      "source": "cve",
+      "title": "CVE-2026-115887: graphql-scalars PhoneNumber scalar is vulnerable to regular expression denial of service",
+      "url": "https://github.com/advisories/GHSA-x8rm-f576-gq67",
+      "ts": 1793221990.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "graphql-scalars",
+      "summary": "Severity: high. ## Summary\n\nThe regular expression behind `GraphQLPhoneNumber` since 1.24.1 backtracks exponentially. A string made of a run of digits followed by one character that makes the match fail (for example `\"1\".repeat(30) + \"x\"`) blocks the JavaScript thread for seconds, and every additional digit doubles",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-10-28"
+    },
+    {
+      "uid": "hn:50172041",
+      "source": "hn",
+      "title": "Security advisory: Critical remote code execution vulnerabilities, update now",
+      "url": "https://www.php.net/archive/2026.php#2026-10-21-5",
+      "ts": 1792527350.0,
+      "points": 1561,
+      "comments": 659,
+      "author": "xd",
+      "summary": "<a href=\"https:&#x2F;&#x2F;cert.europa.eu&#x2F;publications&#x2F;security-advisories&#x2F;2026-018&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;cert.europa.eu&#x2F;publications&#x2F;security-advisories&#x2F;2026...</a><p><a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=[phone]\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=[phone]</a>",
+      "recipe": "hn_sec",
+      "buzz": 3538,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-10-20"
+    },
+    {
+      "uid": "hn:32148218",
+      "source": "hn",
+      "title": "FCC: TikTok is unacceptable security risk and should be removed from app stores",
+      "url": "https://blog.malwarebytes.com/privacy-2/2022/07/tiktok-is-unacceptable-security-risk-and-should-be-removed-from-app-stores-says-fcc/",
+      "ts": 1658212272.0,
+      "points": 835,
+      "comments": 847,
+      "author": "scanr",
+      "summary": "",
+      "recipe": "hn_sec",
+      "buzz": 3376,
+      "topics": [
+        "security"
+      ],
+      "date": "2022-07-19"
+    },
+    {
+      "uid": "hn:41392128",
+      "source": "hn",
+      "title": "Bypassing airport security via SQL injection",
+      "url": "https://ian.sh/tsa",
+      "ts": 1724946788.0,
+      "points": 2004,
+      "comments": 440,
+      "author": "iancarroll",
+      "summary": "",
+      "recipe": "hn_sec",
+      "buzz": 3324,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2024-08-29"
+    },
+    {
+      "uid": "hn:41792500",
+      "source": "hn",
+      "title": "Internet Archive: Security breach alert",
+      "url": "https://www.theverge.com/2024/10/9/24266419/internet-archive-ddos-attack-pop-up-message",
+      "ts": 1728507266.0,
+      "points": 1091,
+      "comments": 607,
+      "author": "ewenjo",
+      "summary": "",
+      "recipe": "hn_sec",
+      "buzz": 2912,
+      "topics": [
+        "security"
+      ],
+      "date": "2024-10-09"
+    },
+    {
+      "uid": "hn:15657887",
+      "source": "hn",
+      "title": "Senators push to ditch social security numbers in light of Equifax hack",
+      "url": "https://techcrunch.com/2017/11/08/are-social-security-numbers-going-away/",
+      "ts": 1510181396.0,
+      "points": 1126,
+      "comments": 464,
+      "author": "Varcht",
+      "summary": "",
+      "recipe": "hn_sec",
+      "buzz": 2518,
+      "topics": [
+        "security"
+      ],
+      "date": "2017-11-08"
+    },
+    {
+      "uid": "hn:14931004",
+      "source": "hn",
+      "title": "Martin Shkreli is found guilty of securities fraud",
+      "url": "https://www.washingtonpost.com/news/business/wp/2017/08/04/martin-shkreli-jury-enters-fifth-day-of-deliberations/",
+      "ts": 1501872803.0,
+      "points": 752,
+      "comments": 587,
+      "author": "fmihaila",
+      "summary": "",
+      "recipe": "hn_sec",
+      "buzz": 2513,
+      "topics": [],
+      "date": "2017-08-04"
+    },
+    {
+      "uid": "hn:34437937",
+      "source": "hn",
+      "title": "What not to write on your security clearance form (1988)",
+      "url": "http://milk.com/wall-o-shame/security_clearance.html",
+      "ts": 1674116283.0,
+      "points": 864,
+      "comments": 545,
+      "author": "blegh",
+      "summary": "",
+      "recipe": "hn_sec",
+      "buzz": 2499,
+      "topics": [
+        "security"
+      ],
+      "date": "2023-01-19"
+    },
+    {
+      "uid": "hn:24444497",
+      "source": "hn",
+      "title": "Security by obscurity is underrated",
+      "url": "https://utkusen.com/blog/security-by-obscurity-is-underrated.html",
+      "ts": 1599842072.0,
+      "points": 939,
+      "comments": 510,
+      "author": "goranmoomin",
+      "summary": "",
+      "recipe": "hn_sec",
+      "buzz": 2469,
+      "topics": [
+        "security"
+      ],
+      "date": "2020-09-11"
+    },
+    {
+      "uid": "hn:32304320",
+      "source": "hn",
+      "title": "Librarian's Letter to Google Security",
+      "url": "https://docs.google.com/document/d/1f6HPQbUjslcbjVHkJkAgYmQmBV3PRRHEcx4WL5rxuE8/preview",
+      "ts": 1659351923.0,
+      "points": 1082,
+      "comments": 461,
+      "author": "2352500",
+      "summary": "",
+      "recipe": "hn_sec",
+      "buzz": 2465,
+      "topics": [
+        "security"
+      ],
+      "date": "2022-08-01"
+    },
+    {
+      "uid": "hn:44676691",
+      "source": "hn",
+      "title": "Graphene OS: a security-enhanced Android build",
+      "url": "https://lwn.net/SubscriberLink/1030004/898017c7953c0946/",
+      "ts": 1753393733.0,
+      "points": 749,
+      "comments": 556,
+      "author": "madars",
+      "summary": "",
+      "recipe": "hn_sec",
+      "buzz": 2417,
+      "topics": [
+        "security"
+      ],
+      "date": "2025-07-24"
+    },
+    {
+      "uid": "hn:6680763",
+      "source": "hn",
+      "title": "Google Security Team Member on NSA: \"Fuck These Guys\"",
+      "url": "https://plus.google.com/+MikeHearn/posts/LW1DXJ2BK8k",
+      "ts": 1383713501.0,
+      "points": 1217,
+      "comments": 396,
+      "author": "cdvonstinkpot",
+      "summary": "",
+      "recipe": "hn_sec",
+      "buzz": 2405,
+      "topics": [
+        "security"
+      ],
+      "date": "2013-11-06"
+    },
+    {
+      "uid": "hn:47824463",
+      "source": "hn",
+      "title": "Vercel April 2026 security incident",
+      "url": "https://www.bleepingcomputer.com/news/security/vercel-confirms-breach-as-hackers-claim-to-be-selling-stolen-data/",
+      "ts": 1776608078.0,
+      "points": 867,
+      "comments": 492,
+      "author": "colesantiago",
+      "summary": "<a href=\"https:&#x2F;&#x2F;vercel.com&#x2F;kb&#x2F;bulletin&#x2F;vercel-april-2026-security-incident\" rel=\"nofollow\">https:&#x2F;&#x2F;vercel.com&#x2F;kb&#x2F;bulletin&#x2F;vercel-april-2026-security-in...</a>",
+      "recipe": "hn_sec",
+      "buzz": 2343,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-04-19"
+    },
+    {
+      "uid": "hn:16623835",
+      "source": "hn",
+      "title": "Facebook Security Chief Said to Leave After Clashes Over Disinformation",
+      "url": "https://www.nytimes.com/2018/03/19/technology/facebook-alex-stamos.html",
+      "ts": 1521498221.0,
+      "points": 1074,
+      "comments": 395,
+      "author": "aaronbrethorst",
+      "summary": "",
+      "recipe": "hn_sec",
+      "buzz": 2259,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2018-03-19"
+    },
+    {
+      "uid": "hn:46173407",
+      "source": "hn",
+      "title": "GrapheneOS is the only Android OS providing full security patches",
+      "url": "https://grapheneos.social/@GrapheneOS/115647408229616018",
+      "ts": 1765029511.0,
+      "points": 793,
+      "comments": 452,
+      "author": "akyuu",
+      "summary": "",
+      "recipe": "hn_sec",
+      "buzz": 2149,
+      "topics": [
+        "security"
+      ],
+      "date": "2025-12-06"
+    },
+    {
+      "uid": "hn:23180975",
+      "source": "hn",
+      "title": "Security Flaws in Adobe Acrobat Reader Allow Gaining Root on macOS Silently",
+      "url": "https://rekken.github.io/2020/05/14/Security-Flaws-in-Adobe-Acrobat-Reader-Allow-Malicious-Program-to-Gain-Root-on-macOS-Silently/",
+      "ts": 1589471425.0,
+      "points": 871,
+      "comments": 418,
+      "author": "feross",
+      "summary": "",
+      "recipe": "hn_sec",
+      "buzz": 2125,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2020-05-14"
+    },
+    {
+      "uid": "hn:50182987",
+      "source": "hn",
+      "title": "Today's PHP security release, and how we're strengthening security",
+      "url": "https://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security/",
+      "ts": 1792597736.0,
+      "points": 816,
+      "comments": 404,
+      "author": "ejohnso49",
+      "summary": "Related ongoing thread: <i>PHP 8.2.35</i> - <a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=[phone]\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=[phone]</a><p>(links to more at <a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=[phone]\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=[phone]</a>)",
+      "recipe": "hn_sec",
+      "buzz": 2028,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-10-21"
+    },
+    {
+      "uid": "hn:17592422",
+      "source": "hn",
+      "title": "Google: Security Keys Neutralized Employee Phishing",
+      "url": "https://krebsonsecurity.com/2018/07/google-security-keys-neutered-employee-phishing/",
+      "ts": 1532351005.0,
+      "points": 775,
+      "comments": 409,
+      "author": "sohkamyung",
+      "summary": "",
+      "recipe": "hn_sec",
+      "buzz": 2002,
+      "topics": [
+        "security"
+      ],
+      "date": "2018-07-23"
+    },
+    {
+      "uid": "hn:24636166",
+      "source": "hn",
+      "title": "Apple’s T2 security chip jailbreak",
+      "url": "https://reportcybercrime.com/hackers-jailbreak-apples-t2-security-chip-powered-by-bridgeos/",
+      "ts": 1601446798.0,
+      "points": 741,
+      "comments": 380,
+      "author": "Yeri",
+      "summary": "",
+      "recipe": "hn_sec",
+      "buzz": 1881,
+      "topics": [
+        "ai",
+        "security",
+        "hardware"
+      ],
+      "date": "2020-09-30"
+    },
+    {
+      "uid": "cve:GHSA-2hw4-c9m4-f2fj",
+      "source": "cve",
+      "title": "GHSA-2hw4-c9m4-f2fj: knative.dev/pkg admission webhooks allow unbounded request-body memory exhaustion",
+      "url": "https://github.com/advisories/GHSA-2hw4-c9m4-f2fj",
+      "ts": 1793222453.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "knative.dev/pkg",
+      "summary": "Severity: medium. ## ⚠️ Update (verification, 2026-05-19): C-2 confirmed end-to-end — **4.5× amplification observed** (worse than the advisory's conservative 2× claim)\n\nBuilt a Go PoC ([`cmd/poc-c2/main.go`](https://github.com/knative/pkg/blob/1ad5a1ce0ee7043081cb50fd1acc6d36a9126844/cmd/poc-c2/main.go)) that runs th",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "dev"
+      ],
+      "date": "2026-10-28"
+    },
+    {
+      "uid": "cve:GHSA-jf75-q64q-g65r",
+      "source": "cve",
+      "title": "GHSA-jf75-q64q-g65r: Waline login accepts a non-string email as a match-all MongoDB query",
+      "url": "https://github.com/advisories/GHSA-jf75-q64q-g65r",
+      "ts": 1793222278.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "@waline/vercel",
+      "summary": "Severity: medium. ## Summary\n\nThe login endpoint POST /api/token reads the `email` field from the request body without checking its type and passes it straight into the MongoDB storage query. When `email` is not a string (for example a JSON object such as {\"$ne\": null}), the MongoDB storage adapter's parseWhere silen",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "dev",
+        "crypto"
+      ],
+      "date": "2026-10-28"
+    },
+    {
+      "uid": "cve:GHSA-f86p-h4j2-7qgj",
+      "source": "cve",
+      "title": "CVE-2026-116583: Seroval: Code injection through a typed array's own constructor property",
+      "url": "https://github.com/advisories/GHSA-f86p-h4j2-7qgj",
+      "ts": 1793222256.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "seroval",
+      "summary": "Severity: medium. ### Summary\n\nseroval writes a typed array as a call to its constructor. In affected versions, the constructor name in the output is read from a property that data on the value can replace, and it is written without checks. A typed array that received properties from untrusted data can then put arbit",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-10-28"
+    },
+    {
+      "uid": "cve:GHSA-9wx9-5pv9-3349",
+      "source": "cve",
+      "title": "CVE-2026-116582: Seroval: Script injection through RegExp sources in serialized output",
+      "url": "https://github.com/advisories/GHSA-9wx9-5pv9-3349",
+      "ts": 1793222251.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "seroval",
+      "summary": "Severity: medium. ### Summary\n\nseroval writes a `RegExp` as a regular expression literal. In affected versions, the `<` character in a `RegExp` source is written without escaping. A source built from untrusted input can then end the HTML `<script>` element that the serialized output is placed in, and run script in th",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-10-28"
+    },
+    {
+      "uid": "cve:GHSA-5324-3w58-qpp2",
+      "source": "cve",
+      "title": "CVE-2026-116575: Mem0: Cross-tenant conversation leak via unescaped delimiter collision in session-scope key (_build_session_scope)",
+      "url": "https://github.com/advisories/GHSA-5324-3w58-qpp2",
+      "ts": 1793222228.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "mem0ai",
+      "summary": "Severity: medium. Summary\n\n_build_session_scope() in mem0/memory/main.py builds the conversation-history scope key used to fetch/store the last N raw messages by naively joining caller-supplied user_id/agent_id/run_id values with unescaped & and = delimiters:\n\ndef _build_session_scope(filters):\n    parts = []\n    for",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-10-28"
+    },
+    {
+      "uid": "cve:GHSA-h2r5-x5m7-3935",
+      "source": "cve",
+      "title": "CVE-2026-115910: Python Social Auth: OpenID Connect nonce is not bound to the browser session, so a stolen authorization code logs the attacker in as the victim",
+      "url": "https://github.com/advisories/GHSA-h2r5-x5m7-3935",
+      "ts": 1793222211.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "social-auth-core",
+      "summary": "Severity: medium. ### Summary\n\nThe generic OpenID Connect backend (`OpenIdConnectAuth` and every backend built on it) stores the `nonce` in the shared Association table, not in the user's session. When the ID token comes back, `validate_claims` only checks that the nonce exists in that table and is not expired. It do",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "dev",
+        "crypto",
+        "science",
+        "security"
+      ],
+      "date": "2026-10-28"
+    },
+    {
+      "uid": "cve:GHSA-6pwm-x34p-fvj2",
+      "source": "cve",
+      "title": "CVE-2026-115920: ONNX: Out-of-bounds read in ConvTranspose shape inference via undersized weight rank",
+      "url": "https://github.com/advisories/GHSA-6pwm-x34p-fvj2",
+      "ts": 1793222202.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "onnx",
+      "summary": "Severity: medium. ## Summary\n\nONNX ConvTranspose shape inference performed an out-of-bounds read when the weight tensor had fewer than three dimensions and the model did not provide a `kernel_shape` attribute.\n\nThe inference function derived an empty `effective_kernel_shape` vector from the undersized weight tensor,",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-10-28"
+    },
+    {
+      "uid": "cve:GHSA-q69g-f4f5-v8m7",
+      "source": "cve",
+      "title": "CVE-2026-115922: ONNX: Denial of service via unchecked expansion of packed sub-byte tensors in ONNX Python APIs",
+      "url": "https://github.com/advisories/GHSA-q69g-f4f5-v8m7",
+      "ts": 1793222197.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "onnx",
+      "summary": "Severity: medium. ## Summary\n\nONNX's Python tensor-materialization helpers could allocate memory according to attacker-controlled tensor dimensions without verifying that a packed sub-byte payload contained the declared number of elements.\n\nA very small model could therefore cause a disproportionately large allocatio",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "dev",
+        "science",
+        "security"
+      ],
+      "date": "2026-10-28"
+    },
+    {
+      "uid": "cve:GHSA-m4pr-6v3c-6fgr",
+      "source": "cve",
+      "title": "CVE-2026-115921: ONNX: Null Pointer Dereference in ScanInferenceFunction Due to Missing Required Attribute",
+      "url": "https://github.com/advisories/GHSA-m4pr-6v3c-6fgr",
+      "ts": 1793222190.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "onnx",
+      "summary": "Severity: medium. ## Summary\n\nONNX shape inference did not safely validate the required Scan `num_scan_inputs` attribute. Two malformed values could terminate or disrupt the process:\n\n1. If the attribute was missing, `ctx.getAttribute(\"num_scan_inputs\")` returned null and was dereferenced.\n2. If the attribute was neg",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-10-28"
+    },
+    {
+      "uid": "cve:GHSA-48m4-24cq-37qf",
+      "source": "cve",
+      "title": "CVE-2026-115919: ONNX: Out-of-Bounds Read in RNN/GRU/LSTM Shape Inference (Old Opsets, Missing Rank Check)",
+      "url": "https://github.com/advisories/GHSA-48m4-24cq-37qf",
+      "ts": 1793222184.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "onnx",
+      "summary": "Severity: medium. ## Summary\n\nONNX shape inference performed an out-of-bounds read when processing a malformed RNN, GRU, or LSTM node from opsets 1–6 whose first input had a rank other than three.\n\n`RNNShapeInference_opset1_to_6()` checked whether the input shape was present but accessed `dim(0)` and `dim(1)` without",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-10-28"
+    },
+    {
+      "uid": "cve:GHSA-8397-8qf6-f2gm",
+      "source": "cve",
+      "title": "CVE-2026-115913: vLLM: Phi-4 multimodal audio encoder materializes and retains full attention matrices: a single max-length audio OOM-crashes the vLLM engine",
+      "url": "https://github.com/advisories/GHSA-8397-8qf6-f2gm",
+      "ts": 1793222141.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "vllm",
+      "summary": "Severity: medium. ### Summary\n\nThe Phi-4 multimodal audio encoder (`phi4mm_audio.py` / `phi4mm_utils.py`) runs its conformer attention in **eager mode by default**: the official HF config of `microsoft/Phi-4-multimodal-instruct` does not set `use_pt_scaled_dot_product_attention`, so the default `False` applies (`phi4",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "science",
+        "security"
+      ],
+      "date": "2026-10-28"
+    },
+    {
+      "uid": "cve:GHSA-gq5q-89c7-vhvx",
+      "source": "cve",
+      "title": "CVE-2026-115914: vLLM DeepSeek-OCR image processing vulnerable to denial of service",
+      "url": "https://github.com/advisories/GHSA-gq5q-89c7-vhvx",
+      "ts": 1793222135.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "vllm",
+      "summary": "Severity: medium. ## Summary\n\nAny vLLM deployment serving a model of the DeepSeek-OCR family — `deepseek-ai/DeepSeek-OCR`, `deepseek-ai/DeepSeek-OCR-2`, or `baidu/Unlimited-OCR` (whose `UnlimitedOCRForCausalLM` subclasses `DeepseekOCRForCausalLM`) — can be **killed by a single unauthenticated chat request carrying an",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-10-28"
+    },
+    {
+      "uid": "cve:GHSA-q97c-p368-75c4",
+      "source": "cve",
+      "title": "CVE-2026-115916: vLLM: Out-of-vocabulary prompt token id passes input validation and triggers a CUDA device-side assert (engine crash / DoS)",
+      "url": "https://github.com/advisories/GHSA-q97c-p368-75c4",
+      "ts": 1793222108.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "vllm",
+      "summary": "Severity: medium. For a model whose vocabulary size is an exact multiple of the embedding padding size (64) — e.g. any Llama-2-family model, vocab 32000 — a single request carrying a pre-tokenized prompt with token id equal to the vocab size (32000) passes vLLM's input-id validation but is one past the last embedding",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "dev",
+        "crypto",
+        "security"
+      ],
+      "date": "2026-10-28"
+    },
+    {
+      "uid": "cve:GHSA-x567-49g5-p4cf",
+      "source": "cve",
+      "title": "CVE-2026-115918: vLLM: Responses API bypasses trust_request_chat_template for chat_template_kwargs",
+      "url": "https://github.com/advisories/GHSA-x567-49g5-p4cf",
+      "ts": 1793222099.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "vllm",
+      "summary": "Severity: medium. ## Summary\n\nvLLM's `/v1/responses` endpoint accepts request-level `chat_template_kwargs`, but does not apply the `--trust-request-chat-template` gate that protects Chat Completions, render, tokenize, and pooling paths.\n\nWhen the server is run with the documented default `trust_request_chat_template=",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "dev",
+        "crypto",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-10-28"
+    },
+    {
+      "uid": "cve:GHSA-542m-9234-8gvf",
+      "source": "cve",
+      "title": "CVE-2026-115911: vLLM: DoS via unbounded chat_template Jinja2 rendering exhausts the renderer thread pool",
+      "url": "https://github.com/advisories/GHSA-542m-9234-8gvf",
+      "ts": 1793222092.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "vllm",
+      "summary": "Severity: medium. ### Summary\nvLLM renders chat templates by passing the resolved Jinja2 source to `tokenizer.apply_chat_template()`, which compiles and `.render()`s it in an `ImmutableSandboxedEnvironment`. The sandbox prevents code-execution escapes but imposes **no wall-clock timeout, no output-size cap, and no ne",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "crypto",
+        "security"
+      ],
+      "date": "2026-10-28"
+    },
+    {
+      "uid": "cve:GHSA-vvm8-gf78-28g4",
+      "source": "cve",
+      "title": "CVE-2026-116586: Go JOSE: Panics in JSON parsing",
+      "url": "https://github.com/advisories/GHSA-vvm8-gf78-28g4",
+      "ts": 1793222048.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "github.com/go-jose/go-jose/v4",
+      "summary": "Severity: medium. ### Summary\n\nParsing deeply nested JSON structures can hit Go's stack limit, causing the application to crash.\n\nNote: this advisory is the same as https://github.com/go-jose/go-jose/security/advisories/GHSA-6mp9-8xrw-74r4.\n\n### Impact\n\nDenial of service vulnerability. Any application that parses unt",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-10-28"
+    },
+    {
+      "uid": "cve:GHSA-4w3g-jfj2-cw2q",
+      "source": "cve",
+      "title": "CVE-2026-116585: Go JOSE: Panic during CBC-HMAC processing",
+      "url": "https://github.com/advisories/GHSA-4w3g-jfj2-cw2q",
+      "ts": 1793222040.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "github.com/go-jose/go-jose/v4",
+      "summary": "Severity: medium. ### Summary\n\nDecrypting a ciphertext with \"A128CBC-HS256\", \"A192CBC-HS384\", or \"A256CBC-HS512\" can result in a panic on untrusted input.\n\nNote this advisory is the same as https://github.com/go-jose/go-jose/security/advisories/GHSA-6mp9-8xrw-74r4.\n\n### Details\n\nInsufficient validation of parameters",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-10-28"
+    },
+    {
+      "uid": "cve:GHSA-7648-jmwf-vw7j",
+      "source": "cve",
+      "title": "CVE-2026-116674: systeminformation has prototype pollution in `networkStats()` via the interface name",
+      "url": "https://github.com/advisories/GHSA-7648-jmwf-vw7j",
+      "ts": 1793222012.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "systeminformation",
+      "summary": "Severity: medium. ## Summary\n\n`networkStats()` keeps a per interface cache for computing `rx_sec` / `tx_sec` between calls.\nThe cache is a plain JavaScript object and is indexed with the interface name the caller\nsupplied. Passing the name `__proto__` makes every cache write land on `Object.prototype`\ninstead of the",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-10-28"
+    },
+    {
+      "uid": "cve:GHSA-8prr-f582-jqq3",
+      "source": "cve",
+      "title": "CVE-2026-115885: LangGraph CLI prints the registry push token in `langgraph deploy --verbose` output",
+      "url": "https://github.com/advisories/GHSA-8prr-f582-jqq3",
+      "ts": 1793221998.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "langgraph-cli",
+      "summary": "Severity: medium. ### Summary\n\n`langgraph deploy --verbose` printed the temporary registry push token that the CLI uses to log Docker in to the deployment's image registry. Anyone who could read that output, for example in CI logs, could use the token until it expired.\n\n### Details\n\nWhen Docker is available, `langgra",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "dev",
+        "crypto",
+        "security"
+      ],
+      "date": "2026-10-28"
+    },
+    {
+      "uid": "cve:GHSA-pjh6-c8mg-3x7m",
+      "source": "cve",
+      "title": "CVE-2026-116579: Autobahn Python: permessage-brotli inflates a whole frame before maxMessagePayloadSize is checked (incomplete fix of GHSA-hxp9-w8x3-p566)",
+      "url": "https://github.com/advisories/GHSA-pjh6-c8mg-3x7m",
+      "ts": 1793221817.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "autobahn",
+      "summary": "Severity: medium. ### Summary\n\npermessage-brotli inflates each frame fully before checking maxMessagePayloadSize, so one 421-byte frame makes the server allocate about 545 MiB even with a 1 MiB message limit (brotli expands about 1,000,000:1). Any unauthenticated client can exhaust server memory this way on servers t",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "dev",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-10-28"
+    },
+    {
+      "uid": "hn:48166459",
+      "source": "hn",
+      "title": "Mozilla to UK regulators: VPNs are essential privacy and security tools",
+      "url": "https://blog.mozilla.org/netpolicy/2026/05/15/mozilla-to-uk-regulators-vpns-are-essential-privacy-and-security-tools-and-should-not-be-undermined/",
+      "ts": 1778998646.0,
+      "points": 808,
+      "comments": 356,
+      "author": "WithinReason",
+      "summary": "",
+      "recipe": "hn_sec",
+      "buzz": 1876,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-05-17"
+    },
+    {
+      "uid": "hn:6944118",
+      "source": "hn",
+      "title": "Secret contract tied NSA and security industry pioneer",
+      "url": "http://www.reuters.com/article/2013/12/20/us-usa-security-rsa-idUSBRE9BJ1C220131220",
+      "ts": 1387574520.0,
+      "points": 899,
+      "comments": 320,
+      "author": "bbatsell",
+      "summary": "",
+      "recipe": "hn_sec",
+      "buzz": 1859,
+      "topics": [
+        "security"
+      ],
+      "date": "2013-12-20"
+    },
+    {
+      "uid": "hn:13182120",
+      "source": "hn",
+      "title": "Yahoo installed a backdoor for the NSA behind the back of the security team",
+      "url": "https://diracdeltas.github.io/blog/surveillance/",
+      "ts": 1481771978.0,
+      "points": 1009,
+      "comments": 280,
+      "author": "xenophonf",
+      "summary": "",
+      "recipe": "hn_sec",
+      "buzz": 1849,
+      "topics": [
+        "security"
+      ],
+      "date": "2016-12-15"
+    },
+    {
+      "uid": "hn:25843874",
+      "source": "hn",
+      "title": "Kids find a security flaw in Linux Mint by mashing keys",
+      "url": "https://github.com/linuxmint/cinnamon-screensaver/issues/354",
+      "ts": 1611130761.0,
+      "points": 778,
+      "comments": 329,
+      "author": "subins2000",
+      "summary": "",
+      "recipe": "hn_sec",
+      "buzz": 1765,
+      "topics": [
+        "security"
+      ],
+      "date": "2021-01-20"
+    },
+    {
+      "uid": "hn:11422531",
+      "source": "hn",
+      "title": "Freedom and security issues on x86 platforms",
+      "url": "http://mail.fsfeurope.org/pipermail/discussion/2016-April/010912.html",
+      "ts": 1459783137.0,
+      "points": 713,
+      "comments": 274,
+      "author": "stargrave",
+      "summary": "",
+      "recipe": "hn_sec",
+      "buzz": 1535,
+      "topics": [
+        "security"
+      ],
+      "date": "2016-04-04"
+    },
+    {
+      "uid": "hn:12071098",
+      "source": "hn",
+      "title": "Pokemon Go is a huge security risk",
+      "url": "http://adamreeve.tumblr.com/post/147120922009/pokemon-go-is-a-huge-security-risk",
+      "ts": 1468246072.0,
+      "points": 780,
+      "comments": 251,
+      "author": "patchoulol",
+      "summary": "",
+      "recipe": "hn_sec",
+      "buzz": 1533,
+      "topics": [
+        "security"
+      ],
+      "date": "2016-07-11"
+    },
+    {
+      "uid": "hn:21322517",
+      "source": "hn",
+      "title": "Equifax securities fraud class action [pdf]",
+      "url": "http://securities.stanford.edu/filings-documents/1063/EI00_15/2019128_r01x_17CV03463.pdf",
+      "ts": 1571744575.0,
+      "points": 757,
+      "comments": 219,
+      "author": "bookofjoe",
+      "summary": "",
+      "recipe": "hn_sec",
+      "buzz": 1414,
+      "topics": [],
+      "date": "2019-10-22"
+    },
+    {
+      "uid": "hn:17785162",
+      "source": "hn",
+      "title": "Why Do Keynote Speakers Keep Suggesting That Improving Security Is Possible?",
+      "url": "https://www.usenix.org/conference/usenixsecurity18/presentation/mickens",
+      "ts": 1534534486.0,
+      "points": 878,
+      "comments": 171,
+      "author": "zdw",
+      "summary": "",
+      "recipe": "hn_sec",
+      "buzz": 1391,
+      "topics": [
+        "security"
+      ],
+      "date": "2018-08-17"
+    },
+    {
+      "uid": "hn:43600192",
+      "source": "hn",
+      "title": "The “S” in MCP Stands for Security",
+      "url": "https://elenacross7.medium.com/%EF%B8%8F-the-s-in-mcp-stands-for-security-91407b33ed6b",
+      "ts": 1743932548.0,
+      "points": 730,
+      "comments": 183,
+      "author": "skilldeliver",
+      "summary": "",
+      "recipe": "hn_sec",
+      "buzz": 1279,
+      "topics": [
+        "security"
+      ],
+      "date": "2025-04-06"
+    },
+    {
+      "uid": "hn:5863353",
+      "source": "hn",
+      "title": "Asking the U.S. to allow Google to publish more national security request data",
+      "url": "http://googleblog.blogspot.com/2013/06/asking-us-government-to-allow-google-to.html",
+      "ts": 1370972115.0,
+      "points": 717,
+      "comments": 182,
+      "author": "Lightning",
+      "summary": "",
+      "recipe": "hn_sec",
+      "buzz": 1263,
+      "topics": [
+        "security"
+      ],
+      "date": "2013-06-11"
+    },
+    {
+      "uid": "hn:26455493",
+      "source": "hn",
+      "title": "Security.txt",
+      "url": "https://securitytxt.org/",
+      "ts": 1615730459.0,
+      "points": 746,
+      "comments": 165,
+      "author": "tosh",
+      "summary": "",
+      "recipe": "hn_sec",
+      "buzz": 1241,
+      "topics": [
+        "security"
+      ],
+      "date": "2021-03-14"
+    },
+    {
+      "uid": "hn:21766137",
+      "source": "hn",
+      "title": "ACLU sues Homeland Security over 'stingray' cell phone surveillance",
+      "url": "https://techcrunch.com/2019/12/11/aclu-cbp-ice-stingray-surveillance/",
+      "ts": 1576094209.0,
+      "points": 730,
+      "comments": 153,
+      "author": "mindgam3",
+      "summary": "",
+      "recipe": "hn_sec",
+      "buzz": 1189,
+      "topics": [
+        "security"
+      ],
+      "date": "2019-12-11"
+    },
+    {
+      "uid": "hn:639976",
+      "source": "hn",
+      "title": "How I Hacked Hacker News (with arc security advisory)",
+      "url": "https://news.ycombinator.com/item?id=639976",
+      "ts": 1244046427.0,
+      "points": 928,
+      "comments": 78,
+      "author": "dfranke",
+      "summary": "[Condensed version of this narrative: the news.yc code, prior to the\nthe release of arc3, contains a remotely-exploitable vulnerability\npermitting account theft. Anyone running a news installation who has\nnot yet upgraded to arc3 should do so.]<p>Hacker News login cookies are random eight-character strings, stored\nserver-side in a hash table mapping them to user names.  I discovered\na few weeks ag",
+      "recipe": "hn_sec",
+      "buzz": 1162,
+      "topics": [
+        "ai",
+        "dev",
+        "security",
+        "hardware"
+      ],
+      "date": "2009-06-03"
+    },
+    {
+      "uid": "hn:12140477",
+      "source": "hn",
+      "title": "A practical security guide for web developers",
+      "url": "https://github.com/FallibleInc/security-guide-for-developers",
+      "ts": 1469139797.0,
+      "points": 894,
+      "comments": 68,
+      "author": "zianwar",
+      "summary": "",
+      "recipe": "hn_sec",
+      "buzz": 1098,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2016-07-21"
+    },
+    {
+      "uid": "hn:20468845",
+      "source": "hn",
+      "title": "HTTP Security Headers – A Complete Guide",
+      "url": "https://nullsweep.com/http-security-headers-a-complete-guide/",
+      "ts": 1563451151.0,
+      "points": 709,
+      "comments": 78,
+      "author": "BCharlie",
+      "summary": "",
+      "recipe": "hn_sec",
+      "buzz": 943,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2019-07-18"
+    },
+    {
+      "uid": "gh:Alejandros17487/ai-jailbreaks",
+      "source": "github",
+      "title": "Alejandros17487/ai-jailbreaks",
+      "url": "https://github.com/Alejandros17487/ai-jailbreaks",
+      "ts": 1792593846.0,
+      "points": 514,
+      "comments": 105,
+      "author": "Alejandros17487",
+      "summary": "AI jailbreaks: 35 paste-ready AI jailbreak prompts for 25+ frontier and open-weight models - system prompts, AGENTS.md specs, and Ollama Modelfiles. Built for AI security research and red-team testing.",
+      "recipe": "github_sec",
+      "buzz": 829,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-10-21"
+    },
+    {
+      "uid": "cve:GHSA-vvpg-rrww-wpmh",
+      "source": "cve",
+      "title": "CVE-2026-115917: vLLM: Permissive default CORS origins allow cross-origin requests to the vLLM HTTP server",
+      "url": "https://github.com/advisories/GHSA-vvpg-rrww-wpmh",
+      "ts": 1793222149.0,
+      "points": 700,
+      "comments": 0,
+      "author": "vllm",
+      "summary": "Severity: low. ### Summary\n\nThe OpenAI-compatible server registers Starlette `CORSMiddleware` with\n`allowed_origins` defaulting to `[\"*\"]`, and performs no authentication unless\n`--api-key` (or `VLLM_API_KEY`) is configured. A web page on any origin can send\nrequests to a vLLM server that the victim's browser can",
+      "recipe": "gh_advisories",
+      "buzz": 780,
+      "topics": [
+        "ai",
+        "dev",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-10-28"
+    },
+    {
+      "uid": "cve:GHSA-4vjg-vx72-qq4g",
+      "source": "cve",
+      "title": "CVE-2026-116673: systeminformation has path traversal in Linux networkStats() that allows symlink-based file disclosure outside /sys/class/net",
+      "url": "https://github.com/advisories/GHSA-4vjg-vx72-qq4g",
+      "ts": 1793222030.0,
+      "points": 700,
+      "comments": 0,
+      "author": "systeminformation",
+      "summary": "Severity: low. ### Summary\n\nOn Linux, `systeminformation@5.33.13` builds `/sys/class/net/<iface>` paths from the caller-supplied `networkStats(iface)` value without checking that the resolved path stays inside `/sys/class/net`. A caller who can create a symlink fixture and control the value passed to this API can",
+      "recipe": "gh_advisories",
+      "buzz": 780,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-10-28"
+    },
+    {
+      "uid": "gh:opentrap/opentrap",
+      "source": "github",
+      "title": "opentrap/opentrap",
+      "url": "https://github.com/opentrap/opentrap",
+      "ts": 1792380548.0,
+      "points": 594,
+      "comments": 9,
+      "author": "opentrap",
+      "summary": "A free, open-source alternative to Burp Suite: an intercepting proxy and web app security testing suite with Repeater, Intruder, Collaborator and a built-in OWASP ZAP scanner. Linux, AGPL-3.0.",
+      "recipe": "github_sec",
+      "buzz": 621,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-10-19"
+    },
+    {
+      "uid": "gh:aarsaputra/php2shell",
+      "source": "github",
+      "title": "aarsaputra/php2shell",
+      "url": "https://github.com/aarsaputra/php2shell",
+      "ts": 1792763392.0,
+      "points": 107,
+      "comments": 55,
+      "author": "aarsaputra",
+      "summary": "Unauthenticated RCE toolkit for PHP 5.4–8.4.26 (CVE-[phone]/109618) — pure-HTTP chain, JA3 impersonation, prpenetration-testingoof-of-access design",
+      "recipe": "github_sec",
+      "buzz": 282,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-10-23"
+    },
+    {
+      "uid": "gh:HOSTED-POWER/php_uploadprogress_guard",
+      "source": "github",
+      "title": "HOSTED-POWER/php_uploadprogress_guard",
+      "url": "https://github.com/HOSTED-POWER/php_uploadprogress_guard",
+      "ts": 1792573212.0,
+      "points": 171,
+      "comments": 11,
+      "author": "HOSTED-POWER",
+      "summary": "Protects an unpatched PHP against php2shell (CVE-[phone] / CVE-[phone]): a small extension that mirrors the official fix component by component and steps aside once the engine carries it. PHP 5.6-8.5; Sury, cPanel EA4, DirectAdmin, Docker, Windows.",
+      "recipe": "github_sec",
+      "buzz": 204,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-10-21"
+    },
+    {
+      "uid": "gh:JoasASantos/php2shell-scanner",
+      "source": "github",
+      "title": "JoasASantos/php2shell-scanner",
+      "url": "https://github.com/JoasASantos/php2shell-scanner",
+      "ts": 1792596943.0,
+      "points": 109,
+      "comments": 31,
+      "author": "JoasASantos",
+      "summary": "Non-destructive scanner for CVE-[phone] / CVE-[phone] (PHP core RCE). Subdomain recon via crt.sh + subfinder, robust banner grabbing, version-based detection.",
+      "recipe": "github_sec",
+      "buzz": 202,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-10-21"
+    },
+    {
+      "uid": "gh:UltraSultanHonor/recon-v1.7.0",
+      "source": "github",
+      "title": "UltraSultanHonor/recon-v1.7.0",
+      "url": "https://github.com/UltraSultanHonor/recon-v1.7.0",
+      "ts": 1793165486.0,
+      "points": 102,
+      "comments": 4,
+      "author": "UltraSultanHonor",
+      "summary": "Published: 2026-10-28",
+      "recipe": "github_sec",
+      "buzz": 194,
+      "topics": [],
+      "date": "2026-10-28"
+    },
+    {
+      "uid": "gh:Anton-Barinov/php2shell-patches",
+      "source": "github",
+      "title": "Anton-Barinov/php2shell-patches",
+      "url": "https://github.com/Anton-Barinov/php2shell-patches",
+      "ts": 1792594085.0,
+      "points": 122,
+      "comments": 21,
+      "author": "Anton-Barinov",
+      "summary": "php2shell (CVE-[phone] & CVE-[phone]) security patches for EOL PHP 5.4–8.1. Official & enhanced backports for vanilla php.net and Remi Collet trees. Restores safe file uploads & progress bars without RCE. Fleet-tested on OpenCart, WordPress, HestiaCP, aaPanel.",
+      "recipe": "github_sec",
+      "buzz": 185,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-10-21"
+    },
+    {
+      "uid": "gh:hassan-algo/open-sesame",
+      "source": "github",
+      "title": "hassan-algo/open-sesame",
+      "url": "https://github.com/hassan-algo/open-sesame",
+      "ts": 1792553478.0,
+      "points": 98,
+      "comments": 20,
+      "author": "hassan-algo",
+      "summary": "🔓 An AI web-pentest skill for Claude Code. Point it at a site you're authorized to test — it maps the attack surface, works through the OWASP WSTG, validates findings, and writes dev + stakeholder reports (PDF).",
+      "recipe": "github_sec",
+      "buzz": 158,
+      "topics": [
+        "ai",
+        "dev"
+      ],
+      "date": "2026-10-21"
+    },
+    {
+      "uid": "gh:jmanico/grim-prompter",
+      "source": "github",
+      "title": "jmanico/grim-prompter",
+      "url": "https://github.com/jmanico/grim-prompter",
+      "ts": 1793189366.0,
+      "points": 60,
+      "comments": 3,
+      "author": "jmanico",
+      "summary": "Threat modeling for AI coding agents: point Claude Code, Codex or any agent at your repo and get an evidence-traced threat model. 36 architectures, 29 methods, MIT.",
+      "recipe": "github_sec",
+      "buzz": 149,
+      "topics": [
+        "ai",
+        "dev"
+      ],
+      "date": "2026-10-28"
+    },
+    {
+      "uid": "gh:QERSSD/HowToAvoidScams",
+      "source": "github",
+      "title": "QERSSD/HowToAvoidScams",
+      "url": "https://github.com/QERSSD/HowToAvoidScams",
+      "ts": 1792401690.0,
+      "points": 109,
+      "comments": 9,
+      "author": "QERSSD",
+      "summary": "人间防骗指南：373 篇骗局拆解，覆盖刷单、杀猪盘、AI 换脸、养老诈骗等 16 类；附真实案例报道、生活自查清单、PDF/EPUB/Anki 下载，还有 12 局防骗小游戏",
+      "recipe": "github_sec",
+      "buzz": 136,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-10-19"
+    },
+    {
+      "uid": "gh:mpyw/php-eol-CVE-2026-109618-109619",
+      "source": "github",
+      "title": "mpyw/php-eol-CVE-2026-109618-109619",
+      "url": "https://github.com/mpyw/php-eol-CVE-2026-109618-109619",
+      "ts": 1792594905.0,
+      "points": 70,
+      "comments": 19,
+      "author": "mpyw",
+      "summary": "PHP 7.4 / 8.0 / 8.1 Docker images with the CVE-[phone] / CVE-[phone] fix backported",
+      "recipe": "github_sec",
+      "buzz": 127,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-10-21"
+    },
+    {
+      "uid": "gh:pentestershell/php2shellbt",
+      "source": "github",
+      "title": "pentestershell/php2shellbt",
+      "url": "https://github.com/pentestershell/php2shellbt",
+      "ts": 1792602390.0,
+      "points": 75,
+      "comments": 16,
+      "author": "pentestershell",
+      "summary": "Python scanner for CVE-[phone], CVE-[phone] and the php2shell session chains (handler mismatch + LFI). No external dependencies.",
+      "recipe": "github_sec",
+      "buzz": 123,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-10-21"
+    },
+    {
+      "uid": "gh:xuehuolll/php2shell-CVE-2026-109618-109619",
+      "source": "github",
+      "title": "xuehuolll/php2shell-CVE-2026-109618-109619",
+      "url": "https://github.com/xuehuolll/php2shell-CVE-2026-109618-109619",
+      "ts": 1792557526.0,
+      "points": 50,
+      "comments": 24,
+      "author": "xuehuolll",
+      "summary": "CVE-[phone]/109619 — PHP session.upload_progress pre-auth RCE. Exploit research: remote ASLR chain, PoC & patch analysis.",
+      "recipe": "github_sec",
+      "buzz": 122,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-10-21"
+    },
+    {
+      "uid": "gh:dbx0/executioner",
+      "source": "github",
+      "title": "dbx0/executioner",
+      "url": "https://github.com/dbx0/executioner",
+      "ts": 1792380789.0,
+      "points": 70,
+      "comments": 15,
+      "author": "dbx0",
+      "summary": "The agentic pentesting environment that lives on your machine. AI agent teams, visual workflows and your own tools, 100% local.",
+      "recipe": "github_sec",
+      "buzz": 115,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-10-19"
+    },
+    {
+      "uid": "gh:jamesalmeida/agent-honeypot",
+      "source": "github",
+      "title": "jamesalmeida/agent-honeypot",
+      "url": "https://github.com/jamesalmeida/agent-honeypot",
+      "ts": 1792791878.0,
+      "points": 50,
+      "comments": 6,
+      "author": "jamesalmeida",
+      "summary": "A honeypot and guestbook for AI agents that land on a machine they weren't invited to",
+      "recipe": "github_sec",
+      "buzz": 78,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-10-23"
+    },
+    {
+      "uid": "gh:david-alvarez-rosa/php-rce",
+      "source": "github",
+      "title": "david-alvarez-rosa/php-rce",
+      "url": "https://github.com/david-alvarez-rosa/php-rce",
+      "ts": 1792604537.0,
+      "points": 38,
+      "comments": 10,
+      "author": "david-alvarez-rosa",
+      "summary": "Exploits for CVE-[phone] / CVE-[phone] to achieve RCE on PHP targets",
+      "recipe": "github_sec",
+      "buzz": 68,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-10-21"
+    },
+    {
+      "uid": "gh:BastionPHP/Bastion",
+      "source": "github",
+      "title": "BastionPHP/Bastion",
+      "url": "https://github.com/BastionPHP/Bastion",
+      "ts": 1792650008.0,
+      "points": 57,
+      "comments": 0,
+      "author": "BastionPHP",
+      "summary": "Evidence-based PHP security assessment: patch verification, intrusion tracing, and offline reports.",
+      "recipe": "github_sec",
+      "buzz": 67,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-10-22"
+    },
+    {
+      "uid": "gh:irraz/vulnerator-ai",
+      "source": "github",
+      "title": "irraz/vulnerator-ai",
+      "url": "https://github.com/irraz/vulnerator-ai",
+      "ts": 1792076877.0,
+      "points": 40,
+      "comments": 9,
+      "author": "irraz",
+      "summary": "Autonomous OODA-loop pentesting agent. Hermes brain, Kali + Playwright tools over MCP, ATT&CK as the Orient language.",
+      "recipe": "github_sec",
+      "buzz": 67,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-10-15"
+    },
+    {
+      "uid": "gh:agentshield-dev/agentshield",
+      "source": "github",
+      "title": "agentshield-dev/agentshield",
+      "url": "https://github.com/agentshield-dev/agentshield",
+      "ts": 1792613880.0,
+      "points": 57,
+      "comments": 2,
+      "author": "agentshield-dev",
+      "summary": "Agentshield is open source defense for Kubernetes and AWS. It learns how your workloads really talk, flags lateral movement with evidence, and proposes fixes you approve.",
+      "recipe": "github_sec",
+      "buzz": 63,
+      "topics": [
+        "ai",
+        "dev"
+      ],
+      "date": "2026-10-21"
+    },
+    {
+      "uid": "gh:sazabi/cve.now",
+      "source": "github",
+      "title": "sazabi/cve.now",
+      "url": "https://github.com/sazabi/cve.now",
+      "ts": 1792681793.0,
+      "points": 34,
+      "comments": 1,
+      "author": "sazabi",
+      "summary": "A free, public vulnerability feed: CVE, GHSA, OSV, CISA KEV and EPSS merged into one entry per vulnerability. RSS, JSON API and MCP. Docs and issues only.",
+      "recipe": "github_sec",
+      "buzz": 47,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-10-22"
+    },
+    {
+      "uid": "gh:lordbasex/LordOS",
+      "source": "github",
+      "title": "lordbasex/LordOS",
+      "url": "https://github.com/lordbasex/LordOS",
+      "ts": 1792294263.0,
+      "points": 37,
+      "comments": 3,
+      "author": "lordbasex",
+      "summary": "LordOS — a free, fast and secure GNU/Linux distribution based on Debian, with its own desktop environment: display server and Wayland compositor in C, a React UI engine on QuickJS, and private native apps.",
+      "recipe": "github_sec",
+      "buzz": 46,
+      "topics": [
+        "hardware"
+      ],
+      "date": "2026-10-18"
+    },
+    {
+      "uid": "gh:Altumptic/paranoia",
+      "source": "github",
+      "title": "Altumptic/paranoia",
+      "url": "https://github.com/Altumptic/paranoia",
+      "ts": 1792085881.0,
+      "points": 38,
+      "comments": 2,
+      "author": "Altumptic",
+      "summary": "Open reverse engineering — PE/ELF/Mach-O, x86/x64/AArch64, graphs, pseudocode. Rust engine, no network. Desktop · CLI · browser.",
+      "recipe": "github_sec",
+      "buzz": 44,
+      "topics": [
+        "dev"
+      ],
+      "date": "2026-10-15"
+    },
+    {
+      "uid": "gh:HelpFreedom/nv",
+      "source": "github",
+      "title": "HelpFreedom/nv",
+      "url": "https://github.com/HelpFreedom/nv",
+      "ts": 1792088085.0,
+      "points": 24,
+      "comments": 5,
+      "author": "HelpFreedom",
+      "summary": "Neovim 0.12, собранный с нуля: проверенный код, серверы языков без сети, цвета из обоев, всё по-русски · A security-minded Neovim config built from scratch",
+      "recipe": "github_sec",
+      "buzz": 39,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-10-15"
+    },
+    {
+      "uid": "gh:Aryma-f4/gulpsuite",
+      "source": "github",
+      "title": "Aryma-f4/gulpsuite",
+      "url": "https://github.com/Aryma-f4/gulpsuite",
+      "ts": 1792330582.0,
+      "points": 30,
+      "comments": 1,
+      "author": "Aryma-f4",
+      "summary": "Gulp it before burp — Ultra-fast native Rust web security testing, DAST scanner & HTTP/HTTPS/WebSocket proxy suite",
+      "recipe": "github_sec",
+      "buzz": 33,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-10-18"
+    },
+    {
+      "uid": "gh:foundthunderatone/hash-verify",
+      "source": "github",
+      "title": "foundthunderatone/hash-verify",
+      "url": "https://github.com/foundthunderatone/hash-verify",
+      "ts": 1792328637.0,
+      "points": 22,
+      "comments": 0,
+      "author": "foundthunderatone",
+      "summary": "Published: 2026-10-18",
+      "recipe": "github_sec",
+      "buzz": 22,
+      "topics": [],
+      "date": "2026-10-18"
+    },
+    {
+      "uid": "rss:8651e625050eb8",
+      "source": "rss",
+      "title": "Widespread PHP Flaw May Cause Many Site Outages Today",
+      "url": "https://krebsonsecurity.com/2026/10/widespread-php-flaw-may-cause-many-site-outages-today/",
+      "ts": 1792596367.0,
+      "points": 0,
+      "comments": 0,
+      "author": "BrianKrebs",
+      "summary": "Expect to see quite a few websites serving \"404\" or \"Page Not Found\" errors today: Nearly 70 percent of websites need to update their core software to fix a pair of vulnerabilities that allow an attacker to seize full control over affected servers. Experts say there are working exploits for the flaws, and that these critical bugs are already being exploited in the wild.",
+      "recipe": "krebs",
+      "buzz": 0,
+      "topics": [
+        "ai",
+        "dev",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-10-21"
+    },
+    {
+      "uid": "rss:1f5b4f3065bd92",
+      "source": "rss",
+      "title": "Feds Suspect Ransom Negotiator Ran ShinyHunters Extortion Site",
+      "url": "https://krebsonsecurity.com/2026/10/feds-suspect-ransom-negotiator-ran-shinyhunters-extortion-site/",
+      "ts": 1792417736.0,
+      "points": 0,
+      "comments": 0,
+      "author": "BrianKrebs",
+      "summary": "U.S. federal investigators pursuing the ShinyHunters hacking group that recently stole highly sensitive data from the FBI have identified executives at two different ransomware negotiation firms who maintained unusually close relations with the extortion group, KrebsOnSecurity has learned. Sources close to the investigation say one of the executives in the United States even helped ShinyHunters op",
+      "recipe": "krebs",
+      "buzz": 0,
+      "topics": [
+        "ai",
+        "dev",
+        "biz",
+        "security"
+      ],
+      "date": "2026-10-19"
+    },
+    {
+      "uid": "rss:6f44ed419e952c",
+      "source": "rss",
+      "title": "U.K. Sanctions Cryptomus for RU Money Laundering",
+      "url": "https://krebsonsecurity.com/2026/10/u-k-sanctions-cryptomus-for-ru-money-laundering/",
+      "ts": 1791987769.0,
+      "points": 0,
+      "comments": 0,
+      "author": "BrianKrebs",
+      "summary": "The United Kingdom has issued economic sanctions against Cryptomus, a chameleonic cryptocurrency platform that experts say serves as a major conduit for payments related to ransomware, narcotics, darknet markets, fraud and cybercrime services that are helping Russia circumvent existing financial restrictions.",
+      "recipe": "krebs",
+      "buzz": 0,
+      "topics": [
+        "ai",
+        "crypto",
+        "biz",
+        "security"
+      ],
+      "date": "2026-10-14"
+    },
+    {
+      "uid": "rss:a84d74d496ce69",
+      "source": "rss",
+      "title": "Microsoft Patches More Than 1,400 Security Flaws",
+      "url": "https://krebsonsecurity.com/2026/10/microsoft-patches-more-than-1400-security-flaws/",
+      "ts": 1791933893.0,
+      "points": 0,
+      "comments": 0,
+      "author": "BrianKrebs",
+      "summary": "Microsoft today issued updates to fix more than 1,400 security vulnerabilities in its Windows operating systems and other software. Today's epic patch batch dwarfs September's record of nearly 1,000 fixes, which was already about ten times the normal monthly patch load from Redmond.",
+      "recipe": "krebs",
+      "buzz": 0,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-10-13"
+    },
+    {
+      "uid": "rss:ebf8282e5b855b",
+      "source": "rss",
+      "title": "FBI Arrests Executive at Ransomware Negotiation Firm",
+      "url": "https://krebsonsecurity.com/2026/10/fbi-arrests-founder-of-ransomware-negotiation-firm/",
+      "ts": 1791591462.0,
+      "points": 0,
+      "comments": 0,
+      "author": "BrianKrebs",
+      "summary": "Agents with the Federal Bureau of Investigation (FBI) on Thursday arrested the co-founder of a Canadian cybersecurity firm in connection with an investigation into the ShinyHunters hacking group that recently relieved the FBI of sensitive data on thousands of agents, multiple sources tell KrebsOnSecurity.",
+      "recipe": "krebs",
+      "buzz": 0,
+      "topics": [
+        "ai",
+        "biz",
+        "security"
+      ],
+      "date": "2026-10-10"
+    },
+    {
+      "uid": "rss:82b1e37b8f7fb8",
+      "source": "rss",
+      "title": "ShinyHunters Extorted Boeing Spin-off Prior to Arrests",
+      "url": "https://krebsonsecurity.com/2026/10/shinyhunters-extorted-boeing-spin-off-prior-to-arrests/",
+      "ts": 1791380925.0,
+      "points": 0,
+      "comments": 0,
+      "author": "BrianKrebs",
+      "summary": "A teenager from Amman, Jordan suspected of leading the prolific data theft and extortion group ShinyHunters has been detained and is reportedly cooperating with the FBI to identify other members of the hacking gang. KrebsOnSecurity has learned that the suspect, who uses the hacker handle \"Rey,\" was detained as ShinyHunters was in the process of extorting a business unit recently divested by the gl",
+      "recipe": "krebs",
+      "buzz": 0,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-10-07"
+    },
+    {
+      "uid": "rss:dbfccb4427ccda",
+      "source": "rss",
+      "title": "Dutch Police Arrest ‘Reformed’ Hacker in Shiny Hunters Investigation",
+      "url": "https://krebsonsecurity.com/2026/09/dutch-police-arrest-reformed-hacker-in-shiny-hunters-investigation/",
+      "ts": 1790608137.0,
+      "points": 0,
+      "comments": 0,
+      "author": "BrianKrebs",
+      "summary": "Authorities in the Netherlands have arrested a 23-year-old convicted cybercriminal on suspicion of aiding in data thefts and extortions by the prolific hacker group ShinyHunters. In the days immediately following the suspect's arrest, remaining ShinyHunters members dramatically escalated their attacks, stealing highly sensitive data from the FBI and extorting the Russian ransomware group Cl0p.",
+      "recipe": "krebs",
+      "buzz": 0,
+      "topics": [
+        "ai",
+        "biz",
+        "security"
+      ],
+      "date": "2026-09-28"
+    },
+    {
+      "uid": "rss:9a3c108ea3f494",
+      "source": "rss",
+      "title": "U.S. Soldier Gets 70 Months in Prison for AT&T, Verizon Extortions",
+      "url": "https://krebsonsecurity.com/2026/09/u-s-soldier-gets-70-months-in-prison-for-att-verizon-extortions/",
+      "ts": 1790372680.0,
+      "points": 0,
+      "comments": 0,
+      "author": "BrianKrebs",
+      "summary": "A U.S. Army soldier who pleaded guilty to hacking into multiple telecommunications companies and stealing mobile call and text metadata for more than 100 million AT&#038;T customers in 2024 was sentenced to 70 months in federal prison today and ordered to pay nearly $300,000 in restitution to victims.",
+      "recipe": "krebs",
+      "buzz": 0,
+      "topics": [],
+      "date": "2026-09-25"
+    },
+    {
+      "uid": "rss:312841db94b4ed",
+      "source": "rss",
+      "title": "Data Broker Radaris Loses Domains in Privacy Fight",
+      "url": "https://krebsonsecurity.com/2026/09/data-broker-radaris-loses-domains-in-privacy-fight/",
+      "ts": 1789582462.0,
+      "points": 0,
+      "comments": 0,
+      "author": "BrianKrebs",
+      "summary": "The consumer data broker Radaris.com has long had a reputation for ignoring requests to remove personal information from its vast empire of people-search services online. That reputation caught up with the company recently in a lawsuit alleging Radaris violated a New Jersey privacy law that provides for hefty fines against data brokers that publish personal information on state law enforcement off",
+      "recipe": "krebs",
+      "buzz": 0,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-09-16"
+    },
+    {
+      "uid": "rss:c8edec6ed02887",
+      "source": "rss",
+      "title": "Microsoft Plugs Nearly 1,000 Security Holes",
+      "url": "https://krebsonsecurity.com/2026/09/microsoft-plugs-nearly-1000-security-holes/",
+      "ts": 1788903862.0,
+      "points": 0,
+      "comments": 0,
+      "author": "BrianKrebs",
+      "summary": "Microsoft Corp. today issued updates to plug at least 974 security holes in its Windows operating systems and other software, by far its biggest single patch batch ever. Microsoft says artificial intelligence is helping to speed the discovery of vulnerabilities, but security experts warn that many organizations already are struggling to prioritize the more human-intensive endeavor of testing and d",
+      "recipe": "krebs",
+      "buzz": 0,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-09-08"
+    }
+  ]
+}

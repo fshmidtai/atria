@@ -12,6 +12,8 @@
 """
 from __future__ import annotations
 
+import email.utils
+import hashlib
 import json
 import os
 import ssl
@@ -19,10 +21,13 @@ import time
 import urllib.error
 import urllib.parse
 import urllib.request
+import urllib.robotparser
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
 
-UA = {"User-Agent": "Atria/0.1 (+https://github.com/)"}
+#UA: честный, но «совместимый» — проходит наивные UA-фильтры CDN и не врёт,
+# кто мы такие (Конституция §4: вежливый бот — живой бот).
+UA = {"User-Agent": "Mozilla/5.0 (compatible; Atria/0.1; +https://github.com/)"}
 TIMEOUT = 20
 
 ATOM = "{http://www.w3.org/2005/Atom}"
@@ -52,6 +57,96 @@ def _epoch(iso: str) -> float:
         return datetime.fromisoformat(iso.replace("Z", "+00:00")).timestamp()
     except Exception:
         return time.time()
+
+
+def _rfc822(s: str | None) -> float:
+    """RFC 822 (поля pubDate в RSS) и ISO 8601 (Atom) → epoch."""
+    if not s:
+        return time.time()
+    try:
+        return email.utils.parsedate_to_datetime(s).timestamp()
+    except Exception:
+        return _epoch(s)
+
+
+# ---------------------------------------------------------------- robots.txt
+_ROBOTS_CACHE: dict = {}
+
+
+def _robots_allowed(url: str) -> bool:
+    """Соблюдаем robots.txt (Конституция §4.3). Файла нет — ограничений нет."""
+    p = urllib.parse.urlparse(url)
+    if not p.scheme.startswith("http"):
+        return True
+    host = f"{p.scheme}://{p.netloc}"
+    if host not in _ROBOTS_CACHE:
+        rp = urllib.robotparser.RobotFileParser()
+        try:
+            raw = _get(host + "/robots.txt", timeout=10)
+            rp.parse(raw.splitlines())
+        except Exception:
+            rp = None  # нет/недоступен robots.txt → не ограничиваем
+        _ROBOTS_CACHE[host] = rp
+    rp = _ROBOTS_CACHE[host]
+    if rp is None:
+        return True
+    return rp.can_fetch(UA["User-Agent"], url)
+
+
+# ---------------------------------------------------------------- RSS / Atom
+def _parse_feed(raw: str, _feed_url: str = "") -> list[dict]:
+    out: list[dict] = []
+    try:
+        root = ET.fromstring(raw)
+    except Exception:
+        return []
+
+    def _uid(seed: str) -> str:
+        return "rss:" + hashlib.md5((seed or "").encode("utf-8")).hexdigest()[:14]
+
+    if root.tag == "rss":
+        channel = root.find("channel")
+        items = channel.findall("item") if channel is not None else []
+        for it in items:
+            title = " ".join((it.findtext("title") or "").split())
+            link = (it.findtext("link") or "").strip()
+            desc = " ".join((it.findtext("description") or "").split())
+            creator = it.findtext("{http://purl.org/dc/elements/1.1/}creator") or it.findtext("author") or ""
+            out.append(_item(
+                _uid(link or title), "rss", title, link,
+                _rfc822(it.findtext("pubDate")), 0, 0, creator.strip(), desc[:400],
+            ))
+    elif root.tag.endswith("}feed") or root.tag == "feed":
+        for entry in root.findall(f"{ATOM}entry"):
+            title = " ".join((entry.findtext(f"{ATOM}title") or "").split())
+            link = ""
+            for ln in entry.findall(f"{ATOM}link"):
+                if ln.get("rel") in (None, "alternate"):
+                    link = ln.get("href") or ""
+                    break
+            desc = " ".join((
+                entry.findtext(f"{ATOM}summary") or entry.findtext(f"{ATOM}content") or ""
+            ).split())
+            author = (entry.find(f"{ATOM}author") or ET.Element("x")).findtext(f"{ATOM}name") or ""
+            out.append(_item(
+                _uid(link or title), "rss", title, link,
+                _rfc822(entry.findtext(f"{ATOM}updated") or entry.findtext(f"{ATOM}published")),
+                0, 0, author.strip(), desc[:400],
+            ))
+    return out
+
+
+def fetch_rss(url: str, limit: int = 40) -> list[dict]:
+    """RSS 2.0 / Atom-фид — самый машинно-дружелюбный публичный формат."""
+    if not url:
+        return []
+    try:
+        if not _robots_allowed(url):
+            return []  # хозяин не велел — уходим (§4.3)
+        raw = _get(url)
+    except Exception:
+        return []
+    return _parse_feed(raw)[:limit]
 
 
 def _item(uid, source, title, url, ts_epoch, points, comments, author, summary=""):
@@ -193,6 +288,53 @@ def fetch_github(limit: int = 40, q: str = "", days: int = 7) -> list[dict]:
     return out
 
 
+# ---------------------------------------------------------------- GitHub Security Advisories
+# Severity = «важность» для security-аудитории: критическая CVE по сигналу
+# сопоставима с топом HN, а не тонет в шумном потоке.
+_SEVERITY_WEIGHTS = {
+    "critical": 6000, "high": 3500, "moderate": 1800, "medium": 1800, "low": 700,
+}
+
+
+def fetch_github_advisories(limit: int = 30) -> list[dict]:
+    """Публичный поток GitHub Security Advisories — живые CVE без API-ключа.
+
+    Severity даёт «очки важности» — критический баг всплывёт выше потока.
+    """
+    headers = {"Accept": "application/vnd.github+json"}
+    token = os.environ.get("GITHUB_TOKEN", "").strip()
+    if token:
+        headers["Authorization"] = f"Bearer {token}"
+    try:
+        data = json.loads(
+            _get(f"https://api.github.com/advisories?per_page={limit}", headers=headers)
+        )
+    except Exception:
+        return []
+    out = []
+    for a in data:
+        cve = a.get("cve_id") or ""
+        ghsa = a.get("ghsa_id") or ""
+        sev = (a.get("severity") or "").lower()
+        pkg = (((a.get("vulnerabilities") or [{}])[0]).get("package") or {}).get("name", "")
+        title = f"{cve or ghsa}: {a.get('summary', '')}".strip()
+        url = a.get("html_url") or f"https://github.com/advisories/{ghsa}"
+        out.append(
+            _item(
+                uid=f"cve:{ghsa or cve}",
+                source="cve",
+                title=title,
+                url=url,
+                ts_epoch=_epoch(a.get("published_at") or a.get("updated_at") or ""),
+                points=_SEVERITY_WEIGHTS.get(sev, 50),
+                comments=0,
+                author=pkg,
+                summary=f"Severity: {sev or 'n/a'}. {(a.get('description') or '')[:300]}",
+            )
+        )
+    return out
+
+
 # ---------------------------------------------------------------- движок рецептов
 def fetch_recipes(recipes: list) -> dict[str, list[dict]]:
     """Прогнать рецепты. Возвращает {label: [items]} — даже пустые, чтобы конвейер не дёргался.
@@ -218,6 +360,10 @@ def fetch_recipes(recipes: list) -> dict[str, list[dict]]:
                     q=recipe.get("q", ""),
                     days=int(recipe.get("days", 7)),
                 )
+            elif kind == "rss":
+                items = fetch_rss(recipe.get("url", ""), limit=int(recipe.get("limit", 40)))
+            elif kind == "github_advisories":
+                items = fetch_github_advisories(limit=int(recipe.get("limit", 30)))
             else:
                 continue
         except Exception:

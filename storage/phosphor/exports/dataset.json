@@ -1,30 +1,33 @@
 {
-  "generated_at": "2026-10-28T21:08:24+00:00",
+  "generated_at": "2026-10-28T21:45:10+00:00",
   "sources_used": [
     "hn_front",
     "arxiv",
-    "github_search"
+    "github_search",
+    "rss"
   ],
   "totals": {
-    "items": 130,
+    "items": 142,
     "by_source": {
       "github": 40,
       "hn": 30,
+      "rss": 12,
       "arxiv": 60
     },
     "by_recipe": {
       "arxiv": 60,
       "github_search": 40,
-      "hn_front": 30
+      "hn_front": 30,
+      "devto": 12
     },
     "by_topic": {
-      "ai": 86,
-      "dev": 53,
-      "science": 26,
-      "hardware": 16,
-      "crypto": 11,
+      "ai": 98,
+      "dev": 59,
+      "science": 27,
+      "hardware": 18,
+      "crypto": 12,
       "biz": 11,
-      "security": 6
+      "security": 8
     },
     "top_domains": [
       [
@@ -34,6 +37,14 @@
       [
         "github.com",
         40
+      ],
+      [
+        "dev.to",
+        12
+      ],
+      [
+        "wired.com",
+        2
       ],
       [
         "apple.com",
@@ -52,18 +63,6 @@
         1
       ],
       [
-        "anthropic.com",
-        1
-      ],
-      [
-        "lexifina.com",
-        1
-      ],
-      [
-        "tailscale.com",
-        1
-      ],
-      [
         "circuithub.com",
         1
       ],
@@ -76,15 +75,11 @@
         1
       ],
       [
-        "carmelitegothic.com",
-        1
-      ],
-      [
         "nullpt.rs",
         1
       ],
       [
-        "arstechnica.com",
+        "carmelitegothic.com",
         1
       ],
       [
@@ -92,11 +87,11 @@
         1
       ],
       [
-        "reddit.com",
+        "surgehq.ai",
         1
       ],
       [
-        "surgehq.ai",
+        "reddit.com",
         1
       ],
       [
@@ -108,7 +103,7 @@
         1
       ],
       [
-        "s206.q4cdn.com",
+        "paulfwalsh.substack.com",
         1
       ],
       [
@@ -116,11 +111,19 @@
         1
       ],
       [
-        "restofworld.org",
+        "arstechnica.com",
         1
       ],
       [
         "slidebyside.com",
+        1
+      ],
+      [
+        "formlabs.com",
+        1
+      ],
+      [
+        "magnopus.com",
         1
       ],
       [
@@ -136,12 +139,12 @@
       "title": "JustAResearcher/gpu-unlock-ada",
       "url": "https://github.com/JustAResearcher/gpu-unlock-ada",
       "ts": 1792789253.0,
-      "points": 4408,
+      "points": 4409,
       "comments": 565,
       "author": "JustAResearcher",
       "summary": "GPU tensor unlock source for RTX 4090 and experimental RTX 4070 Ti SUPER; firmware generated locally",
       "recipe": "github_search",
-      "buzz": 6113,
+      "buzz": 6114,
       "topics": [
         "science",
         "hardware"
@@ -171,12 +174,12 @@
       "title": "designfuchen/word-atlas",
       "url": "https://github.com/designfuchen/word-atlas",
       "ts": 1792916842.0,
-      "points": 3030,
-      "comments": 672,
+      "points": 3034,
+      "comments": 673,
       "author": "designfuchen",
       "summary": "词光 · Word Atlas — Illustrated IELTS vocabulary with 7,298 words, UK/US audio and FSRS review. Open-source app + CC BY 4.0 dataset.",
       "recipe": "github_search",
-      "buzz": 5056,
+      "buzz": 5063,
       "topics": [],
       "date": "2026-10-25"
     },
@@ -186,12 +189,12 @@
       "title": "unclebob/ub-mode",
       "url": "https://github.com/unclebob/ub-mode",
       "ts": 1792944249.0,
-      "points": 3669,
-      "comments": 189,
+      "points": 3682,
+      "comments": 191,
       "author": "unclebob",
       "summary": "",
       "recipe": "github_search",
-      "buzz": 4246,
+      "buzz": 4265,
       "topics": [],
       "date": "2026-10-25"
     },
@@ -201,12 +204,12 @@
       "title": "interplains/Zero-Breach-Toolkit",
       "url": "https://github.com/interplains/Zero-Breach-Toolkit",
       "ts": 1792939294.0,
-      "points": 2600,
-      "comments": 286,
+      "points": 2632,
+      "comments": 290,
       "author": "interplains",
       "summary": "Free, open-source, offline checks for traces of known mercenary spyware. Works on Windows, macOS and Linux, Android phones and iPhone backups.",
       "recipe": "github_search",
-      "buzz": 3468,
+      "buzz": 3512,
       "topics": [
         "ai",
         "security"
@@ -219,12 +222,12 @@
       "title": "anhao/ai-pose-gallery-zh",
       "url": "https://github.com/anhao/ai-pose-gallery-zh",
       "ts": 1793103877.0,
-      "points": 1802,
-      "comments": 465,
+      "points": 1811,
+      "comments": 469,
       "author": "anhao",
       "summary": "中文版 AI 姿势参考图库 · 1439 组 / 2878 张图片 / 完整汉化 · 零依赖静态画廊",
       "recipe": "github_search",
-      "buzz": 3227,
+      "buzz": 3248,
       "topics": [
         "ai"
       ],
@@ -236,12 +239,12 @@
       "title": "oosexgang/hakios-xnu-kernel",
       "url": "https://github.com/oosexgang/hakios-xnu-kernel",
       "ts": 1792650011.0,
-      "points": 1896,
+      "points": 1898,
       "comments": 326,
       "author": "oosexgang",
       "summary": "",
       "recipe": "github_search",
-      "buzz": 2884,
+      "buzz": 2886,
       "topics": [],
       "date": "2026-10-22"
     },
@@ -251,16 +254,31 @@
       "title": "t3dotgg/tstack",
       "url": "https://github.com/t3dotgg/tstack",
       "ts": 1792818020.0,
-      "points": 2241,
+      "points": 2244,
       "comments": 137,
       "author": "t3dotgg",
       "summary": "The agent skills I use every day. Works with Claude Code and Codex.",
       "recipe": "github_search",
-      "buzz": 2662,
+      "buzz": 2665,
       "topics": [
         "ai"
       ],
       "date": "2026-10-24"
+    },
+    {
+      "uid": "hn:50276940",
+      "source": "hn",
+      "title": "MacBook Pro with PROLED XDR Display and Touch",
+      "url": "https://www.apple.com/macbook-pro/proled-xdr-display/",
+      "ts": 1793207437.0,
+      "points": 421,
+      "comments": 718,
+      "author": "etothet",
+      "summary": "<a href=\"https:&#x2F;&#x2F;www.apple.com&#x2F;newsroom&#x2F;2026&#x2F;10&#x2F;apple-unveils-groundbreaking-macbook-pro-with-proled-xdr-display&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;www.apple.com&#x2F;newsroom&#x2F;2026&#x2F;10&#x2F;apple-unveils-groundb...</a>",
+      "recipe": "hn_front",
+      "buzz": 2655,
+      "topics": [],
+      "date": "2026-10-28"
     },
     {
       "uid": "gh:ZiChuanLan/agent-purge",
@@ -281,32 +299,17 @@
       "date": "2026-10-25"
     },
     {
-      "uid": "hn:50276940",
-      "source": "hn",
-      "title": "MacBook Pro with PROLED XDR Display and Touch",
-      "url": "https://www.apple.com/macbook-pro/proled-xdr-display/",
-      "ts": 1793207437.0,
-      "points": 398,
-      "comments": 678,
-      "author": "etothet",
-      "summary": "<a href=\"https:&#x2F;&#x2F;www.apple.com&#x2F;newsroom&#x2F;2026&#x2F;10&#x2F;apple-unveils-groundbreaking-macbook-pro-with-proled-xdr-display&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;www.apple.com&#x2F;newsroom&#x2F;2026&#x2F;10&#x2F;apple-unveils-groundb...</a>",
-      "recipe": "hn_front",
-      "buzz": 2512,
-      "topics": [],
-      "date": "2026-10-28"
-    },
-    {
       "uid": "hn:50276792",
       "source": "hn",
       "title": "Gemini 4 Carbon",
       "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
       "ts": 1793206883.0,
-      "points": 610,
-      "comments": 509,
+      "points": 661,
+      "comments": 538,
       "author": "acossta",
       "summary": "",
       "recipe": "hn_front",
-      "buzz": 2217,
+      "buzz": 2355,
       "topics": [],
       "date": "2026-10-28"
     },
@@ -316,12 +319,12 @@
       "title": "andyhuo520/digital-human-koubo",
       "url": "https://github.com/andyhuo520/digital-human-koubo",
       "ts": 1792989249.0,
-      "points": 1296,
-      "comments": 296,
+      "points": 1299,
+      "comments": 298,
       "author": "andyhuo520",
       "summary": "AI digital-human talking-head videos from one photo: Renoise MCP generation + 5 editing styles + 48 creator-grade packaging components. Agent skill for Claude Code / Codex / OpenClaw / WorkBuddy …",
       "recipe": "github_search",
-      "buzz": 2214,
+      "buzz": 2223,
       "topics": [
         "ai",
         "dev",
@@ -335,12 +338,12 @@
       "title": "Apple's git still trusts the compromised eMudhra certificates",
       "url": "https://emudhra.we-have-a-problem.com/apple.html",
       "ts": 1793185420.0,
-      "points": 949,
-      "comments": 359,
+      "points": 968,
+      "comments": 366,
       "author": "galadran",
       "summary": "",
       "recipe": "hn_front",
-      "buzz": 2106,
+      "buzz": 2146,
       "topics": [
         "dev"
       ],
@@ -352,12 +355,12 @@
       "title": "Kentucky man becomes the first humanist granted religious exemption from AI",
       "url": "https://religionnews.com/2026/10/26/in-a-first-a-humanist-granted-a-religious-exemption-from-using-ai/",
       "ts": 1793194890.0,
-      "points": 361,
-      "comments": 418,
+      "points": 373,
+      "comments": 429,
       "author": "danso",
       "summary": "",
       "recipe": "hn_front",
-      "buzz": 1695,
+      "buzz": 1740,
       "topics": [
         "ai"
       ],
@@ -369,14 +372,33 @@
       "title": "enesozturk/dimensional-drawing",
       "url": "https://github.com/enesozturk/dimensional-drawing",
       "ts": 1792758016.0,
-      "points": 1376,
+      "points": 1378,
       "comments": 86,
       "author": "enesozturk",
       "summary": "Create Apple style dimensional drawings of UI components.",
       "recipe": "github_search",
-      "buzz": 1644,
+      "buzz": 1646,
       "topics": [],
       "date": "2026-10-23"
+    },
+    {
+      "uid": "gh:DenisSergeevitch/ex-ussr-kinship-research",
+      "source": "github",
+      "title": "DenisSergeevitch/ex-ussr-kinship-research",
+      "url": "https://github.com/DenisSergeevitch/ex-ussr-kinship-research",
+      "ts": 1792922756.0,
+      "points": 1171,
+      "comments": 127,
+      "author": "DenisSergeevitch",
+      "summary": "Evidence-first genealogy skill for AI agents (Codex, Claude Code): church books, civil, military, deportation and repression records across the former USSR. Replies in your language.",
+      "recipe": "github_search",
+      "buzz": 1562,
+      "topics": [
+        "ai",
+        "dev",
+        "science"
+      ],
+      "date": "2026-10-25"
     },
     {
       "uid": "gh:morganlinton/BeautifulRust",
@@ -395,25 +417,6 @@
         "dev"
       ],
       "date": "2026-10-23"
-    },
-    {
-      "uid": "gh:DenisSergeevitch/ex-ussr-kinship-research",
-      "source": "github",
-      "title": "DenisSergeevitch/ex-ussr-kinship-research",
-      "url": "https://github.com/DenisSergeevitch/ex-ussr-kinship-research",
-      "ts": 1792922756.0,
-      "points": 1162,
-      "comments": 126,
-      "author": "DenisSergeevitch",
-      "summary": "Evidence-first genealogy skill for AI agents (Codex, Claude Code): church books, civil, military, deportation and repression records across the former USSR. Replies in your language.",
-      "recipe": "github_search",
-      "buzz": 1550,
-      "topics": [
-        "ai",
-        "dev",
-        "science"
-      ],
-      "date": "2026-10-25"
     },
     {
       "uid": "gh:KillaBoi/StealMyBitcoin-PoC",
@@ -459,7 +462,7 @@
       "points": 956,
       "comments": 140,
       "author": "assetnote",
-      "summary": "High fidelity scanner for php2shell (CVE-2026-109618 and CVE-2026-109619)",
+      "summary": "High fidelity scanner for php2shell (CVE-[phone] and CVE-[phone])",
       "recipe": "github_search",
       "buzz": 1386,
       "topics": [
@@ -467,23 +470,6 @@
         "security"
       ],
       "date": "2026-10-22"
-    },
-    {
-      "uid": "hn:50265609",
-      "source": "hn",
-      "title": "Early progress on accelerating drug development with Claude",
-      "url": "https://www.anthropic.com/research/early-progress-drug-development",
-      "ts": 1793134242.0,
-      "points": 315,
-      "comments": 321,
-      "author": "dataking",
-      "summary": "",
-      "recipe": "hn_front",
-      "buzz": 1308,
-      "topics": [
-        "dev"
-      ],
-      "date": "2026-10-27"
     },
     {
       "uid": "gh:surendrapandar/minilytics",
@@ -522,34 +508,17 @@
       "date": "2026-10-22"
     },
     {
-      "uid": "hn:50268380",
-      "source": "hn",
-      "title": "Git for the US Code",
-      "url": "https://lexifina.com/blog/git-for-the-us-code",
-      "ts": 1793152070.0,
-      "points": 421,
-      "comments": 232,
-      "author": "alansaber",
-      "summary": "",
-      "recipe": "hn_front",
-      "buzz": 1197,
-      "topics": [
-        "dev"
-      ],
-      "date": "2026-10-28"
-    },
-    {
       "uid": "gh:DrWhax/unfairplay",
       "source": "github",
       "title": "DrWhax/unfairplay",
       "url": "https://github.com/DrWhax/unfairplay",
       "ts": 1792963340.0,
-      "points": 707,
+      "points": 709,
       "comments": 153,
       "author": "DrWhax",
       "summary": "Decrypt IPA's on MacOS",
       "recipe": "github_search",
-      "buzz": 1196,
+      "buzz": 1178,
       "topics": [
         "ai"
       ],
@@ -561,12 +530,12 @@
       "title": "Motionsites-AI/claude-skill",
       "url": "https://github.com/Motionsites-AI/claude-skill",
       "ts": 1792997925.0,
-      "points": 857,
-      "comments": 89,
+      "points": 864,
+      "comments": 91,
       "author": "Motionsites-AI",
       "summary": "Free Claude skill: make Claude build award-level, cinematic landing pages. By MotionSites.",
       "recipe": "github_search",
-      "buzz": 1154,
+      "buzz": 1167,
       "topics": [
         "ai"
       ],
@@ -578,12 +547,12 @@
       "title": "kargulstudio/calender-app-design",
       "url": "https://github.com/kargulstudio/calender-app-design",
       "ts": 1793039936.0,
-      "points": 784,
+      "points": 785,
       "comments": 93,
       "author": "kargulstudio",
       "summary": "",
       "recipe": "github_search",
-      "buzz": 1093,
+      "buzz": 1094,
       "topics": [],
       "date": "2026-10-26"
     },
@@ -593,34 +562,48 @@
       "title": "songjianyang/xss-audit",
       "url": "https://github.com/songjianyang/xss-audit",
       "ts": 1792841556.0,
-      "points": 518,
+      "points": 519,
       "comments": 145,
       "author": "songjianyang",
       "summary": "Static XSS audit skill with 14 layers of checks for React, TypeScript, and JavaScript projects.",
       "recipe": "github_search",
-      "buzz": 963,
+      "buzz": 964,
       "topics": [
         "dev"
       ],
       "date": "2026-10-24"
     },
     {
-      "uid": "hn:50264857",
+      "uid": "hn:50243060",
       "source": "hn",
-      "title": "Tailscale SSH: Investigation and remediation update",
-      "url": "https://tailscale.com/ssh-investigation-update",
-      "ts": 1793130921.0,
-      "points": 368,
-      "comments": 187,
-      "author": "figmert",
+      "title": "The Grid, a factory-scale robot in Massachusetts that builds PCBs on demand",
+      "url": "https://www.circuithub.com/post/unveiling-the-grid",
+      "ts": 1793020411.0,
+      "points": 364,
+      "comments": 181,
+      "author": "seddona",
       "summary": "",
       "recipe": "hn_front",
-      "buzz": 959,
+      "buzz": 937,
       "topics": [
-        "ai",
-        "biz"
+        "hardware"
       ],
-      "date": "2026-10-27"
+      "date": "2026-10-26"
+    },
+    {
+      "uid": "hn:50273171",
+      "source": "hn",
+      "title": "Emacs Turns 50",
+      "url": "https://www.technologyreview.com/2026/10/20/1145399/emacs-turns-50/",
+      "ts": 1793193911.0,
+      "points": 364,
+      "comments": 157,
+      "author": "internet_points",
+      "summary": "",
+      "recipe": "hn_front",
+      "buzz": 915,
+      "topics": [],
+      "date": "2026-10-28"
     },
     {
       "uid": "gh:mizorewww/gdirect",
@@ -645,44 +628,12 @@
       "title": "smithjohn78390/tongjiang-lab",
       "url": "https://github.com/smithjohn78390/tongjiang-lab",
       "ts": 1793161769.0,
-      "points": 449,
-      "comments": 126,
+      "points": 452,
+      "comments": 127,
       "author": "smithjohn78390",
       "summary": "Free interactive 3D science lessons for high school · 铜匠实验室 · https://lab.tongjiang.app",
       "recipe": "github_search",
-      "buzz": 907,
-      "topics": [],
-      "date": "2026-10-28"
-    },
-    {
-      "uid": "hn:50243060",
-      "source": "hn",
-      "title": "The Grid, a factory-scale robot in Massachusetts that builds PCBs on demand",
-      "url": "https://www.circuithub.com/post/unveiling-the-grid",
-      "ts": 1793020411.0,
-      "points": 346,
-      "comments": 173,
-      "author": "seddona",
-      "summary": "",
-      "recipe": "hn_front",
-      "buzz": 895,
-      "topics": [
-        "hardware"
-      ],
-      "date": "2026-10-26"
-    },
-    {
-      "uid": "hn:50273171",
-      "source": "hn",
-      "title": "Emacs Turns 50",
-      "url": "https://www.technologyreview.com/2026/10/20/1145399/emacs-turns-50/",
-      "ts": 1793193911.0,
-      "points": 351,
-      "comments": 143,
-      "author": "internet_points",
-      "summary": "",
-      "recipe": "hn_front",
-      "buzz": 860,
+      "buzz": 913,
       "topics": [],
       "date": "2026-10-28"
     },
@@ -692,14 +643,29 @@
       "title": "Start Doing Graph Theory",
       "url": "https://vertex.degree/",
       "ts": 1792763390.0,
-      "points": 502,
-      "comments": 111,
+      "points": 519,
+      "comments": 116,
       "author": "ibobev",
       "summary": "",
       "recipe": "hn_front",
-      "buzz": 845,
+      "buzz": 877,
       "topics": [],
       "date": "2026-10-23"
+    },
+    {
+      "uid": "hn:50276998",
+      "source": "hn",
+      "title": "Why is this fingerprinting script creating bioweapons?",
+      "url": "https://nullpt.rs/fingerprinting-bioweapons",
+      "ts": 1793207609.0,
+      "points": 475,
+      "comments": 106,
+      "author": "hazebooth",
+      "summary": "",
+      "recipe": "hn_front",
+      "buzz": 873,
+      "topics": [],
+      "date": "2026-10-28"
     },
     {
       "uid": "gh:blakeandersonw/ai-app-playbook",
@@ -707,12 +673,12 @@
       "title": "blakeandersonw/ai-app-playbook",
       "url": "https://github.com/blakeandersonw/ai-app-playbook",
       "ts": 1793030825.0,
-      "points": 561,
+      "points": 562,
       "comments": 76,
       "author": "blakeandersonw",
       "summary": "How to build useful, profitable apps in 2026. Clone it and point your coding agent at AGENTS.md.",
       "recipe": "github_search",
-      "buzz": 819,
+      "buzz": 820,
       "topics": [
         "ai",
         "dev",
@@ -726,16 +692,31 @@
       "title": "daveebbelaar/bama",
       "url": "https://github.com/daveebbelaar/bama",
       "ts": 1792831476.0,
-      "points": 540,
+      "points": 550,
       "comments": 86,
       "author": "daveebbelaar",
       "summary": "BAMA: Build Any Mac App. Agent skills to research, clone, design, build, optimize, and test native macOS apps with Swift and SwiftUI.",
       "recipe": "github_search",
-      "buzz": 808,
+      "buzz": 818,
       "topics": [
         "ai"
       ],
       "date": "2026-10-24"
+    },
+    {
+      "uid": "gh:Marker284/yandex-station-extended",
+      "source": "github",
+      "title": "Marker284/yandex-station-extended",
+      "url": "https://github.com/Marker284/yandex-station-extended",
+      "ts": 1792789391.0,
+      "points": 569,
+      "comments": 75,
+      "author": "Marker284",
+      "summary": "",
+      "recipe": "github_search",
+      "buzz": 804,
+      "topics": [],
+      "date": "2026-10-23"
     },
     {
       "uid": "gh:actionow-ai/vvv",
@@ -756,32 +737,17 @@
       "date": "2026-10-22"
     },
     {
-      "uid": "gh:Marker284/yandex-station-extended",
-      "source": "github",
-      "title": "Marker284/yandex-station-extended",
-      "url": "https://github.com/Marker284/yandex-station-extended",
-      "ts": 1792789391.0,
-      "points": 567,
-      "comments": 75,
-      "author": "Marker284",
-      "summary": "",
-      "recipe": "github_search",
-      "buzz": 802,
-      "topics": [],
-      "date": "2026-10-23"
-    },
-    {
       "uid": "hn:50274409",
       "source": "hn",
       "title": "CNC Stone Carving",
       "url": "https://carmelitegothic.com/cnc-stone-carving/",
       "ts": 1793198302.0,
-      "points": 330,
-      "comments": 105,
+      "points": 340,
+      "comments": 107,
       "author": "bschne",
       "summary": "",
       "recipe": "hn_front",
-      "buzz": 725,
+      "buzz": 741,
       "topics": [],
       "date": "2026-10-28"
     },
@@ -801,21 +767,6 @@
         "ai"
       ],
       "date": "2026-10-24"
-    },
-    {
-      "uid": "hn:50276998",
-      "source": "hn",
-      "title": "Why Is This Fingerprinting Script Creating Bioweapons?",
-      "url": "https://nullpt.rs/fingerprinting-bioweapons",
-      "ts": 1793207609.0,
-      "points": 384,
-      "comments": 83,
-      "author": "hazebooth",
-      "summary": "",
-      "recipe": "hn_front",
-      "buzz": 713,
-      "topics": [],
-      "date": "2026-10-28"
     },
     {
       "uid": "gh:rossark0/rossark-motion-skill",
@@ -848,39 +799,39 @@
       "date": "2026-10-25"
     },
     {
-      "uid": "gh:hevnsnt/CVEngine",
-      "source": "github",
-      "title": "hevnsnt/CVEngine",
-      "url": "https://github.com/hevnsnt/CVEngine",
-      "ts": 1792881283.0,
-      "points": 439,
-      "comments": 67,
-      "author": "hevnsnt",
-      "summary": "AI-first external attack surface assessment with continuous discovery, evidence-based vulnerability validation, and developer-agent MCP integration.",
-      "recipe": "github_search",
-      "buzz": 650,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-10-24"
-    },
-    {
       "uid": "gh:anonnerdfrenzy/survival-llm",
       "source": "github",
       "title": "anonnerdfrenzy/survival-llm",
       "url": "https://github.com/anonnerdfrenzy/survival-llm",
       "ts": 1792869161.0,
-      "points": 518,
-      "comments": 40,
+      "points": 525,
+      "comments": 42,
       "author": "anonnerdfrenzy",
       "summary": "A free AI assistant and survival library that runs on your own computer, with no internet needed. Shows the source of every answer.",
       "recipe": "github_search",
-      "buzz": 648,
+      "buzz": 661,
       "topics": [
         "ai",
         "dev"
+      ],
+      "date": "2026-10-24"
+    },
+    {
+      "uid": "gh:hevnsnt/CVEngine",
+      "source": "github",
+      "title": "hevnsnt/CVEngine",
+      "url": "https://github.com/hevnsnt/CVEngine",
+      "ts": 1792881283.0,
+      "points": 441,
+      "comments": 67,
+      "author": "hevnsnt",
+      "summary": "AI-first external attack surface assessment with continuous discovery, evidence-based vulnerability validation, and developer-agent MCP integration.",
+      "recipe": "github_search",
+      "buzz": 652,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
       ],
       "date": "2026-10-24"
     },
@@ -920,34 +871,34 @@
       "date": "2026-10-22"
     },
     {
-      "uid": "hn:50234796",
-      "source": "hn",
-      "title": "Ink droplets in motion snag top prize in Nikon Small World contest",
-      "url": "https://arstechnica.com/science/2026/10/meet-the-2026-winner-of-nikons-small-world-photomicrography-contest/",
-      "ts": 1792954188.0,
-      "points": 381,
-      "comments": 69,
-      "author": "_Microft",
-      "summary": "",
-      "recipe": "hn_front",
-      "buzz": 598,
-      "topics": [],
-      "date": "2026-10-25"
-    },
-    {
       "uid": "gh:man15h/tellyscope",
       "source": "github",
       "title": "man15h/tellyscope",
       "url": "https://github.com/man15h/tellyscope",
       "ts": 1792698706.0,
-      "points": 502,
-      "comments": 27,
+      "points": 505,
+      "comments": 28,
       "author": "man15h",
       "summary": "Debloat your Android TV, install apps, browse and transfer files on it, all from your phone. Under 3 MB, no tracking, no root, no PC.",
       "recipe": "github_search",
-      "buzz": 593,
+      "buzz": 599,
       "topics": [],
       "date": "2026-10-22"
+    },
+    {
+      "uid": "hn:50274251",
+      "source": "hn",
+      "title": "AlpineBSD",
+      "url": "https://wiki.alpinebsd.org",
+      "ts": 1793197826.0,
+      "points": 143,
+      "comments": 121,
+      "author": "bradley_taunt",
+      "summary": "",
+      "recipe": "hn_front",
+      "buzz": 586,
+      "topics": [],
+      "date": "2026-10-28"
     },
     {
       "uid": "gh:mirkobrombin/raven",
@@ -963,21 +914,6 @@
       "buzz": 568,
       "topics": [],
       "date": "2026-10-24"
-    },
-    {
-      "uid": "hn:50274251",
-      "source": "hn",
-      "title": "AlpineBSD",
-      "url": "https://wiki.alpinebsd.org",
-      "ts": 1793197826.0,
-      "points": 129,
-      "comments": 108,
-      "author": "bradley_taunt",
-      "summary": "",
-      "recipe": "hn_front",
-      "buzz": 533,
-      "topics": [],
-      "date": "2026-10-28"
     },
     {
       "uid": "gh:zengshuangzi/mcd-money-saver",
@@ -1000,12 +936,12 @@
       "title": "deepopen-com/deepopen-3d-webs",
       "url": "https://github.com/deepopen-com/deepopen-3d-webs",
       "ts": 1793016827.0,
-      "points": 485,
+      "points": 488,
       "comments": 1,
       "author": "deepopen-com",
       "summary": "Image-driven 3D scene generation system. Users provide a reference image and prompt words, and the system generates previewable, replayable, and traceable scene results according to the camera trajectory; official 3D demonstration assets allow direct viewing of color/depth animations and Gaussian point clouds in the browser 图像驱动的三维场景生成系统",
       "recipe": "github_search",
-      "buzz": 518,
+      "buzz": 521,
       "topics": [
         "dev",
         "science"
@@ -1013,35 +949,35 @@
       "date": "2026-10-26"
     },
     {
-      "uid": "hn:50275373",
-      "source": "hn",
-      "title": "Archive.today links going forward",
-      "url": "https://www.reddit.com/r/Seattle/comments/1xhf6qp/archivetoday_links_going_forward/",
-      "ts": 1793201518.0,
-      "points": 130,
-      "comments": 88,
-      "author": "consumer451",
-      "summary": "",
-      "recipe": "hn_front",
-      "buzz": 474,
-      "topics": [],
-      "date": "2026-10-28"
-    },
-    {
       "uid": "hn:50275626",
       "source": "hn",
       "title": "Dayjob: Tax – evaluating AI agents on 50 professional tax assignments",
       "url": "https://surgehq.ai/blog/dayjob-tax",
       "ts": 1793202390.0,
-      "points": 146,
-      "comments": 79,
+      "points": 160,
+      "comments": 88,
       "author": "landonxi",
       "summary": "",
       "recipe": "hn_front",
-      "buzz": 463,
+      "buzz": 504,
       "topics": [
         "ai"
       ],
+      "date": "2026-10-28"
+    },
+    {
+      "uid": "hn:50275373",
+      "source": "hn",
+      "title": "Archive.today links going forward",
+      "url": "https://www.reddit.com/r/Seattle/comments/1xhf6qp/archivetoday_links_going_forward/",
+      "ts": 1793201518.0,
+      "points": 142,
+      "comments": 92,
+      "author": "consumer451",
+      "summary": "",
+      "recipe": "hn_front",
+      "buzz": 498,
+      "topics": [],
       "date": "2026-10-28"
     },
     {
@@ -1067,12 +1003,12 @@
       "title": "The Agent SDK",
       "url": "https://cursor.com/blog/agent-sdk",
       "ts": 1793196140.0,
-      "points": 76,
-      "comments": 87,
+      "points": 78,
+      "comments": 93,
       "author": "torutofu",
       "summary": "",
       "recipe": "hn_front",
-      "buzz": 417,
+      "buzz": 437,
       "topics": [
         "ai",
         "dev"
@@ -1085,28 +1021,31 @@
       "title": "Decompiling Fast Food Tycoon 2: Drawing the World",
       "url": "https://healeycodes.com/decompiling-fast-food-tycoon-2-drawing-the-world",
       "ts": 1792865877.0,
-      "points": 179,
+      "points": 180,
       "comments": 37,
       "author": "healeycodes",
       "summary": "",
       "recipe": "hn_front",
-      "buzz": 300,
+      "buzz": 301,
       "topics": [],
       "date": "2026-10-24"
     },
     {
-      "uid": "hn:50280197",
+      "uid": "hn:50275887",
       "source": "hn",
-      "title": "Alphabet Announces Third Quarter 2026 Results [pdf]",
-      "url": "https://s206.q4cdn.com/479360582/files/doc_financials/2026/q3/2026q3-alphabet-earnings-release.pdf",
-      "ts": 1793218315.0,
-      "points": 55,
-      "comments": 30,
-      "author": "mfiguiere",
+      "title": "Meta censored the No Kings Instagram account during a nationwide campaign",
+      "url": "https://paulfwalsh.substack.com/p/meta-censored-the-no-kings-instagram",
+      "ts": 1793203313.0,
+      "points": 101,
+      "comments": 17,
+      "author": "slowin",
       "summary": "",
       "recipe": "hn_front",
-      "buzz": 225,
-      "topics": [],
+      "buzz": 232,
+      "topics": [
+        "ai",
+        "dev"
+      ],
       "date": "2026-10-28"
     },
     {
@@ -1115,28 +1054,48 @@
       "title": "Nvidia Nemotron 3.5 Transcribe: open ASR for 40 languages",
       "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
       "ts": 1793200673.0,
-      "points": 83,
-      "comments": 15,
+      "points": 92,
+      "comments": 16,
       "author": "wondersky",
       "summary": "",
       "recipe": "hn_front",
-      "buzz": 208,
+      "buzz": 220,
       "topics": [],
       "date": "2026-10-28"
     },
     {
-      "uid": "hn:50278754",
+      "uid": "hn:50280178",
       "source": "hn",
-      "title": "Big Tech's thirst for water is sparking a global resistance",
-      "url": "https://restofworld.org/2026/ai-datacenters-water-resistance-global/",
-      "ts": 1793212491.0,
-      "points": 39,
-      "comments": 20,
-      "author": "billybuckwheat",
+      "title": "Google AI gets cagey when asked who won the 2020 elections",
+      "url": "https://arstechnica.com/ai/2026/10/google-ai-gets-cagey-when-asked-who-won-the-2020-elections/",
+      "ts": 1793218216.0,
+      "points": 49,
+      "comments": 28,
+      "author": "jacquesm",
       "summary": "",
       "recipe": "hn_front",
-      "buzz": 179,
-      "topics": [],
+      "buzz": 213,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-10-28"
+    },
+    {
+      "uid": "hn:50280864",
+      "source": "hn",
+      "title": "Leak Exposes 41,000 Homeland Security Workers–Including Undercover ICE Agents",
+      "url": "https://www.wired.com/story/massive-leak-exposes-41000-homeland-security-workers-including-undercover-ice-agents/",
+      "ts": 1793221404.0,
+      "points": 73,
+      "comments": 18,
+      "author": "Aboutplants",
+      "summary": "",
+      "recipe": "hn_front",
+      "buzz": 207,
+      "topics": [
+        "ai",
+        "security"
+      ],
       "date": "2026-10-28"
     },
     {
@@ -1145,12 +1104,12 @@
       "title": "Show HN: SlideBySide – Present slides without sharing your screen",
       "url": "https://slidebyside.com/",
       "ts": 1793207229.0,
-      "points": 39,
+      "points": 41,
       "comments": 18,
       "author": "denismenace",
       "summary": "Why is it useful?\n- Present slides without sharing the screen and have every one be on the same page.\n- Present together with other cohosts and all control the current page.\n- Other features such as presentation collab features.<p>Why should I not just vibe code my own solution?\n- Its a hassle to maintain a version online.",
       "recipe": "hn_front",
-      "buzz": 173,
+      "buzz": 175,
       "topics": [
         "ai",
         "dev"
@@ -1158,19 +1117,21 @@
       "date": "2026-10-28"
     },
     {
-      "uid": "hn:50231649",
+      "uid": "hn:50281044",
       "source": "hn",
-      "title": "Regent's Ground-Effect Vehicle Reimagines Coastal Travel",
-      "url": "https://spectrum.ieee.org/ground-effect-vehicle",
-      "ts": 1792936567.0,
-      "points": 40,
-      "comments": 30,
-      "author": "rbanffy",
+      "title": "Formlabs Studio 1 $699 Resin Printer",
+      "url": "https://formlabs.com/products/form-studio-1-basic-founders-edition/",
+      "ts": 1793222370.0,
+      "points": 25,
+      "comments": 15,
+      "author": "mhb",
       "summary": "",
       "recipe": "hn_front",
-      "buzz": 140,
-      "topics": [],
-      "date": "2026-10-25"
+      "buzz": 150,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-10-28"
     },
     {
       "uid": "hn:50209269",
@@ -1178,14 +1139,29 @@
       "title": "Gaussian Splats part 3: There's always a bigger scene",
       "url": "https://www.magnopus.com/blog/gaussiansplats-part-3-theres-always-a-bigger-scene",
       "ts": 1792764441.0,
-      "points": 78,
-      "comments": 17,
+      "points": 85,
+      "comments": 18,
       "author": "ibobev",
       "summary": "",
       "recipe": "hn_front",
-      "buzz": 139,
+      "buzz": 149,
       "topics": [],
       "date": "2026-10-23"
+    },
+    {
+      "uid": "hn:50231649",
+      "source": "hn",
+      "title": "Regent's Ground-Effect Vehicle Reimagines Coastal Travel",
+      "url": "https://spectrum.ieee.org/ground-effect-vehicle",
+      "ts": 1792936567.0,
+      "points": 41,
+      "comments": 32,
+      "author": "rbanffy",
+      "summary": "",
+      "recipe": "hn_front",
+      "buzz": 147,
+      "topics": [],
+      "date": "2026-10-25"
     },
     {
       "uid": "hn:50277755",
@@ -1193,16 +1169,48 @@
       "title": "Spiders Spin 'Silk Dope' into Nature's Toughest Material",
       "url": "https://www.quantamagazine.org/how-spiders-spin-silk-dope-into-natures-toughest-material-20261028/",
       "ts": 1793209524.0,
-      "points": 14,
+      "points": 23,
       "comments": 0,
       "author": "ibobev",
       "summary": "",
       "recipe": "hn_front",
-      "buzz": 94,
+      "buzz": 103,
       "topics": [
         "dev",
         "science"
       ],
+      "date": "2026-10-28"
+    },
+    {
+      "uid": "hn:50247342",
+      "source": "hn",
+      "title": "The tragedy of losing your Wikipedia page",
+      "url": "https://www.wired.com/story/the-tragedy-of-losing-your-wikipedia-page/",
+      "ts": 1793034958.0,
+      "points": 11,
+      "comments": 20,
+      "author": "tptacek",
+      "summary": "",
+      "recipe": "hn_front",
+      "buzz": 101,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-10-26"
+    },
+    {
+      "uid": "hn:50280722",
+      "source": "hn",
+      "title": "The case of the 9 bit AES key",
+      "url": "https://v12.sh/blog/the-case-of-the-9bit-aes-key",
+      "ts": 1793220704.0,
+      "points": 14,
+      "comments": 1,
+      "author": "ledoge",
+      "summary": "",
+      "recipe": "hn_front",
+      "buzz": 97,
+      "topics": [],
       "date": "2026-10-28"
     },
     {
@@ -1220,6 +1228,21 @@
       "topics": [
         "dev"
       ],
+      "date": "2026-10-28"
+    },
+    {
+      "uid": "hn:50278253",
+      "source": "hn",
+      "title": "Scaling Hierarchical Networks",
+      "url": "https://www.cartesia.ai/blog/from-tokens-to-bytes-part-1",
+      "ts": 1793210861.0,
+      "points": 6,
+      "comments": 0,
+      "author": "guybedo",
+      "summary": "",
+      "recipe": "hn_front",
+      "buzz": 86,
+      "topics": [],
       "date": "2026-10-28"
     },
     {
@@ -1241,36 +1264,217 @@
       "date": "2026-10-28"
     },
     {
-      "uid": "hn:50237014",
-      "source": "hn",
-      "title": "Counting Sand Dunes in the Simpson Desert",
-      "url": "https://www.fromtheroad.ford.com/img/en/articles/2026/simpson-desert-ranger-super-duty-counting-dunes",
-      "ts": 1792970298.0,
-      "points": 16,
-      "comments": 2,
-      "author": "bryanrasmussen",
-      "summary": "",
-      "recipe": "hn_front",
-      "buzz": 52,
+      "uid": "rss:ec73b6ea1da7f0",
+      "source": "rss",
+      "title": "Amazon ECS Gateway: managed, shared ingress for ECS services (and the traps to avoid)",
+      "url": "https://dev.to/matias_martinez_185d9e0ee/amazon-ecs-gateway-managed-shared-ingress-for-ecs-services-and-the-traps-to-avoid-4gkj",
+      "ts": 1793223750.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Matias Martinez",
+      "summary": "<p><em>Originally published in Spanish on <a href=\"https://blog.cloudacademy.ar/amazon-ecs-gateway-ingress-administrado-alb-compartido/\" rel=\"noopener noreferrer\">CloudAcademy.ar</a>.</em></p> <p>On October 20, 2026, AWS launched <strong>Amazon ECS Gateway</strong>, an account-level resource that owns ingress for your ECS services. Instead of every service carrying its own Application Load Balance",
+      "recipe": "devto",
+      "buzz": 80,
       "topics": [],
-      "date": "2026-10-25"
+      "date": "2026-10-28"
     },
     {
-      "uid": "hn:50247342",
-      "source": "hn",
-      "title": "The tragedy of losing your Wikipedia page",
-      "url": "https://www.wired.com/story/the-tragedy-of-losing-your-wikipedia-page/",
-      "ts": 1793034958.0,
-      "points": 6,
-      "comments": 2,
-      "author": "tptacek",
-      "summary": "",
-      "recipe": "hn_front",
-      "buzz": 42,
+      "uid": "rss:1cd5f1e8cac82e",
+      "source": "rss",
+      "title": "Brain cells meant to protect us may be fueling cognitive decline",
+      "url": "https://dev.to/ashish_624379625242c5d263/brain-cells-meant-to-protect-us-may-be-fueling-cognitive-decline-1lc7",
+      "ts": 1793223676.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Ashish",
+      "summary": "<h1> VR에서 눈마다 다른 프레임을 렌더링한다는 것 — Amblyotube 사례 </h1> <h2> 배경 </h2> <p>ScienceDaily(2026년 10월)는 보호 세포로 알려진 뇌세포가 비정상적으로 많은 미엘린(myelin)을 생성해 신경 섬유를 방해하고 인지 저하에 기여할 수 있다는 연구를 보도했습니다. 신경 회로는 고정되어 있지 않고, 잘못된 방향으로 최적화될 수 있다는 이야기입니다.</p> <p>이 글은 같은 원리를 시각 처리에 적용한 Meta Quest 앱, Amblyotube(Seven Sports)의 기술적 접근을 정리한 것입니다. 요약하면, 이 앱은 게임 엔진의 스테레오 파이프라인을 \"두 눈에 동일한 이미지\"라는 전제에서 벗어나게 만들어, 눈마다 다른 후처리 체인을 태우는 실험입니다",
+      "recipe": "devto",
+      "buzz": 80,
       "topics": [
         "ai"
       ],
-      "date": "2026-10-26"
+      "date": "2026-10-28"
+    },
+    {
+      "uid": "rss:1ea7cb91a9e5b7",
+      "source": "rss",
+      "title": "Implement Server-Side Logging for Node.js REST APIs: A 3-Layer Healthtech Design",
+      "url": "https://dev.to/aldencross6847/implement-server-side-logging-for-nodejs-rest-apis-a-3-layer-healthtech-design-3g8",
+      "ts": 1793223573.0,
+      "points": 0,
+      "comments": 0,
+      "author": "AldenCross6847",
+      "summary": "<p>The best way to implement server-side logging for a Node.js notification service is to emit structured JSON at the application boundary, add HTTP request context in middleware, and ship a deliberately retained subset to a centralized log system. Winston or Bunyan can produce the events; Morgan or a small custom handler can describe the request; a centralized system makes the timeline searchable",
+      "recipe": "devto",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "hardware"
+      ],
+      "date": "2026-10-28"
+    },
+    {
+      "uid": "rss:ffd9de584c70af",
+      "source": "rss",
+      "title": "Zeen: A New Systems Programming Language with a Comptime Engine",
+      "url": "https://dev.to/mealet/zeen-a-new-systems-programming-language-with-a-comptime-engine-33om",
+      "ts": 1793223316.0,
+      "points": 0,
+      "comments": 0,
+      "author": "mealet",
+      "summary": "<p>Website: <a href=\"https://zeen-lang.tech\" rel=\"noopener noreferrer\">zeen-lang.tech</a><br> Github: <a href=\"https://github.com/mealet/zeen\" rel=\"noopener noreferrer\">mealet/zeen</a></p> <p><em>(Would appreciate if you'd leave a star on Github)</em></p> <h2> What is Zeen </h2> <p><strong>Zeen</strong> - a modern systems programming language designed for simplicity, safety, and predictable contro",
+      "recipe": "devto",
+      "buzz": 80,
+      "topics": [
+        "dev"
+      ],
+      "date": "2026-10-28"
+    },
+    {
+      "uid": "rss:1bf97a3aa82f6f",
+      "source": "rss",
+      "title": "Unlimited-OCR 2 on a 16 GB GPU: it reads as well as Chandra 2, but it is not unlimited",
+      "url": "https://dev.to/efraingaray/unlimited-ocr-2-on-a-16-gb-gpu-it-reads-as-well-as-chandra-2-but-it-is-not-unlimited-34bb",
+      "ts": 1793223253.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Efrain Garay",
+      "summary": "<p>On October 27 Baidu released Unlimited-OCR 2: 3.3B parameters, MIT license, and a promise that its sparse attention keeps \"per-step decoding latency and memory footprint nearly constant regardless of document length\". That night I ran it on a 16 GB RTX 4070 Ti SUPER against what I actually used for huge PDFs (Datalab's Marker and Chandra 2, locally), DeepSeek-OCR, Unlimited-OCR 1 and Tesseract,",
+      "recipe": "devto",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "hardware"
+      ],
+      "date": "2026-10-28"
+    },
+    {
+      "uid": "rss:a24adae1220dbc",
+      "source": "rss",
+      "title": "AI Is Changing What It Means to Be a Good Frontend Engineer",
+      "url": "https://dev.to/christoph_codes/ai-is-changing-what-it-means-to-be-a-good-frontend-engineer-59h9",
+      "ts": 1793223189.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Christopher Codes",
+      "summary": "<p>For a long time, being a good frontend engineer meant being really good at writing code. You needed to understand JavaScript, know your frameworks, write clean components, and be able to solve problems without constantly looking things up.</p> <p>Those things still matter, but I think AI is forcing us to rethink what actually makes an engineer valuable.</p> <p>We are entering a time where writi",
+      "recipe": "devto",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev"
+      ],
+      "date": "2026-10-28"
+    },
+    {
+      "uid": "rss:4d8312448816ae",
+      "source": "rss",
+      "title": "[Boost]",
+      "url": "https://dev.to/gitby/-3ab5",
+      "ts": 1793223185.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Gitby",
+      "summary": "<div class=\"ltag__link--embedded\"> <div class=\"crayons-story \"> <a href=\"https://dev.to/gitby/prevent-git-merge-conflicts-by-claiming-files-before-you-edit-them-3i25\" class=\"crayons-story__hidden-navigation-link\">Prevent Git merge conflicts by claiming files before you edit them</a> <div class=\"crayons-story__body crayons-story__body-full_post\"> <div class=\"crayons-story__top\"> <div class=\"crayons",
+      "recipe": "devto",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev"
+      ],
+      "date": "2026-10-28"
+    },
+    {
+      "uid": "rss:e62207955db08d",
+      "source": "rss",
+      "title": "38 Real-World AI Evaluation & Data Annotation Tasks: Open-Source GitHub Projects for AI Engineers and Developers",
+      "url": "https://dev.to/helexdev/38-real-world-ai-evaluation-data-annotation-tasks-open-source-github-projects-for-ai-engineers-4i62",
+      "ts": 1793223140.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Jie Hong",
+      "summary": "<p>Hello DEV Community! 👋</p> <p>I'm <strong>Helex</strong>, a Senior AI Engineer and Full-Stack Developer with experience working with <strong>AfterQuery Experts</strong>.</p> <p>I want to share some of my public GitHub repositories with fellow AI trainers, data annotation specialists, and software engineers working on AI training and evaluation.</p> <p>Over time, I've built a collection of <stro",
+      "recipe": "devto",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "biz"
+      ],
+      "date": "2026-10-28"
+    },
+    {
+      "uid": "rss:55d590bbe616a8",
+      "source": "rss",
+      "title": "CVE-2026-118254: CVE-2026-118254: DOM-based Cross-Site Scripting in Highcharts Grid Pagination Module",
+      "url": "https://dev.to/cverports/cve-2026-118254-cve-2026-118254-dom-based-cross-site-scripting-in-highcharts-grid-pagination-3dj2",
+      "ts": 1793223049.0,
+      "points": 0,
+      "comments": 0,
+      "author": "CVE Reports",
+      "summary": "<h1> CVE-[phone]: DOM-based Cross-Site Scripting in Highcharts Grid Pagination Module </h1> <blockquote> <p><strong>Vulnerability ID:</strong> CVE-[phone]<br> <strong>CVSS Score:</strong> 8.6<br> <strong>Published:</strong> 2026-10-28</p> </blockquote> <p>CVE-[phone] (GHSA-r5wg-q8fc-p6w2) is a high-severity DOM-based Cross-Site Scripting (DOM XSS) vulnerability in the pagination module",
+      "recipe": "devto",
+      "buzz": 80,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-10-28"
+    },
+    {
+      "uid": "rss:ca8bb9282e712d",
+      "source": "rss",
+      "title": "Connecting your SPA's client state to WebMCP: reactive hooks and stores",
+      "url": "https://dev.to/khriztianmoreno/connecting-your-spas-client-state-to-webmcp-reactive-hooks-and-stores-21ka",
+      "ts": 1793223000.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Khriztian Moreno",
+      "summary": "<p>In the <a href=\"https://dev.to/khriztianmoreno/webmcp-why-agents-shouldnt-have-to-guess-how-your-ui-works-1af1\">first post in this series</a>, the tools were registered once, at page load, against a store written in vanilla JavaScript. In the <a href=\"https://dev.to/khriztianmoreno/semantic-markup-for-ai-turn-your-forms-into-webmcp-tools-without-javascript-1nod\">second</a>, there wasn't even an",
+      "recipe": "devto",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev"
+      ],
+      "date": "2026-10-28"
+    },
+    {
+      "uid": "rss:5c891b829d4cb5",
+      "source": "rss",
+      "title": "I built a free printable puzzle generator for classrooms and KDP",
+      "url": "https://dev.to/julia_13fbcc5fdf8591e4a42/i-built-a-free-printable-puzzle-generator-for-classrooms-and-kdp-2ejj",
+      "ts": 1793222908.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Julia",
+      "summary": "<p>I built PuzzleGenerator, a free web toolkit for creating printable puzzle worksheets.</p> <p>It supports Sudoku, word search, crosswords, mazes, cryptograms and other puzzle types, with custom layouts, answer keys, and PDF/PNG/SVG export. Teachers can make classroom activities, and self-publishers can prepare puzzle interiors for KDP.</p> <p>The project is available at <a href=\"https://puzzlege",
+      "recipe": "devto",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "crypto",
+        "science"
+      ],
+      "date": "2026-10-28"
+    },
+    {
+      "uid": "rss:1729a6f0bac5e8",
+      "source": "rss",
+      "title": "XREAL Announces ‘1 Pro+’ Flagship AR Glasses, Now Available & Priced at $599",
+      "url": "https://dev.to/ashish_624379625242c5d263/xreal-announces-1-pro-flagship-ar-glasses-now-available-priced-at-599-1fg5",
+      "ts": 1793222829.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Ashish",
+      "summary": "<h1> XREALが発表した新ARヘッドセット『1 Pro+』は、$599で手軽に高画質・空間視覚を楽しめる製品です。このスピード感とコストパフォーマンスは、VRとARの境界を曖昧に... </h1> <p>視覚の再定義：XREALの衝撃と Amblyotube が導くVRトレーニングの未来</p> <p>テクノロジーが私たちの「見え方」を定義する時代がやってきました。最近、XREALが発表した新ARヘッドセット『1 Pro+』は、$599という驚異的なコストパフォーマンスで、高画質なディスプレイと進化した空間視覚を提供しています。このスピード感のある進化は、VRとARの境界を曖昧にし、業界のあり方そのものを再定義しています。</p> <p>しかし、こうしたハードウェアの進化がもたらす真の価値は、単なる没入感の向上ではありません。その潜在能力を最大限に引き出し、身体的な課題を解決へと導く",
+      "recipe": "devto",
+      "buzz": 80,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-10-28"
     },
     {
       "uid": "hn:50238637",
@@ -1278,12 +1482,12 @@
       "title": "Oseberg Tapestry Fragments",
       "url": "https://en.wikipedia.org/wiki/Oseberg_tapestry_fragments",
       "ts": 1792984489.0,
-      "points": 6,
+      "points": 9,
       "comments": 0,
       "author": "benbreen",
       "summary": "",
       "recipe": "hn_front",
-      "buzz": 36,
+      "buzz": 39,
       "topics": [
         "ai"
       ],
@@ -2389,6 +2593,21 @@
         "hardware"
       ],
       "date": "2026-10-27"
+    },
+    {
+      "uid": "hn:50224482",
+      "source": "hn",
+      "title": "The Style Is Father of the Man",
+      "url": "https://harpers.org/archive/2026/11/benjamin-kunkel-reviews-cormac-mccarthy-legacy-revisted/",
+      "ts": 1792871327.0,
+      "points": 7,
+      "comments": 2,
+      "author": "lermontov",
+      "summary": "",
+      "recipe": "hn_front",
+      "buzz": 23,
+      "topics": [],
+      "date": "2026-10-24"
     }
   ]
 }
