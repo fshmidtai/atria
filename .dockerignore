@@ -1,0 +1,13 @@
+# Никогда не попадает в Docker-образ улья:
+# .env             — секреты staged на хосте, образ не должен их хранить
+# .git/            — история и (потенциально) токены в remote-urls
+# storage/atria.db — состояние живёт в volume, не в образе
+# dist-ы и storage — prod-артефакты пересобираются внутри контейнера
+.env
+.git
+.gitignore
+storage
+**/dist
+**/__pycache__
+*.pyc
+.venv

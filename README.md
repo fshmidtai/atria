@@ -31,10 +31,9 @@ atria/
 │   ├── soak.py                  # N тиков офлайн — то, что проявляется только во времени
 │   ├── qa.py                    # QA-ген: 10 проверок готового сайта колонии
 │   └── qa_gate.py               # CI-вердикт: err>0 → джоба краснеет
-├── infra/
-│   ├── github-actions/          # cron-пульс роя (2000 бесплатных минут/мес)
-│   ├── oracle/docker-compose    # «улей» на Oracle Always Free ARM 4×24 ГБ
-│   └── space/                   # пульт-дашборд (HuggingFace Space, Gradio)
+├── .github/workflows/hive-tick.yml  # cron-пульс роя (2000 бесплатных минут/мес)
+├── infra/oracle/docker-compose     # «улей» на Oracle Always Free ARM 4×24 ГБ
+├── infra/space/                    # пульт-дашборд (HuggingFace Space, Gradio)
 └── storage/                     # БД (в git не коммитится) + снимки/метрики/продукты (коммитятся)
 ```
 
