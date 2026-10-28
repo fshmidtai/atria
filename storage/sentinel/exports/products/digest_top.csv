@@ -8,12 +8,12 @@ hn:43128253,hn,Apple pulls data protection tool after UK government security row
 hn:39452494,hn,"Insecure vehicles should be banned, not security tools like the Flipper Zero",https://saveflipper.ca/,4130,2024-02-21,security
 hn:30051054,hn,Ask HN: Gmail account security,https://news.ycombinator.com/item?id=30051054,3830,2022-01-23,ai|dev|security
 hn:25729088,hn,"70TB of Parler users’ messages, videos, and posts leaked by security researchers",https://cybernews.com/news/70tb-of-parler-users-messages-videos-and-posts-leaked-by-security-researchers/,3745,2021-01-11,dev|security
+cve:GHSA-3f7j-7jwc-fxfj,cve,CVE-2026-116576: systeminformation vulnerable to Windows command injection in services() through Unicode quotation marks,https://github.com/advisories/GHSA-3f7j-7jwc-fxfj,3580,2026-10-28,science|security
 cve:GHSA-97r2-qh9m-474h,cve,CVE-2026-116581: Seroval: fromJSON deserializer trusts node-supplied array length and sequence doneAt (unauthenticated event-loop DoS),https://github.com/advisories/GHSA-97r2-qh9m-474h,3580,2026-10-28,dev|security
 cve:GHSA-wp97-x4hv-qvhp,cve,CVE-2026-116584: Seroval `fromJSON`/`fromCrossJSON` denial of service via unvalidated array node length,https://github.com/advisories/GHSA-wp97-x4hv-qvhp,3580,2026-10-28,security
 cve:GHSA-7rv5-mrxv-xcr9,cve,CVE-2026-116580: Seroval: Deserialization invokes attacker-chosen callables: AsyncIteratorFactoryInstance calls source.on(listener) without type check,https://github.com/advisories/GHSA-7rv5-mrxv-xcr9,3580,2026-10-28,security
 cve:GHSA-h3rc-j82p-2c3h,cve,CVE-2026-115915: vLLM: Untrusted EPS inputs can trigger denial of service or Ghostscript RCE,https://github.com/advisories/GHSA-h3rc-j82p-2c3h,3580,2026-10-28,ai|dev|security
 cve:GHSA-6757-hggm-hp2w,cve,CVE-2026-115912: vLLM: Public multimodal SHM handle forgery reaches worker-side `pickle.loads()` with insecure serialization disabled,https://github.com/advisories/GHSA-6757-hggm-hp2w,3580,2026-10-28,ai|dev|security
-cve:GHSA-x8rm-f576-gq67,cve,CVE-2026-115887: graphql-scalars PhoneNumber scalar is vulnerable to regular expression denial of service,https://github.com/advisories/GHSA-x8rm-f576-gq67,3580,2026-10-28,ai|dev|security
 hn:50172041,hn,"Security advisory: Critical remote code execution vulnerabilities, update now",https://www.php.net/archive/2026.php#2026-10-21-5,3538,2026-10-20,security
 hn:32148218,hn,FCC: TikTok is unacceptable security risk and should be removed from app stores,https://blog.malwarebytes.com/privacy-2/2022/07/tiktok-is-unacceptable-security-risk-and-should-be-removed-from-app-stores-says-fcc/,3376,2022-07-19,security
 hn:41392128,hn,Bypassing airport security via SQL injection,https://ian.sh/tsa,3324,2024-08-29,ai|security
@@ -32,6 +32,10 @@ hn:23180975,hn,Security Flaws in Adobe Acrobat Reader Allow Gaining Root on macO
 hn:50182987,hn,"Today's PHP security release, and how we're strengthening security",https://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security/,2028,2026-10-21,security
 hn:17592422,hn,Google: Security Keys Neutralized Employee Phishing,https://krebsonsecurity.com/2018/07/google-security-keys-neutered-employee-phishing/,2002,2018-07-23,security
 hn:24636166,hn,Apple’s T2 security chip jailbreak,https://reportcybercrime.com/hackers-jailbreak-apples-t2-security-chip-powered-by-bridgeos/,1881,2020-09-30,ai|security|hardware
+cve:GHSA-r4j5-9xpp-3985,cve,CVE-2026-115927: Tornado: Event loop blocking and excess memory use from chunked bodies with many small chunks,https://github.com/advisories/GHSA-r4j5-9xpp-3985,1880,2026-10-28,dev|security
+cve:GHSA-pcg2-g6cj-q92c,cve,CVE-2026-116577: Tornado: Quadratic CPU usage when parsing HTTP headers with line folding,https://github.com/advisories/GHSA-pcg2-g6cj-q92c,1880,2026-10-28,security|hardware
+cve:GHSA-pq4g-8rxf-4g29,cve,CVE-2026-116695: Crass: Incorrect tokenization of bad URLs enables CSS sanitizer bypass,https://github.com/advisories/GHSA-pq4g-8rxf-4g29,1880,2026-10-28,dev|crypto|security
+cve:GHSA-w658-mh9p-ww8f,cve,CVE-2026-115923: Backstage catalog rules can be bypassed for URL locations using encoded path segments,https://github.com/advisories/GHSA-w658-mh9p-ww8f,1880,2026-10-28,ai|security
 cve:GHSA-2hw4-c9m4-f2fj,cve,GHSA-2hw4-c9m4-f2fj: knative.dev/pkg admission webhooks allow unbounded request-body memory exhaustion,https://github.com/advisories/GHSA-2hw4-c9m4-f2fj,1880,2026-10-28,ai|dev
 cve:GHSA-jf75-q64q-g65r,cve,GHSA-jf75-q64q-g65r: Waline login accepts a non-string email as a match-all MongoDB query,https://github.com/advisories/GHSA-jf75-q64q-g65r,1880,2026-10-28,ai|dev|crypto
 cve:GHSA-f86p-h4j2-7qgj,cve,CVE-2026-116583: Seroval: Code injection through a typed array's own constructor property,https://github.com/advisories/GHSA-f86p-h4j2-7qgj,1880,2026-10-28,dev|security
@@ -45,7 +49,3 @@ cve:GHSA-48m4-24cq-37qf,cve,"CVE-2026-115919: ONNX: Out-of-Bounds Read in RNN/GR
 cve:GHSA-8397-8qf6-f2gm,cve,CVE-2026-115913: vLLM: Phi-4 multimodal audio encoder materializes and retains full attention matrices: a single max-length audio OOM-crashes the vLLM engine,https://github.com/advisories/GHSA-8397-8qf6-f2gm,1880,2026-10-28,ai|science|security
 cve:GHSA-gq5q-89c7-vhvx,cve,CVE-2026-115914: vLLM DeepSeek-OCR image processing vulnerable to denial of service,https://github.com/advisories/GHSA-gq5q-89c7-vhvx,1880,2026-10-28,ai|security
 cve:GHSA-q97c-p368-75c4,cve,CVE-2026-115916: vLLM: Out-of-vocabulary prompt token id passes input validation and triggers a CUDA device-side assert (engine crash / DoS),https://github.com/advisories/GHSA-q97c-p368-75c4,1880,2026-10-28,ai|dev|crypto|security
-cve:GHSA-x567-49g5-p4cf,cve,CVE-2026-115918: vLLM: Responses API bypasses trust_request_chat_template for chat_template_kwargs,https://github.com/advisories/GHSA-x567-49g5-p4cf,1880,2026-10-28,ai|dev|crypto|security|hardware
-cve:GHSA-542m-9234-8gvf,cve,CVE-2026-115911: vLLM: DoS via unbounded chat_template Jinja2 rendering exhausts the renderer thread pool,https://github.com/advisories/GHSA-542m-9234-8gvf,1880,2026-10-28,ai|crypto|security
-cve:GHSA-vvm8-gf78-28g4,cve,CVE-2026-116586: Go JOSE: Panics in JSON parsing,https://github.com/advisories/GHSA-vvm8-gf78-28g4,1880,2026-10-28,dev|security
-cve:GHSA-4w3g-jfj2-cw2q,cve,CVE-2026-116585: Go JOSE: Panic during CBC-HMAC processing,https://github.com/advisories/GHSA-4w3g-jfj2-cw2q,1880,2026-10-28,ai|dev|security

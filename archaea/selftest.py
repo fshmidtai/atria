@@ -239,6 +239,25 @@ def test_sitegen_render():
         check("sitegen: блок 'Ещё по теме'", "Ещё по теме" in txt)
         check("sitegen: Article JSON-LD", '"@type": "Article"' in txt)
 
+    # EN-локаль: та же кодовая база, другой языковой рынок (programmatic SEO)
+    import copy
+    cfg_en = copy.deepcopy(cfg)
+    cfg_en["site"]["lang"] = "en"
+    out_en = sitegen.generate(snap, tmp / "dist_en", cfg_en)
+    en_root = Path(out_en["outdir"])
+    idx_en = (en_root / "index.html").read_text(encoding="utf-8")
+    check("sitegen: EN — lang атрибут", '<html lang="en">' in idx_en)
+    topic_en = (en_root / "topics" / "ai.html").read_text(encoding="utf-8")
+    check("sitegen: EN-копии на месте",
+          "Trending now" in idx_en and "Topic ai: fresh posts" in topic_en)
+    item_en = (en_root / "item" / "alpha-topic.html").read_text(encoding="utf-8")
+    check("sitegen: EN item-страница", "Read the source →" in item_en and "More on the topic" in item_en)
+    check("sitegen: EN и RU не смешиваются", "Что вспыхнуло" not in idx_en and "к ленте" not in item_en)
+    feed_en = (en_root / "feed.xml").read_text(encoding="utf-8")
+    check("sitegen: EN feed language", "<language>en</language>" in feed_en)
+    qa_en = qa.audit_site(en_root, base_url="https://t.example")
+    check("sitegen: EN-сайт проходит QA", qa_en["errors"] == 0, qa.summarize(qa_en))
+
 
 # ---------------------------------------------------------------- QA-ген
 def test_qa_clean():
@@ -333,18 +352,39 @@ def test_space_console():
     check("пульт: refresh без metrics — понятная ошибка",
           "metrics.json" in md and "⚠️" in md, md[:70])
 
+    # фикстура вместо живого metrics.json: тест не должен зависеть от того,
+    # прошёл последний цикл улья успешно или нет
+    fixture = {
+        "tick": 7, "elapsed_s": 3.0,
+        "agents": [{"name": "radar", "role": "scout", "colony": "core", "status": "active"}],
+        "budget": {"spent_u": 6200, "revenue_u": 0},
+        "tasks": {"done": 10, "failed": 0},
+        "colonies": {
+            "alpha": {
+                "site": {"title": "Alpha Radar", "base_url": "https://a.example"},
+                "qa": "QA ok:8 warn:0 err:0", "pages": 70,
+                "totals": {"items": 5, "by_source": {"hn": 5}},
+                "products": {"cve_digest.csv": {"rows": 7}, "trend_index.csv": {"rows": 3}},
+                "top_items": [{"title": "Hello", "source": "hn", "buzz": 10, "topics": ["ai"]}],
+            },
+            "beta": {
+                "site": {"title": "Beta Post", "base_url": "https://b.example"},
+                "qa": "QA ok:6 warn:0 err:2", "pages": 40,
+                "totals": {"items": 3, "by_source": {"cve": 3}},
+                "products": {},
+                "top_items": [],
+            },
+        },
+    }
     tmp = Path(tempfile.mkdtemp())
-    (tmp / "metrics.json").write_text(
-        (ROOT / "storage" / "metrics.json").read_text(encoding="utf-8"),
-        encoding="utf-8",
-    )
+    (tmp / "metrics.json").write_text(json.dumps(fixture, ensure_ascii=False),
+                                      encoding="utf-8")
     app.METRICS_LOCAL = tmp / "metrics.json"
     md, rows, hist, raw = app.refresh()
-    check("пульт: карточки колоний собрались",
-          "phosphor" in md and "sentinel" in md and "vesper" in md, md[:80])
-    check("пульт: QA-отметки в карточках", "✅" in md)
+    check("пульт: карточки колоний собрались", "alpha" in md and "beta" in md)
+    check("пульт: QA-отметки в карточках", "✅" in md and "❌" in md)
     check("пульт: дата-продукты в карточках", "cve_digest.csv" in md)
-    check("пульт: топ-предметы собрались", len(rows) > 0, str(len(rows)))
+    check("пульт: топ-предметы собрались", len(rows) == 1, str(len(rows)))
 
 
 # ---------------------------------------------------------------- core

@@ -1,12 +1,16 @@
 cve_id,severity,package,title,url,date
 CVE-2026-117601,critical,electrum,CVE-2026-117601: Electrum: Malicious server can replace a just-broadcast tx and try to trick user into RBF-ing it,https://github.com/advisories/GHSA-6jp4-8v48-cc5v,2026-10-28
 CVE-2026-115893,critical,wasmtime,CVE-2026-115893: Wasmtime: Cranelift backend on aarch64 can jump to incorrect target on large Wasm `br_table` instruction,https://github.com/advisories/GHSA-mghf-wjfp-p5xm,2026-10-28
+CVE-2026-116576,high,systeminformation,CVE-2026-116576: systeminformation vulnerable to Windows command injection in services() through Unicode quotation marks,https://github.com/advisories/GHSA-3f7j-7jwc-fxfj,2026-10-28
 CVE-2026-116581,high,seroval,CVE-2026-116581: Seroval: fromJSON deserializer trusts node-supplied array length and sequence doneAt (unauthenticated event-loop DoS),https://github.com/advisories/GHSA-97r2-qh9m-474h,2026-10-28
 CVE-2026-116584,high,seroval,CVE-2026-116584: Seroval `fromJSON`/`fromCrossJSON` denial of service via unvalidated array node length,https://github.com/advisories/GHSA-wp97-x4hv-qvhp,2026-10-28
 CVE-2026-116580,high,seroval,CVE-2026-116580: Seroval: Deserialization invokes attacker-chosen callables: AsyncIteratorFactoryInstance calls source.on(listener) without type check,https://github.com/advisories/GHSA-7rv5-mrxv-xcr9,2026-10-28
 CVE-2026-115915,high,vllm,CVE-2026-115915: vLLM: Untrusted EPS inputs can trigger denial of service or Ghostscript RCE,https://github.com/advisories/GHSA-h3rc-j82p-2c3h,2026-10-28
 CVE-2026-115912,high,vllm,CVE-2026-115912: vLLM: Public multimodal SHM handle forgery reaches worker-side `pickle.loads()` with insecure serialization disabled,https://github.com/advisories/GHSA-6757-hggm-hp2w,2026-10-28
-CVE-2026-115887,high,graphql-scalars,CVE-2026-115887: graphql-scalars PhoneNumber scalar is vulnerable to regular expression denial of service,https://github.com/advisories/GHSA-x8rm-f576-gq67,2026-10-28
+CVE-2026-115927,medium,tornado,CVE-2026-115927: Tornado: Event loop blocking and excess memory use from chunked bodies with many small chunks,https://github.com/advisories/GHSA-r4j5-9xpp-3985,2026-10-28
+CVE-2026-116577,medium,tornado,CVE-2026-116577: Tornado: Quadratic CPU usage when parsing HTTP headers with line folding,https://github.com/advisories/GHSA-pcg2-g6cj-q92c,2026-10-28
+CVE-2026-116695,medium,crass,CVE-2026-116695: Crass: Incorrect tokenization of bad URLs enables CSS sanitizer bypass,https://github.com/advisories/GHSA-pq4g-8rxf-4g29,2026-10-28
+CVE-2026-115923,medium,@backstage/plugin-catalog-backend,CVE-2026-115923: Backstage catalog rules can be bypassed for URL locations using encoded path segments,https://github.com/advisories/GHSA-w658-mh9p-ww8f,2026-10-28
 GHSA-2hw4-c9m4-f2fj,medium,knative.dev/pkg,GHSA-2hw4-c9m4-f2fj: knative.dev/pkg admission webhooks allow unbounded request-body memory exhaustion,https://github.com/advisories/GHSA-2hw4-c9m4-f2fj,2026-10-28
 GHSA-jf75-q64q-g65r,medium,@waline/vercel,GHSA-jf75-q64q-g65r: Waline login accepts a non-string email as a match-all MongoDB query,https://github.com/advisories/GHSA-jf75-q64q-g65r,2026-10-28
 CVE-2026-116583,medium,seroval,CVE-2026-116583: Seroval: Code injection through a typed array's own constructor property,https://github.com/advisories/GHSA-f86p-h4j2-7qgj,2026-10-28
@@ -23,9 +27,5 @@ CVE-2026-115916,medium,vllm,CVE-2026-115916: vLLM: Out-of-vocabulary prompt toke
 CVE-2026-115918,medium,vllm,CVE-2026-115918: vLLM: Responses API bypasses trust_request_chat_template for chat_template_kwargs,https://github.com/advisories/GHSA-x567-49g5-p4cf,2026-10-28
 CVE-2026-115911,medium,vllm,CVE-2026-115911: vLLM: DoS via unbounded chat_template Jinja2 rendering exhausts the renderer thread pool,https://github.com/advisories/GHSA-542m-9234-8gvf,2026-10-28
 CVE-2026-116586,medium,github.com/go-jose/go-jose/v4,CVE-2026-116586: Go JOSE: Panics in JSON parsing,https://github.com/advisories/GHSA-vvm8-gf78-28g4,2026-10-28
-CVE-2026-116585,medium,github.com/go-jose/go-jose/v4,CVE-2026-116585: Go JOSE: Panic during CBC-HMAC processing,https://github.com/advisories/GHSA-4w3g-jfj2-cw2q,2026-10-28
-CVE-2026-116674,medium,systeminformation,CVE-2026-116674: systeminformation has prototype pollution in `networkStats()` via the interface name,https://github.com/advisories/GHSA-7648-jmwf-vw7j,2026-10-28
-CVE-2026-115885,medium,langgraph-cli,CVE-2026-115885: LangGraph CLI prints the registry push token in `langgraph deploy --verbose` output,https://github.com/advisories/GHSA-8prr-f582-jqq3,2026-10-28
-CVE-2026-116579,medium,autobahn,CVE-2026-116579: Autobahn Python: permessage-brotli inflates a whole frame before maxMessagePayloadSize is checked (incomplete fix of GHSA-hxp9-w8x3-p566),https://github.com/advisories/GHSA-pjh6-c8mg-3x7m,2026-10-28
+CVE-2026-116578,low,tornado,CVE-2026-116578: Tornado: Open redirect in RedirectHandler via protocol-relative URLs,https://github.com/advisories/GHSA-pw9p-v7r6-gx4p,2026-10-28
 CVE-2026-115917,low,vllm,CVE-2026-115917: vLLM: Permissive default CORS origins allow cross-origin requests to the vLLM HTTP server,https://github.com/advisories/GHSA-vvpg-rrww-wpmh,2026-10-28
-CVE-2026-116673,low,systeminformation,CVE-2026-116673: systeminformation has path traversal in Linux networkStats() that allows symlink-based file disclosure outside /sys/class/net,https://github.com/advisories/GHSA-4vjg-vx72-qq4g,2026-10-28

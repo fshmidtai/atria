@@ -73,6 +73,92 @@ def _esc(s: str) -> str:
     return html.escape(str(s), quote=True)
 
 
+# ------------------------------------------------------------------ i18n
+# Копи-таблица: одна кодовая база — любые локали. lang берётся из config
+# колонии, EN-колония рождается без единой строчки кода (programmatic SEO:
+# та же дата, другой языковой рынок).
+COPY = {
+    "ru": {
+        "nav_feed": "Лента", "nav_topics": "Темы", "nav_data": "Данные",
+        "nav_about": "О проекте",
+        "intro": "Автоматический радар: публичные потоки — что набирает резонанс "
+                 "прямо сейчас. Обновляется каждые 6 часов без участия человека.",
+        "hot": "Что вспыхнуло",
+        "st_items": "публикаций в снимке", "st_sources": "источников",
+        "st_topics": "тем", "st_shot": "снимок от",
+        "th_title": "Заголовок", "th_source": "Источник",
+        "topic_meta": "Тема {topic}: свежие публикации и тренды",
+        "topic_n": "{n} публикаций в последнем снимке роя.",
+        "back_topics": "← ко всем темам",
+        "related": "Ещё по теме",
+        "pts": "{p} поинтов / {c} комментариев",
+        "read_source": "Читать первоисточник →", "back_feed": "← к ленте",
+        "data_h": "Данные снимка",
+        "data_p": "Анатомия последнего цикла сбора: источники, темы, домены. Полный "
+                  "датасет публикуется на HuggingFace и обновляется каждые 6 часов.",
+        "topics_h": "Темы", "th_topic": "тема", "th_count": "публикаций",
+        "domains_h": "Топ доменов", "th_domain": "домен", "th_mentions": "упоминаний",
+        "data_title": "Данные — {title}",
+        "data_desc": "Статистика и структура данных снимка",
+        "about_h": "О проекте",
+        "about_p1": "<b>{title}</b> — полностью автономное издание. Его собирает "
+                    "мультиагентная система <b>Атрия</b>: агенты-«разведчики» тянут "
+                    "потоки из публичных источников, очищают, считают «базз»-скоринг "
+                    "и генерируют эту страницу.",
+        "about_p2": "Ни одного ручного действия: код живёт в git, пульс приходит по "
+                    "cron, хостинг — Cloudflare, датасеты — HuggingFace.",
+        "contact": "Связь:",
+        "about_title": "О проекте — {title}",
+        "about_desc": "Об автономном издании и рое Атрия",
+        "footer": "Собрано и обновлено автономно роем <b>Атрия</b> · данные из "
+                  "публичных источников",
+    },
+    "en": {
+        "nav_feed": "Feed", "nav_topics": "Topics", "nav_data": "Data",
+        "nav_about": "About",
+        "intro": "An autonomous radar of public streams — what is gaining resonance "
+                 "right now. Updated every 6 hours, no human in the loop.",
+        "hot": "Trending now",
+        "st_items": "items in snapshot", "st_sources": "sources",
+        "st_topics": "topics", "st_shot": "snapshot of",
+        "th_title": "Title", "th_source": "Source",
+        "topic_meta": "Topic {topic}: fresh posts and trends",
+        "topic_n": "{n} posts in the colony's latest snapshot.",
+        "back_topics": "← all topics",
+        "related": "More on the topic",
+        "pts": "{p} points / {c} comments",
+        "read_source": "Read the source →", "back_feed": "← back to feed",
+        "data_h": "Snapshot data",
+        "data_p": "Anatomy of the latest crawl: sources, topics, domains. The full "
+                  "dataset is published on HuggingFace and updated every 6 hours.",
+        "topics_h": "Topics", "th_topic": "topic", "th_count": "posts",
+        "domains_h": "Top domains", "th_domain": "domain", "th_mentions": "mentions",
+        "data_title": "Data — {title}",
+        "data_desc": "Statistics and structure of the snapshot",
+        "about_h": "About",
+        "about_p1": "<b>{title}</b> is a fully autonomous publication. It is built "
+                    "by the <b>Atria</b> multi-agent system: scout agents pull "
+                    "streams from public sources, clean them, score the buzz and "
+                    "render this page.",
+        "about_p2": "Zero manual actions: the code lives in git, the pulse comes "
+                    "from cron, hosting is Cloudflare, datasets are on HuggingFace.",
+        "contact": "Contact:",
+        "about_title": "About — {title}",
+        "about_desc": "About the autonomous publication and the Atria swarm",
+        "footer": "Built and updated autonomously by the <b>Atria</b> swarm · data "
+                  "from public sources",
+    },
+}
+
+
+def _lang(site: dict) -> str:
+    return site.get("lang", "ru")
+
+
+def _L(site: dict) -> dict:
+    return COPY.get(_lang(site), COPY["ru"])
+
+
 def _slug(s: str) -> str:
     s = re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-")
     s = s.strip("-")[:64]
@@ -80,7 +166,8 @@ def _slug(s: str) -> str:
 
 
 def _page(body: str, title: str, description: str, base_url: str, path: str,
-          jsonld: str = "", feed_title: str = "") -> str:
+          jsonld: str = "", feed_title: str = "", lang: str = "ru") -> str:
+    L = COPY.get(lang, COPY["ru"])
     canonical = f"{base_url}/{path}" if path else base_url
     feed = (
         f'<link rel="alternate" type="application/rss+xml" '
@@ -95,8 +182,9 @@ def _page(body: str, title: str, description: str, base_url: str, path: str,
             "name": feed_title,
             "url": base_url,
         }, ensure_ascii=False)
+    footer_ts = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     return f"""<!DOCTYPE html>
-<html lang="ru">
+<html lang="{lang}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -110,8 +198,7 @@ def _page(body: str, title: str, description: str, base_url: str, path: str,
 <body>
 <div class="wrap">
 {body}
-<footer>Собрано и обновлено автономно роем <b>Атрия</b> · данные из публичных
-источников · {datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")}</footer>
+<footer>{L["footer"]} · {footer_ts}</footer>
 </div>
 </body>
 </html>
@@ -119,13 +206,14 @@ def _page(body: str, title: str, description: str, base_url: str, path: str,
 
 
 def _header(site: dict) -> str:
+    L = _L(site)
     return f"""<header>
   <a class="brand" href="/">{_esc(site["title"])}</a>
   <nav>
-    <a href="/">Лента</a>
-    <a href="/topics/">Темы</a>
-    <a href="/data.html">Данные</a>
-    <a href="/about.html">О проекте</a>
+    <a href="/">{L["nav_feed"]}</a>
+    <a href="/topics/">{L["nav_topics"]}</a>
+    <a href="/data.html">{L["nav_data"]}</a>
+    <a href="/about.html">{L["nav_about"]}</a>
   </nav>
 </header>"""
 
@@ -146,6 +234,7 @@ def _item_row(rank: int, item: dict) -> str:
 
 # ---------------------------------------------------------------- страницы
 def page_home(snapshot: dict, site: dict, pool: list[dict], top_n: int) -> str:
+    L = _L(site)
     items = pool[:top_n]
     t = snapshot["totals"]
     rows = "".join(_item_row(i + 1, it) for i, it in enumerate(items))
@@ -156,19 +245,18 @@ def page_home(snapshot: dict, site: dict, pool: list[dict], top_n: int) -> str:
     body = f"""{_header(site)}
 <div class="hero">
   <h1>{_esc(site["tagline"])}</h1>
-  <p>Автоматический радар: Hacker News, arXiv и GitHub — что набирает резонанс
-     прямо сейчас. Обновляется каждые 6 часов без участия человека.</p>
+  <p>{L["intro"]}</p>
 </div>
 <div class="stats">
-  <div class="stat"><b>{t['items']}</b><span>публикаций в снимке</span></div>
-  <div class="stat"><b>{len(t['by_source'])}</b><span>источника</span></div>
-  <div class="stat"><b>{len(t['by_topic'])}</b><span>тем</span></div>
-  <div class="stat"><b>{snapshot['generated_at'][:10]}</b><span>снимок от</span></div>
+  <div class="stat"><b>{t['items']}</b><span>{L['st_items']}</span></div>
+  <div class="stat"><b>{len(t['by_source'])}</b><span>{L['st_sources']}</span></div>
+  <div class="stat"><b>{len(t['by_topic'])}</b><span>{L['st_topics']}</span></div>
+  <div class="stat"><b>{snapshot['generated_at'][:10]}</b><span>{L['st_shot']}</span></div>
 </div>
 <div class="chips">{chips}</div>
-<h2>Что вспыхнуло</h2>
+<h2>{L["hot"]}</h2>
 <table>
-  <thead><tr><th>#</th><th>Заголовок</th><th>Источник</th><th>Buzz</th></tr></thead>
+  <thead><tr><th>#</th><th>{L['th_title']}</th><th>{L['th_source']}</th><th>Buzz</th></tr></thead>
   <tbody>{rows}</tbody>
 </table>
 """
@@ -181,31 +269,33 @@ def page_home(snapshot: dict, site: dict, pool: list[dict], top_n: int) -> str:
     }, ensure_ascii=False)
     return _page(body, f"{site['title']} — {site['tagline'][:60]}",
                  site["tagline"], site["base_url"], "", jsonld,
-                 feed_title=site["title"])
+                 feed_title=site["title"], lang=_lang(site))
 
 
 def page_topic(topic: str, pool: list[dict], site: dict, top_n: int) -> str:
     """pool — только то, что отрендерилось как /item/: список не может ссылаться
     на несуществующую страницу (аудитор qa за этим следит)."""
+    L = _L(site)
     items = [i for i in pool if topic in i.get("topics", [])][:top_n]
     rows = "".join(_item_row(i + 1, it) for i, it in enumerate(items))
     body = f"""{_header(site)}
 <div class="hero">
   <h1>#{_esc(topic)}</h1>
-  <p>{len(items)} публикаций в последнем снимке роя.</p>
+  <p>{L["topic_n"].format(n=len(items))}</p>
 </div>
 <table>
-  <thead><tr><th>#</th><th>Заголовок</th><th>Источник</th><th>Buzz</th></tr></thead>
+  <thead><tr><th>#</th><th>{L['th_title']}</th><th>{L['th_source']}</th><th>Buzz</th></tr></thead>
   <tbody>{rows}</tbody>
 </table>
-<div class="pager"><a href="/" style="color:#8fb7ff">← ко всем темам</a></div>
+<div class="pager"><a href="/" style="color:#8fb7ff">{L['back_topics']}</a></div>
 """
     return _page(body, f"#{topic} — {site['title']}",
-                 f"Тема {topic}: свежие публикации и тренды", site["base_url"],
-                 f"topics/{topic}.html", feed_title=site["title"])
+                 L["topic_meta"].format(topic=topic), site["base_url"],
+                 f"topics/{topic}.html", feed_title=site["title"], lang=_lang(site))
 
 
 def page_item(item: dict, site: dict, related: list[dict] | None = None) -> str:
+    L = _L(site)
     slug = _slug(item["title"])
     tags = "".join(
         f'<a class="chip" href="/topics/{t}.html">#{t}</a>' for t in item.get("topics", [])
@@ -216,21 +306,24 @@ def page_item(item: dict, site: dict, related: list[dict] | None = None) -> str:
             f'<a class="chip" href="/item/{_slug(r["title"])}.html">{_esc(r["title"][:60])}</a>'
             for r in related
         )
-        related_block = f'<h2>Ещё по теме</h2><div class="chips" style="margin-top:10px">{chips}</div>'
+        related_block = (
+            f'<h2>{L["related"]}</h2>'
+            f'<div class="chips" style="margin-top:10px">{chips}</div>'
+        )
     body = f"""{_header(site)}
 <div class="hero">
   <h1>{_esc(item["title"])}</h1>
   <div class="meta">
     <span class="src">{_esc(SOURCE_LABELS.get(item["source"], item["source"]))}</span>
     · {_esc(item["date"])} · buzz <b class="buzz">{item['buzz']}</b>
-    {f"· {item['points']} поинтов / {item['comments']} комментариев" if item["comments"] or item["points"] else ""}
+    {f"· {L['pts'].format(p=item['points'], c=item['comments'])}" if item["comments"] or item["points"] else ""}
   </div>
   {f'<p style="margin-top:14px;color:#c2c9d8">{_esc(item["summary"])}</p>' if item["summary"] else ""}
-  <p style="margin-top:18px"><a href="{_esc(item['url'])}" style="color:#8fb7ff">Читать первоисточник →</a></p>
+  <p style="margin-top:18px"><a href="{_esc(item['url'])}" style="color:#8fb7ff">{L['read_source']}</a></p>
   <div class="chips" style="margin-top:18px">{tags}</div>
 </div>
 {related_block}
-<div class="pager"><a href="/" style="color:#8fb7ff">← к ленте</a></div>
+<div class="pager"><a href="/" style="color:#8fb7ff">{L['back_feed']}</a></div>
 """
     jsonld = json.dumps({
         "@context": "https://schema.org",
@@ -244,10 +337,11 @@ def page_item(item: dict, site: dict, related: list[dict] | None = None) -> str:
     return _page(body, f"{item['title']} — {site['title']}",
                  (item["summary"] or item["title"])[:155].strip(),
                  site["base_url"], f"item/{slug}.html", jsonld,
-                 feed_title=site["title"])
+                 feed_title=site["title"], lang=_lang(site))
 
 
 def page_data(snapshot: dict, site: dict) -> str:
+    L = _L(site)
     t = snapshot["totals"]
     dom_rows = "".join(
         f"<tr><td><b>{_esc(d)}</b></td><td>{n}</td></tr>" for d, n in t["top_domains"]
@@ -261,36 +355,34 @@ def page_data(snapshot: dict, site: dict) -> str:
     )
     body = f"""{_header(site)}
 <div class="hero">
-  <h1>Данные снимка</h1>
-  <p>Анатомия последнего цикла сбора: источники, темы, домены. Полный датасет
-     публикуется на HuggingFace и обновляется каждые 6 часов.</p>
+  <h1>{L["data_h"]}</h1>
+  <p>{L["data_p"]}</p>
 </div>
-<h2>Темы</h2>
-<table><thead><tr><th>тема</th><th></th><th>публикаций</th></tr></thead>
+<h2>{L["topics_h"]}</h2>
+<table><thead><tr><th>{L['th_topic']}</th><th></th><th>{L['th_count']}</th></tr></thead>
 <tbody>{topic_rows}</tbody></table>
-<h2>Топ доменов</h2>
-<table><thead><tr><th>домен</th><th>упоминаний</th></tr></thead>
+<h2>{L["domains_h"]}</h2>
+<table><thead><tr><th>{L['th_domain']}</th><th>{L['th_mentions']}</th></tr></thead>
 <tbody>{dom_rows}</tbody></table>
 """
-    return _page(body, f"Данные — {site['title']}", "Статистика и структура данных снимка",
-                 site["base_url"], "data.html", feed_title=site["title"])
+    return _page(body, L["data_title"].format(title=site["title"]),
+                 L["data_desc"], site["base_url"], "data.html",
+                 feed_title=site["title"], lang=_lang(site))
 
 
 def page_about(site: dict) -> str:
+    L = _L(site)
     body = f"""{_header(site)}
 <div class="hero">
-  <h1>О проекте</h1>
-  <p><b>{_esc(site["title"])}</b> — полностью автономное издание. Его собирает
-     мультиагентная система <b>Атрия</b>: агенты-«разведчики» тянут потоки из
-     публичных источников (Hacker News, arXiv, GitHub), очищают, считают
-     «базз»-скоринг и генерируют эту страницу.</p>
-  <p style="margin-top:12px">Ни одного ручного действия: код живёт в git,
-     пульс приходит по cron, хостинг — Cloudflare, датасеты — HuggingFace.</p>
-  <p style="margin-top:12px">Связь: <a href="{_esc(site.get('contact', site['base_url']))}" style="color:#8fb7ff">{_esc(site.get('contact', site['base_url']))}</a></p>
+  <h1>{L["about_h"]}</h1>
+  <p style="margin-top:14px">{L["about_p1"].format(title=_esc(site["title"]))}</p>
+  <p style="margin-top:12px">{L["about_p2"]}</p>
+  <p style="margin-top:12px">{L["contact"]} <a href="{_esc(site.get('contact', site['base_url']))}" style="color:#8fb7ff">{_esc(site.get('contact', site['base_url']))}</a></p>
 </div>
 """
-    return _page(body, f"О проекте — {site['title']}", "Об автономном издании и рое Атрия",
-                 site["base_url"], "about.html", feed_title=site["title"])
+    return _page(body, L["about_title"].format(title=site["title"]),
+                 L["about_desc"], site["base_url"], "about.html",
+                 feed_title=site["title"], lang=_lang(site))
 
 
 # ---------------------------------------------------------------- RSS колонии
@@ -324,7 +416,7 @@ def generate_feed(snapshot: dict, outdir: str | Path, config: dict) -> str:
         f"    <title>{xescape(site['title'])}</title>\n"
         f"    <link>{site['base_url']}</link>\n"
         f"    <description>{xescape(site['tagline'])}</description>\n"
-        "    <language>ru</language>\n"
+        f"    <language>{_lang(site)}</language>\n"
         f"    <lastBuildDate>{built}</lastBuildDate>\n"
         + "\n".join(xml_items)
         + "\n  </channel>\n</rss>\n"

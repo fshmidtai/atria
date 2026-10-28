@@ -1,0 +1,23 @@
+{
+  "name": "meridian",
+  "site": {
+    "title": "Meridian Radar",
+    "tagline": "Autonomous radar of tech and science: what is gaining resonance right now",
+    "base_url": "https://meridian-radar.pages.dev",
+    "lang": "en",
+    "contact": "https://github.com/"
+  },
+  "sources": [
+    {"kind": "hn_front", "label": "hn_front", "limit": 60},
+    {"kind": "arxiv", "limit": 60},
+    {"kind": "github_search", "q": "stars:>50", "days": 7, "limit": 40},
+    {"kind": "rss", "label": "devto", "url": "https://dev.to/feed/", "limit": 30},
+    {"kind": "rss", "label": "tc_ai", "url": "https://techcrunch.com/category/artificial-intelligence/feed/", "limit": 25}
+  ],
+  "top_items_home": 30,
+  "top_items_topic": 30,
+  "top_item_pages": 60,
+  "topics": [
+    "ai", "dev", "science", "security", "biz", "hardware"
+  ]
+}
