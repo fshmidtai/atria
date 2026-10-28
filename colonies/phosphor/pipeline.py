@@ -47,24 +47,24 @@ SOURCE_LABELS = {
 
 # ---------------------------------------------------------------- обработка
 def tag_topics(item: dict) -> list[str]:
-    hay = f"{item['title']} {item['summary']}".lower()
+    hay = f"{item.get('title', '')} {item.get('summary', '')}".lower()
     return [t for t, kws in TOPIC_KEYWORDS.items() if any(k in hay for k in kws)]
 
 
 def buzz_score(item: dict, now: float | None = None) -> int:
     now = now or time.time()
-    age_h = max(0.0, (now - item["ts"]) / 3600.0)
+    age_h = max(0.0, (now - float(item.get("ts", now))) / 3600.0)
     recency = 80 if age_h < 24 else (30 if age_h < 72 else (10 if age_h < 24 * 7 else 0))
-    return int(item["points"] + 3 * item["comments"] + recency)
+    return int(item.get("points", 0) + 3 * item.get("comments", 0) + recency)
 
 
 def _title_key(title: str) -> str:
     return re.sub(r"[^a-z0-9]+", " ", title.lower()).strip()
 
 
-def collect(enabled: list[str], limits: dict | None = None) -> list[dict]:
-    """Собрать все источники, слить в один список."""
-    raw = sources_mod.fetch_all(enabled, limits)
+def collect(recipes: list) -> list[dict]:
+    """Собрать все рецепты источников, слить в один список."""
+    raw = sources_mod.fetch_recipes(recipes)
     items = []
     for bucket in raw.values():
         items.extend(bucket)
@@ -72,42 +72,54 @@ def collect(enabled: list[str], limits: dict | None = None) -> list[dict]:
 
 
 def clean(items: list[dict], now: float | None = None) -> list[dict]:
-    """Дедуп (по uid и по нормализованному заголовку), подсчёт buzz, теги."""
+    """Дедуп (по uid и по нормализованному заголовку), подсчёт buzz, теги.
+
+    Толерантна к неполным item'ам: внешние источники бывают рваными,
+    конвейер не должен падать из-за одного кривого поля.
+    """
     now = now or time.time()
     by_uid: dict[str, dict] = {}
     by_title: dict[str, dict] = {}
     for it in items:
-        if not it["title"] or not it["url"]:
+        if not it.get("title") or not it.get("url"):
             continue
-        if it["uid"] in by_uid:
+        uid = it.get("uid") or f"{it.get('source', 'x')}:{it['title'][:60]}"
+        if uid in by_uid:
             continue
         key = _title_key(it["title"])
         prev = by_title.get(key)
         if prev is not None:
             # крест-источник: оставляем вариант с большим buzz-потенциалом
-            if (it["points"] + 3 * it["comments"]) <= (prev["points"] + 3 * prev["comments"]):
+            if (it.get("points", 0) + 3 * it.get("comments", 0)) <= (
+                prev.get("points", 0) + 3 * prev.get("comments", 0)
+            ):
                 continue
             by_uid.pop(prev["uid"], None)
         it = dict(it)
+        it["uid"] = uid
         it["buzz"] = buzz_score(it, now)
         it["topics"] = tag_topics(it)
-        it["date"] = datetime.fromtimestamp(it["ts"], tz=timezone.utc).strftime("%Y-%m-%d")
-        by_uid[it["uid"]] = it
+        it["date"] = datetime.fromtimestamp(
+            float(it.get("ts", now)), tz=timezone.utc
+        ).strftime("%Y-%m-%d")
+        by_uid[uid] = it
         by_title[key] = it
     return sorted(by_uid.values(), key=lambda x: x["buzz"], reverse=True)
 
 
 # ---------------------------------------------------------------- снимок
-def build_snapshot(items: list[dict], enabled: list[str]) -> dict:
+def build_snapshot(items: list[dict], recipes: list) -> dict:
     by_source = Counter(i["source"] for i in items)
+    by_recipe = Counter(i.get("recipe", "?") for i in items)
     by_topic = Counter(t for i in items for t in i["topics"])
     domains = Counter(urlparse(i["url"]).netloc.replace("www.", "") for i in items if i["url"])
     return {
         "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
-        "sources_used": enabled,
+        "sources_used": [r.get("kind", r) if isinstance(r, dict) else r for r in (recipes or [])],
         "totals": {
             "items": len(items),
             "by_source": dict(by_source),
+            "by_recipe": dict(by_recipe.most_common()),
             "by_topic": dict(by_topic.most_common()),
             "top_domains": domains.most_common(25),
         },
@@ -188,17 +200,17 @@ def cycle(workdir: str | Path, config: dict, treasury=None, ledger=None) -> dict
     workdir = Path(workdir)
     workdir.mkdir(parents=True, exist_ok=True)
 
-    enabled = config.get("sources", ["hn", "arxiv", "github"])
-    limits = config.get("limits", {})
+    recipes = config.get("sources", [{"kind": "hn_front"}])
+    labels = [r.get("kind", r) if isinstance(r, dict) else r for r in recipes]
 
     if ledger:
-        ledger.event("phosphor", "radar", "collect_start", {"sources": enabled})
+        ledger.event("phosphor", "radar", "collect_start", {"sources": labels})
     if treasury:
-        treasury.spend("radar", 100 * len(enabled) + 50, note="fetch run")
+        treasury.spend("radar", 100 * len(recipes) + 50, note="fetch run")
 
-    items = collect(enabled, limits)
+    items = collect(recipes)
     items = clean(items)
-    snapshot = build_snapshot(items, enabled)
+    snapshot = build_snapshot(items, recipes)
 
     exports = export(snapshot, workdir / "exports")
 

@@ -1,0 +1,21 @@
+{
+  "name": "vesper",
+  "site": {
+    "title": "Vesper AI Radar",
+    "tagline": "Новые AI-инструменты и стартапы: что запустилось прямо сейчас — Show HN, GitHub, открытые запуски",
+    "base_url": "https://vesper-ai-radar.pages.dev",
+    "lang": "ru",
+    "contact": "https://github.com/"
+  },
+  "sources": [
+    {"kind": "hn_search", "label": "show_hn", "query": "Show HN", "limit": 60},
+    {"kind": "github_search", "label": "github_ai", "q": "topic:ai stars:>30", "days": 14, "limit": 40},
+    {"kind": "github_search", "label": "github_llm", "q": "topic:llm stars:>20", "days": 14, "limit": 30}
+  ],
+  "top_items_home": 30,
+  "top_items_topic": 30,
+  "top_item_pages": 60,
+  "topics": [
+    "ai", "dev", "biz", "security", "hardware"
+  ]
+}

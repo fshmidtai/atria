@@ -18,12 +18,16 @@ atria/
 │   ├── orchestrator.py          #   cron-движок: tick() — один проход по задачам
 │   └── llmrouter.py             #   бесплатные LLM (local → groq → openrouter), опционально
 ├── colonies/
-└── phosphor/                    # колония 1: «медиа-датапрокат»
-    ├── sources.py               #   бесплатные источники (Hacker News, arXiv, GitHub)
-    ├── pipeline.py              #   сбор → дедуп → скоринг «базза» → тегирование тем
-    ├── sitegen.py               #   генератор статического SEO-сайта (JSON-LD, sitemap)
-    └── config.json              #   конфиг колонии (ниша, домен, источники)
-├── archaea/genesis.py           # «кнопка жизни»: разворачивает ядро + прогоняет цикл
+│   ├── phosphor/                # колония 1: «tech-радар» (HN front + arXiv + GitHub)
+│   │   ├── sources.py           #   бесплатные источники: HN front, поиск по HN, arXiv, GitHub search
+│   │   ├── pipeline.py          #   сбор → дедуп → скоринг «базза» → тегирование тем
+│   │   ├── sitegen.py           #   генератор статического SEO-сайта (JSON-LD, sitemap)
+│   │   └── config.json          #   конфиг: рецепты источников, домен, темы
+│   └── vesper/config.json       # колония 2: «AI-инструменты» (Show HN + GitHub AI/LLM)
+│       новая колония = просто config.json, движок общий
+├── archaea/
+│   ├── genesis.py               # «кнопка жизни»: ядро + циклы всех колоний
+│   └── selftest.py              # самопроверка ядра без сети (16 тестов, гоняется в CI)
 ├── infra/
 │   ├── github-actions/          # cron-пульс роя (2000 бесплатных минут/мес)
 │   ├── oracle/docker-compose    # «улей» на Oracle Always Free ARM 4×24 ГБ
@@ -34,7 +38,8 @@ atria/
 ##Быстрый старт (локально, за 1 минуту)
 
 ```powershell
-python archaea/genesis.py
+python archaea/selftest.py      # сначала здоровье: 16 тестов ядра без сети
+python archaea/genesis.py       # потом цикл: сбор → датасеты → сайты всех колоний
 ```
 
 или
@@ -44,9 +49,9 @@ python archaea/genesis.py
 .\run.ps1       # Windows
 ```
 
-Что произойдёт: создастся SQLite-ядро, заспавнятся 4 агента колонии Phosphor,
-прогонится цикл (сбор → очистка → датасет → сайт), в `colonies/phosphor/dist`
-появится готовый к деплою сайт, а в консоль — отчёт роя.
+Что произойдёт: создастся SQLite-ядро, заспавнятся 4 агента роя, каждая колония
+(сейчас их две: phosphor и vesper) прогонит полный цикл — в `colonies/*/dist`
+появятся готовые к деплою сайты, в консоль — отчёт улья.
 
 ## Где это живёт (бесплатный стек)
 

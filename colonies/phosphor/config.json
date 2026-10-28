@@ -7,12 +7,11 @@
     "lang": "ru",
     "contact": "https://github.com/"
   },
-  "sources": ["hn", "arxiv", "github"],
-  "limits": {
-    "hn": 60,
-    "arxiv": 60,
-    "github": 40
-  },
+  "sources": [
+    {"kind": "hn_front", "label": "hn_front", "limit": 60},
+    {"kind": "arxiv", "limit": 60},
+    {"kind": "github_search", "q": "stars:>50", "days": 7, "limit": 40}
+  ],
   "top_items_home": 30,
   "top_items_topic": 30,
   "top_item_pages": 60,

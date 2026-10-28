@@ -1,8 +1,8 @@
 {
-  "generated_at": 1793220564.7831326,
-  "elapsed_s": 2.53,
+  "generated_at": 1793221706.1444235,
+  "elapsed_s": 3.06,
   "tick": {
-    "ran": 1,
+    "ran": 2,
     "failed": 0,
     "idle": false
   },
@@ -11,293 +11,567 @@
       "id": 1,
       "name": "radar",
       "role": "scout",
-      "colony": "phosphor",
+      "colony": "core",
       "status": "active",
-      "spawned": 1793219664.2589407,
+      "spawned": 1793221677.7775135,
       "note": ""
     },
     {
       "id": 2,
       "name": "refiner",
       "role": "refinery",
-      "colony": "phosphor",
+      "colony": "core",
       "status": "active",
-      "spawned": 1793219664.270998,
+      "spawned": 1793221677.7905076,
       "note": ""
     },
     {
       "id": 3,
       "name": "scribe",
       "role": "writer",
-      "colony": "phosphor",
+      "colony": "core",
       "status": "active",
-      "spawned": 1793219664.282858,
+      "spawned": 1793221677.803619,
       "note": ""
     },
     {
       "id": 4,
       "name": "merchant",
       "role": "trade",
-      "colony": "phosphor",
+      "colony": "core",
       "status": "active",
-      "spawned": 1793219664.2944293,
+      "spawned": 1793221677.8165514,
       "note": ""
     }
   ],
   "budget": {
-    "spent_u": 3100,
+    "spent_u": 3200,
     "revenue_u": 0
   },
   "tasks": {
-    "done": 3
+    "done": 4
   },
-  "totals": {
-    "items": 130,
-    "by_source": {
-      "github": 40,
-      "hn": 30,
-      "arxiv": 60
-    },
-    "by_topic": {
-      "ai": 85,
-      "dev": 52,
-      "science": 26,
-      "hardware": 16,
-      "crypto": 11,
-      "biz": 11,
-      "security": 6
-    },
-    "top_domains": [
-      [
-        "arxiv.org",
-        61
-      ],
-      [
-        "github.com",
-        40
-      ],
-      [
-        "apple.com",
-        1
-      ],
-      [
-        "blog.google",
-        1
-      ],
-      [
-        "emudhra.we-have-a-problem.com",
-        1
-      ],
-      [
-        "religionnews.com",
-        1
-      ],
-      [
-        "anthropic.com",
-        1
-      ],
-      [
-        "lexifina.com",
-        1
-      ],
-      [
-        "tailscale.com",
-        1
-      ],
-      [
-        "circuithub.com",
-        1
-      ],
-      [
-        "technologyreview.com",
-        1
-      ],
-      [
-        "vertex.degree",
-        1
-      ],
-      [
-        "carmelitegothic.com",
-        1
-      ],
-      [
-        "nullpt.rs",
-        1
-      ],
-      [
-        "arstechnica.com",
-        1
-      ],
-      [
-        "reuters.com",
-        1
-      ],
-      [
-        "wiki.alpinebsd.org",
-        1
-      ],
-      [
-        "surgehq.ai",
-        1
-      ],
-      [
-        "cursor.com",
-        1
-      ],
-      [
-        "uchicagomedicine.org",
-        1
-      ],
-      [
-        "healeycodes.com",
-        1
-      ],
-      [
-        "huggingface.co",
-        1
-      ],
-      [
-        "slidebyside.com",
-        1
-      ],
-      [
-        "restofworld.org",
-        1
-      ],
-      [
-        "s206.q4cdn.com",
-        1
+  "colonies": {
+    "phosphor": {
+      "site": {
+        "title": "Signal Frontier",
+        "tagline": "Радар инсайтов, трендов и технологий: что вспыхнуло в сети за последние 48 часов",
+        "base_url": "https://signal-frontier.pages.dev",
+        "lang": "ru",
+        "contact": "https://github.com/"
+      },
+      "totals": {
+        "items": 130,
+        "by_source": {
+          "github": 40,
+          "hn": 30,
+          "arxiv": 60
+        },
+        "by_recipe": {
+          "arxiv": 60,
+          "github_search": 40,
+          "hn_front": 30
+        },
+        "by_topic": {
+          "ai": 86,
+          "dev": 53,
+          "science": 26,
+          "hardware": 16,
+          "crypto": 11,
+          "biz": 11,
+          "security": 6
+        },
+        "top_domains": [
+          [
+            "arxiv.org",
+            61
+          ],
+          [
+            "github.com",
+            40
+          ],
+          [
+            "apple.com",
+            1
+          ],
+          [
+            "blog.google",
+            1
+          ],
+          [
+            "emudhra.we-have-a-problem.com",
+            1
+          ],
+          [
+            "religionnews.com",
+            1
+          ],
+          [
+            "anthropic.com",
+            1
+          ],
+          [
+            "lexifina.com",
+            1
+          ],
+          [
+            "tailscale.com",
+            1
+          ],
+          [
+            "circuithub.com",
+            1
+          ],
+          [
+            "technologyreview.com",
+            1
+          ],
+          [
+            "vertex.degree",
+            1
+          ],
+          [
+            "carmelitegothic.com",
+            1
+          ],
+          [
+            "nullpt.rs",
+            1
+          ],
+          [
+            "arstechnica.com",
+            1
+          ],
+          [
+            "wiki.alpinebsd.org",
+            1
+          ],
+          [
+            "reddit.com",
+            1
+          ],
+          [
+            "surgehq.ai",
+            1
+          ],
+          [
+            "cursor.com",
+            1
+          ],
+          [
+            "healeycodes.com",
+            1
+          ],
+          [
+            "s206.q4cdn.com",
+            1
+          ],
+          [
+            "huggingface.co",
+            1
+          ],
+          [
+            "restofworld.org",
+            1
+          ],
+          [
+            "slidebyside.com",
+            1
+          ],
+          [
+            "spectrum.ieee.org",
+            1
+          ]
+        ]
+      },
+      "pages": 72,
+      "top_items": [
+        {
+          "title": "JustAResearcher/gpu-unlock-ada",
+          "source": "github",
+          "buzz": 6113,
+          "url": "https://github.com/JustAResearcher/gpu-unlock-ada",
+          "topics": [
+            "science",
+            "hardware"
+          ]
+        },
+        {
+          "title": "rddmwmddr/android-ad-cleaner",
+          "source": "github",
+          "buzz": 5407,
+          "url": "https://github.com/rddmwmddr/android-ad-cleaner",
+          "topics": [
+            "ai"
+          ]
+        },
+        {
+          "title": "designfuchen/word-atlas",
+          "source": "github",
+          "buzz": 5056,
+          "url": "https://github.com/designfuchen/word-atlas",
+          "topics": []
+        },
+        {
+          "title": "unclebob/ub-mode",
+          "source": "github",
+          "buzz": 4246,
+          "url": "https://github.com/unclebob/ub-mode",
+          "topics": []
+        },
+        {
+          "title": "interplains/Zero-Breach-Toolkit",
+          "source": "github",
+          "buzz": 3468,
+          "url": "https://github.com/interplains/Zero-Breach-Toolkit",
+          "topics": [
+            "ai",
+            "security"
+          ]
+        },
+        {
+          "title": "anhao/ai-pose-gallery-zh",
+          "source": "github",
+          "buzz": 3227,
+          "url": "https://github.com/anhao/ai-pose-gallery-zh",
+          "topics": [
+            "ai"
+          ]
+        },
+        {
+          "title": "oosexgang/hakios-xnu-kernel",
+          "source": "github",
+          "buzz": 2884,
+          "url": "https://github.com/oosexgang/hakios-xnu-kernel",
+          "topics": []
+        },
+        {
+          "title": "t3dotgg/tstack",
+          "source": "github",
+          "buzz": 2662,
+          "url": "https://github.com/t3dotgg/tstack",
+          "topics": [
+            "ai"
+          ]
+        },
+        {
+          "title": "ZiChuanLan/agent-purge",
+          "source": "github",
+          "buzz": 2559,
+          "url": "https://github.com/ZiChuanLan/agent-purge",
+          "topics": [
+            "ai",
+            "dev"
+          ]
+        },
+        {
+          "title": "MacBook Pro with PROLED XDR Display and Touch",
+          "source": "hn",
+          "buzz": 2512,
+          "url": "https://www.apple.com/macbook-pro/proled-xdr-display/",
+          "topics": []
+        },
+        {
+          "title": "Gemini 4 Carbon",
+          "source": "hn",
+          "buzz": 2217,
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+          "topics": []
+        },
+        {
+          "title": "andyhuo520/digital-human-koubo",
+          "source": "github",
+          "buzz": 2214,
+          "url": "https://github.com/andyhuo520/digital-human-koubo",
+          "topics": [
+            "ai",
+            "dev",
+            "science"
+          ]
+        },
+        {
+          "title": "Apple's git still trusts the compromised eMudhra certificates",
+          "source": "hn",
+          "buzz": 2106,
+          "url": "https://emudhra.we-have-a-problem.com/apple.html",
+          "topics": [
+            "dev"
+          ]
+        },
+        {
+          "title": "Kentucky man becomes the first humanist granted religious exemption from AI",
+          "source": "hn",
+          "buzz": 1695,
+          "url": "https://religionnews.com/2026/10/26/in-a-first-a-humanist-granted-a-religious-exemption-from-using-ai/",
+          "topics": [
+            "ai"
+          ]
+        },
+        {
+          "title": "enesozturk/dimensional-drawing",
+          "source": "github",
+          "buzz": 1644,
+          "url": "https://github.com/enesozturk/dimensional-drawing",
+          "topics": []
+        }
       ]
-    ]
-  },
-  "top_items": [
-    {
-      "title": "JustAResearcher/gpu-unlock-ada",
-      "source": "github",
-      "buzz": 6110,
-      "url": "https://github.com/JustAResearcher/gpu-unlock-ada",
-      "topics": [
-        "science",
-        "hardware"
+    },
+    "vesper": {
+      "site": {
+        "title": "Vesper AI Radar",
+        "tagline": "Новые AI-инструменты и стартапы: что запустилось прямо сейчас — Show HN, GitHub, открытые запуски",
+        "base_url": "https://vesper-ai-radar.pages.dev",
+        "lang": "ru",
+        "contact": "https://github.com/"
+      },
+      "totals": {
+        "items": 120,
+        "by_source": {
+          "hn": 60,
+          "github": 60
+        },
+        "by_recipe": {
+          "show_hn": 60,
+          "github_ai": 36,
+          "github_llm": 24
+        },
+        "by_topic": {
+          "ai": 62,
+          "dev": 51,
+          "hardware": 10,
+          "science": 9,
+          "security": 7,
+          "biz": 4,
+          "crypto": 3
+        },
+        "top_domains": [
+          [
+            "github.com",
+            66
+          ],
+          [
+            "news.ycombinator.com",
+            7
+          ],
+          [
+            "dosaygo-studio.github.io",
+            1
+          ],
+          [
+            "ytch.xyz",
+            1
+          ],
+          [
+            "byran.ee",
+            1
+          ],
+          [
+            "beeper.com",
+            1
+          ],
+          [
+            "non.io",
+            1
+          ],
+          [
+            "internalregister.github.io",
+            1
+          ],
+          [
+            "dogbunnypuzzle.com",
+            1
+          ],
+          [
+            "john.fun",
+            1
+          ],
+          [
+            "justine.lol",
+            1
+          ],
+          [
+            "typelit.io",
+            1
+          ],
+          [
+            "paulgraham.com",
+            1
+          ],
+          [
+            "jmail.world",
+            1
+          ],
+          [
+            "phind.com",
+            1
+          ],
+          [
+            "blog.jwilm.io",
+            1
+          ],
+          [
+            "giza.mused.org",
+            1
+          ],
+          [
+            "buyforlifeproducts.com",
+            1
+          ],
+          [
+            "brew.sh",
+            1
+          ],
+          [
+            "obsidian.md",
+            1
+          ],
+          [
+            "airma.sh",
+            1
+          ],
+          [
+            "mprimi.github.io",
+            1
+          ],
+          [
+            "meteor.com",
+            1
+          ],
+          [
+            "spotthedrowningchild.com",
+            1
+          ],
+          [
+            "lanparty.house",
+            1
+          ]
+        ]
+      },
+      "pages": 68,
+      "top_items": [
+        {
+          "title": "Show HN: Gemini Pro 3 imagines the HN front page 10 years from now",
+          "source": "hn",
+          "buzz": 6241,
+          "url": "https://dosaygo-studio.github.io/hn-front-page-2035/news",
+          "topics": []
+        },
+        {
+          "title": "Show HN: If YouTube had actual channels",
+          "source": "hn",
+          "buzz": 4283,
+          "url": "https://ytch.xyz",
+          "topics": []
+        },
+        {
+          "title": "Show HN: I made an open-source laptop from scratch",
+          "source": "hn",
+          "buzz": 4206,
+          "url": "https://www.byran.ee/posts/creation/",
+          "topics": [
+            "dev"
+          ]
+        },
+        {
+          "title": "Show HN: Beeper Mini – iMessage client for Android",
+          "source": "hn",
+          "buzz": 4143,
+          "url": "https://www.beeper.com/",
+          "topics": [
+            "ai",
+            "security"
+          ]
+        },
+        {
+          "title": "Show HN: I replaced a $120k bowling center system with $1,600 in ESP32s",
+          "source": "hn",
+          "buzz": 4012,
+          "url": "https://news.ycombinator.com/item?id=48968606",
+          "topics": []
+        },
+        {
+          "title": "Show HN: This up votes itself",
+          "source": "hn",
+          "buzz": 3777,
+          "url": "http://news.ycombinator.com/vote?for=3742902&dir=up&whence=%6e%65%77%65%73%74",
+          "topics": []
+        },
+        {
+          "title": "Show HN: Non.io, a Reddit-like platform Ive been working on for the last 4 years",
+          "source": "hn",
+          "buzz": 3713,
+          "url": "https://non.io",
+          "topics": [
+            "ai",
+            "dev",
+            "hardware"
+          ]
+        },
+        {
+          "title": "Show HN: A retro video game console I've been working on in my free time",
+          "source": "hn",
+          "buzz": 3320,
+          "url": "https://internalregister.github.io/2019/03/14/Homebrew-Console.html",
+          "topics": [
+            "dev"
+          ]
+        },
+        {
+          "title": "Show HN: I may have created a new type of puzzle",
+          "source": "hn",
+          "buzz": 3251,
+          "url": "http://www.dogbunnypuzzle.com/",
+          "topics": []
+        },
+        {
+          "title": "Show HN: An e-ink frame that hears birds and draws them as 1800s illustrations",
+          "source": "hn",
+          "buzz": 3192,
+          "url": "https://github.com/arnegiacomo/fugleramme",
+          "topics": []
+        },
+        {
+          "title": "Show HN: Elevators",
+          "source": "hn",
+          "buzz": 2925,
+          "url": "https://john.fun/elevators",
+          "topics": []
+        },
+        {
+          "title": "Show HN: Redbean – Single-file distributable web server",
+          "source": "hn",
+          "buzz": 2745,
+          "url": "https://justine.lol/redbean/index.html",
+          "topics": [
+            "hardware"
+          ]
+        },
+        {
+          "title": "Show HN: I made a site where you practice typing by retyping entire novels",
+          "source": "hn",
+          "buzz": 2723,
+          "url": "http://typelit.io",
+          "topics": []
+        },
+        {
+          "title": "Show HN: Bel",
+          "source": "hn",
+          "buzz": 2656,
+          "url": "http://paulgraham.com/bel.html",
+          "topics": []
+        },
+        {
+          "title": "Show HN: I got laid off from Meta and created a minor hit on Steam",
+          "source": "hn",
+          "buzz": 2649,
+          "url": "https://news.ycombinator.com/item?id=43186406",
+          "topics": [
+            "ai",
+            "dev",
+            "science"
+          ]
+        }
       ]
-    },
-    {
-      "title": "rddmwmddr/android-ad-cleaner",
-      "source": "github",
-      "buzz": 5406,
-      "url": "https://github.com/rddmwmddr/android-ad-cleaner",
-      "topics": [
-        "ai"
-      ]
-    },
-    {
-      "title": "designfuchen/word-atlas",
-      "source": "github",
-      "buzz": 5055,
-      "url": "https://github.com/designfuchen/word-atlas",
-      "topics": []
-    },
-    {
-      "title": "unclebob/ub-mode",
-      "source": "github",
-      "buzz": 4244,
-      "url": "https://github.com/unclebob/ub-mode",
-      "topics": []
-    },
-    {
-      "title": "interplains/Zero-Breach-Toolkit",
-      "source": "github",
-      "buzz": 3443,
-      "url": "https://github.com/interplains/Zero-Breach-Toolkit",
-      "topics": [
-        "ai",
-        "security"
-      ]
-    },
-    {
-      "title": "anhao/ai-pose-gallery-zh",
-      "source": "github",
-      "buzz": 3225,
-      "url": "https://github.com/anhao/ai-pose-gallery-zh",
-      "topics": [
-        "ai"
-      ]
-    },
-    {
-      "title": "oosexgang/hakios-xnu-kernel",
-      "source": "github",
-      "buzz": 2883,
-      "url": "https://github.com/oosexgang/hakios-xnu-kernel",
-      "topics": []
-    },
-    {
-      "title": "t3dotgg/tstack",
-      "source": "github",
-      "buzz": 2661,
-      "url": "https://github.com/t3dotgg/tstack",
-      "topics": [
-        "ai"
-      ]
-    },
-    {
-      "title": "ZiChuanLan/agent-purge",
-      "source": "github",
-      "buzz": 2556,
-      "url": "https://github.com/ZiChuanLan/agent-purge",
-      "topics": [
-        "ai",
-        "dev"
-      ]
-    },
-    {
-      "title": "MacBook Pro with PROLED XDR Display and Touch",
-      "source": "hn",
-      "buzz": 2376,
-      "url": "https://www.apple.com/macbook-pro/proled-xdr-display/",
-      "topics": []
-    },
-    {
-      "title": "andyhuo520/digital-human-koubo",
-      "source": "github",
-      "buzz": 2214,
-      "url": "https://github.com/andyhuo520/digital-human-koubo",
-      "topics": [
-        "ai",
-        "dev",
-        "science"
-      ]
-    },
-    {
-      "title": "Gemini 4 Carbon",
-      "source": "hn",
-      "buzz": 2148,
-      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
-      "topics": []
-    },
-    {
-      "title": "Apple's git still trusts the compromised eMudhra certificates",
-      "source": "hn",
-      "buzz": 2095,
-      "url": "https://emudhra.we-have-a-problem.com/apple.html",
-      "topics": [
-        "dev"
-      ]
-    },
-    {
-      "title": "Kentucky man becomes the first humanist granted religious exemption from AI",
-      "source": "hn",
-      "buzz": 1671,
-      "url": "https://religionnews.com/2026/10/26/in-a-first-a-humanist-granted-a-religious-exemption-from-using-ai/",
-      "topics": [
-        "ai"
-      ]
-    },
-    {
-      "title": "enesozturk/dimensional-drawing",
-      "source": "github",
-      "buzz": 1641,
-      "url": "https://github.com/enesozturk/dimensional-drawing",
-      "topics": []
     }
-  ]
+  }
 }

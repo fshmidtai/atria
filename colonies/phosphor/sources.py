@@ -1,10 +1,12 @@
-"""Sources — бесплатные источники данных колонии Phosphor. Никаких API-ключей.
+"""Sources — бесплатные источники данных колоний. Никаких API-ключей.
 
-Все источники публичны и без ключей (см. Конституцию §4.3 — соблюдаем ToS):
-  - Hacker News (Algolia API)      — что обсуждают в tech-комьюнити
-  - arXiv (cs.AI / cs.CL / cs.LG)  — научный поток AI/ML
-  - GitHub search API              — новые резонансные репозитории
+Источник = «рецепт»:
+  {"kind": "hn_front",      "limit": 60}
+  {"kind": "hn_search",     "query": "Show HN", "limit": 60}
+  {"kind": "arxiv",         "limit": 60}
+  {"kind": "github_search", "q": "topic:ai stars:>50", "days": 14, "limit": 40}
 
+Все источники публичны и без ключей (Конституция §4.3 — соблюдаем ToS).
 Любой источник падает -> возвращаем [] и едем дальше: конвейер не должен
 останавливаться из-за сбоя одного канала.
 """
@@ -15,6 +17,7 @@ import os
 import ssl
 import time
 import urllib.error
+import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
@@ -66,13 +69,7 @@ def _item(uid, source, title, url, ts_epoch, points, comments, author, summary="
 
 
 # ---------------------------------------------------------------- Hacker News
-def fetch_hn(limit: int = 60) -> list[dict]:
-    try:
-        data = json.loads(
-            _get(f"https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage={limit}")
-        )
-    except Exception:
-        return []
+def _hn_to_items(data: dict) -> list[dict]:
     out = []
     for h in data.get("hits", []):
         obj_id = h.get("objectID", "")
@@ -91,6 +88,26 @@ def fetch_hn(limit: int = 60) -> list[dict]:
             )
         )
     return out
+
+
+def _hn_fetch(params: dict) -> list[dict]:
+    url = "https://hn.algolia.com/api/v1/search?" + urllib.parse.urlencode(params)
+    try:
+        return _hn_to_items(json.loads(_get(url)))
+    except Exception:
+        return []
+
+
+def fetch_hn(limit: int = 60) -> list[dict]:
+    """Front page Hacker News — что вообще обсуждает tech-комьюнити."""
+    return _hn_fetch({"tags": "front_page", "hitsPerPage": limit})
+
+
+def fetch_hn_search(query: str, limit: int = 60) -> list[dict]:
+    """Поиск по HN — 'Show HN' даёт поток свежих продуктовых запусков."""
+    if not query:
+        return []
+    return _hn_fetch({"query": query, "tags": "story", "hitsPerPage": limit})
 
 
 # ---------------------------------------------------------------- arXiv
@@ -136,11 +153,18 @@ def fetch_arxiv(limit: int = 60) -> list[dict]:
 
 
 # ---------------------------------------------------------------- GitHub
-def fetch_github(limit: int = 40) -> list[dict]:
-    since = (datetime.now(timezone.utc) - timedelta(days=7)).strftime("%Y-%m-%d")
+def fetch_github(limit: int = 40, q: str = "", days: int = 7) -> list[dict]:
+    """Поиск свежих резонансных репозиториев. q — дополнительный фильтр ('topic:ai')."""
+    since = (datetime.now(timezone.utc) - timedelta(days=days)).strftime("%Y-%m-%d")
+    parts = []
+    if q:
+        parts.append(q)
+    if "created:" not in q:
+        parts.append(f"created:>{since}")
+    query = " ".join(parts)
     url = (
-        "https://api.github.com/search/repositories"
-        f"?q=created:>{since}+stars:>30&sort=stars&order=desc&per_page={limit}"
+        "https://api.github.com/search/repositories?"
+        + urllib.parse.urlencode({"q": query, "sort": "stars", "order": "desc", "per_page": limit})
     )
     headers = {"Accept": "application/vnd.github+json"}
     token = os.environ.get("GITHUB_TOKEN", "").strip()
@@ -152,13 +176,14 @@ def fetch_github(limit: int = 40) -> list[dict]:
         return []
     out = []
     for repo in data.get("items", []):
+        created = repo.get("created_at")
         out.append(
             _item(
                 uid=f"gh:{repo.get('full_name', '')}",
                 source="github",
                 title=repo.get("full_name", ""),
                 url=repo.get("html_url", ""),
-                ts_epoch=repo.get("created_at") and _epoch(repo["created_at"]) or time.time(),
+                ts_epoch=_epoch(created) if created else time.time(),
                 points=repo.get("stargazers_count", 0),
                 comments=repo.get("forks_count", 0),
                 author=(repo.get("owner") or {}).get("login", ""),
@@ -168,19 +193,36 @@ def fetch_github(limit: int = 40) -> list[dict]:
     return out
 
 
-SOURCES = {"hn": fetch_hn, "arxiv": fetch_arxiv, "github": fetch_github}
+# ---------------------------------------------------------------- движок рецептов
+def fetch_recipes(recipes: list) -> dict[str, list[dict]]:
+    """Прогнать рецепты. Возвращает {label: [items]} — даже пустые, чтобы конвейер не дёргался.
 
-
-def fetch_all(enabled: list[str], limits: dict | None = None) -> dict[str, list[dict]]:
-    """Собрать всё, что смогло. Возвращаем {source: [items]} — даже если пусто."""
-    limits = limits or {}
-    result: dict[str, list[dict]] = {}
-    for name in enabled:
-        fn = SOURCES.get(name)
-        if fn is None:
+    Каждый item дополнительно помечается рецептом (поле 'recipe') — для аналитики.
+    """
+    out: dict[str, list[dict]] = {}
+    for recipe in recipes or []:
+        if not isinstance(recipe, dict):
             continue
+        kind = recipe.get("kind", "")
+        label = recipe.get("label") or kind
         try:
-            result[name] = fn(limit=int(limits.get(name, 40)))
+            if kind == "hn_front":
+                items = fetch_hn(limit=int(recipe.get("limit", 40)))
+            elif kind == "hn_search":
+                items = fetch_hn_search(recipe.get("query", ""), limit=int(recipe.get("limit", 40)))
+            elif kind == "arxiv":
+                items = fetch_arxiv(limit=int(recipe.get("limit", 40)))
+            elif kind == "github_search":
+                items = fetch_github(
+                    limit=int(recipe.get("limit", 40)),
+                    q=recipe.get("q", ""),
+                    days=int(recipe.get("days", 7)),
+                )
+            else:
+                continue
         except Exception:
-            result[name] = []
-    return result
+            items = []
+        for it in items:
+            it["recipe"] = label
+        out[label] = items
+    return out

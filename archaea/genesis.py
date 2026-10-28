@@ -2,10 +2,12 @@
 
 Что делает один запуск:
   1. инициализирует ядро (ledger / treasury / registry / orchestrator) в storage/atria.db
-  2. спавнит первую колонию (Phosphor) — идемпотентно, повторные запуски не дубли
-  3. ставит задачу на цикл колонии и прогоняет её через orchestrator.tick()
-  4. исполняет апоптоз-правила (Казначейство)
-  5. печатает отчёт роя и кладёт storage/metrics.json (для HF Space-пульта)
+  2. спавнит агентов роя — идемпотентно, повторные запуски не дублируют
+  3. находит все колонии (colonies/*/config.json) и ставит задачу на цикл каждой
+  4. прогоняет всё через orchestrator.tick() — один удар пульса
+  5. исполняет апоптоз-правила казначейства
+  6. печатает отчёт роя и кладёт storage/metrics.json (для HF Space-пульта),
+     опционально публикует состояние в HuggingFace-датасет
 
 Запуск: python archaea/genesis.py  (или ./run.sh, ./run.ps1)
 """
@@ -34,103 +36,59 @@ from core.registry import Registry
 from core.treasury import Treasury
 
 SEED_AGENTS = [
-    # (имя, роль, колония, дневной лимит в µ$)
-    ("radar", "scout", "phosphor", 2_000_000),      # $2.00/день на сбор
-    ("refiner", "refinery", "phosphor", 2_000_000),  # $2.00/день на обработку
-    ("scribe", "writer", "phosphor", 2_000_000),     # $2.00/день на упаковку
-    ("merchant", "trade", "phosphor", 1_000_000),    # $1.00/день на публикацию
+    # (имя, роль, колония, дневной лимит в µ$) — общие агенты роя на все колонии
+    ("radar", "scout", "core", 2_000_000),      # $2.00/день на сбор
+    ("refiner", "refinery", "core", 2_000_000),  # $2.00/день на обработку
+    ("scribe", "writer", "core", 2_000_000),     # $2.00/день на упаковку
+    ("merchant", "trade", "core", 1_000_000),    # $1.00/день на публикацию
 ]
 
 
+def discovered_colonies() -> list[str]:
+    """Колония = любая папка в colonies/ с config.json. Новую колонию добавляем
+    просто создав config.json — genesis подхватит её без правок кода."""
+    base = ROOT / "colonies"
+    if not base.exists():
+        return []
+    return sorted(
+        d.name for d in base.iterdir()
+        if d.is_dir() and (d / "config.json").exists()
+    )
+
+
 def load_config(name: str) -> dict:
-    cfg_path = ROOT / "colonies" / name / "config.json"
-    return json.loads(cfg_path.read_text(encoding="utf-8"))
+    return json.loads((ROOT / "colonies" / name / "config.json").read_text(encoding="utf-8"))
 
 
-def phosphor_cycle_factory(config: dict, treasury: Treasury, ledger: Ledger):
-    """Обработчик задачи 'phosphor_cycle' — один цикл колонии Phosphor."""
+def colony_cycle_factory(treasury: Treasury, ledger: Ledger):
+    """Обработчик 'colony_cycle' — один цикл любой колонии (параметризуется payload)."""
     from colonies.phosphor import pipeline, sitegen
 
-    workdir = ROOT / "storage" / "phosphor"
-
     def run(payload: dict) -> dict:
-        snapshot = pipeline.cycle(workdir, config, treasury=treasury, ledger=ledger)
+        colony = payload["colony"]
+        config = load_config(colony)
 
-        dist = ROOT / "colonies" / "phosphor" / "dist"
-        site = sitegen.generate(snapshot, dist, config)
+        snapshot = pipeline.cycle(
+            ROOT / "storage" / colony, config, treasury=treasury, ledger=ledger
+        )
+        site = sitegen.generate(
+            snapshot, ROOT / "colonies" / colony / "dist", config
+        )
 
-        treasury.spend("merchant", 100, note="publish snapshot")
-        ledger.event("phosphor", "merchant", "published", {
+        treasury.spend("merchant", 100, note=f"publish {colony}")
+        ledger.event(colony, "merchant", "published", {
             "pages": site["pages"],
             "out": site["outdir"],
             "items": snapshot["totals"]["items"],
         })
         return {
+            "colony": colony,
             "items": snapshot["totals"]["items"],
             "by_source": snapshot["totals"]["by_source"],
             "pages": site["pages"],
         }
 
     return run
-
-
-def render_report(ledger: Ledger, treasury: Treasury, registry: Registry,
-                  orch: Orchestrator, tick_stats: dict, site_out: dict | None,
-                  snapshot: dict | None) -> str:
-    lines = []
-    lines.append("=" * 62)
-    lines.append("                    УЛЕЙ · ОТЧЁТ ЦИКЛА")
-    lines.append("=" * 62)
-
-    lines.append("\n▸ АГЕНТЫ:")
-    for a in registry.all():
-        cell = treasury.cells()
-        c = next((x for x in cell if x["agent_id"] == a["name"]), None)
-        spent = c["spent_u"] / 1_000_000 if c else 0
-        limit = c["daily_limit_u"] / 1_000_000 if c else 0
-        roi = treasury.roi(a["name"])
-        lines.append(
-            f"  {a['name']:<10} {a['role']:<9} {a['colony']:<9} {a['status']:<8} "
-            f"потрачено ${spent:.4f}/${limit:.2f}  ROI {roi:.2f}"
-        )
-
-    lines.append("\n▸ БЮДЖЕТ:")
-    s = treasury.summary()
-    lines.append(f"  расход ${s['spent_u']/1e6:.4f} · выручка ${s['revenue_u']/1e6:.4f}")
-
-    lines.append("\n▸ ЗАДАЧИ:")
-    lines.append(f"  {orch.stats()} · тик: {tick_stats}")
-
-    vics = treasury.victims()
-    if vics:
-        lines.append("\n▸ АПОПТОЗ:")
-        for v in vics:
-            lines.append(f"  {v['agent_id']}: {v['status']} → ретирую")
-            registry.retire(v["agent_id"], "budget overrun")
-    else:
-        lines.append("\n▸ АПОПТОЗ: нет кандидатов — все клетки в норме")
-
-    lines.append("\n▸ СОБЫТИЯ (последние 10):")
-    for e in ledger.recent(10):
-        lines.append(f"  [{e['colony']}/{e['agent']}] {e['type']} {json.dumps(e['payload'], ensure_ascii=False)[:90]}")
-
-    if snapshot:
-        t = snapshot["totals"]
-        lines.append("\n▸ КОЛОНИЯ PHOSPHOR:")
-        lines.append(f"  предметов в снимке: {t['items']}")
-        lines.append(f"  по источникам:     {t['by_source']}")
-        lines.append(f"  топ-темы:          {list(t['by_topic'])[:6]}")
-        top = snapshot["items"][:5]
-        for i, it in enumerate(top, 1):
-            lines.append(f"  {i}. [{it['source']}] {it['title'][:70]} (buzz {it['buzz']})")
-
-    if site_out:
-        lines.append(f"\n▸ САЙТ: {site_out['pages']} страниц → colonies/phosphor/dist/")
-        for u in site_out["sitemap"][:5]:
-            lines.append(f"    {u}")
-        lines.append("    ...")
-
-    return "\n".join(lines)
 
 
 def publish_state(ledger: Ledger):
@@ -156,17 +114,71 @@ def publish_state(ledger: Ledger):
             repo_id=repo,
             repo_type="dataset",
         )
-        exports = ROOT / "storage" / "phosphor" / "exports"
-        if exports.exists():
-            api.upload_folder(
-                folder_path=str(exports),
-                repo_id=repo,
-                repo_type="dataset",
-                path_in_repo="phosphor",
-            )
+        for colony_dir in (ROOT / "storage").iterdir():
+            exports = colony_dir / "exports"
+            if exports.exists():
+                api.upload_folder(
+                    folder_path=str(exports),
+                    repo_id=repo,
+                    repo_type="dataset",
+                    path_in_repo=colony_dir.name,
+                )
         ledger.event("core", "atria", "state_published", {"repo": repo})
     except Exception as e:
         ledger.event("core", "atria", "state_publish_failed", {"error": repr(e)[:200]})
+
+
+def _fmt_u(u) -> str:
+    return f"${(u or 0) / 1_000_000:.4f}"
+
+
+def render_report(registry: Registry, treasury: Treasury, orch: Orchestrator,
+                  tick_stats: dict, snapshots: dict, sites: dict) -> str:
+    lines = []
+    lines.append("=" * 62)
+    lines.append("                    УЛЕЙ · ОТЧЁТ ЦИКЛА")
+    lines.append("=" * 62)
+
+    lines.append("\n▸ АГЕНТЫ:")
+    cells = {c["agent_id"]: c for c in treasury.cells()}
+    for a in registry.all():
+        c = cells.get(a["name"])
+        spent = (c["spent_u"] / 1e6) if c else 0
+        limit = (c["daily_limit_u"] / 1e6) if c else 0
+        lines.append(
+            f"  {a['name']:<10} {a['role']:<9} {a['colony']:<6} {a['status']:<8} "
+            f"потрачено ${spent:.4f}/${limit:.2f}  ROI {treasury.roi(a['name']):.2f}"
+        )
+
+    s = treasury.summary()
+    lines.append("\n▸ БЮДЖЕТ:")
+    lines.append(f"  расход {_fmt_u(s['spent_u'])} · выручка {_fmt_u(s['revenue_u'])}")
+
+    lines.append("\n▸ ЗАДАЧИ:")
+    lines.append(f"  {orch.stats()} · тик: {tick_stats}")
+
+    vics = treasury.victims()
+    if vics:
+        lines.append("\n▸ АПОПТОЗ:")
+        for v in vics:
+            lines.append(f"  {v['agent_id']}: {v['status']} → ретирую")
+    else:
+        lines.append("\n▸ АПОПТОЗ: нет кандидатов — все клетки в норме")
+
+    for name, snapshot in snapshots.items():
+        t = snapshot["totals"]
+        cfg = load_config(name)
+        site = sites.get(name, {})
+        lines.append(f"\n▸ КОЛОНИЯ {name.upper()} ({cfg['site']['title']}):")
+        lines.append(f"  предметов в снимке: {t['items']}")
+        lines.append(f"  по источникам:     {t['by_source']}")
+        lines.append(f"  топ-темы:          {list(t['by_topic'])[:6]}")
+        for i, it in enumerate(snapshot["items"][:3], 1):
+            lines.append(f"  {i}. [{it['source']}] {it['title'][:70]} (buzz {it['buzz']})")
+        if site:
+            lines.append(f"  сайт: {site['pages']} страниц → colonies/{name}/dist/")
+
+    return "\n".join(lines)
 
 
 def main():
@@ -180,48 +192,40 @@ def main():
     registry = Registry(db, treasury)
     orch = Orchestrator(db)
 
+    colonies = discovered_colonies()
     ledger.event("core", "atria", "genesis", {
-        "db": str(db), "agents": [a[0] for a in SEED_AGENTS],
+        "db": str(db), "colonies": colonies, "agents": [a[0] for a in SEED_AGENTS],
     })
 
-    # 1. спавн колонии
+    # 1. спавн роя (агенты общие — обслуживают все колонии)
     for name, role, colony, limit in SEED_AGENTS:
         registry.spawn(name, role, colony, limit)
 
-    # 2. конфиг и обработчики
-    config = load_config("phosphor")
-    handlers = {
-        "phosphor_cycle": phosphor_cycle_factory(config, treasury, ledger),
-    }
-
-    # 3. задача на цикл + пульс
-    orch.enqueue("phosphor", "data-refine-publish cycle", "phosphor_cycle",
-                 {"workdir": str(ROOT / "storage" / "phosphor")})
+    # 2. задачи на циклы + пульс
+    handlers = {"colony_cycle": colony_cycle_factory(treasury, ledger)}
+    for name in colonies:
+        orch.enqueue(name, f"{name} cycle", "colony_cycle", {"colony": name})
     tick_stats = orch.tick(handlers)
 
-    # 4. результаты
-    done = [t for t in []]
-    site_out = None
-    snapshot = None
-    if tick_stats["ran"]:
-        last = ledger.recent(1, colony="phosphor")
-        # снимок перечитываем из экспорта
-        snap_path = storage / "phosphor" / "exports" / "dataset.json"
+    # 3. снимки и сайты
+    snapshots: dict[str, dict] = {}
+    sites: dict[str, dict] = {}
+    for name in colonies:
+        snap_path = storage / name / "exports" / "dataset.json"
         if snap_path.exists():
-            snapshot = json.loads(snap_path.read_text(encoding="utf-8"))
-        dist = ROOT / "colonies" / "phosphor" / "dist"
+            snapshots[name] = json.loads(snap_path.read_text(encoding="utf-8"))
+        dist = ROOT / "colonies" / name / "dist"
         if (dist / "index.html").exists():
-            pages = sum(1 for _ in dist.rglob("*.html"))
-            site_out = {"pages": pages, "sitemap": [
-                config["site"]["base_url"] + u
-                for u in ["/", "/data.html", "/about.html", "/sitemap.xml"]
-            ]}
+            sites[name] = {
+                "pages": sum(1 for _ in dist.rglob("*.html")),
+                "base_url": load_config(name)["site"]["base_url"],
+            }
 
-    # 5. апоптоз — отдельным актом, чтобы попасть в отчёт
+    # 4. апоптоз
     for v in treasury.victims():
         registry.retire(v["agent_id"], "budget overrun")
 
-    # 6. metrics.json для HF Space-пульта
+    # 5. metrics.json — питание для HF Space-пульта
     metrics = {
         "generated_at": time.time(),
         "elapsed_s": round(time.time() - started, 2),
@@ -229,12 +233,19 @@ def main():
         "agents": registry.all(),
         "budget": treasury.summary(),
         "tasks": orch.stats(),
-        "totals": snapshot["totals"] if snapshot else None,
-        "top_items": [
-            {"title": i["title"], "source": i["source"], "buzz": i["buzz"],
-             "url": i["url"], "topics": i["topics"]}
-            for i in (snapshot or {}).get("items", [])[:15]
-        ],
+        "colonies": {
+            name: {
+                "site": load_config(name)["site"],
+                "totals": s["totals"],
+                "pages": sites.get(name, {}).get("pages", 0),
+                "top_items": [
+                    {"title": i["title"], "source": i["source"], "buzz": i["buzz"],
+                     "url": i["url"], "topics": i["topics"]}
+                    for i in s.get("items", [])[:15]
+                ],
+            }
+            for name, s in snapshots.items()
+        },
     }
     (storage / "metrics.json").write_text(
         json.dumps(metrics, ensure_ascii=False, indent=2), encoding="utf-8"
@@ -242,7 +253,7 @@ def main():
     publish_state(ledger)
     ledger.event("core", "atria", "tick_done", {"elapsed_s": metrics["elapsed_s"]})
 
-    print(render_report(ledger, treasury, registry, orch, tick_stats, site_out, snapshot))
+    print(render_report(registry, treasury, orch, tick_stats, snapshots, sites))
 
     ledger.close()
     treasury.close()

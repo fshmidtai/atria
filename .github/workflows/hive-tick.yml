@@ -27,6 +27,9 @@ jobs:
       - name: install deps
         run: pip install -r requirements.txt
 
+      - name: selftest (ядро без сети — сначала здоровье, потом добыча)
+        run: python archaea/selftest.py
+
       - name: run hive cycle
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}   # поднимает rate-limit GitHub-источника
