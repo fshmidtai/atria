@@ -88,6 +88,7 @@ def audit_site(dist: str | Path, base_url: str = "") -> dict:
 
     # 2b. фирменная 404: CF Pages подхватит её как fallback
     add("404.html есть", (dist / "404.html").exists(), "нет файла")
+    add("trends.html есть", (dist / "trends.html").exists(), "нет файла")
 
     # 3. Внутренние ссылки разрешаются в файлы
     dead: dict[str, list[str]] = {}

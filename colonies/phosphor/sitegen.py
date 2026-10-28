@@ -80,7 +80,7 @@ def _esc(s: str) -> str:
 COPY = {
     "ru": {
         "nav_feed": "Лента", "nav_topics": "Темы", "nav_data": "Данные",
-        "nav_about": "О проекте",
+        "nav_trends": "Тренды", "nav_about": "О проекте",
         "intro": "Автоматический радар: публичные потоки — что набирает резонанс "
                  "прямо сейчас. Обновляется каждые 6 часов без участия человека.",
         "hot": "Что вспыхнуло",
@@ -100,6 +100,13 @@ COPY = {
         "domains_h": "Топ доменов", "th_domain": "домен", "th_mentions": "упоминаний",
         "data_title": "Данные — {title}",
         "data_desc": "Статистика и структура данных снимка",
+        "trends_h": "Trend Index — что растёт",
+        "trends_p": "Прирост и спад по темам относительно предыдущего тика роя. "
+                    "Тот же индекс живьём — в дата-продуктах колонии.",
+        "trends_empty": "Динамика появится со второго тика — рой копит историю.",
+        "th_today": "сегодня", "th_prev": "прошлый тик", "th_delta": "дельта",
+        "trends_title": "Trend Index — {title}",
+        "trends_desc": "Прирост и спад тем относительно предыдущего тика",
         "about_h": "О проекте",
         "about_p1": "<b>{title}</b> — полностью автономное издание. Его собирает "
                     "мультиагентная система <b>Атрия</b>: агенты-«разведчики» тянут "
@@ -120,7 +127,7 @@ COPY = {
     },
     "en": {
         "nav_feed": "Feed", "nav_topics": "Topics", "nav_data": "Data",
-        "nav_about": "About",
+        "nav_trends": "Trends", "nav_about": "About",
         "intro": "An autonomous radar of public streams — what is gaining resonance "
                  "right now. Updated every 6 hours, no human in the loop.",
         "hot": "Trending now",
@@ -140,6 +147,13 @@ COPY = {
         "domains_h": "Top domains", "th_domain": "domain", "th_mentions": "mentions",
         "data_title": "Data — {title}",
         "data_desc": "Statistics and structure of the snapshot",
+        "trends_h": "Trend Index — what is growing",
+        "trends_p": "Growth and decline by topic versus the previous swarm tick. "
+                    "The same index, live — in the colony's data products.",
+        "trends_empty": "Trends appear after the second tick — the swarm is gathering history.",
+        "th_today": "today", "th_prev": "previous tick", "th_delta": "delta",
+        "trends_title": "Trend Index — {title}",
+        "trends_desc": "Topic growth and decline versus the previous tick",
         "about_h": "About",
         "about_p1": "<b>{title}</b> is a fully autonomous publication. It is built "
                     "by the <b>Atria</b> multi-agent system: scout agents pull "
@@ -237,6 +251,7 @@ def _header(site: dict) -> str:
   <nav>
     <a href="/">{L["nav_feed"]}</a>
     <a href="/topics/">{L["nav_topics"]}</a>
+    <a href="/trends.html">{L["nav_trends"]}</a>
     <a href="/data.html">{L["nav_data"]}</a>
     <a href="/about.html">{L["nav_about"]}</a>
   </nav>
@@ -395,6 +410,54 @@ def page_data(snapshot: dict, site: dict) -> str:
                  feed_title=site["title"], lang=_lang(site))
 
 
+def page_trends(site: dict, trends: list, live_topics: set | None = None) -> str:
+    """Публичная грань дата-продукта Trend Index: что растёт, что падает.
+
+    Ссылка на /topics/<t>.html — только для тем, живущих в текущем снимке:
+    топики текут от тика к тику, и ссылка на «вчерашнюю» тему была бы мёртвой
+    (ловится QA-проверкой внутренних ссылок).
+    """
+    L = _L(site)
+    live = live_topics if live_topics is not None else set()
+    rows = ""
+    if not trends:
+        rows = f'<p style="margin-top:14px;color:#9fb4d0">{L["trends_empty"]}</p>'
+    else:
+        body_rows = []
+        for r in trends:
+            topic = _esc(str(r.get("topic", "")))
+            today = int(r.get("count", 0) or 0)
+            prev = int(r.get("count_prev", 0) or 0)
+            delta = today - prev
+            arrow = "▲" if delta > 0 else ("▼" if delta < 0 else "→")
+            color = "#7ee2a8" if delta > 0 else ("#ff9d9d" if delta < 0 else "#9fb4d0")
+            bar = min(today, 60)  # ширина полосы — до 60 «квантов»
+            name = (f'<a href="/topics/{_slug(topic)}.html">{topic}</a>'
+                    if topic in live else topic)
+            body_rows.append(
+                f'<tr><td>{name}</td>'
+                f'<td>{today} <span style="color:#5e7393">{prev}</span></td>'
+                f'<td style="color:{color}">{arrow} {delta:+d}</td>'
+                f'<td><span style="display:inline-block;height:10px;width:{bar * 5}px;'
+                f'background:#2b5aa8;border-radius:3px"></span></td></tr>'
+            )
+        rows = (
+            '<table class="r"><tr><th>' + L["th_topic"] + '</th><th>'
+            + L["th_today"] + ' / ' + L["th_prev"] + '</th><th>' + L["th_delta"]
+            + '</th><th></th></tr>' + "".join(body_rows) + '</table>'
+        )
+    body = f"""{_header(site)}
+<div class="hero">
+  <h1>{L["trends_h"]}</h1>
+  <p style="margin-top:14px">{L["trends_p"]}</p>
+  {rows}
+</div>
+"""
+    return _page(body, L["trends_title"].format(title=site["title"]),
+                 L["trends_desc"], site["base_url"], "trends.html",
+                 feed_title=site["title"], lang=_lang(site))
+
+
 def page_about(site: dict) -> str:
     L = _L(site)
     body = f"""{_header(site)}
@@ -479,7 +542,8 @@ def _related(item: dict, pool: list[dict], limit: int = 5) -> list[dict]:
 
 
 # ---------------------------------------------------------------- главный
-def generate(snapshot: dict, outdir: str | Path, config: dict) -> dict:
+def generate(snapshot: dict, outdir: str | Path, config: dict,
+             trends: list | None = None) -> dict:
     site = config["site"]
     outdir = Path(outdir)
 
@@ -519,12 +583,18 @@ def generate(snapshot: dict, outdir: str | Path, config: dict) -> dict:
         urls.append(f"item/{slug}.html")
 
     (outdir / "data.html").write_text(page_data(snapshot, site), encoding="utf-8")
+    # Trend Index — публичная грань дата-продукта (данные предыдущего тика:
+    # apothecary печёт trend_index.csv после сайтогенерации). Топики текут,
+    # поэтому передаём множество живых тем — мёртвых ссылок быть не должно.
+    (outdir / "trends.html").write_text(page_trends(site, trends or [],
+                                                    live_topics=topics),
+                                        encoding="utf-8")
     (outdir / "about.html").write_text(page_about(site), encoding="utf-8")
     # 404 — в sitemap её не кладём (поисковики не любят), CF Pages подхватит
     # файл сам как fallback для несуществующих путей.
     (outdir / "404.html").write_text(page_404(site), encoding="utf-8")
     generate_feed(snapshot, outdir, config)
-    urls += ["data.html", "about.html", "feed.xml"]
+    urls += ["data.html", "trends.html", "about.html", "feed.xml"]
 
     sitemap = "\n".join(
         f'<url><loc>{site["base_url"]}/{u}</loc><lastmod>'

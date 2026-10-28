@@ -73,8 +73,11 @@ def colony_cycle_factory(treasury: Treasury, ledger: Ledger):
         snapshot = pipeline.cycle(
             ROOT / "storage" / colony, config, treasury=treasury, ledger=ledger
         )
+        # Trend Index берём с прошлого тика (apothecary печёт его позже,
+        # в конце цикла) — честная «динамика к предыдущему тику»
+        trends = apothecary.trend_for(colony, ROOT / "storage")
         site = sitegen.generate(
-            snapshot, ROOT / "colonies" / colony / "dist", config
+            snapshot, ROOT / "colonies" / colony / "dist", config, trends=trends
         )
 
         treasury.spend("merchant", 100, note=f"publish {colony}")

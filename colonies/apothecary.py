@@ -126,6 +126,15 @@ _DESC = {
 }
 
 
+def trend_for(colony: str, storage_root: str | Path) -> list[dict]:
+    """Trend Index последнего тика как словари — публичная страница трендов."""
+    path = Path(storage_root) / colony / "exports" / "products" / "trend_index.csv"
+    if not path.exists():
+        return []
+    with open(path, encoding="utf-8", newline="") as f:
+        return list(csv.DictReader(f))
+
+
 def bake(snapshot: dict, colony: str, storage_root: str | Path) -> dict:
     outdir = Path(storage_root) / colony / "exports" / "products"
     outdir.mkdir(parents=True, exist_ok=True)

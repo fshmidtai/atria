@@ -220,7 +220,9 @@ def test_sitegen_render():
         ],
     }
     tmp = Path(tempfile.mkdtemp())
-    out = sitegen.generate(snap, tmp, cfg)
+    trends = [{"topic": "ai", "count": 7, "count_prev": 3},
+              {"topic": "dev", "count": 2, "count_prev": 2}]
+    out = sitegen.generate(snap, tmp, cfg, trends=trends)
     root = Path(out["outdir"])
 
     idx = (root / "index.html").read_text(encoding="utf-8")
@@ -235,6 +237,16 @@ def test_sitegen_render():
           'property="og:title"' in idx and 'name="twitter:card"' in idx)
     check("sitegen: og:type website на морде", 'content="website"' in idx)
     check("sitegen: 404.html есть", (root / "404.html").exists())
+    tr_html = (root / "trends.html").read_text(encoding="utf-8")
+    check("sitegen: trends.html есть и в sitemap",
+          (root / "trends.html").exists()
+          and "trends.html" in (root / "sitemap.xml").read_text(encoding="utf-8"))
+    check("sitegen: бары и дельты трендов",
+          "▲ +4" in tr_html and "→ +0" in tr_html and "/topics/ai.html" in tr_html)
+    # «вчерашняя» тема (dev) не из текущего снимка — должна быть без ссылки:
+    # мёртвых ссылок на trends-странице не бывает (QA поймал бы)
+    check("sitegen: мёртвых ссылок трендов нет",
+          ">dev</td>" in tr_html and "topics/dev.html" not in tr_html)
 
     item = root / "item" / "alpha-topic.html"
     check("sitegen: страница item'а есть", item.exists())
@@ -247,7 +259,7 @@ def test_sitegen_render():
     import copy
     cfg_en = copy.deepcopy(cfg)
     cfg_en["site"]["lang"] = "en"
-    out_en = sitegen.generate(snap, tmp / "dist_en", cfg_en)
+    out_en = sitegen.generate(snap, tmp / "dist_en", cfg_en, trends=trends)
     en_root = Path(out_en["outdir"])
     idx_en = (en_root / "index.html").read_text(encoding="utf-8")
     check("sitegen: EN — lang атрибут", '<html lang="en">' in idx_en)
@@ -262,6 +274,9 @@ def test_sitegen_render():
     check("sitegen: EN feed language", "<language>en</language>" in feed_en)
     qa_en = qa.audit_site(en_root, base_url="https://t.example")
     check("sitegen: EN-сайт проходит QA", qa_en["errors"] == 0, qa.summarize(qa_en))
+    tr_en = (en_root / "trends.html").read_text(encoding="utf-8")
+    check("sitegen: EN trends.html", "Trend Index — what is growing" in tr_en
+          and "▲ +4" in tr_en)
 
 
 # ---------------------------------------------------------------- QA-ген
