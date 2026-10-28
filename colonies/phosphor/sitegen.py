@@ -16,6 +16,7 @@ import re
 import time
 from datetime import datetime, timezone
 from pathlib import Path
+from xml.sax.saxutils import escape as xescape
 
 from colonies.phosphor.pipeline import SOURCE_LABELS
 
@@ -78,8 +79,12 @@ def _slug(s: str) -> str:
 
 
 def _page(body: str, title: str, description: str, base_url: str, path: str,
-          jsonld: str = "") -> str:
+          jsonld: str = "", feed_title: str = "") -> str:
     canonical = f"{base_url}/{path}" if path else base_url
+    feed = (
+        f'<link rel="alternate" type="application/rss+xml" '
+        f'title="{_esc(feed_title or "RSS")}" href="/feed.xml">'
+    )
     return f"""<!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -88,6 +93,7 @@ def _page(body: str, title: str, description: str, base_url: str, path: str,
 <title>{_esc(title)}</title>
 <meta name="description" content="{_esc(description)}">
 <link rel="canonical" href="{_esc(canonical)}">
+{feed}
 <script type="application/ld+json">{jsonld}</script>
 <style>{CSS}</style>
 </head>
@@ -164,7 +170,8 @@ def page_home(snapshot: dict, site: dict, top_n: int) -> str:
         "description": site["tagline"],
     }, ensure_ascii=False)
     return _page(body, f"{site['title']} — {site['tagline'][:60]}",
-                 site["tagline"], site["base_url"], "", jsonld)
+                 site["tagline"], site["base_url"], "", jsonld,
+                 feed_title=site["title"])
 
 
 def page_topic(topic: str, snapshot: dict, site: dict, top_n: int) -> str:
@@ -183,14 +190,21 @@ def page_topic(topic: str, snapshot: dict, site: dict, top_n: int) -> str:
 """
     return _page(body, f"#{topic} — {site['title']}",
                  f"Тема {topic}: свежие публикации и тренды", site["base_url"],
-                 f"topics/{topic}.html")
+                 f"topics/{topic}.html", feed_title=site["title"])
 
 
-def page_item(item: dict, site: dict) -> str:
+def page_item(item: dict, site: dict, related: list[dict] | None = None) -> str:
     slug = _slug(item["title"])
     tags = "".join(
         f'<a class="chip" href="/topics/{t}.html">#{t}</a>' for t in item.get("topics", [])
     )
+    related_block = ""
+    if related:
+        chips = "".join(
+            f'<a class="chip" href="/item/{_slug(r["title"])}.html">{_esc(r["title"][:60])}</a>'
+            for r in related
+        )
+        related_block = f'<h2>Ещё по теме</h2><div class="chips" style="margin-top:10px">{chips}</div>'
     body = f"""{_header(site)}
 <div class="hero">
   <h1>{_esc(item["title"])}</h1>
@@ -203,6 +217,7 @@ def page_item(item: dict, site: dict) -> str:
   <p style="margin-top:18px"><a href="{_esc(item['url'])}" style="color:#8fb7ff">Читать первоисточник →</a></p>
   <div class="chips" style="margin-top:18px">{tags}</div>
 </div>
+{related_block}
 <div class="pager"><a href="/" style="color:#8fb7ff">← к ленте</a></div>
 """
     jsonld = json.dumps({
@@ -216,7 +231,8 @@ def page_item(item: dict, site: dict) -> str:
     }, ensure_ascii=False)
     return _page(body, f"{item['title']} — {site['title']}",
                  (item["summary"] or item["title"])[:155].strip(),
-                 site["base_url"], f"item/{slug}.html", jsonld)
+                 site["base_url"], f"item/{slug}.html", jsonld,
+                 feed_title=site["title"])
 
 
 def page_data(snapshot: dict, site: dict) -> str:
@@ -245,7 +261,7 @@ def page_data(snapshot: dict, site: dict) -> str:
 <tbody>{dom_rows}</tbody></table>
 """
     return _page(body, f"Данные — {site['title']}", "Статистика и структура данных снимка",
-                 site["base_url"], "data.html")
+                 site["base_url"], "data.html", feed_title=site["title"])
 
 
 def page_about(site: dict) -> str:
@@ -258,11 +274,65 @@ def page_about(site: dict) -> str:
      «базз»-скоринг и генерируют эту страницу.</p>
   <p style="margin-top:12px">Ни одного ручного действия: код живёт в git,
      пульс приходит по cron, хостинг — Cloudflare, датасеты — HuggingFace.</p>
-  <p style="margin-top:12px">Связь: <a href="{_esc(site['contact'])}" style="color:#8fb7ff">{_esc(site['contact'])}</a></p>
+  <p style="margin-top:12px">Связь: <a href="{_esc(site.get('contact', site['base_url']))}" style="color:#8fb7ff">{_esc(site.get('contact', site['base_url']))}</a></p>
 </div>
 """
     return _page(body, f"О проекте — {site['title']}", "Об автономном издании и рое Атрия",
-                 site["base_url"], "about.html")
+                 site["base_url"], "about.html", feed_title=site["title"])
+
+
+# ---------------------------------------------------------------- RSS колонии
+def generate_feed(snapshot: dict, outdir: str | Path, config: dict) -> str:
+    """RSS 2.0 колонии. Item'ы ссылаются на наши страницы, а не на источники:
+    подписка агрегаторов и читалок приводит трафик в колонию, а не уводит его.
+    """
+    site = config["site"]
+    items = snapshot["items"][: int(config.get("top_items_home", 30))]
+    xml_items = []
+    for it in items:
+        slug = _slug(it["title"])
+        link = f"{site['base_url']}/item/{slug}.html"
+        pub = datetime.fromtimestamp(
+            float(it.get("ts", time.time())), tz=timezone.utc
+        ).strftime("%a, %d %b %Y %H:%M:%S GMT")
+        xml_items.append(
+            "    <item>\n"
+            f"      <title>{xescape(it['title'])}</title>\n"
+            f"      <link>{xescape(link)}</link>\n"
+            f'      <guid isPermaLink="true">{xescape(link)}</guid>\n'
+            f"      <pubDate>{pub}</pubDate>\n"
+            f"      <description>{xescape((it.get('summary') or '')[:300])}</description>\n"
+            "    </item>"
+        )
+    built = datetime.now(timezone.utc).strftime("%a, %d %b %Y %H:%M:%S GMT")
+    xml = (
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        "<rss version=\"2.0\">\n"
+        "  <channel>\n"
+        f"    <title>{xescape(site['title'])}</title>\n"
+        f"    <link>{site['base_url']}</link>\n"
+        f"    <description>{xescape(site['tagline'])}</description>\n"
+        "    <language>ru</language>\n"
+        f"    <lastBuildDate>{built}</lastBuildDate>\n"
+        + "\n".join(xml_items)
+        + "\n  </channel>\n</rss>\n"
+    )
+    path = Path(outdir) / "feed.xml"
+    path.write_text(xml, encoding="utf-8")
+    return str(path)
+
+
+def _related(item: dict, pool: list[dict], limit: int = 5) -> list[dict]:
+    """Перекрёстные ссылки по общим темам — внутренний линкинг для SEO."""
+    out = []
+    for other in pool:
+        if other.get("uid") == item.get("uid"):
+            continue
+        if set(other.get("topics", [])) & set(item.get("topics", [])):
+            out.append(other)
+            if len(out) >= limit:
+                break
+    return out
 
 
 # ---------------------------------------------------------------- главный
@@ -283,18 +353,20 @@ def generate(snapshot: dict, outdir: str | Path, config: dict) -> dict:
 
     n_items = int(config.get("top_item_pages", 60))
     slugs = set()
-    for item in snapshot["items"][:n_items]:
+    pool = snapshot["items"][:n_items]
+    for item in pool:
         slug = _slug(item["title"])
         if slug in slugs:
             continue
         slugs.add(slug)
-        p = page_item(item, site)
+        p = page_item(item, site, _related(item, pool))
         (outdir / "item" / f"{slug}.html").write_text(p, encoding="utf-8")
         urls.append(f"item/{slug}.html")
 
     (outdir / "data.html").write_text(page_data(snapshot, site), encoding="utf-8")
     (outdir / "about.html").write_text(page_about(site), encoding="utf-8")
-    urls += ["data.html", "about.html"]
+    generate_feed(snapshot, outdir, config)
+    urls += ["data.html", "about.html", "feed.xml"]
 
     sitemap = "\n".join(
         f'<url><loc>{site["base_url"]}/{u}</loc><lastmod>'

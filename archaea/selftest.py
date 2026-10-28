@@ -8,6 +8,7 @@ CI (см. .github/workflows/hive-tick.yml) запускает selftest пере�
 """
 from __future__ import annotations
 
+import json
 import sys
 import tempfile
 import time
@@ -123,6 +124,111 @@ def test_pii_scrub():
     check("pii: None не роняет", scrub_pii(None) == "")
 
 
+# ---------------------------------------------------------------- apothecary + feed
+def test_apothecary():
+    from colonies import apothecary
+
+    tmp = Path(tempfile.mkdtemp())
+    (tmp / "history.jsonl").write_text(
+        json.dumps({"ts": 1, "colony": "x", "items": 3,
+                    "by_topic": {"ai": 5, "dev": 2}}) + "\n",
+        encoding="utf-8",
+    )
+    items = [
+        {"uid": "a", "source": "hn", "title": "A", "url": "https://x/1", "buzz": 5,
+         "date": "2026-10-24", "topics": ["ai"]},
+        {"uid": "c1", "source": "cve", "title": "CVE-2026-1: Boom", "url": "https://g/1",
+         "buzz": 900, "date": "2026-10-24", "topics": ["security"], "author": "pkg-x",
+         "summary": "Severity: critical. Remote code execution"},
+    ]
+    snap = {"generated_at": "2026-10-24T00:00:00+00:00",
+            "totals": {"by_topic": {"ai": 9, "dev": 2}, "items": 5}, "items": items}
+
+    out = apothecary.bake(snap, "x", tmp)
+    check("apothecary: продукты испеклись",
+          {"digest_top.csv", "trend_index.csv", "cve_digest.csv"} <= set(out["products"]),
+          list(out["products"]))
+
+    trend = (Path(out["outdir"]) / "trend_index.csv").read_text(encoding="utf-8")
+    check("trend: дельта к прошлому тику посчитана",
+          ",ai,9,5,4" in trend.replace("\r", ""), trend.replace("\n", " | "))
+
+    cve = (Path(out["outdir"]) / "cve_digest.csv").read_text(encoding="utf-8")
+    check("apothecary: CVE распарсен (id/severity/package)",
+          "CVE-2026-1" in cve and "critical" in cve and "pkg-x" in cve, cve[:120])
+
+    snap2 = dict(snap)
+    snap2["items"] = items[:1]
+    out2 = apothecary.bake(snap2, "x", tmp)
+    check("apothecary: нет CVE → нет cve_digest", "cve_digest.csv" not in out2["products"],
+          list(out2["products"]))
+
+
+def test_feed_roundtrip():
+    """Колония излучает RSS — и мы же его парсим собственным парсером (dogfooding)."""
+    from colonies.phosphor import sitegen
+    from colonies.phosphor import sources as S
+
+    cfg = {"site": {"title": "T", "tagline": "TT", "base_url": "https://t.example"},
+           "top_items_home": 5}
+    snap = {"items": [
+        {"title": "One <b>html</b>", "ts": time.time(), "summary": "Sum & more", "topics": ["ai"]},
+        {"title": "Two", "ts": time.time(), "summary": "", "topics": []},
+    ]}
+    tmp = Path(tempfile.mkdtemp())
+    path = sitegen.generate_feed(snap, tmp, cfg)
+    raw = Path(path).read_text(encoding="utf-8")
+    parsed = S._parse_feed(raw)
+    check("feed: парсится нашим же RSS-парсером", len(parsed) == 2, len(parsed))
+    check("feed: ссылки ведут на наши страницы",
+          parsed[0]["url"].startswith("https://t.example/item/"), parsed[0]["url"])
+    check("feed: XML-экранирование", "&lt;b&gt;" in raw and "&amp;" in raw)
+
+
+# ---------------------------------------------------------------- полный рендер
+def test_sitegen_render():
+    """Весь сайтgen целиком — ловит регрессии, которые точечные тесты пропускают
+    (такие, как NameError 'site' в _page, сломавший тик v0.3)."""
+    from colonies.phosphor import sitegen
+
+    cfg = {
+        "site": {"title": "Test", "tagline": "T-колония", "base_url": "https://t.example"},
+        "topics": ["ai"],
+        "top_items_home": 3,
+        "top_item_pages": 5,
+    }
+    items = [
+        {"uid": "a", "source": "hn", "title": "Alpha (topic)", "url": "https://x/1",
+         "buzz": 5, "date": "2026-10-24", "ts": time.time(), "points": 1,
+         "comments": 0, "topics": ["ai"], "summary": "text"},
+        {"uid": "b", "source": "cve", "title": "CVE-9: Beta", "url": "https://g/2",
+         "buzz": 9, "date": "2026-10-24", "ts": time.time(), "points": 0,
+         "comments": 0, "topics": ["ai"], "summary": "Severity: high. boom"},
+    ]
+    snap = {
+        "generated_at": "2026-10-24T00:00:00+00:00",
+        "totals": {"items": 2, "by_source": {"hn": 1, "cve": 1}, "by_topic": {"ai": 2},
+                   "top_domains": [("x", 1)], "recipes": {}},
+        "items": items,
+    }
+    tmp = Path(tempfile.mkdtemp())
+    out = sitegen.generate(snap, tmp, cfg)
+    root = Path(out["outdir"])
+
+    idx = (root / "index.html").read_text(encoding="utf-8")
+    check("sitegen: сайт собрался", out["pages"] > 0 and "Alpha" in idx)
+    check("sitegen: feed.xml существует", (root / "feed.xml").exists())
+    check("sitegen: rel=alternate в head", 'type="application/rss+xml"' in idx)
+    check("sitegen: sitemap включает feed", "feed.xml" in (root / "sitemap.xml").read_text(encoding="utf-8"))
+
+    item = root / "item" / "alpha-topic.html"
+    check("sitegen: страница item'а есть", item.exists())
+    if item.exists():
+        txt = item.read_text(encoding="utf-8")
+        check("sitegen: блок 'Ещё по теме'", "Ещё по теме" in txt)
+        check("sitegen: Article JSON-LD", '"@type": "Article"' in txt)
+
+
 # ---------------------------------------------------------------- core
 def test_treasury():
     tmp = Path(tempfile.mkdtemp())
@@ -179,6 +285,7 @@ def test_registry():
 def main() -> int:
     for fn in (test_clean_dedup, test_score_and_tags, test_snapshot,
                test_rss_parse, test_robots_guard, test_pii_scrub,
+               test_apothecary, test_feed_roundtrip, test_sitegen_render,
                test_treasury, test_orchestrator, test_registry):
         try:
             fn()

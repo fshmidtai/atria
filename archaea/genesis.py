@@ -34,6 +34,7 @@ from core.ledger import Ledger
 from core.orchestrator import Orchestrator
 from core.registry import Registry
 from core.treasury import Treasury
+from colonies import apothecary
 
 SEED_AGENTS = [
     # (имя, роль, колония, дневной лимит в µ$) — общие агенты роя на все колонии
@@ -156,6 +157,11 @@ def render_report(registry: Registry, treasury: Treasury, orch: Orchestrator,
 
     lines.append("\n▸ ЗАДАЧИ:")
     lines.append(f"  {orch.stats()} · тик: {tick_stats}")
+    if tick_stats.get("failed"):
+        lines.append(
+            f"\n!! ВНИМАНИЕ: провалено задач: {tick_stats['failed']} "
+            "(exit 0 у сохраняет состояние, но чинить нужно до деплоя)"
+        )
 
     vics = treasury.victims()
     if vics:
@@ -221,6 +227,12 @@ def main():
                 "base_url": load_config(name)["site"]["base_url"],
             }
 
+    # 3b. дата-продукты (ДО записи истории — trend_index сравнивает с прошлым тиком)
+    products: dict[str, dict] = {}
+    for name, s in snapshots.items():
+        products[name] = apothecary.bake(s, name, storage)
+        ledger.event(name, "scribe", "products_baked", products[name]["products"])
+
     # 4. апоптоз
     for v in treasury.victims():
         registry.retire(v["agent_id"], "budget overrun")
@@ -252,6 +264,7 @@ def main():
                 "site": load_config(name)["site"],
                 "totals": s["totals"],
                 "pages": sites.get(name, {}).get("pages", 0),
+                "products": products.get(name, {}).get("products", {}),
                 "top_items": [
                     {"title": i["title"], "source": i["source"], "buzz": i["buzz"],
                      "url": i["url"], "topics": i["topics"]}
