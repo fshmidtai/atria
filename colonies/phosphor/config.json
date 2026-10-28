@@ -1,0 +1,22 @@
+{
+  "name": "phosphor",
+  "site": {
+    "title": "Signal Frontier",
+    "tagline": "Радар инсайтов, трендов и технологий: что вспыхнуло в сети за последние 48 часов",
+    "base_url": "https://signal-frontier.pages.dev",
+    "lang": "ru",
+    "contact": "https://github.com/"
+  },
+  "sources": ["hn", "arxiv", "github"],
+  "limits": {
+    "hn": 60,
+    "arxiv": 60,
+    "github": 40
+  },
+  "top_items_home": 30,
+  "top_items_topic": 30,
+  "top_item_pages": 60,
+  "topics": [
+    "ai", "dev", "crypto", "science", "biz", "security", "hardware"
+  ]
+}

@@ -1,0 +1,47 @@
+name: Atria — hive tick
+
+# Пульс роя: бесплатно (2000 минут/мес на private-репо, безлимит на public).
+# Каждый запуск = один цикл: сбор → очистка → датасет → сайт + коммит состояния.
+on:
+  schedule:
+    - cron: "17 */6 * * *"   # каждые 6 часов в :17
+  workflow_dispatch: {}       # ручной запуск из вкладки Actions
+
+concurrency:
+  group: hive-tick
+  cancel-in-progress: false
+
+permissions:
+  contents: write             # чтобы коммитить состояние обратно в репо
+
+jobs:
+  tick:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: install deps
+        run: pip install -r requirements.txt
+
+      - name: run hive cycle
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}   # поднимает rate-limit GitHub-источника
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}           # публикация датасета (опционально)
+          HF_STATE_REPO: ${{ secrets.HF_STATE_REPO }} # напр. username/atria-hive-state
+        run: python archaea/genesis.py
+
+      - name: commit hive state
+        run: |
+          git config user.name "atria-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add colonies/phosphor/dist storage/metrics.json storage/phosphor/exports || true
+          if git diff --cached --quiet; then
+            echo "нет изменений — спим дальше"
+            exit 0
+          fi
+          git commit -m "hive tick $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git push

@@ -1,0 +1,43 @@
+# Улей Атрии на Oracle Always Free (ARM 4×24 ГБ).
+# Это основная «resident»-инфраструктура роя: циклический агент + память.
+services:
+  hive:
+    build:
+      context: ../..
+      dockerfile: infra/oracle/Dockerfile
+    container_name: atria-hive
+    restart: unless-stopped
+    volumes:
+      - atria-data:/app/storage          # состояние роя переживает пересборку
+    environment:
+      HIVE_TICK_SECONDS: "21600"         # 6 часов
+      TZ: UTC
+      # секреты из корневого .env (см. .env.example)
+      HF_TOKEN: ${HF_TOKEN:-}
+      HF_STATE_REPO: ${HF_STATE_REPO:-}
+      GITHUB_TOKEN: ${GITHUB_TOKEN:-}
+      GROQ_API_KEY: ${GROQ_API_KEY:-}
+      OPENROUTER_API_KEY: ${OPENROUTER_API_KEY:-}
+      LOCAL_LLM_URL: ${LOCAL_LLM_URL:-}
+    command: >
+      sh -c "while true; do
+        echo '[hive] tick start';
+        python archaea/genesis.py || echo '[hive] tick FAILED';
+        echo '[hive] sleeping '$$HIVE_TICK_SECONDS's';
+        sleep $$HIVE_TICK_SECONDS;
+      done"
+
+  # Векторная память роя (ближайшее будущее: embedding-поиск по снятым данным).
+  # Порт открыт только на localhost — наружу не торчим.
+  qdrant:
+    image: qdrant/qdrant:latest
+    container_name: atria-qdrant
+    restart: unless-stopped
+    volumes:
+      - qdrant-data:/qdrant/storage
+    ports:
+      - "127.0.0.1:6333:6333"
+
+volumes:
+  atria-data: {}
+  qdrant-data: {}
