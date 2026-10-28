@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T21:45:36+00:00",
+  "generated_at": "2026-10-28T21:49:28+00:00",
   "sources_used": [
     "hn_search",
     "github_search",
@@ -7,29 +7,35 @@
     "rss"
   ],
   "totals": {
-    "items": 120,
+    "items": 140,
     "by_source": {
       "hn": 60,
-      "github": 60
+      "github": 60,
+      "rss": 20
     },
     "by_recipe": {
       "show_hn": 60,
       "github_ai": 36,
-      "github_llm": 24
+      "github_llm": 24,
+      "tc_ai": 20
     },
     "by_topic": {
-      "ai": 62,
-      "dev": 51,
-      "hardware": 10,
-      "science": 9,
-      "security": 7,
-      "biz": 4,
+      "ai": 79,
+      "dev": 54,
+      "science": 12,
+      "biz": 12,
+      "hardware": 11,
+      "security": 9,
       "crypto": 3
     },
     "top_domains": [
       [
         "github.com",
         66
+      ],
+      [
+        "techcrunch.com",
+        20
       ],
       [
         "news.ycombinator.com",
@@ -121,10 +127,6 @@
       ],
       [
         "spotthedrowningchild.com",
-        1
-      ],
-      [
-        "lanparty.house",
         1
       ]
     ]
@@ -1217,11 +1219,11 @@
       "url": "https://github.com/C4rohan/Lampline",
       "ts": 1792392654.0,
       "points": 396,
-      "comments": 56,
+      "comments": 57,
       "author": "C4rohan",
       "summary": "Build AI phone agents on your own computer and test every change with an AI caller. Open source, runs free with no API keys, cents per call with your own keys. Imports Dialogflow CX.",
       "recipe": "github_llm",
-      "buzz": 564,
+      "buzz": 567,
       "topics": [
         "ai",
         "dev"
@@ -1526,12 +1528,12 @@
       "title": "jmanico/grim-prompter",
       "url": "https://github.com/jmanico/grim-prompter",
       "ts": 1793189366.0,
-      "points": 60,
+      "points": 61,
       "comments": 3,
       "author": "jmanico",
       "summary": "Threat modeling for AI coding agents: point Claude Code, Codex or any agent at your repo and get an evidence-traced threat model. 36 architectures, 29 methods, MIT.",
       "recipe": "github_llm",
-      "buzz": 149,
+      "buzz": 150,
       "topics": [
         "ai",
         "dev"
@@ -1858,6 +1860,270 @@
       "date": "2026-10-18"
     },
     {
+      "uid": "rss:34b53368a5c19b",
+      "source": "rss",
+      "title": "Google expands AI Search ads globally as core ad growth slows",
+      "url": "https://techcrunch.com/2026/10/28/google-expands-ai-search-ads-globally-as-core-ad-growth-slows/",
+      "ts": 1793224117.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Lauren Forristal",
+      "summary": "The announcement came alongside parent company Alphabet's third-quarter earnings report, which saw revenue grow 25% year over year to $127.6 billion.",
+      "recipe": "tc_ai",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "biz"
+      ],
+      "date": "2026-10-28"
+    },
+    {
+      "uid": "rss:65911ac3f4f508",
+      "source": "rss",
+      "title": "Microsoft recorded $10 billion in revenue from OpenAI",
+      "url": "https://techcrunch.com/2026/10/28/microsoft-recorded-10-billion-in-revenue-from-openai/",
+      "ts": 1793223270.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Rebecca Bellan",
+      "summary": "Microsoft said it made $10 billion in revenue from commercial arrangements with OpenAI, including revenue-sharing payments, in the quarter ending September 30. It underscores the still-enormous financial dependency of the partnership.",
+      "recipe": "tc_ai",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "biz"
+      ],
+      "date": "2026-10-28"
+    },
+    {
+      "uid": "rss:1a03c7011eafc4",
+      "source": "rss",
+      "title": "Microsoft hits 10 quarters of record- breaking revenue in a row",
+      "url": "https://techcrunch.com/2026/10/28/microsoft-hits-10-quarters-of-record-breaking-revenue-in-a-row/",
+      "ts": 1793222730.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Julie Bort",
+      "summary": "Whatever the future of AI might be, the current situation is still very good for Microsoft. The tech giant reported yet another record for quarterly revenue on Wednesday: $92.3 billion, a 19% increase over the year-ago quarter.",
+      "recipe": "tc_ai",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "biz"
+      ],
+      "date": "2026-10-28"
+    },
+    {
+      "uid": "rss:b2173123b9bf5b",
+      "source": "rss",
+      "title": "Anthropic just launched tools to show companies what their AI spending is buying",
+      "url": "https://techcrunch.com/2026/10/28/anthropic-just-launched-tools-to-show-companies-what-their-ai-spending-is-buying/",
+      "ts": 1793215198.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Tim Fernholz",
+      "summary": "The frontier lab is lifting the curtain on how users spend money on its models ahead of a planned IPO.",
+      "recipe": "tc_ai",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "biz"
+      ],
+      "date": "2026-10-28"
+    },
+    {
+      "uid": "rss:4c18a8b504fc73",
+      "source": "rss",
+      "title": "Wiz’s CTO on PHP2Shell and the coming ‘vulnpocalypse’",
+      "url": "https://techcrunch.com/video/wizs-cto-on-php2shell-and-the-coming-vulnpocalypse/",
+      "ts": 1793214346.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Theresa Loconsolo",
+      "summary": "The PHP scare may have faded from your feed, but the cleanup is far from over. Last week, two critical bugs in the open source language behind roughly 70% of websites left organizations scrambling to fix their systems, with some taking sites offline until the vulnerabilities could be patched. According to researchers who found the [&#8230;]",
+      "recipe": "tc_ai",
+      "buzz": 80,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-10-28"
+    },
+    {
+      "uid": "rss:e0fde9d76dfcab",
+      "source": "rss",
+      "title": "The ‘Vulnpocalypse’ is coming for the internet’s aging code, says Wiz’s CTO",
+      "url": "https://techcrunch.com/podcast/the-vulnpocalypse-is-coming-for-the-internets-aging-code-says-wizs-cto/",
+      "ts": 1793213439.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Theresa Loconsolo, Rebecca Bellan",
+      "summary": "The PHP scare may have faded from your feed, but the cleanup is far from over. Last week, two critical bugs in the open source language behind roughly 70% of websites left organizations scrambling to fix their systems, with some taking sites offline until the vulnerabilities could be patched. According to researchers who found the [&#8230;]",
+      "recipe": "tc_ai",
+      "buzz": 80,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-10-28"
+    },
+    {
+      "uid": "rss:7a28b9ee4e283b",
+      "source": "rss",
+      "title": "Chrome’s AI-powered Autofill can now dig through your Gmail to fill out forms",
+      "url": "https://techcrunch.com/2026/10/28/chromes-ai-powered-autofill-can-now-dig-through-your-gmail-to-fill-out-forms/",
+      "ts": 1793206800.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Sarah Perez",
+      "summary": "The autofill update lets Chrome pull flight confirmations, tracking info, order details, and other information from your inbox, with your permission.",
+      "recipe": "tc_ai",
+      "buzz": 80,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-10-28"
+    },
+    {
+      "uid": "rss:7fbbcf0aac9e91",
+      "source": "rss",
+      "title": "As AI agents reshape the web, Google opens Gemini and Search to more apps",
+      "url": "https://techcrunch.com/2026/10/28/as-ai-agents-reshape-the-web-google-opens-gemini-and-search-to-more-apps/",
+      "ts": 1793206800.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Sarah Perez",
+      "summary": "A new developer platform will let businesses bring their services to Google's AI experiences, potentially changing how consumers discover and use apps.",
+      "recipe": "tc_ai",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev"
+      ],
+      "date": "2026-10-28"
+    },
+    {
+      "uid": "rss:b01917f8b2b42f",
+      "source": "rss",
+      "title": "AI execs may be too out of touch to build for the general public",
+      "url": "https://techcrunch.com/2026/10/28/ai-execs-may-be-too-out-of-touch-to-build-for-the-general-public/",
+      "ts": 1793202832.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Amanda Silberling",
+      "summary": "Tech leaders are flaunting how out of touch they are when they brag about using AI to connect with their families.",
+      "recipe": "tc_ai",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "science"
+      ],
+      "date": "2026-10-28"
+    },
+    {
+      "uid": "rss:a25dd0954befb2",
+      "source": "rss",
+      "title": "South Korea’s financial industry hit by fresh wave of cyberattacks",
+      "url": "https://techcrunch.com/2026/10/28/south-koreas-financial-industry-hit-by-fresh-wave-of-cyberattacks/",
+      "ts": 1793202078.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Kate Park",
+      "summary": "South Korea’s financial institutions have been hit by another wave of cyberattacks, highlighting the growing risk of AI-driven hacking in Asia.",
+      "recipe": "tc_ai",
+      "buzz": 80,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-10-28"
+    },
+    {
+      "uid": "rss:4de33f2bccf585",
+      "source": "rss",
+      "title": "Voice AI in vogue: Nvidia releases new open transcription model",
+      "url": "https://techcrunch.com/2026/10/28/voice-ai-in-vogue-nvidia-releases-new-open-transcription-model/",
+      "ts": 1793199600.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Julie Bort",
+      "summary": "Nvidia just released a free speech-to-text model that can transcribe up to 40 languages, but it only works on recordings, not live audio, so it’s a big step for meeting and medical transcription tools while still leaving real-time use to rivals like ElevenLabs.",
+      "recipe": "tc_ai",
+      "buzz": 80,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-10-28"
+    },
+    {
+      "uid": "rss:313f7a5d4fe7ac",
+      "source": "rss",
+      "title": "7 days until TechCrunch Founder Summit: Save up to $100 on your pass before doors open",
+      "url": "https://techcrunch.com/2026/10/28/7-days-until-techcrunch-founder-summit-save-up-to-100-before-doors-open/",
+      "ts": 1793192400.0,
+      "points": 0,
+      "comments": 0,
+      "author": "TechCrunch Events",
+      "summary": "In just 7 days, TechCrunch Founder Summit takes over Boston’s SoWa Power Station on November 4. Your chance to save up to $100 on tickets is running out, and the opportunity to learn and connect directly with experienced founders, investors, and startup leaders is almost here.",
+      "recipe": "tc_ai",
+      "buzz": 80,
+      "topics": [
+        "biz"
+      ],
+      "date": "2026-10-28"
+    },
+    {
+      "uid": "rss:c372745ec78a06",
+      "source": "rss",
+      "title": "VCs will make billions on Anthropic’s IPO, but Amazon is set to make much (much) more",
+      "url": "https://techcrunch.com/2026/10/27/vcs-will-make-billions-on-anthropics-ipo-but-amazon-is-set-to-make-much-much-more/",
+      "ts": 1793150128.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Marina Temkin",
+      "summary": "Massive note conversions reveal the true extent of Amazon's ownership in Anthropic.",
+      "recipe": "tc_ai",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "biz"
+      ],
+      "date": "2026-10-28"
+    },
+    {
+      "uid": "rss:092cb86201fbae",
+      "source": "rss",
+      "title": "Parents sue OpenAI, alleging GPT-4o coached their daughter off seizure medication",
+      "url": "https://techcrunch.com/2026/10/27/parents-sue-openai-alleging-gpt-4o-coached-their-daughter-off-seizure-medication/",
+      "ts": 1793144067.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Aditya Mehta",
+      "summary": "A family is suing OpenAI, saying ChatGPT coached their daughter to quietly taper off her seizure medication and keep it from her doctors before she died in February.",
+      "recipe": "tc_ai",
+      "buzz": 80,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-10-27"
+    },
+    {
+      "uid": "rss:5ac9e6d4ee78e6",
+      "source": "rss",
+      "title": "The data center boom has an upside: innovation for the US grid",
+      "url": "https://techcrunch.com/2026/10/27/the-data-center-boom-has-an-upside-innovation-for-the-us-grid/",
+      "ts": 1793141741.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Lucas Ropek",
+      "summary": "As the AI boom stresses the existing power grid, all sorts of new opportunities for grid modernization are also emerging as a result, industry insiders say.",
+      "recipe": "tc_ai",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev"
+      ],
+      "date": "2026-10-27"
+    },
+    {
       "uid": "gh:KhulekanisiyandaMchunu/llm-trading-arena",
       "source": "github",
       "title": "KhulekanisiyandaMchunu/llm-trading-arena",
@@ -2159,6 +2425,96 @@
         "crypto"
       ],
       "date": "2026-10-18"
+    },
+    {
+      "uid": "rss:e36bd78a13d63e",
+      "source": "rss",
+      "title": "Bank of America kindly asks that you don’t share your banking password with your AI assistant",
+      "url": "https://techcrunch.com/2026/10/27/bank-of-america-kindly-asks-that-you-dont-share-your-banking-password-with-your-ai-assistant/",
+      "ts": 1793137474.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Zack Whittaker",
+      "summary": "The banking giant reminds customers that \"you're responsible for activity\" resulting from your AI agents' access.",
+      "recipe": "tc_ai",
+      "buzz": 30,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-10-27"
+    },
+    {
+      "uid": "rss:0ec9dae75184d6",
+      "source": "rss",
+      "title": "Who’s really in charge at Anthropic after the IPO?",
+      "url": "https://techcrunch.com/2026/10/27/whos-really-in-charge-at-anthropic-after-the-ipo/",
+      "ts": 1793137108.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Tim Fernholz",
+      "summary": "Here's a clear explanation of Anthropic's incredibly complex governance structure.",
+      "recipe": "tc_ai",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "biz"
+      ],
+      "date": "2026-10-27"
+    },
+    {
+      "uid": "rss:fc5f9bdbfc14bb",
+      "source": "rss",
+      "title": "Disruptive raises $10B fund to make big bets on at least 10 companies",
+      "url": "https://techcrunch.com/2026/10/27/disruptive-raises-10b-fund-to-make-big-bets-on-at-least-10-companies/",
+      "ts": 1793127335.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Dominic-Madori Davis",
+      "summary": "Disruptive has made headlines in recent years for pouring money into companies like chip startup Groq and the AI voice-generation startup ElevenLabs.",
+      "recipe": "tc_ai",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "science",
+        "biz",
+        "hardware"
+      ],
+      "date": "2026-10-27"
+    },
+    {
+      "uid": "rss:636498a83af930",
+      "source": "rss",
+      "title": "Frontier AI labs say their models refuted the Exponential Time Hypothesis. What does that mean?",
+      "url": "https://techcrunch.com/2026/10/27/frontier-ai-labs-say-their-models-refuted-the-exponential-time-hypothesis-what-does-that-mean/",
+      "ts": 1793120888.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Tim Fernholz",
+      "summary": "TechCrunch spoke to the MIT computer scientist charged with explaining OpenAI's latest mind-bending discovery.",
+      "recipe": "tc_ai",
+      "buzz": 30,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-10-27"
+    },
+    {
+      "uid": "rss:3ddb9b3e3bda73",
+      "source": "rss",
+      "title": "Google’s Genie 4 world model adds audio, more realistic worlds, and real-time steering",
+      "url": "https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering/",
+      "ts": 1793118657.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Rebecca Bellan",
+      "summary": "Genie 4 can maintain a consistent scene for up to two minutes, double Genie 3's limit, and offers better physics and more humanlike characters.",
+      "recipe": "tc_ai",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "science"
+      ],
+      "date": "2026-10-27"
     }
   ]
 }

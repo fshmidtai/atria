@@ -225,6 +225,20 @@ def main():
     for v in treasury.victims():
         registry.retire(v["agent_id"], "budget overrun")
 
+    # 4b. таймсерии роя — затравка «индекса трендов» (будущий дата-продукт).
+    # append-only JSONL: один факт на колонию за тик, файл — в git.
+    now_ts = int(time.time())
+    with open(storage / "history.jsonl", "a", encoding="utf-8") as hf:
+        for name, s in snapshots.items():
+            t = s["totals"]
+            hf.write(json.dumps({
+                "ts": now_ts,
+                "colony": name,
+                "items": t["items"],
+                "by_source": t["by_source"],
+                "by_topic": t["by_topic"],
+            }, ensure_ascii=False) + "\n")
+
     # 5. metrics.json — питание для HF Space-пульта
     metrics = {
         "generated_at": time.time(),
