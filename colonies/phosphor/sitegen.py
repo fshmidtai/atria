@@ -112,6 +112,11 @@ COPY = {
         "about_desc": "Об автономном издании и рое Атрия",
         "footer": "Собрано и обновлено автономно роем <b>Атрия</b> · данные из "
                   "публичных источников",
+        "og_locale": "ru_RU",
+        "404_h": "404 — страницы не существует",
+        "404_p": "Рой собрал этот снимок заново, и старая страница растворилась. "
+                 "Загляните в ленту — там всё свежее.",
+        "404_title": "404 — {title}", "404_desc": "Страница не найдена",
     },
     "en": {
         "nav_feed": "Feed", "nav_topics": "Topics", "nav_data": "Data",
@@ -147,6 +152,11 @@ COPY = {
         "about_desc": "About the autonomous publication and the Atria swarm",
         "footer": "Built and updated autonomously by the <b>Atria</b> swarm · data "
                   "from public sources",
+        "og_locale": "en_US",
+        "404_h": "404 — page not found",
+        "404_p": "The swarm rebuilt this snapshot and the old page dissolved. "
+                 "Check the feed — everything there is fresh.",
+        "404_title": "404 — {title}", "404_desc": "Page not found",
     },
 }
 
@@ -182,6 +192,20 @@ def _page(body: str, title: str, description: str, base_url: str, path: str,
             "name": feed_title,
             "url": base_url,
         }, ensure_ascii=False)
+    # Open Graph / Twitter: превью при шеринге = трафик. og:type выводим из
+    # JSON-LD (Article → article), og:image добавим с брендингом позже.
+    og_type = "article" if '"@type": "Article"' in jsonld else "website"
+    og = (
+        f'<meta property="og:type" content="{og_type}">'
+        f'<meta property="og:site_name" content="{_esc(feed_title or title)}">'
+        f'<meta property="og:title" content="{_esc(title)}">'
+        f'<meta property="og:description" content="{_esc(description)}">'
+        f'<meta property="og:url" content="{_esc(canonical)}">'
+        f'<meta property="og:locale" content="{L["og_locale"]}">'
+        '<meta name="twitter:card" content="summary">'
+        f'<meta name="twitter:title" content="{_esc(title)}">'
+        f'<meta name="twitter:description" content="{_esc(description)}">'
+    )
     footer_ts = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     return f"""<!DOCTYPE html>
 <html lang="{lang}">
@@ -192,6 +216,7 @@ def _page(body: str, title: str, description: str, base_url: str, path: str,
 <meta name="description" content="{_esc(description)}">
 <link rel="canonical" href="{_esc(canonical)}">
 {feed}
+{og}
 <script type="application/ld+json">{jsonld}</script>
 <style>{CSS}</style>
 </head>
@@ -386,6 +411,20 @@ def page_about(site: dict) -> str:
 
 
 # ---------------------------------------------------------------- RSS колонии
+def page_404(site: dict) -> str:
+    L = _L(site)
+    body = f"""{_header(site)}
+<div class="hero">
+  <h1>{L["404_h"]}</h1>
+  <p style="margin-top:14px">{L["404_p"]}</p>
+  <p style="margin-top:18px"><a href="/" style="color:#8fb7ff">{L['back_feed']}</a></p>
+</div>
+"""
+    return _page(body, L["404_title"].format(title=site["title"]),
+                 L["404_desc"], site["base_url"], "",
+                 feed_title=site["title"], lang=_lang(site))
+
+
 def generate_feed(snapshot: dict, outdir: str | Path, config: dict) -> str:
     """RSS 2.0 колонии. Item'ы ссылаются на наши страницы, а не на источники:
     подписка агрегаторов и читалок приводит трафик в колонию, а не уводит его.
@@ -481,6 +520,9 @@ def generate(snapshot: dict, outdir: str | Path, config: dict) -> dict:
 
     (outdir / "data.html").write_text(page_data(snapshot, site), encoding="utf-8")
     (outdir / "about.html").write_text(page_about(site), encoding="utf-8")
+    # 404 — в sitemap её не кладём (поисковики не любят), CF Pages подхватит
+    # файл сам как fallback для несуществующих путей.
+    (outdir / "404.html").write_text(page_404(site), encoding="utf-8")
     generate_feed(snapshot, outdir, config)
     urls += ["data.html", "about.html", "feed.xml"]
 

@@ -231,6 +231,10 @@ def test_sitegen_render():
     check("sitegen: topic из данных (union) отрендерен",
           (root / "topics" / "ai.html").exists()
           and "topics/ai.html" in (root / "sitemap.xml").read_text(encoding="utf-8"))
+    check("sitegen: og/twitter-теги есть",
+          'property="og:title"' in idx and 'name="twitter:card"' in idx)
+    check("sitegen: og:type website на морде", 'content="website"' in idx)
+    check("sitegen: 404.html есть", (root / "404.html").exists())
 
     item = root / "item" / "alpha-topic.html"
     check("sitegen: страница item'а есть", item.exists())
@@ -252,6 +256,7 @@ def test_sitegen_render():
           "Trending now" in idx_en and "Topic ai: fresh posts" in topic_en)
     item_en = (en_root / "item" / "alpha-topic.html").read_text(encoding="utf-8")
     check("sitegen: EN item-страница", "Read the source →" in item_en and "More on the topic" in item_en)
+    check("sitegen: og:type article на item-странице", 'content="article"' in item_en)
     check("sitegen: EN и RU не смешиваются", "Что вспыхнуло" not in idx_en and "к ленте" not in item_en)
     feed_en = (en_root / "feed.xml").read_text(encoding="utf-8")
     check("sitegen: EN feed language", "<language>en</language>" in feed_en)

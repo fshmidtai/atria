@@ -73,14 +73,21 @@ def audit_site(dist: str | Path, base_url: str = "") -> dict:
     add("json-ld есть на каждой странице", not missing,
         f"без блока: {len(missing)}/{len(htmls)}", warn=True)
 
-    # 2. canonical и rel=alternate в каждой странице
+    # 2. canonical, rel=alternate и Open Graph (превью при шеринге) в каждой странице
     no_canon = [h.name for h in htmls
                 if not re.search(r'<link rel="canonical"', h.read_text(encoding="utf-8"))]
     add("canonical есть", not no_canon, f"{len(no_canon)}/{len(htmls)}")
+    no_og = [h.name for h in htmls
+             if not (re.search(r'property="og:title"', h.read_text(encoding="utf-8"))
+                     and re.search(r'name="twitter:card"', h.read_text(encoding="utf-8")))]
+    add("og/twitter-теги есть", not no_og, f"{len(no_og)}/{len(htmls)}")
     feed_link_bad = [h.name for h in htmls
                      if 'type="application/rss+xml"' not in h.read_text(encoding="utf-8")]
     add("rel=alternate (RSS)", not feed_link_bad, f"{len(feed_link_bad)}/{len(htmls)}",
         warn=True)
+
+    # 2b. фирменная 404: CF Pages подхватит её как fallback
+    add("404.html есть", (dist / "404.html").exists(), "нет файла")
 
     # 3. Внутренние ссылки разрешаются в файлы
     dead: dict[str, list[str]] = {}
