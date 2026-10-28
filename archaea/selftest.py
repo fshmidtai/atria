@@ -297,6 +297,56 @@ def test_qa_clean():
     check("qa: ловит фантом sitemap", r4["errors"] >= 1, qa.summarize(r4))
 
 
+# ---------------------------------------------------------------- QA-гейт CI
+def test_qa_gate():
+    from archaea import qa_gate
+
+    tmp = Path(tempfile.mkdtemp())
+    good = tmp / "good.json"
+    good.write_text(
+        json.dumps({"colonies": {"a": {"qa": "QA ok:8 warn:0 err:0"}}}),
+        encoding="utf-8",
+    )
+    check("gate: чистый улей → 0", qa_gate.gate(good) == 0)
+
+    bad = tmp / "bad.json"
+    bad.write_text(
+        json.dumps({"colonies": {
+            "a": {"qa": "QA ok:7 warn:0 err:1"},
+            "b": {"qa": "QA ok:8 warn:0 err:0"},
+        }}),
+        encoding="utf-8",
+    )
+    check("gate: QA-ошибка у колонии → 1", qa_gate.gate(bad) == 1)
+    check("gate: metrics.txt отсутствует → 2", qa_gate.gate(tmp / "nope.json") == 2)
+
+
+# ---------------------------------------------------------------- пульт (Space)
+def test_space_console():
+    """Чистые функции пульта — без gradio (он стоит только в Space)."""
+    from infra.space import app
+
+    check("пульт: QA-зелёная отметка", app._qa_mark("QA ok:8 warn:0 err:0").startswith("✅"))
+    check("пульт: QA-красная отметка", app._qa_mark("QA ok:7 warn:0 err:1").startswith("❌"))
+
+    md, rows, hist, raw = app.refresh()
+    check("пульт: refresh без metrics — понятная ошибка",
+          "metrics.json" in md and "⚠️" in md, md[:70])
+
+    tmp = Path(tempfile.mkdtemp())
+    (tmp / "metrics.json").write_text(
+        (ROOT / "storage" / "metrics.json").read_text(encoding="utf-8"),
+        encoding="utf-8",
+    )
+    app.METRICS_LOCAL = tmp / "metrics.json"
+    md, rows, hist, raw = app.refresh()
+    check("пульт: карточки колоний собрались",
+          "phosphor" in md and "sentinel" in md and "vesper" in md, md[:80])
+    check("пульт: QA-отметки в карточках", "✅" in md)
+    check("пульт: дата-продукты в карточках", "cve_digest.csv" in md)
+    check("пульт: топ-предметы собрались", len(rows) > 0, str(len(rows)))
+
+
 # ---------------------------------------------------------------- core
 def test_treasury():
     tmp = Path(tempfile.mkdtemp())
@@ -354,7 +404,7 @@ def main() -> int:
     for fn in (test_clean_dedup, test_score_and_tags, test_snapshot,
                test_rss_parse, test_robots_guard, test_pii_scrub,
                test_apothecary, test_feed_roundtrip, test_sitegen_render,
-               test_qa_clean,
+               test_qa_clean, test_qa_gate, test_space_console,
                test_treasury, test_orchestrator, test_registry):
         try:
             fn()

@@ -116,6 +116,14 @@ def publish_state(ledger: Ledger):
             repo_id=repo,
             repo_type="dataset",
         )
+        hist = ROOT / "storage" / "history.jsonl"
+        if hist.exists():
+            api.upload_file(
+                path_or_fileobj=str(hist),
+                path_in_repo="history.jsonl",
+                repo_id=repo,
+                repo_type="dataset",
+            )
         for colony_dir in (ROOT / "storage").iterdir():
             exports = colony_dir / "exports"
             if exports.exists():

@@ -38,13 +38,20 @@ jobs:
         run: python archaea/genesis.py
 
       - name: commit hive state
+        # ВСЕ колонии: git add colonies/*/dist — sentinel/vesper должны уехать в репо
+        # так же, как phosphor, иначе их деплой на CF Pages устареет в первый же день.
         run: |
           git config user.name "atria-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add colonies/phosphor/dist storage/metrics.json storage/phosphor/exports || true
+          git add colonies/*/dist storage/metrics.json storage/history.jsonl storage/*/exports || true
           if git diff --cached --quiet; then
             echo "нет изменений — спим дальше"
             exit 0
           fi
           git commit -m "hive tick $(date -u '+%Y-%m-%d %H:%M UTC')"
           git push
+
+      - name: QA gate (публикация вслепую запрещена)
+        # После коммита: genesis выходит 0 всегда (рой живёт дальше) — здесь же
+        # выносится приговор. Красная джоба = человек смотрит.
+        run: python archaea/qa_gate.py
