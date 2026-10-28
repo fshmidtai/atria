@@ -26,6 +26,15 @@ services:
         echo '[hive] sleeping '$$HIVE_TICK_SECONDS's';
         sleep $$HIVE_TICK_SECONDS;
       done"
+    # Healthcheck: hive жив, пока плодит metrics.json с колониями.
+    # start_period 15м — первый тик может идти долго (сеть); после этого
+    # 3 провала подряд = unhealthy → видно в docker ps / alerts.
+    healthcheck:
+      test: ["CMD", "python", "-c", "import json,sys; m=json.load(open('storage/metrics.json')); sys.exit(0 if m.get('colonies') else 1)"]
+      interval: 60s
+      timeout: 15s
+      retries: 3
+      start_period: 15m
 
   # Векторная память роя (ближайшее будущее: embedding-поиск по снятым данным).
   # Порт открыт только на localhost — наружу не торчим.

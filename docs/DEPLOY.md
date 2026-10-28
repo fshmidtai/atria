@@ -46,18 +46,23 @@ git push -u origin master
    - Framework preset: **None**
    - Build command: *(пусто)* — сайт уже собран роем
    - **Build output directory:** `colonies/phosphor/dist`
-4. Deploy. Повторить для vesper → `colonies/vesper/dist` (второй проект).
+4. Deploy. Повторить для **каждой** колонии (сейчас их 4):
+   `colonies/phosphor/dist`, `colonies/vesper/dist`,
+   `colonies/sentinel/dist`, `colonies/meridian/dist` — 4 проекта CF Pages.
 
 **Результат:** `https://<project>.pages.dev` — каждая колония в интернете.
-Прямые ссылки (FREE): `signal-frontier.pages.dev`, `vesper-ai-radar.pages.dev`
-(имена поправить под реальный аккаунт).
+
+**Проверка (поэтому и живём):** в репо коммитятся только сайты, прошедшие
+QA — шаг `QA gate` в workflow краснеет, если у колонии `err>0`
+(см. `archaea/qa.py`, `archaea/qa_gate.py`). Локально то же самое:
+`python archaea/qa_gate.py`.
 
 **Custom domain** (опц.): Pages → Custom domains → добавить. Бесплатный SSL
 выпускается автоматически. Домен покупается у любого регистратора (~$10/год)
 — это первый расход из казначейства (Конституция §2).
 
-**AMP/SEO-проверка:** sitemap доступен по `<site>/sitemap.xml`, JSON-LD —
-в ходе страниц (проверено на стенде).
+**AMP/SEO-проверка:** sitemap доступен по `<site>/sitemap.xml`, JSON-LD и
+Open Graph — в коде страниц (проверено QA и soak).
 
 ---
 
@@ -90,13 +95,16 @@ git add -A && git commit -m "console" && git push
 3. В Space Settings → Variables: `HF_STATE_REPO` = `<user>/atria-hive-state`,
    `HF_TOKEN` = read-токен.
 
-**Проверка:** открыть Space — дашборд покажет агентов, бюджет, топы колоний.
+**Проверка:** открыть Space — дашборд покажет агентов, бюджет, карточки
+колоний (QA-статусы, дата-продукты, страницы), топ снимка и историю тиков.
 
-### 3.3. Датасеты للبيع (дата-продукт)
+### 3.3. Датасеты и продукты на продажу (Data Arbitrage)
 
-Состояние: `atria-hive-state/phosphor/*`, `atria-hive-state/vesper/*` —
-dataset.json + DATA_CARD.md. Можно верифицировать аккаунт dataset'а и
-включить «Pro»-продажи, либо раздавать как лид-магнит (модель Data Arbitrage).
+После каждого тика в `atria-hive-state` лежит по каждой колонии:
+`dataset.json`, `DATA_CARD.md` и папка `products/`
+(`digest_top.csv`, `trend_index.csv`, `cve_digest.csv` — у Sentinel,
+`PRODUCTS.md` — манифест). Датасет можно верифицировать и включить
+«Pro»-продажи, либо раздавать как лид-магнит.
 
 ---
 
@@ -118,14 +126,16 @@ docker compose -f infra/oracle/docker-compose.yml logs -f hive
 место под self-hosted LLM (24 ГБ RAM — Qwen 32B поднимается), векторная
 память (Qdrant) и устойчивость к перебоям GitHub.
 
-**Защита от idle-reclaim:** циклы идут постоянно; в v0.3 добавится healthcheck
-+ бесплатный UptimeRobot-пинг.
+**Защита от idle-reclaim:** циклы идут постоянно, healthcheck (см.
+`docker-compose.yml`) держит статус контейнера — `docker ps` покажет
+`unhealthy`, если улей перестал плодить `metrics.json`. При необходимости —
+бесплатный UptimeRobot-пинг на любой HTTP-эндпоинт по требованию.
 
 ---
 
 ## 5. Что нельзя делать (Конституция §4)
 
--dirs: публиковать `.env`, коммитить `storage/atria.db` (уже в .gitignore)
+- не публиковать `.env`, не коммитить `storage/atria.db` (уже в .gitignore)
 - публично светить токены (передача — только приватным каналом)
 - включать платные ресурсы без решения казначейства
 
