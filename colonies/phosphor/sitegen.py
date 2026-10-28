@@ -13,6 +13,7 @@ from __future__ import annotations
 import html
 import json
 import re
+import shutil
 import time
 from datetime import datetime, timezone
 from pathlib import Path
@@ -85,6 +86,15 @@ def _page(body: str, title: str, description: str, base_url: str, path: str,
         f'<link rel="alternate" type="application/rss+xml" '
         f'title="{_esc(feed_title or "RSS")}" href="/feed.xml">'
     )
+    # Постраниц без собственного JSON-LD получаем дефолтный WebSite:
+    # структурированные данные должны быть на каждой странице (SEO).
+    if not jsonld and feed_title:
+        jsonld = json.dumps({
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": feed_title,
+            "url": base_url,
+        }, ensure_ascii=False)
     return f"""<!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -135,8 +145,8 @@ def _item_row(rank: int, item: dict) -> str:
 
 
 # ---------------------------------------------------------------- страницы
-def page_home(snapshot: dict, site: dict, top_n: int) -> str:
-    items = snapshot["items"][:top_n]
+def page_home(snapshot: dict, site: dict, pool: list[dict], top_n: int) -> str:
+    items = pool[:top_n]
     t = snapshot["totals"]
     rows = "".join(_item_row(i + 1, it) for i, it in enumerate(items))
     chips = "".join(
@@ -174,8 +184,10 @@ def page_home(snapshot: dict, site: dict, top_n: int) -> str:
                  feed_title=site["title"])
 
 
-def page_topic(topic: str, snapshot: dict, site: dict, top_n: int) -> str:
-    items = [i for i in snapshot["items"] if topic in i.get("topics", [])][:top_n]
+def page_topic(topic: str, pool: list[dict], site: dict, top_n: int) -> str:
+    """pool — только то, что отрендерилось как /item/: список не может ссылаться
+    на несуществующую страницу (аудитор qa за этим следит)."""
+    items = [i for i in pool if topic in i.get("topics", [])][:top_n]
     rows = "".join(_item_row(i + 1, it) for i, it in enumerate(items))
     body = f"""{_header(site)}
 <div class="hero">
@@ -339,21 +351,33 @@ def _related(item: dict, pool: list[dict], limit: int = 5) -> list[dict]:
 def generate(snapshot: dict, outdir: str | Path, config: dict) -> dict:
     site = config["site"]
     outdir = Path(outdir)
-    (outdir / "item").mkdir(parents=True, exist_ok=True)
-    (outdir / "topics").mkdir(parents=True, exist_ok=True)
+
+    # Сначала фиксируем пул рендера, потом только из него строим списки —
+    # так ни одна страница не сошлётся на /item/, которого нет.
+    # Предыдущие рендеры (устаревшие item-страницы) вычищаем: dist = снимок.
+    n_items = int(config.get("top_item_pages", 60))
+    pool = snapshot["items"][:n_items]
+    for sub in ("item", "topics"):
+        d = outdir / sub
+        if d.exists():
+            shutil.rmtree(d, ignore_errors=True)
+        d.mkdir(parents=True, exist_ok=True)
+
+    # Топики рендерим объединением: прописанные в config + реально пришедшие в
+    # снимке. Иначе чип «#dev» на странице сошлётся на несуществующую страницу.
+    t_topics = set(snapshot["totals"].get("by_topic", {}))
+    topics = sorted(set(config.get("topics", [])) | t_topics)
 
     urls = []
-    home = page_home(snapshot, site, int(config.get("top_items_home", 30)))
+    home = page_home(snapshot, site, pool, int(config.get("top_items_home", 30)))
     (outdir / "index.html").write_text(home, encoding="utf-8")
 
-    for topic in config.get("topics", []):
-        p = page_topic(topic, snapshot, site, int(config.get("top_items_topic", 30)))
+    for topic in topics:
+        p = page_topic(topic, pool, site, int(config.get("top_items_topic", 30)))
         (outdir / "topics" / f"{topic}.html").write_text(p, encoding="utf-8")
         urls.append(f"topics/{topic}.html")
 
-    n_items = int(config.get("top_item_pages", 60))
     slugs = set()
-    pool = snapshot["items"][:n_items]
     for item in pool:
         slug = _slug(item["title"])
         if slug in slugs:

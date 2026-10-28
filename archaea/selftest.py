@@ -19,6 +19,7 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
+from archaea import qa
 from colonies.phosphor import pipeline
 from core.orchestrator import Orchestrator
 from core.registry import Registry
@@ -193,7 +194,7 @@ def test_sitegen_render():
 
     cfg = {
         "site": {"title": "Test", "tagline": "T-колония", "base_url": "https://t.example"},
-        "topics": ["ai"],
+        "topics": [],  # намеренно пусто: topic-страницы должны родиться из данных
         "top_items_home": 3,
         "top_item_pages": 5,
     }
@@ -209,7 +210,14 @@ def test_sitegen_render():
         "generated_at": "2026-10-24T00:00:00+00:00",
         "totals": {"items": 2, "by_source": {"hn": 1, "cve": 1}, "by_topic": {"ai": 2},
                    "top_domains": [("x", 1)], "recipes": {}},
-        "items": items,
+        "items": [
+            {"uid": "a", "source": "hn", "title": "Alpha (topic)", "url": "https://x/1",
+             "buzz": 5, "date": "2026-10-24", "ts": time.time(), "points": 1,
+             "comments": 0, "topics": ["ai"], "summary": "text"},
+            {"uid": "b", "source": "cve", "title": "CVE-9: Beta", "url": "https://g/2",
+             "buzz": 9, "date": "2026-10-24", "ts": time.time(), "points": 0,
+             "comments": 0, "topics": ["ai"], "summary": "Severity: high. boom"},
+        ],
     }
     tmp = Path(tempfile.mkdtemp())
     out = sitegen.generate(snap, tmp, cfg)
@@ -220,6 +228,9 @@ def test_sitegen_render():
     check("sitegen: feed.xml существует", (root / "feed.xml").exists())
     check("sitegen: rel=alternate в head", 'type="application/rss+xml"' in idx)
     check("sitegen: sitemap включает feed", "feed.xml" in (root / "sitemap.xml").read_text(encoding="utf-8"))
+    check("sitegen: topic из данных (union) отрендерен",
+          (root / "topics" / "ai.html").exists()
+          and "topics/ai.html" in (root / "sitemap.xml").read_text(encoding="utf-8"))
 
     item = root / "item" / "alpha-topic.html"
     check("sitegen: страница item'а есть", item.exists())
@@ -227,6 +238,63 @@ def test_sitegen_render():
         txt = item.read_text(encoding="utf-8")
         check("sitegen: блок 'Ещё по теме'", "Ещё по теме" in txt)
         check("sitegen: Article JSON-LD", '"@type": "Article"' in txt)
+
+
+# ---------------------------------------------------------------- QA-ген
+def test_qa_clean():
+    """Чистый сайт: 0 ошибок (используем рендер sitegen из test_sitegen_render)."""
+    from colonies.phosphor import sitegen
+
+    cfg = {
+        "site": {"title": "T", "tagline": "T", "base_url": "https://t.example",
+                 "contact": "https://t.example"},
+        "topics": ["ai"], "top_items_home": 2, "top_item_pages": 3,
+    }
+    snap = {
+        "generated_at": "2026-10-24T00:00:00+00:00",
+        "totals": {"items": 2, "by_source": {"hn": 2}, "by_topic": {"ai": 2},
+                   "top_domains": [("x", 1)], "recipes": {}},
+        "items": [
+            {"uid": "a", "source": "hn", "title": "Alpha one", "url": "https://x/1",
+             "buzz": 5, "date": "2026-10-24", "ts": time.time(), "points": 1,
+             "comments": 0, "topics": ["ai"], "summary": "s"},
+            {"uid": "b", "source": "hn", "title": "Beta two", "url": "https://x/2",
+             "buzz": 3, "date": "2026-10-24", "ts": time.time(), "points": 0,
+             "comments": 1, "topics": ["ai"], "summary": "s"},
+        ],
+    }
+    tmp = Path(tempfile.mkdtemp())
+    out = sitegen.generate(snap, tmp / "dist", cfg)
+    r = qa.audit_site(out["outdir"], base_url="https://t.example")
+    check("qa: чистый сайт → 0 ошибок", r["errors"] == 0, qa.summarize(r))
+
+    # отравляем: мёртвая внутренняя ссылка
+    idx = tmp / "dist" / "index.html"
+    idx.write_text(
+        idx.read_text(encoding="utf-8").replace("</body>",
+                                                '<a href="/item/ghost.html">x</a></body>'),
+        encoding="utf-8",
+    )
+    r2 = qa.audit_site(tmp / "dist", base_url="https://t.example")
+    check("qa: ловит мёртвую ссылку", r2["errors"] >= 1, qa.summarize(r2))
+
+    # отравляем: битый JSON-LD
+    idx.write_text(
+        idx.read_text(encoding="utf-8").replace('"@type": "WebSite"', '"@type" "WebSite"'),
+        encoding="utf-8",
+    )
+    r3 = qa.audit_site(tmp / "dist", base_url="https://t.example")
+    check("qa: ловит битый JSON-LD", r3["errors"] >= 1, qa.summarize(r3))
+
+    # фантом sitemap
+    sm = tmp / "dist" / "sitemap.xml"
+    sm.write_text(
+        sm.read_text(encoding="utf-8").replace("</urlset>",
+        "<url><loc>https://t.example/item/nope.html</loc></url></urlset>"),
+        encoding="utf-8",
+    )
+    r4 = qa.audit_site(tmp / "dist", base_url="https://t.example")
+    check("qa: ловит фантом sitemap", r4["errors"] >= 1, qa.summarize(r4))
 
 
 # ---------------------------------------------------------------- core
@@ -286,6 +354,7 @@ def main() -> int:
     for fn in (test_clean_dedup, test_score_and_tags, test_snapshot,
                test_rss_parse, test_robots_guard, test_pii_scrub,
                test_apothecary, test_feed_roundtrip, test_sitegen_render,
+               test_qa_clean,
                test_treasury, test_orchestrator, test_registry):
         try:
             fn()

@@ -35,6 +35,7 @@ from core.orchestrator import Orchestrator
 from core.registry import Registry
 from core.treasury import Treasury
 from colonies import apothecary
+from archaea import qa
 
 SEED_AGENTS = [
     # (имя, роль, колония, дневной лимит в µ$) — общие агенты роя на все колонии
@@ -134,7 +135,9 @@ def _fmt_u(u) -> str:
 
 
 def render_report(registry: Registry, treasury: Treasury, orch: Orchestrator,
-                  tick_stats: dict, snapshots: dict, sites: dict) -> str:
+                  tick_stats: dict, snapshots: dict, sites: dict,
+                  qa_results: dict | None = None) -> str:
+    qa_results = qa_results or {}
     lines = []
     lines.append("=" * 62)
     lines.append("                    УЛЕЙ · ОТЧЁТ ЦИКЛА")
@@ -183,6 +186,14 @@ def render_report(registry: Registry, treasury: Treasury, orch: Orchestrator,
             lines.append(f"  {i}. [{it['source']}] {it['title'][:70]} (buzz {it['buzz']})")
         if site:
             lines.append(f"  сайт: {site['pages']} страниц → colonies/{name}/dist/")
+            if name in qa_results:
+                lines.append(f"  {qa.summarize(qa_results[name])}")
+    qa_bad = [n for n, r in qa_results.items() if r["errors"]]
+    if qa_bad:
+        lines.append(
+            f"\n!! ВНИМАНИЕ: QA-ошибки у колоний: {', '.join(qa_bad)} "
+            "— публиковать их нельзя"
+        )
 
     return "\n".join(lines)
 
@@ -233,6 +244,15 @@ def main():
         products[name] = apothecary.bake(s, name, storage)
         ledger.event(name, "scribe", "products_baked", products[name]["products"])
 
+    # 3c. QA-аудит: улей сам проверяет свои сайты перед публикацией
+    qa_results: dict = {}
+    for name in snapshots:
+        dist = ROOT / "colonies" / name / "dist"
+        if (dist / "index.html").exists():
+            r = qa.audit_site(dist, base_url=load_config(name)["site"]["base_url"])
+            qa_results[name] = r
+            ledger.event(name, "scribe", "site_qa", qa.summarize(r))
+
     # 4. апоптоз
     for v in treasury.victims():
         registry.retire(v["agent_id"], "budget overrun")
@@ -264,6 +284,7 @@ def main():
                 "site": load_config(name)["site"],
                 "totals": s["totals"],
                 "pages": sites.get(name, {}).get("pages", 0),
+                "qa": qa.summarize(qa_results[name]) if name in qa_results else None,
                 "products": products.get(name, {}).get("products", {}),
                 "top_items": [
                     {"title": i["title"], "source": i["source"], "buzz": i["buzz"],
@@ -280,7 +301,8 @@ def main():
     publish_state(ledger)
     ledger.event("core", "atria", "tick_done", {"elapsed_s": metrics["elapsed_s"]})
 
-    print(render_report(registry, treasury, orch, tick_stats, snapshots, sites))
+    print(render_report(registry, treasury, orch, tick_stats, snapshots, sites,
+                        qa_results))
 
     ledger.close()
     treasury.close()
