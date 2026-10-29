@@ -46,11 +46,12 @@ jobs:
       - name: commit hive state
         # ВСЕ колонии: git add colonies/*/dist — sentinel/vesper должны уехать в репо
         # так же, как phosphor, иначе их деплой на CF Pages устареет в первый же день.
-        # storage/tg_subs.db — жизни подписчиков бота (иначе каждый тик = отписка всех).
+        # Подписки бота живут в HF-файле tg_subs.json (см. core/tgpost.py),
+        # поэтому репозиторный state больше не нужен.
         run: |
           git config user.name "atria-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add colonies/*/dist storage/metrics.json storage/history.jsonl storage/*/exports storage/tg_subs.db || true
+          git add colonies/*/dist storage/metrics.json storage/history.jsonl storage/*/exports || true
           if git diff --cached --quiet; then
             echo "нет изменений — спим дальше"
             exit 0

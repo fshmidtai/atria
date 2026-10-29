@@ -143,109 +143,106 @@ def invoice_payload() -> dict:
     }
 
 
-def is_pro(conn, chat_id: int, now: float | None = None) -> bool:
-    row = conn.execute(
-        "SELECT until FROM subs WHERE chat_id = ?", (chat_id,)).fetchone()
-    if not row:
-        return False
-    return float(row[0] or 0) > (now if now is not None else time.time())
 
 
-
-def handle_updates(token: str, db_path, lang: str = "ru") -> int:
-    """Опрос long-poll одним заходом. /start = подписка, /stop = отписка.
-    offset подтверждает апдейты (иначе Telegram будет присылать их снова 24ч).
-    Возвращает число обработанных апдейтов (0 = нет токена/сети/апдейтов)."""
+def process_updates(token: str, state: dict, lang: str = "ru") -> int:
+    """Опрос очереди (non-blocking, timeout=0). Тик разбирает накопленное:
+    команды и оплаты Stars (платёж обрабатывает сам Telegram по постоянной
+    ссылке-инвойсу, нам приходит только подтверждение).
+    offset подтверждаем сразу и пишем в state (бот_tick коммитит state в HF,
+    если апдейты были)."""
     if not token:
         return 0
-    conn = _open_subs(db_path)
-    row = conn.execute(
-        "SELECT value FROM tg_state WHERE key='offset'").fetchone()
-    offset = int(row[0]) if row else 0
+    offset = int(state.get("offset", 0) or 0)
     data = _api(token, "getUpdates", {"timeout": 0, "offset": offset})
     if not data or not data.get("ok"):
-        conn.close()
         return 0
-    updates = data.get("result", [])
-    handled = 0
-    for u in updates:
-        uid = u.get("update_id", offset)
-        conn.execute(
-            "INSERT OR REPLACE INTO tg_state (key, value) VALUES ('offset', ?)",
-            (str(uid + 1),))
+    ups = data.get("result", [])
+    chats = state.setdefault("chats", {})
+    for u in ups:
+        state["offset"] = int(u.get("update_id", offset)) + 1
         msg = (u.get("message") or {})
         chat = msg.get("chat") or {}
         cid = chat.get("id")
         text = (msg.get("text") or "").strip()
-        # успешная оплата Stars (приходит как message.successful_payment)
         pay = msg.get("successful_payment")
         if pay and cid is not None:
             try:
                 days = json.loads(pay.get("payload", "{}")).get("days", PRO_DAYS)
             except Exception:
                 days = PRO_DAYS
-            until = time.time() + days * 86400
-            conn.execute(
-                "UPDATE subs SET until = ? WHERE chat_id = ?", (until, cid))
+            chats[str(cid)] = {**(chats.get(str(cid)) or {}), "chat_id": cid,
+                               "until": time.time() + days * 86400}
             _api(token, "sendMessage", {
-                "chat_id": cid,
-                "text": f"⭐ Pro активирован на {days} дн. Спасибо за поддержку "
-                        f"роя! Теперь дайджесты придут в полном виде (top-20)."})
-            handled += 1
+                "chat_id": cid, "parse_mode": "HTML",
+                "text": f"⭐ <b>Pro активирован</b> на {days} дн. — полный "
+                        "дайджест (top-20) пойдёт следующим тиком. Спасибо!"})
             continue
         if cid is None:
-            handled += 1
             continue
         if text.startswith("/start"):
-            conn.execute(
-                "INSERT OR IGNORE INTO subs (chat_id, lang, created) VALUES (?,?,?)",
-                (cid, lang, time.time()))
-            _api(token, "sendMessage", {
-                "chat_id": cid,
-                "text": WELCOME_RU if lang == "ru" else WELCOME_EN,
-                "parse_mode": "HTML"})
+            chats[str(cid)] = {**(chats.get(str(cid)) or {}), "chat_id": cid}
+            link = state.get("invoice_url")
+            hi = WELCOME_RU if lang == "ru" else WELCOME_EN
+            if link:
+                hi += ("\n\n⭐ <b>Pro</b> (полный дайджест, месяц): "
+                       f"<a href=\"{link}\">{PRO_PRICE_STARS} Stars</a>")
+            _api(token, "sendMessage", {"chat_id": cid, "parse_mode": "HTML",
+                                        "text": hi})
         elif text.startswith("/pro"):
-            inv = _api(token, "createInvoiceLink", invoice_payload())
-            link = (inv or {}).get("result") if inv else None
+            link = ensure_invoice(token, state)
             _api(token, "sendMessage", {
-                "chat_id": cid,
-                "text": ("⭐ <b>Атрия Pro</b> — полный дайджест по всем вертикалям "
-                         f"(top-20), {PRO_PRICE_STARS} Stars на {PRO_DAYS} дн.\n"
-                         "Оплата внутри Telegram, вывод роя — через Fragment.")[:300],
-                "parse_mode": "HTML",
+                "chat_id": cid, "parse_mode": "HTML",
+                "text": f"⭐ <b>Атрия Pro</b> — полный дайджест по всем "
+                        f"вертикалям (top-20 вместо 5), {PRO_DAYS} дн.\n"
+                        f"Оплата {PRO_PRICE_STARS} Stars внутри Telegram.",
                 "reply_markup": ({"inline_keyboard": [[{
                     "text": f"Оплатить {PRO_PRICE_STARS} Stars", "url": link}]]}
                     if link else None)})
         elif text.startswith("/stop"):
-            conn.execute("DELETE FROM subs WHERE chat_id = ?", (cid,))
+            chats.pop(str(cid), None)
             _api(token, "sendMessage", {"chat_id": cid, "text": "Unsubscribed."})
-        handled += 1
-    conn.commit()
-    conn.close()
-    return handled
+    return len(ups)
 
 
-def broadcast(token: str, db_path, text: str, max_chats: int = 200) -> int:
-    """Рассылка дайджеста всем подписчикам. Telegram-сеть падает — шлём кому
-    смогли, очередь не копим (дайджест частый — потеря одной волны не критична)."""
-    if not token:
-        return 0
-    conn = _open_subs(db_path)
-    rows = conn.execute(
-        "SELECT chat_id FROM subs ORDER BY created LIMIT ?", (max_chats,)).fetchall()
-    conn.close()
-    sent = 0
-    for (cid,) in rows:
-        if _api(token, "sendMessage",
-                {"chat_id": cid, "text": text, "parse_mode": "HTML",
-                 "disable_web_page_preview": True}):
-            sent += 1
-    return sent
+def ensure_invoice(token: str, state: dict) -> str | None:
+    """Постоянная ссылка-инвойс Stars: создаётся один раз, живёт без нас —
+    пока бот не онлайн (бесплатный хостинг), Telegram сам принимает платёж,
+    подтверждение придёт в очередь и тик его подберёт."""
+    link = state.get("invoice_url")
+    if not link:
+        d = _api(token, "createInvoiceLink", invoice_payload())
+        link = (d or {}).get("result")
+        if link:
+            state["invoice_url"] = link
+    return link
+
+
+def hf_subs_file() -> str:
+    repo = os.environ.get("HF_STATE_REPO", "fshmidtai/atria-hive-state").strip()
+    return f"https://huggingface.co/datasets/{repo}/resolve/main/tg_subs.json"
+
+
+def save_subs(state: dict) -> bool:
+    """Коммит состояния подписок в HF-датасет (только если есть HF_TOKEN)."""
+    token = os.environ.get("HF_TOKEN", "").strip()
+    repo = os.environ.get("HF_STATE_REPO", "fshmidtai/atria-hive-state").strip()
+    if not token or not repo or not state:
+        return False
+    try:
+        from huggingface_hub import HfApi
+        HfApi(token=token).upload_file(
+            path_or_fileobj=json.dumps(state, ensure_ascii=False).encode("utf-8"),
+            path_in_repo="tg_subs.json", repo_id=repo, repo_type="dataset",
+            commit_message="tg subs state sync")
+        return True
+    except Exception:
+        return False
 
 
 def parse_subs_json(raw: str) -> dict:
-    """Состояние подписок из HF-файла (Space пишет, тик читает).
-    Формат: {"chats": {"<chat_id>": {...}}, "offset": int}"""
+    """Состояние подписок из HF-файла: {"chats": {"<id>": {...}},
+    "offset": int, "invoice_url": str?}"""
     try:
         d = json.loads(raw)
     except Exception:
@@ -255,9 +252,10 @@ def parse_subs_json(raw: str) -> dict:
     return d
 
 
-def fetch_subs(url: str, timeout: int = 20) -> dict:
+def fetch_subs(url: str | None = None, timeout: int = 20) -> dict:
     """Тянем состояние подписок с HF (public read, без токена)."""
-    req = urllib.request.Request(url, headers={"User-Agent": "atria-tick"})
+    req = urllib.request.Request(url or hf_subs_file(),
+                                 headers={"User-Agent": "atria-tick"})
     try:
         with urllib.request.urlopen(req, timeout=timeout) as r:
             return parse_subs_json(r.read().decode("utf-8"))
@@ -265,20 +263,22 @@ def fetch_subs(url: str, timeout: int = 20) -> dict:
         return {"chats": {}, "offset": 0}
 
 
-def bot_tick(snapshots: list, subs: dict | None = None, lang: str = "ru") -> dict:
-    """Вход из тика: раздать дайджесты всем подписчикам из HF-состояния.
-    getUpdates НЕ зовём — очередь owns always-on Space (иначе 409 Conflict);
-    тик только читает общий файл и рассылает."""
+def bot_tick(snapshots: list, lang: str = "ru", subs: dict | None = None) -> dict:
+    """Вход из тика: (1) разобрать очередь (подписки/оплаты/команды) и
+    закоммитить состояние в HF, (2) раздать дайджесты (Pro = top-20)."""
     token = os.environ.get("TG_BOT_TOKEN", "")
-    if not token or not subs:
+    if not token:
         return {"updates": 0, "sent": 0}
+    state = subs if subs is not None else fetch_subs()
+    updates = process_updates(token, state, lang=lang)
+    if updates:
+        state["saved"] = save_subs(state)
     now = time.time()
     sent = 0
-    chats = subs.get("chats", {})
-    for key, meta in chats.items():
+    for key, meta in list(state.get("chats", {}).items()):
         cid = meta.get("chat_id") if isinstance(meta, dict) else None
         if cid is None:
-            try:  # старый формат — ключ был chat_id
+            try:
                 cid = int(key)
             except Exception:
                 continue
@@ -291,4 +291,4 @@ def bot_tick(snapshots: list, subs: dict | None = None, lang: str = "ru") -> dic
                                             "parse_mode": "HTML",
                                             "disable_web_page_preview": True}):
                 sent += 1
-    return {"updates": 0, "sent": sent}
+    return {"updates": updates, "sent": sent}

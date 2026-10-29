@@ -86,13 +86,10 @@ def colony_cycle_factory(treasury: Treasury, ledger: Ledger):
             "out": site["outdir"],
             "items": snapshot["totals"]["items"],
         })
-        # TG-доставка: третий renderer роя. Подписки лежат в HF-файле, который
-        # пишет always-on Space (fshmidtai/atria-bot); тик только читает.
+        # TG-доставка: третий renderer роя. Состояние подписок лежит в
+        # HF-файле (тик его и читает, и пишет; очередь расбирает тоже тик).
         from core import tgpost
-        subs = tgpost.fetch_subs(
-            "https://huggingface.co/datasets/fshmidtai/atria-hive-state/"
-            "resolve/main/tg_subs.json")
-        tgpost.bot_tick([snapshot], subs,
+        tgpost.bot_tick([snapshot],
                         lang=config.get("site", {}).get("lang", "ru"))
         return {
             "colony": colony,

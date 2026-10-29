@@ -362,7 +362,7 @@ def test_tgpost():
     check("tg: EN-копии", "Fresh snapshot" in txt_en and "items" in txt_en)
     check("tg: обрезка top_n", "Beta" not in txt_en)
 
-    # подписчики: сеть подмена ( monkeypatch _api), токен есть
+    # подписчики: сеть подмена (_api), токен есть — JSON-state модель
     calls = []
 
     def fake_api(token, method, payload):
@@ -375,29 +375,58 @@ def test_tgpost():
                  "message": {"chat": {"id": 456}, "text": "hello"}},
                 {"update_id": 102,
                  "message": {"chat": {"id": 123}, "text": "/stop"}},
+                {"update_id": 103,
+                 "message": {"chat": {"id": 456},
+                             "successful_payment": {
+                                 "payload": '{"product":"atria_pro_month","days":31}'}}},
             ]}
+        if method == "createInvoiceLink":
+            return {"ok": True, "result": "https://t.me/invoice/fake"}
         return {"ok": True, "result": {"message_id": 1}}
 
-    orig_api = tgpost._api
-    orig_token = tgpost.__dict__
-    tgpost._api = fake_api
     import os as _os
+    orig_api = tgpost._api
+    orig_save = tgpost.save_subs
+    tgpost._api = fake_api
+    tgpost.save_subs = lambda state: True
     _os.environ["TG_BOT_TOKEN"] = "fake:test"
-    tmp = Path(tempfile.mkdtemp())
-    n = tgpost.handle_updates("fake:test", tmp / "tg.db")
-    check("tg: 3 апдейта обработаны", n == 3, n)
-    # 123 подписался и отписался, 456 не подписывался → 0 subs
-    conn = tgpost._open_subs(tmp / "tg.db")
-    rows = conn.execute("SELECT chat_id FROM subs").fetchall()
-    offset = conn.execute("SELECT value FROM tg_state WHERE key='offset'").fetchone()
-    conn.close()
-    check("tg: подписка/отписка отработали", rows == [] and offset[0] == "103",
-          f"{rows} {offset}")
-    check("tg: offset подтверждён", True)
-    # рассылка_Table нет_подписчиков = 0
-    sent = tgpost.broadcast("fake:test", tmp / "tg.db", "x")
-    check("tg: рассылка без подписчиков = 0", sent == 0, sent)
+    state = {"chats": {}, "offset": 0}
+    n = tgpost.process_updates("fake:test", state)
+    check("tg: 4 апдейта обработаны", n == 4, n)
+    # 123 подписался и отписался, 456 оплатил Pro
+    chats = state["chats"]
+    check("tg: 123 отпал, 456 остался Pro",
+          "123" not in chats and "456" in chats, sorted(chats))
+    check("tg: Pro-подписка до > now",
+          float(chats.get("456", {}).get("until", 0)) > time.time())
+    check("tg: offset подтверждён", state["offset"] == 104, state["offset"])
+    check("tg: /pro создаёт постоянный инвойс",
+          (tgpost.ensure_invoice("fake:test", state)
+           == "https://t.me/invoice/fake"
+           and state["invoice_url"] == "https://t.me/invoice/fake"),
+          state.get("invoice_url"))
+
+    # бот_тик: рассылка с Pro (top-20) и без (top-5)
+    def api2(token, method, payload):
+        if method == "getUpdates":
+            return {"ok": True, "result": []}
+        if method == "sendMessage":
+            sent2.append((payload["chat_id"], payload["text"]))
+            return {"ok": True}
+        return {"ok": True}
+
+    sent2 = []
+    tgpost._api = api2
+    big = {"totals": {"items": 42},
+           "items": [{"title": f"item{i}", "url": f"https://x/{i}",
+                      "source": "s", "buzz": 1} for i in range(30)]}
+    stats = tgpost.bot_tick([big], subs={"chats": chats, "offset": 104})
+    pro_txt = [t for c, t in sent2 if c == 456][0]
+    free_txt = [t for c, t in sent2 if c == 123]
+    check("tg: бот_тик Pro = top-20", pro_txt.count("\n") >= 10, stats)
+    check("tg: бот_тик свежие неподписанные не летят", free_txt == [], sent2)
     tgpost._api = orig_api
+    tgpost.save_subs = orig_save
     _os.environ.pop("TG_BOT_TOKEN", None)
 
 
