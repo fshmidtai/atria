@@ -25,7 +25,9 @@ jobs:
           python-version: "3.12"
 
       - name: install deps
-        run: pip install -r requirements.txt
+        run: |
+          pip install -r requirements.txt
+          pip install blake3     # хэш-схема ассетов CF Pages (как у wrangler)
 
       - name: selftest (ядро без сети — сначала здоровье, потом добыча)
         run: python archaea/selftest.py
@@ -58,3 +60,12 @@ jobs:
         # После коммита: genesis выходит 0 всегда (рой живёт дальше) — здесь же
         # выносится приговор. Красная джоба = человек смотрит.
         run: python archaea/qa_gate.py
+
+      - name: deploy sites to Cloudflare Pages
+        # Каждые 6 часов: QA прошла → все 5 сайтов CDN обновляются.
+        # blake3 + direct-upload протокол (infra/cloudflare/deploy_pages.py).
+        if: success()
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+        run: python infra/cloudflare/deploy_pages.py
