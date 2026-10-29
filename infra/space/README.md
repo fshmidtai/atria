@@ -4,8 +4,8 @@ language:
   - en
 license: apache-2.0
 task_categories:
-  - text-mining
   - summarization
+  - feature-extraction
 tags:
   - autonomous-agents
   - news-radar
@@ -19,7 +19,7 @@ size_category: 1K<n<10K
 
 Автономное состояние роя **Атрия** — мультиагентной системы, которая каждые
 6 часов собирает, чистит и публикует дайджесты публичных потоков
-(AI/ML, кибербезопасность, рынки/фintech, вступления в IT).
+(AI/ML, кибербезопасность, рынки/fintech, новости в IT).
 
 ## Что внутри
 
