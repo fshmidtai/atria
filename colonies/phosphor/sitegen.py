@@ -141,6 +141,7 @@ COPY = {
         "mon_support": "Поддержать улей",
         "mon_buy": "Купить полный датасет",
         "mon_crypto": "Поддержать криптой — переводы напрямую на кошелёк:",
+        "mon_stars": "⭐ Атрия Pro — полный дайджест (199 Stars/мес)",
     },
     "en": {
         "nav_feed": "Feed", "nav_topics": "Topics", "nav_data": "Data",
@@ -197,6 +198,7 @@ COPY = {
         "mon_support": "Support the hive",
         "mon_buy": "Buy the full dataset",
         "mon_crypto": "Support with crypto (no reversal needed — networks and addresses are current):",
+        "mon_stars": "⭐ Atria Pro — full digest (199 Stars/mo)",
     },
 }
 
@@ -216,9 +218,10 @@ def _cta(site: dict) -> str:
     mon = (site or {}).get("monetization") or {}
     support = mon.get("support_url")
     products = mon.get("products_url")
+    stars = mon.get("stars")
     crypto = [c for c in (mon.get("crypto") or [])
               if c.get("net") and c.get("address")]
-    if not (support or products or crypto):
+    if not (support or products or crypto or stars):
         return ""
     L = COPY.get(_lang(site), COPY["ru"])
     buttons = ""
@@ -226,6 +229,11 @@ def _cta(site: dict) -> str:
         buttons += f'<a class="btn" href="{_esc(support)}" rel="nofollow noopener">{L["mon_support"]}</a>'
     if products:
         buttons += f'<a class="btn ghost" href="{_esc(products)}" rel="nofollow noopener">{L["mon_buy"]}</a>'
+    stars_html = ""
+    if stars:
+        stars_html = ('<p style="margin-top:14px"><a class="btn ghost" '
+                      f'href="{_esc(stars)}" rel="nofollow noopener">⭐ '
+                      + L.get("mon_stars", "Атрия Pro — месяц (Stars)") + '</a></p>')
     crypto_html = ""
     if crypto:
         rows = "".join(
@@ -237,7 +245,7 @@ def _cta(site: dict) -> str:
         crypto_html = ('<p style="margin-top:14px"><b>' + L["mon_crypto"]
                        + '</b></p>' + rows)
     return ('<div class="cta"><p>' + L["mon_pitch"] + '</p>' + buttons
-            + crypto_html + '</div>')
+            + stars_html + crypto_html + '</div>')
 
 
 def _L(site: dict) -> dict:

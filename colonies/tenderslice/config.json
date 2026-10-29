@@ -16,7 +16,8 @@
           "net": "USDT (BEP-20)",
           "address": "0xd4934a0935281c76b45d1254ee9A7F392861944b"
         }
-      ]
+      ],
+      "stars": "https://t.me/$DbtftXcaIUuMFwAAyr9kmgrgww0"
     },
     "tg": {
       "bot": "https://t.me/dimon_claw_bot"
@@ -30,12 +31,26 @@
       "pattern": "/tender/",
       "limit": 15,
       "fields": [
-        {"name": "sum", "re": "VALUE\\s*\\n\\s*RUB\\s*([\\d,]+)"},
-        {"name": "region", "re": "LOCATION\\s*\\n\\s*([^\\n]+)"},
-        {"name": "closes", "re": "CLOSES\\s*\\n\\s*([^\\n]+)"},
-        {"name": "buyer", "re": "Issued by\\s*\\n\\s*([^\\n]{8,120})"}
+        {
+          "name": "sum",
+          "re": "VALUE\\s*\\n\\s*RUB\\s*([\\d,]+)"
+        },
+        {
+          "name": "region",
+          "re": "LOCATION\\s*\\n\\s*([^\\n]+)"
+        },
+        {
+          "name": "closes",
+          "re": "CLOSES\\s*\\n\\s*([^\\n]+)"
+        },
+        {
+          "name": "buyer",
+          "re": "Issued by\\s*\\n\\s*([^\\n]{8,120})"
+        }
       ],
-      "filters": {"sum_max": 300000}
+      "filters": {
+        "sum_max": 300000
+      }
     },
     {
       "kind": "rss",

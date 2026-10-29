@@ -339,6 +339,17 @@ def test_monetization_cta():
     qa_c = qa.audit_site(Path(out_c["outdir"]), base_url="https://t.example")
     check("mon: QA чистый с крипто-CTA", qa_c["errors"] == 0, qa.summarize(qa_c))
 
+    # Stars-рельс: постоянный инвойс Pro, деньги собирает сам Telegram
+    cfg_s = copy.deepcopy(cfg)
+    cfg_s["site"]["monetization"] = {
+        "stars": "https://t.me/$DbtftXcaIUuMFwAAyr9kmgrgww0"}
+    out_s = sitegen.generate(snap, tmp / "dist_s", cfg_s)
+    html_s = (Path(out_s["outdir"]) / "index.html").read_text(encoding="utf-8")
+    check("mon: Stars-CTA рендерится",
+          "$DbtftXcaIUuMFwAAyr9kmgrgww0" in html_s and "Pro" in html_s)
+    check("mon: мёртвый stars-рельс не рендерится",
+          sitegen._cta({"monetization": {"stars": ""}}) == "")
+
 
 # ---------------------------------------------------------------- TG-доставка
 def test_tgpost():
