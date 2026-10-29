@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-29T11:18:35+00:00",
+  "generated_at": "2026-10-29T15:00:36+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -8,27 +8,28 @@
     "github_search"
   ],
   "totals": {
-    "items": 102,
+    "items": 112,
     "by_source": {
       "hn": 40,
       "cve": 30,
       "github": 22,
-      "rss": 10
+      "rss": 20
     },
     "by_recipe": {
       "hn_sec": 40,
       "gh_advisories": 30,
       "github_sec": 22,
+      "schneier": 10,
       "krebs": 10
     },
     "by_topic": {
-      "security": 88,
-      "ai": 43,
-      "dev": 39,
+      "security": 94,
+      "ai": 48,
+      "dev": 43,
       "hardware": 8,
-      "crypto": 7,
-      "biz": 5,
-      "science": 4
+      "biz": 8,
+      "crypto": 8,
+      "science": 6
     },
     "top_domains": [
       [
@@ -38,6 +39,10 @@
       [
         "krebsonsecurity.com",
         11
+      ],
+      [
+        "schneier.com",
+        10
       ],
       [
         "news.ycombinator.com",
@@ -125,10 +130,6 @@
       ],
       [
         "thephp.foundation",
-        1
-      ],
-      [
-        "reportcybercrime.com",
         1
       ]
     ]
@@ -1439,24 +1440,6 @@
       "date": "2026-10-23"
     },
     {
-      "uid": "gh:jmanico/grim-prompter",
-      "source": "github",
-      "title": "jmanico/grim-prompter",
-      "url": "https://github.com/jmanico/grim-prompter",
-      "ts": 1793189366.0,
-      "points": 104,
-      "comments": 9,
-      "author": "jmanico",
-      "summary": "Threat modeling for AI coding agents: point Claude Code, Codex or any agent at your repo and get an evidence-traced threat model. 36 architectures, 29 methods, MIT.",
-      "recipe": "github_sec",
-      "buzz": 211,
-      "topics": [
-        "ai",
-        "dev"
-      ],
-      "date": "2026-10-28"
-    },
-    {
       "uid": "gh:HOSTED-POWER/php_uploadprogress_guard",
       "source": "github",
       "title": "HOSTED-POWER/php_uploadprogress_guard",
@@ -1511,6 +1494,41 @@
       "date": "2026-10-21"
     },
     {
+      "uid": "gh:jmanico/grim-prompter",
+      "source": "github",
+      "title": "jmanico/grim-prompter",
+      "url": "https://github.com/jmanico/grim-prompter",
+      "ts": 1793189366.0,
+      "points": 116,
+      "comments": 10,
+      "author": "jmanico",
+      "summary": "Threat modeling for AI coding agents: point Claude Code, Codex or any agent at your repo and get an evidence-traced threat model. 36 architectures, 29 methods, MIT.",
+      "recipe": "github_sec",
+      "buzz": 176,
+      "topics": [
+        "ai",
+        "dev"
+      ],
+      "date": "2026-10-28"
+    },
+    {
+      "uid": "gh:dbx0/executioner",
+      "source": "github",
+      "title": "dbx0/executioner",
+      "url": "https://github.com/dbx0/executioner",
+      "ts": 1792380789.0,
+      "points": 93,
+      "comments": 24,
+      "author": "dbx0",
+      "summary": "The agentic pentesting environment that lives on your machine. AI agent teams, visual workflows and your own tools, 100% local.",
+      "recipe": "github_sec",
+      "buzz": 165,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-10-19"
+    },
+    {
       "uid": "gh:UltraSultanHonor/recon-v1.7.0",
       "source": "github",
       "title": "UltraSultanHonor/recon-v1.7.0",
@@ -1524,23 +1542,6 @@
       "buzz": 159,
       "topics": [],
       "date": "2026-10-28"
-    },
-    {
-      "uid": "gh:dbx0/executioner",
-      "source": "github",
-      "title": "dbx0/executioner",
-      "url": "https://github.com/dbx0/executioner",
-      "ts": 1792380789.0,
-      "points": 90,
-      "comments": 23,
-      "author": "dbx0",
-      "summary": "The agentic pentesting environment that lives on your machine. AI agent teams, visual workflows and your own tools, 100% local.",
-      "recipe": "github_sec",
-      "buzz": 159,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-10-19"
     },
     {
       "uid": "gh:hassan-algo/open-sesame",
@@ -1566,12 +1567,12 @@
       "title": "QERSSD/HowToAvoidScams",
       "url": "https://github.com/QERSSD/HowToAvoidScams",
       "ts": 1792401690.0,
-      "points": 111,
+      "points": 112,
       "comments": 9,
       "author": "QERSSD",
       "summary": "人间防骗指南：373 篇骗局拆解，覆盖刷单、杀猪盘、AI 换脸、养老诈骗等 16 类；附真实案例报道、生活自查清单、PDF/EPUB/Anki 下载，还有 12 局防骗小游戏",
       "recipe": "github_sec",
-      "buzz": 138,
+      "buzz": 139,
       "topics": [
         "ai"
       ],
@@ -1672,12 +1673,12 @@
       "title": "agentshield-dev/agentshield",
       "url": "https://github.com/agentshield-dev/agentshield",
       "ts": 1792613880.0,
-      "points": 58,
+      "points": 59,
       "comments": 2,
       "author": "agentshield-dev",
       "summary": "Agentshield is open source defense for Kubernetes and AWS. It learns how your workloads really talk, flags lateral movement with evidence, and proposes fixes you approve.",
       "recipe": "github_sec",
-      "buzz": 64,
+      "buzz": 65,
       "topics": [
         "ai",
         "dev"
@@ -1690,12 +1691,12 @@
       "title": "lordbasex/LordOS",
       "url": "https://github.com/lordbasex/LordOS",
       "ts": 1792294263.0,
-      "points": 49,
+      "points": 53,
       "comments": 4,
       "author": "lordbasex",
       "summary": "LordOS — a free, fast and secure GNU/Linux distribution based on Debian, with its own desktop environment: display server and Wayland compositor in C, a React UI engine on QuickJS, and private native apps.",
       "recipe": "github_sec",
-      "buzz": 61,
+      "buzz": 65,
       "topics": [
         "hardware"
       ],
@@ -1756,6 +1757,44 @@
       "date": "2026-10-18"
     },
     {
+      "uid": "rss:9e6f9a29eeb51f",
+      "source": "rss",
+      "title": "Studying Fraudulent North Korean IT Workers",
+      "url": "https://www.schneier.com/blog/archives/2026/10/studying-fraudulent-north-korean-it-workers.html",
+      "ts": 1793185531.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Bruce Schneier",
+      "summary": "<p>Researchers set up a fake start-up company to <a href=\"https://thehackernews.com/2026/08/researchers-built-fake-crypto-startup.html \">study</a> fraudulent North Korean IT workers.</p>",
+      "recipe": "schneier",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "crypto",
+        "biz"
+      ],
+      "date": "2026-10-28"
+    },
+    {
+      "uid": "rss:2497feec2ee512",
+      "source": "rss",
+      "title": "Hiding Capabilities in AI Models",
+      "url": "https://www.schneier.com/blog/archives/2026/10/hiding-capabilities-in-ai-models.html",
+      "ts": 1793098892.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Bruce Schneier",
+      "summary": "<p>Interesting research: &#8220;<a href=\"https://arxiv.org/abs/[phone]\">AI Models Can Provably Hide Arbitrary Capabilities</a>&#8221;</p> <blockquote><p><b>Abstract:</b> Capability evaluations aim to surface dangerous model behaviors before deployment, but their reliability depends on the assumption that hidden capabilities can be elicited. We show this assumption does not hold under adversaria",
+      "recipe": "schneier",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "dev",
+        "biz"
+      ],
+      "date": "2026-10-27"
+    },
+    {
       "uid": "gh:foundthunderatone/hash-verify",
       "source": "github",
       "title": "foundthunderatone/hash-verify",
@@ -1769,6 +1808,60 @@
       "buzz": 22,
       "topics": [],
       "date": "2026-10-18"
+    },
+    {
+      "uid": "rss:be1e76dc114850",
+      "source": "rss",
+      "title": "Bias in Qwen3-Coder Model",
+      "url": "https://www.schneier.com/blog/archives/2026/10/bias-in-qwen3-coder-model.html",
+      "ts": 1793012643.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Bruce Schneier",
+      "summary": "<p>Interesting <a href=\"https://www.hirundo.io/blog/qwen3-coder-vulnerabilities\">research</a>:</p> <blockquote><p>TL;DR: Chinese AI models now sit inside Western products, and some carry geopolitical triggers: tell the model who the code is for, and the security of what it writes changes. For the first time, we showed that this vulnerability lives in the model&#8217;s weights, and that removing th",
+      "recipe": "schneier",
+      "buzz": 10,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-10-26"
+    },
+    {
+      "uid": "rss:c5b7d9382d6e02",
+      "source": "rss",
+      "title": "Friday Squid Blogging: Increasing Squid Populations",
+      "url": "https://www.schneier.com/blog/archives/2026/10/friday-squid-blogging-increasing-squid-populations.html",
+      "ts": 1792789255.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Bruce Schneier",
+      "summary": "<p>This <a href=\"https://www.sciencealert.com/squid-are-taking-over-the-ocean-and-not-for-the-reason-you-might-think\">article</a> in <i>Nature</i> argues that it&#8217;s due to an overfishing of predators and warming sea temperatures.</p> <p>As usual, you can also use this squid post to talk about the security stories in the news that I haven&#8217;t covered.</p> <p><a href=\"https://www.schneier.c",
+      "recipe": "schneier",
+      "buzz": 10,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-10-23"
+    },
+    {
+      "uid": "rss:b9ede14d9a53e2",
+      "source": "rss",
+      "title": "Compromised TLS Certificates",
+      "url": "https://www.schneier.com/blog/archives/2026/10/compromised-tls-certificates.html",
+      "ts": 1792753516.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Bruce Schneier",
+      "summary": "<p>The Indian CA eMudhra Limited has eight TLS certificates with <a href=\"https://arstechnica.com/security/2026/10/the-internet-goes-on-high-alert-after-discovery-of-8-compromised-tls-certs/\">laughably weak private keys</a>:</p> <blockquote><p>The compromised eMudhra keys were defective at a level that’s challenging the imagination of many of the engineers studying the incident. A normal size for",
+      "recipe": "schneier",
+      "buzz": 10,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-10-23"
     },
     {
       "uid": "rss:8651e625050eb8",
@@ -1954,6 +2047,95 @@
         "security"
       ],
       "date": "2026-09-08"
+    },
+    {
+      "uid": "rss:674c0fa0933d14",
+      "source": "rss",
+      "title": "New Serious PHP Vulnerabilities Released and Patched",
+      "url": "https://www.schneier.com/blog/archives/2026/10/new-serious-php-vulnerabilities-released-and-patched.html",
+      "ts": 1792679789.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Bruce Schneier",
+      "summary": "<p>PHP maintainers have <a href=\"https://www.php.net/archive/2026.php#2026-10-20-1\">released</a> fixes for two critical vulnerabilities:</p> <blockquote><p>PHP 8.5.12, 8.4.27, 8.3.36 and 8.2.35 fix two critical vulnerabilities that can allow unauthenticated remote code execution. All PHP users are strongly encouraged to update immediately. </p> <p>Who is at risk: all PHP installations serving web",
+      "recipe": "schneier",
+      "buzz": 0,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-10-22"
+    },
+    {
+      "uid": "rss:8a0199327878e8",
+      "source": "rss",
+      "title": "Workshop on Economics and Information Security (WEIS) Archive",
+      "url": "https://www.schneier.com/blog/archives/2026/10/workshop-on-economics-and-information-security-weis-archive.html",
+      "ts": 1792580569.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Bruce Schneier",
+      "summary": "<p>There&#8217;s a new <a href=\"https://papers.econinfosec.org\">archive</a> of all the papers from twenty-five years of the Workshop on Economics and Information Security (WEIS).</p> <p>Really nice resource. It&#8217;s fun to reread my <a href=\"https://papers.econinfosec.org/papers/weis2002/weis2002_02_computer-security-its-the-economics-stupid-position-paper.doc\">2002</a> essay on the economics o",
+      "recipe": "schneier",
+      "buzz": 0,
+      "topics": [
+        "science",
+        "security"
+      ],
+      "date": "2026-10-21"
+    },
+    {
+      "uid": "rss:85549ffbd21d49",
+      "source": "rss",
+      "title": "Possible new Cellebrite iPhone Radio Zero-Day",
+      "url": "https://www.schneier.com/blog/archives/2026/10/possible-new-cellebrite-iphone-radio-zero-day.html",
+      "ts": 1792494238.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Bruce Schneier",
+      "summary": "<p>Justin.sh is <a href=\"https://justin.sh/blog/2026/10/cellebrite-advanced-unlocks/\">reporting</a> on a confidential Cellebrite document that has been leaked to him:</p> <blockquote><p>Cellebrite calls it Advanced Unlocks (AU from here on), not to be confused with the &#8220;advanced unlocking services&#8221; they&#8217;ve marketed for years. A <a href=\"https://web.archive.org/web/[phone]/",
+      "recipe": "schneier",
+      "buzz": 0,
+      "topics": [
+        "dev",
+        "biz",
+        "security"
+      ],
+      "date": "2026-10-20"
+    },
+    {
+      "uid": "rss:6ca163953b1e2f",
+      "source": "rss",
+      "title": "Training AIs to Solve CAPTCHAs",
+      "url": "https://www.schneier.com/blog/archives/2026/10/training-ais-to-solve-captchas.html",
+      "ts": 1792408081.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Bruce Schneier",
+      "summary": "<p>Interesting <a href=\"https://arxiv.org/abs/[phone]\">research</a>:</p> <blockquote><p><b>Abstract</b>: Vision-language models (VLMs) can solve visual CAPTCHAs without task-specific training, but the agents built on them approach every challenge from scratch. For such an agent, the hundredth instance of a familiar puzzle costs as much time and compute as the first. Specialized detectors invert",
+      "recipe": "schneier",
+      "buzz": 0,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-10-19"
+    },
+    {
+      "uid": "rss:d474e486d24146",
+      "source": "rss",
+      "title": "Friday Squid Blogging: Squid Before the Chicxulub Meteor Impact",
+      "url": "https://www.schneier.com/blog/archives/2026/10/friday-squid-blogging-squid-before-the-chicxulub-meteor-impact.html",
+      "ts": 1792184807.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Bruce Schneier",
+      "summary": "<p><a href=\"https://eos.org/articles/squid-were-on-the-move-before-the-chicxulub-impact\">New</a> <a href=\"https://pubs.geoscienceworld.org/gsa/geology/article/54/9/938/732212/Squids-radiated-globally-prior-to-the-Cretaceous\">research</a> shows that squid lived all around the globe even before the Cretaceous-Paleogene mass extinction event.</p> <p>As usual, you can also use this squid post to talk",
+      "recipe": "schneier",
+      "buzz": 0,
+      "topics": [
+        "science"
+      ],
+      "date": "2026-10-16"
     }
   ]
 }
