@@ -15,7 +15,7 @@
 | Колония: кибербез | Cloudflare Pages | https://sentinel-post.pages.dev |
 | Колония: финансы (EN) | Cloudflare Pages | https://bourse-radar.pages.dev |
 | Колония: AI-новости (RU) | Cloudflare Pages | https://signal-frontier.pages.dev |
-| Колония: ML/данные (RU) | Cloudflare Pages | https://meridian-radar.pages.dev |
+| Колония: ML/данные (EN) | Cloudflare Pages | https://meridian-radar.pages.dev |
 
 ## Цикл одного тика
 
@@ -62,27 +62,19 @@ realtime-таблицы для API-ключей клиентов).
 пульс роя полностью на GitHub Actions (бесплатно, unlimited на public-репо).
 Если аккаунт Oracle появится — `infra/oracle/` готов (Docker, selftest).
 
-## Stage 4: первый $1 — что один раз делает человек
+## Stage 4: первый $1 — статус
 
-Монетизационный слой **уже встроен в сайты** (`monetization` в config колонии +
-CTA-блок в sitegen, покрыто тестами). Чтобы он загорелся — один раз
-зарегистрировать платёжный рельс (это и есть «единоразовая регистрация» из
-цели Zero-Human-Touch):
+✅ **Рельс подключён**: Ko-fi `https://ko-fi.com/miningchia` вшит во все 5 колоний
+(`monetization.support_url` в config.json). CTA-блок «Поддержать улей» /
+«Support the hive» уже живёт на всех сайтах (RU/EN по локали колонии),
+следующий тик и любой будущий апдейты уходят на автомате.
 
-1. **Ko-fi** (или Buy Me a Coffee) — бесплатно, без одобрений, регистрация
-   за минуту. Даёт `support_url` — кнопка «Поддержать улей».
-2. **Gumroad** (опционально) — продажа полного датасета колонии (CSV-экспорты
-   уже пекутся каждый тик). Даёт `products_url` — кнопка «Купить датасет».
-3. Включить в `colonies/<name>/config.json`:
-   ```json
-   "site": { ..., "monetization": { "support_url": "https://ko-fi.com/...",
-                                     "products_url": "https://gumroad.com/l/..." } }
-   ```
-   Следующий тик (≤6ч) соберёт сайты с CTA и автодеплоит на CF Pages.
+⬜ **Опциональные рельсы** (когда будет желание):
+- **Gumroad** — продажа полного датасета колонии (CSV-экспорты уже пекутся
+  каждый тик). Даёт `products_url` — кнопка «Купить датасет».
+- CF API-токен с **Workers Scripts: Edit** — поднимет `atria-links` Worker
+  (роутер `/go/:slug` + `/status` API): CTA-ссылки перенацеливаются без
+  перевыпуска сайтов + клики-аналитика.
 
 Казна (`core/treasury.py`) уже имеет `revenue(amount_u, source)` —
 приход пойдёт в µ$-книгу с ROI по агентам.
-
-Опционально: ещё один CF API-токен с **Workers Scripts: Edit** —
-поднимет `atria-links` Worker (роутер `/go/:slug` + `/status` API):
-тогда все CTA-ссылки перенацеливаются без перевыпуска сайтов.
