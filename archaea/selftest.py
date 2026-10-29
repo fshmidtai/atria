@@ -279,6 +279,52 @@ def test_sitegen_render():
           and "▲ +4" in tr_en)
 
 
+# ---------------------------------------------------------------- монетизация
+def test_monetization_cta():
+    """CTA-блок: рендерится только когда в config есть monetization-рельсы.
+    Пустая конфигурация (нынешнее состояние всех колоний) — сайт не меняется."""
+    import copy
+    from colonies.phosphor import sitegen
+
+    cfg = {
+        "site": {"title": "T", "tagline": "T", "base_url": "https://t.example"},
+        "topics": [], "top_items_home": 2, "top_item_pages": 3,
+    }
+    snap = {
+        "generated_at": "2026-10-24T00:00:00+00:00",
+        "totals": {"items": 1, "by_source": {"hn": 1}, "by_topic": {"ai": 1},
+                   "top_domains": [("x", 1)], "recipes": {}},
+        "items": [{"uid": "a", "source": "hn", "title": "Alpha", "url": "https://x/1",
+                   "buzz": 5, "date": "2026-10-24", "ts": time.time(), "points": 1,
+                   "comments": 0, "topics": ["ai"], "summary": "text"}],
+    }
+    tmp = Path(tempfile.mkdtemp())
+    out = sitegen.generate(snap, tmp / "dist", cfg)
+    html_off = (Path(out["outdir"]) / "index.html").read_text(encoding="utf-8")
+    check("mon: без рельсов блока нет", "class=\"cta\"" not in html_off)
+
+    cfg_on = copy.deepcopy(cfg)
+    cfg_on["site"]["monetization"] = {
+        "support_url": "https://ko-fi.example/atria",
+        "products_url": "https://gumroad.example/dataset",
+    }
+    out_on = sitegen.generate(snap, tmp / "dist_on", cfg_on)
+    html_on = (Path(out_on["outdir"]) / "index.html").read_text(encoding="utf-8")
+    check("mon: блок есть с рельсами", "class=\"cta\"" in html_on
+          and "ko-fi.example/atria" in html_on)
+    check("mon: обе кнопки", "Купить полный датасет" in html_on
+          and "Поддержать улей" in html_on)
+    qa_r = qa.audit_site(Path(out_on["outdir"]), base_url="https://t.example")
+    check("mon: QA чистый с CTA", qa_r["errors"] == 0, qa.summarize(qa_r))
+
+    cfg_en = copy.deepcopy(cfg_on)
+    cfg_en["site"]["lang"] = "en"
+    out_en = sitegen.generate(snap, tmp / "dist_en", cfg_en)
+    html_en = (Path(out_en["outdir"]) / "index.html").read_text(encoding="utf-8")
+    check("mon: EN-копии кнопок", "Support the hive" in html_en
+          and "Buy the full dataset" in html_en)
+
+
 # ---------------------------------------------------------------- QA-ген
 def test_qa_clean():
     """Чистый сайт: 0 ошибок (используем рендер sitegen из test_sitegen_render)."""
@@ -469,7 +515,8 @@ def main() -> int:
                test_rss_parse, test_robots_guard, test_pii_scrub,
                test_apothecary, test_feed_roundtrip, test_sitegen_render,
                test_qa_clean, test_qa_gate, test_space_console,
-               test_treasury, test_orchestrator, test_registry):
+               test_treasury, test_orchestrator, test_registry,
+               test_monetization_cta):
         try:
             fn()
         except Exception as e:  # тест не должен вешать рой — но должен орать

@@ -61,6 +61,14 @@ td a:hover { text-decoration: underline; }
 .tag { font-size: 12px; color: #7f9bc4; }
 footer { margin-top: 48px; color: #5d6578; font-size: 13px;
          border-top: 1px solid #232836; padding-top: 16px; }
+.cta { margin-top: 40px; background: #12151d; border: 1px solid #2a3145;
+       border-radius: 12px; padding: 20px 22px; }
+.cta p { margin: 0 0 12px; color: #c9d2e6; }
+.cta b { color: #f4f6fb; }
+.cta a.btn { display: inline-block; margin: 4px 12px 0 0; padding: 8px 18px;
+             border-radius: 8px; background: #f2c14e; color: #141822;
+             text-decoration: none; font-weight: 600; font-size: 14px; }
+.cta a.btn.ghost { background: transparent; border: 1px solid #3a4358; color: #c9d2e6; }
 .bar { background: #1d2330; border-radius: 6px; height: 14px; overflow: hidden; }
 .bar > i { display: block; height: 100%; background: #f2c14e; }
 .meta { color: #9aa4b8; font-size: 14px; margin-top: 6px; }
@@ -124,6 +132,11 @@ COPY = {
         "404_p": "Рой собрал этот снимок заново, и старая страница растворилась. "
                  "Загляните в ленту — там всё свежее.",
         "404_title": "404 — {title}", "404_desc": "Страница не найдена",
+        "mon_pitch": "Рой живёт на бесплатной инфраструктуре и собирает данные "
+                     "каждые 6 часов. Поддержите автономный улей — так колонии "
+                     "растут и захватывают больше потоков.",
+        "mon_support": "Поддержать улей",
+        "mon_buy": "Купить полный датасет",
     },
     "en": {
         "nav_feed": "Feed", "nav_topics": "Topics", "nav_data": "Data",
@@ -171,12 +184,37 @@ COPY = {
         "404_p": "The swarm rebuilt this snapshot and the old page dissolved. "
                  "Check the feed — everything there is fresh.",
         "404_title": "404 — {title}", "404_desc": "Page not found",
+        "mon_pitch": "The swarm runs on free infrastructure and harvests data "
+                     "every 6 hours. Support the autonomous hive — so colonies "
+                     "grow and cover more streams.",
+        "mon_support": "Support the hive",
+        "mon_buy": "Buy the full dataset",
     },
 }
 
 
 def _lang(site: dict) -> str:
     return site.get("lang", "ru")
+
+
+def _cta(site: dict) -> str:
+    """Монетизационный блок. Управляется config колонии:
+    "monetization": {"support_url": "...", "products_url": "..."}.
+    Нет ключа/нет ссылок — пустая строка, сайт не меняется (Zero-Human-Touch:
+    рельс появится один раз человеком — CTA Instantly появится на всех сайтах).
+    """
+    mon = (site or {}).get("monetization") or {}
+    support = mon.get("support_url")
+    products = mon.get("products_url")
+    if not (support or products):
+        return ""
+    L = COPY.get(_lang(site), COPY["ru"])
+    buttons = ""
+    if support:
+        buttons += f'<a class="btn" href="{_esc(support)}" rel="nofollow noopener">{L["mon_support"]}</a>'
+    if products:
+        buttons += f'<a class="btn ghost" href="{_esc(products)}" rel="nofollow noopener">{L["mon_buy"]}</a>'
+    return f'<div class="cta"><p>{L["mon_pitch"]}</p>{buttons}</div>'
 
 
 def _L(site: dict) -> dict:
@@ -190,7 +228,8 @@ def _slug(s: str) -> str:
 
 
 def _page(body: str, title: str, description: str, base_url: str, path: str,
-          jsonld: str = "", feed_title: str = "", lang: str = "ru") -> str:
+          jsonld: str = "", feed_title: str = "", lang: str = "ru",
+          cta: str = "") -> str:
     L = COPY.get(lang, COPY["ru"])
     canonical = f"{base_url}/{path}" if path else base_url
     feed = (
@@ -237,6 +276,7 @@ def _page(body: str, title: str, description: str, base_url: str, path: str,
 <body>
 <div class="wrap">
 {body}
+{cta}
 <footer>{L["footer"]} · {footer_ts}</footer>
 </div>
 </body>
@@ -309,7 +349,7 @@ def page_home(snapshot: dict, site: dict, pool: list[dict], top_n: int) -> str:
     }, ensure_ascii=False)
     return _page(body, f"{site['title']} — {site['tagline'][:60]}",
                  site["tagline"], site["base_url"], "", jsonld,
-                 feed_title=site["title"], lang=_lang(site))
+                 feed_title=site["title"], lang=_lang(site), cta=_cta(site))
 
 
 def page_topic(topic: str, pool: list[dict], site: dict, top_n: int) -> str:
@@ -331,7 +371,7 @@ def page_topic(topic: str, pool: list[dict], site: dict, top_n: int) -> str:
 """
     return _page(body, f"#{topic} — {site['title']}",
                  L["topic_meta"].format(topic=topic), site["base_url"],
-                 f"topics/{topic}.html", feed_title=site["title"], lang=_lang(site))
+                 f"topics/{topic}.html", feed_title=site["title"], lang=_lang(site), cta=_cta(site))
 
 
 def page_item(item: dict, site: dict, related: list[dict] | None = None) -> str:
@@ -377,7 +417,7 @@ def page_item(item: dict, site: dict, related: list[dict] | None = None) -> str:
     return _page(body, f"{item['title']} — {site['title']}",
                  (item["summary"] or item["title"])[:155].strip(),
                  site["base_url"], f"item/{slug}.html", jsonld,
-                 feed_title=site["title"], lang=_lang(site))
+                 feed_title=site["title"], lang=_lang(site), cta=_cta(site))
 
 
 def page_data(snapshot: dict, site: dict) -> str:
@@ -407,7 +447,7 @@ def page_data(snapshot: dict, site: dict) -> str:
 """
     return _page(body, L["data_title"].format(title=site["title"]),
                  L["data_desc"], site["base_url"], "data.html",
-                 feed_title=site["title"], lang=_lang(site))
+                 feed_title=site["title"], lang=_lang(site), cta=_cta(site))
 
 
 def page_trends(site: dict, trends: list, live_topics: set | None = None) -> str:
@@ -455,7 +495,7 @@ def page_trends(site: dict, trends: list, live_topics: set | None = None) -> str
 """
     return _page(body, L["trends_title"].format(title=site["title"]),
                  L["trends_desc"], site["base_url"], "trends.html",
-                 feed_title=site["title"], lang=_lang(site))
+                 feed_title=site["title"], lang=_lang(site), cta=_cta(site))
 
 
 def page_about(site: dict) -> str:
@@ -470,7 +510,7 @@ def page_about(site: dict) -> str:
 """
     return _page(body, L["about_title"].format(title=site["title"]),
                  L["about_desc"], site["base_url"], "about.html",
-                 feed_title=site["title"], lang=_lang(site))
+                 feed_title=site["title"], lang=_lang(site), cta=_cta(site))
 
 
 # ---------------------------------------------------------------- RSS колонии
@@ -485,7 +525,7 @@ def page_404(site: dict) -> str:
 """
     return _page(body, L["404_title"].format(title=site["title"]),
                  L["404_desc"], site["base_url"], "",
-                 feed_title=site["title"], lang=_lang(site))
+                 feed_title=site["title"], lang=_lang(site), cta=_cta(site))
 
 
 def generate_feed(snapshot: dict, outdir: str | Path, config: dict) -> str:
