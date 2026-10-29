@@ -12,7 +12,7 @@ cve:GHSA-w9x9-j56r-h98r,cve,GHSA-w9x9-j56r-h98r: @eeacms/volto-chatbot has Unaut
 cve:GHSA-q344-5v34-gm84,cve,CVE-2026-62264: @sylphx/pdf-reader-mcp: HTTP transport accepts unauthenticated requests despite a configured MCP_API_KEY,https://github.com/advisories/GHSA-q344-5v34-gm84,3580,2026-10-29,dev|biz|security|hardware
 cve:GHSA-26mh-57q7-jfvr,cve,CVE-2026-61438: PraisonAI vulnerable to Remote Code Execution via Broken AST Sandbox,https://github.com/advisories/GHSA-26mh-57q7-jfvr,3580,2026-10-29,ai|dev|security
 cve:GHSA-rhj7-vh3v-mcq6,cve,CVE-2026-62160: Daptin: ParseAcceptLanguage `_` separator bypass enables >250x CPU amplification via Accept-Language header in LanguageMiddleware,https://github.com/advisories/GHSA-rhj7-vh3v-mcq6,3580,2026-10-29,security|hardware
-cve:GHSA-3f7j-7jwc-fxfj,cve,CVE-2026-116576: systeminformation vulnerable to Windows command injection in services() through Unicode quotation marks,https://github.com/advisories/GHSA-3f7j-7jwc-fxfj,3530,2026-10-28,science|security
+cve:GHSA-3f7j-7jwc-fxfj,cve,CVE-2026-116576: systeminformation vulnerable to Windows command injection in services() through Unicode quotation marks,https://github.com/advisories/GHSA-3f7j-7jwc-fxfj,3580,2026-10-28,science|security
 cve:GHSA-8hxf-qr8p-62x4,cve,CVE-2026-115906: zip: AES Entry HMAC Authentication Bypass on Premature EOF,https://github.com/advisories/GHSA-8hxf-qr8p-62x4,1880,2026-10-29,ai|security
 cve:GHSA-8g5g-mxqh-grgj,cve,CVE-2026-118662: Vite: `server.fs.deny` bypassed with queries,https://github.com/advisories/GHSA-8g5g-mxqh-grgj,1880,2026-10-29,dev|security|hardware
 cve:GHSA-9jrw-8xf7-xqhq,cve,CVE-2026-9083: Keycloak vulnerable to information disclosure through arbitrary filesystem path probing,https://github.com/advisories/GHSA-9jrw-8xf7-xqhq,1880,2026-10-29,dev|security
@@ -22,13 +22,13 @@ cve:GHSA-8vfg-2r28-hvhj,cve,CVE-2026-61848: Crass: Non-ASCII characters cause su
 cve:GHSA-wwpr-jff3-395c,cve,CVE-2026-61847: Crass: A large number of adjacent CSS comments can trigger a SystemStackError,https://github.com/advisories/GHSA-wwpr-jff3-395c,1880,2026-10-29,ai|dev|crypto|security
 cve:GHSA-6jxj-px6v-747w,cve,CVE-2026-61846: Crass: Deeply nested CSS blocks and functions can trigger a SystemStackError or excessive memory usage,https://github.com/advisories/GHSA-6jxj-px6v-747w,1880,2026-10-29,ai|security
 cve:GHSA-68wq-phq7-p2vg,cve,CVE-2026-55186: MultiFactor Authentication for SilverStripe can bypass MFA during password reset flow,https://github.com/advisories/GHSA-68wq-phq7-p2vg,1880,2026-10-29,ai|security
-cve:GHSA-r4j5-9xpp-3985,cve,CVE-2026-115927: Tornado: Event loop blocking and excess memory use from chunked bodies with many small chunks,https://github.com/advisories/GHSA-r4j5-9xpp-3985,1830,2026-10-28,dev|security
-cve:GHSA-pcg2-g6cj-q92c,cve,CVE-2026-116577: Tornado: Quadratic CPU usage when parsing HTTP headers with line folding,https://github.com/advisories/GHSA-pcg2-g6cj-q92c,1830,2026-10-28,security|hardware
-cve:GHSA-pq4g-8rxf-4g29,cve,CVE-2026-116695: Crass: Incorrect tokenization of bad URLs enables CSS sanitizer bypass,https://github.com/advisories/GHSA-pq4g-8rxf-4g29,1830,2026-10-28,dev|crypto|security
+cve:GHSA-r4j5-9xpp-3985,cve,CVE-2026-115927: Tornado: Event loop blocking and excess memory use from chunked bodies with many small chunks,https://github.com/advisories/GHSA-r4j5-9xpp-3985,1880,2026-10-28,dev|security
+cve:GHSA-pcg2-g6cj-q92c,cve,CVE-2026-116577: Tornado: Quadratic CPU usage when parsing HTTP headers with line folding,https://github.com/advisories/GHSA-pcg2-g6cj-q92c,1880,2026-10-28,security|hardware
+cve:GHSA-pq4g-8rxf-4g29,cve,CVE-2026-116695: Crass: Incorrect tokenization of bad URLs enables CSS sanitizer bypass,https://github.com/advisories/GHSA-pq4g-8rxf-4g29,1880,2026-10-28,dev|crypto|security
 cve:GHSA-c33x-vcv4-vg3g,cve,GHSA-c33x-vcv4-vg3g: Cedar: JSON template is in scope missing slot-id validation allows link panic and decision divergence,https://github.com/advisories/GHSA-c33x-vcv4-vg3g,780,2026-10-29,ai
 cve:GHSA-r899-h629-j84r,cve,CVE-2026-61448: Parse Server vulnerable to stored XSS via malformed Content-Type bypassing file upload extension blocklist,https://github.com/advisories/GHSA-r899-h629-j84r,780,2026-10-29,security|hardware
 cve:GHSA-pg53-p7qp-65cv,cve,GHSA-pg53-p7qp-65cv: PocketMine-MP has potential memory/network vulnerability from repeated ResourcePackClientResponsePacket packets,https://github.com/advisories/GHSA-pg53-p7qp-65cv,780,2026-10-29,security|hardware
-cve:GHSA-pw9p-v7r6-gx4p,cve,CVE-2026-116578: Tornado: Open redirect in RedirectHandler via protocol-relative URLs,https://github.com/advisories/GHSA-pw9p-v7r6-gx4p,730,2026-10-28,security
+cve:GHSA-pw9p-v7r6-gx4p,cve,CVE-2026-116578: Tornado: Open redirect in RedirectHandler via protocol-relative URLs,https://github.com/advisories/GHSA-pw9p-v7r6-gx4p,780,2026-10-28,security
 rss:ae192d86e0a69d,rss,"ThreatsDay: Critical Firewall Flaws, Banking Trojans Rented, Weaponized PDF, Token Theft + 26 More Stories",https://thehackernews.com/2026/10/threatsday-critical-firewall-flaws.html,80,2026-10-29,ai|dev|crypto|security
 rss:879452bb433294,rss,"Linux Kernel TCP Flaw With 9.8 CVSS Score Affects Ubuntu, Red Hat and Other Distributions",https://thehackernews.com/2026/10/linux-kernel-tcp-flaw-with-98-cvss.html,80,2026-10-29,ai|security|hardware
 rss:e67783a0fd1ca0,rss,Fake ChatGPT and Claude Apps Abuse Signed Executables to Deploy Crypto Miners,https://thehackernews.com/2026/10/fake-chatgpt-and-claude-apps-abuse.html,80,2026-10-29,ai|dev|crypto|security
@@ -43,9 +43,9 @@ rss:0f941b905f046d,rss,Attacker Tried to Exploit Alpine Linux’s GitLab via CVS
 rss:6bc5f713e8f98b,rss,Hackers Exploited Cisco SD-WAN Flaw to Plant Malware Built to Steal Encryption Keys,https://thehackernews.com/2026/10/hackers-exploited-cisco-sd-wan-flaw-to.html,80,2026-10-29,ai|dev|security
 rss:339d6498ccffaa,rss,China-Linked Hackers Exploited VMware ESX Zero-Day to Reduce Audit Trail Visibility,https://thehackernews.com/2026/10/china-linked-hackers-exploited-vmware.html,80,2026-10-29,ai|security
 rss:db724a1c19cc56,rss,Attackers Exploit PHP2Shell Flaws in Internet-Exposed Palo Alto Networks Management Interfaces,https://thehackernews.com/2026/10/attackers-exploit-php2shell-flaws-in.html,80,2026-10-29,ai|security
+rss:40ce327981f1d4,rss,Компания GMO предлагает миллион долларов США за помощь в поимке хакеров,https://xakep.ru/2026/10/29/desktop-cloud-hack/,80,2026-10-29,
+rss:492c096f03e4ba,rss,Discord позволит поисковикам индексировать сообщения на публичных серверах,https://xakep.ru/2026/10/29/discoverable-servers/,80,2026-10-29,
+rss:b074ecc5a50279,rss,"В кошельке Electrum исправили баг, позволяющий похищать криптовалюту",https://xakep.ru/2026/10/29/electrum-bug/,80,2026-10-29,
+rss:186eb009ce6ac8,rss,DreamHost принудительно сбрасывает пароли пользователей,https://xakep.ru/2026/10/29/dreamhost-incedent/,80,2026-10-29,
+rss:4619682f15e5ba,rss,"На GitHub нашли троян, нацеленный на ИБ-специалистов",https://xakep.ru/2026/10/29/github-malware-2/,80,2026-10-29,dev
 rss:af6f9bce10cf50,rss,Volt Typhoon Used Covert Silent Train Network in Four Zero-Day Exploitation Campaigns,https://thehackernews.com/2026/10/volt-typhoon-used-covert-silent-train.html,30,2026-10-28,ai|dev|security
-rss:dcf16a2bb85174,rss,Google to Allow One-Tap Android App Installs From Approved Third-Party Stores Outside U.S.,https://thehackernews.com/2026/10/google-to-allow-one-tap-android-app.html,30,2026-10-28,dev|security
-rss:e92053c3672f3a,rss,"Researcher Reveals How Logic Bugs Alone Cracked Microsoft Edge in $175,000 Pwn2Own Win",https://thehackernews.com/2026/10/researcher-reveals-how-logic-bugs-alone.html,30,2026-10-28,ai|dev|security|hardware
-rss:230c7e637463e8,rss,"PHP2Shell Attack Roots 25 Servers, Breaches U.S. Government-Affiliated Network",https://thehackernews.com/2026/10/php2shell-attack-roots-25-servers.html,30,2026-10-28,ai|security|hardware
-rss:382e215bfe1708,rss,Hackers Target Critical Oracle E-Business Suite RCE Flaw Days After Security Patch,https://thehackernews.com/2026/10/hackers-target-critical-oracle-e.html,30,2026-10-28,dev|security
-rss:da35d117e8c291,rss,Critical 16-Year-Old UEFI Flaw Can Run Code Before Secure Boot on Network-Booting Servers,https://thehackernews.com/2026/10/critical-16-year-old-uefi-flaw-can-run.html,30,2026-10-28,hardware

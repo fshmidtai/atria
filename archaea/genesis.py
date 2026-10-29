@@ -86,6 +86,15 @@ def colony_cycle_factory(treasury: Treasury, ledger: Ledger):
             "out": site["outdir"],
             "items": snapshot["totals"]["items"],
         })
+        # Заявки на индексацию (Bing/Yandex/Seznam via IndexNow, без ключей-секретов).
+        from archaea import pings
+        inkey = config.get("site", {}).get("indexnow_key")
+        if inkey and site.get("sitemap"):
+            ok, note = pings.submit(config["site"]["base_url"], inkey,
+                                    site["sitemap"])
+            ledger.event(colony, "merchant", "indexnow",
+                         {"ok": ok, "note": note,
+                          "urls": len(site["sitemap"])})
         # TG-доставка: третий renderer роя. Состояние подписок лежит в
         # HF-файле (тик его и читает, и пишет; очередь расбирает тоже тик).
         from core import tgpost

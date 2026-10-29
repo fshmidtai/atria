@@ -426,6 +426,11 @@ def fetch_html_list(url: str, pattern: str = r"/tender/", limit: int = 40,
                     item.update(_match_fields(_strip_tags(_get(link)), fields))
             except Exception:
                 pass
+            names = [str(f.get("name")) for f in fields
+                     if str(f.get("name")) in item]
+            if names and not item.get("summary"):
+                # SEO-резюме детали: «806,120 ₽ · Орловская область · …»
+                item["summary"] = " · ".join(str(item[n]) for n in names)
             if not _passes_filters(item, filters):
                 continue
         out.append(item)

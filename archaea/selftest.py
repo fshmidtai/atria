@@ -351,6 +351,46 @@ def test_monetization_cta():
           sitegen._cta({"monetization": {"stars": ""}}) == "")
 
 
+# ---------------------------------------------------------------- IndexNow
+def test_pings():
+    """Заявки на индексацию (Bing/Yandex/Seznam) — открытый протокол, ключ-файл."""
+    from archaea import pings
+
+    class R:
+        def __init__(self, s):
+            self.status = s
+
+        def __enter__(self):
+            return self
+
+        def __exit__(self, *a):
+            return False
+
+    orig = pings.urllib.request.urlopen
+    seen = {}
+
+    def fake(req, timeout=30):
+        import json as _j
+        seen["body"] = _j.loads(req.data.decode())
+        return R(202)
+
+    pings.urllib.request.urlopen = fake
+    ok, note = pings.submit("https://t.example", "abc123",
+                            ["https://t.example/", "https://t.example/x.html"])
+    # чужой url отбрасывается
+    _, _ = pings.submit("https://t.example", "abc123",
+                        ["https://other.example/x.html"])
+    pings.urllib.request.urlopen = orig
+    check("ping: 202 = принято", ok and "202" in note, note)
+    check("ping: host+keyLocation в теле",
+          seen["body"]["host"] == "t.example"
+          and seen["body"]["keyLocation"] == "https://t.example/key.txt"
+          and seen["body"]["key"] == "abc123", seen.get("body"))
+    check("ping: ключ детерминирован",
+          pings.gen_key("x") == pings.gen_key("x")
+          and len(pings.gen_key("x")) == 32)
+
+
 # ---------------------------------------------------------------- TG-доставка
 def test_tgpost():
     """Бот: формат дайджеста + подписчики (всё офлайн, сеть подменена)."""
@@ -701,7 +741,7 @@ def main() -> int:
                test_apothecary, test_feed_roundtrip, test_sitegen_render,
                test_qa_clean, test_qa_gate, test_space_console,
                test_treasury, test_orchestrator, test_registry,
-               test_monetization_cta, test_tgpost, test_html_list):
+               test_monetization_cta, test_tgpost, test_html_list, test_pings):
         try:
             fn()
         except Exception as e:  # тест не должен вешать рой — но должен орать

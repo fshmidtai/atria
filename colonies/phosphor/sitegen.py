@@ -725,6 +725,11 @@ def generate(snapshot: dict, outdir: str | Path, config: dict,
         f'User-agent: *\nAllow: /\nSitemap: {site["base_url"]}/sitemap.xml\n',
         encoding="utf-8",
     )
+    # IndexNow (Bing/Yandex/Seznam): ключ владения сайтом — без него POST
+    # заявок на индексацию не принимается.
+    inkey = (site or {}).get("indexnow_key")
+    if inkey:
+        (outdir / "key.txt").write_text(inkey, encoding="utf-8")
 
     return {
         "pages": len(urls) + 1,
