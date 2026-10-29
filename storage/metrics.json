@@ -1,6 +1,6 @@
 {
-  "generated_at": 1793286044.2319462,
-  "elapsed_s": 31.43,
+  "generated_at": 1793272725.4545028,
+  "elapsed_s": 21.7,
   "tick": {
     "ran": 5,
     "failed": 0,
@@ -13,7 +13,7 @@
       "role": "scout",
       "colony": "core",
       "status": "active",
-      "spawned": 1793286012.8103578,
+      "spawned": 1793221677.7775135,
       "note": ""
     },
     {
@@ -22,7 +22,7 @@
       "role": "refinery",
       "colony": "core",
       "status": "active",
-      "spawned": 1793286012.8125815,
+      "spawned": 1793221677.7905076,
       "note": ""
     },
     {
@@ -31,7 +31,7 @@
       "role": "writer",
       "colony": "core",
       "status": "active",
-      "spawned": 1793286012.8140798,
+      "spawned": 1793221677.803619,
       "note": ""
     },
     {
@@ -40,16 +40,17 @@
       "role": "trade",
       "colony": "core",
       "status": "active",
-      "spawned": 1793286012.8167102,
+      "spawned": 1793221677.8165514,
       "note": ""
     }
   ],
   "budget": {
-    "spent_u": 4800,
+    "spent_u": 54500,
     "revenue_u": 0
   },
   "tasks": {
-    "done": 5
+    "done": 52,
+    "failed": 7
   },
   "colonies": {
     "bourse": {
@@ -61,24 +62,24 @@
         "contact": "https://github.com/"
       },
       "totals": {
-        "items": 103,
+        "items": 102,
         "by_source": {
           "hn": 6,
-          "rss": 52,
+          "rss": 51,
           "github": 5,
           "arxiv": 40
         },
         "by_recipe": {
           "economist_fn": 40,
           "arxiv_qfin": 40,
-          "ft_home": 12,
+          "ft_home": 11,
           "hn_fintech": 6,
           "github_fin": 5
         },
         "by_topic": {
-          "ai": 59,
-          "biz": 38,
-          "dev": 34,
+          "ai": 58,
+          "biz": 36,
+          "dev": 35,
           "science": 19,
           "crypto": 9,
           "security": 4,
@@ -95,7 +96,7 @@
           ],
           [
             "ft.com",
-            12
+            11
           ],
           [
             "github.com",
@@ -131,7 +132,7 @@
         },
         "trend_index.csv": {
           "rows": 7,
-          "has_prev": true
+          "has_prev": false
         }
       },
       "top_items": [
@@ -161,22 +162,6 @@
           "url": "https://news.ycombinator.com/item?id=33801314",
           "topics": [
             "ai",
-            "biz"
-          ]
-        },
-        {
-          "title": "Christine Lagarde departs at a moment of peril",
-          "source": "rss",
-          "buzz": 80,
-          "url": "https://www.economist.com/finance-and-economics/2026/10/29/christine-lagarde-departs-at-a-moment-of-peril",
-          "topics": []
-        },
-        {
-          "title": "The never-ending absurdity of global oil markets",
-          "source": "rss",
-          "buzz": 80,
-          "url": "https://www.economist.com/finance-and-economics/2026/10/29/the-never-ending-absurdity-of-global-oil-markets",
-          "topics": [
             "biz"
           ]
         },
@@ -215,32 +200,12 @@
           ]
         },
         {
-          "title": "Alphabet shares tumble in $500bn rout",
+          "title": "Christine Lagarde to step down as ECB president in February",
           "source": "rss",
           "buzz": 80,
-          "url": "https://www.ft.com/content/eb386156-5bf9-4edd-80f2-803fdee1e33d?syn-25a6b1a6=1",
+          "url": "https://www.ft.com/content/b9294b91-0eee-413b-bdde-0569f48539b9?syn-25a6b1a6=1",
           "topics": [
-            "ai",
-            "biz"
-          ]
-        },
-        {
-          "title": "US tech stocks fall after earnings fuel AI spending concerns",
-          "source": "rss",
-          "buzz": 80,
-          "url": "https://www.ft.com/content/1639620b-99e7-47ed-8484-49646816489e?syn-25a6b1a6=1",
-          "topics": [
-            "ai"
-          ]
-        },
-        {
-          "title": "US economy beats forecasts to grow at 3.4% rate in third quarter",
-          "source": "rss",
-          "buzz": 80,
-          "url": "https://www.ft.com/content/f2de9f3c-3290-4e87-bbc2-55430025f2ab?syn-25a6b1a6=1",
-          "topics": [
-            "ai",
-            "biz"
+            "dev"
           ]
         },
         {
@@ -254,6 +219,16 @@
           ]
         },
         {
+          "title": "Israel vote leaves door open to Iran attack",
+          "source": "rss",
+          "buzz": 80,
+          "url": "https://www.ft.com/content/53278449-6a8e-493b-8a9e-c44d2a981306?syn-25a6b1a6=1",
+          "topics": [
+            "ai",
+            "security"
+          ]
+        },
+        {
           "title": "Private equity’s growing pains",
           "source": "rss",
           "buzz": 80,
@@ -264,13 +239,39 @@
           ]
         },
         {
-          "title": "Christine Lagarde to step down as ECB president in February",
+          "title": "Google shares tumble 10% after $51bn AI outlay deepens cash burn",
           "source": "rss",
           "buzz": 80,
-          "url": "https://www.ft.com/content/b9294b91-0eee-413b-bdde-0569f48539b9?syn-25a6b1a6=1",
+          "url": "https://www.ft.com/content/eb386156-5bf9-4edd-80f2-803fdee1e33d?syn-25a6b1a6=1",
           "topics": [
-            "dev"
+            "ai",
+            "biz"
           ]
+        },
+        {
+          "title": "US tech stocks set to fall after earnings fuel AI spending concerns",
+          "source": "rss",
+          "buzz": 80,
+          "url": "https://www.ft.com/content/1639620b-99e7-47ed-8484-49646816489e?syn-25a6b1a6=1",
+          "topics": [
+            "ai"
+          ]
+        },
+        {
+          "title": "Israel’s ‘Houdini’ and his latest escape",
+          "source": "rss",
+          "buzz": 80,
+          "url": "https://www.ft.com/content/5c95fc2e-4019-462f-99cd-aefb8005b9e4?syn-25a6b1a6=1",
+          "topics": [
+            "ai"
+          ]
+        },
+        {
+          "title": "Israel’s Arabs seek a slice of power",
+          "source": "rss",
+          "buzz": 80,
+          "url": "https://www.ft.com/content/e73bd81d-89b4-4ef4-9be0-459bcc97633b?syn-25a6b1a6=1",
+          "topics": []
         }
       ]
     },
@@ -300,11 +301,11 @@
         "by_topic": {
           "ai": 112,
           "dev": 64,
-          "science": 30,
-          "hardware": 20,
-          "biz": 19,
+          "science": 29,
+          "hardware": 22,
+          "biz": 20,
           "crypto": 11,
-          "security": 9
+          "security": 8
         },
         "top_domains": [
           [
@@ -313,7 +314,7 @@
           ],
           [
             "github.com",
-            41
+            40
           ],
           [
             "techcrunch.com",
@@ -324,7 +325,15 @@
             12
           ],
           [
-            "data.stackexchange.com",
+            "apple.com",
+            1
+          ],
+          [
+            "blog.google",
+            1
+          ],
+          [
+            "emudhra.we-have-a-problem.com",
             1
           ],
           [
@@ -332,11 +341,11 @@
             1
           ],
           [
-            "circuithub.com",
+            "data.stackexchange.com",
             1
           ],
           [
-            "divagr.com",
+            "circuithub.com",
             1
           ],
           [
@@ -344,15 +353,23 @@
             1
           ],
           [
-            "the-decoder.com",
+            "wiki.alpinebsd.org",
             1
           ],
           [
-            "artificialanalysis.ai",
+            "gist.github.com",
             1
           ],
           [
-            "smsofdeath.com",
+            "divagr.com",
+            1
+          ],
+          [
+            "formlabs.com",
+            1
+          ],
+          [
+            "timeanddate.com",
             1
           ],
           [
@@ -360,11 +377,7 @@
             1
           ],
           [
-            "electrek.co",
-            1
-          ],
-          [
-            "vox.com",
+            "the-decoder.com",
             1
           ],
           [
@@ -372,23 +385,11 @@
             1
           ],
           [
-            "ir.doordash.com",
+            "smsofdeath.com",
             1
           ],
           [
-            "iptrust.co",
-            1
-          ],
-          [
-            "publicpolicy.googleblog.com",
-            1
-          ],
-          [
-            "mistral.ai",
-            1
-          ],
-          [
-            "mastodon.sdf.org",
+            "lede-v2.nautil.us",
             1
           ],
           [
@@ -396,15 +397,15 @@
             1
           ],
           [
-            "dreamgroup.com",
+            "bbc.com",
             1
           ],
           [
-            "text.npr.org",
+            "quantamagazine.org",
             1
           ],
           [
-            "inventor7777.github.io",
+            "cartesia.ai",
             1
           ]
         ]
@@ -424,7 +425,7 @@
         {
           "title": "JustAResearcher/gpu-unlock-ada",
           "source": "github",
-          "buzz": 6210,
+          "buzz": 6195,
           "url": "https://github.com/JustAResearcher/gpu-unlock-ada",
           "topics": [
             "science",
@@ -434,7 +435,7 @@
         {
           "title": "rddmwmddr/android-ad-cleaner",
           "source": "github",
-          "buzz": 5915,
+          "buzz": 5848,
           "url": "https://github.com/rddmwmddr/android-ad-cleaner",
           "topics": [
             "ai"
@@ -443,30 +444,30 @@
         {
           "title": "designfuchen/word-atlas",
           "source": "github",
-          "buzz": 5319,
+          "buzz": 5278,
           "url": "https://github.com/designfuchen/word-atlas",
+          "topics": []
+        },
+        {
+          "title": "unclebob/ub-mode",
+          "source": "github",
+          "buzz": 4877,
+          "url": "https://github.com/unclebob/ub-mode",
           "topics": []
         },
         {
           "title": "anhao/ai-pose-gallery-zh",
           "source": "github",
-          "buzz": 5142,
+          "buzz": 4610,
           "url": "https://github.com/anhao/ai-pose-gallery-zh",
           "topics": [
             "ai"
           ]
         },
         {
-          "title": "unclebob/ub-mode",
-          "source": "github",
-          "buzz": 5094,
-          "url": "https://github.com/unclebob/ub-mode",
-          "topics": []
-        },
-        {
           "title": "interplains/Zero-Breach-Toolkit",
           "source": "github",
-          "buzz": 4351,
+          "buzz": 4132,
           "url": "https://github.com/interplains/Zero-Breach-Toolkit",
           "topics": [
             "ai",
@@ -474,18 +475,23 @@
           ]
         },
         {
-          "title": "t3dotgg/tstack",
-          "source": "github",
-          "buzz": 2792,
-          "url": "https://github.com/t3dotgg/tstack",
-          "topics": [
-            "ai"
-          ]
+          "title": "MacBook Pro with PROLED XDR Display and Touch",
+          "source": "hn",
+          "buzz": 3633,
+          "url": "https://www.apple.com/macbook-pro/proled-xdr-display/",
+          "topics": []
+        },
+        {
+          "title": "Gemini 4 Carbon",
+          "source": "hn",
+          "buzz": 3307,
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+          "topics": []
         },
         {
           "title": "ZiChuanLan/agent-purge",
           "source": "github",
-          "buzz": 2792,
+          "buzz": 2770,
           "url": "https://github.com/ZiChuanLan/agent-purge",
           "topics": [
             "ai",
@@ -493,9 +499,18 @@
           ]
         },
         {
+          "title": "t3dotgg/tstack",
+          "source": "github",
+          "buzz": 2761,
+          "url": "https://github.com/t3dotgg/tstack",
+          "topics": [
+            "ai"
+          ]
+        },
+        {
           "title": "andyhuo520/digital-human-koubo",
           "source": "github",
-          "buzz": 2432,
+          "buzz": 2388,
           "url": "https://github.com/andyhuo520/digital-human-koubo",
           "topics": [
             "ai",
@@ -504,55 +519,36 @@
           ]
         },
         {
-          "title": "StackOverflow now gets fewer than 1000 questions a month",
+          "title": "Apple's git still trusts the compromised eMudhra certificates",
           "source": "hn",
-          "buzz": 2336,
-          "url": "https://data.stackexchange.com/stackoverflow/query/1926661#graph?t=1",
-          "topics": []
-        },
-        {
-          "title": "Why is this fingerprinting script creating bioweapons?",
-          "source": "hn",
-          "buzz": 2332,
-          "url": "https://nullpt.rs/fingerprinting-bioweapons",
-          "topics": []
+          "buzz": 2365,
+          "url": "https://emudhra.we-have-a-problem.com/apple.html",
+          "topics": [
+            "dev"
+          ]
         },
         {
           "title": "zgx949/ai-pojia",
           "source": "github",
-          "buzz": 2239,
+          "buzz": 2189,
           "url": "https://github.com/zgx949/ai-pojia",
           "topics": [
             "ai"
           ]
         },
         {
-          "title": "enesozturk/dimensional-drawing",
-          "source": "github",
-          "buzz": 1822,
-          "url": "https://github.com/enesozturk/dimensional-drawing",
+          "title": "Why is this fingerprinting script creating bioweapons?",
+          "source": "hn",
+          "buzz": 2086,
+          "url": "https://nullpt.rs/fingerprinting-bioweapons",
           "topics": []
         },
         {
-          "title": "DenisSergeevitch/ex-ussr-kinship-research",
-          "source": "github",
-          "buzz": 1634,
-          "url": "https://github.com/DenisSergeevitch/ex-ussr-kinship-research",
-          "topics": [
-            "ai",
-            "dev",
-            "science"
-          ]
-        },
-        {
-          "title": "morganlinton/BeautifulRust",
-          "source": "github",
-          "buzz": 1594,
-          "url": "https://github.com/morganlinton/BeautifulRust",
-          "topics": [
-            "ai",
-            "dev"
-          ]
+          "title": "StackOverflow now gets fewer than 1000 questions a month",
+          "source": "hn",
+          "buzz": 1831,
+          "url": "https://data.stackexchange.com/stackoverflow/query/1926661#graph?t=1",
+          "topics": []
         }
       ]
     },
@@ -581,11 +577,11 @@
         "by_topic": {
           "ai": 96,
           "dev": 61,
-          "science": 29,
-          "hardware": 20,
+          "science": 27,
+          "hardware": 21,
           "crypto": 11,
           "biz": 11,
-          "security": 7
+          "security": 6
         },
         "top_domains": [
           [
@@ -594,14 +590,22 @@
           ],
           [
             "github.com",
-            41
+            40
           ],
           [
             "dev.to",
             12
           ],
           [
-            "data.stackexchange.com",
+            "apple.com",
+            1
+          ],
+          [
+            "blog.google",
+            1
+          ],
+          [
+            "emudhra.we-have-a-problem.com",
             1
           ],
           [
@@ -609,11 +613,11 @@
             1
           ],
           [
-            "circuithub.com",
+            "data.stackexchange.com",
             1
           ],
           [
-            "divagr.com",
+            "circuithub.com",
             1
           ],
           [
@@ -621,15 +625,23 @@
             1
           ],
           [
-            "the-decoder.com",
+            "wiki.alpinebsd.org",
             1
           ],
           [
-            "artificialanalysis.ai",
+            "gist.github.com",
             1
           ],
           [
-            "smsofdeath.com",
+            "divagr.com",
+            1
+          ],
+          [
+            "formlabs.com",
+            1
+          ],
+          [
+            "timeanddate.com",
             1
           ],
           [
@@ -637,11 +649,7 @@
             1
           ],
           [
-            "electrek.co",
-            1
-          ],
-          [
-            "vox.com",
+            "the-decoder.com",
             1
           ],
           [
@@ -649,23 +657,11 @@
             1
           ],
           [
-            "ir.doordash.com",
+            "smsofdeath.com",
             1
           ],
           [
-            "iptrust.co",
-            1
-          ],
-          [
-            "publicpolicy.googleblog.com",
-            1
-          ],
-          [
-            "mistral.ai",
-            1
-          ],
-          [
-            "mastodon.sdf.org",
+            "lede-v2.nautil.us",
             1
           ],
           [
@@ -673,19 +669,19 @@
             1
           ],
           [
-            "dreamgroup.com",
+            "bbc.com",
             1
           ],
           [
-            "text.npr.org",
+            "quantamagazine.org",
             1
           ],
           [
-            "inventor7777.github.io",
+            "cartesia.ai",
             1
           ],
           [
-            "benjoffe.com",
+            "fzakaria.com",
             1
           ]
         ]
@@ -705,7 +701,7 @@
         {
           "title": "JustAResearcher/gpu-unlock-ada",
           "source": "github",
-          "buzz": 6210,
+          "buzz": 6195,
           "url": "https://github.com/JustAResearcher/gpu-unlock-ada",
           "topics": [
             "science",
@@ -715,7 +711,7 @@
         {
           "title": "rddmwmddr/android-ad-cleaner",
           "source": "github",
-          "buzz": 5915,
+          "buzz": 5848,
           "url": "https://github.com/rddmwmddr/android-ad-cleaner",
           "topics": [
             "ai"
@@ -724,30 +720,30 @@
         {
           "title": "designfuchen/word-atlas",
           "source": "github",
-          "buzz": 5319,
+          "buzz": 5278,
           "url": "https://github.com/designfuchen/word-atlas",
+          "topics": []
+        },
+        {
+          "title": "unclebob/ub-mode",
+          "source": "github",
+          "buzz": 4877,
+          "url": "https://github.com/unclebob/ub-mode",
           "topics": []
         },
         {
           "title": "anhao/ai-pose-gallery-zh",
           "source": "github",
-          "buzz": 5142,
+          "buzz": 4610,
           "url": "https://github.com/anhao/ai-pose-gallery-zh",
           "topics": [
             "ai"
           ]
         },
         {
-          "title": "unclebob/ub-mode",
-          "source": "github",
-          "buzz": 5094,
-          "url": "https://github.com/unclebob/ub-mode",
-          "topics": []
-        },
-        {
           "title": "interplains/Zero-Breach-Toolkit",
           "source": "github",
-          "buzz": 4352,
+          "buzz": 4132,
           "url": "https://github.com/interplains/Zero-Breach-Toolkit",
           "topics": [
             "ai",
@@ -755,18 +751,23 @@
           ]
         },
         {
-          "title": "t3dotgg/tstack",
-          "source": "github",
-          "buzz": 2792,
-          "url": "https://github.com/t3dotgg/tstack",
-          "topics": [
-            "ai"
-          ]
+          "title": "MacBook Pro with PROLED XDR Display and Touch",
+          "source": "hn",
+          "buzz": 3633,
+          "url": "https://www.apple.com/macbook-pro/proled-xdr-display/",
+          "topics": []
+        },
+        {
+          "title": "Gemini 4 Carbon",
+          "source": "hn",
+          "buzz": 3307,
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+          "topics": []
         },
         {
           "title": "ZiChuanLan/agent-purge",
           "source": "github",
-          "buzz": 2792,
+          "buzz": 2770,
           "url": "https://github.com/ZiChuanLan/agent-purge",
           "topics": [
             "ai",
@@ -774,9 +775,18 @@
           ]
         },
         {
+          "title": "t3dotgg/tstack",
+          "source": "github",
+          "buzz": 2761,
+          "url": "https://github.com/t3dotgg/tstack",
+          "topics": [
+            "ai"
+          ]
+        },
+        {
           "title": "andyhuo520/digital-human-koubo",
           "source": "github",
-          "buzz": 2432,
+          "buzz": 2388,
           "url": "https://github.com/andyhuo520/digital-human-koubo",
           "topics": [
             "ai",
@@ -785,55 +795,36 @@
           ]
         },
         {
-          "title": "StackOverflow now gets fewer than 1000 questions a month",
+          "title": "Apple's git still trusts the compromised eMudhra certificates",
           "source": "hn",
-          "buzz": 2336,
-          "url": "https://data.stackexchange.com/stackoverflow/query/1926661#graph?t=1",
-          "topics": []
-        },
-        {
-          "title": "Why is this fingerprinting script creating bioweapons?",
-          "source": "hn",
-          "buzz": 2332,
-          "url": "https://nullpt.rs/fingerprinting-bioweapons",
-          "topics": []
+          "buzz": 2365,
+          "url": "https://emudhra.we-have-a-problem.com/apple.html",
+          "topics": [
+            "dev"
+          ]
         },
         {
           "title": "zgx949/ai-pojia",
           "source": "github",
-          "buzz": 2239,
+          "buzz": 2189,
           "url": "https://github.com/zgx949/ai-pojia",
           "topics": [
             "ai"
           ]
         },
         {
-          "title": "enesozturk/dimensional-drawing",
-          "source": "github",
-          "buzz": 1822,
-          "url": "https://github.com/enesozturk/dimensional-drawing",
+          "title": "Why is this fingerprinting script creating bioweapons?",
+          "source": "hn",
+          "buzz": 2086,
+          "url": "https://nullpt.rs/fingerprinting-bioweapons",
           "topics": []
         },
         {
-          "title": "DenisSergeevitch/ex-ussr-kinship-research",
-          "source": "github",
-          "buzz": 1634,
-          "url": "https://github.com/DenisSergeevitch/ex-ussr-kinship-research",
-          "topics": [
-            "ai",
-            "dev",
-            "science"
-          ]
-        },
-        {
-          "title": "morganlinton/BeautifulRust",
-          "source": "github",
-          "buzz": 1594,
-          "url": "https://github.com/morganlinton/BeautifulRust",
-          "topics": [
-            "ai",
-            "dev"
-          ]
+          "title": "StackOverflow now gets fewer than 1000 questions a month",
+          "source": "hn",
+          "buzz": 1831,
+          "url": "https://data.stackexchange.com/stackoverflow/query/1926661#graph?t=1",
+          "topics": []
         }
       ]
     },
@@ -846,28 +837,27 @@
         "contact": "https://github.com/"
       },
       "totals": {
-        "items": 112,
+        "items": 102,
         "by_source": {
           "hn": 40,
           "cve": 30,
           "github": 22,
-          "rss": 20
+          "rss": 10
         },
         "by_recipe": {
           "hn_sec": 40,
           "gh_advisories": 30,
           "github_sec": 22,
-          "schneier": 10,
           "krebs": 10
         },
         "by_topic": {
-          "security": 94,
-          "ai": 48,
-          "dev": 43,
+          "security": 88,
+          "ai": 43,
+          "dev": 39,
           "hardware": 8,
-          "biz": 8,
-          "crypto": 8,
-          "science": 6
+          "crypto": 7,
+          "biz": 5,
+          "science": 4
         },
         "top_domains": [
           [
@@ -877,10 +867,6 @@
           [
             "krebsonsecurity.com",
             11
-          ],
-          [
-            "schneier.com",
-            10
           ],
           [
             "news.ycombinator.com",
@@ -968,6 +954,10 @@
           ],
           [
             "thephp.foundation",
+            1
+          ],
+          [
+            "reportcybercrime.com",
             1
           ]
         ]
@@ -1150,31 +1140,31 @@
         "contact": "https://github.com/"
       },
       "totals": {
-        "items": 137,
+        "items": 138,
         "by_source": {
           "hn": 60,
-          "github": 57,
+          "github": 58,
           "rss": 20
         },
         "by_recipe": {
           "show_hn": 60,
-          "github_ai": 34,
+          "github_ai": 35,
           "github_llm": 23,
           "tc_ai": 20
         },
         "by_topic": {
-          "ai": 74,
-          "dev": 52,
-          "biz": 12,
-          "science": 10,
+          "ai": 75,
+          "dev": 53,
+          "biz": 13,
+          "hardware": 11,
+          "science": 11,
           "security": 9,
-          "hardware": 9,
           "crypto": 4
         },
         "top_domains": [
           [
             "github.com",
-            63
+            64
           ],
           [
             "techcrunch.com",

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Atria Console — пульс улья</title>
+<style>
+  :root { --bg:#0d1220; --card:#151c2e; --line:#232c45; --txt:#e6eaf2; --mut:#8b96b0; --ok:#3ddc97; --warn:#ffb224; --err:#ff5d5d; --acc:#6ea8fe; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--txt); font:15px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  header { max-width:1100px; margin:0 auto; padding:32px 20px 8px; }
+  h1 { margin:0; font-size:26px; }
+  h1 small { color:var(--mut); font-weight:400; font-size:14px; display:block; margin-top:4px; }
+  #meta { display:flex; flex-wrap:wrap; gap:10px; margin:16px 0 24px; }
+  .chip { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:8px 14px; }
+  .chip b { font-size:17px; }
+  .chip span { color:var(--mut); display:block; font-size:11px; text-transform:uppercase; letter-spacing:.06em; }
+  main { max-width:1100px; margin:0 auto; padding:0 20px 40px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(320px, 1fr)); gap:16px; }
+  .colony { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:18px; }
+  .colony h2 { margin:0 0 2px; font-size:18px; }
+  .colony .tag { color:var(--mut); font-size:13px; margin-bottom:10px; }
+  .colony a { color:var(--acc); text-decoration:none; font-size:13px; word-break:break-all; }
+  .qa { display:inline-block; margin-top:10px; font-size:12px; padding:3px 10px; border-radius:999px; background:#0d1220; border:1px solid var(--line); }
+  .qa.ok { color:var(--ok); border-color:var(--ok); }
+  .nums { display:flex; gap:14px; margin-top:12px; flex-wrap:wrap; }
+  .nums div b { font-size:16px; }
+  .nums div span { color:var(--mut); font-size:11px; display:block; text-transform:uppercase; letter-spacing:.05em; }
+  ul.srcs { margin:12px 0 0; padding:0; list-style:none; font-size:12px; color:var(--mut); }
+  ul.srcs li { padding:2px 0; border-top:1px dashed var(--line); }
+  .products { margin-top:10px; font-size:12px; color:var(--mut); }
+  footer { max-width:1100px; margin:0 auto; padding:0 20px 40px; color:var(--mut); font-size:12px; }
+  #err { color:var(--err); max-width:1100px; margin:20px auto; padding:0 20px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>🐝 Atria Console <small>автономный мультиагентный рой · статус снимается с датасета состояния</small></h1>
+  <div id="meta"></div>
+</header>
+<div id="err"></div>
+<main><div class="grid" id="colonies"></div></main>
+<footer>Рой: <a href="https://github.com/fshmidtai/atria">github.com/fshmidtai/atria</a> · Состояние: <a href="https://huggingface.co/datasets/fshmidtai/atria-hive-state">atria-hive-state</a><div id="agents" style="margin-top:8px"></div></footer>
+
+<script>
+const STATE_URL = "https://huggingface.co/datasets/fshmidtai/atria-hive-state/resolve/main/metrics.json";
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const fmt = ts => new Date(ts * 1000).toLocaleString("ru-RU", {timeZone:"UTC", timeZoneName:"short"});
+
+async function load() {
+  const r = await fetch(STATE_URL, {cache: "no-store"});
+  if (!r.ok) throw new Error("metrics.json: HTTP " + r.status);
+  return r.json();
+}
+
+function render(m) {
+  const meta = document.getElementById("meta");
+  const b = m.budget || {}, t = m.tick || {}, tk = m.tasks || {};
+  meta.innerHTML = `
+    <div class="chip"><b>${fmt(m.generated_at)}</b><span>снимок состояния · UTC</span></div>
+    <div class="chip"><b>${t.ran ?? "?"} / ${t.failed ?? "?"}</b><span>тик: прошло / упало</span></div>
+    <div class="chip"><b>${Math.round((b.spent_u ?? 0) / 1000)}k µ$</b><span>бюджет потрачен</span></div>
+    <div class="chip"><b>${Math.round((b.revenue_u ?? 0) / 1000)}k µ$</b><span>выручка</span></div>
+    <div class="chip"><b>${tk.done ?? "?"} / ${tk.failed ?? "?"}</b><span>задачи: done / failed</span></div>
+    <div class="chip"><b>${m.elapsed_s ? m.elapsed_s.toFixed(1) + " s" : "?"}</b><span>длина цикла</span></div>`;
+
+  const grid = document.getElementById("colonies");
+  grid.innerHTML = Object.entries(m.colonies || {}).map(([name, c]) => {
+    const tot = c.totals || {}, qa = (c.qa || "").toLowerCase();
+    const qaCls = qa.includes("err:") && !qa.includes("err:0") ? "err" :
+                  (qa.includes("warn:") && !qa.includes("warn:0") ? "warn" : "ok");
+    const srcs = Object.entries(tot.by_source || {}).map(([k, v]) => `<li>${esc(k)}: <b>${v}</b></li>`).join("");
+    const prods = Object.entries(c.products || {}).map(([k, v]) => `${esc(k)} (${v.rows} стр.)`).join(" · ") || "—";
+    return `<div class="colony">
+      <h2>${esc(c.site?.title || name)} <span style="color:var(--mut);font-size:12px">/${esc(name)}</span></h2>
+      <div class="tag">${esc(c.site?.tagline || "")}</div>
+      <a href="${esc(c.site?.base_url || "#")}">${esc(c.site?.base_url || "")}</a>
+      <div><span class="qa ${qaCls}">${esc(c.qa || "n/a")}</span></div>
+      <div class="nums">
+        <div><b>${tot.items ?? (c.pages||0)}</b><span>снимков</span></div>
+        <div><b>${c.pages ?? 0}</b><span>страниц</span></div>
+        <div><b>${Object.keys(c.products || {}).length}</b><span>продуктов</span></div>
+      </div>
+      <div class="products">📦 ${prods}</div>
+      <ul class="srcs">${srcs}</ul>
+    </div>`;
+  }).join("");
+
+  document.getElementById("agents").textContent =
+    "Агенты: " + (m.agents || []).map(a => `${a.name} (${a.role}@${a.colony})`).join(", ");
+}
+
+load().then(render).catch(e => { document.getElementById("err").textContent = "⚠ " + e.message; });
+</script>
+</body>
+</html>
