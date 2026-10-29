@@ -105,6 +105,9 @@ COPY = {
         "data_p": "Анатомия последнего цикла сбора: источники, темы, домены. Полный "
                   "датасет публикуется на HuggingFace и обновляется каждые 6 часов.",
         "topics_h": "Темы", "th_topic": "тема", "th_count": "публикаций",
+        "topics_index_p": "Все темы снимка в одном окне. Каждая страница темы — "
+                          "свежая подборка по своей области, обновляется каждый тик.",
+        "topics_index_meta": "Все темы колонии — каталог свежих подборок",
         "domains_h": "Топ доменов", "th_domain": "домен", "th_mentions": "упоминаний",
         "data_title": "Данные — {title}",
         "data_desc": "Статистика и структура данных снимка",
@@ -157,6 +160,9 @@ COPY = {
         "data_p": "Anatomy of the latest crawl: sources, topics, domains. The full "
                   "dataset is published on HuggingFace and updated every 6 hours.",
         "topics_h": "Topics", "th_topic": "topic", "th_count": "posts",
+        "topics_index_p": "Every topic of the snapshot in one window. Each topic "
+                          "page is a fresh selection for its field, updated every cycle.",
+        "topics_index_meta": "All colony topics — directory of fresh picks",
         "domains_h": "Top domains", "th_domain": "domain", "th_mentions": "mentions",
         "data_title": "Data — {title}",
         "data_desc": "Statistics and structure of the snapshot",
@@ -372,6 +378,40 @@ def page_topic(topic: str, pool: list[dict], site: dict, top_n: int) -> str:
     return _page(body, f"#{topic} — {site['title']}",
                  L["topic_meta"].format(topic=topic), site["base_url"],
                  f"topics/{topic}.html", feed_title=site["title"], lang=_lang(site), cta=_cta(site))
+
+
+def page_topics_index(site: dict, topics: list[str], counts: dict) -> str:
+    """Хаб всех тем колонии: навигация /topics/ раньше вела в пустоту, а это
+    и внутренняя перелинковка, и карта тем для индексатора (ItemList)."""
+    L = _L(site)
+    rows = "".join(
+        f'<tr><td><a href="/topics/{_esc(t)}.html">#{_esc(t)}</a></td>'
+        f'<td>{counts.get(t, 0)}</td></tr>'
+        for t in topics
+    )
+    body = f"""{_header(site)}
+<div class="hero">
+  <h1>{L["topics_h"]}</h1>
+  <p>{L["topics_index_p"]}</p>
+</div>
+<table>
+  <thead><tr><th>{L['th_topic']}</th><th>{L['th_count']}</th></tr></thead>
+  <tbody>{rows}</tbody>
+</table>
+<div class="pager"><a href="/" style="color:#8fb7ff">{L['back_feed']}</a></div>
+"""
+    jsonld = json.dumps({
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": f"{site['title']} — {L['topics_h']}",
+        "itemListElement": [
+            {"@type": "ListItem", "position": i + 1, "url": f"{site['base_url']}/topics/{t}.html", "name": f"#{t}"}
+            for i, t in enumerate(topics)
+        ],
+    }, ensure_ascii=False)
+    return _page(body, f"{L['topics_h']} — {site['title']}",
+                 L["topics_index_meta"], site["base_url"], "topics/",
+                 jsonld, feed_title=site["title"], lang=_lang(site), cta=_cta(site))
 
 
 def page_item(item: dict, site: dict, related: list[dict] | None = None) -> str:
@@ -611,6 +651,15 @@ def generate(snapshot: dict, outdir: str | Path, config: dict,
         p = page_topic(topic, pool, site, int(config.get("top_items_topic", 30)))
         (outdir / "topics" / f"{topic}.html").write_text(p, encoding="utf-8")
         urls.append(f"topics/{topic}.html")
+
+    # Хаб тем: навигация /topics/ обзаводится реальной страницей (и ItemList
+    # для поисковиков). Счётчики — из текущего снимка, мёртвых ссылок нет:
+    # каждая тема из topics отрендерена выше.
+    (outdir / "topics" / "index.html").write_text(
+        page_topics_index(site, topics, snapshot["totals"].get("by_topic", {})),
+        encoding="utf-8",
+    )
+    urls.append("topics/")
 
     slugs = set()
     for item in pool:
