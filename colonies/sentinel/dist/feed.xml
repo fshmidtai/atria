@@ -5,7 +5,7 @@
     <link>https://sentinel-post.pages.dev</link>
     <description>Автономная радиостанция кибербезопасности: живые CVE, угрозы и защита — без сенсаций</description>
     <language>ru</language>
-    <lastBuildDate>Thu, 29 Oct 2026 11:18:35 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 29 Oct 2026 16:51:18 GMT</lastBuildDate>
     <item>
       <title>Ask HN: I’m an FCC Commissioner proposing regulation of IoT security updates</title>
       <link>https://sentinel-post.pages.dev/item/ask-hn-i-m-an-fcc-commissioner-proposing-regulation-of-iot-secur.html</link>
@@ -19,26 +19,6 @@
       <guid isPermaLink="true">https://sentinel-post.pages.dev/item/u-s-national-security-leaders-included-me-in-a-group-chat.html</guid>
       <pubDate>Mon, 24 Mar 2025 16:23:55 GMT</pubDate>
       <description></description>
-    </item>
-    <item>
-      <title>CVE-2026-117601: Electrum: Malicious server can replace a just-broadcast tx and try to trick user into RBF-ing it</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-117601-electrum-malicious-server-can-replace-a-just-bro.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-117601-electrum-malicious-server-can-replace-a-just-bro.html</guid>
-      <pubDate>Wed, 28 Oct 2026 21:23:44 GMT</pubDate>
-      <description>Severity: critical. ### Summary
-
-The main Electrum server the client connects to is trusted with mempool ("unconfirmed") transactions. This is documented [design](https://electrum.readthedocs.io/en/latest/faq.html#does-electrum-trust-servers). [0]
-
-However now someone figured out a way to practicall</description>
-    </item>
-    <item>
-      <title>CVE-2026-115893: Wasmtime: Cranelift backend on aarch64 can jump to incorrect target on large Wasm `br_table` instruction</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-115893-wasmtime-cranelift-backend-on-aarch64-can-jump-t.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-115893-wasmtime-cranelift-backend-on-aarch64-can-jump-t.html</guid>
-      <pubDate>Wed, 28 Oct 2026 21:14:14 GMT</pubDate>
-      <description>Severity: critical. ## Summary
-
-When running with the Cranelift compiler backend on an aarch64 target, Wasmtime can compile a Wasm module with more than ~256k targets on one `br_table` instruction in a way that results in an incorrect conditional branch target. This conditional branch could then jum</description>
     </item>
     <item>
       <title>OpenAI and Hugging Face address security incident during model evaluation</title>
@@ -76,6 +56,130 @@ When running with the Cranelift compiler backend on an aarch64 target, Wasmtime 
       <description></description>
     </item>
     <item>
+      <title>CVE-2026-118664: decode-uri-component vulnerable to denial of service via quadratic replacement of percent-encoded runs</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-118664-decode-uri-component-vulnerable-to-denial-of-ser.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-118664-decode-uri-component-vulnerable-to-denial-of-ser.html</guid>
+      <pubDate>Thu, 29 Oct 2026 16:41:28 GMT</pubDate>
+      <description>Severity: high. ### Summary
+
+`decodeUriComponent()` takes quadratic time on malformed input that has many distinct percent-encoded runs. A single unauthenticated request of about 224 KB can block the Node.js event loop for about 20 seconds. Version 0.5.0, the release that fixed CVE-[phone], is affec</description>
+    </item>
+    <item>
+      <title>GHSA-vpp8-g58w-m8mp: Twisted: Unauthenticated Remote Denial of Service in the Twisted HTTP/2 Server via Rapid Stream Reset</title>
+      <link>https://sentinel-post.pages.dev/item/ghsa-vpp8-g58w-m8mp-twisted-unauthenticated-remote-denial-of-ser.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/ghsa-vpp8-g58w-m8mp-twisted-unauthenticated-remote-denial-of-ser.html</guid>
+      <pubDate>Thu, 29 Oct 2026 16:41:06 GMT</pubDate>
+      <description>Severity: high. ## Summary
+
+An uncontrolled-resource-consumption vulnerability (CWE-400) in the Twisted HTTP/2 server lets any unauthenticated remote client exhaust server CPU over a single connection. A client that sends a request header block with `END_STREAM` and then immediately resets the strea</description>
+    </item>
+    <item>
+      <title>CVE-2026-115907: zip: legacy Shrink/Reduce/Implode decoder: denial of service from attacker-controlled ZIP64 uncompressed size</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-115907-zip-legacy-shrink-reduce-implode-decoder-denial-.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-115907-zip-legacy-shrink-reduce-implode-decoder-denial-.html</guid>
+      <pubDate>Thu, 29 Oct 2026 16:40:19 GMT</pubDate>
+      <description>Severity: high. ### Summary
+
+A malicious 149-byte ZIP archive can cause a denial of service in applications that enable `legacy-zip` and use `ZipArchive::extract()`. An attacker-controlled ZIP64 uncompressed size triggers a `capacity overflow` panic in the Shrink decoder in optimized builds, potenti</description>
+    </item>
+    <item>
+      <title>CVE-2026-115908: zip: Arbitrary file write outside the extraction directory, because ZipArchive::extract validates symlink targets lexically.</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-115908-zip-arbitrary-file-write-outside-the-extraction-.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-115908-zip-arbitrary-file-write-outside-the-extraction-.html</guid>
+      <pubDate>Thu, 29 Oct 2026 16:40:12 GMT</pubDate>
+      <description>Severity: high. ### Summary
+
+- **Verified version:** zip `9.0.0-pre3`
+- **Affected versions:** `7.2.0` and later
+- **Precondition:** The attacker knows (or can guess) the absolute path of the extraction destination
+
+The validation applied to symlinks is purely lexical.
+As a result, an attacker can w</description>
+    </item>
+    <item>
+      <title>CVE-2026-115909: zip: Unbounded Symlink-Target Handling Can Abort Or Exhaust Memory During Extraction</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-115909-zip-unbounded-symlink-target-handling-can-abort-.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-115909-zip-unbounded-symlink-target-handling-can-abort-.html</guid>
+      <pubDate>Thu, 29 Oct 2026 16:40:01 GMT</pubDate>
+      <description>Severity: high. ### Summary
+
+The symbolic-link branch of `ZipArchive::extract_internal()` allocates a buffer using an attacker-declared size before reading any entry data. A 112-byte archive terminates the extracting process with `SIGABRT` through this infallible allocation.
+
+### Details
+
+```rust
+#[</description>
+    </item>
+    <item>
+      <title>CVE-2026-63414: Shopify App: Token exchange shop context confusion may allow cross-shop authorization bypass in affected apps</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-63414-shopify-app-token-exchange-shop-context-confusion.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-63414-shopify-app-token-exchange-shop-context-confusion.html</guid>
+      <pubDate>Thu, 29 Oct 2026 16:39:49 GMT</pubDate>
+      <description>Severity: high. In token-exchange authenticated controllers, `shopify_app` exposes shop context through helpers such as `current_shopify_domain`. Prior to the fix, `current_shopify_domain` could resolve to the sanitized `shop` query parameter instead of the shop identity derived from the verified Sh</description>
+    </item>
+    <item>
+      <title>CVE-2026-62290: cert-manager: Direct ACME Challenge resources can bypass Issuer DNS01 solver policy and use ClusterIssuer DNS credentials</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-62290-cert-manager-direct-acme-challenge-resources-can-.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-62290-cert-manager-direct-acme-challenge-resources-can-.html</guid>
+      <pubDate>Thu, 29 Oct 2026 16:39:41 GMT</pubDate>
+      <description>Severity: high. ## Summary
+
+`Challenge` resources under `acme.cert-manager.io` can be created directly by namespace users. On create, cert-manager performs no admission validation tying the Challenge to an `Order`, an owner reference, or an Issuer-selected solver. The ACME Challenge controller then </description>
+    </item>
+    <item>
+      <title>CVE-2026-9086: Keycloak vulnerable to cross-site scripting (xss) via case-insensitive uri validation bypass</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-9086-keycloak-vulnerable-to-cross-site-scripting-xss-vi.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-9086-keycloak-vulnerable-to-cross-site-scripting-xss-vi.html</guid>
+      <pubDate>Thu, 29 Oct 2026 16:39:03 GMT</pubDate>
+      <description>Severity: high. ### Description
+A flaw was found in Keycloak. A remote attacker with administrative privileges, specifically those with `manage-client` permission or access to client registration endpoints, could bypass client Uniform Resource Identifier (URI) validation. This is achieved by registe</description>
+    </item>
+    <item>
+      <title>CVE-2026-9800: Keycloak vulnerable to authorization bypass via incorrect uri comparison</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-9800-keycloak-vulnerable-to-authorization-bypass-via-in.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-9800-keycloak-vulnerable-to-authorization-bypass-via-in.html</guid>
+      <pubDate>Thu, 29 Oct 2026 16:37:26 GMT</pubDate>
+      <description>Severity: high. ### Description
+A flaw was found in Keycloak Policy Enforcer. This vulnerability allows any authenticated user to bypass all authorization policies, including role, scope, and User-Managed Access (UMA) permission checks. By including the configured access-denied page path within a re</description>
+    </item>
+    <item>
+      <title>GHSA-w9x9-j56r-h98r: @eeacms/volto-chatbot has Unauthenticated Danswer API Confused Deputy Proxy</title>
+      <link>https://sentinel-post.pages.dev/item/ghsa-w9x9-j56r-h98r-eeacms-volto-chatbot-has-unauthenticated-dan.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/ghsa-w9x9-j56r-h98r-eeacms-volto-chatbot-has-unauthenticated-dan.html</guid>
+      <pubDate>Thu, 29 Oct 2026 16:35:48 GMT</pubDate>
+      <description>Severity: high. ## Unauthenticated Danswer API Confused Deputy Proxy in @eeacms/volto-chatbot
+
+### Summary
+
+`@eeacms/volto-chatbot` exposes an Express middleware route (`**/_v1_da/**`) that accepts unauthenticated HTTP requests from any network client and proxies them to the configured upstream Dans</description>
+    </item>
+    <item>
+      <title>CVE-2026-62264: @sylphx/pdf-reader-mcp: HTTP transport accepts unauthenticated requests despite a configured MCP_API_KEY</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-62264-sylphx-pdf-reader-mcp-http-transport-accepts-unau.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-62264-sylphx-pdf-reader-mcp-http-transport-accepts-unau.html</guid>
+      <pubDate>Thu, 29 Oct 2026 16:34:35 GMT</pubDate>
+      <description>Severity: high. ### Impact
+
+When `@sylphx/pdf-reader-mcp` is run as an HTTP server (`MCP_TRANSPORT=http`), it reads the `MCP_API_KEY` environment variable and logs `API key authentication enabled (X-API-Key header)` at startup, but it never validated the `X-API-Key` header on incoming requests. The </description>
+    </item>
+    <item>
+      <title>CVE-2026-61438: PraisonAI vulnerable to Remote Code Execution via Broken AST Sandbox</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-61438-praisonai-vulnerable-to-remote-code-execution-via.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-61438-praisonai-vulnerable-to-remote-code-execution-via.html</guid>
+      <pubDate>Thu, 29 Oct 2026 16:34:26 GMT</pubDate>
+      <description>Severity: high. ### Summary
+JobWorkflowExecutor._exec_inline_python() is designed to safely execute inline Python expressions from YAML workflow script: steps using AST validation. The function claims to block dangerous operations by (a) checking all AST nodes against an allowlist, and (b) providing</description>
+    </item>
+    <item>
+      <title>CVE-2026-62160: Daptin: ParseAcceptLanguage `_` separator bypass enables &gt;250x CPU amplification via Accept-Language header in LanguageMiddleware</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-62160-daptin-parseacceptlanguage-separator-bypass-enabl.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-62160-daptin-parseacceptlanguage-separator-bypass-enabl.html</guid>
+      <pubDate>Thu, 29 Oct 2026 16:33:09 GMT</pubDate>
+      <description>Severity: high. ### Summary
+
+Daptin's `LanguageMiddleware` (registered as a global gin middleware) calls `golang.org/x/text/language.ParseAcceptLanguage` on the raw `Accept-Language` header of every HTTP request without imposing any size or shape filter. The underlying parser has quadratic-time beha</description>
+    </item>
+    <item>
       <title>CVE-2026-116576: systeminformation vulnerable to Windows command injection in services() through Unicode quotation marks</title>
       <link>https://sentinel-post.pages.dev/item/cve-2026-116576-systeminformation-vulnerable-to-windows-command-.html</link>
       <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-116576-systeminformation-vulnerable-to-windows-command-.html</guid>
@@ -83,59 +187,6 @@ When running with the Cranelift compiler backend on an aarch64 target, Wasmtime 
       <description>Severity: high. ### Summary
 
 On Windows, `systeminformation@5.33.15` builds a PowerShell command using the value passed to `services()`. The default sanitizer removes ASCII quotes but keeps Unicode curly quotes, spaces, and parentheses. A crafted service name can use those characters to break out of</description>
-    </item>
-    <item>
-      <title>CVE-2026-116581: Seroval: fromJSON deserializer trusts node-supplied array length and sequence doneAt (unauthenticated event-loop DoS)</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-116581-seroval-fromjson-deserializer-trusts-node-suppli.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-116581-seroval-fromjson-deserializer-trusts-node-suppli.html</guid>
-      <pubDate>Wed, 28 Oct 2026 21:17:27 GMT</pubDate>
-      <description>Severity: high. ### Summary
-
-`fromJSON` and `fromCrossJSON` used two node fields without checking them.
-
-- An array node's element list was not checked to be an array. A small payload could set the length the decoder looped over. This part is also tracked in GHSA-wp97-x4hv-qvhp.
-- A sequence node's </description>
-    </item>
-    <item>
-      <title>CVE-2026-116584: Seroval `fromJSON`/`fromCrossJSON` denial of service via unvalidated array node length</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-116584-seroval-fromjson-fromcrossjson-denial-of-service.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-116584-seroval-fromjson-fromcrossjson-denial-of-service.html</guid>
-      <pubDate>Wed, 28 Oct 2026 21:17:20 GMT</pubDate>
-      <description>Severity: high. ### Summary
-
-`fromJSON` and `fromCrossJSON` did not check that an array node's element list is an array. A small crafted payload could set the length the decoder used. That length controlled how much memory was allocated and how many times the decoder looped, and it did not depend on</description>
-    </item>
-    <item>
-      <title>CVE-2026-116580: Seroval: Deserialization invokes attacker-chosen callables: AsyncIteratorFactoryInstance calls source.on(listener) without type check</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-116580-seroval-deserialization-invokes-attacker-chosen-.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-116580-seroval-deserialization-invokes-attacker-chosen-.html</guid>
-      <pubDate>Wed, 28 Oct 2026 21:17:15 GMT</pubDate>
-      <description>Severity: high. ### Summary
-
-When `fromJSON` rebuilt an async iterator, it called `on()` on the iterator's source without checking that the source was a seroval stream. A crafted payload could pick another value as the source, such as a function returned by an application plugin. The deserializer th</description>
-    </item>
-    <item>
-      <title>CVE-2026-115915: vLLM: Untrusted EPS inputs can trigger denial of service or Ghostscript RCE</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-115915-vllm-untrusted-eps-inputs-can-trigger-denial-of-.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-115915-vllm-untrusted-eps-inputs-can-trigger-denial-of-.html</guid>
-      <pubDate>Wed, 28 Oct 2026 21:15:29 GMT</pubDate>
-      <description>Severity: high. ### Summary
-
-In vLLM 0.30.0, `ImageMediaIO` passes attacker-controlled image bytes to Pillow's format autodetection without restricting the accepted formats; the request's MIME label does not constrain decoder selection. An EPS payload labeled `image/png` reached the host's Ghostscri</description>
-    </item>
-    <item>
-      <title>CVE-2026-115912: vLLM: Public multimodal SHM handle forgery reaches worker-side `pickle.loads()` with insecure serialization disabled</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-115912-vllm-public-multimodal-shm-handle-forgery-reache.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-115912-vllm-public-multimodal-shm-handle-forgery-reache.html</guid>
-      <pubDate>Wed, 28 Oct 2026 21:15:15 GMT</pubDate>
-      <description>Severity: high. ## Affected
-
-- **Ecosystem / package:** pip / `vllm`
-- **Affected versions:** vLLM &lt; 0.32.0.
-
-## Summary
-
-When `--mm-processor-cache-type shm` is enabled, vLLM's multimodal SHM cache represents a cached item with an `address` and `monotonic_id` pair and treats that pair as authority </description>
     </item>
     <item>
       <title>Security advisory: Critical remote code execution vulnerabilities, update now</title>
@@ -198,48 +249,6 @@ When `--mm-processor-cache-type shm` is enabled, vLLM's multimodal SHM cache rep
       <link>https://sentinel-post.pages.dev/item/librarian-s-letter-to-google-security.html</link>
       <guid isPermaLink="true">https://sentinel-post.pages.dev/item/librarian-s-letter-to-google-security.html</guid>
       <pubDate>Mon, 01 Aug 2022 11:05:23 GMT</pubDate>
-      <description></description>
-    </item>
-    <item>
-      <title>Graphene OS: a security-enhanced Android build</title>
-      <link>https://sentinel-post.pages.dev/item/graphene-os-a-security-enhanced-android-build.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/graphene-os-a-security-enhanced-android-build.html</guid>
-      <pubDate>Thu, 24 Jul 2025 21:48:53 GMT</pubDate>
-      <description></description>
-    </item>
-    <item>
-      <title>Google Security Team Member on NSA: "Fuck These Guys"</title>
-      <link>https://sentinel-post.pages.dev/item/google-security-team-member-on-nsa-fuck-these-guys.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/google-security-team-member-on-nsa-fuck-these-guys.html</guid>
-      <pubDate>Wed, 06 Nov 2013 04:51:41 GMT</pubDate>
-      <description></description>
-    </item>
-    <item>
-      <title>Vercel April 2026 security incident</title>
-      <link>https://sentinel-post.pages.dev/item/vercel-april-2026-security-incident.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/vercel-april-2026-security-incident.html</guid>
-      <pubDate>Sun, 19 Apr 2026 14:14:38 GMT</pubDate>
-      <description>&lt;a href="https:&amp;#x2F;&amp;#x2F;vercel.com&amp;#x2F;kb&amp;#x2F;bulletin&amp;#x2F;vercel-april-2026-security-incident" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;vercel.com&amp;#x2F;kb&amp;#x2F;bulletin&amp;#x2F;vercel-april-2026-security-in...&lt;/a&gt;</description>
-    </item>
-    <item>
-      <title>Facebook Security Chief Said to Leave After Clashes Over Disinformation</title>
-      <link>https://sentinel-post.pages.dev/item/facebook-security-chief-said-to-leave-after-clashes-over-disinfo.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/facebook-security-chief-said-to-leave-after-clashes-over-disinfo.html</guid>
-      <pubDate>Mon, 19 Mar 2018 22:23:41 GMT</pubDate>
-      <description></description>
-    </item>
-    <item>
-      <title>GrapheneOS is the only Android OS providing full security patches</title>
-      <link>https://sentinel-post.pages.dev/item/grapheneos-is-the-only-android-os-providing-full-security-patche.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/grapheneos-is-the-only-android-os-providing-full-security-patche.html</guid>
-      <pubDate>Sat, 06 Dec 2025 13:58:31 GMT</pubDate>
-      <description></description>
-    </item>
-    <item>
-      <title>Security Flaws in Adobe Acrobat Reader Allow Gaining Root on macOS Silently</title>
-      <link>https://sentinel-post.pages.dev/item/security-flaws-in-adobe-acrobat-reader-allow-gaining-root-on-mac.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/security-flaws-in-adobe-acrobat-reader-allow-gaining-root-on-mac.html</guid>
-      <pubDate>Thu, 14 May 2020 15:50:25 GMT</pubDate>
       <description></description>
     </item>
   </channel>

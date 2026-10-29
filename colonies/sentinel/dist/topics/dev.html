@@ -49,6 +49,14 @@ td a:hover { text-decoration: underline; }
 .tag { font-size: 12px; color: #7f9bc4; }
 footer { margin-top: 48px; color: #5d6578; font-size: 13px;
          border-top: 1px solid #232836; padding-top: 16px; }
+.cta { margin-top: 40px; background: #12151d; border: 1px solid #2a3145;
+       border-radius: 12px; padding: 20px 22px; }
+.cta p { margin: 0 0 12px; color: #c9d2e6; }
+.cta b { color: #f4f6fb; }
+.cta a.btn { display: inline-block; margin: 4px 12px 0 0; padding: 8px 18px;
+             border-radius: 8px; background: #f2c14e; color: #141822;
+             text-decoration: none; font-weight: 600; font-size: 14px; }
+.cta a.btn.ghost { background: transparent; border: 1px solid #3a4358; color: #c9d2e6; }
 .bar { background: #1d2330; border-radius: 6px; height: 14px; overflow: hidden; }
 .bar > i { display: block; height: 100%; background: #f2c14e; }
 .meta { color: #9aa4b8; font-size: 14px; margin-top: 6px; }
@@ -70,7 +78,7 @@ footer { margin-top: 48px; color: #5d6578; font-size: 13px;
 </header>
 <div class="hero">
   <h1>#dev</h1>
-  <p>22 публикаций в последнем снимке роя.</p>
+  <p>18 публикаций в последнем снимке роя.</p>
 </div>
 <table>
   <thead><tr><th>#</th><th>Заголовок</th><th>Источник</th><th>Buzz</th></tr></thead>
@@ -85,29 +93,13 @@ footer { margin-top: 48px; color: #5d6578; font-size: 13px;
 </tr><tr>
   <td class="buzz">2</td>
   <td>
-    <a href="/item/cve-2026-117601-electrum-malicious-server-can-replace-a-just-bro.html">CVE-2026-117601: Electrum: Malicious server can replace a just-broadcast tx and try to trick user into RBF-ing it</a>
-    <div class="tagrow"><span class="tag">#ai</span><span class="tag">#dev</span><span class="tag">#security</span><span class="tag">#hardware</span></div>
-  </td>
-  <td><span class="src">CVE</span></td>
-  <td class="buzz">6080</td>
-</tr><tr>
-  <td class="buzz">3</td>
-  <td>
-    <a href="/item/cve-2026-115893-wasmtime-cranelift-backend-on-aarch64-can-jump-t.html">CVE-2026-115893: Wasmtime: Cranelift backend on aarch64 can jump to incorrect target on large Wasm `br_table` instruction</a>
-    <div class="tagrow"><span class="tag">#dev</span><span class="tag">#security</span></div>
-  </td>
-  <td><span class="src">CVE</span></td>
-  <td class="buzz">6080</td>
-</tr><tr>
-  <td class="buzz">4</td>
-  <td>
     <a href="/item/openai-and-hugging-face-address-security-incident-during-model-e.html">OpenAI and Hugging Face address security incident during model evaluation</a>
     <div class="tagrow"><span class="tag">#ai</span><span class="tag">#dev</span><span class="tag">#biz</span><span class="tag">#security</span></div>
   </td>
   <td><span class="src">Hacker News</span></td>
   <td class="buzz">5103</td>
 </tr><tr>
-  <td class="buzz">5</td>
+  <td class="buzz">3</td>
   <td>
     <a href="/item/ask-hn-gmail-account-security.html">Ask HN: Gmail account security</a>
     <div class="tagrow"><span class="tag">#ai</span><span class="tag">#dev</span><span class="tag">#security</span></div>
@@ -115,7 +107,7 @@ footer { margin-top: 48px; color: #5d6578; font-size: 13px;
   <td><span class="src">Hacker News</span></td>
   <td class="buzz">3830</td>
 </tr><tr>
-  <td class="buzz">6</td>
+  <td class="buzz">4</td>
   <td>
     <a href="/item/70tb-of-parler-users-messages-videos-and-posts-leaked-by-securit.html">70TB of Parler users’ messages, videos, and posts leaked by security researchers</a>
     <div class="tagrow"><span class="tag">#dev</span><span class="tag">#security</span></div>
@@ -123,31 +115,71 @@ footer { margin-top: 48px; color: #5d6578; font-size: 13px;
   <td><span class="src">Hacker News</span></td>
   <td class="buzz">3745</td>
 </tr><tr>
+  <td class="buzz">5</td>
+  <td>
+    <a href="/item/ghsa-vpp8-g58w-m8mp-twisted-unauthenticated-remote-denial-of-ser.html">GHSA-vpp8-g58w-m8mp: Twisted: Unauthenticated Remote Denial of Service in the Twisted HTTP/2 Server via Rapid Stream Reset</a>
+    <div class="tagrow"><span class="tag">#dev</span><span class="tag">#security</span><span class="tag">#hardware</span></div>
+  </td>
+  <td><span class="src">CVE</span></td>
+  <td class="buzz">3580</td>
+</tr><tr>
+  <td class="buzz">6</td>
+  <td>
+    <a href="/item/cve-2026-115908-zip-arbitrary-file-write-outside-the-extraction-.html">CVE-2026-115908: zip: Arbitrary file write outside the extraction directory, because ZipArchive::extract validates symlink targets lexically.</a>
+    <div class="tagrow"><span class="tag">#ai</span><span class="tag">#dev</span><span class="tag">#security</span></div>
+  </td>
+  <td><span class="src">CVE</span></td>
+  <td class="buzz">3580</td>
+</tr><tr>
   <td class="buzz">7</td>
   <td>
-    <a href="/item/cve-2026-116581-seroval-fromjson-deserializer-trusts-node-suppli.html">CVE-2026-116581: Seroval: fromJSON deserializer trusts node-supplied array length and sequence doneAt (unauthenticated event-loop DoS)</a>
-    <div class="tagrow"><span class="tag">#dev</span><span class="tag">#security</span></div>
+    <a href="/item/cve-2026-115909-zip-unbounded-symlink-target-handling-can-abort-.html">CVE-2026-115909: zip: Unbounded Symlink-Target Handling Can Abort Or Exhaust Memory During Extraction</a>
+    <div class="tagrow"><span class="tag">#ai</span><span class="tag">#dev</span><span class="tag">#security</span></div>
   </td>
   <td><span class="src">CVE</span></td>
   <td class="buzz">3580</td>
 </tr><tr>
   <td class="buzz">8</td>
   <td>
-    <a href="/item/cve-2026-115915-vllm-untrusted-eps-inputs-can-trigger-denial-of-.html">CVE-2026-115915: vLLM: Untrusted EPS inputs can trigger denial of service or Ghostscript RCE</a>
-    <div class="tagrow"><span class="tag">#ai</span><span class="tag">#dev</span><span class="tag">#security</span></div>
+    <a href="/item/cve-2026-63414-shopify-app-token-exchange-shop-context-confusion.html">CVE-2026-63414: Shopify App: Token exchange shop context confusion may allow cross-shop authorization bypass in affected apps</a>
+    <div class="tagrow"><span class="tag">#ai</span><span class="tag">#dev</span><span class="tag">#crypto</span><span class="tag">#science</span></div>
   </td>
   <td><span class="src">CVE</span></td>
   <td class="buzz">3580</td>
 </tr><tr>
   <td class="buzz">9</td>
   <td>
-    <a href="/item/cve-2026-115912-vllm-public-multimodal-shm-handle-forgery-reache.html">CVE-2026-115912: vLLM: Public multimodal SHM handle forgery reaches worker-side `pickle.loads()` with insecure serialization disabled</a>
-    <div class="tagrow"><span class="tag">#ai</span><span class="tag">#dev</span><span class="tag">#security</span></div>
+    <a href="/item/cve-2026-9086-keycloak-vulnerable-to-cross-site-scripting-xss-vi.html">CVE-2026-9086: Keycloak vulnerable to cross-site scripting (xss) via case-insensitive uri validation bypass</a>
+    <div class="tagrow"><span class="tag">#dev</span><span class="tag">#security</span></div>
   </td>
   <td><span class="src">CVE</span></td>
   <td class="buzz">3580</td>
 </tr><tr>
   <td class="buzz">10</td>
+  <td>
+    <a href="/item/ghsa-w9x9-j56r-h98r-eeacms-volto-chatbot-has-unauthenticated-dan.html">GHSA-w9x9-j56r-h98r: @eeacms/volto-chatbot has Unauthenticated Danswer API Confused Deputy Proxy</a>
+    <div class="tagrow"><span class="tag">#dev</span></div>
+  </td>
+  <td><span class="src">CVE</span></td>
+  <td class="buzz">3580</td>
+</tr><tr>
+  <td class="buzz">11</td>
+  <td>
+    <a href="/item/cve-2026-62264-sylphx-pdf-reader-mcp-http-transport-accepts-unau.html">CVE-2026-62264: @sylphx/pdf-reader-mcp: HTTP transport accepts unauthenticated requests despite a configured MCP_API_KEY</a>
+    <div class="tagrow"><span class="tag">#dev</span><span class="tag">#biz</span><span class="tag">#security</span><span class="tag">#hardware</span></div>
+  </td>
+  <td><span class="src">CVE</span></td>
+  <td class="buzz">3580</td>
+</tr><tr>
+  <td class="buzz">12</td>
+  <td>
+    <a href="/item/cve-2026-61438-praisonai-vulnerable-to-remote-code-execution-via.html">CVE-2026-61438: PraisonAI vulnerable to Remote Code Execution via Broken AST Sandbox</a>
+    <div class="tagrow"><span class="tag">#ai</span><span class="tag">#dev</span><span class="tag">#security</span></div>
+  </td>
+  <td><span class="src">CVE</span></td>
+  <td class="buzz">3580</td>
+</tr><tr>
+  <td class="buzz">13</td>
   <td>
     <a href="/item/vercel-april-2026-security-incident.html">Vercel April 2026 security incident</a>
     <div class="tagrow"><span class="tag">#dev</span><span class="tag">#security</span></div>
@@ -155,41 +187,17 @@ footer { margin-top: 48px; color: #5d6578; font-size: 13px;
   <td><span class="src">Hacker News</span></td>
   <td class="buzz">2343</td>
 </tr><tr>
-  <td class="buzz">11</td>
-  <td>
-    <a href="/item/cve-2026-115927-tornado-event-loop-blocking-and-excess-memory-us.html">CVE-2026-115927: Tornado: Event loop blocking and excess memory use from chunked bodies with many small chunks</a>
-    <div class="tagrow"><span class="tag">#dev</span><span class="tag">#security</span></div>
-  </td>
-  <td><span class="src">CVE</span></td>
-  <td class="buzz">1880</td>
-</tr><tr>
-  <td class="buzz">12</td>
-  <td>
-    <a href="/item/cve-2026-116695-crass-incorrect-tokenization-of-bad-urls-enables.html">CVE-2026-116695: Crass: Incorrect tokenization of bad URLs enables CSS sanitizer bypass</a>
-    <div class="tagrow"><span class="tag">#dev</span><span class="tag">#crypto</span><span class="tag">#security</span></div>
-  </td>
-  <td><span class="src">CVE</span></td>
-  <td class="buzz">1880</td>
-</tr><tr>
-  <td class="buzz">13</td>
-  <td>
-    <a href="/item/ghsa-2hw4-c9m4-f2fj-knative-dev-pkg-admission-webhooks-allow-unb.html">GHSA-2hw4-c9m4-f2fj: knative.dev/pkg admission webhooks allow unbounded request-body memory exhaustion</a>
-    <div class="tagrow"><span class="tag">#ai</span><span class="tag">#dev</span></div>
-  </td>
-  <td><span class="src">CVE</span></td>
-  <td class="buzz">1880</td>
-</tr><tr>
   <td class="buzz">14</td>
   <td>
-    <a href="/item/ghsa-jf75-q64q-g65r-waline-login-accepts-a-non-string-email-as-a.html">GHSA-jf75-q64q-g65r: Waline login accepts a non-string email as a match-all MongoDB query</a>
-    <div class="tagrow"><span class="tag">#ai</span><span class="tag">#dev</span><span class="tag">#crypto</span></div>
+    <a href="/item/cve-2026-118662-vite-server-fs-deny-bypassed-with-queries.html">CVE-2026-118662: Vite: `server.fs.deny` bypassed with queries</a>
+    <div class="tagrow"><span class="tag">#dev</span><span class="tag">#security</span><span class="tag">#hardware</span></div>
   </td>
   <td><span class="src">CVE</span></td>
   <td class="buzz">1880</td>
 </tr><tr>
   <td class="buzz">15</td>
   <td>
-    <a href="/item/cve-2026-116583-seroval-code-injection-through-a-typed-array-s-o.html">CVE-2026-116583: Seroval: Code injection through a typed array&#x27;s own constructor property</a>
+    <a href="/item/cve-2026-9083-keycloak-vulnerable-to-information-disclosure-thro.html">CVE-2026-9083: Keycloak vulnerable to information disclosure through arbitrary filesystem path probing</a>
     <div class="tagrow"><span class="tag">#dev</span><span class="tag">#security</span></div>
   </td>
   <td><span class="src">CVE</span></td>
@@ -197,56 +205,24 @@ footer { margin-top: 48px; color: #5d6578; font-size: 13px;
 </tr><tr>
   <td class="buzz">16</td>
   <td>
-    <a href="/item/cve-2026-116582-seroval-script-injection-through-regexp-sources-.html">CVE-2026-116582: Seroval: Script injection through RegExp sources in serialized output</a>
-    <div class="tagrow"><span class="tag">#ai</span><span class="tag">#dev</span><span class="tag">#security</span></div>
+    <a href="/item/cve-2026-61847-crass-a-large-number-of-adjacent-css-comments-can.html">CVE-2026-61847: Crass: A large number of adjacent CSS comments can trigger a SystemStackError</a>
+    <div class="tagrow"><span class="tag">#ai</span><span class="tag">#dev</span><span class="tag">#crypto</span><span class="tag">#security</span></div>
   </td>
   <td><span class="src">CVE</span></td>
   <td class="buzz">1880</td>
 </tr><tr>
   <td class="buzz">17</td>
   <td>
-    <a href="/item/cve-2026-115910-python-social-auth-openid-connect-nonce-is-not-b.html">CVE-2026-115910: Python Social Auth: OpenID Connect nonce is not bound to the browser session, so a stolen authorization code logs the attacker in as the victim</a>
-    <div class="tagrow"><span class="tag">#ai</span><span class="tag">#dev</span><span class="tag">#crypto</span><span class="tag">#science</span></div>
+    <a href="/item/cve-2026-115927-tornado-event-loop-blocking-and-excess-memory-us.html">CVE-2026-115927: Tornado: Event loop blocking and excess memory use from chunked bodies with many small chunks</a>
+    <div class="tagrow"><span class="tag">#dev</span><span class="tag">#security</span></div>
   </td>
   <td><span class="src">CVE</span></td>
   <td class="buzz">1880</td>
 </tr><tr>
   <td class="buzz">18</td>
   <td>
-    <a href="/item/cve-2026-115920-onnx-out-of-bounds-read-in-convtranspose-shape-i.html">CVE-2026-115920: ONNX: Out-of-bounds read in ConvTranspose shape inference via undersized weight rank</a>
-    <div class="tagrow"><span class="tag">#ai</span><span class="tag">#dev</span><span class="tag">#security</span></div>
-  </td>
-  <td><span class="src">CVE</span></td>
-  <td class="buzz">1880</td>
-</tr><tr>
-  <td class="buzz">19</td>
-  <td>
-    <a href="/item/cve-2026-115922-onnx-denial-of-service-via-unchecked-expansion-o.html">CVE-2026-115922: ONNX: Denial of service via unchecked expansion of packed sub-byte tensors in ONNX Python APIs</a>
-    <div class="tagrow"><span class="tag">#ai</span><span class="tag">#dev</span><span class="tag">#science</span><span class="tag">#security</span></div>
-  </td>
-  <td><span class="src">CVE</span></td>
-  <td class="buzz">1880</td>
-</tr><tr>
-  <td class="buzz">20</td>
-  <td>
-    <a href="/item/cve-2026-115916-vllm-out-of-vocabulary-prompt-token-id-passes-in.html">CVE-2026-115916: vLLM: Out-of-vocabulary prompt token id passes input validation and triggers a CUDA device-side assert (engine crash / DoS)</a>
-    <div class="tagrow"><span class="tag">#ai</span><span class="tag">#dev</span><span class="tag">#crypto</span><span class="tag">#security</span></div>
-  </td>
-  <td><span class="src">CVE</span></td>
-  <td class="buzz">1880</td>
-</tr><tr>
-  <td class="buzz">21</td>
-  <td>
-    <a href="/item/cve-2026-115918-vllm-responses-api-bypasses-trust-request-chat-t.html">CVE-2026-115918: vLLM: Responses API bypasses trust_request_chat_template for chat_template_kwargs</a>
-    <div class="tagrow"><span class="tag">#ai</span><span class="tag">#dev</span><span class="tag">#crypto</span><span class="tag">#security</span></div>
-  </td>
-  <td><span class="src">CVE</span></td>
-  <td class="buzz">1880</td>
-</tr><tr>
-  <td class="buzz">22</td>
-  <td>
-    <a href="/item/cve-2026-116586-go-jose-panics-in-json-parsing.html">CVE-2026-116586: Go JOSE: Panics in JSON parsing</a>
-    <div class="tagrow"><span class="tag">#dev</span><span class="tag">#security</span></div>
+    <a href="/item/cve-2026-116695-crass-incorrect-tokenization-of-bad-urls-enables.html">CVE-2026-116695: Crass: Incorrect tokenization of bad URLs enables CSS sanitizer bypass</a>
+    <div class="tagrow"><span class="tag">#dev</span><span class="tag">#crypto</span><span class="tag">#security</span></div>
   </td>
   <td><span class="src">CVE</span></td>
   <td class="buzz">1880</td>
@@ -254,7 +230,8 @@ footer { margin-top: 48px; color: #5d6578; font-size: 13px;
 </table>
 <div class="pager"><a href="/" style="color:#8fb7ff">← ко всем темам</a></div>
 
-<footer>Собрано и обновлено автономно роем <b>Атрия</b> · данные из публичных источников · 2026-10-29 11:18 UTC</footer>
+
+<footer>Собрано и обновлено автономно роем <b>Атрия</b> · данные из публичных источников · 2026-10-29 16:51 UTC</footer>
 </div>
 </body>
 </html>

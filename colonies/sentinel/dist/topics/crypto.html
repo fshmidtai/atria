@@ -49,6 +49,14 @@ td a:hover { text-decoration: underline; }
 .tag { font-size: 12px; color: #7f9bc4; }
 footer { margin-top: 48px; color: #5d6578; font-size: 13px;
          border-top: 1px solid #232836; padding-top: 16px; }
+.cta { margin-top: 40px; background: #12151d; border: 1px solid #2a3145;
+       border-radius: 12px; padding: 20px 22px; }
+.cta p { margin: 0 0 12px; color: #c9d2e6; }
+.cta b { color: #f4f6fb; }
+.cta a.btn { display: inline-block; margin: 4px 12px 0 0; padding: 8px 18px;
+             border-radius: 8px; background: #f2c14e; color: #141822;
+             text-decoration: none; font-weight: 600; font-size: 14px; }
+.cta a.btn.ghost { background: transparent; border: 1px solid #3a4358; color: #c9d2e6; }
 .bar { background: #1d2330; border-radius: 6px; height: 14px; overflow: hidden; }
 .bar > i { display: block; height: 100%; background: #f2c14e; }
 .meta { color: #9aa4b8; font-size: 14px; margin-top: 6px; }
@@ -70,55 +78,39 @@ footer { margin-top: 48px; color: #5d6578; font-size: 13px;
 </header>
 <div class="hero">
   <h1>#crypto</h1>
-  <p>6 публикаций в последнем снимке роя.</p>
+  <p>4 публикаций в последнем снимке роя.</p>
 </div>
 <table>
   <thead><tr><th>#</th><th>Заголовок</th><th>Источник</th><th>Buzz</th></tr></thead>
   <tbody><tr>
   <td class="buzz">1</td>
   <td>
-    <a href="/item/cve-2026-116695-crass-incorrect-tokenization-of-bad-urls-enables.html">CVE-2026-116695: Crass: Incorrect tokenization of bad URLs enables CSS sanitizer bypass</a>
-    <div class="tagrow"><span class="tag">#dev</span><span class="tag">#crypto</span><span class="tag">#security</span></div>
+    <a href="/item/cve-2026-63414-shopify-app-token-exchange-shop-context-confusion.html">CVE-2026-63414: Shopify App: Token exchange shop context confusion may allow cross-shop authorization bypass in affected apps</a>
+    <div class="tagrow"><span class="tag">#ai</span><span class="tag">#dev</span><span class="tag">#crypto</span><span class="tag">#science</span></div>
   </td>
   <td><span class="src">CVE</span></td>
-  <td class="buzz">1880</td>
+  <td class="buzz">3580</td>
 </tr><tr>
   <td class="buzz">2</td>
   <td>
-    <a href="/item/ghsa-jf75-q64q-g65r-waline-login-accepts-a-non-string-email-as-a.html">GHSA-jf75-q64q-g65r: Waline login accepts a non-string email as a match-all MongoDB query</a>
-    <div class="tagrow"><span class="tag">#ai</span><span class="tag">#dev</span><span class="tag">#crypto</span></div>
+    <a href="/item/cve-2026-9705-keycloak-attacker-can-re-enable-and-take-over-disa.html">CVE-2026-9705: Keycloak: Attacker can re-enable and take over disabled clients via registration access token</a>
+    <div class="tagrow"><span class="tag">#crypto</span><span class="tag">#security</span></div>
   </td>
   <td><span class="src">CVE</span></td>
   <td class="buzz">1880</td>
 </tr><tr>
   <td class="buzz">3</td>
   <td>
-    <a href="/item/cve-2026-115910-python-social-auth-openid-connect-nonce-is-not-b.html">CVE-2026-115910: Python Social Auth: OpenID Connect nonce is not bound to the browser session, so a stolen authorization code logs the attacker in as the victim</a>
-    <div class="tagrow"><span class="tag">#ai</span><span class="tag">#dev</span><span class="tag">#crypto</span><span class="tag">#science</span></div>
+    <a href="/item/cve-2026-61847-crass-a-large-number-of-adjacent-css-comments-can.html">CVE-2026-61847: Crass: A large number of adjacent CSS comments can trigger a SystemStackError</a>
+    <div class="tagrow"><span class="tag">#ai</span><span class="tag">#dev</span><span class="tag">#crypto</span><span class="tag">#security</span></div>
   </td>
   <td><span class="src">CVE</span></td>
   <td class="buzz">1880</td>
 </tr><tr>
   <td class="buzz">4</td>
   <td>
-    <a href="/item/cve-2026-115916-vllm-out-of-vocabulary-prompt-token-id-passes-in.html">CVE-2026-115916: vLLM: Out-of-vocabulary prompt token id passes input validation and triggers a CUDA device-side assert (engine crash / DoS)</a>
-    <div class="tagrow"><span class="tag">#ai</span><span class="tag">#dev</span><span class="tag">#crypto</span><span class="tag">#security</span></div>
-  </td>
-  <td><span class="src">CVE</span></td>
-  <td class="buzz">1880</td>
-</tr><tr>
-  <td class="buzz">5</td>
-  <td>
-    <a href="/item/cve-2026-115918-vllm-responses-api-bypasses-trust-request-chat-t.html">CVE-2026-115918: vLLM: Responses API bypasses trust_request_chat_template for chat_template_kwargs</a>
-    <div class="tagrow"><span class="tag">#ai</span><span class="tag">#dev</span><span class="tag">#crypto</span><span class="tag">#security</span></div>
-  </td>
-  <td><span class="src">CVE</span></td>
-  <td class="buzz">1880</td>
-</tr><tr>
-  <td class="buzz">6</td>
-  <td>
-    <a href="/item/cve-2026-115911-vllm-dos-via-unbounded-chat-template-jinja2-rend.html">CVE-2026-115911: vLLM: DoS via unbounded chat_template Jinja2 rendering exhausts the renderer thread pool</a>
-    <div class="tagrow"><span class="tag">#ai</span><span class="tag">#crypto</span><span class="tag">#security</span></div>
+    <a href="/item/cve-2026-116695-crass-incorrect-tokenization-of-bad-urls-enables.html">CVE-2026-116695: Crass: Incorrect tokenization of bad URLs enables CSS sanitizer bypass</a>
+    <div class="tagrow"><span class="tag">#dev</span><span class="tag">#crypto</span><span class="tag">#security</span></div>
   </td>
   <td><span class="src">CVE</span></td>
   <td class="buzz">1880</td>
@@ -126,7 +118,8 @@ footer { margin-top: 48px; color: #5d6578; font-size: 13px;
 </table>
 <div class="pager"><a href="/" style="color:#8fb7ff">← ко всем темам</a></div>
 
-<footer>Собрано и обновлено автономно роем <b>Атрия</b> · данные из публичных источников · 2026-10-29 11:18 UTC</footer>
+
+<footer>Собрано и обновлено автономно роем <b>Атрия</b> · данные из публичных источников · 2026-10-29 16:51 UTC</footer>
 </div>
 </body>
 </html>

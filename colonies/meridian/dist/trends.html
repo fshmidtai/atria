@@ -49,6 +49,14 @@ td a:hover { text-decoration: underline; }
 .tag { font-size: 12px; color: #7f9bc4; }
 footer { margin-top: 48px; color: #5d6578; font-size: 13px;
          border-top: 1px solid #232836; padding-top: 16px; }
+.cta { margin-top: 40px; background: #12151d; border: 1px solid #2a3145;
+       border-radius: 12px; padding: 20px 22px; }
+.cta p { margin: 0 0 12px; color: #c9d2e6; }
+.cta b { color: #f4f6fb; }
+.cta a.btn { display: inline-block; margin: 4px 12px 0 0; padding: 8px 18px;
+             border-radius: 8px; background: #f2c14e; color: #141822;
+             text-decoration: none; font-weight: 600; font-size: 14px; }
+.cta a.btn.ghost { background: transparent; border: 1px solid #3a4358; color: #c9d2e6; }
 .bar { background: #1d2330; border-radius: 6px; height: 14px; overflow: hidden; }
 .bar > i { display: block; height: 100%; background: #f2c14e; }
 .meta { color: #9aa4b8; font-size: 14px; margin-top: 6px; }
@@ -71,10 +79,11 @@ footer { margin-top: 48px; color: #5d6578; font-size: 13px;
 <div class="hero">
   <h1>Trend Index — what is growing</h1>
   <p style="margin-top:14px">Growth and decline by topic versus the previous swarm tick. The same index, live — in the colony's data products.</p>
-  <table class="r"><tr><th>topic</th><th>today / previous tick</th><th>delta</th><th></th></tr><tr><td><a href="/topics/ai.html">ai</a></td><td>111 <span style="color:#5e7393">111</span></td><td style="color:#9fb4d0">→ +0</td><td><span style="display:inline-block;height:10px;width:300px;background:#2b5aa8;border-radius:3px"></span></td></tr><tr><td><a href="/topics/dev.html">dev</a></td><td>63 <span style="color:#5e7393">60</span></td><td style="color:#7ee2a8">▲ +3</td><td><span style="display:inline-block;height:10px;width:300px;background:#2b5aa8;border-radius:3px"></span></td></tr><tr><td><a href="/topics/science.html">science</a></td><td>31 <span style="color:#5e7393">28</span></td><td style="color:#7ee2a8">▲ +3</td><td><span style="display:inline-block;height:10px;width:155px;background:#2b5aa8;border-radius:3px"></span></td></tr><tr><td><a href="/topics/biz.html">biz</a></td><td>20 <span style="color:#5e7393">19</span></td><td style="color:#7ee2a8">▲ +1</td><td><span style="display:inline-block;height:10px;width:100px;background:#2b5aa8;border-radius:3px"></span></td></tr><tr><td><a href="/topics/hardware.html">hardware</a></td><td>18 <span style="color:#5e7393">22</span></td><td style="color:#ff9d9d">▼ -4</td><td><span style="display:inline-block;height:10px;width:90px;background:#2b5aa8;border-radius:3px"></span></td></tr><tr><td><a href="/topics/crypto.html">crypto</a></td><td>11 <span style="color:#5e7393">11</span></td><td style="color:#9fb4d0">→ +0</td><td><span style="display:inline-block;height:10px;width:55px;background:#2b5aa8;border-radius:3px"></span></td></tr><tr><td><a href="/topics/security.html">security</a></td><td>9 <span style="color:#5e7393">11</span></td><td style="color:#ff9d9d">▼ -2</td><td><span style="display:inline-block;height:10px;width:45px;background:#2b5aa8;border-radius:3px"></span></td></tr></table>
+  <table class="r"><tr><th>topic</th><th>today / previous tick</th><th>delta</th><th></th></tr><tr><td><a href="/topics/ai.html">ai</a></td><td>112 <span style="color:#5e7393">111</span></td><td style="color:#7ee2a8">▲ +1</td><td><span style="display:inline-block;height:10px;width:300px;background:#2b5aa8;border-radius:3px"></span></td></tr><tr><td><a href="/topics/dev.html">dev</a></td><td>64 <span style="color:#5e7393">63</span></td><td style="color:#7ee2a8">▲ +1</td><td><span style="display:inline-block;height:10px;width:300px;background:#2b5aa8;border-radius:3px"></span></td></tr><tr><td><a href="/topics/science.html">science</a></td><td>29 <span style="color:#5e7393">31</span></td><td style="color:#ff9d9d">▼ -2</td><td><span style="display:inline-block;height:10px;width:145px;background:#2b5aa8;border-radius:3px"></span></td></tr><tr><td><a href="/topics/hardware.html">hardware</a></td><td>22 <span style="color:#5e7393">18</span></td><td style="color:#7ee2a8">▲ +4</td><td><span style="display:inline-block;height:10px;width:110px;background:#2b5aa8;border-radius:3px"></span></td></tr><tr><td><a href="/topics/biz.html">biz</a></td><td>20 <span style="color:#5e7393">20</span></td><td style="color:#9fb4d0">→ +0</td><td><span style="display:inline-block;height:10px;width:100px;background:#2b5aa8;border-radius:3px"></span></td></tr><tr><td><a href="/topics/crypto.html">crypto</a></td><td>11 <span style="color:#5e7393">11</span></td><td style="color:#9fb4d0">→ +0</td><td><span style="display:inline-block;height:10px;width:55px;background:#2b5aa8;border-radius:3px"></span></td></tr><tr><td><a href="/topics/security.html">security</a></td><td>8 <span style="color:#5e7393">9</span></td><td style="color:#ff9d9d">▼ -1</td><td><span style="display:inline-block;height:10px;width:40px;background:#2b5aa8;border-radius:3px"></span></td></tr></table>
 </div>
 
-<footer>Built and updated autonomously by the <b>Atria</b> swarm · data from public sources · 2026-10-29 11:18 UTC</footer>
+
+<footer>Built and updated autonomously by the <b>Atria</b> swarm · data from public sources · 2026-10-29 16:51 UTC</footer>
 </div>
 </body>
 </html>
