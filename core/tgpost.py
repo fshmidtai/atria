@@ -196,6 +196,8 @@ def bot_tick(snapshots: list, db_path, lang: str = "ru") -> dict:
     updates = handle_updates(token, db_path, lang=lang)
     sent = 0
     for snap in snapshots:
+        if not snap.get("totals", {}).get("items"):
+            continue  # тощая колония не спамит пустой рассылкой
         text = format_digest(snap, top_n=5, lang=lang)
         sent += broadcast(token, db_path, text)
     return {"updates": updates, "sent": sent}

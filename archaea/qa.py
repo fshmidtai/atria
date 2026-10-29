@@ -126,13 +126,15 @@ def audit_site(dist: str | Path, base_url: str = "") -> dict:
     else:
         add("sitemap.xml есть", False, "нет файла")
 
-    # 5. feed.xml: RSS парсится и не пуст
+    # 5. feed.xml: RSS парсится; пустой фид — warning (thin content у молодой
+    #    вертикали — не поломка сайта), а не error, иначе одна тощая колония
+    #    блокирует деплой всего роя.
     feed = dist / "feed.xml"
     if feed.exists():
         try:
             root = ET.fromstring(feed.read_text(encoding="utf-8"))
             n = len(root.findall("channel/item"))
-            add("feed.xml не пуст", n > 0, f"item'ов: {n}")
+            add("feed.xml не пуст", n > 0, f"item'ов: {n}", warn=True)
         except Exception as exc:
             add("feed.xml парсится", False, repr(exc)[:60])
     else:

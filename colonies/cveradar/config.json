@@ -1,0 +1,62 @@
+{
+  "name": "cveradar",
+  "site": {
+    "title": "CVE-радар",
+    "tagline": "Живые CVE и уязвимости на русском: автономный перевод угроз в понятные дайджесты для DevOps и небольшого SecOps",
+    "base_url": "https://cveradar.pages.dev",
+    "lang": "ru",
+    "contact": "https://t.me/dimon_claw_bot",
+    "monetization": {
+      "crypto": [
+        {
+          "net": "TON",
+          "address": "UQBTNAxe01NQlKdF-z84wGGpSGEL-6qNzrWMZ1cts2l8xqmI"
+        },
+        {
+          "net": "USDT (BEP-20)",
+          "address": "0xd4934a0935281c76b45d1254ee9A7F392861944b"
+        }
+      ]
+    },
+    "tg": {
+      "bot": "https://t.me/dimon_claw_bot"
+    }
+  },
+  "sources": [
+    {
+      "kind": "github_advisories",
+      "label": "gh_advisories",
+      "limit": 30
+    },
+    {
+      "kind": "rss",
+      "label": "securitylab",
+      "url": "https://www.securitylab.ru/rss/news.xml",
+      "limit": 25
+    },
+    {
+      "kind": "rss",
+      "label": "the_hacker_news",
+      "url": "https://feeds.feedburner.com/TheHackersNews",
+      "limit": 30
+    },
+    {
+      "kind": "rss",
+      "label": "xakep",
+      "url": "https://xakep.ru/feed/",
+      "limit": 25
+    },
+    {
+      "kind": "rss",
+      "label": "anti_malware",
+      "url": "https://www.anti-malware.ru/rss/",
+      "limit": 20
+    }
+  ],
+  "top_items_home": 30,
+  "top_items_topic": 30,
+  "top_item_pages": 60,
+  "topics": [
+    "security"
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "name": "grantsalert",
+  "site": {
+    "title": "Гранты и поддержка",
+    "tagline": "Автодайджест новых конкурсов, грантов и мер поддержки для НКО и стартапов — дедлайны и требования без ручного поиска",
+    "base_url": "https://grantsalert.pages.dev",
+    "lang": "ru",
+    "contact": "https://t.me/dimon_claw_bot",
+    "monetization": {
+      "crypto": [
+        {
+          "net": "TON",
+          "address": "UQBTNAxe01NQlKdF-z84wGGpSGEL-6qNzrWMZ1cts2l8xqmI"
+        },
+        {
+          "net": "USDT (BEP-20)",
+          "address": "0xd4934a0935281c76b45d1254ee9A7F392861944b"
+        }
+      ]
+    },
+    "tg": {
+      "bot": "https://t.me/dimon_claw_bot"
+    }
+  },
+  "sources": [
+    {
+      "kind": "rss",
+      "label": "asi",
+      "url": "https://asi.ru/rss/",
+      "limit": 30
+    },
+    {
+      "kind": "rss",
+      "label": "mybiz",
+      "url": "https://mybiz.ru/feed/",
+      "limit": 20
+    },
+    {
+      "kind": "rss",
+      "label": "dobro",
+      "url": "https://www.dobro.ru/feed/",
+      "limit": 25
+    }
+  ],
+  "top_items_home": 30,
+  "top_items_topic": 30,
+  "top_item_pages": 60,
+  "topics": [
+    "biz",
+    "science"
+  ]
+}

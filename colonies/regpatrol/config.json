@@ -1,0 +1,57 @@
+{
+  "name": "regpatrol",
+  "site": {
+    "title": "Регуляторный патруль",
+    "tagline": "Ежедневный автодайджест изменений НПА, форм отчётности и сроков для лицензируемого малого бизнеса",
+    "base_url": "https://regpatrol.pages.dev",
+    "lang": "ru",
+    "contact": "https://t.me/dimon_claw_bot",
+    "monetization": {
+      "crypto": [
+        {
+          "net": "TON",
+          "address": "UQBTNAxe01NQlKdF-z84wGGpSGEL-6qNzrWMZ1cts2l8xqmI"
+        },
+        {
+          "net": "USDT (BEP-20)",
+          "address": "0xd4934a0935281c76b45d1254ee9A7F392861944b"
+        }
+      ]
+    },
+    "tg": {
+      "bot": "https://t.me/dimon_claw_bot"
+    }
+  },
+  "sources": [
+    {
+      "kind": "rss",
+      "label": "mybiz",
+      "url": "https://mybiz.ru/feed/",
+      "limit": 30
+    },
+    {
+      "kind": "rss",
+      "label": "pravo_ru",
+      "url": "https://pravo.ru/rss/news/",
+      "limit": 25
+    },
+    {
+      "kind": "rss",
+      "label": "garant",
+      "url": "https://www.garant.ru/news/rss/",
+      "limit": 25
+    },
+    {
+      "kind": "rss",
+      "label": "nalog",
+      "url": "https://www.nalog.ru/rss/news/",
+      "limit": 20
+    }
+  ],
+  "top_items_home": 30,
+  "top_items_topic": 30,
+  "top_item_pages": 60,
+  "topics": [
+    "biz"
+  ]
+}

@@ -1,8 +1,8 @@
 {
-  "generated_at": 1793292681.8010402,
-  "elapsed_s": 12.77,
+  "generated_at": 1793304432.293079,
+  "elapsed_s": 165.44,
   "tick": {
-    "ran": 5,
+    "ran": 10,
     "failed": 0,
     "idle": false
   },
@@ -13,7 +13,7 @@
       "role": "scout",
       "colony": "core",
       "status": "active",
-      "spawned": 1793292669.046055,
+      "spawned": 1793221677.7775135,
       "note": ""
     },
     {
@@ -22,7 +22,7 @@
       "role": "refinery",
       "colony": "core",
       "status": "active",
-      "spawned": 1793292669.0488837,
+      "spawned": 1793221677.7905076,
       "note": ""
     },
     {
@@ -31,7 +31,7 @@
       "role": "writer",
       "colony": "core",
       "status": "active",
-      "spawned": 1793292669.05113,
+      "spawned": 1793221677.803619,
       "note": ""
     },
     {
@@ -40,46 +40,103 @@
       "role": "trade",
       "colony": "core",
       "status": "active",
-      "spawned": 1793292669.053362,
+      "spawned": 1793221677.8165514,
       "note": ""
     }
   ],
   "budget": {
-    "spent_u": 4800,
+    "spent_u": 64700,
     "revenue_u": 0
   },
   "tasks": {
-    "done": 5
+    "done": 62,
+    "failed": 7
   },
   "colonies": {
+    "adwatch": {
+      "site": {
+        "title": "AdWatch — compliance рекламы",
+        "tagline": "Автодайджест изменений в рекламном законодательстве, маркировке рекламы (ОРД) и практике ФАС для маркетологов",
+        "base_url": "https://adwatch.pages.dev",
+        "lang": "ru",
+        "contact": "https://t.me/dimon_claw_bot",
+        "monetization": {
+          "crypto": [
+            {
+              "net": "TON",
+              "address": "UQBTNAxe01NQlKdF-z84wGGpSGEL-6qNzrWMZ1cts2l8xqmI"
+            },
+            {
+              "net": "USDT (BEP-20)",
+              "address": "0xd4934a0935281c76b45d1254ee9A7F392861944b"
+            }
+          ]
+        },
+        "tg": {
+          "bot": "https://t.me/dimon_claw_bot"
+        }
+      },
+      "totals": {
+        "items": 0,
+        "by_source": {},
+        "by_recipe": {},
+        "by_topic": {},
+        "top_domains": []
+      },
+      "pages": 7,
+      "qa": "QA ok:10 warn:0 err:1",
+      "products": {
+        "digest_top.csv": {
+          "rows": 0
+        },
+        "trend_index.csv": {
+          "rows": 0,
+          "has_prev": false
+        }
+      },
+      "top_items": []
+    },
     "bourse": {
       "site": {
         "title": "Bourse Radar",
         "tagline": "Autonomous radar of markets, money and fintech: what moves capital right now",
         "base_url": "https://bourse-radar.pages.dev",
         "lang": "en",
-        "contact": "https://github.com/"
+        "contact": "https://github.com/",
+        "monetization": {
+          "crypto": [
+            {
+              "net": "TON",
+              "address": "UQBTNAxe01NQlKdF-z84wGGpSGEL-6qNzrWMZ1cts2l8xqmI"
+            },
+            {
+              "net": "USDT (BEP-20)",
+              "address": "0xd4934a0935281c76b45d1254ee9A7F392861944b"
+            }
+          ]
+        }
       },
       "totals": {
-        "items": 103,
+        "items": 134,
         "by_source": {
           "hn": 7,
-          "rss": 51,
+          "rss": 82,
           "github": 5,
           "arxiv": 40
         },
         "by_recipe": {
           "economist_fn": 40,
           "arxiv_qfin": 40,
-          "ft_home": 11,
+          "cnbc_top": 30,
+          "ft_home": 12,
           "hn_fintech": 7,
           "github_fin": 5
         },
         "by_topic": {
-          "ai": 58,
-          "biz": 41,
-          "dev": 35,
-          "science": 19,
+          "ai": 71,
+          "biz": 54,
+          "dev": 38,
+          "science": 20,
           "crypto": 10,
           "hardware": 5,
           "security": 4
@@ -94,8 +151,12 @@
             40
           ],
           [
+            "cnbc.com",
+            30
+          ],
+          [
             "ft.com",
-            11
+            12
           ],
           [
             "github.com",
@@ -123,7 +184,7 @@
           ]
         ]
       },
-      "pages": 77,
+      "pages": 78,
       "qa": "QA ok:11 warn:0 err:0",
       "products": {
         "digest_top.csv": {
@@ -206,15 +267,6 @@
           ]
         },
         {
-          "title": "China’s stock markets are the great global exception",
-          "source": "rss",
-          "buzz": 80,
-          "url": "https://www.economist.com/finance-and-economics/2026/10/28/chinas-stock-markets-are-the-great-global-exception",
-          "topics": [
-            "biz"
-          ]
-        },
-        {
           "title": "Alphabet shares tumble in $500bn rout",
           "source": "rss",
           "buzz": 80,
@@ -222,6 +274,15 @@
           "topics": [
             "ai",
             "biz"
+          ]
+        },
+        {
+          "title": "Google is eating itself — but it could still eat everyone else too",
+          "source": "rss",
+          "buzz": 80,
+          "url": "https://www.ft.com/content/245107d8-ef54-4b30-a75a-538d055bc6d7?syn-25a6b1a6=1",
+          "topics": [
+            "ai"
           ]
         },
         {
@@ -275,37 +336,376 @@
         }
       ]
     },
+    "cveradar": {
+      "site": {
+        "title": "CVE-радар",
+        "tagline": "Живые CVE и уязвимости на русском: автономный перевод угроз в понятные дайджесты для DevOps и небольшого SecOps",
+        "base_url": "https://cveradar.pages.dev",
+        "lang": "ru",
+        "contact": "https://t.me/dimon_claw_bot",
+        "monetization": {
+          "crypto": [
+            {
+              "net": "TON",
+              "address": "UQBTNAxe01NQlKdF-z84wGGpSGEL-6qNzrWMZ1cts2l8xqmI"
+            },
+            {
+              "net": "USDT (BEP-20)",
+              "address": "0xd4934a0935281c76b45d1254ee9A7F392861944b"
+            }
+          ]
+        },
+        "tg": {
+          "bot": "https://t.me/dimon_claw_bot"
+        }
+      },
+      "totals": {
+        "items": 69,
+        "by_source": {
+          "cve": 30,
+          "rss": 39
+        },
+        "by_recipe": {
+          "gh_advisories": 30,
+          "the_hacker_news": 30,
+          "xakep": 9
+        },
+        "by_topic": {
+          "security": 54,
+          "ai": 37,
+          "dev": 31,
+          "hardware": 16,
+          "crypto": 9,
+          "science": 4,
+          "biz": 3
+        },
+        "top_domains": [
+          [
+            "github.com",
+            30
+          ],
+          [
+            "thehackernews.com",
+            30
+          ],
+          [
+            "xakep.ru",
+            9
+          ]
+        ]
+      },
+      "pages": 73,
+      "qa": "QA ok:11 warn:0 err:0",
+      "products": {
+        "digest_top.csv": {
+          "rows": 50
+        },
+        "trend_index.csv": {
+          "rows": 7,
+          "has_prev": false
+        },
+        "cve_digest.csv": {
+          "rows": 30
+        }
+      },
+      "top_items": [
+        {
+          "title": "CVE-2026-118664: decode-uri-component vulnerable to denial of service via quadratic replacement of percent-encoded runs",
+          "source": "cve",
+          "buzz": 3580,
+          "url": "https://github.com/advisories/GHSA-qr28-fpjm-wq7f",
+          "topics": [
+            "security"
+          ]
+        },
+        {
+          "title": "GHSA-vpp8-g58w-m8mp: Twisted: Unauthenticated Remote Denial of Service in the Twisted HTTP/2 Server via Rapid Stream Reset",
+          "source": "cve",
+          "buzz": 3580,
+          "url": "https://github.com/advisories/GHSA-vpp8-g58w-m8mp",
+          "topics": [
+            "dev",
+            "security",
+            "hardware"
+          ]
+        },
+        {
+          "title": "CVE-2026-115907: zip: legacy Shrink/Reduce/Implode decoder: denial of service from attacker-controlled ZIP64 uncompressed size",
+          "source": "cve",
+          "buzz": 3580,
+          "url": "https://github.com/advisories/GHSA-9hj8-73fh-9963",
+          "topics": [
+            "security"
+          ]
+        },
+        {
+          "title": "CVE-2026-115908: zip: Arbitrary file write outside the extraction directory, because ZipArchive::extract validates symlink targets lexically.",
+          "source": "cve",
+          "buzz": 3580,
+          "url": "https://github.com/advisories/GHSA-hjqx-j4rw-g7xv",
+          "topics": [
+            "ai",
+            "dev",
+            "security"
+          ]
+        },
+        {
+          "title": "CVE-2026-115909: zip: Unbounded Symlink-Target Handling Can Abort Or Exhaust Memory During Extraction",
+          "source": "cve",
+          "buzz": 3580,
+          "url": "https://github.com/advisories/GHSA-q7v9-x93c-xqv3",
+          "topics": [
+            "ai",
+            "dev",
+            "security"
+          ]
+        },
+        {
+          "title": "CVE-2026-63414: Shopify App: Token exchange shop context confusion may allow cross-shop authorization bypass in affected apps",
+          "source": "cve",
+          "buzz": 3580,
+          "url": "https://github.com/advisories/GHSA-6j52-38f8-qhxr",
+          "topics": [
+            "ai",
+            "dev",
+            "crypto",
+            "science",
+            "security"
+          ]
+        },
+        {
+          "title": "CVE-2026-62290: cert-manager: Direct ACME Challenge resources can bypass Issuer DNS01 solver policy and use ClusterIssuer DNS credentials",
+          "source": "cve",
+          "buzz": 3580,
+          "url": "https://github.com/advisories/GHSA-8rvj-mm4h-c258",
+          "topics": [
+            "science",
+            "security"
+          ]
+        },
+        {
+          "title": "CVE-2026-9086: Keycloak vulnerable to cross-site scripting (xss) via case-insensitive uri validation bypass",
+          "source": "cve",
+          "buzz": 3580,
+          "url": "https://github.com/advisories/GHSA-v3f7-2p4r-mwfw",
+          "topics": [
+            "dev",
+            "security"
+          ]
+        },
+        {
+          "title": "CVE-2026-9800: Keycloak vulnerable to authorization bypass via incorrect uri comparison",
+          "source": "cve",
+          "buzz": 3580,
+          "url": "https://github.com/advisories/GHSA-f5p5-6xmx-p252",
+          "topics": [
+            "security"
+          ]
+        },
+        {
+          "title": "GHSA-w9x9-j56r-h98r: @eeacms/volto-chatbot has Unauthenticated Danswer API Confused Deputy Proxy",
+          "source": "cve",
+          "buzz": 3580,
+          "url": "https://github.com/advisories/GHSA-w9x9-j56r-h98r",
+          "topics": [
+            "dev"
+          ]
+        },
+        {
+          "title": "CVE-2026-62264: @sylphx/pdf-reader-mcp: HTTP transport accepts unauthenticated requests despite a configured MCP_API_KEY",
+          "source": "cve",
+          "buzz": 3580,
+          "url": "https://github.com/advisories/GHSA-q344-5v34-gm84",
+          "topics": [
+            "dev",
+            "biz",
+            "security",
+            "hardware"
+          ]
+        },
+        {
+          "title": "CVE-2026-61438: PraisonAI vulnerable to Remote Code Execution via Broken AST Sandbox",
+          "source": "cve",
+          "buzz": 3580,
+          "url": "https://github.com/advisories/GHSA-26mh-57q7-jfvr",
+          "topics": [
+            "ai",
+            "dev",
+            "security"
+          ]
+        },
+        {
+          "title": "CVE-2026-62160: Daptin: ParseAcceptLanguage `_` separator bypass enables >250x CPU amplification via Accept-Language header in LanguageMiddleware",
+          "source": "cve",
+          "buzz": 3580,
+          "url": "https://github.com/advisories/GHSA-rhj7-vh3v-mcq6",
+          "topics": [
+            "security",
+            "hardware"
+          ]
+        },
+        {
+          "title": "CVE-2026-116576: systeminformation vulnerable to Windows command injection in services() through Unicode quotation marks",
+          "source": "cve",
+          "buzz": 3580,
+          "url": "https://github.com/advisories/GHSA-3f7j-7jwc-fxfj",
+          "topics": [
+            "science",
+            "security"
+          ]
+        },
+        {
+          "title": "CVE-2026-115906: zip: AES Entry HMAC Authentication Bypass on Premature EOF",
+          "source": "cve",
+          "buzz": 1880,
+          "url": "https://github.com/advisories/GHSA-8hxf-qr8p-62x4",
+          "topics": [
+            "ai",
+            "security"
+          ]
+        }
+      ]
+    },
+    "grantsalert": {
+      "site": {
+        "title": "Гранты и поддержка",
+        "tagline": "Автодайджест новых конкурсов, грантов и мер поддержки для НКО и стартапов — дедлайны и требования без ручного поиска",
+        "base_url": "https://grantsalert.pages.dev",
+        "lang": "ru",
+        "contact": "https://t.me/dimon_claw_bot",
+        "monetization": {
+          "crypto": [
+            {
+              "net": "TON",
+              "address": "UQBTNAxe01NQlKdF-z84wGGpSGEL-6qNzrWMZ1cts2l8xqmI"
+            },
+            {
+              "net": "USDT (BEP-20)",
+              "address": "0xd4934a0935281c76b45d1254ee9A7F392861944b"
+            }
+          ]
+        },
+        "tg": {
+          "bot": "https://t.me/dimon_claw_bot"
+        }
+      },
+      "totals": {
+        "items": 5,
+        "by_source": {
+          "rss": 5
+        },
+        "by_recipe": {
+          "mybiz": 5
+        },
+        "by_topic": {
+          "ai": 1,
+          "hardware": 1,
+          "dev": 1
+        },
+        "top_domains": [
+          [
+            "mybiz.ru",
+            5
+          ]
+        ]
+      },
+      "pages": 16,
+      "qa": "QA ok:11 warn:0 err:0",
+      "products": {
+        "digest_top.csv": {
+          "rows": 5
+        },
+        "trend_index.csv": {
+          "rows": 3,
+          "has_prev": false
+        }
+      },
+      "top_items": [
+        {
+          "title": "Абориген острова Некер",
+          "source": "rss",
+          "buzz": 0,
+          "url": "https://mybiz.ru/articles/aborigen-ostrova-neker/",
+          "topics": []
+        },
+        {
+          "title": "Дмитрий Гришин, Mail.Ru Group: «Человечество до конца не представляет, насколько будут распространены роботы»",
+          "source": "rss",
+          "buzz": 0,
+          "url": "https://mybiz.ru/articles/leaders/vtoraya-proizvodnaya/",
+          "topics": [
+            "ai",
+            "hardware"
+          ]
+        },
+        {
+          "title": "Гиль Адани (HackerU): «Специалистам по информационной безопасности необходимы ежегодные курсы»",
+          "source": "rss",
+          "buzz": 0,
+          "url": "https://mybiz.ru/articles/it/gil-adani-hackeru-spetsialistam-po-informatsionnoj-bezopasnosti-neobhodimy-ezhegodnye-kursy/",
+          "topics": []
+        },
+        {
+          "title": "Сергей Солонин (Qiwi): «Мы становимся свидетелями большой революции в финтехе»",
+          "source": "rss",
+          "buzz": 0,
+          "url": "https://mybiz.ru/articles/leaders/sergej-solonin-qiwi-my-stanovimsya-svidetelyami-bolshoj-revolyutsii-v-fintehe/",
+          "topics": [
+            "dev"
+          ]
+        },
+        {
+          "title": "Борис Смирнов, Cancun Key: «Всегда интересно пробовать что-то новое»",
+          "source": "rss",
+          "buzz": 0,
+          "url": "https://mybiz.ru/articles/success_stories/boris-smirnov-cancun-key-vsegda-interesno-probovat-chto-to-novoe/",
+          "topics": []
+        }
+      ]
+    },
     "meridian": {
       "site": {
         "title": "Meridian Radar",
         "tagline": "Autonomous radar of tech and science: what is gaining resonance right now",
         "base_url": "https://meridian-radar.pages.dev",
         "lang": "en",
-        "contact": "https://github.com/"
+        "contact": "https://github.com/",
+        "monetization": {
+          "crypto": [
+            {
+              "net": "TON",
+              "address": "UQBTNAxe01NQlKdF-z84wGGpSGEL-6qNzrWMZ1cts2l8xqmI"
+            },
+            {
+              "net": "USDT (BEP-20)",
+              "address": "0xd4934a0935281c76b45d1254ee9A7F392861944b"
+            }
+          ]
+        }
       },
       "totals": {
-        "items": 162,
+        "items": 161,
         "by_source": {
           "github": 40,
-          "hn": 30,
+          "hn": 29,
           "rss": 32,
           "arxiv": 60
         },
         "by_recipe": {
           "arxiv": 60,
           "github_search": 40,
-          "hn_front": 30,
+          "hn_front": 29,
           "tc_ai": 20,
           "devto": 12
         },
         "by_topic": {
-          "ai": 113,
+          "ai": 115,
           "dev": 61,
-          "science": 28,
-          "biz": 20,
-          "hardware": 19,
-          "crypto": 11,
-          "security": 8
+          "science": 29,
+          "hardware": 18,
+          "biz": 16,
+          "crypto": 14,
+          "security": 10
         },
         "top_domains": [
           [
@@ -314,7 +714,7 @@
           ],
           [
             "github.com",
-            42
+            44
           ],
           [
             "techcrunch.com",
@@ -325,23 +725,11 @@
             12
           ],
           [
-            "data.stackexchange.com",
-            1
-          ],
-          [
-            "nullpt.rs",
-            1
+            "nytimes.com",
+            2
           ],
           [
             "about.doordash.com",
-            1
-          ],
-          [
-            "nytimes.com",
-            1
-          ],
-          [
-            "divagr.com",
             1
           ],
           [
@@ -349,35 +737,7 @@
             1
           ],
           [
-            "artificialanalysis.ai",
-            1
-          ],
-          [
-            "smsofdeath.com",
-            1
-          ],
-          [
-            "electrek.co",
-            1
-          ],
-          [
-            "publicpolicy.googleblog.com",
-            1
-          ],
-          [
-            "furbo.org",
-            1
-          ],
-          [
-            "dreamgroup.com",
-            1
-          ],
-          [
-            "text.npr.org",
-            1
-          ],
-          [
-            "blog.orange.tw",
+            "kadoa.com",
             1
           ],
           [
@@ -385,7 +745,19 @@
             1
           ],
           [
-            "inventor7777.github.io",
+            "iptrust.co",
+            1
+          ],
+          [
+            "bbc.com",
+            1
+          ],
+          [
+            "martinfowler.com",
+            1
+          ],
+          [
+            "dreamgroup.com",
             1
           ],
           [
@@ -393,24 +765,52 @@
             1
           ],
           [
+            "mastodon.sdf.org",
+            1
+          ],
+          [
             "trakkr.ai",
             1
           ],
           [
-            "dmux.github.io",
+            "nedbatchelder.com",
             1
           ],
           [
-            "xpipe.io",
+            "vut.cz",
             1
           ],
           [
             "skypilot.ai",
             1
+          ],
+          [
+            "wired.com",
+            1
+          ],
+          [
+            "16colo.rs",
+            1
+          ],
+          [
+            "news.ycombinator.com",
+            1
+          ],
+          [
+            "nypost.com",
+            1
+          ],
+          [
+            "lumi.codeberg.page",
+            1
+          ],
+          [
+            "divergencelabs.com",
+            1
           ]
         ]
       },
-      "pages": 72,
+      "pages": 73,
       "qa": "QA ok:11 warn:0 err:0",
       "products": {
         "digest_top.csv": {
@@ -425,7 +825,7 @@
         {
           "title": "JustAResearcher/gpu-unlock-ada",
           "source": "github",
-          "buzz": 6221,
+          "buzz": 6239,
           "url": "https://github.com/JustAResearcher/gpu-unlock-ada",
           "topics": [
             "science",
@@ -435,7 +835,7 @@
         {
           "title": "rddmwmddr/android-ad-cleaner",
           "source": "github",
-          "buzz": 5960,
+          "buzz": 5986,
           "url": "https://github.com/rddmwmddr/android-ad-cleaner",
           "topics": [
             "ai"
@@ -444,7 +844,7 @@
         {
           "title": "anhao/ai-pose-gallery-zh",
           "source": "github",
-          "buzz": 5343,
+          "buzz": 5471,
           "url": "https://github.com/anhao/ai-pose-gallery-zh",
           "topics": [
             "ai"
@@ -453,21 +853,21 @@
         {
           "title": "designfuchen/word-atlas",
           "source": "github",
-          "buzz": 5337,
+          "buzz": 5343,
           "url": "https://github.com/designfuchen/word-atlas",
           "topics": []
         },
         {
           "title": "unclebob/ub-mode",
           "source": "github",
-          "buzz": 5198,
+          "buzz": 5340,
           "url": "https://github.com/unclebob/ub-mode",
           "topics": []
         },
         {
           "title": "interplains/Zero-Breach-Toolkit",
           "source": "github",
-          "buzz": 4474,
+          "buzz": 4630,
           "url": "https://github.com/interplains/Zero-Breach-Toolkit",
           "topics": [
             "ai",
@@ -477,7 +877,7 @@
         {
           "title": "t3dotgg/tstack",
           "source": "github",
-          "buzz": 2803,
+          "buzz": 2820,
           "url": "https://github.com/t3dotgg/tstack",
           "topics": [
             "ai"
@@ -486,7 +886,7 @@
         {
           "title": "ZiChuanLan/agent-purge",
           "source": "github",
-          "buzz": 2796,
+          "buzz": 2807,
           "url": "https://github.com/ZiChuanLan/agent-purge",
           "topics": [
             "ai",
@@ -494,16 +894,9 @@
           ]
         },
         {
-          "title": "StackOverflow now gets fewer than 1000 questions a month",
-          "source": "hn",
-          "buzz": 2585,
-          "url": "https://data.stackexchange.com/stackoverflow/query/1926661#graph?t=1",
-          "topics": []
-        },
-        {
           "title": "andyhuo520/digital-human-koubo",
           "source": "github",
-          "buzz": 2447,
+          "buzz": 2458,
           "url": "https://github.com/andyhuo520/digital-human-koubo",
           "topics": [
             "ai",
@@ -512,32 +905,39 @@
           ]
         },
         {
-          "title": "Why is this fingerprinting script creating bioweapons?",
-          "source": "hn",
-          "buzz": 2410,
-          "url": "https://nullpt.rs/fingerprinting-bioweapons",
-          "topics": []
-        },
-        {
           "title": "zgx949/ai-pojia",
           "source": "github",
-          "buzz": 2262,
+          "buzz": 2271,
           "url": "https://github.com/zgx949/ai-pojia",
           "topics": [
             "ai"
           ]
         },
         {
+          "title": "DoorDash to acquire Instacart",
+          "source": "hn",
+          "buzz": 1968,
+          "url": "https://about.doordash.com/en-us/news/doordash-to-acquire-instacart",
+          "topics": []
+        },
+        {
           "title": "enesozturk/dimensional-drawing",
           "source": "github",
-          "buzz": 1846,
+          "buzz": 1861,
           "url": "https://github.com/enesozturk/dimensional-drawing",
+          "topics": []
+        },
+        {
+          "title": "We're releasing the weights of Mistral Large 4",
+          "source": "hn",
+          "buzz": 1724,
+          "url": "https://mistral.ai/news/mistral-large-4-oss/",
           "topics": []
         },
         {
           "title": "DenisSergeevitch/ex-ussr-kinship-research",
           "source": "github",
-          "buzz": 1639,
+          "buzz": 1655,
           "url": "https://github.com/DenisSergeevitch/ex-ussr-kinship-research",
           "topics": [
             "ai",
@@ -548,7 +948,7 @@
         {
           "title": "smithjohn78390/tongjiang-lab",
           "source": "github",
-          "buzz": 1621,
+          "buzz": 1652,
           "url": "https://github.com/smithjohn78390/tongjiang-lab",
           "topics": []
         }
@@ -560,29 +960,41 @@
         "tagline": "Радар инсайтов, трендов и технологий: что вспыхнуло в сети за последние 48 часов",
         "base_url": "https://signal-frontier.pages.dev",
         "lang": "ru",
-        "contact": "https://github.com/"
+        "contact": "https://github.com/",
+        "monetization": {
+          "crypto": [
+            {
+              "net": "TON",
+              "address": "UQBTNAxe01NQlKdF-z84wGGpSGEL-6qNzrWMZ1cts2l8xqmI"
+            },
+            {
+              "net": "USDT (BEP-20)",
+              "address": "0xd4934a0935281c76b45d1254ee9A7F392861944b"
+            }
+          ]
+        }
       },
       "totals": {
-        "items": 142,
+        "items": 141,
         "by_source": {
           "github": 40,
-          "hn": 30,
+          "hn": 29,
           "rss": 12,
           "arxiv": 60
         },
         "by_recipe": {
           "arxiv": 60,
           "github_search": 40,
-          "hn_front": 30,
+          "hn_front": 29,
           "devto": 12
         },
         "by_topic": {
-          "ai": 98,
-          "dev": 58,
+          "ai": 99,
+          "dev": 57,
           "science": 27,
-          "hardware": 18,
-          "crypto": 11,
-          "biz": 11,
+          "hardware": 17,
+          "crypto": 14,
+          "biz": 9,
           "security": 6
         },
         "top_domains": [
@@ -592,30 +1004,18 @@
           ],
           [
             "github.com",
-            42
+            44
           ],
           [
             "dev.to",
             12
           ],
           [
-            "data.stackexchange.com",
-            1
-          ],
-          [
-            "nullpt.rs",
-            1
+            "nytimes.com",
+            2
           ],
           [
             "about.doordash.com",
-            1
-          ],
-          [
-            "nytimes.com",
-            1
-          ],
-          [
-            "divagr.com",
             1
           ],
           [
@@ -623,35 +1023,7 @@
             1
           ],
           [
-            "artificialanalysis.ai",
-            1
-          ],
-          [
-            "smsofdeath.com",
-            1
-          ],
-          [
-            "electrek.co",
-            1
-          ],
-          [
-            "publicpolicy.googleblog.com",
-            1
-          ],
-          [
-            "furbo.org",
-            1
-          ],
-          [
-            "dreamgroup.com",
-            1
-          ],
-          [
-            "text.npr.org",
-            1
-          ],
-          [
-            "blog.orange.tw",
+            "kadoa.com",
             1
           ],
           [
@@ -659,7 +1031,19 @@
             1
           ],
           [
-            "inventor7777.github.io",
+            "iptrust.co",
+            1
+          ],
+          [
+            "bbc.com",
+            1
+          ],
+          [
+            "martinfowler.com",
+            1
+          ],
+          [
+            "dreamgroup.com",
             1
           ],
           [
@@ -667,15 +1051,19 @@
             1
           ],
           [
+            "mastodon.sdf.org",
+            1
+          ],
+          [
             "trakkr.ai",
             1
           ],
           [
-            "dmux.github.io",
+            "nedbatchelder.com",
             1
           ],
           [
-            "xpipe.io",
+            "vut.cz",
             1
           ],
           [
@@ -683,12 +1071,36 @@
             1
           ],
           [
+            "wired.com",
+            1
+          ],
+          [
+            "16colo.rs",
+            1
+          ],
+          [
             "news.ycombinator.com",
+            1
+          ],
+          [
+            "nypost.com",
+            1
+          ],
+          [
+            "lumi.codeberg.page",
+            1
+          ],
+          [
+            "divergencelabs.com",
+            1
+          ],
+          [
+            "fig.blue",
             1
           ]
         ]
       },
-      "pages": 72,
+      "pages": 73,
       "qa": "QA ok:11 warn:0 err:0",
       "products": {
         "digest_top.csv": {
@@ -703,7 +1115,7 @@
         {
           "title": "JustAResearcher/gpu-unlock-ada",
           "source": "github",
-          "buzz": 6221,
+          "buzz": 6239,
           "url": "https://github.com/JustAResearcher/gpu-unlock-ada",
           "topics": [
             "science",
@@ -713,7 +1125,7 @@
         {
           "title": "rddmwmddr/android-ad-cleaner",
           "source": "github",
-          "buzz": 5960,
+          "buzz": 5986,
           "url": "https://github.com/rddmwmddr/android-ad-cleaner",
           "topics": [
             "ai"
@@ -722,7 +1134,7 @@
         {
           "title": "anhao/ai-pose-gallery-zh",
           "source": "github",
-          "buzz": 5343,
+          "buzz": 5471,
           "url": "https://github.com/anhao/ai-pose-gallery-zh",
           "topics": [
             "ai"
@@ -731,21 +1143,21 @@
         {
           "title": "designfuchen/word-atlas",
           "source": "github",
-          "buzz": 5337,
+          "buzz": 5343,
           "url": "https://github.com/designfuchen/word-atlas",
           "topics": []
         },
         {
           "title": "unclebob/ub-mode",
           "source": "github",
-          "buzz": 5198,
+          "buzz": 5340,
           "url": "https://github.com/unclebob/ub-mode",
           "topics": []
         },
         {
           "title": "interplains/Zero-Breach-Toolkit",
           "source": "github",
-          "buzz": 4474,
+          "buzz": 4630,
           "url": "https://github.com/interplains/Zero-Breach-Toolkit",
           "topics": [
             "ai",
@@ -755,7 +1167,7 @@
         {
           "title": "t3dotgg/tstack",
           "source": "github",
-          "buzz": 2803,
+          "buzz": 2820,
           "url": "https://github.com/t3dotgg/tstack",
           "topics": [
             "ai"
@@ -764,7 +1176,7 @@
         {
           "title": "ZiChuanLan/agent-purge",
           "source": "github",
-          "buzz": 2796,
+          "buzz": 2807,
           "url": "https://github.com/ZiChuanLan/agent-purge",
           "topics": [
             "ai",
@@ -772,16 +1184,9 @@
           ]
         },
         {
-          "title": "StackOverflow now gets fewer than 1000 questions a month",
-          "source": "hn",
-          "buzz": 2585,
-          "url": "https://data.stackexchange.com/stackoverflow/query/1926661#graph?t=1",
-          "topics": []
-        },
-        {
           "title": "andyhuo520/digital-human-koubo",
           "source": "github",
-          "buzz": 2447,
+          "buzz": 2458,
           "url": "https://github.com/andyhuo520/digital-human-koubo",
           "topics": [
             "ai",
@@ -790,32 +1195,39 @@
           ]
         },
         {
-          "title": "Why is this fingerprinting script creating bioweapons?",
-          "source": "hn",
-          "buzz": 2410,
-          "url": "https://nullpt.rs/fingerprinting-bioweapons",
-          "topics": []
-        },
-        {
           "title": "zgx949/ai-pojia",
           "source": "github",
-          "buzz": 2262,
+          "buzz": 2271,
           "url": "https://github.com/zgx949/ai-pojia",
           "topics": [
             "ai"
           ]
         },
         {
+          "title": "DoorDash to acquire Instacart",
+          "source": "hn",
+          "buzz": 1968,
+          "url": "https://about.doordash.com/en-us/news/doordash-to-acquire-instacart",
+          "topics": []
+        },
+        {
           "title": "enesozturk/dimensional-drawing",
           "source": "github",
-          "buzz": 1846,
+          "buzz": 1861,
           "url": "https://github.com/enesozturk/dimensional-drawing",
+          "topics": []
+        },
+        {
+          "title": "We're releasing the weights of Mistral Large 4",
+          "source": "hn",
+          "buzz": 1724,
+          "url": "https://mistral.ai/news/mistral-large-4-oss/",
           "topics": []
         },
         {
           "title": "DenisSergeevitch/ex-ussr-kinship-research",
           "source": "github",
-          "buzz": 1639,
+          "buzz": 1655,
           "url": "https://github.com/DenisSergeevitch/ex-ussr-kinship-research",
           "topics": [
             "ai",
@@ -826,8 +1238,105 @@
         {
           "title": "smithjohn78390/tongjiang-lab",
           "source": "github",
-          "buzz": 1621,
+          "buzz": 1652,
           "url": "https://github.com/smithjohn78390/tongjiang-lab",
+          "topics": []
+        }
+      ]
+    },
+    "regpatrol": {
+      "site": {
+        "title": "Регуляторный патруль",
+        "tagline": "Ежедневный автодайджест изменений НПА, форм отчётности и сроков для лицензируемого малого бизнеса",
+        "base_url": "https://regpatrol.pages.dev",
+        "lang": "ru",
+        "contact": "https://t.me/dimon_claw_bot",
+        "monetization": {
+          "crypto": [
+            {
+              "net": "TON",
+              "address": "UQBTNAxe01NQlKdF-z84wGGpSGEL-6qNzrWMZ1cts2l8xqmI"
+            },
+            {
+              "net": "USDT (BEP-20)",
+              "address": "0xd4934a0935281c76b45d1254ee9A7F392861944b"
+            }
+          ]
+        },
+        "tg": {
+          "bot": "https://t.me/dimon_claw_bot"
+        }
+      },
+      "totals": {
+        "items": 5,
+        "by_source": {
+          "rss": 5
+        },
+        "by_recipe": {
+          "mybiz": 5
+        },
+        "by_topic": {
+          "ai": 1,
+          "hardware": 1,
+          "dev": 1
+        },
+        "top_domains": [
+          [
+            "mybiz.ru",
+            5
+          ]
+        ]
+      },
+      "pages": 15,
+      "qa": "QA ok:11 warn:0 err:0",
+      "products": {
+        "digest_top.csv": {
+          "rows": 5
+        },
+        "trend_index.csv": {
+          "rows": 3,
+          "has_prev": false
+        }
+      },
+      "top_items": [
+        {
+          "title": "Абориген острова Некер",
+          "source": "rss",
+          "buzz": 0,
+          "url": "https://mybiz.ru/articles/aborigen-ostrova-neker/",
+          "topics": []
+        },
+        {
+          "title": "Дмитрий Гришин, Mail.Ru Group: «Человечество до конца не представляет, насколько будут распространены роботы»",
+          "source": "rss",
+          "buzz": 0,
+          "url": "https://mybiz.ru/articles/leaders/vtoraya-proizvodnaya/",
+          "topics": [
+            "ai",
+            "hardware"
+          ]
+        },
+        {
+          "title": "Гиль Адани (HackerU): «Специалистам по информационной безопасности необходимы ежегодные курсы»",
+          "source": "rss",
+          "buzz": 0,
+          "url": "https://mybiz.ru/articles/it/gil-adani-hackeru-spetsialistam-po-informatsionnoj-bezopasnosti-neobhodimy-ezhegodnye-kursy/",
+          "topics": []
+        },
+        {
+          "title": "Сергей Солонин (Qiwi): «Мы становимся свидетелями большой революции в финтехе»",
+          "source": "rss",
+          "buzz": 0,
+          "url": "https://mybiz.ru/articles/leaders/sergej-solonin-qiwi-my-stanovimsya-svidetelyami-bolshoj-revolyutsii-v-fintehe/",
+          "topics": [
+            "dev"
+          ]
+        },
+        {
+          "title": "Борис Смирнов, Cancun Key: «Всегда интересно пробовать что-то новое»",
+          "source": "rss",
+          "buzz": 0,
+          "url": "https://mybiz.ru/articles/success_stories/boris-smirnov-cancun-key-vsegda-interesno-probovat-chto-to-novoe/",
           "topics": []
         }
       ]
@@ -838,31 +1347,43 @@
         "tagline": "Автономная радиостанция кибербезопасности: живые CVE, угрозы и защита — без сенсаций",
         "base_url": "https://sentinel-post.pages.dev",
         "lang": "ru",
-        "contact": "https://github.com/"
+        "contact": "https://github.com/",
+        "monetization": {
+          "crypto": [
+            {
+              "net": "TON",
+              "address": "UQBTNAxe01NQlKdF-z84wGGpSGEL-6qNzrWMZ1cts2l8xqmI"
+            },
+            {
+              "net": "USDT (BEP-20)",
+              "address": "0xd4934a0935281c76b45d1254ee9A7F392861944b"
+            }
+          ]
+        }
       },
       "totals": {
-        "items": 114,
+        "items": 134,
         "by_source": {
           "hn": 40,
           "cve": 30,
           "github": 24,
-          "rss": 20
+          "rss": 40
         },
         "by_recipe": {
           "hn_sec": 40,
           "gh_advisories": 30,
+          "hackersnews": 30,
           "github_sec": 24,
-          "schneier": 10,
           "krebs": 10
         },
         "by_topic": {
-          "security": 94,
-          "ai": 44,
-          "dev": 39,
-          "hardware": 12,
-          "biz": 9,
-          "crypto": 6,
-          "science": 5
+          "security": 112,
+          "ai": 65,
+          "dev": 52,
+          "hardware": 20,
+          "crypto": 10,
+          "biz": 8,
+          "science": 4
         },
         "top_domains": [
           [
@@ -870,12 +1391,12 @@
             56
           ],
           [
-            "krebsonsecurity.com",
-            11
+            "thehackernews.com",
+            30
           ],
           [
-            "schneier.com",
-            10
+            "krebsonsecurity.com",
+            11
           ],
           [
             "news.ycombinator.com",
@@ -967,7 +1488,7 @@
           ]
         ]
       },
-      "pages": 72,
+      "pages": 73,
       "qa": "QA ok:11 warn:0 err:0",
       "products": {
         "digest_top.csv": {
@@ -1138,13 +1659,68 @@
         }
       ]
     },
+    "tenderslice": {
+      "site": {
+        "title": "Тендерный срез",
+        "tagline": "Автономный мониторинг закупок 44-ФЗ для микро-бизнеса: узкий срез по сумме, региону и ОКПД — без paywall тяжеловесов",
+        "base_url": "https://tenderslice.pages.dev",
+        "lang": "ru",
+        "contact": "https://t.me/dimon_claw_bot",
+        "monetization": {
+          "crypto": [
+            {
+              "net": "TON",
+              "address": "UQBTNAxe01NQlKdF-z84wGGpSGEL-6qNzrWMZ1cts2l8xqmI"
+            },
+            {
+              "net": "USDT (BEP-20)",
+              "address": "0xd4934a0935281c76b45d1254ee9A7F392861944b"
+            }
+          ]
+        },
+        "tg": {
+          "bot": "https://t.me/dimon_claw_bot"
+        }
+      },
+      "totals": {
+        "items": 0,
+        "by_source": {},
+        "by_recipe": {},
+        "by_topic": {},
+        "top_domains": []
+      },
+      "pages": 7,
+      "qa": "QA ok:10 warn:0 err:1",
+      "products": {
+        "digest_top.csv": {
+          "rows": 0
+        },
+        "trend_index.csv": {
+          "rows": 0,
+          "has_prev": false
+        }
+      },
+      "top_items": []
+    },
     "vesper": {
       "site": {
         "title": "Vesper AI Radar",
         "tagline": "Новые AI-инструменты и стартапы: что запустилось прямо сейчас — Show HN, GitHub, открытые запуски",
         "base_url": "https://vesper-ai-radar.pages.dev",
         "lang": "ru",
-        "contact": "https://github.com/"
+        "contact": "https://github.com/",
+        "monetization": {
+          "crypto": [
+            {
+              "net": "TON",
+              "address": "UQBTNAxe01NQlKdF-z84wGGpSGEL-6qNzrWMZ1cts2l8xqmI"
+            },
+            {
+              "net": "USDT (BEP-20)",
+              "address": "0xd4934a0935281c76b45d1254ee9A7F392861944b"
+            }
+          ]
+        }
       },
       "totals": {
         "items": 141,
@@ -1160,12 +1736,12 @@
           "tc_ai": 20
         },
         "by_topic": {
-          "ai": 76,
-          "dev": 54,
-          "biz": 13,
+          "ai": 77,
+          "dev": 55,
+          "security": 11,
           "hardware": 11,
-          "science": 10,
-          "security": 9,
+          "science": 11,
+          "biz": 11,
           "crypto": 4
         },
         "top_domains": [
@@ -1271,7 +1847,7 @@
           ]
         ]
       },
-      "pages": 72,
+      "pages": 73,
       "qa": "QA ok:11 warn:0 err:0",
       "products": {
         "digest_top.csv": {

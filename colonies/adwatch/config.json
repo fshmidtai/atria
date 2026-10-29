@@ -1,0 +1,51 @@
+{
+  "name": "adwatch",
+  "site": {
+    "title": "AdWatch — compliance рекламы",
+    "tagline": "Автодайджест изменений в рекламном законодательстве, маркировке рекламы (ОРД) и практике ФАС для маркетологов",
+    "base_url": "https://adwatch.pages.dev",
+    "lang": "ru",
+    "contact": "https://t.me/dimon_claw_bot",
+    "monetization": {
+      "crypto": [
+        {
+          "net": "TON",
+          "address": "UQBTNAxe01NQlKdF-z84wGGpSGEL-6qNzrWMZ1cts2l8xqmI"
+        },
+        {
+          "net": "USDT (BEP-20)",
+          "address": "0xd4934a0935281c76b45d1254ee9A7F392861944b"
+        }
+      ]
+    },
+    "tg": {
+      "bot": "https://t.me/dimon_claw_bot"
+    }
+  },
+  "sources": [
+    {
+      "kind": "rss",
+      "label": "sostav",
+      "url": "https://www.sostav.ru/rss/",
+      "limit": 30
+    },
+    {
+      "kind": "rss",
+      "label": "adindex",
+      "url": "https://adindex.ru/rss/",
+      "limit": 25
+    },
+    {
+      "kind": "rss",
+      "label": "fas",
+      "url": "https://fas.gov.ru/rss/",
+      "limit": 20
+    }
+  ],
+  "top_items_home": 30,
+  "top_items_topic": 30,
+  "top_item_pages": 60,
+  "topics": [
+    "biz"
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "name": "tenderslice",
+  "site": {
+    "title": "Тендерный срез",
+    "tagline": "Автономный мониторинг закупок 44-ФЗ для микро-бизнеса: узкий срез по сумме, региону и ОКПД — без paywall тяжеловесов",
+    "base_url": "https://tenderslice.pages.dev",
+    "lang": "ru",
+    "contact": "https://t.me/dimon_claw_bot",
+    "monetization": {
+      "crypto": [
+        {
+          "net": "TON",
+          "address": "UQBTNAxe01NQlKdF-z84wGGpSGEL-6qNzrWMZ1cts2l8xqmI"
+        },
+        {
+          "net": "USDT (BEP-20)",
+          "address": "0xd4934a0935281c76b45d1254ee9A7F392861944b"
+        }
+      ]
+    },
+    "tg": {
+      "bot": "https://t.me/dimon_claw_bot"
+    }
+  },
+  "sources": [
+    {
+      "kind": "rss",
+      "label": "sber_ast",
+      "url": "https://www.sberbank-ast.ru/News/AllNewsRSS/",
+      "limit": 30
+    },
+    {
+      "kind": "rss",
+      "label": "tender_news",
+      "url": "https://www.tendernews.ru/rss/",
+      "limit": 25
+    },
+    {
+      "kind": "rss",
+      "label": "zakupki_online",
+      "url": "https://www.zakupki-online.com/rss/",
+      "limit": 25
+    }
+  ],
+  "top_items_home": 30,
+  "top_items_topic": 30,
+  "top_item_pages": 60,
+  "topics": [
+    "biz"
+  ]
+}
