@@ -401,6 +401,35 @@ def test_tgpost():
     _os.environ.pop("TG_BOT_TOKEN", None)
 
 
+# ---------------------------------------------------------------- html_list
+def test_html_list():
+    """Парсер HTML-каталога (агрегаторы без RSS — например FreeTender 44-ФЗ)."""
+    from colonies.phosphor import sources
+
+    html_page = (
+        '<html><body>'
+        '<a href="/tender/tender-0354100010626000313">Поставка лекарственного '
+        'препарата ЭСЦИТАЛОПРАМ</a>'
+        '<a href="https://freetender.net/tender/xyz">Ремонт авто</a>'
+        '<a href="/about">О сервисе</a>'
+        '<a href="/tender/short">коротко</a>'
+        '<a href="/tender/dupe">Дубль</a>'
+        '<a href="/tender/dupe">Дубль</a>'
+        '</body></html>')
+    orig_get = sources._get
+    sources._get = lambda url, headers=None, timeout=40: html_page
+    orig_robots = sources._robots_allowed
+    sources._robots_allowed = lambda url: True
+    items = sources.fetch_html_list("https://freetender.net/tenders/russia")
+    sources._get = orig_get
+    sources._robots_allowed = orig_robots
+    check("html: 2 записи (фильтр паттерна+длина)", len(items) == 2, len(items))
+    check("html: абсолютный url", items and items[0]["url"].startswith("http"),
+          items[0]["url"] if items else "-")
+    check("html: относительный url достроен",
+          items and "/tender/short" not in [i["url"] for i in items])
+
+
 # ---------------------------------------------------------------- QA-ген
 def test_qa_clean():
     """Чистый сайт: 0 ошибок (используем рендер sitegen из test_sitegen_render)."""
@@ -592,7 +621,7 @@ def main() -> int:
                test_apothecary, test_feed_roundtrip, test_sitegen_render,
                test_qa_clean, test_qa_gate, test_space_console,
                test_treasury, test_orchestrator, test_registry,
-               test_monetization_cta, test_tgpost):
+               test_monetization_cta, test_tgpost, test_html_list):
         try:
             fn()
         except Exception as e:  # тест не должен вешать рой — но должен орать

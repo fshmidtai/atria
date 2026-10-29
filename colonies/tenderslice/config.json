@@ -24,22 +24,17 @@
   },
   "sources": [
     {
+      "kind": "html_list",
+      "label": "freetender_rf",
+      "url": "https://freetender.net/tenders/russia",
+      "pattern": "/tender/",
+      "limit": 40
+    },
+    {
       "kind": "rss",
       "label": "sber_ast",
       "url": "https://www.sberbank-ast.ru/News/AllNewsRSS/",
       "limit": 30
-    },
-    {
-      "kind": "rss",
-      "label": "tender_news",
-      "url": "https://www.tendernews.ru/rss/",
-      "limit": 25
-    },
-    {
-      "kind": "rss",
-      "label": "zakupki_online",
-      "url": "https://www.zakupki-online.com/rss/",
-      "limit": 25
     }
   ],
   "top_items_home": 30,
