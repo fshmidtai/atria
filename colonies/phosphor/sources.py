@@ -206,9 +206,13 @@ def fetch_hn_search(query: str, limit: int = 60) -> list[dict]:
 
 
 # ---------------------------------------------------------------- arXiv
-def fetch_arxiv(limit: int = 60) -> list[dict]:
+def fetch_arxiv(limit: int = 60, cats: str = "") -> list[dict]:
+    """Свежие препринты. cats — категории по умолчанию AI/CL/LG; для финансов
+    колония передаёт q-fin.* (см. config колонии)."""
+    if not cats:
+        cats = "cs.AI+OR+cat:cs.CL+OR+cat:cs.LG"
     url = (
-        "https://export.arxiv.org/api/query?search_query=cat:cs.AI+OR+cat:cs.CL+OR+cat:cs.LG"
+        f"https://export.arxiv.org/api/query?search_query=cat:{cats}"
         f"&sortBy=submittedDate&sortOrder=descending&max_results={limit}"
     )
     try:
@@ -353,7 +357,8 @@ def fetch_recipes(recipes: list) -> dict[str, list[dict]]:
             elif kind == "hn_search":
                 items = fetch_hn_search(recipe.get("query", ""), limit=int(recipe.get("limit", 40)))
             elif kind == "arxiv":
-                items = fetch_arxiv(limit=int(recipe.get("limit", 40)))
+                items = fetch_arxiv(limit=int(recipe.get("limit", 40)),
+                                    cats=recipe.get("cats", ""))
             elif kind == "github_search":
                 items = fetch_github(
                     limit=int(recipe.get("limit", 40)),

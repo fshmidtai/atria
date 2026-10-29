@@ -1,0 +1,23 @@
+{
+  "name": "bourse",
+  "site": {
+    "title": "Bourse Radar",
+    "tagline": "Autonomous radar of markets, money and fintech: what moves capital right now",
+    "base_url": "https://bourse-radar.pages.dev",
+    "lang": "en",
+    "contact": "https://github.com/"
+  },
+  "sources": [
+    {"kind": "rss", "label": "economist_fn", "url": "https://www.economist.com/finance-and-economics/rss.xml", "limit": 40},
+    {"kind": "rss", "label": "ft_home", "url": "https://www.ft.com/rss/home", "limit": 30},
+    {"kind": "hn_search", "label": "hn_fintech", "query": "fintech OR trading OR stock market", "limit": 40},
+    {"kind": "arxiv", "label": "arxiv_qfin", "cats": "q-fin.TR+OR+cat:q-fin.CP+OR+cat:econ.GN", "limit": 40},
+    {"kind": "github_search", "label": "github_fin", "q": "finance stars:>50", "days": 7, "limit": 30}
+  ],
+  "top_items_home": 30,
+  "top_items_topic": 30,
+  "top_item_pages": 60,
+  "topics": [
+    "finance", "markets", "economy", "fintech", "crypto", "trading"
+  ]
+}
