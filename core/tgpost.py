@@ -123,6 +123,34 @@ WELCOME_EN = (
     "harvest of public streams every 6 hours."
 )
 
+# Telegram Stars (XTR) — встроенный платёжный провайдер, без внешних ключей.
+# Выплаты — Fragment в TON (проверенный рельс, docs/STAGE4_NICHES.md).
+PRO_PRICE_STARS = 199          # ≈ $2, месяц полного дайджеста
+PRO_DAYS = 31
+PRO_PRODUCT = "atria_pro_month"
+
+
+def invoice_payload() -> dict:
+    """Чистая функция — тело инвойса Stars (тестируется офлайн).
+    XTR не требует provider_token: Telegram сам его выставляет."""
+    return {
+        "title": "Атрия Pro — месяц",
+        "description": "Полный дайджест (top-20 вместо 5) по всем 10 вертикалям "
+                       "роя на 31 день. Оплата Stars, поддержка Fragment.",
+        "payload": json.dumps({"product": PRO_PRODUCT, "days": PRO_DAYS}),
+        "currency": "XTR",
+        "prices": [{"label": "Pro месяц", "amount": PRO_PRICE_STARS}],
+    }
+
+
+def is_pro(conn, chat_id: int, now: float | None = None) -> bool:
+    row = conn.execute(
+        "SELECT until FROM subs WHERE chat_id = ?", (chat_id,)).fetchone()
+    if not row:
+        return False
+    return float(row[0] or 0) > (now if now is not None else time.time())
+
+
 
 def handle_updates(token: str, db_path, lang: str = "ru") -> int:
     """Опрос long-poll одним заходом. /start = подписка, /stop = отписка.
@@ -149,6 +177,22 @@ def handle_updates(token: str, db_path, lang: str = "ru") -> int:
         chat = msg.get("chat") or {}
         cid = chat.get("id")
         text = (msg.get("text") or "").strip()
+        # успешная оплата Stars (приходит как message.successful_payment)
+        pay = msg.get("successful_payment")
+        if pay and cid is not None:
+            try:
+                days = json.loads(pay.get("payload", "{}")).get("days", PRO_DAYS)
+            except Exception:
+                days = PRO_DAYS
+            until = time.time() + days * 86400
+            conn.execute(
+                "UPDATE subs SET until = ? WHERE chat_id = ?", (until, cid))
+            _api(token, "sendMessage", {
+                "chat_id": cid,
+                "text": f"⭐ Pro активирован на {days} дн. Спасибо за поддержку "
+                        f"роя! Теперь дайджесты придут в полном виде (top-20)."})
+            handled += 1
+            continue
         if cid is None:
             handled += 1
             continue
@@ -160,6 +204,18 @@ def handle_updates(token: str, db_path, lang: str = "ru") -> int:
                 "chat_id": cid,
                 "text": WELCOME_RU if lang == "ru" else WELCOME_EN,
                 "parse_mode": "HTML"})
+        elif text.startswith("/pro"):
+            inv = _api(token, "createInvoiceLink", invoice_payload())
+            link = (inv or {}).get("result") if inv else None
+            _api(token, "sendMessage", {
+                "chat_id": cid,
+                "text": ("⭐ <b>Атрия Pro</b> — полный дайджест по всем вертикалям "
+                         f"(top-20), {PRO_PRICE_STARS} Stars на {PRO_DAYS} дн.\n"
+                         "Оплата внутри Telegram, вывод роя — через Fragment.")[:300],
+                "parse_mode": "HTML",
+                "reply_markup": ({"inline_keyboard": [[{
+                    "text": f"Оплатить {PRO_PRICE_STARS} Stars", "url": link}]]}
+                    if link else None)})
         elif text.startswith("/stop"):
             conn.execute("DELETE FROM subs WHERE chat_id = ?", (cid,))
             _api(token, "sendMessage", {"chat_id": cid, "text": "Unsubscribed."})
@@ -187,17 +243,52 @@ def broadcast(token: str, db_path, text: str, max_chats: int = 200) -> int:
     return sent
 
 
-def bot_tick(snapshots: list, db_path, lang: str = "ru") -> dict:
-    """Вход из тика: (1) забрать_signupы, (2) раздать дайджесты.
-    Каждый снимок — своя колония; подписчик один на всех (MVP)."""
+def parse_subs_json(raw: str) -> dict:
+    """Состояние подписок из HF-файла (Space пишет, тик читает).
+    Формат: {"chats": {"<chat_id>": {...}}, "offset": int}"""
+    try:
+        d = json.loads(raw)
+    except Exception:
+        return {"chats": {}, "offset": 0}
+    d.setdefault("chats", {})
+    d.setdefault("offset", 0)
+    return d
+
+
+def fetch_subs(url: str, timeout: int = 20) -> dict:
+    """Тянем состояние подписок с HF (public read, без токена)."""
+    req = urllib.request.Request(url, headers={"User-Agent": "atria-tick"})
+    try:
+        with urllib.request.urlopen(req, timeout=timeout) as r:
+            return parse_subs_json(r.read().decode("utf-8"))
+    except Exception:
+        return {"chats": {}, "offset": 0}
+
+
+def bot_tick(snapshots: list, subs: dict | None = None, lang: str = "ru") -> dict:
+    """Вход из тика: раздать дайджесты всем подписчикам из HF-состояния.
+    getUpdates НЕ зовём — очередь owns always-on Space (иначе 409 Conflict);
+    тик только читает общий файл и рассылает."""
     token = os.environ.get("TG_BOT_TOKEN", "")
-    if not token:
+    if not token or not subs:
         return {"updates": 0, "sent": 0}
-    updates = handle_updates(token, db_path, lang=lang)
+    now = time.time()
     sent = 0
-    for snap in snapshots:
-        if not snap.get("totals", {}).get("items"):
-            continue  # тощая колония не спамит пустой рассылкой
-        text = format_digest(snap, top_n=5, lang=lang)
-        sent += broadcast(token, db_path, text)
-    return {"updates": updates, "sent": sent}
+    chats = subs.get("chats", {})
+    for key, meta in chats.items():
+        cid = meta.get("chat_id") if isinstance(meta, dict) else None
+        if cid is None:
+            try:  # старый формат — ключ был chat_id
+                cid = int(key)
+            except Exception:
+                continue
+        pro = isinstance(meta, dict) and float(meta.get("until", 0) or 0) > now
+        for snap in snapshots:
+            if not snap.get("totals", {}).get("items"):
+                continue  # тощая колония не спамит пустой рассылкой
+            text = format_digest(snap, top_n=20 if pro else 5, lang=lang)
+            if _api(token, "sendMessage", {"chat_id": cid, "text": text,
+                                            "parse_mode": "HTML",
+                                            "disable_web_page_preview": True}):
+                sent += 1
+    return {"updates": 0, "sent": sent}

@@ -340,7 +340,55 @@ def fetch_github_advisories(limit: int = 30) -> list[dict]:
 
 
 # ---------------------------------------------------------------- движок рецептов
-def fetch_html_list(url: str, pattern: str = r"/tender/", limit: int = 40) -> list[dict]:
+def _strip_tags(raw: str) -> str:
+    import html as _html
+    import re as _re
+    return _html.unescape(_re.sub(r"<[^>]+>", "\n", raw))
+
+
+def _match_fields(text: str, fields: list) -> dict:
+    """Поля детали (сумма/регион/срок) regex'ами из страницы элемента.
+    Описаны в рецепте колонии — generic, не захардкожено под тендеры."""
+    import re as _re
+    out = {}
+    for f in fields or []:
+        m = _re.search(str(f.get("re", "")), text, _re.I | _re.S)
+        if m:
+            g = m.group(1).strip() if m.groups() else m.group(0).strip()
+            out[str(f.get("name"))] = _re.sub(r"\s+", " ", g)[:120]
+    return out
+
+
+def _passes_filters(fmap: dict, filters: dict) -> bool:
+    """Условия рецепта: {field: [допустимые значения]} (любое вхождение) или
+    {'<field>_max': 300000} / {'<field>_min': N} — числовой потолок/пол.
+    Сумма вида 'RUB 806,120' нормализуется в число."""
+    import re as _re
+    for key, want in (filters or {}).items():
+        kind, field = None, str(key)
+        if field.endswith("_max"):
+            kind, field = "max", field[:-4]
+        elif field.endswith("_min"):
+            kind, field = "min", field[:-4]
+        if kind:
+            try:
+                val = float(_re.sub(r"[^\d.]", "", str(fmap.get(field, ""))) or 0)
+            except ValueError:
+                return False
+            if kind == "max" and not val <= float(want):
+                return False
+            if kind == "min" and not val >= float(want):
+                return False
+            continue
+        raw = str(fmap.get(field, "")).lower()
+        if not any(str(w).lower() in raw for w in (want or [])):
+            return False
+    return True
+
+
+def fetch_html_list(url: str, pattern: str = r"/tender/", limit: int = 40,
+                    fields: list | None = None,
+                    filters: dict | None = None) -> list[dict]:
     """HTML-страница-каталог как источник: якоря, href которых содержат
     pattern (например '/tender/'). Для публичных агрегаторов без RSS —
     рынок, который deliberately не отдаёт фиды (44-ФЗ).
@@ -361,7 +409,7 @@ def fetch_html_list(url: str, pattern: str = r"/tender/", limit: int = 40) -> li
     for href, inner in rx.findall(raw):
         if pattern not in href:
             continue
-        link = href if href.startswith("http") else url.rstrip("/") + "/" + href.lstrip("/")
+        link = urllib.parse.urljoin(url, href)
         if link in seen:
             continue
         seen.add(link)
@@ -369,9 +417,18 @@ def fetch_html_list(url: str, pattern: str = r"/tender/", limit: int = 40) -> li
         title = _html.unescape(_re.sub(r"\s+", " ", title)).strip()
         if len(title) < 8:
             continue
-        out.append(_item(
+        item = _item(
             uid=link, source="html", title=title, url=link,
-            ts_epoch=time.time(), points=0, comments=0, author=""))
+            ts_epoch=time.time(), points=0, comments=0, author="")
+        if fields:
+            try:
+                if _robots_allowed(link):
+                    item.update(_match_fields(_strip_tags(_get(link)), fields))
+            except Exception:
+                pass
+            if not _passes_filters(item, filters):
+                continue
+        out.append(item)
         if len(out) >= limit:
             break
     return out
@@ -408,7 +465,9 @@ def fetch_recipes(recipes: list) -> dict[str, list[dict]]:
                 items = fetch_html_list(
                     recipe.get("url", ""),
                     pattern=recipe.get("pattern", r"/tender/"),
-                    limit=int(recipe.get("limit", 40)))
+                    limit=int(recipe.get("limit", 40)),
+                    fields=recipe.get("fields"),
+                    filters=recipe.get("filters"))
             elif kind == "github_advisories":
                 items = fetch_github_advisories(limit=int(recipe.get("limit", 30)))
             else:

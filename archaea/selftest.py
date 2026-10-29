@@ -430,6 +430,46 @@ def test_html_list():
           items and "/tender/short" not in [i["url"] for i in items])
 
 
+    # ---- обогащение деталей + микро-срез (43-ФЗ ниша: до 300к)
+    detail = (
+        '<html><body>'
+        '<div><dt class="eyebrow">Value</dt><dd>RUB 806,120</dd></div>'
+        '<div><dt class="eyebrow">Location</dt><dd>Орловская область</dd></div>'
+        '</body></html>')
+    calls = {"list": False, "detail": 0}
+
+    def fake_get(url, headers=None, timeout=40):
+        if "/tender/" in url and "russia" not in url:
+            calls["detail"] += 1
+            return detail
+        calls["list"] = True
+        return html_page
+
+    sources._get = fake_get
+    sources._robots_allowed = lambda url: True
+    fields = [
+        {"name": "sum", "re": r"VALUE\s*\n?\s*RUB\s*([\d,]+)"},
+        {"name": "region", "re": r"Location\s*\n+\s*([^\n]+)"},
+    ]
+    rich = sources.fetch_html_list(
+        "https://freetender.net/tenders/russia", fields=fields,
+        filters={"sum_max": 300000})
+    allf = sources.fetch_html_list(
+        "https://freetender.net/tenders/russia", fields=fields)
+    small = sources.fetch_html_list(
+        "https://freetender.net/tenders/russia", fields=fields,
+        filters={"sum_max": 1000000})
+    sources._get = orig_get
+    sources._robots_allowed = orig_robots
+    check("html: поля детали извлечены",
+          allf and allf[0].get("sum") == "806,120", allf[0] if allf else "-")
+    check("html: summit-фильтр 806к > 300к → 0",
+          len(rich) == 0, len(rich))
+    check("html: фильтр 806к <= 1м → проходит", len(small) == 2, len(small))
+    check("html: детали запросились (3 прохода)",
+          calls["detail"] == 6, calls["detail"])
+
+
 # ---------------------------------------------------------------- QA-ген
 def test_qa_clean():
     """Чистый сайт: 0 ошибок (используем рендер sitegen из test_sitegen_render)."""
