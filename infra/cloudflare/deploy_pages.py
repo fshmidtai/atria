@@ -143,9 +143,9 @@ def main() -> int:
     # Реальные имена Pages-проектов (CF суффиксит занятые глобально имена:
     # проект 'adwatch' живёт на adwatch-bw2.pages.dev). Имя колонии != хост.
     names = set()
-    r = _api("GET", f"/accounts/{aid}/pages/projects", token)
-    if r and r.get("success"):
-        names = {p.get("name") for p in (r.get("result") or [])}
+    st, d = _api("GET", f"/accounts/{aid}/pages/projects", token)
+    if st == 200 and d.get("success"):
+        names = {p.get("name") for p in (d.get("result") or [])}
     for cfg_path in sorted((ROOT / "colonies").glob("*/config.json")):
         colony = cfg_path.parent.name
         dist = ROOT / "colonies" / colony / "dist"
