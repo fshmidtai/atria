@@ -5,7 +5,7 @@
     <link>https://sentinel-post.pages.dev</link>
     <description>Автономная радиостанция кибербезопасности: живые CVE, угрозы и защита — без сенсаций</description>
     <language>ru</language>
-    <lastBuildDate>Thu, 29 Oct 2026 23:14:02 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 29 Oct 2026 20:06:25 GMT</lastBuildDate>
     <item>
       <title>Ask HN: I’m an FCC Commissioner proposing regulation of IoT security updates</title>
       <link>https://sentinel-post.pages.dev/item/ask-hn-i-m-an-fcc-commissioner-proposing-regulation-of-iot-secur.html</link>
@@ -180,13 +180,6 @@ JobWorkflowExecutor._exec_inline_python() is designed to safely execute inline P
 Daptin's `LanguageMiddleware` (registered as a global gin middleware) calls `golang.org/x/text/language.ParseAcceptLanguage` on the raw `Accept-Language` header of every HTTP request without imposing any size or shape filter. The underlying parser has quadratic-time beha</description>
     </item>
     <item>
-      <title>Security advisory: Critical remote code execution vulnerabilities, update now</title>
-      <link>https://sentinel-post.pages.dev/item/security-advisory-critical-remote-code-execution-vulnerabilities.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/security-advisory-critical-remote-code-execution-vulnerabilities.html</guid>
-      <pubDate>Tue, 20 Oct 2026 20:15:50 GMT</pubDate>
-      <description>&lt;a href="https:&amp;#x2F;&amp;#x2F;cert.europa.eu&amp;#x2F;publications&amp;#x2F;security-advisories&amp;#x2F;2026-018&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;cert.europa.eu&amp;#x2F;publications&amp;#x2F;security-advisories&amp;#x2F;2026...&lt;/a&gt;&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=[phone]"&gt;https:&amp;#x2F;&amp;#</description>
-    </item>
-    <item>
       <title>CVE-2026-116576: systeminformation vulnerable to Windows command injection in services() through Unicode quotation marks</title>
       <link>https://sentinel-post.pages.dev/item/cve-2026-116576-systeminformation-vulnerable-to-windows-command-.html</link>
       <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-116576-systeminformation-vulnerable-to-windows-command-.html</guid>
@@ -194,6 +187,13 @@ Daptin's `LanguageMiddleware` (registered as a global gin middleware) calls `gol
       <description>Severity: high. ### Summary
 
 On Windows, `systeminformation@5.33.15` builds a PowerShell command using the value passed to `services()`. The default sanitizer removes ASCII quotes but keeps Unicode curly quotes, spaces, and parentheses. A crafted service name can use those characters to break out of</description>
+    </item>
+    <item>
+      <title>Security advisory: Critical remote code execution vulnerabilities, update now</title>
+      <link>https://sentinel-post.pages.dev/item/security-advisory-critical-remote-code-execution-vulnerabilities.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/security-advisory-critical-remote-code-execution-vulnerabilities.html</guid>
+      <pubDate>Tue, 20 Oct 2026 20:15:50 GMT</pubDate>
+      <description>&lt;a href="https:&amp;#x2F;&amp;#x2F;cert.europa.eu&amp;#x2F;publications&amp;#x2F;security-advisories&amp;#x2F;2026-018&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;cert.europa.eu&amp;#x2F;publications&amp;#x2F;security-advisories&amp;#x2F;2026...&lt;/a&gt;&lt;p&gt;&lt;a href="https:&amp;#x2F;&amp;#x2F;news.ycombinator.com&amp;#x2F;item?id=[phone]"&gt;https:&amp;#x2F;&amp;#</description>
     </item>
     <item>
       <title>FCC: TikTok is unacceptable security risk and should be removed from app stores</title>

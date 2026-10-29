@@ -734,5 +734,6 @@ def generate(snapshot: dict, outdir: str | Path, config: dict,
     return {
         "pages": len(urls) + 1,
         "outdir": str(outdir),
-        "sitemap": [f"{site['base_url']}/{u}" for u in urls][:10],
+        # 250 верхних url — заявки IndexNow (long-tail item-страниц = SEO-основа)
+        "sitemap": [f"{site['base_url']}/{u}" for u in urls][:250],
     }

@@ -30,28 +30,52 @@
       "label": "freetender_rf",
       "url": "https://freetender.net/tenders/russia",
       "pattern": "/tender/",
-      "limit": 15,
+      "limit": 12,
       "fields": [
-        {
-          "name": "sum",
-          "re": "VALUE\\s*\\n\\s*RUB\\s*([\\d,]+)"
-        },
-        {
-          "name": "region",
-          "re": "LOCATION\\s*\\n\\s*([^\\n]+)"
-        },
-        {
-          "name": "closes",
-          "re": "CLOSES\\s*\\n\\s*([^\\n]+)"
-        },
-        {
-          "name": "buyer",
-          "re": "Issued by\\s*\\n\\s*([^\\n]{8,120})"
-        }
+        {"name": "sum", "re": "VALUE\\s*\\n+\\s*RUB\\s*([\\d,]+)"},
+        {"name": "region", "re": "LOCATION\\s*\\n+\\s*([^\\n]+)"},
+        {"name": "closes", "re": "CLOSES\\s*\\n+\\s*([^\\n]+)"},
+        {"name": "buyer", "re": "Issued by\\s*\\n+\\s*([^\\n]{8,120})"}
       ],
-      "filters": {
-        "sum_max": 300000
-      }
+      "filters": {"sum_max": 300000}
+    },
+    {
+      "kind": "html_list",
+      "label": "freetender_supply",
+      "url": "https://freetender.net/tenders/russia/manufacturing-supply",
+      "pattern": "/tender/",
+      "limit": 20,
+      "fields": [
+        {"name": "sum", "re": "VALUE\\s*\\n+\\s*RUB\\s*([\\d,]+)"},
+        {"name": "region", "re": "LOCATION\\s*\\n+\\s*([^\\n]+)"},
+        {"name": "closes", "re": "CLOSES\\s*\\n+\\s*([^\\n]+)"}
+      ],
+      "filters": {"sum_max": 300000}
+    },
+    {
+      "kind": "html_list",
+      "label": "freetender_it",
+      "url": "https://freetender.net/tenders/russia/it-telecom",
+      "pattern": "/tender/",
+      "limit": 20,
+      "fields": [
+        {"name": "sum", "re": "VALUE\\s*\\n+\\s*RUB\\s*([\\d,]+)"},
+        {"name": "region", "re": "LOCATION\\s*\\n+\\s*([^\\n]+)"},
+        {"name": "closes", "re": "CLOSES\\s*\\n+\\s*([^\\n]+)"}
+      ],
+      "filters": {"sum_max": 300000}
+    },
+    {
+      "kind": "html_list",
+      "label": "freetender_constr",
+      "url": "https://freetender.net/tenders/russia/construction-infrastructure",
+      "pattern": "/tender/",
+      "limit": 20,
+      "fields": [
+        {"name": "sum", "re": "VALUE\\s*\\n+\\s*RUB\\s*([\\d,]+)"},
+        {"name": "region", "re": "LOCATION\\s*\\n+\\s*([^\\n]+)"}
+      ],
+      "filters": {"sum_max": 300000}
     },
     {
       "kind": "rss",
