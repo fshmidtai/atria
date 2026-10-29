@@ -1,6 +1,6 @@
 {
-  "generated_at": 1793305022.5387814,
-  "elapsed_s": 157.67,
+  "generated_at": 1793304432.293079,
+  "elapsed_s": 165.44,
   "tick": {
     "ran": 10,
     "failed": 0,
@@ -13,7 +13,7 @@
       "role": "scout",
       "colony": "core",
       "status": "active",
-      "spawned": 1793304864.8815043,
+      "spawned": 1793221677.7775135,
       "note": ""
     },
     {
@@ -22,7 +22,7 @@
       "role": "refinery",
       "colony": "core",
       "status": "active",
-      "spawned": 1793304864.8831985,
+      "spawned": 1793221677.7905076,
       "note": ""
     },
     {
@@ -31,7 +31,7 @@
       "role": "writer",
       "colony": "core",
       "status": "active",
-      "spawned": 1793304864.8845692,
+      "spawned": 1793221677.803619,
       "note": ""
     },
     {
@@ -40,16 +40,17 @@
       "role": "trade",
       "colony": "core",
       "status": "active",
-      "spawned": 1793304864.8861222,
+      "spawned": 1793221677.8165514,
       "note": ""
     }
   ],
   "budget": {
-    "spent_u": 10200,
+    "spent_u": 64700,
     "revenue_u": 0
   },
   "tasks": {
-    "done": 10
+    "done": 62,
+    "failed": 7
   },
   "colonies": {
     "adwatch": {
@@ -83,14 +84,14 @@
         "top_domains": []
       },
       "pages": 7,
-      "qa": "QA ok:10 warn:1 err:0",
+      "qa": "QA ok:10 warn:0 err:1",
       "products": {
         "digest_top.csv": {
           "rows": 0
         },
         "trend_index.csv": {
           "rows": 0,
-          "has_prev": true
+          "has_prev": false
         }
       },
       "top_items": []
@@ -133,11 +134,11 @@
         },
         "by_topic": {
           "ai": 71,
-          "biz": 52,
+          "biz": 54,
           "dev": 38,
           "science": 20,
           "crypto": 10,
-          "hardware": 6,
+          "hardware": 5,
           "security": 4
         },
         "top_domains": [
@@ -401,7 +402,7 @@
         },
         "trend_index.csv": {
           "rows": 7,
-          "has_prev": true
+          "has_prev": false
         },
         "cve_digest.csv": {
           "rows": 30
@@ -616,7 +617,7 @@
         },
         "trend_index.csv": {
           "rows": 3,
-          "has_prev": true
+          "has_prev": false
         }
       },
       "top_items": [
@@ -698,13 +699,13 @@
           "devto": 12
         },
         "by_topic": {
-          "ai": 114,
-          "dev": 62,
-          "science": 27,
-          "hardware": 19,
-          "biz": 17,
-          "crypto": 12,
-          "security": 11
+          "ai": 115,
+          "dev": 61,
+          "science": 29,
+          "hardware": 18,
+          "biz": 16,
+          "crypto": 14,
+          "security": 10
         },
         "top_domains": [
           [
@@ -713,7 +714,7 @@
           ],
           [
             "github.com",
-            45
+            44
           ],
           [
             "techcrunch.com",
@@ -772,6 +773,10 @@
             1
           ],
           [
+            "nedbatchelder.com",
+            1
+          ],
+          [
             "vut.cz",
             1
           ],
@@ -784,10 +789,6 @@
             1
           ],
           [
-            "nypost.com",
-            1
-          ],
-          [
             "16colo.rs",
             1
           ],
@@ -796,11 +797,11 @@
             1
           ],
           [
-            "lumi.codeberg.page",
+            "nypost.com",
             1
           ],
           [
-            "fig.blue",
+            "lumi.codeberg.page",
             1
           ],
           [
@@ -824,7 +825,7 @@
         {
           "title": "JustAResearcher/gpu-unlock-ada",
           "source": "github",
-          "buzz": 6240,
+          "buzz": 6239,
           "url": "https://github.com/JustAResearcher/gpu-unlock-ada",
           "topics": [
             "science",
@@ -843,18 +844,11 @@
         {
           "title": "anhao/ai-pose-gallery-zh",
           "source": "github",
-          "buzz": 5475,
+          "buzz": 5471,
           "url": "https://github.com/anhao/ai-pose-gallery-zh",
           "topics": [
             "ai"
           ]
-        },
-        {
-          "title": "unclebob/ub-mode",
-          "source": "github",
-          "buzz": 5344,
-          "url": "https://github.com/unclebob/ub-mode",
-          "topics": []
         },
         {
           "title": "designfuchen/word-atlas",
@@ -864,9 +858,16 @@
           "topics": []
         },
         {
+          "title": "unclebob/ub-mode",
+          "source": "github",
+          "buzz": 5340,
+          "url": "https://github.com/unclebob/ub-mode",
+          "topics": []
+        },
+        {
           "title": "interplains/Zero-Breach-Toolkit",
           "source": "github",
-          "buzz": 4633,
+          "buzz": 4630,
           "url": "https://github.com/interplains/Zero-Breach-Toolkit",
           "topics": [
             "ai",
@@ -876,7 +877,7 @@
         {
           "title": "t3dotgg/tstack",
           "source": "github",
-          "buzz": 2821,
+          "buzz": 2820,
           "url": "https://github.com/t3dotgg/tstack",
           "topics": [
             "ai"
@@ -915,28 +916,28 @@
         {
           "title": "DoorDash to acquire Instacart",
           "source": "hn",
-          "buzz": 1986,
+          "buzz": 1968,
           "url": "https://about.doordash.com/en-us/news/doordash-to-acquire-instacart",
           "topics": []
         },
         {
           "title": "enesozturk/dimensional-drawing",
           "source": "github",
-          "buzz": 1862,
+          "buzz": 1861,
           "url": "https://github.com/enesozturk/dimensional-drawing",
           "topics": []
         },
         {
           "title": "We're releasing the weights of Mistral Large 4",
           "source": "hn",
-          "buzz": 1744,
+          "buzz": 1724,
           "url": "https://mistral.ai/news/mistral-large-4-oss/",
           "topics": []
         },
         {
           "title": "DenisSergeevitch/ex-ussr-kinship-research",
           "source": "github",
-          "buzz": 1656,
+          "buzz": 1655,
           "url": "https://github.com/DenisSergeevitch/ex-ussr-kinship-research",
           "topics": [
             "ai",
@@ -988,13 +989,13 @@
           "devto": 12
         },
         "by_topic": {
-          "ai": 98,
-          "dev": 58,
-          "science": 26,
-          "hardware": 18,
-          "crypto": 12,
-          "biz": 10,
-          "security": 7
+          "ai": 99,
+          "dev": 57,
+          "science": 27,
+          "hardware": 17,
+          "crypto": 14,
+          "biz": 9,
+          "security": 6
         },
         "top_domains": [
           [
@@ -1003,7 +1004,7 @@
           ],
           [
             "github.com",
-            45
+            44
           ],
           [
             "dev.to",
@@ -1058,6 +1059,10 @@
             1
           ],
           [
+            "nedbatchelder.com",
+            1
+          ],
+          [
             "vut.cz",
             1
           ],
@@ -1070,10 +1075,6 @@
             1
           ],
           [
-            "nypost.com",
-            1
-          ],
-          [
             "16colo.rs",
             1
           ],
@@ -1082,11 +1083,11 @@
             1
           ],
           [
-            "lumi.codeberg.page",
+            "nypost.com",
             1
           ],
           [
-            "fig.blue",
+            "lumi.codeberg.page",
             1
           ],
           [
@@ -1094,7 +1095,7 @@
             1
           ],
           [
-            "editsqlite.com",
+            "fig.blue",
             1
           ]
         ]
@@ -1114,7 +1115,7 @@
         {
           "title": "JustAResearcher/gpu-unlock-ada",
           "source": "github",
-          "buzz": 6240,
+          "buzz": 6239,
           "url": "https://github.com/JustAResearcher/gpu-unlock-ada",
           "topics": [
             "science",
@@ -1133,18 +1134,11 @@
         {
           "title": "anhao/ai-pose-gallery-zh",
           "source": "github",
-          "buzz": 5475,
+          "buzz": 5471,
           "url": "https://github.com/anhao/ai-pose-gallery-zh",
           "topics": [
             "ai"
           ]
-        },
-        {
-          "title": "unclebob/ub-mode",
-          "source": "github",
-          "buzz": 5344,
-          "url": "https://github.com/unclebob/ub-mode",
-          "topics": []
         },
         {
           "title": "designfuchen/word-atlas",
@@ -1154,9 +1148,16 @@
           "topics": []
         },
         {
+          "title": "unclebob/ub-mode",
+          "source": "github",
+          "buzz": 5340,
+          "url": "https://github.com/unclebob/ub-mode",
+          "topics": []
+        },
+        {
           "title": "interplains/Zero-Breach-Toolkit",
           "source": "github",
-          "buzz": 4633,
+          "buzz": 4630,
           "url": "https://github.com/interplains/Zero-Breach-Toolkit",
           "topics": [
             "ai",
@@ -1166,7 +1167,7 @@
         {
           "title": "t3dotgg/tstack",
           "source": "github",
-          "buzz": 2821,
+          "buzz": 2820,
           "url": "https://github.com/t3dotgg/tstack",
           "topics": [
             "ai"
@@ -1205,28 +1206,28 @@
         {
           "title": "DoorDash to acquire Instacart",
           "source": "hn",
-          "buzz": 1986,
+          "buzz": 1968,
           "url": "https://about.doordash.com/en-us/news/doordash-to-acquire-instacart",
           "topics": []
         },
         {
           "title": "enesozturk/dimensional-drawing",
           "source": "github",
-          "buzz": 1862,
+          "buzz": 1861,
           "url": "https://github.com/enesozturk/dimensional-drawing",
           "topics": []
         },
         {
           "title": "We're releasing the weights of Mistral Large 4",
           "source": "hn",
-          "buzz": 1744,
+          "buzz": 1724,
           "url": "https://mistral.ai/news/mistral-large-4-oss/",
           "topics": []
         },
         {
           "title": "DenisSergeevitch/ex-ussr-kinship-research",
           "source": "github",
-          "buzz": 1656,
+          "buzz": 1655,
           "url": "https://github.com/DenisSergeevitch/ex-ussr-kinship-research",
           "topics": [
             "ai",
@@ -1294,7 +1295,7 @@
         },
         "trend_index.csv": {
           "rows": 3,
-          "has_prev": true
+          "has_prev": false
         }
       },
       "top_items": [
@@ -1361,29 +1362,28 @@
         }
       },
       "totals": {
-        "items": 144,
+        "items": 134,
         "by_source": {
           "hn": 40,
           "cve": 30,
           "github": 24,
-          "rss": 50
+          "rss": 40
         },
         "by_recipe": {
           "hn_sec": 40,
           "gh_advisories": 30,
           "hackersnews": 30,
           "github_sec": 24,
-          "schneier": 10,
           "krebs": 10
         },
         "by_topic": {
-          "security": 118,
-          "ai": 70,
-          "dev": 56,
+          "security": 112,
+          "ai": 65,
+          "dev": 52,
           "hardware": 20,
-          "biz": 11,
-          "crypto": 11,
-          "science": 6
+          "crypto": 10,
+          "biz": 8,
+          "science": 4
         },
         "top_domains": [
           [
@@ -1397,10 +1397,6 @@
           [
             "krebsonsecurity.com",
             11
-          ],
-          [
-            "schneier.com",
-            10
           ],
           [
             "news.ycombinator.com",
@@ -1484,6 +1480,10 @@
           ],
           [
             "rekken.github.io",
+            1
+          ],
+          [
+            "thephp.foundation",
             1
           ]
         ]
@@ -1690,14 +1690,14 @@
         "top_domains": []
       },
       "pages": 7,
-      "qa": "QA ok:10 warn:1 err:0",
+      "qa": "QA ok:10 warn:0 err:1",
       "products": {
         "digest_top.csv": {
           "rows": 0
         },
         "trend_index.csv": {
           "rows": 0,
-          "has_prev": true
+          "has_prev": false
         }
       },
       "top_items": []
@@ -1740,8 +1740,8 @@
           "dev": 55,
           "security": 11,
           "hardware": 11,
+          "science": 11,
           "biz": 11,
-          "science": 10,
           "crypto": 4
         },
         "top_domains": [
