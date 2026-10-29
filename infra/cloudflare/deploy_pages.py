@@ -140,6 +140,12 @@ def main() -> int:
         return 2
     dry = "--dry-run" in sys.argv
     ok_all = True
+    # Реальные имена Pages-проектов (CF суффиксит занятые глобально имена:
+    # проект 'adwatch' живёт на adwatch-bw2.pages.dev). Имя колонии != хост.
+    names = set()
+    r = _api("GET", f"/accounts/{aid}/pages/projects", token)
+    if r and r.get("success"):
+        names = {p.get("name") for p in (r.get("result") or [])}
     for cfg_path in sorted((ROOT / "colonies").glob("*/config.json")):
         colony = cfg_path.parent.name
         dist = ROOT / "colonies" / colony / "dist"
@@ -148,6 +154,8 @@ def main() -> int:
             continue
         base = json.loads(cfg_path.read_text(encoding="utf-8"))["site"]["base_url"]
         project = base.replace("https://", "").split(".")[0]
+        if project not in names and colony in names:
+            project = colony  # CF переименовал домен, проект — по имени колонии
         assets = _collect(dist)
         n, kb = len(assets), sum(f.stat().st_size for f in dist.rglob("*") if f.is_file()) // 1024
         if dry:
