@@ -1,6 +1,6 @@
 {
-  "generated_at": 1793292681.8010402,
-  "elapsed_s": 12.77,
+  "generated_at": 1793300522.2143312,
+  "elapsed_s": 16.14,
   "tick": {
     "ran": 5,
     "failed": 0,
@@ -13,7 +13,7 @@
       "role": "scout",
       "colony": "core",
       "status": "active",
-      "spawned": 1793292669.046055,
+      "spawned": 1793300506.0922964,
       "note": ""
     },
     {
@@ -22,7 +22,7 @@
       "role": "refinery",
       "colony": "core",
       "status": "active",
-      "spawned": 1793292669.0488837,
+      "spawned": 1793300506.0942957,
       "note": ""
     },
     {
@@ -31,7 +31,7 @@
       "role": "writer",
       "colony": "core",
       "status": "active",
-      "spawned": 1793292669.05113,
+      "spawned": 1793300506.0964127,
       "note": ""
     },
     {
@@ -40,12 +40,12 @@
       "role": "trade",
       "colony": "core",
       "status": "active",
-      "spawned": 1793292669.053362,
+      "spawned": 1793300506.098788,
       "note": ""
     }
   ],
   "budget": {
-    "spent_u": 4800,
+    "spent_u": 5900,
     "revenue_u": 0
   },
   "tasks": {
@@ -58,28 +58,32 @@
         "tagline": "Autonomous radar of markets, money and fintech: what moves capital right now",
         "base_url": "https://bourse-radar.pages.dev",
         "lang": "en",
-        "contact": "https://github.com/"
+        "contact": "https://github.com/",
+        "monetization": {
+          "support_url": "https://ko-fi.com/miningchia"
+        }
       },
       "totals": {
-        "items": 103,
+        "items": 132,
         "by_source": {
-          "hn": 7,
-          "rss": 51,
+          "hn": 5,
+          "rss": 82,
           "github": 5,
           "arxiv": 40
         },
         "by_recipe": {
           "economist_fn": 40,
           "arxiv_qfin": 40,
-          "ft_home": 11,
-          "hn_fintech": 7,
+          "cnbc_top": 30,
+          "ft_home": 12,
+          "hn_fintech": 5,
           "github_fin": 5
         },
         "by_topic": {
-          "ai": 58,
-          "biz": 41,
-          "dev": 35,
-          "science": 19,
+          "ai": 70,
+          "biz": 52,
+          "dev": 36,
+          "science": 20,
           "crypto": 10,
           "hardware": 5,
           "security": 4
@@ -94,8 +98,12 @@
             40
           ],
           [
+            "cnbc.com",
+            30
+          ],
+          [
             "ft.com",
-            11
+            12
           ],
           [
             "github.com",
@@ -103,14 +111,10 @@
           ],
           [
             "news.ycombinator.com",
-            3
+            2
           ],
           [
             "realizefi.com",
-            1
-          ],
-          [
-            "finterm.ai",
             1
           ],
           [
@@ -123,7 +127,7 @@
           ]
         ]
       },
-      "pages": 77,
+      "pages": 78,
       "qa": "QA ok:11 warn:0 err:0",
       "products": {
         "digest_top.csv": {
@@ -225,6 +229,15 @@
           ]
         },
         {
+          "title": "Google is eating itself — but it could still eat everyone else too",
+          "source": "rss",
+          "buzz": 80,
+          "url": "https://www.ft.com/content/245107d8-ef54-4b30-a75a-538d055bc6d7?syn-25a6b1a6=1",
+          "topics": [
+            "ai"
+          ]
+        },
+        {
           "title": "US tech stocks fall after earnings fuel AI spending concerns",
           "source": "rss",
           "buzz": 80,
@@ -263,15 +276,6 @@
             "dev",
             "biz"
           ]
-        },
-        {
-          "title": "Christine Lagarde to step down as ECB president in February",
-          "source": "rss",
-          "buzz": 80,
-          "url": "https://www.ft.com/content/b9294b91-0eee-413b-bdde-0569f48539b9?syn-25a6b1a6=1",
-          "topics": [
-            "dev"
-          ]
         }
       ]
     },
@@ -281,31 +285,34 @@
         "tagline": "Autonomous radar of tech and science: what is gaining resonance right now",
         "base_url": "https://meridian-radar.pages.dev",
         "lang": "en",
-        "contact": "https://github.com/"
+        "contact": "https://github.com/",
+        "monetization": {
+          "support_url": "https://ko-fi.com/miningchia"
+        }
       },
       "totals": {
-        "items": 162,
+        "items": 164,
         "by_source": {
           "github": 40,
-          "hn": 30,
+          "hn": 32,
           "rss": 32,
           "arxiv": 60
         },
         "by_recipe": {
           "arxiv": 60,
           "github_search": 40,
-          "hn_front": 30,
+          "hn_front": 32,
           "tc_ai": 20,
           "devto": 12
         },
         "by_topic": {
-          "ai": 113,
-          "dev": 61,
-          "science": 28,
-          "biz": 20,
-          "hardware": 19,
+          "ai": 110,
+          "dev": 63,
+          "science": 30,
+          "hardware": 18,
+          "biz": 17,
           "crypto": 11,
-          "security": 8
+          "security": 10
         },
         "top_domains": [
           [
@@ -314,7 +321,7 @@
           ],
           [
             "github.com",
-            42
+            45
           ],
           [
             "techcrunch.com",
@@ -325,23 +332,7 @@
             12
           ],
           [
-            "data.stackexchange.com",
-            1
-          ],
-          [
-            "nullpt.rs",
-            1
-          ],
-          [
             "about.doordash.com",
-            1
-          ],
-          [
-            "nytimes.com",
-            1
-          ],
-          [
-            "divagr.com",
             1
           ],
           [
@@ -349,35 +340,7 @@
             1
           ],
           [
-            "artificialanalysis.ai",
-            1
-          ],
-          [
-            "smsofdeath.com",
-            1
-          ],
-          [
-            "electrek.co",
-            1
-          ],
-          [
-            "publicpolicy.googleblog.com",
-            1
-          ],
-          [
-            "furbo.org",
-            1
-          ],
-          [
-            "dreamgroup.com",
-            1
-          ],
-          [
-            "text.npr.org",
-            1
-          ],
-          [
-            "blog.orange.tw",
+            "kadoa.com",
             1
           ],
           [
@@ -385,7 +348,31 @@
             1
           ],
           [
-            "inventor7777.github.io",
+            "smsofdeath.com",
+            1
+          ],
+          [
+            "iptrust.co",
+            1
+          ],
+          [
+            "publicpolicy.googleblog.com",
+            1
+          ],
+          [
+            "borretti.me",
+            1
+          ],
+          [
+            "bbc.com",
+            1
+          ],
+          [
+            "dreamgroup.com",
+            1
+          ],
+          [
+            "mastodon.sdf.org",
             1
           ],
           [
@@ -393,24 +380,44 @@
             1
           ],
           [
+            "martinfowler.com",
+            1
+          ],
+          [
+            "v12.sh",
+            1
+          ],
+          [
+            "blog.google",
+            1
+          ],
+          [
             "trakkr.ai",
             1
           ],
           [
-            "dmux.github.io",
+            "nedbatchelder.com",
             1
           ],
           [
-            "xpipe.io",
+            "vut.cz",
             1
           ],
           [
             "skypilot.ai",
             1
+          ],
+          [
+            "wired.com",
+            1
+          ],
+          [
+            "xpipe.io",
+            1
           ]
         ]
       },
-      "pages": 72,
+      "pages": 73,
       "qa": "QA ok:11 warn:0 err:0",
       "products": {
         "digest_top.csv": {
@@ -425,7 +432,7 @@
         {
           "title": "JustAResearcher/gpu-unlock-ada",
           "source": "github",
-          "buzz": 6221,
+          "buzz": 6229,
           "url": "https://github.com/JustAResearcher/gpu-unlock-ada",
           "topics": [
             "science",
@@ -435,7 +442,7 @@
         {
           "title": "rddmwmddr/android-ad-cleaner",
           "source": "github",
-          "buzz": 5960,
+          "buzz": 5979,
           "url": "https://github.com/rddmwmddr/android-ad-cleaner",
           "topics": [
             "ai"
@@ -444,7 +451,7 @@
         {
           "title": "anhao/ai-pose-gallery-zh",
           "source": "github",
-          "buzz": 5343,
+          "buzz": 5447,
           "url": "https://github.com/anhao/ai-pose-gallery-zh",
           "topics": [
             "ai"
@@ -453,21 +460,21 @@
         {
           "title": "designfuchen/word-atlas",
           "source": "github",
-          "buzz": 5337,
+          "buzz": 5343,
           "url": "https://github.com/designfuchen/word-atlas",
           "topics": []
         },
         {
           "title": "unclebob/ub-mode",
           "source": "github",
-          "buzz": 5198,
+          "buzz": 5293,
           "url": "https://github.com/unclebob/ub-mode",
           "topics": []
         },
         {
           "title": "interplains/Zero-Breach-Toolkit",
           "source": "github",
-          "buzz": 4474,
+          "buzz": 4583,
           "url": "https://github.com/interplains/Zero-Breach-Toolkit",
           "topics": [
             "ai",
@@ -477,7 +484,7 @@
         {
           "title": "t3dotgg/tstack",
           "source": "github",
-          "buzz": 2803,
+          "buzz": 2815,
           "url": "https://github.com/t3dotgg/tstack",
           "topics": [
             "ai"
@@ -486,7 +493,7 @@
         {
           "title": "ZiChuanLan/agent-purge",
           "source": "github",
-          "buzz": 2796,
+          "buzz": 2807,
           "url": "https://github.com/ZiChuanLan/agent-purge",
           "topics": [
             "ai",
@@ -494,16 +501,9 @@
           ]
         },
         {
-          "title": "StackOverflow now gets fewer than 1000 questions a month",
-          "source": "hn",
-          "buzz": 2585,
-          "url": "https://data.stackexchange.com/stackoverflow/query/1926661#graph?t=1",
-          "topics": []
-        },
-        {
           "title": "andyhuo520/digital-human-koubo",
           "source": "github",
-          "buzz": 2447,
+          "buzz": 2456,
           "url": "https://github.com/andyhuo520/digital-human-koubo",
           "topics": [
             "ai",
@@ -512,16 +512,9 @@
           ]
         },
         {
-          "title": "Why is this fingerprinting script creating bioweapons?",
-          "source": "hn",
-          "buzz": 2410,
-          "url": "https://nullpt.rs/fingerprinting-bioweapons",
-          "topics": []
-        },
-        {
           "title": "zgx949/ai-pojia",
           "source": "github",
-          "buzz": 2262,
+          "buzz": 2271,
           "url": "https://github.com/zgx949/ai-pojia",
           "topics": [
             "ai"
@@ -530,14 +523,21 @@
         {
           "title": "enesozturk/dimensional-drawing",
           "source": "github",
-          "buzz": 1846,
+          "buzz": 1855,
           "url": "https://github.com/enesozturk/dimensional-drawing",
+          "topics": []
+        },
+        {
+          "title": "DoorDash to acquire Instacart",
+          "source": "hn",
+          "buzz": 1815,
+          "url": "https://about.doordash.com/en-us/news/doordash-to-acquire-instacart",
           "topics": []
         },
         {
           "title": "DenisSergeevitch/ex-ussr-kinship-research",
           "source": "github",
-          "buzz": 1639,
+          "buzz": 1653,
           "url": "https://github.com/DenisSergeevitch/ex-ussr-kinship-research",
           "topics": [
             "ai",
@@ -548,9 +548,19 @@
         {
           "title": "smithjohn78390/tongjiang-lab",
           "source": "github",
-          "buzz": 1621,
+          "buzz": 1647,
           "url": "https://github.com/smithjohn78390/tongjiang-lab",
           "topics": []
+        },
+        {
+          "title": "morganlinton/BeautifulRust",
+          "source": "github",
+          "buzz": 1618,
+          "url": "https://github.com/morganlinton/BeautifulRust",
+          "topics": [
+            "ai",
+            "dev"
+          ]
         }
       ]
     },
@@ -560,30 +570,33 @@
         "tagline": "Радар инсайтов, трендов и технологий: что вспыхнуло в сети за последние 48 часов",
         "base_url": "https://signal-frontier.pages.dev",
         "lang": "ru",
-        "contact": "https://github.com/"
+        "contact": "https://github.com/",
+        "monetization": {
+          "support_url": "https://ko-fi.com/miningchia"
+        }
       },
       "totals": {
-        "items": 142,
+        "items": 144,
         "by_source": {
           "github": 40,
-          "hn": 30,
+          "hn": 32,
           "rss": 12,
           "arxiv": 60
         },
         "by_recipe": {
           "arxiv": 60,
           "github_search": 40,
-          "hn_front": 30,
+          "hn_front": 32,
           "devto": 12
         },
         "by_topic": {
-          "ai": 98,
-          "dev": 58,
-          "science": 27,
-          "hardware": 18,
+          "ai": 95,
+          "dev": 60,
+          "science": 28,
+          "hardware": 17,
           "crypto": 11,
-          "biz": 11,
-          "security": 6
+          "biz": 9,
+          "security": 7
         },
         "top_domains": [
           [
@@ -592,30 +605,14 @@
           ],
           [
             "github.com",
-            42
+            45
           ],
           [
             "dev.to",
             12
           ],
           [
-            "data.stackexchange.com",
-            1
-          ],
-          [
-            "nullpt.rs",
-            1
-          ],
-          [
             "about.doordash.com",
-            1
-          ],
-          [
-            "nytimes.com",
-            1
-          ],
-          [
-            "divagr.com",
             1
           ],
           [
@@ -623,35 +620,7 @@
             1
           ],
           [
-            "artificialanalysis.ai",
-            1
-          ],
-          [
-            "smsofdeath.com",
-            1
-          ],
-          [
-            "electrek.co",
-            1
-          ],
-          [
-            "publicpolicy.googleblog.com",
-            1
-          ],
-          [
-            "furbo.org",
-            1
-          ],
-          [
-            "dreamgroup.com",
-            1
-          ],
-          [
-            "text.npr.org",
-            1
-          ],
-          [
-            "blog.orange.tw",
+            "kadoa.com",
             1
           ],
           [
@@ -659,7 +628,31 @@
             1
           ],
           [
-            "inventor7777.github.io",
+            "smsofdeath.com",
+            1
+          ],
+          [
+            "iptrust.co",
+            1
+          ],
+          [
+            "publicpolicy.googleblog.com",
+            1
+          ],
+          [
+            "borretti.me",
+            1
+          ],
+          [
+            "bbc.com",
+            1
+          ],
+          [
+            "dreamgroup.com",
+            1
+          ],
+          [
+            "mastodon.sdf.org",
             1
           ],
           [
@@ -667,19 +660,39 @@
             1
           ],
           [
+            "martinfowler.com",
+            1
+          ],
+          [
+            "v12.sh",
+            1
+          ],
+          [
+            "blog.google",
+            1
+          ],
+          [
             "trakkr.ai",
             1
           ],
           [
-            "dmux.github.io",
+            "nedbatchelder.com",
             1
           ],
           [
-            "xpipe.io",
+            "vut.cz",
             1
           ],
           [
             "skypilot.ai",
+            1
+          ],
+          [
+            "wired.com",
+            1
+          ],
+          [
+            "xpipe.io",
             1
           ],
           [
@@ -688,7 +701,7 @@
           ]
         ]
       },
-      "pages": 72,
+      "pages": 73,
       "qa": "QA ok:11 warn:0 err:0",
       "products": {
         "digest_top.csv": {
@@ -703,7 +716,7 @@
         {
           "title": "JustAResearcher/gpu-unlock-ada",
           "source": "github",
-          "buzz": 6221,
+          "buzz": 6229,
           "url": "https://github.com/JustAResearcher/gpu-unlock-ada",
           "topics": [
             "science",
@@ -713,7 +726,7 @@
         {
           "title": "rddmwmddr/android-ad-cleaner",
           "source": "github",
-          "buzz": 5960,
+          "buzz": 5979,
           "url": "https://github.com/rddmwmddr/android-ad-cleaner",
           "topics": [
             "ai"
@@ -722,7 +735,7 @@
         {
           "title": "anhao/ai-pose-gallery-zh",
           "source": "github",
-          "buzz": 5343,
+          "buzz": 5447,
           "url": "https://github.com/anhao/ai-pose-gallery-zh",
           "topics": [
             "ai"
@@ -731,21 +744,21 @@
         {
           "title": "designfuchen/word-atlas",
           "source": "github",
-          "buzz": 5337,
+          "buzz": 5343,
           "url": "https://github.com/designfuchen/word-atlas",
           "topics": []
         },
         {
           "title": "unclebob/ub-mode",
           "source": "github",
-          "buzz": 5198,
+          "buzz": 5293,
           "url": "https://github.com/unclebob/ub-mode",
           "topics": []
         },
         {
           "title": "interplains/Zero-Breach-Toolkit",
           "source": "github",
-          "buzz": 4474,
+          "buzz": 4583,
           "url": "https://github.com/interplains/Zero-Breach-Toolkit",
           "topics": [
             "ai",
@@ -755,7 +768,7 @@
         {
           "title": "t3dotgg/tstack",
           "source": "github",
-          "buzz": 2803,
+          "buzz": 2815,
           "url": "https://github.com/t3dotgg/tstack",
           "topics": [
             "ai"
@@ -764,7 +777,7 @@
         {
           "title": "ZiChuanLan/agent-purge",
           "source": "github",
-          "buzz": 2796,
+          "buzz": 2807,
           "url": "https://github.com/ZiChuanLan/agent-purge",
           "topics": [
             "ai",
@@ -772,16 +785,9 @@
           ]
         },
         {
-          "title": "StackOverflow now gets fewer than 1000 questions a month",
-          "source": "hn",
-          "buzz": 2585,
-          "url": "https://data.stackexchange.com/stackoverflow/query/1926661#graph?t=1",
-          "topics": []
-        },
-        {
           "title": "andyhuo520/digital-human-koubo",
           "source": "github",
-          "buzz": 2447,
+          "buzz": 2456,
           "url": "https://github.com/andyhuo520/digital-human-koubo",
           "topics": [
             "ai",
@@ -790,16 +796,9 @@
           ]
         },
         {
-          "title": "Why is this fingerprinting script creating bioweapons?",
-          "source": "hn",
-          "buzz": 2410,
-          "url": "https://nullpt.rs/fingerprinting-bioweapons",
-          "topics": []
-        },
-        {
           "title": "zgx949/ai-pojia",
           "source": "github",
-          "buzz": 2262,
+          "buzz": 2271,
           "url": "https://github.com/zgx949/ai-pojia",
           "topics": [
             "ai"
@@ -808,14 +807,21 @@
         {
           "title": "enesozturk/dimensional-drawing",
           "source": "github",
-          "buzz": 1846,
+          "buzz": 1855,
           "url": "https://github.com/enesozturk/dimensional-drawing",
+          "topics": []
+        },
+        {
+          "title": "DoorDash to acquire Instacart",
+          "source": "hn",
+          "buzz": 1815,
+          "url": "https://about.doordash.com/en-us/news/doordash-to-acquire-instacart",
           "topics": []
         },
         {
           "title": "DenisSergeevitch/ex-ussr-kinship-research",
           "source": "github",
-          "buzz": 1639,
+          "buzz": 1653,
           "url": "https://github.com/DenisSergeevitch/ex-ussr-kinship-research",
           "topics": [
             "ai",
@@ -826,9 +832,19 @@
         {
           "title": "smithjohn78390/tongjiang-lab",
           "source": "github",
-          "buzz": 1621,
+          "buzz": 1647,
           "url": "https://github.com/smithjohn78390/tongjiang-lab",
           "topics": []
+        },
+        {
+          "title": "morganlinton/BeautifulRust",
+          "source": "github",
+          "buzz": 1618,
+          "url": "https://github.com/morganlinton/BeautifulRust",
+          "topics": [
+            "ai",
+            "dev"
+          ]
         }
       ]
     },
@@ -838,36 +854,44 @@
         "tagline": "Автономная радиостанция кибербезопасности: живые CVE, угрозы и защита — без сенсаций",
         "base_url": "https://sentinel-post.pages.dev",
         "lang": "ru",
-        "contact": "https://github.com/"
+        "contact": "https://github.com/",
+        "monetization": {
+          "support_url": "https://ko-fi.com/miningchia"
+        }
       },
       "totals": {
-        "items": 114,
+        "items": 144,
         "by_source": {
           "hn": 40,
           "cve": 30,
           "github": 24,
-          "rss": 20
+          "rss": 50
         },
         "by_recipe": {
           "hn_sec": 40,
           "gh_advisories": 30,
+          "hackersnews": 30,
           "github_sec": 24,
           "schneier": 10,
           "krebs": 10
         },
         "by_topic": {
-          "security": 94,
-          "ai": 44,
-          "dev": 39,
-          "hardware": 12,
-          "biz": 9,
-          "crypto": 6,
-          "science": 5
+          "security": 117,
+          "ai": 68,
+          "dev": 55,
+          "hardware": 21,
+          "biz": 11,
+          "crypto": 10,
+          "science": 6
         },
         "top_domains": [
           [
             "github.com",
             56
+          ],
+          [
+            "thehackernews.com",
+            30
           ],
           [
             "krebsonsecurity.com",
@@ -960,14 +984,10 @@
           [
             "rekken.github.io",
             1
-          ],
-          [
-            "thephp.foundation",
-            1
           ]
         ]
       },
-      "pages": 72,
+      "pages": 73,
       "qa": "QA ok:11 warn:0 err:0",
       "products": {
         "digest_top.csv": {
@@ -1144,34 +1164,37 @@
         "tagline": "Новые AI-инструменты и стартапы: что запустилось прямо сейчас — Show HN, GitHub, открытые запуски",
         "base_url": "https://vesper-ai-radar.pages.dev",
         "lang": "ru",
-        "contact": "https://github.com/"
+        "contact": "https://github.com/",
+        "monetization": {
+          "support_url": "https://ko-fi.com/miningchia"
+        }
       },
       "totals": {
-        "items": 141,
+        "items": 142,
         "by_source": {
           "hn": 60,
-          "github": 61,
+          "github": 62,
           "rss": 20
         },
         "by_recipe": {
           "show_hn": 60,
-          "github_ai": 37,
+          "github_ai": 38,
           "github_llm": 24,
           "tc_ai": 20
         },
         "by_topic": {
-          "ai": 76,
+          "ai": 77,
           "dev": 54,
-          "biz": 13,
+          "biz": 12,
           "hardware": 11,
-          "science": 10,
-          "security": 9,
+          "science": 11,
+          "security": 10,
           "crypto": 4
         },
         "top_domains": [
           [
             "github.com",
-            67
+            68
           ],
           [
             "techcrunch.com",
@@ -1271,7 +1294,7 @@
           ]
         ]
       },
-      "pages": 72,
+      "pages": 73,
       "qa": "QA ok:11 warn:0 err:0",
       "products": {
         "digest_top.csv": {
