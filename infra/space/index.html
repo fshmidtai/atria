@@ -31,16 +31,36 @@
   .products { margin-top:10px; font-size:12px; color:var(--mut); }
   footer { max-width:1100px; margin:0 auto; padding:0 20px 40px; color:var(--mut); font-size:12px; }
   #err { color:var(--err); max-width:1100px; margin:20px auto; padding:0 20px; }
+  .hub { max-width:1100px; margin:0 auto; padding:0 20px 24px; display:grid; grid-template-columns:repeat(auto-fit, minmax(320px,1fr)); gap:16px; }
+  .hub-card { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:16px 18px; }
+  .hub-card p { color:var(--mut); font-size:13px; margin:6px 0 10px; }
+  .hub-card .btn { display:inline-block; background:var(--acc); color:#0d1220; font-weight:600; text-decoration:none; padding:8px 16px; border-radius:10px; font-size:14px; }
+  .hub-card .crypto { font-size:12px; margin-top:8px; word-break:break-all; }
+  .hub-card .crypto span { color:var(--mut); }
+  .hub-card code { background:#0d1220; border:1px solid var(--line); border-radius:6px; padding:2px 8px; font-size:12px; }
 </style>
 </head>
 <body>
 <header>
   <h1>🐝 Atria Console <small>автономный мультиагентный рой · статус снимается с датасета состояния</small></h1>
+  <div class="hub">
+    <div class="hub-card">
+      <b>🤖 Продукт: Telegram-бот</b>
+      <p>Свежие дайджесты роя каждые 6 часов — прямо в личку.</p>
+      <a class="btn" href="https://t.me/dimon_claw_bot" target="_blank" rel="noopener">Подписаться → @dimon_claw_bot</a>
+    </div>
+    <div class="hub-card">
+      <b>⚡ Поддержать улей</b>
+      <p>Перевод напрямую на self-custody кошелёк (работает из РФ):</p>
+      <div class="crypto"><span>TON</span> <code>UQBTNAxe01NQlKdF-z84wGGpSGEL-6qNzrWMZ1cts2l8xqmI</code></div>
+      <div class="crypto"><span>USDT (BEP-20)</span> <code>0xd4934a0935281c76b45d1254ee9A7F392861944b</code></div>
+    </div>
+  </div>
   <div id="meta"></div>
 </header>
 <div id="err"></div>
 <main><div class="grid" id="colonies"></div></main>
-<footer>Рой: <a href="https://github.com/fshmidtai/atria">github.com/fshmidtai/atria</a> · Состояние: <a href="https://huggingface.co/datasets/fshmidtai/atria-hive-state">atria-hive-state</a><div id="agents" style="margin-top:8px"></div></footer>
+<footer>Рой: <a href="https://github.com/fshmidtai/atria" target="_blank" rel="noopener">github.com/fshmidtai/atria</a> · Состояние: <a href="https://huggingface.co/datasets/fshmidtai/atria-hive-state" target="_blank" rel="noopener">atria-hive-state</a><div id="agents" style="margin-top:8px"></div></footer>
 
 <script>
 const STATE_URL = "https://huggingface.co/datasets/fshmidtai/atria-hive-state/resolve/main/metrics.json";
@@ -74,7 +94,7 @@ function render(m) {
     return `<div class="colony">
       <h2>${esc(c.site?.title || name)} <span style="color:var(--mut);font-size:12px">/${esc(name)}</span></h2>
       <div class="tag">${esc(c.site?.tagline || "")}</div>
-      <a href="${esc(c.site?.base_url || "#")}">${esc(c.site?.base_url || "")}</a>
+      <a href="${esc(c.site?.base_url || "#")}" target="_blank" rel="noopener">${esc(c.site?.base_url || "")}</a>
       <div><span class="qa ${qaCls}">${esc(c.qa || "n/a")}</span></div>
       <div class="nums">
         <div><b>${tot.items ?? (c.pages||0)}</b><span>снимков</span></div>
