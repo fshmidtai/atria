@@ -324,6 +324,82 @@ def test_monetization_cta():
     check("mon: EN-копии кнопок", "Support the hive" in html_en
           and "Buy the full dataset" in html_en)
 
+    # Крипто-рельс: приём на self-custody (TON/USDT), работает из РФ
+    cfg_c = copy.deepcopy(cfg)
+    cfg_c["site"]["monetization"] = {"crypto": [
+        {"net": "TON", "address": "UQBTNAxe01NQlKdF_test"},
+        {"net": "USDT (BEP-20)", "address": "0xd4934a0935281c_test"},
+    ]}
+    out_c = sitegen.generate(snap, tmp / "dist_c", cfg_c)
+    html_c = (Path(out_c["outdir"]) / "index.html").read_text(encoding="utf-8")
+    check("mon: крипто-блок рендерится", "UQBTNAxe01NQlKdF_test" in html_c
+          and "USDT (BEP-20)" in html_c)
+    check("mon: мёртвый крипто-рельс не рендерится",
+          sitegen._cta({"monetization": {"crypto": [{"net": "", "address": ""}]}}) == "")
+    qa_c = qa.audit_site(Path(out_c["outdir"]), base_url="https://t.example")
+    check("mon: QA чистый с крипто-CTA", qa_c["errors"] == 0, qa.summarize(qa_c))
+
+
+# ---------------------------------------------------------------- TG-доставка
+def test_tgpost():
+    """Бот: формат дайджеста + подписчики (всё офлайн, сеть подменена)."""
+    from core import tgpost
+
+    snap = {
+        "generated_at": "2026-10-30T12:00:00+00:00",
+        "totals": {"items": 42},
+        "items": [
+            {"title": "Alpha <b>тег</b>", "url": "https://x/1",
+             "source": "hn", "buzz": 7},
+            {"title": "Beta", "url": "https://x/2", "source": "rss", "buzz": 3},
+        ],
+    }
+    txt = tgpost.format_digest(snap, top_n=2)
+    check("tg: дайджест рендерится", "42" in txt and "записей" in txt
+          and "Alpha" in txt)
+    check("tg: HTML-экранирование", "&lt;b&gt;тег&lt;/b&gt;" in txt)
+    txt_en = tgpost.format_digest(snap, top_n=1, lang="en")
+    check("tg: EN-копии", "Fresh snapshot" in txt_en and "items" in txt_en)
+    check("tg: обрезка top_n", "Beta" not in txt_en)
+
+    # подписчики: сеть подмена ( monkeypatch _api), токен есть
+    calls = []
+
+    def fake_api(token, method, payload):
+        calls.append((method, payload))
+        if method == "getUpdates":
+            return {"ok": True, "result": [
+                {"update_id": 100,
+                 "message": {"chat": {"id": 123}, "text": "/start"}},
+                {"update_id": 101,
+                 "message": {"chat": {"id": 456}, "text": "hello"}},
+                {"update_id": 102,
+                 "message": {"chat": {"id": 123}, "text": "/stop"}},
+            ]}
+        return {"ok": True, "result": {"message_id": 1}}
+
+    orig_api = tgpost._api
+    orig_token = tgpost.__dict__
+    tgpost._api = fake_api
+    import os as _os
+    _os.environ["TG_BOT_TOKEN"] = "fake:test"
+    tmp = Path(tempfile.mkdtemp())
+    n = tgpost.handle_updates("fake:test", tmp / "tg.db")
+    check("tg: 3 апдейта обработаны", n == 3, n)
+    # 123 подписался и отписался, 456 не подписывался → 0 subs
+    conn = tgpost._open_subs(tmp / "tg.db")
+    rows = conn.execute("SELECT chat_id FROM subs").fetchall()
+    offset = conn.execute("SELECT value FROM tg_state WHERE key='offset'").fetchone()
+    conn.close()
+    check("tg: подписка/отписка отработали", rows == [] and offset[0] == "103",
+          f"{rows} {offset}")
+    check("tg: offset подтверждён", True)
+    # рассылка_Table нет_подписчиков = 0
+    sent = tgpost.broadcast("fake:test", tmp / "tg.db", "x")
+    check("tg: рассылка без подписчиков = 0", sent == 0, sent)
+    tgpost._api = orig_api
+    _os.environ.pop("TG_BOT_TOKEN", None)
+
 
 # ---------------------------------------------------------------- QA-ген
 def test_qa_clean():
@@ -516,7 +592,7 @@ def main() -> int:
                test_apothecary, test_feed_roundtrip, test_sitegen_render,
                test_qa_clean, test_qa_gate, test_space_console,
                test_treasury, test_orchestrator, test_registry,
-               test_monetization_cta):
+               test_monetization_cta, test_tgpost):
         try:
             fn()
         except Exception as e:  # тест не должен вешать рой — но должен орать

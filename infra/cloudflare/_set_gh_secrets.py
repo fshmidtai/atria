@@ -30,6 +30,7 @@ sealed = public.SealedBox(pk)
 for name, value in [
     ("CF_API_TOKEN", os.environ["CF_API_TOKEN"]),
     ("CF_ACCOUNT_ID", os.environ["CF_ACCOUNT_ID"]),
+    ("TG_BOT_TOKEN", os.environ["TG_BOT_TOKEN"]),
 ]:
     enc = sealed.encrypt(value.encode())
     gh(f"/actions/secrets/{name}", "PUT",

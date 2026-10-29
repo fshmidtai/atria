@@ -86,6 +86,10 @@ def colony_cycle_factory(treasury: Treasury, ledger: Ledger):
             "out": site["outdir"],
             "items": snapshot["totals"]["items"],
         })
+        # TG-доставка: третий renderer роя. Без TG_BOT_TOKEN — тихий пропуск.
+        from core import tgpost
+        tgpost.bot_tick([snapshot], ROOT / "storage" / "tg_subs.db",
+                        lang=config.get("site", {}).get("lang", "ru"))
         return {
             "colony": colony,
             "items": snapshot["totals"]["items"],
