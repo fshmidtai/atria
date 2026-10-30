@@ -78,6 +78,32 @@
       "filters": {"sum_max": 300000}
     },
     {
+      "kind": "html_list",
+      "label": "freetender_med",
+      "url": "https://freetender.net/tenders/russia/healthcare-pharma",
+      "pattern": "/tender/",
+      "limit": 12,
+      "fields": [
+        {"name": "sum", "re": "VALUE\\s*\\n+\\s*RUB\\s*([\\d,]+)"},
+        {"name": "region", "re": "LOCATION\\s*\\n+\\s*([^\\n]+)"},
+        {"name": "closes", "re": "CLOSES\\s*\\n+\\s*([^\\n]+)"}
+      ],
+      "filters": {"sum_max": 300000}
+    },
+    {
+      "kind": "html_list",
+      "label": "freetender_edu",
+      "url": "https://freetender.net/tenders/russia/education-training",
+      "pattern": "/tender/",
+      "limit": 12,
+      "fields": [
+        {"name": "sum", "re": "VALUE\\s*\\n+\\s*RUB\\s*([\\d,]+)"},
+        {"name": "region", "re": "LOCATION\\s*\\n+\\s*([^\\n]+)"},
+        {"name": "closes", "re": "CLOSES\\s*\\n+\\s*([^\\n]+)"}
+      ],
+      "filters": {"sum_max": 300000}
+    },
+    {
       "kind": "rss",
       "label": "sber_ast",
       "url": "https://www.sberbank-ast.ru/News/AllNewsRSS/",
