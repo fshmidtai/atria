@@ -28,9 +28,11 @@ API = "https://api.telegram.org/bot"
 TIMEOUT = 20
 
 
-def format_digest(snapshot: dict, top_n: int = 5, lang: str = "ru") -> str:
+def format_digest(snapshot: dict, top_n: int = 5, lang: str = "ru",
+                  pro_link: str = "") -> str:
     """Чистая функция: снимок → готовое HTML-сообщение дайджеста.
-    Тестируется офлайн; именно её покрывает selftest."""
+    pro_link подставляется только для бесплатных подписчиков (pitch Pro
+    в каждом дайджесте = бесплатная конверсия). Тестируется офлайн."""
     items = snapshot.get("items", [])[:top_n]
     totals = snapshot.get("totals", {})
     n_items = totals.get("items", len(items))
@@ -46,6 +48,11 @@ def format_digest(snapshot: dict, top_n: int = 5, lang: str = "ru") -> str:
     when = snapshot.get("generated_at", "")
     tail = "автономно роем Атрия" if lang == "ru" else "autonomously by the Atria swarm"
     lines.append(f"\n<i>{tail}{(f' · {str(when)[:16]}') if when else ''}</i>")
+    if pro_link:
+        pitch = ("⭐ <b>Атрия Pro</b> — полный дайджест (top-20, все 10 вертикалей): "
+                 if lang == "ru" else
+                 "⭐ <b>Atria Pro</b> — full digest (top-20, all 10 verticals): ")
+        lines.append(f"\n{pitch}{html.escape(pro_link)}")
     return "\n".join(lines)
 
 
@@ -283,10 +290,13 @@ def bot_tick(snapshots: list, lang: str = "ru", subs: dict | None = None) -> dic
             except Exception:
                 continue
         pro = isinstance(meta, dict) and float(meta.get("until", 0) or 0) > now
+        # бесплатным — pitch Pro в каждом дайджесте (Pro его не видит)
+        pro_link = "" if pro else str(state.get("invoice_url") or "")
         for snap in snapshots:
             if not snap.get("totals", {}).get("items"):
                 continue  # тощая колония не спамит пустой рассылкой
-            text = format_digest(snap, top_n=20 if pro else 5, lang=lang)
+            text = format_digest(snap, top_n=20 if pro else 5, lang=lang,
+                                 pro_link=pro_link)
             if _api(token, "sendMessage", {"chat_id": cid, "text": text,
                                             "parse_mode": "HTML",
                                             "disable_web_page_preview": True}):

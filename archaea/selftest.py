@@ -492,6 +492,15 @@ def test_tgpost():
     check("tg: EN-копии", "Fresh snapshot" in txt_en and "items" in txt_en)
     check("tg: обрезка top_n", "Beta" not in txt_en)
 
+    # pitch Pro: только бесплатным, экранируется, EN-вариант
+    inv = "https://t.me/$DbtftXcaIUuMFwAAyr9kmgrgww0"
+    txt_pitch = tgpost.format_digest(snap, top_n=2, pro_link=inv)
+    check("tg: pitch Pro в дайджесте", "Атрия Pro" in txt_pitch and inv in txt_pitch)
+    check("tg: pitch EN", "Atria Pro" in tgpost.format_digest(
+        snap, top_n=1, lang="en", pro_link=inv))
+    check("tg: нет pitch без ссылки",
+          "Pro" not in tgpost.format_digest(snap, top_n=2))
+
     # подписчики: сеть подмена (_api), токен есть — JSON-state модель
     calls = []
 
