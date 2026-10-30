@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T06:37:10+00:00",
+  "generated_at": "2026-10-30T09:06:56+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -10,26 +10,26 @@
     "rss"
   ],
   "totals": {
-    "items": 144,
+    "items": 145,
     "by_source": {
       "hn": 40,
       "cve": 30,
-      "github": 24,
+      "github": 25,
       "rss": 50
     },
     "by_recipe": {
       "hn_sec": 40,
       "gh_advisories": 30,
       "hackersnews": 30,
-      "github_sec": 24,
+      "github_sec": 25,
       "schneier": 10,
       "krebs": 10
     },
     "by_topic": {
-      "security": 118,
-      "ai": 70,
+      "security": 119,
+      "ai": 68,
       "dev": 57,
-      "hardware": 19,
+      "hardware": 18,
       "crypto": 12,
       "biz": 11,
       "science": 6
@@ -37,7 +37,7 @@
     "top_domains": [
       [
         "github.com",
-        56
+        57
       ],
       [
         "thehackernews.com",
@@ -1316,12 +1316,12 @@
       "title": "Alejandros17487/ai-jailbreaks",
       "url": "https://github.com/Alejandros17487/ai-jailbreaks",
       "ts": 1792593846.0,
-      "points": 522,
+      "points": 523,
       "comments": 107,
       "author": "Alejandros17487",
       "summary": "AI jailbreaks: 35 paste-ready AI jailbreak prompts for 25+ frontier and open-weight models - system prompts, AGENTS.md specs, and Ollama Modelfiles. Built for AI security research and red-team testing.",
       "recipe": "github_sec",
-      "buzz": 843,
+      "buzz": 844,
       "topics": [
         "ai",
         "security"
@@ -1421,12 +1421,12 @@
       "title": "aarsaputra/php2shell",
       "url": "https://github.com/aarsaputra/php2shell",
       "ts": 1792763392.0,
-      "points": 115,
+      "points": 116,
       "comments": 56,
       "author": "aarsaputra",
       "summary": "Unauthenticated RCE toolkit for PHP 5.4–8.4.26 (CVE-[phone]/109618) — pure-HTTP chain, JA3 impersonation, prpenetration-testingoof-of-access design",
       "recipe": "github_sec",
-      "buzz": 293,
+      "buzz": 294,
       "topics": [
         "ai",
         "security"
@@ -1439,12 +1439,12 @@
       "title": "jmanico/grim-prompter",
       "url": "https://github.com/jmanico/grim-prompter",
       "ts": 1793189366.0,
-      "points": 179,
-      "comments": 15,
+      "points": 189,
+      "comments": 16,
       "author": "jmanico",
       "summary": "Threat modeling for AI coding agents: point Claude Code, Codex or any agent at your repo and get an evidence-traced threat model. 36 architectures, 29 methods, MIT.",
       "recipe": "github_sec",
-      "buzz": 254,
+      "buzz": 267,
       "topics": [
         "ai",
         "dev"
@@ -1457,12 +1457,12 @@
       "title": "HOSTED-POWER/php_uploadprogress_guard",
       "url": "https://github.com/HOSTED-POWER/php_uploadprogress_guard",
       "ts": 1792573212.0,
-      "points": 172,
+      "points": 173,
       "comments": 12,
       "author": "HOSTED-POWER",
       "summary": "Protects an unpatched PHP against php2shell (CVE-[phone] / CVE-[phone]): a small extension that mirrors the official fix component by component and steps aside once the engine carries it. PHP 5.6-8.5; Sury, cPanel EA4, DirectAdmin, Docker, Windows.",
       "recipe": "github_sec",
-      "buzz": 208,
+      "buzz": 209,
       "topics": [
         "ai",
         "dev",
@@ -1512,11 +1512,11 @@
       "url": "https://github.com/UltraSultanHonor/recon-v1.7.0",
       "ts": 1793165486.0,
       "points": 102,
-      "comments": 14,
+      "comments": 15,
       "author": "UltraSultanHonor",
       "summary": "Published: 2026-10-28",
       "recipe": "github_sec",
-      "buzz": 174,
+      "buzz": 177,
       "topics": [],
       "date": "2026-10-28"
     },
@@ -1526,12 +1526,12 @@
       "title": "dbx0/executioner",
       "url": "https://github.com/dbx0/executioner",
       "ts": 1792380789.0,
-      "points": 101,
+      "points": 102,
       "comments": 24,
       "author": "dbx0",
       "summary": "The agentic pentesting environment that lives on your machine. AI agent teams, visual workflows and your own tools, 100% local.",
       "recipe": "github_sec",
-      "buzz": 173,
+      "buzz": 174,
       "topics": [
         "ai"
       ],
@@ -1573,6 +1573,24 @@
       "date": "2026-10-19"
     },
     {
+      "uid": "gh:mpyw/php-eol-CVE-2026-109618-109619",
+      "source": "github",
+      "title": "mpyw/php-eol-CVE-2026-109618-109619",
+      "url": "https://github.com/mpyw/php-eol-CVE-2026-109618-109619",
+      "ts": 1792594905.0,
+      "points": 74,
+      "comments": 21,
+      "author": "mpyw",
+      "summary": "PHP 7.4 / 8.0 / 8.1 Docker images with the CVE-[phone] / CVE-[phone] fix backported",
+      "recipe": "github_sec",
+      "buzz": 137,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-10-21"
+    },
+    {
       "uid": "gh:pentestershell/php2shellbt",
       "source": "github",
       "title": "pentestershell/php2shellbt",
@@ -1586,24 +1604,6 @@
       "buzz": 131,
       "topics": [
         "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-10-21"
-    },
-    {
-      "uid": "gh:mpyw/php-eol-CVE-2026-109618-109619",
-      "source": "github",
-      "title": "mpyw/php-eol-CVE-2026-109618-109619",
-      "url": "https://github.com/mpyw/php-eol-CVE-2026-109618-109619",
-      "ts": 1792594905.0,
-      "points": 73,
-      "comments": 19,
-      "author": "mpyw",
-      "summary": "PHP 7.4 / 8.0 / 8.1 Docker images with the CVE-[phone] / CVE-[phone] fix backported",
-      "recipe": "github_sec",
-      "buzz": 130,
-      "topics": [
         "dev",
         "security"
       ],
@@ -1633,12 +1633,12 @@
       "title": "lordbasex/LordOS",
       "url": "https://github.com/lordbasex/LordOS",
       "ts": 1792294263.0,
-      "points": 82,
+      "points": 92,
       "comments": 7,
       "author": "lordbasex",
       "summary": "LordOS — a free, fast and secure GNU/Linux distribution based on Debian, with its own desktop environment: display server and Wayland compositor in C, a React UI engine on QuickJS, and private native apps.",
       "recipe": "github_sec",
-      "buzz": 103,
+      "buzz": 113,
       "topics": [
         "hardware"
       ],
@@ -1662,6 +1662,41 @@
       "date": "2026-10-23"
     },
     {
+      "uid": "rss:f20df8f26a8a58",
+      "source": "rss",
+      "title": "Hackers Actively Exploit Highly Critical Drupal Commerce Core Authorization Bypass Flaw",
+      "url": "https://thehackernews.com/2026/10/hackers-actively-exploit-highly.html",
+      "ts": 1793346330.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Drupal has warned that threat actors are exploiting a \"highly critical\" security flaw in its Commerce Core component. The vulnerability, tracked as CVE-[phone] (CVSS score: N/A), is a case of missing authorization affecting Commerce Core versions from 0.0.0 to 2.41 and from 3.0.0 to 3.3.13. \"This module enables you to sell goods and services to customers through an included shopping cart",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-10-30"
+    },
+    {
+      "uid": "rss:5246e5bcec06c2",
+      "source": "rss",
+      "title": "CISA Adds Actively Exploited GitLab RCE and Cisco Firewall DoS Flaws to KEV",
+      "url": "https://thehackernews.com/2026/10/cisa-adds-actively-exploited-gitlab-rce.html",
+      "ts": 1793345225.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Thursday added two security flaws impacting Cisco and GitLab software to its Known Exploited Vulnerabilities (KEV), citing evidence of active exploitation. The vulnerabilities are listed below - CVE-[phone] (CVSS score: 10.0) - An integer overflow or wraparound vulnerability in GitLab Community Edition and Enterprise",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-10-30"
+    },
+    {
       "uid": "rss:ea221575ed0f7c",
       "source": "rss",
       "title": "Binance Suffers Security Breach Affecting $6.3 Billion in Assets, Nearly $3 Billion Frozen",
@@ -1670,7 +1705,7 @@
       "points": 0,
       "comments": 0,
       "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Cryptocurrency giant Binance said on Thursday that a \"security incident\" on its platform has impacted about $6.3 billion worth of assets. The world's biggest cryptocurrency exchange said nearly $3 billion of those assets have been frozen on-chain so far.&nbsp; Tether and Circle said they have frozen more than 1.567 billion USDT and 800 million related to the incident, respectively. The",
+      "summary": "Cryptocurrency giant Binance said on Thursday that a \"security incident\" on its platform has impacted about $6.3 billion worth of assets. The world's biggest cryptocurrency exchange said nearly $3 billion of those assets have been frozen on-chain so far.&nbsp; Tether and Circle said they have frozen more than 1.567 billion USDT and 800 million USDC related to the incident, respectively. The",
       "recipe": "hackersnews",
       "buzz": 80,
       "topics": [
@@ -1873,45 +1908,6 @@
       "date": "2026-10-29"
     },
     {
-      "uid": "rss:0f941b905f046d",
-      "source": "rss",
-      "title": "Attacker Tried to Exploit Alpine Linux’s GitLab via CVSS 10.0 Flaw Its Ruby Left Open",
-      "url": "https://thehackernews.com/2026/10/attacker-tried-to-exploit-alpine-linuxs.html",
-      "ts": 1793264739.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "An attacker tried to exploit a critical GitLab vulnerability on the Alpine Linux project's own GitLab server a week after GitLab&nbsp;released a fix, Alpine Linux&nbsp;said&nbsp;on 28 October. The flaw, CVE-[phone] (CVSS score: 10.0), can let an attacker run code on a GitLab server through a crafted regular expression in a CI configuration. Alpine found no evidence that the attack worked but",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "dev",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-10-29"
-    },
-    {
-      "uid": "rss:6bc5f713e8f98b",
-      "source": "rss",
-      "title": "Hackers Exploited Cisco SD-WAN Flaw to Plant Malware Built to Steal Encryption Keys",
-      "url": "https://thehackernews.com/2026/10/hackers-exploited-cisco-sd-wan-flaw-to.html",
-      "ts": 1793262262.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Hackers exploited a critical Cisco Catalyst SD-WAN flaw, fixed in February, to plant custom malware inside the systems that control an organization's SD-WAN network. The malware, called KeyDrift, is designed to copy the keys that encrypt traffic between sites and store them for later use,&nbsp;Cisco Talos said&nbsp;on October 28. Talos calls the attacks historical but does not specify when they",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-10-29"
-    },
-    {
       "uid": "gh:david-alvarez-rosa/php-rce",
       "source": "github",
       "title": "david-alvarez-rosa/php-rce",
@@ -1963,6 +1959,24 @@
         "dev"
       ],
       "date": "2026-10-21"
+    },
+    {
+      "uid": "gh:ratomirjovanovic/pandaward",
+      "source": "github",
+      "title": "ratomirjovanovic/pandaward",
+      "url": "https://github.com/ratomirjovanovic/pandaward",
+      "ts": 1793101723.0,
+      "points": 32,
+      "comments": 0,
+      "author": "ratomirjovanovic",
+      "summary": "Local, evidence-based application security assessment engine and Claude Code plugin",
+      "recipe": "github_sec",
+      "buzz": 62,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-10-27"
     },
     {
       "uid": "gh:RoUntoBlizzard/resocket-elden-ring-cheat-2026-trainer-mod-menu-tools",
@@ -2072,6 +2086,45 @@
         "biz"
       ],
       "date": "2026-10-27"
+    },
+    {
+      "uid": "rss:0f941b905f046d",
+      "source": "rss",
+      "title": "Attacker Tried to Exploit Alpine Linux’s GitLab via CVSS 10.0 Flaw Its Ruby Left Open",
+      "url": "https://thehackernews.com/2026/10/attacker-tried-to-exploit-alpine-linuxs.html",
+      "ts": 1793264739.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "An attacker tried to exploit a critical GitLab vulnerability on the Alpine Linux project's own GitLab server a week after GitLab&nbsp;released a fix, Alpine Linux&nbsp;said&nbsp;on 28 October. The flaw, CVE-[phone] (CVSS score: 10.0), can let an attacker run code on a GitLab server through a crafted regular expression in a CI configuration. Alpine found no evidence that the attack worked but",
+      "recipe": "hackersnews",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "dev",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-10-29"
+    },
+    {
+      "uid": "rss:6bc5f713e8f98b",
+      "source": "rss",
+      "title": "Hackers Exploited Cisco SD-WAN Flaw to Plant Malware Built to Steal Encryption Keys",
+      "url": "https://thehackernews.com/2026/10/hackers-exploited-cisco-sd-wan-flaw-to.html",
+      "ts": 1793262262.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Hackers exploited a critical Cisco Catalyst SD-WAN flaw, fixed in February, to plant custom malware inside the systems that control an organization's SD-WAN network. The malware, called KeyDrift, is designed to copy the keys that encrypt traffic between sites and store them for later use,&nbsp;Cisco Talos said&nbsp;on October 28. Talos calls the attacks historical but does not specify when they",
+      "recipe": "hackersnews",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-10-29"
     },
     {
       "uid": "rss:339d6498ccffaa",
@@ -2345,45 +2398,6 @@
         "ai",
         "dev",
         "hardware"
-      ],
-      "date": "2026-10-28"
-    },
-    {
-      "uid": "rss:3b0e37578c9d52",
-      "source": "rss",
-      "title": "ShinyHunters-Exploited Oracle PeopleSoft Zero-Day Turns Out to Be Three Chained Flaws",
-      "url": "https://thehackernews.com/2026/10/shinyhunters-exploited-oracle.html",
-      "ts": 1793167498.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "The critical Oracle PeopleSoft bug that ShinyHunters has exploited since May is not one flaw but three chained together, the researchers who reported it said this week. Oracle patched all three under a single identifier,&nbsp;CVE-[phone], in June. Its root is a server-side request forgery (SSRF) that reaches an internal management interface because PeopleSoft trusts its own loopback address",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "dev",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-10-28"
-    },
-    {
-      "uid": "rss:51a71e1c175d2f",
-      "source": "rss",
-      "title": "Adobe Commerce PolyShell Attacks Breach Hundreds of Stores as Brotli Exploit Traffic Emerges",
-      "url": "https://thehackernews.com/2026/10/adobe-commerce-polyshell-attacks-breach.html",
-      "ts": 1793166146.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added two vulnerabilities impacting Adobe Commerce and Magento, and Google's Brotli decoder library to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation. The vulnerabilities are listed below - CVE-[phone] (CVSS score: 9.2) - An unchecked return value vulnerability in",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
       ],
       "date": "2026-10-28"
     },
