@@ -146,6 +146,8 @@ COPY = {
         "mon_crypto": "Поддержать криптой — переводы напрямую на кошелёк:",
         "mon_stars": "⭐ Атрия Pro — полный дайджест (199 Stars/мес)",
         "sisters": "Другие вертикали роя",
+        "closes_open": "Приём заявок до",
+        "closes_closed": "Приём заявок закрыт",
     },
     "en": {
         "nav_feed": "Feed", "nav_topics": "Topics", "nav_data": "Data",
@@ -204,6 +206,8 @@ COPY = {
         "mon_crypto": "Support with crypto (no reversal needed — networks and addresses are current):",
         "mon_stars": "⭐ Atria Pro — full digest (199 Stars/mo)",
         "sisters": "Other verticals of the swarm",
+        "closes_open": "Accepting bids until",
+        "closes_closed": "Bids closed",
     },
 }
 
@@ -471,6 +475,31 @@ def page_topics_index(site: dict, topics: list[str], counts: dict) -> str:
                  jsonld, feed_title=site["title"], lang=_lang(site), cta=_cta(site), site=site)
 
 
+def _closes_badge(item: dict, L: dict) -> str:
+    """Бейдж срока приёма заявок (тендерная вертикаль): «Открыт до …» /
+    «Приём закрыт». Честность каталога:.closed тендер не выдаём за живой."""
+    c = item.get("closes")
+    if not c:
+        return ""
+    c = str(c).strip()
+    dt = None
+    for fmt in ("%d %b %Y, %H:%M %Z", "%d %b %Y, %H:%M"):
+        try:
+            dt = datetime.strptime(c, fmt)
+            break
+        except ValueError:
+            continue
+    if dt is None:
+        return f'<span class="chip">⏰ {_esc(c)}</span>'
+    if dt.tzinfo is None:
+        dt = dt.replace(tzinfo=timezone.utc)
+    if dt > datetime.now(timezone.utc):
+        return (f'<span class="chip" style="border-color:#3ddc97;color:#3ddc97">'
+                f'● {L["closes_open"]} {_esc(c)}</span>')
+    return (f'<span class="chip" style="border-color:#ff5d5d;color:#ff5d5d">'
+            f'✕ {L["closes_closed"]}</span>')
+
+
 def page_item(item: dict, site: dict, related: list[dict] | None = None) -> str:
     L = _L(site)
     slug = _slug(item["title"])
@@ -495,6 +524,7 @@ def page_item(item: dict, site: dict, related: list[dict] | None = None) -> str:
     · {_esc(item["date"])} · buzz <b class="buzz">{item['buzz']}</b>
     {f"· {L['pts'].format(p=item['points'], c=item['comments'])}" if item["comments"] or item["points"] else ""}
   </div>
+  <div class="chips" style="margin-top:12px">{_closes_badge(item, L)}</div>
   {f'<p style="margin-top:14px;color:#c2c9d8">{_esc(item["summary"])}</p>' if item["summary"] else ""}
   <p style="margin-top:18px"><a href="{_esc(item['url'])}" style="color:#8fb7ff">{L['read_source']}</a></p>
   <div class="chips" style="margin-top:18px">{tags}</div>

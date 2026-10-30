@@ -359,6 +359,17 @@ def test_monetization_cta():
     check("sisters: EN-лейбл", "Other verticals" in
           sitegen._sister_links({"base_url": "https://t.example", "lang": "en"}))
 
+    # Бейдж срока тендера: открыт/закрыт/непарсится
+    L = sitegen.COPY["ru"]
+    b_open = sitegen._closes_badge({"closes": "9 Nov 2099, 05:00 UTC"}, L)
+    b_closed = sitegen._closes_badge({"closes": "9 Nov 2020, 05:00 UTC"}, L)
+    b_raw = sitegen._closes_badge({"closes": "скоро"}, L)
+    b_none = sitegen._closes_badge({}, L)
+    check("tender: бейдж открытого", "Приём заявок до" in b_open, b_open)
+    check("tender: бейдж закрытого", "закрыт" in b_closed, b_closed)
+    check("tender: непарсимый — как есть", "скоро" in b_raw, b_raw)
+    check("tender: нет поля — нет бейджа", b_none == "")
+
 
 # ------------------------------------------------------- Накопитель предметов
 def test_archive():
