@@ -1,4 +1,6 @@
 cve_id,severity,package,title,url,date
+GHSA-5xjx-3w67-w9x9,critical,pypa/gh-action-pypi-publish,GHSA-5xjx-3w67-w9x9: pypi-publish action revocation of CA in the chain that Sigstore uses in Trusted Publishing and Digital Attestations for PyPI,https://github.com/advisories/GHSA-5xjx-3w67-w9x9,2026-10-30
+CVE-2026-59978,high,adminneo-org/adminneo,CVE-2026-59978: AdminNeo: version-cache array injection causes persistent denial of service,https://github.com/advisories/GHSA-jm85-8cpp-9cjc,2026-10-30
 CVE-2026-119283,high,joserfc,CVE-2026-119283: joserfc: Unbounded JWE General JSON `recipients` Array Leads to CPU Exhaustion (DoS) via Repeated RSA Private-Key Decryption,https://github.com/advisories/GHSA-jpxq-7h8p-2q76,2026-10-30
 CVE-2026-119282,high,@nx/maven,CVE-2026-119282: @nx/maven and @nx/gradle have OS command injection via nx.json plugin options,https://github.com/advisories/GHSA-qm8w-vx34-5j9j,2026-10-30
 CVE-2026-118664,high,decode-uri-component,CVE-2026-118664: decode-uri-component vulnerable to denial of service via quadratic replacement of percent-encoded runs,https://github.com/advisories/GHSA-qr28-fpjm-wq7f,2026-10-29
@@ -25,7 +27,5 @@ CVE-2026-9705,medium,org.keycloak:keycloak-services,CVE-2026-9705: Keycloak: Att
 CVE-2026-61848,medium,crass,CVE-2026-61848: Crass: Non-ASCII characters cause superlinear CPU consumption,https://github.com/advisories/GHSA-8vfg-2r28-hvhj,2026-10-29
 CVE-2026-61847,medium,crass,CVE-2026-61847: Crass: A large number of adjacent CSS comments can trigger a SystemStackError,https://github.com/advisories/GHSA-wwpr-jff3-395c,2026-10-29
 CVE-2026-61846,medium,crass,CVE-2026-61846: Crass: Deeply nested CSS blocks and functions can trigger a SystemStackError or excessive memory usage,https://github.com/advisories/GHSA-6jxj-px6v-747w,2026-10-29
-CVE-2026-55186,medium,silverstripe/mfa,CVE-2026-55186: MultiFactor Authentication for SilverStripe can bypass MFA during password reset flow,https://github.com/advisories/GHSA-68wq-phq7-p2vg,2026-10-29
 GHSA-c33x-vcv4-vg3g,low,cedar-policy,GHSA-c33x-vcv4-vg3g: Cedar: JSON template is in scope missing slot-id validation allows link panic and decision divergence,https://github.com/advisories/GHSA-c33x-vcv4-vg3g,2026-10-29
 CVE-2026-61448,low,parse-server,CVE-2026-61448: Parse Server vulnerable to stored XSS via malformed Content-Type bypassing file upload extension blocklist,https://github.com/advisories/GHSA-r899-h629-j84r,2026-10-29
-GHSA-pg53-p7qp-65cv,low,pocketmine/pocketmine-mp,GHSA-pg53-p7qp-65cv: PocketMine-MP has potential memory/network vulnerability from repeated ResourcePackClientResponsePacket packets,https://github.com/advisories/GHSA-pg53-p7qp-65cv,2026-10-29

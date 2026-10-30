@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T16:59:56+00:00",
+  "generated_at": "2026-10-30T20:55:24+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -18,11 +18,11 @@
       "the_hacker_news": 30
     },
     "by_topic": {
-      "security": 51,
+      "security": 49,
+      "dev": 36,
       "ai": 34,
-      "dev": 33,
-      "hardware": 13,
-      "crypto": 10,
+      "hardware": 12,
+      "crypto": 9,
       "science": 5,
       "biz": 5
     },
@@ -38,6 +38,42 @@
     ]
   },
   "items": [
+    {
+      "uid": "cve:GHSA-5xjx-3w67-w9x9",
+      "source": "cve",
+      "title": "GHSA-5xjx-3w67-w9x9: pypi-publish action revocation of CA in the chain that Sigstore uses in Trusted Publishing and Digital Attestations for PyPI",
+      "url": "https://github.com/advisories/GHSA-5xjx-3w67-w9x9",
+      "ts": 1793391864.0,
+      "points": 6000,
+      "comments": 0,
+      "author": "pypa/gh-action-pypi-publish",
+      "summary": "Severity: critical. ### Summary\n\nThe [pypi-publish action][pypi-publish] versions before 1.14.2 used to bundle the `emSign` root CA trust store certificate through the `certifi` distribution. It has since been removed through the bundle and the new version no longer includes them.\n\n[pypi-publish]: https://github.com/ma",
+      "recipe": "gh_advisories",
+      "buzz": 6080,
+      "topics": [
+        "ai",
+        "dev"
+      ],
+      "date": "2026-10-30"
+    },
+    {
+      "uid": "cve:GHSA-jm85-8cpp-9cjc",
+      "source": "cve",
+      "title": "CVE-2026-59978: AdminNeo: version-cache array injection causes persistent denial of service",
+      "url": "https://github.com/advisories/GHSA-jm85-8cpp-9cjc",
+      "ts": 1793386388.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "adminneo-org/adminneo",
+      "summary": "Severity: high. ### Summary\nAdminNeo v5.4.1 gets the latest version from GitHub API in a browser JavaScript function. Version number is then sent by POST request to `?script=version`. This endpoint lacks origin validation and accepts POST data from any source. An attacker can POST `version[]` parameter which PHP co",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-10-30"
+    },
     {
       "uid": "cve:GHSA-jpxq-7h8p-2q76",
       "source": "cve",
@@ -515,24 +551,6 @@
       "date": "2026-10-29"
     },
     {
-      "uid": "cve:GHSA-68wq-phq7-p2vg",
-      "source": "cve",
-      "title": "CVE-2026-55186: MultiFactor Authentication for SilverStripe can bypass MFA during password reset flow",
-      "url": "https://github.com/advisories/GHSA-68wq-phq7-p2vg",
-      "ts": 1793291559.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "silverstripe/mfa",
-      "summary": "Severity: medium. ### Impact\nIn CMS 5, the password reset flow let a user with multi-factor authentication enabled change their password and get a logged-in session before completing multi-factor authentication. Exploiting this requires access to the user's email account. CMS 6 is not affected.",
-      "recipe": "gh_advisories",
-      "buzz": 1830,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-10-29"
-    },
-    {
       "uid": "cve:GHSA-c33x-vcv4-vg3g",
       "source": "cve",
       "title": "GHSA-c33x-vcv4-vg3g: Cedar: JSON template is in scope missing slot-id validation allows link panic and decision divergence",
@@ -568,22 +586,22 @@
       "date": "2026-10-29"
     },
     {
-      "uid": "cve:GHSA-pg53-p7qp-65cv",
-      "source": "cve",
-      "title": "GHSA-pg53-p7qp-65cv: PocketMine-MP has potential memory/network vulnerability from repeated ResourcePackClientResponsePacket packets",
-      "url": "https://github.com/advisories/GHSA-pg53-p7qp-65cv",
-      "ts": 1793291578.0,
-      "points": 700,
+      "uid": "rss:5caf201c7d7342",
+      "source": "rss",
+      "title": "Chinese Hackers Use AI-Powered ARTEX to Target Over 200 Organizations Worldwide",
+      "url": "https://thehackernews.com/2026/10/chinese-hackers-use-ai-powered-artex-to.html",
+      "ts": 1793379524.0,
+      "points": 0,
       "comments": 0,
-      "author": "pocketmine/pocketmine-mp",
-      "summary": "Severity: low. ### Summary\nDuring the resource pack stage of logging in, after the server sends `ResourcePackStackPacket`, a malicious client can send a batch of multiple `ResourcePackClientResponsePacket` packets with status `ResourcePackClientResponsePacket::STATUS_COMPLETED` causing the server to repeatedly exe",
-      "recipe": "gh_advisories",
-      "buzz": 730,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Chinese state-sponsored threat actors have been observed using a Go-based artificial intelligence (AI)-powered penetration testing framework called ARTEX in attacks aimed at high-value targets simultaneously. The activity has been attributed by CrowdStrike to a China-based \"targeted intrusion adversary\" it tracks under the moniker Vapor Panda (previously VexatiousTemper). First identified in",
+      "recipe": "the_hacker_news",
+      "buzz": 80,
       "topics": [
-        "security",
-        "hardware"
+        "ai",
+        "dev"
       ],
-      "date": "2026-10-29"
+      "date": "2026-10-30"
     },
     {
       "uid": "rss:8fe595add26b43",
@@ -763,7 +781,7 @@
       "author": "info@thehackernews.com (The Hacker News)",
       "summary": "Some attacks take real skill. Others just need someone to leave a door open. This week has both. Exposed passwords, old bugs still getting exploited, and trusted software doing things it shouldn't. There's a strange mix of clever tricks and careless mistakes. Hackers are borrowing trust from familiar apps, websites, and AI tools. Some are using AI to speed things up. Others are leaving their",
       "recipe": "the_hacker_news",
-      "buzz": 80,
+      "buzz": 30,
       "topics": [
         "ai",
         "dev",
@@ -1126,25 +1144,6 @@
       "buzz": 30,
       "topics": [
         "hardware"
-      ],
-      "date": "2026-10-28"
-    },
-    {
-      "uid": "rss:88ee4e8f96c4be",
-      "source": "rss",
-      "title": "Wazuh and AI for Enhanced SOC Workflows",
-      "url": "https://thehackernews.com/2026/10/wazuh-and-ai-for-enhanced-soc-workflows.html",
-      "ts": 1793187000.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Artificial Intelligence (AI) has become one of this decade's defining technologies. From healthcare and finance to manufacturing and education, organizations increasingly rely on AI to automate repetitive tasks, uncover patterns hidden within large datasets, and support faster decision-making. Cybersecurity has experienced a similar transformation. While attackers employ AI to automate",
-      "recipe": "the_hacker_news",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "crypto",
-        "security"
       ],
       "date": "2026-10-28"
     }

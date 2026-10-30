@@ -5,7 +5,33 @@
     <link>https://sentinel-post.pages.dev</link>
     <description>Автономная радиостанция кибербезопасности: живые CVE, угрозы и защита — без сенсаций</description>
     <language>ru</language>
-    <lastBuildDate>Fri, 30 Oct 2026 17:00:28 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 30 Oct 2026 20:55:51 GMT</lastBuildDate>
+    <item>
+      <title>GHSA-5xjx-3w67-w9x9: pypi-publish action revocation of CA in the chain that Sigstore uses in Trusted Publishing and Digital Attestations for PyPI</title>
+      <link>https://sentinel-post.pages.dev/item/ghsa-5xjx-3w67-w9x9-pypi-publish-action-revocation-of-ca-in-the-.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/ghsa-5xjx-3w67-w9x9-pypi-publish-action-revocation-of-ca-in-the-.html</guid>
+      <pubDate>Fri, 30 Oct 2026 20:24:24 GMT</pubDate>
+      <description>Severity: critical. ### Summary
+
+The [pypi-publish action][pypi-publish] versions before 1.14.2 used to bundle the `emSign` root CA trust store certificate through the `certifi` distribution. It has since been removed through the bundle and the new version no longer includes them.
+
+[pypi-publish]: h</description>
+    </item>
+    <item>
+      <title>CVE-2026-59978: AdminNeo: version-cache array injection causes persistent denial of service</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-59978-adminneo-version-cache-array-injection-causes-per.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-59978-adminneo-version-cache-array-injection-causes-per.html</guid>
+      <pubDate>Fri, 30 Oct 2026 18:53:08 GMT</pubDate>
+      <description>Severity: high. ### Summary
+AdminNeo v5.4.1 gets the latest version from GitHub API in a browser JavaScript function. Version number is then sent by POST request to `?script=version`. This endpoint lacks origin validation and accepts POST data from any source. An attacker can POST `version[]` parame</description>
+    </item>
+    <item>
+      <title>Chinese Hackers Use AI-Powered ARTEX to Target Over 200 Organizations Worldwide</title>
+      <link>https://sentinel-post.pages.dev/item/chinese-hackers-use-ai-powered-artex-to-target-over-200-organiza.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/chinese-hackers-use-ai-powered-artex-to-target-over-200-organiza.html</guid>
+      <pubDate>Fri, 30 Oct 2026 16:58:44 GMT</pubDate>
+      <description>Chinese state-sponsored threat actors have been observed using a Go-based artificial intelligence (AI)-powered penetration testing framework called ARTEX in attacks aimed at high-value targets simultaneously. The activity has been attributed by CrowdStrike to a China-based "targeted intrusion advers</description>
+    </item>
     <item>
       <title>Bloatware in Aftermarket Auto Parts</title>
       <link>https://sentinel-post.pages.dev/item/bloatware-in-aftermarket-auto-parts.html</link>
@@ -241,30 +267,6 @@ A flaw was found in Keycloak. A remote attacker with administrative privileges, 
       <pubDate>Thu, 29 Oct 2026 16:38:31 GMT</pubDate>
       <description>Severity: medium. ### Description
 A flaw was found in Keycloak. A realm administrator with the "manage-realm" role can exploit this vulnerability by submitting an arbitrary filesystem path as a keystore parameter when creating a key provider component. This allows the administrator to probe arbitrar</description>
-    </item>
-    <item>
-      <title>CVE-2026-9799: Keycloak allows unauthorized access to resources via uma permission ticket bypass</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-9799-keycloak-allows-unauthorized-access-to-resources-v.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-9799-keycloak-allows-unauthorized-access-to-resources-v.html</guid>
-      <pubDate>Thu, 29 Oct 2026 16:37:57 GMT</pubDate>
-      <description>Severity: medium. ### Description
-A flaw was found in org.keycloak.authorization. An authenticated user with a granted User-Managed Access (UMA) permission ticket for one resource can exploit this by using a specific permission request prefix to bypass per-resource access control. This allows the us</description>
-    </item>
-    <item>
-      <title>CVE-2026-9800: Keycloak vulnerable to authorization bypass via incorrect uri comparison</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-9800-keycloak-vulnerable-to-authorization-bypass-via-in.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-9800-keycloak-vulnerable-to-authorization-bypass-via-in.html</guid>
-      <pubDate>Thu, 29 Oct 2026 16:37:26 GMT</pubDate>
-      <description>Severity: high. ### Description
-A flaw was found in Keycloak Policy Enforcer. This vulnerability allows any authenticated user to bypass all authorization policies, including role, scope, and User-Managed Access (UMA) permission checks. By including the configured access-denied page path within a re</description>
-    </item>
-    <item>
-      <title>CVE-2026-9705: Keycloak: Attacker can re-enable and take over disabled clients via registration access token</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-9705-keycloak-attacker-can-re-enable-and-take-over-disa.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-9705-keycloak-attacker-can-re-enable-and-take-over-disa.html</guid>
-      <pubDate>Thu, 29 Oct 2026 16:36:21 GMT</pubDate>
-      <description>Severity: medium. ### Description
-A flaw was found in Keycloak's client registration service. A remote attacker, possessing a previously issued Registration Access Token (RAT), could exploit this vulnerability to re-enable a client that an administrator had explicitly disabled. This bypasses securit</description>
     </item>
   </channel>
 </rss>
