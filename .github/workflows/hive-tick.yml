@@ -4,7 +4,7 @@ name: Atria hive tick
 # Каждый запуск = один цикл: сбор → очистка → датасет → сайт + коммит состояния.
 on:
   schedule:
-    - cron: "17 */6 * * *"   # каждые 6 часов в :17
+    - cron: "17 */4 * * *"   # каждые 4 часа в :17 (6 циклов/сутки)
   workflow_dispatch: {}       # ручной запуск из вкладки Actions
 
 concurrency:
@@ -65,7 +65,7 @@ jobs:
         run: python archaea/qa_gate.py
 
       - name: deploy sites to Cloudflare Pages
-        # Каждые 6 часов: QA прошла → все 5 сайтов CDN обновляются.
+        # Каждые 4 часа: QA прошла → все сайты CDN обновляются.
         # blake3 + direct-upload протокол (infra/cloudflare/deploy_pages.py).
         if: success()
         env:
