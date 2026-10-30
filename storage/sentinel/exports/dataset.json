@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T13:13:15+00:00",
+  "generated_at": "2026-10-30T17:00:28+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -26,13 +26,13 @@
       "krebs": 10
     },
     "by_topic": {
-      "security": 119,
-      "ai": 68,
-      "dev": 59,
+      "security": 118,
+      "ai": 67,
+      "dev": 61,
       "hardware": 17,
-      "biz": 13,
+      "biz": 14,
       "crypto": 12,
-      "science": 7
+      "science": 6
     },
     "top_domains": [
       [
@@ -265,6 +265,61 @@
       "date": "2021-01-11"
     },
     {
+      "uid": "cve:GHSA-jpxq-7h8p-2q76",
+      "source": "cve",
+      "title": "CVE-2026-119283: joserfc: Unbounded JWE General JSON `recipients` Array Leads to CPU Exhaustion (DoS) via Repeated RSA Private-Key Decryption",
+      "url": "https://github.com/advisories/GHSA-jpxq-7h8p-2q76",
+      "ts": 1793372060.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "joserfc",
+      "summary": "Severity: high. ### Summary\n\n`joserfc.jwe.decrypt_json()`, the library's public parser for JWE General JSON Serialization, accepts an attacker-controlled `recipients` array of unbounded length and performs one full private-key decryption operation (`decrypt_cek`) for **every** recipient present in the input, with n",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "dev",
+        "science",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-10-30"
+    },
+    {
+      "uid": "cve:GHSA-qm8w-vx34-5j9j",
+      "source": "cve",
+      "title": "CVE-2026-119282: @nx/maven and @nx/gradle have OS command injection via nx.json plugin options",
+      "url": "https://github.com/advisories/GHSA-qm8w-vx34-5j9j",
+      "ts": 1793371334.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "@nx/maven",
+      "summary": "Severity: high. ## Summary\n\n`@nx/maven` and `@nx/gradle` spawn their project-graph analyzers through a shell and interpolate plugin options read from `nx.json` straight into the command line. Because a shell parses the whole line, an option value containing shell syntax is executed as a command by any `nx` command",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-10-30"
+    },
+    {
+      "uid": "hn:50172041",
+      "source": "hn",
+      "title": "Security advisory: Critical remote code execution vulnerabilities, update now",
+      "url": "https://www.php.net/archive/2026.php#2026-10-21-5",
+      "ts": 1792527350.0,
+      "points": 1561,
+      "comments": 659,
+      "author": "xd",
+      "summary": "<a href=\"https:&#x2F;&#x2F;cert.europa.eu&#x2F;publications&#x2F;security-advisories&#x2F;2026-018&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;cert.europa.eu&#x2F;publications&#x2F;security-advisories&#x2F;2026...</a><p><a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=[phone]\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=[phone]</a>",
+      "recipe": "hn_sec",
+      "buzz": 3538,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-10-20"
+    },
+    {
       "uid": "cve:GHSA-qr28-fpjm-wq7f",
       "source": "cve",
       "title": "CVE-2026-118664: decode-uri-component vulnerable to denial of service via quadratic replacement of percent-encoded runs",
@@ -275,7 +330,7 @@
       "author": "decode-uri-component",
       "summary": "Severity: high. ### Summary\n\n`decodeUriComponent()` takes quadratic time on malformed input that has many distinct percent-encoded runs. A single unauthenticated request of about 224 KB can block the Node.js event loop for about 20 seconds. Version 0.5.0, the release that fixed CVE-[phone], is affected.\n\n### Det",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "security"
       ],
@@ -292,7 +347,7 @@
       "author": "Twisted",
       "summary": "Severity: high. ## Summary\n\nAn uncontrolled-resource-consumption vulnerability (CWE-400) in the Twisted HTTP/2 server lets any unauthenticated remote client exhaust server CPU over a single connection. A client that sends a request header block with `END_STREAM` and then immediately resets the stream makes the serv",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "dev",
         "security",
@@ -311,7 +366,7 @@
       "author": "zip",
       "summary": "Severity: high. ### Summary\n\nA malicious 149-byte ZIP archive can cause a denial of service in applications that enable `legacy-zip` and use `ZipArchive::extract()`. An attacker-controlled ZIP64 uncompressed size triggers a `capacity overflow` panic in the Shrink decoder in optimized builds, potentially terminating",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "security"
       ],
@@ -328,7 +383,7 @@
       "author": "zip",
       "summary": "Severity: high. ### Summary\n\n- **Verified version:** zip `9.0.0-pre3`\n- **Affected versions:** `7.2.0` and later\n- **Precondition:** The attacker knows (or can guess) the absolute path of the extraction destination\n\nThe validation applied to symlinks is purely lexical.\nAs a result, an attacker can write arbitrary f",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "ai",
         "dev",
@@ -347,7 +402,7 @@
       "author": "zip",
       "summary": "Severity: high. ### Summary\n\nThe symbolic-link branch of `ZipArchive::extract_internal()` allocates a buffer using an attacker-declared size before reading any entry data. A 112-byte archive terminates the extracting process with `SIGABRT` through this infallible allocation.\n\n### Details\n\n```rust\n#[cfg(any(unix, wi",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "ai",
         "dev",
@@ -366,7 +421,7 @@
       "author": "shopify_app",
       "summary": "Severity: high. In token-exchange authenticated controllers, `shopify_app` exposes shop context through helpers such as `current_shopify_domain`. Prior to the fix, `current_shopify_domain` could resolve to the sanitized `shop` query parameter instead of the shop identity derived from the verified Shopify ID token o",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "ai",
         "dev",
@@ -387,7 +442,7 @@
       "author": "github.com/cert-manager/cert-manager",
       "summary": "Severity: high. ## Summary\n\n`Challenge` resources under `acme.cert-manager.io` can be created directly by namespace users. On create, cert-manager performs no admission validation tying the Challenge to an `Order`, an owner reference, or an Issuer-selected solver. The ACME Challenge controller then reconciles the d",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "science",
         "security"
@@ -405,7 +460,7 @@
       "author": "org.keycloak:keycloak-services",
       "summary": "Severity: high. ### Description\nA flaw was found in Keycloak. A remote attacker with administrative privileges, specifically those with `manage-client` permission or access to client registration endpoints, could bypass client Uniform Resource Identifier (URI) validation. This is achieved by registering a malicious",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "dev",
         "security"
@@ -423,7 +478,7 @@
       "author": "org.keycloak:keycloak-services",
       "summary": "Severity: high. ### Description\nA flaw was found in Keycloak Policy Enforcer. This vulnerability allows any authenticated user to bypass all authorization policies, including role, scope, and User-Managed Access (UMA) permission checks. By including the configured access-denied page path within a request URL, eithe",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "security"
       ],
@@ -440,7 +495,7 @@
       "author": "@eeacms/volto-chatbot",
       "summary": "Severity: high. ## Unauthenticated Danswer API Confused Deputy Proxy in @eeacms/volto-chatbot\n\n### Summary\n\n`@eeacms/volto-chatbot` exposes an Express middleware route (`**/_v1_da/**`) that accepts unauthenticated HTTP requests from any network client and proxies them to the configured upstream Danswer API, automat",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "dev"
       ],
@@ -457,7 +512,7 @@
       "author": "@sylphx/pdf-reader-mcp",
       "summary": "Severity: high. ### Impact\n\nWhen `@sylphx/pdf-reader-mcp` is run as an HTTP server (`MCP_TRANSPORT=http`), it reads the `MCP_API_KEY` environment variable and logs `API key authentication enabled (X-API-Key header)` at startup, but it never validated the `X-API-Key` header on incoming requests. The key was read int",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "dev",
         "biz",
@@ -477,7 +532,7 @@
       "author": "praisonai",
       "summary": "Severity: high. ### Summary\nJobWorkflowExecutor._exec_inline_python() is designed to safely execute inline Python expressions from YAML workflow script: steps using AST validation. The function claims to block dangerous operations by (a) checking all AST nodes against an allowlist, and (b) providing a __builtins__",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "ai",
         "dev",
@@ -496,47 +551,12 @@
       "author": "github.com/daptin/daptin",
       "summary": "Severity: high. ### Summary\n\nDaptin's `LanguageMiddleware` (registered as a global gin middleware) calls `golang.org/x/text/language.ParseAcceptLanguage` on the raw `Accept-Language` header of every HTTP request without imposing any size or shape filter. The underlying parser has quadratic-time behaviour on long li",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "security",
         "hardware"
       ],
       "date": "2026-10-29"
-    },
-    {
-      "uid": "hn:50172041",
-      "source": "hn",
-      "title": "Security advisory: Critical remote code execution vulnerabilities, update now",
-      "url": "https://www.php.net/archive/2026.php#2026-10-21-5",
-      "ts": 1792527350.0,
-      "points": 1561,
-      "comments": 659,
-      "author": "xd",
-      "summary": "<a href=\"https:&#x2F;&#x2F;cert.europa.eu&#x2F;publications&#x2F;security-advisories&#x2F;2026-018&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;cert.europa.eu&#x2F;publications&#x2F;security-advisories&#x2F;2026...</a><p><a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=[phone]\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=[phone]</a>",
-      "recipe": "hn_sec",
-      "buzz": 3538,
-      "topics": [
-        "security"
-      ],
-      "date": "2026-10-20"
-    },
-    {
-      "uid": "cve:GHSA-3f7j-7jwc-fxfj",
-      "source": "cve",
-      "title": "CVE-2026-116576: systeminformation vulnerable to Windows command injection in services() through Unicode quotation marks",
-      "url": "https://github.com/advisories/GHSA-3f7j-7jwc-fxfj",
-      "ts": 1793227369.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "systeminformation",
-      "summary": "Severity: high. ### Summary\n\nOn Windows, `systeminformation@5.33.15` builds a PowerShell command using the value passed to `services()`. The default sanitizer removes ASCII quotes but keeps Unicode curly quotes, spaces, and parentheses. A crafted service name can use those characters to break out of the generated f",
-      "recipe": "gh_advisories",
-      "buzz": 3530,
-      "topics": [
-        "science",
-        "security"
-      ],
-      "date": "2026-10-28"
     },
     {
       "uid": "hn:32148218",
@@ -832,170 +852,55 @@
       "date": "2020-09-30"
     },
     {
-      "uid": "cve:GHSA-8hxf-qr8p-62x4",
+      "uid": "cve:GHSA-9pg5-8c7x-5hfx",
       "source": "cve",
-      "title": "CVE-2026-115906: zip: AES Entry HMAC Authentication Bypass on Premature EOF",
-      "url": "https://github.com/advisories/GHSA-8hxf-qr8p-62x4",
-      "ts": 1793292007.0,
+      "title": "CVE-2026-119284: joserfc: Compact JWS size guard allocates attacker-controlled segments before rejection",
+      "url": "https://github.com/advisories/GHSA-9pg5-8c7x-5hfx",
+      "ts": 1793372065.0,
       "points": 1800,
       "comments": 0,
-      "author": "zip",
-      "summary": "Severity: medium. ### Summary\n\nAn AES-encrypted (AE-x) entry's authentication code is verified only when the reader's byte counter lands exactly on zero. If the bounded entry reader reaches the archive's actual EOF before the attacker-controlled, header-declared `compressed_size`, the counter remains positive, the HM",
+      "author": "joserfc",
+      "summary": "Severity: medium. ## Summary\n\njoserfc 1.7.4 defines compact-JWS header, payload, and signature limits, but\ncalls `value.split(b\".\")` before validating them. Python `bytes.split()` copies\nthe attacker-controlled segments, so the current guard allocates roughly one\ncomplete payload before rejecting it.\n\n## Reproduction",
       "recipe": "gh_advisories",
       "buzz": 1880,
       "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-10-29"
-    },
-    {
-      "uid": "cve:GHSA-8g5g-mxqh-grgj",
-      "source": "cve",
-      "title": "CVE-2026-118662: Vite: `server.fs.deny` bypassed with queries",
-      "url": "https://github.com/advisories/GHSA-8g5g-mxqh-grgj",
-      "ts": 1793291996.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "vite",
-      "summary": "Severity: medium. ### Summary\n\nThe contents of files that are specified by [`server.fs.deny`](https://vite.dev/config/server-options#server-fs-deny) can be returned to the browser. This is the same as https://github.com/vitejs/vite/security/advisories/GHSA-v2wj-q39q-566r.\n\n### Impact\n\nOnly apps that match the followi",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "dev",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-10-29"
-    },
-    {
-      "uid": "cve:GHSA-9jrw-8xf7-xqhq",
-      "source": "cve",
-      "title": "CVE-2026-9083: Keycloak vulnerable to information disclosure through arbitrary filesystem path probing",
-      "url": "https://github.com/advisories/GHSA-9jrw-8xf7-xqhq",
-      "ts": 1793291911.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "org.keycloak:keycloak-services",
-      "summary": "Severity: medium. ### Description\nA flaw was found in Keycloak. A realm administrator with the \"manage-realm\" role can exploit this vulnerability by submitting an arbitrary filesystem path as a keystore parameter when creating a key provider component. This allows the administrator to probe arbitrary filesystem paths",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-10-29"
-    },
-    {
-      "uid": "cve:GHSA-w3p3-7cjg-vgfw",
-      "source": "cve",
-      "title": "CVE-2026-9799: Keycloak allows unauthorized access to resources via uma permission ticket bypass",
-      "url": "https://github.com/advisories/GHSA-w3p3-7cjg-vgfw",
-      "ts": 1793291877.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "org.keycloak:keycloak-services",
-      "summary": "Severity: medium. ### Description\nA flaw was found in org.keycloak.authorization. An authenticated user with a granted User-Managed Access (UMA) permission ticket for one resource can exploit this by using a specific permission request prefix to bypass per-resource access control. This allows the user to gain unautho",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-10-29"
-    },
-    {
-      "uid": "cve:GHSA-r7rc-c989-86g6",
-      "source": "cve",
-      "title": "CVE-2026-9705: Keycloak: Attacker can re-enable and take over disabled clients via registration access token",
-      "url": "https://github.com/advisories/GHSA-r7rc-c989-86g6",
-      "ts": 1793291781.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "org.keycloak:keycloak-services",
-      "summary": "Severity: medium. ### Description\nA flaw was found in Keycloak's client registration service. A remote attacker, possessing a previously issued Registration Access Token (RAT), could exploit this vulnerability to re-enable a client that an administrator had explicitly disabled. This bypasses security controls, allowi",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "crypto",
-        "security"
-      ],
-      "date": "2026-10-29"
-    },
-    {
-      "uid": "cve:GHSA-8vfg-2r28-hvhj",
-      "source": "cve",
-      "title": "CVE-2026-61848: Crass: Non-ASCII characters cause superlinear CPU consumption",
-      "url": "https://github.com/advisories/GHSA-8vfg-2r28-hvhj",
-      "ts": 1793291729.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "crass",
-      "summary": "Severity: medium. ### Impact\n\nWhen parsing an input containing non-ASCII characters, inefficiencies in how Crass tracks the positions of multi-byte characters result in superlinear parsing time. An attacker-controlled input consisting of many non-ASCII characters could cause excessive CPU consumption and potentially",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-10-29"
-    },
-    {
-      "uid": "cve:GHSA-wwpr-jff3-395c",
-      "source": "cve",
-      "title": "CVE-2026-61847: Crass: A large number of adjacent CSS comments can trigger a SystemStackError",
-      "url": "https://github.com/advisories/GHSA-wwpr-jff3-395c",
-      "ts": 1793291723.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "crass",
-      "summary": "Severity: medium. ### Impact\n\nWhen the `:preserve_comments` option is not enabled (which is the default behavior), Crass discards CSS comments by recursively consuming the next token. An attacker who provides a stylesheet containing a very large number of adjacent comments can cause excessive recursion and trigger a",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
         "dev",
         "crypto",
         "security"
       ],
-      "date": "2026-10-29"
+      "date": "2026-10-30"
     },
     {
-      "uid": "cve:GHSA-6jxj-px6v-747w",
+      "uid": "cve:GHSA-f3fj-9625-rv3m",
       "source": "cve",
-      "title": "CVE-2026-61846: Crass: Deeply nested CSS blocks and functions can trigger a SystemStackError or excessive memory usage",
-      "url": "https://github.com/advisories/GHSA-6jxj-px6v-747w",
-      "ts": 1793291716.0,
+      "title": "GHSA-f3fj-9625-rv3m: charmbracelet/soft-serve: Race in `SetPrivate` leaves a private repository readable by unauthenticated users",
+      "url": "https://github.com/advisories/GHSA-f3fj-9625-rv3m",
+      "ts": 1793372037.0,
       "points": 1800,
       "comments": 0,
-      "author": "crass",
-      "summary": "Severity: medium. ### Impact\n\nCrass recursively parses CSS simple blocks and functions without a depth guard. An attacker-controlled value containing many deeply nested blocks can recurse until Ruby raises `SystemStackError: stack level too deep`, or can cause excessive memory usage.\n\n### Patches\n\nThis is fixed in Cr",
+      "author": "github.com/charmbracelet/soft-serve",
+      "summary": "Severity: medium. ## Summary\n\nSoft Serve cached repository records in memory with no expiry, and trusted the cached record for every access check. `SetPrivate` cleared the cached record before it saved the new visibility, and not afterwards.\n\nA request that arrived between the two read the old, public record from the",
       "recipe": "gh_advisories",
       "buzz": 1880,
       "topics": [
-        "ai",
-        "security"
+        "dev"
       ],
-      "date": "2026-10-29"
+      "date": "2026-10-30"
     },
     {
-      "uid": "cve:GHSA-68wq-phq7-p2vg",
+      "uid": "cve:GHSA-fgxm-5hvv-x4vh",
       "source": "cve",
-      "title": "CVE-2026-55186: MultiFactor Authentication for SilverStripe can bypass MFA during password reset flow",
-      "url": "https://github.com/advisories/GHSA-68wq-phq7-p2vg",
-      "ts": 1793291559.0,
+      "title": "GHSA-fgxm-5hvv-x4vh: charmbracelet/soft-serve HTTP responses disclose the existence and names of private repositories",
+      "url": "https://github.com/advisories/GHSA-fgxm-5hvv-x4vh",
+      "ts": 1793371355.0,
       "points": 1800,
       "comments": 0,
-      "author": "silverstripe/mfa",
-      "summary": "Severity: medium. ### Impact\nIn CMS 5, the password reset flow let a user with multi-factor authentication enabled change their password and get a logged-in session before completing multi-factor authentication. Exploiting this requires access to the user's email account. CMS 6 is not affected.",
+      "author": "github.com/charmbracelet/soft-serve",
+      "summary": "Severity: medium. ## Summary\n\nSoft Serve answers Go's `?go-get=1` requests by walking up the requested path until it finds a repository, then rendering that repository's name and clone URL into a `go-import` meta tag. The walk checked that each candidate repository existed, but never that the caller could read it.\n\nA",
       "recipe": "gh_advisories",
       "buzz": 1880,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-10-29"
+      "topics": [],
+      "date": "2026-10-30"
     },
     {
       "uid": "hn:48166459",
@@ -1049,59 +954,170 @@
       "date": "2016-12-15"
     },
     {
-      "uid": "cve:GHSA-r4j5-9xpp-3985",
+      "uid": "cve:GHSA-8hxf-qr8p-62x4",
       "source": "cve",
-      "title": "CVE-2026-115927: Tornado: Event loop blocking and excess memory use from chunked bodies with many small chunks",
-      "url": "https://github.com/advisories/GHSA-r4j5-9xpp-3985",
-      "ts": 1793227430.0,
+      "title": "CVE-2026-115906: zip: AES Entry HMAC Authentication Bypass on Premature EOF",
+      "url": "https://github.com/advisories/GHSA-8hxf-qr8p-62x4",
+      "ts": 1793292007.0,
       "points": 1800,
       "comments": 0,
-      "author": "tornado",
-      "summary": "Severity: medium. ### Summary\n\nWhen Tornado reads an HTTP/1.1 body that uses chunked transfer encoding, it processes all chunks that have already arrived without yielding to the event loop. A client can send a body made of millions of 1-byte chunks, which blocks the event loop (and therefore every other connection se",
+      "author": "zip",
+      "summary": "Severity: medium. ### Summary\n\nAn AES-encrypted (AE-x) entry's authentication code is verified only when the reader's byte counter lands exactly on zero. If the bounded entry reader reaches the archive's actual EOF before the attacker-controlled, header-declared `compressed_size`, the counter remains positive, the HM",
+      "recipe": "gh_advisories",
+      "buzz": 1830,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-10-29"
+    },
+    {
+      "uid": "cve:GHSA-8g5g-mxqh-grgj",
+      "source": "cve",
+      "title": "CVE-2026-118662: Vite: `server.fs.deny` bypassed with queries",
+      "url": "https://github.com/advisories/GHSA-8g5g-mxqh-grgj",
+      "ts": 1793291996.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "vite",
+      "summary": "Severity: medium. ### Summary\n\nThe contents of files that are specified by [`server.fs.deny`](https://vite.dev/config/server-options#server-fs-deny) can be returned to the browser. This is the same as https://github.com/vitejs/vite/security/advisories/GHSA-v2wj-q39q-566r.\n\n### Impact\n\nOnly apps that match the followi",
+      "recipe": "gh_advisories",
+      "buzz": 1830,
+      "topics": [
+        "dev",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-10-29"
+    },
+    {
+      "uid": "cve:GHSA-9jrw-8xf7-xqhq",
+      "source": "cve",
+      "title": "CVE-2026-9083: Keycloak vulnerable to information disclosure through arbitrary filesystem path probing",
+      "url": "https://github.com/advisories/GHSA-9jrw-8xf7-xqhq",
+      "ts": 1793291911.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "org.keycloak:keycloak-services",
+      "summary": "Severity: medium. ### Description\nA flaw was found in Keycloak. A realm administrator with the \"manage-realm\" role can exploit this vulnerability by submitting an arbitrary filesystem path as a keystore parameter when creating a key provider component. This allows the administrator to probe arbitrary filesystem paths",
       "recipe": "gh_advisories",
       "buzz": 1830,
       "topics": [
         "dev",
         "security"
       ],
-      "date": "2026-10-28"
+      "date": "2026-10-29"
     },
     {
-      "uid": "cve:GHSA-pcg2-g6cj-q92c",
+      "uid": "cve:GHSA-w3p3-7cjg-vgfw",
       "source": "cve",
-      "title": "CVE-2026-116577: Tornado: Quadratic CPU usage when parsing HTTP headers with line folding",
-      "url": "https://github.com/advisories/GHSA-pcg2-g6cj-q92c",
-      "ts": 1793227421.0,
+      "title": "CVE-2026-9799: Keycloak allows unauthorized access to resources via uma permission ticket bypass",
+      "url": "https://github.com/advisories/GHSA-w3p3-7cjg-vgfw",
+      "ts": 1793291877.0,
       "points": 1800,
       "comments": 0,
-      "author": "tornado",
-      "summary": "Severity: medium. ### Summary\n\nTornado's HTTP header parser takes quadratic time (O(n²)) when a header value is continued across many \"obsolete line folding\" (obs-fold) lines. An unauthenticated attacker can send a request whose header block is mostly short continuation lines. Parsing it uses a large amount of CPU on",
+      "author": "org.keycloak:keycloak-services",
+      "summary": "Severity: medium. ### Description\nA flaw was found in org.keycloak.authorization. An authenticated user with a granted User-Managed Access (UMA) permission ticket for one resource can exploit this by using a specific permission request prefix to bypass per-resource access control. This allows the user to gain unautho",
       "recipe": "gh_advisories",
       "buzz": 1830,
       "topics": [
-        "security",
-        "hardware"
+        "ai",
+        "security"
       ],
-      "date": "2026-10-28"
+      "date": "2026-10-29"
     },
     {
-      "uid": "cve:GHSA-pq4g-8rxf-4g29",
+      "uid": "cve:GHSA-r7rc-c989-86g6",
       "source": "cve",
-      "title": "CVE-2026-116695: Crass: Incorrect tokenization of bad URLs enables CSS sanitizer bypass",
-      "url": "https://github.com/advisories/GHSA-pq4g-8rxf-4g29",
-      "ts": 1793227373.0,
+      "title": "CVE-2026-9705: Keycloak: Attacker can re-enable and take over disabled clients via registration access token",
+      "url": "https://github.com/advisories/GHSA-r7rc-c989-86g6",
+      "ts": 1793291781.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "org.keycloak:keycloak-services",
+      "summary": "Severity: medium. ### Description\nA flaw was found in Keycloak's client registration service. A remote attacker, possessing a previously issued Registration Access Token (RAT), could exploit this vulnerability to re-enable a client that an administrator had explicitly disabled. This bypasses security controls, allowi",
+      "recipe": "gh_advisories",
+      "buzz": 1830,
+      "topics": [
+        "crypto",
+        "security"
+      ],
+      "date": "2026-10-29"
+    },
+    {
+      "uid": "cve:GHSA-8vfg-2r28-hvhj",
+      "source": "cve",
+      "title": "CVE-2026-61848: Crass: Non-ASCII characters cause superlinear CPU consumption",
+      "url": "https://github.com/advisories/GHSA-8vfg-2r28-hvhj",
+      "ts": 1793291729.0,
       "points": 1800,
       "comments": 0,
       "author": "crass",
-      "summary": "Severity: medium. ## Summary\n\nCrass's tokenizer didn't terminate a bad URL token at a `)` that followed an escaped backslash (`\\\\`). As a result, Crass consumed more input as part of the bad URL than a spec-compliant browser does. CSS sanitizers that parse untrusted CSS with Crass and re-emit it could be tricked into",
+      "summary": "Severity: medium. ### Impact\n\nWhen parsing an input containing non-ASCII characters, inefficiencies in how Crass tracks the positions of multi-byte characters result in superlinear parsing time. An attacker-controlled input consisting of many non-ASCII characters could cause excessive CPU consumption and potentially",
       "recipe": "gh_advisories",
       "buzz": 1830,
       "topics": [
+        "ai",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-10-29"
+    },
+    {
+      "uid": "cve:GHSA-wwpr-jff3-395c",
+      "source": "cve",
+      "title": "CVE-2026-61847: Crass: A large number of adjacent CSS comments can trigger a SystemStackError",
+      "url": "https://github.com/advisories/GHSA-wwpr-jff3-395c",
+      "ts": 1793291723.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "crass",
+      "summary": "Severity: medium. ### Impact\n\nWhen the `:preserve_comments` option is not enabled (which is the default behavior), Crass discards CSS comments by recursively consuming the next token. An attacker who provides a stylesheet containing a very large number of adjacent comments can cause excessive recursion and trigger a",
+      "recipe": "gh_advisories",
+      "buzz": 1830,
+      "topics": [
+        "ai",
         "dev",
         "crypto",
         "security"
       ],
-      "date": "2026-10-28"
+      "date": "2026-10-29"
+    },
+    {
+      "uid": "cve:GHSA-6jxj-px6v-747w",
+      "source": "cve",
+      "title": "CVE-2026-61846: Crass: Deeply nested CSS blocks and functions can trigger a SystemStackError or excessive memory usage",
+      "url": "https://github.com/advisories/GHSA-6jxj-px6v-747w",
+      "ts": 1793291716.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "crass",
+      "summary": "Severity: medium. ### Impact\n\nCrass recursively parses CSS simple blocks and functions without a depth guard. An attacker-controlled value containing many deeply nested blocks can recurse until Ruby raises `SystemStackError: stack level too deep`, or can cause excessive memory usage.\n\n### Patches\n\nThis is fixed in Cr",
+      "recipe": "gh_advisories",
+      "buzz": 1830,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-10-29"
+    },
+    {
+      "uid": "cve:GHSA-68wq-phq7-p2vg",
+      "source": "cve",
+      "title": "CVE-2026-55186: MultiFactor Authentication for SilverStripe can bypass MFA during password reset flow",
+      "url": "https://github.com/advisories/GHSA-68wq-phq7-p2vg",
+      "ts": 1793291559.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "silverstripe/mfa",
+      "summary": "Severity: medium. ### Impact\nIn CMS 5, the password reset flow let a user with multi-factor authentication enabled change their password and get a logged-in session before completing multi-factor authentication. Exploiting this requires access to the user's email account. CMS 6 is not affected.",
+      "recipe": "gh_advisories",
+      "buzz": 1830,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-10-29"
     },
     {
       "uid": "hn:25843874",
@@ -1316,12 +1332,12 @@
       "title": "Alejandros17487/ai-jailbreaks",
       "url": "https://github.com/Alejandros17487/ai-jailbreaks",
       "ts": 1792593846.0,
-      "points": 524,
+      "points": 527,
       "comments": 108,
       "author": "Alejandros17487",
       "summary": "AI jailbreaks: 35 paste-ready AI jailbreak prompts for 25+ frontier and open-weight models - system prompts, AGENTS.md specs, and Ollama Modelfiles. Built for AI security research and red-team testing.",
       "recipe": "github_sec",
-      "buzz": 848,
+      "buzz": 851,
       "topics": [
         "ai",
         "security"
@@ -1339,7 +1355,7 @@
       "author": "cedar-policy",
       "summary": "Severity: low. Cedar users must be using all of the following features to be affected by this advisory: JSON format policies, policy templates, and the `is in` scope condition. This advisory only affects JSON-formatted Cedar policy templates containing `is in` scope conditions that are **malformed** according to t",
       "recipe": "gh_advisories",
-      "buzz": 780,
+      "buzz": 730,
       "topics": [
         "ai"
       ],
@@ -1356,7 +1372,7 @@
       "author": "parse-server",
       "summary": "Severity: low. ### Impact\n\nParse Server's file upload validation uses the `fileUpload.fileExtensions` option (enabled by default with a blocklist) to reject files that browsers may render as active content, mitigating stored cross-site scripting (XSS). When an uploaded file's extension is not recognized by the `mi",
       "recipe": "gh_advisories",
-      "buzz": 780,
+      "buzz": 730,
       "topics": [
         "security",
         "hardware"
@@ -1374,29 +1390,12 @@
       "author": "pocketmine/pocketmine-mp",
       "summary": "Severity: low. ### Summary\nDuring the resource pack stage of logging in, after the server sends `ResourcePackStackPacket`, a malicious client can send a batch of multiple `ResourcePackClientResponsePacket` packets with status `ResourcePackClientResponsePacket::STATUS_COMPLETED` causing the server to repeatedly exe",
       "recipe": "gh_advisories",
-      "buzz": 780,
+      "buzz": 730,
       "topics": [
         "security",
         "hardware"
       ],
       "date": "2026-10-29"
-    },
-    {
-      "uid": "cve:GHSA-pw9p-v7r6-gx4p",
-      "source": "cve",
-      "title": "CVE-2026-116578: Tornado: Open redirect in RedirectHandler via protocol-relative URLs",
-      "url": "https://github.com/advisories/GHSA-pw9p-v7r6-gx4p",
-      "ts": 1793227425.0,
-      "points": 700,
-      "comments": 0,
-      "author": "tornado",
-      "summary": "Severity: low. ### Summary\n\n`tornado.web.RedirectHandler` builds its target URL by substituting parts of the request path into a template. Depending on where those substitutions appear in the template, an attacker can craft a request that redirects to a host of their choosing. This creates an open redirect on the",
-      "recipe": "gh_advisories",
-      "buzz": 730,
-      "topics": [
-        "security"
-      ],
-      "date": "2026-10-28"
     },
     {
       "uid": "gh:opentrap/opentrap",
@@ -1416,35 +1415,17 @@
       "date": "2026-10-19"
     },
     {
-      "uid": "gh:aarsaputra/php2shell",
-      "source": "github",
-      "title": "aarsaputra/php2shell",
-      "url": "https://github.com/aarsaputra/php2shell",
-      "ts": 1792763392.0,
-      "points": 116,
-      "comments": 57,
-      "author": "aarsaputra",
-      "summary": "Unauthenticated RCE toolkit for PHP 5.4–8.4.26 (CVE-[phone]/109618) — pure-HTTP chain, JA3 impersonation, prpenetration-testingoof-of-access design",
-      "recipe": "github_sec",
-      "buzz": 297,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-10-23"
-    },
-    {
       "uid": "gh:jmanico/grim-prompter",
       "source": "github",
       "title": "jmanico/grim-prompter",
       "url": "https://github.com/jmanico/grim-prompter",
       "ts": 1793189366.0,
-      "points": 215,
-      "comments": 17,
+      "points": 228,
+      "comments": 18,
       "author": "jmanico",
       "summary": "Threat modeling for AI coding agents: point Claude Code, Codex or any agent at your repo and get an evidence-traced threat model. 36 architectures, 29 methods, MIT.",
       "recipe": "github_sec",
-      "buzz": 296,
+      "buzz": 312,
       "topics": [
         "ai",
         "dev"
@@ -1452,17 +1433,52 @@
       "date": "2026-10-28"
     },
     {
+      "uid": "gh:aarsaputra/php2shell",
+      "source": "github",
+      "title": "aarsaputra/php2shell",
+      "url": "https://github.com/aarsaputra/php2shell",
+      "ts": 1792763392.0,
+      "points": 118,
+      "comments": 58,
+      "author": "aarsaputra",
+      "summary": "Unauthenticated RCE toolkit for PHP 5.4–8.4.26 (CVE-[phone]/109618) — pure-HTTP chain, JA3 impersonation, prpenetration-testingoof-of-access design",
+      "recipe": "github_sec",
+      "buzz": 292,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-10-23"
+    },
+    {
+      "uid": "gh:lordbasex/LordOS",
+      "source": "github",
+      "title": "lordbasex/LordOS",
+      "url": "https://github.com/lordbasex/LordOS",
+      "ts": 1792294263.0,
+      "points": 196,
+      "comments": 17,
+      "author": "lordbasex",
+      "summary": "LordOS — a free, fast and secure GNU/Linux distribution based on Debian, with its own desktop environment: display server and Wayland compositor in C, a React UI engine on QuickJS, and private native apps.",
+      "recipe": "github_sec",
+      "buzz": 247,
+      "topics": [
+        "hardware"
+      ],
+      "date": "2026-10-18"
+    },
+    {
       "uid": "gh:HOSTED-POWER/php_uploadprogress_guard",
       "source": "github",
       "title": "HOSTED-POWER/php_uploadprogress_guard",
       "url": "https://github.com/HOSTED-POWER/php_uploadprogress_guard",
       "ts": 1792573212.0,
-      "points": 172,
+      "points": 173,
       "comments": 12,
       "author": "HOSTED-POWER",
       "summary": "Protects an unpatched PHP against php2shell (CVE-[phone] / CVE-[phone]): a small extension that mirrors the official fix component by component and steps aside once the engine carries it. PHP 5.6-8.5; Sury, cPanel EA4, DirectAdmin, Docker, Windows.",
       "recipe": "github_sec",
-      "buzz": 208,
+      "buzz": 209,
       "topics": [
         "ai",
         "dev",
@@ -1506,21 +1522,19 @@
       "date": "2026-10-21"
     },
     {
-      "uid": "gh:lordbasex/LordOS",
+      "uid": "gh:UltraSultanHonor/recon-v1.7.0",
       "source": "github",
-      "title": "lordbasex/LordOS",
-      "url": "https://github.com/lordbasex/LordOS",
-      "ts": 1792294263.0,
-      "points": 144,
-      "comments": 12,
-      "author": "lordbasex",
-      "summary": "LordOS — a free, fast and secure GNU/Linux distribution based on Debian, with its own desktop environment: display server and Wayland compositor in C, a React UI engine on QuickJS, and private native apps.",
+      "title": "UltraSultanHonor/recon-v1.7.0",
+      "url": "https://github.com/UltraSultanHonor/recon-v1.7.0",
+      "ts": 1793165486.0,
+      "points": 102,
+      "comments": 17,
+      "author": "UltraSultanHonor",
+      "summary": "Published: 2026-10-28",
       "recipe": "github_sec",
-      "buzz": 180,
-      "topics": [
-        "hardware"
-      ],
-      "date": "2026-10-18"
+      "buzz": 183,
+      "topics": [],
+      "date": "2026-10-28"
     },
     {
       "uid": "gh:dbx0/executioner",
@@ -1528,31 +1542,16 @@
       "title": "dbx0/executioner",
       "url": "https://github.com/dbx0/executioner",
       "ts": 1792380789.0,
-      "points": 102,
-      "comments": 25,
+      "points": 104,
+      "comments": 26,
       "author": "dbx0",
       "summary": "The agentic pentesting environment that lives on your machine. AI agent teams, visual workflows and your own tools, 100% local.",
       "recipe": "github_sec",
-      "buzz": 177,
+      "buzz": 182,
       "topics": [
         "ai"
       ],
       "date": "2026-10-19"
-    },
-    {
-      "uid": "gh:UltraSultanHonor/recon-v1.7.0",
-      "source": "github",
-      "title": "UltraSultanHonor/recon-v1.7.0",
-      "url": "https://github.com/UltraSultanHonor/recon-v1.7.0",
-      "ts": 1793165486.0,
-      "points": 102,
-      "comments": 15,
-      "author": "UltraSultanHonor",
-      "summary": "Published: 2026-10-28",
-      "recipe": "github_sec",
-      "buzz": 177,
-      "topics": [],
-      "date": "2026-10-28"
     },
     {
       "uid": "gh:hassan-algo/open-sesame",
@@ -1660,6 +1659,59 @@
         "ai"
       ],
       "date": "2026-10-23"
+    },
+    {
+      "uid": "rss:69ace0ef9fe2a2",
+      "source": "rss",
+      "title": "Bloatware in Aftermarket Auto Parts",
+      "url": "https://www.schneier.com/blog/archives/2026/10/bloatware-in-aftermarket-auto-parts.html",
+      "ts": 1793373602.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Bruce Schneier",
+      "summary": "<p>This <a href=\"https://www.thedrive.com/news/cheap-aftermarket-head-units-are-loaded-with-spyware-by-the-way\">story</a> is interesting:</p> <blockquote><p>One Civic owner purchased a cheap aftermarket head unit off Amazon, and decided to have Claude work its magic on it, like it would a smart TV. What was reportedly discovered isn’t surprising, but is worth knowing about.</p> <p>Among the pre-in",
+      "recipe": "schneier",
+      "buzz": 80,
+      "topics": [
+        "dev",
+        "biz"
+      ],
+      "date": "2026-10-30"
+    },
+    {
+      "uid": "rss:8fe595add26b43",
+      "source": "rss",
+      "title": "TeamViewer Flaw Lets Remote Computers Attack Users Who Connect to Control Them",
+      "url": "https://thehackernews.com/2026/10/teamviewer-flaw-lets-remote-computers.html",
+      "ts": 1793373448.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "TeamViewer has fixed a flaw that lets the machine being controlled in a remote session attack the computer that connected to control it. In a TeamViewer session, the computer that connects and takes control is the viewer, and the machine it controls is the host. A malicious or compromised host can exploit the flaw to crash the viewer's TeamViewer and, depending on the platform, may also run",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-10-30"
+    },
+    {
+      "uid": "rss:1acaac9f29b585",
+      "source": "rss",
+      "title": "WordPress RCE Flaw Draws Nearly 63,000 Attack Attempts in Just 24 Hours",
+      "url": "https://thehackernews.com/2026/10/wordpress-rce-flaw-draws-nearly-63000.html",
+      "ts": 1793369294.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Threat actors have been observed attempting to exploit a high-severity security flaw in WordPress Core shortly after patches were released. The vulnerability, which does not have a CVE identifier, relates to a case of remote code execution impacting WordPress Core versions 4.7 through 7.1.3. It carries a CVSS score of 8.1 on the CVSS scoring system. Patches for the flaw were released on October",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-10-30"
     },
     {
       "uid": "rss:3307520d3b6ecd",
@@ -1814,62 +1866,22 @@
       "date": "2026-10-29"
     },
     {
-      "uid": "rss:879452bb433294",
-      "source": "rss",
-      "title": "Linux Kernel TCP Flaw With 9.8 CVSS Score Affects Ubuntu, Red Hat and Other Distributions",
-      "url": "https://thehackernews.com/2026/10/linux-kernel-tcp-flaw-with-98-cvss.html",
-      "ts": 1793289425.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "A flaw in the Linux kernel's TCP code, tracked as&nbsp;CVE-[phone], affects Ubuntu, Red Hat Enterprise Linux (RHEL), and other Linux distributions. The kernel's own CVE team rates it 9.8 out of 10 on the CVSS scale. Anthropic said&nbsp;on October 27 that its AI model wrote an exploit that uses the flaw to let a remote attacker with no credentials run commands as root on Linux servers with a",
-      "recipe": "hackersnews",
-      "buzz": 80,
+      "uid": "gh:huggingface/safeagents",
+      "source": "github",
+      "title": "huggingface/safeagents",
+      "url": "https://github.com/huggingface/safeagents",
+      "ts": 1793195562.0,
+      "points": 43,
+      "comments": 1,
+      "author": "huggingface",
+      "summary": "Safely run your agents using any coding harness",
+      "recipe": "github_sec",
+      "buzz": 76,
       "topics": [
         "ai",
-        "security",
-        "hardware"
+        "dev"
       ],
-      "date": "2026-10-29"
-    },
-    {
-      "uid": "rss:e67783a0fd1ca0",
-      "source": "rss",
-      "title": "Fake ChatGPT and Claude Apps Abuse Signed Executables to Deploy Crypto Miners",
-      "url": "https://thehackernews.com/2026/10/fake-chatgpt-and-claude-apps-abuse.html",
-      "ts": 1793287229.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Threat actors are delivering malicious loaders and cryptocurrency miners under the guise of artificial intelligence (AI) desktop applications for Anthropic Claude and OpenAI ChatGPT as part of a campaign dubbed Yoba. The activity involves creating fake GitHub projects that claim to be desktop applications like GPT-5.6 Sol, GPT-6 Astra, and Claude Opus, only to deliver a malware family called",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "dev",
-        "crypto",
-        "security"
-      ],
-      "date": "2026-10-29"
-    },
-    {
-      "uid": "rss:9af323792a103e",
-      "source": "rss",
-      "title": "Google's Gemini 4 Carbon Leads Benchmarks for Finding, Exploiting, and Patching Vulnerabilities",
-      "url": "https://thehackernews.com/2026/10/googles-gemini-4-carbon-leads.html",
-      "ts": 1793281360.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Google on Wednesday took the wraps off Gemini 4 Carbon, its latest frontier model with state-of-the-art cybersecurity and long-horizon capabilities. \"It shows significant gains across coding and agentic tasks as well as across key capabilities critical for cybersecurity defense, landing a firm lead in SEC-bench Pro (88.2%) for finding vulnerabilities, ExploitGym (54.8%) for exploitation, and",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-10-29"
+      "date": "2026-10-28"
     },
     {
       "uid": "gh:david-alvarez-rosa/php-rce",
@@ -1887,24 +1899,6 @@
         "security"
       ],
       "date": "2026-10-21"
-    },
-    {
-      "uid": "gh:huggingface/safeagents",
-      "source": "github",
-      "title": "huggingface/safeagents",
-      "url": "https://github.com/huggingface/safeagents",
-      "ts": 1793195562.0,
-      "points": 35,
-      "comments": 1,
-      "author": "huggingface",
-      "summary": "Safely run your agents using any coding harness",
-      "recipe": "github_sec",
-      "buzz": 68,
-      "topics": [
-        "ai",
-        "dev"
-      ],
-      "date": "2026-10-28"
     },
     {
       "uid": "gh:agentshield-dev/agentshield",
@@ -1965,12 +1959,12 @@
       "title": "sazabi/cve.now",
       "url": "https://github.com/sazabi/cve.now",
       "ts": 1792681793.0,
-      "points": 38,
+      "points": 39,
       "comments": 2,
       "author": "sazabi",
       "summary": "A free, public vulnerability feed: CVE, GHSA, OSV, CISA KEV and EPSS merged into one entry per vulnerability. RSS, JSON API and MCP. Docs and issues only.",
       "recipe": "github_sec",
-      "buzz": 44,
+      "buzz": 45,
       "topics": [
         "dev",
         "security"
@@ -2031,6 +2025,64 @@
         "biz"
       ],
       "date": "2026-10-28"
+    },
+    {
+      "uid": "rss:879452bb433294",
+      "source": "rss",
+      "title": "Linux Kernel TCP Flaw With 9.8 CVSS Score Affects Ubuntu, Red Hat and Other Distributions",
+      "url": "https://thehackernews.com/2026/10/linux-kernel-tcp-flaw-with-98-cvss.html",
+      "ts": 1793289425.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "A flaw in the Linux kernel's TCP code, tracked as&nbsp;CVE-[phone], affects Ubuntu, Red Hat Enterprise Linux (RHEL), and other Linux distributions. The kernel's own CVE team rates it 9.8 out of 10 on the CVSS scale. Anthropic said&nbsp;on October 27 that its AI model wrote an exploit that uses the flaw to let a remote attacker with no credentials run commands as root on Linux servers with a",
+      "recipe": "hackersnews",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-10-29"
+    },
+    {
+      "uid": "rss:e67783a0fd1ca0",
+      "source": "rss",
+      "title": "Fake ChatGPT and Claude Apps Abuse Signed Executables to Deploy Crypto Miners",
+      "url": "https://thehackernews.com/2026/10/fake-chatgpt-and-claude-apps-abuse.html",
+      "ts": 1793287229.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Threat actors are delivering malicious loaders and cryptocurrency miners under the guise of artificial intelligence (AI) desktop applications for Anthropic Claude and OpenAI ChatGPT as part of a campaign dubbed Yoba. The activity involves creating fake GitHub projects that claim to be desktop applications like GPT-5.6 Sol, GPT-6 Astra, and Claude Opus, only to deliver a malware family called",
+      "recipe": "hackersnews",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "dev",
+        "crypto",
+        "security"
+      ],
+      "date": "2026-10-29"
+    },
+    {
+      "uid": "rss:9af323792a103e",
+      "source": "rss",
+      "title": "Google's Gemini 4 Carbon Leads Benchmarks for Finding, Exploiting, and Patching Vulnerabilities",
+      "url": "https://thehackernews.com/2026/10/googles-gemini-4-carbon-leads.html",
+      "ts": 1793281360.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Google on Wednesday took the wraps off Gemini 4 Carbon, its latest frontier model with state-of-the-art cybersecurity and long-horizon capabilities. \"It shows significant gains across coding and agentic tasks as well as across key capabilities critical for cybersecurity defense, landing a firm lead in SEC-bench Pro (88.2%) for finding vulnerabilities, ExploitGym (54.8%) for exploitation, and",
+      "recipe": "hackersnews",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-10-29"
     },
     {
       "uid": "rss:9ced0e2ae5b840",
@@ -2347,42 +2399,6 @@
         "ai",
         "crypto",
         "security"
-      ],
-      "date": "2026-10-28"
-    },
-    {
-      "uid": "rss:c1d442978d2fdd",
-      "source": "rss",
-      "title": "Adobe Fixes 8 Critical Campaign Classic Flaws Allowing Code Execution and Security Bypass",
-      "url": "https://thehackernews.com/2026/10/adobe-fixes-8-critical-campaign-classic.html",
-      "ts": 1793186151.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Adobe has released patches to address multiple critical security flaws in Campaign Classic that, if successfully exploited, could result in arbitrary code execution, security feature bypass, and privilege escalation. The list of eight vulnerabilities is as follows - CVE-[phone] (CVSS score: 9.9) - A code injection vulnerability that could lead to arbitrary code execution.",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-10-28"
-    },
-    {
-      "uid": "rss:2cea669c4e3893",
-      "source": "rss",
-      "title": "American Organizations Under Attack: Skyw4lker Device Code Phishing Campaign Exposed",
-      "url": "https://thehackernews.com/2026/10/american-organizations-under-attack.html",
-      "ts": 1793183400.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Modern phishing campaigns can compromise American businesses without relying on traditional credential theft. Attackers can abuse legitimate cloud services, authentication mechanisms, and trusted business workflows to gain access to corporate accounts while leaving fewer obvious signs behind. ANY.RUN's analysis of Skyw4lker, a device code phishing campaign primarily targeting U.S. organizations",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "dev"
       ],
       "date": "2026-10-28"
     },
@@ -2730,23 +2746,6 @@
         "ai"
       ],
       "date": "2026-10-19"
-    },
-    {
-      "uid": "rss:d474e486d24146",
-      "source": "rss",
-      "title": "Friday Squid Blogging: Squid Before the Chicxulub Meteor Impact",
-      "url": "https://www.schneier.com/blog/archives/2026/10/friday-squid-blogging-squid-before-the-chicxulub-meteor-impact.html",
-      "ts": 1792184807.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Bruce Schneier",
-      "summary": "<p><a href=\"https://eos.org/articles/squid-were-on-the-move-before-the-chicxulub-impact\">New</a> <a href=\"https://pubs.geoscienceworld.org/gsa/geology/article/54/9/938/732212/Squids-radiated-globally-prior-to-the-Cretaceous\">research</a> shows that squid lived all around the globe even before the Cretaceous-Paleogene mass extinction event.</p> <p>As usual, you can also use this squid post to talk",
-      "recipe": "schneier",
-      "buzz": 0,
-      "topics": [
-        "science"
-      ],
-      "date": "2026-10-16"
     }
   ]
 }

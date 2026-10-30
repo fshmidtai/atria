@@ -5,7 +5,78 @@
     <link>https://sentinel-post.pages.dev</link>
     <description>Автономная радиостанция кибербезопасности: живые CVE, угрозы и защита — без сенсаций</description>
     <language>ru</language>
-    <lastBuildDate>Fri, 30 Oct 2026 13:13:15 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 30 Oct 2026 17:00:28 GMT</lastBuildDate>
+    <item>
+      <title>Bloatware in Aftermarket Auto Parts</title>
+      <link>https://sentinel-post.pages.dev/item/bloatware-in-aftermarket-auto-parts.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/bloatware-in-aftermarket-auto-parts.html</guid>
+      <pubDate>Fri, 30 Oct 2026 15:20:02 GMT</pubDate>
+      <description>&lt;p&gt;This &lt;a href="https://www.thedrive.com/news/cheap-aftermarket-head-units-are-loaded-with-spyware-by-the-way"&gt;story&lt;/a&gt; is interesting:&lt;/p&gt; &lt;blockquote&gt;&lt;p&gt;One Civic owner purchased a cheap aftermarket head unit off Amazon, and decided to have Claude work its magic on it, like it would a smart TV. </description>
+    </item>
+    <item>
+      <title>TeamViewer Flaw Lets Remote Computers Attack Users Who Connect to Control Them</title>
+      <link>https://sentinel-post.pages.dev/item/teamviewer-flaw-lets-remote-computers-attack-users-who-connect-t.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/teamviewer-flaw-lets-remote-computers-attack-users-who-connect-t.html</guid>
+      <pubDate>Fri, 30 Oct 2026 15:17:28 GMT</pubDate>
+      <description>TeamViewer has fixed a flaw that lets the machine being controlled in a remote session attack the computer that connected to control it. In a TeamViewer session, the computer that connects and takes control is the viewer, and the machine it controls is the host. A malicious or compromised host can e</description>
+    </item>
+    <item>
+      <title>CVE-2026-119284: joserfc: Compact JWS size guard allocates attacker-controlled segments before rejection</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-119284-joserfc-compact-jws-size-guard-allocates-attacke.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-119284-joserfc-compact-jws-size-guard-allocates-attacke.html</guid>
+      <pubDate>Fri, 30 Oct 2026 14:54:25 GMT</pubDate>
+      <description>Severity: medium. ## Summary
+
+joserfc 1.7.4 defines compact-JWS header, payload, and signature limits, but
+calls `value.split(b".")` before validating them. Python `bytes.split()` copies
+the attacker-controlled segments, so the current guard allocates roughly one
+complete payload before rejecting it</description>
+    </item>
+    <item>
+      <title>CVE-2026-119283: joserfc: Unbounded JWE General JSON `recipients` Array Leads to CPU Exhaustion (DoS) via Repeated RSA Private-Key Decryption</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-119283-joserfc-unbounded-jwe-general-json-recipients-ar.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-119283-joserfc-unbounded-jwe-general-json-recipients-ar.html</guid>
+      <pubDate>Fri, 30 Oct 2026 14:54:20 GMT</pubDate>
+      <description>Severity: high. ### Summary
+
+`joserfc.jwe.decrypt_json()`, the library's public parser for JWE General JSON Serialization, accepts an attacker-controlled `recipients` array of unbounded length and performs one full private-key decryption operation (`decrypt_cek`) for **every** recipient present in t</description>
+    </item>
+    <item>
+      <title>GHSA-f3fj-9625-rv3m: charmbracelet/soft-serve: Race in `SetPrivate` leaves a private repository readable by unauthenticated users</title>
+      <link>https://sentinel-post.pages.dev/item/ghsa-f3fj-9625-rv3m-charmbracelet-soft-serve-race-in-setprivate-.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/ghsa-f3fj-9625-rv3m-charmbracelet-soft-serve-race-in-setprivate-.html</guid>
+      <pubDate>Fri, 30 Oct 2026 14:53:57 GMT</pubDate>
+      <description>Severity: medium. ## Summary
+
+Soft Serve cached repository records in memory with no expiry, and trusted the cached record for every access check. `SetPrivate` cleared the cached record before it saved the new visibility, and not afterwards.
+
+A request that arrived between the two read the old, publ</description>
+    </item>
+    <item>
+      <title>GHSA-fgxm-5hvv-x4vh: charmbracelet/soft-serve HTTP responses disclose the existence and names of private repositories</title>
+      <link>https://sentinel-post.pages.dev/item/ghsa-fgxm-5hvv-x4vh-charmbracelet-soft-serve-http-responses-disc.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/ghsa-fgxm-5hvv-x4vh-charmbracelet-soft-serve-http-responses-disc.html</guid>
+      <pubDate>Fri, 30 Oct 2026 14:42:35 GMT</pubDate>
+      <description>Severity: medium. ## Summary
+
+Soft Serve answers Go's `?go-get=1` requests by walking up the requested path until it finds a repository, then rendering that repository's name and clone URL into a `go-import` meta tag. The walk checked that each candidate repository existed, but never that the caller</description>
+    </item>
+    <item>
+      <title>CVE-2026-119282: @nx/maven and @nx/gradle have OS command injection via nx.json plugin options</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-119282-nx-maven-and-nx-gradle-have-os-command-injection.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-119282-nx-maven-and-nx-gradle-have-os-command-injection.html</guid>
+      <pubDate>Fri, 30 Oct 2026 14:42:14 GMT</pubDate>
+      <description>Severity: high. ## Summary
+
+`@nx/maven` and `@nx/gradle` spawn their project-graph analyzers through a shell and interpolate plugin options read from `nx.json` straight into the command line. Because a shell parses the whole line, an option value containing shell syntax is executed as a command by a</description>
+    </item>
+    <item>
+      <title>WordPress RCE Flaw Draws Nearly 63,000 Attack Attempts in Just 24 Hours</title>
+      <link>https://sentinel-post.pages.dev/item/wordpress-rce-flaw-draws-nearly-63-000-attack-attempts-in-just-2.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/wordpress-rce-flaw-draws-nearly-63-000-attack-attempts-in-just-2.html</guid>
+      <pubDate>Fri, 30 Oct 2026 14:08:14 GMT</pubDate>
+      <description>Threat actors have been observed attempting to exploit a high-severity security flaw in WordPress Core shortly after patches were released. The vulnerability, which does not have a CVE identifier, relates to a case of remote code execution impacting WordPress Core versions 4.7 through 7.1.3. It carr</description>
+    </item>
     <item>
       <title>Trezor Warns of Suspected Hardware Implant in One of Its Wallets Sold by CryptoBilis</title>
       <link>https://sentinel-post.pages.dev/item/trezor-warns-of-suspected-hardware-implant-in-one-of-its-wallets.html</link>
@@ -194,81 +265,6 @@ A flaw was found in Keycloak Policy Enforcer. This vulnerability allows any auth
       <pubDate>Thu, 29 Oct 2026 16:36:21 GMT</pubDate>
       <description>Severity: medium. ### Description
 A flaw was found in Keycloak's client registration service. A remote attacker, possessing a previously issued Registration Access Token (RAT), could exploit this vulnerability to re-enable a client that an administrator had explicitly disabled. This bypasses securit</description>
-    </item>
-    <item>
-      <title>GHSA-w9x9-j56r-h98r: @eeacms/volto-chatbot has Unauthenticated Danswer API Confused Deputy Proxy</title>
-      <link>https://sentinel-post.pages.dev/item/ghsa-w9x9-j56r-h98r-eeacms-volto-chatbot-has-unauthenticated-dan.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/ghsa-w9x9-j56r-h98r-eeacms-volto-chatbot-has-unauthenticated-dan.html</guid>
-      <pubDate>Thu, 29 Oct 2026 16:35:48 GMT</pubDate>
-      <description>Severity: high. ## Unauthenticated Danswer API Confused Deputy Proxy in @eeacms/volto-chatbot
-
-### Summary
-
-`@eeacms/volto-chatbot` exposes an Express middleware route (`**/_v1_da/**`) that accepts unauthenticated HTTP requests from any network client and proxies them to the configured upstream Dans</description>
-    </item>
-    <item>
-      <title>CVE-2026-61848: Crass: Non-ASCII characters cause superlinear CPU consumption</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-61848-crass-non-ascii-characters-cause-superlinear-cpu-.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-61848-crass-non-ascii-characters-cause-superlinear-cpu-.html</guid>
-      <pubDate>Thu, 29 Oct 2026 16:35:29 GMT</pubDate>
-      <description>Severity: medium. ### Impact
-
-When parsing an input containing non-ASCII characters, inefficiencies in how Crass tracks the positions of multi-byte characters result in superlinear parsing time. An attacker-controlled input consisting of many non-ASCII characters could cause excessive CPU consumptio</description>
-    </item>
-    <item>
-      <title>CVE-2026-61847: Crass: A large number of adjacent CSS comments can trigger a SystemStackError</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-61847-crass-a-large-number-of-adjacent-css-comments-can.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-61847-crass-a-large-number-of-adjacent-css-comments-can.html</guid>
-      <pubDate>Thu, 29 Oct 2026 16:35:23 GMT</pubDate>
-      <description>Severity: medium. ### Impact
-
-When the `:preserve_comments` option is not enabled (which is the default behavior), Crass discards CSS comments by recursively consuming the next token. An attacker who provides a stylesheet containing a very large number of adjacent comments can cause excessive recurs</description>
-    </item>
-    <item>
-      <title>CVE-2026-61846: Crass: Deeply nested CSS blocks and functions can trigger a SystemStackError or excessive memory usage</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-61846-crass-deeply-nested-css-blocks-and-functions-can-.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-61846-crass-deeply-nested-css-blocks-and-functions-can-.html</guid>
-      <pubDate>Thu, 29 Oct 2026 16:35:16 GMT</pubDate>
-      <description>Severity: medium. ### Impact
-
-Crass recursively parses CSS simple blocks and functions without a depth guard. An attacker-controlled value containing many deeply nested blocks can recurse until Ruby raises `SystemStackError: stack level too deep`, or can cause excessive memory usage.
-
-### Patches
-
-T</description>
-    </item>
-    <item>
-      <title>GHSA-c33x-vcv4-vg3g: Cedar: JSON template is in scope missing slot-id validation allows link panic and decision divergence</title>
-      <link>https://sentinel-post.pages.dev/item/ghsa-c33x-vcv4-vg3g-cedar-json-template-is-in-scope-missing-slot.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/ghsa-c33x-vcv4-vg3g-cedar-json-template-is-in-scope-missing-slot.html</guid>
-      <pubDate>Thu, 29 Oct 2026 16:35:04 GMT</pubDate>
-      <description>Severity: low. Cedar users must be using all of the following features to be affected by this advisory: JSON format policies, policy templates, and the `is in` scope condition. This advisory only affects JSON-formatted Cedar policy templates containing `is in` scope conditions that are **malformed**</description>
-    </item>
-    <item>
-      <title>CVE-2026-62264: @sylphx/pdf-reader-mcp: HTTP transport accepts unauthenticated requests despite a configured MCP_API_KEY</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-62264-sylphx-pdf-reader-mcp-http-transport-accepts-unau.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-62264-sylphx-pdf-reader-mcp-http-transport-accepts-unau.html</guid>
-      <pubDate>Thu, 29 Oct 2026 16:34:35 GMT</pubDate>
-      <description>Severity: high. ### Impact
-
-When `@sylphx/pdf-reader-mcp` is run as an HTTP server (`MCP_TRANSPORT=http`), it reads the `MCP_API_KEY` environment variable and logs `API key authentication enabled (X-API-Key header)` at startup, but it never validated the `X-API-Key` header on incoming requests. The </description>
-    </item>
-    <item>
-      <title>CVE-2026-61438: PraisonAI vulnerable to Remote Code Execution via Broken AST Sandbox</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-61438-praisonai-vulnerable-to-remote-code-execution-via.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-61438-praisonai-vulnerable-to-remote-code-execution-via.html</guid>
-      <pubDate>Thu, 29 Oct 2026 16:34:26 GMT</pubDate>
-      <description>Severity: high. ### Summary
-JobWorkflowExecutor._exec_inline_python() is designed to safely execute inline Python expressions from YAML workflow script: steps using AST validation. The function claims to block dangerous operations by (a) checking all AST nodes against an allowlist, and (b) providing</description>
-    </item>
-    <item>
-      <title>CVE-2026-61448: Parse Server vulnerable to stored XSS via malformed Content-Type bypassing file upload extension blocklist</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-61448-parse-server-vulnerable-to-stored-xss-via-malform.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-61448-parse-server-vulnerable-to-stored-xss-via-malform.html</guid>
-      <pubDate>Thu, 29 Oct 2026 16:33:48 GMT</pubDate>
-      <description>Severity: low. ### Impact
-
-Parse Server's file upload validation uses the `fileUpload.fileExtensions` option (enabled by default with a blocklist) to reject files that browsers may render as active content, mitigating stored cross-site scripting (XSS). When an uploaded file's extension is not recogn</description>
     </item>
   </channel>
 </rss>
