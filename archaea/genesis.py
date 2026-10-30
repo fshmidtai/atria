@@ -62,7 +62,8 @@ def load_config(name: str) -> dict:
     return json.loads((ROOT / "colonies" / name / "config.json").read_text(encoding="utf-8"))
 
 
-def colony_cycle_factory(treasury: Treasury, ledger: Ledger):
+def colony_cycle_factory(treasury: Treasury, ledger: Ledger,
+                         tg_store: dict | None = None):
     """Обработчик 'colony_cycle' — один цикл любой колонии (параметризуется payload)."""
     from colonies.phosphor import pipeline, sitegen
 
@@ -98,13 +99,16 @@ def colony_cycle_factory(treasury: Treasury, ledger: Ledger):
         # TG-доставка: третий renderer роя. Состояние подписок лежит в
         # HF-файле (тик его и читает, и пишет; очередь расбирает тоже тик).
         from core import tgpost
-        tgpost.bot_tick([snapshot],
-                        lang=config.get("site", {}).get("lang", "ru"))
+        tg = tgpost.bot_tick([snapshot],
+                             lang=config.get("site", {}).get("lang", "ru"))
+        if tg_store is not None:
+            tg_store[colony] = tg
         return {
             "colony": colony,
             "items": snapshot["totals"]["items"],
             "by_source": snapshot["totals"]["by_source"],
             "pages": site["pages"],
+            "tg": tg,
         }
 
     return run
@@ -244,7 +248,8 @@ def main():
         registry.spawn(name, role, colony, limit)
 
     # 2. задачи на циклы + пульс
-    handlers = {"colony_cycle": colony_cycle_factory(treasury, ledger)}
+    tg_store: dict[str, dict] = {}
+    handlers = {"colony_cycle": colony_cycle_factory(treasury, ledger, tg_store)}
     for name in colonies:
         orch.enqueue(name, f"{name} cycle", "colony_cycle", {"colony": name})
     tick_stats = orch.tick(handlers)
@@ -297,10 +302,16 @@ def main():
             }, ensure_ascii=False) + "\n")
 
     # 5. metrics.json — питание для HF Space-пульта
+    tg_total = {
+        "chats": max((v.get("chats", 0) for v in tg_store.values()), default=0),
+        "updates": sum(v.get("updates", 0) for v in tg_store.values()),
+        "sent": sum(v.get("sent", 0) for v in tg_store.values()),
+    }
     metrics = {
         "generated_at": time.time(),
         "elapsed_s": round(time.time() - started, 2),
         "tick": tick_stats,
+        "tg": tg_total,
         "agents": registry.all(),
         "budget": treasury.summary(),
         "tasks": orch.stats(),

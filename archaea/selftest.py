@@ -350,6 +350,15 @@ def test_monetization_cta():
     check("mon: мёртвый stars-рельс не рендерится",
           sitegen._cta({"monetization": {"stars": ""}}) == "")
 
+    # Cross-links: 9 соседних колоний, себя не повторяем
+    sl = sitegen._sister_links({"base_url": "https://tenderslice.pages.dev",
+                                "lang": "ru"})
+    n = sl.count("<a href=")
+    check("sisters: ~9 соседок в футере", 7 <= n <= 10, f"{n} links")
+    check("sisters: себя нет", "tenderslice.pages.dev" not in sl)
+    check("sisters: EN-лейбл", "Other verticals" in
+          sitegen._sister_links({"base_url": "https://t.example", "lang": "en"}))
+
 
 # ---------------------------------------------------------------- IndexNow
 def test_pings():

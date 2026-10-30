@@ -87,6 +87,8 @@ function render(m) {
     <div class="chip"><b>${t.ran ?? "?"} / ${t.failed ?? "?"}</b><span>тик: прошло / упало</span></div>
     <div class="chip"><b>${Math.round((b.spent_u ?? 0) / 1000)}k µ$</b><span>бюджет потрачен</span></div>
     <div class="chip"><b>${Math.round((b.revenue_u ?? 0) / 1000)}k µ$</b><span>выручка</span></div>
+    <div class="chip"><b>${(m.tg && m.tg.chats) ?? 0}</b><span>подписчиков бота</span></div>
+    <div class="chip"><b>${(m.tg && m.tg.sent) ?? 0}</b><span>дайджестов отправлено</span></div>
     <div class="chip"><b>${tk.done ?? "?"} / ${tk.failed ?? "?"}</b><span>задачи: done / failed</span></div>
     <div class="chip"><b>${m.elapsed_s ? m.elapsed_s.toFixed(1) + " s" : "?"}</b><span>длина цикла</span></div>`;
 

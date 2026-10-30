@@ -21,6 +21,9 @@ from xml.sax.saxutils import escape as xescape
 
 from colonies.phosphor.pipeline import SOURCE_LABELS
 
+# Все колонии роя — для cross-linking (SEO-сок между вертикалями)
+SITES_GLOB = Path(__file__).resolve().parents[2] / "colonies" / "*" / "config.json"
+
 CSS = """
 :root { color-scheme: dark; }
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -142,6 +145,7 @@ COPY = {
         "mon_buy": "Купить полный датасет",
         "mon_crypto": "Поддержать криптой — переводы напрямую на кошелёк:",
         "mon_stars": "⭐ Атрия Pro — полный дайджест (199 Stars/мес)",
+        "sisters": "Другие вертикали роя",
     },
     "en": {
         "nav_feed": "Feed", "nav_topics": "Topics", "nav_data": "Data",
@@ -199,6 +203,7 @@ COPY = {
         "mon_buy": "Buy the full dataset",
         "mon_crypto": "Support with crypto (no reversal needed — networks and addresses are current):",
         "mon_stars": "⭐ Atria Pro — full digest (199 Stars/mo)",
+        "sisters": "Other verticals of the swarm",
     },
 }
 
@@ -248,6 +253,33 @@ def _cta(site: dict) -> str:
             + stars_html + crypto_html + '</div>')
 
 
+def _sister_links(site: dict, limit: int = 10) -> str:
+    """Cross-links между колониями: 10 релёвантных тематических сайтов роя на
+    разных доменах CF Pages = бесплатные входящие ссылки для каждой колонии
+    (SEO-сок роя). Текущая колония исключается."""
+    try:
+        import glob
+        reps = []
+        for p in glob.glob(str(SITES_GLOB)):
+            try:
+                c = json.loads(Path(p).read_text(encoding="utf-8"))
+            except Exception:
+                continue
+            s = c.get("site") or {}
+            url, title = s.get("base_url"), s.get("title")
+            if not url or not title or url == (site or {}).get("base_url"):
+                continue
+            reps.append(f'<a href="{url}">{title}</a>')
+        if not reps:
+            return ""
+        L = COPY.get(_lang(site), COPY["ru"])
+        return ('<div class="sisters" style="margin-top:10px">'
+                + L.get("sisters", "Вертикали роя") + ': '
+                + " · ".join(reps[:limit]) + "</div>")
+    except Exception:
+        return ""
+
+
 def _L(site: dict) -> dict:
     return COPY.get(_lang(site), COPY["ru"])
 
@@ -260,7 +292,7 @@ def _slug(s: str) -> str:
 
 def _page(body: str, title: str, description: str, base_url: str, path: str,
           jsonld: str = "", feed_title: str = "", lang: str = "ru",
-          cta: str = "") -> str:
+          cta: str = "", site: dict | None = None) -> str:
     L = COPY.get(lang, COPY["ru"])
     canonical = f"{base_url}/{path}" if path else base_url
     feed = (
@@ -308,7 +340,7 @@ def _page(body: str, title: str, description: str, base_url: str, path: str,
 <div class="wrap">
 {body}
 {cta}
-<footer>{L["footer"]} · {footer_ts}</footer>
+<footer>{L["footer"]} · {footer_ts}{_sister_links(site or {})}</footer>
 </div>
 </body>
 </html>
@@ -380,7 +412,7 @@ def page_home(snapshot: dict, site: dict, pool: list[dict], top_n: int) -> str:
     }, ensure_ascii=False)
     return _page(body, f"{site['title']} — {site['tagline'][:60]}",
                  site["tagline"], site["base_url"], "", jsonld,
-                 feed_title=site["title"], lang=_lang(site), cta=_cta(site))
+                 feed_title=site["title"], lang=_lang(site), cta=_cta(site), site=site)
 
 
 def page_topic(topic: str, pool: list[dict], site: dict, top_n: int) -> str:
@@ -402,7 +434,7 @@ def page_topic(topic: str, pool: list[dict], site: dict, top_n: int) -> str:
 """
     return _page(body, f"#{topic} — {site['title']}",
                  L["topic_meta"].format(topic=topic), site["base_url"],
-                 f"topics/{topic}.html", feed_title=site["title"], lang=_lang(site), cta=_cta(site))
+                 f"topics/{topic}.html", feed_title=site["title"], lang=_lang(site), cta=_cta(site), site=site)
 
 
 def page_topics_index(site: dict, topics: list[str], counts: dict) -> str:
@@ -436,7 +468,7 @@ def page_topics_index(site: dict, topics: list[str], counts: dict) -> str:
     }, ensure_ascii=False)
     return _page(body, f"{L['topics_h']} — {site['title']}",
                  L["topics_index_meta"], site["base_url"], "topics/",
-                 jsonld, feed_title=site["title"], lang=_lang(site), cta=_cta(site))
+                 jsonld, feed_title=site["title"], lang=_lang(site), cta=_cta(site), site=site)
 
 
 def page_item(item: dict, site: dict, related: list[dict] | None = None) -> str:
@@ -482,7 +514,7 @@ def page_item(item: dict, site: dict, related: list[dict] | None = None) -> str:
     return _page(body, f"{item['title']} — {site['title']}",
                  (item["summary"] or item["title"])[:155].strip(),
                  site["base_url"], f"item/{slug}.html", jsonld,
-                 feed_title=site["title"], lang=_lang(site), cta=_cta(site))
+                 feed_title=site["title"], lang=_lang(site), cta=_cta(site), site=site)
 
 
 def page_data(snapshot: dict, site: dict) -> str:
@@ -512,7 +544,7 @@ def page_data(snapshot: dict, site: dict) -> str:
 """
     return _page(body, L["data_title"].format(title=site["title"]),
                  L["data_desc"], site["base_url"], "data.html",
-                 feed_title=site["title"], lang=_lang(site), cta=_cta(site))
+                 feed_title=site["title"], lang=_lang(site), cta=_cta(site), site=site)
 
 
 def page_trends(site: dict, trends: list, live_topics: set | None = None) -> str:
@@ -560,7 +592,7 @@ def page_trends(site: dict, trends: list, live_topics: set | None = None) -> str
 """
     return _page(body, L["trends_title"].format(title=site["title"]),
                  L["trends_desc"], site["base_url"], "trends.html",
-                 feed_title=site["title"], lang=_lang(site), cta=_cta(site))
+                 feed_title=site["title"], lang=_lang(site), cta=_cta(site), site=site)
 
 
 def page_about(site: dict) -> str:
@@ -575,7 +607,7 @@ def page_about(site: dict) -> str:
 """
     return _page(body, L["about_title"].format(title=site["title"]),
                  L["about_desc"], site["base_url"], "about.html",
-                 feed_title=site["title"], lang=_lang(site), cta=_cta(site))
+                 feed_title=site["title"], lang=_lang(site), cta=_cta(site), site=site)
 
 
 # ---------------------------------------------------------------- RSS колонии
@@ -590,7 +622,7 @@ def page_404(site: dict) -> str:
 """
     return _page(body, L["404_title"].format(title=site["title"]),
                  L["404_desc"], site["base_url"], "",
-                 feed_title=site["title"], lang=_lang(site), cta=_cta(site))
+                 feed_title=site["title"], lang=_lang(site), cta=_cta(site), site=site)
 
 
 def generate_feed(snapshot: dict, outdir: str | Path, config: dict) -> str:

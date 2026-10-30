@@ -291,4 +291,5 @@ def bot_tick(snapshots: list, lang: str = "ru", subs: dict | None = None) -> dic
                                             "parse_mode": "HTML",
                                             "disable_web_page_preview": True}):
                 sent += 1
-    return {"updates": updates, "sent": sent}
+    return {"updates": updates, "sent": sent,
+            "chats": len(state.get("chats", {}))}
