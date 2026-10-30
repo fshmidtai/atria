@@ -379,6 +379,9 @@ def test_monetization_cta():
     check("pro: лендинг есть с Stars", "199 ₽" in pro and "$INV123" in pro, pro[:80])
     check("pro: фичи и кнопка оплаты", "top-20" in pro
           and "Telegram Stars" in pro)
+    check("pro: Offer JSON-LD", '"@type": "Offer"' in pro
+          and '"priceCurrency": "RUB"' in pro
+          and '"price": "199"' in pro)
     check("pro: бот не торчит, если не задан", "t.me/dimon" not in pro)
     check("pro: без рельсы — пусто", sitegen.page_pro(
         {"title": "T", "base_url": "https://t.example",

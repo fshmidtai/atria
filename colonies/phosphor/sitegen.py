@@ -705,6 +705,19 @@ def page_pro(site: dict) -> str:
               if c.get("net") and c.get("address")]
     price = L["pro_price"]
     feats = "".join(f"<li>{f}</li>" for f in L["pro_feats"])
+    # Offer JSON-LD: цена/валюта в структурированном виде — rich snippets
+    # выдачи («199 ₽» прямо в сниппете), платить за это ничего не нужно.
+    price_num = "".join(ch for ch in price if ch.isdigit() or ch == ".")
+    jsonld = json.dumps({
+        "@context": "https://schema.org",
+        "@type": "Offer",
+        "name": f"{site['title']} Pro",
+        "description": L["pro_desc"],
+        "url": f"{site['base_url']}/pro.html",
+        "price": price_num,
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock",
+    }, ensure_ascii=False)
     crypto_html = ""
     if crypto:
         rows = "".join(
@@ -733,7 +746,7 @@ def page_pro(site: dict) -> str:
     return _page(body, L["pro_title"].format(title=site["title"]),
                  L["pro_desc"], site["base_url"], "pro.html",
                  feed_title=site["title"], lang=_lang(site),
-                 cta=_cta(site), site=site)
+                 cta=_cta(site), site=site, jsonld=jsonld)
 
 
 # ---------------------------------------------------------------- RSS колонии
