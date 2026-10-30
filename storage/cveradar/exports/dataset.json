@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T00:10:07+00:00",
+  "generated_at": "2026-10-29T20:05:40+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -8,19 +8,20 @@
     "rss"
   ],
   "totals": {
-    "items": 60,
+    "items": 69,
     "by_source": {
       "cve": 30,
-      "rss": 30
+      "rss": 39
     },
     "by_recipe": {
       "gh_advisories": 30,
-      "the_hacker_news": 30
+      "the_hacker_news": 30,
+      "xakep": 9
     },
     "by_topic": {
-      "security": 52,
+      "security": 54,
       "ai": 37,
-      "dev": 30,
+      "dev": 31,
       "hardware": 16,
       "crypto": 9,
       "science": 4,
@@ -34,6 +35,10 @@
       [
         "thehackernews.com",
         30
+      ],
+      [
+        "xakep.ru",
+        9
       ]
     ]
   },
@@ -288,7 +293,7 @@
       "author": "systeminformation",
       "summary": "Severity: high. ### Summary\n\nOn Windows, `systeminformation@5.33.15` builds a PowerShell command using the value passed to `services()`. The default sanitizer removes ASCII quotes but keeps Unicode curly quotes, spaces, and parentheses. A crafted service name can use those characters to break out of the generated f",
       "recipe": "gh_advisories",
-      "buzz": 3530,
+      "buzz": 3580,
       "topics": [
         "science",
         "security"
@@ -472,7 +477,7 @@
       "author": "tornado",
       "summary": "Severity: medium. ### Summary\n\nWhen Tornado reads an HTTP/1.1 body that uses chunked transfer encoding, it processes all chunks that have already arrived without yielding to the event loop. A client can send a body made of millions of 1-byte chunks, which blocks the event loop (and therefore every other connection se",
       "recipe": "gh_advisories",
-      "buzz": 1830,
+      "buzz": 1880,
       "topics": [
         "dev",
         "security"
@@ -490,7 +495,7 @@
       "author": "tornado",
       "summary": "Severity: medium. ### Summary\n\nTornado's HTTP header parser takes quadratic time (O(n²)) when a header value is continued across many \"obsolete line folding\" (obs-fold) lines. An unauthenticated attacker can send a request whose header block is mostly short continuation lines. Parsing it uses a large amount of CPU on",
       "recipe": "gh_advisories",
-      "buzz": 1830,
+      "buzz": 1880,
       "topics": [
         "security",
         "hardware"
@@ -508,7 +513,7 @@
       "author": "crass",
       "summary": "Severity: medium. ## Summary\n\nCrass's tokenizer didn't terminate a bad URL token at a `)` that followed an escaped backslash (`\\\\`). As a result, Crass consumed more input as part of the bad URL than a spec-compliant browser does. CSS sanitizers that parse untrusted CSS with Crass and re-emit it could be tricked into",
       "recipe": "gh_advisories",
-      "buzz": 1830,
+      "buzz": 1880,
       "topics": [
         "dev",
         "crypto",
@@ -580,7 +585,7 @@
       "author": "tornado",
       "summary": "Severity: low. ### Summary\n\n`tornado.web.RedirectHandler` builds its target URL by substituting parts of the request path into a template. Depending on where those substitutions appear in the template, an attacker can craft a request that redirects to a host of their choosing. This creates an open redirect on the",
       "recipe": "gh_advisories",
-      "buzz": 730,
+      "buzz": 780,
       "topics": [
         "security"
       ],
@@ -849,6 +854,83 @@
       "topics": [
         "ai",
         "security"
+      ],
+      "date": "2026-10-29"
+    },
+    {
+      "uid": "rss:40ce327981f1d4",
+      "source": "rss",
+      "title": "Компания GMO предлагает миллион долларов США за помощь в поимке хакеров",
+      "url": "https://xakep.ru/2026/10/29/desktop-cloud-hack/",
+      "ts": 1793295028.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Мария Нефёдова",
+      "summary": "Японский интернет-холдинг GMO Internet Group объявил награду в размере до миллиона долларов США за информацию о хакерах, взломавших его облачный сервис Onamae.com Desktop Cloud. Ранее злоумышленники похитили клиентские данные, потребовали выкуп в 8 млрд иен (около 50 млн долларов США) и пригрозили запустить шифровальщик на компьютерах клиентов GMO.",
+      "recipe": "xakep",
+      "buzz": 80,
+      "topics": [],
+      "date": "2026-10-29"
+    },
+    {
+      "uid": "rss:492c096f03e4ba",
+      "source": "rss",
+      "title": "Discord позволит поисковикам индексировать сообщения на публичных серверах",
+      "url": "https://xakep.ru/2026/10/29/discoverable-servers/",
+      "ts": 1793287810.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Мария Нефёдова",
+      "summary": "Представители Discord объявили, что сообщения из публичных сообществ скоро начнут появляться в поисковой выдаче Google и других поисковиков. Читать такие переписки смогут даже люди, у которых нет аккаунта Discord или инвайта на сервер.",
+      "recipe": "xakep",
+      "buzz": 80,
+      "topics": [],
+      "date": "2026-10-29"
+    },
+    {
+      "uid": "rss:b074ecc5a50279",
+      "source": "rss",
+      "title": "В кошельке Electrum исправили баг, позволяющий похищать криптовалюту",
+      "url": "https://xakep.ru/2026/10/29/electrum-bug/",
+      "ts": 1793277048.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Мария Нефёдова",
+      "summary": "Разработчики биткоин-кошелька Electrum выпустили версию 4.8.3, в которой исправили баг, которым уже пользовались злоумышленники. Из-за уязвимости контролируемый хакером сервер мог подменять неподтвержденные транзакции в истории кошелька. Если пользователь не замечал подмены и пытался ускорить перевод, повысив комиссию, Electrum создавал новую транзакцию с адресом атакующего вместо настоящего получ",
+      "recipe": "xakep",
+      "buzz": 80,
+      "topics": [],
+      "date": "2026-10-29"
+    },
+    {
+      "uid": "rss:186eb009ce6ac8",
+      "source": "rss",
+      "title": "DreamHost принудительно сбрасывает пароли пользователей",
+      "url": "https://xakep.ru/2026/10/29/dreamhost-incedent/",
+      "ts": 1793269837.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Мария Нефёдова",
+      "summary": "Американский хостинг-провайдер DreamHost принудительно сбросил пароли для части пользователей электронной почты и FTP/SFTP после некоего «инцидента», затронувшего File Manager и веб-почту. Причину происходящего в компании пока не раскрывают, а пострадавшим советуют проверить настройки переадресации и сменить пароли в других сервисах, если они совпадали с паролями DreamHost.",
+      "recipe": "xakep",
+      "buzz": 80,
+      "topics": [],
+      "date": "2026-10-29"
+    },
+    {
+      "uid": "rss:4619682f15e5ba",
+      "source": "rss",
+      "title": "На GitHub нашли троян, нацеленный на ИБ-специалистов",
+      "url": "https://xakep.ru/2026/10/29/github-malware-2/",
+      "ts": 1793262609.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Мария Нефёдова",
+      "summary": "Специалисты «Доктор Веб» обнаружили на GitHub зараженные репозитории, которые распространяют малварь под видом инструментов для ИБ-специалистов. Этот вредонос способен отключать защитные механизмы Windows, внедрять бэкдоры и клиппер в легитимные процессы, похищать данные и удалять антивирусы. На момент проведения исследования малварь заразила более 2000 компьютеров.",
+      "recipe": "xakep",
+      "buzz": 80,
+      "topics": [
+        "dev"
       ],
       "date": "2026-10-29"
     },
@@ -1148,6 +1230,70 @@
         "hardware"
       ],
       "date": "2026-10-27"
+    },
+    {
+      "uid": "rss:1a60fee26b83a2",
+      "source": "rss",
+      "title": "Критическую уязвимость в UEFI случайно раскрыли раньше срока",
+      "url": "https://xakep.ru/2026/10/28/edk2-flaw/",
+      "ts": 1793208604.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Мария Нефёдова",
+      "summary": "В TianoCore EDK II (EDK2) обнаружили критическую уязвимость CVE-[phone] (9,5 балла по шкале CVSS), которая позволяет выполнить код на этапе загрузки системы, еще до запуска ОС и защитных механизмов вроде Secure Boot. Так как EDK2 лежит в основе UEFI-прошивок огромного количества серверов, потенциальный масштаб проблемы велик. При этом информацию об уязвимости раскрыли на несколько месяцев раньш",
+      "recipe": "xakep",
+      "buzz": 30,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-10-28"
+    },
+    {
+      "uid": "rss:18691811e1fd8e",
+      "source": "rss",
+      "title": "Keystone уничтожит почти 19 000 аппаратных кошельков из-за кражи криптографического ключа",
+      "url": "https://xakep.ru/2026/10/28/keystone-hacked/",
+      "ts": 1793201411.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Мария Нефёдова",
+      "summary": "Производитель аппаратных криптокошельков Keystone сообщает, что из-за кибератаки будет вынужден уничтожить 18 835 нераспроданных устройств и приостановить отправку заказов. Дело в том, что атакующие похитили у компании ключ, который используется для проверки подлинности кошельков, а также получили доступ к данным покупателей.",
+      "recipe": "xakep",
+      "buzz": 30,
+      "topics": [],
+      "date": "2026-10-28"
+    },
+    {
+      "uid": "rss:7cf7d2037eb53c",
+      "source": "rss",
+      "title": "Сыворотка правды. Разбираем два кейса промпт-инъекций в ИИ-агентов",
+      "url": "https://xakep.ru/2026/10/28/ai-agent-injection/",
+      "ts": 1793195789.0,
+      "points": 0,
+      "comments": 0,
+      "author": "L3G5",
+      "summary": "<a href=\"/tag/vybor-redaktora/\">Для подписчиков</a><br/>Я расскажу о двух похожих уязвимостях, обнаруженных в ИИ-агентах крупных российских компаний. В обеих хотели сделать сервисы удобными для пользователей, но выдали агентам больше прав, чем нужно. Итог: утечка запросов в одном случае, раскрытие исходного кода агента и доступ на запись в S3 с диалогами пользователей — в другом.",
+      "recipe": "xakep",
+      "buzz": 30,
+      "topics": [],
+      "date": "2026-10-28"
+    },
+    {
+      "uid": "rss:832ab19b19e9b3",
+      "source": "rss",
+      "title": "Обнаружена еще одна RCE-уязвимость в PHP, для которой нет патча",
+      "url": "https://xakep.ru/2026/10/28/cve-2026-115560/",
+      "ts": 1793190616.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Мария Нефёдова",
+      "summary": "Пока администраторы во всем мире разбираются с уязвимостями PHP2Shell и массовыми попытками эксплуатации этих багов, в конце прошлой недели разработчики PHP предупредили еще об одной RCE-уязвимости. Новая проблема получила идентификатор CVE-[phone] и патча для нее пока нет.",
+      "recipe": "xakep",
+      "buzz": 30,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-10-28"
     }
   ]
 }

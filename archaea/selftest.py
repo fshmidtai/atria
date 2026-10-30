@@ -360,6 +360,41 @@ def test_monetization_cta():
           sitegen._sister_links({"base_url": "https://t.example", "lang": "en"}))
 
 
+# ------------------------------------------------------- Накопитель предметов
+def test_archive():
+    """archive_items: каталог растёт, дедуп по uid, FIFO-срез, порядок по ts."""
+    from archaea import genesis
+
+    tmp = Path(tempfile.mkdtemp())
+    p = tmp / "storage" / "x" / "archive.jsonl"
+    snap = {"items": [
+        {"uid": "a1", "title": "A1", "ts": 100, "url": "https://x/1"},
+        {"uid": "a2", "title": "A2", "ts": 200, "url": "https://x/2"},
+    ]}
+    m1 = genesis.archive_items(snap, p)
+    check("arch: первый тик — 2 предмета", len(m1) == 2 and p.exists(), len(m1))
+    # второй тик: один старый + один новый
+    snap2 = {"items": [
+        {"uid": "a2", "title": "A2 new", "ts": 300, "url": "https://x/2"},
+        {"uid": "a3", "title": "A3", "ts": 250, "url": "https://x/3"},
+    ]}
+    m2 = genesis.archive_items(snap2, p)
+    check("arch: дедип и мерж — 3 уникальных", [i["uid"] for i in m2] == ["a2", "a3", "a1"],
+          [i["uid"] for i in m2])
+    check("arch: свежая версия перетирает", m2[0]["title"] == "A2 new")
+    # cap: архив обрезается по FIFO
+    big = {"items": [{"uid": f"b{i}", "title": f"B{i}", "ts": 1000 + i,
+                      "url": f"https://x/{i}"} for i in range(10)]}
+    p2 = tmp / "storage" / "y" / "archive.jsonl"
+    genesis.archive_items(big, p2, cap=5)
+    m3 = genesis.archive_items({"items": []}, p2, cap=5)
+    check("arch: cap 5 режет до 5", len(m3) == 5, len(m3))
+    # нет файла — не падает, возвращает свежие и создаёт архив
+    p3 = tmp / "nope" / "archive.jsonl"
+    m4 = genesis.archive_items(snap, p3)
+    check("arch: нет файла — отдаёт свежие", len(m4) == 2 and p3.exists(), len(m4))
+
+
 # ---------------------------------------------------------------- IndexNow
 def test_pings():
     """Заявки на индексацию (Bing/Yandex/Seznam) — открытый протокол, ключ-файл."""
@@ -750,7 +785,8 @@ def main() -> int:
                test_apothecary, test_feed_roundtrip, test_sitegen_render,
                test_qa_clean, test_qa_gate, test_space_console,
                test_treasury, test_orchestrator, test_registry,
-               test_monetization_cta, test_tgpost, test_html_list, test_pings):
+               test_monetization_cta, test_tgpost, test_html_list, test_pings,
+               test_archive):
         try:
             fn()
         except Exception as e:  # тест не должен вешать рой — но должен орать

@@ -62,6 +62,43 @@ def load_config(name: str) -> dict:
     return json.loads((ROOT / "colonies" / name / "config.json").read_text(encoding="utf-8"))
 
 
+def archive_items(snapshot: dict, path: Path, cap: int = 600) -> list[dict]:
+    """Накопитель предметов: append-only JSONL, дедуп по uid, FIFO-срез cap.
+    Sitegen получает merged-снимок — старые item-страницы не исчезают
+    (soft-404 для индекса = смерть long-tail SEO), а каталог колонии растёт.
+    Свежие предметы перетирают архивную копию того же uid."""
+    items = {i.get("uid"): i for i in snapshot.get("items", [])
+             if isinstance(i, dict)}
+    seen = set(items)
+    merged = list(items.values())
+    if path.exists():
+        try:
+            for line in path.read_text(encoding="utf-8").splitlines():
+                if not line.strip():
+                    continue
+                try:
+                    it = json.loads(line)
+                except Exception:
+                    continue
+                uid = it.get("uid")
+                if not uid or uid in seen:
+                    continue
+                seen.add(uid)
+                merged.append(it)
+        except Exception:
+            pass
+    merged.sort(key=lambda i: i.get("ts", 0), reverse=True)
+    merged = merged[:cap]
+    try:
+        path.parent.mkdir(parents=True, exist_ok=True)
+        with path.open("w", encoding="utf-8") as hf:
+            for it in merged:
+                hf.write(json.dumps(it, ensure_ascii=False) + "\n")
+    except Exception:
+        pass
+    return merged
+
+
 def colony_cycle_factory(treasury: Treasury, ledger: Ledger,
                          tg_store: dict | None = None):
     """Обработчик 'colony_cycle' — один цикл любой колонии (параметризуется payload)."""
@@ -77,8 +114,13 @@ def colony_cycle_factory(treasury: Treasury, ledger: Ledger,
         # Trend Index берём с прошлого тика (apothecary печёт его позже,
         # в конце цикла) — честная «динамика к предыдущему тику»
         trends = apothecary.trend_for(colony, ROOT / "storage")
+        # Накопитель: свежие + архивные предметы (каталог растёт, soft-404 нет)
+        merged = archive_items(
+            snapshot, ROOT / "storage" / colony / "archive.jsonl")
+        snap_full = dict(snapshot)
+        snap_full["items"] = merged
         site = sitegen.generate(
-            snapshot, ROOT / "colonies" / colony / "dist", config, trends=trends
+            snap_full, ROOT / "colonies" / colony / "dist", config, trends=trends
         )
 
         treasury.spend("merchant", 100, note=f"publish {colony}")

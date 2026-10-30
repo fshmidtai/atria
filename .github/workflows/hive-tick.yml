@@ -51,7 +51,7 @@ jobs:
         run: |
           git config user.name "atria-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add colonies/*/dist storage/metrics.json storage/history.jsonl storage/*/exports || true
+          git add colonies/*/dist storage/metrics.json storage/history.jsonl storage/*/exports storage/*/archive.jsonl || true
           if git diff --cached --quiet; then
             echo "нет изменений — спим дальше"
             exit 0
