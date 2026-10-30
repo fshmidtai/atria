@@ -148,6 +148,27 @@ COPY = {
         "sisters": "Другие вертикали роя",
         "closes_open": "Приём заявок до",
         "closes_closed": "Приём заявок закрыт",
+        "pro_h": "Атрия Pro — полный дайджест",
+        "pro_p1": "Бесплатная подписка показывает 5 верхних записей. Pro открывает "
+                  "полный дайджест по всем вертикалям роя — без цензуры и купюр.",
+        "pro_price": "199 ₽",
+        "pro_per": "в месяц, отмена в любой момент",
+        "pro_stat20": "записей в дайджесте (вместо 5)",
+        "pro_stat10": "вертикалей в одном Pro",
+        "pro_feats": [
+            "Полный дайджест: top-20 вместо 5 записей",
+            "Доставка в Telegram каждые 6 часов",
+            "Все 10 вертикалей роя: тендеры, гранты, ИБ, AI, финансы",
+            "Архив предметов и тренд-индекс без ограничений",
+        ],
+        "pro_buy": "Оплатить 199 ₽ через Telegram Stars",
+        "pro_note": "Оплата идёт внутри Telegram (Stars) — никаких карт и "
+                    "провайдеров. Доступ открывается автоматически в течение "
+                    "одного цикла роя.",
+        "pro_bot": "Бот подписки:",
+        "pro_title": "Pro — {title}",
+        "pro_desc": "Полный дайджест по всем вертикалям роя: 199 ₽ в месяц через "
+                    "Telegram Stars, доставка в Telegram.",
     },
     "en": {
         "nav_feed": "Feed", "nav_topics": "Topics", "nav_data": "Data",
@@ -208,6 +229,27 @@ COPY = {
         "sisters": "Other verticals of the swarm",
         "closes_open": "Accepting bids until",
         "closes_closed": "Bids closed",
+        "pro_h": "Atria Pro — full digest",
+        "pro_p1": "The free subscription shows the top 5 entries. Pro opens the "
+                  "full digest across all swarm verticals — no truncation.",
+        "pro_price": "199 ₽",
+        "pro_per": "per month, cancel anytime",
+        "pro_stat20": "entries per digest (instead of 5)",
+        "pro_stat10": "verticals in one Pro",
+        "pro_feats": [
+            "Full digest: top-20 instead of 5 entries",
+            "Delivered to Telegram every 6 hours",
+            "All 10 swarm verticals: tenders, grants, security, AI, finance",
+            "Unlimited item archive and trend index",
+        ],
+        "pro_buy": "Pay 199 ₽ via Telegram Stars",
+        "pro_note": "Payment happens inside Telegram (Stars) — no cards, no "
+                    "external providers. Access opens automatically within one "
+                    "swarm cycle.",
+        "pro_bot": "Subscription bot:",
+        "pro_title": "Pro — {title}",
+        "pro_desc": "Full digest across all swarm verticals: 199 ₽/month via "
+                    "Telegram Stars, delivered to Telegram.",
     },
 }
 
@@ -361,6 +403,7 @@ def _header(site: dict) -> str:
     <a href="/trends.html">{L["nav_trends"]}</a>
     <a href="/data.html">{L["nav_data"]}</a>
     <a href="/about.html">{L["nav_about"]}</a>
+    {"<a href=\"/pro.html\" style=\"color:#f2c14e;font-weight:600\">⭐ Pro</a>" if (site.get("monetization") or {}).get("stars") else ""}
   </nav>
 </header>"""
 
@@ -640,6 +683,50 @@ def page_about(site: dict) -> str:
                  feed_title=site["title"], lang=_lang(site), cta=_cta(site), site=site)
 
 
+def page_pro(site: dict) -> str:
+    """Лендинг единственного live-продукта: Pro-подписка через Telegram Stars.
+    Цена/рельсы читаются из monetization — копипастить цифры в верстку нельзя."""
+    L = _L(site)
+    mon = site.get("monetization") or {}
+    stars = mon.get("stars")
+    if not stars:
+        return ""  # рельса не подключена — страницы нет (и в sitemap её не будет)
+    tg = (site.get("tg") or {}).get("bot") or site.get("contact", "")
+    crypto = [c for c in (mon.get("crypto") or [])
+              if c.get("net") and c.get("address")]
+    price = L["pro_price"]
+    feats = "".join(f"<li>{f}</li>" for f in L["pro_feats"])
+    crypto_html = ""
+    if crypto:
+        rows = "".join(
+            '<div style="margin-top:8px"><b>' + _esc(c["net"]) + '</b> '
+            '<code style="background:#1a2030;padding:2px 8px;border-radius:6px;'
+            'font-size:13px;word-break:break-all">' + _esc(c["address"]) + '</code></div>'
+            for c in crypto)
+        crypto_html = ('<p style="margin-top:18px"><b>' + L["mon_crypto"]
+                       + '</b></p>' + rows)
+    body = f"""{_header(site)}
+<div class="hero">
+  <h1>⭐ {L["pro_h"]}</h1>
+  <p style="margin-top:14px">{L["pro_p1"]}</p>
+  <div class="stats"><div class="stat"><b>{price}</b><span>{L["pro_per"]}</span></div>
+  <div class="stat"><b>top-20</b><span>{L["pro_stat20"]}</span></div>
+  <div class="stat"><b>10</b><span>{L["pro_stat10"]}</span></div></div>
+  <ul style="margin-top:20px;padding-left:20px;color:#c2c9d8">{feats}</ul>
+  <p style="margin-top:22px"><a class="btn" href="{_esc(stars)}" rel="nofollow noopener"
+     style="display:inline-block;background:#f2c14e;color:#0b0d12;font-weight:700;
+     text-decoration:none;padding:12px 22px;border-radius:10px">{L["pro_buy"]}</a></p>
+  <p style="margin-top:12px;color:#9aa4b8">{L["pro_note"]}</p>
+  {f'<p style="margin-top:14px">{L["pro_bot"]} <a href="{_esc(tg)}" style="color:#8fb7ff">{_esc(tg)}</a></p>' if tg else ""}
+  {crypto_html}
+</div>
+"""
+    return _page(body, L["pro_title"].format(title=site["title"]),
+                 L["pro_desc"], site["base_url"], "pro.html",
+                 feed_title=site["title"], lang=_lang(site),
+                 cta=_cta(site), site=site)
+
+
 # ---------------------------------------------------------------- RSS колонии
 def page_404(site: dict) -> str:
     L = _L(site)
@@ -766,6 +853,12 @@ def generate(snapshot: dict, outdir: str | Path, config: dict,
                                                     live_topics=topics),
                                         encoding="utf-8")
     (outdir / "about.html").write_text(page_about(site), encoding="utf-8")
+    # Pro-лендинг: только когда подключён Stars-рельс (монетизация не ради
+    # заглушки). Нет рельсы — нет страницы и нет мёртвой ссылки в sitemap.
+    pro = page_pro(site)
+    if pro:
+        (outdir / "pro.html").write_text(pro, encoding="utf-8")
+        urls.append("pro.html")
     # 404 — в sitemap её не кладём (поисковики не любят), CF Pages подхватит
     # файл сам как fallback для несуществующих путей.
     (outdir / "404.html").write_text(page_404(site), encoding="utf-8")

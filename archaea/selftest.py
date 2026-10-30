@@ -370,6 +370,30 @@ def test_monetization_cta():
     check("tender: непарсимый — как есть", "скоро" in b_raw, b_raw)
     check("tender: нет поля — нет бейджа", b_none == "")
 
+    # Pro-лендинг: рендерится только при Stars-рельсе, цена и кнопка — из конфига
+    st = {"title": "T", "tagline": "T", "base_url": "https://t.example",
+          "lang": "ru",
+          "monetization": {"stars": "https://t.me/$INV123",
+                           "crypto": [{"net": "TON", "address": "UQ…"}]}}
+    pro = sitegen.page_pro(st)
+    check("pro: лендинг есть с Stars", "199 ₽" in pro and "$INV123" in pro, pro[:80])
+    check("pro: фичи и кнопка оплаты", "top-20" in pro
+          and "Telegram Stars" in pro)
+    check("pro: бот не торчит, если не задан", "t.me/dimon" not in pro)
+    check("pro: без рельсы — пусто", sitegen.page_pro(
+        {"title": "T", "base_url": "https://t.example",
+         "monetization": {}}) == "")
+    # в sitemap pro.html только при рельсе (проверяем через generate)
+    out_p = sitegen.generate(snap, tmp / "dist_p",
+                             {"site": st, "topics": [], "top_items_home": 2,
+                              "top_item_pages": 3})
+    html_p = (Path(out_p["outdir"]) / "pro.html").read_text(encoding="utf-8")
+    sm = (Path(out_p["outdir"]) / "sitemap.xml").read_text(encoding="utf-8")
+    check("pro: страница в sitemap", "/pro.html" in sm)
+    check("pro: nav ведёт на /pro.html", 'href="/pro.html"' in html_p)
+    qa_p = qa.audit_site(Path(out_p["outdir"]), base_url="https://t.example")
+    check("pro: QA чистый", qa_p["errors"] == 0, qa.summarize(qa_p))
+
 
 # ------------------------------------------------------- Накопитель предметов
 def test_archive():
