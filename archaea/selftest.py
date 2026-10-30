@@ -416,6 +416,23 @@ def test_monetization_cta():
     check("beacon: без токена — zero-JS", "beacon.min.js" not in h_nb
           and "<script defer" not in h_nb)
 
+    # item-страница: тег-ссылки только на дышащие темы (мёртвый /topics/X.html
+    # = QA error → деплой всего роя не уходит)
+    it = {"title": "Dead topic item", "url": "https://x/9", "ts": time.time(),
+          "source": "rss", "buzz": 1, "topics": ["alive", "ghost"],
+          "summary": "", "date": "2026-10-30 12:00 UTC",
+          "points": 0, "comments": 0}
+    pi = sitegen.page_item(dict(it), {"title": "T", "base_url": "https://t.example",
+                                      "lang": "ru"},
+                           live_topics={"alive"})
+    check("item: мёртвый топик не ссылается", "/topics/ghost.html" not in pi
+          and "/topics/alive.html" in pi)
+    pi_all = sitegen.page_item(dict(it), {"title": "T",
+                                          "base_url": "https://t.example",
+                                          "lang": "ru"})
+    check("item: compat — все ссылки если live не задан",
+          "/topics/ghost.html" in pi_all)
+
 
 # ------------------------------------------------------- Накопитель предметов
 def test_archive():

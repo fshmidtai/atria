@@ -552,11 +552,17 @@ def _closes_badge(item: dict, L: dict) -> str:
             f'✕ {L["closes_closed"]}</span>')
 
 
-def page_item(item: dict, site: dict, related: list[dict] | None = None) -> str:
+def page_item(item: dict, site: dict, related: list[dict] | None = None,
+              live_topics: set | None = None) -> str:
     L = _L(site)
     slug = _slug(item["title"])
+    # Тег-ссылка — только на дышащую тему (см. generate): ссылка на
+    # /topics/X.html, страницы которого нет в этом снимке = мёртвая ссылка
+    # (QA ловит, деплой не уходит).
+    live = live_topics if live_topics is not None else set(item.get("topics", []))
     tags = "".join(
-        f'<a class="chip" href="/topics/{t}.html">#{t}</a>' for t in item.get("topics", [])
+        f'<a class="chip" href="/topics/{t}.html">#{t}</a>'
+        for t in item.get("topics", []) if t in live
     )
     related_block = ""
     if related:
@@ -863,7 +869,7 @@ def generate(snapshot: dict, outdir: str | Path, config: dict,
         if slug in slugs:
             continue
         slugs.add(slug)
-        p = page_item(item, site, _related(item, pool))
+        p = page_item(item, site, _related(item, pool), live_topics=topics)
         (outdir / "item" / f"{slug}.html").write_text(p, encoding="utf-8")
         urls.append(f"item/{slug}.html")
 
