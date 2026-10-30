@@ -394,6 +394,25 @@ def test_monetization_cta():
     qa_p = qa.audit_site(Path(out_p["outdir"]), base_url="https://t.example")
     check("pro: QA чистый", qa_p["errors"] == 0, qa.summarize(qa_p))
 
+    # CF Web Analytics маяк: рендерится iff конфиг несёт cf_beacon
+    from colonies.phosphor import sitegen as _sg
+    st_b = {"title": "T", "tagline": "T", "base_url": "https://t.example",
+            "lang": "ru", "cf_beacon": "BEEFTOKEN123", "monetization": {}}
+    out_b = _sg.generate(snap, tmp / "dist_b",
+                         {"site": st_b, "topics": [], "top_items_home": 2,
+                          "top_item_pages": 3})
+    h_b = (Path(out_b["outdir"]) / "index.html").read_text(encoding="utf-8")
+    check("beacon: имя маяка в странице", "BEEFTOKEN123" in h_b
+          and "beacon.min.js" in h_b)
+    out_nb = _sg.generate(snap, tmp / "dist_nb",
+                          {"site": {"title": "T", "tagline": "T",
+                                    "base_url": "https://t.example",
+                                    "lang": "ru", "monetization": {}},
+                           "topics": [], "top_items_home": 2, "top_item_pages": 3})
+    h_nb = (Path(out_nb["outdir"]) / "index.html").read_text(encoding="utf-8")
+    check("beacon: без токена — zero-JS", "beacon.min.js" not in h_nb
+          and "<script defer" not in h_nb)
+
 
 # ------------------------------------------------------- Накопитель предметов
 def test_archive():

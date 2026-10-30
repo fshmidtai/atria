@@ -345,6 +345,14 @@ def _page(body: str, title: str, description: str, base_url: str, path: str,
         f'<link rel="alternate" type="application/rss+xml" '
         f'title="{_esc(feed_title or "RSS")}" href="/feed.xml">'
     )
+    # Cloudflare Web Analytics: privacy-first маяк (без cookies, defer).
+    # Включён только когда colony-конфиг несёт cf_beacon (см.
+    # infra/cloudflare/analytics.py) — до активации страницы остаются zero-JS.
+    beacon = (site or {}).get("cf_beacon") or ""
+    beacon_html = (
+        f'<script defer src="https://static.cloudflareinsights.com/beacon.min.js"'
+        f' data-cf-beacon=\'{{"token": "{_esc(beacon)}"}}\'></script>'
+        if beacon else "")
     # Постраниц без собственного JSON-LD получаем дефолтный WebSite:
     # структурированные данные должны быть на каждой странице (SEO).
     if not jsonld and feed_title:
@@ -388,6 +396,7 @@ def _page(body: str, title: str, description: str, base_url: str, path: str,
 {cta}
 <footer>{L["footer"]} · {footer_ts}{_sister_links(site or {})}</footer>
 </div>
+{beacon_html}
 </body>
 </html>
 """
