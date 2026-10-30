@@ -5,7 +5,35 @@
     <link>https://cveradar-ah3.pages.dev</link>
     <description>Живые CVE и уязвимости на русском: автономный перевод угроз в понятные дайджесты для DevOps и небольшого SecOps</description>
     <language>ru</language>
-    <lastBuildDate>Fri, 30 Oct 2026 09:06:31 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 30 Oct 2026 13:12:49 GMT</lastBuildDate>
+    <item>
+      <title>Trezor Warns of Suspected Hardware Implant in One of Its Wallets Sold by CryptoBilis</title>
+      <link>https://cveradar-ah3.pages.dev/item/trezor-warns-of-suspected-hardware-implant-in-one-of-its-wallets.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/trezor-warns-of-suspected-hardware-implant-in-one-of-its-wallets.html</guid>
+      <pubDate>Fri, 30 Oct 2026 12:21:56 GMT</pubDate>
+      <description>A Trezor Safe 5 hardware wallet bought from the reseller CryptoBilis has an extra circuit board that sends out the recovery phrase over a mobile network, a customer has reported. Trezor has not yet examined the device. It is telling everyone who bought a Trezor from CryptoBilis since March 2026 to m</description>
+    </item>
+    <item>
+      <title>Why Urgent Security Fixes Aren't Fixed. Observe, Prove, Act, Confirm Gets Them Moving</title>
+      <link>https://cveradar-ah3.pages.dev/item/why-urgent-security-fixes-aren-t-fixed-observe-prove-act-confirm.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/why-urgent-security-fixes-aren-t-fixed-observe-prove-act-confirm.html</guid>
+      <pubDate>Fri, 30 Oct 2026 11:58:53 GMT</pubDate>
+      <description>The alert is critical. The fix is known. And the ticket sits in a queue for days. Security teams understand the risk, but the people who keep applications available need proof that the change won’t break anything.&amp;nbsp; Their concerns are practical. An IPS protection could block legitimate traffic. </description>
+    </item>
+    <item>
+      <title>Syrian Hacker Behind Fake Tweet That Triggered $136 Billion Market Drop Gets 42 Months in Prison</title>
+      <link>https://cveradar-ah3.pages.dev/item/syrian-hacker-behind-fake-tweet-that-triggered-136-billion-marke.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/syrian-hacker-behind-fake-tweet-that-triggered-136-billion-marke.html</guid>
+      <pubDate>Fri, 30 Oct 2026 10:40:45 GMT</pubDate>
+      <description>Ahmad Umar Agha, a Syrian Electronic Army hacker known online as "Th3Pr0," has been&amp;nbsp;sentenced by a U.S. federal court&amp;nbsp;to 42 months in prison for his role in a hacking conspiracy that targeted Western news outlets. The conspiracy was organized and led by members of former Syrian President B</description>
+    </item>
+    <item>
+      <title>Official Claude Code Extension on Cursor Marketplace Trojanized with Persistent SSH Backdoor</title>
+      <link>https://cveradar-ah3.pages.dev/item/official-claude-code-extension-on-cursor-marketplace-trojanized-.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/official-claude-code-extension-on-cursor-marketplace-trojanized-.html</guid>
+      <pubDate>Fri, 30 Oct 2026 08:55:47 GMT</pubDate>
+      <description>Cybersecurity researchers have disclosed that a trojanized version of Anthropic's official Claude Code extension was distributed through the Cursor Marketplace as a legitimate update, attempting to install a persistent SSH backdoor on affected systems. The malicious update, version 2.1.313, was dist</description>
+    </item>
     <item>
       <title>Hackers Actively Exploit Highly Critical Drupal Commerce Core Authorization Bypass Flaw</title>
       <link>https://cveradar-ah3.pages.dev/item/hackers-actively-exploit-highly-critical-drupal-commerce-core-au.html</link>
@@ -241,38 +269,6 @@ JobWorkflowExecutor._exec_inline_python() is designed to safely execute inline P
       <description>Severity: low. ### Impact
 
 Parse Server's file upload validation uses the `fileUpload.fileExtensions` option (enabled by default with a blocklist) to reject files that browsers may render as active content, mitigating stored cross-site scripting (XSS). When an uploaded file's extension is not recogn</description>
-    </item>
-    <item>
-      <title>CVE-2026-62160: Daptin: ParseAcceptLanguage `_` separator bypass enables &gt;250x CPU amplification via Accept-Language header in LanguageMiddleware</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-62160-daptin-parseacceptlanguage-separator-bypass-enabl.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-62160-daptin-parseacceptlanguage-separator-bypass-enabl.html</guid>
-      <pubDate>Thu, 29 Oct 2026 16:33:09 GMT</pubDate>
-      <description>Severity: high. ### Summary
-
-Daptin's `LanguageMiddleware` (registered as a global gin middleware) calls `golang.org/x/text/language.ParseAcceptLanguage` on the raw `Accept-Language` header of every HTTP request without imposing any size or shape filter. The underlying parser has quadratic-time beha</description>
-    </item>
-    <item>
-      <title>GHSA-pg53-p7qp-65cv: PocketMine-MP has potential memory/network vulnerability from repeated ResourcePackClientResponsePacket packets</title>
-      <link>https://cveradar-ah3.pages.dev/item/ghsa-pg53-p7qp-65cv-pocketmine-mp-has-potential-memory-network-v.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/ghsa-pg53-p7qp-65cv-pocketmine-mp-has-potential-memory-network-v.html</guid>
-      <pubDate>Thu, 29 Oct 2026 16:32:58 GMT</pubDate>
-      <description>Severity: low. ### Summary
-During the resource pack stage of logging in, after the server sends `ResourcePackStackPacket`, a malicious client can send a batch of multiple `ResourcePackClientResponsePacket` packets with status `ResourcePackClientResponsePacket::STATUS_COMPLETED` causing the server to</description>
-    </item>
-    <item>
-      <title>CVE-2026-55186: MultiFactor Authentication for SilverStripe can bypass MFA during password reset flow</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-55186-multifactor-authentication-for-silverstripe-can-b.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-55186-multifactor-authentication-for-silverstripe-can-b.html</guid>
-      <pubDate>Thu, 29 Oct 2026 16:32:39 GMT</pubDate>
-      <description>Severity: medium. ### Impact
-In CMS 5, the password reset flow let a user with multi-factor authentication enabled change their password and get a logged-in session before completing multi-factor authentication. Exploiting this requires access to the user's email account. CMS 6 is not affected.</description>
-    </item>
-    <item>
-      <title>Linux Kernel TCP Flaw With 9.8 CVSS Score Affects Ubuntu, Red Hat and Other Distributions</title>
-      <link>https://cveradar-ah3.pages.dev/item/linux-kernel-tcp-flaw-with-9-8-cvss-score-affects-ubuntu-red-hat.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/linux-kernel-tcp-flaw-with-9-8-cvss-score-affects-ubuntu-red-hat.html</guid>
-      <pubDate>Thu, 29 Oct 2026 15:57:05 GMT</pubDate>
-      <description>A flaw in the Linux kernel's TCP code, tracked as&amp;nbsp;CVE-[phone], affects Ubuntu, Red Hat Enterprise Linux (RHEL), and other Linux distributions. The kernel's own CVE team rates it 9.8 out of 10 on the CVSS scale. Anthropic said&amp;nbsp;on October 27 that its AI model wrote an exploit that uses the f</description>
     </item>
   </channel>
 </rss>
