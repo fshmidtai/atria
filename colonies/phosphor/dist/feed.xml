@@ -5,7 +5,91 @@
     <link>https://signal-frontier.pages.dev</link>
     <description>Радар инсайтов, трендов и технологий: что вспыхнуло в сети за последние 48 часов</description>
     <language>ru</language>
-    <lastBuildDate>Fri, 30 Oct 2026 03:39:03 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 30 Oct 2026 04:05:44 GMT</lastBuildDate>
+    <item>
+      <title>Finding the strings a multilingual site forgot to translate</title>
+      <link>https://signal-frontier.pages.dev/item/finding-the-strings-a-multilingual-site-forgot-to-translate.html</link>
+      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/finding-the-strings-a-multilingual-site-forgot-to-translate.html</guid>
+      <pubDate>Fri, 30 Oct 2026 03:58:53 GMT</pubDate>
+      <description>&lt;p&gt;The German product page reads well. Then a visitor submits the contact form with the email field empty and gets "This field is required" sitting under a German label. The order confirmation that follows has a German subject line, an English footer, and a button that says "View order".&lt;/p&gt; &lt;p&gt;None</description>
+    </item>
+    <item>
+      <title>HTTPie vs curl vs an OpenAPI Client for Quick Requests</title>
+      <link>https://signal-frontier.pages.dev/item/httpie-vs-curl-vs-an-openapi-client-for-quick-requests.html</link>
+      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/httpie-vs-curl-vs-an-openapi-client-for-quick-requests.html</guid>
+      <pubDate>Fri, 30 Oct 2026 03:58:30 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Quick answer:&lt;/strong&gt; curl, HTTPie, and an OpenAPI client are not interchangeable tools at different points of the same workflow. curl is the universal lowest common denominator for one-off and scripted calls; HTTPie makes the same calls human-friendly with sensible JSON and header handl</description>
+    </item>
+    <item>
+      <title>Building a Zero-Server In-Browser Spreadsheet (XLSX/CSV) Editor with WebAssembly &amp; Web Workers</title>
+      <link>https://signal-frontier.pages.dev/item/building-a-zero-server-in-browser-spreadsheet-xlsx-csv-editor-wi.html</link>
+      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/building-a-zero-server-in-browser-spreadsheet-xlsx-csv-editor-wi.html</guid>
+      <pubDate>Fri, 30 Oct 2026 03:58:02 GMT</pubDate>
+      <description>&lt;h1&gt; Building a Zero-Server In-Browser Spreadsheet (XLSX/CSV) Editor with WebAssembly &amp;amp; Web Workers &lt;/h1&gt; &lt;p&gt;Working with spreadsheet files (Microsoft Excel &lt;code&gt;.xlsx&lt;/code&gt;, &lt;code&gt;.xls&lt;/code&gt;, and comma-separated &lt;code&gt;.csv&lt;/code&gt;) on the web almost always involves expensive server infrastruc</description>
+    </item>
+    <item>
+      <title>Automating tax calculation from Amazon VAT reports: a system design for VAT service providers</title>
+      <link>https://signal-frontier.pages.dev/item/automating-tax-calculation-from-amazon-vat-reports-a-system-desi.html</link>
+      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/automating-tax-calculation-from-amazon-vat-reports-a-system-desi.html</guid>
+      <pubDate>Fri, 30 Oct 2026 03:57:20 GMT</pubDate>
+      <description>&lt;p&gt;For firms that provide cross-border VAT services, the most labor-intensive step usually isn't registration. It's calculating tax every filing period. Sellers send over their Amazon VAT Transactions Report, and accountants sort it in Excel by country, rate and deductible item, then copy the number</description>
+    </item>
+    <item>
+      <title>Node.js Audio Transcriptions 503 — Portable Fallback Boundaries for Marketplace Moderation</title>
+      <link>https://signal-frontier.pages.dev/item/node-js-audio-transcriptions-503-portable-fallback-boundaries-fo.html</link>
+      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/node-js-audio-transcriptions-503-portable-fallback-boundaries-fo.html</guid>
+      <pubDate>Fri, 30 Oct 2026 03:55:27 GMT</pubDate>
+      <description>&lt;p&gt;Short answer: treat &lt;code&gt;503 Service Unavailable&lt;/code&gt; and &lt;code&gt;model available: false&lt;/code&gt; as two different facts, then make the fallback decision from a capability registry rather than from the HTTP status alone. In a marketplace moderation pipeline, the durable boundary is a provider-neut</description>
+    </item>
+    <item>
+      <title>Designing Cursor Pagination: Why Offset Hits a Wall</title>
+      <link>https://signal-frontier.pages.dev/item/designing-cursor-pagination-why-offset-hits-a-wall.html</link>
+      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/designing-cursor-pagination-why-offset-hits-a-wall.html</guid>
+      <pubDate>Fri, 30 Oct 2026 03:55:17 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Quick answer:&lt;/strong&gt; Offset pagination is simple and correct for static, small result sets, but it breaks down on live data: as rows are inserted or deleted between requests, pages skip or duplicate records, and deep offsets get slow because the database still counts and discards the sk</description>
+    </item>
+    <item>
+      <title>Node.js API Feature Flag Checks: 4 Signals for Enabled Tenant Cost Allocation</title>
+      <link>https://signal-frontier.pages.dev/item/node-js-api-feature-flag-checks-4-signals-for-enabled-tenant-cos.html</link>
+      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/node-js-api-feature-flag-checks-4-signals-for-enabled-tenant-cos.html</guid>
+      <pubDate>Fri, 30 Oct 2026 03:54:52 GMT</pubDate>
+      <description>&lt;p&gt;The practical answer is to record the flag decision beside the request or job that consumed it, then join that decision with tenant and cost dimensions. A Node.js API can return &lt;code&gt;enabled: true&lt;/code&gt;, but that boolean alone cannot explain why cohort A received 38% of the experiment's compute</description>
+    </item>
+    <item>
+      <title>Generated Enums Break When the API Adds a New Value</title>
+      <link>https://signal-frontier.pages.dev/item/generated-enums-break-when-the-api-adds-a-new-value.html</link>
+      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/generated-enums-break-when-the-api-adds-a-new-value.html</guid>
+      <pubDate>Fri, 30 Oct 2026 03:53:52 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Quick answer:&lt;/strong&gt; A generated enum is a closed set by default, so the moment the server adds a value the client did not know about, strict generated code can throw, fail to deserialize, or silently drop the value — even though nothing the client shipped changed. The fix is to decide </description>
+    </item>
+    <item>
+      <title>The "Playbook" Deep-Dive (Action-oriented)</title>
+      <link>https://signal-frontier.pages.dev/item/the-playbook-deep-dive-action-oriented.html</link>
+      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/the-playbook-deep-dive-action-oriented.html</guid>
+      <pubDate>Fri, 30 Oct 2026 03:53:23 GMT</pubDate>
+      <description>&lt;p&gt;&lt;a href="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/..." class="article-body-image-wrapper"&gt;&lt;img src="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/..." alt="Uploading image" width="</description>
+    </item>
+    <item>
+      <title>How we bundled Java 8 into a one-click Windows zip for our game</title>
+      <link>https://signal-frontier.pages.dev/item/how-we-bundled-java-8-into-a-one-click-windows-zip-for-our-game.html</link>
+      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/how-we-bundled-java-8-into-a-one-click-windows-zip-for-our-game.html</guid>
+      <pubDate>Fri, 30 Oct 2026 03:53:06 GMT</pubDate>
+      <description>&lt;p&gt;&lt;em&gt;Disclosure: I'm Snow, and I run SnowRSPS, a free custom 317 game server online since 2012.&lt;/em&gt;&lt;/p&gt; &lt;p&gt;Our game client is a Java 8 jar. For years the #1 support question was "it won't open." Players had no Java, the wrong Java, or a 32-bit PC. Here's what we shipped instead.&lt;/p&gt; &lt;h2&gt; The layo</description>
+    </item>
+    <item>
+      <title>Hot Wallet Drains in 2026: The Question Nobody Asks</title>
+      <link>https://signal-frontier.pages.dev/item/hot-wallet-drains-in-2026-the-question-nobody-asks.html</link>
+      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/hot-wallet-drains-in-2026-the-question-nobody-asks.html</guid>
+      <pubDate>Fri, 30 Oct 2026 03:51:39 GMT</pubDate>
+      <description>&lt;h1&gt; Hot Wallet Drains in 2026: The Question Nobody Asks About the $3.3B Lesson &lt;/h1&gt; &lt;p&gt;&lt;strong&gt;The signature is the attack surface. Everything else is commentary.&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;Every major wallet-drain event of the last 18 months - from the $1.5B Bybit incident to this week's $3.3B hot wallet ev</description>
+    </item>
+    <item>
+      <title>Vague Tool Descriptions Make the Agent Call the Wrong MCP Tool</title>
+      <link>https://signal-frontier.pages.dev/item/vague-tool-descriptions-make-the-agent-call-the-wrong-mcp-tool.html</link>
+      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/vague-tool-descriptions-make-the-agent-call-the-wrong-mcp-tool.html</guid>
+      <pubDate>Fri, 30 Oct 2026 03:49:43 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Quick answer:&lt;/strong&gt; An MCP server can expose every operation correctly and still fail in practice, because the model chooses a tool by reading its name and description. When descriptions are generic, duplicated, or copied from method names, the agent cannot distinguish near-similar ope</description>
+    </item>
     <item>
       <title>Stop Scraping DOMs When JSON APIs Are Hiding in Plain Sight: Benchmarks with Async Python &amp; Playwright</title>
       <link>https://signal-frontier.pages.dev/item/stop-scraping-doms-when-json-apis-are-hiding-in-plain-sight-benc.html</link>
@@ -131,91 +215,6 @@
       <guid isPermaLink="true">https://signal-frontier.pages.dev/item/system-design-for-physical-ai-a-live-digital-twin-of-four-us-dis.html</guid>
       <pubDate>Fri, 30 Oct 2026 02:39:42 GMT</pubDate>
       <description>&lt;p&gt;&lt;em&gt;This is the engineering summary of an open reference architecture. The paper, its object model as JSON and the model register are free to reuse under CC BY 4.0: &lt;a href="https://codeatoms.ai/warehouse-digital-twin-us/" rel="noopener noreferrer"&gt;https://codeatoms.ai/warehouse-digital-twin-us/&lt;</description>
-    </item>
-    <item>
-      <title>Smart Contract Vulnerability Surface Analysis: Binance CEX</title>
-      <link>https://signal-frontier.pages.dev/item/smart-contract-vulnerability-surface-analysis-binance-cex.html</link>
-      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/smart-contract-vulnerability-surface-analysis-binance-cex.html</guid>
-      <pubDate>Fri, 30 Oct 2026 02:39:15 GMT</pubDate>
-      <description>&lt;h1&gt; Smart Contract Vulnerability Surface Analysis: Binance CEX &lt;/h1&gt; &lt;p&gt;&lt;strong&gt;Target Protocol&lt;/strong&gt;: Binance CEX (TVL: $133620.3M)&lt;/p&gt; &lt;h1&gt; Smart Contract Vulnerability Surface Analysis – Binance CEX &lt;/h1&gt; &lt;p&gt;&lt;strong&gt;Protocol:&lt;/strong&gt; Binance Centralized Exchange (CEX) – Smart‑contract layer </description>
-    </item>
-    <item>
-      <title>An Automatic Feeder Is a Machine Built for One Kind of Kibble</title>
-      <link>https://signal-frontier.pages.dev/item/an-automatic-feeder-is-a-machine-built-for-one-kind-of-kibble.html</link>
-      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/an-automatic-feeder-is-a-machine-built-for-one-kind-of-kibble.html</guid>
-      <pubDate>Fri, 30 Oct 2026 02:39:12 GMT</pubDate>
-      <description>&lt;p&gt;Pet feeders are sold as if the food were a detail. Fill the hopper, set the schedule, done. Anyone who has owned one for a few months knows better: the feeder is a small machine with a strong opinion about the size, shape and condition of what you put in it, and most "faults" are actually disagre</description>
-    </item>
-    <item>
-      <title>Count OOXML Payload Bytes Without Pretending to Predict Compression</title>
-      <link>https://signal-frontier.pages.dev/item/count-ooxml-payload-bytes-without-pretending-to-predict-compress.html</link>
-      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/count-ooxml-payload-bytes-without-pretending-to-predict-compress.html</guid>
-      <pubDate>Fri, 30 Oct 2026 02:38:43 GMT</pubDate>
-      <description>&lt;p&gt;An inventory can answer a narrow question before anyone tries to optimize a document: how many compressed entry-payload bytes were reported, and how many belong to rows the caller marked as candidates for rewriting? That’s useful accounting, and it isn’t a prediction of the output file size.&lt;/p&gt; </description>
-    </item>
-    <item>
-      <title>Duong Phuc Khanh (Dương Phúc Khánh) - Systems Architect: Dissecting Next.js 16 True HTTP 404, Zero-CLS L1 Quote Cache &amp; Quantitative Portfolio NAV</title>
-      <link>https://signal-frontier.pages.dev/item/duong-phuc-khanh-d-ng-ph-c-kh-nh-systems-architect-dissecting-ne.html</link>
-      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/duong-phuc-khanh-d-ng-ph-c-kh-nh-systems-architect-dissecting-ne.html</guid>
-      <pubDate>Fri, 30 Oct 2026 02:35:54 GMT</pubDate>
-      <description>&lt;p&gt;I'm &lt;strong&gt;&lt;a href="https://khanhdp.com" rel="noopener noreferrer"&gt;Duong Phuc Khanh (Dương Phúc Khánh) - Systems Architect&lt;/a&gt;&lt;/strong&gt; (known across the engineering community as &lt;strong&gt;&lt;a href="https://khanhdp.com" rel="noopener noreferrer"&gt;khanhdp&lt;/a&gt;&lt;/strong&gt; or &lt;strong&gt;Kido&lt;/strong&gt;, &lt;a hre</description>
-    </item>
-    <item>
-      <title>Six Years in the Queue: Why Datacenters Are Building Their Own Power Plants</title>
-      <link>https://signal-frontier.pages.dev/item/six-years-in-the-queue-why-datacenters-are-building-their-own-po.html</link>
-      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/six-years-in-the-queue-why-datacenters-are-building-their-own-po.html</guid>
-      <pubDate>Fri, 30 Oct 2026 02:35:52 GMT</pubDate>
-      <description>&lt;p&gt;The bottleneck in building a datacenter stopped being the building about three years ago. It is the interconnection queue, and the queue is now longer than the useful life of the accelerator the building is meant to hold.&lt;/p&gt; &lt;p&gt;In several major markets the wait for a new high-voltage connection </description>
-    </item>
-    <item>
-      <title>HLS Streaming Explained: How It Works and How to Optimize Video Delivery</title>
-      <link>https://signal-frontier.pages.dev/item/hls-streaming-explained-how-it-works-and-how-to-optimize-video-d.html</link>
-      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/hls-streaming-explained-how-it-works-and-how-to-optimize-video-d.html</guid>
-      <pubDate>Fri, 30 Oct 2026 02:35:15 GMT</pubDate>
-      <description>&lt;p&gt;&lt;a href="https://www.cdnetworks.com/glossary/hls-protocol/" rel="noopener noreferrer"&gt;HTTP Live Streaming (HLS)&lt;/a&gt; is an HTTP-based video delivery protocol developed by Apple. It divides live or on-demand video into media segments referenced by M3U8 playlists. Players retrieve these segments ove</description>
-    </item>
-    <item>
-      <title>CVE-2026-98432: Linux TCP Use-After-Free Risk and Patch Validation</title>
-      <link>https://signal-frontier.pages.dev/item/cve-2026-98432-linux-tcp-use-after-free-risk-and-patch-validatio.html</link>
-      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/cve-2026-98432-linux-tcp-use-after-free-risk-and-patch-validatio.html</guid>
-      <pubDate>Fri, 30 Oct 2026 02:33:04 GMT</pubDate>
-      <description></description>
-    </item>
-    <item>
-      <title>Ubiquiti UniFi USW-Pro-XG-10-PoE: Is This the 10GbE Switch Your Homelab Needs?</title>
-      <link>https://signal-frontier.pages.dev/item/ubiquiti-unifi-usw-pro-xg-10-poe-is-this-the-10gbe-switch-your-h.html</link>
-      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/ubiquiti-unifi-usw-pro-xg-10-poe-is-this-the-10gbe-switch-your-h.html</guid>
-      <pubDate>Fri, 30 Oct 2026 02:07:13 GMT</pubDate>
-      <description>&lt;p&gt;If your homelab has outgrown gigabit networking, the Ubiquiti UniFi USW-Pro-XG-10-PoE is one of the more interesting options on the market right now. It packs ten 10GbE RJ45 ports with PoE+++ plus two 10G SFP+ slots into 1U, and slots straight into the UniFi ecosystem without the usual enterprise</description>
-    </item>
-    <item>
-      <title>Turning my Markdown notes into a Word document</title>
-      <link>https://signal-frontier.pages.dev/item/turning-my-markdown-notes-into-a-word-document.html</link>
-      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/turning-my-markdown-notes-into-a-word-document.html</guid>
-      <pubDate>Fri, 30 Oct 2026 02:06:39 GMT</pubDate>
-      <description>&lt;p&gt;The last column in my table could use a little more room.&lt;/p&gt; &lt;p&gt;That was my first thought looking at the exported document. The table had three columns: Deliverable, Owner, and Review requirement. They appeared equally wide, even though the content wasn’t. “Product” sat in a mostly empty cell, w</description>
-    </item>
-    <item>
-      <title>Claude Code 2.0: Instant Rewind and Zero-Fear CLI Coding</title>
-      <link>https://signal-frontier.pages.dev/item/claude-code-2-0-instant-rewind-and-zero-fear-cli-coding.html</link>
-      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/claude-code-2-0-instant-rewind-and-zero-fear-cli-coding.html</guid>
-      <pubDate>Fri, 30 Oct 2026 02:06:12 GMT</pubDate>
-      <description>&lt;p&gt;You ask an AI coding assistant to add a clean dark mode toggle to your personal portfolio page.&lt;/p&gt; &lt;p&gt;You hit Enter. In the terminal window, lines of shell commands and tool calls flash past in rapid succession. Before you can even parse what happened, the assistant proudly reports: "All modific</description>
-    </item>
-    <item>
-      <title>Show HN: Lasm – Write formally verified webapps in Lean for Node/serverless/edge</title>
-      <link>https://signal-frontier.pages.dev/item/show-hn-lasm-write-formally-verified-webapps-in-lean-for-node-se.html</link>
-      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/show-hn-lasm-write-formally-verified-webapps-in-lean-for-node-se.html</guid>
-      <pubDate>Fri, 30 Oct 2026 02:05:41 GMT</pubDate>
-      <description>Lasm has been my dream for a good part of 2026.
-I firmly believe that formal verification is the next evolution of software engineering and programming languages. This next wave will largely be enabled by the incredibly intelligent LLMs that understand formal verification and its programming languag</description>
-    </item>
-    <item>
-      <title>Stop Saying "Sorry": The Kill-Process Protocol</title>
-      <link>https://signal-frontier.pages.dev/item/stop-saying-sorry-the-kill-process-protocol.html</link>
-      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/stop-saying-sorry-the-kill-process-protocol.html</guid>
-      <pubDate>Fri, 30 Oct 2026 02:05:21 GMT</pubDate>
-      <description>&lt;p&gt;Turn “no” into Quality Assurance in 3 seconds.&lt;/p&gt; &lt;ol&gt; &lt;li&gt;The Exploitation Audit: You Are an Unpaid Background Worker At 3:45 PM on a critical sprint cycle, an unauthorized operational packet breaches your perimeter: “Hey, resolving this ad-hoc bug takes you five minutes. Can’t you just squeeze</description>
     </item>
   </channel>
 </rss>
