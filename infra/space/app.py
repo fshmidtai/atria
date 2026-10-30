@@ -122,8 +122,10 @@ def refresh():
             f"  - `{k}` — {v.get('rows', 0)} строк"
             for k, v in products.items()
         ) or "  — нет"
+        base = site.get("base_url") or ""
+        link = f" — **[сайт]({base})**" if base else ""
         cards.append(
-            f"### {site.get('title', name)} (`{name}`)\n"
+            f"### {site.get('title', name)} (`{name}`){link}\n"
             f"- QA: {_qa_mark(c.get('qa'))}"
             f"- Страниц: {c.get('pages', 0)} · предметов: {totals.get('items', 0)}"
             f"- Источники: {totals.get('by_source')}"

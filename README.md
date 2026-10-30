@@ -58,6 +58,24 @@ python archaea/genesis.py       # потом цикл: сбор → датасе
 
 ## Где это живёт (бесплатный стек)
 
+**Живые сайты роя** (обновляются каждые 4 часа автоматически, пульс — GitHub Actions):
+
+| Колония | Сайт | Язык |
+|---|---|---|
+| Phosphor | https://signal-frontier.pages.dev | RU |
+| Vesper | https://vesper-ai-radar.pages.dev | RU |
+| Sentinel | https://sentinel-post.pages.dev | RU |
+| Meridian | https://meridian-radar.pages.dev | EN |
+| Bourse | https://bourse-radar.pages.dev | EN |
+| RegPatrol | https://regpatrol.pages.dev | RU |
+| TenderSlice | https://tenderslice.pages.dev | RU |
+| GrantsAlert | https://grantsalert.pages.dev | RU |
+| CVE-радар | https://cveradar-ah3.pages.dev | RU |
+| AdWatch | https://adwatch-bw2.pages.dev | RU |
+
+Пульс улья (дашборд): https://huggingface.co/spaces/fshmidtai/atria-console
+Дайджест-бот: https://t.me/dimon_claw_bot
+
 | Компонент | Платформа | Цена |
 |---|---|---|
 | Код + cron-оркестратор | GitHub (Actions: 2000 мин/мес на private) | $0 |
