@@ -196,6 +196,18 @@ def process_updates(token: str, state: dict, lang: str = "ru") -> int:
                        f"<a href=\"{link}\">{PRO_PRICE_STARS} Stars</a>")
             _api(token, "sendMessage", {"chat_id": cid, "parse_mode": "HTML",
                                         "text": hi})
+        elif text.startswith("/help"):
+            link = state.get("invoice_url")
+            _api(token, "sendMessage", {
+                "chat_id": cid, "parse_mode": "HTML",
+                "text": ("🤖 <b>Атрия</b> — автономный мониторинг 10 вертикалей\n\n"
+                         "/start — подписка на дайджест\n"
+                         "/pro — подключить Pro (полный top-20)\n"
+                         "/stop — отписка\n\n"
+                         "Дайджест приходит каждые 4 часа. Бот работает без "
+                         "сервера: состояние хранится в открытом репозитории, "
+                         "пульс — GitHub Actions."
+                         + (f"\n\n⭐ Pro: {link}" if link else ""))})
         elif text.startswith("/pro"):
             link = ensure_invoice(token, state)
             _api(token, "sendMessage", {

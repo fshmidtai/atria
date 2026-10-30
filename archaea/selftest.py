@@ -518,6 +518,8 @@ def test_tgpost():
                  "message": {"chat": {"id": 456},
                              "successful_payment": {
                                  "payload": '{"product":"atria_pro_month","days":31}'}}},
+                {"update_id": 104,
+                 "message": {"chat": {"id": 123}, "text": "/help"}},
             ]}
         if method == "createInvoiceLink":
             return {"ok": True, "result": "https://t.me/invoice/fake"}
@@ -531,14 +533,18 @@ def test_tgpost():
     _os.environ["TG_BOT_TOKEN"] = "fake:test"
     state = {"chats": {}, "offset": 0}
     n = tgpost.process_updates("fake:test", state)
-    check("tg: 4 апдейта обработаны", n == 4, n)
+    check("tg: 5 апдейтов обработаны", n == 5, n)
     # 123 подписался и отписался, 456 оплатил Pro
     chats = state["chats"]
     check("tg: 123 отпал, 456 остался Pro",
           "123" not in chats and "456" in chats, sorted(chats))
     check("tg: Pro-подписка до > now",
           float(chats.get("456", {}).get("until", 0)) > time.time())
-    check("tg: offset подтверждён", state["offset"] == 104, state["offset"])
+    check("tg: offset подтверждён", state["offset"] == 105, state["offset"])
+    help_texts = [p.get("text", "") for m, p in calls
+                  if m == "sendMessage" and "автономный мониторинг" in p.get("text", "")]
+    check("tg: /help отвечает командами",
+          any("/start" in t and "/pro" in t for t in help_texts))
     check("tg: /pro создаёт постоянный инвойс",
           (tgpost.ensure_invoice("fake:test", state)
            == "https://t.me/invoice/fake"
