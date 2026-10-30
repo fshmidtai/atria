@@ -2,6 +2,14 @@ name: Atria hive tick
 
 # Пульс роя: бесплатно (2000 минут/мес на private-репо, безлимит на public).
 # Каждый запуск = один цикл: сбор → очистка → датасет → сайт + коммит состояния.
+#
+# ВНИМАНИЕ ручным китай-пушам из локального клон: этот workflow коммитит
+# storage/* и colonies/*/dist в master. Локальное рабочее дерево устаревает —
+# git add -A МОЛЧА РЕВЕРЁТ эти CI-коммиты. Перед add -A всегда:
+#   git fetch && git checkout FETCH_HEAD -- storage colonies/adwatch/dist \
+#     colonies/bourse/dist colonies/cveradar/dist colonies/grantsalert/dist \
+#     colonies/meridian/dist colonies/phosphor/dist colonies/regpatrol/dist \
+#     colonies/sentinel/dist colonies/tenderslice/dist colonies/vesper/dist
 on:
   schedule:
     - cron: "17 */4 * * *"   # каждые 4 часа в :17 (6 циклов/сутки)
