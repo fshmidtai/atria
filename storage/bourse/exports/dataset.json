@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T01:47:28+00:00",
+  "generated_at": "2026-10-30T02:15:22+00:00",
   "sources_used": [
     "rss",
     "rss",
@@ -25,13 +25,13 @@
       "hn_fintech": 6
     },
     "by_topic": {
-      "ai": 66,
-      "biz": 51,
-      "dev": 34,
-      "science": 21,
+      "ai": 68,
+      "biz": 54,
+      "dev": 31,
+      "science": 18,
       "crypto": 12,
-      "hardware": 6,
-      "security": 5
+      "hardware": 5,
+      "security": 4
     },
     "top_domains": [
       [
@@ -52,10 +52,14 @@
       ],
       [
         "news.ycombinator.com",
-        3
+        2
       ],
       [
         "realizefi.com",
+        1
+      ],
+      [
+        "finterm.ai",
         1
       ],
       [
@@ -924,6 +928,62 @@
       "date": "2026-10-27"
     },
     {
+      "uid": "arxiv:2610.38442v1",
+      "source": "arxiv",
+      "title": "Calibration of Passive Market Impact with a Queue-Sensitive Propagator Model",
+      "url": "https://arxiv.org/abs/2610.38442v1",
+      "ts": 1793175725.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Yadh Hafsi",
+      "summary": "We develop a framework for calibrating passive market impact, defined as the price response to liquidity-providing limit orders, in contrast to the impact of liquidity-consuming market orders. We build on the model of Ouazzani Chahdi, Rosenbaum, and Szymanski (arxiv:[phone]), which combines Hawkes-driven market-order flow with queue-reactive limit-order and cancellation dynamics. Within this mo",
+      "recipe": "arxiv_qfin",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "dev",
+        "crypto",
+        "biz"
+      ],
+      "date": "2026-10-28"
+    },
+    {
+      "uid": "arxiv:2610.38365v1",
+      "source": "arxiv",
+      "title": "Pawnshops and Property-Related Crime: Lessons from Interwar Tokyo",
+      "url": "https://arxiv.org/abs/2610.38365v1",
+      "ts": 1793170875.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Tatsuki Inoue",
+      "summary": "Using ward-level panel data for 1927 to 1935 and fixed-effects models, this study examines how pawnshops were related to property-related crime in interwar Tokyo. Accordingly, public pawnshops targeting low-income borrowers are compared with profit-oriented private pawnshops. The results reveal that public lending is negatively associated with theft and positively associated with fraud and extorti",
+      "recipe": "arxiv_qfin",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "biz"
+      ],
+      "date": "2026-10-28"
+    },
+    {
+      "uid": "arxiv:2610.38056v1",
+      "source": "arxiv",
+      "title": "What Language Models Add to Healthcare-Equity Rankings, and What They Could Have Known",
+      "url": "https://arxiv.org/abs/2610.38056v1",
+      "ts": 1793142713.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Haotong Fu",
+      "summary": "In healthcare equities, much of what moves a single name arrives as text: filings, trial and regulatory records, news and analyst commentary. We evaluate how screened non-market features and language-model representations improve market-based equity rankings for US healthcare firms over 2020-2025. Adding balance-sheet and attention features improves the resulting hybrid's price- and liquidity-neut",
+      "recipe": "arxiv_qfin",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "biz"
+      ],
+      "date": "2026-10-27"
+    },
+    {
       "uid": "arxiv:2610.37445v1",
       "source": "arxiv",
       "title": "Hosting is not capturing: an exposure-capability framework and Hungary's electric-vehicle battery bet",
@@ -1050,6 +1110,24 @@
       "topics": [
         "ai",
         "dev"
+      ],
+      "date": "2026-10-26"
+    },
+    {
+      "uid": "arxiv:2610.37705v1",
+      "source": "arxiv",
+      "title": "Decorrelating the Advice Layer: A Calibrated Fragility Metric and Tested Mitigations for Synchronized Liquidation in Agentic Wealth Management",
+      "url": "https://arxiv.org/abs/2610.37705v1",
+      "ts": 1793039456.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Saurabh Kohli",
+      "summary": "Conversational AI agents are turning wealth management into a continuous loop of market analysis, allocation, risk checks and execution, run for millions of clients on a handful of foundation models. We build a multi-asset agent-based model of this layer, calibrated to measured model concentration, cross-model correlation, retail turnover and 33 years of real equity returns, and ask when the layer",
+      "recipe": "arxiv_qfin",
+      "buzz": 10,
+      "topics": [
+        "ai",
+        "biz"
       ],
       "date": "2026-10-26"
     },
@@ -1432,6 +1510,25 @@
       "date": "2026-10-23"
     },
     {
+      "uid": "hn:48896257",
+      "source": "hn",
+      "title": "Show HN: Finterm.ai Bloomberg terminal for Claude Code",
+      "url": "https://finterm.ai/",
+      "ts": 1783965130.0,
+      "points": 6,
+      "comments": 0,
+      "author": "cheeseblubber",
+      "summary": "Hi, my name is Kam, and today my cofounder Josh and I are shipping Finterm, a CLI that\ngives coding agents direct access to financial data: stock prices, options data, SEC\nfilings, and Ticker Deep Research, a filtered ticker news search. I’m a developer and have been a full-time trader for the past few years.Recently I have been using LLMs more and more in my trading and strategy.\nI always found i",
+      "recipe": "hn_fintech",
+      "buzz": 6,
+      "topics": [
+        "ai",
+        "dev",
+        "biz"
+      ],
+      "date": "2026-07-13"
+    },
+    {
       "uid": "hn:47278733",
       "source": "hn",
       "title": "Show HN: AI trading platform with 34% returns (3 months) – seeking acquisition",
@@ -1449,24 +1546,6 @@
         "biz"
       ],
       "date": "2026-03-06"
-    },
-    {
-      "uid": "hn:45990088",
-      "source": "hn",
-      "title": "Ask HN: How do you build a \"trust layer\" for your platform?",
-      "url": "https://news.ycombinator.com/item?id=45990088",
-      "ts": 1763625243.0,
-      "points": 2,
-      "comments": 0,
-      "author": "gokulnair2001",
-      "summary": "I&#x27;m trying to understand how different teams handle platform integrity and user trust as they scale.<p>For those running consumer apps, marketplaces, fintech products, or any platform with significant user activity:\nHow do you currently build your “trust layer”?<p>Specifically:\n-&gt; How do you detect fake users, bots, device farms, or automated signups?\n-&gt; What early signals do you rely o",
-      "recipe": "hn_fintech",
-      "buzz": 2,
-      "topics": [
-        "dev",
-        "biz"
-      ],
-      "date": "2025-11-20"
     },
     {
       "uid": "hn:33629711",
@@ -2177,84 +2256,6 @@
         "ai"
       ],
       "date": "2026-10-22"
-    },
-    {
-      "uid": "arxiv:2610.30752v1",
-      "source": "arxiv",
-      "title": "The Delegation Divide: An Open Index of AI-Agent Delegability across Occupations and Countries",
-      "url": "https://arxiv.org/abs/2610.30752v1",
-      "ts": 1792646529.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Cristian Espinal Maya",
-      "summary": "35.2% of task time in world employment is at least partly delegable to AI agents in 2026, and only 2.5% can be handed over in full. Existing measures score exposure to generative AI, mostly for the United States. We build the Agent Delegability Index (ADI): two language models rate all 18,796 O*NET 30.2 task statements on a frozen, preregistered rubric of delegation levels and barriers; tasks are",
-      "recipe": "arxiv_qfin",
-      "buzz": 0,
-      "topics": [
-        "ai",
-        "dev",
-        "science"
-      ],
-      "date": "2026-10-22"
-    },
-    {
-      "uid": "arxiv:2610.30539v1",
-      "source": "arxiv",
-      "title": "Dynamics of the Liquidity Profile in Concentrated Liquidity Provision: An SPIDE Approach",
-      "url": "https://arxiv.org/abs/2610.30539v1",
-      "ts": 1792626830.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Cheuk Yin Lee",
-      "summary": "We model the dynamics of the liquidity profile in Uniswap~V3 and other concentrated-liquidity automated market makers with a stochastic partial integro-differential equation (SPIDE). The profile, the aggregate of all provider positions across tick space, evolves under a degenerate Sturm--Liouville operator, which encodes mean-reverting concentration around the market price, coupled with a Hilbert-",
-      "recipe": "arxiv_qfin",
-      "buzz": 0,
-      "topics": [
-        "ai",
-        "dev",
-        "science",
-        "biz"
-      ],
-      "date": "2026-10-21"
-    },
-    {
-      "uid": "arxiv:2610.30527v1",
-      "source": "arxiv",
-      "title": "Austerity, Gender, and Multidimensional Deprivation Among Older Europeans: Evidence from SHARE",
-      "url": "https://arxiv.org/abs/2610.30527v1",
-      "ts": 1792624850.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Nita Handastya",
-      "summary": "This paper studies whether fiscal consolidation is associated with deeper multidimensional deprivation among older women than among older men, and through which channel. Using six waves of SHARE across eleven European countries, it builds a multidimensional deprivation index spanning functional health, economic insecurity, and social exclusion, and relates it to the cyclically adjusted primary bal",
-      "recipe": "arxiv_qfin",
-      "buzz": 0,
-      "topics": [
-        "dev",
-        "science",
-        "security"
-      ],
-      "date": "2026-10-21"
-    },
-    {
-      "uid": "arxiv:2610.30307v1",
-      "source": "arxiv",
-      "title": "The Customer Is the Builder: How AI Coding Agents Are Rewriting the Economics of Software",
-      "url": "https://arxiv.org/abs/2610.30307v1",
-      "ts": 1792606811.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Ripon Chandra Malo",
-      "summary": "AI coding agents could change whether organizations buy software or build the functionality they need. We focus on organizations and professional buyers whose domain knowledge can help them specify and evaluate tools for their work. We define the software substitution frontier as the functions customers could build and maintain at an acceptable standard for less than buying them. Using public data",
-      "recipe": "arxiv_qfin",
-      "buzz": 0,
-      "topics": [
-        "ai",
-        "dev",
-        "crypto",
-        "hardware"
-      ],
-      "date": "2026-10-21"
     }
   ]
 }
