@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T08:56:57+00:00",
+  "generated_at": "2026-10-31T13:04:04+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -10,34 +10,34 @@
     "rss"
   ],
   "totals": {
-    "items": 147,
+    "items": 148,
     "by_source": {
       "hn": 40,
       "cve": 30,
-      "github": 27,
+      "github": 28,
       "rss": 50
     },
     "by_recipe": {
       "hn_sec": 40,
       "gh_advisories": 30,
       "hackersnews": 30,
-      "github_sec": 27,
+      "github_sec": 28,
       "schneier": 10,
       "krebs": 10
     },
     "by_topic": {
       "security": 123,
-      "ai": 72,
-      "dev": 67,
-      "hardware": 18,
-      "biz": 13,
-      "crypto": 11,
+      "ai": 73,
+      "dev": 68,
+      "hardware": 16,
+      "biz": 14,
+      "crypto": 12,
       "science": 5
     },
     "top_domains": [
       [
         "github.com",
-        59
+        60
       ],
       [
         "thehackernews.com",
@@ -1410,12 +1410,12 @@
       "title": "opentrap/opentrap",
       "url": "https://github.com/opentrap/opentrap",
       "ts": 1792380548.0,
-      "points": 596,
+      "points": 597,
       "comments": 9,
       "author": "opentrap",
       "summary": "A free, open-source alternative to Burp Suite: an intercepting proxy and web app security testing suite with Repeater, Intruder, Collaborator and a built-in OWASP ZAP scanner. Linux, AGPL-3.0.",
       "recipe": "github_sec",
-      "buzz": 623,
+      "buzz": 624,
       "topics": [
         "security"
       ],
@@ -1427,12 +1427,12 @@
       "title": "jmanico/grim-prompter",
       "url": "https://github.com/jmanico/grim-prompter",
       "ts": 1793189366.0,
-      "points": 276,
+      "points": 286,
       "comments": 25,
       "author": "jmanico",
       "summary": "Threat modeling for AI coding agents: point Claude Code, Codex or any agent at your repo and get an evidence-traced threat model. 36 architectures, 29 methods, MIT.",
       "recipe": "github_sec",
-      "buzz": 381,
+      "buzz": 371,
       "topics": [
         "ai",
         "dev"
@@ -1445,12 +1445,12 @@
       "title": "lordbasex/LordOS",
       "url": "https://github.com/lordbasex/LordOS",
       "ts": 1792294263.0,
-      "points": 251,
-      "comments": 22,
+      "points": 262,
+      "comments": 23,
       "author": "lordbasex",
       "summary": "LordOS — a free, fast and secure GNU/Linux distribution based on Debian, with its own desktop environment: display server and Wayland compositor in C, a React UI engine on QuickJS, and private native apps.",
       "recipe": "github_sec",
-      "buzz": 317,
+      "buzz": 331,
       "topics": [
         "hardware"
       ],
@@ -1462,12 +1462,12 @@
       "title": "aarsaputra/php2shell",
       "url": "https://github.com/aarsaputra/php2shell",
       "ts": 1792763392.0,
-      "points": 121,
+      "points": 120,
       "comments": 59,
       "author": "aarsaputra",
       "summary": "Unauthenticated RCE toolkit for PHP 5.4–8.4.26 (CVE-[phone]/109618) — pure-HTTP chain, JA3 impersonation, prpenetration-testingoof-of-access design",
       "recipe": "github_sec",
-      "buzz": 298,
+      "buzz": 297,
       "topics": [
         "ai",
         "security"
@@ -1552,11 +1552,11 @@
       "url": "https://github.com/UltraSultanHonor/recon-v1.7.0",
       "ts": 1793165486.0,
       "points": 102,
-      "comments": 21,
+      "comments": 22,
       "author": "UltraSultanHonor",
       "summary": "Published: 2026-10-28",
       "recipe": "github_sec",
-      "buzz": 175,
+      "buzz": 178,
       "topics": [],
       "date": "2026-10-28"
     },
@@ -1638,37 +1638,17 @@
       "title": "xuehuolll/php2shell-CVE-2026-109618-109619",
       "url": "https://github.com/xuehuolll/php2shell-CVE-2026-109618-109619",
       "ts": 1792557526.0,
-      "points": 50,
+      "points": 51,
       "comments": 23,
       "author": "xuehuolll",
       "summary": "CVE-[phone]/109619 — PHP session.upload_progress pre-auth RCE. Exploit research: remote ASLR chain, PoC & patch analysis.",
       "recipe": "github_sec",
-      "buzz": 119,
+      "buzz": 120,
       "topics": [
         "ai",
         "security"
       ],
       "date": "2026-10-21"
-    },
-    {
-      "uid": "gh:akari-sora/synology-nas-cli",
-      "source": "github",
-      "title": "akari-sora/synology-nas-cli",
-      "url": "https://github.com/akari-sora/synology-nas-cli",
-      "ts": 1793353967.0,
-      "points": 22,
-      "comments": 2,
-      "author": "akari-sora",
-      "summary": "nas: a zero-dependency Python CLI + MCP server for Synology DSM 7. One-command audit and fix for the C3RB3R / .L0CK3D ransomware campaign; hand it to your AI agent. Mirror; canonical repo and issues: gitlab.com/aa[phone]/synology-nas-cli",
-      "recipe": "github_sec",
-      "buzz": 108,
-      "topics": [
-        "ai",
-        "dev",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-10-30"
     },
     {
       "uid": "gh:huggingface/safeagents",
@@ -1722,6 +1702,45 @@
         "biz"
       ],
       "date": "2026-10-30"
+    },
+    {
+      "uid": "rss:065d6fd5d0631f",
+      "source": "rss",
+      "title": "Chainalysis Confirms Intrusion Into Internal Tools and Exposure of Customer Identity Data",
+      "url": "https://thehackernews.com/2026/10/chainalysis-confirms-intrusion-into.html",
+      "ts": 1793448116.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "American blockchain analysis firm Chainalysis said it was the target of a cybersecurity incident in which an external actor accessed non-sensitive customer data. However, the company noted that the breach did not result in unauthorized access to its investigation content, authentication credentials, or session tokens. \"This month, Chainalysis detected an external actor using offensive agentic",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "crypto",
+        "biz",
+        "security"
+      ],
+      "date": "2026-10-31"
+    },
+    {
+      "uid": "rss:6c360090011ba7",
+      "source": "rss",
+      "title": "Attackers Chain Three Ivanti Connect Secure Flaws to Gain Unauthenticated Root Access",
+      "url": "https://thehackernews.com/2026/10/attackers-chain-three-ivanti-connect.html",
+      "ts": 1793435263.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added two security flaws impacting Ivanti Connect Secure (ICS) to its Known Exploited Vulnerabilities (KEV) catalog, following active exploitation in the wild. The vulnerabilities are listed below - CVE-[phone] (CVSS score: 8.8) - A missing authentication for a critical function vulnerability that could allow a",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-10-31"
     },
     {
       "uid": "rss:0ab8fba09e2d39",
@@ -1813,63 +1832,6 @@
       "date": "2026-10-30"
     },
     {
-      "uid": "rss:3307520d3b6ecd",
-      "source": "rss",
-      "title": "Trezor Warns of Suspected Hardware Implant in One of Its Wallets Sold by CryptoBilis",
-      "url": "https://thehackernews.com/2026/10/trezor-warns-of-suspected-hardware.html",
-      "ts": 1793362916.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "A Trezor Safe 5 hardware wallet bought from the reseller CryptoBilis has an extra circuit board that sends out the recovery phrase over a mobile network, a customer has reported. Trezor has not yet examined the device. It is telling everyone who bought a Trezor from CryptoBilis since March 2026 to move their funds to a new wallet with a new recovery phrase. Trezor said in a&nbsp;blog post&nbsp",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "dev",
-        "crypto"
-      ],
-      "date": "2026-10-30"
-    },
-    {
-      "uid": "rss:a1b9924296d8f0",
-      "source": "rss",
-      "title": "Why Urgent Security Fixes Aren't Fixed. Observe, Prove, Act, Confirm Gets Them Moving",
-      "url": "https://thehackernews.com/2026/10/why-urgent-security-fixes-arent-fixed.html",
-      "ts": 1793361533.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "The alert is critical. The fix is known. And the ticket sits in a queue for days. Security teams understand the risk, but the people who keep applications available need proof that the change won’t break anything.&nbsp; Their concerns are practical. An IPS protection could block legitimate traffic. A configuration change could interrupt a service. An endpoint policy could affect an application",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-10-30"
-    },
-    {
-      "uid": "rss:7ac8cf197ecc6d",
-      "source": "rss",
-      "title": "Syrian Hacker Behind Fake Tweet That Triggered $136 Billion Market Drop Gets 42 Months in Prison",
-      "url": "https://thehackernews.com/2026/10/syrian-hacker-behind-fake-tweet-that.html",
-      "ts": 1793356845.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Ahmad Umar Agha, a Syrian Electronic Army hacker known online as \"Th3Pr0,\" has been&nbsp;sentenced by a U.S. federal court&nbsp;to 42 months in prison for his role in a hacking conspiracy that targeted Western news outlets. The conspiracy was organized and led by members of former Syrian President Bashar al-Assad's inner circle, including the commander of Syria's General Intelligence",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "dev",
-        "science",
-        "biz"
-      ],
-      "date": "2026-10-30"
-    },
-    {
       "uid": "gh:jamesalmeida/agent-honeypot",
       "source": "github",
       "title": "jamesalmeida/agent-honeypot",
@@ -1885,6 +1847,24 @@
         "ai"
       ],
       "date": "2026-10-23"
+    },
+    {
+      "uid": "gh:sazabi/cve.now",
+      "source": "github",
+      "title": "sazabi/cve.now",
+      "url": "https://github.com/sazabi/cve.now",
+      "ts": 1792681793.0,
+      "points": 59,
+      "comments": 3,
+      "author": "sazabi",
+      "summary": "A free, public vulnerability feed: CVE, GHSA, OSV, CISA KEV and EPSS merged into one entry per vulnerability. RSS, JSON API and MCP. Docs and issues only.",
+      "recipe": "github_sec",
+      "buzz": 68,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-10-22"
     },
     {
       "uid": "gh:david-alvarez-rosa/php-rce",
@@ -1939,22 +1919,24 @@
       "date": "2026-10-28"
     },
     {
-      "uid": "gh:sazabi/cve.now",
+      "uid": "gh:akari-sora/synology-nas-cli",
       "source": "github",
-      "title": "sazabi/cve.now",
-      "url": "https://github.com/sazabi/cve.now",
-      "ts": 1792681793.0,
-      "points": 53,
+      "title": "akari-sora/synology-nas-cli",
+      "url": "https://github.com/akari-sora/synology-nas-cli",
+      "ts": 1793353967.0,
+      "points": 25,
       "comments": 2,
-      "author": "sazabi",
-      "summary": "A free, public vulnerability feed: CVE, GHSA, OSV, CISA KEV and EPSS merged into one entry per vulnerability. RSS, JSON API and MCP. Docs and issues only.",
+      "author": "akari-sora",
+      "summary": "nas: a zero-dependency Python CLI + MCP server for Synology DSM 7. One-command audit and fix for the C3RB3R / .L0CK3D ransomware campaign; hand it to your AI agent. Mirror; canonical repo and issues: gitlab.com/aa[phone]/synology-nas-cli",
       "recipe": "github_sec",
-      "buzz": 59,
+      "buzz": 61,
       "topics": [
+        "ai",
         "dev",
-        "security"
+        "security",
+        "hardware"
       ],
-      "date": "2026-10-22"
+      "date": "2026-10-30"
     },
     {
       "uid": "gh:BastionPHP/Bastion",
@@ -1998,12 +1980,12 @@
       "title": "Problem99-io/kodeblue",
       "url": "https://github.com/Problem99-io/kodeblue",
       "ts": 1792937598.0,
-      "points": 28,
+      "points": 32,
       "comments": 3,
       "author": "Problem99-io",
       "summary": "SOC, incident response and SecOps for Linux servers in one agent: learns each host, watches it with zero-token sensors, triages with a small model, and contains attacks under a root-owned policy. Optional hub for fleets.",
       "recipe": "github_sec",
-      "buzz": 47,
+      "buzz": 51,
       "topics": [
         "ai",
         "dev",
@@ -2031,23 +2013,61 @@
       "date": "2026-10-18"
     },
     {
-      "uid": "rss:9e6f9a29eeb51f",
+      "uid": "rss:3307520d3b6ecd",
       "source": "rss",
-      "title": "Studying Fraudulent North Korean IT Workers",
-      "url": "https://www.schneier.com/blog/archives/2026/10/studying-fraudulent-north-korean-it-workers.html",
-      "ts": 1793185531.0,
+      "title": "Trezor Warns of Suspected Hardware Implant in One of Its Wallets Sold by CryptoBilis",
+      "url": "https://thehackernews.com/2026/10/trezor-warns-of-suspected-hardware.html",
+      "ts": 1793362916.0,
       "points": 0,
       "comments": 0,
-      "author": "Bruce Schneier",
-      "summary": "<p>Researchers set up a fake start-up company to <a href=\"https://thehackernews.com/2026/08/researchers-built-fake-crypto-startup.html \">study</a> fraudulent North Korean IT workers.</p>",
-      "recipe": "schneier",
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "A Trezor Safe 5 hardware wallet bought from the reseller CryptoBilis has an extra circuit board that sends out the recovery phrase over a mobile network, a customer has reported. Trezor has not yet examined the device. It is telling everyone who bought a Trezor from CryptoBilis since March 2026 to move their funds to a new wallet with a new recovery phrase. Trezor said in a&nbsp;blog post&nbsp",
+      "recipe": "hackersnews",
       "buzz": 30,
       "topics": [
         "ai",
-        "crypto",
+        "dev",
+        "crypto"
+      ],
+      "date": "2026-10-30"
+    },
+    {
+      "uid": "rss:a1b9924296d8f0",
+      "source": "rss",
+      "title": "Why Urgent Security Fixes Aren't Fixed. Observe, Prove, Act, Confirm Gets Them Moving",
+      "url": "https://thehackernews.com/2026/10/why-urgent-security-fixes-arent-fixed.html",
+      "ts": 1793361533.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "The alert is critical. The fix is known. And the ticket sits in a queue for days. Security teams understand the risk, but the people who keep applications available need proof that the change won’t break anything.&nbsp; Their concerns are practical. An IPS protection could block legitimate traffic. A configuration change could interrupt a service. An endpoint policy could affect an application",
+      "recipe": "hackersnews",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-10-30"
+    },
+    {
+      "uid": "rss:7ac8cf197ecc6d",
+      "source": "rss",
+      "title": "Syrian Hacker Behind Fake Tweet That Triggered $136 Billion Market Drop Gets 42 Months in Prison",
+      "url": "https://thehackernews.com/2026/10/syrian-hacker-behind-fake-tweet-that.html",
+      "ts": 1793356845.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Ahmad Umar Agha, a Syrian Electronic Army hacker known online as \"Th3Pr0,\" has been&nbsp;sentenced by a U.S. federal court&nbsp;to 42 months in prison for his role in a hacking conspiracy that targeted Western news outlets. The conspiracy was organized and led by members of former Syrian President Bashar al-Assad's inner circle, including the commander of Syria's General Intelligence",
+      "recipe": "hackersnews",
+      "buzz": 30,
+      "topics": [
+        "dev",
+        "science",
         "biz"
       ],
-      "date": "2026-10-28"
+      "date": "2026-10-30"
     },
     {
       "uid": "rss:e3ba0e73a5be59",
@@ -2428,43 +2448,22 @@
       "date": "2026-10-28"
     },
     {
-      "uid": "rss:e92053c3672f3a",
-      "source": "rss",
-      "title": "Researcher Reveals How Logic Bugs Alone Cracked Microsoft Edge in $175,000 Pwn2Own Win",
-      "url": "https://thehackernews.com/2026/10/researcher-reveals-how-logic-bugs-alone.html",
-      "ts": 1793204614.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "A chain of logic flaws, with no memory corruption, can turn a malicious web page into code running on a Windows computer outside Microsoft Edge's sandbox, a security researcher has shown. Orange Tsai of DEVCORE published the full method on October 28, five months after the chain won $175,000 at the&nbsp;Pwn2Own Berlin contest&nbsp;in May. Microsoft fixed the Edge bugs the day after the contest,",
-      "recipe": "hackersnews",
-      "buzz": 30,
+      "uid": "gh:lindenthomaslin/vibeguard",
+      "source": "github",
+      "title": "lindenthomaslin/vibeguard",
+      "url": "https://github.com/lindenthomaslin/vibeguard",
+      "ts": 1792711874.0,
+      "points": 22,
+      "comments": 1,
+      "author": "lindenthomaslin",
+      "summary": "给 AI 生成代码做安全审阅的终端工具：410 条漏洞清单，20 条本地规则 + 模型逐条判定（带证据核实），看完 diff 再决定要不要写（Rust）",
+      "recipe": "github_sec",
+      "buzz": 25,
       "topics": [
         "ai",
-        "dev",
-        "security",
-        "hardware"
+        "dev"
       ],
-      "date": "2026-10-28"
-    },
-    {
-      "uid": "rss:230c7e637463e8",
-      "source": "rss",
-      "title": "PHP2Shell Attack Roots 25 Servers, Breaches U.S. Government-Affiliated Network",
-      "url": "https://thehackernews.com/2026/10/php2shell-attack-roots-25-servers.html",
-      "ts": 1793203365.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Cybersecurity researchers have disclosed details of what appears to be an artificial intelligence (AI)-assisted attack orchestrated by a suspected China-nexus threat actor that has leveraged the PHP2Shell vulnerabilities to breach exposed systems. The activity, which was observed on October 25, 2026, involved an attacker combining PHP2Shell with a kernel privilege escalation exploit to root",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-10-28"
+      "date": "2026-10-22"
     },
     {
       "uid": "gh:foundthunderatone/hash-verify",
@@ -2480,6 +2479,25 @@
       "buzz": 22,
       "topics": [],
       "date": "2026-10-18"
+    },
+    {
+      "uid": "rss:9e6f9a29eeb51f",
+      "source": "rss",
+      "title": "Studying Fraudulent North Korean IT Workers",
+      "url": "https://www.schneier.com/blog/archives/2026/10/studying-fraudulent-north-korean-it-workers.html",
+      "ts": 1793185531.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Bruce Schneier",
+      "summary": "<p>Researchers set up a fake start-up company to <a href=\"https://thehackernews.com/2026/08/researchers-built-fake-crypto-startup.html \">study</a> fraudulent North Korean IT workers.</p>",
+      "recipe": "schneier",
+      "buzz": 10,
+      "topics": [
+        "ai",
+        "crypto",
+        "biz"
+      ],
+      "date": "2026-10-28"
     },
     {
       "uid": "rss:2497feec2ee512",

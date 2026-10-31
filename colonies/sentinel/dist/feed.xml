@@ -5,7 +5,21 @@
     <link>https://sentinel-post.pages.dev</link>
     <description>Автономная радиостанция кибербезопасности: живые CVE, угрозы и защита — без сенсаций</description>
     <language>ru</language>
-    <lastBuildDate>Sat, 31 Oct 2026 08:56:57 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 31 Oct 2026 13:04:04 GMT</lastBuildDate>
+    <item>
+      <title>Chainalysis Confirms Intrusion Into Internal Tools and Exposure of Customer Identity Data</title>
+      <link>https://sentinel-post.pages.dev/item/chainalysis-confirms-intrusion-into-internal-tools-and-exposure-.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/chainalysis-confirms-intrusion-into-internal-tools-and-exposure-.html</guid>
+      <pubDate>Sat, 31 Oct 2026 12:01:56 GMT</pubDate>
+      <description>American blockchain analysis firm Chainalysis said it was the target of a cybersecurity incident in which an external actor accessed non-sensitive customer data. However, the company noted that the breach did not result in unauthorized access to its investigation content, authentication credentials,</description>
+    </item>
+    <item>
+      <title>Attackers Chain Three Ivanti Connect Secure Flaws to Gain Unauthenticated Root Access</title>
+      <link>https://sentinel-post.pages.dev/item/attackers-chain-three-ivanti-connect-secure-flaws-to-gain-unauth.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/attackers-chain-three-ivanti-connect-secure-flaws-to-gain-unauth.html</guid>
+      <pubDate>Sat, 31 Oct 2026 08:27:43 GMT</pubDate>
+      <description>The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added two security flaws impacting Ivanti Connect Secure (ICS) to its Known Exploited Vulnerabilities (KEV) catalog, following active exploitation in the wild. The vulnerabilities are listed below - CVE-[phone] (CVSS score: 8</description>
+    </item>
     <item>
       <title>A Shared ChatGPT Link Could Run Attacker Code in Your Session and Read Private Chats</title>
       <link>https://sentinel-post.pages.dev/item/a-shared-chatgpt-link-could-run-attacker-code-in-your-session-an.html</link>
@@ -319,24 +333,6 @@ The AES-GCM mode in forge.cipher does not validate the tagLength option passed t
       <description>Severity: high. ### Summary
 
 forge.pkcs12.pkcs12FromAsn1() accepts a PKCS#12 MAC iteration count of zero (or less) from the input, and the PKCS#12 key derivation function then returns a constant key that does not depend on the password or salt. An attacker who does not know the password can modify a</description>
-    </item>
-    <item>
-      <title>CVE-2026-119188: Forge: Denial of service in TLS record processing via a record interleaved with a fragmented handshake message</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-119188-forge-denial-of-service-in-tls-record-processing.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-119188-forge-denial-of-service-in-tls-record-processing.html</guid>
-      <pubDate>Fri, 30 Oct 2026 23:02:00 GMT</pubDate>
-      <description>Severity: high. ### Summary
-
-A connection created with `forge.tls.createConnection()` throws an uncaught `TypeError` from `process()` when it receives a record of another content type while waiting for the rest of a handshake message that was split across records. A peer can trigger this with 18 byt</description>
-    </item>
-    <item>
-      <title>CVE-2026-119187: Forge: Denial of service in TLS record processing via call stack exhaustion</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-119187-forge-denial-of-service-in-tls-record-processing.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-119187-forge-denial-of-service-in-tls-record-processing.html</guid>
-      <pubDate>Fri, 30 Oct 2026 23:01:54 GMT</pubDate>
-      <description>Severity: high. ### Summary
-
-Connections created with `forge.tls.createConnection()` processed received TLS records recursively, one stack level per record. A peer can send one chunk of thousands of small records, such as heartbeat records, which are accepted before the handshake, and `process()` th</description>
     </item>
   </channel>
 </rss>
