@@ -1,31 +1,31 @@
 cve_id,severity,package,title,url,date
-GHSA-5xjx-3w67-w9x9,critical,pypa/gh-action-pypi-publish,GHSA-5xjx-3w67-w9x9: pypi-publish action revocation of CA in the chain that Sigstore uses in Trusted Publishing and Digital Attestations for PyPI,https://github.com/advisories/GHSA-5xjx-3w67-w9x9,2026-10-30
-CVE-2026-59978,high,adminneo-org/adminneo,CVE-2026-59978: AdminNeo: version-cache array injection causes persistent denial of service,https://github.com/advisories/GHSA-jm85-8cpp-9cjc,2026-10-30
-CVE-2026-119283,high,joserfc,CVE-2026-119283: joserfc: Unbounded JWE General JSON `recipients` Array Leads to CPU Exhaustion (DoS) via Repeated RSA Private-Key Decryption,https://github.com/advisories/GHSA-jpxq-7h8p-2q76,2026-10-30
-CVE-2026-119282,high,@nx/maven,CVE-2026-119282: @nx/maven and @nx/gradle have OS command injection via nx.json plugin options,https://github.com/advisories/GHSA-qm8w-vx34-5j9j,2026-10-30
-CVE-2026-118664,high,decode-uri-component,CVE-2026-118664: decode-uri-component vulnerable to denial of service via quadratic replacement of percent-encoded runs,https://github.com/advisories/GHSA-qr28-fpjm-wq7f,2026-10-29
-GHSA-vpp8-g58w-m8mp,high,Twisted,GHSA-vpp8-g58w-m8mp: Twisted: Unauthenticated Remote Denial of Service in the Twisted HTTP/2 Server via Rapid Stream Reset,https://github.com/advisories/GHSA-vpp8-g58w-m8mp,2026-10-29
-CVE-2026-115907,high,zip,CVE-2026-115907: zip: legacy Shrink/Reduce/Implode decoder: denial of service from attacker-controlled ZIP64 uncompressed size,https://github.com/advisories/GHSA-9hj8-73fh-9963,2026-10-29
-CVE-2026-115908,high,zip,"CVE-2026-115908: zip: Arbitrary file write outside the extraction directory, because ZipArchive::extract validates symlink targets lexically.",https://github.com/advisories/GHSA-hjqx-j4rw-g7xv,2026-10-29
-CVE-2026-115909,high,zip,CVE-2026-115909: zip: Unbounded Symlink-Target Handling Can Abort Or Exhaust Memory During Extraction,https://github.com/advisories/GHSA-q7v9-x93c-xqv3,2026-10-29
-CVE-2026-63414,high,shopify_app,CVE-2026-63414: Shopify App: Token exchange shop context confusion may allow cross-shop authorization bypass in affected apps,https://github.com/advisories/GHSA-6j52-38f8-qhxr,2026-10-29
-CVE-2026-62290,high,github.com/cert-manager/cert-manager,CVE-2026-62290: cert-manager: Direct ACME Challenge resources can bypass Issuer DNS01 solver policy and use ClusterIssuer DNS credentials,https://github.com/advisories/GHSA-8rvj-mm4h-c258,2026-10-29
-CVE-2026-9086,high,org.keycloak:keycloak-services,CVE-2026-9086: Keycloak vulnerable to cross-site scripting (xss) via case-insensitive uri validation bypass,https://github.com/advisories/GHSA-v3f7-2p4r-mwfw,2026-10-29
-CVE-2026-9800,high,org.keycloak:keycloak-services,CVE-2026-9800: Keycloak vulnerable to authorization bypass via incorrect uri comparison,https://github.com/advisories/GHSA-f5p5-6xmx-p252,2026-10-29
-GHSA-w9x9-j56r-h98r,high,@eeacms/volto-chatbot,GHSA-w9x9-j56r-h98r: @eeacms/volto-chatbot has Unauthenticated Danswer API Confused Deputy Proxy,https://github.com/advisories/GHSA-w9x9-j56r-h98r,2026-10-29
-CVE-2026-62264,high,@sylphx/pdf-reader-mcp,CVE-2026-62264: @sylphx/pdf-reader-mcp: HTTP transport accepts unauthenticated requests despite a configured MCP_API_KEY,https://github.com/advisories/GHSA-q344-5v34-gm84,2026-10-29
-CVE-2026-61438,high,praisonai,CVE-2026-61438: PraisonAI vulnerable to Remote Code Execution via Broken AST Sandbox,https://github.com/advisories/GHSA-26mh-57q7-jfvr,2026-10-29
-CVE-2026-62160,high,github.com/daptin/daptin,CVE-2026-62160: Daptin: ParseAcceptLanguage `_` separator bypass enables >250x CPU amplification via Accept-Language header in LanguageMiddleware,https://github.com/advisories/GHSA-rhj7-vh3v-mcq6,2026-10-29
-CVE-2026-119284,medium,joserfc,CVE-2026-119284: joserfc: Compact JWS size guard allocates attacker-controlled segments before rejection,https://github.com/advisories/GHSA-9pg5-8c7x-5hfx,2026-10-30
-GHSA-f3fj-9625-rv3m,medium,github.com/charmbracelet/soft-serve,GHSA-f3fj-9625-rv3m: charmbracelet/soft-serve: Race in `SetPrivate` leaves a private repository readable by unauthenticated users,https://github.com/advisories/GHSA-f3fj-9625-rv3m,2026-10-30
-GHSA-fgxm-5hvv-x4vh,medium,github.com/charmbracelet/soft-serve,GHSA-fgxm-5hvv-x4vh: charmbracelet/soft-serve HTTP responses disclose the existence and names of private repositories,https://github.com/advisories/GHSA-fgxm-5hvv-x4vh,2026-10-30
-CVE-2026-115906,medium,zip,CVE-2026-115906: zip: AES Entry HMAC Authentication Bypass on Premature EOF,https://github.com/advisories/GHSA-8hxf-qr8p-62x4,2026-10-29
-CVE-2026-118662,medium,vite,CVE-2026-118662: Vite: `server.fs.deny` bypassed with queries,https://github.com/advisories/GHSA-8g5g-mxqh-grgj,2026-10-29
-CVE-2026-9083,medium,org.keycloak:keycloak-services,CVE-2026-9083: Keycloak vulnerable to information disclosure through arbitrary filesystem path probing,https://github.com/advisories/GHSA-9jrw-8xf7-xqhq,2026-10-29
-CVE-2026-9799,medium,org.keycloak:keycloak-services,CVE-2026-9799: Keycloak allows unauthorized access to resources via uma permission ticket bypass,https://github.com/advisories/GHSA-w3p3-7cjg-vgfw,2026-10-29
-CVE-2026-9705,medium,org.keycloak:keycloak-services,CVE-2026-9705: Keycloak: Attacker can re-enable and take over disabled clients via registration access token,https://github.com/advisories/GHSA-r7rc-c989-86g6,2026-10-29
-CVE-2026-61848,medium,crass,CVE-2026-61848: Crass: Non-ASCII characters cause superlinear CPU consumption,https://github.com/advisories/GHSA-8vfg-2r28-hvhj,2026-10-29
-CVE-2026-61847,medium,crass,CVE-2026-61847: Crass: A large number of adjacent CSS comments can trigger a SystemStackError,https://github.com/advisories/GHSA-wwpr-jff3-395c,2026-10-29
-CVE-2026-61846,medium,crass,CVE-2026-61846: Crass: Deeply nested CSS blocks and functions can trigger a SystemStackError or excessive memory usage,https://github.com/advisories/GHSA-6jxj-px6v-747w,2026-10-29
-GHSA-c33x-vcv4-vg3g,low,cedar-policy,GHSA-c33x-vcv4-vg3g: Cedar: JSON template is in scope missing slot-id validation allows link panic and decision divergence,https://github.com/advisories/GHSA-c33x-vcv4-vg3g,2026-10-29
-CVE-2026-61448,low,parse-server,CVE-2026-61448: Parse Server vulnerable to stored XSS via malformed Content-Type bypassing file upload extension blocklist,https://github.com/advisories/GHSA-r899-h629-j84r,2026-10-29
+CVE-2026-118761,high,github.com/kubeflow/pipelines,CVE-2026-118761: Kubeflow Pipelines: Pipeline archive upload allows decompression bomb to exhaust server memory,https://github.com/advisories/GHSA-8fmv-6rg5-5924,2026-10-30
+CVE-2026-118759,high,github.com/kubeflow/pipelines,CVE-2026-118759: Kubeflow Pipelines: Run-log endpoint permits unauthorized access to pod logs,https://github.com/advisories/GHSA-wg5q-x4j9-qm54,2026-10-30
+CVE-2026-119203,high,pypdf,CVE-2026-119203: pypdf has possible infinite loop when hitting EOF in standard xref table during trailer search,https://github.com/advisories/GHSA-5849-834g-hvw5,2026-10-30
+CVE-2026-119204,high,pypdf,CVE-2026-119204: pypdf has possible large memory usage when parsing page tree,https://github.com/advisories/GHSA-cggf-277g-3q54,2026-10-30
+CVE-2026-119205,high,pypdf,CVE-2026-119205: pypdf has possible infinite loop when cloning dictionaries,https://github.com/advisories/GHSA-mfr5-77xh-9j7h,2026-10-30
+CVE-2026-118772,high,joi,CVE-2026-118772: joi: quadratic-time split in `string().email({ multiple: true })` allows denial of service,https://github.com/advisories/GHSA-4528-x5fx-h6hg,2026-10-30
+CVE-2026-119202,high,@hapi/content,CVE-2026-119202: @hapi/content: quadratic-time parsing of Content-Disposition parameters allows denial of service,https://github.com/advisories/GHSA-8494-f6mr-cjpv,2026-10-30
+CVE-2026-116672,high,Authlib,CVE-2026-116672: Authlib RFC 7592 examples omit registration-access-token client binding,https://github.com/advisories/GHSA-c73q-w75p-j82v,2026-10-30
+CVE-2026-119206,high,pypdf,CVE-2026-119206: pypdf has possible long runtimes when retrieving page labels,https://github.com/advisories/GHSA-42gh-23hr-vphw,2026-10-30
+CVE-2026-119207,high,pypdf,CVE-2026-119207: pypdf has possible large memory usage for exceptions in strict mode,https://github.com/advisories/GHSA-4vqv-7265-gm2w,2026-10-30
+CVE-2026-119208,high,pypdf,CVE-2026-119208: pypdf has possible long runtimes/large memory usage for encrypted PDF files,https://github.com/advisories/GHSA-62m5-6wh8-28x7,2026-10-30
+CVE-2026-119209,high,pypdf,CVE-2026-119209: pypdf has possible large memory usage when parsing cross-reference streams,https://github.com/advisories/GHSA-x3rh-gjgm-fmqc,2026-10-30
+CVE-2026-119196,high,pyasn1,CVE-2026-119196: pyasn1 has quadratic CPU consumption in constructed BIT STRING decoding,https://github.com/advisories/GHSA-2qm8-x737-gmw5,2026-10-30
+CVE-2026-119197,high,pyasn1,CVE-2026-119197: pyasn1 has quadratic-complexity denial of service in binary REAL decoding,https://github.com/advisories/GHSA-mm57-4v3p-rchx,2026-10-30
+CVE-2026-119195,high,pyasn1,CVE-2026-119195: pyasn1 has quadratic-time denial of service in constructed string and indefinite-length ANY decoding,https://github.com/advisories/GHSA-9m75-vc3g-4x39,2026-10-30
+CVE-2026-119194,high,pyasn1,CVE-2026-119194: pyasn1 has quadratic CPU use in schemaless BER/CER/DER container decoding,https://github.com/advisories/GHSA-fm9c-5rcf-2q5p,2026-10-30
+CVE-2026-118779,high,node-forge,CVE-2026-118779: Forge: Regular expression denial of service in PEM decoding (pem.decode),https://github.com/advisories/GHSA-7wch-p9px-956x,2026-10-30
+CVE-2026-118782,high,node-forge,CVE-2026-118782: Forge: PKCS#12 MAC forgery and constant-key PBE via zero iteration count,https://github.com/advisories/GHSA-jc66-7q78-782g,2026-10-30
+CVE-2026-119188,high,node-forge,CVE-2026-119188: Forge: Denial of service in TLS record processing via a record interleaved with a fragmented handshake message,https://github.com/advisories/GHSA-8hrf-8g6f-7xwp,2026-10-30
+CVE-2026-119187,high,node-forge,CVE-2026-119187: Forge: Denial of service in TLS record processing via call stack exhaustion,https://github.com/advisories/GHSA-hqq3-7jhf-c5jx,2026-10-30
+CVE-2026-119190,high,node-forge,CVE-2026-119190: Forge: X.509 basicConstraints bypass in verifyCertificateChain() via deprecated extension OIDs 2.5.29.10 and 2.5.29.13,https://github.com/advisories/GHSA-5x38-2vff-x55p,2026-10-30
+CVE-2026-118764,medium,minimatch,CVE-2026-118764: minimatch has potential denial of service via globparts amplification,https://github.com/advisories/GHSA-g3hv-75wg-m249,2026-10-30
+CVE-2026-118773,medium,glob,CVE-2026-118773: Glob: AbortSignal cancellation bypass allows post-timeout filesystem traversal,https://github.com/advisories/GHSA-3g3m-2fjr-6pw4,2026-10-30
+CVE-2026-118777,medium,node-forge,CVE-2026-118777: Forge: Prototype Pollution in forge.http cookie handling via a malicious Set-Cookie,https://github.com/advisories/GHSA-6wvx-3r32-xmcg,2026-10-30
+CVE-2026-118778,medium,node-forge,CVE-2026-118778: Forge: TLS client crash when the server sends no certificate,https://github.com/advisories/GHSA-525v-9gp9-w22h,2026-10-30
+CVE-2026-119186,medium,node-forge,CVE-2026-119186: Forge: AES-GCM authentication bypass via unvalidated tagLength option,https://github.com/advisories/GHSA-5cwg-6vw7-rj6p,2026-10-30
+CVE-2026-119193,medium,phpunit/phpunit,CVE-2026-119193: PHPUnit vulnerable to code execution by other local users via shared temporary directory in PHPT code coverage handling,https://github.com/advisories/GHSA-9vw2-f4vp-x7gf,2026-10-30
+CVE-2026-118775,low,node-forge,CVE-2026-118775: Forge: ASN.1 OID first arc truncation in asn1.oidToDer,https://github.com/advisories/GHSA-4642-5mcj-2rqw,2026-10-30
+CVE-2026-118781,low,node-forge,CVE-2026-118781: Forge: Denial of Service via infinite loop in BigInteger.modInverse() with negative input (incomplete fix of CVE-2026-33891),https://github.com/advisories/GHSA-h6cr-wjv9-3cpp,2026-10-30
+CVE-2026-118780,low,node-forge,CVE-2026-118780: Forge: verifyCertificateChain() removes trusted CA certificates with the same subject from the CA store,https://github.com/advisories/GHSA-4487-j8r4-4g2f,2026-10-30

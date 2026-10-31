@@ -5,269 +5,341 @@
     <link>https://cveradar-ah3.pages.dev</link>
     <description>Живые CVE и уязвимости на русском: автономный перевод угроз в понятные дайджесты для DevOps и небольшого SecOps</description>
     <language>ru</language>
-    <lastBuildDate>Fri, 30 Oct 2026 20:55:24 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 31 Oct 2026 01:16:53 GMT</lastBuildDate>
     <item>
-      <title>GHSA-5xjx-3w67-w9x9: pypi-publish action revocation of CA in the chain that Sigstore uses in Trusted Publishing and Digital Attestations for PyPI</title>
-      <link>https://cveradar-ah3.pages.dev/item/ghsa-5xjx-3w67-w9x9-pypi-publish-action-revocation-of-ca-in-the-.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/ghsa-5xjx-3w67-w9x9-pypi-publish-action-revocation-of-ca-in-the-.html</guid>
-      <pubDate>Fri, 30 Oct 2026 20:24:24 GMT</pubDate>
-      <description>Severity: critical. ### Summary
-
-The [pypi-publish action][pypi-publish] versions before 1.14.2 used to bundle the `emSign` root CA trust store certificate through the `certifi` distribution. It has since been removed through the bundle and the new version no longer includes them.
-
-[pypi-publish]: h</description>
-    </item>
-    <item>
-      <title>CVE-2026-59978: AdminNeo: version-cache array injection causes persistent denial of service</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-59978-adminneo-version-cache-array-injection-causes-per.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-59978-adminneo-version-cache-array-injection-causes-per.html</guid>
-      <pubDate>Fri, 30 Oct 2026 18:53:08 GMT</pubDate>
-      <description>Severity: high. ### Summary
-AdminNeo v5.4.1 gets the latest version from GitHub API in a browser JavaScript function. Version number is then sent by POST request to `?script=version`. This endpoint lacks origin validation and accepts POST data from any source. An attacker can POST `version[]` parame</description>
-    </item>
-    <item>
-      <title>Chinese Hackers Use AI-Powered ARTEX to Target Over 200 Organizations Worldwide</title>
-      <link>https://cveradar-ah3.pages.dev/item/chinese-hackers-use-ai-powered-artex-to-target-over-200-organiza.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/chinese-hackers-use-ai-powered-artex-to-target-over-200-organiza.html</guid>
-      <pubDate>Fri, 30 Oct 2026 16:58:44 GMT</pubDate>
-      <description>Chinese state-sponsored threat actors have been observed using a Go-based artificial intelligence (AI)-powered penetration testing framework called ARTEX in attacks aimed at high-value targets simultaneously. The activity has been attributed by CrowdStrike to a China-based "targeted intrusion advers</description>
-    </item>
-    <item>
-      <title>TeamViewer Flaw Lets Remote Computers Attack Users Who Connect to Control Them</title>
-      <link>https://cveradar-ah3.pages.dev/item/teamviewer-flaw-lets-remote-computers-attack-users-who-connect-t.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/teamviewer-flaw-lets-remote-computers-attack-users-who-connect-t.html</guid>
-      <pubDate>Fri, 30 Oct 2026 15:17:28 GMT</pubDate>
-      <description>TeamViewer has fixed a flaw that lets the machine being controlled in a remote session attack the computer that connected to control it. In a TeamViewer session, the computer that connects and takes control is the viewer, and the machine it controls is the host. A malicious or compromised host can e</description>
-    </item>
-    <item>
-      <title>CVE-2026-119284: joserfc: Compact JWS size guard allocates attacker-controlled segments before rejection</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-119284-joserfc-compact-jws-size-guard-allocates-attacke.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-119284-joserfc-compact-jws-size-guard-allocates-attacke.html</guid>
-      <pubDate>Fri, 30 Oct 2026 14:54:25 GMT</pubDate>
-      <description>Severity: medium. ## Summary
-
-joserfc 1.7.4 defines compact-JWS header, payload, and signature limits, but
-calls `value.split(b".")` before validating them. Python `bytes.split()` copies
-the attacker-controlled segments, so the current guard allocates roughly one
-complete payload before rejecting it</description>
-    </item>
-    <item>
-      <title>CVE-2026-119283: joserfc: Unbounded JWE General JSON `recipients` Array Leads to CPU Exhaustion (DoS) via Repeated RSA Private-Key Decryption</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-119283-joserfc-unbounded-jwe-general-json-recipients-ar.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-119283-joserfc-unbounded-jwe-general-json-recipients-ar.html</guid>
-      <pubDate>Fri, 30 Oct 2026 14:54:20 GMT</pubDate>
-      <description>Severity: high. ### Summary
-
-`joserfc.jwe.decrypt_json()`, the library's public parser for JWE General JSON Serialization, accepts an attacker-controlled `recipients` array of unbounded length and performs one full private-key decryption operation (`decrypt_cek`) for **every** recipient present in t</description>
-    </item>
-    <item>
-      <title>GHSA-f3fj-9625-rv3m: charmbracelet/soft-serve: Race in `SetPrivate` leaves a private repository readable by unauthenticated users</title>
-      <link>https://cveradar-ah3.pages.dev/item/ghsa-f3fj-9625-rv3m-charmbracelet-soft-serve-race-in-setprivate-.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/ghsa-f3fj-9625-rv3m-charmbracelet-soft-serve-race-in-setprivate-.html</guid>
-      <pubDate>Fri, 30 Oct 2026 14:53:57 GMT</pubDate>
-      <description>Severity: medium. ## Summary
-
-Soft Serve cached repository records in memory with no expiry, and trusted the cached record for every access check. `SetPrivate` cleared the cached record before it saved the new visibility, and not afterwards.
-
-A request that arrived between the two read the old, publ</description>
-    </item>
-    <item>
-      <title>GHSA-fgxm-5hvv-x4vh: charmbracelet/soft-serve HTTP responses disclose the existence and names of private repositories</title>
-      <link>https://cveradar-ah3.pages.dev/item/ghsa-fgxm-5hvv-x4vh-charmbracelet-soft-serve-http-responses-disc.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/ghsa-fgxm-5hvv-x4vh-charmbracelet-soft-serve-http-responses-disc.html</guid>
-      <pubDate>Fri, 30 Oct 2026 14:42:35 GMT</pubDate>
-      <description>Severity: medium. ## Summary
-
-Soft Serve answers Go's `?go-get=1` requests by walking up the requested path until it finds a repository, then rendering that repository's name and clone URL into a `go-import` meta tag. The walk checked that each candidate repository existed, but never that the caller</description>
-    </item>
-    <item>
-      <title>CVE-2026-119282: @nx/maven and @nx/gradle have OS command injection via nx.json plugin options</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-119282-nx-maven-and-nx-gradle-have-os-command-injection.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-119282-nx-maven-and-nx-gradle-have-os-command-injection.html</guid>
-      <pubDate>Fri, 30 Oct 2026 14:42:14 GMT</pubDate>
+      <title>CVE-2026-118761: Kubeflow Pipelines: Pipeline archive upload allows decompression bomb to exhaust server memory</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-118761-kubeflow-pipelines-pipeline-archive-upload-allow.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-118761-kubeflow-pipelines-pipeline-archive-upload-allow.html</guid>
+      <pubDate>Fri, 30 Oct 2026 23:13:38 GMT</pubDate>
       <description>Severity: high. ## Summary
 
-`@nx/maven` and `@nx/gradle` spawn their project-graph analyzers through a shell and interpolate plugin options read from `nx.json` straight into the command line. Because a shell parses the whole line, an option value containing shell syntax is executed as a command by a</description>
+The Kubeflow Pipelines API server decompresses uploaded pipeline archives without adequately bounding expanded data in affected versions. A small ZIP or gzip-compressed tar archive can consume disproportionately large amounts of memory while the server locates or reads th</description>
     </item>
     <item>
-      <title>WordPress RCE Flaw Draws Nearly 63,000 Attack Attempts in Just 24 Hours</title>
-      <link>https://cveradar-ah3.pages.dev/item/wordpress-rce-flaw-draws-nearly-63-000-attack-attempts-in-just-2.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/wordpress-rce-flaw-draws-nearly-63-000-attack-attempts-in-just-2.html</guid>
-      <pubDate>Fri, 30 Oct 2026 14:08:14 GMT</pubDate>
-      <description>Threat actors have been observed attempting to exploit a high-severity security flaw in WordPress Core shortly after patches were released. The vulnerability, which does not have a CVE identifier, relates to a case of remote code execution impacting WordPress Core versions 4.7 through 7.1.3. It carr</description>
-    </item>
-    <item>
-      <title>Trezor Warns of Suspected Hardware Implant in One of Its Wallets Sold by CryptoBilis</title>
-      <link>https://cveradar-ah3.pages.dev/item/trezor-warns-of-suspected-hardware-implant-in-one-of-its-wallets.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/trezor-warns-of-suspected-hardware-implant-in-one-of-its-wallets.html</guid>
-      <pubDate>Fri, 30 Oct 2026 12:21:56 GMT</pubDate>
-      <description>A Trezor Safe 5 hardware wallet bought from the reseller CryptoBilis has an extra circuit board that sends out the recovery phrase over a mobile network, a customer has reported. Trezor has not yet examined the device. It is telling everyone who bought a Trezor from CryptoBilis since March 2026 to m</description>
-    </item>
-    <item>
-      <title>Why Urgent Security Fixes Aren't Fixed. Observe, Prove, Act, Confirm Gets Them Moving</title>
-      <link>https://cveradar-ah3.pages.dev/item/why-urgent-security-fixes-aren-t-fixed-observe-prove-act-confirm.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/why-urgent-security-fixes-aren-t-fixed-observe-prove-act-confirm.html</guid>
-      <pubDate>Fri, 30 Oct 2026 11:58:53 GMT</pubDate>
-      <description>The alert is critical. The fix is known. And the ticket sits in a queue for days. Security teams understand the risk, but the people who keep applications available need proof that the change won’t break anything.&amp;nbsp; Their concerns are practical. An IPS protection could block legitimate traffic. </description>
-    </item>
-    <item>
-      <title>Syrian Hacker Behind Fake Tweet That Triggered $136 Billion Market Drop Gets 42 Months in Prison</title>
-      <link>https://cveradar-ah3.pages.dev/item/syrian-hacker-behind-fake-tweet-that-triggered-136-billion-marke.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/syrian-hacker-behind-fake-tweet-that-triggered-136-billion-marke.html</guid>
-      <pubDate>Fri, 30 Oct 2026 10:40:45 GMT</pubDate>
-      <description>Ahmad Umar Agha, a Syrian Electronic Army hacker known online as "Th3Pr0," has been&amp;nbsp;sentenced by a U.S. federal court&amp;nbsp;to 42 months in prison for his role in a hacking conspiracy that targeted Western news outlets. The conspiracy was organized and led by members of former Syrian President B</description>
-    </item>
-    <item>
-      <title>Official Claude Code Extension on Cursor Marketplace Trojanized with Persistent SSH Backdoor</title>
-      <link>https://cveradar-ah3.pages.dev/item/official-claude-code-extension-on-cursor-marketplace-trojanized-.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/official-claude-code-extension-on-cursor-marketplace-trojanized-.html</guid>
-      <pubDate>Fri, 30 Oct 2026 08:55:47 GMT</pubDate>
-      <description>Cybersecurity researchers have disclosed that a trojanized version of Anthropic's official Claude Code extension was distributed through the Cursor Marketplace as a legitimate update, attempting to install a persistent SSH backdoor on affected systems. The malicious update, version 2.1.313, was dist</description>
-    </item>
-    <item>
-      <title>Hackers Actively Exploit Highly Critical Drupal Commerce Core Authorization Bypass Flaw</title>
-      <link>https://cveradar-ah3.pages.dev/item/hackers-actively-exploit-highly-critical-drupal-commerce-core-au.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/hackers-actively-exploit-highly-critical-drupal-commerce-core-au.html</guid>
-      <pubDate>Fri, 30 Oct 2026 07:45:30 GMT</pubDate>
-      <description>Drupal has warned that threat actors are exploiting a "highly critical" security flaw in its Commerce Core component. The vulnerability, tracked as CVE-[phone] (CVSS score: N/A), is a case of missing authorization affecting Commerce Core versions from 0.0.0 to 2.41 and from 3.0.0 to 3.3.13. "This mo</description>
-    </item>
-    <item>
-      <title>CISA Adds Actively Exploited GitLab RCE and Cisco Firewall DoS Flaws to KEV</title>
-      <link>https://cveradar-ah3.pages.dev/item/cisa-adds-actively-exploited-gitlab-rce-and-cisco-firewall-dos-f.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cisa-adds-actively-exploited-gitlab-rce-and-cisco-firewall-dos-f.html</guid>
-      <pubDate>Fri, 30 Oct 2026 07:27:05 GMT</pubDate>
-      <description>The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Thursday added two security flaws impacting Cisco and GitLab software to its Known Exploited Vulnerabilities (KEV), citing evidence of active exploitation. The vulnerabilities are listed below - CVE-[phone] (CVSS score: 10.0) - An i</description>
-    </item>
-    <item>
-      <title>Binance Suffers Security Breach Affecting $6.3 Billion in Assets, Nearly $3 Billion Frozen</title>
-      <link>https://cveradar-ah3.pages.dev/item/binance-suffers-security-breach-affecting-6-3-billion-in-assets-.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/binance-suffers-security-breach-affecting-6-3-billion-in-assets-.html</guid>
-      <pubDate>Fri, 30 Oct 2026 04:14:59 GMT</pubDate>
-      <description>Cryptocurrency giant Binance said on Thursday that a "security incident" on its platform has impacted about $6.3 billion worth of assets. The world's biggest cryptocurrency exchange said nearly $3 billion of those assets have been frozen on-chain so far.&amp;nbsp; Tether and Circle said they have frozen</description>
-    </item>
-    <item>
-      <title>ThreatsDay: Critical Firewall Flaws, Banking Trojans Rented, Weaponized PDF, Token Theft + 26 More Stories</title>
-      <link>https://cveradar-ah3.pages.dev/item/threatsday-critical-firewall-flaws-banking-trojans-rented-weapon.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/threatsday-critical-firewall-flaws-banking-trojans-rented-weapon.html</guid>
-      <pubDate>Thu, 29 Oct 2026 19:11:58 GMT</pubDate>
-      <description>Some attacks take real skill. Others just need someone to leave a door open. This week has both. Exposed passwords, old bugs still getting exploited, and trusted software doing things it shouldn't. There's a strange mix of clever tricks and careless mistakes. Hackers are borrowing trust from familia</description>
-    </item>
-    <item>
-      <title>CVE-2026-118664: decode-uri-component vulnerable to denial of service via quadratic replacement of percent-encoded runs</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-118664-decode-uri-component-vulnerable-to-denial-of-ser.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-118664-decode-uri-component-vulnerable-to-denial-of-ser.html</guid>
-      <pubDate>Thu, 29 Oct 2026 16:41:28 GMT</pubDate>
-      <description>Severity: high. ### Summary
-
-`decodeUriComponent()` takes quadratic time on malformed input that has many distinct percent-encoded runs. A single unauthenticated request of about 224 KB can block the Node.js event loop for about 20 seconds. Version 0.5.0, the release that fixed CVE-[phone], is affec</description>
-    </item>
-    <item>
-      <title>GHSA-vpp8-g58w-m8mp: Twisted: Unauthenticated Remote Denial of Service in the Twisted HTTP/2 Server via Rapid Stream Reset</title>
-      <link>https://cveradar-ah3.pages.dev/item/ghsa-vpp8-g58w-m8mp-twisted-unauthenticated-remote-denial-of-ser.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/ghsa-vpp8-g58w-m8mp-twisted-unauthenticated-remote-denial-of-ser.html</guid>
-      <pubDate>Thu, 29 Oct 2026 16:41:06 GMT</pubDate>
+      <title>CVE-2026-118759: Kubeflow Pipelines: Run-log endpoint permits unauthorized access to pod logs</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-118759-kubeflow-pipelines-run-log-endpoint-permits-unau.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-118759-kubeflow-pipelines-run-log-endpoint-permits-unau.html</guid>
+      <pubDate>Fri, 30 Oct 2026 23:13:29 GMT</pubDate>
       <description>Severity: high. ## Summary
 
-An uncontrolled-resource-consumption vulnerability (CWE-400) in the Twisted HTTP/2 server lets any unauthenticated remote client exhaust server CPU over a single connection. A client that sends a request header block with `END_STREAM` and then immediately resets the strea</description>
+The Kubeflow Pipelines API server's `GET /apis/v1alpha1/runs/{run_id}/nodes/{node_id}/log` handler retrieves logs without authorizing the caller against the selected run. A caller who can reach the backend and knows a victim run ID and a suitable pod or node identifier ca</description>
     </item>
     <item>
-      <title>CVE-2026-115907: zip: legacy Shrink/Reduce/Implode decoder: denial of service from attacker-controlled ZIP64 uncompressed size</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-115907-zip-legacy-shrink-reduce-implode-decoder-denial-.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-115907-zip-legacy-shrink-reduce-implode-decoder-denial-.html</guid>
-      <pubDate>Thu, 29 Oct 2026 16:40:19 GMT</pubDate>
+      <title>CVE-2026-119203: pypdf has possible infinite loop when hitting EOF in standard xref table during trailer search</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-119203-pypdf-has-possible-infinite-loop-when-hitting-eo.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-119203-pypdf-has-possible-infinite-loop-when-hitting-eo.html</guid>
+      <pubDate>Fri, 30 Oct 2026 23:13:16 GMT</pubDate>
+      <description>Severity: high. ### Impact
+
+An attacker who uses this vulnerability can craft a PDF which leads to an infinite loop. This requires opening an incomplete file without a `trailer`.
+
+### Patches
+
+This has been fixed in [pypdf==6.21.4](https://github.com/py-pdf/pypdf/releases/tag/6.21.4).
+
+### Workaroun</description>
+    </item>
+    <item>
+      <title>CVE-2026-119204: pypdf has possible large memory usage when parsing page tree</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-119204-pypdf-has-possible-large-memory-usage-when-parsi.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-119204-pypdf-has-possible-large-memory-usage-when-parsi.html</guid>
+      <pubDate>Fri, 30 Oct 2026 23:13:01 GMT</pubDate>
+      <description>Severity: high. ### Impact
+
+An attacker who uses this vulnerability can craft a PDF which leads to large memory usage. This requires parsing the page tree with many shared resources.
+
+### Patches
+
+This has been fixed in [pypdf==6.21.4](https://github.com/py-pdf/pypdf/releases/tag/6.21.4).
+
+### Worka</description>
+    </item>
+    <item>
+      <title>CVE-2026-119205: pypdf has possible infinite loop when cloning dictionaries</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-119205-pypdf-has-possible-infinite-loop-when-cloning-di.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-119205-pypdf-has-possible-infinite-loop-when-cloning-di.html</guid>
+      <pubDate>Fri, 30 Oct 2026 23:12:20 GMT</pubDate>
+      <description>Severity: high. ### Impact
+
+An attacker who uses this vulnerability can craft a PDF which leads to an infinite loop. This requires cloning/duplicating a `DictionaryObject`.
+
+### Patches
+
+This has been fixed in [pypdf==6.21.4](https://github.com/py-pdf/pypdf/releases/tag/6.21.4).
+
+### Workarounds
+
+If</description>
+    </item>
+    <item>
+      <title>CVE-2026-118772: joi: quadratic-time split in `string().email({ multiple: true })` allows denial of service</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-118772-joi-quadratic-time-split-in-string-email-multipl.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-118772-joi-quadratic-time-split-in-string-email-multipl.html</guid>
+      <pubDate>Fri, 30 Oct 2026 23:10:23 GMT</pubDate>
       <description>Severity: high. ### Summary
 
-A malicious 149-byte ZIP archive can cause a denial of service in applications that enable `legacy-zip` and use `ZipArchive::extract()`. An attacker-controlled ZIP64 uncompressed size triggers a `capacity overflow` panic in the Shrink decoder in optimized builds, potenti</description>
-    </item>
-    <item>
-      <title>CVE-2026-115908: zip: Arbitrary file write outside the extraction directory, because ZipArchive::extract validates symlink targets lexically.</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-115908-zip-arbitrary-file-write-outside-the-extraction-.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-115908-zip-arbitrary-file-write-outside-the-extraction-.html</guid>
-      <pubDate>Thu, 29 Oct 2026 16:40:12 GMT</pubDate>
-      <description>Severity: high. ### Summary
-
-- **Verified version:** zip `9.0.0-pre3`
-- **Affected versions:** `7.2.0` and later
-- **Precondition:** The attacker knows (or can guess) the absolute path of the extraction destination
-
-The validation applied to symlinks is purely lexical.
-As a result, an attacker can w</description>
-    </item>
-    <item>
-      <title>CVE-2026-115906: zip: AES Entry HMAC Authentication Bypass on Premature EOF</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-115906-zip-aes-entry-hmac-authentication-bypass-on-prem.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-115906-zip-aes-entry-hmac-authentication-bypass-on-prem.html</guid>
-      <pubDate>Thu, 29 Oct 2026 16:40:07 GMT</pubDate>
-      <description>Severity: medium. ### Summary
-
-An AES-encrypted (AE-x) entry's authentication code is verified only when the reader's byte counter lands exactly on zero. If the bounded entry reader reaches the archive's actual EOF before the attacker-controlled, header-declared `compressed_size`, the counter remain</description>
-    </item>
-    <item>
-      <title>CVE-2026-115909: zip: Unbounded Symlink-Target Handling Can Abort Or Exhaust Memory During Extraction</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-115909-zip-unbounded-symlink-target-handling-can-abort-.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-115909-zip-unbounded-symlink-target-handling-can-abort-.html</guid>
-      <pubDate>Thu, 29 Oct 2026 16:40:01 GMT</pubDate>
-      <description>Severity: high. ### Summary
-
-The symbolic-link branch of `ZipArchive::extract_internal()` allocates a buffer using an attacker-declared size before reading any entry data. A 112-byte archive terminates the extracting process with `SIGABRT` through this infallible allocation.
+`Joi.string().email({ multiple: true })` takes quadratic time to split a value that contains a long run of whitespace. One request with 100 KB of spaces blocks the Node.js event loop for several seconds, which causes a denial of service.
 
 ### Details
 
-```rust
-#[</description>
+When the `multiple`</description>
     </item>
     <item>
-      <title>CVE-2026-118662: Vite: `server.fs.deny` bypassed with queries</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-118662-vite-server-fs-deny-bypassed-with-queries.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-118662-vite-server-fs-deny-bypassed-with-queries.html</guid>
-      <pubDate>Thu, 29 Oct 2026 16:39:56 GMT</pubDate>
+      <title>CVE-2026-119202: @hapi/content: quadratic-time parsing of Content-Disposition parameters allows denial of service</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-119202-hapi-content-quadratic-time-parsing-of-content-d.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-119202-hapi-content-quadratic-time-parsing-of-content-d.html</guid>
+      <pubDate>Fri, 30 Oct 2026 23:10:13 GMT</pubDate>
+      <description>Severity: high. ### Summary
+
+`Content.disposition()` takes quadratic time when a `Content-Disposition` parameter contains a long token without `=`. One unauthenticated multipart request can block the Node.js event loop for several minutes.
+
+### Details
+
+`Content.disposition()` reads the parameters w</description>
+    </item>
+    <item>
+      <title>CVE-2026-118764: minimatch has potential denial of service via globparts amplification</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-118764-minimatch-has-potential-denial-of-service-via-gl.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-118764-minimatch-has-potential-denial-of-service-via-gl.html</guid>
+      <pubDate>Fri, 30 Oct 2026 23:09:55 GMT</pubDate>
+      <description>Severity: medium. minimatch 10.2.6 contains an attacker-controlled pattern amplification in firstPhasePreProcess() when optimizationLevel &gt;= 2.
+
+researcher: Reid Downing (b1nv0id)
+files: 
+
+- src/index.ts: 690-770
+- src/index.ts: 780-796
+
+issue:
+input-controlled growth of globParts during first-phase</description>
+    </item>
+    <item>
+      <title>CVE-2026-118773: Glob: AbortSignal cancellation bypass allows post-timeout filesystem traversal</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-118773-glob-abortsignal-cancellation-bypass-allows-post.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-118773-glob-abortsignal-cancellation-bypass-allows-post.html</guid>
+      <pubDate>Fri, 30 Oct 2026 23:09:11 GMT</pubDate>
       <description>Severity: medium. ### Summary
 
-The contents of files that are specified by [`server.fs.deny`](https://vite.dev/config/server-options#server-fs-deny) can be returned to the browser. This is the same as https://github.com/vitejs/vite/security/advisories/GHSA-v2wj-q39q-566r.
+In glob 13.0.6, an aborted async walk rejects or emits an error but continues recursively reading directories in the background.
 
-### Impact
-
-Only apps that</description>
+The root cause is that abort branches in src/walker.ts call cb() without returning. As a result, callers that rely on signal or AbortSignal</description>
     </item>
     <item>
-      <title>CVE-2026-63414: Shopify App: Token exchange shop context confusion may allow cross-shop authorization bypass in affected apps</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-63414-shopify-app-token-exchange-shop-context-confusion.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-63414-shopify-app-token-exchange-shop-context-confusion.html</guid>
-      <pubDate>Thu, 29 Oct 2026 16:39:49 GMT</pubDate>
-      <description>Severity: high. In token-exchange authenticated controllers, `shopify_app` exposes shop context through helpers such as `current_shopify_domain`. Prior to the fix, `current_shopify_domain` could resolve to the sanitized `shop` query parameter instead of the shop identity derived from the verified Sh</description>
+      <title>CVE-2026-116672: Authlib RFC 7592 examples omit registration-access-token client binding</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-116672-authlib-rfc-7592-examples-omit-registration-acce.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-116672-authlib-rfc-7592-examples-omit-registration-acce.html</guid>
+      <pubDate>Fri, 30 Oct 2026 23:09:04 GMT</pubDate>
+      <description>Severity: high. ## Description
+
+### Summary
+
+RFC 7592 (OAuth 2.0 Dynamic Client Registration Management Protocol) lets a previously registered client read, update, or delete its own registration, authenticated by a `registration_access_token` issued specifically to that client at registration time. </description>
     </item>
     <item>
-      <title>CVE-2026-62290: cert-manager: Direct ACME Challenge resources can bypass Issuer DNS01 solver policy and use ClusterIssuer DNS credentials</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-62290-cert-manager-direct-acme-challenge-resources-can-.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-62290-cert-manager-direct-acme-challenge-resources-can-.html</guid>
-      <pubDate>Thu, 29 Oct 2026 16:39:41 GMT</pubDate>
+      <title>CVE-2026-119206: pypdf has possible long runtimes when retrieving page labels</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-119206-pypdf-has-possible-long-runtimes-when-retrieving.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-119206-pypdf-has-possible-long-runtimes-when-retrieving.html</guid>
+      <pubDate>Fri, 30 Oct 2026 23:08:55 GMT</pubDate>
+      <description>Severity: high. ### Impact
+
+An attacker who uses this vulnerability can craft a PDF which leads to large runtimes. This requires retrieving the page labels of a file.
+
+### Patches
+
+This has been fixed in [pypdf==6.21.3](https://github.com/py-pdf/pypdf/releases/tag/6.21.3).
+
+### Workarounds
+
+If you c</description>
+    </item>
+    <item>
+      <title>CVE-2026-119207: pypdf has possible large memory usage for exceptions in strict mode</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-119207-pypdf-has-possible-large-memory-usage-for-except.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-119207-pypdf-has-possible-large-memory-usage-for-except.html</guid>
+      <pubDate>Fri, 30 Oct 2026 23:08:39 GMT</pubDate>
+      <description>Severity: high. ### Impact
+
+An attacker who uses this vulnerability can craft a PDF which leads to large memory usage. This requires loading an invalid dictionary.
+
+### Patches
+
+This has been fixed in [pypdf==6.21.3](https://github.com/py-pdf/pypdf/releases/tag/6.21.3).
+
+### Workarounds
+
+If you cann</description>
+    </item>
+    <item>
+      <title>CVE-2026-119208: pypdf has possible long runtimes/large memory usage for encrypted PDF files</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-119208-pypdf-has-possible-long-runtimes-large-memory-us.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-119208-pypdf-has-possible-long-runtimes-large-memory-us.html</guid>
+      <pubDate>Fri, 30 Oct 2026 23:08:24 GMT</pubDate>
+      <description>Severity: high. ### Impact
+
+An attacker who uses this vulnerability can craft a PDF which leads to large runtimes/memory usage. This requires accessing the page count of an encrypted PDF file, which itself declares a wrong `/Count` value.
+
+### Patches
+
+This has been fixed in [pypdf==6.21.3](https://</description>
+    </item>
+    <item>
+      <title>CVE-2026-119209: pypdf has possible large memory usage when parsing cross-reference streams</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-119209-pypdf-has-possible-large-memory-usage-when-parsi.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-119209-pypdf-has-possible-large-memory-usage-when-parsi.html</guid>
+      <pubDate>Fri, 30 Oct 2026 23:07:28 GMT</pubDate>
+      <description>Severity: high. ### Impact
+
+An attacker who uses this vulnerability can craft a PDF which leads to large memory usage. This requires opening a file with cross-reference streams.
+
+### Patches
+
+This has been fixed in [pypdf==6.21.3](https://github.com/py-pdf/pypdf/releases/tag/6.21.3).
+
+### Workaround</description>
+    </item>
+    <item>
+      <title>CVE-2026-119196: pyasn1 has quadratic CPU consumption in constructed BIT STRING decoding</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-119196-pyasn1-has-quadratic-cpu-consumption-in-construc.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-119196-pyasn1-has-quadratic-cpu-consumption-in-construc.html</guid>
+      <pubDate>Fri, 30 Oct 2026 23:07:04 GMT</pubDate>
       <description>Severity: high. ## Summary
 
-`Challenge` resources under `acme.cert-manager.io` can be created directly by namespace users. On create, cert-manager performs no admission validation tying the Challenge to an `Order`, an owner reference, or an Issuer-selected solver. The ACME Challenge controller then </description>
+In pyasn1 through 0.6.4, decoding a constructed BIT STRING with many fragments repeatedly shifts and copies the entire value accumulated so far. For fixed-size fragments, CPU time grows quadratically with the encoded input size. An application that passes sufficiently lar</description>
     </item>
     <item>
-      <title>CVE-2026-9086: Keycloak vulnerable to cross-site scripting (xss) via case-insensitive uri validation bypass</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-9086-keycloak-vulnerable-to-cross-site-scripting-xss-vi.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-9086-keycloak-vulnerable-to-cross-site-scripting-xss-vi.html</guid>
-      <pubDate>Thu, 29 Oct 2026 16:39:03 GMT</pubDate>
-      <description>Severity: high. ### Description
-A flaw was found in Keycloak. A remote attacker with administrative privileges, specifically those with `manage-client` permission or access to client registration endpoints, could bypass client Uniform Resource Identifier (URI) validation. This is achieved by registe</description>
+      <title>CVE-2026-119197: pyasn1 has quadratic-complexity denial of service in binary REAL decoding</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-119197-pyasn1-has-quadratic-complexity-denial-of-servic.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-119197-pyasn1-has-quadratic-complexity-denial-of-servic.html</guid>
+      <pubDate>Fri, 30 Oct 2026 23:06:46 GMT</pubDate>
+      <description>Severity: high. ## Summary
+
+In pyasn1 0.6.4 and earlier, decoding a binary-encoded ASN.1 REAL with a large mantissa can consume CPU time quadratic in the mantissa length. The BER, CER, and DER decoders all use the affected `RealPayloadDecoder`. An application is exposed when it passes attacker-contr</description>
     </item>
     <item>
-      <title>CVE-2026-9083: Keycloak vulnerable to information disclosure through arbitrary filesystem path probing</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-9083-keycloak-vulnerable-to-information-disclosure-thro.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-9083-keycloak-vulnerable-to-information-disclosure-thro.html</guid>
-      <pubDate>Thu, 29 Oct 2026 16:38:31 GMT</pubDate>
-      <description>Severity: medium. ### Description
-A flaw was found in Keycloak. A realm administrator with the "manage-realm" role can exploit this vulnerability by submitting an arbitrary filesystem path as a keystore parameter when creating a key provider component. This allows the administrator to probe arbitrar</description>
+      <title>CVE-2026-119195: pyasn1 has quadratic-time denial of service in constructed string and indefinite-length ANY decoding</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-119195-pyasn1-has-quadratic-time-denial-of-service-in-c.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-119195-pyasn1-has-quadratic-time-denial-of-service-in-c.html</guid>
+      <pubDate>Fri, 30 Oct 2026 23:03:51 GMT</pubDate>
+      <description>Severity: high. ## Summary
+
+In pyasn1 0.6.4 and earlier, decoding a constructed OCTET STRING or character string made of many fragments can spend disproportionate CPU time repeatedly copying the accumulated value. A separate indefinite-length `ANY` path has the same problem while collecting the enco</description>
     </item>
     <item>
-      <title>CVE-2026-9799: Keycloak allows unauthorized access to resources via uma permission ticket bypass</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-9799-keycloak-allows-unauthorized-access-to-resources-v.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-9799-keycloak-allows-unauthorized-access-to-resources-v.html</guid>
-      <pubDate>Thu, 29 Oct 2026 16:37:57 GMT</pubDate>
-      <description>Severity: medium. ### Description
-A flaw was found in org.keycloak.authorization. An authenticated user with a granted User-Managed Access (UMA) permission ticket for one resource can exploit this by using a specific permission request prefix to bypass per-resource access control. This allows the us</description>
+      <title>CVE-2026-119194: pyasn1 has quadratic CPU use in schemaless BER/CER/DER container decoding</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-119194-pyasn1-has-quadratic-cpu-use-in-schemaless-ber-c.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-119194-pyasn1-has-quadratic-cpu-use-in-schemaless-ber-c.html</guid>
+      <pubDate>Fri, 30 Oct 2026 23:03:37 GMT</pubDate>
+      <description>Severity: high. ### Summary
+
+When an application decodes attacker-controlled BER, CER, or DER data without an ASN.1 schema, a container with many distinct long tag IDs can cause quadratic CPU use. Repeated inputs can exhaust CPU and reduce service availability.
+
+### Details
+
+ConstructedPayloadDecode</description>
+    </item>
+    <item>
+      <title>CVE-2026-118775: Forge: ASN.1 OID first arc truncation in asn1.oidToDer</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-118775-forge-asn-1-oid-first-arc-truncation-in-asn1-oid.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-118775-forge-asn-1-oid-first-arc-truncation-in-asn1-oid.html</guid>
+      <pubDate>Fri, 30 Oct 2026 23:02:40 GMT</pubDate>
+      <description>Severity: low. ### Summary
+
+`asn1.oidToDer()` did not range-check the first two arcs of an OID string, so an OID such as `[phone]49.1.1.1` or `[phone].[phone].1.1.1` was encoded as the DER of a different OID (here rsaEncryption, `1.[phone].1.1.1`). This is an incomplete fix of CVE-[phone]. F</description>
+    </item>
+    <item>
+      <title>CVE-2026-118777: Forge: Prototype Pollution in forge.http cookie handling via a malicious Set-Cookie</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-118777-forge-prototype-pollution-in-forge-http-cookie-h.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-118777-forge-prototype-pollution-in-forge-http-cookie-h.html</guid>
+      <pubDate>Fri, 30 Oct 2026 23:02:35 GMT</pubDate>
+      <description>Severity: medium. ### Summary
+The `forge.http` client stored cookies from `Set-Cookie` response headers in a plain object keyed by cookie name and path. A malicious server could use the cookie name `__proto__` to add properties to `Object.prototype`, use inherited names such as `constructor` to add </description>
+    </item>
+    <item>
+      <title>CVE-2026-118778: Forge: TLS client crash when the server sends no certificate</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-118778-forge-tls-client-crash-when-the-server-sends-no-.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-118778-forge-tls-client-crash-when-the-server-sends-no-.html</guid>
+      <pubDate>Fri, 30 Oct 2026 23:02:30 GMT</pubDate>
+      <description>Severity: medium. ### Summary
+The forge TLS client's check for a missing server certificate read the wrong property and never ran. A malicious TLS server, or an on-path attacker who removes the server's Certificate message, can make `connection.process()` throw a `TypeError`, which crashes applicati</description>
+    </item>
+    <item>
+      <title>CVE-2026-118779: Forge: Regular expression denial of service in PEM decoding (pem.decode)</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-118779-forge-regular-expression-denial-of-service-in-pe.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-118779-forge-regular-expression-denial-of-service-in-pe.html</guid>
+      <pubDate>Fri, 30 Oct 2026 23:02:25 GMT</pubDate>
+      <description>Severity: high. ### Summary
+`pem.decode()`, which every node-forge API that parses PEM input uses, split messages with a regular expression that takes polynomial time on input without a matching END line, and parsed encapsulated headers with regular expressions that take quadratic time on long heade</description>
+    </item>
+    <item>
+      <title>CVE-2026-118781: Forge: Denial of Service via infinite loop in BigInteger.modInverse() with negative input (incomplete fix of CVE-2026-33891)</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-118781-forge-denial-of-service-via-infinite-loop-in-big.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-118781-forge-denial-of-service-via-infinite-loop-in-big.html</guid>
+      <pubDate>Fri, 30 Oct 2026 23:02:20 GMT</pubDate>
+      <description>Severity: low. ### Summary
+
+`BigInteger.prototype.modInverse()` in node-forge's bundled jsbn library enters an infinite loop when the value or the modulus is negative, for example when a negative public exponent is passed to `forge.pki.rsa.generateKeyPair()`. This is an incomplete fix of CVE-[phone]</description>
+    </item>
+    <item>
+      <title>CVE-2026-118780: Forge: verifyCertificateChain() removes trusted CA certificates with the same subject from the CA store</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-118780-forge-verifycertificatechain-removes-trusted-ca-.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-118780-forge-verifycertificatechain-removes-trusted-ca-.html</guid>
+      <pubDate>Fri, 30 Oct 2026 23:02:14 GMT</pubDate>
+      <description>Severity: low. ### Summary
+
+When a CA store created by `pki.createCaStore()` holds two or more certificates with the same subject name, `pki.verifyCertificateChain()` permanently removes those certificates from the store while trying each one as the issuer. A peer can send any certificate that names</description>
+    </item>
+    <item>
+      <title>CVE-2026-119186: Forge: AES-GCM authentication bypass via unvalidated tagLength option</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-119186-forge-aes-gcm-authentication-bypass-via-unvalida.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-119186-forge-aes-gcm-authentication-bypass-via-unvalida.html</guid>
+      <pubDate>Fri, 30 Oct 2026 23:02:09 GMT</pubDate>
+      <description>Severity: medium. ### Summary
+
+The AES-GCM mode in forge.cipher does not validate the tagLength option passed to start(). With a tagLength of 0 or a value that converts to 0 (such as null, false, '' or '0'), the authentication tag is empty, and decipher.finish() returns true for any ciphertext and a</description>
+    </item>
+    <item>
+      <title>CVE-2026-118782: Forge: PKCS#12 MAC forgery and constant-key PBE via zero iteration count</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-118782-forge-pkcs-12-mac-forgery-and-constant-key-pbe-v.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-118782-forge-pkcs-12-mac-forgery-and-constant-key-pbe-v.html</guid>
+      <pubDate>Fri, 30 Oct 2026 23:02:05 GMT</pubDate>
+      <description>Severity: high. ### Summary
+
+forge.pkcs12.pkcs12FromAsn1() accepts a PKCS#12 MAC iteration count of zero (or less) from the input, and the PKCS#12 key derivation function then returns a constant key that does not depend on the password or salt. An attacker who does not know the password can modify a</description>
+    </item>
+    <item>
+      <title>CVE-2026-119188: Forge: Denial of service in TLS record processing via a record interleaved with a fragmented handshake message</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-119188-forge-denial-of-service-in-tls-record-processing.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-119188-forge-denial-of-service-in-tls-record-processing.html</guid>
+      <pubDate>Fri, 30 Oct 2026 23:02:00 GMT</pubDate>
+      <description>Severity: high. ### Summary
+
+A connection created with `forge.tls.createConnection()` throws an uncaught `TypeError` from `process()` when it receives a record of another content type while waiting for the rest of a handshake message that was split across records. A peer can trigger this with 18 byt</description>
+    </item>
+    <item>
+      <title>CVE-2026-119187: Forge: Denial of service in TLS record processing via call stack exhaustion</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-119187-forge-denial-of-service-in-tls-record-processing.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-119187-forge-denial-of-service-in-tls-record-processing.html</guid>
+      <pubDate>Fri, 30 Oct 2026 23:01:54 GMT</pubDate>
+      <description>Severity: high. ### Summary
+
+Connections created with `forge.tls.createConnection()` processed received TLS records recursively, one stack level per record. A peer can send one chunk of thousands of small records, such as heartbeat records, which are accepted before the handshake, and `process()` th</description>
+    </item>
+    <item>
+      <title>CVE-2026-119190: Forge: X.509 basicConstraints bypass in verifyCertificateChain() via deprecated extension OIDs 2.5.29.10 and 2.5.29.13</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-119190-forge-x-509-basicconstraints-bypass-in-verifycer.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-119190-forge-x-509-basicconstraints-bypass-in-verifycer.html</guid>
+      <pubDate>Fri, 30 Oct 2026 23:01:46 GMT</pubDate>
+      <description>Severity: high. ### Summary
+node-forge parses certificate extensions with the deprecated OIDs `2.5.29.10` and `2.5.29.13` as `basicConstraints`, and `forge.pki.verifyCertificateChain()` used the first extension with that name. A certificate with a forged deprecated-OID extension (`cA` TRUE) before i</description>
+    </item>
+    <item>
+      <title>CVE-2026-119193: PHPUnit vulnerable to code execution by other local users via shared temporary directory in PHPT code coverage handling</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-119193-phpunit-vulnerable-to-code-execution-by-other-lo.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-119193-phpunit-vulnerable-to-code-execution-by-other-lo.html</guid>
+      <pubDate>Fri, 30 Oct 2026 23:01:21 GMT</pubDate>
+      <description>Severity: medium. ### Summary
+
+When PHPT tests are run with code coverage, PHPUnit 13.4.0 to 13.4.3 writes the code of each PHPT test to a directory with a fixed name below the operating system's path used for temporary files, for instance `/tmp/phpunit-phpt` on Linux, and executes it from there. PH</description>
     </item>
   </channel>
 </rss>
