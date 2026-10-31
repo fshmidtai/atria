@@ -5,7 +5,21 @@
     <link>https://sentinel-post.pages.dev</link>
     <description>Автономная радиостанция кибербезопасности: живые CVE, угрозы и защита — без сенсаций</description>
     <language>ru</language>
-    <lastBuildDate>Sat, 31 Oct 2026 04:58:17 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 31 Oct 2026 08:56:57 GMT</lastBuildDate>
+    <item>
+      <title>A Shared ChatGPT Link Could Run Attacker Code in Your Session and Read Private Chats</title>
+      <link>https://sentinel-post.pages.dev/item/a-shared-chatgpt-link-could-run-attacker-code-in-your-session-an.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/a-shared-chatgpt-link-could-run-attacker-code-in-your-session-an.html</guid>
+      <pubDate>Sat, 31 Oct 2026 05:33:41 GMT</pubDate>
+      <description>A malicious ChatGPT share link could run an attacker's code in the logged-in session of anyone who opened it, allowing them to read their private conversations, researchers at&amp;nbsp;the security firm Parameter&amp;nbsp;showed. The researchers reported the flaw through&amp;nbsp;OpenAI's bug bounty program&amp;nbs</description>
+    </item>
+    <item>
+      <title>Cloudflare Reports 18.2 Million Network-Layer DDoS Attacks in Q3, Up 38%</title>
+      <link>https://sentinel-post.pages.dev/item/cloudflare-reports-18-2-million-network-layer-ddos-attacks-in-q3.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cloudflare-reports-18-2-million-network-layer-ddos-attacks-in-q3.html</guid>
+      <pubDate>Sat, 31 Oct 2026 04:56:12 GMT</pubDate>
+      <description>Threat actors are launching about 8,226 network-layer distributed denial-of-service (DDoS) attacks per hour, Cloudflare revealed Thursday. The web infrastructure and security company said it autonomously mitigated 18.2 million network-layer (L3) DDoS attacks and 14.4 trillion HTTP DDoS requests in t</description>
+    </item>
     <item>
       <title>CVE-2026-118761: Kubeflow Pipelines: Pipeline archive upload allows decompression bomb to exhaust server memory</title>
       <link>https://sentinel-post.pages.dev/item/cve-2026-118761-kubeflow-pipelines-pipeline-archive-upload-allow.html</link>
@@ -323,23 +337,6 @@ A connection created with `forge.tls.createConnection()` throws an uncaught `Typ
       <description>Severity: high. ### Summary
 
 Connections created with `forge.tls.createConnection()` processed received TLS records recursively, one stack level per record. A peer can send one chunk of thousands of small records, such as heartbeat records, which are accepted before the handshake, and `process()` th</description>
-    </item>
-    <item>
-      <title>CVE-2026-119190: Forge: X.509 basicConstraints bypass in verifyCertificateChain() via deprecated extension OIDs 2.5.29.10 and 2.5.29.13</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-119190-forge-x-509-basicconstraints-bypass-in-verifycer.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-119190-forge-x-509-basicconstraints-bypass-in-verifycer.html</guid>
-      <pubDate>Fri, 30 Oct 2026 23:01:46 GMT</pubDate>
-      <description>Severity: high. ### Summary
-node-forge parses certificate extensions with the deprecated OIDs `2.5.29.10` and `2.5.29.13` as `basicConstraints`, and `forge.pki.verifyCertificateChain()` used the first extension with that name. A certificate with a forged deprecated-OID extension (`cA` TRUE) before i</description>
-    </item>
-    <item>
-      <title>CVE-2026-119193: PHPUnit vulnerable to code execution by other local users via shared temporary directory in PHPT code coverage handling</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-119193-phpunit-vulnerable-to-code-execution-by-other-lo.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-119193-phpunit-vulnerable-to-code-execution-by-other-lo.html</guid>
-      <pubDate>Fri, 30 Oct 2026 23:01:21 GMT</pubDate>
-      <description>Severity: medium. ### Summary
-
-When PHPT tests are run with code coverage, PHPUnit 13.4.0 to 13.4.3 writes the code of each PHPT test to a directory with a fixed name below the operating system's path used for temporary files, for instance `/tmp/phpunit-phpt` on Linux, and executes it from there. PH</description>
     </item>
   </channel>
 </rss>
