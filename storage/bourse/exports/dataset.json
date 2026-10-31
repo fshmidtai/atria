@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T01:16:44+00:00",
+  "generated_at": "2026-10-31T04:57:40+00:00",
   "sources_used": [
     "rss",
     "rss",
@@ -11,23 +11,23 @@
     "rss"
   ],
   "totals": {
-    "items": 127,
+    "items": 125,
     "by_source": {
-      "hn": 6,
-      "rss": 81,
+      "hn": 5,
+      "rss": 80,
       "arxiv": 40
     },
     "by_recipe": {
       "economist_fn": 40,
       "arxiv_qfin": 40,
       "cnbc_top": 30,
-      "ft_home": 11,
-      "hn_fintech": 6
+      "ft_home": 10,
+      "hn_fintech": 5
     },
     "by_topic": {
-      "ai": 65,
-      "biz": 52,
-      "dev": 42,
+      "ai": 63,
+      "biz": 50,
+      "dev": 41,
       "science": 19,
       "crypto": 15,
       "hardware": 6,
@@ -48,7 +48,7 @@
       ],
       [
         "ft.com",
-        11
+        10
       ],
       [
         "news.ycombinator.com",
@@ -56,10 +56,6 @@
       ],
       [
         "realizefi.com",
-        1
-      ],
-      [
-        "finterm.ai",
         1
       ],
       [
@@ -143,24 +139,6 @@
         "biz"
       ],
       "date": "2026-10-31"
-    },
-    {
-      "uid": "rss:789d3da837be52",
-      "source": "rss",
-      "title": "US tech stocks tumble as concerns over AI spending intensify",
-      "url": "https://www.ft.com/content/3ba953ae-84bb-4de4-959e-baec3e908fb3?syn-25a6b1a6=1",
-      "ts": 1793394830.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "Revelations that Anthropic could receive junk rating after IPO add to concerns over industry borrowing spree",
-      "recipe": "ft_home",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "biz"
-      ],
-      "date": "2026-10-30"
     },
     {
       "uid": "rss:ea590c51e22b50",
@@ -1545,62 +1523,6 @@
       "date": "2026-10-24"
     },
     {
-      "uid": "arxiv:2610.33447v1",
-      "source": "arxiv",
-      "title": "Efficiency vs Capability in the Intelligence Explosion",
-      "url": "https://arxiv.org/abs/2610.33447v1",
-      "ts": 1792817728.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Karthik Tadepalli",
-      "summary": "AI progress can feed back into AI research in two ways. Capability improvements allow AIs to perform a larger share of AI research tasks, while efficiency improvements raise AI research output per unit of compute on tasks already automated. In a task automation model of AI research, I show that a software-driven intelligence explosion - a self-sustaining acceleration in AI progress with fixed comp",
-      "recipe": "arxiv_qfin",
-      "buzz": 10,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-10-24"
-    },
-    {
-      "uid": "arxiv:2610.33400v1",
-      "source": "arxiv",
-      "title": "Tracking High-Frequency Trading Activity in China and Its Effects on Market Quality",
-      "url": "https://arxiv.org/abs/2610.33400v1",
-      "ts": 1792808540.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Li Guo",
-      "summary": "We develop a new order-level proxy for high-frequency trading (HFT) activity based on precise order placement and study its effects on market quality. With quotes updating multiple times per second, millisecond-level order-book access makes high-frequency traders more likely to submit active exact-match orders, defined as limit orders priced exactly at the prevailing best opposite-side quote. Usin",
-      "recipe": "arxiv_qfin",
-      "buzz": 10,
-      "topics": [
-        "ai",
-        "dev",
-        "crypto",
-        "biz"
-      ],
-      "date": "2026-10-24"
-    },
-    {
-      "uid": "hn:48896257",
-      "source": "hn",
-      "title": "Show HN: Finterm.ai Bloomberg terminal for Claude Code",
-      "url": "https://finterm.ai/",
-      "ts": 1783965130.0,
-      "points": 6,
-      "comments": 0,
-      "author": "cheeseblubber",
-      "summary": "Hi, my name is Kam, and today my cofounder Josh and I are shipping Finterm, a CLI that\ngives coding agents direct access to financial data: stock prices, options data, SEC\nfilings, and Ticker Deep Research, a filtered ticker news search. I’m a developer and have been a full-time trader for the past few years.Recently I have been using LLMs more and more in my trading and strategy.\nI always found i",
-      "recipe": "hn_fintech",
-      "buzz": 6,
-      "topics": [
-        "ai",
-        "dev",
-        "biz"
-      ],
-      "date": "2026-07-13"
-    },
-    {
       "uid": "hn:47278733",
       "source": "hn",
       "title": "Show HN: AI trading platform with 34% returns (3 months) – seeking acquisition",
@@ -2167,6 +2089,43 @@
       "buzz": 0,
       "topics": [],
       "date": "2026-09-17"
+    },
+    {
+      "uid": "arxiv:2610.33447v1",
+      "source": "arxiv",
+      "title": "Efficiency vs Capability in the Intelligence Explosion",
+      "url": "https://arxiv.org/abs/2610.33447v1",
+      "ts": 1792817728.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Karthik Tadepalli",
+      "summary": "AI progress can feed back into AI research in two ways. Capability improvements allow AIs to perform a larger share of AI research tasks, while efficiency improvements raise AI research output per unit of compute on tasks already automated. In a task automation model of AI research, I show that a software-driven intelligence explosion - a self-sustaining acceleration in AI progress with fixed comp",
+      "recipe": "arxiv_qfin",
+      "buzz": 0,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-10-24"
+    },
+    {
+      "uid": "arxiv:2610.33400v1",
+      "source": "arxiv",
+      "title": "Tracking High-Frequency Trading Activity in China and Its Effects on Market Quality",
+      "url": "https://arxiv.org/abs/2610.33400v1",
+      "ts": 1792808540.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Li Guo",
+      "summary": "We develop a new order-level proxy for high-frequency trading (HFT) activity based on precise order placement and study its effects on market quality. With quotes updating multiple times per second, millisecond-level order-book access makes high-frequency traders more likely to submit active exact-match orders, defined as limit orders priced exactly at the prevailing best opposite-side quote. Usin",
+      "recipe": "arxiv_qfin",
+      "buzz": 0,
+      "topics": [
+        "ai",
+        "dev",
+        "crypto",
+        "biz"
+      ],
+      "date": "2026-10-24"
     },
     {
       "uid": "arxiv:2610.32970v1",
