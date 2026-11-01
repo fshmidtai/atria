@@ -5,7 +5,14 @@
     <link>https://sentinel-post.pages.dev</link>
     <description>Автономная радиостанция кибербезопасности: живые CVE, угрозы и защита — без сенсаций</description>
     <language>ru</language>
-    <lastBuildDate>Sun, 01 Nov 2026 09:00:29 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 01 Nov 2026 13:05:51 GMT</lastBuildDate>
+    <item>
+      <title>CVSS 10.0 LXD, MicroCloud Flaw Lets Attackers Impersonate Trusted Clients Without a Private Key</title>
+      <link>https://sentinel-post.pages.dev/item/cvss-10-0-lxd-microcloud-flaw-lets-attackers-impersonate-trusted.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cvss-10-0-lxd-microcloud-flaw-lets-attackers-impersonate-trusted.html</guid>
+      <pubDate>Sun, 01 Nov 2026 08:51:31 GMT</pubDate>
+      <description>A critical flaw in Canonical's LXD and MicroCloud let an attacker log in as a trusted client without holding that client's private key. To do it, the attacker had to reach their HTTPS API over the network and have the trusted client's public certificate. Once in, the attacker would act as that clien</description>
+    </item>
     <item>
       <title>Hackers Steal About $2.7 Million From Polymarket Traders via Hijacked DebugBear Script</title>
       <link>https://sentinel-post.pages.dev/item/hackers-steal-about-2-7-million-from-polymarket-traders-via-hija.html</link>
@@ -14,18 +21,18 @@
       <description>Malicious code on the website of prediction market Polymarket sold some signed-in traders' positions and moved their funds to the hackers on October 29. The code had replaced a page-speed script that the site loaded from an outside company. Polymarket says&amp;nbsp;it is refunding about $2.7 million to </description>
     </item>
     <item>
+      <title>FBI Links North Korea's TraderTraitor to Record $6.43 Billion Binance Crypto Heist</title>
+      <link>https://sentinel-post.pages.dev/item/fbi-links-north-korea-s-tradertraitor-to-record-6-43-billion-bin.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/fbi-links-north-korea-s-tradertraitor-to-record-6-43-billion-bin.html</guid>
+      <pubDate>Sun, 01 Nov 2026 07:03:00 GMT</pubDate>
+      <description>The U.S. Federal Bureau of Investigation (FBI) has officially attributed the theft of more than $6 billion in virtual assets to TraderTraitor, a North Korea-aligned elite hacking group also tracked as Jade Sleet, Pressure Chollima, PUKCHONG, Slow Pisces, and UNC4899. The FBI, along with the U.S. Sec</description>
+    </item>
+    <item>
       <title>NetamLoader Malware Targets Government Windows 10 Systems in Asia via .NET Injection</title>
       <link>https://sentinel-post.pages.dev/item/netamloader-malware-targets-government-windows-10-systems-in-asi.html</link>
       <guid isPermaLink="true">https://sentinel-post.pages.dev/item/netamloader-malware-targets-government-windows-10-systems-in-asi.html</guid>
       <pubDate>Sun, 01 Nov 2026 07:02:58 GMT</pubDate>
       <description>Cybersecurity researchers have disclosed details of what has been described as a "highly sophisticated infection chain" targeting government organizations in Asia. The activity, detailed by Kaspersky this week, targeted a custom Windows 10 build used exclusively by government entities in Asia and in</description>
-    </item>
-    <item>
-      <title>FBI Links North Korea's TraderTraitor to Record $6.43 Billion Binance Crypto Heist</title>
-      <link>https://sentinel-post.pages.dev/item/fbi-links-north-korea-s-tradertraitor-to-record-6-43-billion-bin.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/fbi-links-north-korea-s-tradertraitor-to-record-6-43-billion-bin.html</guid>
-      <pubDate>Sun, 01 Nov 2026 06:44:27 GMT</pubDate>
-      <description>The U.S. Federal Bureau of Investigation (FBI) has officially attributed the theft of more than $6 billion in virtual assets to TraderTraitor, a North Korea-aligned elite hacking group also tracked as Jade Sleet, Pressure Chollima, PUKCHONG, Slow Pisces, and UNC4899. The FBI, along with the U.S. Sec</description>
     </item>
     <item>
       <title>arpanjot-coding/AVault</title>
@@ -317,14 +324,6 @@ The `forge.http` client stored cookies from `Set-Cookie` response headers in a p
       <pubDate>Fri, 30 Oct 2026 23:02:30 GMT</pubDate>
       <description>Severity: medium. ### Summary
 The forge TLS client's check for a missing server certificate read the wrong property and never ran. A malicious TLS server, or an on-path attacker who removes the server's Certificate message, can make `connection.process()` throw a `TypeError`, which crashes applicati</description>
-    </item>
-    <item>
-      <title>CVE-2026-118779: Forge: Regular expression denial of service in PEM decoding (pem.decode)</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-118779-forge-regular-expression-denial-of-service-in-pe.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-118779-forge-regular-expression-denial-of-service-in-pe.html</guid>
-      <pubDate>Fri, 30 Oct 2026 23:02:25 GMT</pubDate>
-      <description>Severity: high. ### Summary
-`pem.decode()`, which every node-forge API that parses PEM input uses, split messages with a regular expression that takes polynomial time on input without a matching END line, and parsed encapsulated headers with regular expressions that take quadratic time on long heade</description>
     </item>
   </channel>
 </rss>

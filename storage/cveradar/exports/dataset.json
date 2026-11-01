@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T08:59:59+00:00",
+  "generated_at": "2026-11-01T13:05:24+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -18,9 +18,9 @@
       "the_hacker_news": 30
     },
     "by_topic": {
-      "security": 53,
-      "ai": 39,
-      "dev": 36,
+      "security": 52,
+      "ai": 38,
+      "dev": 37,
       "crypto": 11,
       "hardware": 10,
       "biz": 7,
@@ -593,6 +593,23 @@
       "date": "2026-10-30"
     },
     {
+      "uid": "rss:4215f7796e3907",
+      "source": "rss",
+      "title": "CVSS 10.0 LXD, MicroCloud Flaw Lets Attackers Impersonate Trusted Clients Without a Private Key",
+      "url": "https://thehackernews.com/2026/11/critical-lxd-and-microcloud-flaw-cvss.html",
+      "ts": 1793523091.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "A critical flaw in Canonical's LXD and MicroCloud let an attacker log in as a trusted client without holding that client's private key. To do it, the attacker had to reach their HTTPS API over the network and have the trusted client's public certificate. Once in, the attacker would act as that client, with access to the cluster and its virtual machines. If the impersonated account is",
+      "recipe": "the_hacker_news",
+      "buzz": 80,
+      "topics": [
+        "dev"
+      ],
+      "date": "2026-11-01"
+    },
+    {
       "uid": "rss:28646d9dcd9888",
       "source": "rss",
       "title": "Hackers Steal About $2.7 Million From Polymarket Traders via Hijacked DebugBear Script",
@@ -607,6 +624,25 @@
       "topics": [
         "ai",
         "dev",
+        "crypto",
+        "biz"
+      ],
+      "date": "2026-11-01"
+    },
+    {
+      "uid": "rss:a18021832e4899",
+      "source": "rss",
+      "title": "FBI Links North Korea's TraderTraitor to Record $6.43 Billion Binance Crypto Heist",
+      "url": "https://thehackernews.com/2026/11/fbi-links-north-koreas-tradertraitor-to.html",
+      "ts": 1793516580.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "The U.S. Federal Bureau of Investigation (FBI) has officially attributed the theft of more than $6 billion in virtual assets to TraderTraitor, a North Korea-aligned elite hacking group also tracked as Jade Sleet, Pressure Chollima, PUKCHONG, Slow Pisces, and UNC4899. The FBI, along with the U.S. Secret Service (USSS) and the Internal Revenue Service Criminal Investigation (IRS-CI), said it",
+      "recipe": "the_hacker_news",
+      "buzz": 80,
+      "topics": [
+        "ai",
         "crypto",
         "biz"
       ],
@@ -632,25 +668,6 @@
       "date": "2026-11-01"
     },
     {
-      "uid": "rss:a18021832e4899",
-      "source": "rss",
-      "title": "FBI Links North Korea's TraderTraitor to Record $6.43 Billion Binance Crypto Heist",
-      "url": "https://thehackernews.com/2026/11/fbi-links-north-koreas-tradertraitor-to.html",
-      "ts": 1793515467.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "The U.S. Federal Bureau of Investigation (FBI) has officially attributed the theft of more than $6 billion in virtual assets to TraderTraitor, a North Korea-aligned elite hacking group also tracked as Jade Sleet, Pressure Chollima, PUKCHONG, Slow Pisces, and UNC4899. The FBI, along with the U.S. Secret Service (USSS) and the Internal Revenue Service Criminal Investigation (IRS-CI), said it",
-      "recipe": "the_hacker_news",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "crypto",
-        "biz"
-      ],
-      "date": "2026-11-01"
-    },
-    {
       "uid": "rss:065d6fd5d0631f",
       "source": "rss",
       "title": "Chainalysis Confirms Intrusion Into Internal Tools and Exposure of Customer Identity Data",
@@ -661,7 +678,7 @@
       "author": "info@thehackernews.com (The Hacker News)",
       "summary": "American blockchain analysis firm Chainalysis said it was the target of a cybersecurity incident in which an external actor accessed non-sensitive customer data. However, the company noted that the breach did not result in unauthorized access to its investigation content, authentication credentials, or session tokens. \"This month, Chainalysis detected an external actor using offensive agentic",
       "recipe": "the_hacker_news",
-      "buzz": 80,
+      "buzz": 30,
       "topics": [
         "ai",
         "dev",
@@ -999,7 +1016,7 @@
       "author": "info@thehackernews.com (The Hacker News)",
       "summary": "Security teams have spent years trying to detect threats faster. AI is changing the harder part: how much time defenders have left to act. Advanced AI models can now help attackers discover vulnerabilities, generate exploit code, and move through weaknesses faster than traditional security processes were built to handle. The challenge is no longer just finding another vulnerability or",
       "recipe": "the_hacker_news",
-      "buzz": 30,
+      "buzz": 10,
       "topics": [
         "ai",
         "science",
@@ -1018,7 +1035,7 @@
       "author": "info@thehackernews.com (The Hacker News)",
       "summary": "A flaw in Telegram for Android could be chained with two other bugs to take full control of a victim's phone through a voice call, once the victim answered, according to security startup NebuSec. The attacker needed only an ordinary Telegram account. Telegram fixed the flaw in version 12.10.4 of the app, released in late September, and NebuSec&nbsp;disclosed it on October 29. Combined with an",
       "recipe": "the_hacker_news",
-      "buzz": 30,
+      "buzz": 10,
       "topics": [
         "ai",
         "biz",
@@ -1037,7 +1054,7 @@
       "author": "info@thehackernews.com (The Hacker News)",
       "summary": "AI is beginning to take over much of the work that has traditionally defined the security analyst's job. Investigating alerts, collecting evidence, correlating activity across tools, and executing response actions are becoming tasks that AI systems can perform on their own. As these capabilities mature, security operations centers (SOCs) will see major changes in how work is organized, how",
       "recipe": "the_hacker_news",
-      "buzz": 30,
+      "buzz": 10,
       "topics": [
         "ai",
         "dev",
@@ -1058,7 +1075,7 @@
       "author": "info@thehackernews.com (The Hacker News)",
       "summary": "26,400 credentials that developers left in public code on Gitee, a Chinese code-hosting service, still worked when a researcher tested them. Anyone who copied one from that code could have used it. Independent researcher Ben Zimmermann found them by scanning 7.25 million public Gitee repositories and&nbsp;reported the results&nbsp;on October 28. Most were keys for cloud and AI services, led by",
       "recipe": "the_hacker_news",
-      "buzz": 30,
+      "buzz": 10,
       "topics": [
         "ai",
         "dev"
@@ -1076,7 +1093,7 @@
       "author": "info@thehackernews.com (The Hacker News)",
       "summary": "Cisco has released patches to address a high-severity security flaw in Secure Firewall Adaptive Security Appliance (ASA) Software and Secure Firewall Threat Defense (FTD) Software that it said has been exploited in the wild. The vulnerability, tracked as CVE-[phone], is rated 8.6 on the CVSS scoring system. Successful exploitation could allow an unauthenticated, remote attacker to cause the",
       "recipe": "the_hacker_news",
-      "buzz": 30,
+      "buzz": 10,
       "topics": [
         "ai",
         "security"
@@ -1094,7 +1111,7 @@
       "author": "info@thehackernews.com (The Hacker News)",
       "summary": "GitHub has announced that it's introducing a new package firewall as a preview to block installation of suspicious npm packages during installation time. \"The firewall inspects both metadata requests and package downloads for signs of malicious activity, acting as an install-time policy gate,\" GitHub said. The feature, which currently supports only npm packages, is available in public preview",
       "recipe": "the_hacker_news",
-      "buzz": 30,
+      "buzz": 10,
       "topics": [
         "ai",
         "dev"
@@ -1112,7 +1129,7 @@
       "author": "info@thehackernews.com (The Hacker News)",
       "summary": "An attacker tried to exploit a critical GitLab vulnerability on the Alpine Linux project's own GitLab server a week after GitLab&nbsp;released a fix, Alpine Linux&nbsp;said&nbsp;on 28 October. The flaw, CVE-[phone] (CVSS score: 10.0), can let an attacker run code on a GitLab server through a crafted regular expression in a CI configuration. Alpine found no evidence that the attack worked but",
       "recipe": "the_hacker_news",
-      "buzz": 30,
+      "buzz": 10,
       "topics": [
         "ai",
         "dev",
@@ -1136,24 +1153,6 @@
       "topics": [
         "ai",
         "dev",
-        "security"
-      ],
-      "date": "2026-10-29"
-    },
-    {
-      "uid": "rss:339d6498ccffaa",
-      "source": "rss",
-      "title": "China-Linked Hackers Exploited VMware ESX Zero-Day to Reduce Audit Trail Visibility",
-      "url": "https://thehackernews.com/2026/10/china-linked-hackers-exploited-vmware.html",
-      "ts": 1793254953.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added a security flaw impacting Broadcom VMware ESX to its Known Exploited Vulnerabilities (KEV) catalog, after CrowdStrike revealed that it had been weaponized by a China-nexus threat actor known as Warp Panda in attacks targeting the U.S. legal sector. The vulnerability in question is CVE-[phone] (CVSS score:",
-      "recipe": "the_hacker_news",
-      "buzz": 10,
-      "topics": [
-        "ai",
         "security"
       ],
       "date": "2026-10-29"
