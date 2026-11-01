@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T20:50:16+00:00",
+  "generated_at": "2026-11-01T01:25:31+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -10,26 +10,26 @@
     "rss"
   ],
   "totals": {
-    "items": 150,
+    "items": 148,
     "by_source": {
       "hn": 40,
       "cve": 30,
-      "github": 30,
+      "github": 28,
       "rss": 50
     },
     "by_recipe": {
       "hn_sec": 40,
       "gh_advisories": 30,
-      "github_sec": 30,
       "hackersnews": 30,
+      "github_sec": 28,
       "schneier": 10,
       "krebs": 10
     },
     "by_topic": {
-      "security": 124,
+      "security": 123,
       "ai": 73,
-      "dev": 70,
-      "hardware": 16,
+      "dev": 69,
+      "hardware": 15,
       "biz": 14,
       "crypto": 12,
       "science": 5
@@ -37,7 +37,7 @@
     "top_domains": [
       [
         "github.com",
-        62
+        60
       ],
       [
         "thehackernews.com",
@@ -265,6 +265,23 @@
       "date": "2021-01-11"
     },
     {
+      "uid": "hn:50172041",
+      "source": "hn",
+      "title": "Security advisory: Critical remote code execution vulnerabilities, update now",
+      "url": "https://www.php.net/archive/2026.php#2026-10-21-5",
+      "ts": 1792527350.0,
+      "points": 1561,
+      "comments": 659,
+      "author": "xd",
+      "summary": "<a href=\"https:&#x2F;&#x2F;cert.europa.eu&#x2F;publications&#x2F;security-advisories&#x2F;2026-018&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;cert.europa.eu&#x2F;publications&#x2F;security-advisories&#x2F;2026...</a><p><a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=[phone]\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=[phone]</a>",
+      "recipe": "hn_sec",
+      "buzz": 3538,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-10-20"
+    },
+    {
       "uid": "cve:GHSA-8fmv-6rg5-5924",
       "source": "cve",
       "title": "CVE-2026-118761: Kubeflow Pipelines: Pipeline archive upload allows decompression bomb to exhaust server memory",
@@ -275,7 +292,7 @@
       "author": "github.com/kubeflow/pipelines",
       "summary": "Severity: high. ## Summary\n\nThe Kubeflow Pipelines API server decompresses uploaded pipeline archives without adequately bounding expanded data in affected versions. A small ZIP or gzip-compressed tar archive can consume disproportionately large amounts of memory while the server locates or reads the pipeline file,",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "dev",
         "security",
@@ -294,7 +311,7 @@
       "author": "github.com/kubeflow/pipelines",
       "summary": "Severity: high. ## Summary\n\nThe Kubeflow Pipelines API server's `GET /apis/v1alpha1/runs/{run_id}/nodes/{node_id}/log` handler retrieves logs without authorizing the caller against the selected run. A caller who can reach the backend and knows a victim run ID and a suitable pod or node identifier can read live or a",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "ai",
         "dev",
@@ -314,7 +331,7 @@
       "author": "pypdf",
       "summary": "Severity: high. ### Impact\n\nAn attacker who uses this vulnerability can craft a PDF which leads to an infinite loop. This requires opening an incomplete file without a `trailer`.\n\n### Patches\n\nThis has been fixed in [pypdf==6.21.4](https://github.com/py-pdf/pypdf/releases/tag/6.21.4).\n\n### Workarounds\n\nIf you canno",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "ai",
         "dev",
@@ -333,7 +350,7 @@
       "author": "pypdf",
       "summary": "Severity: high. ### Impact\n\nAn attacker who uses this vulnerability can craft a PDF which leads to large memory usage. This requires parsing the page tree with many shared resources.\n\n### Patches\n\nThis has been fixed in [pypdf==6.21.4](https://github.com/py-pdf/pypdf/releases/tag/6.21.4).\n\n### Workarounds\n\nIf you c",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "dev",
         "security"
@@ -351,7 +368,7 @@
       "author": "pypdf",
       "summary": "Severity: high. ### Impact\n\nAn attacker who uses this vulnerability can craft a PDF which leads to an infinite loop. This requires cloning/duplicating a `DictionaryObject`.\n\n### Patches\n\nThis has been fixed in [pypdf==6.21.4](https://github.com/py-pdf/pypdf/releases/tag/6.21.4).\n\n### Workarounds\n\nIf you cannot upgr",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "dev",
         "security"
@@ -369,7 +386,7 @@
       "author": "joi",
       "summary": "Severity: high. ### Summary\n\n`Joi.string().email({ multiple: true })` takes quadratic time to split a value that contains a long run of whitespace. One request with 100 KB of spaces blocks the Node.js event loop for several seconds, which causes a denial of service.\n\n### Details\n\nWhen the `multiple` option is set,",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "ai",
         "science",
@@ -388,7 +405,7 @@
       "author": "@hapi/content",
       "summary": "Severity: high. ### Summary\n\n`Content.disposition()` takes quadratic time when a `Content-Disposition` parameter contains a long token without `=`. One unauthenticated multipart request can block the Node.js event loop for several minutes.\n\n### Details\n\n`Content.disposition()` reads the parameters with a global reg",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "ai",
         "dev",
@@ -408,7 +425,7 @@
       "author": "Authlib",
       "summary": "Severity: high. ## Description\n\n### Summary\n\nRFC 7592 (OAuth 2.0 Dynamic Client Registration Management Protocol) lets a previously registered client read, update, or delete its own registration, authenticated by a `registration_access_token` issued specifically to that client at registration time. The entire secur",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "crypto",
         "security"
@@ -426,7 +443,7 @@
       "author": "pypdf",
       "summary": "Severity: high. ### Impact\n\nAn attacker who uses this vulnerability can craft a PDF which leads to large runtimes. This requires retrieving the page labels of a file.\n\n### Patches\n\nThis has been fixed in [pypdf==6.21.3](https://github.com/py-pdf/pypdf/releases/tag/6.21.3).\n\n### Workarounds\n\nIf you cannot upgrade ye",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "dev",
         "security"
@@ -444,7 +461,7 @@
       "author": "pypdf",
       "summary": "Severity: high. ### Impact\n\nAn attacker who uses this vulnerability can craft a PDF which leads to large memory usage. This requires loading an invalid dictionary.\n\n### Patches\n\nThis has been fixed in [pypdf==6.21.3](https://github.com/py-pdf/pypdf/releases/tag/6.21.3).\n\n### Workarounds\n\nIf you cannot upgrade yet,",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "dev",
         "security"
@@ -462,7 +479,7 @@
       "author": "pypdf",
       "summary": "Severity: high. ### Impact\n\nAn attacker who uses this vulnerability can craft a PDF which leads to large runtimes/memory usage. This requires accessing the page count of an encrypted PDF file, which itself declares a wrong `/Count` value.\n\n### Patches\n\nThis has been fixed in [pypdf==6.21.3](https://github.com/py-pd",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "dev",
         "security"
@@ -480,7 +497,7 @@
       "author": "pypdf",
       "summary": "Severity: high. ### Impact\n\nAn attacker who uses this vulnerability can craft a PDF which leads to large memory usage. This requires opening a file with cross-reference streams.\n\n### Patches\n\nThis has been fixed in [pypdf==6.21.3](https://github.com/py-pdf/pypdf/releases/tag/6.21.3).\n\n### Workarounds\n\nIf you cannot",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "dev",
         "security"
@@ -498,7 +515,7 @@
       "author": "pyasn1",
       "summary": "Severity: high. ## Summary\n\nIn pyasn1 through 0.6.4, decoding a constructed BIT STRING with many fragments repeatedly shifts and copies the entire value accumulated so far. For fixed-size fragments, CPU time grows quadratically with the encoded input size. An application that passes sufficiently large, attacker-con",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "ai",
         "dev",
@@ -518,7 +535,7 @@
       "author": "pyasn1",
       "summary": "Severity: high. ## Summary\n\nIn pyasn1 0.6.4 and earlier, decoding a binary-encoded ASN.1 REAL with a large mantissa can consume CPU time quadratic in the mantissa length. The BER, CER, and DER decoders all use the affected `RealPayloadDecoder`. An application is exposed when it passes attacker-controlled ASN.1 cont",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "dev",
         "security",
@@ -537,7 +554,7 @@
       "author": "pyasn1",
       "summary": "Severity: high. ## Summary\n\nIn pyasn1 0.6.4 and earlier, decoding a constructed OCTET STRING or character string made of many fragments can spend disproportionate CPU time repeatedly copying the accumulated value. A separate indefinite-length `ANY` path has the same problem while collecting the encoded components.",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "ai",
         "dev",
@@ -558,7 +575,7 @@
       "author": "pyasn1",
       "summary": "Severity: high. ### Summary\n\nWhen an application decodes attacker-controlled BER, CER, or DER data without an ASN.1 schema, a container with many distinct long tag IDs can cause quadratic CPU use. Repeated inputs can exhaust CPU and reduce service availability.\n\n### Details\n\nConstructedPayloadDecoderBase._decodeCom",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "ai",
         "dev",
@@ -578,7 +595,7 @@
       "author": "node-forge",
       "summary": "Severity: high. ### Summary\n`pem.decode()`, which every node-forge API that parses PEM input uses, split messages with a regular expression that takes polynomial time on input without a matching END line, and parsed encapsulated headers with regular expressions that take quadratic time on long header lines. A remot",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "dev",
         "security"
@@ -596,7 +613,7 @@
       "author": "node-forge",
       "summary": "Severity: high. ### Summary\n\nforge.pkcs12.pkcs12FromAsn1() accepts a PKCS#12 MAC iteration count of zero (or less) from the input, and the PKCS#12 key derivation function then returns a constant key that does not depend on the password or salt. An attacker who does not know the password can modify a PKCS#12/PFX fil",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "security"
       ],
@@ -613,7 +630,7 @@
       "author": "node-forge",
       "summary": "Severity: high. ### Summary\n\nA connection created with `forge.tls.createConnection()` throws an uncaught `TypeError` from `process()` when it receives a record of another content type while waiting for the rest of a handshake message that was split across records. A peer can trigger this with 18 bytes before the ha",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "ai",
         "security"
@@ -631,7 +648,7 @@
       "author": "node-forge",
       "summary": "Severity: high. ### Summary\n\nConnections created with `forge.tls.createConnection()` processed received TLS records recursively, one stack level per record. A peer can send one chunk of thousands of small records, such as heartbeat records, which are accepted before the handshake, and `process()` throws `RangeError",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "security"
       ],
@@ -648,29 +665,12 @@
       "author": "node-forge",
       "summary": "Severity: high. ### Summary\nnode-forge parses certificate extensions with the deprecated OIDs `2.5.29.10` and `2.5.29.13` as `basicConstraints`, and `forge.pki.verifyCertificateChain()` used the first extension with that name. A certificate with a forged deprecated-OID extension (`cA` TRUE) before its genuine `basi",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "ai",
         "security"
       ],
       "date": "2026-10-30"
-    },
-    {
-      "uid": "hn:50172041",
-      "source": "hn",
-      "title": "Security advisory: Critical remote code execution vulnerabilities, update now",
-      "url": "https://www.php.net/archive/2026.php#2026-10-21-5",
-      "ts": 1792527350.0,
-      "points": 1561,
-      "comments": 659,
-      "author": "xd",
-      "summary": "<a href=\"https:&#x2F;&#x2F;cert.europa.eu&#x2F;publications&#x2F;security-advisories&#x2F;2026-018&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;cert.europa.eu&#x2F;publications&#x2F;security-advisories&#x2F;2026...</a><p><a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=[phone]\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=[phone]</a>",
-      "recipe": "hn_sec",
-      "buzz": 3538,
-      "topics": [
-        "security"
-      ],
-      "date": "2026-10-20"
     },
     {
       "uid": "hn:32148218",
@@ -966,113 +966,6 @@
       "date": "2020-09-30"
     },
     {
-      "uid": "cve:GHSA-g3hv-75wg-m249",
-      "source": "cve",
-      "title": "CVE-2026-118764: minimatch has potential denial of service via globparts amplification",
-      "url": "https://github.com/advisories/GHSA-g3hv-75wg-m249",
-      "ts": 1793401795.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "minimatch",
-      "summary": "Severity: medium. minimatch 10.2.6 contains an attacker-controlled pattern amplification in firstPhasePreProcess() when optimizationLevel >= 2.\n\nresearcher: Reid Downing (b1nv0id)\nfiles: \n\n- src/index.ts: 690-770\n- src/index.ts: 780-796\n\nissue:\ninput-controlled growth of globParts during first-phase preprocessing, fo",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-10-30"
-    },
-    {
-      "uid": "cve:GHSA-3g3m-2fjr-6pw4",
-      "source": "cve",
-      "title": "CVE-2026-118773: Glob: AbortSignal cancellation bypass allows post-timeout filesystem traversal",
-      "url": "https://github.com/advisories/GHSA-3g3m-2fjr-6pw4",
-      "ts": 1793401751.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "glob",
-      "summary": "Severity: medium. ### Summary\n\nIn glob 13.0.6, an aborted async walk rejects or emits an error but continues recursively reading directories in the background.\n\nThe root cause is that abort branches in src/walker.ts call cb() without returning. As a result, callers that rely on signal or AbortSignal.timeout() to boun",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "security"
-      ],
-      "date": "2026-10-30"
-    },
-    {
-      "uid": "cve:GHSA-6wvx-3r32-xmcg",
-      "source": "cve",
-      "title": "CVE-2026-118777: Forge: Prototype Pollution in forge.http cookie handling via a malicious Set-Cookie",
-      "url": "https://github.com/advisories/GHSA-6wvx-3r32-xmcg",
-      "ts": 1793401355.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "node-forge",
-      "summary": "Severity: medium. ### Summary\nThe `forge.http` client stored cookies from `Set-Cookie` response headers in a plain object keyed by cookie name and path. A malicious server could use the cookie name `__proto__` to add properties to `Object.prototype`, use inherited names such as `constructor` to add properties to `Obj",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-10-30"
-    },
-    {
-      "uid": "cve:GHSA-525v-9gp9-w22h",
-      "source": "cve",
-      "title": "CVE-2026-118778: Forge: TLS client crash when the server sends no certificate",
-      "url": "https://github.com/advisories/GHSA-525v-9gp9-w22h",
-      "ts": 1793401350.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "node-forge",
-      "summary": "Severity: medium. ### Summary\nThe forge TLS client's check for a missing server certificate read the wrong property and never ran. A malicious TLS server, or an on-path attacker who removes the server's Certificate message, can make `connection.process()` throw a `TypeError`, which crashes applications that use the f",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "security",
-        "hardware"
-      ],
-      "date": "2026-10-30"
-    },
-    {
-      "uid": "cve:GHSA-5cwg-6vw7-rj6p",
-      "source": "cve",
-      "title": "CVE-2026-119186: Forge: AES-GCM authentication bypass via unvalidated tagLength option",
-      "url": "https://github.com/advisories/GHSA-5cwg-6vw7-rj6p",
-      "ts": 1793401329.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "node-forge",
-      "summary": "Severity: medium. ### Summary\n\nThe AES-GCM mode in forge.cipher does not validate the tagLength option passed to start(). With a tagLength of 0 or a value that converts to 0 (such as null, false, '' or '0'), the authentication tag is empty, and decipher.finish() returns true for any ciphertext and additional data whe",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "security"
-      ],
-      "date": "2026-10-30"
-    },
-    {
-      "uid": "cve:GHSA-9vw2-f4vp-x7gf",
-      "source": "cve",
-      "title": "CVE-2026-119193: PHPUnit vulnerable to code execution by other local users via shared temporary directory in PHPT code coverage handling",
-      "url": "https://github.com/advisories/GHSA-9vw2-f4vp-x7gf",
-      "ts": 1793401281.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "phpunit/phpunit",
-      "summary": "Severity: medium. ### Summary\n\nWhen PHPT tests are run with code coverage, PHPUnit 13.4.0 to 13.4.3 writes the code of each PHPT test to a directory with a fixed name below the operating system's path used for temporary files, for instance `/tmp/phpunit-phpt` on Linux, and executes it from there. PHPUnit uses this di",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-10-30"
-    },
-    {
       "uid": "hn:48166459",
       "source": "hn",
       "title": "Mozilla to UK regulators: VPNs are essential privacy and security tools",
@@ -1122,6 +1015,113 @@
         "security"
       ],
       "date": "2016-12-15"
+    },
+    {
+      "uid": "cve:GHSA-g3hv-75wg-m249",
+      "source": "cve",
+      "title": "CVE-2026-118764: minimatch has potential denial of service via globparts amplification",
+      "url": "https://github.com/advisories/GHSA-g3hv-75wg-m249",
+      "ts": 1793401795.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "minimatch",
+      "summary": "Severity: medium. minimatch 10.2.6 contains an attacker-controlled pattern amplification in firstPhasePreProcess() when optimizationLevel >= 2.\n\nresearcher: Reid Downing (b1nv0id)\nfiles: \n\n- src/index.ts: 690-770\n- src/index.ts: 780-796\n\nissue:\ninput-controlled growth of globParts during first-phase preprocessing, fo",
+      "recipe": "gh_advisories",
+      "buzz": 1830,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-10-30"
+    },
+    {
+      "uid": "cve:GHSA-3g3m-2fjr-6pw4",
+      "source": "cve",
+      "title": "CVE-2026-118773: Glob: AbortSignal cancellation bypass allows post-timeout filesystem traversal",
+      "url": "https://github.com/advisories/GHSA-3g3m-2fjr-6pw4",
+      "ts": 1793401751.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "glob",
+      "summary": "Severity: medium. ### Summary\n\nIn glob 13.0.6, an aborted async walk rejects or emits an error but continues recursively reading directories in the background.\n\nThe root cause is that abort branches in src/walker.ts call cb() without returning. As a result, callers that rely on signal or AbortSignal.timeout() to boun",
+      "recipe": "gh_advisories",
+      "buzz": 1830,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-10-30"
+    },
+    {
+      "uid": "cve:GHSA-6wvx-3r32-xmcg",
+      "source": "cve",
+      "title": "CVE-2026-118777: Forge: Prototype Pollution in forge.http cookie handling via a malicious Set-Cookie",
+      "url": "https://github.com/advisories/GHSA-6wvx-3r32-xmcg",
+      "ts": 1793401355.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "node-forge",
+      "summary": "Severity: medium. ### Summary\nThe `forge.http` client stored cookies from `Set-Cookie` response headers in a plain object keyed by cookie name and path. A malicious server could use the cookie name `__proto__` to add properties to `Object.prototype`, use inherited names such as `constructor` to add properties to `Obj",
+      "recipe": "gh_advisories",
+      "buzz": 1830,
+      "topics": [
+        "ai",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-10-30"
+    },
+    {
+      "uid": "cve:GHSA-525v-9gp9-w22h",
+      "source": "cve",
+      "title": "CVE-2026-118778: Forge: TLS client crash when the server sends no certificate",
+      "url": "https://github.com/advisories/GHSA-525v-9gp9-w22h",
+      "ts": 1793401350.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "node-forge",
+      "summary": "Severity: medium. ### Summary\nThe forge TLS client's check for a missing server certificate read the wrong property and never ran. A malicious TLS server, or an on-path attacker who removes the server's Certificate message, can make `connection.process()` throw a `TypeError`, which crashes applications that use the f",
+      "recipe": "gh_advisories",
+      "buzz": 1830,
+      "topics": [
+        "security",
+        "hardware"
+      ],
+      "date": "2026-10-30"
+    },
+    {
+      "uid": "cve:GHSA-5cwg-6vw7-rj6p",
+      "source": "cve",
+      "title": "CVE-2026-119186: Forge: AES-GCM authentication bypass via unvalidated tagLength option",
+      "url": "https://github.com/advisories/GHSA-5cwg-6vw7-rj6p",
+      "ts": 1793401329.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "node-forge",
+      "summary": "Severity: medium. ### Summary\n\nThe AES-GCM mode in forge.cipher does not validate the tagLength option passed to start(). With a tagLength of 0 or a value that converts to 0 (such as null, false, '' or '0'), the authentication tag is empty, and decipher.finish() returns true for any ciphertext and additional data whe",
+      "recipe": "gh_advisories",
+      "buzz": 1830,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-10-30"
+    },
+    {
+      "uid": "cve:GHSA-9vw2-f4vp-x7gf",
+      "source": "cve",
+      "title": "CVE-2026-119193: PHPUnit vulnerable to code execution by other local users via shared temporary directory in PHPT code coverage handling",
+      "url": "https://github.com/advisories/GHSA-9vw2-f4vp-x7gf",
+      "ts": 1793401281.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "phpunit/phpunit",
+      "summary": "Severity: medium. ### Summary\n\nWhen PHPT tests are run with code coverage, PHPUnit 13.4.0 to 13.4.3 writes the code of each PHPT test to a directory with a fixed name below the operating system's path used for temporary files, for instance `/tmp/phpunit-phpt` on Linux, and executes it from there. PHPUnit uses this di",
+      "recipe": "gh_advisories",
+      "buzz": 1830,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-10-30"
     },
     {
       "uid": "hn:25843874",
@@ -1359,7 +1359,7 @@
       "author": "node-forge",
       "summary": "Severity: low. ### Summary\n\n`asn1.oidToDer()` did not range-check the first two arcs of an OID string, so an OID such as `[phone]49.1.1.1` or `[phone].[phone].1.1.1` was encoded as the DER of a different OID (here rsaEncryption, `1.[phone].1.1.1`). This is an incomplete fix of CVE-[phone]. F",
       "recipe": "gh_advisories",
-      "buzz": 780,
+      "buzz": 730,
       "topics": [
         "security"
       ],
@@ -1376,7 +1376,7 @@
       "author": "node-forge",
       "summary": "Severity: low. ### Summary\n\n`BigInteger.prototype.modInverse()` in node-forge's bundled jsbn library enters an infinite loop when the value or the modulus is negative, for example when a negative public exponent is passed to `forge.pki.rsa.generateKeyPair()`. This is an incomplete fix of CVE-[phone] (GHSA-5m6q-",
       "recipe": "gh_advisories",
-      "buzz": 780,
+      "buzz": 730,
       "topics": [
         "ai",
         "dev",
@@ -1396,7 +1396,7 @@
       "author": "node-forge",
       "summary": "Severity: low. ### Summary\n\nWhen a CA store created by `pki.createCaStore()` holds two or more certificates with the same subject name, `pki.verifyCertificateChain()` permanently removes those certificates from the store while trying each one as the issuer. A peer can send any certificate that names that subject a",
       "recipe": "gh_advisories",
-      "buzz": 780,
+      "buzz": 730,
       "topics": [
         "ai",
         "dev",
@@ -1427,12 +1427,12 @@
       "title": "jmanico/grim-prompter",
       "url": "https://github.com/jmanico/grim-prompter",
       "ts": 1793189366.0,
-      "points": 304,
+      "points": 310,
       "comments": 27,
       "author": "jmanico",
       "summary": "Threat modeling for AI coding agents: point Claude Code, Codex or any agent at your repo and get an evidence-traced threat model. 36 architectures, 29 methods, MIT.",
       "recipe": "github_sec",
-      "buzz": 395,
+      "buzz": 401,
       "topics": [
         "ai",
         "dev"
@@ -1445,33 +1445,16 @@
       "title": "NyxFoundation/nyxis",
       "url": "https://github.com/NyxFoundation/nyxis",
       "ts": 1792988778.0,
-      "points": 313,
+      "points": 314,
       "comments": 12,
       "author": "NyxFoundation",
       "summary": "A Lean backend framework whose authorization safety is formally proven. The developer writes only a Cedar schema and policies; handlers are built on Supabase Auth and PostgreSQL.",
       "recipe": "github_sec",
-      "buzz": 359,
+      "buzz": 360,
       "topics": [
         "dev"
       ],
       "date": "2026-10-26"
-    },
-    {
-      "uid": "gh:lordbasex/LordOS",
-      "source": "github",
-      "title": "lordbasex/LordOS",
-      "url": "https://github.com/lordbasex/LordOS",
-      "ts": 1792294263.0,
-      "points": 280,
-      "comments": 23,
-      "author": "lordbasex",
-      "summary": "LordOS — a free, fast and secure GNU/Linux distribution based on Debian, with its own desktop environment: display server and Wayland compositor in C, a React UI engine on QuickJS, and private native apps.",
-      "recipe": "github_sec",
-      "buzz": 349,
-      "topics": [
-        "hardware"
-      ],
-      "date": "2026-10-18"
     },
     {
       "uid": "gh:aarsaputra/php2shell",
@@ -1490,6 +1473,24 @@
         "security"
       ],
       "date": "2026-10-23"
+    },
+    {
+      "uid": "gh:arpanjot-coding/AVault",
+      "source": "github",
+      "title": "arpanjot-coding/AVault",
+      "url": "https://github.com/arpanjot-coding/AVault",
+      "ts": 1793474487.0,
+      "points": 183,
+      "comments": 2,
+      "author": "arpanjot-coding",
+      "summary": "AVault - Call Recorder (No Root Required) | Privacy-first, hardware-encrypted audio vault for Android 12-16+. Rootless call recording via Shizuku with AES-256-GCM, biometrics & auto-cleanup.",
+      "recipe": "github_sec",
+      "buzz": 269,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-10-31"
     },
     {
       "uid": "gh:HOSTED-POWER/php_uploadprogress_guard",
@@ -1561,24 +1562,6 @@
         "ai"
       ],
       "date": "2026-10-19"
-    },
-    {
-      "uid": "gh:arpanjot-coding/AVault",
-      "source": "github",
-      "title": "arpanjot-coding/AVault",
-      "url": "https://github.com/arpanjot-coding/AVault",
-      "ts": 1793474487.0,
-      "points": 93,
-      "comments": 2,
-      "author": "arpanjot-coding",
-      "summary": "AVault - Call Recorder (No Root Required) | Privacy-first, hardware-encrypted audio vault for Android 12-16+. Rootless call recording via Shizuku with AES-256-GCM, biometrics & auto-cleanup.",
-      "recipe": "github_sec",
-      "buzz": 179,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-10-31"
     },
     {
       "uid": "gh:UltraSultanHonor/recon-v1.7.0",
@@ -1691,34 +1674,17 @@
       "title": "sazabi/cve.now",
       "url": "https://github.com/sazabi/cve.now",
       "ts": 1792681793.0,
-      "points": 86,
+      "points": 95,
       "comments": 4,
       "author": "sazabi",
       "summary": "A free, public vulnerability feed: CVE, GHSA, OSV, CISA KEV and EPSS merged into one entry per vulnerability. RSS, JSON API and MCP. Docs and issues only.",
       "recipe": "github_sec",
-      "buzz": 98,
+      "buzz": 107,
       "topics": [
         "dev",
         "security"
       ],
       "date": "2026-10-22"
-    },
-    {
-      "uid": "rss:ee5a3711ce6c64",
-      "source": "rss",
-      "title": "Friday Squid Blogging: Bigfin Squid Off California Coast",
-      "url": "https://www.schneier.com/blog/archives/2026/10/friday-squid-blogging-bigfin-squid-off-california-coast.html",
-      "ts": 1793394277.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Bruce Schneier",
-      "summary": "<p>Neat <a href=\"https://www.smithsonianmag.com/smart-news/watch-an-elusive-and-ethereal-bigfin-squid-float-above-the-seafloor-off-central-california-[phone]/\">video</a>:</p> <blockquote><p>The sighting, announced September 2, marks the first time anyone has spotted a live bigfin squid, which belongs to the <i>Magnapinna</i> genus, in the northeastern Pacific Ocean.</p></blockquote> <p>As usual,",
-      "recipe": "schneier",
-      "buzz": 80,
-      "topics": [
-        "dev"
-      ],
-      "date": "2026-10-30"
     },
     {
       "uid": "rss:065d6fd5d0631f",
@@ -1865,6 +1831,26 @@
       "date": "2026-10-21"
     },
     {
+      "uid": "gh:akari-sora/synology-nas-cli",
+      "source": "github",
+      "title": "akari-sora/synology-nas-cli",
+      "url": "https://github.com/akari-sora/synology-nas-cli",
+      "ts": 1793353967.0,
+      "points": 27,
+      "comments": 3,
+      "author": "akari-sora",
+      "summary": "nas: a zero-dependency Python CLI + MCP server for Synology DSM 7. One-command audit and fix for the C3RB3R / .L0CK3D ransomware campaign; hand it to your AI agent. Mirror; canonical repo and issues: gitlab.com/aa[phone]/synology-nas-cli",
+      "recipe": "github_sec",
+      "buzz": 66,
+      "topics": [
+        "ai",
+        "dev",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-10-30"
+    },
+    {
       "uid": "gh:agentshield-dev/agentshield",
       "source": "github",
       "title": "agentshield-dev/agentshield",
@@ -1883,24 +1869,24 @@
       "date": "2026-10-21"
     },
     {
-      "uid": "gh:akari-sora/synology-nas-cli",
+      "uid": "gh:Problem99-io/kodeblue",
       "source": "github",
-      "title": "akari-sora/synology-nas-cli",
-      "url": "https://github.com/akari-sora/synology-nas-cli",
-      "ts": 1793353967.0,
-      "points": 26,
-      "comments": 2,
-      "author": "akari-sora",
-      "summary": "nas: a zero-dependency Python CLI + MCP server for Synology DSM 7. One-command audit and fix for the C3RB3R / .L0CK3D ransomware campaign; hand it to your AI agent. Mirror; canonical repo and issues: gitlab.com/aa[phone]/synology-nas-cli",
+      "title": "Problem99-io/kodeblue",
+      "url": "https://github.com/Problem99-io/kodeblue",
+      "ts": 1792937598.0,
+      "points": 40,
+      "comments": 3,
+      "author": "Problem99-io",
+      "summary": "SOC, incident response and SecOps for Linux servers in one agent: learns each host, watches it with zero-token sensors, triages with a small model, and contains attacks under a root-owned policy. Optional hub for fleets.",
       "recipe": "github_sec",
-      "buzz": 62,
+      "buzz": 59,
       "topics": [
         "ai",
         "dev",
-        "security",
+        "crypto",
         "hardware"
       ],
-      "date": "2026-10-30"
+      "date": "2026-10-25"
     },
     {
       "uid": "gh:BastionPHP/Bastion",
@@ -1921,26 +1907,6 @@
       "date": "2026-10-22"
     },
     {
-      "uid": "gh:Problem99-io/kodeblue",
-      "source": "github",
-      "title": "Problem99-io/kodeblue",
-      "url": "https://github.com/Problem99-io/kodeblue",
-      "ts": 1792937598.0,
-      "points": 38,
-      "comments": 3,
-      "author": "Problem99-io",
-      "summary": "SOC, incident response and SecOps for Linux servers in one agent: learns each host, watches it with zero-token sensors, triages with a small model, and contains attacks under a root-owned policy. Optional hub for fleets.",
-      "recipe": "github_sec",
-      "buzz": 57,
-      "topics": [
-        "ai",
-        "dev",
-        "crypto",
-        "hardware"
-      ],
-      "date": "2026-10-25"
-    },
-    {
       "uid": "gh:ratomirjovanovic/pandaward",
       "source": "github",
       "title": "ratomirjovanovic/pandaward",
@@ -1959,22 +1925,36 @@
       "date": "2026-10-27"
     },
     {
-      "uid": "gh:Aryma-f4/gulpsuite",
+      "uid": "gh:superboyyy/HOneClick",
       "source": "github",
-      "title": "Aryma-f4/gulpsuite",
-      "url": "https://github.com/Aryma-f4/gulpsuite",
-      "ts": 1792330582.0,
-      "points": 37,
-      "comments": 1,
-      "author": "Aryma-f4",
-      "summary": "Gulp it before burp — Ultra-fast native Rust web security testing, DAST scanner & HTTP/HTTPS/WebSocket proxy suite",
+      "title": "superboyyy/HOneClick",
+      "url": "https://github.com/superboyyy/HOneClick",
+      "ts": 1792536979.0,
+      "points": 22,
+      "comments": 7,
+      "author": "superboyyy",
+      "summary": "荣耀临时 root 工具，目前仅在 Magic9 Pro Max 测试，仅用于个人研究。Experimental temporary-root research tool for Honor (tested on Magic9 Pro Max - WKL-AN20/WKL-AN80).",
       "recipe": "github_sec",
-      "buzz": 40,
+      "buzz": 43,
+      "topics": [],
+      "date": "2026-10-20"
+    },
+    {
+      "uid": "rss:ee5a3711ce6c64",
+      "source": "rss",
+      "title": "Friday Squid Blogging: Bigfin Squid Off California Coast",
+      "url": "https://www.schneier.com/blog/archives/2026/10/friday-squid-blogging-bigfin-squid-off-california-coast.html",
+      "ts": 1793394277.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Bruce Schneier",
+      "summary": "<p>Neat <a href=\"https://www.smithsonianmag.com/smart-news/watch-an-elusive-and-ethereal-bigfin-squid-float-above-the-seafloor-off-central-california-[phone]/\">video</a>:</p> <blockquote><p>The sighting, announced September 2, marks the first time anyone has spotted a live bigfin squid, which belongs to the <i>Magnapinna</i> genus, in the northeastern Pacific Ocean.</p></blockquote> <p>As usual,",
+      "recipe": "schneier",
+      "buzz": 30,
       "topics": [
-        "dev",
-        "security"
+        "dev"
       ],
-      "date": "2026-10-18"
+      "date": "2026-10-30"
     },
     {
       "uid": "rss:69ace0ef9fe2a2",
@@ -2462,21 +2442,6 @@
         "dev"
       ],
       "date": "2026-10-22"
-    },
-    {
-      "uid": "gh:foundthunderatone/hash-verify",
-      "source": "github",
-      "title": "foundthunderatone/hash-verify",
-      "url": "https://github.com/foundthunderatone/hash-verify",
-      "ts": 1792328637.0,
-      "points": 22,
-      "comments": 0,
-      "author": "foundthunderatone",
-      "summary": "Published: 2026-10-18",
-      "recipe": "github_sec",
-      "buzz": 22,
-      "topics": [],
-      "date": "2026-10-18"
     },
     {
       "uid": "rss:9e6f9a29eeb51f",

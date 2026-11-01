@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T20:49:49+00:00",
+  "generated_at": "2026-11-01T01:25:07+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -49,7 +49,7 @@
       "author": "github.com/kubeflow/pipelines",
       "summary": "Severity: high. ## Summary\n\nThe Kubeflow Pipelines API server decompresses uploaded pipeline archives without adequately bounding expanded data in affected versions. A small ZIP or gzip-compressed tar archive can consume disproportionately large amounts of memory while the server locates or reads the pipeline file,",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "dev",
         "security",
@@ -68,7 +68,7 @@
       "author": "github.com/kubeflow/pipelines",
       "summary": "Severity: high. ## Summary\n\nThe Kubeflow Pipelines API server's `GET /apis/v1alpha1/runs/{run_id}/nodes/{node_id}/log` handler retrieves logs without authorizing the caller against the selected run. A caller who can reach the backend and knows a victim run ID and a suitable pod or node identifier can read live or a",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "ai",
         "dev",
@@ -88,7 +88,7 @@
       "author": "pypdf",
       "summary": "Severity: high. ### Impact\n\nAn attacker who uses this vulnerability can craft a PDF which leads to an infinite loop. This requires opening an incomplete file without a `trailer`.\n\n### Patches\n\nThis has been fixed in [pypdf==6.21.4](https://github.com/py-pdf/pypdf/releases/tag/6.21.4).\n\n### Workarounds\n\nIf you canno",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "ai",
         "dev",
@@ -107,7 +107,7 @@
       "author": "pypdf",
       "summary": "Severity: high. ### Impact\n\nAn attacker who uses this vulnerability can craft a PDF which leads to large memory usage. This requires parsing the page tree with many shared resources.\n\n### Patches\n\nThis has been fixed in [pypdf==6.21.4](https://github.com/py-pdf/pypdf/releases/tag/6.21.4).\n\n### Workarounds\n\nIf you c",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "dev",
         "security"
@@ -125,7 +125,7 @@
       "author": "pypdf",
       "summary": "Severity: high. ### Impact\n\nAn attacker who uses this vulnerability can craft a PDF which leads to an infinite loop. This requires cloning/duplicating a `DictionaryObject`.\n\n### Patches\n\nThis has been fixed in [pypdf==6.21.4](https://github.com/py-pdf/pypdf/releases/tag/6.21.4).\n\n### Workarounds\n\nIf you cannot upgr",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "dev",
         "security"
@@ -143,7 +143,7 @@
       "author": "joi",
       "summary": "Severity: high. ### Summary\n\n`Joi.string().email({ multiple: true })` takes quadratic time to split a value that contains a long run of whitespace. One request with 100 KB of spaces blocks the Node.js event loop for several seconds, which causes a denial of service.\n\n### Details\n\nWhen the `multiple` option is set,",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "ai",
         "science",
@@ -162,7 +162,7 @@
       "author": "@hapi/content",
       "summary": "Severity: high. ### Summary\n\n`Content.disposition()` takes quadratic time when a `Content-Disposition` parameter contains a long token without `=`. One unauthenticated multipart request can block the Node.js event loop for several minutes.\n\n### Details\n\n`Content.disposition()` reads the parameters with a global reg",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "ai",
         "dev",
@@ -182,7 +182,7 @@
       "author": "Authlib",
       "summary": "Severity: high. ## Description\n\n### Summary\n\nRFC 7592 (OAuth 2.0 Dynamic Client Registration Management Protocol) lets a previously registered client read, update, or delete its own registration, authenticated by a `registration_access_token` issued specifically to that client at registration time. The entire secur",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "crypto",
         "security"
@@ -200,7 +200,7 @@
       "author": "pypdf",
       "summary": "Severity: high. ### Impact\n\nAn attacker who uses this vulnerability can craft a PDF which leads to large runtimes. This requires retrieving the page labels of a file.\n\n### Patches\n\nThis has been fixed in [pypdf==6.21.3](https://github.com/py-pdf/pypdf/releases/tag/6.21.3).\n\n### Workarounds\n\nIf you cannot upgrade ye",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "dev",
         "security"
@@ -218,7 +218,7 @@
       "author": "pypdf",
       "summary": "Severity: high. ### Impact\n\nAn attacker who uses this vulnerability can craft a PDF which leads to large memory usage. This requires loading an invalid dictionary.\n\n### Patches\n\nThis has been fixed in [pypdf==6.21.3](https://github.com/py-pdf/pypdf/releases/tag/6.21.3).\n\n### Workarounds\n\nIf you cannot upgrade yet,",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "dev",
         "security"
@@ -236,7 +236,7 @@
       "author": "pypdf",
       "summary": "Severity: high. ### Impact\n\nAn attacker who uses this vulnerability can craft a PDF which leads to large runtimes/memory usage. This requires accessing the page count of an encrypted PDF file, which itself declares a wrong `/Count` value.\n\n### Patches\n\nThis has been fixed in [pypdf==6.21.3](https://github.com/py-pd",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "dev",
         "security"
@@ -254,7 +254,7 @@
       "author": "pypdf",
       "summary": "Severity: high. ### Impact\n\nAn attacker who uses this vulnerability can craft a PDF which leads to large memory usage. This requires opening a file with cross-reference streams.\n\n### Patches\n\nThis has been fixed in [pypdf==6.21.3](https://github.com/py-pdf/pypdf/releases/tag/6.21.3).\n\n### Workarounds\n\nIf you cannot",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "dev",
         "security"
@@ -272,7 +272,7 @@
       "author": "pyasn1",
       "summary": "Severity: high. ## Summary\n\nIn pyasn1 through 0.6.4, decoding a constructed BIT STRING with many fragments repeatedly shifts and copies the entire value accumulated so far. For fixed-size fragments, CPU time grows quadratically with the encoded input size. An application that passes sufficiently large, attacker-con",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "ai",
         "dev",
@@ -292,7 +292,7 @@
       "author": "pyasn1",
       "summary": "Severity: high. ## Summary\n\nIn pyasn1 0.6.4 and earlier, decoding a binary-encoded ASN.1 REAL with a large mantissa can consume CPU time quadratic in the mantissa length. The BER, CER, and DER decoders all use the affected `RealPayloadDecoder`. An application is exposed when it passes attacker-controlled ASN.1 cont",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "dev",
         "security",
@@ -311,7 +311,7 @@
       "author": "pyasn1",
       "summary": "Severity: high. ## Summary\n\nIn pyasn1 0.6.4 and earlier, decoding a constructed OCTET STRING or character string made of many fragments can spend disproportionate CPU time repeatedly copying the accumulated value. A separate indefinite-length `ANY` path has the same problem while collecting the encoded components.",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "ai",
         "dev",
@@ -332,7 +332,7 @@
       "author": "pyasn1",
       "summary": "Severity: high. ### Summary\n\nWhen an application decodes attacker-controlled BER, CER, or DER data without an ASN.1 schema, a container with many distinct long tag IDs can cause quadratic CPU use. Repeated inputs can exhaust CPU and reduce service availability.\n\n### Details\n\nConstructedPayloadDecoderBase._decodeCom",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "ai",
         "dev",
@@ -352,7 +352,7 @@
       "author": "node-forge",
       "summary": "Severity: high. ### Summary\n`pem.decode()`, which every node-forge API that parses PEM input uses, split messages with a regular expression that takes polynomial time on input without a matching END line, and parsed encapsulated headers with regular expressions that take quadratic time on long header lines. A remot",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "dev",
         "security"
@@ -370,7 +370,7 @@
       "author": "node-forge",
       "summary": "Severity: high. ### Summary\n\nforge.pkcs12.pkcs12FromAsn1() accepts a PKCS#12 MAC iteration count of zero (or less) from the input, and the PKCS#12 key derivation function then returns a constant key that does not depend on the password or salt. An attacker who does not know the password can modify a PKCS#12/PFX fil",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "security"
       ],
@@ -387,7 +387,7 @@
       "author": "node-forge",
       "summary": "Severity: high. ### Summary\n\nA connection created with `forge.tls.createConnection()` throws an uncaught `TypeError` from `process()` when it receives a record of another content type while waiting for the rest of a handshake message that was split across records. A peer can trigger this with 18 bytes before the ha",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "ai",
         "security"
@@ -405,7 +405,7 @@
       "author": "node-forge",
       "summary": "Severity: high. ### Summary\n\nConnections created with `forge.tls.createConnection()` processed received TLS records recursively, one stack level per record. A peer can send one chunk of thousands of small records, such as heartbeat records, which are accepted before the handshake, and `process()` throws `RangeError",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "security"
       ],
@@ -422,7 +422,7 @@
       "author": "node-forge",
       "summary": "Severity: high. ### Summary\nnode-forge parses certificate extensions with the deprecated OIDs `2.5.29.10` and `2.5.29.13` as `basicConstraints`, and `forge.pki.verifyCertificateChain()` used the first extension with that name. A certificate with a forged deprecated-OID extension (`cA` TRUE) before its genuine `basi",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "ai",
         "security"
@@ -440,7 +440,7 @@
       "author": "minimatch",
       "summary": "Severity: medium. minimatch 10.2.6 contains an attacker-controlled pattern amplification in firstPhasePreProcess() when optimizationLevel >= 2.\n\nresearcher: Reid Downing (b1nv0id)\nfiles: \n\n- src/index.ts: 690-770\n- src/index.ts: 780-796\n\nissue:\ninput-controlled growth of globParts during first-phase preprocessing, fo",
       "recipe": "gh_advisories",
-      "buzz": 1880,
+      "buzz": 1830,
       "topics": [
         "ai",
         "security"
@@ -458,7 +458,7 @@
       "author": "glob",
       "summary": "Severity: medium. ### Summary\n\nIn glob 13.0.6, an aborted async walk rejects or emits an error but continues recursively reading directories in the background.\n\nThe root cause is that abort branches in src/walker.ts call cb() without returning. As a result, callers that rely on signal or AbortSignal.timeout() to boun",
       "recipe": "gh_advisories",
-      "buzz": 1880,
+      "buzz": 1830,
       "topics": [
         "security"
       ],
@@ -475,7 +475,7 @@
       "author": "node-forge",
       "summary": "Severity: medium. ### Summary\nThe `forge.http` client stored cookies from `Set-Cookie` response headers in a plain object keyed by cookie name and path. A malicious server could use the cookie name `__proto__` to add properties to `Object.prototype`, use inherited names such as `constructor` to add properties to `Obj",
       "recipe": "gh_advisories",
-      "buzz": 1880,
+      "buzz": 1830,
       "topics": [
         "ai",
         "security",
@@ -494,7 +494,7 @@
       "author": "node-forge",
       "summary": "Severity: medium. ### Summary\nThe forge TLS client's check for a missing server certificate read the wrong property and never ran. A malicious TLS server, or an on-path attacker who removes the server's Certificate message, can make `connection.process()` throw a `TypeError`, which crashes applications that use the f",
       "recipe": "gh_advisories",
-      "buzz": 1880,
+      "buzz": 1830,
       "topics": [
         "security",
         "hardware"
@@ -512,7 +512,7 @@
       "author": "node-forge",
       "summary": "Severity: medium. ### Summary\n\nThe AES-GCM mode in forge.cipher does not validate the tagLength option passed to start(). With a tagLength of 0 or a value that converts to 0 (such as null, false, '' or '0'), the authentication tag is empty, and decipher.finish() returns true for any ciphertext and additional data whe",
       "recipe": "gh_advisories",
-      "buzz": 1880,
+      "buzz": 1830,
       "topics": [
         "security"
       ],
@@ -529,7 +529,7 @@
       "author": "phpunit/phpunit",
       "summary": "Severity: medium. ### Summary\n\nWhen PHPT tests are run with code coverage, PHPUnit 13.4.0 to 13.4.3 writes the code of each PHPT test to a directory with a fixed name below the operating system's path used for temporary files, for instance `/tmp/phpunit-phpt` on Linux, and executes it from there. PHPUnit uses this di",
       "recipe": "gh_advisories",
-      "buzz": 1880,
+      "buzz": 1830,
       "topics": [
         "ai",
         "security"
@@ -547,7 +547,7 @@
       "author": "node-forge",
       "summary": "Severity: low. ### Summary\n\n`asn1.oidToDer()` did not range-check the first two arcs of an OID string, so an OID such as `[phone]49.1.1.1` or `[phone].[phone].1.1.1` was encoded as the DER of a different OID (here rsaEncryption, `1.[phone].1.1.1`). This is an incomplete fix of CVE-[phone]. F",
       "recipe": "gh_advisories",
-      "buzz": 780,
+      "buzz": 730,
       "topics": [
         "security"
       ],
@@ -564,7 +564,7 @@
       "author": "node-forge",
       "summary": "Severity: low. ### Summary\n\n`BigInteger.prototype.modInverse()` in node-forge's bundled jsbn library enters an infinite loop when the value or the modulus is negative, for example when a negative public exponent is passed to `forge.pki.rsa.generateKeyPair()`. This is an incomplete fix of CVE-[phone] (GHSA-5m6q-",
       "recipe": "gh_advisories",
-      "buzz": 780,
+      "buzz": 730,
       "topics": [
         "ai",
         "dev",
@@ -584,7 +584,7 @@
       "author": "node-forge",
       "summary": "Severity: low. ### Summary\n\nWhen a CA store created by `pki.createCaStore()` holds two or more certificates with the same subject name, `pki.verifyCertificateChain()` permanently removes those certificates from the store while trying each one as the issuer. A peer can send any certificate that names that subject a",
       "recipe": "gh_advisories",
-      "buzz": 780,
+      "buzz": 730,
       "topics": [
         "ai",
         "dev",
