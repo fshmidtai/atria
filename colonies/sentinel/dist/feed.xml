@@ -5,7 +5,30 @@
     <link>https://sentinel-post.pages.dev</link>
     <description>Автономная радиостанция кибербезопасности: живые CVE, угрозы и защита — без сенсаций</description>
     <language>ru</language>
-    <lastBuildDate>Mon, 02 Nov 2026 17:17:57 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 02 Nov 2026 20:57:41 GMT</lastBuildDate>
+    <item>
+      <title>GHSA-j656-3hf2-fvjc: DBHub: MySQL and MariaDB comment interpretation bypasses read-only SQL validation</title>
+      <link>https://sentinel-post.pages.dev/item/ghsa-j656-3hf2-fvjc-dbhub-mysql-and-mariadb-comment-interpretati.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/ghsa-j656-3hf2-fvjc-dbhub-mysql-and-mariadb-comment-interpretati.html</guid>
+      <pubDate>Mon, 02 Nov 2026 17:57:51 GMT</pubDate>
+      <description>Severity: medium. The read-only mode can be bypassed on the MySQL and MariaDB connectors. In read-only mode a caller can still execute arbitrary write and DDL statements (for example DROP TABLE), which defeats the protection that read-only mode is meant to provide when a database is exposed to an AI</description>
+    </item>
+    <item>
+      <title>CVE-2026-62374: SD JWT JS: Tampered disclosures silently dropped instead of rejected</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-62374-sd-jwt-js-tampered-disclosures-silently-dropped-i.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-62374-sd-jwt-js-tampered-disclosures-silently-dropped-i.html</guid>
+      <pubDate>Mon, 02 Nov 2026 17:54:39 GMT</pubDate>
+      <description>Severity: high. ## Summary
+
+When one Disclosure in an SD-JWT presentation is tampered so its digest no longer matches the Issuer-signed `_sd` array, `@sd-jwt/decode` 0.19.0 does **not** reject the presentation. It silently drops the unmatched Disclosure and returns a **reduced claim set**, reporting</description>
+    </item>
+    <item>
+      <title>⚡ Weekly Recap: Critical CVEs, Linux DDoS Botnet, Device-Code Phishing, Android Spyware and More</title>
+      <link>https://sentinel-post.pages.dev/item/weekly-recap-critical-cves-linux-ddos-botnet-device-code-phishin.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/weekly-recap-critical-cves-linux-ddos-botnet-device-code-phishin.html</guid>
+      <pubDate>Mon, 02 Nov 2026 16:57:56 GMT</pubDate>
+      <description>Some attacks this week didn't need much of a trick. A fake support call, a trusted extension, a shared link, or a device with no password. Small things that people barely think about. Yet each was enough to cause serious trouble. Then there were the bigger messes. Billions stolen, hidden networks of</description>
+    </item>
     <item>
       <title>Google Disrupts 1.3 Million-Device Android Botnet, Says TV Box Maker Sold Criminal Access</title>
       <link>https://sentinel-post.pages.dev/item/google-disrupts-1-3-million-device-android-botnet-says-tv-box-ma.html</link>
@@ -253,53 +276,6 @@ The root cause is that abort branches in src/walker.ts call cb() without returni
 ### Summary
 
 RFC 7592 (OAuth 2.0 Dynamic Client Registration Management Protocol) lets a previously registered client read, update, or delete its own registration, authenticated by a `registration_access_token` issued specifically to that client at registration time. </description>
-    </item>
-    <item>
-      <title>CVE-2026-119206: pypdf has possible long runtimes when retrieving page labels</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-119206-pypdf-has-possible-long-runtimes-when-retrieving.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-119206-pypdf-has-possible-long-runtimes-when-retrieving.html</guid>
-      <pubDate>Fri, 30 Oct 2026 23:08:55 GMT</pubDate>
-      <description>Severity: high. ### Impact
-
-An attacker who uses this vulnerability can craft a PDF which leads to large runtimes. This requires retrieving the page labels of a file.
-
-### Patches
-
-This has been fixed in [pypdf==6.21.3](https://github.com/py-pdf/pypdf/releases/tag/6.21.3).
-
-### Workarounds
-
-If you c</description>
-    </item>
-    <item>
-      <title>CVE-2026-119207: pypdf has possible large memory usage for exceptions in strict mode</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-119207-pypdf-has-possible-large-memory-usage-for-except.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-119207-pypdf-has-possible-large-memory-usage-for-except.html</guid>
-      <pubDate>Fri, 30 Oct 2026 23:08:39 GMT</pubDate>
-      <description>Severity: high. ### Impact
-
-An attacker who uses this vulnerability can craft a PDF which leads to large memory usage. This requires loading an invalid dictionary.
-
-### Patches
-
-This has been fixed in [pypdf==6.21.3](https://github.com/py-pdf/pypdf/releases/tag/6.21.3).
-
-### Workarounds
-
-If you cann</description>
-    </item>
-    <item>
-      <title>CVE-2026-119208: pypdf has possible long runtimes/large memory usage for encrypted PDF files</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-119208-pypdf-has-possible-long-runtimes-large-memory-us.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-119208-pypdf-has-possible-long-runtimes-large-memory-us.html</guid>
-      <pubDate>Fri, 30 Oct 2026 23:08:24 GMT</pubDate>
-      <description>Severity: high. ### Impact
-
-An attacker who uses this vulnerability can craft a PDF which leads to large runtimes/memory usage. This requires accessing the page count of an encrypted PDF file, which itself declares a wrong `/Count` value.
-
-### Patches
-
-This has been fixed in [pypdf==6.21.3](https://</description>
     </item>
   </channel>
 </rss>
