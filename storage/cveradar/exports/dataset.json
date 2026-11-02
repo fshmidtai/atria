@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-02T05:17:15+00:00",
+  "generated_at": "2026-11-02T09:22:21+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -20,11 +20,11 @@
     "by_topic": {
       "security": 52,
       "ai": 38,
-      "dev": 37,
+      "dev": 36,
       "crypto": 11,
       "hardware": 10,
       "biz": 7,
-      "science": 4
+      "science": 5
     },
     "top_domains": [
       [
@@ -593,6 +593,25 @@
       "date": "2026-10-30"
     },
     {
+      "uid": "rss:adcbbc84114f43",
+      "source": "rss",
+      "title": "New VOLTA Infostealer Uses Claude, Gemini, and Kimi AI to Rank Victims by Financial Value",
+      "url": "https://thehackernews.com/2026/11/new-volta-infostealer-uses-claude.html",
+      "ts": 1793598667.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Cybersecurity researchers have discovered a new Windows infostealer malware called VOLTA-AUTODOXER (aka VOLTA) that makes use of a large language model (LLM) to rank a victim's stolen data by their monetization value. Like other typical stealer families, VOLTA is equipped to harvest passwords and cookies from Chromium-based web browsers; data from Outlook profiles and Slack workspaces;",
+      "recipe": "the_hacker_news",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "science",
+        "security"
+      ],
+      "date": "2026-11-02"
+    },
+    {
       "uid": "rss:4215f7796e3907",
       "source": "rss",
       "title": "CVSS 10.0 LXD, MicroCloud Flaw Lets Attackers Impersonate Trusted Clients Without a Private Key",
@@ -603,7 +622,7 @@
       "author": "info@thehackernews.com (The Hacker News)",
       "summary": "A critical flaw in Canonical's LXD and MicroCloud let an attacker log in as a trusted client without holding that client's private key. To do it, the attacker had to reach their HTTPS API over the network and have the trusted client's public certificate. Once in, the attacker would act as that client, with access to the cluster and its virtual machines. If the impersonated account is",
       "recipe": "the_hacker_news",
-      "buzz": 80,
+      "buzz": 30,
       "topics": [
         "dev"
       ],
@@ -620,7 +639,7 @@
       "author": "info@thehackernews.com (The Hacker News)",
       "summary": "Malicious code on the website of prediction market Polymarket sold some signed-in traders' positions and moved their funds to the hackers on October 29. The code had replaced a page-speed script that the site loaded from an outside company. Polymarket says&nbsp;it is refunding about $2.7 million to 726 affected wallets.&nbsp;Blockchain records&nbsp;show crypto worth about $2.64 million reached",
       "recipe": "the_hacker_news",
-      "buzz": 80,
+      "buzz": 30,
       "topics": [
         "ai",
         "dev",
@@ -638,9 +657,9 @@
       "points": 0,
       "comments": 0,
       "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "The U.S. Federal Bureau of Investigation (FBI) has officially attributed the theft of more than $6 billion in virtual assets to TraderTraitor, a North Korea-aligned elite hacking group also tracked as Jade Sleet, Pressure Chollima, PUKCHONG, Slow Pisces, and UNC4899. The FBI, along with the U.S. Secret Service (USSS) and the Internal Revenue Service Criminal Investigation (IRS-CI), said it",
+      "summary": "The U.S. Federal Bureau of Investigation (FBI) has officially attributed the theft of more than $6 billion in virtual assets from Binance to TraderTraitor, a North Korea-aligned elite hacking group also tracked as Jade Sleet, Pressure Chollima, PUKCHONG, Slow Pisces, and UNC4899. The FBI, along with the U.S. Secret Service (USSS) and the Internal Revenue Service Criminal Investigation (IRS-CI),",
       "recipe": "the_hacker_news",
-      "buzz": 80,
+      "buzz": 30,
       "topics": [
         "ai",
         "crypto",
@@ -659,7 +678,7 @@
       "author": "info@thehackernews.com (The Hacker News)",
       "summary": "Cybersecurity researchers have disclosed details of what has been described as a \"highly sophisticated infection chain\" targeting government organizations in Asia. The activity, detailed by Kaspersky this week, targeted a custom Windows 10 build used exclusively by government entities in Asia and involves the deployment of a previously undocumented .NET assembly-loading framework codenamed",
       "recipe": "the_hacker_news",
-      "buzz": 80,
+      "buzz": 30,
       "topics": [
         "ai",
         "dev",
@@ -863,7 +882,7 @@
       "author": "info@thehackernews.com (The Hacker News)",
       "summary": "Cybersecurity researchers have disclosed that a trojanized version of Anthropic's official Claude Code extension was distributed through the Cursor Marketplace as a legitimate update, attempting to install a persistent SSH backdoor on affected systems. The malicious update, version 2.1.313, was distributed under the extension's legitimate publisher identity, prompting Cursor to temporarily shut",
       "recipe": "the_hacker_news",
-      "buzz": 30,
+      "buzz": 10,
       "topics": [
         "ai",
         "dev",
@@ -883,7 +902,7 @@
       "author": "info@thehackernews.com (The Hacker News)",
       "summary": "Drupal has warned that threat actors are exploiting a \"highly critical\" security flaw in its Commerce Core component. The vulnerability, tracked as CVE-[phone] (CVSS score: N/A), is a case of missing authorization affecting Commerce Core versions from 0.0.0 to 2.41 and from 3.0.0 to 3.3.13. \"This module enables you to sell goods and services to customers through an included shopping cart",
       "recipe": "the_hacker_news",
-      "buzz": 30,
+      "buzz": 10,
       "topics": [
         "security"
       ],
@@ -900,7 +919,7 @@
       "author": "info@thehackernews.com (The Hacker News)",
       "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Thursday added two security flaws impacting Cisco and GitLab software to its Known Exploited Vulnerabilities (KEV), citing evidence of active exploitation. The vulnerabilities are listed below - CVE-[phone] (CVSS score: 10.0) - An integer overflow or wraparound vulnerability in GitLab Community Edition and Enterprise",
       "recipe": "the_hacker_news",
-      "buzz": 30,
+      "buzz": 10,
       "topics": [
         "dev",
         "security"
@@ -1135,25 +1154,6 @@
         "dev",
         "security",
         "hardware"
-      ],
-      "date": "2026-10-29"
-    },
-    {
-      "uid": "rss:6bc5f713e8f98b",
-      "source": "rss",
-      "title": "Hackers Exploited Cisco SD-WAN Flaw to Plant Malware Built to Steal Encryption Keys",
-      "url": "https://thehackernews.com/2026/10/hackers-exploited-cisco-sd-wan-flaw-to.html",
-      "ts": 1793262262.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Hackers exploited a critical Cisco Catalyst SD-WAN flaw, fixed in February, to plant custom malware inside the systems that control an organization's SD-WAN network. The malware, called KeyDrift, is designed to copy the keys that encrypt traffic between sites and store them for later use,&nbsp;Cisco Talos said&nbsp;on October 28. Talos calls the attacks historical but does not specify when they",
-      "recipe": "the_hacker_news",
-      "buzz": 10,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
       ],
       "date": "2026-10-29"
     }

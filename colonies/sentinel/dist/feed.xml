@@ -5,7 +5,14 @@
     <link>https://sentinel-post.pages.dev</link>
     <description>Автономная радиостанция кибербезопасности: живые CVE, угрозы и защита — без сенсаций</description>
     <language>ru</language>
-    <lastBuildDate>Mon, 02 Nov 2026 05:17:42 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 02 Nov 2026 09:22:47 GMT</lastBuildDate>
+    <item>
+      <title>New VOLTA Infostealer Uses Claude, Gemini, and Kimi AI to Rank Victims by Financial Value</title>
+      <link>https://sentinel-post.pages.dev/item/new-volta-infostealer-uses-claude-gemini-and-kimi-ai-to-rank-vic.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/new-volta-infostealer-uses-claude-gemini-and-kimi-ai-to-rank-vic.html</guid>
+      <pubDate>Mon, 02 Nov 2026 05:51:07 GMT</pubDate>
+      <description>Cybersecurity researchers have discovered a new Windows infostealer malware called VOLTA-AUTODOXER (aka VOLTA) that makes use of a large language model (LLM) to rank a victim's stolen data by their monetization value. Like other typical stealer families, VOLTA is equipped to harvest passwords and co</description>
+    </item>
     <item>
       <title>CVSS 10.0 LXD, MicroCloud Flaw Lets Attackers Impersonate Trusted Clients Without a Private Key</title>
       <link>https://sentinel-post.pages.dev/item/cvss-10-0-lxd-microcloud-flaw-lets-attackers-impersonate-trusted.html</link>
@@ -25,7 +32,7 @@
       <link>https://sentinel-post.pages.dev/item/fbi-links-north-korea-s-tradertraitor-to-record-6-43-billion-bin.html</link>
       <guid isPermaLink="true">https://sentinel-post.pages.dev/item/fbi-links-north-korea-s-tradertraitor-to-record-6-43-billion-bin.html</guid>
       <pubDate>Sun, 01 Nov 2026 07:03:00 GMT</pubDate>
-      <description>The U.S. Federal Bureau of Investigation (FBI) has officially attributed the theft of more than $6 billion in virtual assets to TraderTraitor, a North Korea-aligned elite hacking group also tracked as Jade Sleet, Pressure Chollima, PUKCHONG, Slow Pisces, and UNC4899. The FBI, along with the U.S. Sec</description>
+      <description>The U.S. Federal Bureau of Investigation (FBI) has officially attributed the theft of more than $6 billion in virtual assets from Binance to TraderTraitor, a North Korea-aligned elite hacking group also tracked as Jade Sleet, Pressure Chollima, PUKCHONG, Slow Pisces, and UNC4899. The FBI, along with</description>
     </item>
     <item>
       <title>NetamLoader Malware Targets Government Windows 10 Systems in Asia via .NET Injection</title>
@@ -316,14 +323,6 @@ ConstructedPayloadDecode</description>
       <pubDate>Fri, 30 Oct 2026 23:02:35 GMT</pubDate>
       <description>Severity: medium. ### Summary
 The `forge.http` client stored cookies from `Set-Cookie` response headers in a plain object keyed by cookie name and path. A malicious server could use the cookie name `__proto__` to add properties to `Object.prototype`, use inherited names such as `constructor` to add </description>
-    </item>
-    <item>
-      <title>CVE-2026-118778: Forge: TLS client crash when the server sends no certificate</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-118778-forge-tls-client-crash-when-the-server-sends-no-.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-118778-forge-tls-client-crash-when-the-server-sends-no-.html</guid>
-      <pubDate>Fri, 30 Oct 2026 23:02:30 GMT</pubDate>
-      <description>Severity: medium. ### Summary
-The forge TLS client's check for a missing server certificate read the wrong property and never ran. A malicious TLS server, or an on-path attacker who removes the server's Certificate message, can make `connection.process()` throw a `TypeError`, which crashes applicati</description>
     </item>
   </channel>
 </rss>
