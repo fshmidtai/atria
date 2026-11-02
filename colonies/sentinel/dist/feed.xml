@@ -5,7 +5,21 @@
     <link>https://sentinel-post.pages.dev</link>
     <description>Автономная радиостанция кибербезопасности: живые CVE, угрозы и защита — без сенсаций</description>
     <language>ru</language>
-    <lastBuildDate>Mon, 02 Nov 2026 13:27:46 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 02 Nov 2026 17:17:57 GMT</lastBuildDate>
+    <item>
+      <title>Google Disrupts 1.3 Million-Device Android Botnet, Says TV Box Maker Sold Criminal Access</title>
+      <link>https://sentinel-post.pages.dev/item/google-disrupts-1-3-million-device-android-botnet-says-tv-box-ma.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/google-disrupts-1-3-million-device-android-botnet-says-tv-box-ma.html</guid>
+      <pubDate>Mon, 02 Nov 2026 15:50:26 GMT</pubDate>
+      <description>A botnet of more than 1.3 million Android devices, mostly TV set-top boxes, lost control of its servers in late October in a takedown led by Google. Google says&amp;nbsp;it is highly confident that device maker Videostrong intentionally put a backdoor in the boxes and sold access to criminals. They used</description>
+    </item>
+    <item>
+      <title>DarkBlinders Compromises Israeli Target and Iraqi Kurdish Government Cloud Environment</title>
+      <link>https://sentinel-post.pages.dev/item/darkblinders-compromises-israeli-target-and-iraqi-kurdish-govern.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/darkblinders-compromises-israeli-target-and-iraqi-kurdish-govern.html</guid>
+      <pubDate>Mon, 02 Nov 2026 14:46:05 GMT</pubDate>
+      <description>Cybersecurity researchers have disclosed details of a cyber espionage campaign targeting Israel and the Kurdistan Region of Iraq by an Iran state-aligned threat actor between August and October 2026. According to a report published by Dream Research Labs, the campaign has led to the compromise of a </description>
+    </item>
     <item>
       <title>AI Vulnerability Finding</title>
       <link>https://sentinel-post.pages.dev/item/ai-vulnerability-finding.html</link>
@@ -286,30 +300,6 @@ An attacker who uses this vulnerability can craft a PDF which leads to large run
 ### Patches
 
 This has been fixed in [pypdf==6.21.3](https://</description>
-    </item>
-    <item>
-      <title>CVE-2026-119209: pypdf has possible large memory usage when parsing cross-reference streams</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-119209-pypdf-has-possible-large-memory-usage-when-parsi.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-119209-pypdf-has-possible-large-memory-usage-when-parsi.html</guid>
-      <pubDate>Fri, 30 Oct 2026 23:07:28 GMT</pubDate>
-      <description>Severity: high. ### Impact
-
-An attacker who uses this vulnerability can craft a PDF which leads to large memory usage. This requires opening a file with cross-reference streams.
-
-### Patches
-
-This has been fixed in [pypdf==6.21.3](https://github.com/py-pdf/pypdf/releases/tag/6.21.3).
-
-### Workaround</description>
-    </item>
-    <item>
-      <title>CVE-2026-119196: pyasn1 has quadratic CPU consumption in constructed BIT STRING decoding</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-119196-pyasn1-has-quadratic-cpu-consumption-in-construc.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-119196-pyasn1-has-quadratic-cpu-consumption-in-construc.html</guid>
-      <pubDate>Fri, 30 Oct 2026 23:07:04 GMT</pubDate>
-      <description>Severity: high. ## Summary
-
-In pyasn1 through 0.6.4, decoding a constructed BIT STRING with many fragments repeatedly shifts and copies the entire value accumulated so far. For fixed-size fragments, CPU time grows quadratically with the encoded input size. An application that passes sufficiently lar</description>
     </item>
   </channel>
 </rss>

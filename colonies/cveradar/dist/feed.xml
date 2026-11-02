@@ -5,7 +5,21 @@
     <link>https://cveradar-ah3.pages.dev</link>
     <description>Живые CVE и уязвимости на русском: автономный перевод угроз в понятные дайджесты для DevOps и небольшого SecOps</description>
     <language>ru</language>
-    <lastBuildDate>Mon, 02 Nov 2026 13:27:22 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 02 Nov 2026 17:17:30 GMT</lastBuildDate>
+    <item>
+      <title>Google Disrupts 1.3 Million-Device Android Botnet, Says TV Box Maker Sold Criminal Access</title>
+      <link>https://cveradar-ah3.pages.dev/item/google-disrupts-1-3-million-device-android-botnet-says-tv-box-ma.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/google-disrupts-1-3-million-device-android-botnet-says-tv-box-ma.html</guid>
+      <pubDate>Mon, 02 Nov 2026 15:50:26 GMT</pubDate>
+      <description>A botnet of more than 1.3 million Android devices, mostly TV set-top boxes, lost control of its servers in late October in a takedown led by Google. Google says&amp;nbsp;it is highly confident that device maker Videostrong intentionally put a backdoor in the boxes and sold access to criminals. They used</description>
+    </item>
+    <item>
+      <title>DarkBlinders Compromises Israeli Target and Iraqi Kurdish Government Cloud Environment</title>
+      <link>https://cveradar-ah3.pages.dev/item/darkblinders-compromises-israeli-target-and-iraqi-kurdish-govern.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/darkblinders-compromises-israeli-target-and-iraqi-kurdish-govern.html</guid>
+      <pubDate>Mon, 02 Nov 2026 14:46:05 GMT</pubDate>
+      <description>Cybersecurity researchers have disclosed details of a cyber espionage campaign targeting Israel and the Kurdistan Region of Iraq by an Iran state-aligned threat actor between August and October 2026. According to a report published by Dream Research Labs, the campaign has led to the compromise of a </description>
+    </item>
     <item>
       <title>Critical Langflow Flaws Could Let Unauthenticated Attackers Run Code on Servers</title>
       <link>https://cveradar-ah3.pages.dev/item/critical-langflow-flaws-could-let-unauthenticated-attackers-run-.html</link>
@@ -296,24 +310,6 @@ This has been fixed in [pypdf==6.21.3](https://github.com/py-pdf/pypdf/releases/
       <description>Severity: high. ## Summary
 
 In pyasn1 through 0.6.4, decoding a constructed BIT STRING with many fragments repeatedly shifts and copies the entire value accumulated so far. For fixed-size fragments, CPU time grows quadratically with the encoded input size. An application that passes sufficiently lar</description>
-    </item>
-    <item>
-      <title>CVE-2026-119197: pyasn1 has quadratic-complexity denial of service in binary REAL decoding</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-119197-pyasn1-has-quadratic-complexity-denial-of-servic.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-119197-pyasn1-has-quadratic-complexity-denial-of-servic.html</guid>
-      <pubDate>Fri, 30 Oct 2026 23:06:46 GMT</pubDate>
-      <description>Severity: high. ## Summary
-
-In pyasn1 0.6.4 and earlier, decoding a binary-encoded ASN.1 REAL with a large mantissa can consume CPU time quadratic in the mantissa length. The BER, CER, and DER decoders all use the affected `RealPayloadDecoder`. An application is exposed when it passes attacker-contr</description>
-    </item>
-    <item>
-      <title>CVE-2026-119195: pyasn1 has quadratic-time denial of service in constructed string and indefinite-length ANY decoding</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-119195-pyasn1-has-quadratic-time-denial-of-service-in-c.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-119195-pyasn1-has-quadratic-time-denial-of-service-in-c.html</guid>
-      <pubDate>Fri, 30 Oct 2026 23:03:51 GMT</pubDate>
-      <description>Severity: high. ## Summary
-
-In pyasn1 0.6.4 and earlier, decoding a constructed OCTET STRING or character string made of many fragments can spend disproportionate CPU time repeatedly copying the accumulated value. A separate indefinite-length `ANY` path has the same problem while collecting the enco</description>
     </item>
   </channel>
 </rss>
