@@ -5,7 +5,35 @@
     <link>https://cveradar-ah3.pages.dev</link>
     <description>Живые CVE и уязвимости на русском: автономный перевод угроз в понятные дайджесты для DevOps и небольшого SecOps</description>
     <language>ru</language>
-    <lastBuildDate>Mon, 02 Nov 2026 09:22:22 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 02 Nov 2026 13:27:22 GMT</lastBuildDate>
+    <item>
+      <title>Critical Langflow Flaws Could Let Unauthenticated Attackers Run Code on Servers</title>
+      <link>https://cveradar-ah3.pages.dev/item/critical-langflow-flaws-could-let-unauthenticated-attackers-run-.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/critical-langflow-flaws-could-let-unauthenticated-attackers-run-.html</guid>
+      <pubDate>Mon, 02 Nov 2026 11:50:00 GMT</pubDate>
+      <description>Two critical flaws in Langflow could let a remote attacker with no account bypass authentication or run arbitrary code,&amp;nbsp;IBM said last week. Langflow is an open-source tool for building AI agents and workflows, and&amp;nbsp;its vulnerability reports go to IBM. Every release from 1.0.0 through 1.12.8</description>
+    </item>
+    <item>
+      <title>Is Your SOC Ready for AI Agents? A Maturity Check Before You Deploy</title>
+      <link>https://cveradar-ah3.pages.dev/item/is-your-soc-ready-for-ai-agents-a-maturity-check-before-you-depl.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/is-your-soc-ready-for-ai-agents-a-maturity-check-before-you-depl.html</guid>
+      <pubDate>Mon, 02 Nov 2026 11:30:00 GMT</pubDate>
+      <description>Forty percent of security teams now use AI every day, and another 56% are testing it. Only 4% have no plans to adopt it, according to Prophet Security's State of AI in Security Operations 2026 survey of more than 250 CISOs, SOC leaders and practitioners. For the teams still testing, the next decisio</description>
+    </item>
+    <item>
+      <title>Attackers Pose as IT Support on Microsoft Teams, Abuse AD CS to Steal Company Data</title>
+      <link>https://cveradar-ah3.pages.dev/item/attackers-pose-as-it-support-on-microsoft-teams-abuse-ad-cs-to-s.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/attackers-pose-as-it-support-on-microsoft-teams-abuse-ad-cs-to-s.html</guid>
+      <pubDate>Mon, 02 Nov 2026 11:08:45 GMT</pubDate>
+      <description>Attackers posing as IT support on Microsoft Teams talked employees into giving them remote control of their PCs. They then used insecure Active Directory Certificate Services (AD CS) settings to obtain login certificates for privileged accounts, including one for a domain controller. Microsoft said </description>
+    </item>
+    <item>
+      <title>Government Linux Servers Targeted With SysGoRAT and Suspected AI-Generated Scripts</title>
+      <link>https://cveradar-ah3.pages.dev/item/government-linux-servers-targeted-with-sysgorat-and-suspected-ai.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/government-linux-servers-targeted-with-sysgorat-and-suspected-ai.html</guid>
+      <pubDate>Mon, 02 Nov 2026 10:49:59 GMT</pubDate>
+      <description>Cybersecurity researchers have disclosed details of a cyber espionage campaign specifically targeting Linux infrastructure associated with government entities and state-affiliated infrastructure. The activity, observed by Palo Alto Networks Unit 42 between October 2025 and April 2026, has been track</description>
+    </item>
     <item>
       <title>New VOLTA Infostealer Uses Claude, Gemini, and Kimi AI to Rank Victims by Financial Value</title>
       <link>https://cveradar-ah3.pages.dev/item/new-volta-infostealer-uses-claude-gemini-and-kimi-ai-to-rank-vic.html</link>
@@ -286,44 +314,6 @@ In pyasn1 0.6.4 and earlier, decoding a binary-encoded ASN.1 REAL with a large m
       <description>Severity: high. ## Summary
 
 In pyasn1 0.6.4 and earlier, decoding a constructed OCTET STRING or character string made of many fragments can spend disproportionate CPU time repeatedly copying the accumulated value. A separate indefinite-length `ANY` path has the same problem while collecting the enco</description>
-    </item>
-    <item>
-      <title>CVE-2026-119194: pyasn1 has quadratic CPU use in schemaless BER/CER/DER container decoding</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-119194-pyasn1-has-quadratic-cpu-use-in-schemaless-ber-c.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-119194-pyasn1-has-quadratic-cpu-use-in-schemaless-ber-c.html</guid>
-      <pubDate>Fri, 30 Oct 2026 23:03:37 GMT</pubDate>
-      <description>Severity: high. ### Summary
-
-When an application decodes attacker-controlled BER, CER, or DER data without an ASN.1 schema, a container with many distinct long tag IDs can cause quadratic CPU use. Repeated inputs can exhaust CPU and reduce service availability.
-
-### Details
-
-ConstructedPayloadDecode</description>
-    </item>
-    <item>
-      <title>CVE-2026-118775: Forge: ASN.1 OID first arc truncation in asn1.oidToDer</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-118775-forge-asn-1-oid-first-arc-truncation-in-asn1-oid.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-118775-forge-asn-1-oid-first-arc-truncation-in-asn1-oid.html</guid>
-      <pubDate>Fri, 30 Oct 2026 23:02:40 GMT</pubDate>
-      <description>Severity: low. ### Summary
-
-`asn1.oidToDer()` did not range-check the first two arcs of an OID string, so an OID such as `[phone]49.1.1.1` or `[phone].[phone].1.1.1` was encoded as the DER of a different OID (here rsaEncryption, `1.[phone].1.1.1`). This is an incomplete fix of CVE-[phone]. F</description>
-    </item>
-    <item>
-      <title>CVE-2026-118777: Forge: Prototype Pollution in forge.http cookie handling via a malicious Set-Cookie</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-118777-forge-prototype-pollution-in-forge-http-cookie-h.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-118777-forge-prototype-pollution-in-forge-http-cookie-h.html</guid>
-      <pubDate>Fri, 30 Oct 2026 23:02:35 GMT</pubDate>
-      <description>Severity: medium. ### Summary
-The `forge.http` client stored cookies from `Set-Cookie` response headers in a plain object keyed by cookie name and path. A malicious server could use the cookie name `__proto__` to add properties to `Object.prototype`, use inherited names such as `constructor` to add </description>
-    </item>
-    <item>
-      <title>CVE-2026-118778: Forge: TLS client crash when the server sends no certificate</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-118778-forge-tls-client-crash-when-the-server-sends-no-.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-118778-forge-tls-client-crash-when-the-server-sends-no-.html</guid>
-      <pubDate>Fri, 30 Oct 2026 23:02:30 GMT</pubDate>
-      <description>Severity: medium. ### Summary
-The forge TLS client's check for a missing server certificate read the wrong property and never ran. A malicious TLS server, or an on-path attacker who removes the server's Certificate message, can make `connection.process()` throw a `TypeError`, which crashes applicati</description>
     </item>
   </channel>
 </rss>
