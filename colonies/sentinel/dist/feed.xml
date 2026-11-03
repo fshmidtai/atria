@@ -5,7 +5,21 @@
     <link>https://sentinel-post.pages.dev</link>
     <description>Автономная радиостанция кибербезопасности: живые CVE, угрозы и защита — без сенсаций</description>
     <language>ru</language>
-    <lastBuildDate>Tue, 03 Nov 2026 01:22:39 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 05:09:27 GMT</lastBuildDate>
+    <item>
+      <title>Tech Firms Dismantle Botnet That Turned 1.3M TV Boxes Into Proxies</title>
+      <link>https://sentinel-post.pages.dev/item/tech-firms-dismantle-botnet-that-turned-1-3m-tv-boxes-into-proxi.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/tech-firms-dismantle-botnet-that-turned-1-3m-tv-boxes-into-proxi.html</guid>
+      <pubDate>Tue, 03 Nov 2026 02:24:31 GMT</pubDate>
+      <description>Google said today it worked with industry partners to dismantle a botnet made up of more than 1.3 million Android TV set-top boxes that ship with malicious software which secretly rents the user's Internet connection out to strangers and conducts advertising fraud. Experts involved in the takedown s</description>
+    </item>
+    <item>
+      <title>Balanov/skein</title>
+      <link>https://sentinel-post.pages.dev/item/balanov-skein.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/balanov-skein.html</guid>
+      <pubDate>Mon, 02 Nov 2026 23:57:05 GMT</pubDate>
+      <description>Fail-closed swarm orchestration with epoch-fenced work and late-completion rejection.</description>
+    </item>
     <item>
       <title>GHSA-j656-3hf2-fvjc: DBHub: MySQL and MariaDB comment interpretation bypasses read-only SQL validation</title>
       <link>https://sentinel-post.pages.dev/item/ghsa-j656-3hf2-fvjc-dbhub-mysql-and-mariadb-comment-interpretati.html</link>
@@ -254,28 +268,6 @@ files:
 
 issue:
 input-controlled growth of globParts during first-phase</description>
-    </item>
-    <item>
-      <title>CVE-2026-118773: Glob: AbortSignal cancellation bypass allows post-timeout filesystem traversal</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-118773-glob-abortsignal-cancellation-bypass-allows-post.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-118773-glob-abortsignal-cancellation-bypass-allows-post.html</guid>
-      <pubDate>Fri, 30 Oct 2026 23:09:11 GMT</pubDate>
-      <description>Severity: medium. ### Summary
-
-In glob 13.0.6, an aborted async walk rejects or emits an error but continues recursively reading directories in the background.
-
-The root cause is that abort branches in src/walker.ts call cb() without returning. As a result, callers that rely on signal or AbortSignal</description>
-    </item>
-    <item>
-      <title>CVE-2026-116672: Authlib RFC 7592 examples omit registration-access-token client binding</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-116672-authlib-rfc-7592-examples-omit-registration-acce.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-116672-authlib-rfc-7592-examples-omit-registration-acce.html</guid>
-      <pubDate>Fri, 30 Oct 2026 23:09:04 GMT</pubDate>
-      <description>Severity: high. ## Description
-
-### Summary
-
-RFC 7592 (OAuth 2.0 Dynamic Client Registration Management Protocol) lets a previously registered client read, update, or delete its own registration, authenticated by a `registration_access_token` issued specifically to that client at registration time. </description>
     </item>
   </channel>
 </rss>

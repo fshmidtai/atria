@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-03T01:22:39+00:00",
+  "generated_at": "2026-11-03T05:09:27+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -10,24 +10,24 @@
     "rss"
   ],
   "totals": {
-    "items": 144,
+    "items": 145,
     "by_source": {
       "hn": 40,
       "cve": 30,
-      "github": 24,
+      "github": 25,
       "rss": 50
     },
     "by_recipe": {
       "hn_sec": 40,
       "gh_advisories": 30,
       "hackersnews": 30,
-      "github_sec": 24,
-      "schneier": 10,
-      "krebs": 10
+      "github_sec": 25,
+      "krebs": 10,
+      "schneier": 10
     },
     "by_topic": {
-      "security": 119,
-      "ai": 71,
+      "security": 118,
+      "ai": 73,
       "dev": 67,
       "hardware": 17,
       "biz": 14,
@@ -37,7 +37,7 @@
     "top_domains": [
       [
         "github.com",
-        56
+        57
       ],
       [
         "thehackernews.com",
@@ -1410,12 +1410,12 @@
       "title": "arpanjot-coding/AVault",
       "url": "https://github.com/arpanjot-coding/AVault",
       "ts": 1793474487.0,
-      "points": 541,
+      "points": 547,
       "comments": 36,
       "author": "arpanjot-coding",
       "summary": "AVault - Call Recorder (No Root Required) | Privacy-first, hardware-encrypted audio vault for Android 12-16+. Rootless call recording via Shizuku with AES-256-GCM, biometrics & auto-cleanup.",
       "recipe": "github_sec",
-      "buzz": 679,
+      "buzz": 685,
       "topics": [
         "dev",
         "security"
@@ -1456,6 +1456,23 @@
         "dev"
       ],
       "date": "2026-10-26"
+    },
+    {
+      "uid": "gh:Balanov/skein",
+      "source": "github",
+      "title": "Balanov/skein",
+      "url": "https://github.com/Balanov/skein",
+      "ts": 1793663825.0,
+      "points": 230,
+      "comments": 0,
+      "author": "Balanov",
+      "summary": "Fail-closed swarm orchestration with epoch-fenced work and late-completion rejection.",
+      "recipe": "github_sec",
+      "buzz": 310,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-11-02"
     },
     {
       "uid": "gh:aarsaputra/php2shell",
@@ -1566,6 +1583,24 @@
       "date": "2026-10-21"
     },
     {
+      "uid": "gh:sazabi/cve.now",
+      "source": "github",
+      "title": "sazabi/cve.now",
+      "url": "https://github.com/sazabi/cve.now",
+      "ts": 1792681793.0,
+      "points": 120,
+      "comments": 5,
+      "author": "sazabi",
+      "summary": "A free, public vulnerability feed: CVE, GHSA, OSV, CISA KEV and EPSS merged into one entry per vulnerability. RSS, JSON API and MCP. Docs and issues only.",
+      "recipe": "github_sec",
+      "buzz": 135,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-10-22"
+    },
+    {
       "uid": "gh:pentestershell/php2shellbt",
       "source": "github",
       "title": "pentestershell/php2shellbt",
@@ -1583,24 +1618,6 @@
         "security"
       ],
       "date": "2026-10-21"
-    },
-    {
-      "uid": "gh:sazabi/cve.now",
-      "source": "github",
-      "title": "sazabi/cve.now",
-      "url": "https://github.com/sazabi/cve.now",
-      "ts": 1792681793.0,
-      "points": 119,
-      "comments": 5,
-      "author": "sazabi",
-      "summary": "A free, public vulnerability feed: CVE, GHSA, OSV, CISA KEV and EPSS merged into one entry per vulnerability. RSS, JSON API and MCP. Docs and issues only.",
-      "recipe": "github_sec",
-      "buzz": 134,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-10-22"
     },
     {
       "uid": "gh:xuehuolll/php2shell-CVE-2026-109618-109619",
@@ -1626,12 +1643,12 @@
       "title": "akari-sora/synology-nas-cli",
       "url": "https://github.com/akari-sora/synology-nas-cli",
       "ts": 1793353967.0,
-      "points": 76,
+      "points": 77,
       "comments": 10,
       "author": "akari-sora",
       "summary": "nas: a zero-dependency Python CLI + MCP server for Synology DSM 7. One-command audit and fix for the C3RB3R / .L0CK3D ransomware campaign; hand it to your AI agent. Mirror; canonical repo and issues: gitlab.com/aa[phone]/synology-nas-cli",
       "recipe": "github_sec",
-      "buzz": 116,
+      "buzz": 117,
       "topics": [
         "ai",
         "dev",
@@ -1656,6 +1673,23 @@
         "ai"
       ],
       "date": "2026-10-23"
+    },
+    {
+      "uid": "rss:6c4cd744eafd30",
+      "source": "rss",
+      "title": "Tech Firms Dismantle Botnet That Turned 1.3M TV Boxes Into Proxies",
+      "url": "https://krebsonsecurity.com/2026/11/tech-firms-dismantle-botnet-that-turned-1-3m-tv-boxes-into-proxies/",
+      "ts": 1793672671.0,
+      "points": 0,
+      "comments": 0,
+      "author": "BrianKrebs",
+      "summary": "Google said today it worked with industry partners to dismantle a botnet made up of more than 1.3 million Android TV set-top boxes that ship with malicious software which secretly rents the user's Internet connection out to strangers and conducts advertising fraud. Experts involved in the takedown say the action is likely to sever the botnet's access to more than 10 million additional compromised",
+      "recipe": "krebs",
+      "buzz": 80,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-11-03"
     },
     {
       "uid": "rss:242c7ee3c56913",
@@ -1901,12 +1935,12 @@
       "title": "Problem99-io/kodeblue",
       "url": "https://github.com/Problem99-io/kodeblue",
       "ts": 1792937598.0,
-      "points": 54,
+      "points": 56,
       "comments": 3,
       "author": "Problem99-io",
       "summary": "SOC, incident response and SecOps for Linux servers in one agent: learns each host, watches it with zero-token sensors, triages with a small model, and contains attacks under a root-owned policy. Optional hub for fleets.",
       "recipe": "github_sec",
-      "buzz": 63,
+      "buzz": 65,
       "topics": [
         "ai",
         "dev",
@@ -2100,24 +2134,6 @@
       "date": "2026-10-31"
     },
     {
-      "uid": "rss:dee7e8f251784f",
-      "source": "rss",
-      "title": "Cloudflare Reports 18.2 Million Network-Layer DDoS Attacks in Q3, Up 38%",
-      "url": "https://thehackernews.com/2026/10/cloudflare-reports-182-million-network.html",
-      "ts": 1793422572.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Threat actors are launching about 8,226 network-layer distributed denial-of-service (DDoS) attacks per hour, Cloudflare revealed Thursday. The web infrastructure and security company said it autonomously mitigated 18.2 million network-layer (L3) DDoS attacks and 14.4 trillion HTTP DDoS requests in the third quarter of 2026. That amounts to 197,400 attacks per day, or one attack every 0.44",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-10-31"
-    },
-    {
       "uid": "gh:lindenthomaslin/vibeguard",
       "source": "github",
       "title": "lindenthomaslin/vibeguard",
@@ -2207,6 +2223,24 @@
         "biz"
       ],
       "date": "2026-10-27"
+    },
+    {
+      "uid": "rss:dee7e8f251784f",
+      "source": "rss",
+      "title": "Cloudflare Reports 18.2 Million Network-Layer DDoS Attacks in Q3, Up 38%",
+      "url": "https://thehackernews.com/2026/10/cloudflare-reports-182-million-network.html",
+      "ts": 1793422572.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Threat actors are launching about 8,226 network-layer distributed denial-of-service (DDoS) attacks per hour, Cloudflare revealed Thursday. The web infrastructure and security company said it autonomously mitigated 18.2 million network-layer (L3) DDoS attacks and 14.4 trillion HTTP DDoS requests in the third quarter of 2026. That amounts to 197,400 attacks per day, or one attack every 0.44",
+      "recipe": "hackersnews",
+      "buzz": 10,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-10-31"
     },
     {
       "uid": "rss:5caf201c7d7342",
@@ -2638,23 +2672,6 @@
         "security"
       ],
       "date": "2026-09-16"
-    },
-    {
-      "uid": "rss:c8edec6ed02887",
-      "source": "rss",
-      "title": "Microsoft Plugs Nearly 1,000 Security Holes",
-      "url": "https://krebsonsecurity.com/2026/09/microsoft-plugs-nearly-1000-security-holes/",
-      "ts": 1788903862.0,
-      "points": 0,
-      "comments": 0,
-      "author": "BrianKrebs",
-      "summary": "Microsoft Corp. today issued updates to plug at least 974 security holes in its Windows operating systems and other software, by far its biggest single patch batch ever. Microsoft says artificial intelligence is helping to speed the discovery of vulnerabilities, but security experts warn that many organizations already are struggling to prioritize the more human-intensive endeavor of testing and d",
-      "recipe": "krebs",
-      "buzz": 0,
-      "topics": [
-        "security"
-      ],
-      "date": "2026-09-08"
     },
     {
       "uid": "rss:be1e76dc114850",
