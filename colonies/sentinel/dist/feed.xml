@@ -5,7 +5,35 @@
     <link>https://sentinel-post.pages.dev</link>
     <description>Автономная радиостанция кибербезопасности: живые CVE, угрозы и защита — без сенсаций</description>
     <language>ru</language>
-    <lastBuildDate>Tue, 03 Nov 2026 05:09:27 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 09:05:53 GMT</lastBuildDate>
+    <item>
+      <title>Synology NAS Devices Targeted in Ransomware Attacks Exploiting Patched DSM Flaw</title>
+      <link>https://sentinel-post.pages.dev/item/synology-nas-devices-targeted-in-ransomware-attacks-exploiting-p.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/synology-nas-devices-targeted-in-ransomware-attacks-exploiting-p.html</guid>
+      <pubDate>Tue, 03 Nov 2026 07:43:07 GMT</pubDate>
+      <description>Synology is urging customers to update the DiskStation Manager (DSM) software powering its Network Attached Storage (NAS) devices following ransomware attacks. The Taiwanese vendor said it observed threat actors exploiting a vulnerability patched in December 2024 to target devices running outdated v</description>
+    </item>
+    <item>
+      <title>New Wave of Refrigeration Cyberattacks Hits Supermarkets Across Europe, Forcing Stores to Pull Food</title>
+      <link>https://sentinel-post.pages.dev/item/new-wave-of-refrigeration-cyberattacks-hits-supermarkets-across-.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/new-wave-of-refrigeration-cyberattacks-hits-supermarkets-across-.html</guid>
+      <pubDate>Tue, 03 Nov 2026 07:27:07 GMT</pubDate>
+      <description>Attackers remotely changed the settings on refrigeration controls at supermarkets in Belgium, Sweden, Estonia and other European countries overnight into Monday, November 2, warming fridges and freezers. No chain reported more than several dozen affected stores, and some had to throw away chilled an</description>
+    </item>
+    <item>
+      <title>Attackers Exploit Critical Siemens IoT2050 Flaw to Plant Remote Command Backdoors</title>
+      <link>https://sentinel-post.pages.dev/item/attackers-exploit-critical-siemens-iot2050-flaw-to-plant-remote-.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/attackers-exploit-critical-siemens-iot2050-flaw-to-plant-remote-.html</guid>
+      <pubDate>Tue, 03 Nov 2026 05:34:41 GMT</pubDate>
+      <description>A maximum-severity security flaw impacting Siemens SIMATIC IoT2050 Advanced devices has come under active exploitation, VulnCheck has revealed. The vulnerability, tracked as CVE-[phone] (CVSS score: 10.0), is a case of missing authentication for a critical function that could be exploited by an unau</description>
+    </item>
+    <item>
+      <title>Attackers Target Unpatched CryptoPayment Gateway Flaw That Can Expose Wallet Credentials</title>
+      <link>https://sentinel-post.pages.dev/item/attackers-target-unpatched-cryptopayment-gateway-flaw-that-can-e.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/attackers-target-unpatched-cryptopayment-gateway-flaw-that-can-e.html</guid>
+      <pubDate>Tue, 03 Nov 2026 05:34:37 GMT</pubDate>
+      <description>Threat actors are attempting to exploit an unpatched maximum-severity security vulnerability in the CryptoPayment Gateway WordPress plugin, according to findings from Defused Cyber. The vulnerability in question is CVE-[phone], which carries a CVSS score of 10.0. Successful exploitation of the flaw </description>
+    </item>
     <item>
       <title>Tech Firms Dismantle Botnet That Turned 1.3M TV Boxes Into Proxies</title>
       <link>https://sentinel-post.pages.dev/item/tech-firms-dismantle-botnet-that-turned-1-3m-tv-boxes-into-proxi.html</link>
@@ -209,65 +237,6 @@ An attacker who uses this vulnerability can craft a PDF which leads to large mem
 This has been fixed in [pypdf==6.21.4](https://github.com/py-pdf/pypdf/releases/tag/6.21.4).
 
 ### Worka</description>
-    </item>
-    <item>
-      <title>CVE-2026-119205: pypdf has possible infinite loop when cloning dictionaries</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-119205-pypdf-has-possible-infinite-loop-when-cloning-di.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-119205-pypdf-has-possible-infinite-loop-when-cloning-di.html</guid>
-      <pubDate>Fri, 30 Oct 2026 23:12:20 GMT</pubDate>
-      <description>Severity: high. ### Impact
-
-An attacker who uses this vulnerability can craft a PDF which leads to an infinite loop. This requires cloning/duplicating a `DictionaryObject`.
-
-### Patches
-
-This has been fixed in [pypdf==6.21.4](https://github.com/py-pdf/pypdf/releases/tag/6.21.4).
-
-### Workarounds
-
-If</description>
-    </item>
-    <item>
-      <title>CVE-2026-118772: joi: quadratic-time split in `string().email({ multiple: true })` allows denial of service</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-118772-joi-quadratic-time-split-in-string-email-multipl.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-118772-joi-quadratic-time-split-in-string-email-multipl.html</guid>
-      <pubDate>Fri, 30 Oct 2026 23:10:23 GMT</pubDate>
-      <description>Severity: high. ### Summary
-
-`Joi.string().email({ multiple: true })` takes quadratic time to split a value that contains a long run of whitespace. One request with 100 KB of spaces blocks the Node.js event loop for several seconds, which causes a denial of service.
-
-### Details
-
-When the `multiple`</description>
-    </item>
-    <item>
-      <title>CVE-2026-119202: @hapi/content: quadratic-time parsing of Content-Disposition parameters allows denial of service</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-119202-hapi-content-quadratic-time-parsing-of-content-d.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-119202-hapi-content-quadratic-time-parsing-of-content-d.html</guid>
-      <pubDate>Fri, 30 Oct 2026 23:10:13 GMT</pubDate>
-      <description>Severity: high. ### Summary
-
-`Content.disposition()` takes quadratic time when a `Content-Disposition` parameter contains a long token without `=`. One unauthenticated multipart request can block the Node.js event loop for several minutes.
-
-### Details
-
-`Content.disposition()` reads the parameters w</description>
-    </item>
-    <item>
-      <title>CVE-2026-118764: minimatch has potential denial of service via globparts amplification</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-118764-minimatch-has-potential-denial-of-service-via-gl.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-118764-minimatch-has-potential-denial-of-service-via-gl.html</guid>
-      <pubDate>Fri, 30 Oct 2026 23:09:55 GMT</pubDate>
-      <description>Severity: medium. minimatch 10.2.6 contains an attacker-controlled pattern amplification in firstPhasePreProcess() when optimizationLevel &gt;= 2.
-
-researcher: Reid Downing (b1nv0id)
-files: 
-
-- src/index.ts: 690-770
-- src/index.ts: 780-796
-
-issue:
-input-controlled growth of globParts during first-phase</description>
     </item>
   </channel>
 </rss>

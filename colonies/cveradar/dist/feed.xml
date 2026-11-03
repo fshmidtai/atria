@@ -5,7 +5,35 @@
     <link>https://cveradar-ah3.pages.dev</link>
     <description>Живые CVE и уязвимости на русском: автономный перевод угроз в понятные дайджесты для DevOps и небольшого SecOps</description>
     <language>ru</language>
-    <lastBuildDate>Tue, 03 Nov 2026 05:08:47 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 09:05:21 GMT</lastBuildDate>
+    <item>
+      <title>Synology NAS Devices Targeted in Ransomware Attacks Exploiting Patched DSM Flaw</title>
+      <link>https://cveradar-ah3.pages.dev/item/synology-nas-devices-targeted-in-ransomware-attacks-exploiting-p.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/synology-nas-devices-targeted-in-ransomware-attacks-exploiting-p.html</guid>
+      <pubDate>Tue, 03 Nov 2026 07:43:07 GMT</pubDate>
+      <description>Synology is urging customers to update the DiskStation Manager (DSM) software powering its Network Attached Storage (NAS) devices following ransomware attacks. The Taiwanese vendor said it observed threat actors exploiting a vulnerability patched in December 2024 to target devices running outdated v</description>
+    </item>
+    <item>
+      <title>New Wave of Refrigeration Cyberattacks Hits Supermarkets Across Europe, Forcing Stores to Pull Food</title>
+      <link>https://cveradar-ah3.pages.dev/item/new-wave-of-refrigeration-cyberattacks-hits-supermarkets-across-.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/new-wave-of-refrigeration-cyberattacks-hits-supermarkets-across-.html</guid>
+      <pubDate>Tue, 03 Nov 2026 07:27:07 GMT</pubDate>
+      <description>Attackers remotely changed the settings on refrigeration controls at supermarkets in Belgium, Sweden, Estonia and other European countries overnight into Monday, November 2, warming fridges and freezers. No chain reported more than several dozen affected stores, and some had to throw away chilled an</description>
+    </item>
+    <item>
+      <title>Attackers Exploit Critical Siemens IoT2050 Flaw to Plant Remote Command Backdoors</title>
+      <link>https://cveradar-ah3.pages.dev/item/attackers-exploit-critical-siemens-iot2050-flaw-to-plant-remote-.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/attackers-exploit-critical-siemens-iot2050-flaw-to-plant-remote-.html</guid>
+      <pubDate>Tue, 03 Nov 2026 05:34:41 GMT</pubDate>
+      <description>A maximum-severity security flaw impacting Siemens SIMATIC IoT2050 Advanced devices has come under active exploitation, VulnCheck has revealed. The vulnerability, tracked as CVE-[phone] (CVSS score: 10.0), is a case of missing authentication for a critical function that could be exploited by an unau</description>
+    </item>
+    <item>
+      <title>Attackers Target Unpatched CryptoPayment Gateway Flaw That Can Expose Wallet Credentials</title>
+      <link>https://cveradar-ah3.pages.dev/item/attackers-target-unpatched-cryptopayment-gateway-flaw-that-can-e.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/attackers-target-unpatched-cryptopayment-gateway-flaw-that-can-e.html</guid>
+      <pubDate>Tue, 03 Nov 2026 05:34:37 GMT</pubDate>
+      <description>Threat actors are attempting to exploit an unpatched maximum-severity security vulnerability in the CryptoPayment Gateway WordPress plugin, according to findings from Defused Cyber. The vulnerability in question is CVE-[phone], which carries a CVSS score of 10.0. Successful exploitation of the flaw </description>
+    </item>
     <item>
       <title>GHSA-j656-3hf2-fvjc: DBHub: MySQL and MariaDB comment interpretation bypasses read-only SQL validation</title>
       <link>https://cveradar-ah3.pages.dev/item/ghsa-j656-3hf2-fvjc-dbhub-mysql-and-mariadb-comment-interpretati.html</link>
@@ -240,62 +268,6 @@ files:
 
 issue:
 input-controlled growth of globParts during first-phase</description>
-    </item>
-    <item>
-      <title>CVE-2026-118773: Glob: AbortSignal cancellation bypass allows post-timeout filesystem traversal</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-118773-glob-abortsignal-cancellation-bypass-allows-post.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-118773-glob-abortsignal-cancellation-bypass-allows-post.html</guid>
-      <pubDate>Fri, 30 Oct 2026 23:09:11 GMT</pubDate>
-      <description>Severity: medium. ### Summary
-
-In glob 13.0.6, an aborted async walk rejects or emits an error but continues recursively reading directories in the background.
-
-The root cause is that abort branches in src/walker.ts call cb() without returning. As a result, callers that rely on signal or AbortSignal</description>
-    </item>
-    <item>
-      <title>CVE-2026-116672: Authlib RFC 7592 examples omit registration-access-token client binding</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-116672-authlib-rfc-7592-examples-omit-registration-acce.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-116672-authlib-rfc-7592-examples-omit-registration-acce.html</guid>
-      <pubDate>Fri, 30 Oct 2026 23:09:04 GMT</pubDate>
-      <description>Severity: high. ## Description
-
-### Summary
-
-RFC 7592 (OAuth 2.0 Dynamic Client Registration Management Protocol) lets a previously registered client read, update, or delete its own registration, authenticated by a `registration_access_token` issued specifically to that client at registration time. </description>
-    </item>
-    <item>
-      <title>CVE-2026-119206: pypdf has possible long runtimes when retrieving page labels</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-119206-pypdf-has-possible-long-runtimes-when-retrieving.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-119206-pypdf-has-possible-long-runtimes-when-retrieving.html</guid>
-      <pubDate>Fri, 30 Oct 2026 23:08:55 GMT</pubDate>
-      <description>Severity: high. ### Impact
-
-An attacker who uses this vulnerability can craft a PDF which leads to large runtimes. This requires retrieving the page labels of a file.
-
-### Patches
-
-This has been fixed in [pypdf==6.21.3](https://github.com/py-pdf/pypdf/releases/tag/6.21.3).
-
-### Workarounds
-
-If you c</description>
-    </item>
-    <item>
-      <title>CVE-2026-119207: pypdf has possible large memory usage for exceptions in strict mode</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-119207-pypdf-has-possible-large-memory-usage-for-except.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-119207-pypdf-has-possible-large-memory-usage-for-except.html</guid>
-      <pubDate>Fri, 30 Oct 2026 23:08:39 GMT</pubDate>
-      <description>Severity: high. ### Impact
-
-An attacker who uses this vulnerability can craft a PDF which leads to large memory usage. This requires loading an invalid dictionary.
-
-### Patches
-
-This has been fixed in [pypdf==6.21.3](https://github.com/py-pdf/pypdf/releases/tag/6.21.3).
-
-### Workarounds
-
-If you cann</description>
     </item>
   </channel>
 </rss>
