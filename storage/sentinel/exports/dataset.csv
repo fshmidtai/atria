@@ -6,6 +6,7 @@ hn:43128253,hn,Apple pulls data protection tool after UK government security row
 hn:39452494,hn,"Insecure vehicles should be banned, not security tools like the Flipper Zero",https://saveflipper.ca/,4130,1496,878,pabs3,2024-02-21,security
 hn:30051054,hn,Ask HN: Gmail account security,https://news.ycombinator.com/item?id=30051054,3830,1508,774,caseyf7,2022-01-23,ai|dev|security
 hn:25729088,hn,"70TB of Parler users’ messages, videos, and posts leaked by security researchers",https://cybernews.com/news/70tb-of-parler-users-messages-videos-and-posts-leaked-by-security-researchers/,3745,892,951,joiguru,2021-01-11,dev|security
+cve:GHSA-h26j-4vp7-x9w2,cve,CVE-2026-62848: Metalama: Unsafe deserialization over Metalama's Visual Studio inter-process named pipe enables local code execution,https://github.com/advisories/GHSA-h26j-4vp7-x9w2,3580,3500,0,Metalama.Framework,2026-11-03,dev|security
 cve:GHSA-f9j6-8p6x-r9j6,cve,CVE-2026-62374: SD JWT JS: Tampered disclosures silently dropped instead of rejected,https://github.com/advisories/GHSA-f9j6-8p6x-r9j6,3580,3500,0,@sd-jwt/decode,2026-11-02,ai|security
 hn:50172041,hn,"Security advisory: Critical remote code execution vulnerabilities, update now",https://www.php.net/archive/2026.php#2026-10-21-5,3538,1561,659,xd,2026-10-20,security
 cve:GHSA-8fmv-6rg5-5924,cve,CVE-2026-118761: Kubeflow Pipelines: Pipeline archive upload allows decompression bomb to exhaust server memory,https://github.com/advisories/GHSA-8fmv-6rg5-5924,3510,3500,0,github.com/kubeflow/pipelines,2026-10-30,dev|security|hardware
@@ -25,9 +26,6 @@ cve:GHSA-mm57-4v3p-rchx,cve,CVE-2026-119197: pyasn1 has quadratic-complexity den
 cve:GHSA-9m75-vc3g-4x39,cve,CVE-2026-119195: pyasn1 has quadratic-time denial of service in constructed string and indefinite-length ANY decoding,https://github.com/advisories/GHSA-9m75-vc3g-4x39,3510,3500,0,pyasn1,2026-10-30,ai|dev|crypto|security|hardware
 cve:GHSA-fm9c-5rcf-2q5p,cve,CVE-2026-119194: pyasn1 has quadratic CPU use in schemaless BER/CER/DER container decoding,https://github.com/advisories/GHSA-fm9c-5rcf-2q5p,3510,3500,0,pyasn1,2026-10-30,ai|dev|security|hardware
 cve:GHSA-7wch-p9px-956x,cve,CVE-2026-118779: Forge: Regular expression denial of service in PEM decoding (pem.decode),https://github.com/advisories/GHSA-7wch-p9px-956x,3510,3500,0,node-forge,2026-10-30,dev|security
-cve:GHSA-jc66-7q78-782g,cve,CVE-2026-118782: Forge: PKCS#12 MAC forgery and constant-key PBE via zero iteration count,https://github.com/advisories/GHSA-jc66-7q78-782g,3510,3500,0,node-forge,2026-10-30,security
-cve:GHSA-8hrf-8g6f-7xwp,cve,CVE-2026-119188: Forge: Denial of service in TLS record processing via a record interleaved with a fragmented handshake message,https://github.com/advisories/GHSA-8hrf-8g6f-7xwp,3510,3500,0,node-forge,2026-10-30,ai|security
-cve:GHSA-hqq3-7jhf-c5jx,cve,CVE-2026-119187: Forge: Denial of service in TLS record processing via call stack exhaustion,https://github.com/advisories/GHSA-hqq3-7jhf-c5jx,3510,3500,0,node-forge,2026-10-30,security
 hn:32148218,hn,FCC: TikTok is unacceptable security risk and should be removed from app stores,https://blog.malwarebytes.com/privacy-2/2022/07/tiktok-is-unacceptable-security-risk-and-should-be-removed-from-app-stores-says-fcc/,3376,835,847,scanr,2022-07-19,security
 hn:41392128,hn,Bypassing airport security via SQL injection,https://ian.sh/tsa,3324,2004,440,iancarroll,2024-08-29,ai|security
 hn:41792500,hn,Internet Archive: Security breach alert,https://www.theverge.com/2024/10/9/24266419/internet-archive-ddos-attack-pop-up-message,2912,1091,607,ewenjo,2024-10-09,security
@@ -45,6 +43,7 @@ hn:23180975,hn,Security Flaws in Adobe Acrobat Reader Allow Gaining Root on macO
 hn:50182987,hn,"Today's PHP security release, and how we're strengthening security",https://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security/,2034,816,406,ejohnso49,2026-10-21,security
 hn:17592422,hn,Google: Security Keys Neutralized Employee Phishing,https://krebsonsecurity.com/2018/07/google-security-keys-neutered-employee-phishing/,2002,775,409,sohkamyung,2018-07-23,security
 hn:24636166,hn,Apple’s T2 security chip jailbreak,https://reportcybercrime.com/hackers-jailbreak-apples-t2-security-chip-powered-by-bridgeos/,1881,741,380,Yeri,2020-09-30,ai|security|hardware
+cve:GHSA-9ppr-wfw9-xvr2,cve,GHSA-9ppr-wfw9-xvr2: Netfoil doesn't decrement TTL,https://github.com/advisories/GHSA-9ppr-wfw9-xvr2,1880,1800,0,github.com/tinfoil-factory/netfoil,2026-11-03,
 cve:GHSA-j656-3hf2-fvjc,cve,GHSA-j656-3hf2-fvjc: DBHub: MySQL and MariaDB comment interpretation bypasses read-only SQL validation,https://github.com/advisories/GHSA-j656-3hf2-fvjc,1880,1800,0,@bytebase/dbhub,2026-11-02,ai|dev
 hn:48166459,hn,Mozilla to UK regulators: VPNs are essential privacy and security tools,https://blog.mozilla.org/netpolicy/2026/05/15/mozilla-to-uk-regulators-vpns-are-essential-privacy-and-security-tools-and-should-not-be-undermined/,1876,808,356,WithinReason,2026-05-17,security
 hn:6944118,hn,Secret contract tied NSA and security industry pioneer,http://www.reuters.com/article/2013/12/20/us-usa-security-rsa-idUSBRE9BJ1C220131220,1859,899,320,bbatsell,2013-12-20,security
@@ -66,28 +65,31 @@ hn:21766137,hn,ACLU sues Homeland Security over 'stingray' cell phone surveillan
 hn:639976,hn,How I Hacked Hacker News (with arc security advisory),https://news.ycombinator.com/item?id=639976,1162,928,78,dfranke,2009-06-03,ai|dev|security|hardware
 hn:12140477,hn,A practical security guide for web developers,https://github.com/FallibleInc/security-guide-for-developers,1098,894,68,zianwar,2016-07-21,dev|security
 hn:20468845,hn,HTTP Security Headers – A Complete Guide,https://nullsweep.com/http-security-headers-a-complete-guide/,943,709,78,BCharlie,2019-07-18,dev|security
-gh:Alejandros17487/ai-jailbreaks,github,Alejandros17487/ai-jailbreaks,https://github.com/Alejandros17487/ai-jailbreaks,875,545,110,Alejandros17487,2026-10-21,ai|security
+gh:Alejandros17487/ai-jailbreaks,github,Alejandros17487/ai-jailbreaks,https://github.com/Alejandros17487/ai-jailbreaks,879,546,111,Alejandros17487,2026-10-21,ai|security
+cve:GHSA-m3qr-fvp4-78xj,cve,GHSA-m3qr-fvp4-78xj: Arc has unauthenticated application log disclosure via `/api/v1/logs`,https://github.com/advisories/GHSA-m3qr-fvp4-78xj,780,700,0,github.com/basekick-labs/arc,2026-11-03,dev
 cve:GHSA-4642-5mcj-2rqw,cve,CVE-2026-118775: Forge: ASN.1 OID first arc truncation in asn1.oidToDer,https://github.com/advisories/GHSA-4642-5mcj-2rqw,710,700,0,node-forge,2026-10-30,security
 cve:GHSA-h6cr-wjv9-3cpp,cve,CVE-2026-118781: Forge: Denial of Service via infinite loop in BigInteger.modInverse() with negative input (incomplete fix of CVE-2026-33891),https://github.com/advisories/GHSA-h6cr-wjv9-3cpp,710,700,0,node-forge,2026-10-30,ai|dev|science|security
 cve:GHSA-4487-j8r4-4g2f,cve,CVE-2026-118780: Forge: verifyCertificateChain() removes trusted CA certificates with the same subject from the CA store,https://github.com/advisories/GHSA-4487-j8r4-4g2f,710,700,0,node-forge,2026-10-30,ai|dev|security
-gh:arpanjot-coding/AVault,github,arpanjot-coding/AVault,https://github.com/arpanjot-coding/AVault,693,555,36,arpanjot-coding,2026-10-31,dev|security
-gh:jmanico/grim-prompter,github,jmanico/grim-prompter,https://github.com/jmanico/grim-prompter,451,351,30,jmanico,2026-10-28,ai|dev
-gh:NyxFoundation/nyxis,github,NyxFoundation/nyxis,https://github.com/NyxFoundation/nyxis,357,318,13,NyxFoundation,2026-10-26,dev
-gh:Balanov/skein,github,Balanov/skein,https://github.com/Balanov/skein,337,257,0,Balanov,2026-11-02,ai
+gh:arpanjot-coding/AVault,github,arpanjot-coding/AVault,https://github.com/arpanjot-coding/AVault,698,560,36,arpanjot-coding,2026-10-31,dev|security
+gh:jmanico/grim-prompter,github,jmanico/grim-prompter,https://github.com/jmanico/grim-prompter,452,352,30,jmanico,2026-10-28,ai|dev
+gh:NyxFoundation/nyxis,github,NyxFoundation/nyxis,https://github.com/NyxFoundation/nyxis,358,319,13,NyxFoundation,2026-10-26,dev
+gh:Balanov/skein,github,Balanov/skein,https://github.com/Balanov/skein,339,259,0,Balanov,2026-11-02,ai
 gh:aarsaputra/php2shell,github,aarsaputra/php2shell,https://github.com/aarsaputra/php2shell,305,122,61,aarsaputra,2026-10-23,ai|security
 gh:HOSTED-POWER/php_uploadprogress_guard,github,HOSTED-POWER/php_uploadprogress_guard,https://github.com/HOSTED-POWER/php_uploadprogress_guard,209,173,12,HOSTED-POWER,2026-10-21,ai|dev|security
 gh:JoasASantos/php2shell-scanner,github,JoasASantos/php2shell-scanner,https://github.com/JoasASantos/php2shell-scanner,201,111,30,JoasASantos,2026-10-21,ai|security
 gh:Anton-Barinov/php2shell-patches,github,Anton-Barinov/php2shell-patches,https://github.com/Anton-Barinov/php2shell-patches,194,128,22,Anton-Barinov,2026-10-21,security
-gh:hassan-algo/open-sesame,github,hassan-algo/open-sesame,https://github.com/hassan-algo/open-sesame,162,102,20,hassan-algo,2026-10-21,ai|dev
+gh:hassan-algo/open-sesame,github,hassan-algo/open-sesame,https://github.com/hassan-algo/open-sesame,165,102,21,hassan-algo,2026-10-21,ai|dev
 gh:mpyw/php-eol-CVE-2026-109618-109619,github,mpyw/php-eol-CVE-2026-109618-109619,https://github.com/mpyw/php-eol-CVE-2026-109618-109619,137,74,21,mpyw,2026-10-21,dev|security
 gh:sazabi/cve.now,github,sazabi/cve.now,https://github.com/sazabi/cve.now,135,120,5,sazabi,2026-10-22,dev|security
 gh:pentestershell/php2shellbt,github,pentestershell/php2shellbt,https://github.com/pentestershell/php2shellbt,135,78,19,pentestershell,2026-10-21,ai|dev|security
 gh:xuehuolll/php2shell-CVE-2026-109618-109619,github,xuehuolll/php2shell-CVE-2026-109618-109619,https://github.com/xuehuolll/php2shell-CVE-2026-109618-109619,123,51,24,xuehuolll,2026-10-21,ai|security
-gh:akari-sora/synology-nas-cli,github,akari-sora/synology-nas-cli,https://github.com/akari-sora/synology-nas-cli,115,78,9,akari-sora,2026-10-30,ai|dev|security|hardware
+gh:akari-sora/synology-nas-cli,github,akari-sora/synology-nas-cli,https://github.com/akari-sora/synology-nas-cli,117,80,9,akari-sora,2026-10-30,ai|dev|security|hardware
 gh:jamesalmeida/agent-honeypot,github,jamesalmeida/agent-honeypot,https://github.com/jamesalmeida/agent-honeypot,83,62,7,jamesalmeida,2026-10-23,ai
 gh:ratomirjovanovic/pandaward,github,ratomirjovanovic/pandaward,https://github.com/ratomirjovanovic/pandaward,81,81,0,ratomirjovanovic,2026-10-27,dev|security
 rss:6c4cd744eafd30,rss,Tech Firms Dismantle Botnet That Turned 1.3M TV Boxes Into Proxies,https://krebsonsecurity.com/2026/11/tech-firms-dismantle-botnet-that-turned-1-3m-tv-boxes-into-proxies/,80,0,0,BrianKrebs,2026-11-03,ai
 rss:0dcc10ee0fa324,rss,AIs Hacking the Law,https://www.schneier.com/blog/archives/2026/11/ais-hacking-the-law.html,80,0,0,Bruce Schneier,2026-11-03,ai|security
+rss:1a70768e709027,rss,Google Warns LLMjacking Attacks Are Costing Some Enterprises Up to $1 Million in Cloud Charges,https://thehackernews.com/2026/11/google-warns-llmjacking-attacks-are.html,80,0,0,info@thehackernews.com (The Hacker News),2026-11-03,ai|dev
+rss:729513b74002f6,rss,cPGuard Update Channel Hijacked to Backdoor Linux Servers and Collect Password Hashes,https://thehackernews.com/2026/11/cpguard-update-channel-hijacked-to.html,80,0,0,info@thehackernews.com (The Hacker News),2026-11-03,ai|security|hardware
 rss:ebbbca5ece516c,rss,Red Hat Patches 9.8-Rated Linux TCP RCE Flaw While Ubuntu Releases Fixes for Testing,https://thehackernews.com/2026/11/red-hat-patches-98-rated-linux-tcp-rce.html,80,0,0,info@thehackernews.com (The Hacker News),2026-11-03,ai|security
 rss:c855ccf65f2a3b,rss,The 4 Elements of Exposure Prioritization and How to Operationalize Them,https://thehackernews.com/2026/11/the-4-elements-of-exposure.html,80,0,0,info@thehackernews.com (The Hacker News),2026-11-03,ai|security
 rss:d6f9972020f90b,rss,Russia-Aligned Gorbag Hackers Exploit WinRAR Flaw to Deploy Data-Stealing Malware,https://thehackernews.com/2026/11/russia-aligned-gorbag-hackers-exploit.html,80,0,0,info@thehackernews.com (The Hacker News),2026-11-03,ai|security
@@ -96,10 +98,7 @@ rss:6746d4c33cb43a,rss,Synology NAS Devices Targeted in Ransomware Attacks Explo
 rss:ae53858a318be8,rss,"New Wave of Refrigeration Cyberattacks Hits Supermarkets Across Europe, Forcing Stores to Pull Food",https://thehackernews.com/2026/11/second-wave-of-cyberattacks-hits.html,80,0,0,info@thehackernews.com (The Hacker News),2026-11-03,ai|biz
 rss:35b001ee220997,rss,Attackers Exploit Critical Siemens IoT2050 Flaw to Plant Remote Command Backdoors,https://thehackernews.com/2026/11/attackers-exploit-critical-siemens.html,80,0,0,info@thehackernews.com (The Hacker News),2026-11-03,dev|security
 rss:3abb639db9d3d1,rss,Attackers Target Unpatched CryptoPayment Gateway Flaw That Can Expose Wallet Credentials,https://thehackernews.com/2026/11/attackers-target-unpatched.html,80,0,0,info@thehackernews.com (The Hacker News),2026-11-03,crypto|security|hardware
-rss:15396809c02d31,rss,"⚡ Weekly Recap: Critical CVEs, Linux DDoS Botnet, Device-Code Phishing, Android Spyware and More",https://thehackernews.com/2026/11/weekly-recap-critical-cves-linux-ddos.html,80,0,0,info@thehackernews.com (The Hacker News),2026-11-02,ai|dev|security
-rss:e5de376f71d3d6,rss,"Google Disrupts 1.3 Million-Device Android Botnet, Says TV Box Maker Sold Criminal Access",https://thehackernews.com/2026/11/google-disrupts-13-million-device.html,80,0,0,info@thehackernews.com (The Hacker News),2026-11-02,dev|hardware
-rss:9c1ebae49ad888,rss,DarkBlinders Compromises Israeli Target and Iraqi Kurdish Government Cloud Environment,https://thehackernews.com/2026/11/darkblinders-compromises-israeli-target.html,80,0,0,info@thehackernews.com (The Hacker News),2026-11-02,ai|security
-gh:huggingface/safeagents,github,huggingface/safeagents,https://github.com/huggingface/safeagents,78,62,2,huggingface,2026-10-28,ai|dev
+gh:huggingface/safeagents,github,huggingface/safeagents,https://github.com/huggingface/safeagents,79,63,2,huggingface,2026-10-28,ai|dev
 gh:Problem99-io/kodeblue,github,Problem99-io/kodeblue,https://github.com/Problem99-io/kodeblue,75,63,4,Problem99-io,2026-10-25,ai|dev|crypto|hardware
 gh:agentshield-dev/agentshield,github,agentshield-dev/agentshield,https://github.com/agentshield-dev/agentshield,71,62,3,agentshield-dev,2026-10-21,ai|dev
 gh:david-alvarez-rosa/php-rce,github,david-alvarez-rosa/php-rce,https://github.com/david-alvarez-rosa/php-rce,69,39,10,david-alvarez-rosa,2026-10-21,security
@@ -108,6 +107,9 @@ gh:Jamalofski/php-eol-security,github,Jamalofski/php-eol-security,https://github
 gh:0xZyyz/ctfd-warden,github,0xZyyz/ctfd-warden,https://github.com/0xZyyz/ctfd-warden,37,21,2,0xZyyz,2026-10-29,ai
 gh:RoUntoBlizzard/resocket-elden-ring-cheat-2026-trainer-mod-menu-tools,github,RoUntoBlizzard/resocket-elden-ring-cheat-2026-trainer-mod-menu-tools,https://github.com/RoUntoBlizzard/resocket-elden-ring-cheat-2026-trainer-mod-menu-tools,35,25,0,RoUntoBlizzard,2026-10-28,ai
 rss:242c7ee3c56913,rss,AI Vulnerability Finding,https://www.schneier.com/blog/archives/2026/11/ai-vulnerability-finding-2.html,30,0,0,Bruce Schneier,2026-11-02,ai|security
+rss:15396809c02d31,rss,"⚡ Weekly Recap: Critical CVEs, Linux DDoS Botnet, Device-Code Phishing, Android Spyware and More",https://thehackernews.com/2026/11/weekly-recap-critical-cves-linux-ddos.html,30,0,0,info@thehackernews.com (The Hacker News),2026-11-02,ai|dev|security
+rss:e5de376f71d3d6,rss,"Google Disrupts 1.3 Million-Device Android Botnet, Says TV Box Maker Sold Criminal Access",https://thehackernews.com/2026/11/google-disrupts-13-million-device.html,30,0,0,info@thehackernews.com (The Hacker News),2026-11-02,dev|hardware
+rss:9c1ebae49ad888,rss,DarkBlinders Compromises Israeli Target and Iraqi Kurdish Government Cloud Environment,https://thehackernews.com/2026/11/darkblinders-compromises-israeli-target.html,30,0,0,info@thehackernews.com (The Hacker News),2026-11-02,ai|security
 rss:647d9d7a719837,rss,Critical Langflow Flaws Could Let Unauthenticated Attackers Run Code on Servers,https://thehackernews.com/2026/11/critical-langflow-flaws-could-let.html,30,0,0,info@thehackernews.com (The Hacker News),2026-11-02,ai|security|hardware
 rss:cae8eceeb5ba5b,rss,Is Your SOC Ready for AI Agents? A Maturity Check Before You Deploy,https://thehackernews.com/2026/11/is-your-soc-ready-for-ai-agents.html,30,0,0,info@thehackernews.com (The Hacker News),2026-11-02,ai|security
 rss:3af1d637c9e385,rss,"Attackers Pose as IT Support on Microsoft Teams, Abuse AD CS to Steal Company Data",https://thehackernews.com/2026/11/attackers-pose-as-it-support-on.html,30,0,0,info@thehackernews.com (The Hacker News),2026-11-02,ai|biz
@@ -129,8 +131,6 @@ rss:5caf201c7d7342,rss,Chinese Hackers Use AI-Powered ARTEX to Target Over 200 O
 rss:8fe595add26b43,rss,TeamViewer Flaw Lets Remote Computers Attack Users Who Connect to Control Them,https://thehackernews.com/2026/10/teamviewer-flaw-lets-remote-computers.html,10,0,0,info@thehackernews.com (The Hacker News),2026-10-30,security
 rss:1acaac9f29b585,rss,"WordPress RCE Flaw Draws Nearly 63,000 Attack Attempts in Just 24 Hours",https://thehackernews.com/2026/10/wordpress-rce-flaw-draws-nearly-63000.html,10,0,0,info@thehackernews.com (The Hacker News),2026-10-30,dev|security
 rss:3307520d3b6ecd,rss,Trezor Warns of Suspected Hardware Implant in One of Its Wallets Sold by CryptoBilis,https://thehackernews.com/2026/10/trezor-warns-of-suspected-hardware.html,10,0,0,info@thehackernews.com (The Hacker News),2026-10-30,ai|dev|crypto
-rss:a1b9924296d8f0,rss,"Why Urgent Security Fixes Aren't Fixed. Observe, Prove, Act, Confirm Gets Them Moving",https://thehackernews.com/2026/10/why-urgent-security-fixes-arent-fixed.html,10,0,0,info@thehackernews.com (The Hacker News),2026-10-30,ai|dev|security
-rss:7ac8cf197ecc6d,rss,Syrian Hacker Behind Fake Tweet That Triggered $136 Billion Market Drop Gets 42 Months in Prison,https://thehackernews.com/2026/10/syrian-hacker-behind-fake-tweet-that.html,10,0,0,info@thehackernews.com (The Hacker News),2026-10-30,dev|science|biz
 rss:8651e625050eb8,rss,Widespread PHP Flaw May Cause Many Site Outages Today,https://krebsonsecurity.com/2026/10/widespread-php-flaw-may-cause-many-site-outages-today/,0,0,0,BrianKrebs,2026-10-21,ai|dev|security|hardware
 rss:1f5b4f3065bd92,rss,Feds Suspect Ransom Negotiator Ran ShinyHunters Extortion Site,https://krebsonsecurity.com/2026/10/feds-suspect-ransom-negotiator-ran-shinyhunters-extortion-site/,0,0,0,BrianKrebs,2026-10-19,ai|dev|biz|security
 rss:6f44ed419e952c,rss,U.K. Sanctions Cryptomus for RU Money Laundering,https://krebsonsecurity.com/2026/10/u-k-sanctions-cryptomus-for-ru-money-laundering/,0,0,0,BrianKrebs,2026-10-14,ai|crypto|biz|security

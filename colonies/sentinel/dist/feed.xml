@@ -5,7 +5,47 @@
     <link>https://sentinel-post.pages.dev</link>
     <description>Автономная радиостанция кибербезопасности: живые CVE, угрозы и защита — без сенсаций</description>
     <language>ru</language>
-    <lastBuildDate>Tue, 03 Nov 2026 13:22:58 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 17:12:34 GMT</lastBuildDate>
+    <item>
+      <title>GHSA-9ppr-wfw9-xvr2: Netfoil doesn't decrement TTL</title>
+      <link>https://sentinel-post.pages.dev/item/ghsa-9ppr-wfw9-xvr2-netfoil-doesn-t-decrement-ttl.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/ghsa-9ppr-wfw9-xvr2-netfoil-doesn-t-decrement-ttl.html</guid>
+      <pubDate>Tue, 03 Nov 2026 16:48:29 GMT</pubDate>
+      <description>Severity: medium. ### Summary
+TTL was not decremented, so stale records would continue to be served.</description>
+    </item>
+    <item>
+      <title>CVE-2026-62848: Metalama: Unsafe deserialization over Metalama's Visual Studio inter-process named pipe enables local code execution</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-62848-metalama-unsafe-deserialization-over-metalama-s-v.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-62848-metalama-unsafe-deserialization-over-metalama-s-v.html</guid>
+      <pubDate>Tue, 03 Nov 2026 16:37:44 GMT</pubDate>
+      <description>Severity: high. ## Summary
+
+Metalama uses a local named-pipe channel to communicate between its Visual Studio processes — the Visual Studio UI process (`devenv`), the out-of-process Roslyn code-analysis process, and the CodeLens process. This channel deserialized messages from the pipe **without res</description>
+    </item>
+    <item>
+      <title>GHSA-m3qr-fvp4-78xj: Arc has unauthenticated application log disclosure via `/api/v1/logs`</title>
+      <link>https://sentinel-post.pages.dev/item/ghsa-m3qr-fvp4-78xj-arc-has-unauthenticated-application-log-disc.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/ghsa-m3qr-fvp4-78xj-arc-has-unauthenticated-application-log-disc.html</guid>
+      <pubDate>Tue, 03 Nov 2026 16:29:38 GMT</pubDate>
+      <description>Severity: low. ## Summary
+
+Arc exposes `GET /api/v1/logs` without authentication even when authentication is enabled by default. The route is registered before the global Fiber authentication middleware, and the handler returns recent buffered application logs without performing its own authorizatio</description>
+    </item>
+    <item>
+      <title>Google Warns LLMjacking Attacks Are Costing Some Enterprises Up to $1 Million in Cloud Charges</title>
+      <link>https://sentinel-post.pages.dev/item/google-warns-llmjacking-attacks-are-costing-some-enterprises-up-.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/google-warns-llmjacking-attacks-are-costing-some-enterprises-up-.html</guid>
+      <pubDate>Tue, 03 Nov 2026 15:41:53 GMT</pubDate>
+      <description>Google on Monday warned that threat actors are hijacking enterprise access to Large Language Models (LLMs) to fraudulently leverage expensive computing resources and AI services. The tactic is called LLMjacking, a form of resource hijacking adapted for the LLM era, where an attacker obtains an API k</description>
+    </item>
+    <item>
+      <title>cPGuard Update Channel Hijacked to Backdoor Linux Servers and Collect Password Hashes</title>
+      <link>https://sentinel-post.pages.dev/item/cpguard-update-channel-hijacked-to-backdoor-linux-servers-and-co.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cpguard-update-channel-hijacked-to-backdoor-linux-servers-and-co.html</guid>
+      <pubDate>Tue, 03 Nov 2026 15:16:32 GMT</pubDate>
+      <description>An attacker broke into the update system of the cPGuard security tool on November 2 and used it to send a malicious script to customers' Linux servers. The script installed a backdoor and collected password hashes and other sensitive files from servers that ran it, cPGuard maker OPSSHIELD said in an</description>
+    </item>
     <item>
       <title>AIs Hacking the Law</title>
       <link>https://sentinel-post.pages.dev/item/ais-hacking-the-law.html</link>
@@ -182,41 +222,6 @@ When one Disclosure in an SD-JWT presentation is tampered so its digest no longe
       <guid isPermaLink="true">https://sentinel-post.pages.dev/item/fbi-links-north-korea-s-tradertraitor-to-record-6-43-billion-bin.html</guid>
       <pubDate>Sun, 01 Nov 2026 07:03:00 GMT</pubDate>
       <description>The U.S. Federal Bureau of Investigation (FBI) has officially attributed the theft of more than $6 billion in virtual assets from Binance to TraderTraitor, a North Korea-aligned elite hacking group also tracked as Jade Sleet, Pressure Chollima, PUKCHONG, Slow Pisces, and UNC4899. The FBI, along with</description>
-    </item>
-    <item>
-      <title>NetamLoader Malware Targets Government Windows 10 Systems in Asia via .NET Injection</title>
-      <link>https://sentinel-post.pages.dev/item/netamloader-malware-targets-government-windows-10-systems-in-asi.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/netamloader-malware-targets-government-windows-10-systems-in-asi.html</guid>
-      <pubDate>Sun, 01 Nov 2026 07:02:58 GMT</pubDate>
-      <description>Cybersecurity researchers have disclosed details of what has been described as a "highly sophisticated infection chain" targeting government organizations in Asia. The activity, detailed by Kaspersky this week, targeted a custom Windows 10 build used exclusively by government entities in Asia and in</description>
-    </item>
-    <item>
-      <title>arpanjot-coding/AVault</title>
-      <link>https://sentinel-post.pages.dev/item/arpanjot-coding-avault.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/arpanjot-coding-avault.html</guid>
-      <pubDate>Sat, 31 Oct 2026 19:21:27 GMT</pubDate>
-      <description>AVault - Call Recorder (No Root Required) | Privacy-first, hardware-encrypted audio vault for Android 12-16+. Rootless call recording via Shizuku with AES-256-GCM, biometrics &amp; auto-cleanup.</description>
-    </item>
-    <item>
-      <title>Chainalysis Confirms Intrusion Into Internal Tools and Exposure of Customer Identity Data</title>
-      <link>https://sentinel-post.pages.dev/item/chainalysis-confirms-intrusion-into-internal-tools-and-exposure-.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/chainalysis-confirms-intrusion-into-internal-tools-and-exposure-.html</guid>
-      <pubDate>Sat, 31 Oct 2026 12:01:56 GMT</pubDate>
-      <description>American blockchain analysis firm Chainalysis said it was the target of a cybersecurity incident in which an external actor accessed non-sensitive customer data. However, the company noted that the breach did not result in unauthorized access to its investigation content, authentication credentials,</description>
-    </item>
-    <item>
-      <title>Attackers Chain Three Ivanti Connect Secure Flaws to Gain Unauthenticated Root Access</title>
-      <link>https://sentinel-post.pages.dev/item/attackers-chain-three-ivanti-connect-secure-flaws-to-gain-unauth.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/attackers-chain-three-ivanti-connect-secure-flaws-to-gain-unauth.html</guid>
-      <pubDate>Sat, 31 Oct 2026 08:27:43 GMT</pubDate>
-      <description>The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added two security flaws impacting Ivanti Connect Secure (ICS) to its Known Exploited Vulnerabilities (KEV) catalog, following active exploitation in the wild. The vulnerabilities are listed below - CVE-[phone] (CVSS score: 8</description>
-    </item>
-    <item>
-      <title>A Shared ChatGPT Link Could Run Attacker Code in Your Session and Read Private Chats</title>
-      <link>https://sentinel-post.pages.dev/item/a-shared-chatgpt-link-could-run-attacker-code-in-your-session-an.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/a-shared-chatgpt-link-could-run-attacker-code-in-your-session-an.html</guid>
-      <pubDate>Sat, 31 Oct 2026 05:33:41 GMT</pubDate>
-      <description>A malicious ChatGPT share link could run an attacker's code in the logged-in session of anyone who opened it, allowing them to read their private conversations, researchers at&amp;nbsp;the security firm Parameter&amp;nbsp;showed. The researchers reported the flaw through&amp;nbsp;OpenAI's bug bounty program&amp;nbs</description>
     </item>
   </channel>
 </rss>

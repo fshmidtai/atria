@@ -5,7 +5,47 @@
     <link>https://cveradar-ah3.pages.dev</link>
     <description>Живые CVE и уязвимости на русском: автономный перевод угроз в понятные дайджесты для DevOps и небольшого SecOps</description>
     <language>ru</language>
-    <lastBuildDate>Tue, 03 Nov 2026 13:22:28 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 17:12:10 GMT</lastBuildDate>
+    <item>
+      <title>GHSA-9ppr-wfw9-xvr2: Netfoil doesn't decrement TTL</title>
+      <link>https://cveradar-ah3.pages.dev/item/ghsa-9ppr-wfw9-xvr2-netfoil-doesn-t-decrement-ttl.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/ghsa-9ppr-wfw9-xvr2-netfoil-doesn-t-decrement-ttl.html</guid>
+      <pubDate>Tue, 03 Nov 2026 16:48:29 GMT</pubDate>
+      <description>Severity: medium. ### Summary
+TTL was not decremented, so stale records would continue to be served.</description>
+    </item>
+    <item>
+      <title>CVE-2026-62848: Metalama: Unsafe deserialization over Metalama's Visual Studio inter-process named pipe enables local code execution</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-62848-metalama-unsafe-deserialization-over-metalama-s-v.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-62848-metalama-unsafe-deserialization-over-metalama-s-v.html</guid>
+      <pubDate>Tue, 03 Nov 2026 16:37:44 GMT</pubDate>
+      <description>Severity: high. ## Summary
+
+Metalama uses a local named-pipe channel to communicate between its Visual Studio processes — the Visual Studio UI process (`devenv`), the out-of-process Roslyn code-analysis process, and the CodeLens process. This channel deserialized messages from the pipe **without res</description>
+    </item>
+    <item>
+      <title>GHSA-m3qr-fvp4-78xj: Arc has unauthenticated application log disclosure via `/api/v1/logs`</title>
+      <link>https://cveradar-ah3.pages.dev/item/ghsa-m3qr-fvp4-78xj-arc-has-unauthenticated-application-log-disc.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/ghsa-m3qr-fvp4-78xj-arc-has-unauthenticated-application-log-disc.html</guid>
+      <pubDate>Tue, 03 Nov 2026 16:29:38 GMT</pubDate>
+      <description>Severity: low. ## Summary
+
+Arc exposes `GET /api/v1/logs` without authentication even when authentication is enabled by default. The route is registered before the global Fiber authentication middleware, and the handler returns recent buffered application logs without performing its own authorizatio</description>
+    </item>
+    <item>
+      <title>Google Warns LLMjacking Attacks Are Costing Some Enterprises Up to $1 Million in Cloud Charges</title>
+      <link>https://cveradar-ah3.pages.dev/item/google-warns-llmjacking-attacks-are-costing-some-enterprises-up-.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/google-warns-llmjacking-attacks-are-costing-some-enterprises-up-.html</guid>
+      <pubDate>Tue, 03 Nov 2026 15:41:53 GMT</pubDate>
+      <description>Google on Monday warned that threat actors are hijacking enterprise access to Large Language Models (LLMs) to fraudulently leverage expensive computing resources and AI services. The tactic is called LLMjacking, a form of resource hijacking adapted for the LLM era, where an attacker obtains an API k</description>
+    </item>
+    <item>
+      <title>cPGuard Update Channel Hijacked to Backdoor Linux Servers and Collect Password Hashes</title>
+      <link>https://cveradar-ah3.pages.dev/item/cpguard-update-channel-hijacked-to-backdoor-linux-servers-and-co.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cpguard-update-channel-hijacked-to-backdoor-linux-servers-and-co.html</guid>
+      <pubDate>Tue, 03 Nov 2026 15:16:32 GMT</pubDate>
+      <description>An attacker broke into the update system of the cPGuard security tool on November 2 and used it to send a malicious script to customers' Linux servers. The script installed a backdoor and collected password hashes and other sensitive files from servers that ran it, cPGuard maker OPSSHIELD said in an</description>
+    </item>
     <item>
       <title>Red Hat Patches 9.8-Rated Linux TCP RCE Flaw While Ubuntu Releases Fixes for Testing</title>
       <link>https://cveradar-ah3.pages.dev/item/red-hat-patches-9-8-rated-linux-tcp-rce-flaw-while-ubuntu-releas.html</link>
@@ -182,61 +222,6 @@ When one Disclosure in an SD-JWT presentation is tampered so its digest no longe
       <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/a-shared-chatgpt-link-could-run-attacker-code-in-your-session-an.html</guid>
       <pubDate>Sat, 31 Oct 2026 05:33:41 GMT</pubDate>
       <description>A malicious ChatGPT share link could run an attacker's code in the logged-in session of anyone who opened it, allowing them to read their private conversations, researchers at&amp;nbsp;the security firm Parameter&amp;nbsp;showed. The researchers reported the flaw through&amp;nbsp;OpenAI's bug bounty program&amp;nbs</description>
-    </item>
-    <item>
-      <title>Cloudflare Reports 18.2 Million Network-Layer DDoS Attacks in Q3, Up 38%</title>
-      <link>https://cveradar-ah3.pages.dev/item/cloudflare-reports-18-2-million-network-layer-ddos-attacks-in-q3.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cloudflare-reports-18-2-million-network-layer-ddos-attacks-in-q3.html</guid>
-      <pubDate>Sat, 31 Oct 2026 04:56:12 GMT</pubDate>
-      <description>Threat actors are launching about 8,226 network-layer distributed denial-of-service (DDoS) attacks per hour, Cloudflare revealed Thursday. The web infrastructure and security company said it autonomously mitigated 18.2 million network-layer (L3) DDoS attacks and 14.4 trillion HTTP DDoS requests in t</description>
-    </item>
-    <item>
-      <title>CVE-2026-118761: Kubeflow Pipelines: Pipeline archive upload allows decompression bomb to exhaust server memory</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-118761-kubeflow-pipelines-pipeline-archive-upload-allow.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-118761-kubeflow-pipelines-pipeline-archive-upload-allow.html</guid>
-      <pubDate>Fri, 30 Oct 2026 23:13:38 GMT</pubDate>
-      <description>Severity: high. ## Summary
-
-The Kubeflow Pipelines API server decompresses uploaded pipeline archives without adequately bounding expanded data in affected versions. A small ZIP or gzip-compressed tar archive can consume disproportionately large amounts of memory while the server locates or reads th</description>
-    </item>
-    <item>
-      <title>CVE-2026-118759: Kubeflow Pipelines: Run-log endpoint permits unauthorized access to pod logs</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-118759-kubeflow-pipelines-run-log-endpoint-permits-unau.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-118759-kubeflow-pipelines-run-log-endpoint-permits-unau.html</guid>
-      <pubDate>Fri, 30 Oct 2026 23:13:29 GMT</pubDate>
-      <description>Severity: high. ## Summary
-
-The Kubeflow Pipelines API server's `GET /apis/v1alpha1/runs/{run_id}/nodes/{node_id}/log` handler retrieves logs without authorizing the caller against the selected run. A caller who can reach the backend and knows a victim run ID and a suitable pod or node identifier ca</description>
-    </item>
-    <item>
-      <title>CVE-2026-119203: pypdf has possible infinite loop when hitting EOF in standard xref table during trailer search</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-119203-pypdf-has-possible-infinite-loop-when-hitting-eo.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-119203-pypdf-has-possible-infinite-loop-when-hitting-eo.html</guid>
-      <pubDate>Fri, 30 Oct 2026 23:13:16 GMT</pubDate>
-      <description>Severity: high. ### Impact
-
-An attacker who uses this vulnerability can craft a PDF which leads to an infinite loop. This requires opening an incomplete file without a `trailer`.
-
-### Patches
-
-This has been fixed in [pypdf==6.21.4](https://github.com/py-pdf/pypdf/releases/tag/6.21.4).
-
-### Workaroun</description>
-    </item>
-    <item>
-      <title>CVE-2026-119204: pypdf has possible large memory usage when parsing page tree</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-119204-pypdf-has-possible-large-memory-usage-when-parsi.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-119204-pypdf-has-possible-large-memory-usage-when-parsi.html</guid>
-      <pubDate>Fri, 30 Oct 2026 23:13:01 GMT</pubDate>
-      <description>Severity: high. ### Impact
-
-An attacker who uses this vulnerability can craft a PDF which leads to large memory usage. This requires parsing the page tree with many shared resources.
-
-### Patches
-
-This has been fixed in [pypdf==6.21.4](https://github.com/py-pdf/pypdf/releases/tag/6.21.4).
-
-### Worka</description>
     </item>
   </channel>
 </rss>

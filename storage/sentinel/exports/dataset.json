@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-03T13:22:58+00:00",
+  "generated_at": "2026-11-03T17:12:34+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -26,13 +26,13 @@
       "schneier": 10
     },
     "by_topic": {
-      "security": 117,
+      "security": 115,
       "ai": 74,
-      "dev": 63,
-      "hardware": 18,
-      "biz": 15,
+      "dev": 64,
+      "hardware": 19,
+      "biz": 14,
       "crypto": 12,
-      "science": 5
+      "science": 4
     },
     "top_domains": [
       [
@@ -263,6 +263,24 @@
         "security"
       ],
       "date": "2021-01-11"
+    },
+    {
+      "uid": "cve:GHSA-h26j-4vp7-x9w2",
+      "source": "cve",
+      "title": "CVE-2026-62848: Metalama: Unsafe deserialization over Metalama's Visual Studio inter-process named pipe enables local code execution",
+      "url": "https://github.com/advisories/GHSA-h26j-4vp7-x9w2",
+      "ts": 1793723864.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "Metalama.Framework",
+      "summary": "Severity: high. ## Summary\n\nMetalama uses a local named-pipe channel to communicate between its Visual Studio processes — the Visual Studio UI process (`devenv`), the out-of-process Roslyn code-analysis process, and the CodeLens process. This channel deserialized messages from the pipe **without restricting which C",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-03"
     },
     {
       "uid": "cve:GHSA-f9j6-8p6x-r9j6",
@@ -621,58 +639,6 @@
       "date": "2026-10-30"
     },
     {
-      "uid": "cve:GHSA-jc66-7q78-782g",
-      "source": "cve",
-      "title": "CVE-2026-118782: Forge: PKCS#12 MAC forgery and constant-key PBE via zero iteration count",
-      "url": "https://github.com/advisories/GHSA-jc66-7q78-782g",
-      "ts": 1793401325.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "node-forge",
-      "summary": "Severity: high. ### Summary\n\nforge.pkcs12.pkcs12FromAsn1() accepts a PKCS#12 MAC iteration count of zero (or less) from the input, and the PKCS#12 key derivation function then returns a constant key that does not depend on the password or salt. An attacker who does not know the password can modify a PKCS#12/PFX fil",
-      "recipe": "gh_advisories",
-      "buzz": 3510,
-      "topics": [
-        "security"
-      ],
-      "date": "2026-10-30"
-    },
-    {
-      "uid": "cve:GHSA-8hrf-8g6f-7xwp",
-      "source": "cve",
-      "title": "CVE-2026-119188: Forge: Denial of service in TLS record processing via a record interleaved with a fragmented handshake message",
-      "url": "https://github.com/advisories/GHSA-8hrf-8g6f-7xwp",
-      "ts": 1793401320.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "node-forge",
-      "summary": "Severity: high. ### Summary\n\nA connection created with `forge.tls.createConnection()` throws an uncaught `TypeError` from `process()` when it receives a record of another content type while waiting for the rest of a handshake message that was split across records. A peer can trigger this with 18 bytes before the ha",
-      "recipe": "gh_advisories",
-      "buzz": 3510,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-10-30"
-    },
-    {
-      "uid": "cve:GHSA-hqq3-7jhf-c5jx",
-      "source": "cve",
-      "title": "CVE-2026-119187: Forge: Denial of service in TLS record processing via call stack exhaustion",
-      "url": "https://github.com/advisories/GHSA-hqq3-7jhf-c5jx",
-      "ts": 1793401314.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "node-forge",
-      "summary": "Severity: high. ### Summary\n\nConnections created with `forge.tls.createConnection()` processed received TLS records recursively, one stack level per record. A peer can send one chunk of thousands of small records, such as heartbeat records, which are accepted before the handshake, and `process()` throws `RangeError",
-      "recipe": "gh_advisories",
-      "buzz": 3510,
-      "topics": [
-        "security"
-      ],
-      "date": "2026-10-30"
-    },
-    {
       "uid": "hn:32148218",
       "source": "hn",
       "title": "FCC: TikTok is unacceptable security risk and should be removed from app stores",
@@ -964,6 +930,21 @@
         "hardware"
       ],
       "date": "2020-09-30"
+    },
+    {
+      "uid": "cve:GHSA-9ppr-wfw9-xvr2",
+      "source": "cve",
+      "title": "GHSA-9ppr-wfw9-xvr2: Netfoil doesn't decrement TTL",
+      "url": "https://github.com/advisories/GHSA-9ppr-wfw9-xvr2",
+      "ts": 1793724509.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "github.com/tinfoil-factory/netfoil",
+      "summary": "Severity: medium. ### Summary\nTTL was not decremented, so stale records would continue to be served.",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [],
+      "date": "2026-11-03"
     },
     {
       "uid": "cve:GHSA-j656-3hf2-fvjc",
@@ -1336,17 +1317,34 @@
       "title": "Alejandros17487/ai-jailbreaks",
       "url": "https://github.com/Alejandros17487/ai-jailbreaks",
       "ts": 1792593846.0,
-      "points": 545,
-      "comments": 110,
+      "points": 546,
+      "comments": 111,
       "author": "Alejandros17487",
       "summary": "AI jailbreaks: 35 paste-ready AI jailbreak prompts for 25+ frontier and open-weight models - system prompts, AGENTS.md specs, and Ollama Modelfiles. Built for AI security research and red-team testing.",
       "recipe": "github_sec",
-      "buzz": 875,
+      "buzz": 879,
       "topics": [
         "ai",
         "security"
       ],
       "date": "2026-10-21"
+    },
+    {
+      "uid": "cve:GHSA-m3qr-fvp4-78xj",
+      "source": "cve",
+      "title": "GHSA-m3qr-fvp4-78xj: Arc has unauthenticated application log disclosure via `/api/v1/logs`",
+      "url": "https://github.com/advisories/GHSA-m3qr-fvp4-78xj",
+      "ts": 1793723378.0,
+      "points": 700,
+      "comments": 0,
+      "author": "github.com/basekick-labs/arc",
+      "summary": "Severity: low. ## Summary\n\nArc exposes `GET /api/v1/logs` without authentication even when authentication is enabled by default. The route is registered before the global Fiber authentication middleware, and the handler returns recent buffered application logs without performing its own authorization check.\n\n## De",
+      "recipe": "gh_advisories",
+      "buzz": 780,
+      "topics": [
+        "dev"
+      ],
+      "date": "2026-11-03"
     },
     {
       "uid": "cve:GHSA-4642-5mcj-2rqw",
@@ -1410,12 +1408,12 @@
       "title": "arpanjot-coding/AVault",
       "url": "https://github.com/arpanjot-coding/AVault",
       "ts": 1793474487.0,
-      "points": 555,
+      "points": 560,
       "comments": 36,
       "author": "arpanjot-coding",
       "summary": "AVault - Call Recorder (No Root Required) | Privacy-first, hardware-encrypted audio vault for Android 12-16+. Rootless call recording via Shizuku with AES-256-GCM, biometrics & auto-cleanup.",
       "recipe": "github_sec",
-      "buzz": 693,
+      "buzz": 698,
       "topics": [
         "dev",
         "security"
@@ -1428,12 +1426,12 @@
       "title": "jmanico/grim-prompter",
       "url": "https://github.com/jmanico/grim-prompter",
       "ts": 1793189366.0,
-      "points": 351,
+      "points": 352,
       "comments": 30,
       "author": "jmanico",
       "summary": "Threat modeling for AI coding agents: point Claude Code, Codex or any agent at your repo and get an evidence-traced threat model. 36 architectures, 29 methods, MIT.",
       "recipe": "github_sec",
-      "buzz": 451,
+      "buzz": 452,
       "topics": [
         "ai",
         "dev"
@@ -1446,12 +1444,12 @@
       "title": "NyxFoundation/nyxis",
       "url": "https://github.com/NyxFoundation/nyxis",
       "ts": 1792988778.0,
-      "points": 318,
+      "points": 319,
       "comments": 13,
       "author": "NyxFoundation",
       "summary": "A Lean backend framework whose authorization safety is formally proven. The developer writes only a Cedar schema and policies; handlers are built on Supabase Auth and PostgreSQL.",
       "recipe": "github_sec",
-      "buzz": 357,
+      "buzz": 358,
       "topics": [
         "dev"
       ],
@@ -1463,12 +1461,12 @@
       "title": "Balanov/skein",
       "url": "https://github.com/Balanov/skein",
       "ts": 1793663825.0,
-      "points": 257,
+      "points": 259,
       "comments": 0,
       "author": "Balanov",
       "summary": "Fail-closed swarm orchestration with epoch-fenced work and late-completion rejection.",
       "recipe": "github_sec",
-      "buzz": 337,
+      "buzz": 339,
       "topics": [
         "ai"
       ],
@@ -1553,11 +1551,11 @@
       "url": "https://github.com/hassan-algo/open-sesame",
       "ts": 1792553478.0,
       "points": 102,
-      "comments": 20,
+      "comments": 21,
       "author": "hassan-algo",
       "summary": "🔓 An AI web-pentest skill for Claude Code. Point it at a site you're authorized to test — it maps the attack surface, works through the OWASP WSTG, validates findings, and writes dev + stakeholder reports (PDF).",
       "recipe": "github_sec",
-      "buzz": 162,
+      "buzz": 165,
       "topics": [
         "ai",
         "dev"
@@ -1643,12 +1641,12 @@
       "title": "akari-sora/synology-nas-cli",
       "url": "https://github.com/akari-sora/synology-nas-cli",
       "ts": 1793353967.0,
-      "points": 78,
+      "points": 80,
       "comments": 9,
       "author": "akari-sora",
       "summary": "nas: a zero-dependency Python CLI + MCP server for Synology DSM 7. One-command audit and fix for the C3RB3R / .L0CK3D ransomware campaign; hand it to your AI agent. Mirror; canonical repo and issues: gitlab.com/aa[phone]/synology-nas-cli",
       "recipe": "github_sec",
-      "buzz": 115,
+      "buzz": 117,
       "topics": [
         "ai",
         "dev",
@@ -1724,6 +1722,43 @@
       "topics": [
         "ai",
         "security"
+      ],
+      "date": "2026-11-03"
+    },
+    {
+      "uid": "rss:1a70768e709027",
+      "source": "rss",
+      "title": "Google Warns LLMjacking Attacks Are Costing Some Enterprises Up to $1 Million in Cloud Charges",
+      "url": "https://thehackernews.com/2026/11/google-warns-llmjacking-attacks-are.html",
+      "ts": 1793720513.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Google on Monday warned that threat actors are hijacking enterprise access to Large Language Models (LLMs) to fraudulently leverage expensive computing resources and AI services. The tactic is called LLMjacking, a form of resource hijacking adapted for the LLM era, where an attacker obtains an API key through phishing, source code leaks, misconfigured environments, or exposed client-side code",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev"
+      ],
+      "date": "2026-11-03"
+    },
+    {
+      "uid": "rss:729513b74002f6",
+      "source": "rss",
+      "title": "cPGuard Update Channel Hijacked to Backdoor Linux Servers and Collect Password Hashes",
+      "url": "https://thehackernews.com/2026/11/cpguard-update-channel-hijacked-to.html",
+      "ts": 1793718992.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "An attacker broke into the update system of the cPGuard security tool on November 2 and used it to send a malicious script to customers' Linux servers. The script installed a backdoor and collected password hashes and other sensitive files from servers that ran it, cPGuard maker OPSSHIELD said in an advisory. The attacker has since taken some of that data. cPGuard 5.88.25 and later versions",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "security",
+        "hardware"
       ],
       "date": "2026-11-03"
     },
@@ -1876,72 +1911,17 @@
       "date": "2026-11-03"
     },
     {
-      "uid": "rss:15396809c02d31",
-      "source": "rss",
-      "title": "⚡ Weekly Recap: Critical CVEs, Linux DDoS Botnet, Device-Code Phishing, Android Spyware and More",
-      "url": "https://thehackernews.com/2026/11/weekly-recap-critical-cves-linux-ddos.html",
-      "ts": 1793638676.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Some attacks this week didn't need much of a trick. A fake support call, a trusted extension, a shared link, or a device with no password. Small things that people barely think about. Yet each was enough to cause serious trouble. Then there were the bigger messes. Billions stolen, hidden networks of hacked devices, poisoned software, and attackers finding new ways to turn normal tools against",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-02"
-    },
-    {
-      "uid": "rss:e5de376f71d3d6",
-      "source": "rss",
-      "title": "Google Disrupts 1.3 Million-Device Android Botnet, Says TV Box Maker Sold Criminal Access",
-      "url": "https://thehackernews.com/2026/11/google-disrupts-13-million-device.html",
-      "ts": 1793634626.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "A botnet of more than 1.3 million Android devices, mostly TV set-top boxes, lost control of its servers in late October in a takedown led by Google. Google says&nbsp;it is highly confident that device maker Videostrong intentionally put a backdoor in the boxes and sold access to criminals. They used the boxes for ad fraud and to pass other people's internet traffic through owners' home",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "dev",
-        "hardware"
-      ],
-      "date": "2026-11-02"
-    },
-    {
-      "uid": "rss:9c1ebae49ad888",
-      "source": "rss",
-      "title": "DarkBlinders Compromises Israeli Target and Iraqi Kurdish Government Cloud Environment",
-      "url": "https://thehackernews.com/2026/11/darkblinders-compromises-israeli-target.html",
-      "ts": 1793630765.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Cybersecurity researchers have disclosed details of a cyber espionage campaign targeting Israel and the Kurdistan Region of Iraq by an Iran state-aligned threat actor between August and October 2026. According to a report published by Dream Research Labs, the campaign has led to the compromise of a high-profile individual in Israel, along with additional compromises affecting a government cloud",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-02"
-    },
-    {
       "uid": "gh:huggingface/safeagents",
       "source": "github",
       "title": "huggingface/safeagents",
       "url": "https://github.com/huggingface/safeagents",
       "ts": 1793195562.0,
-      "points": 62,
+      "points": 63,
       "comments": 2,
       "author": "huggingface",
       "summary": "Safely run your agents using any coding harness",
       "recipe": "github_sec",
-      "buzz": 78,
+      "buzz": 79,
       "topics": [
         "ai",
         "dev"
@@ -2083,6 +2063,61 @@
       "author": "Bruce Schneier",
       "summary": "<p>A <a href=\"https://x.com/NickADobos/status/[phone]23901\">comment</a>:</p> <blockquote><p>3% of &#8216;critical&#8217; software security bugs, in all of recorded history, have been found in the last month. This is on pace to find another ~100,000 bugs this year alone, adding ~26% more vulnerabilities to the all time total Do you realize how fucking insane that is?</p></blockquote> <p>Yes.",
       "recipe": "schneier",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-02"
+    },
+    {
+      "uid": "rss:15396809c02d31",
+      "source": "rss",
+      "title": "⚡ Weekly Recap: Critical CVEs, Linux DDoS Botnet, Device-Code Phishing, Android Spyware and More",
+      "url": "https://thehackernews.com/2026/11/weekly-recap-critical-cves-linux-ddos.html",
+      "ts": 1793638676.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Some attacks this week didn't need much of a trick. A fake support call, a trusted extension, a shared link, or a device with no password. Small things that people barely think about. Yet each was enough to cause serious trouble. Then there were the bigger messes. Billions stolen, hidden networks of hacked devices, poisoned software, and attackers finding new ways to turn normal tools against",
+      "recipe": "hackersnews",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-02"
+    },
+    {
+      "uid": "rss:e5de376f71d3d6",
+      "source": "rss",
+      "title": "Google Disrupts 1.3 Million-Device Android Botnet, Says TV Box Maker Sold Criminal Access",
+      "url": "https://thehackernews.com/2026/11/google-disrupts-13-million-device.html",
+      "ts": 1793634626.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "A botnet of more than 1.3 million Android devices, mostly TV set-top boxes, lost control of its servers in late October in a takedown led by Google. Google says&nbsp;it is highly confident that device maker Videostrong intentionally put a backdoor in the boxes and sold access to criminals. They used the boxes for ad fraud and to pass other people's internet traffic through owners' home",
+      "recipe": "hackersnews",
+      "buzz": 30,
+      "topics": [
+        "dev",
+        "hardware"
+      ],
+      "date": "2026-11-02"
+    },
+    {
+      "uid": "rss:9c1ebae49ad888",
+      "source": "rss",
+      "title": "DarkBlinders Compromises Israeli Target and Iraqi Kurdish Government Cloud Environment",
+      "url": "https://thehackernews.com/2026/11/darkblinders-compromises-israeli-target.html",
+      "ts": 1793630765.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Cybersecurity researchers have disclosed details of a cyber espionage campaign targeting Israel and the Kurdistan Region of Iraq by an Iran state-aligned threat actor between August and October 2026. According to a report published by Dream Research Labs, the campaign has led to the compromise of a high-profile individual in Israel, along with additional compromises affecting a government cloud",
+      "recipe": "hackersnews",
       "buzz": 30,
       "topics": [
         "ai",
@@ -2475,44 +2510,6 @@
         "ai",
         "dev",
         "crypto"
-      ],
-      "date": "2026-10-30"
-    },
-    {
-      "uid": "rss:a1b9924296d8f0",
-      "source": "rss",
-      "title": "Why Urgent Security Fixes Aren't Fixed. Observe, Prove, Act, Confirm Gets Them Moving",
-      "url": "https://thehackernews.com/2026/10/why-urgent-security-fixes-arent-fixed.html",
-      "ts": 1793361533.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "The alert is critical. The fix is known. And the ticket sits in a queue for days. Security teams understand the risk, but the people who keep applications available need proof that the change won’t break anything.&nbsp; Their concerns are practical. An IPS protection could block legitimate traffic. A configuration change could interrupt a service. An endpoint policy could affect an application",
-      "recipe": "hackersnews",
-      "buzz": 10,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-10-30"
-    },
-    {
-      "uid": "rss:7ac8cf197ecc6d",
-      "source": "rss",
-      "title": "Syrian Hacker Behind Fake Tweet That Triggered $136 Billion Market Drop Gets 42 Months in Prison",
-      "url": "https://thehackernews.com/2026/10/syrian-hacker-behind-fake-tweet-that.html",
-      "ts": 1793356845.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Ahmad Umar Agha, a Syrian Electronic Army hacker known online as \"Th3Pr0,\" has been&nbsp;sentenced by a U.S. federal court&nbsp;to 42 months in prison for his role in a hacking conspiracy that targeted Western news outlets. The conspiracy was organized and led by members of former Syrian President Bashar al-Assad's inner circle, including the commander of Syria's General Intelligence",
-      "recipe": "hackersnews",
-      "buzz": 10,
-      "topics": [
-        "dev",
-        "science",
-        "biz"
       ],
       "date": "2026-10-30"
     },
