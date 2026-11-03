@@ -5,7 +5,92 @@
     <link>https://cveradar-ah3.pages.dev</link>
     <description>Живые CVE и уязвимости на русском: автономный перевод угроз в понятные дайджесты для DevOps и небольшого SecOps</description>
     <language>ru</language>
-    <lastBuildDate>Tue, 03 Nov 2026 17:12:10 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 21:00:27 GMT</lastBuildDate>
+    <item>
+      <title>CVE-2026-115878: Stanza: RCE via pickle deserialization in the lemmatizer</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-115878-stanza-rce-via-pickle-deserialization-in-the-lem.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-115878-stanza-rce-via-pickle-deserialization-in-the-lem.html</guid>
+      <pubDate>Tue, 03 Nov 2026 20:29:16 GMT</pubDate>
+      <description>Severity: high. ## TL;DR
+
+Loading an attacker-supplied lemma `.pt` runs arbitrary code as the loading user. Since 1.14.0 the lemmatizer stores `pos_dict` as a gzip-compressed pickle in the checkpoint's `dicts` field (a `bytes` value). `torch.load(weights_only=True)` treats `bytes` as a primitive and</description>
+    </item>
+    <item>
+      <title>mSecure Warns Users to Change Passwords, Reset 2FA and Passkeys After Suspicious Activity</title>
+      <link>https://cveradar-ah3.pages.dev/item/msecure-warns-users-to-change-passwords-reset-2fa-and-passkeys-a.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/msecure-warns-users-to-change-passwords-reset-2fa-and-passkeys-a.html</guid>
+      <pubDate>Tue, 03 Nov 2026 18:46:38 GMT</pubDate>
+      <description>Customers of the mSecure password manager are being urged to act now to protect the confidential information they store in it, possibly by changing passwords, resetting two-factor authentication (2FA), and removing passkeys. The warning came in an email sent on November 3 in the name of developer mS</description>
+    </item>
+    <item>
+      <title>Chainstack Reports Production Systems Breach Exposing Customer Data and Password Hashes</title>
+      <link>https://cveradar-ah3.pages.dev/item/chainstack-reports-production-systems-breach-exposing-customer-d.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/chainstack-reports-production-systems-breach-exposing-customer-d.html</guid>
+      <pubDate>Tue, 03 Nov 2026 18:16:19 GMT</pubDate>
+      <description>Blockchain infrastructure provider Chainstack on Tuesday disclosed that it was targeted in a cyber attack that allowed an unauthorized party to gain access to some parts of its infrastructure. The incident is assessed to be part of a large-scale, artificial intelligence (AI)-powered attack campaign </description>
+    </item>
+    <item>
+      <title>CVE-2026-44267: Elo JavaScript emitter has sandbox escape to arbitrary Node.js / browser code execution via unfiltered `.constructor` member access</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-44267-elo-javascript-emitter-has-sandbox-escape-to-arbi.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-44267-elo-javascript-emitter-has-sandbox-escape-to-arbi.html</guid>
+      <pubDate>Tue, 03 Nov 2026 17:53:42 GMT</pubDate>
+      <description>Severity: critical. ### Summary
+
+An unauthenticated attacker who controls a string passed to any Elo JavaScript-emission path — `defaultFormats.elo.parse()`, the `bin/elo` CLI, or the live browser playground at `elo-lang.org/try` — can execute arbitrary code in the host JavaScript runtime. A payload</description>
+    </item>
+    <item>
+      <title>CVE-2026-44266: Elo Ruby backend has Remote Code Execution via unescaped `#{...}` interpolation in emitted string literals and subtype-constraint labels</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-44266-elo-ruby-backend-has-remote-code-execution-via-un.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-44266-elo-ruby-backend-has-remote-code-execution-via-un.html</guid>
+      <pubDate>Tue, 03 Nov 2026 17:51:30 GMT</pubDate>
+      <description>Severity: critical. ### Summary
+
+Elo's Ruby backend emits attacker-controlled text into Ruby double-quoted strings without escaping the `#` character. Because `#` begins Ruby's interpolation sequences — `#{expr}`, `#@ivar`, `#@@cvar`, `#$gvar` — and any expression wrapped in `#{...}` may use backtic</description>
+    </item>
+    <item>
+      <title>CVE-2026-44265: Elo backends have code injection via unvalidated emission of programmatic AST fields</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-44265-elo-backends-have-code-injection-via-unvalidated-.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-44265-elo-backends-have-code-injection-via-unvalidated-.html</guid>
+      <pubDate>Tue, 03 Nov 2026 17:48:09 GMT</pubDate>
+      <description>Severity: high. ### Summary
+
+Elo's programmatic AST API accepts arbitrary values in many node fields without runtime type or syntax validation. Each backend's emit stage interpolates those values straight into the generated source with no escape pass. An integrator that populates the AST from JSON-d</description>
+    </item>
+    <item>
+      <title>GHSA-p3jp-9v83-76w9: Microsoft Security Advisory CVE-2026-111497 - .NET Brotli Decoder Out-of-bounds Write Vulnerability</title>
+      <link>https://cveradar-ah3.pages.dev/item/ghsa-p3jp-9v83-76w9-microsoft-security-advisory-cve-2026-111497-.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/ghsa-p3jp-9v83-76w9-microsoft-security-advisory-cve-2026-111497-.html</guid>
+      <pubDate>Tue, 03 Nov 2026 17:33:48 GMT</pubDate>
+      <description>Severity: high. ## Executive summary
+
+A buffer overflow vulnerability exists in the Brotli decompression library used by .NET. This vulnerability may allow an unauthenticated attacker to read or corrupt process memory. This could lead to information disclosure, denial of service, or elevation of pri</description>
+    </item>
+    <item>
+      <title>CVE-2026-62331: praktor: Path traversal in Telegram file uploads allows writing outside the agent workspace uploads/ directory (stored instruction injection)</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-62331-praktor-path-traversal-in-telegram-file-uploads-a.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-62331-praktor-path-traversal-in-telegram-file-uploads-a.html</guid>
+      <pubDate>Tue, 03 Nov 2026 17:27:25 GMT</pubDate>
+      <description>Severity: high. ### Impact
+
+A remote Telegram user can write files to arbitrary paths inside an agent's persistent workspace volume (`praktor-wk-&lt;workspace&gt;`, mounted at `/workspace/agent`), escaping the documented `uploads/` directory.
+
+The attacker controls the Telegram document filename, which wa</description>
+    </item>
+    <item>
+      <title>CVE-2026-11800: Keycloak has authentication bypass via jwt algorithm confusion</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-11800-keycloak-has-authentication-bypass-via-jwt-algori.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-11800-keycloak-has-authentication-bypass-via-jwt-algori.html</guid>
+      <pubDate>Tue, 03 Nov 2026 17:24:27 GMT</pubDate>
+      <description>Severity: high. ### Description
+A flaw was found in Keycloak. This JWT algorithm confusion vulnerability in the JWT Authorization Grant flow allows an attacker with valid client credentials to bypass signature verification. By forging an assertion, the attacker can create unauthorized access tokens.</description>
+    </item>
+    <item>
+      <title>Binance Reveals How Fake Job Interviews and AI Tool Abuse Led to $6.43 Billion Theft</title>
+      <link>https://cveradar-ah3.pages.dev/item/binance-reveals-how-fake-job-interviews-and-ai-tool-abuse-led-to.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/binance-reveals-how-fake-job-interviews-and-ai-tool-abuse-led-to.html</guid>
+      <pubDate>Tue, 03 Nov 2026 16:55:58 GMT</pubDate>
+      <description>Binance on Tuesday said the record-setting theft of $6.43 billion in assets from the world's largest cryptocurrency exchange was the culmination of a "sophisticated, multi-stage campaign" that involved the use of a tampered Homebrew installation and recruitment-themed social engineering attack targe</description>
+    </item>
     <item>
       <title>GHSA-9ppr-wfw9-xvr2: Netfoil doesn't decrement TTL</title>
       <link>https://cveradar-ah3.pages.dev/item/ghsa-9ppr-wfw9-xvr2-netfoil-doesn-t-decrement-ttl.html</link>
@@ -31,6 +116,13 @@ Metalama uses a local named-pipe channel to communicate between its Visual Studi
       <description>Severity: low. ## Summary
 
 Arc exposes `GET /api/v1/logs` without authentication even when authentication is enabled by default. The route is registered before the global Fiber authentication middleware, and the handler returns recent buffered application logs without performing its own authorizatio</description>
+    </item>
+    <item>
+      <title>Barracuda Flaws Could Be Chained to Bypass Authorization and Gain Root Access</title>
+      <link>https://cveradar-ah3.pages.dev/item/barracuda-flaws-could-be-chained-to-bypass-authorization-and-gai.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/barracuda-flaws-could-be-chained-to-bypass-authorization-and-gai.html</guid>
+      <pubDate>Tue, 03 Nov 2026 15:59:19 GMT</pubDate>
+      <description>Barracuda has disclosed details of two vulnerabilities affecting its products that, if chained together, could allow an attacker to bypass authorization controls and gain root access to a susceptible device. The vulnerabilities, a pre-authentication authorization bypass vulnerability and a command i</description>
     </item>
     <item>
       <title>Google Warns LLMjacking Attacks Are Costing Some Enterprises Up to $1 Million in Cloud Charges</title>
@@ -145,83 +237,6 @@ When one Disclosure in an SD-JWT presentation is tampered so its digest no longe
       <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/critical-langflow-flaws-could-let-unauthenticated-attackers-run-.html</guid>
       <pubDate>Mon, 02 Nov 2026 11:50:00 GMT</pubDate>
       <description>Two critical flaws in Langflow could let a remote attacker with no account bypass authentication or run arbitrary code,&amp;nbsp;IBM said last week. Langflow is an open-source tool for building AI agents and workflows, and&amp;nbsp;its vulnerability reports go to IBM. Every release from 1.0.0 through 1.12.8</description>
-    </item>
-    <item>
-      <title>Is Your SOC Ready for AI Agents? A Maturity Check Before You Deploy</title>
-      <link>https://cveradar-ah3.pages.dev/item/is-your-soc-ready-for-ai-agents-a-maturity-check-before-you-depl.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/is-your-soc-ready-for-ai-agents-a-maturity-check-before-you-depl.html</guid>
-      <pubDate>Mon, 02 Nov 2026 11:30:00 GMT</pubDate>
-      <description>Forty percent of security teams now use AI every day, and another 56% are testing it. Only 4% have no plans to adopt it, according to Prophet Security's State of AI in Security Operations 2026 survey of more than 250 CISOs, SOC leaders and practitioners. For the teams still testing, the next decisio</description>
-    </item>
-    <item>
-      <title>Attackers Pose as IT Support on Microsoft Teams, Abuse AD CS to Steal Company Data</title>
-      <link>https://cveradar-ah3.pages.dev/item/attackers-pose-as-it-support-on-microsoft-teams-abuse-ad-cs-to-s.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/attackers-pose-as-it-support-on-microsoft-teams-abuse-ad-cs-to-s.html</guid>
-      <pubDate>Mon, 02 Nov 2026 11:08:45 GMT</pubDate>
-      <description>Attackers posing as IT support on Microsoft Teams talked employees into giving them remote control of their PCs. They then used insecure Active Directory Certificate Services (AD CS) settings to obtain login certificates for privileged accounts, including one for a domain controller. Microsoft said </description>
-    </item>
-    <item>
-      <title>Government Linux Servers Targeted With SysGoRAT and Suspected AI-Generated Scripts</title>
-      <link>https://cveradar-ah3.pages.dev/item/government-linux-servers-targeted-with-sysgorat-and-suspected-ai.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/government-linux-servers-targeted-with-sysgorat-and-suspected-ai.html</guid>
-      <pubDate>Mon, 02 Nov 2026 10:49:59 GMT</pubDate>
-      <description>Cybersecurity researchers have disclosed details of a cyber espionage campaign specifically targeting Linux infrastructure associated with government entities and state-affiliated infrastructure. The activity, observed by Palo Alto Networks Unit 42 between October 2025 and April 2026, has been track</description>
-    </item>
-    <item>
-      <title>New VOLTA Infostealer Uses Claude, Gemini, and Kimi AI to Rank Victims by Financial Value</title>
-      <link>https://cveradar-ah3.pages.dev/item/new-volta-infostealer-uses-claude-gemini-and-kimi-ai-to-rank-vic.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/new-volta-infostealer-uses-claude-gemini-and-kimi-ai-to-rank-vic.html</guid>
-      <pubDate>Mon, 02 Nov 2026 05:51:07 GMT</pubDate>
-      <description>Cybersecurity researchers have discovered a new Windows infostealer malware called VOLTA-AUTODOXER (aka VOLTA) that makes use of a large language model (LLM) to rank a victim's stolen data by their monetization value. Like other typical stealer families, VOLTA is equipped to harvest passwords and co</description>
-    </item>
-    <item>
-      <title>CVSS 10.0 LXD, MicroCloud Flaw Lets Attackers Impersonate Trusted Clients Without a Private Key</title>
-      <link>https://cveradar-ah3.pages.dev/item/cvss-10-0-lxd-microcloud-flaw-lets-attackers-impersonate-trusted.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cvss-10-0-lxd-microcloud-flaw-lets-attackers-impersonate-trusted.html</guid>
-      <pubDate>Sun, 01 Nov 2026 08:51:31 GMT</pubDate>
-      <description>A critical flaw in Canonical's LXD and MicroCloud let an attacker log in as a trusted client without holding that client's private key. To do it, the attacker had to reach their HTTPS API over the network and have the trusted client's public certificate. Once in, the attacker would act as that clien</description>
-    </item>
-    <item>
-      <title>Hackers Steal About $2.7 Million From Polymarket Traders via Hijacked DebugBear Script</title>
-      <link>https://cveradar-ah3.pages.dev/item/hackers-steal-about-2-7-million-from-polymarket-traders-via-hija.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/hackers-steal-about-2-7-million-from-polymarket-traders-via-hija.html</guid>
-      <pubDate>Sun, 01 Nov 2026 07:25:40 GMT</pubDate>
-      <description>Malicious code on the website of prediction market Polymarket sold some signed-in traders' positions and moved their funds to the hackers on October 29. The code had replaced a page-speed script that the site loaded from an outside company. Polymarket says&amp;nbsp;it is refunding about $2.7 million to </description>
-    </item>
-    <item>
-      <title>FBI Links North Korea's TraderTraitor to Record $6.43 Billion Binance Crypto Heist</title>
-      <link>https://cveradar-ah3.pages.dev/item/fbi-links-north-korea-s-tradertraitor-to-record-6-43-billion-bin.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/fbi-links-north-korea-s-tradertraitor-to-record-6-43-billion-bin.html</guid>
-      <pubDate>Sun, 01 Nov 2026 07:03:00 GMT</pubDate>
-      <description>The U.S. Federal Bureau of Investigation (FBI) has officially attributed the theft of more than $6 billion in virtual assets from Binance to TraderTraitor, a North Korea-aligned elite hacking group also tracked as Jade Sleet, Pressure Chollima, PUKCHONG, Slow Pisces, and UNC4899. The FBI, along with</description>
-    </item>
-    <item>
-      <title>NetamLoader Malware Targets Government Windows 10 Systems in Asia via .NET Injection</title>
-      <link>https://cveradar-ah3.pages.dev/item/netamloader-malware-targets-government-windows-10-systems-in-asi.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/netamloader-malware-targets-government-windows-10-systems-in-asi.html</guid>
-      <pubDate>Sun, 01 Nov 2026 07:02:58 GMT</pubDate>
-      <description>Cybersecurity researchers have disclosed details of what has been described as a "highly sophisticated infection chain" targeting government organizations in Asia. The activity, detailed by Kaspersky this week, targeted a custom Windows 10 build used exclusively by government entities in Asia and in</description>
-    </item>
-    <item>
-      <title>Chainalysis Confirms Intrusion Into Internal Tools and Exposure of Customer Identity Data</title>
-      <link>https://cveradar-ah3.pages.dev/item/chainalysis-confirms-intrusion-into-internal-tools-and-exposure-.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/chainalysis-confirms-intrusion-into-internal-tools-and-exposure-.html</guid>
-      <pubDate>Sat, 31 Oct 2026 12:01:56 GMT</pubDate>
-      <description>American blockchain analysis firm Chainalysis said it was the target of a cybersecurity incident in which an external actor accessed non-sensitive customer data. However, the company noted that the breach did not result in unauthorized access to its investigation content, authentication credentials,</description>
-    </item>
-    <item>
-      <title>Attackers Chain Three Ivanti Connect Secure Flaws to Gain Unauthenticated Root Access</title>
-      <link>https://cveradar-ah3.pages.dev/item/attackers-chain-three-ivanti-connect-secure-flaws-to-gain-unauth.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/attackers-chain-three-ivanti-connect-secure-flaws-to-gain-unauth.html</guid>
-      <pubDate>Sat, 31 Oct 2026 08:27:43 GMT</pubDate>
-      <description>The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added two security flaws impacting Ivanti Connect Secure (ICS) to its Known Exploited Vulnerabilities (KEV) catalog, following active exploitation in the wild. The vulnerabilities are listed below - CVE-[phone] (CVSS score: 8</description>
-    </item>
-    <item>
-      <title>A Shared ChatGPT Link Could Run Attacker Code in Your Session and Read Private Chats</title>
-      <link>https://cveradar-ah3.pages.dev/item/a-shared-chatgpt-link-could-run-attacker-code-in-your-session-an.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/a-shared-chatgpt-link-could-run-attacker-code-in-your-session-an.html</guid>
-      <pubDate>Sat, 31 Oct 2026 05:33:41 GMT</pubDate>
-      <description>A malicious ChatGPT share link could run an attacker's code in the logged-in session of anyone who opened it, allowing them to read their private conversations, researchers at&amp;nbsp;the security firm Parameter&amp;nbsp;showed. The researchers reported the flaw through&amp;nbsp;OpenAI's bug bounty program&amp;nbs</description>
     </item>
   </channel>
 </rss>

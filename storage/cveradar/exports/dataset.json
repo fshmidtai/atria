@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-03T17:12:10+00:00",
+  "generated_at": "2026-11-03T21:00:27+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -18,13 +18,13 @@
       "the_hacker_news": 30
     },
     "by_topic": {
-      "security": 48,
-      "ai": 36,
-      "dev": 32,
-      "hardware": 14,
-      "crypto": 9,
-      "biz": 6,
-      "science": 4
+      "security": 49,
+      "ai": 38,
+      "dev": 34,
+      "hardware": 12,
+      "crypto": 11,
+      "science": 6,
+      "biz": 6
     },
     "top_domains": [
       [
@@ -38,6 +38,136 @@
     ]
   },
   "items": [
+    {
+      "uid": "cve:GHSA-33r5-xmm8-v6x5",
+      "source": "cve",
+      "title": "CVE-2026-44267: Elo JavaScript emitter has sandbox escape to arbitrary Node.js / browser code execution via unfiltered `.constructor` member access",
+      "url": "https://github.com/advisories/GHSA-33r5-xmm8-v6x5",
+      "ts": 1793728422.0,
+      "points": 6000,
+      "comments": 0,
+      "author": "@enspirit/elo",
+      "summary": "Severity: critical. ### Summary\n\nAn unauthenticated attacker who controls a string passed to any Elo JavaScript-emission path — `defaultFormats.elo.parse()`, the `bin/elo` CLI, or the live browser playground at `elo-lang.org/try` — can execute arbitrary code in the host JavaScript runtime. A payload built from the `.co",
+      "recipe": "gh_advisories",
+      "buzz": 6080,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-11-03"
+    },
+    {
+      "uid": "cve:GHSA-7w38-ggh5-v542",
+      "source": "cve",
+      "title": "CVE-2026-44266: Elo Ruby backend has Remote Code Execution via unescaped `#{...}` interpolation in emitted string literals and subtype-constraint labels",
+      "url": "https://github.com/advisories/GHSA-7w38-ggh5-v542",
+      "ts": 1793728290.0,
+      "points": 6000,
+      "comments": 0,
+      "author": "@enspirit/elo",
+      "summary": "Severity: critical. ### Summary\n\nElo's Ruby backend emits attacker-controlled text into Ruby double-quoted strings without escaping the `#` character. Because `#` begins Ruby's interpolation sequences — `#{expr}`, `#@ivar`, `#@@cvar`, `#$gvar` — and any expression wrapped in `#{...}` may use backticks for shell executi",
+      "recipe": "gh_advisories",
+      "buzz": 6080,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-03"
+    },
+    {
+      "uid": "cve:GHSA-gh9r-c94j-cmp5",
+      "source": "cve",
+      "title": "CVE-2026-115878: Stanza: RCE via pickle deserialization in the lemmatizer",
+      "url": "https://github.com/advisories/GHSA-gh9r-c94j-cmp5",
+      "ts": 1793737756.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "stanza",
+      "summary": "Severity: high. ## TL;DR\n\nLoading an attacker-supplied lemma `.pt` runs arbitrary code as the loading user. Since 1.14.0 the lemmatizer stores `pos_dict` as a gzip-compressed pickle in the checkpoint's `dicts` field (a `bytes` value). `torch.load(weights_only=True)` treats `bytes` as a primitive and passes it throu",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-11-03"
+    },
+    {
+      "uid": "cve:GHSA-x9rp-7wh3-2rj5",
+      "source": "cve",
+      "title": "CVE-2026-44265: Elo backends have code injection via unvalidated emission of programmatic AST fields",
+      "url": "https://github.com/advisories/GHSA-x9rp-7wh3-2rj5",
+      "ts": 1793728089.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "@enspirit/elo",
+      "summary": "Severity: high. ### Summary\n\nElo's programmatic AST API accepts arbitrary values in many node fields without runtime type or syntax validation. Each backend's emit stage interpolates those values straight into the generated source with no escape pass. An integrator that populates the AST from JSON-deserialised inpu",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "ai",
+        "dev",
+        "science",
+        "security"
+      ],
+      "date": "2026-11-03"
+    },
+    {
+      "uid": "cve:GHSA-p3jp-9v83-76w9",
+      "source": "cve",
+      "title": "GHSA-p3jp-9v83-76w9: Microsoft Security Advisory CVE-2026-111497 - .NET Brotli Decoder Out-of-bounds Write Vulnerability",
+      "url": "https://github.com/advisories/GHSA-p3jp-9v83-76w9",
+      "ts": 1793727228.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "Microsoft.DotNet.ILCompiler",
+      "summary": "Severity: high. ## Executive summary\n\nA buffer overflow vulnerability exists in the Brotli decompression library used by .NET. This vulnerability may allow an unauthenticated attacker to read or corrupt process memory. This could lead to information disclosure, denial of service, or elevation of privilege.\n\nASP.NET",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-03"
+    },
+    {
+      "uid": "cve:GHSA-48v2-6jcm-fc99",
+      "source": "cve",
+      "title": "CVE-2026-62331: praktor: Path traversal in Telegram file uploads allows writing outside the agent workspace uploads/ directory (stored instruction injection)",
+      "url": "https://github.com/advisories/GHSA-48v2-6jcm-fc99",
+      "ts": 1793726845.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "github.com/mtzanidakis/praktor",
+      "summary": "Severity: high. ### Impact\n\nA remote Telegram user can write files to arbitrary paths inside an agent's persistent workspace volume (`praktor-wk-<workspace>`, mounted at `/workspace/agent`), escaping the documented `uploads/` directory.\n\nThe attacker controls the Telegram document filename, which was concatenated i",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "ai",
+        "dev",
+        "science",
+        "security"
+      ],
+      "date": "2026-11-03"
+    },
+    {
+      "uid": "cve:GHSA-j97h-3f8r-mrjr",
+      "source": "cve",
+      "title": "CVE-2026-11800: Keycloak has authentication bypass via jwt algorithm confusion",
+      "url": "https://github.com/advisories/GHSA-j97h-3f8r-mrjr",
+      "ts": 1793726667.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "org.keycloak:keycloak-services",
+      "summary": "Severity: high. ### Description\nA flaw was found in Keycloak. This JWT algorithm confusion vulnerability in the JWT Authorization Grant flow allows an attacker with valid client credentials to bypass signature verification. By forging an assertion, the attacker can create unauthorized access tokens. This enables th",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "crypto",
+        "science",
+        "security"
+      ],
+      "date": "2026-11-03"
+    },
     {
       "uid": "cve:GHSA-h26j-4vp7-x9w2",
       "source": "cve",
@@ -67,7 +197,7 @@
       "author": "@sd-jwt/decode",
       "summary": "Severity: high. ## Summary\n\nWhen one Disclosure in an SD-JWT presentation is tampered so its digest no longer matches the Issuer-signed `_sd` array, `@sd-jwt/decode` 0.19.0 does **not** reject the presentation. It silently drops the unmatched Disclosure and returns a **reduced claim set**, reporting success. The Is",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "ai",
         "security"
@@ -378,24 +508,6 @@
       "date": "2026-10-30"
     },
     {
-      "uid": "cve:GHSA-7wch-p9px-956x",
-      "source": "cve",
-      "title": "CVE-2026-118779: Forge: Regular expression denial of service in PEM decoding (pem.decode)",
-      "url": "https://github.com/advisories/GHSA-7wch-p9px-956x",
-      "ts": 1793401345.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "node-forge",
-      "summary": "Severity: high. ### Summary\n`pem.decode()`, which every node-forge API that parses PEM input uses, split messages with a regular expression that takes polynomial time on input without a matching END line, and parsed encapsulated headers with regular expressions that take quadratic time on long header lines. A remot",
-      "recipe": "gh_advisories",
-      "buzz": 3510,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-10-30"
-    },
-    {
       "uid": "cve:GHSA-9ppr-wfw9-xvr2",
       "source": "cve",
       "title": "GHSA-9ppr-wfw9-xvr2: Netfoil doesn't decrement TTL",
@@ -421,7 +533,7 @@
       "author": "@bytebase/dbhub",
       "summary": "Severity: medium. The read-only mode can be bypassed on the MySQL and MariaDB connectors. In read-only mode a caller can still execute arbitrary write and DDL statements (for example DROP TABLE), which defeats the protection that read-only mode is meant to provide when a database is exposed to an AI agent.\n\nRoot caus",
       "recipe": "gh_advisories",
-      "buzz": 1880,
+      "buzz": 1830,
       "topics": [
         "ai",
         "dev"
@@ -464,60 +576,6 @@
       "date": "2026-10-30"
     },
     {
-      "uid": "cve:GHSA-6wvx-3r32-xmcg",
-      "source": "cve",
-      "title": "CVE-2026-118777: Forge: Prototype Pollution in forge.http cookie handling via a malicious Set-Cookie",
-      "url": "https://github.com/advisories/GHSA-6wvx-3r32-xmcg",
-      "ts": 1793401355.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "node-forge",
-      "summary": "Severity: medium. ### Summary\nThe `forge.http` client stored cookies from `Set-Cookie` response headers in a plain object keyed by cookie name and path. A malicious server could use the cookie name `__proto__` to add properties to `Object.prototype`, use inherited names such as `constructor` to add properties to `Obj",
-      "recipe": "gh_advisories",
-      "buzz": 1810,
-      "topics": [
-        "ai",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-10-30"
-    },
-    {
-      "uid": "cve:GHSA-525v-9gp9-w22h",
-      "source": "cve",
-      "title": "CVE-2026-118778: Forge: TLS client crash when the server sends no certificate",
-      "url": "https://github.com/advisories/GHSA-525v-9gp9-w22h",
-      "ts": 1793401350.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "node-forge",
-      "summary": "Severity: medium. ### Summary\nThe forge TLS client's check for a missing server certificate read the wrong property and never ran. A malicious TLS server, or an on-path attacker who removes the server's Certificate message, can make `connection.process()` throw a `TypeError`, which crashes applications that use the f",
-      "recipe": "gh_advisories",
-      "buzz": 1810,
-      "topics": [
-        "security",
-        "hardware"
-      ],
-      "date": "2026-10-30"
-    },
-    {
-      "uid": "cve:GHSA-5cwg-6vw7-rj6p",
-      "source": "cve",
-      "title": "CVE-2026-119186: Forge: AES-GCM authentication bypass via unvalidated tagLength option",
-      "url": "https://github.com/advisories/GHSA-5cwg-6vw7-rj6p",
-      "ts": 1793401329.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "node-forge",
-      "summary": "Severity: medium. ### Summary\n\nThe AES-GCM mode in forge.cipher does not validate the tagLength option passed to start(). With a tagLength of 0 or a value that converts to 0 (such as null, false, '' or '0'), the authentication tag is empty, and decipher.finish() returns true for any ciphertext and additional data whe",
-      "recipe": "gh_advisories",
-      "buzz": 1810,
-      "topics": [
-        "security"
-      ],
-      "date": "2026-10-30"
-    },
-    {
       "uid": "cve:GHSA-m3qr-fvp4-78xj",
       "source": "cve",
       "title": "GHSA-m3qr-fvp4-78xj: Arc has unauthenticated application log disclosure via `/api/v1/logs`",
@@ -535,60 +593,81 @@
       "date": "2026-11-03"
     },
     {
-      "uid": "cve:GHSA-4642-5mcj-2rqw",
-      "source": "cve",
-      "title": "CVE-2026-118775: Forge: ASN.1 OID first arc truncation in asn1.oidToDer",
-      "url": "https://github.com/advisories/GHSA-4642-5mcj-2rqw",
-      "ts": 1793401360.0,
-      "points": 700,
+      "uid": "rss:a20c924b8926e0",
+      "source": "rss",
+      "title": "mSecure Warns Users to Change Passwords, Reset 2FA and Passkeys After Suspicious Activity",
+      "url": "https://thehackernews.com/2026/11/msecure-warns-users-to-change-passwords.html",
+      "ts": 1793731598.0,
+      "points": 0,
       "comments": 0,
-      "author": "node-forge",
-      "summary": "Severity: low. ### Summary\n\n`asn1.oidToDer()` did not range-check the first two arcs of an OID string, so an OID such as `[phone]49.1.1.1` or `[phone].[phone].1.1.1` was encoded as the DER of a different OID (here rsaEncryption, `1.[phone].1.1.1`). This is an incomplete fix of CVE-[phone]. F",
-      "recipe": "gh_advisories",
-      "buzz": 710,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Customers of the mSecure password manager are being urged to act now to protect the confidential information they store in it, possibly by changing passwords, resetting two-factor authentication (2FA), and removing passkeys. The warning came in an email sent on November 3 in the name of developer mSeven Software. It says the company recently learned of suspicious activity linked to the app but",
+      "recipe": "the_hacker_news",
+      "buzz": 80,
       "topics": [
-        "security"
+        "ai",
+        "dev"
       ],
-      "date": "2026-10-30"
+      "date": "2026-11-03"
     },
     {
-      "uid": "cve:GHSA-h6cr-wjv9-3cpp",
-      "source": "cve",
-      "title": "CVE-2026-118781: Forge: Denial of Service via infinite loop in BigInteger.modInverse() with negative input (incomplete fix of CVE-2026-33891)",
-      "url": "https://github.com/advisories/GHSA-h6cr-wjv9-3cpp",
-      "ts": 1793401340.0,
-      "points": 700,
+      "uid": "rss:ca8186c7072948",
+      "source": "rss",
+      "title": "Chainstack Reports Production Systems Breach Exposing Customer Data and Password Hashes",
+      "url": "https://thehackernews.com/2026/11/chainstack-reports-production-systems.html",
+      "ts": 1793729779.0,
+      "points": 0,
       "comments": 0,
-      "author": "node-forge",
-      "summary": "Severity: low. ### Summary\n\n`BigInteger.prototype.modInverse()` in node-forge's bundled jsbn library enters an infinite loop when the value or the modulus is negative, for example when a negative public exponent is passed to `forge.pki.rsa.generateKeyPair()`. This is an incomplete fix of CVE-[phone] (GHSA-5m6q-",
-      "recipe": "gh_advisories",
-      "buzz": 710,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Blockchain infrastructure provider Chainstack on Tuesday disclosed that it was targeted in a cyber attack that allowed an unauthorized party to gain access to some parts of its infrastructure. The incident is assessed to be part of a large-scale, artificial intelligence (AI)-powered attack campaign that came to light last week. \"An external attacker gained unauthorized access to part of",
+      "recipe": "the_hacker_news",
+      "buzz": 80,
       "topics": [
         "ai",
         "dev",
-        "science",
+        "crypto",
         "security"
       ],
-      "date": "2026-10-30"
+      "date": "2026-11-03"
     },
     {
-      "uid": "cve:GHSA-4487-j8r4-4g2f",
-      "source": "cve",
-      "title": "CVE-2026-118780: Forge: verifyCertificateChain() removes trusted CA certificates with the same subject from the CA store",
-      "url": "https://github.com/advisories/GHSA-4487-j8r4-4g2f",
-      "ts": 1793401334.0,
-      "points": 700,
+      "uid": "rss:73b78dd8320b04",
+      "source": "rss",
+      "title": "Binance Reveals How Fake Job Interviews and AI Tool Abuse Led to $6.43 Billion Theft",
+      "url": "https://thehackernews.com/2026/11/binance-reveals-how-fake-job-interviews.html",
+      "ts": 1793724958.0,
+      "points": 0,
       "comments": 0,
-      "author": "node-forge",
-      "summary": "Severity: low. ### Summary\n\nWhen a CA store created by `pki.createCaStore()` holds two or more certificates with the same subject name, `pki.verifyCertificateChain()` permanently removes those certificates from the store while trying each one as the issuer. A peer can send any certificate that names that subject a",
-      "recipe": "gh_advisories",
-      "buzz": 710,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Binance on Tuesday said the record-setting theft of $6.43 billion in assets from the world's largest cryptocurrency exchange was the culmination of a \"sophisticated, multi-stage campaign\" that involved the use of a tampered Homebrew installation and recruitment-themed social engineering attack targeting two of its engineers. \"It was not a single isolated breach or a simple phishing incident,\"",
+      "recipe": "the_hacker_news",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "crypto",
+        "security"
+      ],
+      "date": "2026-11-03"
+    },
+    {
+      "uid": "rss:04e3c25a08e8db",
+      "source": "rss",
+      "title": "Barracuda Flaws Could Be Chained to Bypass Authorization and Gain Root Access",
+      "url": "https://thehackernews.com/2026/11/barracuda-flaws-could-be-chained-to.html",
+      "ts": 1793721559.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Barracuda has disclosed details of two vulnerabilities affecting its products that, if chained together, could allow an attacker to bypass authorization controls and gain root access to a susceptible device. The vulnerabilities, a pre-authentication authorization bypass vulnerability and a command injection vulnerability, have been assigned the CVE identifiers CVE-[phone] (CVSS score: 9.3)",
+      "recipe": "the_hacker_news",
+      "buzz": 80,
       "topics": [
         "ai",
         "dev",
         "security"
       ],
-      "date": "2026-10-30"
+      "date": "2026-11-03"
     },
     {
       "uid": "rss:1a70768e709027",
@@ -1073,78 +1152,6 @@
         "security"
       ],
       "date": "2026-10-31"
-    },
-    {
-      "uid": "rss:5caf201c7d7342",
-      "source": "rss",
-      "title": "Chinese Hackers Use AI-Powered ARTEX to Target Over 200 Organizations Worldwide",
-      "url": "https://thehackernews.com/2026/10/chinese-hackers-use-ai-powered-artex-to.html",
-      "ts": 1793379524.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Chinese state-sponsored threat actors have been observed using a Go-based artificial intelligence (AI)-powered penetration testing framework called ARTEX in attacks aimed at high-value targets simultaneously. The activity has been attributed by CrowdStrike to a China-based \"targeted intrusion adversary\" it tracks under the moniker Vapor Panda (previously VexatiousTemper). First identified in",
-      "recipe": "the_hacker_news",
-      "buzz": 10,
-      "topics": [
-        "ai",
-        "dev"
-      ],
-      "date": "2026-10-30"
-    },
-    {
-      "uid": "rss:8fe595add26b43",
-      "source": "rss",
-      "title": "TeamViewer Flaw Lets Remote Computers Attack Users Who Connect to Control Them",
-      "url": "https://thehackernews.com/2026/10/teamviewer-flaw-lets-remote-computers.html",
-      "ts": 1793373448.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "TeamViewer has fixed a flaw that lets the machine being controlled in a remote session attack the computer that connected to control it. In a TeamViewer session, the computer that connects and takes control is the viewer, and the machine it controls is the host. A malicious or compromised host can exploit the flaw to crash the viewer's TeamViewer and, depending on the platform, may also run",
-      "recipe": "the_hacker_news",
-      "buzz": 10,
-      "topics": [
-        "security"
-      ],
-      "date": "2026-10-30"
-    },
-    {
-      "uid": "rss:1acaac9f29b585",
-      "source": "rss",
-      "title": "WordPress RCE Flaw Draws Nearly 63,000 Attack Attempts in Just 24 Hours",
-      "url": "https://thehackernews.com/2026/10/wordpress-rce-flaw-draws-nearly-63000.html",
-      "ts": 1793369294.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Threat actors have been observed attempting to exploit a high-severity security flaw in WordPress Core shortly after patches were released. The vulnerability, which does not have a CVE identifier, relates to a case of remote code execution impacting WordPress Core versions 4.7 through 7.1.3. It carries a CVSS score of 8.1 on the CVSS scoring system. Patches for the flaw were released on October",
-      "recipe": "the_hacker_news",
-      "buzz": 10,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-10-30"
-    },
-    {
-      "uid": "rss:3307520d3b6ecd",
-      "source": "rss",
-      "title": "Trezor Warns of Suspected Hardware Implant in One of Its Wallets Sold by CryptoBilis",
-      "url": "https://thehackernews.com/2026/10/trezor-warns-of-suspected-hardware.html",
-      "ts": 1793362916.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "A Trezor Safe 5 hardware wallet bought from the reseller CryptoBilis has an extra circuit board that sends out the recovery phrase over a mobile network, a customer has reported. Trezor has not yet examined the device. It is telling everyone who bought a Trezor from CryptoBilis since March 2026 to move their funds to a new wallet with a new recovery phrase. Trezor said in a&nbsp;blog post&nbsp",
-      "recipe": "the_hacker_news",
-      "buzz": 10,
-      "topics": [
-        "ai",
-        "dev",
-        "crypto"
-      ],
-      "date": "2026-10-30"
     }
   ]
 }
