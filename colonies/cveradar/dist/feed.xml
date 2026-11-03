@@ -5,7 +5,35 @@
     <link>https://cveradar-ah3.pages.dev</link>
     <description>Живые CVE и уязвимости на русском: автономный перевод угроз в понятные дайджесты для DevOps и небольшого SecOps</description>
     <language>ru</language>
-    <lastBuildDate>Tue, 03 Nov 2026 09:05:21 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 13:22:28 GMT</lastBuildDate>
+    <item>
+      <title>Red Hat Patches 9.8-Rated Linux TCP RCE Flaw While Ubuntu Releases Fixes for Testing</title>
+      <link>https://cveradar-ah3.pages.dev/item/red-hat-patches-9-8-rated-linux-tcp-rce-flaw-while-ubuntu-releas.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/red-hat-patches-9-8-rated-linux-tcp-rce-flaw-while-ubuntu-releas.html</guid>
+      <pubDate>Tue, 03 Nov 2026 11:23:53 GMT</pubDate>
+      <description>Fixed kernels for a&amp;nbsp;use-after-free vulnerability in the Linux kernel's IPv4 TCP code&amp;nbsp;are now available for Red Hat Enterprise Linux 8, 9, and 10, while Ubuntu's fixes for its three newest long-term-support releases remain in its opt-in testing channel with no date for a regular update. The</description>
+    </item>
+    <item>
+      <title>The 4 Elements of Exposure Prioritization and How to Operationalize Them</title>
+      <link>https://cveradar-ah3.pages.dev/item/the-4-elements-of-exposure-prioritization-and-how-to-operational.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/the-4-elements-of-exposure-prioritization-and-how-to-operational.html</guid>
+      <pubDate>Tue, 03 Nov 2026 11:18:20 GMT</pubDate>
+      <description>Your team is remediating more vulnerabilities than ever, yet your breach risk has barely changed. You’re spending too much time and effort on exposures attackers may never exploit, while higher-risk exposures sit, waiting in the queue. Gartner®’s report on exposure prioritization states that fewer t</description>
+    </item>
+    <item>
+      <title>Russia-Aligned Gorbag Hackers Exploit WinRAR Flaw to Deploy Data-Stealing Malware</title>
+      <link>https://cveradar-ah3.pages.dev/item/russia-aligned-gorbag-hackers-exploit-winrar-flaw-to-deploy-data.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/russia-aligned-gorbag-hackers-exploit-winrar-flaw-to-deploy-data.html</guid>
+      <pubDate>Tue, 03 Nov 2026 11:00:45 GMT</pubDate>
+      <description>A Russia-aligned threat actor known as Gorbag has been observed using simple information stealer malware in attacks targeting Ukrainian organizations. "Active since at least February 2025, the group has focused exclusively on Ukrainian targets, with a clear preference for law enforcement and justice</description>
+    </item>
+    <item>
+      <title>Hackers Exploit BTCPay Server Flaw to Steal Bitcoin and Litecoin From Hot Wallets</title>
+      <link>https://cveradar-ah3.pages.dev/item/hackers-exploit-btcpay-server-flaw-to-steal-bitcoin-and-litecoin.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/hackers-exploit-btcpay-server-flaw-to-steal-bitcoin-and-litecoin.html</guid>
+      <pubDate>Tue, 03 Nov 2026 08:31:48 GMT</pubDate>
+      <description>BTCPay Server, a self-hosted, open-source cryptocurrency payment processor, has urged users to install the latest version of its software in response to reports of Bitcoin and Litecoin being stolen from hot wallets on instances running older versions. "Our investigation found that these attacks targ</description>
+    </item>
     <item>
       <title>Synology NAS Devices Targeted in Ransomware Attacks Exploiting Patched DSM Flaw</title>
       <link>https://cveradar-ah3.pages.dev/item/synology-nas-devices-targeted-in-ransomware-attacks-exploiting-p.html</link>
@@ -209,65 +237,6 @@ An attacker who uses this vulnerability can craft a PDF which leads to large mem
 This has been fixed in [pypdf==6.21.4](https://github.com/py-pdf/pypdf/releases/tag/6.21.4).
 
 ### Worka</description>
-    </item>
-    <item>
-      <title>CVE-2026-119205: pypdf has possible infinite loop when cloning dictionaries</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-119205-pypdf-has-possible-infinite-loop-when-cloning-di.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-119205-pypdf-has-possible-infinite-loop-when-cloning-di.html</guid>
-      <pubDate>Fri, 30 Oct 2026 23:12:20 GMT</pubDate>
-      <description>Severity: high. ### Impact
-
-An attacker who uses this vulnerability can craft a PDF which leads to an infinite loop. This requires cloning/duplicating a `DictionaryObject`.
-
-### Patches
-
-This has been fixed in [pypdf==6.21.4](https://github.com/py-pdf/pypdf/releases/tag/6.21.4).
-
-### Workarounds
-
-If</description>
-    </item>
-    <item>
-      <title>CVE-2026-118772: joi: quadratic-time split in `string().email({ multiple: true })` allows denial of service</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-118772-joi-quadratic-time-split-in-string-email-multipl.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-118772-joi-quadratic-time-split-in-string-email-multipl.html</guid>
-      <pubDate>Fri, 30 Oct 2026 23:10:23 GMT</pubDate>
-      <description>Severity: high. ### Summary
-
-`Joi.string().email({ multiple: true })` takes quadratic time to split a value that contains a long run of whitespace. One request with 100 KB of spaces blocks the Node.js event loop for several seconds, which causes a denial of service.
-
-### Details
-
-When the `multiple`</description>
-    </item>
-    <item>
-      <title>CVE-2026-119202: @hapi/content: quadratic-time parsing of Content-Disposition parameters allows denial of service</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-119202-hapi-content-quadratic-time-parsing-of-content-d.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-119202-hapi-content-quadratic-time-parsing-of-content-d.html</guid>
-      <pubDate>Fri, 30 Oct 2026 23:10:13 GMT</pubDate>
-      <description>Severity: high. ### Summary
-
-`Content.disposition()` takes quadratic time when a `Content-Disposition` parameter contains a long token without `=`. One unauthenticated multipart request can block the Node.js event loop for several minutes.
-
-### Details
-
-`Content.disposition()` reads the parameters w</description>
-    </item>
-    <item>
-      <title>CVE-2026-118764: minimatch has potential denial of service via globparts amplification</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-118764-minimatch-has-potential-denial-of-service-via-gl.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-118764-minimatch-has-potential-denial-of-service-via-gl.html</guid>
-      <pubDate>Fri, 30 Oct 2026 23:09:55 GMT</pubDate>
-      <description>Severity: medium. minimatch 10.2.6 contains an attacker-controlled pattern amplification in firstPhasePreProcess() when optimizationLevel &gt;= 2.
-
-researcher: Reid Downing (b1nv0id)
-files: 
-
-- src/index.ts: 690-770
-- src/index.ts: 780-796
-
-issue:
-input-controlled growth of globParts during first-phase</description>
     </item>
   </channel>
 </rss>
