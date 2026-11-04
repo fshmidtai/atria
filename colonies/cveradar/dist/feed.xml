@@ -5,7 +5,35 @@
     <link>https://cveradar-ah3.pages.dev</link>
     <description>Живые CVE и уязвимости на русском: автономный перевод угроз в понятные дайджесты для DevOps и небольшого SecOps</description>
     <language>ru</language>
-    <lastBuildDate>Wed, 04 Nov 2026 09:11:56 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 04 Nov 2026 13:24:09 GMT</lastBuildDate>
+    <item>
+      <title>Critical Rails Flaw Lets Attackers Write Server Files via Crafted ImageMagick Uploads</title>
+      <link>https://cveradar-ah3.pages.dev/item/critical-rails-flaw-lets-attackers-write-server-files-via-crafte.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/critical-rails-flaw-lets-attackers-write-server-files-via-crafte.html</guid>
+      <pubDate>Wed, 04 Nov 2026 12:07:04 GMT</pubDate>
+      <description>A critical flaw in Ruby on Rails could allow an unauthenticated attacker to write arbitrary files on an app's server by uploading a crafted file if the app processes uploads using ImageMagick. The Rails project disclosed the flaw in&amp;nbsp;an advisory&amp;nbsp;and fixed it in versions 8.1.4.1 and 8.0.5.2.</description>
+    </item>
+    <item>
+      <title>Xen Hypervisor Flaws Let One Malicious VM Read and Write Any Other VM's Memory</title>
+      <link>https://cveradar-ah3.pages.dev/item/xen-hypervisor-flaws-let-one-malicious-vm-read-and-write-any-oth.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/xen-hypervisor-flaws-let-one-malicious-vm-read-and-write-any-oth.html</guid>
+      <pubDate>Wed, 04 Nov 2026 11:46:27 GMT</pubDate>
+      <description>Two flaws in the Xen hypervisor allow a malicious guest virtual machine (VM) to read and write the memory of other VMs on the same host, including dom0. Dom0 is the VM that, by default, has full permissions and manages the others. Patches are out, and there is no known mitigation, the Xen Project sa</description>
+    </item>
+    <item>
+      <title>Radio With No Radar: Why Agent Runtime Security Fails Without the Layers Beneath It</title>
+      <link>https://cveradar-ah3.pages.dev/item/radio-with-no-radar-why-agent-runtime-security-fails-without-the.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/radio-with-no-radar-why-agent-runtime-security-fails-without-the.html</guid>
+      <pubDate>Wed, 04 Nov 2026 11:34:20 GMT</pubDate>
+      <description>Nearly every agent security pitch now ends on the same promise: the product stops the bad action in real time. The promise holds for one kind of agent, the kind whose traffic passes through a gateway the enterprise owns. Most agents never touch one. One recent case shows what that gap looks like in </description>
+    </item>
+    <item>
+      <title>China-Aligned Hackers Hijack Sogou Input Method DNS Requests to Deploy DarkVigil Backdoor</title>
+      <link>https://cveradar-ah3.pages.dev/item/china-aligned-hackers-hijack-sogou-input-method-dns-requests-to-.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/china-aligned-hackers-hijack-sogou-input-method-dns-requests-to-.html</guid>
+      <pubDate>Wed, 04 Nov 2026 11:24:31 GMT</pubDate>
+      <description>A China-aligned threat actor known as SlippyNunchucks has been attributed to a Domain Name System (DNS) hijacking operation abusing insecure HTTP communications in Windows versions of Sogou Input Method as part of a surveillance campaign designed to deploy an implant called DarkVigil (aka FDMTP). Th</description>
+    </item>
     <item>
       <title>Russian Police Arrest 3 Suspected VasyGrek Hackers, Dismantle Criminal Infrastructure</title>
       <link>https://cveradar-ah3.pages.dev/item/russian-police-arrest-3-suspected-vasygrek-hackers-dismantle-cri.html</link>
@@ -207,36 +235,6 @@ Arc exposes `GET /api/v1/logs` without authentication even when authentication i
       <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/attackers-exploit-critical-siemens-iot2050-flaw-to-plant-remote-.html</guid>
       <pubDate>Tue, 03 Nov 2026 05:34:41 GMT</pubDate>
       <description>A maximum-severity security flaw impacting Siemens SIMATIC IoT2050 Advanced devices has come under active exploitation, VulnCheck has revealed. The vulnerability, tracked as CVE-[phone] (CVSS score: 10.0), is a case of missing authentication for a critical function that could be exploited by an unau</description>
-    </item>
-    <item>
-      <title>Attackers Target Unpatched CryptoPayment Gateway Flaw That Can Expose Wallet Credentials</title>
-      <link>https://cveradar-ah3.pages.dev/item/attackers-target-unpatched-cryptopayment-gateway-flaw-that-can-e.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/attackers-target-unpatched-cryptopayment-gateway-flaw-that-can-e.html</guid>
-      <pubDate>Tue, 03 Nov 2026 05:34:37 GMT</pubDate>
-      <description>Threat actors are attempting to exploit an unpatched maximum-severity security vulnerability in the CryptoPayment Gateway WordPress plugin, according to findings from Defused Cyber. The vulnerability in question is CVE-[phone], which carries a CVSS score of 10.0. Successful exploitation of the flaw </description>
-    </item>
-    <item>
-      <title>GHSA-j656-3hf2-fvjc: DBHub: MySQL and MariaDB comment interpretation bypasses read-only SQL validation</title>
-      <link>https://cveradar-ah3.pages.dev/item/ghsa-j656-3hf2-fvjc-dbhub-mysql-and-mariadb-comment-interpretati.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/ghsa-j656-3hf2-fvjc-dbhub-mysql-and-mariadb-comment-interpretati.html</guid>
-      <pubDate>Mon, 02 Nov 2026 17:57:51 GMT</pubDate>
-      <description>Severity: medium. The read-only mode can be bypassed on the MySQL and MariaDB connectors. In read-only mode a caller can still execute arbitrary write and DDL statements (for example DROP TABLE), which defeats the protection that read-only mode is meant to provide when a database is exposed to an AI</description>
-    </item>
-    <item>
-      <title>CVE-2026-62374: SD JWT JS: Tampered disclosures silently dropped instead of rejected</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-62374-sd-jwt-js-tampered-disclosures-silently-dropped-i.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-62374-sd-jwt-js-tampered-disclosures-silently-dropped-i.html</guid>
-      <pubDate>Mon, 02 Nov 2026 17:54:39 GMT</pubDate>
-      <description>Severity: high. ## Summary
-
-When one Disclosure in an SD-JWT presentation is tampered so its digest no longer matches the Issuer-signed `_sd` array, `@sd-jwt/decode` 0.19.0 does **not** reject the presentation. It silently drops the unmatched Disclosure and returns a **reduced claim set**, reporting</description>
-    </item>
-    <item>
-      <title>⚡ Weekly Recap: Critical CVEs, Linux DDoS Botnet, Device-Code Phishing, Android Spyware and More</title>
-      <link>https://cveradar-ah3.pages.dev/item/weekly-recap-critical-cves-linux-ddos-botnet-device-code-phishin.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/weekly-recap-critical-cves-linux-ddos-botnet-device-code-phishin.html</guid>
-      <pubDate>Mon, 02 Nov 2026 16:57:56 GMT</pubDate>
-      <description>Some attacks this week didn't need much of a trick. A fake support call, a trusted extension, a shared link, or a device with no password. Small things that people barely think about. Yet each was enough to cause serious trouble. Then there were the bigger messes. Billions stolen, hidden networks of</description>
     </item>
   </channel>
 </rss>
