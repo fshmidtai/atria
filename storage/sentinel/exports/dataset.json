@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T17:10:52+00:00",
+  "generated_at": "2026-11-04T21:05:43+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -28,11 +28,11 @@
     "by_topic": {
       "security": 107,
       "ai": 70,
-      "dev": 58,
-      "hardware": 15,
-      "biz": 11,
+      "dev": 61,
+      "hardware": 14,
+      "biz": 10,
       "crypto": 10,
-      "science": 6
+      "science": 4
     },
     "top_domains": [
       [
@@ -184,7 +184,7 @@
       "author": "@enspirit/elo",
       "summary": "Severity: critical. ### Summary\n\nAn unauthenticated attacker who controls a string passed to any Elo JavaScript-emission path — `defaultFormats.elo.parse()`, the `bin/elo` CLI, or the live browser playground at `elo-lang.org/try` — can execute arbitrary code in the host JavaScript runtime. A payload built from the `.co",
       "recipe": "gh_advisories",
-      "buzz": 6080,
+      "buzz": 6030,
       "topics": [
         "security"
       ],
@@ -201,7 +201,7 @@
       "author": "@enspirit/elo",
       "summary": "Severity: critical. ### Summary\n\nElo's Ruby backend emits attacker-controlled text into Ruby double-quoted strings without escaping the `#` character. Because `#` begins Ruby's interpolation sequences — `#{expr}`, `#@ivar`, `#@@cvar`, `#$gvar` — and any expression wrapped in `#{...}` may use backticks for shell executi",
       "recipe": "gh_advisories",
-      "buzz": 6080,
+      "buzz": 6030,
       "topics": [
         "ai",
         "dev",
@@ -301,6 +301,23 @@
       "date": "2021-01-11"
     },
     {
+      "uid": "hn:50172041",
+      "source": "hn",
+      "title": "Security advisory: Critical remote code execution vulnerabilities, update now",
+      "url": "https://www.php.net/archive/2026.php#2026-10-21-5",
+      "ts": 1792527350.0,
+      "points": 1561,
+      "comments": 659,
+      "author": "xd",
+      "summary": "<a href=\"https:&#x2F;&#x2F;cert.europa.eu&#x2F;publications&#x2F;security-advisories&#x2F;2026-018&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;cert.europa.eu&#x2F;publications&#x2F;security-advisories&#x2F;2026...</a><p><a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=[phone]\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=[phone]</a>",
+      "recipe": "hn_sec",
+      "buzz": 3538,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-10-20"
+    },
+    {
       "uid": "cve:GHSA-gh9r-c94j-cmp5",
       "source": "cve",
       "title": "CVE-2026-115878: Stanza: RCE via pickle deserialization in the lemmatizer",
@@ -311,7 +328,7 @@
       "author": "stanza",
       "summary": "Severity: high. ## TL;DR\n\nLoading an attacker-supplied lemma `.pt` runs arbitrary code as the loading user. Since 1.14.0 the lemmatizer stores `pos_dict` as a gzip-compressed pickle in the checkpoint's `dicts` field (a `bytes` value). `torch.load(weights_only=True)` treats `bytes` as a primitive and passes it throu",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "security"
       ],
@@ -328,7 +345,7 @@
       "author": "@enspirit/elo",
       "summary": "Severity: high. ### Summary\n\nElo's programmatic AST API accepts arbitrary values in many node fields without runtime type or syntax validation. Each backend's emit stage interpolates those values straight into the generated source with no escape pass. An integrator that populates the AST from JSON-deserialised inpu",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "ai",
         "dev",
@@ -348,7 +365,7 @@
       "author": "Microsoft.DotNet.ILCompiler",
       "summary": "Severity: high. ## Executive summary\n\nA buffer overflow vulnerability exists in the Brotli decompression library used by .NET. This vulnerability may allow an unauthenticated attacker to read or corrupt process memory. This could lead to information disclosure, denial of service, or elevation of privilege.\n\nASP.NET",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "dev",
         "security"
@@ -366,7 +383,7 @@
       "author": "github.com/mtzanidakis/praktor",
       "summary": "Severity: high. ### Impact\n\nA remote Telegram user can write files to arbitrary paths inside an agent's persistent workspace volume (`praktor-wk-<workspace>`, mounted at `/workspace/agent`), escaping the documented `uploads/` directory.\n\nThe attacker controls the Telegram document filename, which was concatenated i",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "ai",
         "dev",
@@ -386,30 +403,13 @@
       "author": "org.keycloak:keycloak-services",
       "summary": "Severity: high. ### Description\nA flaw was found in Keycloak. This JWT algorithm confusion vulnerability in the JWT Authorization Grant flow allows an attacker with valid client credentials to bypass signature verification. By forging an assertion, the attacker can create unauthorized access tokens. This enables th",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "crypto",
         "science",
         "security"
       ],
       "date": "2026-11-03"
-    },
-    {
-      "uid": "hn:50172041",
-      "source": "hn",
-      "title": "Security advisory: Critical remote code execution vulnerabilities, update now",
-      "url": "https://www.php.net/archive/2026.php#2026-10-21-5",
-      "ts": 1792527350.0,
-      "points": 1561,
-      "comments": 659,
-      "author": "xd",
-      "summary": "<a href=\"https:&#x2F;&#x2F;cert.europa.eu&#x2F;publications&#x2F;security-advisories&#x2F;2026-018&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;cert.europa.eu&#x2F;publications&#x2F;security-advisories&#x2F;2026...</a><p><a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=[phone]\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=[phone]</a>",
-      "recipe": "hn_sec",
-      "buzz": 3538,
-      "topics": [
-        "security"
-      ],
-      "date": "2026-10-20"
     },
     {
       "uid": "cve:GHSA-h26j-4vp7-x9w2",
@@ -1388,12 +1388,12 @@
       "title": "arpanjot-coding/AVault",
       "url": "https://github.com/arpanjot-coding/AVault",
       "ts": 1793474487.0,
-      "points": 577,
+      "points": 581,
       "comments": 38,
       "author": "arpanjot-coding",
       "summary": "AVault - Call Recorder (No Root Required) | Privacy-first, hardware-encrypted audio vault for Android 12-16+. Rootless call recording via Shizuku with AES-256-GCM, biometrics & auto-cleanup.",
       "recipe": "github_sec",
-      "buzz": 701,
+      "buzz": 705,
       "topics": [
         "dev",
         "security"
@@ -1406,12 +1406,12 @@
       "title": "jmanico/grim-prompter",
       "url": "https://github.com/jmanico/grim-prompter",
       "ts": 1793189366.0,
-      "points": 360,
+      "points": 361,
       "comments": 30,
       "author": "jmanico",
       "summary": "Threat modeling for AI coding agents: point Claude Code, Codex or any agent at your repo and get an evidence-traced threat model. 36 architectures, 29 methods, MIT.",
       "recipe": "github_sec",
-      "buzz": 450,
+      "buzz": 451,
       "topics": [
         "ai",
         "dev"
@@ -1441,12 +1441,12 @@
       "title": "aarsaputra/php2shell",
       "url": "https://github.com/aarsaputra/php2shell",
       "ts": 1792763392.0,
-      "points": 124,
+      "points": 126,
       "comments": 61,
       "author": "aarsaputra",
       "summary": "Unauthenticated RCE toolkit for PHP 5.4–8.4.26 (CVE-[phone]/109618) — pure-HTTP chain, JA3 impersonation, prpenetration-testingoof-of-access design",
       "recipe": "github_sec",
-      "buzz": 307,
+      "buzz": 309,
       "topics": [
         "ai",
         "security"
@@ -1527,6 +1527,23 @@
       "date": "2026-10-27"
     },
     {
+      "uid": "gh:0x45dd/pwner",
+      "source": "github",
+      "title": "0x45dd/pwner",
+      "url": "https://github.com/0x45dd/pwner",
+      "ts": 1793625315.0,
+      "points": 44,
+      "comments": 4,
+      "author": "0x45dd",
+      "summary": "Autonomous agentic network penetration-testing tool (authorized use only)",
+      "recipe": "github_sec",
+      "buzz": 86,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-11-02"
+    },
+    {
       "uid": "gh:jamesalmeida/agent-honeypot",
       "source": "github",
       "title": "jamesalmeida/agent-honeypot",
@@ -1542,6 +1559,62 @@
         "ai"
       ],
       "date": "2026-10-23"
+    },
+    {
+      "uid": "rss:5e756f5fa8340f",
+      "source": "rss",
+      "title": "Debian and Ubuntu APT Flaw Lets MitM Attackers Swap Verified Packages and Run Code as Root",
+      "url": "https://thehackernews.com/2026/11/debian-and-ubuntu-apt-flaw-lets-mitm.html",
+      "ts": 1793811646.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "A flaw in APT, the package manager for Debian and Ubuntu, allows an attacker who can modify package downloads to swap a checked package for their own. The attacker's code then runs as root, according to advisories that&nbsp;Debian,&nbsp;Ubuntu, and&nbsp;APT's developers&nbsp;published on November 4. The attack needs APT to retry failed downloads, which it does by default from Debian 12 and",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev"
+      ],
+      "date": "2026-11-04"
+    },
+    {
+      "uid": "rss:d1e786f40eac9d",
+      "source": "rss",
+      "title": "SonicWall Won't Patch EoL GMS Flaws That Could Expose Files, Alter Database Records",
+      "url": "https://thehackernews.com/2026/11/sonicwall-wont-patch-eol-gms-flaws-that.html",
+      "ts": 1793811638.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "SonicWall has warned of two vulnerabilities impacting end-of-life Global Management System (GMS) systems that it said will not be patched. Details of the security flaws, which affect SonicWall GMS 9.5.2 and earlier versions, are below - CVE-[phone] (CVSS score: 9.1) - An unauthenticated file read vulnerability that could allow an attacker with network access to read internal GMS files,",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-04"
+    },
+    {
+      "uid": "rss:f44e96ac3c23ea",
+      "source": "rss",
+      "title": "Researchers Uncover Prompt Adware Hidden in OpenAI Codex Jailbreak Toolkit",
+      "url": "https://thehackernews.com/2026/11/researchers-uncover-prompt-adware.html",
+      "ts": 1793808403.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Cybersecurity researchers have disclosed details of an OpenAI Codex jailbreak bundle that's designed to modify an artificial intelligence (AI) agent's trusted instructions to insert advertisements for a third-party AI gateway. The phenomenon has been codenamed prompt adware by Check Point Research. Called Haiou (meaning Seagull in Chinese), the jailbreak modifies OpenAI Codex's configuration",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-04"
     },
     {
       "uid": "rss:aacde79ee114df",
@@ -1687,42 +1760,22 @@
       "date": "2026-11-04"
     },
     {
-      "uid": "rss:a20c924b8926e0",
-      "source": "rss",
-      "title": "mSecure Warns Users to Change Passwords, Reset 2FA and Passkeys After Suspicious Activity",
-      "url": "https://thehackernews.com/2026/11/msecure-warns-users-to-change-passwords.html",
-      "ts": 1793731598.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Customers of the mSecure password manager are being urged to act now to protect the confidential information they store in it, possibly by changing passwords, resetting two-factor authentication (2FA), and removing passkeys. The warning came in an email sent on November 3 in the name of developer mSeven Software. It says the company recently learned of suspicious activity linked to the app but",
-      "recipe": "hackersnews",
-      "buzz": 80,
+      "uid": "gh:huggingface/safeagents",
+      "source": "github",
+      "title": "huggingface/safeagents",
+      "url": "https://github.com/huggingface/safeagents",
+      "ts": 1793195562.0,
+      "points": 72,
+      "comments": 2,
+      "author": "huggingface",
+      "summary": "Safely run your agents using any coding harness",
+      "recipe": "github_sec",
+      "buzz": 78,
       "topics": [
         "ai",
         "dev"
       ],
-      "date": "2026-11-03"
-    },
-    {
-      "uid": "rss:ca8186c7072948",
-      "source": "rss",
-      "title": "Chainstack Reports Production Systems Breach Exposing Customer Data and Password Hashes",
-      "url": "https://thehackernews.com/2026/11/chainstack-reports-production-systems.html",
-      "ts": 1793729779.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Blockchain infrastructure provider Chainstack on Tuesday disclosed that it was targeted in a cyber attack that allowed an unauthorized party to gain access to some parts of its infrastructure. The incident is assessed to be part of a large-scale, artificial intelligence (AI)-powered attack campaign that came to light last week. \"An external attacker gained unauthorized access to part of",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "dev",
-        "crypto",
-        "security"
-      ],
-      "date": "2026-11-03"
+      "date": "2026-10-28"
     },
     {
       "uid": "gh:Problem99-io/kodeblue",
@@ -1743,41 +1796,6 @@
         "hardware"
       ],
       "date": "2026-10-25"
-    },
-    {
-      "uid": "gh:0x45dd/pwner",
-      "source": "github",
-      "title": "0x45dd/pwner",
-      "url": "https://github.com/0x45dd/pwner",
-      "ts": 1793625315.0,
-      "points": 39,
-      "comments": 3,
-      "author": "0x45dd",
-      "summary": "Autonomous agentic network penetration-testing tool (authorized use only)",
-      "recipe": "github_sec",
-      "buzz": 78,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-02"
-    },
-    {
-      "uid": "gh:huggingface/safeagents",
-      "source": "github",
-      "title": "huggingface/safeagents",
-      "url": "https://github.com/huggingface/safeagents",
-      "ts": 1793195562.0,
-      "points": 70,
-      "comments": 2,
-      "author": "huggingface",
-      "summary": "Safely run your agents using any coding harness",
-      "recipe": "github_sec",
-      "buzz": 76,
-      "topics": [
-        "ai",
-        "dev"
-      ],
-      "date": "2026-10-28"
     },
     {
       "uid": "gh:DigitalMinimalism0/Bastion",
@@ -1868,6 +1886,44 @@
       "date": "2026-11-02"
     },
     {
+      "uid": "rss:a20c924b8926e0",
+      "source": "rss",
+      "title": "mSecure Warns Users to Change Passwords, Reset 2FA and Passkeys After Suspicious Activity",
+      "url": "https://thehackernews.com/2026/11/msecure-warns-users-to-change-passwords.html",
+      "ts": 1793731598.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Customers of the mSecure password manager are being urged to act now to protect the confidential information they store in it, possibly by changing passwords, resetting two-factor authentication (2FA), and removing passkeys. The warning came in an email sent on November 3 in the name of developer mSeven Software. It says the company recently learned of suspicious activity linked to the app but",
+      "recipe": "hackersnews",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "dev"
+      ],
+      "date": "2026-11-03"
+    },
+    {
+      "uid": "rss:ca8186c7072948",
+      "source": "rss",
+      "title": "Chainstack Reports Production Systems Breach Exposing Customer Data and Password Hashes",
+      "url": "https://thehackernews.com/2026/11/chainstack-reports-production-systems.html",
+      "ts": 1793729779.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Blockchain infrastructure provider Chainstack on Tuesday disclosed that it was targeted in a cyber attack that allowed an unauthorized party to gain access to some parts of its infrastructure. The incident is assessed to be part of a large-scale, artificial intelligence (AI)-powered attack campaign that came to light last week. \"An external attacker gained unauthorized access to part of",
+      "recipe": "hackersnews",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "dev",
+        "crypto",
+        "security"
+      ],
+      "date": "2026-11-03"
+    },
+    {
       "uid": "rss:73b78dd8320b04",
       "source": "rss",
       "title": "Binance Reveals How Fake Job Interviews and AI Tool Abuse Led to $6.43 Billion Theft",
@@ -1933,7 +1989,7 @@
       "points": 0,
       "comments": 0,
       "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "An attacker broke into the update system of the cPGuard security tool on November 2 and used it to send a malicious script to customers' Linux servers. The script installed a backdoor and collected password hashes and other sensitive files from servers that ran it, cPGuard maker OPSSHIELD said in an advisory. The attacker has since taken some of that data. cPGuard 5.88.25 and later versions",
+      "summary": "An attacker broke into the update system of the cPGuard security tool on November 2 and used it to send a malicious script to customers' Linux servers. The script installed a backdoor and collected password hashes and other sensitive files from servers that ran it, cPGuard maker OPSSHIELD said in an advisory. In a later disclosure, OPSSHIELD said about 2,950 customer servers ran the script,",
       "recipe": "hackersnews",
       "buzz": 30,
       "topics": [
@@ -2179,63 +2235,6 @@
       "buzz": 30,
       "topics": [
         "ai",
-        "security"
-      ],
-      "date": "2026-11-02"
-    },
-    {
-      "uid": "rss:3af1d637c9e385",
-      "source": "rss",
-      "title": "Attackers Pose as IT Support on Microsoft Teams, Abuse AD CS to Steal Company Data",
-      "url": "https://thehackernews.com/2026/11/attackers-pose-as-it-support-on.html",
-      "ts": 1793617725.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Attackers posing as IT support on Microsoft Teams talked employees into giving them remote control of their PCs. They then used insecure Active Directory Certificate Services (AD CS) settings to obtain login certificates for privileged accounts, including one for a domain controller. Microsoft said in&nbsp;a report&nbsp;that it investigated two such intrusions, one of which resulted in company",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "biz"
-      ],
-      "date": "2026-11-02"
-    },
-    {
-      "uid": "rss:1cdc477cf39cbf",
-      "source": "rss",
-      "title": "Government Linux Servers Targeted With SysGoRAT and Suspected AI-Generated Scripts",
-      "url": "https://thehackernews.com/2026/11/government-linux-servers-targeted-with.html",
-      "ts": 1793616599.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Cybersecurity researchers have disclosed details of a cyber espionage campaign specifically targeting Linux infrastructure associated with government entities and state-affiliated infrastructure. The activity, observed by Palo Alto Networks Unit 42 between October 2025 and April 2026, has been tracked under the moniker CL-UNK-1211, where \"CL\" refers to cluster and \"UNK\" stands for unknown",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "science",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-02"
-    },
-    {
-      "uid": "rss:adcbbc84114f43",
-      "source": "rss",
-      "title": "New VOLTA Infostealer Uses Claude, Gemini, and Kimi AI to Rank Victims by Financial Value",
-      "url": "https://thehackernews.com/2026/11/new-volta-infostealer-uses-claude.html",
-      "ts": 1793598667.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Cybersecurity researchers have discovered a new Windows infostealer malware called VOLTA-AUTODOXER (aka VOLTA) that makes use of a large language model (LLM) to rank a victim's stolen data by their monetization value. Like other typical stealer families, VOLTA is equipped to harvest passwords and cookies from Chromium-based web browsers; data from Outlook profiles and Slack workspaces;",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "science",
         "security"
       ],
       "date": "2026-11-02"

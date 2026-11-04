@@ -5,7 +5,7 @@
     <link>https://cveradar-ah3.pages.dev</link>
     <description>Живые CVE и уязвимости на русском: автономный перевод угроз в понятные дайджесты для DevOps и небольшого SecOps</description>
     <language>ru</language>
-    <lastBuildDate>Wed, 04 Nov 2026 17:10:25 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 04 Nov 2026 21:05:20 GMT</lastBuildDate>
     <item>
       <title>CVE-2026-55098: Arc: DuckDB I/O aliases bypass database RBAC after CVE-2026-47735</title>
       <link>https://cveradar-ah3.pages.dev/item/cve-2026-55098-arc-duckdb-i-o-aliases-bypass-database-rbac-after.html</link>
@@ -14,6 +14,13 @@
       <description>Severity: medium. ### Summary
 
 The fix for CVE-[phone] (released 2026.06.1) is incomplete. It added a DuckDB sandbox (`SET GLOBAL allowed_directories=[&lt;storage root&gt;]; SET GLOBAL enable_external_access=false`) and an Arc SQL-layer denylist of the **literal** functions `read_parquet(` and `arc_partit</description>
+    </item>
+    <item>
+      <title>Debian and Ubuntu APT Flaw Lets MitM Attackers Swap Verified Packages and Run Code as Root</title>
+      <link>https://cveradar-ah3.pages.dev/item/debian-and-ubuntu-apt-flaw-lets-mitm-attackers-swap-verified-pac.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/debian-and-ubuntu-apt-flaw-lets-mitm-attackers-swap-verified-pac.html</guid>
+      <pubDate>Wed, 04 Nov 2026 17:00:46 GMT</pubDate>
+      <description>A flaw in APT, the package manager for Debian and Ubuntu, allows an attacker who can modify package downloads to swap a checked package for their own. The attacker's code then runs as root, according to advisories that&amp;nbsp;Debian,&amp;nbsp;Ubuntu, and&amp;nbsp;APT's developers&amp;nbsp;published on November 4.</description>
     </item>
     <item>
       <title>CVE-2026-93363: @payloadcms/storage-vercel-blob has access control bypass of uploads in Vercel Storage adapter</title>
@@ -28,6 +35,13 @@ You are affected if:
 - Authenticated users can access the client-upload r</description>
     </item>
     <item>
+      <title>SonicWall Won't Patch EoL GMS Flaws That Could Expose Files, Alter Database Records</title>
+      <link>https://cveradar-ah3.pages.dev/item/sonicwall-won-t-patch-eol-gms-flaws-that-could-expose-files-alte.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/sonicwall-won-t-patch-eol-gms-flaws-that-could-expose-files-alte.html</guid>
+      <pubDate>Wed, 04 Nov 2026 17:00:38 GMT</pubDate>
+      <description>SonicWall has warned of two vulnerabilities impacting end-of-life Global Management System (GMS) systems that it said will not be patched. Details of the security flaws, which affect SonicWall GMS 9.5.2 and earlier versions, are below - CVE-[phone] (CVSS score: 9.1) - An unauthenticated file read vu</description>
+    </item>
+    <item>
       <title>CVE-2026-113787: odf-kit: HTML injection leading to XSS in odtToHtml() and odsToHtml() via unescaped style attribute values</title>
       <link>https://cveradar-ah3.pages.dev/item/cve-2026-113787-odf-kit-html-injection-leading-to-xss-in-odttoht.html</link>
       <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-113787-odf-kit-html-injection-leading-to-xss-in-odttoht.html</guid>
@@ -35,6 +49,13 @@ You are affected if:
       <description>Severity: medium. ### Summary
 
 ODF style attribute values are interpolated into `style="..."` attributes without HTML-escaping in **both** of odf-kit's to-HTML renderers (`odtToHtml` and `odsToHtml`). A double-quote character inside an attacker-controlled style value breaks out of the attribute, all</description>
+    </item>
+    <item>
+      <title>Researchers Uncover Prompt Adware Hidden in OpenAI Codex Jailbreak Toolkit</title>
+      <link>https://cveradar-ah3.pages.dev/item/researchers-uncover-prompt-adware-hidden-in-openai-codex-jailbre.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/researchers-uncover-prompt-adware-hidden-in-openai-codex-jailbre.html</guid>
+      <pubDate>Wed, 04 Nov 2026 16:06:43 GMT</pubDate>
+      <description>Cybersecurity researchers have disclosed details of an OpenAI Codex jailbreak bundle that's designed to modify an artificial intelligence (AI) agent's trusted instructions to insert advertisements for a third-party AI gateway. The phenomenon has been codenamed prompt adware by Check Point Research. </description>
     </item>
     <item>
       <title>APT29-Linked Hackers Hijack Web Analytics Script to Deliver iOS and Android Exploits</title>
@@ -223,27 +244,6 @@ Arc exposes `GET /api/v1/logs` without authentication even when authentication i
       <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cpguard-update-channel-hijacked-to-backdoor-linux-servers-and-co.html</guid>
       <pubDate>Tue, 03 Nov 2026 15:16:32 GMT</pubDate>
       <description>An attacker broke into the update system of the cPGuard security tool on November 2 and used it to send a malicious script to customers' Linux servers. The script installed a backdoor and collected password hashes and other sensitive files from servers that ran it, cPGuard maker OPSSHIELD said in an</description>
-    </item>
-    <item>
-      <title>Red Hat Patches 9.8-Rated Linux TCP RCE Flaw While Ubuntu Releases Fixes for Testing</title>
-      <link>https://cveradar-ah3.pages.dev/item/red-hat-patches-9-8-rated-linux-tcp-rce-flaw-while-ubuntu-releas.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/red-hat-patches-9-8-rated-linux-tcp-rce-flaw-while-ubuntu-releas.html</guid>
-      <pubDate>Tue, 03 Nov 2026 11:23:53 GMT</pubDate>
-      <description>Fixed kernels for a&amp;nbsp;use-after-free vulnerability in the Linux kernel's IPv4 TCP code&amp;nbsp;are now available for Red Hat Enterprise Linux 8, 9, and 10, while Ubuntu's fixes for its three newest long-term-support releases remain in its opt-in testing channel with no date for a regular update. The</description>
-    </item>
-    <item>
-      <title>The 4 Elements of Exposure Prioritization and How to Operationalize Them</title>
-      <link>https://cveradar-ah3.pages.dev/item/the-4-elements-of-exposure-prioritization-and-how-to-operational.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/the-4-elements-of-exposure-prioritization-and-how-to-operational.html</guid>
-      <pubDate>Tue, 03 Nov 2026 11:18:20 GMT</pubDate>
-      <description>Your team is remediating more vulnerabilities than ever, yet your breach risk has barely changed. You’re spending too much time and effort on exposures attackers may never exploit, while higher-risk exposures sit, waiting in the queue. Gartner®’s report on exposure prioritization states that fewer t</description>
-    </item>
-    <item>
-      <title>Russia-Aligned Gorbag Hackers Exploit WinRAR Flaw to Deploy Data-Stealing Malware</title>
-      <link>https://cveradar-ah3.pages.dev/item/russia-aligned-gorbag-hackers-exploit-winrar-flaw-to-deploy-data.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/russia-aligned-gorbag-hackers-exploit-winrar-flaw-to-deploy-data.html</guid>
-      <pubDate>Tue, 03 Nov 2026 11:00:45 GMT</pubDate>
-      <description>A Russia-aligned threat actor known as Gorbag has been observed using simple information stealer malware in attacks targeting Ukrainian organizations. "Active since at least February 2025, the group has focused exclusively on Ukrainian targets, with a clear preference for law enforcement and justice</description>
     </item>
   </channel>
 </rss>
