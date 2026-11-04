@@ -13,8 +13,8 @@ cve:GHSA-x9rp-7wh3-2rj5,cve,CVE-2026-44265: Elo backends have code injection via
 cve:GHSA-p3jp-9v83-76w9,cve,GHSA-p3jp-9v83-76w9: Microsoft Security Advisory CVE-2026-111497 - .NET Brotli Decoder Out-of-bounds Write Vulnerability,https://github.com/advisories/GHSA-p3jp-9v83-76w9,3580,2026-11-03,dev|security
 cve:GHSA-48v2-6jcm-fc99,cve,CVE-2026-62331: praktor: Path traversal in Telegram file uploads allows writing outside the agent workspace uploads/ directory (stored instruction injection),https://github.com/advisories/GHSA-48v2-6jcm-fc99,3580,2026-11-03,ai|dev|science|security
 cve:GHSA-j97h-3f8r-mrjr,cve,CVE-2026-11800: Keycloak has authentication bypass via jwt algorithm confusion,https://github.com/advisories/GHSA-j97h-3f8r-mrjr,3580,2026-11-03,crypto|science|security
-cve:GHSA-h26j-4vp7-x9w2,cve,CVE-2026-62848: Metalama: Unsafe deserialization over Metalama's Visual Studio inter-process named pipe enables local code execution,https://github.com/advisories/GHSA-h26j-4vp7-x9w2,3580,2026-11-03,dev|security
 hn:50172041,hn,"Security advisory: Critical remote code execution vulnerabilities, update now",https://www.php.net/archive/2026.php#2026-10-21-5,3538,2026-10-20,security
+cve:GHSA-h26j-4vp7-x9w2,cve,CVE-2026-62848: Metalama: Unsafe deserialization over Metalama's Visual Studio inter-process named pipe enables local code execution,https://github.com/advisories/GHSA-h26j-4vp7-x9w2,3530,2026-11-03,dev|security
 cve:GHSA-f9j6-8p6x-r9j6,cve,CVE-2026-62374: SD JWT JS: Tampered disclosures silently dropped instead of rejected,https://github.com/advisories/GHSA-f9j6-8p6x-r9j6,3530,2026-11-02,ai|security
 cve:GHSA-8fmv-6rg5-5924,cve,CVE-2026-118761: Kubeflow Pipelines: Pipeline archive upload allows decompression bomb to exhaust server memory,https://github.com/advisories/GHSA-8fmv-6rg5-5924,3510,2026-10-30,dev|security|hardware
 cve:GHSA-wg5q-x4j9-qm54,cve,CVE-2026-118759: Kubeflow Pipelines: Run-log endpoint permits unauthorized access to pod logs,https://github.com/advisories/GHSA-wg5q-x4j9-qm54,3510,2026-10-30,ai|dev|security|hardware
@@ -29,9 +29,6 @@ cve:GHSA-4vqv-7265-gm2w,cve,CVE-2026-119207: pypdf has possible large memory usa
 cve:GHSA-62m5-6wh8-28x7,cve,CVE-2026-119208: pypdf has possible long runtimes/large memory usage for encrypted PDF files,https://github.com/advisories/GHSA-62m5-6wh8-28x7,3510,2026-10-30,dev|security
 cve:GHSA-x3rh-gjgm-fmqc,cve,CVE-2026-119209: pypdf has possible large memory usage when parsing cross-reference streams,https://github.com/advisories/GHSA-x3rh-gjgm-fmqc,3510,2026-10-30,dev|security
 cve:GHSA-2qm8-x737-gmw5,cve,CVE-2026-119196: pyasn1 has quadratic CPU consumption in constructed BIT STRING decoding,https://github.com/advisories/GHSA-2qm8-x737-gmw5,3510,2026-10-30,ai|dev|security|hardware
-cve:GHSA-mm57-4v3p-rchx,cve,CVE-2026-119197: pyasn1 has quadratic-complexity denial of service in binary REAL decoding,https://github.com/advisories/GHSA-mm57-4v3p-rchx,3510,2026-10-30,dev|security|hardware
-cve:GHSA-9m75-vc3g-4x39,cve,CVE-2026-119195: pyasn1 has quadratic-time denial of service in constructed string and indefinite-length ANY decoding,https://github.com/advisories/GHSA-9m75-vc3g-4x39,3510,2026-10-30,ai|dev|crypto|security|hardware
-cve:GHSA-fm9c-5rcf-2q5p,cve,CVE-2026-119194: pyasn1 has quadratic CPU use in schemaless BER/CER/DER container decoding,https://github.com/advisories/GHSA-fm9c-5rcf-2q5p,3510,2026-10-30,ai|dev|security|hardware
 hn:32148218,hn,FCC: TikTok is unacceptable security risk and should be removed from app stores,https://blog.malwarebytes.com/privacy-2/2022/07/tiktok-is-unacceptable-security-risk-and-should-be-removed-from-app-stores-says-fcc/,3376,2022-07-19,security
 hn:41392128,hn,Bypassing airport security via SQL injection,https://ian.sh/tsa,3324,2024-08-29,ai|security
 hn:41792500,hn,Internet Archive: Security breach alert,https://www.theverge.com/2024/10/9/24266419/internet-archive-ddos-attack-pop-up-message,2912,2024-10-09,security
@@ -49,3 +46,6 @@ hn:23180975,hn,Security Flaws in Adobe Acrobat Reader Allow Gaining Root on macO
 hn:50182987,hn,"Today's PHP security release, and how we're strengthening security",https://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security/,2034,2026-10-21,security
 hn:17592422,hn,Google: Security Keys Neutralized Employee Phishing,https://krebsonsecurity.com/2018/07/google-security-keys-neutered-employee-phishing/,2002,2018-07-23,security
 hn:24636166,hn,Apple’s T2 security chip jailbreak,https://reportcybercrime.com/hackers-jailbreak-apples-t2-security-chip-powered-by-bridgeos/,1881,2020-09-30,ai|security|hardware
+cve:GHSA-93cm-2v4m-c56c,cve,CVE-2026-55098: Arc: DuckDB I/O aliases bypass database RBAC after CVE-2026-47735,https://github.com/advisories/GHSA-93cm-2v4m-c56c,1880,2026-11-04,ai|dev|security
+cve:GHSA-mc8m-rr6c-r5qr,cve,CVE-2026-93363: @payloadcms/storage-vercel-blob has access control bypass of uploads in Vercel Storage adapter,https://github.com/advisories/GHSA-mc8m-rr6c-r5qr,1880,2026-11-04,ai|security
+cve:GHSA-3cgg-c5pp-57h6,cve,CVE-2026-113787: odf-kit: HTML injection leading to XSS in odtToHtml() and odsToHtml() via unescaped style attribute values,https://github.com/advisories/GHSA-3cgg-c5pp-57h6,1880,2026-11-04,ai|dev|security

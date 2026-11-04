@@ -5,7 +5,44 @@
     <link>https://sentinel-post.pages.dev</link>
     <description>Автономная радиостанция кибербезопасности: живые CVE, угрозы и защита — без сенсаций</description>
     <language>ru</language>
-    <lastBuildDate>Wed, 04 Nov 2026 13:24:33 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 04 Nov 2026 17:10:52 GMT</lastBuildDate>
+    <item>
+      <title>CVE-2026-55098: Arc: DuckDB I/O aliases bypass database RBAC after CVE-2026-47735</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-55098-arc-duckdb-i-o-aliases-bypass-database-rbac-after.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-55098-arc-duckdb-i-o-aliases-bypass-database-rbac-after.html</guid>
+      <pubDate>Wed, 04 Nov 2026 17:02:37 GMT</pubDate>
+      <description>Severity: medium. ### Summary
+
+The fix for CVE-[phone] (released 2026.06.1) is incomplete. It added a DuckDB sandbox (`SET GLOBAL allowed_directories=[&lt;storage root&gt;]; SET GLOBAL enable_external_access=false`) and an Arc SQL-layer denylist of the **literal** functions `read_parquet(` and `arc_partit</description>
+    </item>
+    <item>
+      <title>CVE-2026-93363: @payloadcms/storage-vercel-blob has access control bypass of uploads in Vercel Storage adapter</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-93363-payloadcms-storage-vercel-blob-has-access-control.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-93363-payloadcms-storage-vercel-blob-has-access-control.html</guid>
+      <pubDate>Wed, 04 Nov 2026 17:00:39 GMT</pubDate>
+      <description>Severity: medium. ### Impact
+In affected configurations, client upload access does not consistently align with the associated collection’s access configuration.
+
+You are affected if:
+- You use client uploads with `@payloadcms/storage-vercel-blob`.
+- Authenticated users can access the client-upload r</description>
+    </item>
+    <item>
+      <title>CVE-2026-113787: odf-kit: HTML injection leading to XSS in odtToHtml() and odsToHtml() via unescaped style attribute values</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-113787-odf-kit-html-injection-leading-to-xss-in-odttoht.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-113787-odf-kit-html-injection-leading-to-xss-in-odttoht.html</guid>
+      <pubDate>Wed, 04 Nov 2026 16:14:34 GMT</pubDate>
+      <description>Severity: medium. ### Summary
+
+ODF style attribute values are interpolated into `style="..."` attributes without HTML-escaping in **both** of odf-kit's to-HTML renderers (`odtToHtml` and `odsToHtml`). A double-quote character inside an attacker-controlled style value breaks out of the attribute, all</description>
+    </item>
+    <item>
+      <title>APT29-Linked Hackers Hijack Web Analytics Script to Deliver iOS and Android Exploits</title>
+      <link>https://sentinel-post.pages.dev/item/apt29-linked-hackers-hijack-web-analytics-script-to-deliver-ios-.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/apt29-linked-hackers-hijack-web-analytics-script-to-deliver-ios-.html</guid>
+      <pubDate>Wed, 04 Nov 2026 14:27:52 GMT</pubDate>
+      <description>The Russia-linked threat actor known as APT29 is said to be behind a large-scale watering hole campaign targeting iOS and Android users through compromised websites, fake domains, and a supply chain attack involving a Ukrainian web analytics service called Plerdy SEO Tracker. "The injected JavaScrip</description>
+    </item>
     <item>
       <title>Critical Rails Flaw Lets Attackers Write Server Files via Crafted ImageMagick Uploads</title>
       <link>https://sentinel-post.pages.dev/item/critical-rails-flaw-lets-attackers-write-server-files-via-crafte.html</link>
@@ -207,34 +244,6 @@ Arc exposes `GET /api/v1/logs` without authentication even when authentication i
       <guid isPermaLink="true">https://sentinel-post.pages.dev/item/the-4-elements-of-exposure-prioritization-and-how-to-operational.html</guid>
       <pubDate>Tue, 03 Nov 2026 11:18:20 GMT</pubDate>
       <description>Your team is remediating more vulnerabilities than ever, yet your breach risk has barely changed. You’re spending too much time and effort on exposures attackers may never exploit, while higher-risk exposures sit, waiting in the queue. Gartner®’s report on exposure prioritization states that fewer t</description>
-    </item>
-    <item>
-      <title>Russia-Aligned Gorbag Hackers Exploit WinRAR Flaw to Deploy Data-Stealing Malware</title>
-      <link>https://sentinel-post.pages.dev/item/russia-aligned-gorbag-hackers-exploit-winrar-flaw-to-deploy-data.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/russia-aligned-gorbag-hackers-exploit-winrar-flaw-to-deploy-data.html</guid>
-      <pubDate>Tue, 03 Nov 2026 11:00:45 GMT</pubDate>
-      <description>A Russia-aligned threat actor known as Gorbag has been observed using simple information stealer malware in attacks targeting Ukrainian organizations. "Active since at least February 2025, the group has focused exclusively on Ukrainian targets, with a clear preference for law enforcement and justice</description>
-    </item>
-    <item>
-      <title>Hackers Exploit BTCPay Server Flaw to Steal Bitcoin and Litecoin From Hot Wallets</title>
-      <link>https://sentinel-post.pages.dev/item/hackers-exploit-btcpay-server-flaw-to-steal-bitcoin-and-litecoin.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/hackers-exploit-btcpay-server-flaw-to-steal-bitcoin-and-litecoin.html</guid>
-      <pubDate>Tue, 03 Nov 2026 08:31:48 GMT</pubDate>
-      <description>BTCPay Server, a self-hosted, open-source cryptocurrency payment processor, has urged users to install the latest version of its software in response to reports of Bitcoin and Litecoin being stolen from hot wallets on instances running older versions. "Our investigation found that these attacks targ</description>
-    </item>
-    <item>
-      <title>Synology NAS Devices Targeted in Ransomware Attacks Exploiting Patched DSM Flaw</title>
-      <link>https://sentinel-post.pages.dev/item/synology-nas-devices-targeted-in-ransomware-attacks-exploiting-p.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/synology-nas-devices-targeted-in-ransomware-attacks-exploiting-p.html</guid>
-      <pubDate>Tue, 03 Nov 2026 07:43:07 GMT</pubDate>
-      <description>Synology is urging customers to update the DiskStation Manager (DSM) software powering its Network Attached Storage (NAS) devices following ransomware attacks. The Taiwanese vendor said it observed threat actors exploiting a vulnerability patched in December 2024 to target devices running outdated v</description>
-    </item>
-    <item>
-      <title>New Wave of Refrigeration Cyberattacks Hits Supermarkets Across Europe, Forcing Stores to Pull Food</title>
-      <link>https://sentinel-post.pages.dev/item/new-wave-of-refrigeration-cyberattacks-hits-supermarkets-across-.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/new-wave-of-refrigeration-cyberattacks-hits-supermarkets-across-.html</guid>
-      <pubDate>Tue, 03 Nov 2026 07:27:07 GMT</pubDate>
-      <description>Attackers remotely changed the settings on refrigeration controls at supermarkets in Belgium, Sweden, Estonia and other European countries overnight into Monday, November 2, warming fridges and freezers. No chain reported more than several dozen affected stores, and some had to throw away chilled an</description>
     </item>
   </channel>
 </rss>

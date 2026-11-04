@@ -21,9 +21,9 @@ CVE-2026-119207,high,pypdf,CVE-2026-119207: pypdf has possible large memory usag
 CVE-2026-119208,high,pypdf,CVE-2026-119208: pypdf has possible long runtimes/large memory usage for encrypted PDF files,https://github.com/advisories/GHSA-62m5-6wh8-28x7,2026-10-30
 CVE-2026-119209,high,pypdf,CVE-2026-119209: pypdf has possible large memory usage when parsing cross-reference streams,https://github.com/advisories/GHSA-x3rh-gjgm-fmqc,2026-10-30
 CVE-2026-119196,high,pyasn1,CVE-2026-119196: pyasn1 has quadratic CPU consumption in constructed BIT STRING decoding,https://github.com/advisories/GHSA-2qm8-x737-gmw5,2026-10-30
-CVE-2026-119197,high,pyasn1,CVE-2026-119197: pyasn1 has quadratic-complexity denial of service in binary REAL decoding,https://github.com/advisories/GHSA-mm57-4v3p-rchx,2026-10-30
-CVE-2026-119195,high,pyasn1,CVE-2026-119195: pyasn1 has quadratic-time denial of service in constructed string and indefinite-length ANY decoding,https://github.com/advisories/GHSA-9m75-vc3g-4x39,2026-10-30
-CVE-2026-119194,high,pyasn1,CVE-2026-119194: pyasn1 has quadratic CPU use in schemaless BER/CER/DER container decoding,https://github.com/advisories/GHSA-fm9c-5rcf-2q5p,2026-10-30
+CVE-2026-55098,medium,github.com/basekick-labs/arc,CVE-2026-55098: Arc: DuckDB I/O aliases bypass database RBAC after CVE-2026-47735,https://github.com/advisories/GHSA-93cm-2v4m-c56c,2026-11-04
+CVE-2026-93363,medium,@payloadcms/storage-vercel-blob,CVE-2026-93363: @payloadcms/storage-vercel-blob has access control bypass of uploads in Vercel Storage adapter,https://github.com/advisories/GHSA-mc8m-rr6c-r5qr,2026-11-04
+CVE-2026-113787,medium,odf-kit,CVE-2026-113787: odf-kit: HTML injection leading to XSS in odtToHtml() and odsToHtml() via unescaped style attribute values,https://github.com/advisories/GHSA-3cgg-c5pp-57h6,2026-11-04
 GHSA-9ppr-wfw9-xvr2,medium,github.com/tinfoil-factory/netfoil,GHSA-9ppr-wfw9-xvr2: Netfoil doesn't decrement TTL,https://github.com/advisories/GHSA-9ppr-wfw9-xvr2,2026-11-03
 GHSA-j656-3hf2-fvjc,medium,@bytebase/dbhub,GHSA-j656-3hf2-fvjc: DBHub: MySQL and MariaDB comment interpretation bypasses read-only SQL validation,https://github.com/advisories/GHSA-j656-3hf2-fvjc,2026-11-02
 CVE-2026-118764,medium,minimatch,CVE-2026-118764: minimatch has potential denial of service via globparts amplification,https://github.com/advisories/GHSA-g3hv-75wg-m249,2026-10-30
