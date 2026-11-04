@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T01:23:29+00:00",
+  "generated_at": "2026-11-04T05:13:41+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -22,8 +22,8 @@
       "gh_advisories": 30,
       "hackersnews": 30,
       "github_sec": 15,
-      "krebs": 10,
-      "schneier": 10
+      "schneier": 10,
+      "krebs": 10
     },
     "by_topic": {
       "security": 107,
@@ -1392,12 +1392,12 @@
       "title": "arpanjot-coding/AVault",
       "url": "https://github.com/arpanjot-coding/AVault",
       "ts": 1793474487.0,
-      "points": 563,
-      "comments": 36,
+      "points": 564,
+      "comments": 37,
       "author": "arpanjot-coding",
       "summary": "AVault - Call Recorder (No Root Required) | Privacy-first, hardware-encrypted audio vault for Android 12-16+. Rootless call recording via Shizuku with AES-256-GCM, biometrics & auto-cleanup.",
       "recipe": "github_sec",
-      "buzz": 681,
+      "buzz": 685,
       "topics": [
         "dev",
         "security"
@@ -1464,11 +1464,11 @@
       "url": "https://github.com/Balanov/skein",
       "ts": 1793663825.0,
       "points": 261,
-      "comments": 0,
+      "comments": 1,
       "author": "Balanov",
       "summary": "Fail-closed swarm orchestration with epoch-fenced work and late-completion rejection.",
       "recipe": "github_sec",
-      "buzz": 291,
+      "buzz": 294,
       "topics": [
         "ai"
       ],
@@ -1498,12 +1498,12 @@
       "title": "akari-sora/synology-nas-cli",
       "url": "https://github.com/akari-sora/synology-nas-cli",
       "ts": 1793353967.0,
-      "points": 88,
+      "points": 90,
       "comments": 10,
       "author": "akari-sora",
       "summary": "nas: a zero-dependency Python CLI + MCP server for Synology DSM 7. One-command audit and fix for the C3RB3R / .L0CK3D ransomware campaign; hand it to your AI agent. Mirror; canonical repo and issues: gitlab.com/aa[phone]/synology-nas-cli",
       "recipe": "github_sec",
-      "buzz": 128,
+      "buzz": 130,
       "topics": [
         "ai",
         "dev",
@@ -1511,6 +1511,24 @@
         "hardware"
       ],
       "date": "2026-10-30"
+    },
+    {
+      "uid": "gh:huggingface/safeagents",
+      "source": "github",
+      "title": "huggingface/safeagents",
+      "url": "https://github.com/huggingface/safeagents",
+      "ts": 1793195562.0,
+      "points": 67,
+      "comments": 2,
+      "author": "huggingface",
+      "summary": "Safely run your agents using any coding harness",
+      "recipe": "github_sec",
+      "buzz": 83,
+      "topics": [
+        "ai",
+        "dev"
+      ],
+      "date": "2026-10-28"
     },
     {
       "uid": "gh:jamesalmeida/agent-honeypot",
@@ -1530,24 +1548,6 @@
       "date": "2026-10-23"
     },
     {
-      "uid": "gh:huggingface/safeagents",
-      "source": "github",
-      "title": "huggingface/safeagents",
-      "url": "https://github.com/huggingface/safeagents",
-      "ts": 1793195562.0,
-      "points": 66,
-      "comments": 2,
-      "author": "huggingface",
-      "summary": "Safely run your agents using any coding harness",
-      "recipe": "github_sec",
-      "buzz": 82,
-      "topics": [
-        "ai",
-        "dev"
-      ],
-      "date": "2026-10-28"
-    },
-    {
       "uid": "gh:ratomirjovanovic/pandaward",
       "source": "github",
       "title": "ratomirjovanovic/pandaward",
@@ -1564,23 +1564,6 @@
         "security"
       ],
       "date": "2026-10-27"
-    },
-    {
-      "uid": "rss:6c4cd744eafd30",
-      "source": "rss",
-      "title": "Tech Firms Dismantle Botnet That Turned 1.3M TV Boxes Into Proxies",
-      "url": "https://krebsonsecurity.com/2026/11/tech-firms-dismantle-botnet-that-turned-1-3m-tv-boxes-into-proxies/",
-      "ts": 1793672671.0,
-      "points": 0,
-      "comments": 0,
-      "author": "BrianKrebs",
-      "summary": "Google said today it worked with industry partners to dismantle a botnet made up of more than 1.3 million Android TV set-top boxes that ship with malicious software which secretly rents the user's Internet connection out to strangers and conducts advertising fraud. Experts involved in the takedown say the action is likely to sever the botnet's access to more than 10 million additional compromised",
-      "recipe": "krebs",
-      "buzz": 80,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-03"
     },
     {
       "uid": "rss:0dcc10ee0fa324",
@@ -1933,6 +1916,23 @@
         "ai"
       ],
       "date": "2026-10-28"
+    },
+    {
+      "uid": "rss:6c4cd744eafd30",
+      "source": "rss",
+      "title": "Tech Firms Dismantle Botnet That Turned 1.3M TV Boxes Into Proxies",
+      "url": "https://krebsonsecurity.com/2026/11/tech-firms-dismantle-botnet-that-turned-1-3m-tv-boxes-into-proxies/",
+      "ts": 1793672671.0,
+      "points": 0,
+      "comments": 0,
+      "author": "BrianKrebs",
+      "summary": "Google said today it worked with industry partners to dismantle a botnet made up of more than 1.3 million Android TV set-top boxes that ship with malicious software which secretly rents the user's Internet connection out to strangers and conducts advertising fraud. Experts involved in the takedown say the action is likely to sever the botnet's access to more than 10 million additional compromised",
+      "recipe": "krebs",
+      "buzz": 30,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-11-03"
     },
     {
       "uid": "rss:242c7ee3c56913",
