@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T09:16:49+00:00",
+  "generated_at": "2026-11-05T13:29:19+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -19,10 +19,10 @@
     },
     "by_topic": {
       "security": 49,
-      "ai": 38,
-      "dev": 35,
-      "hardware": 8,
-      "crypto": 7,
+      "ai": 39,
+      "dev": 34,
+      "crypto": 6,
+      "hardware": 6,
       "science": 5,
       "biz": 2
     },
@@ -589,6 +589,78 @@
       "date": "2026-11-03"
     },
     {
+      "uid": "rss:13fb52d553826f",
+      "source": "rss",
+      "title": "OpenAI AI Pipeline Generates 948 Linux Root Escalation Exploits in 30-Hour Run",
+      "url": "https://thehackernews.com/2026/11/openai-ai-pipeline-generates-948-linux.html",
+      "ts": 1793880534.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "OpenAI on Wednesday detailed a pipeline that employed an upcoming cyber-focused artificial intelligence (AI) model to validate and patch 948 local privilege escalation vulnerabilities in Linux for $1.2 million in API costs. \"Our prototype identified and analyzed 2,308 candidate Linux kernel findings, dynamically reproduced 1,724 vulnerabilities, and produced 948 local privilege escalation (LPE)",
+      "recipe": "the_hacker_news",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "science",
+        "security"
+      ],
+      "date": "2026-11-05"
+    },
+    {
+      "uid": "rss:0839893eaae1ed",
+      "source": "rss",
+      "title": "5 Active Cyber Threats That Put US Enterprises at Risk in October 2026",
+      "url": "https://thehackernews.com/2026/11/5-active-cyber-threats-that-put-us.html",
+      "ts": 1793873179.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "October 2026 brought another wave of cyber threats targeting US businesses, with attackers exploiting trusted platforms, legitimate authentication processes, and everyday business workflows. For enterprises, these campaigns raise the stakes beyond individual security incidents, increasing the risk of financial losses, data breaches, and costly operational disruption. Below, we examine five",
+      "recipe": "the_hacker_news",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-05"
+    },
+    {
+      "uid": "rss:d47c68a5662c7e",
+      "source": "rss",
+      "title": "Apple to Start Scanning Publicly Shared iCloud Photos and Files for Harmful Content",
+      "url": "https://thehackernews.com/2026/11/apple-to-start-scanning-publicly-shared.html",
+      "ts": 1793870008.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Apple has revealed that it plans to start checking public iCloud links for harmful content starting with iOS 27.3, iPadOS 27.3, macOS 27.3, and visionOS 27.3. The change specifically applies to scenarios where users share iCloud content, such as photos in iCloud Photos or files in iCloud Drive, by sharing a link and making it accessible to \"Anyone with the link.\" When users choose this option,",
+      "recipe": "the_hacker_news",
+      "buzz": 80,
+      "topics": [],
+      "date": "2026-11-05"
+    },
+    {
+      "uid": "rss:02455a506919b9",
+      "source": "rss",
+      "title": "CERT-In Flags AI-Driven Attacks as Backdoored ARTEX Exposes 62 Consoles to Root Access",
+      "url": "https://thehackernews.com/2026/11/backdoored-docker-image-for-artex-ai.html",
+      "ts": 1793868123.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "The Indian Computer Emergency Response Team (CERT-In) has disclosed that an artificial intelligence (AI)-assisted threat actor it tracks as Crafty Falcon is targeting organizations in the Banking, Financial Services, and Insurance (BFSI) sectors in the country. Describing the threat as active and ongoing, the activity involves the use of publicly-available AI-driven offensive security tools",
+      "recipe": "the_hacker_news",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-05"
+    },
+    {
       "uid": "rss:1158f29c0c67fa",
       "source": "rss",
       "title": "Zyxel GS1900 Patch Fails to Block Zero-Day Exploit Allowing Root Command Execution",
@@ -619,26 +691,6 @@
       "recipe": "the_hacker_news",
       "buzz": 80,
       "topics": [
-        "security"
-      ],
-      "date": "2026-11-05"
-    },
-    {
-      "uid": "rss:13fb52d553826f",
-      "source": "rss",
-      "title": "OpenAI AI Pipeline Generates 948 Linux Root Escalation Exploits in 30-Hour Run",
-      "url": "https://thehackernews.com/2026/11/openai-ai-pipeline-generates-948-linux.html",
-      "ts": 1793853076.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "OpenAI on Wednesday detailed a pipeline that employed an upcoming cyber-focused artificial intelligence (AI) model to validate and patch 948 local privilege escalation vulnerabilities in Linux for $1.2 million in API costs. \"Our prototype identified and analyzed 2,308 candidate Linux kernel findings, dynamically reproduced 1,724 vulnerabilities, and produced 948 local privilege escalation (LPE)",
-      "recipe": "the_hacker_news",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "dev",
-        "science",
         "security"
       ],
       "date": "2026-11-05"
@@ -729,7 +781,7 @@
       "author": "info@thehackernews.com (The Hacker News)",
       "summary": "A critical flaw in Ruby on Rails could allow an unauthenticated attacker to write arbitrary files on an app's server by uploading a crafted file if the app processes uploads using ImageMagick. The Rails project disclosed the flaw in&nbsp;an advisory&nbsp;and fixed it in versions 8.1.4.1 and 8.0.5.2. The flaw is in Active Storage, the part of Rails that handles file uploads. Some apps store",
       "recipe": "the_hacker_news",
-      "buzz": 80,
+      "buzz": 30,
       "topics": [
         "ai",
         "hardware"
@@ -747,7 +799,7 @@
       "author": "info@thehackernews.com (The Hacker News)",
       "summary": "Two flaws in the Xen hypervisor allow a malicious guest virtual machine (VM) to read and write the memory of other VMs on the same host, including dom0. Dom0 is the VM that, by default, has full permissions and manages the others. Patches are out, and there is no known mitigation, the Xen Project said in an&nbsp;advisory&nbsp;on November 3. All Xen versions from 4.6 onward are vulnerable,",
       "recipe": "the_hacker_news",
-      "buzz": 80,
+      "buzz": 30,
       "topics": [
         "ai",
         "security"
@@ -765,7 +817,7 @@
       "author": "info@thehackernews.com (The Hacker News)",
       "summary": "Nearly every agent security pitch now ends on the same promise: the product stops the bad action in real time. The promise holds for one kind of agent, the kind whose traffic passes through a gateway the enterprise owns. Most agents never touch one. One recent case shows what that gap looks like in practice. An employee asked an AI assistant to trigger a mass-email automation. The automation",
       "recipe": "the_hacker_news",
-      "buzz": 80,
+      "buzz": 30,
       "topics": [
         "ai",
         "security"
@@ -783,7 +835,7 @@
       "author": "info@thehackernews.com (The Hacker News)",
       "summary": "A China-aligned threat actor known as SlippyNunchucks has been attributed to a Domain Name System (DNS) hijacking operation abusing insecure HTTP communications in Windows versions of Sogou Input Method as part of a surveillance campaign designed to deploy an implant called DarkVigil (aka FDMTP). The campaign, observed starting July 1, 2026, is assessed to have targeted organizations and",
       "recipe": "the_hacker_news",
-      "buzz": 80,
+      "buzz": 30,
       "topics": [
         "ai"
       ],
@@ -1084,62 +1136,6 @@
         "security"
       ],
       "date": "2026-11-03"
-    },
-    {
-      "uid": "rss:3abb639db9d3d1",
-      "source": "rss",
-      "title": "Attackers Target Unpatched CryptoPayment Gateway Flaw That Can Expose Wallet Credentials",
-      "url": "https://thehackernews.com/2026/11/attackers-target-unpatched.html",
-      "ts": 1793684077.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Threat actors are attempting to exploit an unpatched maximum-severity security vulnerability in the CryptoPayment Gateway WordPress plugin, according to findings from Defused Cyber. The vulnerability in question is CVE-[phone], which carries a CVSS score of 10.0. Successful exploitation of the flaw could permit unauthenticated users to delete arbitrary files on the server and extract",
-      "recipe": "the_hacker_news",
-      "buzz": 30,
-      "topics": [
-        "crypto",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-03"
-    },
-    {
-      "uid": "rss:15396809c02d31",
-      "source": "rss",
-      "title": "⚡ Weekly Recap: Critical CVEs, Linux DDoS Botnet, Device-Code Phishing, Android Spyware and More",
-      "url": "https://thehackernews.com/2026/11/weekly-recap-critical-cves-linux-ddos.html",
-      "ts": 1793638676.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Some attacks this week didn't need much of a trick. A fake support call, a trusted extension, a shared link, or a device with no password. Small things that people barely think about. Yet each was enough to cause serious trouble. Then there were the bigger messes. Billions stolen, hidden networks of hacked devices, poisoned software, and attackers finding new ways to turn normal tools against",
-      "recipe": "the_hacker_news",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-02"
-    },
-    {
-      "uid": "rss:e5de376f71d3d6",
-      "source": "rss",
-      "title": "Google Disrupts 1.3 Million-Device Android Botnet, Says TV Box Maker Sold Criminal Access",
-      "url": "https://thehackernews.com/2026/11/google-disrupts-13-million-device.html",
-      "ts": 1793634626.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "A botnet of more than 1.3 million Android devices, mostly TV set-top boxes, lost control of its servers in late October in a takedown led by Google. Google says&nbsp;it is highly confident that device maker Videostrong intentionally put a backdoor in the boxes and sold access to criminals. They used the boxes for ad fraud and to pass other people's internet traffic through owners' home",
-      "recipe": "the_hacker_news",
-      "buzz": 30,
-      "topics": [
-        "dev",
-        "hardware"
-      ],
-      "date": "2026-11-02"
     }
   ]
 }
