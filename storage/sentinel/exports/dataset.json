@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T21:05:43+00:00",
+  "generated_at": "2026-11-05T01:24:56+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -10,25 +10,25 @@
     "rss"
   ],
   "totals": {
-    "items": 135,
+    "items": 132,
     "by_source": {
       "hn": 40,
       "cve": 30,
-      "github": 15,
+      "github": 12,
       "rss": 50
     },
     "by_recipe": {
       "hn_sec": 40,
       "gh_advisories": 30,
       "hackersnews": 30,
-      "github_sec": 15,
+      "github_sec": 12,
       "krebs": 10,
       "schneier": 10
     },
     "by_topic": {
-      "security": 107,
-      "ai": 70,
-      "dev": 61,
+      "security": 105,
+      "ai": 69,
+      "dev": 58,
       "hardware": 14,
       "biz": 10,
       "crypto": 10,
@@ -37,7 +37,7 @@
     "top_domains": [
       [
         "github.com",
-        47
+        44
       ],
       [
         "thehackernews.com",
@@ -1388,12 +1388,12 @@
       "title": "arpanjot-coding/AVault",
       "url": "https://github.com/arpanjot-coding/AVault",
       "ts": 1793474487.0,
-      "points": 581,
-      "comments": 38,
+      "points": 587,
+      "comments": 39,
       "author": "arpanjot-coding",
       "summary": "AVault - Call Recorder (No Root Required) | Privacy-first, hardware-encrypted audio vault for Android 12-16+. Rootless call recording via Shizuku with AES-256-GCM, biometrics & auto-cleanup.",
       "recipe": "github_sec",
-      "buzz": 705,
+      "buzz": 714,
       "topics": [
         "dev",
         "security"
@@ -1441,12 +1441,12 @@
       "title": "aarsaputra/php2shell",
       "url": "https://github.com/aarsaputra/php2shell",
       "ts": 1792763392.0,
-      "points": 126,
-      "comments": 61,
+      "points": 128,
+      "comments": 62,
       "author": "aarsaputra",
       "summary": "Unauthenticated RCE toolkit for PHP 5.4–8.4.26 (CVE-[phone]/109618) — pure-HTTP chain, JA3 impersonation, prpenetration-testingoof-of-access design",
       "recipe": "github_sec",
-      "buzz": 309,
+      "buzz": 314,
       "topics": [
         "ai",
         "security"
@@ -1471,35 +1471,17 @@
       "date": "2026-11-02"
     },
     {
-      "uid": "gh:sazabi/cve.now",
-      "source": "github",
-      "title": "sazabi/cve.now",
-      "url": "https://github.com/sazabi/cve.now",
-      "ts": 1792681793.0,
-      "points": 124,
-      "comments": 5,
-      "author": "sazabi",
-      "summary": "A free, public vulnerability feed: CVE, GHSA, OSV, CISA KEV and EPSS merged into one entry per vulnerability. RSS, JSON API and MCP. Docs and issues only.",
-      "recipe": "github_sec",
-      "buzz": 139,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-10-22"
-    },
-    {
       "uid": "gh:akari-sora/synology-nas-cli",
       "source": "github",
       "title": "akari-sora/synology-nas-cli",
       "url": "https://github.com/akari-sora/synology-nas-cli",
       "ts": 1793353967.0,
-      "points": 91,
+      "points": 92,
       "comments": 10,
       "author": "akari-sora",
       "summary": "nas: a zero-dependency Python CLI + MCP server for Synology DSM 7. One-command audit and fix for the C3RB3R / .L0CK3D ransomware campaign; hand it to your AI agent. Mirror; canonical repo and issues: gitlab.com/aa[phone]/synology-nas-cli",
       "recipe": "github_sec",
-      "buzz": 131,
+      "buzz": 132,
       "topics": [
         "ai",
         "dev",
@@ -1532,12 +1514,12 @@
       "title": "0x45dd/pwner",
       "url": "https://github.com/0x45dd/pwner",
       "ts": 1793625315.0,
-      "points": 44,
+      "points": 56,
       "comments": 4,
       "author": "0x45dd",
       "summary": "Autonomous agentic network penetration-testing tool (authorized use only)",
       "recipe": "github_sec",
-      "buzz": 86,
+      "buzz": 98,
       "topics": [
         "ai"
       ],
@@ -1559,6 +1541,24 @@
         "ai"
       ],
       "date": "2026-10-23"
+    },
+    {
+      "uid": "gh:huggingface/safeagents",
+      "source": "github",
+      "title": "huggingface/safeagents",
+      "url": "https://github.com/huggingface/safeagents",
+      "ts": 1793195562.0,
+      "points": 77,
+      "comments": 2,
+      "author": "huggingface",
+      "summary": "Safely run your agents using any coding harness",
+      "recipe": "github_sec",
+      "buzz": 83,
+      "topics": [
+        "ai",
+        "dev"
+      ],
+      "date": "2026-10-28"
     },
     {
       "uid": "rss:5e756f5fa8340f",
@@ -1760,24 +1760,6 @@
       "date": "2026-11-04"
     },
     {
-      "uid": "gh:huggingface/safeagents",
-      "source": "github",
-      "title": "huggingface/safeagents",
-      "url": "https://github.com/huggingface/safeagents",
-      "ts": 1793195562.0,
-      "points": 72,
-      "comments": 2,
-      "author": "huggingface",
-      "summary": "Safely run your agents using any coding harness",
-      "recipe": "github_sec",
-      "buzz": 78,
-      "topics": [
-        "ai",
-        "dev"
-      ],
-      "date": "2026-10-28"
-    },
-    {
       "uid": "gh:Problem99-io/kodeblue",
       "source": "github",
       "title": "Problem99-io/kodeblue",
@@ -1796,24 +1778,6 @@
         "hardware"
       ],
       "date": "2026-10-25"
-    },
-    {
-      "uid": "gh:DigitalMinimalism0/Bastion",
-      "source": "github",
-      "title": "DigitalMinimalism0/Bastion",
-      "url": "https://github.com/DigitalMinimalism0/Bastion",
-      "ts": 1792650008.0,
-      "points": 57,
-      "comments": 0,
-      "author": "DigitalMinimalism0",
-      "summary": "Evidence-based PHP security assessment: patch verification, intrusion tracing, and offline reports.",
-      "recipe": "github_sec",
-      "buzz": 57,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-10-22"
     },
     {
       "uid": "gh:0xZyyz/ctfd-warden",
@@ -2238,24 +2202,6 @@
         "security"
       ],
       "date": "2026-11-02"
-    },
-    {
-      "uid": "gh:lindenthomaslin/vibeguard",
-      "source": "github",
-      "title": "lindenthomaslin/vibeguard",
-      "url": "https://github.com/lindenthomaslin/vibeguard",
-      "ts": 1792711874.0,
-      "points": 24,
-      "comments": 1,
-      "author": "lindenthomaslin",
-      "summary": "给 AI 生成代码做安全审阅的终端工具：410 条漏洞清单，20 条本地规则 + 模型逐条判定（带证据核实），看完 diff 再决定要不要写（Rust）",
-      "recipe": "github_sec",
-      "buzz": 27,
-      "topics": [
-        "ai",
-        "dev"
-      ],
-      "date": "2026-10-22"
     },
     {
       "uid": "rss:ee5a3711ce6c64",
