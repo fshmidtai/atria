@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T05:14:50+00:00",
+  "generated_at": "2026-11-05T09:17:16+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -27,9 +27,9 @@
     },
     "by_topic": {
       "security": 105,
-      "ai": 69,
+      "ai": 68,
       "dev": 59,
-      "hardware": 15,
+      "hardware": 14,
       "biz": 11,
       "crypto": 10,
       "science": 5
@@ -1366,6 +1366,24 @@
       "date": "2019-07-18"
     },
     {
+      "uid": "gh:arpanjot-coding/AVault",
+      "source": "github",
+      "title": "arpanjot-coding/AVault",
+      "url": "https://github.com/arpanjot-coding/AVault",
+      "ts": 1793474487.0,
+      "points": 598,
+      "comments": 41,
+      "author": "arpanjot-coding",
+      "summary": "AVault - Call Recorder (No Root Required) | Privacy-first, hardware-encrypted audio vault for Android 12-16+. Rootless call recording via Shizuku with AES-256-GCM, biometrics & auto-cleanup.",
+      "recipe": "github_sec",
+      "buzz": 731,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-10-31"
+    },
+    {
       "uid": "cve:GHSA-m3qr-fvp4-78xj",
       "source": "cve",
       "title": "GHSA-m3qr-fvp4-78xj: Arc has unauthenticated application log disclosure via `/api/v1/logs`",
@@ -1381,24 +1399,6 @@
         "dev"
       ],
       "date": "2026-11-03"
-    },
-    {
-      "uid": "gh:arpanjot-coding/AVault",
-      "source": "github",
-      "title": "arpanjot-coding/AVault",
-      "url": "https://github.com/arpanjot-coding/AVault",
-      "ts": 1793474487.0,
-      "points": 595,
-      "comments": 41,
-      "author": "arpanjot-coding",
-      "summary": "AVault - Call Recorder (No Root Required) | Privacy-first, hardware-encrypted audio vault for Android 12-16+. Rootless call recording via Shizuku with AES-256-GCM, biometrics & auto-cleanup.",
-      "recipe": "github_sec",
-      "buzz": 728,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-10-31"
     },
     {
       "uid": "gh:jmanico/grim-prompter",
@@ -1441,12 +1441,12 @@
       "title": "aarsaputra/php2shell",
       "url": "https://github.com/aarsaputra/php2shell",
       "ts": 1792763392.0,
-      "points": 129,
-      "comments": 62,
+      "points": 133,
+      "comments": 64,
       "author": "aarsaputra",
       "summary": "Unauthenticated RCE toolkit for PHP 5.4–8.4.26 (CVE-[phone]/109618) — pure-HTTP chain, JA3 impersonation, prpenetration-testingoof-of-access design",
       "recipe": "github_sec",
-      "buzz": 315,
+      "buzz": 325,
       "topics": [
         "ai",
         "security"
@@ -1459,12 +1459,12 @@
       "title": "Balanov/skein",
       "url": "https://github.com/Balanov/skein",
       "ts": 1793663825.0,
-      "points": 264,
+      "points": 265,
       "comments": 1,
       "author": "Balanov",
       "summary": "Fail-closed swarm orchestration with epoch-fenced work and late-completion rejection.",
       "recipe": "github_sec",
-      "buzz": 297,
+      "buzz": 298,
       "topics": [
         "ai"
       ],
@@ -1476,12 +1476,12 @@
       "title": "akari-sora/synology-nas-cli",
       "url": "https://github.com/akari-sora/synology-nas-cli",
       "ts": 1793353967.0,
-      "points": 93,
+      "points": 94,
       "comments": 10,
       "author": "akari-sora",
       "summary": "nas: a zero-dependency Python CLI + MCP server for Synology DSM 7. One-command audit and fix for the C3RB3R / .L0CK3D ransomware campaign; hand it to your AI agent. Mirror; canonical repo and issues: gitlab.com/aa[phone]/synology-nas-cli",
       "recipe": "github_sec",
-      "buzz": 133,
+      "buzz": 134,
       "topics": [
         "ai",
         "dev",
@@ -1496,12 +1496,12 @@
       "title": "0x45dd/pwner",
       "url": "https://github.com/0x45dd/pwner",
       "ts": 1793625315.0,
-      "points": 61,
+      "points": 70,
       "comments": 5,
       "author": "0x45dd",
       "summary": "Autonomous agentic network penetration-testing tool (authorized use only)",
       "recipe": "github_sec",
-      "buzz": 106,
+      "buzz": 115,
       "topics": [
         "ai"
       ],
@@ -1576,6 +1576,41 @@
         "ai",
         "dev",
         "biz",
+        "security"
+      ],
+      "date": "2026-11-05"
+    },
+    {
+      "uid": "rss:1158f29c0c67fa",
+      "source": "rss",
+      "title": "Zyxel GS1900 Patch Fails to Block Zero-Day Exploit Allowing Root Command Execution",
+      "url": "https://thehackernews.com/2026/11/zyxel-gs1900-patch-fails-to-block-zero.html",
+      "ts": 1793862393.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Zyxel GS1900 network switches that received the vendor's earlier fix for an actively exploited flaw are still open to the exploit attackers used, researchers at Binarly found. The exploit lets anyone who can reach a switch's web management interface run commands on it without logging in. Zyxel has released new firmware for 10 GS1900 models that closes the hole. The earlier fix is the 2.90",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-05"
+    },
+    {
+      "uid": "rss:c040c9b9274352",
+      "source": "rss",
+      "title": "Hackers Exploit Patched Apple Flaw to Deliver Info-Stealing Malware, CISA Says",
+      "url": "https://thehackernews.com/2026/11/hackers-exploit-patched-apple-flaw-to.html",
+      "ts": 1793855824.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added a medium-severity security flaw impacting multiple Apple operating systems to its Known Exploited Vulnerabilities (KEV) catalog, following reports of active exploitation. The vulnerability in question is CVE-[phone] (CVSS score: 5.5), a case of improper authentication that could allow an attacker with",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
         "security"
       ],
       "date": "2026-11-05"
@@ -1747,59 +1782,6 @@
       "date": "2026-11-04"
     },
     {
-      "uid": "rss:cdfdc984ed13d0",
-      "source": "rss",
-      "title": "Russian Police Arrest 3 Suspected VasyGrek Hackers, Dismantle Criminal Infrastructure",
-      "url": "https://thehackernews.com/2026/11/russian-police-arrest-3-suspected.html",
-      "ts": 1793780231.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Russian authorities have arrested three suspected members of a threat group known as VasyGrek and dismantled its criminal infrastructure. Also known as Fluffy Wolf, the threat actor has a history of targeting Russian and international companies since 2016. The Ministry of Internal Affairs of the Russian Federation (MVD) said members of the group are \"suspected of embezzling funds from the",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-04"
-    },
-    {
-      "uid": "rss:3ee0c5b7b4a3af",
-      "source": "rss",
-      "title": "Google Issues Patches for Critical Android Flaw That Could Allow RCE Without User Interaction",
-      "url": "https://thehackernews.com/2026/11/google-patches-critical-android-flaw.html",
-      "ts": 1793778375.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "A critical Android flaw could allow an attacker to run code on a phone without any user action remotely, Google said in its&nbsp;November security bulletin. The flaw, CVE-[phone], affects Android 14 through 17. Phones get the fix with security patch level 2026-11-01 or later, which phone makers and carriers send on their own schedules. As of November 4, Google's bulletin did not report",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-04"
-    },
-    {
-      "uid": "rss:8ebc354a95d7d6",
-      "source": "rss",
-      "title": "CISA Confirms Hackers Exploiting WordPress Core Flaw During Software Upgrades",
-      "url": "https://thehackernews.com/2026/11/cisa-confirms-hackers-exploiting.html",
-      "ts": 1793770991.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added a security flaw in WordPress Core to the Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation. The high-severity vulnerability, tracked as CVE-[phone] (CVSS score: 8.1), is a case of Time-of-check Time-of-use (TOCTOU) race condition that could be exploited to achieve arbitrary code",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-04"
-    },
-    {
       "uid": "gh:Problem99-io/kodeblue",
       "source": "github",
       "title": "Problem99-io/kodeblue",
@@ -1833,23 +1815,6 @@
       "buzz": 37,
       "topics": [
         "ai"
-      ],
-      "date": "2026-10-29"
-    },
-    {
-      "uid": "gh:smartworldarafath/TeroVPN",
-      "source": "github",
-      "title": "smartworldarafath/TeroVPN",
-      "url": "https://github.com/smartworldarafath/TeroVPN",
-      "ts": 1793264351.0,
-      "points": 22,
-      "comments": 1,
-      "author": "smartworldarafath",
-      "summary": "🛡️ Fast, secure, and private Android VPN powered by WireGuard MASQUE (HTTP/3) over Fastly edge with Proton UI & Liquid Glass design.",
-      "recipe": "github_sec",
-      "buzz": 35,
-      "topics": [
-        "hardware"
       ],
       "date": "2026-10-29"
     },
@@ -1905,6 +1870,59 @@
         "security"
       ],
       "date": "2026-11-02"
+    },
+    {
+      "uid": "rss:cdfdc984ed13d0",
+      "source": "rss",
+      "title": "Russian Police Arrest 3 Suspected VasyGrek Hackers, Dismantle Criminal Infrastructure",
+      "url": "https://thehackernews.com/2026/11/russian-police-arrest-3-suspected.html",
+      "ts": 1793780231.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Russian authorities have arrested three suspected members of a threat group known as VasyGrek and dismantled its criminal infrastructure. Also known as Fluffy Wolf, the threat actor has a history of targeting Russian and international companies since 2016. The Ministry of Internal Affairs of the Russian Federation (MVD) said members of the group are \"suspected of embezzling funds from the",
+      "recipe": "hackersnews",
+      "buzz": 30,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-11-04"
+    },
+    {
+      "uid": "rss:3ee0c5b7b4a3af",
+      "source": "rss",
+      "title": "Google Issues Patches for Critical Android Flaw That Could Allow RCE Without User Interaction",
+      "url": "https://thehackernews.com/2026/11/google-patches-critical-android-flaw.html",
+      "ts": 1793778375.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "A critical Android flaw could allow an attacker to run code on a phone without any user action remotely, Google said in its&nbsp;November security bulletin. The flaw, CVE-[phone], affects Android 14 through 17. Phones get the fix with security patch level 2026-11-01 or later, which phone makers and carriers send on their own schedules. As of November 4, Google's bulletin did not report",
+      "recipe": "hackersnews",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-04"
+    },
+    {
+      "uid": "rss:8ebc354a95d7d6",
+      "source": "rss",
+      "title": "CISA Confirms Hackers Exploiting WordPress Core Flaw During Software Upgrades",
+      "url": "https://thehackernews.com/2026/11/cisa-confirms-hackers-exploiting.html",
+      "ts": 1793770991.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added a security flaw in WordPress Core to the Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation. The high-severity vulnerability, tracked as CVE-[phone] (CVSS score: 8.1), is a case of Time-of-check Time-of-use (TOCTOU) race condition that could be exploited to achieve arbitrary code",
+      "recipe": "hackersnews",
+      "buzz": 30,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-04"
     },
     {
       "uid": "rss:a20c924b8926e0",
@@ -2206,41 +2224,21 @@
       "date": "2026-11-02"
     },
     {
-      "uid": "rss:9c1ebae49ad888",
-      "source": "rss",
-      "title": "DarkBlinders Compromises Israeli Target and Iraqi Kurdish Government Cloud Environment",
-      "url": "https://thehackernews.com/2026/11/darkblinders-compromises-israeli-target.html",
-      "ts": 1793630765.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Cybersecurity researchers have disclosed details of a cyber espionage campaign targeting Israel and the Kurdistan Region of Iraq by an Iran state-aligned threat actor between August and October 2026. According to a report published by Dream Research Labs, the campaign has led to the compromise of a high-profile individual in Israel, along with additional compromises affecting a government cloud",
-      "recipe": "hackersnews",
-      "buzz": 30,
+      "uid": "gh:smartworldarafath/TeroVPN",
+      "source": "github",
+      "title": "smartworldarafath/TeroVPN",
+      "url": "https://github.com/smartworldarafath/TeroVPN",
+      "ts": 1793264351.0,
+      "points": 23,
+      "comments": 1,
+      "author": "smartworldarafath",
+      "summary": "🛡️ Fast, secure, and private Android VPN powered by WireGuard MASQUE (HTTP/3) over Fastly edge with Proton UI & Liquid Glass design.",
+      "recipe": "github_sec",
+      "buzz": 26,
       "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-02"
-    },
-    {
-      "uid": "rss:647d9d7a719837",
-      "source": "rss",
-      "title": "Critical Langflow Flaws Could Let Unauthenticated Attackers Run Code on Servers",
-      "url": "https://thehackernews.com/2026/11/critical-langflow-flaws-could-let.html",
-      "ts": 1793620200.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Two critical flaws in Langflow could let a remote attacker with no account bypass authentication or run arbitrary code,&nbsp;IBM said last week. Langflow is an open-source tool for building AI agents and workflows, and&nbsp;its vulnerability reports go to IBM. Every release from 1.0.0 through 1.12.8 has the flaws, and the only fix is version 1.13.0. Neither flaw is in CISA's&nbsp;Known",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "security",
         "hardware"
       ],
-      "date": "2026-11-02"
+      "date": "2026-10-29"
     },
     {
       "uid": "rss:ee5a3711ce6c64",

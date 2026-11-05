@@ -5,7 +5,105 @@
     <link>https://signal-frontier.pages.dev</link>
     <description>Радар инсайтов, трендов и технологий: что вспыхнуло в сети за последние 48 часов</description>
     <language>ru</language>
-    <lastBuildDate>Thu, 05 Nov 2026 05:14:37 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 05 Nov 2026 09:17:04 GMT</lastBuildDate>
+    <item>
+      <title>System design for physical AI: from a line trip to the first correct action</title>
+      <link>https://signal-frontier.pages.dev/item/system-design-for-physical-ai-from-a-line-trip-to-the-first-corr.html</link>
+      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/system-design-for-physical-ai-from-a-line-trip-to-the-first-corr.html</guid>
+      <pubDate>Thu, 05 Nov 2026 09:15:33 GMT</pubDate>
+      <description>&lt;p&gt;&lt;em&gt;By Muhammad Umar. This is the engineering summary of an open reference architecture. The paper, its object model as JSON and the model register are free to reuse under CC BY 4.0: &lt;a href="https://codeatoms.ai/grid-control-room-saudi-arabia/" rel="noopener noreferrer"&gt;https://codeatoms.ai/grid</description>
+    </item>
+    <item>
+      <title>Optimizing DuckDB Scalar Aggregates: Merging Multiple Scans into One Pass</title>
+      <link>https://signal-frontier.pages.dev/item/optimizing-duckdb-scalar-aggregates-merging-multiple-scans-into-.html</link>
+      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/optimizing-duckdb-scalar-aggregates-merging-multiple-scans-into-.html</guid>
+      <pubDate>Thu, 05 Nov 2026 09:15:13 GMT</pubDate>
+      <description>&lt;h1&gt; Why This Optimization Matters &lt;/h1&gt; &lt;p&gt;If you’ve ever run complex analytical queries on large datasets, you know that scanning the same data multiple times can be painfully expensive. In DuckDB, queries with multiple scalar aggregates over the same file or table used to trigger redundant full d</description>
+    </item>
+    <item>
+      <title>I got tired of my coding agents re-reading my repos every session</title>
+      <link>https://signal-frontier.pages.dev/item/i-got-tired-of-my-coding-agents-re-reading-my-repos-every-sessio.html</link>
+      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/i-got-tired-of-my-coding-agents-re-reading-my-repos-every-sessio.html</guid>
+      <pubDate>Thu, 05 Nov 2026 09:14:40 GMT</pubDate>
+      <description>&lt;p&gt;I work alone on about sixteen repos, with a few coding agents. Every new session started the same way: the agent read half the repo to work out where we were, and a single Claude Code call already costs around 29k tokens before it reads a line of mine. Worse, what it read was sometimes out of dat</description>
+    </item>
+    <item>
+      <title>Practical GPT Image 2 prompt checklist for cleaner product shots</title>
+      <link>https://signal-frontier.pages.dev/item/practical-gpt-image-2-prompt-checklist-for-cleaner-product-shots.html</link>
+      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/practical-gpt-image-2-prompt-checklist-for-cleaner-product-shots.html</guid>
+      <pubDate>Thu, 05 Nov 2026 09:12:52 GMT</pubDate>
+      <description>&lt;p&gt;If your GPT Image 2 product shots look plastic, cluttered or oddly lit, the fix is usually the prompt structure, not the model. Here is the checklist I use.&lt;/p&gt; &lt;h2&gt; 1. Lock the subject first &lt;/h2&gt; &lt;p&gt;Start with one sentence: object, material, color, angle. Example: "matte black ceramic coffee mu</description>
+    </item>
+    <item>
+      <title>Why SQL Server Deadlocks Happen : 5 Production Patterns and Their Fixes</title>
+      <link>https://signal-frontier.pages.dev/item/why-sql-server-deadlocks-happen-5-production-patterns-and-their-.html</link>
+      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/why-sql-server-deadlocks-happen-5-production-patterns-and-their-.html</guid>
+      <pubDate>Thu, 05 Nov 2026 09:12:46 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;How to Stop Deadlocks in SQL Server: 5 Production Patterns and Their Fixes&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;We’ve all been there: a production application suddenly stumbles, errors spike, and your telemetry logs reveal the dreaded Error 1205: Transaction was deadlocked on lock resources with another proce</description>
+    </item>
+    <item>
+      <title>Thirty-five eslint-disable comments, and no ESLint anywhere in the repository</title>
+      <link>https://signal-frontier.pages.dev/item/thirty-five-eslint-disable-comments-and-no-eslint-anywhere-in-th.html</link>
+      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/thirty-five-eslint-disable-comments-and-no-eslint-anywhere-in-th.html</guid>
+      <pubDate>Thu, 05 Nov 2026 09:12:35 GMT</pubDate>
+      <description>&lt;p&gt;I went looking for the lint config in &lt;a href="https://cogniprep.app" rel="noopener noreferrer"&gt;CogniPrep&lt;/a&gt; and there isn't one. No &lt;code&gt;.eslintrc&lt;/code&gt;, no &lt;code&gt;eslint.config.mjs&lt;/code&gt;, no &lt;code&gt;lint&lt;/code&gt; script among the 25 entries in &lt;code&gt;package.json&lt;/code&gt;, and no &lt;code&gt;eslint&lt;/code</description>
+    </item>
+    <item>
+      <title>Your MongoDB Query Is Slow and You Are Guessing Why: Read explain() Instead</title>
+      <link>https://signal-frontier.pages.dev/item/your-mongodb-query-is-slow-and-you-are-guessing-why-read-explain.html</link>
+      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/your-mongodb-query-is-slow-and-you-are-guessing-why-read-explain.html</guid>
+      <pubDate>Thu, 05 Nov 2026 09:12:17 GMT</pubDate>
+      <description>&lt;p&gt;The endpoint was fast in development. In production it takes two seconds, and it gets slower every week.&lt;/p&gt; &lt;p&gt;So you do what most of us do. You add &lt;code&gt;.lean()&lt;/code&gt;. You add an index on a field that sounds important. You wonder if the server is too small. Maybe the slowdown goes away, maybe</description>
+    </item>
+    <item>
+      <title>Vocalace — American English pronunciation practice for Chinese speakers</title>
+      <link>https://signal-frontier.pages.dev/item/vocalace-american-english-pronunciation-practice-for-chinese-spe.html</link>
+      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/vocalace-american-english-pronunciation-practice-for-chinese-spe.html</guid>
+      <pubDate>Thu, 05 Nov 2026 09:10:31 GMT</pubDate>
+      <description>&lt;p&gt;I built &lt;a href="https://www.vocalace.com" rel="noopener noreferrer"&gt;Vocalace&lt;/a&gt; for Chinese speakers who want American English words to come out clearer. Listen to a US model, record a take, Azure scores by phoneme, and 小 V marks which sound drifted. The word comes back later on a spaced schedu</description>
+    </item>
+    <item>
+      <title>PostgreSQL vs Firebase: Choosing Your App's Database</title>
+      <link>https://signal-frontier.pages.dev/item/postgresql-vs-firebase-choosing-your-app-s-database.html</link>
+      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/postgresql-vs-firebase-choosing-your-app-s-database.html</guid>
+      <pubDate>Thu, 05 Nov 2026 09:10:04 GMT</pubDate>
+      <description>&lt;p&gt;You are planning an app, and sooner or later someone asks the question that shapes everything else: where does the data live? If you have narrowed it down to two names, you are probably weighing &lt;strong&gt;PostgreSQL vs Firebase&lt;/strong&gt;. This guide lays out what each option actually is, where each </description>
+    </item>
+    <item>
+      <title>AI Booking Assistants for Clinics and Salons: A Complete Guide</title>
+      <link>https://signal-frontier.pages.dev/item/ai-booking-assistants-for-clinics-and-salons-a-complete-guide.html</link>
+      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/ai-booking-assistants-for-clinics-and-salons-a-complete-guide.html</guid>
+      <pubDate>Thu, 05 Nov 2026 09:09:14 GMT</pubDate>
+      <description>&lt;p&gt;The phone rings at your front desk. Someone is already at the counter asking to move Friday's appointment. And somewhere in all of that, a new customer hangs up after six rings and books with your competitor.&lt;/p&gt; &lt;p&gt;If you run a dental clinic, a physiotherapy practice, a beauty salon, or a barber</description>
+    </item>
+    <item>
+      <title>Rate Limits Are Not a Security Control: Why Business Logic Bugs Survive Every Scanner</title>
+      <link>https://signal-frontier.pages.dev/item/rate-limits-are-not-a-security-control-why-business-logic-bugs-s.html</link>
+      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/rate-limits-are-not-a-security-control-why-business-logic-bugs-s.html</guid>
+      <pubDate>Thu, 05 Nov 2026 09:09:07 GMT</pubDate>
+      <description>&lt;p&gt;A team I worked with had a textbook rate limiter. Twenty requests per minute per user, sliding window, Redis-backed, the works. Their scanner reported clean, their load tests looked fine, and their WAF dashboard was a flat green line.&lt;/p&gt; &lt;p&gt;Then someone applied the same welcome coupon forty-seve</description>
+    </item>
+    <item>
+      <title>I tried five agents to write one prompt. One agent did as well.</title>
+      <link>https://signal-frontier.pages.dev/item/i-tried-five-agents-to-write-one-prompt-one-agent-did-as-well.html</link>
+      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/i-tried-five-agents-to-write-one-prompt-one-agent-did-as-well.html</guid>
+      <pubDate>Thu, 05 Nov 2026 09:08:43 GMT</pubDate>
+      <description>&lt;p&gt;Nothing fancy: it is just one skill file that writes a prompt, or improves one, and attacks it before I use it. But I used it as an excuse to run a few experiments of my own on AI-assisted prompt writing. The main result: five agents did not write better prompts than one.&lt;/p&gt; &lt;p&gt;The rules a promp</description>
+    </item>
+    <item>
+      <title>Want to Rent an Internet Address at the White House?</title>
+      <link>https://signal-frontier.pages.dev/item/want-to-rent-an-internet-address-at-the-white-house.html</link>
+      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/want-to-rent-an-internet-address-at-the-white-house.html</guid>
+      <pubDate>Thu, 05 Nov 2026 05:59:13 GMT</pubDate>
+      <description></description>
+    </item>
+    <item>
+      <title>Altera Announces Agilex 2X, a Complete FPGA and SoC Portfolio</title>
+      <link>https://signal-frontier.pages.dev/item/altera-announces-agilex-2x-a-complete-fpga-and-soc-portfolio.html</link>
+      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/altera-announces-agilex-2x-a-complete-fpga-and-soc-portfolio.html</guid>
+      <pubDate>Thu, 05 Nov 2026 05:47:14 GMT</pubDate>
+      <description></description>
+    </item>
     <item>
       <title>Teardown: how Rocket.new reached 400k users in 15 weeks - and where it leaks</title>
       <link>https://signal-frontier.pages.dev/item/teardown-how-rocket-new-reached-400k-users-in-15-weeks-and-where.html</link>
@@ -91,6 +189,13 @@
       <description>&lt;p&gt;How DRF-style ViewSets for FastAPI grew from a “CRUD generator” into a tool I’m not ashamed to ship to production&lt;/p&gt; &lt;p&gt;&lt;a href="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads</description>
     </item>
     <item>
+      <title>Lemmings CSS Animation</title>
+      <link>https://signal-frontier.pages.dev/item/lemmings-css-animation.html</link>
+      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/lemmings-css-animation.html</guid>
+      <pubDate>Thu, 05 Nov 2026 04:54:10 GMT</pubDate>
+      <description></description>
+    </item>
+    <item>
       <title>De GED a SIGAD: decisões de arquitetura em Laravel, Vue e PostgreSQL</title>
       <link>https://signal-frontier.pages.dev/item/de-ged-a-sigad-decis-es-de-arquitetura-em-laravel-vue-e-postgres.html</link>
       <guid isPermaLink="true">https://signal-frontier.pages.dev/item/de-ged-a-sigad-decis-es-de-arquitetura-em-laravel-vue-e-postgres.html</guid>
@@ -110,111 +215,6 @@
       <guid isPermaLink="true">https://signal-frontier.pages.dev/item/haproxy-metrics-are-useful-only-when-the-stats-path-is-understoo.html</guid>
       <pubDate>Thu, 05 Nov 2026 01:20:46 GMT</pubDate>
       <description>&lt;h1&gt; HAProxy metrics are useful only when the stats path is understood &lt;/h1&gt; &lt;p&gt;The HAProxy exporter reads HAProxy statistics and exposes them for Prometheus. Port 9101 is a common default. A scan of that port finds a large mixed population, so a count cannot be treated as an HAProxy exporter invent</description>
-    </item>
-    <item>
-      <title>Create an AI Podcast Generator with ElevenLabs</title>
-      <link>https://signal-frontier.pages.dev/item/create-an-ai-podcast-generator-with-elevenlabs.html</link>
-      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/create-an-ai-podcast-generator-with-elevenlabs.html</guid>
-      <pubDate>Thu, 05 Nov 2026 01:19:06 GMT</pubDate>
-      <description>&lt;h2&gt; Why an AI‑Powered Podcast? &lt;/h2&gt; &lt;p&gt;Podcasts have exploded in popularity, but producing a full episode still means spending hours on research, script‑writing, recording, and editing. What if you could automate the whole pipeline? By combining a large‑language model (LLM) for content generation </description>
-    </item>
-    <item>
-      <title>Integrating Node.js Error Tracking with Backend APIs (Safe Pricing Rollbacks)</title>
-      <link>https://signal-frontier.pages.dev/item/integrating-node-js-error-tracking-with-backend-apis-safe-pricin.html</link>
-      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/integrating-node-js-error-tracking-with-backend-apis-safe-pricin.html</guid>
-      <pubDate>Thu, 05 Nov 2026 01:18:13 GMT</pubDate>
-      <description>&lt;p&gt;&lt;strong&gt;Short answer:&lt;/strong&gt; Put error capture behind the Node.js request boundary, attach the pricing flag and cohort to every event, and keep rollback independent from telemetry. A plain REST backend is a good fit when the team wants one HTTP contract and can supply alerting, audit, and reten</description>
-    </item>
-    <item>
-      <title>TIL: host vs agent_host in GBase Database(GBase 8c) Network Configuration</title>
-      <link>https://signal-frontier.pages.dev/item/til-host-vs-agent-host-in-gbase-database-gbase-8c-network-config.html</link>
-      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/til-host-vs-agent-host-in-gbase-database-gbase-8c-network-config.html</guid>
-      <pubDate>Thu, 05 Nov 2026 01:17:40 GMT</pubDate>
-      <description>&lt;p&gt;When reading a GBase Database(GBase 8c) deployment configuration for the first time, engineers often encounter the same question:&lt;/p&gt; &lt;p&gt;Why does one database instance need both &lt;code&gt;host&lt;/code&gt; and &lt;code&gt;agent_host&lt;/code&gt;?&lt;/p&gt; &lt;p&gt;The answer is network traffic separation.&lt;/p&gt; &lt;p&gt;These two fields</description>
-    </item>
-    <item>
-      <title>Mapping payload for robot dogs: LiDAR SLAM hardware setup from sensor to map</title>
-      <link>https://signal-frontier.pages.dev/item/mapping-payload-for-robot-dogs-lidar-slam-hardware-setup-from-se.html</link>
-      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/mapping-payload-for-robot-dogs-lidar-slam-hardware-setup-from-se.html</guid>
-      <pubDate>Thu, 05 Nov 2026 01:16:20 GMT</pubDate>
-      <description>&lt;p&gt;&lt;em&gt;By the engineering team at YUANZHI ROBOTICS. We design and build sensor payloads for robot dogs, UGVs and drones. Originally published on our site; AI-assisted draft, reviewed by our engineers.&lt;/em&gt;&lt;/p&gt; &lt;p&gt;&lt;strong&gt;Short answer:&lt;/strong&gt; A mapping payload for a robot dog is a Livox Mid-360 or </description>
-    </item>
-    <item>
-      <title>TIL: Six Environment Fields That Decide Whether GBase Database Installation Starts</title>
-      <link>https://signal-frontier.pages.dev/item/til-six-environment-fields-that-decide-whether-gbase-database-in.html</link>
-      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/til-six-environment-fields-that-decide-whether-gbase-database-in.html</guid>
-      <pubDate>Thu, 05 Nov 2026 01:15:51 GMT</pubDate>
-      <description>&lt;p&gt;When reading a GBase Database(GBase 8c) &lt;code&gt;gbase.yml&lt;/code&gt; configuration file, most engineers jump straight to &lt;code&gt;datanode&lt;/code&gt;, where DN groups and replicas are defined.&lt;/p&gt; &lt;p&gt;But there is another section worth checking first: &lt;code&gt;env&lt;/code&gt;, at the bottom of the configuration file.&lt;</description>
-    </item>
-    <item>
-      <title>We Tried Building an AI Security Researcher That Never Sleeps</title>
-      <link>https://signal-frontier.pages.dev/item/we-tried-building-an-ai-security-researcher-that-never-sleeps.html</link>
-      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/we-tried-building-an-ai-security-researcher-that-never-sleeps.html</guid>
-      <pubDate>Thu, 05 Nov 2026 01:15:22 GMT</pubDate>
-      <description>&lt;p&gt;A few days ago, Binance disclosed a major security incident involving approximately &lt;strong&gt;$6.34 billion in impacted digital assets&lt;/strong&gt;.&lt;/p&gt; &lt;p&gt;Let that sink in for a second. $6.34 billion.&lt;/p&gt; &lt;p&gt;Binance later explained that the attack involved compromised internal systems and unauthorized</description>
-    </item>
-    <item>
-      <title>The model page said 8-bit. The checkpoint is 4.49 bits per parameter.</title>
-      <link>https://signal-frontier.pages.dev/item/the-model-page-said-8-bit-the-checkpoint-is-4-49-bits-per-parame.html</link>
-      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/the-model-page-said-8-bit-the-checkpoint-is-4-49-bits-per-parame.html</guid>
-      <pubDate>Thu, 05 Nov 2026 01:14:58 GMT</pubDate>
-      <description>&lt;p&gt;I was working out how much disk Kimi K3.1 Pro would need, and the model page gave me two numbers that cannot both be true. The card says &lt;code&gt;MXFP4 weights / MXFP8 activations&lt;/code&gt;. The badge beside the download button says &lt;code&gt;8-bit precision&lt;/code&gt;. So I added up the shards I would actuall</description>
-    </item>
-    <item>
-      <title>AI trading bots in 2026: real returns vs advertised claims</title>
-      <link>https://signal-frontier.pages.dev/item/ai-trading-bots-in-2026-real-returns-vs-advertised-claims.html</link>
-      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/ai-trading-bots-in-2026-real-returns-vs-advertised-claims.html</guid>
-      <pubDate>Thu, 05 Nov 2026 01:14:33 GMT</pubDate>
-      <description>&lt;p&gt;Grid bots, DCA bots, “AI” EAs — the dashboards all glow green. Here is what independent checks in 2026 actually measured, and the questions that separate a real record from marketing.&lt;/p&gt; &lt;p&gt;Every AI trading bot dashboard glows green. That is the product: a number that makes you fund an account. </description>
-    </item>
-    <item>
-      <title>The Pre-Peak Checklist for Chat Support (Holiday Surge Edition)</title>
-      <link>https://signal-frontier.pages.dev/item/the-pre-peak-checklist-for-chat-support-holiday-surge-edition.html</link>
-      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/the-pre-peak-checklist-for-chat-support-holiday-surge-edition.html</guid>
-      <pubDate>Thu, 05 Nov 2026 01:14:22 GMT</pubDate>
-      <description>&lt;p&gt;Peak season does not invent new support problems; it multiplies the ones already there. A fuzzy return policy becomes fifty fuzzy return conversations a day. A stale price rule becomes fifty confident wrong quotes. A missing evening shift becomes a backlog that eats the next morning. The surge wi</description>
-    </item>
-    <item>
-      <title>Starfall – Affordable, routine access to microgravity</title>
-      <link>https://signal-frontier.pages.dev/item/starfall-affordable-routine-access-to-microgravity.html</link>
-      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/starfall-affordable-routine-access-to-microgravity.html</guid>
-      <pubDate>Thu, 05 Nov 2026 00:18:18 GMT</pubDate>
-      <description></description>
-    </item>
-    <item>
-      <title>You'll need nerves of steel to work with AI agents</title>
-      <link>https://signal-frontier.pages.dev/item/you-ll-need-nerves-of-steel-to-work-with-ai-agents.html</link>
-      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/you-ll-need-nerves-of-steel-to-work-with-ai-agents.html</guid>
-      <pubDate>Thu, 05 Nov 2026 00:01:30 GMT</pubDate>
-      <description></description>
-    </item>
-    <item>
-      <title>Images 2.6</title>
-      <link>https://signal-frontier.pages.dev/item/images-2-6.html</link>
-      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/images-2-6.html</guid>
-      <pubDate>Wed, 04 Nov 2026 23:35:44 GMT</pubDate>
-      <description></description>
-    </item>
-    <item>
-      <title>A thousand fewer paths to root</title>
-      <link>https://signal-frontier.pages.dev/item/a-thousand-fewer-paths-to-root.html</link>
-      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/a-thousand-fewer-paths-to-root.html</guid>
-      <pubDate>Wed, 04 Nov 2026 23:33:14 GMT</pubDate>
-      <description></description>
-    </item>
-    <item>
-      <title>Hacking the Xbox 360 Hypervisor Part 3: Bad Update Improvements</title>
-      <link>https://signal-frontier.pages.dev/item/hacking-the-xbox-360-hypervisor-part-3-bad-update-improvements.html</link>
-      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/hacking-the-xbox-360-hypervisor-part-3-bad-update-improvements.html</guid>
-      <pubDate>Wed, 04 Nov 2026 22:01:49 GMT</pubDate>
-      <description></description>
-    </item>
-    <item>
-      <title>The WordPress PHP Vulnerability Is Three CVEs With Three Owners</title>
-      <link>https://signal-frontier.pages.dev/item/the-wordpress-php-vulnerability-is-three-cves-with-three-owners.html</link>
-      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/the-wordpress-php-vulnerability-is-three-cves-with-three-owners.html</guid>
-      <pubDate>Wed, 04 Nov 2026 21:02:03 GMT</pubDate>
-      <description>&lt;p&gt;The WordPress PHP vulnerability going round this week is actually three separate remote-code-execution risks, reaching WordPress operators through three different components with three different owners and three different release channels. A "WordPress is updated" screenshot answers roughly a thi</description>
     </item>
   </channel>
 </rss>

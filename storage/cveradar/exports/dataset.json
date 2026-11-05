@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T05:13:50+00:00",
+  "generated_at": "2026-11-05T09:16:49+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -19,9 +19,9 @@
     },
     "by_topic": {
       "security": 49,
-      "ai": 39,
+      "ai": 38,
       "dev": 35,
-      "hardware": 9,
+      "hardware": 8,
       "crypto": 7,
       "science": 5,
       "biz": 2
@@ -589,6 +589,41 @@
       "date": "2026-11-03"
     },
     {
+      "uid": "rss:1158f29c0c67fa",
+      "source": "rss",
+      "title": "Zyxel GS1900 Patch Fails to Block Zero-Day Exploit Allowing Root Command Execution",
+      "url": "https://thehackernews.com/2026/11/zyxel-gs1900-patch-fails-to-block-zero.html",
+      "ts": 1793862393.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Zyxel GS1900 network switches that received the vendor's earlier fix for an actively exploited flaw are still open to the exploit attackers used, researchers at Binarly found. The exploit lets anyone who can reach a switch's web management interface run commands on it without logging in. Zyxel has released new firmware for 10 GS1900 models that closes the hole. The earlier fix is the 2.90",
+      "recipe": "the_hacker_news",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-05"
+    },
+    {
+      "uid": "rss:c040c9b9274352",
+      "source": "rss",
+      "title": "Hackers Exploit Patched Apple Flaw to Deliver Info-Stealing Malware, CISA Says",
+      "url": "https://thehackernews.com/2026/11/hackers-exploit-patched-apple-flaw-to.html",
+      "ts": 1793855824.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added a medium-severity security flaw impacting multiple Apple operating systems to its Known Exploited Vulnerabilities (KEV) catalog, following reports of active exploitation. The vulnerability in question is CVE-[phone] (CVSS score: 5.5), a case of improper authentication that could allow an attacker with",
+      "recipe": "the_hacker_news",
+      "buzz": 80,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-11-05"
+    },
+    {
       "uid": "rss:13fb52d553826f",
       "source": "rss",
       "title": "OpenAI AI Pipeline Generates 948 Linux Root Escalation Exploits in 30-Hour Run",
@@ -765,7 +800,7 @@
       "author": "info@thehackernews.com (The Hacker News)",
       "summary": "Russian authorities have arrested three suspected members of a threat group known as VasyGrek and dismantled its criminal infrastructure. Also known as Fluffy Wolf, the threat actor has a history of targeting Russian and international companies since 2016. The Ministry of Internal Affairs of the Russian Federation (MVD) said members of the group are \"suspected of embezzling funds from the",
       "recipe": "the_hacker_news",
-      "buzz": 80,
+      "buzz": 30,
       "topics": [
         "ai"
       ],
@@ -782,7 +817,7 @@
       "author": "info@thehackernews.com (The Hacker News)",
       "summary": "A critical Android flaw could allow an attacker to run code on a phone without any user action remotely, Google said in its&nbsp;November security bulletin. The flaw, CVE-[phone], affects Android 14 through 17. Phones get the fix with security patch level 2026-11-01 or later, which phone makers and carriers send on their own schedules. As of November 4, Google's bulletin did not report",
       "recipe": "the_hacker_news",
-      "buzz": 80,
+      "buzz": 30,
       "topics": [
         "ai",
         "security"
@@ -800,7 +835,7 @@
       "author": "info@thehackernews.com (The Hacker News)",
       "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added a security flaw in WordPress Core to the Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation. The high-severity vulnerability, tracked as CVE-[phone] (CVSS score: 8.1), is a case of Time-of-check Time-of-use (TOCTOU) race condition that could be exploited to achieve arbitrary code",
       "recipe": "the_hacker_news",
-      "buzz": 80,
+      "buzz": 30,
       "topics": [
         "dev",
         "security"
@@ -1102,43 +1137,6 @@
       "buzz": 30,
       "topics": [
         "dev",
-        "hardware"
-      ],
-      "date": "2026-11-02"
-    },
-    {
-      "uid": "rss:9c1ebae49ad888",
-      "source": "rss",
-      "title": "DarkBlinders Compromises Israeli Target and Iraqi Kurdish Government Cloud Environment",
-      "url": "https://thehackernews.com/2026/11/darkblinders-compromises-israeli-target.html",
-      "ts": 1793630765.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Cybersecurity researchers have disclosed details of a cyber espionage campaign targeting Israel and the Kurdistan Region of Iraq by an Iran state-aligned threat actor between August and October 2026. According to a report published by Dream Research Labs, the campaign has led to the compromise of a high-profile individual in Israel, along with additional compromises affecting a government cloud",
-      "recipe": "the_hacker_news",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-02"
-    },
-    {
-      "uid": "rss:647d9d7a719837",
-      "source": "rss",
-      "title": "Critical Langflow Flaws Could Let Unauthenticated Attackers Run Code on Servers",
-      "url": "https://thehackernews.com/2026/11/critical-langflow-flaws-could-let.html",
-      "ts": 1793620200.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Two critical flaws in Langflow could let a remote attacker with no account bypass authentication or run arbitrary code,&nbsp;IBM said last week. Langflow is an open-source tool for building AI agents and workflows, and&nbsp;its vulnerability reports go to IBM. Every release from 1.0.0 through 1.12.8 has the flaws, and the only fix is version 1.13.0. Neither flaw is in CISA's&nbsp;Known",
-      "recipe": "the_hacker_news",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "security",
         "hardware"
       ],
       "date": "2026-11-02"
