@@ -5,7 +5,45 @@
     <link>https://sentinel-post.pages.dev</link>
     <description>Автономная радиостанция кибербезопасности: живые CVE, угрозы и защита — без сенсаций</description>
     <language>ru</language>
-    <lastBuildDate>Thu, 05 Nov 2026 17:28:12 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 05 Nov 2026 21:03:03 GMT</lastBuildDate>
+    <item>
+      <title>CVE-2026-62300: filecoin-pin: Unbounded DAG pinning can exhaust server resources</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-62300-filecoin-pin-unbounded-dag-pinning-can-exhaust-se.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-62300-filecoin-pin-unbounded-dag-pinning-can-exhaust-se.html</guid>
+      <pubDate>Thu, 05 Nov 2026 18:07:30 GMT</pubDate>
+      <description>Severity: medium. ## Summary
+
+The IPFS Pinning Service API implementation accepts a caller-controlled CID through `POST /pins`, queues background processing, and then recursively fetches the full DAG with `helia.pins.add(cid)`. The route and background pinning path do not enforce a request rate limi</description>
+    </item>
+    <item>
+      <title>CVE-2026-61536: Banks: Unsafe importlib.import_module of attacker-controlled Tool.import_path in CompletionExtension allows RCE</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-61536-banks-unsafe-importlib-import-module-of-attacker-.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-61536-banks-unsafe-importlib-import-module-of-attacker-.html</guid>
+      <pubDate>Thu, 05 Nov 2026 17:51:02 GMT</pubDate>
+      <description>Severity: high. ## Summary
+
+  `banks` parses `Tool` JSON objects from the rendered body of `{% completion %}` blocks and later resolves their
+  `import_path` field through `importlib.import_module(...)` + `getattr(...)` to obtain the callable that handles a tool
+   call. There is no allowlist or san</description>
+    </item>
+    <item>
+      <title>CVE-2026-105769: kaniko can send the build's Azure (Entra ID) access token to lookalike ACR registry hosts</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-105769-kaniko-can-send-the-build-s-azure-entra-id-acces.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-105769-kaniko-can-send-the-build-s-azure-entra-id-acces.html</guid>
+      <pubDate>Thu, 05 Nov 2026 17:48:54 GMT</pubDate>
+      <description>Severity: critical. ### Summary
+
+kaniko before v1.25.20 can send a Microsoft Entra ID (Azure AD) access token for Azure Resource Manager to a registry host an attacker controls. A Dockerfile that references an image on a lookalike host, such as `FROM x.azurecr.io.attacker.com/img`, is enough. The bu</description>
+    </item>
+    <item>
+      <title>CVE-2026-12411: lxd allows Cross-guest volume hijack via DevLXD device patch</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-12411-lxd-allows-cross-guest-volume-hijack-via-devlxd-d.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-12411-lxd-allows-cross-guest-volume-hijack-via-devlxd-d.html</guid>
+      <pubDate>Thu, 05 Nov 2026 17:40:59 GMT</pubDate>
+      <description>Severity: high. ### Summary
+
+A guest can mount another guest's custom storage volume over `/dev/lxd` and read or write its contents without owning it. The DevLXD storage API blocks access to volumes you don't own, but the instance device-update path that attaches a volume to a container without chec</description>
+    </item>
     <item>
       <title>ThreatsDay: Apache OFBiz RCE, DreamHost Breach, DeFi Site Hijacks + 17 More Stories</title>
       <link>https://sentinel-post.pages.dev/item/threatsday-apache-ofbiz-rce-dreamhost-breach-defi-site-hijacks-1.html</link>
@@ -198,40 +236,6 @@ Loading an attacker-supplied lemma `.pt` runs arbitrary code as the loading user
       <guid isPermaLink="true">https://sentinel-post.pages.dev/item/msecure-warns-users-to-change-passwords-reset-2fa-and-passkeys-a.html</guid>
       <pubDate>Tue, 03 Nov 2026 18:46:38 GMT</pubDate>
       <description>Customers of the mSecure password manager are being urged to act now to protect the confidential information they store in it, possibly by changing passwords, resetting two-factor authentication (2FA), and removing passkeys. The warning came in an email sent on November 3 in the name of developer mS</description>
-    </item>
-    <item>
-      <title>Chainstack Reports Production Systems Breach Exposing Customer Data and Password Hashes</title>
-      <link>https://sentinel-post.pages.dev/item/chainstack-reports-production-systems-breach-exposing-customer-d.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/chainstack-reports-production-systems-breach-exposing-customer-d.html</guid>
-      <pubDate>Tue, 03 Nov 2026 18:16:19 GMT</pubDate>
-      <description>Blockchain infrastructure provider Chainstack on Tuesday disclosed that it was targeted in a cyber attack that allowed an unauthorized party to gain access to some parts of its infrastructure. The incident is assessed to be part of a large-scale, artificial intelligence (AI)-powered attack campaign </description>
-    </item>
-    <item>
-      <title>CVE-2026-44267: Elo JavaScript emitter has sandbox escape to arbitrary Node.js / browser code execution via unfiltered `.constructor` member access</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-44267-elo-javascript-emitter-has-sandbox-escape-to-arbi.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-44267-elo-javascript-emitter-has-sandbox-escape-to-arbi.html</guid>
-      <pubDate>Tue, 03 Nov 2026 17:53:42 GMT</pubDate>
-      <description>Severity: critical. ### Summary
-
-An unauthenticated attacker who controls a string passed to any Elo JavaScript-emission path — `defaultFormats.elo.parse()`, the `bin/elo` CLI, or the live browser playground at `elo-lang.org/try` — can execute arbitrary code in the host JavaScript runtime. A payload</description>
-    </item>
-    <item>
-      <title>CVE-2026-44266: Elo Ruby backend has Remote Code Execution via unescaped `#{...}` interpolation in emitted string literals and subtype-constraint labels</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-44266-elo-ruby-backend-has-remote-code-execution-via-un.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-44266-elo-ruby-backend-has-remote-code-execution-via-un.html</guid>
-      <pubDate>Tue, 03 Nov 2026 17:51:30 GMT</pubDate>
-      <description>Severity: critical. ### Summary
-
-Elo's Ruby backend emits attacker-controlled text into Ruby double-quoted strings without escaping the `#` character. Because `#` begins Ruby's interpolation sequences — `#{expr}`, `#@ivar`, `#@@cvar`, `#$gvar` — and any expression wrapped in `#{...}` may use backtic</description>
-    </item>
-    <item>
-      <title>CVE-2026-44265: Elo backends have code injection via unvalidated emission of programmatic AST fields</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-44265-elo-backends-have-code-injection-via-unvalidated-.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-44265-elo-backends-have-code-injection-via-unvalidated-.html</guid>
-      <pubDate>Tue, 03 Nov 2026 17:48:09 GMT</pubDate>
-      <description>Severity: high. ### Summary
-
-Elo's programmatic AST API accepts arbitrary values in many node fields without runtime type or syntax validation. Each backend's emit stage interpolates those values straight into the generated source with no escape pass. An integrator that populates the AST from JSON-d</description>
     </item>
   </channel>
 </rss>

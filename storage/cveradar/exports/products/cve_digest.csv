@@ -1,6 +1,9 @@
 cve_id,severity,package,title,url,date
+CVE-2026-105769,critical,github.com/chainguard-dev/kaniko,CVE-2026-105769: kaniko can send the build's Azure (Entra ID) access token to lookalike ACR registry hosts,https://github.com/advisories/GHSA-5q7h-w9jf-cx97,2026-11-05
 CVE-2026-44267,critical,@enspirit/elo,CVE-2026-44267: Elo JavaScript emitter has sandbox escape to arbitrary Node.js / browser code execution via unfiltered `.constructor` member access,https://github.com/advisories/GHSA-33r5-xmm8-v6x5,2026-11-03
 CVE-2026-44266,critical,@enspirit/elo,CVE-2026-44266: Elo Ruby backend has Remote Code Execution via unescaped `#{...}` interpolation in emitted string literals and subtype-constraint labels,https://github.com/advisories/GHSA-7w38-ggh5-v542,2026-11-03
+CVE-2026-61536,high,banks,CVE-2026-61536: Banks: Unsafe importlib.import_module of attacker-controlled Tool.import_path in CompletionExtension allows RCE,https://github.com/advisories/GHSA-64vx-6h2c-rjh7,2026-11-05
+CVE-2026-12411,high,github.com/canonical/lxd,CVE-2026-12411: lxd allows Cross-guest volume hijack via DevLXD device patch,https://github.com/advisories/GHSA-hhf9-qw4v-72xp,2026-11-05
 CVE-2026-115878,high,stanza,CVE-2026-115878: Stanza: RCE via pickle deserialization in the lemmatizer,https://github.com/advisories/GHSA-gh9r-c94j-cmp5,2026-11-03
 CVE-2026-44265,high,@enspirit/elo,CVE-2026-44265: Elo backends have code injection via unvalidated emission of programmatic AST fields,https://github.com/advisories/GHSA-x9rp-7wh3-2rj5,2026-11-03
 GHSA-p3jp-9v83-76w9,high,Microsoft.DotNet.ILCompiler,GHSA-p3jp-9v83-76w9: Microsoft Security Advisory CVE-2026-111497 - .NET Brotli Decoder Out-of-bounds Write Vulnerability,https://github.com/advisories/GHSA-p3jp-9v83-76w9,2026-11-03
@@ -17,10 +20,7 @@ CVE-2026-118772,high,joi,CVE-2026-118772: joi: quadratic-time split in `string()
 CVE-2026-119202,high,@hapi/content,CVE-2026-119202: @hapi/content: quadratic-time parsing of Content-Disposition parameters allows denial of service,https://github.com/advisories/GHSA-8494-f6mr-cjpv,2026-10-30
 CVE-2026-116672,high,Authlib,CVE-2026-116672: Authlib RFC 7592 examples omit registration-access-token client binding,https://github.com/advisories/GHSA-c73q-w75p-j82v,2026-10-30
 CVE-2026-119206,high,pypdf,CVE-2026-119206: pypdf has possible long runtimes when retrieving page labels,https://github.com/advisories/GHSA-42gh-23hr-vphw,2026-10-30
-CVE-2026-119207,high,pypdf,CVE-2026-119207: pypdf has possible large memory usage for exceptions in strict mode,https://github.com/advisories/GHSA-4vqv-7265-gm2w,2026-10-30
-CVE-2026-119208,high,pypdf,CVE-2026-119208: pypdf has possible long runtimes/large memory usage for encrypted PDF files,https://github.com/advisories/GHSA-62m5-6wh8-28x7,2026-10-30
-CVE-2026-119209,high,pypdf,CVE-2026-119209: pypdf has possible large memory usage when parsing cross-reference streams,https://github.com/advisories/GHSA-x3rh-gjgm-fmqc,2026-10-30
-CVE-2026-119196,high,pyasn1,CVE-2026-119196: pyasn1 has quadratic CPU consumption in constructed BIT STRING decoding,https://github.com/advisories/GHSA-2qm8-x737-gmw5,2026-10-30
+CVE-2026-62300,medium,filecoin-pin,CVE-2026-62300: filecoin-pin: Unbounded DAG pinning can exhaust server resources,https://github.com/advisories/GHSA-m5ph-mmg5-6w5h,2026-11-05
 CVE-2026-55098,medium,github.com/basekick-labs/arc,CVE-2026-55098: Arc: DuckDB I/O aliases bypass database RBAC after CVE-2026-47735,https://github.com/advisories/GHSA-93cm-2v4m-c56c,2026-11-04
 CVE-2026-93363,medium,@payloadcms/storage-vercel-blob,CVE-2026-93363: @payloadcms/storage-vercel-blob has access control bypass of uploads in Vercel Storage adapter,https://github.com/advisories/GHSA-mc8m-rr6c-r5qr,2026-11-04
 CVE-2026-113787,medium,odf-kit,CVE-2026-113787: odf-kit: HTML injection leading to XSS in odtToHtml() and odsToHtml() via unescaped style attribute values,https://github.com/advisories/GHSA-3cgg-c5pp-57h6,2026-11-04

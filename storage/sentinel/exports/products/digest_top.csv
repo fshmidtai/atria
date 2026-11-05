@@ -1,6 +1,7 @@
 uid,source,title,url,buzz,date,topics
 hn:37392676,hn,Ask HN: I’m an FCC Commissioner proposing regulation of IoT security updates,https://news.ycombinator.com/item?id=37392676,6162,2023-09-05,dev|security
 hn:43462783,hn,U.S. national-security leaders included me in a group chat,https://www.theatlantic.com/politics/archive/2025/03/trump-administration-accidentally-texted-me-its-war-plans/682151/,6156,2025-03-24,security
+cve:GHSA-5q7h-w9jf-cx97,cve,CVE-2026-105769: kaniko can send the build's Azure (Entra ID) access token to lookalike ACR registry hosts,https://github.com/advisories/GHSA-5q7h-w9jf-cx97,6080,2026-11-05,dev|crypto|security
 cve:GHSA-33r5-xmm8-v6x5,cve,CVE-2026-44267: Elo JavaScript emitter has sandbox escape to arbitrary Node.js / browser code execution via unfiltered `.constructor` member access,https://github.com/advisories/GHSA-33r5-xmm8-v6x5,6030,2026-11-03,security
 cve:GHSA-7w38-ggh5-v542,cve,CVE-2026-44266: Elo Ruby backend has Remote Code Execution via unescaped `#{...}` interpolation in emitted string literals and subtype-constraint labels,https://github.com/advisories/GHSA-7w38-ggh5-v542,6030,2026-11-03,ai|dev|security
 hn:48997548,hn,OpenAI and Hugging Face address security incident during model evaluation,https://openai.com/index/hugging-face-model-evaluation-security-incident/,5103,2026-07-21,ai|dev|biz|security
@@ -8,6 +9,8 @@ hn:43128253,hn,Apple pulls data protection tool after UK government security row
 hn:39452494,hn,"Insecure vehicles should be banned, not security tools like the Flipper Zero",https://saveflipper.ca/,4130,2024-02-21,security
 hn:30051054,hn,Ask HN: Gmail account security,https://news.ycombinator.com/item?id=30051054,3830,2022-01-23,ai|dev|security
 hn:25729088,hn,"70TB of Parler users’ messages, videos, and posts leaked by security researchers",https://cybernews.com/news/70tb-of-parler-users-messages-videos-and-posts-leaked-by-security-researchers/,3745,2021-01-11,dev|security
+cve:GHSA-64vx-6h2c-rjh7,cve,CVE-2026-61536: Banks: Unsafe importlib.import_module of attacker-controlled Tool.import_path in CompletionExtension allows RCE,https://github.com/advisories/GHSA-64vx-6h2c-rjh7,3580,2026-11-05,ai|security
+cve:GHSA-hhf9-qw4v-72xp,cve,CVE-2026-12411: lxd allows Cross-guest volume hijack via DevLXD device patch,https://github.com/advisories/GHSA-hhf9-qw4v-72xp,3580,2026-11-05,ai|dev|security
 hn:50172041,hn,"Security advisory: Critical remote code execution vulnerabilities, update now",https://www.php.net/archive/2026.php#2026-10-21-5,3538,2026-10-20,security
 cve:GHSA-gh9r-c94j-cmp5,cve,CVE-2026-115878: Stanza: RCE via pickle deserialization in the lemmatizer,https://github.com/advisories/GHSA-gh9r-c94j-cmp5,3530,2026-11-03,security
 cve:GHSA-x9rp-7wh3-2rj5,cve,CVE-2026-44265: Elo backends have code injection via unvalidated emission of programmatic AST fields,https://github.com/advisories/GHSA-x9rp-7wh3-2rj5,3530,2026-11-03,ai|dev|science|security
@@ -15,7 +18,7 @@ cve:GHSA-p3jp-9v83-76w9,cve,GHSA-p3jp-9v83-76w9: Microsoft Security Advisory CVE
 cve:GHSA-48v2-6jcm-fc99,cve,CVE-2026-62331: praktor: Path traversal in Telegram file uploads allows writing outside the agent workspace uploads/ directory (stored instruction injection),https://github.com/advisories/GHSA-48v2-6jcm-fc99,3530,2026-11-03,ai|dev|science|security
 cve:GHSA-j97h-3f8r-mrjr,cve,CVE-2026-11800: Keycloak has authentication bypass via jwt algorithm confusion,https://github.com/advisories/GHSA-j97h-3f8r-mrjr,3530,2026-11-03,crypto|science|security
 cve:GHSA-h26j-4vp7-x9w2,cve,CVE-2026-62848: Metalama: Unsafe deserialization over Metalama's Visual Studio inter-process named pipe enables local code execution,https://github.com/advisories/GHSA-h26j-4vp7-x9w2,3530,2026-11-03,dev|security
-cve:GHSA-f9j6-8p6x-r9j6,cve,CVE-2026-62374: SD JWT JS: Tampered disclosures silently dropped instead of rejected,https://github.com/advisories/GHSA-f9j6-8p6x-r9j6,3530,2026-11-02,ai|security
+cve:GHSA-f9j6-8p6x-r9j6,cve,CVE-2026-62374: SD JWT JS: Tampered disclosures silently dropped instead of rejected,https://github.com/advisories/GHSA-f9j6-8p6x-r9j6,3510,2026-11-02,ai|security
 cve:GHSA-8fmv-6rg5-5924,cve,CVE-2026-118761: Kubeflow Pipelines: Pipeline archive upload allows decompression bomb to exhaust server memory,https://github.com/advisories/GHSA-8fmv-6rg5-5924,3510,2026-10-30,dev|security|hardware
 cve:GHSA-wg5q-x4j9-qm54,cve,CVE-2026-118759: Kubeflow Pipelines: Run-log endpoint permits unauthorized access to pod logs,https://github.com/advisories/GHSA-wg5q-x4j9-qm54,3510,2026-10-30,ai|dev|security|hardware
 cve:GHSA-5849-834g-hvw5,cve,CVE-2026-119203: pypdf has possible infinite loop when hitting EOF in standard xref table during trailer search,https://github.com/advisories/GHSA-5849-834g-hvw5,3510,2026-10-30,ai|dev|security
@@ -25,10 +28,6 @@ cve:GHSA-4528-x5fx-h6hg,cve,CVE-2026-118772: joi: quadratic-time split in `strin
 cve:GHSA-8494-f6mr-cjpv,cve,CVE-2026-119202: @hapi/content: quadratic-time parsing of Content-Disposition parameters allows denial of service,https://github.com/advisories/GHSA-8494-f6mr-cjpv,3510,2026-10-30,ai|dev|crypto|security
 cve:GHSA-c73q-w75p-j82v,cve,CVE-2026-116672: Authlib RFC 7592 examples omit registration-access-token client binding,https://github.com/advisories/GHSA-c73q-w75p-j82v,3510,2026-10-30,crypto|security
 cve:GHSA-42gh-23hr-vphw,cve,CVE-2026-119206: pypdf has possible long runtimes when retrieving page labels,https://github.com/advisories/GHSA-42gh-23hr-vphw,3510,2026-10-30,dev|security
-cve:GHSA-4vqv-7265-gm2w,cve,CVE-2026-119207: pypdf has possible large memory usage for exceptions in strict mode,https://github.com/advisories/GHSA-4vqv-7265-gm2w,3510,2026-10-30,dev|security
-cve:GHSA-62m5-6wh8-28x7,cve,CVE-2026-119208: pypdf has possible long runtimes/large memory usage for encrypted PDF files,https://github.com/advisories/GHSA-62m5-6wh8-28x7,3510,2026-10-30,dev|security
-cve:GHSA-x3rh-gjgm-fmqc,cve,CVE-2026-119209: pypdf has possible large memory usage when parsing cross-reference streams,https://github.com/advisories/GHSA-x3rh-gjgm-fmqc,3510,2026-10-30,dev|security
-cve:GHSA-2qm8-x737-gmw5,cve,CVE-2026-119196: pyasn1 has quadratic CPU consumption in constructed BIT STRING decoding,https://github.com/advisories/GHSA-2qm8-x737-gmw5,3510,2026-10-30,ai|dev|security|hardware
 hn:32148218,hn,FCC: TikTok is unacceptable security risk and should be removed from app stores,https://blog.malwarebytes.com/privacy-2/2022/07/tiktok-is-unacceptable-security-risk-and-should-be-removed-from-app-stores-says-fcc/,3376,2022-07-19,security
 hn:41392128,hn,Bypassing airport security via SQL injection,https://ian.sh/tsa,3324,2024-08-29,ai|security
 hn:41792500,hn,Internet Archive: Security breach alert,https://www.theverge.com/2024/10/9/24266419/internet-archive-ddos-attack-pop-up-message,2912,2024-10-09,security
@@ -46,6 +45,7 @@ hn:23180975,hn,Security Flaws in Adobe Acrobat Reader Allow Gaining Root on macO
 hn:50182987,hn,"Today's PHP security release, and how we're strengthening security",https://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security/,2034,2026-10-21,security
 hn:17592422,hn,Google: Security Keys Neutralized Employee Phishing,https://krebsonsecurity.com/2018/07/google-security-keys-neutered-employee-phishing/,2002,2018-07-23,security
 hn:24636166,hn,Apple’s T2 security chip jailbreak,https://reportcybercrime.com/hackers-jailbreak-apples-t2-security-chip-powered-by-bridgeos/,1881,2020-09-30,ai|security|hardware
+cve:GHSA-m5ph-mmg5-6w5h,cve,CVE-2026-62300: filecoin-pin: Unbounded DAG pinning can exhaust server resources,https://github.com/advisories/GHSA-m5ph-mmg5-6w5h,1880,2026-11-05,dev|security|hardware
 hn:48166459,hn,Mozilla to UK regulators: VPNs are essential privacy and security tools,https://blog.mozilla.org/netpolicy/2026/05/15/mozilla-to-uk-regulators-vpns-are-essential-privacy-and-security-tools-and-should-not-be-undermined/,1876,2026-05-17,security
 hn:6944118,hn,Secret contract tied NSA and security industry pioneer,http://www.reuters.com/article/2013/12/20/us-usa-security-rsa-idUSBRE9BJ1C220131220,1859,2013-12-20,security
 hn:13182120,hn,Yahoo installed a backdoor for the NSA behind the back of the security team,https://diracdeltas.github.io/blog/surveillance/,1849,2016-12-15,security

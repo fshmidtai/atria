@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T17:27:48+00:00",
+  "generated_at": "2026-11-05T21:02:41+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -19,9 +19,9 @@
     },
     "by_topic": {
       "security": 50,
-      "ai": 39,
-      "dev": 34,
-      "crypto": 7,
+      "ai": 40,
+      "dev": 33,
+      "crypto": 8,
       "hardware": 6,
       "science": 5,
       "biz": 1
@@ -38,6 +38,25 @@
     ]
   },
   "items": [
+    {
+      "uid": "cve:GHSA-5q7h-w9jf-cx97",
+      "source": "cve",
+      "title": "CVE-2026-105769: kaniko can send the build's Azure (Entra ID) access token to lookalike ACR registry hosts",
+      "url": "https://github.com/advisories/GHSA-5q7h-w9jf-cx97",
+      "ts": 1793900934.0,
+      "points": 6000,
+      "comments": 0,
+      "author": "github.com/chainguard-dev/kaniko",
+      "summary": "Severity: critical. ### Summary\n\nkaniko before v1.25.20 can send a Microsoft Entra ID (Azure AD) access token for Azure Resource Manager to a registry host an attacker controls. A Dockerfile that references an image on a lookalike host, such as `FROM x.azurecr.io.attacker.com/img`, is enough. The build needs no `RUN` i",
+      "recipe": "gh_advisories",
+      "buzz": 6080,
+      "topics": [
+        "dev",
+        "crypto",
+        "security"
+      ],
+      "date": "2026-11-05"
+    },
     {
       "uid": "cve:GHSA-33r5-xmm8-v6x5",
       "source": "cve",
@@ -73,6 +92,43 @@
         "security"
       ],
       "date": "2026-11-03"
+    },
+    {
+      "uid": "cve:GHSA-64vx-6h2c-rjh7",
+      "source": "cve",
+      "title": "CVE-2026-61536: Banks: Unsafe importlib.import_module of attacker-controlled Tool.import_path in CompletionExtension allows RCE",
+      "url": "https://github.com/advisories/GHSA-64vx-6h2c-rjh7",
+      "ts": 1793901062.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "banks",
+      "summary": "Severity: high. ## Summary\n\n  `banks` parses `Tool` JSON objects from the rendered body of `{% completion %}` blocks and later resolves their\n  `import_path` field through `importlib.import_module(...)` + `getattr(...)` to obtain the callable that handles a tool\n   call. There is no allowlist or sanitization on `im",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-05"
+    },
+    {
+      "uid": "cve:GHSA-hhf9-qw4v-72xp",
+      "source": "cve",
+      "title": "CVE-2026-12411: lxd allows Cross-guest volume hijack via DevLXD device patch",
+      "url": "https://github.com/advisories/GHSA-hhf9-qw4v-72xp",
+      "ts": 1793900459.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "github.com/canonical/lxd",
+      "summary": "Severity: high. ### Summary\n\nA guest can mount another guest's custom storage volume over `/dev/lxd` and read or write its contents without owning it. The DevLXD storage API blocks access to volumes you don't own, but the instance device-update path that attaches a volume to a container without checks ownership. An",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-05"
     },
     {
       "uid": "cve:GHSA-gh9r-c94j-cmp5",
@@ -197,7 +253,7 @@
       "author": "@sd-jwt/decode",
       "summary": "Severity: high. ## Summary\n\nWhen one Disclosure in an SD-JWT presentation is tampered so its digest no longer matches the Issuer-signed `_sd` array, `@sd-jwt/decode` 0.19.0 does **not** reject the presentation. It silently drops the unmatched Disclosure and returns a **reduced claim set**, reporting success. The Is",
       "recipe": "gh_advisories",
-      "buzz": 3530,
+      "buzz": 3510,
       "topics": [
         "ai",
         "security"
@@ -374,78 +430,23 @@
       "date": "2026-10-30"
     },
     {
-      "uid": "cve:GHSA-4vqv-7265-gm2w",
+      "uid": "cve:GHSA-m5ph-mmg5-6w5h",
       "source": "cve",
-      "title": "CVE-2026-119207: pypdf has possible large memory usage for exceptions in strict mode",
-      "url": "https://github.com/advisories/GHSA-4vqv-7265-gm2w",
-      "ts": 1793401719.0,
-      "points": 3500,
+      "title": "CVE-2026-62300: filecoin-pin: Unbounded DAG pinning can exhaust server resources",
+      "url": "https://github.com/advisories/GHSA-m5ph-mmg5-6w5h",
+      "ts": 1793902050.0,
+      "points": 1800,
       "comments": 0,
-      "author": "pypdf",
-      "summary": "Severity: high. ### Impact\n\nAn attacker who uses this vulnerability can craft a PDF which leads to large memory usage. This requires loading an invalid dictionary.\n\n### Patches\n\nThis has been fixed in [pypdf==6.21.3](https://github.com/py-pdf/pypdf/releases/tag/6.21.3).\n\n### Workarounds\n\nIf you cannot upgrade yet,",
+      "author": "filecoin-pin",
+      "summary": "Severity: medium. ## Summary\n\nThe IPFS Pinning Service API implementation accepts a caller-controlled CID through `POST /pins`, queues background processing, and then recursively fetches the full DAG with `helia.pins.add(cid)`. The route and background pinning path do not enforce a request rate limit, per-user quota,",
       "recipe": "gh_advisories",
-      "buzz": 3510,
+      "buzz": 1880,
       "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-10-30"
-    },
-    {
-      "uid": "cve:GHSA-62m5-6wh8-28x7",
-      "source": "cve",
-      "title": "CVE-2026-119208: pypdf has possible long runtimes/large memory usage for encrypted PDF files",
-      "url": "https://github.com/advisories/GHSA-62m5-6wh8-28x7",
-      "ts": 1793401704.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "pypdf",
-      "summary": "Severity: high. ### Impact\n\nAn attacker who uses this vulnerability can craft a PDF which leads to large runtimes/memory usage. This requires accessing the page count of an encrypted PDF file, which itself declares a wrong `/Count` value.\n\n### Patches\n\nThis has been fixed in [pypdf==6.21.3](https://github.com/py-pd",
-      "recipe": "gh_advisories",
-      "buzz": 3510,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-10-30"
-    },
-    {
-      "uid": "cve:GHSA-x3rh-gjgm-fmqc",
-      "source": "cve",
-      "title": "CVE-2026-119209: pypdf has possible large memory usage when parsing cross-reference streams",
-      "url": "https://github.com/advisories/GHSA-x3rh-gjgm-fmqc",
-      "ts": 1793401648.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "pypdf",
-      "summary": "Severity: high. ### Impact\n\nAn attacker who uses this vulnerability can craft a PDF which leads to large memory usage. This requires opening a file with cross-reference streams.\n\n### Patches\n\nThis has been fixed in [pypdf==6.21.3](https://github.com/py-pdf/pypdf/releases/tag/6.21.3).\n\n### Workarounds\n\nIf you cannot",
-      "recipe": "gh_advisories",
-      "buzz": 3510,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-10-30"
-    },
-    {
-      "uid": "cve:GHSA-2qm8-x737-gmw5",
-      "source": "cve",
-      "title": "CVE-2026-119196: pyasn1 has quadratic CPU consumption in constructed BIT STRING decoding",
-      "url": "https://github.com/advisories/GHSA-2qm8-x737-gmw5",
-      "ts": 1793401624.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "pyasn1",
-      "summary": "Severity: high. ## Summary\n\nIn pyasn1 through 0.6.4, decoding a constructed BIT STRING with many fragments repeatedly shifts and copies the entire value accumulated so far. For fixed-size fragments, CPU time grows quadratically with the encoded input size. An application that passes sufficiently large, attacker-con",
-      "recipe": "gh_advisories",
-      "buzz": 3510,
-      "topics": [
-        "ai",
         "dev",
         "security",
         "hardware"
       ],
-      "date": "2026-10-30"
+      "date": "2026-11-05"
     },
     {
       "uid": "cve:GHSA-93cm-2v4m-c56c",
@@ -529,7 +530,7 @@
       "author": "@bytebase/dbhub",
       "summary": "Severity: medium. The read-only mode can be bypassed on the MySQL and MariaDB connectors. In read-only mode a caller can still execute arbitrary write and DDL statements (for example DROP TABLE), which defeats the protection that read-only mode is meant to provide when a database is exposed to an AI agent.\n\nRoot caus",
       "recipe": "gh_advisories",
-      "buzz": 1830,
+      "buzz": 1810,
       "topics": [
         "ai",
         "dev"
