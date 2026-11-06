@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T13:24:36+00:00",
+  "generated_at": "2026-11-06T17:06:31+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -22,16 +22,16 @@
       "gh_advisories": 30,
       "hackersnews": 30,
       "github_sec": 14,
-      "krebs": 10,
-      "schneier": 10
+      "schneier": 10,
+      "krebs": 10
     },
     "by_topic": {
       "security": 105,
-      "ai": 71,
-      "dev": 57,
-      "hardware": 12,
-      "crypto": 11,
+      "ai": 70,
+      "dev": 56,
+      "hardware": 13,
       "biz": 10,
+      "crypto": 9,
       "science": 5
     },
     "top_domains": [
@@ -478,7 +478,7 @@
       "author": "Metalama.Framework",
       "summary": "Severity: high. ## Summary\n\nMetalama uses a local named-pipe channel to communicate between its Visual Studio processes — the Visual Studio UI process (`devenv`), the out-of-process Roslyn code-analysis process, and the CodeLens process. This channel deserialized messages from the pipe **without restricting which C",
       "recipe": "gh_advisories",
-      "buzz": 3530,
+      "buzz": 3510,
       "topics": [
         "dev",
         "security"
@@ -1102,7 +1102,7 @@
       "author": "github.com/tinfoil-factory/netfoil",
       "summary": "Severity: medium. ### Summary\nTTL was not decremented, so stale records would continue to be served.",
       "recipe": "gh_advisories",
-      "buzz": 1830,
+      "buzz": 1810,
       "topics": [],
       "date": "2026-11-03"
     },
@@ -1367,6 +1367,24 @@
       "date": "2019-07-18"
     },
     {
+      "uid": "gh:arpanjot-coding/AVault",
+      "source": "github",
+      "title": "arpanjot-coding/AVault",
+      "url": "https://github.com/arpanjot-coding/AVault",
+      "ts": 1793474487.0,
+      "points": 620,
+      "comments": 32,
+      "author": "arpanjot-coding",
+      "summary": "AVault - Call Recorder (No Root Required) | Privacy-first, hardware-encrypted audio vault for Android 12-16+. Rootless call recording via Shizuku with AES-256-GCM, biometrics & auto-cleanup.",
+      "recipe": "github_sec",
+      "buzz": 726,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-10-31"
+    },
+    {
       "uid": "cve:GHSA-m3qr-fvp4-78xj",
       "source": "cve",
       "title": "GHSA-m3qr-fvp4-78xj: Arc has unauthenticated application log disclosure via `/api/v1/logs`",
@@ -1377,29 +1395,11 @@
       "author": "github.com/basekick-labs/arc",
       "summary": "Severity: low. ## Summary\n\nArc exposes `GET /api/v1/logs` without authentication even when authentication is enabled by default. The route is registered before the global Fiber authentication middleware, and the handler returns recent buffered application logs without performing its own authorization check.\n\n## De",
       "recipe": "gh_advisories",
-      "buzz": 730,
+      "buzz": 710,
       "topics": [
         "dev"
       ],
       "date": "2026-11-03"
-    },
-    {
-      "uid": "gh:arpanjot-coding/AVault",
-      "source": "github",
-      "title": "arpanjot-coding/AVault",
-      "url": "https://github.com/arpanjot-coding/AVault",
-      "ts": 1793474487.0,
-      "points": 617,
-      "comments": 32,
-      "author": "arpanjot-coding",
-      "summary": "AVault - Call Recorder (No Root Required) | Privacy-first, hardware-encrypted audio vault for Android 12-16+. Rootless call recording via Shizuku with AES-256-GCM, biometrics & auto-cleanup.",
-      "recipe": "github_sec",
-      "buzz": 723,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-10-31"
     },
     {
       "uid": "gh:mrhlaingbwardev/agentic-hacking-skills",
@@ -1426,12 +1426,12 @@
       "title": "jmanico/grim-prompter",
       "url": "https://github.com/jmanico/grim-prompter",
       "ts": 1793189366.0,
-      "points": 376,
+      "points": 378,
       "comments": 31,
       "author": "jmanico",
       "summary": "Threat modeling for AI coding agents: point Claude Code, Codex or any agent at your repo and get an evidence-traced threat model. 36 architectures, 29 methods, MIT.",
       "recipe": "github_sec",
-      "buzz": 469,
+      "buzz": 471,
       "topics": [
         "ai",
         "dev"
@@ -1496,12 +1496,12 @@
       "title": "akari-sora/synology-nas-cli",
       "url": "https://github.com/akari-sora/synology-nas-cli",
       "ts": 1793353967.0,
-      "points": 94,
+      "points": 96,
       "comments": 10,
       "author": "akari-sora",
       "summary": "nas: a zero-dependency Python CLI + MCP server for Synology DSM 7. One-command audit and fix for the C3RB3R / .L0CK3D ransomware campaign; hand it to your AI agent. Mirror; canonical repo and issues: gitlab.com/aa[phone]/synology-nas-cli",
       "recipe": "github_sec",
-      "buzz": 124,
+      "buzz": 126,
       "topics": [
         "ai",
         "dev",
@@ -1516,12 +1516,12 @@
       "title": "0x45dd/pwner",
       "url": "https://github.com/0x45dd/pwner",
       "ts": 1793625315.0,
-      "points": 78,
+      "points": 80,
       "comments": 7,
       "author": "0x45dd",
       "summary": "Autonomous agentic network penetration-testing tool (authorized use only)",
       "recipe": "github_sec",
-      "buzz": 109,
+      "buzz": 111,
       "topics": [
         "ai"
       ],
@@ -1551,17 +1551,90 @@
       "title": "huggingface/safeagents",
       "url": "https://github.com/huggingface/safeagents",
       "ts": 1793195562.0,
-      "points": 85,
+      "points": 87,
       "comments": 2,
       "author": "huggingface",
       "summary": "Safely run your agents using any coding harness",
       "recipe": "github_sec",
-      "buzz": 91,
+      "buzz": 93,
       "topics": [
         "ai",
         "dev"
       ],
       "date": "2026-10-28"
+    },
+    {
+      "uid": "rss:42827a83e3b0b8",
+      "source": "rss",
+      "title": "Pinpointing Location of Videos from Background Airplane Sounds",
+      "url": "https://www.schneier.com/blog/archives/2026/11/pinpointing-location-of-videos-from-background-airplane-sounds.html",
+      "ts": 1793982507.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Bruce Schneier",
+      "summary": "<p>This is <a href=\"https://gizmodo.com/a-youtuber-figured-out-how-to-find-almost-anyone-using-airplane-sounds-[phone]\">fascinating</a>:</p> <blockquote><p>The video describes a technique that can reveal where an otherwise unidentifiable recording was made by analyzing its audio for the faint sounds of passing aircraft. The technique is both fascinating and frightening.</p> <p>It works by looki",
+      "recipe": "schneier",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev"
+      ],
+      "date": "2026-11-06"
+    },
+    {
+      "uid": "rss:fbf802f0e9923d",
+      "source": "rss",
+      "title": "Installing the Fix for an Exploited WordPress Flaw Can Expose Some Sites One Last Time",
+      "url": "https://thehackernews.com/2026/11/installing-fix-for-exploited-wordpress.html",
+      "ts": 1793981318.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Some WordPress sites can still be attacked while they install the fix for an actively exploited flaw, according to Umut Bayram, the Picus Security researcher who found it. The update that installs the fix still unpacks its files using the site's old, unpatched code, so an attacker who strikes at the right moment can run code on the server. The researcher advises blocking web access to the",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-06"
+    },
+    {
+      "uid": "rss:31e8a45d274dcf",
+      "source": "rss",
+      "title": "Hackers Target OpenSSH SSHole Flaw Within Hours of Disclosure, Gain Root on Honeypot",
+      "url": "https://thehackernews.com/2026/11/hackers-exploited-openssh-sshole-flaw.html",
+      "ts": 1793978509.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Threat actors are attempting to exploit a recently disclosed security flaw impacting OpenSSH that can enable sign-ins to accounts that have no password set, according to Previdian. The vulnerability, tracked as CVE-[phone] (CVSS score: 8.1) and codenamed SSHole (or *sshole), impacts Linux systems that run OpenSSH on the musl C library with Pluggable Authentication Modules (PAM) disabled,",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-06"
+    },
+    {
+      "uid": "rss:1a20a287bd65ec",
+      "source": "rss",
+      "title": "OpenAI Launches GPT-6 Cyber After AI Helps Find 81 Firefox Flaws, 948 Linux Exploits",
+      "url": "https://thehackernews.com/2026/11/openai-launches-gpt-6-cyber-after-ai.html",
+      "ts": 1793977112.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "OpenAI on Thursday unveiled GPT‑6 Cyber, which it described as a major step forward in security research that brings together stronger cybersecurity capabilities with a step-change improvement in model alignment. The new model is \"more capable at finding and fixing vulnerabilities, and far more reliable staying within the boundaries researchers set,\" OpenAI said. It has classified the model as",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-06"
     },
     {
       "uid": "rss:d775a103c59030",
@@ -1675,60 +1748,6 @@
       "date": "2026-11-06"
     },
     {
-      "uid": "rss:7d1426211b6649",
-      "source": "rss",
-      "title": "OpenSSH Issues Emergency Fix for Flaw Letting Long Passwords Bypass SSH Auth on Alpine Linux",
-      "url": "https://thehackernews.com/2026/11/openssh-issues-emergency-fix-for-flaw.html",
-      "ts": 1793896966.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Attackers can log in to accounts that have no password, such as SSH key-only accounts, on some Alpine Linux servers running the standard openssh-server package. They need network access to the server, an account name, and a password between 257 and 1,024 bytes long. OpenSSH, which rates the flaw critical, released version 10.6p2 today to block it. Alpine has published fixed packages for every",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "hardware"
-      ],
-      "date": "2026-11-05"
-    },
-    {
-      "uid": "rss:3bf0f5509b1b73",
-      "source": "rss",
-      "title": "Researchers Bypass ChatGPT Lockdown Mode to Exfiltrate Chats Without User Interaction",
-      "url": "https://thehackernews.com/2026/11/researchers-bypass-chatgpt-lockdown.html",
-      "ts": 1793896952.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Cybersecurity researchers have disclosed details of a now-patched vulnerability that could be exploited to bypass Lockdown Mode protections in OpenAI ChatGPT. Lockdown Mode was introduced by the artificial intelligence (AI) company in June 2026 as an optional setting to minimize data exfiltration risks arising from prompt injections. \"The flaw could enable silent chat data theft, phishing,",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-05"
-    },
-    {
-      "uid": "rss:7ecbfe39c223a7",
-      "source": "rss",
-      "title": "ThreatsDay: Apache OFBiz RCE, DreamHost Breach, DeFi Site Hijacks + 17 More Stories",
-      "url": "https://thehackernews.com/2026/11/threatsday-apache-ofbiz-rce-dreamhost.html",
-      "ts": 1793889670.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "How much damage can someone do without breaking much? Quite a lot, it seems. A stolen login can open doors across several systems. A trusted setting can be used to lock people out. Even a simple file copy can reach places it shouldn't. And while new tools are helping find security holes faster, some important systems are still taking months, sometimes over a year, to get patched. Not exactly a",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "dev",
-        "crypto",
-        "security"
-      ],
-      "date": "2026-11-05"
-    },
-    {
       "uid": "gh:Problem99-io/kodeblue",
       "source": "github",
       "title": "Problem99-io/kodeblue",
@@ -1798,6 +1817,60 @@
         "ai",
         "dev",
         "biz",
+        "security"
+      ],
+      "date": "2026-11-05"
+    },
+    {
+      "uid": "rss:7d1426211b6649",
+      "source": "rss",
+      "title": "OpenSSH Issues Emergency Fix for Flaw Letting Long Passwords Bypass SSH Auth on Alpine Linux",
+      "url": "https://thehackernews.com/2026/11/openssh-issues-emergency-fix-for-flaw.html",
+      "ts": 1793896966.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Attackers can log in to accounts that have no password, such as SSH key-only accounts, on some Alpine Linux servers running the standard openssh-server package. They need network access to the server, an account name, and a password between 257 and 1,024 bytes long. OpenSSH, which rates the flaw critical, released version 10.6p2 today to block it. Alpine has published fixed packages for every",
+      "recipe": "hackersnews",
+      "buzz": 30,
+      "topics": [
+        "hardware"
+      ],
+      "date": "2026-11-05"
+    },
+    {
+      "uid": "rss:3bf0f5509b1b73",
+      "source": "rss",
+      "title": "Researchers Bypass ChatGPT Lockdown Mode to Exfiltrate Chats Without User Interaction",
+      "url": "https://thehackernews.com/2026/11/researchers-bypass-chatgpt-lockdown.html",
+      "ts": 1793896952.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Cybersecurity researchers have disclosed details of a now-patched vulnerability that could be exploited to bypass Lockdown Mode protections in OpenAI ChatGPT. Lockdown Mode was introduced by the artificial intelligence (AI) company in June 2026 as an optional setting to minimize data exfiltration risks arising from prompt injections. \"The flaw could enable silent chat data theft, phishing,",
+      "recipe": "hackersnews",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-05"
+    },
+    {
+      "uid": "rss:7ecbfe39c223a7",
+      "source": "rss",
+      "title": "ThreatsDay: Apache OFBiz RCE, DreamHost Breach, DeFi Site Hijacks + 17 More Stories",
+      "url": "https://thehackernews.com/2026/11/threatsday-apache-ofbiz-rce-dreamhost.html",
+      "ts": 1793889670.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "How much damage can someone do without breaking much? Quite a lot, it seems. A stolen login can open doors across several systems. A trusted setting can be used to lock people out. Even a simple file copy can reach places it shouldn't. And while new tools are helping find security holes faster, some important systems are still taking months, sometimes over a year, to get patched. Not exactly a",
+      "recipe": "hackersnews",
+      "buzz": 30,
+      "topics": [
+        "dev",
+        "crypto",
         "security"
       ],
       "date": "2026-11-05"
@@ -2127,64 +2200,6 @@
       "date": "2026-11-04"
     },
     {
-      "uid": "rss:a20c924b8926e0",
-      "source": "rss",
-      "title": "mSecure Warns Users to Change Passwords, Reset 2FA and Passkeys After Suspicious Activity",
-      "url": "https://thehackernews.com/2026/11/msecure-warns-users-to-change-passwords.html",
-      "ts": 1793731598.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Customers of the mSecure password manager are being urged to act now to protect the confidential information they store in it, possibly by changing passwords, resetting two-factor authentication (2FA), and removing passkeys. The warning came in an email sent on November 3 in the name of developer mSeven Software. It says the company recently learned of suspicious activity linked to the app but",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "dev"
-      ],
-      "date": "2026-11-03"
-    },
-    {
-      "uid": "rss:ca8186c7072948",
-      "source": "rss",
-      "title": "Chainstack Reports Production Systems Breach Exposing Customer Data and Password Hashes",
-      "url": "https://thehackernews.com/2026/11/chainstack-reports-production-systems.html",
-      "ts": 1793729779.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Blockchain infrastructure provider Chainstack on Tuesday disclosed that it was targeted in a cyber attack that allowed an unauthorized party to gain access to some parts of its infrastructure. The incident is assessed to be part of a large-scale, artificial intelligence (AI)-powered attack campaign that came to light last week. \"An external attacker gained unauthorized access to part of",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "dev",
-        "crypto",
-        "security"
-      ],
-      "date": "2026-11-03"
-    },
-    {
-      "uid": "rss:73b78dd8320b04",
-      "source": "rss",
-      "title": "Binance Reveals How Fake Job Interviews and AI Tool Abuse Led to $6.43 Billion Theft",
-      "url": "https://thehackernews.com/2026/11/binance-reveals-how-fake-job-interviews.html",
-      "ts": 1793724958.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Binance on Tuesday said the record-setting theft of $6.43 billion in assets from the world's largest cryptocurrency exchange was the culmination of a \"sophisticated, multi-stage campaign\" that involved the use of a tampered Homebrew installation and recruitment-themed social engineering attack targeting two of its engineers. \"It was not a single isolated breach or a simple phishing incident,\"",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "dev",
-        "crypto",
-        "security"
-      ],
-      "date": "2026-11-03"
-    },
-    {
       "uid": "gh:0xZyyz/ctfd-warden",
       "source": "github",
       "title": "0xZyyz/ctfd-warden",
@@ -2268,24 +2283,6 @@
       "buzz": 10,
       "topics": [
         "dev"
-      ],
-      "date": "2026-10-30"
-    },
-    {
-      "uid": "rss:69ace0ef9fe2a2",
-      "source": "rss",
-      "title": "Bloatware in Aftermarket Auto Parts",
-      "url": "https://www.schneier.com/blog/archives/2026/10/bloatware-in-aftermarket-auto-parts.html",
-      "ts": 1793373602.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Bruce Schneier",
-      "summary": "<p>This <a href=\"https://www.thedrive.com/news/cheap-aftermarket-head-units-are-loaded-with-spyware-by-the-way\">story</a> is interesting:</p> <blockquote><p>One Civic owner purchased a cheap aftermarket head unit off Amazon, and decided to have Claude work its magic on it, like it would a smart TV. What was reportedly discovered isn’t surprising, but is worth knowing about.</p> <p>Among the pre-in",
-      "recipe": "schneier",
-      "buzz": 10,
-      "topics": [
-        "dev",
-        "biz"
       ],
       "date": "2026-10-30"
     },
@@ -2439,6 +2436,24 @@
       "date": "2026-09-25"
     },
     {
+      "uid": "rss:69ace0ef9fe2a2",
+      "source": "rss",
+      "title": "Bloatware in Aftermarket Auto Parts",
+      "url": "https://www.schneier.com/blog/archives/2026/10/bloatware-in-aftermarket-auto-parts.html",
+      "ts": 1793373602.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Bruce Schneier",
+      "summary": "<p>This <a href=\"https://www.thedrive.com/news/cheap-aftermarket-head-units-are-loaded-with-spyware-by-the-way\">story</a> is interesting:</p> <blockquote><p>One Civic owner purchased a cheap aftermarket head unit off Amazon, and decided to have Claude work its magic on it, like it would a smart TV. What was reportedly discovered isn’t surprising, but is worth knowing about.</p> <p>Among the pre-in",
+      "recipe": "schneier",
+      "buzz": 0,
+      "topics": [
+        "dev",
+        "biz"
+      ],
+      "date": "2026-10-30"
+    },
+    {
       "uid": "rss:9e6f9a29eeb51f",
       "source": "rss",
       "title": "Studying Fraudulent North Korean IT Workers",
@@ -2529,24 +2544,6 @@
         "security"
       ],
       "date": "2026-10-23"
-    },
-    {
-      "uid": "rss:674c0fa0933d14",
-      "source": "rss",
-      "title": "New Serious PHP Vulnerabilities Released and Patched",
-      "url": "https://www.schneier.com/blog/archives/2026/10/new-serious-php-vulnerabilities-released-and-patched.html",
-      "ts": 1792679789.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Bruce Schneier",
-      "summary": "<p>PHP maintainers have <a href=\"https://www.php.net/archive/2026.php#2026-10-20-1\">released</a> fixes for two critical vulnerabilities:</p> <blockquote><p>PHP 8.5.12, 8.4.27, 8.3.36 and 8.2.35 fix two critical vulnerabilities that can allow unauthenticated remote code execution. All PHP users are strongly encouraged to update immediately. </p> <p>Who is at risk: all PHP installations serving web",
-      "recipe": "schneier",
-      "buzz": 0,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-10-22"
     }
   ]
 }
