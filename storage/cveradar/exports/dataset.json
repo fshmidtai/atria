@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T21:02:41+00:00",
+  "generated_at": "2026-11-06T01:27:23+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -18,13 +18,12 @@
       "the_hacker_news": 30
     },
     "by_topic": {
-      "security": 50,
+      "security": 49,
       "ai": 40,
-      "dev": 33,
-      "crypto": 8,
+      "dev": 32,
+      "crypto": 7,
       "hardware": 6,
-      "science": 5,
-      "biz": 1
+      "science": 5
     },
     "top_domains": [
       [
@@ -590,6 +589,41 @@
       "date": "2026-11-03"
     },
     {
+      "uid": "rss:7d1426211b6649",
+      "source": "rss",
+      "title": "OpenSSH Issues Emergency Fix for Flaw Letting Long Passwords Bypass SSH Auth on Alpine Linux",
+      "url": "https://thehackernews.com/2026/11/openssh-issues-emergency-fix-for-flaw.html",
+      "ts": 1793896966.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Attackers can log in to accounts that have no password, such as SSH key-only accounts, on some Alpine Linux servers running the standard openssh-server package. They need network access to the server, an account name, and a password between 257 and 1,024 bytes long. OpenSSH, which rates the flaw critical, released version 10.6p2 today to block it. Alpine has published fixed packages for every",
+      "recipe": "the_hacker_news",
+      "buzz": 80,
+      "topics": [
+        "hardware"
+      ],
+      "date": "2026-11-05"
+    },
+    {
+      "uid": "rss:3bf0f5509b1b73",
+      "source": "rss",
+      "title": "Researchers Bypass ChatGPT Lockdown Mode to Exfiltrate Chats Without User Interaction",
+      "url": "https://thehackernews.com/2026/11/researchers-bypass-chatgpt-lockdown.html",
+      "ts": 1793896952.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Cybersecurity researchers have disclosed details of a now-patched vulnerability that could be exploited to bypass Lockdown Mode protections in OpenAI ChatGPT. Lockdown Mode was introduced by the artificial intelligence (AI) company in June 2026 as an optional setting to minimize data exfiltration risks arising from prompt injections. \"The flaw could enable silent chat data theft, phishing,",
+      "recipe": "the_hacker_news",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-05"
+    },
+    {
       "uid": "rss:7ecbfe39c223a7",
       "source": "rss",
       "title": "ThreatsDay: Apache OFBiz RCE, DreamHost Breach, DeFi Site Hijacks + 17 More Stories",
@@ -1096,45 +1130,6 @@
       "buzz": 30,
       "topics": [
         "ai",
-        "security"
-      ],
-      "date": "2026-11-03"
-    },
-    {
-      "uid": "rss:8fc9f2c473da27",
-      "source": "rss",
-      "title": "Hackers Exploit BTCPay Server Flaw to Steal Bitcoin and Litecoin From Hot Wallets",
-      "url": "https://thehackernews.com/2026/11/hackers-exploit-btcpay-server-flaw-to.html",
-      "ts": 1793694708.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "BTCPay Server, a self-hosted, open-source cryptocurrency payment processor, has urged users to install the latest version of its software in response to reports of Bitcoin and Litecoin being stolen from hot wallets on instances running older versions. \"Our investigation found that these attacks targeted servers running BTCPay Server 2.4.1 (released on 23 July 2026) or earlier,\" BTCPay Server",
-      "recipe": "the_hacker_news",
-      "buzz": 30,
-      "topics": [
-        "crypto",
-        "biz",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-03"
-    },
-    {
-      "uid": "rss:6746d4c33cb43a",
-      "source": "rss",
-      "title": "Synology NAS Devices Targeted in Ransomware Attacks Exploiting Patched DSM Flaw",
-      "url": "https://thehackernews.com/2026/11/synology-nas-devices-targeted-in.html",
-      "ts": 1793691787.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Synology is urging customers to update the DiskStation Manager (DSM) software powering its Network Attached Storage (NAS) devices following ransomware attacks. The Taiwanese vendor said it observed threat actors exploiting a vulnerability patched in December 2024 to target devices running outdated versions of DSM. \"These attacks aim to encrypt data and extort ransom,\" it said in a statement",
-      "recipe": "the_hacker_news",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "dev",
         "security"
       ],
       "date": "2026-11-03"

@@ -5,7 +5,7 @@
     <link>https://sentinel-post.pages.dev</link>
     <description>Автономная радиостанция кибербезопасности: живые CVE, угрозы и защита — без сенсаций</description>
     <language>ru</language>
-    <lastBuildDate>Thu, 05 Nov 2026 21:03:03 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2026 01:27:50 GMT</lastBuildDate>
     <item>
       <title>CVE-2026-62300: filecoin-pin: Unbounded DAG pinning can exhaust server resources</title>
       <link>https://sentinel-post.pages.dev/item/cve-2026-62300-filecoin-pin-unbounded-dag-pinning-can-exhaust-se.html</link>
@@ -43,6 +43,20 @@ kaniko before v1.25.20 can send a Microsoft Entra ID (Azure AD) access token for
       <description>Severity: high. ### Summary
 
 A guest can mount another guest's custom storage volume over `/dev/lxd` and read or write its contents without owning it. The DevLXD storage API blocks access to volumes you don't own, but the instance device-update path that attaches a volume to a container without chec</description>
+    </item>
+    <item>
+      <title>OpenSSH Issues Emergency Fix for Flaw Letting Long Passwords Bypass SSH Auth on Alpine Linux</title>
+      <link>https://sentinel-post.pages.dev/item/openssh-issues-emergency-fix-for-flaw-letting-long-passwords-byp.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/openssh-issues-emergency-fix-for-flaw-letting-long-passwords-byp.html</guid>
+      <pubDate>Thu, 05 Nov 2026 16:42:46 GMT</pubDate>
+      <description>Attackers can log in to accounts that have no password, such as SSH key-only accounts, on some Alpine Linux servers running the standard openssh-server package. They need network access to the server, an account name, and a password between 257 and 1,024 bytes long. OpenSSH, which rates the flaw cri</description>
+    </item>
+    <item>
+      <title>Researchers Bypass ChatGPT Lockdown Mode to Exfiltrate Chats Without User Interaction</title>
+      <link>https://sentinel-post.pages.dev/item/researchers-bypass-chatgpt-lockdown-mode-to-exfiltrate-chats-wit.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/researchers-bypass-chatgpt-lockdown-mode-to-exfiltrate-chats-wit.html</guid>
+      <pubDate>Thu, 05 Nov 2026 16:42:32 GMT</pubDate>
+      <description>Cybersecurity researchers have disclosed details of a now-patched vulnerability that could be exploited to bypass Lockdown Mode protections in OpenAI ChatGPT. Lockdown Mode was introduced by the artificial intelligence (AI) company in June 2026 as an optional setting to minimize data exfiltration ri</description>
     </item>
     <item>
       <title>ThreatsDay: Apache OFBiz RCE, DreamHost Breach, DeFi Site Hijacks + 17 More Stories</title>
@@ -220,22 +234,6 @@ ODF style attribute values are interpolated into `style="..."` attributes withou
       <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cisa-confirms-hackers-exploiting-wordpress-core-flaw-during-soft.html</guid>
       <pubDate>Wed, 04 Nov 2026 05:43:11 GMT</pubDate>
       <description>The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added a security flaw in WordPress Core to the Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation. The high-severity vulnerability, tracked as CVE-[phone] (CVSS score: 8.1), is a case of Time-of-c</description>
-    </item>
-    <item>
-      <title>CVE-2026-115878: Stanza: RCE via pickle deserialization in the lemmatizer</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-115878-stanza-rce-via-pickle-deserialization-in-the-lem.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-115878-stanza-rce-via-pickle-deserialization-in-the-lem.html</guid>
-      <pubDate>Tue, 03 Nov 2026 20:29:16 GMT</pubDate>
-      <description>Severity: high. ## TL;DR
-
-Loading an attacker-supplied lemma `.pt` runs arbitrary code as the loading user. Since 1.14.0 the lemmatizer stores `pos_dict` as a gzip-compressed pickle in the checkpoint's `dicts` field (a `bytes` value). `torch.load(weights_only=True)` treats `bytes` as a primitive and</description>
-    </item>
-    <item>
-      <title>mSecure Warns Users to Change Passwords, Reset 2FA and Passkeys After Suspicious Activity</title>
-      <link>https://sentinel-post.pages.dev/item/msecure-warns-users-to-change-passwords-reset-2fa-and-passkeys-a.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/msecure-warns-users-to-change-passwords-reset-2fa-and-passkeys-a.html</guid>
-      <pubDate>Tue, 03 Nov 2026 18:46:38 GMT</pubDate>
-      <description>Customers of the mSecure password manager are being urged to act now to protect the confidential information they store in it, possibly by changing passwords, resetting two-factor authentication (2FA), and removing passkeys. The warning came in an email sent on November 3 in the name of developer mS</description>
     </item>
   </channel>
 </rss>

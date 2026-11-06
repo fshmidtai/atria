@@ -5,7 +5,7 @@
     <link>https://cveradar-ah3.pages.dev</link>
     <description>Живые CVE и уязвимости на русском: автономный перевод угроз в понятные дайджесты для DevOps и небольшого SecOps</description>
     <language>ru</language>
-    <lastBuildDate>Thu, 05 Nov 2026 21:02:41 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2026 01:27:23 GMT</lastBuildDate>
     <item>
       <title>CVE-2026-62300: filecoin-pin: Unbounded DAG pinning can exhaust server resources</title>
       <link>https://cveradar-ah3.pages.dev/item/cve-2026-62300-filecoin-pin-unbounded-dag-pinning-can-exhaust-se.html</link>
@@ -43,6 +43,20 @@ kaniko before v1.25.20 can send a Microsoft Entra ID (Azure AD) access token for
       <description>Severity: high. ### Summary
 
 A guest can mount another guest's custom storage volume over `/dev/lxd` and read or write its contents without owning it. The DevLXD storage API blocks access to volumes you don't own, but the instance device-update path that attaches a volume to a container without chec</description>
+    </item>
+    <item>
+      <title>OpenSSH Issues Emergency Fix for Flaw Letting Long Passwords Bypass SSH Auth on Alpine Linux</title>
+      <link>https://cveradar-ah3.pages.dev/item/openssh-issues-emergency-fix-for-flaw-letting-long-passwords-byp.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/openssh-issues-emergency-fix-for-flaw-letting-long-passwords-byp.html</guid>
+      <pubDate>Thu, 05 Nov 2026 16:42:46 GMT</pubDate>
+      <description>Attackers can log in to accounts that have no password, such as SSH key-only accounts, on some Alpine Linux servers running the standard openssh-server package. They need network access to the server, an account name, and a password between 257 and 1,024 bytes long. OpenSSH, which rates the flaw cri</description>
+    </item>
+    <item>
+      <title>Researchers Bypass ChatGPT Lockdown Mode to Exfiltrate Chats Without User Interaction</title>
+      <link>https://cveradar-ah3.pages.dev/item/researchers-bypass-chatgpt-lockdown-mode-to-exfiltrate-chats-wit.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/researchers-bypass-chatgpt-lockdown-mode-to-exfiltrate-chats-wit.html</guid>
+      <pubDate>Thu, 05 Nov 2026 16:42:32 GMT</pubDate>
+      <description>Cybersecurity researchers have disclosed details of a now-patched vulnerability that could be exploited to bypass Lockdown Mode protections in OpenAI ChatGPT. Lockdown Mode was introduced by the artificial intelligence (AI) company in June 2026 as an optional setting to minimize data exfiltration ri</description>
     </item>
     <item>
       <title>ThreatsDay: Apache OFBiz RCE, DreamHost Breach, DeFi Site Hijacks + 17 More Stories</title>
@@ -222,22 +236,6 @@ Loading an attacker-supplied lemma `.pt` runs arbitrary code as the loading user
       <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/msecure-warns-users-to-change-passwords-reset-2fa-and-passkeys-a.html</guid>
       <pubDate>Tue, 03 Nov 2026 18:46:38 GMT</pubDate>
       <description>Customers of the mSecure password manager are being urged to act now to protect the confidential information they store in it, possibly by changing passwords, resetting two-factor authentication (2FA), and removing passkeys. The warning came in an email sent on November 3 in the name of developer mS</description>
-    </item>
-    <item>
-      <title>Chainstack Reports Production Systems Breach Exposing Customer Data and Password Hashes</title>
-      <link>https://cveradar-ah3.pages.dev/item/chainstack-reports-production-systems-breach-exposing-customer-d.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/chainstack-reports-production-systems-breach-exposing-customer-d.html</guid>
-      <pubDate>Tue, 03 Nov 2026 18:16:19 GMT</pubDate>
-      <description>Blockchain infrastructure provider Chainstack on Tuesday disclosed that it was targeted in a cyber attack that allowed an unauthorized party to gain access to some parts of its infrastructure. The incident is assessed to be part of a large-scale, artificial intelligence (AI)-powered attack campaign </description>
-    </item>
-    <item>
-      <title>CVE-2026-44267: Elo JavaScript emitter has sandbox escape to arbitrary Node.js / browser code execution via unfiltered `.constructor` member access</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-44267-elo-javascript-emitter-has-sandbox-escape-to-arbi.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-44267-elo-javascript-emitter-has-sandbox-escape-to-arbi.html</guid>
-      <pubDate>Tue, 03 Nov 2026 17:53:42 GMT</pubDate>
-      <description>Severity: critical. ### Summary
-
-An unauthenticated attacker who controls a string passed to any Elo JavaScript-emission path — `defaultFormats.elo.parse()`, the `bin/elo` CLI, or the live browser playground at `elo-lang.org/try` — can execute arbitrary code in the host JavaScript runtime. A payload</description>
     </item>
   </channel>
 </rss>

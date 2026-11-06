@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T21:03:03+00:00",
+  "generated_at": "2026-11-06T01:27:50+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -10,34 +10,34 @@
     "rss"
   ],
   "totals": {
-    "items": 135,
+    "items": 133,
     "by_source": {
       "hn": 40,
       "cve": 30,
-      "github": 15,
+      "github": 13,
       "rss": 50
     },
     "by_recipe": {
       "hn_sec": 40,
       "gh_advisories": 30,
       "hackersnews": 30,
-      "github_sec": 15,
+      "github_sec": 13,
       "krebs": 10,
       "schneier": 10
     },
     "by_topic": {
-      "security": 107,
-      "ai": 72,
-      "dev": 57,
+      "security": 105,
+      "ai": 70,
+      "dev": 56,
       "hardware": 12,
-      "crypto": 11,
-      "biz": 10,
+      "crypto": 10,
+      "biz": 9,
       "science": 5
     },
     "top_domains": [
       [
         "github.com",
-        47
+        45
       ],
       [
         "thehackernews.com",
@@ -1389,12 +1389,12 @@
       "title": "arpanjot-coding/AVault",
       "url": "https://github.com/arpanjot-coding/AVault",
       "ts": 1793474487.0,
-      "points": 599,
-      "comments": 31,
+      "points": 601,
+      "comments": 32,
       "author": "arpanjot-coding",
       "summary": "AVault - Call Recorder (No Root Required) | Privacy-first, hardware-encrypted audio vault for Android 12-16+. Rootless call recording via Shizuku with AES-256-GCM, biometrics & auto-cleanup.",
       "recipe": "github_sec",
-      "buzz": 702,
+      "buzz": 707,
       "topics": [
         "dev",
         "security"
@@ -1407,12 +1407,12 @@
       "title": "jmanico/grim-prompter",
       "url": "https://github.com/jmanico/grim-prompter",
       "ts": 1793189366.0,
-      "points": 368,
+      "points": 369,
       "comments": 31,
       "author": "jmanico",
       "summary": "Threat modeling for AI coding agents: point Claude Code, Codex or any agent at your repo and get an evidence-traced threat model. 36 architectures, 29 methods, MIT.",
       "recipe": "github_sec",
-      "buzz": 461,
+      "buzz": 462,
       "topics": [
         "ai",
         "dev"
@@ -1437,24 +1437,6 @@
       "date": "2026-10-26"
     },
     {
-      "uid": "gh:aarsaputra/php2shell",
-      "source": "github",
-      "title": "aarsaputra/php2shell",
-      "url": "https://github.com/aarsaputra/php2shell",
-      "ts": 1792763392.0,
-      "points": 136,
-      "comments": 65,
-      "author": "aarsaputra",
-      "summary": "Unauthenticated RCE toolkit for PHP 5.4–8.4.26 (CVE-[phone]/109618) — pure-HTTP chain, JA3 impersonation, prpenetration-testingoof-of-access design",
-      "recipe": "github_sec",
-      "buzz": 331,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-10-23"
-    },
-    {
       "uid": "gh:Balanov/skein",
       "source": "github",
       "title": "Balanov/skein",
@@ -1465,7 +1447,7 @@
       "author": "Balanov",
       "summary": "Fail-closed swarm orchestration with epoch-fenced work and late-completion rejection.",
       "recipe": "github_sec",
-      "buzz": 298,
+      "buzz": 278,
       "topics": [
         "ai"
       ],
@@ -1477,12 +1459,12 @@
       "title": "thomasunise/argus",
       "url": "https://github.com/thomasunise/argus",
       "ts": 1792858348.0,
-      "points": 129,
+      "points": 131,
       "comments": 10,
       "author": "thomasunise",
       "summary": "Open-source agentic security operations platform:",
       "recipe": "github_sec",
-      "buzz": 159,
+      "buzz": 161,
       "topics": [
         "ai",
         "security"
@@ -1567,34 +1549,17 @@
       "title": "huggingface/safeagents",
       "url": "https://github.com/huggingface/safeagents",
       "ts": 1793195562.0,
-      "points": 80,
+      "points": 82,
       "comments": 2,
       "author": "huggingface",
       "summary": "Safely run your agents using any coding harness",
       "recipe": "github_sec",
-      "buzz": 86,
+      "buzz": 88,
       "topics": [
         "ai",
         "dev"
       ],
       "date": "2026-10-28"
-    },
-    {
-      "uid": "gh:jamesalmeida/agent-honeypot",
-      "source": "github",
-      "title": "jamesalmeida/agent-honeypot",
-      "url": "https://github.com/jamesalmeida/agent-honeypot",
-      "ts": 1792791878.0,
-      "points": 63,
-      "comments": 7,
-      "author": "jamesalmeida",
-      "summary": "A honeypot and guestbook for AI agents that land on a machine they weren't invited to",
-      "recipe": "github_sec",
-      "buzz": 84,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-10-23"
     },
     {
       "uid": "rss:7543ee8beb8b7e",
@@ -1612,6 +1577,41 @@
         "ai",
         "dev",
         "biz",
+        "security"
+      ],
+      "date": "2026-11-05"
+    },
+    {
+      "uid": "rss:7d1426211b6649",
+      "source": "rss",
+      "title": "OpenSSH Issues Emergency Fix for Flaw Letting Long Passwords Bypass SSH Auth on Alpine Linux",
+      "url": "https://thehackernews.com/2026/11/openssh-issues-emergency-fix-for-flaw.html",
+      "ts": 1793896966.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Attackers can log in to accounts that have no password, such as SSH key-only accounts, on some Alpine Linux servers running the standard openssh-server package. They need network access to the server, an account name, and a password between 257 and 1,024 bytes long. OpenSSH, which rates the flaw critical, released version 10.6p2 today to block it. Alpine has published fixed packages for every",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "hardware"
+      ],
+      "date": "2026-11-05"
+    },
+    {
+      "uid": "rss:3bf0f5509b1b73",
+      "source": "rss",
+      "title": "Researchers Bypass ChatGPT Lockdown Mode to Exfiltrate Chats Without User Interaction",
+      "url": "https://thehackernews.com/2026/11/researchers-bypass-chatgpt-lockdown.html",
+      "ts": 1793896952.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Cybersecurity researchers have disclosed details of a now-patched vulnerability that could be exploited to bypass Lockdown Mode protections in OpenAI ChatGPT. Lockdown Mode was introduced by the artificial intelligence (AI) company in June 2026 as an optional setting to minimize data exfiltration risks arising from prompt injections. \"The flaw could enable silent chat data theft, phishing,",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "ai",
         "security"
       ],
       "date": "2026-11-05"
@@ -1781,34 +1781,17 @@
       "date": "2026-10-25"
     },
     {
-      "uid": "gh:0xZyyz/ctfd-warden",
-      "source": "github",
-      "title": "0xZyyz/ctfd-warden",
-      "url": "https://github.com/0xZyyz/ctfd-warden",
-      "ts": 1793308210.0,
-      "points": 21,
-      "comments": 2,
-      "author": "0xZyyz",
-      "summary": "Anti-cheat plugin for CTFd: tracks the activity of players and teams and catches AI agents, scripts, shared accounts, shared flags, flag brute-forcing and suspiciously fast solves.",
-      "recipe": "github_sec",
-      "buzz": 37,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-10-29"
-    },
-    {
       "uid": "gh:smartworldarafath/TeroVPN",
       "source": "github",
       "title": "smartworldarafath/TeroVPN",
       "url": "https://github.com/smartworldarafath/TeroVPN",
       "ts": 1793264351.0,
-      "points": 32,
+      "points": 33,
       "comments": 1,
       "author": "smartworldarafath",
       "summary": "🛡️ Fast, secure, and private Android VPN powered by WireGuard MASQUE (HTTP/3) over Fastly edge with Proton UI & Liquid Glass design.",
       "recipe": "github_sec",
-      "buzz": 35,
+      "buzz": 36,
       "topics": [
         "hardware"
       ],
@@ -2217,43 +2200,21 @@
       "date": "2026-11-03"
     },
     {
-      "uid": "rss:8fc9f2c473da27",
-      "source": "rss",
-      "title": "Hackers Exploit BTCPay Server Flaw to Steal Bitcoin and Litecoin From Hot Wallets",
-      "url": "https://thehackernews.com/2026/11/hackers-exploit-btcpay-server-flaw-to.html",
-      "ts": 1793694708.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "BTCPay Server, a self-hosted, open-source cryptocurrency payment processor, has urged users to install the latest version of its software in response to reports of Bitcoin and Litecoin being stolen from hot wallets on instances running older versions. \"Our investigation found that these attacks targeted servers running BTCPay Server 2.4.1 (released on 23 July 2026) or earlier,\" BTCPay Server",
-      "recipe": "hackersnews",
-      "buzz": 30,
+      "uid": "gh:0xZyyz/ctfd-warden",
+      "source": "github",
+      "title": "0xZyyz/ctfd-warden",
+      "url": "https://github.com/0xZyyz/ctfd-warden",
+      "ts": 1793308210.0,
+      "points": 21,
+      "comments": 2,
+      "author": "0xZyyz",
+      "summary": "Anti-cheat plugin for CTFd: tracks the activity of players and teams and catches AI agents, scripts, shared accounts, shared flags, flag brute-forcing and suspiciously fast solves.",
+      "recipe": "github_sec",
+      "buzz": 27,
       "topics": [
-        "crypto",
-        "biz",
-        "security",
-        "hardware"
+        "ai"
       ],
-      "date": "2026-11-03"
-    },
-    {
-      "uid": "rss:6746d4c33cb43a",
-      "source": "rss",
-      "title": "Synology NAS Devices Targeted in Ransomware Attacks Exploiting Patched DSM Flaw",
-      "url": "https://thehackernews.com/2026/11/synology-nas-devices-targeted-in.html",
-      "ts": 1793691787.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Synology is urging customers to update the DiskStation Manager (DSM) software powering its Network Attached Storage (NAS) devices following ransomware attacks. The Taiwanese vendor said it observed threat actors exploiting a vulnerability patched in December 2024 to target devices running outdated versions of DSM. \"These attacks aim to encrypt data and extort ransom,\" it said in a statement",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-03"
+      "date": "2026-10-29"
     },
     {
       "uid": "rss:242c7ee3c56913",
