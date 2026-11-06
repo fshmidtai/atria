@@ -1,7 +1,17 @@
 cve_id,severity,package,title,url,date
+GHSA-47w9-6r3f-938g,critical,github.com/canonical/lxd,GHSA-47w9-6r3f-938g: LXD has restricted project bypass leading to arbitrary command execution,https://github.com/advisories/GHSA-47w9-6r3f-938g,2026-11-06
+GHSA-pjff-c2wc-f6jm,critical,github.com/canonical/lxd,GHSA-pjff-c2wc-f6jm: LXD has arbitrary file write on client due to trusted image hash,https://github.com/advisories/GHSA-pjff-c2wc-f6jm,2026-11-06
+GHSA-fmc8-p6q7-75cc,critical,github.com/canonical/lxd,GHSA-fmc8-p6q7-75cc: LXD has argument injection in backup compression algorithm leading to AFW and ACE,https://github.com/advisories/GHSA-fmc8-p6q7-75cc,2026-11-06
+GHSA-vghh-5rfx-xhq8,critical,github.com/canonical/lxd,GHSA-vghh-5rfx-xhq8: LXD has arbitrary file read+write on host via rootfs/ symlink in malicious image,https://github.com/advisories/GHSA-vghh-5rfx-xhq8,2026-11-06
+GHSA-jpf8-86f3-wp38,critical,github.com/canonical/lxd,GHSA-jpf8-86f3-wp38: LXD has arbitrary file read+write on host via templates/ symlink in malicious image,https://github.com/advisories/GHSA-jpf8-86f3-wp38,2026-11-06
+GHSA-9j25-mm2h-2f76,critical,github.com/canonical/lxd,GHSA-9j25-mm2h-2f76: LXD has arbitrary file write on host via `exec-output` symlink in crafted image,https://github.com/advisories/GHSA-9j25-mm2h-2f76,2026-11-06
 CVE-2026-105769,critical,github.com/chainguard-dev/kaniko,CVE-2026-105769: kaniko can send the build's Azure (Entra ID) access token to lookalike ACR registry hosts,https://github.com/advisories/GHSA-5q7h-w9jf-cx97,2026-11-05
 CVE-2026-44267,critical,@enspirit/elo,CVE-2026-44267: Elo JavaScript emitter has sandbox escape to arbitrary Node.js / browser code execution via unfiltered `.constructor` member access,https://github.com/advisories/GHSA-33r5-xmm8-v6x5,2026-11-03
 CVE-2026-44266,critical,@enspirit/elo,CVE-2026-44266: Elo Ruby backend has Remote Code Execution via unescaped `#{...}` interpolation in emitted string literals and subtype-constraint labels,https://github.com/advisories/GHSA-7w38-ggh5-v542,2026-11-03
+GHSA-7mr3-28h5-m5vx,high,github.com/canonical/lxd,GHSA-7mr3-28h5-m5vx: LXD has project restriction bypass for custom volume copy across projects,https://github.com/advisories/GHSA-7mr3-28h5-m5vx,2026-11-06
+GHSA-qx75-2p3r-pwm5,high,github.com/canonical/lxd,GHSA-qx75-2p3r-pwm5: LXD has project restriction bypass in instance copy across projects,https://github.com/advisories/GHSA-qx75-2p3r-pwm5,2026-11-06
+CVE-2026-33050,high,GeoNode,CVE-2026-33050: GeoNode has OS command injection via uploaded file layer name,https://github.com/advisories/GHSA-9fpx-fr6j-2vh6,2026-11-06
+CVE-2026-62284,high,github.com/osac-project/osac-operator,CVE-2026-62284: OSAC operator: Kubeconfig credential-plugin execution and SSRF in console proxy,https://github.com/advisories/GHSA-5w5g-j6hw-6p8f,2026-11-06
 CVE-2026-61536,high,banks,CVE-2026-61536: Banks: Unsafe importlib.import_module of attacker-controlled Tool.import_path in CompletionExtension allows RCE,https://github.com/advisories/GHSA-64vx-6h2c-rjh7,2026-11-05
 CVE-2026-12411,high,github.com/canonical/lxd,CVE-2026-12411: lxd allows Cross-guest volume hijack via DevLXD device patch,https://github.com/advisories/GHSA-hhf9-qw4v-72xp,2026-11-05
 CVE-2026-115878,high,stanza,CVE-2026-115878: Stanza: RCE via pickle deserialization in the lemmatizer,https://github.com/advisories/GHSA-gh9r-c94j-cmp5,2026-11-03
@@ -9,23 +19,13 @@ CVE-2026-44265,high,@enspirit/elo,CVE-2026-44265: Elo backends have code injecti
 GHSA-p3jp-9v83-76w9,high,Microsoft.DotNet.ILCompiler,GHSA-p3jp-9v83-76w9: Microsoft Security Advisory CVE-2026-111497 - .NET Brotli Decoder Out-of-bounds Write Vulnerability,https://github.com/advisories/GHSA-p3jp-9v83-76w9,2026-11-03
 CVE-2026-62331,high,github.com/mtzanidakis/praktor,CVE-2026-62331: praktor: Path traversal in Telegram file uploads allows writing outside the agent workspace uploads/ directory (stored instruction injection),https://github.com/advisories/GHSA-48v2-6jcm-fc99,2026-11-03
 CVE-2026-11800,high,org.keycloak:keycloak-services,CVE-2026-11800: Keycloak has authentication bypass via jwt algorithm confusion,https://github.com/advisories/GHSA-j97h-3f8r-mrjr,2026-11-03
-CVE-2026-62848,high,Metalama.Framework,CVE-2026-62848: Metalama: Unsafe deserialization over Metalama's Visual Studio inter-process named pipe enables local code execution,https://github.com/advisories/GHSA-h26j-4vp7-x9w2,2026-11-03
-CVE-2026-62374,high,@sd-jwt/decode,CVE-2026-62374: SD JWT JS: Tampered disclosures silently dropped instead of rejected,https://github.com/advisories/GHSA-f9j6-8p6x-r9j6,2026-11-02
-CVE-2026-118761,high,github.com/kubeflow/pipelines,CVE-2026-118761: Kubeflow Pipelines: Pipeline archive upload allows decompression bomb to exhaust server memory,https://github.com/advisories/GHSA-8fmv-6rg5-5924,2026-10-30
-CVE-2026-118759,high,github.com/kubeflow/pipelines,CVE-2026-118759: Kubeflow Pipelines: Run-log endpoint permits unauthorized access to pod logs,https://github.com/advisories/GHSA-wg5q-x4j9-qm54,2026-10-30
-CVE-2026-119203,high,pypdf,CVE-2026-119203: pypdf has possible infinite loop when hitting EOF in standard xref table during trailer search,https://github.com/advisories/GHSA-5849-834g-hvw5,2026-10-30
-CVE-2026-119204,high,pypdf,CVE-2026-119204: pypdf has possible large memory usage when parsing page tree,https://github.com/advisories/GHSA-cggf-277g-3q54,2026-10-30
-CVE-2026-119205,high,pypdf,CVE-2026-119205: pypdf has possible infinite loop when cloning dictionaries,https://github.com/advisories/GHSA-mfr5-77xh-9j7h,2026-10-30
-CVE-2026-118772,high,joi,CVE-2026-118772: joi: quadratic-time split in `string().email({ multiple: true })` allows denial of service,https://github.com/advisories/GHSA-4528-x5fx-h6hg,2026-10-30
-CVE-2026-119202,high,@hapi/content,CVE-2026-119202: @hapi/content: quadratic-time parsing of Content-Disposition parameters allows denial of service,https://github.com/advisories/GHSA-8494-f6mr-cjpv,2026-10-30
-CVE-2026-116672,high,Authlib,CVE-2026-116672: Authlib RFC 7592 examples omit registration-access-token client binding,https://github.com/advisories/GHSA-c73q-w75p-j82v,2026-10-30
-CVE-2026-119206,high,pypdf,CVE-2026-119206: pypdf has possible long runtimes when retrieving page labels,https://github.com/advisories/GHSA-42gh-23hr-vphw,2026-10-30
+CVE-2026-55649,medium,GeoNode,CVE-2026-55649: GeoNode has Stored XSS in Documents metadata abstract field,https://github.com/advisories/GHSA-r4hm-p9f9-fj9v,2026-11-06
+CVE-2026-46429,medium,GeoNode,CVE-2026-46429: GeoNode has Unrestricted File Upload,https://github.com/advisories/GHSA-fqpv-mq26-pr4j,2026-11-06
+CVE-2026-9639,medium,github.com/canonical/lxd,CVE-2026-9639: LXD has CreateCustomVolumeFromBackup nil-pointer dereference on volumes[0].snapshots[*].expires_at,https://github.com/advisories/GHSA-j93m-3j9p-m5m8,2026-11-06
+CVE-2026-28385,medium,github.com/canonical/lxd,CVE-2026-28385: LXD: SSRF via image import from URL allows internal network probing by authenticated users,https://github.com/advisories/GHSA-3gq2-x4qg-p4g6,2026-11-06
+CVE-2026-62361,medium,github.com/knadh/listmonk,"CVE-2026-62361: listmonk: SQL Injection in `/api/subscribers/export` bypasses table access control, leaking admin password hashes and SMTP credentials",https://github.com/advisories/GHSA-xgjr-7j9q-2h4r,2026-11-06
+CVE-2026-16454,medium,org.eclipse.hawkbit:hawkbit-ddi-resource,CVE-2026-16454: Eclipse hawkBit DDI has Privilege Escalation that allows Tenant-Isolated Firmware Exfiltration,https://github.com/advisories/GHSA-92r3-p8c2-3fpx,2026-11-06
 CVE-2026-62300,medium,filecoin-pin,CVE-2026-62300: filecoin-pin: Unbounded DAG pinning can exhaust server resources,https://github.com/advisories/GHSA-m5ph-mmg5-6w5h,2026-11-05
 CVE-2026-55098,medium,github.com/basekick-labs/arc,CVE-2026-55098: Arc: DuckDB I/O aliases bypass database RBAC after CVE-2026-47735,https://github.com/advisories/GHSA-93cm-2v4m-c56c,2026-11-04
 CVE-2026-93363,medium,@payloadcms/storage-vercel-blob,CVE-2026-93363: @payloadcms/storage-vercel-blob has access control bypass of uploads in Vercel Storage adapter,https://github.com/advisories/GHSA-mc8m-rr6c-r5qr,2026-11-04
 CVE-2026-113787,medium,odf-kit,CVE-2026-113787: odf-kit: HTML injection leading to XSS in odtToHtml() and odsToHtml() via unescaped style attribute values,https://github.com/advisories/GHSA-3cgg-c5pp-57h6,2026-11-04
-GHSA-9ppr-wfw9-xvr2,medium,github.com/tinfoil-factory/netfoil,GHSA-9ppr-wfw9-xvr2: Netfoil doesn't decrement TTL,https://github.com/advisories/GHSA-9ppr-wfw9-xvr2,2026-11-03
-GHSA-j656-3hf2-fvjc,medium,@bytebase/dbhub,GHSA-j656-3hf2-fvjc: DBHub: MySQL and MariaDB comment interpretation bypasses read-only SQL validation,https://github.com/advisories/GHSA-j656-3hf2-fvjc,2026-11-02
-CVE-2026-118764,medium,minimatch,CVE-2026-118764: minimatch has potential denial of service via globparts amplification,https://github.com/advisories/GHSA-g3hv-75wg-m249,2026-10-30
-CVE-2026-118773,medium,glob,CVE-2026-118773: Glob: AbortSignal cancellation bypass allows post-timeout filesystem traversal,https://github.com/advisories/GHSA-3g3m-2fjr-6pw4,2026-10-30
-GHSA-m3qr-fvp4-78xj,low,github.com/basekick-labs/arc,GHSA-m3qr-fvp4-78xj: Arc has unauthenticated application log disclosure via `/api/v1/logs`,https://github.com/advisories/GHSA-m3qr-fvp4-78xj,2026-11-03

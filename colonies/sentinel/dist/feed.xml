@@ -5,7 +5,182 @@
     <link>https://sentinel-post.pages.dev</link>
     <description>Автономная радиостанция кибербезопасности: живые CVE, угрозы и защита — без сенсаций</description>
     <language>ru</language>
-    <lastBuildDate>Fri, 06 Nov 2026 17:06:31 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2026 20:59:53 GMT</lastBuildDate>
+    <item>
+      <title>GHSA-47w9-6r3f-938g: LXD has restricted project bypass leading to arbitrary command execution</title>
+      <link>https://sentinel-post.pages.dev/item/ghsa-47w9-6r3f-938g-lxd-has-restricted-project-bypass-leading-to.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/ghsa-47w9-6r3f-938g-lxd-has-restricted-project-bypass-leading-to.html</guid>
+      <pubDate>Fri, 06 Nov 2026 19:51:26 GMT</pubDate>
+      <description>Severity: critical. Reported from https://github.com/lxc/incus/security/advisories/GHSA-48q5-w887-33wv
+
+### Summary
+
+Instance snapshots ignore the `restricted.containers.lowlevel=block` setting;
+allowing for arbitrary command execution on the Incus server by abusing
+lowlevel hooks such as `raw.lxc` </description>
+    </item>
+    <item>
+      <title>GHSA-7mr3-28h5-m5vx: LXD has project restriction bypass for custom volume copy across projects</title>
+      <link>https://sentinel-post.pages.dev/item/ghsa-7mr3-28h5-m5vx-lxd-has-project-restriction-bypass-for-custo.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/ghsa-7mr3-28h5-m5vx-lxd-has-project-restriction-bypass-for-custo.html</guid>
+      <pubDate>Fri, 06 Nov 2026 19:51:16 GMT</pubDate>
+      <description>Severity: high. Reported from https://github.com/lxc/incus/security/advisories/GHSA-64f3-v33m-w89f
+
+### Summary
+
+Missing authorization checks exist for custom volume copying where an attacker knowing the name of a project that they don't have access to and the name of a custom volume in that project</description>
+    </item>
+    <item>
+      <title>GHSA-qx75-2p3r-pwm5: LXD has project restriction bypass in instance copy across projects</title>
+      <link>https://sentinel-post.pages.dev/item/ghsa-qx75-2p3r-pwm5-lxd-has-project-restriction-bypass-in-instan.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/ghsa-qx75-2p3r-pwm5-lxd-has-project-restriction-bypass-in-instan.html</guid>
+      <pubDate>Fri, 06 Nov 2026 19:51:00 GMT</pubDate>
+      <description>Severity: high. Reported from https://github.com/lxc/incus/security/advisories/GHSA-c9f5-j9c3-mhrg
+
+### Summary
+Missing authorization checks exist for instance copying where an attacker knowing the name of a project that they don't have access to and the name of an instance in that project can copy </description>
+    </item>
+    <item>
+      <title>CVE-2026-55649: GeoNode has Stored XSS in Documents metadata abstract field</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-55649-geonode-has-stored-xss-in-documents-metadata-abst.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-55649-geonode-has-stored-xss-in-documents-metadata-abst.html</guid>
+      <pubDate>Fri, 06 Nov 2026 19:50:34 GMT</pubDate>
+      <description>Severity: medium. The abstract metadata of documents is not sanitised. It’s possible to store arbitrary HTML (and JS) that will be executed when visiting the page.</description>
+    </item>
+    <item>
+      <title>CVE-2026-46429: GeoNode has Unrestricted File Upload</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-46429-geonode-has-unrestricted-file-upload.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-46429-geonode-has-unrestricted-file-upload.html</guid>
+      <pubDate>Fri, 06 Nov 2026 19:41:23 GMT</pubDate>
+      <description>Severity: medium. The upload service validation can be circumvented with specially crafted requests, allowing for the storage and serving of malicious files.</description>
+    </item>
+    <item>
+      <title>CVE-2026-33050: GeoNode has OS command injection via uploaded file layer name</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-33050-geonode-has-os-command-injection-via-uploaded-fil.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-33050-geonode-has-os-command-injection-via-uploaded-fil.html</guid>
+      <pubDate>Fri, 06 Nov 2026 19:39:38 GMT</pubDate>
+      <description>Severity: high. Arbitrary OS commands can be executed on the GeoNode by uploading a vector file with a crafted layer name.</description>
+    </item>
+    <item>
+      <title>CVE-2026-9639: LXD has CreateCustomVolumeFromBackup nil-pointer dereference on volumes[0].snapshots[*].expires_at</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-9639-lxd-has-createcustomvolumefrombackup-nil-pointer-d.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-9639-lxd-has-createcustomvolumefrombackup-nil-pointer-d.html</guid>
+      <pubDate>Fri, 06 Nov 2026 19:37:14 GMT</pubDate>
+      <description>Severity: medium. ## Summary
+
+(sibling-field variant of CVE-[phone] fix 05bc272)
+
+`(*lxdBackend).CreateCustomVolumeFromBackup` in [`lxd/storage/backend_lxd.go`](https://github.com/canonical/lxd/blob/05bc272/lxd/storage/backend_lxd.go) contains an unguarded `*time.Time` dereference on the `ExpiresAt`</description>
+    </item>
+    <item>
+      <title>GHSA-pjff-c2wc-f6jm: LXD has arbitrary file write on client due to trusted image hash</title>
+      <link>https://sentinel-post.pages.dev/item/ghsa-pjff-c2wc-f6jm-lxd-has-arbitrary-file-write-on-client-due-t.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/ghsa-pjff-c2wc-f6jm-lxd-has-arbitrary-file-write-on-client-due-t.html</guid>
+      <pubDate>Fri, 06 Nov 2026 19:36:55 GMT</pubDate>
+      <description>Severity: critical. Reported from https://github.com/lxc/incus/security/advisories/GHSA-f6m5-xw2g-xc4x
+
+### Summary
+
+An arbitrary file write exists in the Incus client when a malicious image
+server returns a crafted `Incus-Image-Hash` header. This can lead to
+arbitrary command execution as root on t</description>
+    </item>
+    <item>
+      <title>GHSA-fmc8-p6q7-75cc: LXD has argument injection in backup compression algorithm leading to AFW and ACE</title>
+      <link>https://sentinel-post.pages.dev/item/ghsa-fmc8-p6q7-75cc-lxd-has-argument-injection-in-backup-compres.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/ghsa-fmc8-p6q7-75cc-lxd-has-argument-injection-in-backup-compres.html</guid>
+      <pubDate>Fri, 06 Nov 2026 19:36:37 GMT</pubDate>
+      <description>Severity: critical. Reported from  https://github.com/lxc/incus/security/advisories/GHSA-v6mj-8pf4-hhw4
+
+### Summary
+
+Improper validation of user-provided backup compression algorithm leads to
+argument injection in the constructed command line. This leads to an
+arbitrary file write on the host, poss</description>
+    </item>
+    <item>
+      <title>GHSA-vghh-5rfx-xhq8: LXD has arbitrary file read+write on host via rootfs/ symlink in malicious image</title>
+      <link>https://sentinel-post.pages.dev/item/ghsa-vghh-5rfx-xhq8-lxd-has-arbitrary-file-read-write-on-host-vi.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/ghsa-vghh-5rfx-xhq8-lxd-has-arbitrary-file-read-write-on-host-vi.html</guid>
+      <pubDate>Fri, 06 Nov 2026 19:36:07 GMT</pubDate>
+      <description>Severity: critical. Reported from https://github.com/lxc/incus/security/advisories/GHSA-2q3f-q5pq-g8wv
+
+### Summary
+
+A specially crafted image can be used to read or create/write arbitrary files on the host; possibly leading to arbitrary command execution.
+
+
+### Details
+
+Incus validates an image as </description>
+    </item>
+    <item>
+      <title>GHSA-jpf8-86f3-wp38: LXD has arbitrary file read+write on host via templates/ symlink in malicious image</title>
+      <link>https://sentinel-post.pages.dev/item/ghsa-jpf8-86f3-wp38-lxd-has-arbitrary-file-read-write-on-host-vi.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/ghsa-jpf8-86f3-wp38-lxd-has-arbitrary-file-read-write-on-host-vi.html</guid>
+      <pubDate>Fri, 06 Nov 2026 18:53:57 GMT</pubDate>
+      <description>Severity: critical. Reported from https://github.com/lxc/incus/security/advisories/GHSA-vxp5-584q-c479
+
+### Summary
+
+A specially crafted image can be used to read or create/write arbitrary
+files on the host; possibly leading to arbitrary command execution.
+
+
+### Details
+
+For container images, `inter</description>
+    </item>
+    <item>
+      <title>GHSA-9j25-mm2h-2f76: LXD has arbitrary file write on host via `exec-output` symlink in crafted image</title>
+      <link>https://sentinel-post.pages.dev/item/ghsa-9j25-mm2h-2f76-lxd-has-arbitrary-file-write-on-host-via-exe.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/ghsa-9j25-mm2h-2f76-lxd-has-arbitrary-file-write-on-host-via-exe.html</guid>
+      <pubDate>Fri, 06 Nov 2026 18:45:51 GMT</pubDate>
+      <description>Severity: critical. Reported from https://github.com/lxc/incus/security/advisories/GHSA-48q5-w887-33wv
+
+### Summary
+
+The `record-output` parameter of the `/instances/$name/exec` endpoint
+stores the output of the command in the `exec-output` directory of the
+instance. If `exec-output` is a symlink, f</description>
+    </item>
+    <item>
+      <title>CVE-2026-28385: LXD: SSRF via image import from URL allows internal network probing by authenticated users</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-28385-lxd-ssrf-via-image-import-from-url-allows-interna.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-28385-lxd-ssrf-via-image-import-from-url-allows-interna.html</guid>
+      <pubDate>Fri, 06 Nov 2026 18:29:18 GMT</pubDate>
+      <description>Severity: medium. ## Summary
+The LXD image import-from-URL endpoint (`POST /1.0/images` with `source.type=url`) makes server-side HTTP requests to an attacker-supplied URL without any private-IP or loopback blocking. An authenticated user with the `can_create_images` entitlement can force the LXD da</description>
+    </item>
+    <item>
+      <title>CVE-2026-62361: listmonk: SQL Injection in `/api/subscribers/export` bypasses table access control, leaking admin password hashes and SMTP credentials</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-62361-listmonk-sql-injection-in-api-subscribers-export-.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-62361-listmonk-sql-injection-in-api-subscribers-export-.html</guid>
+      <pubDate>Fri, 06 Nov 2026 18:15:17 GMT</pubDate>
+      <description>Severity: medium. ### Summary
+
+A SQL injection vulnerability in `GET /api/subscribers/export` allows an authenticated user with the `subscribers:sql_query` permission to bypass the table access control that exists on the regular query endpoint (`GET /api/subscribers`) and read arbitrary tables from </description>
+    </item>
+    <item>
+      <title>CVE-2026-62284: OSAC operator: Kubeconfig credential-plugin execution and SSRF in console proxy</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-62284-osac-operator-kubeconfig-credential-plugin-execut.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-62284-osac-operator-kubeconfig-credential-plugin-execut.html</guid>
+      <pubDate>Fri, 06 Nov 2026 18:12:40 GMT</pubDate>
+      <description>Severity: high. ### Impact
+
+ The console-proxy's RemoteConfigResolver parses kubeconfig data from Kubernetes Secrets using clientcmd.RESTConfigFromKubeConfig without sanitizing the resulting rest.Config. A kubeconfig containing an exec
+  plugin stanza (under users[].user.exec) is faithfully preserve</description>
+    </item>
+    <item>
+      <title>CVE-2026-16454: Eclipse hawkBit DDI has Privilege Escalation that allows Tenant-Isolated Firmware Exfiltration</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-16454-eclipse-hawkbit-ddi-has-privilege-escalation-that.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-16454-eclipse-hawkbit-ddi-has-privilege-escalation-that.html</guid>
+      <pubDate>Fri, 06 Nov 2026 18:09:45 GMT</pubDate>
+      <description>Severity: medium. ## **Description**
+A privilege escalation vulnerability has been identified in the Direct Device Integration (DDI) Controller of **Eclipse hawkBit** (versions 1.0.3 and prior).
+
+This vulnerability allows an authenticated device to escalate its permissions and bypass the strict boun</description>
+    </item>
     <item>
       <title>Pinpointing Location of Videos from Background Airplane Sounds</title>
       <link>https://sentinel-post.pages.dev/item/pinpointing-location-of-videos-from-background-airplane-sounds.html</link>
@@ -56,6 +231,13 @@
       <description>An update on Athena, and some unsolicited predictions on what's coming next On Saturday, Dario Amodei published We Must Pace the Frontier. I agree with him. Go read it if you haven't. I've spent the summer looking at what these models find, and the gap he describes between what they can do and what </description>
     </item>
     <item>
+      <title>BountyForge-xyz/pwn-skill</title>
+      <link>https://sentinel-post.pages.dev/item/bountyforge-xyz-pwn-skill.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/bountyforge-xyz-pwn-skill.html</guid>
+      <pubDate>Fri, 06 Nov 2026 10:19:31 GMT</pubDate>
+      <description>Agent skill for binary exploitation and CTF pwn — stack, heap, format string, kernel, seccomp bypass.</description>
+    </item>
+    <item>
       <title>Chainalysis Breach Exposes All Users' Credentials, Forces Shutdown of Key Services</title>
       <link>https://sentinel-post.pages.dev/item/chainalysis-breach-exposes-all-users-credentials-forces-shutdown.html</link>
       <guid isPermaLink="true">https://sentinel-post.pages.dev/item/chainalysis-breach-exposes-all-users-credentials-forces-shutdown.html</guid>
@@ -104,134 +286,6 @@ The IPFS Pinning Service API implementation accepts a caller-controlled CID thro
       <description>Severity: critical. ### Summary
 
 kaniko before v1.25.20 can send a Microsoft Entra ID (Azure AD) access token for Azure Resource Manager to a registry host an attacker controls. A Dockerfile that references an image on a lookalike host, such as `FROM x.azurecr.io.attacker.com/img`, is enough. The bu</description>
-    </item>
-    <item>
-      <title>CVE-2026-12411: lxd allows Cross-guest volume hijack via DevLXD device patch</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-12411-lxd-allows-cross-guest-volume-hijack-via-devlxd-d.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-12411-lxd-allows-cross-guest-volume-hijack-via-devlxd-d.html</guid>
-      <pubDate>Thu, 05 Nov 2026 17:40:59 GMT</pubDate>
-      <description>Severity: high. ### Summary
-
-A guest can mount another guest's custom storage volume over `/dev/lxd` and read or write its contents without owning it. The DevLXD storage API blocks access to volumes you don't own, but the instance device-update path that attaches a volume to a container without chec</description>
-    </item>
-    <item>
-      <title>OpenSSH Issues Emergency Fix for Flaw Letting Long Passwords Bypass SSH Auth on Alpine Linux</title>
-      <link>https://sentinel-post.pages.dev/item/openssh-issues-emergency-fix-for-flaw-letting-long-passwords-byp.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/openssh-issues-emergency-fix-for-flaw-letting-long-passwords-byp.html</guid>
-      <pubDate>Thu, 05 Nov 2026 16:42:46 GMT</pubDate>
-      <description>Attackers can log in to accounts that have no password, such as SSH key-only accounts, on some Alpine Linux servers running the standard openssh-server package. They need network access to the server, an account name, and a password between 257 and 1,024 bytes long. OpenSSH, which rates the flaw cri</description>
-    </item>
-    <item>
-      <title>Researchers Bypass ChatGPT Lockdown Mode to Exfiltrate Chats Without User Interaction</title>
-      <link>https://sentinel-post.pages.dev/item/researchers-bypass-chatgpt-lockdown-mode-to-exfiltrate-chats-wit.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/researchers-bypass-chatgpt-lockdown-mode-to-exfiltrate-chats-wit.html</guid>
-      <pubDate>Thu, 05 Nov 2026 16:42:32 GMT</pubDate>
-      <description>Cybersecurity researchers have disclosed details of a now-patched vulnerability that could be exploited to bypass Lockdown Mode protections in OpenAI ChatGPT. Lockdown Mode was introduced by the artificial intelligence (AI) company in June 2026 as an optional setting to minimize data exfiltration ri</description>
-    </item>
-    <item>
-      <title>ThreatsDay: Apache OFBiz RCE, DreamHost Breach, DeFi Site Hijacks + 17 More Stories</title>
-      <link>https://sentinel-post.pages.dev/item/threatsday-apache-ofbiz-rce-dreamhost-breach-defi-site-hijacks-1.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/threatsday-apache-ofbiz-rce-dreamhost-breach-defi-site-hijacks-1.html</guid>
-      <pubDate>Thu, 05 Nov 2026 14:41:10 GMT</pubDate>
-      <description>How much damage can someone do without breaking much? Quite a lot, it seems. A stolen login can open doors across several systems. A trusted setting can be used to lock people out. Even a simple file copy can reach places it shouldn't. And while new tools are helping find security holes faster, some</description>
-    </item>
-    <item>
-      <title>Is Your Exposure Management Platform Leaving You Exposed? Five Tests to Find Out</title>
-      <link>https://sentinel-post.pages.dev/item/is-your-exposure-management-platform-leaving-you-exposed-five-te.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/is-your-exposure-management-platform-leaving-you-exposed-five-te.html</guid>
-      <pubDate>Thu, 05 Nov 2026 12:25:00 GMT</pubDate>
-      <description>A critical finding can move through several security tools and still leave the organization exposed.&amp;nbsp; The vulnerability has a severity score, and a ticket has reached the queue. Progress then depends on information the finding may lack: who owns the system, whether attackers can reach it, what </description>
-    </item>
-    <item>
-      <title>OpenAI AI Pipeline Generates 948 Linux Root Escalation Exploits in 30-Hour Run</title>
-      <link>https://sentinel-post.pages.dev/item/openai-ai-pipeline-generates-948-linux-root-escalation-exploits-.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/openai-ai-pipeline-generates-948-linux-root-escalation-exploits-.html</guid>
-      <pubDate>Thu, 05 Nov 2026 12:08:54 GMT</pubDate>
-      <description>OpenAI on Wednesday detailed a pipeline that employed an upcoming cyber-focused artificial intelligence (AI) model to validate and patch 948 local privilege escalation vulnerabilities in Linux for $1.2 million in API costs. "Our prototype identified and analyzed 2,308 candidate Linux kernel findings</description>
-    </item>
-    <item>
-      <title>BowSinceEnt/resocket-elden-ring-cheat-2026-trainer-mod-menu-tools</title>
-      <link>https://sentinel-post.pages.dev/item/bowsinceent-resocket-elden-ring-cheat-2026-trainer-mod-menu-tool.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/bowsinceent-resocket-elden-ring-cheat-2026-trainer-mod-menu-tool.html</guid>
-      <pubDate>Thu, 05 Nov 2026 11:58:49 GMT</pubDate>
-      <description>Elden Ring Cheat 2026 — Single-player modding and gameplay toolkit concept featuring character build optimization, rune planning, weapon upgrades, boss strategies, save management and offline trainer research.</description>
-    </item>
-    <item>
-      <title>5 Active Cyber Threats That Put US Enterprises at Risk in October 2026</title>
-      <link>https://sentinel-post.pages.dev/item/5-active-cyber-threats-that-put-us-enterprises-at-risk-in-octobe.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/5-active-cyber-threats-that-put-us-enterprises-at-risk-in-octobe.html</guid>
-      <pubDate>Thu, 05 Nov 2026 10:06:19 GMT</pubDate>
-      <description>October 2026 brought another wave of cyber threats targeting US businesses, with attackers exploiting trusted platforms, legitimate authentication processes, and everyday business workflows. For enterprises, these campaigns raise the stakes beyond individual security incidents, increasing the risk o</description>
-    </item>
-    <item>
-      <title>Apple to Start Scanning Publicly Shared iCloud Photos and Files for Harmful Content</title>
-      <link>https://sentinel-post.pages.dev/item/apple-to-start-scanning-publicly-shared-icloud-photos-and-files-.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/apple-to-start-scanning-publicly-shared-icloud-photos-and-files-.html</guid>
-      <pubDate>Thu, 05 Nov 2026 09:13:28 GMT</pubDate>
-      <description>Apple has revealed that it plans to start checking public iCloud links for harmful content starting with iOS 27.3, iPadOS 27.3, macOS 27.3, and visionOS 27.3. The change specifically applies to scenarios where users share iCloud content, such as photos in iCloud Photos or files in iCloud Drive, by s</description>
-    </item>
-    <item>
-      <title>CERT-In Flags AI-Driven Attacks as Backdoored ARTEX Exposes 62 Consoles to Root Access</title>
-      <link>https://sentinel-post.pages.dev/item/cert-in-flags-ai-driven-attacks-as-backdoored-artex-exposes-62-c.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cert-in-flags-ai-driven-attacks-as-backdoored-artex-exposes-62-c.html</guid>
-      <pubDate>Thu, 05 Nov 2026 08:42:03 GMT</pubDate>
-      <description>The Indian Computer Emergency Response Team (CERT-In) has disclosed that an artificial intelligence (AI)-assisted threat actor it tracks as Crafty Falcon is targeting organizations in the Banking, Financial Services, and Insurance (BFSI) sectors in the country. Describing the threat as active and on</description>
-    </item>
-    <item>
-      <title>Zyxel GS1900 Patch Fails to Block Zero-Day Exploit Allowing Root Command Execution</title>
-      <link>https://sentinel-post.pages.dev/item/zyxel-gs1900-patch-fails-to-block-zero-day-exploit-allowing-root.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/zyxel-gs1900-patch-fails-to-block-zero-day-exploit-allowing-root.html</guid>
-      <pubDate>Thu, 05 Nov 2026 07:06:33 GMT</pubDate>
-      <description>Zyxel GS1900 network switches that received the vendor's earlier fix for an actively exploited flaw are still open to the exploit attackers used, researchers at Binarly found. The exploit lets anyone who can reach a switch's web management interface run commands on it without logging in. Zyxel has r</description>
-    </item>
-    <item>
-      <title>Hackers Exploit Patched Apple Flaw to Deliver Info-Stealing Malware, CISA Says</title>
-      <link>https://sentinel-post.pages.dev/item/hackers-exploit-patched-apple-flaw-to-deliver-info-stealing-malw.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/hackers-exploit-patched-apple-flaw-to-deliver-info-stealing-malw.html</guid>
-      <pubDate>Thu, 05 Nov 2026 05:17:04 GMT</pubDate>
-      <description>The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added a medium-severity security flaw impacting multiple Apple operating systems to its Known Exploited Vulnerabilities (KEV) catalog, following reports of active exploitation. The vulnerability in question is CVE-[phone] </description>
-    </item>
-    <item>
-      <title>Want to Rent an Internet Address at the White House?</title>
-      <link>https://sentinel-post.pages.dev/item/want-to-rent-an-internet-address-at-the-white-house.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/want-to-rent-an-internet-address-at-the-white-house.html</guid>
-      <pubDate>Thu, 05 Nov 2026 04:36:17 GMT</pubDate>
-      <description>Several staffers at the White House are using computers or mobile devices equipped with residential proxy services that render their internet address available for others to rent, security experts warned today. One of the proxy services is a Russian company whose founder's web hosting business was g</description>
-    </item>
-    <item>
-      <title>CVE-2026-55098: Arc: DuckDB I/O aliases bypass database RBAC after CVE-2026-47735</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-55098-arc-duckdb-i-o-aliases-bypass-database-rbac-after.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-55098-arc-duckdb-i-o-aliases-bypass-database-rbac-after.html</guid>
-      <pubDate>Wed, 04 Nov 2026 17:02:37 GMT</pubDate>
-      <description>Severity: medium. ### Summary
-
-The fix for CVE-[phone] (released 2026.06.1) is incomplete. It added a DuckDB sandbox (`SET GLOBAL allowed_directories=[&lt;storage root&gt;]; SET GLOBAL enable_external_access=false`) and an Arc SQL-layer denylist of the **literal** functions `read_parquet(` and `arc_partit</description>
-    </item>
-    <item>
-      <title>Debian and Ubuntu APT Flaw Lets MitM Attackers Swap Verified Packages and Run Code as Root</title>
-      <link>https://sentinel-post.pages.dev/item/debian-and-ubuntu-apt-flaw-lets-mitm-attackers-swap-verified-pac.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/debian-and-ubuntu-apt-flaw-lets-mitm-attackers-swap-verified-pac.html</guid>
-      <pubDate>Wed, 04 Nov 2026 17:00:46 GMT</pubDate>
-      <description>A flaw in APT, the package manager for Debian and Ubuntu, allows an attacker who can modify package downloads to swap a checked package for their own. The attacker's code then runs as root, according to advisories that&amp;nbsp;Debian,&amp;nbsp;Ubuntu, and&amp;nbsp;APT's developers&amp;nbsp;published on November 4.</description>
-    </item>
-    <item>
-      <title>CVE-2026-93363: @payloadcms/storage-vercel-blob has access control bypass of uploads in Vercel Storage adapter</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-93363-payloadcms-storage-vercel-blob-has-access-control.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-93363-payloadcms-storage-vercel-blob-has-access-control.html</guid>
-      <pubDate>Wed, 04 Nov 2026 17:00:39 GMT</pubDate>
-      <description>Severity: medium. ### Impact
-In affected configurations, client upload access does not consistently align with the associated collection’s access configuration.
-
-You are affected if:
-- You use client uploads with `@payloadcms/storage-vercel-blob`.
-- Authenticated users can access the client-upload r</description>
-    </item>
-    <item>
-      <title>SonicWall Won't Patch EoL GMS Flaws That Could Expose Files, Alter Database Records</title>
-      <link>https://sentinel-post.pages.dev/item/sonicwall-won-t-patch-eol-gms-flaws-that-could-expose-files-alte.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/sonicwall-won-t-patch-eol-gms-flaws-that-could-expose-files-alte.html</guid>
-      <pubDate>Wed, 04 Nov 2026 17:00:38 GMT</pubDate>
-      <description>SonicWall has warned of two vulnerabilities impacting end-of-life Global Management System (GMS) systems that it said will not be patched. Details of the security flaws, which affect SonicWall GMS 9.5.2 and earlier versions, are below - CVE-[phone] (CVSS score: 9.1) - An unauthenticated file read vu</description>
     </item>
   </channel>
 </rss>

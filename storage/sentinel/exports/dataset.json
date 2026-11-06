@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T17:06:31+00:00",
+  "generated_at": "2026-11-06T20:59:53+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -10,34 +10,34 @@
     "rss"
   ],
   "totals": {
-    "items": 134,
+    "items": 135,
     "by_source": {
       "hn": 40,
       "cve": 30,
-      "github": 14,
+      "github": 15,
       "rss": 50
     },
     "by_recipe": {
       "hn_sec": 40,
       "gh_advisories": 30,
       "hackersnews": 30,
-      "github_sec": 14,
+      "github_sec": 15,
       "schneier": 10,
       "krebs": 10
     },
     "by_topic": {
-      "security": 105,
-      "ai": 70,
-      "dev": 56,
-      "hardware": 13,
+      "security": 109,
+      "ai": 72,
+      "dev": 59,
+      "hardware": 15,
       "biz": 10,
-      "crypto": 9,
-      "science": 5
+      "crypto": 7,
+      "science": 4
     },
     "top_domains": [
       [
         "github.com",
-        46
+        47
       ],
       [
         "thehackernews.com",
@@ -174,6 +174,121 @@
       "date": "2025-03-24"
     },
     {
+      "uid": "cve:GHSA-47w9-6r3f-938g",
+      "source": "cve",
+      "title": "GHSA-47w9-6r3f-938g: LXD has restricted project bypass leading to arbitrary command execution",
+      "url": "https://github.com/advisories/GHSA-47w9-6r3f-938g",
+      "ts": 1793994686.0,
+      "points": 6000,
+      "comments": 0,
+      "author": "github.com/canonical/lxd",
+      "summary": "Severity: critical. Reported from https://github.com/lxc/incus/security/advisories/GHSA-48q5-w887-33wv\n\n### Summary\n\nInstance snapshots ignore the `restricted.containers.lowlevel=block` setting;\nallowing for arbitrary command execution on the Incus server by abusing\nlowlevel hooks such as `raw.lxc` and `raw.qemu`.\n\n\n##",
+      "recipe": "gh_advisories",
+      "buzz": 6080,
+      "topics": [
+        "ai",
+        "dev",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-06"
+    },
+    {
+      "uid": "cve:GHSA-pjff-c2wc-f6jm",
+      "source": "cve",
+      "title": "GHSA-pjff-c2wc-f6jm: LXD has arbitrary file write on client due to trusted image hash",
+      "url": "https://github.com/advisories/GHSA-pjff-c2wc-f6jm",
+      "ts": 1793993815.0,
+      "points": 6000,
+      "comments": 0,
+      "author": "github.com/canonical/lxd",
+      "summary": "Severity: critical. Reported from https://github.com/lxc/incus/security/advisories/GHSA-f6m5-xw2g-xc4x\n\n### Summary\n\nAn arbitrary file write exists in the Incus client when a malicious image\nserver returns a crafted `Incus-Image-Hash` header. This can lead to\narbitrary command execution as root on the server.\n\n\n### Det",
+      "recipe": "gh_advisories",
+      "buzz": 6080,
+      "topics": [
+        "dev",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-06"
+    },
+    {
+      "uid": "cve:GHSA-fmc8-p6q7-75cc",
+      "source": "cve",
+      "title": "GHSA-fmc8-p6q7-75cc: LXD has argument injection in backup compression algorithm leading to AFW and ACE",
+      "url": "https://github.com/advisories/GHSA-fmc8-p6q7-75cc",
+      "ts": 1793993797.0,
+      "points": 6000,
+      "comments": 0,
+      "author": "github.com/canonical/lxd",
+      "summary": "Severity: critical. Reported from  https://github.com/lxc/incus/security/advisories/GHSA-v6mj-8pf4-hhw4\n\n### Summary\n\nImproper validation of user-provided backup compression algorithm leads to\nargument injection in the constructed command line. This leads to an\narbitrary file write on the host, possibly leading to arbi",
+      "recipe": "gh_advisories",
+      "buzz": 6080,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-06"
+    },
+    {
+      "uid": "cve:GHSA-vghh-5rfx-xhq8",
+      "source": "cve",
+      "title": "GHSA-vghh-5rfx-xhq8: LXD has arbitrary file read+write on host via rootfs/ symlink in malicious image",
+      "url": "https://github.com/advisories/GHSA-vghh-5rfx-xhq8",
+      "ts": 1793993767.0,
+      "points": 6000,
+      "comments": 0,
+      "author": "github.com/canonical/lxd",
+      "summary": "Severity: critical. Reported from https://github.com/lxc/incus/security/advisories/GHSA-2q3f-q5pq-g8wv\n\n### Summary\n\nA specially crafted image can be used to read or create/write arbitrary files on the host; possibly leading to arbitrary command execution.\n\n\n### Details\n\nIncus validates an image as soon as it sees a no",
+      "recipe": "gh_advisories",
+      "buzz": 6080,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-06"
+    },
+    {
+      "uid": "cve:GHSA-jpf8-86f3-wp38",
+      "source": "cve",
+      "title": "GHSA-jpf8-86f3-wp38: LXD has arbitrary file read+write on host via templates/ symlink in malicious image",
+      "url": "https://github.com/advisories/GHSA-jpf8-86f3-wp38",
+      "ts": 1793991237.0,
+      "points": 6000,
+      "comments": 0,
+      "author": "github.com/canonical/lxd",
+      "summary": "Severity: critical. Reported from https://github.com/lxc/incus/security/advisories/GHSA-vxp5-584q-c479\n\n### Summary\n\nA specially crafted image can be used to read or create/write arbitrary\nfiles on the host; possibly leading to arbitrary command execution.\n\n\n### Details\n\nFor container images, `internal/server/storage/u",
+      "recipe": "gh_advisories",
+      "buzz": 6080,
+      "topics": [
+        "ai",
+        "dev",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-06"
+    },
+    {
+      "uid": "cve:GHSA-9j25-mm2h-2f76",
+      "source": "cve",
+      "title": "GHSA-9j25-mm2h-2f76: LXD has arbitrary file write on host via `exec-output` symlink in crafted image",
+      "url": "https://github.com/advisories/GHSA-9j25-mm2h-2f76",
+      "ts": 1793990751.0,
+      "points": 6000,
+      "comments": 0,
+      "author": "github.com/canonical/lxd",
+      "summary": "Severity: critical. Reported from https://github.com/lxc/incus/security/advisories/GHSA-48q5-w887-33wv\n\n### Summary\n\nThe `record-output` parameter of the `/instances/$name/exec` endpoint\nstores the output of the command in the `exec-output` directory of the\ninstance. If `exec-output` is a symlink, file named `exec_UUID",
+      "recipe": "gh_advisories",
+      "buzz": 6080,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-06"
+    },
+    {
       "uid": "cve:GHSA-5q7h-w9jf-cx97",
       "source": "cve",
       "title": "CVE-2026-105769: kaniko can send the build's Azure (Entra ID) access token to lookalike ACR registry hosts",
@@ -184,7 +299,7 @@
       "author": "github.com/chainguard-dev/kaniko",
       "summary": "Severity: critical. ### Summary\n\nkaniko before v1.25.20 can send a Microsoft Entra ID (Azure AD) access token for Azure Resource Manager to a registry host an attacker controls. A Dockerfile that references an image on a lookalike host, such as `FROM x.azurecr.io.attacker.com/img`, is enough. The build needs no `RUN` i",
       "recipe": "gh_advisories",
-      "buzz": 6080,
+      "buzz": 6030,
       "topics": [
         "dev",
         "crypto",
@@ -203,7 +318,7 @@
       "author": "@enspirit/elo",
       "summary": "Severity: critical. ### Summary\n\nAn unauthenticated attacker who controls a string passed to any Elo JavaScript-emission path — `defaultFormats.elo.parse()`, the `bin/elo` CLI, or the live browser playground at `elo-lang.org/try` — can execute arbitrary code in the host JavaScript runtime. A payload built from the `.co",
       "recipe": "gh_advisories",
-      "buzz": 6030,
+      "buzz": 6010,
       "topics": [
         "security"
       ],
@@ -220,7 +335,7 @@
       "author": "@enspirit/elo",
       "summary": "Severity: critical. ### Summary\n\nElo's Ruby backend emits attacker-controlled text into Ruby double-quoted strings without escaping the `#` character. Because `#` begins Ruby's interpolation sequences — `#{expr}`, `#@ivar`, `#@@cvar`, `#$gvar` — and any expression wrapped in `#{...}` may use backticks for shell executi",
       "recipe": "gh_advisories",
-      "buzz": 6030,
+      "buzz": 6010,
       "topics": [
         "ai",
         "dev",
@@ -320,33 +435,68 @@
       "date": "2021-01-11"
     },
     {
-      "uid": "cve:GHSA-64vx-6h2c-rjh7",
+      "uid": "cve:GHSA-7mr3-28h5-m5vx",
       "source": "cve",
-      "title": "CVE-2026-61536: Banks: Unsafe importlib.import_module of attacker-controlled Tool.import_path in CompletionExtension allows RCE",
-      "url": "https://github.com/advisories/GHSA-64vx-6h2c-rjh7",
-      "ts": 1793901062.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "banks",
-      "summary": "Severity: high. ## Summary\n\n  `banks` parses `Tool` JSON objects from the rendered body of `{% completion %}` blocks and later resolves their\n  `import_path` field through `importlib.import_module(...)` + `getattr(...)` to obtain the callable that handles a tool\n   call. There is no allowlist or sanitization on `im",
-      "recipe": "gh_advisories",
-      "buzz": 3580,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-05"
-    },
-    {
-      "uid": "cve:GHSA-hhf9-qw4v-72xp",
-      "source": "cve",
-      "title": "CVE-2026-12411: lxd allows Cross-guest volume hijack via DevLXD device patch",
-      "url": "https://github.com/advisories/GHSA-hhf9-qw4v-72xp",
-      "ts": 1793900459.0,
+      "title": "GHSA-7mr3-28h5-m5vx: LXD has project restriction bypass for custom volume copy across projects",
+      "url": "https://github.com/advisories/GHSA-7mr3-28h5-m5vx",
+      "ts": 1793994676.0,
       "points": 3500,
       "comments": 0,
       "author": "github.com/canonical/lxd",
-      "summary": "Severity: high. ### Summary\n\nA guest can mount another guest's custom storage volume over `/dev/lxd` and read or write its contents without owning it. The DevLXD storage API blocks access to volumes you don't own, but the instance device-update path that attaches a volume to a container without checks ownership. An",
+      "summary": "Severity: high. Reported from https://github.com/lxc/incus/security/advisories/GHSA-64f3-v33m-w89f\n\n### Summary\n\nMissing authorization checks exist for custom volume copying where an attacker knowing the name of a project that they don't have access to and the name of a custom volume in that project can copy the cu",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-06"
+    },
+    {
+      "uid": "cve:GHSA-qx75-2p3r-pwm5",
+      "source": "cve",
+      "title": "GHSA-qx75-2p3r-pwm5: LXD has project restriction bypass in instance copy across projects",
+      "url": "https://github.com/advisories/GHSA-qx75-2p3r-pwm5",
+      "ts": 1793994660.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "github.com/canonical/lxd",
+      "summary": "Severity: high. Reported from https://github.com/lxc/incus/security/advisories/GHSA-c9f5-j9c3-mhrg\n\n### Summary\nMissing authorization checks exist for instance copying where an attacker knowing the name of a project that they don't have access to and the name of an instance in that project can copy the instance to",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-06"
+    },
+    {
+      "uid": "cve:GHSA-9fpx-fr6j-2vh6",
+      "source": "cve",
+      "title": "CVE-2026-33050: GeoNode has OS command injection via uploaded file layer name",
+      "url": "https://github.com/advisories/GHSA-9fpx-fr6j-2vh6",
+      "ts": 1793993978.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "GeoNode",
+      "summary": "Severity: high. Arbitrary OS commands can be executed on the GeoNode by uploading a vector file with a crafted layer name.",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-11-06"
+    },
+    {
+      "uid": "cve:GHSA-5w5g-j6hw-6p8f",
+      "source": "cve",
+      "title": "CVE-2026-62284: OSAC operator: Kubeconfig credential-plugin execution and SSRF in console proxy",
+      "url": "https://github.com/advisories/GHSA-5w5g-j6hw-6p8f",
+      "ts": 1793988760.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "github.com/osac-project/osac-operator",
+      "summary": "Severity: high. ### Impact\n\n The console-proxy's RemoteConfigResolver parses kubeconfig data from Kubernetes Secrets using clientcmd.RESTConfigFromKubeConfig without sanitizing the resulting rest.Config. A kubeconfig containing an exec\n  plugin stanza (under users[].user.exec) is faithfully preserved. When rest.Tra",
       "recipe": "gh_advisories",
       "buzz": 3580,
       "topics": [
@@ -354,7 +504,7 @@
         "dev",
         "security"
       ],
-      "date": "2026-11-05"
+      "date": "2026-11-06"
     },
     {
       "uid": "hn:50172041",
@@ -374,6 +524,43 @@
       "date": "2026-10-20"
     },
     {
+      "uid": "cve:GHSA-64vx-6h2c-rjh7",
+      "source": "cve",
+      "title": "CVE-2026-61536: Banks: Unsafe importlib.import_module of attacker-controlled Tool.import_path in CompletionExtension allows RCE",
+      "url": "https://github.com/advisories/GHSA-64vx-6h2c-rjh7",
+      "ts": 1793901062.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "banks",
+      "summary": "Severity: high. ## Summary\n\n  `banks` parses `Tool` JSON objects from the rendered body of `{% completion %}` blocks and later resolves their\n  `import_path` field through `importlib.import_module(...)` + `getattr(...)` to obtain the callable that handles a tool\n   call. There is no allowlist or sanitization on `im",
+      "recipe": "gh_advisories",
+      "buzz": 3530,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-05"
+    },
+    {
+      "uid": "cve:GHSA-hhf9-qw4v-72xp",
+      "source": "cve",
+      "title": "CVE-2026-12411: lxd allows Cross-guest volume hijack via DevLXD device patch",
+      "url": "https://github.com/advisories/GHSA-hhf9-qw4v-72xp",
+      "ts": 1793900459.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "github.com/canonical/lxd",
+      "summary": "Severity: high. ### Summary\n\nA guest can mount another guest's custom storage volume over `/dev/lxd` and read or write its contents without owning it. The DevLXD storage API blocks access to volumes you don't own, but the instance device-update path that attaches a volume to a container without checks ownership. An",
+      "recipe": "gh_advisories",
+      "buzz": 3530,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-05"
+    },
+    {
       "uid": "cve:GHSA-gh9r-c94j-cmp5",
       "source": "cve",
       "title": "CVE-2026-115878: Stanza: RCE via pickle deserialization in the lemmatizer",
@@ -384,7 +571,7 @@
       "author": "stanza",
       "summary": "Severity: high. ## TL;DR\n\nLoading an attacker-supplied lemma `.pt` runs arbitrary code as the loading user. Since 1.14.0 the lemmatizer stores `pos_dict` as a gzip-compressed pickle in the checkpoint's `dicts` field (a `bytes` value). `torch.load(weights_only=True)` treats `bytes` as a primitive and passes it throu",
       "recipe": "gh_advisories",
-      "buzz": 3530,
+      "buzz": 3510,
       "topics": [
         "security"
       ],
@@ -401,7 +588,7 @@
       "author": "@enspirit/elo",
       "summary": "Severity: high. ### Summary\n\nElo's programmatic AST API accepts arbitrary values in many node fields without runtime type or syntax validation. Each backend's emit stage interpolates those values straight into the generated source with no escape pass. An integrator that populates the AST from JSON-deserialised inpu",
       "recipe": "gh_advisories",
-      "buzz": 3530,
+      "buzz": 3510,
       "topics": [
         "ai",
         "dev",
@@ -421,7 +608,7 @@
       "author": "Microsoft.DotNet.ILCompiler",
       "summary": "Severity: high. ## Executive summary\n\nA buffer overflow vulnerability exists in the Brotli decompression library used by .NET. This vulnerability may allow an unauthenticated attacker to read or corrupt process memory. This could lead to information disclosure, denial of service, or elevation of privilege.\n\nASP.NET",
       "recipe": "gh_advisories",
-      "buzz": 3530,
+      "buzz": 3510,
       "topics": [
         "dev",
         "security"
@@ -439,7 +626,7 @@
       "author": "github.com/mtzanidakis/praktor",
       "summary": "Severity: high. ### Impact\n\nA remote Telegram user can write files to arbitrary paths inside an agent's persistent workspace volume (`praktor-wk-<workspace>`, mounted at `/workspace/agent`), escaping the documented `uploads/` directory.\n\nThe attacker controls the Telegram document filename, which was concatenated i",
       "recipe": "gh_advisories",
-      "buzz": 3530,
+      "buzz": 3510,
       "topics": [
         "ai",
         "dev",
@@ -459,218 +646,13 @@
       "author": "org.keycloak:keycloak-services",
       "summary": "Severity: high. ### Description\nA flaw was found in Keycloak. This JWT algorithm confusion vulnerability in the JWT Authorization Grant flow allows an attacker with valid client credentials to bypass signature verification. By forging an assertion, the attacker can create unauthorized access tokens. This enables th",
       "recipe": "gh_advisories",
-      "buzz": 3530,
+      "buzz": 3510,
       "topics": [
         "crypto",
         "science",
         "security"
       ],
       "date": "2026-11-03"
-    },
-    {
-      "uid": "cve:GHSA-h26j-4vp7-x9w2",
-      "source": "cve",
-      "title": "CVE-2026-62848: Metalama: Unsafe deserialization over Metalama's Visual Studio inter-process named pipe enables local code execution",
-      "url": "https://github.com/advisories/GHSA-h26j-4vp7-x9w2",
-      "ts": 1793723864.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "Metalama.Framework",
-      "summary": "Severity: high. ## Summary\n\nMetalama uses a local named-pipe channel to communicate between its Visual Studio processes — the Visual Studio UI process (`devenv`), the out-of-process Roslyn code-analysis process, and the CodeLens process. This channel deserialized messages from the pipe **without restricting which C",
-      "recipe": "gh_advisories",
-      "buzz": 3510,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-03"
-    },
-    {
-      "uid": "cve:GHSA-f9j6-8p6x-r9j6",
-      "source": "cve",
-      "title": "CVE-2026-62374: SD JWT JS: Tampered disclosures silently dropped instead of rejected",
-      "url": "https://github.com/advisories/GHSA-f9j6-8p6x-r9j6",
-      "ts": 1793642079.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "@sd-jwt/decode",
-      "summary": "Severity: high. ## Summary\n\nWhen one Disclosure in an SD-JWT presentation is tampered so its digest no longer matches the Issuer-signed `_sd` array, `@sd-jwt/decode` 0.19.0 does **not** reject the presentation. It silently drops the unmatched Disclosure and returns a **reduced claim set**, reporting success. The Is",
-      "recipe": "gh_advisories",
-      "buzz": 3510,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-02"
-    },
-    {
-      "uid": "cve:GHSA-8fmv-6rg5-5924",
-      "source": "cve",
-      "title": "CVE-2026-118761: Kubeflow Pipelines: Pipeline archive upload allows decompression bomb to exhaust server memory",
-      "url": "https://github.com/advisories/GHSA-8fmv-6rg5-5924",
-      "ts": 1793402018.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "github.com/kubeflow/pipelines",
-      "summary": "Severity: high. ## Summary\n\nThe Kubeflow Pipelines API server decompresses uploaded pipeline archives without adequately bounding expanded data in affected versions. A small ZIP or gzip-compressed tar archive can consume disproportionately large amounts of memory while the server locates or reads the pipeline file,",
-      "recipe": "gh_advisories",
-      "buzz": 3510,
-      "topics": [
-        "dev",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-10-30"
-    },
-    {
-      "uid": "cve:GHSA-wg5q-x4j9-qm54",
-      "source": "cve",
-      "title": "CVE-2026-118759: Kubeflow Pipelines: Run-log endpoint permits unauthorized access to pod logs",
-      "url": "https://github.com/advisories/GHSA-wg5q-x4j9-qm54",
-      "ts": 1793402009.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "github.com/kubeflow/pipelines",
-      "summary": "Severity: high. ## Summary\n\nThe Kubeflow Pipelines API server's `GET /apis/v1alpha1/runs/{run_id}/nodes/{node_id}/log` handler retrieves logs without authorizing the caller against the selected run. A caller who can reach the backend and knows a victim run ID and a suitable pod or node identifier can read live or a",
-      "recipe": "gh_advisories",
-      "buzz": 3510,
-      "topics": [
-        "ai",
-        "dev",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-10-30"
-    },
-    {
-      "uid": "cve:GHSA-5849-834g-hvw5",
-      "source": "cve",
-      "title": "CVE-2026-119203: pypdf has possible infinite loop when hitting EOF in standard xref table during trailer search",
-      "url": "https://github.com/advisories/GHSA-5849-834g-hvw5",
-      "ts": 1793401996.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "pypdf",
-      "summary": "Severity: high. ### Impact\n\nAn attacker who uses this vulnerability can craft a PDF which leads to an infinite loop. This requires opening an incomplete file without a `trailer`.\n\n### Patches\n\nThis has been fixed in [pypdf==6.21.4](https://github.com/py-pdf/pypdf/releases/tag/6.21.4).\n\n### Workarounds\n\nIf you canno",
-      "recipe": "gh_advisories",
-      "buzz": 3510,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-10-30"
-    },
-    {
-      "uid": "cve:GHSA-cggf-277g-3q54",
-      "source": "cve",
-      "title": "CVE-2026-119204: pypdf has possible large memory usage when parsing page tree",
-      "url": "https://github.com/advisories/GHSA-cggf-277g-3q54",
-      "ts": 1793401981.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "pypdf",
-      "summary": "Severity: high. ### Impact\n\nAn attacker who uses this vulnerability can craft a PDF which leads to large memory usage. This requires parsing the page tree with many shared resources.\n\n### Patches\n\nThis has been fixed in [pypdf==6.21.4](https://github.com/py-pdf/pypdf/releases/tag/6.21.4).\n\n### Workarounds\n\nIf you c",
-      "recipe": "gh_advisories",
-      "buzz": 3510,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-10-30"
-    },
-    {
-      "uid": "cve:GHSA-mfr5-77xh-9j7h",
-      "source": "cve",
-      "title": "CVE-2026-119205: pypdf has possible infinite loop when cloning dictionaries",
-      "url": "https://github.com/advisories/GHSA-mfr5-77xh-9j7h",
-      "ts": 1793401940.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "pypdf",
-      "summary": "Severity: high. ### Impact\n\nAn attacker who uses this vulnerability can craft a PDF which leads to an infinite loop. This requires cloning/duplicating a `DictionaryObject`.\n\n### Patches\n\nThis has been fixed in [pypdf==6.21.4](https://github.com/py-pdf/pypdf/releases/tag/6.21.4).\n\n### Workarounds\n\nIf you cannot upgr",
-      "recipe": "gh_advisories",
-      "buzz": 3510,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-10-30"
-    },
-    {
-      "uid": "cve:GHSA-4528-x5fx-h6hg",
-      "source": "cve",
-      "title": "CVE-2026-118772: joi: quadratic-time split in `string().email({ multiple: true })` allows denial of service",
-      "url": "https://github.com/advisories/GHSA-4528-x5fx-h6hg",
-      "ts": 1793401823.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "joi",
-      "summary": "Severity: high. ### Summary\n\n`Joi.string().email({ multiple: true })` takes quadratic time to split a value that contains a long run of whitespace. One request with 100 KB of spaces blocks the Node.js event loop for several seconds, which causes a denial of service.\n\n### Details\n\nWhen the `multiple` option is set,",
-      "recipe": "gh_advisories",
-      "buzz": 3510,
-      "topics": [
-        "ai",
-        "science",
-        "security"
-      ],
-      "date": "2026-10-30"
-    },
-    {
-      "uid": "cve:GHSA-8494-f6mr-cjpv",
-      "source": "cve",
-      "title": "CVE-2026-119202: @hapi/content: quadratic-time parsing of Content-Disposition parameters allows denial of service",
-      "url": "https://github.com/advisories/GHSA-8494-f6mr-cjpv",
-      "ts": 1793401813.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "@hapi/content",
-      "summary": "Severity: high. ### Summary\n\n`Content.disposition()` takes quadratic time when a `Content-Disposition` parameter contains a long token without `=`. One unauthenticated multipart request can block the Node.js event loop for several minutes.\n\n### Details\n\n`Content.disposition()` reads the parameters with a global reg",
-      "recipe": "gh_advisories",
-      "buzz": 3510,
-      "topics": [
-        "ai",
-        "dev",
-        "crypto",
-        "security"
-      ],
-      "date": "2026-10-30"
-    },
-    {
-      "uid": "cve:GHSA-c73q-w75p-j82v",
-      "source": "cve",
-      "title": "CVE-2026-116672: Authlib RFC 7592 examples omit registration-access-token client binding",
-      "url": "https://github.com/advisories/GHSA-c73q-w75p-j82v",
-      "ts": 1793401744.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "Authlib",
-      "summary": "Severity: high. ## Description\n\n### Summary\n\nRFC 7592 (OAuth 2.0 Dynamic Client Registration Management Protocol) lets a previously registered client read, update, or delete its own registration, authenticated by a `registration_access_token` issued specifically to that client at registration time. The entire secur",
-      "recipe": "gh_advisories",
-      "buzz": 3510,
-      "topics": [
-        "crypto",
-        "security"
-      ],
-      "date": "2026-10-30"
-    },
-    {
-      "uid": "cve:GHSA-42gh-23hr-vphw",
-      "source": "cve",
-      "title": "CVE-2026-119206: pypdf has possible long runtimes when retrieving page labels",
-      "url": "https://github.com/advisories/GHSA-42gh-23hr-vphw",
-      "ts": 1793401735.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "pypdf",
-      "summary": "Severity: high. ### Impact\n\nAn attacker who uses this vulnerability can craft a PDF which leads to large runtimes. This requires retrieving the page labels of a file.\n\n### Patches\n\nThis has been fixed in [pypdf==6.21.3](https://github.com/py-pdf/pypdf/releases/tag/6.21.3).\n\n### Workarounds\n\nIf you cannot upgrade ye",
-      "recipe": "gh_advisories",
-      "buzz": 3510,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-10-30"
     },
     {
       "uid": "hn:32148218",
@@ -966,15 +948,70 @@
       "date": "2020-09-30"
     },
     {
-      "uid": "cve:GHSA-m5ph-mmg5-6w5h",
+      "uid": "cve:GHSA-r4hm-p9f9-fj9v",
       "source": "cve",
-      "title": "CVE-2026-62300: filecoin-pin: Unbounded DAG pinning can exhaust server resources",
-      "url": "https://github.com/advisories/GHSA-m5ph-mmg5-6w5h",
-      "ts": 1793902050.0,
+      "title": "CVE-2026-55649: GeoNode has Stored XSS in Documents metadata abstract field",
+      "url": "https://github.com/advisories/GHSA-r4hm-p9f9-fj9v",
+      "ts": 1793994634.0,
       "points": 1800,
       "comments": 0,
-      "author": "filecoin-pin",
-      "summary": "Severity: medium. ## Summary\n\nThe IPFS Pinning Service API implementation accepts a caller-controlled CID through `POST /pins`, queues background processing, and then recursively fetches the full DAG with `helia.pins.add(cid)`. The route and background pinning path do not enforce a request rate limit, per-user quota,",
+      "author": "GeoNode",
+      "summary": "Severity: medium. The abstract metadata of documents is not sanitised. It’s possible to store arbitrary HTML (and JS) that will be executed when visiting the page.",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-06"
+    },
+    {
+      "uid": "cve:GHSA-fqpv-mq26-pr4j",
+      "source": "cve",
+      "title": "CVE-2026-46429: GeoNode has Unrestricted File Upload",
+      "url": "https://github.com/advisories/GHSA-fqpv-mq26-pr4j",
+      "ts": 1793994083.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "GeoNode",
+      "summary": "Severity: medium. The upload service validation can be circumvented with specially crafted requests, allowing for the storage and serving of malicious files.",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-06"
+    },
+    {
+      "uid": "cve:GHSA-j93m-3j9p-m5m8",
+      "source": "cve",
+      "title": "CVE-2026-9639: LXD has CreateCustomVolumeFromBackup nil-pointer dereference on volumes[0].snapshots[*].expires_at",
+      "url": "https://github.com/advisories/GHSA-j93m-3j9p-m5m8",
+      "ts": 1793993834.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "github.com/canonical/lxd",
+      "summary": "Severity: medium. ## Summary\n\n(sibling-field variant of CVE-[phone] fix 05bc272)\n\n`(*lxdBackend).CreateCustomVolumeFromBackup` in [`lxd/storage/backend_lxd.go`](https://github.com/canonical/lxd/blob/05bc272/lxd/storage/backend_lxd.go) contains an unguarded `*time.Time` dereference on the `ExpiresAt` field of every",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-06"
+    },
+    {
+      "uid": "cve:GHSA-3gq2-x4qg-p4g6",
+      "source": "cve",
+      "title": "CVE-2026-28385: LXD: SSRF via image import from URL allows internal network probing by authenticated users",
+      "url": "https://github.com/advisories/GHSA-3gq2-x4qg-p4g6",
+      "ts": 1793989758.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "github.com/canonical/lxd",
+      "summary": "Severity: medium. ## Summary\nThe LXD image import-from-URL endpoint (`POST /1.0/images` with `source.type=url`) makes server-side HTTP requests to an attacker-supplied URL without any private-IP or loopback blocking. An authenticated user with the `can_create_images` entitlement can force the LXD daemon to connect to",
       "recipe": "gh_advisories",
       "buzz": 1880,
       "topics": [
@@ -982,7 +1019,43 @@
         "security",
         "hardware"
       ],
-      "date": "2026-11-05"
+      "date": "2026-11-06"
+    },
+    {
+      "uid": "cve:GHSA-xgjr-7j9q-2h4r",
+      "source": "cve",
+      "title": "CVE-2026-62361: listmonk: SQL Injection in `/api/subscribers/export` bypasses table access control, leaking admin password hashes and SMTP credentials",
+      "url": "https://github.com/advisories/GHSA-xgjr-7j9q-2h4r",
+      "ts": 1793988917.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "github.com/knadh/listmonk",
+      "summary": "Severity: medium. ### Summary\n\nA SQL injection vulnerability in `GET /api/subscribers/export` allows an authenticated user with the `subscribers:sql_query` permission to bypass the table access control that exists on the regular query endpoint (`GET /api/subscribers`) and read arbitrary tables from the database — inc",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-06"
+    },
+    {
+      "uid": "cve:GHSA-92r3-p8c2-3fpx",
+      "source": "cve",
+      "title": "CVE-2026-16454: Eclipse hawkBit DDI has Privilege Escalation that allows Tenant-Isolated Firmware Exfiltration",
+      "url": "https://github.com/advisories/GHSA-92r3-p8c2-3fpx",
+      "ts": 1793988585.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "org.eclipse.hawkbit:hawkbit-ddi-resource",
+      "summary": "Severity: medium. ## **Description**\nA privilege escalation vulnerability has been identified in the Direct Device Integration (DDI) Controller of **Eclipse hawkBit** (versions 1.0.3 and prior).\n\nThis vulnerability allows an authenticated device to escalate its permissions and bypass the strict boundaries of its assi",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-06"
     },
     {
       "uid": "hn:48166459",
@@ -1034,6 +1107,25 @@
         "security"
       ],
       "date": "2016-12-15"
+    },
+    {
+      "uid": "cve:GHSA-m5ph-mmg5-6w5h",
+      "source": "cve",
+      "title": "CVE-2026-62300: filecoin-pin: Unbounded DAG pinning can exhaust server resources",
+      "url": "https://github.com/advisories/GHSA-m5ph-mmg5-6w5h",
+      "ts": 1793902050.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "filecoin-pin",
+      "summary": "Severity: medium. ## Summary\n\nThe IPFS Pinning Service API implementation accepts a caller-controlled CID through `POST /pins`, queues background processing, and then recursively fetches the full DAG with `helia.pins.add(cid)`. The route and background pinning path do not enforce a request rate limit, per-user quota,",
+      "recipe": "gh_advisories",
+      "buzz": 1830,
+      "topics": [
+        "dev",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-05"
     },
     {
       "uid": "cve:GHSA-93cm-2v4m-c56c",
@@ -1090,74 +1182,6 @@
         "security"
       ],
       "date": "2026-11-04"
-    },
-    {
-      "uid": "cve:GHSA-9ppr-wfw9-xvr2",
-      "source": "cve",
-      "title": "GHSA-9ppr-wfw9-xvr2: Netfoil doesn't decrement TTL",
-      "url": "https://github.com/advisories/GHSA-9ppr-wfw9-xvr2",
-      "ts": 1793724509.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "github.com/tinfoil-factory/netfoil",
-      "summary": "Severity: medium. ### Summary\nTTL was not decremented, so stale records would continue to be served.",
-      "recipe": "gh_advisories",
-      "buzz": 1810,
-      "topics": [],
-      "date": "2026-11-03"
-    },
-    {
-      "uid": "cve:GHSA-j656-3hf2-fvjc",
-      "source": "cve",
-      "title": "GHSA-j656-3hf2-fvjc: DBHub: MySQL and MariaDB comment interpretation bypasses read-only SQL validation",
-      "url": "https://github.com/advisories/GHSA-j656-3hf2-fvjc",
-      "ts": 1793642271.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "@bytebase/dbhub",
-      "summary": "Severity: medium. The read-only mode can be bypassed on the MySQL and MariaDB connectors. In read-only mode a caller can still execute arbitrary write and DDL statements (for example DROP TABLE), which defeats the protection that read-only mode is meant to provide when a database is exposed to an AI agent.\n\nRoot caus",
-      "recipe": "gh_advisories",
-      "buzz": 1810,
-      "topics": [
-        "ai",
-        "dev"
-      ],
-      "date": "2026-11-02"
-    },
-    {
-      "uid": "cve:GHSA-g3hv-75wg-m249",
-      "source": "cve",
-      "title": "CVE-2026-118764: minimatch has potential denial of service via globparts amplification",
-      "url": "https://github.com/advisories/GHSA-g3hv-75wg-m249",
-      "ts": 1793401795.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "minimatch",
-      "summary": "Severity: medium. minimatch 10.2.6 contains an attacker-controlled pattern amplification in firstPhasePreProcess() when optimizationLevel >= 2.\n\nresearcher: Reid Downing (b1nv0id)\nfiles: \n\n- src/index.ts: 690-770\n- src/index.ts: 780-796\n\nissue:\ninput-controlled growth of globParts during first-phase preprocessing, fo",
-      "recipe": "gh_advisories",
-      "buzz": 1810,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-10-30"
-    },
-    {
-      "uid": "cve:GHSA-3g3m-2fjr-6pw4",
-      "source": "cve",
-      "title": "CVE-2026-118773: Glob: AbortSignal cancellation bypass allows post-timeout filesystem traversal",
-      "url": "https://github.com/advisories/GHSA-3g3m-2fjr-6pw4",
-      "ts": 1793401751.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "glob",
-      "summary": "Severity: medium. ### Summary\n\nIn glob 13.0.6, an aborted async walk rejects or emits an error but continues recursively reading directories in the background.\n\nThe root cause is that abort branches in src/walker.ts call cb() without returning. As a result, callers that rely on signal or AbortSignal.timeout() to boun",
-      "recipe": "gh_advisories",
-      "buzz": 1810,
-      "topics": [
-        "security"
-      ],
-      "date": "2026-10-30"
     },
     {
       "uid": "hn:25843874",
@@ -1372,34 +1396,17 @@
       "title": "arpanjot-coding/AVault",
       "url": "https://github.com/arpanjot-coding/AVault",
       "ts": 1793474487.0,
-      "points": 620,
-      "comments": 32,
+      "points": 599,
+      "comments": 27,
       "author": "arpanjot-coding",
       "summary": "AVault - Call Recorder (No Root Required) | Privacy-first, hardware-encrypted audio vault for Android 12-16+. Rootless call recording via Shizuku with AES-256-GCM, biometrics & auto-cleanup.",
       "recipe": "github_sec",
-      "buzz": 726,
+      "buzz": 690,
       "topics": [
         "dev",
         "security"
       ],
       "date": "2026-10-31"
-    },
-    {
-      "uid": "cve:GHSA-m3qr-fvp4-78xj",
-      "source": "cve",
-      "title": "GHSA-m3qr-fvp4-78xj: Arc has unauthenticated application log disclosure via `/api/v1/logs`",
-      "url": "https://github.com/advisories/GHSA-m3qr-fvp4-78xj",
-      "ts": 1793723378.0,
-      "points": 700,
-      "comments": 0,
-      "author": "github.com/basekick-labs/arc",
-      "summary": "Severity: low. ## Summary\n\nArc exposes `GET /api/v1/logs` without authentication even when authentication is enabled by default. The route is registered before the global Fiber authentication middleware, and the handler returns recent buffered application logs without performing its own authorization check.\n\n## De",
-      "recipe": "gh_advisories",
-      "buzz": 710,
-      "topics": [
-        "dev"
-      ],
-      "date": "2026-11-03"
     },
     {
       "uid": "gh:mrhlaingbwardev/agentic-hacking-skills",
@@ -1426,12 +1433,12 @@
       "title": "jmanico/grim-prompter",
       "url": "https://github.com/jmanico/grim-prompter",
       "ts": 1793189366.0,
-      "points": 378,
+      "points": 382,
       "comments": 31,
       "author": "jmanico",
       "summary": "Threat modeling for AI coding agents: point Claude Code, Codex or any agent at your repo and get an evidence-traced threat model. 36 architectures, 29 methods, MIT.",
       "recipe": "github_sec",
-      "buzz": 471,
+      "buzz": 475,
       "topics": [
         "ai",
         "dev"
@@ -1454,23 +1461,6 @@
         "dev"
       ],
       "date": "2026-10-26"
-    },
-    {
-      "uid": "gh:Balanov/skein",
-      "source": "github",
-      "title": "Balanov/skein",
-      "url": "https://github.com/Balanov/skein",
-      "ts": 1793663825.0,
-      "points": 266,
-      "comments": 1,
-      "author": "Balanov",
-      "summary": "Fail-closed swarm orchestration with epoch-fenced work and late-completion rejection.",
-      "recipe": "github_sec",
-      "buzz": 279,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-02"
     },
     {
       "uid": "gh:thomasunise/argus",
@@ -1496,12 +1486,12 @@
       "title": "akari-sora/synology-nas-cli",
       "url": "https://github.com/akari-sora/synology-nas-cli",
       "ts": 1793353967.0,
-      "points": 96,
+      "points": 97,
       "comments": 10,
       "author": "akari-sora",
       "summary": "nas: a zero-dependency Python CLI + MCP server for Synology DSM 7. One-command audit and fix for the C3RB3R / .L0CK3D ransomware campaign; hand it to your AI agent. Mirror; canonical repo and issues: gitlab.com/aa[phone]/synology-nas-cli",
       "recipe": "github_sec",
-      "buzz": 126,
+      "buzz": 127,
       "topics": [
         "ai",
         "dev",
@@ -1516,34 +1506,34 @@
       "title": "0x45dd/pwner",
       "url": "https://github.com/0x45dd/pwner",
       "ts": 1793625315.0,
-      "points": 80,
+      "points": 81,
       "comments": 7,
       "author": "0x45dd",
       "summary": "Autonomous agentic network penetration-testing tool (authorized use only)",
       "recipe": "github_sec",
-      "buzz": 111,
+      "buzz": 112,
       "topics": [
         "ai"
       ],
       "date": "2026-11-02"
     },
     {
-      "uid": "gh:ratomirjovanovic/pandaward",
+      "uid": "gh:BountyForge-xyz/pwn-skill",
       "source": "github",
-      "title": "ratomirjovanovic/pandaward",
-      "url": "https://github.com/ratomirjovanovic/pandaward",
-      "ts": 1793101723.0,
-      "points": 99,
-      "comments": 0,
-      "author": "ratomirjovanovic",
-      "summary": "Local, evidence-based application security assessment engine and Claude Code plugin",
+      "title": "BountyForge-xyz/pwn-skill",
+      "url": "https://github.com/BountyForge-xyz/pwn-skill",
+      "ts": 1793960371.0,
+      "points": 29,
+      "comments": 1,
+      "author": "BountyForge-xyz",
+      "summary": "Agent skill for binary exploitation and CTF pwn — stack, heap, format string, kernel, seccomp bypass.",
       "recipe": "github_sec",
-      "buzz": 99,
+      "buzz": 112,
       "topics": [
-        "dev",
+        "ai",
         "security"
       ],
-      "date": "2026-10-27"
+      "date": "2026-11-06"
     },
     {
       "uid": "gh:huggingface/safeagents",
@@ -1551,17 +1541,34 @@
       "title": "huggingface/safeagents",
       "url": "https://github.com/huggingface/safeagents",
       "ts": 1793195562.0,
-      "points": 87,
+      "points": 91,
       "comments": 2,
       "author": "huggingface",
       "summary": "Safely run your agents using any coding harness",
       "recipe": "github_sec",
-      "buzz": 93,
+      "buzz": 97,
       "topics": [
         "ai",
         "dev"
       ],
       "date": "2026-10-28"
+    },
+    {
+      "uid": "gh:Balanov/skein",
+      "source": "github",
+      "title": "Balanov/skein",
+      "url": "https://github.com/Balanov/skein",
+      "ts": 1793663825.0,
+      "points": 81,
+      "comments": 1,
+      "author": "Balanov",
+      "summary": "Fail-closed swarm orchestration with epoch-fenced work and late-completion rejection.",
+      "recipe": "github_sec",
+      "buzz": 94,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-11-02"
     },
     {
       "uid": "rss:42827a83e3b0b8",
@@ -1785,17 +1792,35 @@
       "date": "2026-11-05"
     },
     {
+      "uid": "gh:ratomirjovanovic/pandaward",
+      "source": "github",
+      "title": "ratomirjovanovic/pandaward",
+      "url": "https://github.com/ratomirjovanovic/pandaward",
+      "ts": 1793101723.0,
+      "points": 50,
+      "comments": 0,
+      "author": "ratomirjovanovic",
+      "summary": "Local, evidence-based application security assessment engine and Claude Code plugin",
+      "recipe": "github_sec",
+      "buzz": 50,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-10-27"
+    },
+    {
       "uid": "gh:smartworldarafath/TeroVPN",
       "source": "github",
       "title": "smartworldarafath/TeroVPN",
       "url": "https://github.com/smartworldarafath/TeroVPN",
       "ts": 1793264351.0,
-      "points": 33,
+      "points": 34,
       "comments": 1,
       "author": "smartworldarafath",
       "summary": "🛡️ Fast, secure, and private Android VPN powered by WireGuard MASQUE (HTTP/3) over Fastly edge with Proton UI & Liquid Glass design.",
       "recipe": "github_sec",
-      "buzz": 36,
+      "buzz": 37,
       "topics": [
         "hardware"
       ],
