@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T01:27:50+00:00",
+  "generated_at": "2026-11-06T05:14:04+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -10,25 +10,25 @@
     "rss"
   ],
   "totals": {
-    "items": 133,
+    "items": 134,
     "by_source": {
       "hn": 40,
       "cve": 30,
-      "github": 13,
+      "github": 14,
       "rss": 50
     },
     "by_recipe": {
       "hn_sec": 40,
       "gh_advisories": 30,
       "hackersnews": 30,
-      "github_sec": 13,
+      "github_sec": 14,
       "krebs": 10,
       "schneier": 10
     },
     "by_topic": {
-      "security": 105,
-      "ai": 70,
-      "dev": 56,
+      "security": 106,
+      "ai": 71,
+      "dev": 57,
       "hardware": 12,
       "crypto": 10,
       "biz": 9,
@@ -37,7 +37,7 @@
     "top_domains": [
       [
         "github.com",
-        45
+        46
       ],
       [
         "thehackernews.com",
@@ -1389,12 +1389,12 @@
       "title": "arpanjot-coding/AVault",
       "url": "https://github.com/arpanjot-coding/AVault",
       "ts": 1793474487.0,
-      "points": 601,
+      "points": 604,
       "comments": 32,
       "author": "arpanjot-coding",
       "summary": "AVault - Call Recorder (No Root Required) | Privacy-first, hardware-encrypted audio vault for Android 12-16+. Rootless call recording via Shizuku with AES-256-GCM, biometrics & auto-cleanup.",
       "recipe": "github_sec",
-      "buzz": 707,
+      "buzz": 710,
       "topics": [
         "dev",
         "security"
@@ -1402,17 +1402,36 @@
       "date": "2026-10-31"
     },
     {
+      "uid": "gh:mrhlaingbwardev/agentic-hacking-skills",
+      "source": "github",
+      "title": "mrhlaingbwardev/agentic-hacking-skills",
+      "url": "https://github.com/mrhlaingbwardev/agentic-hacking-skills",
+      "ts": 1793505604.0,
+      "points": 345,
+      "comments": 60,
+      "author": "mrhlaingbwardev",
+      "summary": "AI-Powered Web Security & Automation - Official bonus skills, agents & MCP configs for the 'Agentic Hacking' ebook (28 SKILL.md templates)",
+      "recipe": "github_sec",
+      "buzz": 535,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-01"
+    },
+    {
       "uid": "gh:jmanico/grim-prompter",
       "source": "github",
       "title": "jmanico/grim-prompter",
       "url": "https://github.com/jmanico/grim-prompter",
       "ts": 1793189366.0,
-      "points": 369,
+      "points": 375,
       "comments": 31,
       "author": "jmanico",
       "summary": "Threat modeling for AI coding agents: point Claude Code, Codex or any agent at your repo and get an evidence-traced threat model. 36 architectures, 29 methods, MIT.",
       "recipe": "github_sec",
-      "buzz": 462,
+      "buzz": 468,
       "topics": [
         "ai",
         "dev"
@@ -1459,12 +1478,12 @@
       "title": "thomasunise/argus",
       "url": "https://github.com/thomasunise/argus",
       "ts": 1792858348.0,
-      "points": 131,
+      "points": 133,
       "comments": 10,
       "author": "thomasunise",
       "summary": "Open-source agentic security operations platform:",
       "recipe": "github_sec",
-      "buzz": 161,
+      "buzz": 163,
       "topics": [
         "ai",
         "security"
@@ -1549,37 +1568,17 @@
       "title": "huggingface/safeagents",
       "url": "https://github.com/huggingface/safeagents",
       "ts": 1793195562.0,
-      "points": 82,
+      "points": 83,
       "comments": 2,
       "author": "huggingface",
       "summary": "Safely run your agents using any coding harness",
       "recipe": "github_sec",
-      "buzz": 88,
+      "buzz": 89,
       "topics": [
         "ai",
         "dev"
       ],
       "date": "2026-10-28"
-    },
-    {
-      "uid": "rss:7543ee8beb8b7e",
-      "source": "rss",
-      "title": "Want to Rent an Internet Address at the White House?",
-      "url": "https://krebsonsecurity.com/2026/11/want-to-rent-an-internet-address-at-the-white-house/",
-      "ts": 1793853377.0,
-      "points": 0,
-      "comments": 0,
-      "author": "BrianKrebs",
-      "summary": "Several staffers at the White House are using computers or mobile devices equipped with residential proxy services that render their internet address available for others to rent, security experts warned today. One of the proxy services is a Russian company whose founder's web hosting business was ground zero for cyberattacks against election systems in Arizona and Illinois in 2016.",
-      "recipe": "krebs",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "dev",
-        "biz",
-        "security"
-      ],
-      "date": "2026-11-05"
     },
     {
       "uid": "rss:7d1426211b6649",
@@ -1798,21 +1797,24 @@
       "date": "2026-10-29"
     },
     {
-      "uid": "rss:6c4cd744eafd30",
+      "uid": "rss:7543ee8beb8b7e",
       "source": "rss",
-      "title": "Tech Firms Dismantle Botnet That Turned 1.3M TV Boxes Into Proxies",
-      "url": "https://krebsonsecurity.com/2026/11/tech-firms-dismantle-botnet-that-turned-1-3m-tv-boxes-into-proxies/",
-      "ts": 1793672671.0,
+      "title": "Want to Rent an Internet Address at the White House?",
+      "url": "https://krebsonsecurity.com/2026/11/want-to-rent-an-internet-address-at-the-white-house/",
+      "ts": 1793853377.0,
       "points": 0,
       "comments": 0,
       "author": "BrianKrebs",
-      "summary": "Google said today it worked with industry partners to dismantle a botnet made up of more than 1.3 million Android TV set-top boxes that ship with malicious software which secretly rents the user's Internet connection out to strangers and conducts advertising fraud. Experts involved in the takedown say the action is likely to sever the botnet's access to more than 10 million additional compromised",
+      "summary": "Several staffers at the White House are using computers or mobile devices equipped with residential proxy services that render their internet address available for others to rent, security experts warned today. One of the proxy services is a Russian company whose founder's web hosting business was ground zero for cyberattacks against election systems in Arizona and Illinois in 2016.",
       "recipe": "krebs",
       "buzz": 30,
       "topics": [
-        "ai"
+        "ai",
+        "dev",
+        "biz",
+        "security"
       ],
-      "date": "2026-11-03"
+      "date": "2026-11-05"
     },
     {
       "uid": "rss:0dcc10ee0fa324",
@@ -2205,16 +2207,33 @@
       "title": "0xZyyz/ctfd-warden",
       "url": "https://github.com/0xZyyz/ctfd-warden",
       "ts": 1793308210.0,
-      "points": 21,
+      "points": 22,
       "comments": 2,
       "author": "0xZyyz",
       "summary": "Anti-cheat plugin for CTFd: tracks the activity of players and teams and catches AI agents, scripts, shared accounts, shared flags, flag brute-forcing and suspiciously fast solves.",
       "recipe": "github_sec",
-      "buzz": 27,
+      "buzz": 28,
       "topics": [
         "ai"
       ],
       "date": "2026-10-29"
+    },
+    {
+      "uid": "rss:6c4cd744eafd30",
+      "source": "rss",
+      "title": "Tech Firms Dismantle Botnet That Turned 1.3M TV Boxes Into Proxies",
+      "url": "https://krebsonsecurity.com/2026/11/tech-firms-dismantle-botnet-that-turned-1-3m-tv-boxes-into-proxies/",
+      "ts": 1793672671.0,
+      "points": 0,
+      "comments": 0,
+      "author": "BrianKrebs",
+      "summary": "Google said today it worked with industry partners to dismantle a botnet made up of more than 1.3 million Android TV set-top boxes that ship with malicious software which secretly rents the user's Internet connection out to strangers and conducts advertising fraud. Experts involved in the takedown say the action is likely to sever the botnet's access to more than 10 million additional compromised",
+      "recipe": "krebs",
+      "buzz": 10,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-11-03"
     },
     {
       "uid": "rss:242c7ee3c56913",

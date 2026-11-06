@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T01:27:14+00:00",
+  "generated_at": "2026-11-06T05:13:29+00:00",
   "sources_used": [
     "rss",
     "rss",
@@ -11,11 +11,11 @@
     "rss"
   ],
   "totals": {
-    "items": 127,
+    "items": 128,
     "by_source": {
-      "hn": 5,
-      "rss": 81,
+      "hn": 6,
       "github": 1,
+      "rss": 81,
       "arxiv": 40
     },
     "by_recipe": {
@@ -23,17 +23,17 @@
       "arxiv_qfin": 40,
       "cnbc_top": 30,
       "ft_home": 11,
-      "hn_fintech": 5,
+      "hn_fintech": 6,
       "github_fin": 1
     },
     "by_topic": {
-      "ai": 73,
-      "biz": 40,
-      "dev": 39,
-      "science": 20,
-      "hardware": 5,
-      "crypto": 5,
-      "security": 1
+      "ai": 72,
+      "dev": 40,
+      "biz": 39,
+      "science": 17,
+      "hardware": 7,
+      "crypto": 4,
+      "security": 2
     },
     "top_domains": [
       [
@@ -62,6 +62,10 @@
       ],
       [
         "github.com",
+        1
+      ],
+      [
+        "finterm.ai",
         1
       ],
       [
@@ -127,6 +131,23 @@
         "biz"
       ],
       "date": "2022-11-30"
+    },
+    {
+      "uid": "gh:DKKD13/dsh-finance",
+      "source": "github",
+      "title": "DKKD13/dsh-finance",
+      "url": "https://github.com/DKKD13/dsh-finance",
+      "ts": 1793533985.0,
+      "points": 71,
+      "comments": 0,
+      "author": "DKKD13",
+      "summary": "DKKD13 个人开发的第三方 DSH 金融研究插件：研究 Skills、证据资料库、个股图表与模拟基金。与 DeepSeek 官方无隶属关系。",
+      "recipe": "github_fin",
+      "buzz": 81,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-11-01"
     },
     {
       "uid": "rss:7356f57f0c17c3",
@@ -199,38 +220,119 @@
       "date": "2026-11-05"
     },
     {
-      "uid": "rss:e6f4efba69c52a",
-      "source": "rss",
-      "title": "Wall Street sheds $3.2tn as Democratic midterm sweep triggers brutal AI rout",
-      "url": "https://www.ft.com/content/3d079b3d-580d-400b-bf9c-56af6a08f60f?syn-25a6b1a6=1",
-      "ts": 1793918512.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "Tech-heavy Nasdaq 100 tumbles 6.4% in day of chaotic trading",
-      "recipe": "ft_home",
-      "buzz": 80,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-05"
-    },
-    {
       "uid": "rss:44e8f3f312d7f4",
       "source": "rss",
-      "title": "Asia shares sell off after Nasdaq drops most since pandemic",
+      "title": "Global stocks tumble as Democratic midterm sweep sparks AI rout",
       "url": "https://www.ft.com/content/7c6ceb4f-d7b1-49ec-9047-0e2e4cd2615c?syn-25a6b1a6=1",
       "ts": 1793897974.0,
       "points": 0,
       "comments": 0,
       "author": "",
-      "summary": "Investors fear newly elected US politicians will seek to slow data centre development in blow to tech stocks and AI boom",
+      "summary": "Investors fear US will now seek to slow data centre buildout in potential blow to tech companies",
       "recipe": "ft_home",
       "buzz": 80,
       "topics": [
         "ai",
-        "dev",
         "biz"
+      ],
+      "date": "2026-11-05"
+    },
+    {
+      "uid": "rss:f276eb7624e57d",
+      "source": "rss",
+      "title": "Asian tech stocks sink",
+      "url": "https://www.ft.com/content/b77ebe43-a017-4e63-af84-5bdec8f47648?syn-25a6b1a6=1",
+      "ts": 1793941623.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "‘Complete carnage’ as Nikkei 225 falls below 60,000 points for first time since May with Seoul’s Kospi under 5,000 points",
+      "recipe": "ft_home",
+      "buzz": 80,
+      "topics": [],
+      "date": "2026-11-06"
+    },
+    {
+      "uid": "rss:cc852e05a912ef",
+      "source": "rss",
+      "title": "America turns on Trump’s tech cheerleaders",
+      "url": "https://www.ft.com/content/bda53f77-f391-4750-ab5d-55e09cbbdb7c?syn-25a6b1a6=1",
+      "ts": 1793941214.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "Silicon Valley elites and AI executives plot new political strategy after alliance with US president backfires in midterms",
+      "recipe": "ft_home",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev"
+      ],
+      "date": "2026-11-06"
+    },
+    {
+      "uid": "rss:b1f268948c3111",
+      "source": "rss",
+      "title": "Who’s in the line of fire after the midterm drubbing?",
+      "url": "https://www.ft.com/content/580ab1bf-4e2e-46b8-9178-dbf765645754?syn-25a6b1a6=1",
+      "ts": 1793941214.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "The Trump administration reckons with the Democratic Party’s emphatic victory in the US midterms",
+      "recipe": "ft_home",
+      "buzz": 80,
+      "topics": [],
+      "date": "2026-11-06"
+    },
+    {
+      "uid": "rss:58084ba1615590",
+      "source": "rss",
+      "title": "‘Blue wave’ hopes for US economic change are likely to be disappointed",
+      "url": "https://www.ft.com/content/880c8ba8-2967-4d7a-87fb-d34135c676d8?syn-25a6b1a6=1",
+      "ts": 1793941214.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "A shift in the composition of Congress will have little impact on policymaking in the remainder of Trump’s term",
+      "recipe": "ft_home",
+      "buzz": 80,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-11-06"
+    },
+    {
+      "uid": "rss:ccf7e5ffcf24b3",
+      "source": "rss",
+      "title": "The post-midterms playbook for America Inc",
+      "url": "https://www.ft.com/content/9e62d62b-a464-42fb-b425-553b2364fa98?syn-25a6b1a6=1",
+      "ts": 1793941214.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "Robust institutions have been and always will be the bedrock of US capitalism",
+      "recipe": "ft_home",
+      "buzz": 80,
+      "topics": [
+        "dev"
+      ],
+      "date": "2026-11-06"
+    },
+    {
+      "uid": "rss:feb2ba00f29cd2",
+      "source": "rss",
+      "title": "AI backlash threatens trillion-dollar data centre boom, say tech leaders",
+      "url": "https://www.ft.com/content/32fd4450-5880-437d-9bd9-df13289ada24?syn-25a6b1a6=1",
+      "ts": 1793892947.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "Executives at FT’s Future of AI summit admit tech industry has fuelled hostility towards its own expansion",
+      "recipe": "ft_home",
+      "buzz": 80,
+      "topics": [
+        "ai"
       ],
       "date": "2026-11-05"
     },
@@ -244,76 +346,6 @@
       "comments": 0,
       "author": "",
       "summary": "America’s data centre backlash is emblematic of AI anxiety and a scepticism of the industry’s power and wealth",
-      "recipe": "ft_home",
-      "buzz": 80,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-05"
-    },
-    {
-      "uid": "rss:cdb6a240550a8d",
-      "source": "rss",
-      "title": "Will Democrats stall the AI boom?",
-      "url": "https://www.ft.com/content/5dedb9bf-bd12-4956-b2b7-ce968e1e1371?syn-25a6b1a6=1",
-      "ts": 1793910524.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "Newly elected officials have pledged to curb data centre construction, rattling the trade that has powered US stock markets",
-      "recipe": "ft_home",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "biz",
-        "hardware"
-      ],
-      "date": "2026-11-05"
-    },
-    {
-      "uid": "rss:47d3b6853dd280",
-      "source": "rss",
-      "title": "Morning in America, twilight in the markets",
-      "url": "https://www.ft.com/content/d21e2a87-191b-447d-b81b-edcf7bc2f007",
-      "ts": 1793854816.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "Astonishing midterm election results will not repeal the turn of business and financial cycles",
-      "recipe": "ft_home",
-      "buzz": 80,
-      "topics": [
-        "biz"
-      ],
-      "date": "2026-11-05"
-    },
-    {
-      "uid": "rss:05f83d77fada79",
-      "source": "rss",
-      "title": "The next US presidential race has begun",
-      "url": "https://www.ft.com/content/a7fe8e95-bd9a-4cd7-a308-f156073cd074?syn-25a6b1a6=1",
-      "ts": 1793854807.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "The Republicans and Democrats positioning themselves for a run at the Oval Office in 2028",
-      "recipe": "ft_home",
-      "buzz": 80,
-      "topics": [
-        "dev"
-      ],
-      "date": "2026-11-05"
-    },
-    {
-      "uid": "rss:feb2ba00f29cd2",
-      "source": "rss",
-      "title": "AI backlash threatens trillion-dollar data centre boom, say tech leaders",
-      "url": "https://www.ft.com/content/32fd4450-5880-437d-9bd9-df13289ada24?syn-25a6b1a6=1",
-      "ts": 1793892947.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "Executives at FT’s Future of AI summit admit tech industry has fuelled hostility towards its own expansion",
       "recipe": "ft_home",
       "buzz": 80,
       "topics": [
@@ -356,23 +388,6 @@
       "date": "2026-11-05"
     },
     {
-      "uid": "rss:213df9796c39bd",
-      "source": "rss",
-      "title": "US midterm results herald upheaval in Middle East policy",
-      "url": "https://www.ft.com/content/3dee82bf-3bbe-4075-8bfd-4001ddb689ae?syn-25a6b1a6=1",
-      "ts": 1793842409.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "American voters — including vice-president JD Vance — want an end to Trump’s Iran war and Washington’s proximity to Israel",
-      "recipe": "ft_home",
-      "buzz": 80,
-      "topics": [
-        "dev"
-      ],
-      "date": "2026-11-05"
-    },
-    {
       "uid": "rss:2433e26246be12",
       "source": "rss",
       "title": "Wall Street mega-donors clobbered by Democratic sweep",
@@ -391,11 +406,86 @@
       "date": "2026-11-05"
     },
     {
+      "uid": "arxiv:2611.08430v1",
+      "source": "arxiv",
+      "title": "Cross-Border Ownership and Input Access: Evidence from the Lithium Supply Chain",
+      "url": "https://arxiv.org/abs/2611.08430v1",
+      "ts": 1793903027.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Kei Irizawa",
+      "summary": "How does cross-border ownership shape the lithium supply chain? Using global data on mines and refineries, I estimate a model in which ownership can lower refiners' effective ore costs, encourage mines to restrict spot sales, and soften competition. To study these effects, I examine policies motivated by national security concerns about reliable access to critical mineral inputs: divestiture of Ch",
+      "recipe": "arxiv_qfin",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-05"
+    },
+    {
+      "uid": "arxiv:2611.08031v1",
+      "source": "arxiv",
+      "title": "Economies of scale and the equity-efficiency trade-off: Evidence from a piped water network in rural Bangladesh",
+      "url": "https://arxiv.org/abs/2611.08031v1",
+      "ts": 1793886712.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Md. Ahasan Habib",
+      "summary": "Policymakers who set prices for public infrastructure often anticipate an equity-efficiency trade-off: while higher prices could increase revenues from fee-paying users, helping to offset costs, they may reduce take-up among the poor. But this trade-off is fundamentally altered in the presence of economies of scale, which are common in infrastructure networks. We elicit willingness to pay for a ho",
+      "recipe": "arxiv_qfin",
+      "buzz": 80,
+      "topics": [
+        "dev",
+        "biz"
+      ],
+      "date": "2026-11-05"
+    },
+    {
+      "uid": "arxiv:2611.07699v1",
+      "source": "arxiv",
+      "title": "Stay, Reposition, or Recharge: Battery-Aware Operation of Robotaxi Fleets",
+      "url": "https://arxiv.org/abs/2611.07699v1",
+      "ts": 1793870587.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Philipp Afèche",
+      "summary": "Electric robotaxis are rapidly expanding from pilots to scaled commercial deployment; unlike traditional human-driven ride-hailing vehicles, they require centralized fleet control and careful management of vehicle state of charge (SoC). We study how a fleet manager should jointly make service, empty repositioning, idling, and charging decisions in such systems. We develop a continuous-time fluid m",
+      "recipe": "arxiv_qfin",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "hardware"
+      ],
+      "date": "2026-11-05"
+    },
+    {
+      "uid": "arxiv:2611.07464v1",
+      "source": "arxiv",
+      "title": "FINCOSMOS: An Open-World Evaluation Paradigm for Agents in Finance",
+      "url": "https://arxiv.org/abs/2611.07464v1",
+      "ts": 1793855984.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Yupeng Cao",
+      "summary": "Language agents increasingly work for users on the open Web, and finance is where trusting them is hardest. The data must come from the Web, the strategy lives in the user's head, and correctness depends on time, so an agent can fail silently: a strategy the user never asked for, unverified data, or a backtest that uses the future yields a report as convincing as a correct one. Existing benchmarks",
+      "recipe": "arxiv_qfin",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "biz"
+      ],
+      "date": "2026-11-05"
+    },
+    {
       "uid": "rss:d4a58417bd43d2",
       "source": "rss",
       "title": "Nasdaq sell-off batters Asian chip stocks as SK Hynix, Samsung, Softbank, TSMC tumble",
       "url": "https://www.cnbc.com/2026/11/06/tech-stocks-sk-hynix-samsung-softbank.html",
-      "ts": 1793927495.0,
+      "ts": 1793932815.0,
       "points": 0,
       "comments": 0,
       "author": "",
@@ -404,6 +494,23 @@
       "buzz": 80,
       "topics": [
         "hardware"
+      ],
+      "date": "2026-11-06"
+    },
+    {
+      "uid": "rss:a2e04f02b0b3c1",
+      "source": "rss",
+      "title": "Oil prices could spike as U.S. action on Iran nears: Rapidan Energy",
+      "url": "https://www.cnbc.com/2026/11/06/us-iran-war-trump-hormuz-oil-midterms.html",
+      "ts": 1793940375.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "Bob McNally predicts that both Brent and West Texas Intermediate futures will jump above $100.",
+      "recipe": "cnbc_top",
+      "buzz": 80,
+      "topics": [
+        "dev"
       ],
       "date": "2026-11-06"
     },
@@ -427,7 +534,7 @@
       "source": "rss",
       "title": "Elon Musk's Tesla and SpaceX lose over $420 billion in combined market cap after midterms",
       "url": "https://www.cnbc.com/2026/11/05/tesla-spacex-stocks-fall-after-2026-midterms.html",
-      "ts": 1793917873.0,
+      "ts": 1793935243.0,
       "points": 0,
       "comments": 0,
       "author": "",
@@ -438,6 +545,21 @@
         "science",
         "biz"
       ],
+      "date": "2026-11-06"
+    },
+    {
+      "uid": "rss:b60dcdd4ce8590",
+      "source": "rss",
+      "title": "The October jobs report is out Friday. Here's everything to expect",
+      "url": "https://www.cnbc.com/2026/11/05/october-jobs-report-preview.html",
+      "ts": 1793914372.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "The Bureau of Labor Statistics releases the October nonfarm payrolls report Friday at 8:30 a.m. ET.",
+      "recipe": "cnbc_top",
+      "buzz": 80,
+      "topics": [],
       "date": "2026-11-05"
     },
     {
@@ -458,26 +580,11 @@
       "date": "2026-11-05"
     },
     {
-      "uid": "rss:b60dcdd4ce8590",
-      "source": "rss",
-      "title": "The October jobs report is out Friday. Here's everything to expect",
-      "url": "https://www.cnbc.com/2026/11/05/october-jobs-report-preview.html",
-      "ts": 1793914372.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "The Bureau of Labor Statistics releases the October nonfarm payrolls report Friday at 8:30 a.m. ET.",
-      "recipe": "cnbc_top",
-      "buzz": 80,
-      "topics": [],
-      "date": "2026-11-05"
-    },
-    {
       "uid": "rss:731376289942c1",
       "source": "rss",
-      "title": "Mississippi Senate election: Democrat Scott Colom narrowly leads Republican Cindy Hyde-Smith",
+      "title": "Mississippi Senate: Colom, Hyde-Smith gird for ballot legal fight in razor-thin race",
       "url": "https://www.cnbc.com/2026/11/05/mississippi-senate-election-scott-colom-hyde-smith.html",
-      "ts": 1793922000.0,
+      "ts": 1793933882.0,
       "points": 0,
       "comments": 0,
       "author": "",
@@ -487,7 +594,7 @@
       "topics": [
         "ai"
       ],
-      "date": "2026-11-05"
+      "date": "2026-11-06"
     },
     {
       "uid": "rss:483b6743d41acd",
@@ -507,23 +614,6 @@
         "biz"
       ],
       "date": "2026-11-06"
-    },
-    {
-      "uid": "rss:f89bdde0a8ea5f",
-      "source": "rss",
-      "title": "Nvidia's Huang is asked to brief Congress on reported Chinese spy relationship",
-      "url": "https://www.cnbc.com/2026/11/05/nvidia-jensen-huang-china-spy-congress.html",
-      "ts": 1793917289.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "President Donald Trump was briefed about a year ago about those intelligence findings, The New York Times reported.",
-      "recipe": "cnbc_top",
-      "buzz": 80,
-      "topics": [
-        "dev"
-      ],
-      "date": "2026-11-05"
     },
     {
       "uid": "rss:430a3e3d5da80a",
@@ -558,6 +648,40 @@
       "date": "2026-11-06"
     },
     {
+      "uid": "rss:f89bdde0a8ea5f",
+      "source": "rss",
+      "title": "Nvidia's Huang is asked to brief Congress on reported Chinese spy relationship",
+      "url": "https://www.cnbc.com/2026/11/05/nvidia-jensen-huang-china-spy-congress.html",
+      "ts": 1793917289.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "President Donald Trump was briefed about a year ago about those intelligence findings, The New York Times reported.",
+      "recipe": "cnbc_top",
+      "buzz": 80,
+      "topics": [
+        "dev"
+      ],
+      "date": "2026-11-05"
+    },
+    {
+      "uid": "rss:0f96cbcac401a1",
+      "source": "rss",
+      "title": "From tanks to drones: South Korea’s defense firms face a new battlefield test",
+      "url": "https://www.cnbc.com/2026/11/05/south-korea-defense-weapon-war-stocks-fall.html",
+      "ts": 1793866063.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "South Korean defense stocks rode a wave of global rearmament for the past two years, but they have plunged in 2026.",
+      "recipe": "cnbc_top",
+      "buzz": 80,
+      "topics": [
+        "hardware"
+      ],
+      "date": "2026-11-05"
+    },
+    {
       "uid": "rss:bd126483bccfce",
       "source": "rss",
       "title": "Jim Cramer says the AI sell-off isn't over, but it isn't another dot-com crash",
@@ -589,6 +713,23 @@
       "topics": [
         "ai",
         "biz"
+      ],
+      "date": "2026-11-05"
+    },
+    {
+      "uid": "rss:2edb04bd5b86ef",
+      "source": "rss",
+      "title": "Costco is taking aim at its May record high — how it got here and where's it going",
+      "url": "https://www.cnbc.com/investingclub/2026/11/05/costco-is-taking-aim-at-its-may-record-high-how-it-got-here-and-wheres-going.html",
+      "ts": 1793922984.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "Costco is finally back.",
+      "recipe": "cnbc_top",
+      "buzz": 80,
+      "topics": [
+        "ai"
       ],
       "date": "2026-11-05"
     },
@@ -639,23 +780,6 @@
       "buzz": 80,
       "topics": [
         "dev"
-      ],
-      "date": "2026-11-05"
-    },
-    {
-      "uid": "rss:2edb04bd5b86ef",
-      "source": "rss",
-      "title": "Costco is taking aim at its May record high — how it got here and where's it going",
-      "url": "https://www.cnbc.com/investingclub/2026/11/05/costco-is-taking-aim-at-its-may-record-high-how-it-got-here-and-wheres-going.html",
-      "ts": 1793922984.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "Costco is finally back.",
-      "recipe": "cnbc_top",
-      "buzz": 80,
-      "topics": [
-        "ai"
       ],
       "date": "2026-11-05"
     },
@@ -812,94 +936,6 @@
         "biz"
       ],
       "date": "2026-11-05"
-    },
-    {
-      "uid": "rss:d1a0d408d2cfee",
-      "source": "rss",
-      "title": "Democratic sweep puts crypto on defensive in Washington",
-      "url": "https://www.cnbc.com/2026/11/05/crypto-midterms-democrats-clarity-act.html",
-      "ts": 1793897314.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "Democrats in Congress could impose tougher rules on crypto and investigate President Donald Trump, ushering in a tougher era for the industry.",
-      "recipe": "cnbc_top",
-      "buzz": 80,
-      "topics": [
-        "dev",
-        "crypto",
-        "biz"
-      ],
-      "date": "2026-11-05"
-    },
-    {
-      "uid": "rss:68bdee973ed350",
-      "source": "rss",
-      "title": "Expedia CEO says AI agents aren't changing booking habits — yet",
-      "url": "https://www.cnbc.com/2026/11/05/expedia-ai-agents-booking-habits.html",
-      "ts": 1793898215.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "Expedia CEO Ariane Gorin told CNBC that AI agents present an exciting time for the travel industry but that they haven't yet impacted bookings.",
-      "recipe": "cnbc_top",
-      "buzz": 80,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-05"
-    },
-    {
-      "uid": "rss:430e56216fb079",
-      "source": "rss",
-      "title": "Three tax proposals targeting the rich that the new Congress could revive",
-      "url": "https://www.cnbc.com/2026/11/05/three-tax-proposals-targeting-the-rich-the-new-congress-could-revive.html",
-      "ts": 1793899470.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "Democrats' sweeping victories could revive tax proposals targeting carried interest, large trusts, and borrowing against stock.",
-      "recipe": "cnbc_top",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "dev"
-      ],
-      "date": "2026-11-05"
-    },
-    {
-      "uid": "rss:4aed5e65888a7d",
-      "source": "rss",
-      "title": "Bomb threats disrupt flights across Europe for the second time. Here’s what we know",
-      "url": "https://www.cnbc.com/2026/11/05/bomb-threats-flights-europe.html",
-      "ts": 1793892366.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "Dozens of flights across Europe reported bomb threats on Thursday for the second time this week, disrupting air travel across London, Dublin, and Helsinki.",
-      "recipe": "cnbc_top",
-      "buzz": 80,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-05"
-    },
-    {
-      "uid": "gh:DKKD13/dsh-finance",
-      "source": "github",
-      "title": "DKKD13/dsh-finance",
-      "url": "https://github.com/DKKD13/dsh-finance",
-      "ts": 1793533985.0,
-      "points": 64,
-      "comments": 0,
-      "author": "DKKD13",
-      "summary": "DKKD13 个人开发的第三方 DSH 金融研究插件：研究 Skills、证据资料库、个股图表与模拟基金。与 DeepSeek 官方无隶属关系。",
-      "recipe": "github_fin",
-      "buzz": 74,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-01"
     },
     {
       "uid": "rss:25ca76ef1134bc",
@@ -1168,42 +1204,6 @@
       "date": "2026-11-03"
     },
     {
-      "uid": "arxiv:2611.04272v1",
-      "source": "arxiv",
-      "title": "Agreements Have a Clock: Compute Growth and the Verification of AI Restraint",
-      "url": "https://arxiv.org/abs/2611.04272v1",
-      "ts": 1793678461.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Li Gan",
-      "summary": "Rival powers have agreed to limit nuclear arms, phase out ozone-depleting chemicals, and cut greenhouse gases, though each agreement was hard to reach. This paper asks what an agreement to pause frontier AI needs. A follower advances through own research and diffusion from the leader. Because diffusion fades as the gap closes, a paused leader stays ahead longer than its raw lead suggests. A solved",
-      "recipe": "arxiv_qfin",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "science"
-      ],
-      "date": "2026-11-03"
-    },
-    {
-      "uid": "arxiv:2611.04266v1",
-      "source": "arxiv",
-      "title": "Prizes, Shared Hazard, and the Speed of Frontier AI",
-      "url": "https://arxiv.org/abs/2611.04266v1",
-      "ts": 1793678129.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Li Gan",
-      "summary": "Frontier AI labs compete in a contest for commercial leadership while sharing the risk of catastrophe. Each lab gains from arriving earlier but bears only part of the hazard its speed adds, which this paper calls the hazard externality. In an illustrative calibrated takeoff model, three racing labs get through the takeoff period in 18 months, while a common rule on research shares would stretch it",
-      "recipe": "arxiv_qfin",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "science"
-      ],
-      "date": "2026-11-03"
-    },
-    {
       "uid": "arxiv:2611.01656v2",
       "source": "arxiv",
       "title": "AIDA: An AI Outage Registry with Evidence from On-Chain MEV",
@@ -1259,37 +1259,56 @@
       "date": "2026-11-03"
     },
     {
-      "uid": "arxiv:2611.00661v2",
-      "source": "arxiv",
-      "title": "Designing Behavioral Profiles for Language Model Simulation of Out-of-Distribution Human Behavior",
-      "url": "https://arxiv.org/abs/2611.00661v2",
-      "ts": 1793692221.0,
+      "uid": "rss:fb4339a5b8c230",
+      "source": "rss",
+      "title": "Inside the chip talent war: Trade secrets and rising Chinese rivals",
+      "url": "https://www.cnbc.com/2026/11/05/semiconductor-china-korea-talents-rivalry.html",
+      "ts": 1793850798.0,
       "points": 0,
       "comments": 0,
-      "author": "Robin Na",
-      "summary": "Large language models (LLMs) are increasingly used to simulate human behavior, but which descriptions of people improve prediction when experimental designs change remains unclear. We develop a framework that draws candidate behavioral features from the literature and constructs profiles from earlier human experiments. An LLM-based profile generator assigns feature values from observed actions, me",
-      "recipe": "arxiv_qfin",
+      "author": "",
+      "summary": "Growing competition for semiconductor talent is fueling a battle over trade secrets as Chinese chipmakers gain ground.",
+      "recipe": "cnbc_top",
       "buzz": 30,
       "topics": [
         "ai",
         "dev",
-        "science"
+        "hardware"
       ],
-      "date": "2026-11-03"
+      "date": "2026-11-05"
     },
     {
-      "uid": "rss:1a2bfe8eee9026",
+      "uid": "rss:cfdab4b1b640d2",
       "source": "rss",
-      "title": "What was really behind Wednesday's monster rally? Trump quickly making peace",
-      "url": "https://www.cnbc.com/2026/11/04/stock-market-rally-trump-midterms.html",
-      "ts": 1793832922.0,
+      "title": "Inside India newsletter: India weighs a tax cut to win over foreign investors. Will it work?",
+      "url": "https://www.cnbc.com/2026/11/05/india-tax-foreign-investors-nifty.html",
+      "ts": 1793837076.0,
       "points": 0,
       "comments": 0,
       "author": "",
-      "summary": "The stock market skyrocketed after a decisive sweep for Democrats in the 2026 midterm elections, a move that Trump's reaction added to.",
+      "summary": "Foreign investors are losing their appetite for Indian equities, with their holdings touching an all-time low of 14%.",
       "recipe": "cnbc_top",
       "buzz": 30,
       "topics": [
+        "dev",
+        "biz"
+      ],
+      "date": "2026-11-05"
+    },
+    {
+      "uid": "rss:bed4ff8f00967d",
+      "source": "rss",
+      "title": "A 'demand decade' ahead for energy? BP, Baker Hughes CEOs weigh the investment outlook",
+      "url": "https://www.cnbc.com/2026/11/05/energy-leaders-investment-outlook.html",
+      "ts": 1793834583.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "Rising energy demand offers investment opportunities, but geopolitical risks and oil price uncertainty cloud the outlook, executives and an analyst said.",
+      "recipe": "cnbc_top",
+      "buzz": 30,
+      "topics": [
+        "ai",
         "biz"
       ],
       "date": "2026-11-04"
@@ -1308,6 +1327,42 @@
       "buzz": 10,
       "topics": [],
       "date": "2026-11-01"
+    },
+    {
+      "uid": "arxiv:2611.04272v1",
+      "source": "arxiv",
+      "title": "Agreements Have a Clock: Compute Growth and the Verification of AI Restraint",
+      "url": "https://arxiv.org/abs/2611.04272v1",
+      "ts": 1793678461.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Li Gan",
+      "summary": "Rival powers have agreed to limit nuclear arms, phase out ozone-depleting chemicals, and cut greenhouse gases, though each agreement was hard to reach. This paper asks what an agreement to pause frontier AI needs. A follower advances through own research and diffusion from the leader. Because diffusion fades as the gap closes, a paused leader stays ahead longer than its raw lead suggests. A solved",
+      "recipe": "arxiv_qfin",
+      "buzz": 10,
+      "topics": [
+        "ai",
+        "science"
+      ],
+      "date": "2026-11-03"
+    },
+    {
+      "uid": "arxiv:2611.04266v1",
+      "source": "arxiv",
+      "title": "Prizes, Shared Hazard, and the Speed of Frontier AI",
+      "url": "https://arxiv.org/abs/2611.04266v1",
+      "ts": 1793678129.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Li Gan",
+      "summary": "Frontier AI labs compete in a contest for commercial leadership while sharing the risk of catastrophe. Each lab gains from arriving earlier but bears only part of the hazard its speed adds, which this paper calls the hazard externality. In an illustrative calibrated takeoff model, three racing labs get through the takeoff period in 18 months, while a common rule on research shares would stretch it",
+      "recipe": "arxiv_qfin",
+      "buzz": 10,
+      "topics": [
+        "ai",
+        "science"
+      ],
+      "date": "2026-11-03"
     },
     {
       "uid": "arxiv:2611.04119v1",
@@ -1658,62 +1713,23 @@
       "date": "2026-10-31"
     },
     {
-      "uid": "arxiv:2611.01286v1",
-      "source": "arxiv",
-      "title": "An analytical model to explain under which conditions home batteries create new load peaks in the local grid",
-      "url": "https://arxiv.org/abs/2611.01286v1",
-      "ts": 1793482720.0,
-      "points": 0,
+      "uid": "hn:48896257",
+      "source": "hn",
+      "title": "Show HN: Finterm.ai Bloomberg terminal for Claude Code",
+      "url": "https://finterm.ai/",
+      "ts": 1783965130.0,
+      "points": 6,
       "comments": 0,
-      "author": "Lion Hirth",
-      "summary": "Simulation studies find that price-responsive home batteries and electric vehicles create new load peaks in low-voltage grids; with endogenous wholesale prices most of these peaks disappear. This paper explains both findings with an analytical model of the coincident peak at the transformer. The model is algebraic and solved in closed form, so the parameters that determine whether a new peak emerg",
-      "recipe": "arxiv_qfin",
-      "buzz": 10,
-      "topics": [
-        "ai",
-        "dev",
-        "science"
-      ],
-      "date": "2026-10-31"
-    },
-    {
-      "uid": "arxiv:2611.01226v1",
-      "source": "arxiv",
-      "title": "Learning about Markets from Models: Evidence from an AI Hiring Platform",
-      "url": "https://arxiv.org/abs/2611.01226v1",
-      "ts": 1793476474.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Hossein Alidaee",
-      "summary": "Machine learning models are increasingly used to not only inform, but make decisions. Sometimes platforms add value by pooling data across contexts to improve models' decision making---but when the optimal decision differs by context, pooling may not increase accuracy. We argue that a platform storing starkly distinct models across contexts nevertheless captures a model comparison externality. Tog",
-      "recipe": "arxiv_qfin",
-      "buzz": 10,
+      "author": "cheeseblubber",
+      "summary": "Hi, my name is Kam, and today my cofounder Josh and I are shipping Finterm, a CLI that\ngives coding agents direct access to financial data: stock prices, options data, SEC\nfilings, and Ticker Deep Research, a filtered ticker news search. I’m a developer and have been a full-time trader for the past few years.Recently I have been using LLMs more and more in my trading and strategy.\nI always found i",
+      "recipe": "hn_fintech",
+      "buzz": 6,
       "topics": [
         "ai",
         "dev",
         "biz"
       ],
-      "date": "2026-10-31"
-    },
-    {
-      "uid": "arxiv:2611.00673v1",
-      "source": "arxiv",
-      "title": "Dynamic investment in disaster preparedness under recurrent and catastrophic risks",
-      "url": "https://arxiv.org/abs/2611.00673v1",
-      "ts": 1793427214.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Tomoki Ishikura",
-      "summary": "Long-term disaster risk reduction (DRR) requires investment decisions that account for uncertain disaster conditions and accumulated preparedness capacity. This study develops a novel stochastic dynamic control model for optimal DRR investment under recurrent and catastrophic uncertainty. The model combines diffusion and Poisson jump processes and treats preparedness capital as an endogenous stock",
-      "recipe": "arxiv_qfin",
-      "buzz": 10,
-      "topics": [
-        "ai",
-        "dev",
-        "science",
-        "biz"
-      ],
-      "date": "2026-10-31"
+      "date": "2026-07-13"
     },
     {
       "uid": "hn:47278733",
