@@ -5,7 +5,14 @@
     <link>https://sentinel-post.pages.dev</link>
     <description>Автономная радиостанция кибербезопасности: живые CVE, угрозы и защита — без сенсаций</description>
     <language>ru</language>
-    <lastBuildDate>Fri, 06 Nov 2026 20:59:53 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 07 Nov 2026 01:18:01 GMT</lastBuildDate>
+    <item>
+      <title>Friday Squid Blogging: New Jurassic Squid Predecessors</title>
+      <link>https://sentinel-post.pages.dev/item/friday-squid-blogging-new-jurassic-squid-predecessors.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/friday-squid-blogging-new-jurassic-squid-predecessors.html</guid>
+      <pubDate>Fri, 06 Nov 2026 22:05:29 GMT</pubDate>
+      <description>&lt;p&gt;News story: &amp;#8220;&lt;a href="https://www.sciencedaily.com/releases/2026/10/[phone].htm"&gt;Scientists discover a bizarre Jurassic &amp;#8216;squid&amp;#8217; unlike anything ever seen&lt;/a&gt;.&amp;#8221;&lt;/p&gt; &lt;blockquote&gt;&lt;p&gt;Scientists have identified the &amp;#8220;fattest&amp;#8221; belemnite ever discovered, a bizarre, bar</description>
+    </item>
     <item>
       <title>GHSA-47w9-6r3f-938g: LXD has restricted project bypass leading to arbitrary command execution</title>
       <link>https://sentinel-post.pages.dev/item/ghsa-47w9-6r3f-938g-lxd-has-restricted-project-bypass-leading-to.html</link>
@@ -259,6 +266,13 @@ This vulnerability allows an authenticated device to escalate its permissions an
       <description>Two flaws in Barracuda's Email Security Gateway, an email-filtering appliance, can be chained to run commands on it as root, its highest level of access, with no login required. The company released patches on Monday, and the security firm watchTowr detailed the attack chain on Thursday. One flaw, C</description>
     </item>
     <item>
+      <title>arnold117/iOS-NOIR</title>
+      <link>https://sentinel-post.pages.dev/item/arnold117-ios-noir.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/arnold117-ios-noir.html</guid>
+      <pubDate>Fri, 06 Nov 2026 03:03:47 GMT</pubDate>
+      <description>No-jailbreak iOS privacy, entitlement, sandbox &amp; telemetry forensic auditor (inspired by Verlintas/NOIR)</description>
+    </item>
+    <item>
       <title>CVE-2026-62300: filecoin-pin: Unbounded DAG pinning can exhaust server resources</title>
       <link>https://sentinel-post.pages.dev/item/cve-2026-62300-filecoin-pin-unbounded-dag-pinning-can-exhaust-se.html</link>
       <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-62300-filecoin-pin-unbounded-dag-pinning-can-exhaust-se.html</guid>
@@ -266,26 +280,6 @@ This vulnerability allows an authenticated device to escalate its permissions an
       <description>Severity: medium. ## Summary
 
 The IPFS Pinning Service API implementation accepts a caller-controlled CID through `POST /pins`, queues background processing, and then recursively fetches the full DAG with `helia.pins.add(cid)`. The route and background pinning path do not enforce a request rate limi</description>
-    </item>
-    <item>
-      <title>CVE-2026-61536: Banks: Unsafe importlib.import_module of attacker-controlled Tool.import_path in CompletionExtension allows RCE</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-61536-banks-unsafe-importlib-import-module-of-attacker-.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-61536-banks-unsafe-importlib-import-module-of-attacker-.html</guid>
-      <pubDate>Thu, 05 Nov 2026 17:51:02 GMT</pubDate>
-      <description>Severity: high. ## Summary
-
-  `banks` parses `Tool` JSON objects from the rendered body of `{% completion %}` blocks and later resolves their
-  `import_path` field through `importlib.import_module(...)` + `getattr(...)` to obtain the callable that handles a tool
-   call. There is no allowlist or san</description>
-    </item>
-    <item>
-      <title>CVE-2026-105769: kaniko can send the build's Azure (Entra ID) access token to lookalike ACR registry hosts</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-105769-kaniko-can-send-the-build-s-azure-entra-id-acces.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-105769-kaniko-can-send-the-build-s-azure-entra-id-acces.html</guid>
-      <pubDate>Thu, 05 Nov 2026 17:48:54 GMT</pubDate>
-      <description>Severity: critical. ### Summary
-
-kaniko before v1.25.20 can send a Microsoft Entra ID (Azure AD) access token for Azure Resource Manager to a registry host an attacker controls. A Dockerfile that references an image on a lookalike host, such as `FROM x.azurecr.io.attacker.com/img`, is enough. The bu</description>
     </item>
   </channel>
 </rss>
