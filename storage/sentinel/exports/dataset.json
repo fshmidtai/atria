@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T05:03:59+00:00",
+  "generated_at": "2026-11-07T09:02:01+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -27,7 +27,7 @@
     },
     "by_topic": {
       "security": 108,
-      "ai": 73,
+      "ai": 74,
       "dev": 60,
       "hardware": 16,
       "biz": 10,
@@ -1396,12 +1396,12 @@
       "title": "arpanjot-coding/AVault",
       "url": "https://github.com/arpanjot-coding/AVault",
       "ts": 1793474487.0,
-      "points": 599,
+      "points": 601,
       "comments": 27,
       "author": "arpanjot-coding",
       "summary": "AVault - Call Recorder (No Root Required) | Privacy-first, hardware-encrypted audio vault for Android 12-16+. Rootless call recording via Shizuku with AES-256-GCM, biometrics & auto-cleanup.",
       "recipe": "github_sec",
-      "buzz": 690,
+      "buzz": 692,
       "topics": [
         "dev",
         "security"
@@ -1433,12 +1433,12 @@
       "title": "jmanico/grim-prompter",
       "url": "https://github.com/jmanico/grim-prompter",
       "ts": 1793189366.0,
-      "points": 384,
+      "points": 385,
       "comments": 31,
       "author": "jmanico",
       "summary": "Threat modeling for AI coding agents: point Claude Code, Codex or any agent at your repo and get an evidence-traced threat model. 36 architectures, 29 methods, MIT.",
       "recipe": "github_sec",
-      "buzz": 477,
+      "buzz": 478,
       "topics": [
         "ai",
         "dev"
@@ -1468,12 +1468,12 @@
       "title": "arnold117/iOS-NOIR",
       "url": "https://github.com/arnold117/iOS-NOIR",
       "ts": 1793934227.0,
-      "points": 112,
-      "comments": 28,
+      "points": 189,
+      "comments": 39,
       "author": "arnold117",
       "summary": "No-jailbreak iOS privacy, entitlement, sandbox & telemetry forensic auditor (inspired by Verlintas/NOIR)",
       "recipe": "github_sec",
-      "buzz": 226,
+      "buzz": 336,
       "topics": [
         "ai",
         "security"
@@ -1486,12 +1486,12 @@
       "title": "BountyForge-xyz/pwn-skill",
       "url": "https://github.com/BountyForge-xyz/pwn-skill",
       "ts": 1793960371.0,
-      "points": 39,
-      "comments": 4,
+      "points": 44,
+      "comments": 5,
       "author": "BountyForge-xyz",
       "summary": "Agent skill for binary exploitation and CTF pwn — stack, heap, format string, kernel, seccomp bypass.",
       "recipe": "github_sec",
-      "buzz": 131,
+      "buzz": 139,
       "topics": [
         "ai",
         "security"
@@ -1504,12 +1504,12 @@
       "title": "akari-sora/synology-nas-cli",
       "url": "https://github.com/akari-sora/synology-nas-cli",
       "ts": 1793353967.0,
-      "points": 98,
+      "points": 99,
       "comments": 10,
       "author": "akari-sora",
       "summary": "nas: a zero-dependency Python CLI + MCP server for Synology DSM 7. One-command audit and fix for the C3RB3R / .L0CK3D ransomware campaign; hand it to your AI agent. Mirror; canonical repo and issues: gitlab.com/aa[phone]/synology-nas-cli",
       "recipe": "github_sec",
-      "buzz": 128,
+      "buzz": 129,
       "topics": [
         "ai",
         "dev",
@@ -1541,12 +1541,12 @@
       "title": "huggingface/safeagents",
       "url": "https://github.com/huggingface/safeagents",
       "ts": 1793195562.0,
-      "points": 91,
+      "points": 92,
       "comments": 3,
       "author": "huggingface",
       "summary": "Safely run your agents using any coding harness",
       "recipe": "github_sec",
-      "buzz": 100,
+      "buzz": 101,
       "topics": [
         "ai",
         "dev"
@@ -1559,12 +1559,12 @@
       "title": "Balanov/skein",
       "url": "https://github.com/Balanov/skein",
       "ts": 1793663825.0,
-      "points": 81,
+      "points": 82,
       "comments": 1,
       "author": "Balanov",
       "summary": "Fail-closed swarm orchestration with epoch-fenced work and late-completion rejection.",
       "recipe": "github_sec",
-      "buzz": 94,
+      "buzz": 95,
       "topics": [
         "ai"
       ],
@@ -1605,6 +1605,25 @@
         "dev"
       ],
       "date": "2026-11-06"
+    },
+    {
+      "uid": "rss:15fca1b7faff4b",
+      "source": "rss",
+      "title": "Claude Code's “Don't Ask Again” File Exposes Passwords and Keys in 1,122 Public Copies on GitHub",
+      "url": "https://thehackernews.com/2026/11/claude-codes-dont-ask-again-file.html",
+      "ts": 1794033857.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Passwords and API keys that developers typed into commands they approved in Claude Code are sitting in public GitHub repositories, where anyone can read them. When a user selects \"Yes, and don't ask again,\" Anthropic's AI coding assistant can save the command, word-for-word, including the secret, in a project settings file. Software security company Apiiro said yesterday that 1,122 public",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-07"
     },
     {
       "uid": "rss:fbf802f0e9923d",
@@ -1715,64 +1734,6 @@
       "date": "2026-11-06"
     },
     {
-      "uid": "rss:d0ae870a70402d",
-      "source": "rss",
-      "title": "Chainalysis Breach Exposes All Users' Credentials, Forces Shutdown of Key Services",
-      "url": "https://thehackernews.com/2026/11/chainalysis-breach-exposes-all-users.html",
-      "ts": 1793952289.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Blockchain analysis firm Chainalysis has revealed that its ongoing investigation into the agentic cyber attack targeting its systems also exposed names, usernames, password hashes and live tokens for all users. \"While we investigated, we removed access to Reactor and Data Solutions,\" the company said. \"At this time we continue to have no evidence that any investigations data has been accessed",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "dev",
-        "crypto",
-        "biz",
-        "security"
-      ],
-      "date": "2026-11-06"
-    },
-    {
-      "uid": "rss:4f2618c56ecaa5",
-      "source": "rss",
-      "title": "Hackers Hide Linux Backdoor in Control Web Panel Server to Execute Commands Without Logs",
-      "url": "https://thehackernews.com/2026/11/hackers-hide-linux-backdoor-in-control.html",
-      "ts": 1793944734.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "A backdoor has been found hiding in the web server that runs Control Web Panel (CWP), a free panel for managing Linux hosting servers, researchers at QiAnXin's XLab said this week. The backdoored web server executes commands that attackers send via web requests, and those requests never appear in its access logs. Installing it takes root access, so the attackers must already control the server.",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "dev",
-        "hardware"
-      ],
-      "date": "2026-11-06"
-    },
-    {
-      "uid": "rss:8e7b32e6a3f550",
-      "source": "rss",
-      "title": "Experts Demonstrate Barracuda Email Security Gateway Chain Enabling Root Access Without Login",
-      "url": "https://thehackernews.com/2026/11/experts-demonstrate-barracuda-email.html",
-      "ts": 1793943550.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Two flaws in Barracuda's Email Security Gateway, an email-filtering appliance, can be chained to run commands on it as root, its highest level of access, with no login required. The company released patches on Monday, and the security firm watchTowr detailed the attack chain on Thursday. One flaw, CVE-[phone], is an authorization bypass. An unauthenticated attacker can use it to restore a",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-06"
-    },
-    {
       "uid": "gh:Problem99-io/kodeblue",
       "source": "github",
       "title": "Problem99-io/kodeblue",
@@ -1828,6 +1789,24 @@
       "date": "2026-10-27"
     },
     {
+      "uid": "gh:n5za/osint-mcp",
+      "source": "github",
+      "title": "n5za/osint-mcp",
+      "url": "https://github.com/n5za/osint-mcp",
+      "ts": 1792926928.0,
+      "points": 37,
+      "comments": 0,
+      "author": "n5za",
+      "summary": "86-tool OSINT MCP server with private evidence graphs, image analysis, reverse search, and person dossiers.",
+      "recipe": "github_sec",
+      "buzz": 37,
+      "topics": [
+        "dev",
+        "hardware"
+      ],
+      "date": "2026-10-25"
+    },
+    {
       "uid": "gh:smartworldarafath/TeroVPN",
       "source": "github",
       "title": "smartworldarafath/TeroVPN",
@@ -1843,24 +1822,6 @@
         "hardware"
       ],
       "date": "2026-10-29"
-    },
-    {
-      "uid": "gh:n5za/osint-mcp",
-      "source": "github",
-      "title": "n5za/osint-mcp",
-      "url": "https://github.com/n5za/osint-mcp",
-      "ts": 1792926928.0,
-      "points": 32,
-      "comments": 0,
-      "author": "n5za",
-      "summary": "86-tool OSINT MCP server with private evidence graphs, image analysis, reverse search, and person dossiers.",
-      "recipe": "github_sec",
-      "buzz": 32,
-      "topics": [
-        "dev",
-        "hardware"
-      ],
-      "date": "2026-10-25"
     },
     {
       "uid": "rss:7543ee8beb8b7e",
@@ -1881,6 +1842,64 @@
         "security"
       ],
       "date": "2026-11-05"
+    },
+    {
+      "uid": "rss:d0ae870a70402d",
+      "source": "rss",
+      "title": "Chainalysis Breach Exposes All Users' Credentials, Forces Shutdown of Key Services",
+      "url": "https://thehackernews.com/2026/11/chainalysis-breach-exposes-all-users.html",
+      "ts": 1793952289.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Blockchain analysis firm Chainalysis has revealed that its ongoing investigation into the agentic cyber attack targeting its systems also exposed names, usernames, password hashes and live tokens for all users. \"While we investigated, we removed access to Reactor and Data Solutions,\" the company said. \"At this time we continue to have no evidence that any investigations data has been accessed",
+      "recipe": "hackersnews",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "dev",
+        "crypto",
+        "biz",
+        "security"
+      ],
+      "date": "2026-11-06"
+    },
+    {
+      "uid": "rss:4f2618c56ecaa5",
+      "source": "rss",
+      "title": "Hackers Hide Linux Backdoor in Control Web Panel Server to Execute Commands Without Logs",
+      "url": "https://thehackernews.com/2026/11/hackers-hide-linux-backdoor-in-control.html",
+      "ts": 1793944734.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "A backdoor has been found hiding in the web server that runs Control Web Panel (CWP), a free panel for managing Linux hosting servers, researchers at QiAnXin's XLab said this week. The backdoored web server executes commands that attackers send via web requests, and those requests never appear in its access logs. Installing it takes root access, so the attackers must already control the server.",
+      "recipe": "hackersnews",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "dev",
+        "hardware"
+      ],
+      "date": "2026-11-06"
+    },
+    {
+      "uid": "rss:8e7b32e6a3f550",
+      "source": "rss",
+      "title": "Experts Demonstrate Barracuda Email Security Gateway Chain Enabling Root Access Without Login",
+      "url": "https://thehackernews.com/2026/11/experts-demonstrate-barracuda-email.html",
+      "ts": 1793943550.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Two flaws in Barracuda's Email Security Gateway, an email-filtering appliance, can be chained to run commands on it as root, its highest level of access, with no login required. The company released patches on Monday, and the security firm watchTowr detailed the attack chain on Thursday. One flaw, CVE-[phone], is an authorization bypass. An unauthenticated attacker can use it to restore a",
+      "recipe": "hackersnews",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-06"
     },
     {
       "uid": "rss:7d1426211b6649",
@@ -2208,59 +2227,6 @@
       "date": "2026-11-04"
     },
     {
-      "uid": "rss:cdfdc984ed13d0",
-      "source": "rss",
-      "title": "Russian Police Arrest 3 Suspected VasyGrek Hackers, Dismantle Criminal Infrastructure",
-      "url": "https://thehackernews.com/2026/11/russian-police-arrest-3-suspected.html",
-      "ts": 1793780231.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Russian authorities have arrested three suspected members of a threat group known as VasyGrek and dismantled its criminal infrastructure. Also known as Fluffy Wolf, the threat actor has a history of targeting Russian and international companies since 2016. The Ministry of Internal Affairs of the Russian Federation (MVD) said members of the group are \"suspected of embezzling funds from the",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-04"
-    },
-    {
-      "uid": "rss:3ee0c5b7b4a3af",
-      "source": "rss",
-      "title": "Google Issues Patches for Critical Android Flaw That Could Allow RCE Without User Interaction",
-      "url": "https://thehackernews.com/2026/11/google-patches-critical-android-flaw.html",
-      "ts": 1793778375.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "A critical Android flaw could allow an attacker to run code on a phone without any user action remotely, Google said in its&nbsp;November security bulletin. The flaw, CVE-[phone], affects Android 14 through 17. Phones get the fix with security patch level 2026-11-01 or later, which phone makers and carriers send on their own schedules. As of November 4, Google's bulletin did not report",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-04"
-    },
-    {
-      "uid": "rss:8ebc354a95d7d6",
-      "source": "rss",
-      "title": "CISA Confirms Hackers Exploiting WordPress Core Flaw During Software Upgrades",
-      "url": "https://thehackernews.com/2026/11/cisa-confirms-hackers-exploiting.html",
-      "ts": 1793770991.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added a security flaw in WordPress Core to the Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation. The high-severity vulnerability, tracked as CVE-[phone] (CVSS score: 8.1), is a case of Time-of-check Time-of-use (TOCTOU) race condition that could be exploited to achieve arbitrary code",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-04"
-    },
-    {
       "uid": "gh:0xZyyz/ctfd-warden",
       "source": "github",
       "title": "0xZyyz/ctfd-warden",
@@ -2329,6 +2295,41 @@
         "security"
       ],
       "date": "2026-11-02"
+    },
+    {
+      "uid": "rss:cdfdc984ed13d0",
+      "source": "rss",
+      "title": "Russian Police Arrest 3 Suspected VasyGrek Hackers, Dismantle Criminal Infrastructure",
+      "url": "https://thehackernews.com/2026/11/russian-police-arrest-3-suspected.html",
+      "ts": 1793780231.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Russian authorities have arrested three suspected members of a threat group known as VasyGrek and dismantled its criminal infrastructure. Also known as Fluffy Wolf, the threat actor has a history of targeting Russian and international companies since 2016. The Ministry of Internal Affairs of the Russian Federation (MVD) said members of the group are \"suspected of embezzling funds from the",
+      "recipe": "hackersnews",
+      "buzz": 10,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-11-04"
+    },
+    {
+      "uid": "rss:3ee0c5b7b4a3af",
+      "source": "rss",
+      "title": "Google Issues Patches for Critical Android Flaw That Could Allow RCE Without User Interaction",
+      "url": "https://thehackernews.com/2026/11/google-patches-critical-android-flaw.html",
+      "ts": 1793778375.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "A critical Android flaw could allow an attacker to run code on a phone without any user action remotely, Google said in its&nbsp;November security bulletin. The flaw, CVE-[phone], affects Android 14 through 17. Phones get the fix with security patch level 2026-11-01 or later, which phone makers and carriers send on their own schedules. As of November 4, Google's bulletin did not report",
+      "recipe": "hackersnews",
+      "buzz": 10,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-04"
     },
     {
       "uid": "rss:8651e625050eb8",
