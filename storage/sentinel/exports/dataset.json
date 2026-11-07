@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T16:54:31+00:00",
+  "generated_at": "2026-11-07T20:53:29+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -184,7 +184,7 @@
       "author": "github.com/canonical/lxd",
       "summary": "Severity: critical. Reported from https://github.com/lxc/incus/security/advisories/GHSA-48q5-w887-33wv\n\n### Summary\n\nInstance snapshots ignore the `restricted.containers.lowlevel=block` setting;\nallowing for arbitrary command execution on the Incus server by abusing\nlowlevel hooks such as `raw.lxc` and `raw.qemu`.\n\n\n##",
       "recipe": "gh_advisories",
-      "buzz": 6080,
+      "buzz": 6030,
       "topics": [
         "ai",
         "dev",
@@ -204,7 +204,7 @@
       "author": "github.com/canonical/lxd",
       "summary": "Severity: critical. Reported from https://github.com/lxc/incus/security/advisories/GHSA-f6m5-xw2g-xc4x\n\n### Summary\n\nAn arbitrary file write exists in the Incus client when a malicious image\nserver returns a crafted `Incus-Image-Hash` header. This can lead to\narbitrary command execution as root on the server.\n\n\n### Det",
       "recipe": "gh_advisories",
-      "buzz": 6080,
+      "buzz": 6030,
       "topics": [
         "dev",
         "security",
@@ -223,7 +223,7 @@
       "author": "github.com/canonical/lxd",
       "summary": "Severity: critical. Reported from  https://github.com/lxc/incus/security/advisories/GHSA-v6mj-8pf4-hhw4\n\n### Summary\n\nImproper validation of user-provided backup compression algorithm leads to\nargument injection in the constructed command line. This leads to an\narbitrary file write on the host, possibly leading to arbi",
       "recipe": "gh_advisories",
-      "buzz": 6080,
+      "buzz": 6030,
       "topics": [
         "dev",
         "security"
@@ -241,7 +241,7 @@
       "author": "github.com/canonical/lxd",
       "summary": "Severity: critical. Reported from https://github.com/lxc/incus/security/advisories/GHSA-2q3f-q5pq-g8wv\n\n### Summary\n\nA specially crafted image can be used to read or create/write arbitrary files on the host; possibly leading to arbitrary command execution.\n\n\n### Details\n\nIncus validates an image as soon as it sees a no",
       "recipe": "gh_advisories",
-      "buzz": 6080,
+      "buzz": 6030,
       "topics": [
         "ai",
         "dev",
@@ -260,7 +260,7 @@
       "author": "github.com/canonical/lxd",
       "summary": "Severity: critical. Reported from https://github.com/lxc/incus/security/advisories/GHSA-vxp5-584q-c479\n\n### Summary\n\nA specially crafted image can be used to read or create/write arbitrary\nfiles on the host; possibly leading to arbitrary command execution.\n\n\n### Details\n\nFor container images, `internal/server/storage/u",
       "recipe": "gh_advisories",
-      "buzz": 6080,
+      "buzz": 6030,
       "topics": [
         "ai",
         "dev",
@@ -280,7 +280,7 @@
       "author": "github.com/canonical/lxd",
       "summary": "Severity: critical. Reported from https://github.com/lxc/incus/security/advisories/GHSA-48q5-w887-33wv\n\n### Summary\n\nThe `record-output` parameter of the `/instances/$name/exec` endpoint\nstores the output of the command in the `exec-output` directory of the\ninstance. If `exec-output` is a symlink, file named `exec_UUID",
       "recipe": "gh_advisories",
-      "buzz": 6080,
+      "buzz": 6030,
       "topics": [
         "ai",
         "dev",
@@ -435,6 +435,23 @@
       "date": "2021-01-11"
     },
     {
+      "uid": "hn:50172041",
+      "source": "hn",
+      "title": "Security advisory: Critical remote code execution vulnerabilities, update now",
+      "url": "https://www.php.net/archive/2026.php#2026-10-21-5",
+      "ts": 1792527350.0,
+      "points": 1561,
+      "comments": 659,
+      "author": "xd",
+      "summary": "<a href=\"https:&#x2F;&#x2F;cert.europa.eu&#x2F;publications&#x2F;security-advisories&#x2F;2026-018&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;cert.europa.eu&#x2F;publications&#x2F;security-advisories&#x2F;2026...</a><p><a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=[phone]\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=[phone]</a>",
+      "recipe": "hn_sec",
+      "buzz": 3538,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-10-20"
+    },
+    {
       "uid": "cve:GHSA-7mr3-28h5-m5vx",
       "source": "cve",
       "title": "GHSA-7mr3-28h5-m5vx: LXD has project restriction bypass for custom volume copy across projects",
@@ -445,7 +462,7 @@
       "author": "github.com/canonical/lxd",
       "summary": "Severity: high. Reported from https://github.com/lxc/incus/security/advisories/GHSA-64f3-v33m-w89f\n\n### Summary\n\nMissing authorization checks exist for custom volume copying where an attacker knowing the name of a project that they don't have access to and the name of a custom volume in that project can copy the cu",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "dev",
         "security"
@@ -463,7 +480,7 @@
       "author": "github.com/canonical/lxd",
       "summary": "Severity: high. Reported from https://github.com/lxc/incus/security/advisories/GHSA-c9f5-j9c3-mhrg\n\n### Summary\nMissing authorization checks exist for instance copying where an attacker knowing the name of a project that they don't have access to and the name of an instance in that project can copy the instance to",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "dev",
         "security"
@@ -481,7 +498,7 @@
       "author": "GeoNode",
       "summary": "Severity: high. Arbitrary OS commands can be executed on the GeoNode by uploading a vector file with a crafted layer name.",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "security"
       ],
@@ -498,30 +515,13 @@
       "author": "github.com/osac-project/osac-operator",
       "summary": "Severity: high. ### Impact\n\n The console-proxy's RemoteConfigResolver parses kubeconfig data from Kubernetes Secrets using clientcmd.RESTConfigFromKubeConfig without sanitizing the resulting rest.Config. A kubeconfig containing an exec\n  plugin stanza (under users[].user.exec) is faithfully preserved. When rest.Tra",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "ai",
         "dev",
         "security"
       ],
       "date": "2026-11-06"
-    },
-    {
-      "uid": "hn:50172041",
-      "source": "hn",
-      "title": "Security advisory: Critical remote code execution vulnerabilities, update now",
-      "url": "https://www.php.net/archive/2026.php#2026-10-21-5",
-      "ts": 1792527350.0,
-      "points": 1561,
-      "comments": 659,
-      "author": "xd",
-      "summary": "<a href=\"https:&#x2F;&#x2F;cert.europa.eu&#x2F;publications&#x2F;security-advisories&#x2F;2026-018&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;cert.europa.eu&#x2F;publications&#x2F;security-advisories&#x2F;2026...</a><p><a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=[phone]\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=[phone]</a>",
-      "recipe": "hn_sec",
-      "buzz": 3538,
-      "topics": [
-        "security"
-      ],
-      "date": "2026-10-20"
     },
     {
       "uid": "cve:GHSA-64vx-6h2c-rjh7",
@@ -948,116 +948,6 @@
       "date": "2020-09-30"
     },
     {
-      "uid": "cve:GHSA-r4hm-p9f9-fj9v",
-      "source": "cve",
-      "title": "CVE-2026-55649: GeoNode has Stored XSS in Documents metadata abstract field",
-      "url": "https://github.com/advisories/GHSA-r4hm-p9f9-fj9v",
-      "ts": 1793994634.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "GeoNode",
-      "summary": "Severity: medium. The abstract metadata of documents is not sanitised. It’s possible to store arbitrary HTML (and JS) that will be executed when visiting the page.",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-06"
-    },
-    {
-      "uid": "cve:GHSA-fqpv-mq26-pr4j",
-      "source": "cve",
-      "title": "CVE-2026-46429: GeoNode has Unrestricted File Upload",
-      "url": "https://github.com/advisories/GHSA-fqpv-mq26-pr4j",
-      "ts": 1793994083.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "GeoNode",
-      "summary": "Severity: medium. The upload service validation can be circumvented with specially crafted requests, allowing for the storage and serving of malicious files.",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-06"
-    },
-    {
-      "uid": "cve:GHSA-j93m-3j9p-m5m8",
-      "source": "cve",
-      "title": "CVE-2026-9639: LXD has CreateCustomVolumeFromBackup nil-pointer dereference on volumes[0].snapshots[*].expires_at",
-      "url": "https://github.com/advisories/GHSA-j93m-3j9p-m5m8",
-      "ts": 1793993834.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "github.com/canonical/lxd",
-      "summary": "Severity: medium. ## Summary\n\n(sibling-field variant of CVE-[phone] fix 05bc272)\n\n`(*lxdBackend).CreateCustomVolumeFromBackup` in [`lxd/storage/backend_lxd.go`](https://github.com/canonical/lxd/blob/05bc272/lxd/storage/backend_lxd.go) contains an unguarded `*time.Time` dereference on the `ExpiresAt` field of every",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-06"
-    },
-    {
-      "uid": "cve:GHSA-3gq2-x4qg-p4g6",
-      "source": "cve",
-      "title": "CVE-2026-28385: LXD: SSRF via image import from URL allows internal network probing by authenticated users",
-      "url": "https://github.com/advisories/GHSA-3gq2-x4qg-p4g6",
-      "ts": 1793989758.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "github.com/canonical/lxd",
-      "summary": "Severity: medium. ## Summary\nThe LXD image import-from-URL endpoint (`POST /1.0/images` with `source.type=url`) makes server-side HTTP requests to an attacker-supplied URL without any private-IP or loopback blocking. An authenticated user with the `can_create_images` entitlement can force the LXD daemon to connect to",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "dev",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-06"
-    },
-    {
-      "uid": "cve:GHSA-xgjr-7j9q-2h4r",
-      "source": "cve",
-      "title": "CVE-2026-62361: listmonk: SQL Injection in `/api/subscribers/export` bypasses table access control, leaking admin password hashes and SMTP credentials",
-      "url": "https://github.com/advisories/GHSA-xgjr-7j9q-2h4r",
-      "ts": 1793988917.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "github.com/knadh/listmonk",
-      "summary": "Severity: medium. ### Summary\n\nA SQL injection vulnerability in `GET /api/subscribers/export` allows an authenticated user with the `subscribers:sql_query` permission to bypass the table access control that exists on the regular query endpoint (`GET /api/subscribers`) and read arbitrary tables from the database — inc",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-06"
-    },
-    {
-      "uid": "cve:GHSA-92r3-p8c2-3fpx",
-      "source": "cve",
-      "title": "CVE-2026-16454: Eclipse hawkBit DDI has Privilege Escalation that allows Tenant-Isolated Firmware Exfiltration",
-      "url": "https://github.com/advisories/GHSA-92r3-p8c2-3fpx",
-      "ts": 1793988585.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "org.eclipse.hawkbit:hawkbit-ddi-resource",
-      "summary": "Severity: medium. ## **Description**\nA privilege escalation vulnerability has been identified in the Direct Device Integration (DDI) Controller of **Eclipse hawkBit** (versions 1.0.3 and prior).\n\nThis vulnerability allows an authenticated device to escalate its permissions and bypass the strict boundaries of its assi",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-06"
-    },
-    {
       "uid": "hn:48166459",
       "source": "hn",
       "title": "Mozilla to UK regulators: VPNs are essential privacy and security tools",
@@ -1109,6 +999,116 @@
       "date": "2016-12-15"
     },
     {
+      "uid": "cve:GHSA-r4hm-p9f9-fj9v",
+      "source": "cve",
+      "title": "CVE-2026-55649: GeoNode has Stored XSS in Documents metadata abstract field",
+      "url": "https://github.com/advisories/GHSA-r4hm-p9f9-fj9v",
+      "ts": 1793994634.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "GeoNode",
+      "summary": "Severity: medium. The abstract metadata of documents is not sanitised. It’s possible to store arbitrary HTML (and JS) that will be executed when visiting the page.",
+      "recipe": "gh_advisories",
+      "buzz": 1830,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-06"
+    },
+    {
+      "uid": "cve:GHSA-fqpv-mq26-pr4j",
+      "source": "cve",
+      "title": "CVE-2026-46429: GeoNode has Unrestricted File Upload",
+      "url": "https://github.com/advisories/GHSA-fqpv-mq26-pr4j",
+      "ts": 1793994083.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "GeoNode",
+      "summary": "Severity: medium. The upload service validation can be circumvented with specially crafted requests, allowing for the storage and serving of malicious files.",
+      "recipe": "gh_advisories",
+      "buzz": 1830,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-06"
+    },
+    {
+      "uid": "cve:GHSA-j93m-3j9p-m5m8",
+      "source": "cve",
+      "title": "CVE-2026-9639: LXD has CreateCustomVolumeFromBackup nil-pointer dereference on volumes[0].snapshots[*].expires_at",
+      "url": "https://github.com/advisories/GHSA-j93m-3j9p-m5m8",
+      "ts": 1793993834.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "github.com/canonical/lxd",
+      "summary": "Severity: medium. ## Summary\n\n(sibling-field variant of CVE-[phone] fix 05bc272)\n\n`(*lxdBackend).CreateCustomVolumeFromBackup` in [`lxd/storage/backend_lxd.go`](https://github.com/canonical/lxd/blob/05bc272/lxd/storage/backend_lxd.go) contains an unguarded `*time.Time` dereference on the `ExpiresAt` field of every",
+      "recipe": "gh_advisories",
+      "buzz": 1830,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-06"
+    },
+    {
+      "uid": "cve:GHSA-3gq2-x4qg-p4g6",
+      "source": "cve",
+      "title": "CVE-2026-28385: LXD: SSRF via image import from URL allows internal network probing by authenticated users",
+      "url": "https://github.com/advisories/GHSA-3gq2-x4qg-p4g6",
+      "ts": 1793989758.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "github.com/canonical/lxd",
+      "summary": "Severity: medium. ## Summary\nThe LXD image import-from-URL endpoint (`POST /1.0/images` with `source.type=url`) makes server-side HTTP requests to an attacker-supplied URL without any private-IP or loopback blocking. An authenticated user with the `can_create_images` entitlement can force the LXD daemon to connect to",
+      "recipe": "gh_advisories",
+      "buzz": 1830,
+      "topics": [
+        "dev",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-06"
+    },
+    {
+      "uid": "cve:GHSA-xgjr-7j9q-2h4r",
+      "source": "cve",
+      "title": "CVE-2026-62361: listmonk: SQL Injection in `/api/subscribers/export` bypasses table access control, leaking admin password hashes and SMTP credentials",
+      "url": "https://github.com/advisories/GHSA-xgjr-7j9q-2h4r",
+      "ts": 1793988917.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "github.com/knadh/listmonk",
+      "summary": "Severity: medium. ### Summary\n\nA SQL injection vulnerability in `GET /api/subscribers/export` allows an authenticated user with the `subscribers:sql_query` permission to bypass the table access control that exists on the regular query endpoint (`GET /api/subscribers`) and read arbitrary tables from the database — inc",
+      "recipe": "gh_advisories",
+      "buzz": 1830,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-06"
+    },
+    {
+      "uid": "cve:GHSA-92r3-p8c2-3fpx",
+      "source": "cve",
+      "title": "CVE-2026-16454: Eclipse hawkBit DDI has Privilege Escalation that allows Tenant-Isolated Firmware Exfiltration",
+      "url": "https://github.com/advisories/GHSA-92r3-p8c2-3fpx",
+      "ts": 1793988585.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "org.eclipse.hawkbit:hawkbit-ddi-resource",
+      "summary": "Severity: medium. ## **Description**\nA privilege escalation vulnerability has been identified in the Direct Device Integration (DDI) Controller of **Eclipse hawkBit** (versions 1.0.3 and prior).\n\nThis vulnerability allows an authenticated device to escalate its permissions and bypass the strict boundaries of its assi",
+      "recipe": "gh_advisories",
+      "buzz": 1830,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-06"
+    },
+    {
       "uid": "cve:GHSA-m5ph-mmg5-6w5h",
       "source": "cve",
       "title": "CVE-2026-62300: filecoin-pin: Unbounded DAG pinning can exhaust server resources",
@@ -1138,7 +1138,7 @@
       "author": "github.com/basekick-labs/arc",
       "summary": "Severity: medium. ### Summary\n\nThe fix for CVE-[phone] (released 2026.06.1) is incomplete. It added a DuckDB sandbox (`SET GLOBAL allowed_directories=[<storage root>]; SET GLOBAL enable_external_access=false`) and an Arc SQL-layer denylist of the **literal** functions `read_parquet(` and `arc_partition_agg(`. The",
       "recipe": "gh_advisories",
-      "buzz": 1830,
+      "buzz": 1810,
       "topics": [
         "ai",
         "dev",
@@ -1157,7 +1157,7 @@
       "author": "@payloadcms/storage-vercel-blob",
       "summary": "Severity: medium. ### Impact\nIn affected configurations, client upload access does not consistently align with the associated collection’s access configuration.\n\nYou are affected if:\n- You use client uploads with `@payloadcms/storage-vercel-blob`.\n- Authenticated users can access the client-upload route.\n\nApplication",
       "recipe": "gh_advisories",
-      "buzz": 1830,
+      "buzz": 1810,
       "topics": [
         "ai",
         "security"
@@ -1396,12 +1396,12 @@
       "title": "arpanjot-coding/AVault",
       "url": "https://github.com/arpanjot-coding/AVault",
       "ts": 1793474487.0,
-      "points": 616,
+      "points": 620,
       "comments": 27,
       "author": "arpanjot-coding",
       "summary": "AVault - Call Recorder (No Root Required) | Privacy-first, hardware-encrypted audio vault for Android 12-16+. Rootless call recording via Shizuku with AES-256-GCM, biometrics & auto-cleanup.",
       "recipe": "github_sec",
-      "buzz": 707,
+      "buzz": 701,
       "topics": [
         "dev",
         "security"
@@ -1451,12 +1451,12 @@
       "title": "arnold117/iOS-NOIR",
       "url": "https://github.com/arnold117/iOS-NOIR",
       "ts": 1793934227.0,
-      "points": 253,
-      "comments": 51,
+      "points": 259,
+      "comments": 52,
       "author": "arnold117",
       "summary": "No-jailbreak iOS privacy, entitlement, sandbox & telemetry forensic auditor (inspired by Verlintas/NOIR)",
       "recipe": "github_sec",
-      "buzz": 436,
+      "buzz": 445,
       "topics": [
         "ai",
         "security"
@@ -1523,17 +1523,35 @@
       "title": "huggingface/safeagents",
       "url": "https://github.com/huggingface/safeagents",
       "ts": 1793195562.0,
-      "points": 93,
+      "points": 94,
       "comments": 3,
       "author": "huggingface",
       "summary": "Safely run your agents using any coding harness",
       "recipe": "github_sec",
-      "buzz": 102,
+      "buzz": 103,
       "topics": [
         "ai",
         "dev"
       ],
       "date": "2026-10-28"
+    },
+    {
+      "uid": "gh:BountyForge-xyz/pwn-skill",
+      "source": "github",
+      "title": "BountyForge-xyz/pwn-skill",
+      "url": "https://github.com/BountyForge-xyz/pwn-skill",
+      "ts": 1793960371.0,
+      "points": 49,
+      "comments": 6,
+      "author": "BountyForge-xyz",
+      "summary": "Agent skill for binary exploitation and CTF pwn — stack, heap, format string, kernel, seccomp bypass.",
+      "recipe": "github_sec",
+      "buzz": 97,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-06"
     },
     {
       "uid": "gh:Balanov/skein",
@@ -1553,22 +1571,21 @@
       "date": "2026-11-02"
     },
     {
-      "uid": "gh:BountyForge-xyz/pwn-skill",
+      "uid": "gh:BowSinceEnt/resocket-elden-ring-cheat-2026-trainer-mod-menu-tools",
       "source": "github",
-      "title": "BountyForge-xyz/pwn-skill",
-      "url": "https://github.com/BountyForge-xyz/pwn-skill",
-      "ts": 1793960371.0,
-      "points": 48,
-      "comments": 6,
-      "author": "BountyForge-xyz",
-      "summary": "Agent skill for binary exploitation and CTF pwn — stack, heap, format string, kernel, seccomp bypass.",
+      "title": "BowSinceEnt/resocket-elden-ring-cheat-2026-trainer-mod-menu-tools",
+      "url": "https://github.com/BowSinceEnt/resocket-elden-ring-cheat-2026-trainer-mod-menu-tools",
+      "ts": 1793879929.0,
+      "points": 65,
+      "comments": 0,
+      "author": "BowSinceEnt",
+      "summary": "Elden Ring Cheat 2026 — Single-player modding and gameplay toolkit concept featuring character build optimization, rune planning, weapon upgrades, boss strategies, save management and offline trainer research.",
       "recipe": "github_sec",
-      "buzz": 96,
+      "buzz": 95,
       "topics": [
-        "ai",
-        "security"
+        "ai"
       ],
-      "date": "2026-11-06"
+      "date": "2026-11-05"
     },
     {
       "uid": "rss:e6f5c93e0a9e2b",
@@ -1613,51 +1630,16 @@
       "title": "Problem99-io/kodeblue",
       "url": "https://github.com/Problem99-io/kodeblue",
       "ts": 1792937598.0,
-      "points": 66,
+      "points": 67,
       "comments": 4,
       "author": "Problem99-io",
       "summary": "SOC, incident response and SecOps for Linux servers in one agent: learns each host, watches it with zero-token sensors, triages with a small model, and contains attacks under a root-owned policy. Optional hub for fleets.",
       "recipe": "github_sec",
-      "buzz": 78,
+      "buzz": 79,
       "topics": [
         "ai",
         "dev",
         "crypto",
-        "hardware"
-      ],
-      "date": "2026-10-25"
-    },
-    {
-      "uid": "gh:BowSinceEnt/resocket-elden-ring-cheat-2026-trainer-mod-menu-tools",
-      "source": "github",
-      "title": "BowSinceEnt/resocket-elden-ring-cheat-2026-trainer-mod-menu-tools",
-      "url": "https://github.com/BowSinceEnt/resocket-elden-ring-cheat-2026-trainer-mod-menu-tools",
-      "ts": 1793879929.0,
-      "points": 44,
-      "comments": 0,
-      "author": "BowSinceEnt",
-      "summary": "Elden Ring Cheat 2026 — Single-player modding and gameplay toolkit concept featuring character build optimization, rune planning, weapon upgrades, boss strategies, save management and offline trainer research.",
-      "recipe": "github_sec",
-      "buzz": 74,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-05"
-    },
-    {
-      "uid": "gh:n5za/osint-mcp",
-      "source": "github",
-      "title": "n5za/osint-mcp",
-      "url": "https://github.com/n5za/osint-mcp",
-      "ts": 1792926928.0,
-      "points": 51,
-      "comments": 0,
-      "author": "n5za",
-      "summary": "86-tool OSINT MCP server with private evidence graphs, image analysis, reverse search, and person dossiers.",
-      "recipe": "github_sec",
-      "buzz": 51,
-      "topics": [
-        "dev",
         "hardware"
       ],
       "date": "2026-10-25"
@@ -1679,6 +1661,24 @@
         "security"
       ],
       "date": "2026-10-27"
+    },
+    {
+      "uid": "gh:n5za/osint-mcp",
+      "source": "github",
+      "title": "n5za/osint-mcp",
+      "url": "https://github.com/n5za/osint-mcp",
+      "ts": 1792926928.0,
+      "points": 50,
+      "comments": 0,
+      "author": "n5za",
+      "summary": "86-tool OSINT MCP server with private evidence graphs, image analysis, reverse search, and person dossiers.",
+      "recipe": "github_sec",
+      "buzz": 50,
+      "topics": [
+        "dev",
+        "hardware"
+      ],
+      "date": "2026-10-25"
     },
     {
       "uid": "gh:smartworldarafath/TeroVPN",
@@ -2081,43 +2081,6 @@
       "date": "2026-11-05"
     },
     {
-      "uid": "rss:5e756f5fa8340f",
-      "source": "rss",
-      "title": "Debian and Ubuntu APT Flaw Lets MitM Attackers Swap Verified Packages and Run Code as Root",
-      "url": "https://thehackernews.com/2026/11/debian-and-ubuntu-apt-flaw-lets-mitm.html",
-      "ts": 1793811646.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "A flaw in APT, the package manager for Debian and Ubuntu, allows an attacker who can modify package downloads to swap a checked package for their own. The attacker's code then runs as root, according to advisories that&nbsp;Debian,&nbsp;Ubuntu, and&nbsp;APT's developers&nbsp;published on November 4. The attack needs APT to retry failed downloads, which it does by default from Debian 12 and",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "dev"
-      ],
-      "date": "2026-11-04"
-    },
-    {
-      "uid": "rss:d1e786f40eac9d",
-      "source": "rss",
-      "title": "SonicWall Won't Patch EoL GMS Flaws That Could Expose Files, Alter Database Records",
-      "url": "https://thehackernews.com/2026/11/sonicwall-wont-patch-eol-gms-flaws-that.html",
-      "ts": 1793811638.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "SonicWall has warned of two vulnerabilities impacting end-of-life Global Management System (GMS) systems that it said will not be patched. Details of the security flaws, which affect SonicWall GMS 9.5.2 and earlier versions, are below - CVE-[phone] (CVSS score: 9.1) - An unauthenticated file read vulnerability that could allow an attacker with network access to read internal GMS files,",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-04"
-    },
-    {
       "uid": "gh:0xZyyz/ctfd-warden",
       "source": "github",
       "title": "0xZyyz/ctfd-warden",
@@ -2186,6 +2149,43 @@
         "security"
       ],
       "date": "2026-11-02"
+    },
+    {
+      "uid": "rss:5e756f5fa8340f",
+      "source": "rss",
+      "title": "Debian and Ubuntu APT Flaw Lets MitM Attackers Swap Verified Packages and Run Code as Root",
+      "url": "https://thehackernews.com/2026/11/debian-and-ubuntu-apt-flaw-lets-mitm.html",
+      "ts": 1793811646.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "A flaw in APT, the package manager for Debian and Ubuntu, allows an attacker who can modify package downloads to swap a checked package for their own. The attacker's code then runs as root, according to advisories that&nbsp;Debian,&nbsp;Ubuntu, and&nbsp;APT's developers&nbsp;published on November 4. The attack needs APT to retry failed downloads, which it does by default from Debian 12 and",
+      "recipe": "hackersnews",
+      "buzz": 10,
+      "topics": [
+        "ai",
+        "dev"
+      ],
+      "date": "2026-11-04"
+    },
+    {
+      "uid": "rss:d1e786f40eac9d",
+      "source": "rss",
+      "title": "SonicWall Won't Patch EoL GMS Flaws That Could Expose Files, Alter Database Records",
+      "url": "https://thehackernews.com/2026/11/sonicwall-wont-patch-eol-gms-flaws-that.html",
+      "ts": 1793811638.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "SonicWall has warned of two vulnerabilities impacting end-of-life Global Management System (GMS) systems that it said will not be patched. Details of the security flaws, which affect SonicWall GMS 9.5.2 and earlier versions, are below - CVE-[phone] (CVSS score: 9.1) - An unauthenticated file read vulnerability that could allow an attacker with network access to read internal GMS files,",
+      "recipe": "hackersnews",
+      "buzz": 10,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-04"
     },
     {
       "uid": "rss:f44e96ac3c23ea",
