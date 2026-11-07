@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T13:08:28+00:00",
+  "generated_at": "2026-11-07T16:53:51+00:00",
   "sources_used": [
     "rss",
     "rss",
@@ -11,29 +11,29 @@
     "rss"
   ],
   "totals": {
-    "items": 131,
+    "items": 130,
     "by_source": {
       "hn": 7,
-      "github": 2,
-      "rss": 82,
+      "github": 3,
+      "rss": 80,
       "arxiv": 40
     },
     "by_recipe": {
       "economist_fn": 40,
       "arxiv_qfin": 40,
       "cnbc_top": 30,
-      "ft_home": 12,
+      "ft_home": 10,
       "hn_fintech": 7,
-      "github_fin": 2
+      "github_fin": 3
     },
     "by_topic": {
       "ai": 76,
-      "biz": 44,
-      "dev": 40,
+      "dev": 42,
+      "biz": 40,
       "science": 17,
-      "hardware": 6,
+      "hardware": 7,
       "crypto": 5,
-      "security": 4
+      "security": 3
     },
     "top_domains": [
       [
@@ -50,7 +50,7 @@
       ],
       [
         "ft.com",
-        12
+        10
       ],
       [
         "news.ycombinator.com",
@@ -58,7 +58,7 @@
       ],
       [
         "github.com",
-        2
+        3
       ],
       [
         "realizefi.com",
@@ -151,17 +151,35 @@
       "date": "2022-11-30"
     },
     {
+      "uid": "gh:zandy700/supply-chain-shock-map",
+      "source": "github",
+      "title": "zandy700/supply-chain-shock-map",
+      "url": "https://github.com/zandy700/supply-chain-shock-map",
+      "ts": 1793854789.0,
+      "points": 58,
+      "comments": 12,
+      "author": "zandy700",
+      "summary": "Predicts how news-driven supply-chain shocks ripple across S&P 500 stocks, with an event-study backtest and a hash-chained public prediction ledger. Built on MIT open-source SEC supply-graph code.",
+      "recipe": "github_fin",
+      "buzz": 124,
+      "topics": [
+        "ai",
+        "hardware"
+      ],
+      "date": "2026-11-05"
+    },
+    {
       "uid": "gh:DKKD13/dsh-finance",
       "source": "github",
       "title": "DKKD13/dsh-finance",
       "url": "https://github.com/DKKD13/dsh-finance",
       "ts": 1793533985.0,
-      "points": 101,
+      "points": 108,
       "comments": 0,
       "author": "DKKD13",
       "summary": "DKKD13 个人开发的第三方 DSH 金融研究插件：研究 Skills、证据资料库、个股图表与模拟基金。与 DeepSeek 官方无隶属关系。",
       "recipe": "github_fin",
-      "buzz": 111,
+      "buzz": 118,
       "topics": [
         "ai"
       ],
@@ -228,15 +246,32 @@
       "date": "2026-11-07"
     },
     {
-      "uid": "rss:2e390aad3692c0",
+      "uid": "rss:c1b5773fd2044d",
       "source": "rss",
-      "title": "A bittersweet year for liberals",
-      "url": "https://www.ft.com/content/3370e949-4a32-4a2d-8738-2f1cde6a35ea?syn-25a6b1a6=1",
-      "ts": 1794027622.0,
+      "title": "Why does America hate AI?",
+      "url": "https://www.ft.com/content/af97585a-3381-42a9-838b-9a205ab81232?syn-25a6b1a6=1",
+      "ts": 1794027613.0,
       "points": 0,
       "comments": 0,
       "author": "",
-      "summary": "The lesson of 2026 is that people can forgive election subversion, Kremlin support — but not high prices",
+      "summary": "Voter hostility to Big Tech helped shape the US midterms, and similar fears are spreading through the west. But look east and attitudes are dramatically more optimistic",
+      "recipe": "ft_home",
+      "buzz": 80,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-11-07"
+    },
+    {
+      "uid": "rss:d8100ac010ba23",
+      "source": "rss",
+      "title": "Berkshire Hathaway ploughs $9.6bn into share buybacks",
+      "url": "https://www.ft.com/content/1f153350-2377-4e48-a073-0539376eab4c?syn-25a6b1a6=1",
+      "ts": 1794064723.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "Insurance slowdown drags on performance, with quarterly operating income falling by 5.8 per cent year-on-year",
       "recipe": "ft_home",
       "buzz": 80,
       "topics": [
@@ -264,57 +299,6 @@
       "date": "2026-11-07"
     },
     {
-      "uid": "rss:061d04974b23af",
-      "source": "rss",
-      "title": "Anthropic to press ahead with IPO targeting $1.5tn valuation",
-      "url": "https://www.ft.com/content/314e17df-e7af-4814-b208-70a0557cb452?syn-25a6b1a6=1",
-      "ts": 1793998809.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "Claude maker intends to list before Thanksgiving despite brutal tech rout",
-      "recipe": "ft_home",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "biz"
-      ],
-      "date": "2026-11-06"
-    },
-    {
-      "uid": "rss:b8a97a55056205",
-      "source": "rss",
-      "title": "Mississippi election marks political earthquake in the Deep South",
-      "url": "https://www.ft.com/content/0700baee-1a7f-4dc4-ac95-5b98e1868d96?syn-25a6b1a6=1",
-      "ts": 1794027622.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "Democrat Scott Colom could become the first Black man from the state to reach the US Senate in 150 years",
-      "recipe": "ft_home",
-      "buzz": 80,
-      "topics": [],
-      "date": "2026-11-07"
-    },
-    {
-      "uid": "rss:1c9ac2332fe065",
-      "source": "rss",
-      "title": "James Talarico: the Democrats’ rising star who turned Texas blue",
-      "url": "https://www.ft.com/content/7eb006c7-a430-40fd-bba6-48dcbb810ba2?syn-25a6b1a6=1",
-      "ts": 1793985783.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "The 37-year-old senator-elect combined Christian faith and anti-corruption messaging to give the left its first statewide win in decades",
-      "recipe": "ft_home",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "dev"
-      ],
-      "date": "2026-11-06"
-    },
-    {
       "uid": "rss:6943ce5d8a69dc",
       "source": "rss",
       "title": "What will a Democratic Congress mean for Ukraine?",
@@ -324,6 +308,23 @@
       "comments": 0,
       "author": "",
       "summary": "With Donald Trump retaining control of foreign policy, lawmakers will use legislative tools to try to support Kyiv",
+      "recipe": "ft_home",
+      "buzz": 80,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-11-07"
+    },
+    {
+      "uid": "rss:2e390aad3692c0",
+      "source": "rss",
+      "title": "A bittersweet year for liberals",
+      "url": "https://www.ft.com/content/3370e949-4a32-4a2d-8738-2f1cde6a35ea?syn-25a6b1a6=1",
+      "ts": 1794027622.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "The lesson of 2026 is that people can forgive election subversion, Kremlin support — but not high prices",
       "recipe": "ft_home",
       "buzz": 80,
       "topics": [
@@ -347,20 +348,55 @@
       "date": "2026-11-06"
     },
     {
-      "uid": "rss:3f7c9b58144004",
+      "uid": "rss:91a8c3a6d08b63",
       "source": "rss",
-      "title": "European security agencies probe whether bomb hoaxes started in Russia",
-      "url": "https://www.ft.com/content/0845687f-1f74-4bbf-88c9-5c6b031c7f20?syn-25a6b1a6=1",
-      "ts": 1794027633.0,
+      "title": "Berkshire Hathaway more than doubles buybacks in third quarter as earnings decline",
+      "url": "https://www.cnbc.com/2026/11/07/berkshire-hathaway-q3-2026-earnings-buybacks.html",
+      "ts": 1794065026.0,
       "points": 0,
       "comments": 0,
       "author": "",
-      "summary": "A working hypothesis is that the co-ordinated threats were produced by pro-Kremlin activists or hacking groups",
-      "recipe": "ft_home",
+      "summary": "Berkshire Hathaway said Saturday it accelerated its share repurchases during the third quarter, as operating and overall profits took a hit.",
+      "recipe": "cnbc_top",
       "buzz": 80,
       "topics": [
         "ai",
-        "security"
+        "biz"
+      ],
+      "date": "2026-11-07"
+    },
+    {
+      "uid": "rss:9d020de085b6b9",
+      "source": "rss",
+      "title": "Risk of Iran war escalation remains high despite Democratic sweep in U.S. midterm elections",
+      "url": "https://www.cnbc.com/2026/11/07/iran-war-midterm-election-oil-price-trump.html",
+      "ts": 1794056592.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "The U.S. and Iran are on a collision course as tensions in the Middle East simmer.",
+      "recipe": "cnbc_top",
+      "buzz": 80,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-11-07"
+    },
+    {
+      "uid": "rss:ad162d5c6336fc",
+      "source": "rss",
+      "title": "Anthropic IPO meets AI backlash after midterms show stinging rebuke of data centers",
+      "url": "https://www.cnbc.com/2026/11/07/anthropic-ipo-ai-data-center-backlash.html",
+      "ts": 1794056401.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "Anthropic is poised to become the first pure-play AI company to hit the public market at a time when the public is increasingly leary of the industry.",
+      "recipe": "cnbc_top",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "biz"
       ],
       "date": "2026-11-07"
     },
@@ -382,19 +418,69 @@
       "date": "2026-11-07"
     },
     {
-      "uid": "rss:653ca7b3452cff",
+      "uid": "rss:be57aa78f9dfc5",
       "source": "rss",
-      "title": "Why a wave of bomb threats is proving so difficult for Europe's aviation authorities to contain",
-      "url": "https://www.cnbc.com/2026/11/07/hoax-bomb-threats-flights-europe.html",
-      "ts": 1794042117.0,
+      "title": "America doesn't like socialism. So why are socialists winning?",
+      "url": "https://www.cnbc.com/2026/11/07/socialism-elections-economy.html",
+      "ts": 1794056461.0,
       "points": 0,
       "comments": 0,
       "author": "",
-      "summary": "The \"weakest point of aviation is targeting it in-flight,\" analysts say — but any change to procedures will be a lengthy process.",
+      "summary": "Democratic socialists had their best showing yet at the polls. The problem: Most U.S. voters don't actually like socialism.",
+      "recipe": "cnbc_top",
+      "buzz": 80,
+      "topics": [],
+      "date": "2026-11-07"
+    },
+    {
+      "uid": "rss:322f459b37a2d0",
+      "source": "rss",
+      "title": "Will this week's blue wave election usher in a Democratic president in 2028?",
+      "url": "https://www.cnbc.com/2026/11/07/2026-midterm-election-blue-wave-2028-president.html",
+      "ts": 1794060001.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "A CNBC analysis of historical election data finds wave elections don't necessarily spell trouble for the party in power during the next presidential year.",
+      "recipe": "cnbc_top",
+      "buzz": 80,
+      "topics": [
+        "dev"
+      ],
+      "date": "2026-11-07"
+    },
+    {
+      "uid": "rss:39871281131b06",
+      "source": "rss",
+      "title": "Why the prognosis for healthcare stocks is uncertain ahead of Congress’ new makeup",
+      "url": "https://www.cnbc.com/2026/11/07/healthcare-stocks-may-face-trouble-due-to-midterm-results.html",
+      "ts": 1794067353.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "Healthcare stocks may struggle to find momentum as the Democrats get ready to take over Congress.",
       "recipe": "cnbc_top",
       "buzz": 80,
       "topics": [
         "ai"
+      ],
+      "date": "2026-11-07"
+    },
+    {
+      "uid": "rss:75da7907b60976",
+      "source": "rss",
+      "title": "What midterm election blue wave rebuke of Trump means for renewable energy",
+      "url": "https://www.cnbc.com/2026/11/07/midterm-election-blue-wave-trump-renewable-energy.html",
+      "ts": 1794062012.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "The conservative war on renewable energy suffered a big loss in the rout of President Trump and the GOP in midterm elections. Investors should pay attention.",
+      "recipe": "cnbc_top",
+      "buzz": 80,
+      "topics": [
+        "dev",
+        "biz"
       ],
       "date": "2026-11-07"
     },
@@ -416,15 +502,223 @@
       "date": "2026-11-07"
     },
     {
-      "uid": "rss:0e3170f1868443",
+      "uid": "rss:e0e64b07c38e37",
       "source": "rss",
-      "title": "Berkshire shares surge as Wall Street swoons amid AI fears",
-      "url": "https://www.cnbc.com/2026/11/07/berkshire-shares-surge-as-wall-street-swoons-amid-ai-fears.html",
-      "ts": 1794055759.0,
+      "title": "Mark Cuban says he doesn’t ‘give a f---' about growing his net worth—a healthy mindset for non-billionaires too, a financial therapist says",
+      "url": "https://www.cnbc.com/make-it/2026/11/07/mark-cuban-net-worth-money-mindset.html",
+      "ts": 1794060301.0,
       "points": 0,
       "comments": 0,
       "author": "",
-      "summary": "Berkshire Hathaway shares roared past the S&P 500 index this week and are outperforming the benchmark for the year-to-date.",
+      "summary": "The billionaire serial entrepreneur says he cares more about the impact he can have by spending and investing, rather than worrying about amassing more wealth.",
+      "recipe": "cnbc_top",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "biz"
+      ],
+      "date": "2026-11-07"
+    },
+    {
+      "uid": "rss:132c5119d8ca0b",
+      "source": "rss",
+      "title": "31-year-old dumpster diver brought in $140,000 in 12 months: I 'did much more than I thought was possible'",
+      "url": "https://www.cnbc.com/make-it/2026/11/07/dumpster-diver-resale-business.html",
+      "ts": 1794060901.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "Carter Stevens started reselling discarded items from dumpsters around Nashville, Tennessee, in March 2024. Months earlier, he'd been living in his car.",
+      "recipe": "cnbc_top",
+      "buzz": 80,
+      "topics": [],
+      "date": "2026-11-07"
+    },
+    {
+      "uid": "rss:731376289942c1",
+      "source": "rss",
+      "title": "Mississippi Senate: Colom increases lead over Hyde-Smith to nearly 2,500 votes",
+      "url": "https://www.cnbc.com/2026/11/05/mississippi-senate-election-scott-colom-hyde-smith.html",
+      "ts": 1794006776.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "The Mississippi Senate election could be determined by the mail-in ballots received after Election Day, whose legality was upheld by the Supreme Court.",
+      "recipe": "cnbc_top",
+      "buzz": 80,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-11-06"
+    },
+    {
+      "uid": "rss:092aa9383df402",
+      "source": "rss",
+      "title": "Many workers lose unused FSA money — but could still come out ahead. Here's how",
+      "url": "https://www.cnbc.com/2026/11/07/fsa-forfeit.html",
+      "ts": 1794061801.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "While experts say it's best to use up your FSA money, the tax savings on your contributions could outweigh any amount you forfeit. Here's how to tell.",
+      "recipe": "cnbc_top",
+      "buzz": 80,
+      "topics": [],
+      "date": "2026-11-07"
+    },
+    {
+      "uid": "rss:f8e4d5eb39e310",
+      "source": "rss",
+      "title": "America's newest small business owners with no employees are off to a hot start in AI era",
+      "url": "https://www.cnbc.com/2026/11/07/americas-new-no-employee-small-business-owners-start-hot-in-ai-era.html",
+      "ts": 1794062701.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "New small business formation is rising for owners who can grow with AI serving in finance, marketing and design roles, eliminating the need for hiring.",
+      "recipe": "cnbc_top",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "biz"
+      ],
+      "date": "2026-11-07"
+    },
+    {
+      "uid": "rss:653ca7b3452cff",
+      "source": "rss",
+      "title": "Why a wave of bomb threats is proving so difficult for Europe's aviation authorities to contain",
+      "url": "https://www.cnbc.com/2026/11/07/hoax-bomb-threats-flights-europe.html",
+      "ts": 1794042117.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "The \"weakest point of aviation is targeting it in-flight,\" analysts say — but any change to procedures will be a lengthy process.",
+      "recipe": "cnbc_top",
+      "buzz": 80,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-11-07"
+    },
+    {
+      "uid": "rss:7ad47139c2c0a6",
+      "source": "rss",
+      "title": "Watch the Annual Meeting: Cramer on the fate of the AI buildout and stocks to buy now",
+      "url": "https://www.cnbc.com/investingclub/2026/11/06/watch-jim-cramer-live.html",
+      "ts": 1793993772.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "At the Investing Club's 4th annual meeting, Cramer also reveals his outlook for 2027 and answers questions from the live audience and members at home.",
+      "recipe": "cnbc_top",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "biz"
+      ],
+      "date": "2026-11-06"
+    },
+    {
+      "uid": "rss:bd6a44c05d2f76",
+      "source": "rss",
+      "title": "Cosm rides premium moviegoing wave with more immersive screenings and a wider library",
+      "url": "https://www.cnbc.com/2026/11/07/cosm-immersive-movie-screenings.html",
+      "ts": 1794056401.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "Cosm tickets cost anywhere from $18 for a matinee to around $70 for prime seats or in-demand showings.",
+      "recipe": "cnbc_top",
+      "buzz": 80,
+      "topics": [
+        "dev"
+      ],
+      "date": "2026-11-07"
+    },
+    {
+      "uid": "rss:b984c4f92d489f",
+      "source": "rss",
+      "title": "Here's a rapid-fire update on all 31 of our stocks, including 2 to buy now",
+      "url": "https://www.cnbc.com/investingclub/2026/11/06/heres-a-rapid-fire-update-on-our-31-stocks-including-2-to-buy-now.html",
+      "ts": 1793997363.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "We closed out a wild market week on Friday at the Investing Club's fourth Annual Meeting at the New York Stock Exchange.",
+      "recipe": "cnbc_top",
+      "buzz": 80,
+      "topics": [
+        "dev",
+        "biz"
+      ],
+      "date": "2026-11-06"
+    },
+    {
+      "uid": "rss:6907f1eab0368a",
+      "source": "rss",
+      "title": "Microsoft plans to use fewer neoclouds as AI buildout shows signs of strain",
+      "url": "https://www.cnbc.com/2026/11/06/microsoft-moves-to-consolidate-its-relationships-with-neoclouds-in-ai.html",
+      "ts": 1793990458.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "Microsoft is winding down the number of neoclouds it counts as partners, picking key suppliers and focusing on its own data centers.",
+      "recipe": "cnbc_top",
+      "buzz": 80,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-11-06"
+    },
+    {
+      "uid": "rss:925f3b2196a511",
+      "source": "rss",
+      "title": "Data center double-down: Hassett says blue wave won't stop AI build-out",
+      "url": "https://www.cnbc.com/2026/11/06/data-centers-ai-elections-hassett.html",
+      "ts": 1793991262.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "Data centers are a crucial part of President Donald Trump's push to win the global artificial intelligence race, which he continues despite the midterm results.",
+      "recipe": "cnbc_top",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev"
+      ],
+      "date": "2026-11-06"
+    },
+    {
+      "uid": "rss:29526749f8684e",
+      "source": "rss",
+      "title": "Democrat shaping AI policy bought chip stocks despite backing congressional trading ban",
+      "url": "https://www.cnbc.com/2026/11/07/josh-gottheimer-ai-stocks-congress-trading-ban.html",
+      "ts": 1794058201.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "Rep. Josh Gottheimer disclosed new AI-linked stock purchases months after voting for a congressional trading ban, as Democrats prepare to regulate the industry.",
+      "recipe": "cnbc_top",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "hardware"
+      ],
+      "date": "2026-11-07"
+    },
+    {
+      "uid": "rss:bc7062692372ba",
+      "source": "rss",
+      "title": "World’s No. 1 restaurant crowned as contest comes under increasing scrutiny",
+      "url": "https://www.cnbc.com/2026/11/07/worlds-50-best-restaurants-2026-asador-etxebarri.html",
+      "ts": 1794058724.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "Asador Etxebarri in Atxondo, Spain, is the world's top restaurant, according to the 50 Best Restaurants, which announced its 2026 list.",
       "recipe": "cnbc_top",
       "buzz": 80,
       "topics": [
@@ -504,41 +798,6 @@
       "date": "2026-11-06"
     },
     {
-      "uid": "rss:6907f1eab0368a",
-      "source": "rss",
-      "title": "Microsoft plans to use fewer neoclouds as AI buildout shows signs of strain",
-      "url": "https://www.cnbc.com/2026/11/06/microsoft-moves-to-consolidate-its-relationships-with-neoclouds-in-ai.html",
-      "ts": 1793990458.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "Microsoft is winding down the number of neoclouds it counts as partners, picking key suppliers and focusing on its own data centers.",
-      "recipe": "cnbc_top",
-      "buzz": 80,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-06"
-    },
-    {
-      "uid": "rss:925f3b2196a511",
-      "source": "rss",
-      "title": "Data center double-down: Hassett says blue wave won't stop AI build-out",
-      "url": "https://www.cnbc.com/2026/11/06/data-centers-ai-elections-hassett.html",
-      "ts": 1793991262.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "Data centers are a crucial part of President Donald Trump's push to win the global artificial intelligence race, which he continues despite the midterm results.",
-      "recipe": "cnbc_top",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "dev"
-      ],
-      "date": "2026-11-06"
-    },
-    {
       "uid": "rss:774087308ea611",
       "source": "rss",
       "title": "The race is on to build the first fusion power plant — and Europe is looking to Japan for help",
@@ -575,24 +834,6 @@
       "date": "2026-11-06"
     },
     {
-      "uid": "rss:7ad47139c2c0a6",
-      "source": "rss",
-      "title": "Watch the Annual Meeting: Cramer on the fate of the AI buildout and stocks to buy now",
-      "url": "https://www.cnbc.com/investingclub/2026/11/06/watch-jim-cramer-live.html",
-      "ts": 1793993772.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "At the Investing Club's 4th annual meeting, Cramer also reveals his outlook for 2027 and answers questions from the live audience and members at home.",
-      "recipe": "cnbc_top",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "biz"
-      ],
-      "date": "2026-11-06"
-    },
-    {
       "uid": "rss:732232ba2104ae",
       "source": "rss",
       "title": "A disturbing employment trend is hiding beneath the latest strong job numbers",
@@ -607,228 +848,6 @@
       "topics": [
         "ai",
         "dev"
-      ],
-      "date": "2026-11-06"
-    },
-    {
-      "uid": "rss:e09736890ba240",
-      "source": "rss",
-      "title": "Sen. Chris Murphy released from hospital after stroke, will miss votes for 'several weeks' as he rehabs",
-      "url": "https://www.cnbc.com/2026/11/06/chris-murphy-stroke-hospital-senate.html",
-      "ts": 1794001209.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "The Connecticut Democrat Murphy has been discussed as a possible candidate for the White House in 2028.",
-      "recipe": "cnbc_top",
-      "buzz": 80,
-      "topics": [],
-      "date": "2026-11-06"
-    },
-    {
-      "uid": "rss:b984c4f92d489f",
-      "source": "rss",
-      "title": "Here's a rapid-fire update on all 31 of our stocks, including 2 to buy now",
-      "url": "https://www.cnbc.com/investingclub/2026/11/06/heres-a-rapid-fire-update-on-our-31-stocks-including-2-to-buy-now.html",
-      "ts": 1793997363.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "We closed out a wild market week on Friday at the Investing Club's fourth Annual Meeting at the New York Stock Exchange.",
-      "recipe": "cnbc_top",
-      "buzz": 80,
-      "topics": [
-        "dev",
-        "biz"
-      ],
-      "date": "2026-11-06"
-    },
-    {
-      "uid": "rss:77057c92f3ca84",
-      "source": "rss",
-      "title": "OpenAI will keep investing in AI data centers despite election results, CFO tells CNBC",
-      "url": "https://www.cnbc.com/2026/11/06/open-ai-data-centers-election.html",
-      "ts": 1794003958.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "Voters across the country on Tuesday voiced their support for candidates who have pledged to place restrictions on data center development.",
-      "recipe": "cnbc_top",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "dev",
-        "biz",
-        "hardware"
-      ],
-      "date": "2026-11-06"
-    },
-    {
-      "uid": "rss:09b146ecc1513e",
-      "source": "rss",
-      "title": "OpenAI, Arm and Qualcomm executives react to post-midterm AI sell-off",
-      "url": "https://www.cnbc.com/2026/11/06/tech-executives-ai-data-center-selloff-midterms.html",
-      "ts": 1793990108.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "Executives of major tech companies are largely projecting optimism about continued growth in the artificial intelligence sector despite a post-midterm sell-off.",
-      "recipe": "cnbc_top",
-      "buzz": 80,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-06"
-    },
-    {
-      "uid": "rss:d397c54f21c34b",
-      "source": "rss",
-      "title": "Top House Oversight Democrat warns Trump family to 'lawyer up'",
-      "url": "https://www.cnbc.com/2026/11/06/robert-garcia-trump-congress-oversight-investigations.html",
-      "ts": 1793994156.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "With Democrats set to take control of the House in January, Rep. Robert Garcia is promising sweeping probes into Trump, his family and his administration.",
-      "recipe": "cnbc_top",
-      "buzz": 80,
-      "topics": [],
-      "date": "2026-11-06"
-    },
-    {
-      "uid": "rss:fc333c5902457a",
-      "source": "rss",
-      "title": "AI crush is powering one stock to sky-high valuations",
-      "url": "https://www.cnbc.com/2026/11/06/ai-crush-is-powering-one-stock-to-sky-high-valuations.html",
-      "ts": 1793988944.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "Despite sky-high valuations, Mike Khouw argues Costco shares could present a compelling buy.",
-      "recipe": "cnbc_top",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "biz"
-      ],
-      "date": "2026-11-06"
-    },
-    {
-      "uid": "rss:de46e9f381927a",
-      "source": "rss",
-      "title": "The AI ‘credit card’ is getting costlier as CoreWeave bond yield tops 16%",
-      "url": "https://www.cnbc.com/2026/11/06/coreweave-bond-yield-tops-16percent-as-ai-credit-stress-rises.html",
-      "ts": 1793984993.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "Coreweave's steep yields reflect stress in the AI debt markets as investors worry about a data center slowdown. What comes next.",
-      "recipe": "cnbc_top",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "biz"
-      ],
-      "date": "2026-11-06"
-    },
-    {
-      "uid": "rss:9b35b3857c9fd7",
-      "source": "rss",
-      "title": "Tesla to wind down Cybertruck production in Texas next year to ramp Cybercab, Musk says",
-      "url": "https://www.cnbc.com/2026/11/06/tesla-cybertruck-texas-musk.html",
-      "ts": 1793977571.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "The Cybertruck and its polarizing design gained a niche following, but it did not achieve mass-market sales and Tesla has issued several voluntary recalls.",
-      "recipe": "cnbc_top",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "biz"
-      ],
-      "date": "2026-11-06"
-    },
-    {
-      "uid": "rss:e561bc130ed1c3",
-      "source": "rss",
-      "title": "Wall Street's fear gauge may be flashing a buy sign",
-      "url": "https://www.cnbc.com/2026/11/06/wall-streets-fear-gauge-may-be-flashing-a-buy-sign.html",
-      "ts": 1793982541.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "History shows that similar spikes in the VIX have been good entry points for stocks",
-      "recipe": "cnbc_top",
-      "buzz": 80,
-      "topics": [],
-      "date": "2026-11-06"
-    },
-    {
-      "uid": "rss:09a568428d15ad",
-      "source": "rss",
-      "title": "Nasdaq drops into correction territory — here’s what typically happens next",
-      "url": "https://www.cnbc.com/2026/11/05/nasdaq-drops-into-correction-territory-heres-what-typically-happens-next.html",
-      "ts": 1793997748.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "Nasdaq’s slide into correction territory puts its history of recoveries in focus. Here's what history shows.",
-      "recipe": "cnbc_top",
-      "buzz": 80,
-      "topics": [
-        "dev"
-      ],
-      "date": "2026-11-06"
-    },
-    {
-      "uid": "rss:9ef1c098da2393",
-      "source": "rss",
-      "title": "Fake job interview scams like the one that hit Binance are getting more sophisticated. Here are the new signs to watch for",
-      "url": "https://www.cnbc.com/make-it/2026/11/06/binance-hack-fake-job-interview-scams.html",
-      "ts": 1793992196.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "Binance lost more than $6 billion in a hack partly caused by fake job interviews. Here's what job seekers can learn from it, and tips to avoid job search scams.",
-      "recipe": "cnbc_top",
-      "buzz": 80,
-      "topics": [],
-      "date": "2026-11-06"
-    },
-    {
-      "uid": "rss:fba3ac9e1bdd62",
-      "source": "rss",
-      "title": "Market sell-off hits hard: Advisors say 'stay the course with an eye on buying'",
-      "url": "https://www.cnbc.com/2026/11/06/market-sell-off-hits-hard-advisors-say-stay-the-course-with-an-eye-on-buying-.html",
-      "ts": 1793973399.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "As retail investors pulled money out of individual stocks, more than three-quarters of advisors in a CNBC flash poll said investors should check their allocation against their goals or stay invested.",
-      "recipe": "cnbc_top",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "biz"
-      ],
-      "date": "2026-11-06"
-    },
-    {
-      "uid": "rss:8c17ad56c0f4a6",
-      "source": "rss",
-      "title": "Anthropic IPO announcement odds drop on Kalshi following midterms and AI sell-off",
-      "url": "https://www.cnbc.com/2026/11/06/anthropic-ipo-kalshi-post-midterms-ai-sell-off.html",
-      "ts": 1793980532.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "Kalshi traders cut the odds of an Anthropic IPO announcement before December as AI stocks sold off after Democrats won control of Congress.",
-      "recipe": "cnbc_top",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "biz"
       ],
       "date": "2026-11-06"
     },
@@ -1012,60 +1031,6 @@
       "date": "2026-11-04"
     },
     {
-      "uid": "arxiv:2611.06696v1",
-      "source": "arxiv",
-      "title": "You Know What You Will Like: People Predict Their Own Ratings Better Than Recommender Systems",
-      "url": "https://arxiv.org/abs/2611.06696v1",
-      "ts": 1793808047.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Zihan Chen",
-      "summary": "Recommender systems usually learn what people want from what they have done. Platforms could also ask people directly, but asking is costly: 98.8% of the prompts in our data went unanswered. Theories of statistical prediction imply that a person's own forecast adds little to a recommender algorithm built from many people's behavior. Theories of dispersed knowledge imply that people hold informatio",
-      "recipe": "arxiv_qfin",
-      "buzz": 30,
-      "topics": [
-        "hardware"
-      ],
-      "date": "2026-11-04"
-    },
-    {
-      "uid": "arxiv:2611.06629v1",
-      "source": "arxiv",
-      "title": "Does Frontier AI Strengthen Cyber Defense? Evidence from Project Glasswing",
-      "url": "https://arxiv.org/abs/2611.06629v1",
-      "ts": 1793805150.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Thomas Mosk",
-      "summary": "Defenders and attackers race to find the same software flaws. I use the launch of Project Glasswing, which gave a small group of large US tech firms early access to Claude Mythos Preview, a model for finding software vulnerabilities, to study how access to frontier AI affects defenders, external researchers, and attackers. Using the universe of publicly disclosed vulnerabilities, I find that firms",
-      "recipe": "arxiv_qfin",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-04"
-    },
-    {
-      "uid": "arxiv:2611.06607v1",
-      "source": "arxiv",
-      "title": "Hard to Fool: A Bounded LLM Research Loop for Quantitative Finance, and What Two Dozen Campaigns Found",
-      "url": "https://arxiv.org/abs/2611.06607v1",
-      "ts": 1793804259.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Henry Zhang",
-      "summary": "Agentic research loops that let a language model propose a change, run a fixed experiment and keep whatever improves the metric work well in machine learning. In trading research the same loop is a machine for producing false discoveries: a backtest that \"improves the metric\" is, by default, overfit, look-ahead, a multiple-comparisons artifact, cost-free, or market drift wearing a strategy. We des",
-      "recipe": "arxiv_qfin",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "biz"
-      ],
-      "date": "2026-11-04"
-    },
-    {
       "uid": "arxiv:2611.01656v2",
       "source": "arxiv",
       "title": "AIDA: An AI Outage Registry with Evidence from On-Chain MEV",
@@ -1099,41 +1064,6 @@
       "topics": [
         "ai",
         "hardware"
-      ],
-      "date": "2026-11-06"
-    },
-    {
-      "uid": "rss:a95e4f7e52aa74",
-      "source": "rss",
-      "title": "Democratic sweep gives markets a reason to rethink path of interest rates",
-      "url": "https://www.cnbc.com/2026/11/06/oil-prices-interest-rates-midterms.html",
-      "ts": 1793968240.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "Rate hikes could be curbed by an Iran war resolution, slower U.S. growth and fresh fiscal policy — but none are set in stone.",
-      "recipe": "cnbc_top",
-      "buzz": 30,
-      "topics": [
-        "biz"
-      ],
-      "date": "2026-11-06"
-    },
-    {
-      "uid": "rss:bb2cceeb9141aa",
-      "source": "rss",
-      "title": "Moderna raises 2026 outlook as CEO says newer vaccines are gaining traction",
-      "url": "https://www.cnbc.com/2026/11/06/moderna-mrna-earnings-q3-2026.html",
-      "ts": 1793969008.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "The biotech company now expects 2026 revenue growth of 15% to 25%, up from its previous guidance of up to 10%.",
-      "recipe": "cnbc_top",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "biz"
       ],
       "date": "2026-11-06"
     },
@@ -1184,6 +1114,60 @@
       "buzz": 10,
       "topics": [],
       "date": "2026-11-01"
+    },
+    {
+      "uid": "arxiv:2611.06696v1",
+      "source": "arxiv",
+      "title": "You Know What You Will Like: People Predict Their Own Ratings Better Than Recommender Systems",
+      "url": "https://arxiv.org/abs/2611.06696v1",
+      "ts": 1793808047.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Zihan Chen",
+      "summary": "Recommender systems usually learn what people want from what they have done. Platforms could also ask people directly, but asking is costly: 98.8% of the prompts in our data went unanswered. Theories of statistical prediction imply that a person's own forecast adds little to a recommender algorithm built from many people's behavior. Theories of dispersed knowledge imply that people hold informatio",
+      "recipe": "arxiv_qfin",
+      "buzz": 10,
+      "topics": [
+        "hardware"
+      ],
+      "date": "2026-11-04"
+    },
+    {
+      "uid": "arxiv:2611.06629v1",
+      "source": "arxiv",
+      "title": "Does Frontier AI Strengthen Cyber Defense? Evidence from Project Glasswing",
+      "url": "https://arxiv.org/abs/2611.06629v1",
+      "ts": 1793805150.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Thomas Mosk",
+      "summary": "Defenders and attackers race to find the same software flaws. I use the launch of Project Glasswing, which gave a small group of large US tech firms early access to Claude Mythos Preview, a model for finding software vulnerabilities, to study how access to frontier AI affects defenders, external researchers, and attackers. Using the universe of publicly disclosed vulnerabilities, I find that firms",
+      "recipe": "arxiv_qfin",
+      "buzz": 10,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-04"
+    },
+    {
+      "uid": "arxiv:2611.06607v1",
+      "source": "arxiv",
+      "title": "Hard to Fool: A Bounded LLM Research Loop for Quantitative Finance, and What Two Dozen Campaigns Found",
+      "url": "https://arxiv.org/abs/2611.06607v1",
+      "ts": 1793804259.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Henry Zhang",
+      "summary": "Agentic research loops that let a language model propose a change, run a fixed experiment and keep whatever improves the metric work well in machine learning. In trading research the same loop is a machine for producing false discoveries: a backtest that \"improves the metric\" is, by default, overfit, look-ahead, a multiple-comparisons artifact, cost-free, or market drift wearing a strategy. We des",
+      "recipe": "arxiv_qfin",
+      "buzz": 10,
+      "topics": [
+        "ai",
+        "biz"
+      ],
+      "date": "2026-11-04"
     },
     {
       "uid": "arxiv:2611.05767v1",
