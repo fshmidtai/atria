@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T09:02:01+00:00",
+  "generated_at": "2026-11-07T13:09:03+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -1396,12 +1396,12 @@
       "title": "arpanjot-coding/AVault",
       "url": "https://github.com/arpanjot-coding/AVault",
       "ts": 1793474487.0,
-      "points": 601,
+      "points": 610,
       "comments": 27,
       "author": "arpanjot-coding",
       "summary": "AVault - Call Recorder (No Root Required) | Privacy-first, hardware-encrypted audio vault for Android 12-16+. Rootless call recording via Shizuku with AES-256-GCM, biometrics & auto-cleanup.",
       "recipe": "github_sec",
-      "buzz": 692,
+      "buzz": 701,
       "topics": [
         "dev",
         "security"
@@ -1433,17 +1433,35 @@
       "title": "jmanico/grim-prompter",
       "url": "https://github.com/jmanico/grim-prompter",
       "ts": 1793189366.0,
-      "points": 385,
+      "points": 387,
       "comments": 31,
       "author": "jmanico",
       "summary": "Threat modeling for AI coding agents: point Claude Code, Codex or any agent at your repo and get an evidence-traced threat model. 36 architectures, 29 methods, MIT.",
       "recipe": "github_sec",
-      "buzz": 478,
+      "buzz": 480,
       "topics": [
         "ai",
         "dev"
       ],
       "date": "2026-10-28"
+    },
+    {
+      "uid": "gh:arnold117/iOS-NOIR",
+      "source": "github",
+      "title": "arnold117/iOS-NOIR",
+      "url": "https://github.com/arnold117/iOS-NOIR",
+      "ts": 1793934227.0,
+      "points": 225,
+      "comments": 46,
+      "author": "arnold117",
+      "summary": "No-jailbreak iOS privacy, entitlement, sandbox & telemetry forensic auditor (inspired by Verlintas/NOIR)",
+      "recipe": "github_sec",
+      "buzz": 393,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-06"
     },
     {
       "uid": "gh:NyxFoundation/nyxis",
@@ -1461,42 +1479,6 @@
         "dev"
       ],
       "date": "2026-10-26"
-    },
-    {
-      "uid": "gh:arnold117/iOS-NOIR",
-      "source": "github",
-      "title": "arnold117/iOS-NOIR",
-      "url": "https://github.com/arnold117/iOS-NOIR",
-      "ts": 1793934227.0,
-      "points": 189,
-      "comments": 39,
-      "author": "arnold117",
-      "summary": "No-jailbreak iOS privacy, entitlement, sandbox & telemetry forensic auditor (inspired by Verlintas/NOIR)",
-      "recipe": "github_sec",
-      "buzz": 336,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-06"
-    },
-    {
-      "uid": "gh:BountyForge-xyz/pwn-skill",
-      "source": "github",
-      "title": "BountyForge-xyz/pwn-skill",
-      "url": "https://github.com/BountyForge-xyz/pwn-skill",
-      "ts": 1793960371.0,
-      "points": 44,
-      "comments": 5,
-      "author": "BountyForge-xyz",
-      "summary": "Agent skill for binary exploitation and CTF pwn — stack, heap, format string, kernel, seccomp bypass.",
-      "recipe": "github_sec",
-      "buzz": 139,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-06"
     },
     {
       "uid": "gh:akari-sora/synology-nas-cli",
@@ -1569,6 +1551,24 @@
         "ai"
       ],
       "date": "2026-11-02"
+    },
+    {
+      "uid": "gh:BountyForge-xyz/pwn-skill",
+      "source": "github",
+      "title": "BountyForge-xyz/pwn-skill",
+      "url": "https://github.com/BountyForge-xyz/pwn-skill",
+      "ts": 1793960371.0,
+      "points": 46,
+      "comments": 5,
+      "author": "BountyForge-xyz",
+      "summary": "Agent skill for binary exploitation and CTF pwn — stack, heap, format string, kernel, seccomp bypass.",
+      "recipe": "github_sec",
+      "buzz": 91,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-06"
     },
     {
       "uid": "rss:e6f5c93e0a9e2b",
@@ -1681,59 +1681,6 @@
       "date": "2026-11-06"
     },
     {
-      "uid": "rss:d775a103c59030",
-      "source": "rss",
-      "title": "Microsoft Paint RCE Fix Now Available, but Windows Update Won't Deliver It",
-      "url": "https://thehackernews.com/2026/11/microsoft-paint-rce-fix-now-available.html",
-      "ts": 1793966803.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "A fix for CVE-[phone], a remote code execution flaw in Windows Paint, is now in the Microsoft Store. Paint gets this fix only through a Store update, not through Windows updates. The fixed build, 11.2609.401.0, was the newest Paint build in all ten countries The Hacker News checked today. The flaw is an out-of-bounds read that could let an attacker run code over a network. Microsoft rates",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-06"
-    },
-    {
-      "uid": "rss:7dd8ccbd5a1737",
-      "source": "rss",
-      "title": "Malicious Browser Extensions Could Use Claude Dispatch to Run Code on Users' Computers",
-      "url": "https://thehackernews.com/2026/11/malicious-browser-extensions-could-use.html",
-      "ts": 1793966795.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "A browser extension that can run scripts on claude.ai could make Claude Desktop run code on a person's computer, researchers at Forever Security, an endpoint security company, showed in a test. The attack needs Dispatch, a Claude feature that lets people send tasks from their phone to Claude Desktop. The flaw that makes this possible can still be exploited, the researchers said earlier this",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-06"
-    },
-    {
-      "uid": "rss:53d4ee7d94e589",
-      "source": "rss",
-      "title": "The Flood is Coming And The Pipes Were Already Full",
-      "url": "https://thehackernews.com/2026/11/the-flood-is-coming-and-pipes-were.html",
-      "ts": 1793964600.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "An update on Athena, and some unsolicited predictions on what's coming next On Saturday, Dario Amodei published We Must Pace the Frontier. I agree with him. Go read it if you haven't. I've spent the summer looking at what these models find, and the gap he describes between what they can do and what the rest of us are ready for is the one I've been staring at since May. The hardest piece of his",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-06"
-    },
-    {
       "uid": "gh:Problem99-io/kodeblue",
       "source": "github",
       "title": "Problem99-io/kodeblue",
@@ -1794,12 +1741,12 @@
       "title": "n5za/osint-mcp",
       "url": "https://github.com/n5za/osint-mcp",
       "ts": 1792926928.0,
-      "points": 37,
+      "points": 40,
       "comments": 0,
       "author": "n5za",
       "summary": "86-tool OSINT MCP server with private evidence graphs, image analysis, reverse search, and person dossiers.",
       "recipe": "github_sec",
-      "buzz": 37,
+      "buzz": 40,
       "topics": [
         "dev",
         "hardware"
@@ -1842,6 +1789,59 @@
         "security"
       ],
       "date": "2026-11-05"
+    },
+    {
+      "uid": "rss:d775a103c59030",
+      "source": "rss",
+      "title": "Microsoft Paint RCE Fix Now Available, but Windows Update Won't Deliver It",
+      "url": "https://thehackernews.com/2026/11/microsoft-paint-rce-fix-now-available.html",
+      "ts": 1793966803.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "A fix for CVE-[phone], a remote code execution flaw in Windows Paint, is now in the Microsoft Store. Paint gets this fix only through a Store update, not through Windows updates. The fixed build, 11.2609.401.0, was the newest Paint build in all ten countries The Hacker News checked today. The flaw is an out-of-bounds read that could let an attacker run code over a network. Microsoft rates",
+      "recipe": "hackersnews",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-06"
+    },
+    {
+      "uid": "rss:7dd8ccbd5a1737",
+      "source": "rss",
+      "title": "Malicious Browser Extensions Could Use Claude Dispatch to Run Code on Users' Computers",
+      "url": "https://thehackernews.com/2026/11/malicious-browser-extensions-could-use.html",
+      "ts": 1793966795.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "A browser extension that can run scripts on claude.ai could make Claude Desktop run code on a person's computer, researchers at Forever Security, an endpoint security company, showed in a test. The attack needs Dispatch, a Claude feature that lets people send tasks from their phone to Claude Desktop. The flaw that makes this possible can still be exploited, the researchers said earlier this",
+      "recipe": "hackersnews",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-06"
+    },
+    {
+      "uid": "rss:53d4ee7d94e589",
+      "source": "rss",
+      "title": "The Flood is Coming And The Pipes Were Already Full",
+      "url": "https://thehackernews.com/2026/11/the-flood-is-coming-and-pipes-were.html",
+      "ts": 1793964600.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "An update on Athena, and some unsolicited predictions on what's coming next On Saturday, Dario Amodei published We Must Pace the Frontier. I agree with him. Go read it if you haven't. I've spent the summer looking at what these models find, and the gap he describes between what they can do and what the rest of us are ready for is the one I've been staring at since May. The hardest piece of his",
+      "recipe": "hackersnews",
+      "buzz": 30,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-11-06"
     },
     {
       "uid": "rss:d0ae870a70402d",
@@ -2156,77 +2156,6 @@
       "date": "2026-11-04"
     },
     {
-      "uid": "rss:e9ce784f8581ae",
-      "source": "rss",
-      "title": "Critical Rails Flaw Lets Attackers Write Server Files via Crafted ImageMagick Uploads",
-      "url": "https://thehackernews.com/2026/11/critical-rails-flaw-lets-attackers.html",
-      "ts": 1793794024.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "A critical flaw in Ruby on Rails could allow an unauthenticated attacker to write arbitrary files on an app's server by uploading a crafted file if the app processes uploads using ImageMagick. The Rails project disclosed the flaw in&nbsp;an advisory&nbsp;and fixed it in versions 8.1.4.1 and 8.0.5.2. The flaw is in Active Storage, the part of Rails that handles file uploads. Some apps store",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "hardware"
-      ],
-      "date": "2026-11-04"
-    },
-    {
-      "uid": "rss:30689652636fcf",
-      "source": "rss",
-      "title": "Xen Hypervisor Flaws Let One Malicious VM Read and Write Any Other VM's Memory",
-      "url": "https://thehackernews.com/2026/11/xen-hypervisor-flaws-let-one-malicious.html",
-      "ts": 1793792787.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Two flaws in the Xen hypervisor allow a malicious guest virtual machine (VM) to read and write the memory of other VMs on the same host, including dom0. Dom0 is the VM that, by default, has full permissions and manages the others. Patches are out, and there is no known mitigation, the Xen Project said in an&nbsp;advisory&nbsp;on November 3. All Xen versions from 4.6 onward are vulnerable,",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-04"
-    },
-    {
-      "uid": "rss:c62e050b3bcf01",
-      "source": "rss",
-      "title": "Radio With No Radar: Why Agent Runtime Security Fails Without the Layers Beneath It",
-      "url": "https://thehackernews.com/2026/11/radio-with-no-radar-why-agent-runtime.html",
-      "ts": 1793792060.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Nearly every agent security pitch now ends on the same promise: the product stops the bad action in real time. The promise holds for one kind of agent, the kind whose traffic passes through a gateway the enterprise owns. Most agents never touch one. One recent case shows what that gap looks like in practice. An employee asked an AI assistant to trigger a mass-email automation. The automation",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-04"
-    },
-    {
-      "uid": "rss:1883178e8629f0",
-      "source": "rss",
-      "title": "China-Aligned Hackers Hijack Sogou Input Method DNS Requests to Deploy DarkVigil Backdoor",
-      "url": "https://thehackernews.com/2026/11/china-aligned-hackers-hijack-sogou.html",
-      "ts": 1793791471.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "A China-aligned threat actor known as SlippyNunchucks has been attributed to a Domain Name System (DNS) hijacking operation abusing insecure HTTP communications in Windows versions of Sogou Input Method as part of a surveillance campaign designed to deploy an implant called DarkVigil (aka FDMTP). The campaign, observed starting July 1, 2026, is assessed to have targeted organizations and",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-04"
-    },
-    {
       "uid": "gh:0xZyyz/ctfd-warden",
       "source": "github",
       "title": "0xZyyz/ctfd-warden",
@@ -2295,6 +2224,77 @@
         "security"
       ],
       "date": "2026-11-02"
+    },
+    {
+      "uid": "rss:e9ce784f8581ae",
+      "source": "rss",
+      "title": "Critical Rails Flaw Lets Attackers Write Server Files via Crafted ImageMagick Uploads",
+      "url": "https://thehackernews.com/2026/11/critical-rails-flaw-lets-attackers.html",
+      "ts": 1793794024.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "A critical flaw in Ruby on Rails could allow an unauthenticated attacker to write arbitrary files on an app's server by uploading a crafted file if the app processes uploads using ImageMagick. The Rails project disclosed the flaw in&nbsp;an advisory&nbsp;and fixed it in versions 8.1.4.1 and 8.0.5.2. The flaw is in Active Storage, the part of Rails that handles file uploads. Some apps store",
+      "recipe": "hackersnews",
+      "buzz": 10,
+      "topics": [
+        "ai",
+        "hardware"
+      ],
+      "date": "2026-11-04"
+    },
+    {
+      "uid": "rss:30689652636fcf",
+      "source": "rss",
+      "title": "Xen Hypervisor Flaws Let One Malicious VM Read and Write Any Other VM's Memory",
+      "url": "https://thehackernews.com/2026/11/xen-hypervisor-flaws-let-one-malicious.html",
+      "ts": 1793792787.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Two flaws in the Xen hypervisor allow a malicious guest virtual machine (VM) to read and write the memory of other VMs on the same host, including dom0. Dom0 is the VM that, by default, has full permissions and manages the others. Patches are out, and there is no known mitigation, the Xen Project said in an&nbsp;advisory&nbsp;on November 3. All Xen versions from 4.6 onward are vulnerable,",
+      "recipe": "hackersnews",
+      "buzz": 10,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-04"
+    },
+    {
+      "uid": "rss:c62e050b3bcf01",
+      "source": "rss",
+      "title": "Radio With No Radar: Why Agent Runtime Security Fails Without the Layers Beneath It",
+      "url": "https://thehackernews.com/2026/11/radio-with-no-radar-why-agent-runtime.html",
+      "ts": 1793792060.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Nearly every agent security pitch now ends on the same promise: the product stops the bad action in real time. The promise holds for one kind of agent, the kind whose traffic passes through a gateway the enterprise owns. Most agents never touch one. One recent case shows what that gap looks like in practice. An employee asked an AI assistant to trigger a mass-email automation. The automation",
+      "recipe": "hackersnews",
+      "buzz": 10,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-04"
+    },
+    {
+      "uid": "rss:1883178e8629f0",
+      "source": "rss",
+      "title": "China-Aligned Hackers Hijack Sogou Input Method DNS Requests to Deploy DarkVigil Backdoor",
+      "url": "https://thehackernews.com/2026/11/china-aligned-hackers-hijack-sogou.html",
+      "ts": 1793791471.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "A China-aligned threat actor known as SlippyNunchucks has been attributed to a Domain Name System (DNS) hijacking operation abusing insecure HTTP communications in Windows versions of Sogou Input Method as part of a surveillance campaign designed to deploy an implant called DarkVigil (aka FDMTP). The campaign, observed starting July 1, 2026, is assessed to have targeted organizations and",
+      "recipe": "hackersnews",
+      "buzz": 10,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-11-04"
     },
     {
       "uid": "rss:cdfdc984ed13d0",
