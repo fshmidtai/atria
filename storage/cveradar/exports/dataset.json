@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T16:52:37+00:00",
+  "generated_at": "2026-11-08T20:51:49+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -164,7 +164,7 @@
       "author": "github.com/chainguard-dev/kaniko",
       "summary": "Severity: critical. ### Summary\n\nkaniko before v1.25.20 can send a Microsoft Entra ID (Azure AD) access token for Azure Resource Manager to a registry host an attacker controls. A Dockerfile that references an image on a lookalike host, such as `FROM x.azurecr.io.attacker.com/img`, is enough. The build needs no `RUN` i",
       "recipe": "gh_advisories",
-      "buzz": 6030,
+      "buzz": 6010,
       "topics": [
         "dev",
         "crypto",
@@ -291,7 +291,7 @@
       "author": "banks",
       "summary": "Severity: high. ## Summary\n\n  `banks` parses `Tool` JSON objects from the rendered body of `{% completion %}` blocks and later resolves their\n  `import_path` field through `importlib.import_module(...)` + `getattr(...)` to obtain the callable that handles a tool\n   call. There is no allowlist or sanitization on `im",
       "recipe": "gh_advisories",
-      "buzz": 3530,
+      "buzz": 3510,
       "topics": [
         "ai",
         "security"
@@ -309,7 +309,7 @@
       "author": "github.com/canonical/lxd",
       "summary": "Severity: high. ### Summary\n\nA guest can mount another guest's custom storage volume over `/dev/lxd` and read or write its contents without owning it. The DevLXD storage API blocks access to volumes you don't own, but the instance device-update path that attaches a volume to a container without checks ownership. An",
       "recipe": "gh_advisories",
-      "buzz": 3530,
+      "buzz": 3510,
       "topics": [
         "ai",
         "dev",
@@ -532,7 +532,7 @@
       "author": "filecoin-pin",
       "summary": "Severity: medium. ## Summary\n\nThe IPFS Pinning Service API implementation accepts a caller-controlled CID through `POST /pins`, queues background processing, and then recursively fetches the full DAG with `helia.pins.add(cid)`. The route and background pinning path do not enforce a request rate limit, per-user quota,",
       "recipe": "gh_advisories",
-      "buzz": 1830,
+      "buzz": 1810,
       "topics": [
         "dev",
         "security",
