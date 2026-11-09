@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T17:23:12+00:00",
+  "generated_at": "2026-11-09T21:06:00+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -26,12 +26,12 @@
       "krebs": 10
     },
     "by_topic": {
-      "security": 109,
+      "security": 110,
       "ai": 72,
-      "dev": 61,
-      "hardware": 16,
+      "dev": 62,
+      "hardware": 17,
       "biz": 10,
-      "crypto": 8,
+      "crypto": 7,
       "science": 4
     },
     "top_domains": [
@@ -174,6 +174,64 @@
       "date": "2025-03-24"
     },
     {
+      "uid": "cve:GHSA-p2mm-64f6-gmpp",
+      "source": "cve",
+      "title": "CVE-2026-63471: fastapi-code-generator: Import-time RCE via route path -> unescaped @app.get('...') decorator",
+      "url": "https://github.com/advisories/GHSA-p2mm-64f6-gmpp",
+      "ts": 1794253688.0,
+      "points": 6000,
+      "comments": 0,
+      "author": "fastapi-code-generator",
+      "summary": "Severity: critical. ### Summary\n\nfastapi-code-generator (koxudaxi) emits the OpenAPI path into the generated main.py route decorator as a single-quoted string literal (`@app.get('/u/<path>/x')`) without escaping the `'`. A `'` in the path closes the decorator string and, via concatenation, injects a live expression tha",
+      "recipe": "gh_advisories",
+      "buzz": 6080,
+      "topics": [
+        "ai",
+        "dev",
+        "science",
+        "security"
+      ],
+      "date": "2026-11-09"
+    },
+    {
+      "uid": "cve:GHSA-6xmv-cjr5-w3q8",
+      "source": "cve",
+      "title": "CVE-2026-63469: fastapi-code-generator: Import-time RCE via response status-code key -> unescaped @app.get(..., responses={...}) dict",
+      "url": "https://github.com/advisories/GHSA-6xmv-cjr5-w3q8",
+      "ts": 1794253587.0,
+      "points": 6000,
+      "comments": 0,
+      "author": "fastapi-code-generator",
+      "summary": "Severity: critical. ### Summary\n\nfastapi-code-generator (koxudaxi) emits an operation's extra responses into the route decorator's responses={...} dict, using each response's status-code key as a single-quoted string literal without escaping the '. A ' in a status-code key closes the dict-key string and, via concatenat",
+      "recipe": "gh_advisories",
+      "buzz": 6080,
+      "topics": [
+        "dev",
+        "science",
+        "security"
+      ],
+      "date": "2026-11-09"
+    },
+    {
+      "uid": "cve:GHSA-h667-4jj2-cgv4",
+      "source": "cve",
+      "title": "CVE-2026-63470: fastapi-code-generator: Call-time RCE via operation summary -> unescaped route-handler docstring",
+      "url": "https://github.com/advisories/GHSA-h667-4jj2-cgv4",
+      "ts": 1794250200.0,
+      "points": 6000,
+      "comments": 0,
+      "author": "fastapi-code-generator",
+      "summary": "Severity: critical. ### Summary\n\nfastapi-code-generator (koxudaxi) emits an operation's `summary` as the generated route handler's docstring, using a triple-quoted string without escaping `\"\"\"`. A `\"\"\"` in the summary closes the docstring and, via concatenation, injects a live expression that becomes an expression stat",
+      "recipe": "gh_advisories",
+      "buzz": 6080,
+      "topics": [
+        "dev",
+        "science",
+        "security"
+      ],
+      "date": "2026-11-09"
+    },
+    {
       "uid": "cve:GHSA-47w9-6r3f-938g",
       "source": "cve",
       "title": "GHSA-47w9-6r3f-938g: LXD has restricted project bypass leading to arbitrary command execution",
@@ -184,7 +242,7 @@
       "author": "github.com/canonical/lxd",
       "summary": "Severity: critical. Reported from https://github.com/lxc/incus/security/advisories/GHSA-48q5-w887-33wv\n\n### Summary\n\nInstance snapshots ignore the `restricted.containers.lowlevel=block` setting;\nallowing for arbitrary command execution on the Incus server by abusing\nlowlevel hooks such as `raw.lxc` and `raw.qemu`.\n\n\n##",
       "recipe": "gh_advisories",
-      "buzz": 6030,
+      "buzz": 6010,
       "topics": [
         "ai",
         "dev",
@@ -204,7 +262,7 @@
       "author": "github.com/canonical/lxd",
       "summary": "Severity: critical. Reported from https://github.com/lxc/incus/security/advisories/GHSA-f6m5-xw2g-xc4x\n\n### Summary\n\nAn arbitrary file write exists in the Incus client when a malicious image\nserver returns a crafted `Incus-Image-Hash` header. This can lead to\narbitrary command execution as root on the server.\n\n\n### Det",
       "recipe": "gh_advisories",
-      "buzz": 6030,
+      "buzz": 6010,
       "topics": [
         "dev",
         "security",
@@ -223,7 +281,7 @@
       "author": "github.com/canonical/lxd",
       "summary": "Severity: critical. Reported from  https://github.com/lxc/incus/security/advisories/GHSA-v6mj-8pf4-hhw4\n\n### Summary\n\nImproper validation of user-provided backup compression algorithm leads to\nargument injection in the constructed command line. This leads to an\narbitrary file write on the host, possibly leading to arbi",
       "recipe": "gh_advisories",
-      "buzz": 6030,
+      "buzz": 6010,
       "topics": [
         "dev",
         "security"
@@ -241,7 +299,7 @@
       "author": "github.com/canonical/lxd",
       "summary": "Severity: critical. Reported from https://github.com/lxc/incus/security/advisories/GHSA-2q3f-q5pq-g8wv\n\n### Summary\n\nA specially crafted image can be used to read or create/write arbitrary files on the host; possibly leading to arbitrary command execution.\n\n\n### Details\n\nIncus validates an image as soon as it sees a no",
       "recipe": "gh_advisories",
-      "buzz": 6030,
+      "buzz": 6010,
       "topics": [
         "ai",
         "dev",
@@ -260,7 +318,7 @@
       "author": "github.com/canonical/lxd",
       "summary": "Severity: critical. Reported from https://github.com/lxc/incus/security/advisories/GHSA-vxp5-584q-c479\n\n### Summary\n\nA specially crafted image can be used to read or create/write arbitrary\nfiles on the host; possibly leading to arbitrary command execution.\n\n\n### Details\n\nFor container images, `internal/server/storage/u",
       "recipe": "gh_advisories",
-      "buzz": 6030,
+      "buzz": 6010,
       "topics": [
         "ai",
         "dev",
@@ -280,7 +338,7 @@
       "author": "github.com/canonical/lxd",
       "summary": "Severity: critical. Reported from https://github.com/lxc/incus/security/advisories/GHSA-48q5-w887-33wv\n\n### Summary\n\nThe `record-output` parameter of the `/instances/$name/exec` endpoint\nstores the output of the command in the `exec-output` directory of the\ninstance. If `exec-output` is a symlink, file named `exec_UUID",
       "recipe": "gh_advisories",
-      "buzz": 6030,
+      "buzz": 6010,
       "topics": [
         "ai",
         "dev",
@@ -306,42 +364,6 @@
         "security"
       ],
       "date": "2026-11-05"
-    },
-    {
-      "uid": "cve:GHSA-33r5-xmm8-v6x5",
-      "source": "cve",
-      "title": "CVE-2026-44267: Elo JavaScript emitter has sandbox escape to arbitrary Node.js / browser code execution via unfiltered `.constructor` member access",
-      "url": "https://github.com/advisories/GHSA-33r5-xmm8-v6x5",
-      "ts": 1793728422.0,
-      "points": 6000,
-      "comments": 0,
-      "author": "@enspirit/elo",
-      "summary": "Severity: critical. ### Summary\n\nAn unauthenticated attacker who controls a string passed to any Elo JavaScript-emission path — `defaultFormats.elo.parse()`, the `bin/elo` CLI, or the live browser playground at `elo-lang.org/try` — can execute arbitrary code in the host JavaScript runtime. A payload built from the `.co",
-      "recipe": "gh_advisories",
-      "buzz": 6010,
-      "topics": [
-        "security"
-      ],
-      "date": "2026-11-03"
-    },
-    {
-      "uid": "cve:GHSA-7w38-ggh5-v542",
-      "source": "cve",
-      "title": "CVE-2026-44266: Elo Ruby backend has Remote Code Execution via unescaped `#{...}` interpolation in emitted string literals and subtype-constraint labels",
-      "url": "https://github.com/advisories/GHSA-7w38-ggh5-v542",
-      "ts": 1793728290.0,
-      "points": 6000,
-      "comments": 0,
-      "author": "@enspirit/elo",
-      "summary": "Severity: critical. ### Summary\n\nElo's Ruby backend emits attacker-controlled text into Ruby double-quoted strings without escaping the `#` character. Because `#` begins Ruby's interpolation sequences — `#{expr}`, `#@ivar`, `#@@cvar`, `#$gvar` — and any expression wrapped in `#{...}` may use backticks for shell executi",
-      "recipe": "gh_advisories",
-      "buzz": 6010,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-03"
     },
     {
       "uid": "hn:48997548",
@@ -435,6 +457,97 @@
       "date": "2021-01-11"
     },
     {
+      "uid": "cve:GHSA-8cfq-jgf7-8m27",
+      "source": "cve",
+      "title": "CVE-2026-63198: traQ: Privilege escalation by OAuth prompt=none request",
+      "url": "https://github.com/advisories/GHSA-8cfq-jgf7-8m27",
+      "ts": 1794257717.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "github.com/traPtitech/traQ",
+      "summary": "Severity: high. In OAuth2 silent authorization (`prompt=none`), when the `scope` parameter was empty or omitted, all scopes registered for the OAuth client became eligible for issuance. However, the prior consent check was performed against the empty requested scope set. As a result, an attacker could obtain an acc",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-09"
+    },
+    {
+      "uid": "cve:GHSA-p74g-f95m-7fx7",
+      "source": "cve",
+      "title": "CVE-2026-63197: traQ: XSS in the User Uploaded File Retrieval API",
+      "url": "https://github.com/advisories/GHSA-p74g-f95m-7fx7",
+      "ts": 1794257569.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "github.com/traPtitech/traQ",
+      "summary": "Severity: high. ### Impact\n\nFor instances where `TRAQ_STORAGE_TYPE` is set to `local`, the file retrieval API `/files/{fileId}` could serve user-uploaded SVG or HTML files in a way that allowed them to be rendered directly in the browser.\n\nAs a result, an attacker who can upload files to traQ could upload a crafted",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-09"
+    },
+    {
+      "uid": "cve:GHSA-9qw7-j9xw-fv9c",
+      "source": "cve",
+      "title": "CVE-2026-63395: isomorphic-git: Arbitrary file write outside of working tree via directory symlink during checkout (potential RCE)",
+      "url": "https://github.com/advisories/GHSA-9qw7-j9xw-fv9c",
+      "ts": 1794254024.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "isomorphic-git",
+      "summary": "Severity: high. ### Summary\n`git.checkout` writes working-tree files through a directory **symlink** without checking the leading path, so a malicious repository can write **outside the intended working directory**. The defect is in isomorphic-git's checkout logic itself and is therefore **independent of the `fs` p",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-09"
+    },
+    {
+      "uid": "cve:GHSA-52c6-99qm-3hqr",
+      "source": "cve",
+      "title": "CVE-2026-63436: zt-zip: Path traversal in fluent API unpack",
+      "url": "https://github.com/advisories/GHSA-52c6-99qm-3hqr",
+      "ts": 1794250047.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "org.zeroturnaround:zt-zip",
+      "summary": "Severity: high. ### Summary\n\n`ZipUtil.unpack(...)` rejects ZIP entries that escape the target output directory, but the `Zips` fluent API appears to use a separate unpack implementation that does not apply the same destination-boundary check.\n\nA ZIP entry such as:\n\n```text\n../escape/poc.txt\n```\n\nis written outside",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-09"
+    },
+    {
+      "uid": "cve:GHSA-w7qv-268h-9h3f",
+      "source": "cve",
+      "title": "CVE-2026-63417: Logging Redactor: PII data in str/repr of non primitive objects was not being redacted",
+      "url": "https://github.com/advisories/GHSA-w7qv-268h-9h3f",
+      "ts": 1794248118.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "loggingredactor",
+      "summary": "Severity: high. Impact\nPII data in str/repr of non primitive objects was not being redacted, leading to leakage of PII in logs that should have been redacted for custom `__str__` and `__repr__` functions\n\nPatches\nThe problem has been patched in version 0.0.7.\n\nWorkarounds\nNone without patching.",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-11-09"
+    },
+    {
       "uid": "hn:50172041",
       "source": "hn",
       "title": "Security advisory: Critical remote code execution vulnerabilities, update now",
@@ -462,7 +575,7 @@
       "author": "github.com/canonical/lxd",
       "summary": "Severity: high. Reported from https://github.com/lxc/incus/security/advisories/GHSA-64f3-v33m-w89f\n\n### Summary\n\nMissing authorization checks exist for custom volume copying where an attacker knowing the name of a project that they don't have access to and the name of a custom volume in that project can copy the cu",
       "recipe": "gh_advisories",
-      "buzz": 3530,
+      "buzz": 3510,
       "topics": [
         "dev",
         "security"
@@ -480,7 +593,7 @@
       "author": "github.com/canonical/lxd",
       "summary": "Severity: high. Reported from https://github.com/lxc/incus/security/advisories/GHSA-c9f5-j9c3-mhrg\n\n### Summary\nMissing authorization checks exist for instance copying where an attacker knowing the name of a project that they don't have access to and the name of an instance in that project can copy the instance to",
       "recipe": "gh_advisories",
-      "buzz": 3530,
+      "buzz": 3510,
       "topics": [
         "dev",
         "security"
@@ -498,7 +611,7 @@
       "author": "GeoNode",
       "summary": "Severity: high. Arbitrary OS commands can be executed on the GeoNode by uploading a vector file with a crafted layer name.",
       "recipe": "gh_advisories",
-      "buzz": 3530,
+      "buzz": 3510,
       "topics": [
         "security"
       ],
@@ -515,7 +628,7 @@
       "author": "github.com/osac-project/osac-operator",
       "summary": "Severity: high. ### Impact\n\n The console-proxy's RemoteConfigResolver parses kubeconfig data from Kubernetes Secrets using clientcmd.RESTConfigFromKubeConfig without sanitizing the resulting rest.Config. A kubeconfig containing an exec\n  plugin stanza (under users[].user.exec) is faithfully preserved. When rest.Tra",
       "recipe": "gh_advisories",
-      "buzz": 3530,
+      "buzz": 3510,
       "topics": [
         "ai",
         "dev",
@@ -540,119 +653,6 @@
         "security"
       ],
       "date": "2026-11-05"
-    },
-    {
-      "uid": "cve:GHSA-hhf9-qw4v-72xp",
-      "source": "cve",
-      "title": "CVE-2026-12411: lxd allows Cross-guest volume hijack via DevLXD device patch",
-      "url": "https://github.com/advisories/GHSA-hhf9-qw4v-72xp",
-      "ts": 1793900459.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "github.com/canonical/lxd",
-      "summary": "Severity: high. ### Summary\n\nA guest can mount another guest's custom storage volume over `/dev/lxd` and read or write its contents without owning it. The DevLXD storage API blocks access to volumes you don't own, but the instance device-update path that attaches a volume to a container without checks ownership. An",
-      "recipe": "gh_advisories",
-      "buzz": 3510,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-05"
-    },
-    {
-      "uid": "cve:GHSA-gh9r-c94j-cmp5",
-      "source": "cve",
-      "title": "CVE-2026-115878: Stanza: RCE via pickle deserialization in the lemmatizer",
-      "url": "https://github.com/advisories/GHSA-gh9r-c94j-cmp5",
-      "ts": 1793737756.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "stanza",
-      "summary": "Severity: high. ## TL;DR\n\nLoading an attacker-supplied lemma `.pt` runs arbitrary code as the loading user. Since 1.14.0 the lemmatizer stores `pos_dict` as a gzip-compressed pickle in the checkpoint's `dicts` field (a `bytes` value). `torch.load(weights_only=True)` treats `bytes` as a primitive and passes it throu",
-      "recipe": "gh_advisories",
-      "buzz": 3510,
-      "topics": [
-        "security"
-      ],
-      "date": "2026-11-03"
-    },
-    {
-      "uid": "cve:GHSA-x9rp-7wh3-2rj5",
-      "source": "cve",
-      "title": "CVE-2026-44265: Elo backends have code injection via unvalidated emission of programmatic AST fields",
-      "url": "https://github.com/advisories/GHSA-x9rp-7wh3-2rj5",
-      "ts": 1793728089.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "@enspirit/elo",
-      "summary": "Severity: high. ### Summary\n\nElo's programmatic AST API accepts arbitrary values in many node fields without runtime type or syntax validation. Each backend's emit stage interpolates those values straight into the generated source with no escape pass. An integrator that populates the AST from JSON-deserialised inpu",
-      "recipe": "gh_advisories",
-      "buzz": 3510,
-      "topics": [
-        "ai",
-        "dev",
-        "science",
-        "security"
-      ],
-      "date": "2026-11-03"
-    },
-    {
-      "uid": "cve:GHSA-p3jp-9v83-76w9",
-      "source": "cve",
-      "title": "GHSA-p3jp-9v83-76w9: Microsoft Security Advisory CVE-2026-111497 - .NET Brotli Decoder Out-of-bounds Write Vulnerability",
-      "url": "https://github.com/advisories/GHSA-p3jp-9v83-76w9",
-      "ts": 1793727228.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "Microsoft.DotNet.ILCompiler",
-      "summary": "Severity: high. ## Executive summary\n\nA buffer overflow vulnerability exists in the Brotli decompression library used by .NET. This vulnerability may allow an unauthenticated attacker to read or corrupt process memory. This could lead to information disclosure, denial of service, or elevation of privilege.\n\nASP.NET",
-      "recipe": "gh_advisories",
-      "buzz": 3510,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-03"
-    },
-    {
-      "uid": "cve:GHSA-48v2-6jcm-fc99",
-      "source": "cve",
-      "title": "CVE-2026-62331: praktor: Path traversal in Telegram file uploads allows writing outside the agent workspace uploads/ directory (stored instruction injection)",
-      "url": "https://github.com/advisories/GHSA-48v2-6jcm-fc99",
-      "ts": 1793726845.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "github.com/mtzanidakis/praktor",
-      "summary": "Severity: high. ### Impact\n\nA remote Telegram user can write files to arbitrary paths inside an agent's persistent workspace volume (`praktor-wk-<workspace>`, mounted at `/workspace/agent`), escaping the documented `uploads/` directory.\n\nThe attacker controls the Telegram document filename, which was concatenated i",
-      "recipe": "gh_advisories",
-      "buzz": 3510,
-      "topics": [
-        "ai",
-        "dev",
-        "science",
-        "security"
-      ],
-      "date": "2026-11-03"
-    },
-    {
-      "uid": "cve:GHSA-j97h-3f8r-mrjr",
-      "source": "cve",
-      "title": "CVE-2026-11800: Keycloak has authentication bypass via jwt algorithm confusion",
-      "url": "https://github.com/advisories/GHSA-j97h-3f8r-mrjr",
-      "ts": 1793726667.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "org.keycloak:keycloak-services",
-      "summary": "Severity: high. ### Description\nA flaw was found in Keycloak. This JWT algorithm confusion vulnerability in the JWT Authorization Grant flow allows an attacker with valid client credentials to bypass signature verification. By forging an assertion, the attacker can create unauthorized access tokens. This enables th",
-      "recipe": "gh_advisories",
-      "buzz": 3510,
-      "topics": [
-        "crypto",
-        "science",
-        "security"
-      ],
-      "date": "2026-11-03"
     },
     {
       "uid": "hn:32148218",
@@ -948,6 +948,62 @@
       "date": "2020-09-30"
     },
     {
+      "uid": "cve:GHSA-v2g6-7r9j-v6px",
+      "source": "cve",
+      "title": "CVE-2026-63499: zt-zip: ZipUtil.unpack can change file permissions of output directory",
+      "url": "https://github.com/advisories/GHSA-v2g6-7r9j-v6px",
+      "ts": 1794258211.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "org.zeroturnaround:zt-zip",
+      "summary": "Severity: medium. ### Summary\nWhen using one of the `ZipUtil.unpack` overloads, the file permissions of the output directory can be changed. For example, when the output directory was only accessible to the 'owner' it could be instead made accessible to every OS user.\n\n### Details\nWhen the name of a ZIP entry resolve",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-09"
+    },
+    {
+      "uid": "cve:GHSA-cw2g-2vwq-88w6",
+      "source": "cve",
+      "title": "CVE-2026-63478: isomorphic-git: Path traversal via a \"..\" tree-entry name writes files outside the working directory on clone/checkout",
+      "url": "https://github.com/advisories/GHSA-cw2g-2vwq-88w6",
+      "ts": 1794255232.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "isomorphic-git",
+      "summary": "Severity: medium. ### Summary\nisomorphic-git's tree parser (`src/models/GitTree.js`) validates each entry name only against the path separators `/` and `\\`. It does not reject the standalone reserved name `..`, so a malicious repository can, on a single `clone`/`checkout`, **write files outside the working\ndirectory*",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-09"
+    },
+    {
+      "uid": "cve:GHSA-96wc-2m84-2cj7",
+      "source": "cve",
+      "title": "CVE-2026-63475: isomorphic-git: Circular symbolic references cause non-terminating resolution (DoS)",
+      "url": "https://github.com/advisories/GHSA-96wc-2m84-2cj7",
+      "ts": 1794254312.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "isomorphic-git",
+      "summary": "Severity: medium. ### Summary\nA malicious server can advertise circular `symref=` capabilities (e.g. `a → b` and `b → a`). isomorphic-git writes them to disk as loose symrefs, and `GitRefManager.resolve()` follows them with no depth limit and no cycle detection, so any later operation that resolves one of them (`log`",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "dev",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-09"
+    },
+    {
       "uid": "hn:48166459",
       "source": "hn",
       "title": "Mozilla to UK regulators: VPNs are essential privacy and security tools",
@@ -1009,7 +1065,7 @@
       "author": "GeoNode",
       "summary": "Severity: medium. The abstract metadata of documents is not sanitised. It’s possible to store arbitrary HTML (and JS) that will be executed when visiting the page.",
       "recipe": "gh_advisories",
-      "buzz": 1830,
+      "buzz": 1810,
       "topics": [
         "ai",
         "security"
@@ -1027,7 +1083,7 @@
       "author": "GeoNode",
       "summary": "Severity: medium. The upload service validation can be circumvented with specially crafted requests, allowing for the storage and serving of malicious files.",
       "recipe": "gh_advisories",
-      "buzz": 1830,
+      "buzz": 1810,
       "topics": [
         "ai",
         "security"
@@ -1045,7 +1101,7 @@
       "author": "github.com/canonical/lxd",
       "summary": "Severity: medium. ## Summary\n\n(sibling-field variant of CVE-[phone] fix 05bc272)\n\n`(*lxdBackend).CreateCustomVolumeFromBackup` in [`lxd/storage/backend_lxd.go`](https://github.com/canonical/lxd/blob/05bc272/lxd/storage/backend_lxd.go) contains an unguarded `*time.Time` dereference on the `ExpiresAt` field of every",
       "recipe": "gh_advisories",
-      "buzz": 1830,
+      "buzz": 1810,
       "topics": [
         "ai",
         "dev",
@@ -1064,7 +1120,7 @@
       "author": "github.com/canonical/lxd",
       "summary": "Severity: medium. ## Summary\nThe LXD image import-from-URL endpoint (`POST /1.0/images` with `source.type=url`) makes server-side HTTP requests to an attacker-supplied URL without any private-IP or loopback blocking. An authenticated user with the `can_create_images` entitlement can force the LXD daemon to connect to",
       "recipe": "gh_advisories",
-      "buzz": 1830,
+      "buzz": 1810,
       "topics": [
         "dev",
         "security",
@@ -1083,7 +1139,7 @@
       "author": "github.com/knadh/listmonk",
       "summary": "Severity: medium. ### Summary\n\nA SQL injection vulnerability in `GET /api/subscribers/export` allows an authenticated user with the `subscribers:sql_query` permission to bypass the table access control that exists on the regular query endpoint (`GET /api/subscribers`) and read arbitrary tables from the database — inc",
       "recipe": "gh_advisories",
-      "buzz": 1830,
+      "buzz": 1810,
       "topics": [
         "dev",
         "security"
@@ -1101,7 +1157,7 @@
       "author": "org.eclipse.hawkbit:hawkbit-ddi-resource",
       "summary": "Severity: medium. ## **Description**\nA privilege escalation vulnerability has been identified in the Direct Device Integration (DDI) Controller of **Eclipse hawkBit** (versions 1.0.3 and prior).\n\nThis vulnerability allows an authenticated device to escalate its permissions and bypass the strict boundaries of its assi",
       "recipe": "gh_advisories",
-      "buzz": 1830,
+      "buzz": 1810,
       "topics": [
         "dev",
         "security"
@@ -1126,62 +1182,6 @@
         "hardware"
       ],
       "date": "2026-11-05"
-    },
-    {
-      "uid": "cve:GHSA-93cm-2v4m-c56c",
-      "source": "cve",
-      "title": "CVE-2026-55098: Arc: DuckDB I/O aliases bypass database RBAC after CVE-2026-47735",
-      "url": "https://github.com/advisories/GHSA-93cm-2v4m-c56c",
-      "ts": 1793811757.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "github.com/basekick-labs/arc",
-      "summary": "Severity: medium. ### Summary\n\nThe fix for CVE-[phone] (released 2026.06.1) is incomplete. It added a DuckDB sandbox (`SET GLOBAL allowed_directories=[<storage root>]; SET GLOBAL enable_external_access=false`) and an Arc SQL-layer denylist of the **literal** functions `read_parquet(` and `arc_partition_agg(`. The",
-      "recipe": "gh_advisories",
-      "buzz": 1810,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-04"
-    },
-    {
-      "uid": "cve:GHSA-mc8m-rr6c-r5qr",
-      "source": "cve",
-      "title": "CVE-2026-93363: @payloadcms/storage-vercel-blob has access control bypass of uploads in Vercel Storage adapter",
-      "url": "https://github.com/advisories/GHSA-mc8m-rr6c-r5qr",
-      "ts": 1793811639.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "@payloadcms/storage-vercel-blob",
-      "summary": "Severity: medium. ### Impact\nIn affected configurations, client upload access does not consistently align with the associated collection’s access configuration.\n\nYou are affected if:\n- You use client uploads with `@payloadcms/storage-vercel-blob`.\n- Authenticated users can access the client-upload route.\n\nApplication",
-      "recipe": "gh_advisories",
-      "buzz": 1810,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-04"
-    },
-    {
-      "uid": "cve:GHSA-3cgg-c5pp-57h6",
-      "source": "cve",
-      "title": "CVE-2026-113787: odf-kit: HTML injection leading to XSS in odtToHtml() and odsToHtml() via unescaped style attribute values",
-      "url": "https://github.com/advisories/GHSA-3cgg-c5pp-57h6",
-      "ts": 1793808874.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "odf-kit",
-      "summary": "Severity: medium. ### Summary\n\nODF style attribute values are interpolated into `style=\"...\"` attributes without HTML-escaping in **both** of odf-kit's to-HTML renderers (`odtToHtml` and `odsToHtml`). A double-quote character inside an attacker-controlled style value breaks out of the attribute, allowing arbitrary HT",
-      "recipe": "gh_advisories",
-      "buzz": 1810,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-04"
     },
     {
       "uid": "hn:25843874",
@@ -1469,12 +1469,12 @@
       "title": "huggingface/safeagents",
       "url": "https://github.com/huggingface/safeagents",
       "ts": 1793195562.0,
-      "points": 141,
+      "points": 142,
       "comments": 10,
       "author": "huggingface",
       "summary": "Safely run your agents using any coding harness",
       "recipe": "github_sec",
-      "buzz": 171,
+      "buzz": 172,
       "topics": [
         "ai",
         "dev"
@@ -1571,6 +1571,43 @@
         "security"
       ],
       "date": "2026-11-06"
+    },
+    {
+      "uid": "rss:199419dac4261c",
+      "source": "rss",
+      "title": "Hackers Exploit Qubole's Trusted AWS Access to Breach Customer Accounts and Steal Data",
+      "url": "https://thehackernews.com/2026/11/hackers-exploit-quboles-trusted-aws.html",
+      "ts": 1794246681.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "An attacker broke into AWS accounts belonging to multiple Qubole customers between October 14 and October 26 and stole stored secrets and data, cloud security company Wiz said today. The attacker used credentials for an AWS account that Qubole's platform uses to reach those customers. How the attacker got those credentials has not been disclosed. Qubole, a data lake platform owned by Idera,",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-09"
+    },
+    {
+      "uid": "rss:64c0fe9ae1aacb",
+      "source": "rss",
+      "title": "Hackers Compromise Ethersphere's bee-js and Swarm Desktop to Deliver Wallet-Stealing Malware",
+      "url": "https://thehackernews.com/2026/11/hackers-compromise-etherspheres-bee-js.html",
+      "ts": 1794245788.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Attackers used the Ethersphere project's own release automation to publish malicious versions of two of its tools for the Swarm decentralized storage network: bee-js 13.3.0 and Swarm Desktop 0.56.2. Both releases download and run code built to steal the wallet key that Swarm Desktop keeps for its node, along with the stored password that unlocks it. The code is also built to install a backdoor",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-09"
     },
     {
       "uid": "rss:361a84eba57ec0",
@@ -1776,6 +1813,23 @@
       "date": "2026-10-27"
     },
     {
+      "uid": "gh:Alucard0x1/cve-2026-98432",
+      "source": "github",
+      "title": "Alucard0x1/cve-2026-98432",
+      "url": "https://github.com/Alucard0x1/cve-2026-98432",
+      "ts": 1793378203.0,
+      "points": 24,
+      "comments": 6,
+      "author": "Alucard0x1",
+      "summary": "Proof-only PoC for CVE-[phone] (Linux IPv4/TCP ireq_opt use-after-free): race trigger, heap-reuse oracle, no code execution",
+      "recipe": "github_sec",
+      "buzz": 42,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-10-30"
+    },
+    {
       "uid": "gh:smartworldarafath/TeroVPN",
       "source": "github",
       "title": "smartworldarafath/TeroVPN",
@@ -1791,23 +1845,6 @@
         "hardware"
       ],
       "date": "2026-10-29"
-    },
-    {
-      "uid": "gh:Alucard0x1/cve-2026-98432",
-      "source": "github",
-      "title": "Alucard0x1/cve-2026-98432",
-      "url": "https://github.com/Alucard0x1/cve-2026-98432",
-      "ts": 1793378203.0,
-      "points": 22,
-      "comments": 5,
-      "author": "Alucard0x1",
-      "summary": "Proof-only PoC for CVE-[phone] (Linux IPv4/TCP ireq_opt use-after-free): race trigger, heap-reuse oracle, no code execution",
-      "recipe": "github_sec",
-      "buzz": 37,
-      "topics": [
-        "security"
-      ],
-      "date": "2026-10-30"
     },
     {
       "uid": "rss:e6f5c93e0a9e2b",
@@ -2263,41 +2300,6 @@
         "security"
       ],
       "date": "2026-11-05"
-    },
-    {
-      "uid": "rss:c040c9b9274352",
-      "source": "rss",
-      "title": "Hackers Exploit Patched Apple Flaw to Deliver Info-Stealing Malware, CISA Says",
-      "url": "https://thehackernews.com/2026/11/hackers-exploit-patched-apple-flaw-to.html",
-      "ts": 1793855824.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added a medium-severity security flaw impacting multiple Apple operating systems to its Known Exploited Vulnerabilities (KEV) catalog, following reports of active exploitation. The vulnerability in question is CVE-[phone] (CVSS score: 5.5), a case of improper authentication that could allow an attacker with",
-      "recipe": "hackersnews",
-      "buzz": 10,
-      "topics": [
-        "security"
-      ],
-      "date": "2026-11-05"
-    },
-    {
-      "uid": "rss:5e756f5fa8340f",
-      "source": "rss",
-      "title": "Debian and Ubuntu APT Flaw Lets MitM Attackers Swap Verified Packages and Run Code as Root",
-      "url": "https://thehackernews.com/2026/11/debian-and-ubuntu-apt-flaw-lets-mitm.html",
-      "ts": 1793811646.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "A flaw in APT, the package manager for Debian and Ubuntu, allows an attacker who can modify package downloads to swap a checked package for their own. The attacker's code then runs as root, according to advisories that&nbsp;Debian,&nbsp;Ubuntu, and&nbsp;APT's developers&nbsp;published on November 4. The attack needs APT to retry failed downloads, which it does by default from Debian 12 and",
-      "recipe": "hackersnews",
-      "buzz": 10,
-      "topics": [
-        "ai",
-        "dev"
-      ],
-      "date": "2026-11-04"
     },
     {
       "uid": "rss:8651e625050eb8",

@@ -5,7 +5,132 @@
     <link>https://cveradar-ah3.pages.dev</link>
     <description>Живые CVE и уязвимости на русском: автономный перевод угроз в понятные дайджесты для DevOps и небольшого SecOps</description>
     <language>ru</language>
-    <lastBuildDate>Mon, 09 Nov 2026 17:22:48 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2026 21:05:35 GMT</lastBuildDate>
+    <item>
+      <title>CVE-2026-63499: zt-zip: ZipUtil.unpack can change file permissions of output directory</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-63499-zt-zip-ziputil-unpack-can-change-file-permissions.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-63499-zt-zip-ziputil-unpack-can-change-file-permissions.html</guid>
+      <pubDate>Mon, 09 Nov 2026 21:03:31 GMT</pubDate>
+      <description>Severity: medium. ### Summary
+When using one of the `ZipUtil.unpack` overloads, the file permissions of the output directory can be changed. For example, when the output directory was only accessible to the 'owner' it could be instead made accessible to every OS user.
+
+### Details
+When the name of a</description>
+    </item>
+    <item>
+      <title>CVE-2026-63198: traQ: Privilege escalation by OAuth prompt=none request</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-63198-traq-privilege-escalation-by-oauth-prompt-none-re.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-63198-traq-privilege-escalation-by-oauth-prompt-none-re.html</guid>
+      <pubDate>Mon, 09 Nov 2026 20:55:17 GMT</pubDate>
+      <description>Severity: high. In OAuth2 silent authorization (`prompt=none`), when the `scope` parameter was empty or omitted, all scopes registered for the OAuth client became eligible for issuance. However, the prior consent check was performed against the empty requested scope set. As a result, an attacker cou</description>
+    </item>
+    <item>
+      <title>CVE-2026-63197: traQ: XSS in the User Uploaded File Retrieval API</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-63197-traq-xss-in-the-user-uploaded-file-retrieval-api.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-63197-traq-xss-in-the-user-uploaded-file-retrieval-api.html</guid>
+      <pubDate>Mon, 09 Nov 2026 20:52:49 GMT</pubDate>
+      <description>Severity: high. ### Impact
+
+For instances where `TRAQ_STORAGE_TYPE` is set to `local`, the file retrieval API `/files/{fileId}` could serve user-uploaded SVG or HTML files in a way that allowed them to be rendered directly in the browser.
+
+As a result, an attacker who can upload files to traQ could </description>
+    </item>
+    <item>
+      <title>CVE-2026-63478: isomorphic-git: Path traversal via a ".." tree-entry name writes files outside the working directory on clone/checkout</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-63478-isomorphic-git-path-traversal-via-a-tree-entry-na.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-63478-isomorphic-git-path-traversal-via-a-tree-entry-na.html</guid>
+      <pubDate>Mon, 09 Nov 2026 20:13:52 GMT</pubDate>
+      <description>Severity: medium. ### Summary
+isomorphic-git's tree parser (`src/models/GitTree.js`) validates each entry name only against the path separators `/` and `\`. It does not reject the standalone reserved name `..`, so a malicious repository can, on a single `clone`/`checkout`, **write files outside the </description>
+    </item>
+    <item>
+      <title>CVE-2026-63475: isomorphic-git: Circular symbolic references cause non-terminating resolution (DoS)</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-63475-isomorphic-git-circular-symbolic-references-cause.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-63475-isomorphic-git-circular-symbolic-references-cause.html</guid>
+      <pubDate>Mon, 09 Nov 2026 19:58:32 GMT</pubDate>
+      <description>Severity: medium. ### Summary
+A malicious server can advertise circular `symref=` capabilities (e.g. `a → b` and `b → a`). isomorphic-git writes them to disk as loose symrefs, and `GitRefManager.resolve()` follows them with no depth limit and no cycle detection, so any later operation that resolves </description>
+    </item>
+    <item>
+      <title>CVE-2026-63395: isomorphic-git: Arbitrary file write outside of working tree via directory symlink during checkout (potential RCE)</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-63395-isomorphic-git-arbitrary-file-write-outside-of-wo.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-63395-isomorphic-git-arbitrary-file-write-outside-of-wo.html</guid>
+      <pubDate>Mon, 09 Nov 2026 19:53:44 GMT</pubDate>
+      <description>Severity: high. ### Summary
+`git.checkout` writes working-tree files through a directory **symlink** without checking the leading path, so a malicious repository can write **outside the intended working directory**. The defect is in isomorphic-git's checkout logic itself and is therefore **independe</description>
+    </item>
+    <item>
+      <title>CVE-2026-63471: fastapi-code-generator: Import-time RCE via route path -&gt; unescaped @app.get('...') decorator</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-63471-fastapi-code-generator-import-time-rce-via-route-.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-63471-fastapi-code-generator-import-time-rce-via-route-.html</guid>
+      <pubDate>Mon, 09 Nov 2026 19:48:08 GMT</pubDate>
+      <description>Severity: critical. ### Summary
+
+fastapi-code-generator (koxudaxi) emits the OpenAPI path into the generated main.py route decorator as a single-quoted string literal (`@app.get('/u/&lt;path&gt;/x')`) without escaping the `'`. A `'` in the path closes the decorator string and, via concatenation, injects a</description>
+    </item>
+    <item>
+      <title>CVE-2026-63469: fastapi-code-generator: Import-time RCE via response status-code key -&gt; unescaped @app.get(..., responses={...}) dict</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-63469-fastapi-code-generator-import-time-rce-via-respon.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-63469-fastapi-code-generator-import-time-rce-via-respon.html</guid>
+      <pubDate>Mon, 09 Nov 2026 19:46:27 GMT</pubDate>
+      <description>Severity: critical. ### Summary
+
+fastapi-code-generator (koxudaxi) emits an operation's extra responses into the route decorator's responses={...} dict, using each response's status-code key as a single-quoted string literal without escaping the '. A ' in a status-code key closes the dict-key string</description>
+    </item>
+    <item>
+      <title>CVE-2026-63470: fastapi-code-generator: Call-time RCE via operation summary -&gt; unescaped route-handler docstring</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-63470-fastapi-code-generator-call-time-rce-via-operatio.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-63470-fastapi-code-generator-call-time-rce-via-operatio.html</guid>
+      <pubDate>Mon, 09 Nov 2026 18:50:00 GMT</pubDate>
+      <description>Severity: critical. ### Summary
+
+fastapi-code-generator (koxudaxi) emits an operation's `summary` as the generated route handler's docstring, using a triple-quoted string without escaping `"""`. A `"""` in the summary closes the docstring and, via concatenation, injects a live expression that become</description>
+    </item>
+    <item>
+      <title>CVE-2026-63436: zt-zip: Path traversal in fluent API unpack</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-63436-zt-zip-path-traversal-in-fluent-api-unpack.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-63436-zt-zip-path-traversal-in-fluent-api-unpack.html</guid>
+      <pubDate>Mon, 09 Nov 2026 18:47:27 GMT</pubDate>
+      <description>Severity: high. ### Summary
+
+`ZipUtil.unpack(...)` rejects ZIP entries that escape the target output directory, but the `Zips` fluent API appears to use a separate unpack implementation that does not apply the same destination-boundary check.
+
+A ZIP entry such as:
+
+```text
+../escape/poc.txt
+```
+
+is </description>
+    </item>
+    <item>
+      <title>CVE-2026-63417: Logging Redactor: PII data in str/repr of non primitive objects was not being redacted</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-63417-logging-redactor-pii-data-in-str-repr-of-non-prim.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-63417-logging-redactor-pii-data-in-str-repr-of-non-prim.html</guid>
+      <pubDate>Mon, 09 Nov 2026 18:15:18 GMT</pubDate>
+      <description>Severity: high. Impact
+PII data in str/repr of non primitive objects was not being redacted, leading to leakage of PII in logs that should have been redacted for custom `__str__` and `__repr__` functions
+
+Patches
+The problem has been patched in version 0.0.7.
+
+Workarounds
+None without patching.</description>
+    </item>
+    <item>
+      <title>Hackers Exploit Qubole's Trusted AWS Access to Breach Customer Accounts and Steal Data</title>
+      <link>https://cveradar-ah3.pages.dev/item/hackers-exploit-qubole-s-trusted-aws-access-to-breach-customer-a.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/hackers-exploit-qubole-s-trusted-aws-access-to-breach-customer-a.html</guid>
+      <pubDate>Mon, 09 Nov 2026 17:51:21 GMT</pubDate>
+      <description>An attacker broke into AWS accounts belonging to multiple Qubole customers between October 14 and October 26 and stole stored secrets and data, cloud security company Wiz said today. The attacker used credentials for an AWS account that Qubole's platform uses to reach those customers. How the attack</description>
+    </item>
+    <item>
+      <title>Hackers Compromise Ethersphere's bee-js and Swarm Desktop to Deliver Wallet-Stealing Malware</title>
+      <link>https://cveradar-ah3.pages.dev/item/hackers-compromise-ethersphere-s-bee-js-and-swarm-desktop-to-del.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/hackers-compromise-ethersphere-s-bee-js-and-swarm-desktop-to-del.html</guid>
+      <pubDate>Mon, 09 Nov 2026 17:36:28 GMT</pubDate>
+      <description>Attackers used the Ethersphere project's own release automation to publish malicious versions of two of its tools for the Swarm decentralized storage network: bee-js 13.3.0 and Swarm Desktop 0.56.2. Both releases download and run code built to steal the wallet key that Swarm Desktop keeps for its no</description>
+    </item>
     <item>
       <title>Bitter Hackers Deploy New PapRAT Backdoor in Cyberespionage Campaign Targeting South Asia</title>
       <link>https://cveradar-ah3.pages.dev/item/bitter-hackers-deploy-new-paprat-backdoor-in-cyberespionage-camp.html</link>
@@ -141,143 +266,6 @@ Missing authorization checks exist for instance copying where an attacker knowin
 (sibling-field variant of CVE-[phone] fix 05bc272)
 
 `(*lxdBackend).CreateCustomVolumeFromBackup` in [`lxd/storage/backend_lxd.go`](https://github.com/canonical/lxd/blob/05bc272/lxd/storage/backend_lxd.go) contains an unguarded `*time.Time` dereference on the `ExpiresAt`</description>
-    </item>
-    <item>
-      <title>GHSA-pjff-c2wc-f6jm: LXD has arbitrary file write on client due to trusted image hash</title>
-      <link>https://cveradar-ah3.pages.dev/item/ghsa-pjff-c2wc-f6jm-lxd-has-arbitrary-file-write-on-client-due-t.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/ghsa-pjff-c2wc-f6jm-lxd-has-arbitrary-file-write-on-client-due-t.html</guid>
-      <pubDate>Fri, 06 Nov 2026 19:36:55 GMT</pubDate>
-      <description>Severity: critical. Reported from https://github.com/lxc/incus/security/advisories/GHSA-f6m5-xw2g-xc4x
-
-### Summary
-
-An arbitrary file write exists in the Incus client when a malicious image
-server returns a crafted `Incus-Image-Hash` header. This can lead to
-arbitrary command execution as root on t</description>
-    </item>
-    <item>
-      <title>GHSA-fmc8-p6q7-75cc: LXD has argument injection in backup compression algorithm leading to AFW and ACE</title>
-      <link>https://cveradar-ah3.pages.dev/item/ghsa-fmc8-p6q7-75cc-lxd-has-argument-injection-in-backup-compres.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/ghsa-fmc8-p6q7-75cc-lxd-has-argument-injection-in-backup-compres.html</guid>
-      <pubDate>Fri, 06 Nov 2026 19:36:37 GMT</pubDate>
-      <description>Severity: critical. Reported from  https://github.com/lxc/incus/security/advisories/GHSA-v6mj-8pf4-hhw4
-
-### Summary
-
-Improper validation of user-provided backup compression algorithm leads to
-argument injection in the constructed command line. This leads to an
-arbitrary file write on the host, poss</description>
-    </item>
-    <item>
-      <title>GHSA-vghh-5rfx-xhq8: LXD has arbitrary file read+write on host via rootfs/ symlink in malicious image</title>
-      <link>https://cveradar-ah3.pages.dev/item/ghsa-vghh-5rfx-xhq8-lxd-has-arbitrary-file-read-write-on-host-vi.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/ghsa-vghh-5rfx-xhq8-lxd-has-arbitrary-file-read-write-on-host-vi.html</guid>
-      <pubDate>Fri, 06 Nov 2026 19:36:07 GMT</pubDate>
-      <description>Severity: critical. Reported from https://github.com/lxc/incus/security/advisories/GHSA-2q3f-q5pq-g8wv
-
-### Summary
-
-A specially crafted image can be used to read or create/write arbitrary files on the host; possibly leading to arbitrary command execution.
-
-
-### Details
-
-Incus validates an image as </description>
-    </item>
-    <item>
-      <title>GHSA-jpf8-86f3-wp38: LXD has arbitrary file read+write on host via templates/ symlink in malicious image</title>
-      <link>https://cveradar-ah3.pages.dev/item/ghsa-jpf8-86f3-wp38-lxd-has-arbitrary-file-read-write-on-host-vi.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/ghsa-jpf8-86f3-wp38-lxd-has-arbitrary-file-read-write-on-host-vi.html</guid>
-      <pubDate>Fri, 06 Nov 2026 18:53:57 GMT</pubDate>
-      <description>Severity: critical. Reported from https://github.com/lxc/incus/security/advisories/GHSA-vxp5-584q-c479
-
-### Summary
-
-A specially crafted image can be used to read or create/write arbitrary
-files on the host; possibly leading to arbitrary command execution.
-
-
-### Details
-
-For container images, `inter</description>
-    </item>
-    <item>
-      <title>GHSA-9j25-mm2h-2f76: LXD has arbitrary file write on host via `exec-output` symlink in crafted image</title>
-      <link>https://cveradar-ah3.pages.dev/item/ghsa-9j25-mm2h-2f76-lxd-has-arbitrary-file-write-on-host-via-exe.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/ghsa-9j25-mm2h-2f76-lxd-has-arbitrary-file-write-on-host-via-exe.html</guid>
-      <pubDate>Fri, 06 Nov 2026 18:45:51 GMT</pubDate>
-      <description>Severity: critical. Reported from https://github.com/lxc/incus/security/advisories/GHSA-48q5-w887-33wv
-
-### Summary
-
-The `record-output` parameter of the `/instances/$name/exec` endpoint
-stores the output of the command in the `exec-output` directory of the
-instance. If `exec-output` is a symlink, f</description>
-    </item>
-    <item>
-      <title>Четвертый спецвыпуск «Хакера» и еще два печатных номера</title>
-      <link>https://cveradar-ah3.pages.dev/item/item.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/item.html</guid>
-      <pubDate>Fri, 06 Nov 2026 18:30:45 GMT</pubDate>
-      <description>Четвертый спецвыпуск «Хакера» — самый новый из наших бумажных сборников: в него вошли более 20 технических материалов за 2021–2022 годы, посвященные пентесту, поиску уязвимостей, реверсу и необычному железу. Вместе с ним в продаже остаются еще два спецвыпуска с материалами других лет. Все журналы вы</description>
-    </item>
-    <item>
-      <title>CVE-2026-28385: LXD: SSRF via image import from URL allows internal network probing by authenticated users</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-28385-lxd-ssrf-via-image-import-from-url-allows-interna.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-28385-lxd-ssrf-via-image-import-from-url-allows-interna.html</guid>
-      <pubDate>Fri, 06 Nov 2026 18:29:18 GMT</pubDate>
-      <description>Severity: medium. ## Summary
-The LXD image import-from-URL endpoint (`POST /1.0/images` with `source.type=url`) makes server-side HTTP requests to an attacker-supplied URL without any private-IP or loopback blocking. An authenticated user with the `can_create_images` entitlement can force the LXD da</description>
-    </item>
-    <item>
-      <title>CVE-2026-62361: listmonk: SQL Injection in `/api/subscribers/export` bypasses table access control, leaking admin password hashes and SMTP credentials</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-62361-listmonk-sql-injection-in-api-subscribers-export-.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-62361-listmonk-sql-injection-in-api-subscribers-export-.html</guid>
-      <pubDate>Fri, 06 Nov 2026 18:15:17 GMT</pubDate>
-      <description>Severity: medium. ### Summary
-
-A SQL injection vulnerability in `GET /api/subscribers/export` allows an authenticated user with the `subscribers:sql_query` permission to bypass the table access control that exists on the regular query endpoint (`GET /api/subscribers`) and read arbitrary tables from </description>
-    </item>
-    <item>
-      <title>CVE-2026-62284: OSAC operator: Kubeconfig credential-plugin execution and SSRF in console proxy</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-62284-osac-operator-kubeconfig-credential-plugin-execut.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-62284-osac-operator-kubeconfig-credential-plugin-execut.html</guid>
-      <pubDate>Fri, 06 Nov 2026 18:12:40 GMT</pubDate>
-      <description>Severity: high. ### Impact
-
- The console-proxy's RemoteConfigResolver parses kubeconfig data from Kubernetes Secrets using clientcmd.RESTConfigFromKubeConfig without sanitizing the resulting rest.Config. A kubeconfig containing an exec
-  plugin stanza (under users[].user.exec) is faithfully preserve</description>
-    </item>
-    <item>
-      <title>CVE-2026-16454: Eclipse hawkBit DDI has Privilege Escalation that allows Tenant-Isolated Firmware Exfiltration</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-16454-eclipse-hawkbit-ddi-has-privilege-escalation-that.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-16454-eclipse-hawkbit-ddi-has-privilege-escalation-that.html</guid>
-      <pubDate>Fri, 06 Nov 2026 18:09:45 GMT</pubDate>
-      <description>Severity: medium. ## **Description**
-A privilege escalation vulnerability has been identified in the Direct Device Integration (DDI) Controller of **Eclipse hawkBit** (versions 1.0.3 and prior).
-
-This vulnerability allows an authenticated device to escalate its permissions and bypass the strict boun</description>
-    </item>
-    <item>
-      <title>Хостинг-провайдер Beget сообщил об уничтожении облачной инфраструктуры после кибератаки</title>
-      <link>https://cveradar-ah3.pages.dev/item/beget.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/beget.html</guid>
-      <pubDate>Fri, 06 Nov 2026 18:00:42 GMT</pubDate>
-      <description>Представители Beget опубликовали новый отчет о восстановлении после масштабной кибератаки, произошедшей в начале текущей недели. В компании заявили, что облачная инфраструктура была уничтожена и теперь ее приходится фактически строить с нуля. Восстановить все данные VPS также не удастся: файловые бэ</description>
-    </item>
-    <item>
-      <title>Мощь пошика. Вкатываемся в PowerShell и пишем скрипты для Windows</title>
-      <link>https://cveradar-ah3.pages.dev/item/powershell-windows.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/powershell-windows.html</guid>
-      <pubDate>Fri, 06 Nov 2026 17:40:00 GMT</pubDate>
-      <description>&lt;a href="/tag/vybor-redaktora/"&gt;Для подписчиков&lt;/a&gt;&lt;br/&gt;Надоело гуглить, как в PowerShell сделать то и это? Тогда читай дальше, и ты узнаешь, чем PowerShell отличается от Bash, поймешь, как быстро находить нужные функции, даже не зная их названий, и на практических примерах научишься писать свои ком</description>
-    </item>
-    <item>
-      <title>Synology предупреждает о вымогательских атаках, нацеленных на NAS</title>
-      <link>https://cveradar-ah3.pages.dev/item/synology-nas.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/synology-nas.html</guid>
-      <pubDate>Fri, 06 Nov 2026 17:30:22 GMT</pubDate>
-      <description>Представители Synology предупредили владельцев NAS о всплеске активности шифровальщика C3RB3R: злоумышленники взламывают устройства под управлением устаревших версий DiskStation Manager (DSM), шифруют данные и требуют выкуп. Пользователям рекомендуют срочно обновить DSM, а также закрыть доступ к пан</description>
     </item>
   </channel>
 </rss>
