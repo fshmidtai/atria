@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T13:30:13+00:00",
+  "generated_at": "2026-11-09T17:22:47+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -18,10 +18,10 @@
       "the_hacker_news": 30
     },
     "by_topic": {
-      "security": 53,
-      "ai": 40,
+      "security": 52,
+      "ai": 39,
       "dev": 36,
-      "hardware": 10,
+      "hardware": 11,
       "crypto": 6,
       "science": 4,
       "biz": 1
@@ -597,6 +597,43 @@
       "date": "2026-11-04"
     },
     {
+      "uid": "rss:361a84eba57ec0",
+      "source": "rss",
+      "title": "Bitter Hackers Deploy New PapRAT Backdoor in Cyberespionage Campaign Targeting South Asia",
+      "url": "https://thehackernews.com/2026/11/bitter-hackers-deploy-new-paprat.html",
+      "ts": 1794234689.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "The South Asian cyber espionage group known as Bitter (aka APT-C-08, APT-Q-37, Hazy Tiger, Orange Yali, T-APT-17, and TA397) has been observed targeting South Asian organizations with a previously unreported remote access trojan called PapRAT. \"PapRAT has both C++ and Rust implementations,\" Fortinet FortiGuard Labs researcher Cara Lin said. \"Its capabilities include command execution, file",
+      "recipe": "the_hacker_news",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev"
+      ],
+      "date": "2026-11-09"
+    },
+    {
+      "uid": "rss:097299fa07e96e",
+      "source": "rss",
+      "title": "⚡ Weekly Recap: SSHole Exploited, APT Root RCE, Robot Takeovers, 15K Hacked Sites, and More",
+      "url": "https://thehackernews.com/2026/11/weekly-recap-sshole-exploited-apt-root.html",
+      "ts": 1794230905.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "A system doesn't always need a complicated bug to let someone in. Sometimes, a blank password is enough. That's one of the bigger stories this week. And it gets worse when the tools meant to keep systems updated or running safely become part of the attack. Elsewhere, attackers are hiding inside normal web traffic, stealing credentials from network devices, and finding new uses for exposed",
+      "recipe": "the_hacker_news",
+      "buzz": 80,
+      "topics": [
+        "dev",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-09"
+    },
+    {
       "uid": "rss:7b474482f4b9f6",
       "source": "rss",
       "title": "Default 'admin:admin' Server Password Helps Researchers Hack Two Automakers, Unlock and Start Cars",
@@ -757,7 +794,7 @@
       "author": "info@thehackernews.com (The Hacker News)",
       "summary": "Some WordPress sites can still be attacked while they install the fix for an actively exploited flaw, according to Umut Bayram, the Picus Security researcher who found it. The update that installs the fix still unpacks its files using the site's old, unpatched code, so an attacker who strikes at the right moment can run code on the server. The researcher advises blocking web access to the",
       "recipe": "the_hacker_news",
-      "buzz": 30,
+      "buzz": 10,
       "topics": [
         "security",
         "hardware"
@@ -775,7 +812,7 @@
       "author": "info@thehackernews.com (The Hacker News)",
       "summary": "Threat actors are attempting to exploit a recently disclosed security flaw impacting OpenSSH that can enable sign-ins to accounts that have no password set, according to Previdian. The vulnerability, tracked as CVE-[phone] (CVSS score: 8.1) and codenamed SSHole (or *sshole), impacts Linux systems that run OpenSSH on the musl C library with Pluggable Authentication Modules (PAM) disabled,",
       "recipe": "the_hacker_news",
-      "buzz": 30,
+      "buzz": 10,
       "topics": [
         "ai",
         "dev",
@@ -794,7 +831,7 @@
       "author": "info@thehackernews.com (The Hacker News)",
       "summary": "OpenAI on Thursday unveiled GPT‑6 Cyber, which it described as a major step forward in security research that brings together stronger cybersecurity capabilities with a step-change improvement in model alignment. The new model is \"more capable at finding and fixing vulnerabilities, and far more reliable staying within the boundaries researchers set,\" OpenAI said. It has classified the model as",
       "recipe": "the_hacker_news",
-      "buzz": 30,
+      "buzz": 10,
       "topics": [
         "ai",
         "security"
@@ -1106,44 +1143,6 @@
       "topics": [
         "ai",
         "dev"
-      ],
-      "date": "2026-11-04"
-    },
-    {
-      "uid": "rss:d1e786f40eac9d",
-      "source": "rss",
-      "title": "SonicWall Won't Patch EoL GMS Flaws That Could Expose Files, Alter Database Records",
-      "url": "https://thehackernews.com/2026/11/sonicwall-wont-patch-eol-gms-flaws-that.html",
-      "ts": 1793811638.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "SonicWall has warned of two vulnerabilities impacting end-of-life Global Management System (GMS) systems that it said will not be patched. Details of the security flaws, which affect SonicWall GMS 9.5.2 and earlier versions, are below - CVE-[phone] (CVSS score: 9.1) - An unauthenticated file read vulnerability that could allow an attacker with network access to read internal GMS files,",
-      "recipe": "the_hacker_news",
-      "buzz": 10,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-04"
-    },
-    {
-      "uid": "rss:f44e96ac3c23ea",
-      "source": "rss",
-      "title": "Researchers Uncover Prompt Adware Hidden in OpenAI Codex Jailbreak Toolkit",
-      "url": "https://thehackernews.com/2026/11/researchers-uncover-prompt-adware.html",
-      "ts": 1793808403.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Cybersecurity researchers have disclosed details of an OpenAI Codex jailbreak bundle that's designed to modify an artificial intelligence (AI) agent's trusted instructions to insert advertisements for a third-party AI gateway. The phenomenon has been codenamed prompt adware by Check Point Research. Called Haiou (meaning Seagull in Chinese), the jailbreak modifies OpenAI Codex's configuration",
-      "recipe": "the_hacker_news",
-      "buzz": 10,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
       ],
       "date": "2026-11-04"
     }
