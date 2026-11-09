@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T09:27:26+00:00",
+  "generated_at": "2026-11-09T13:30:41+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -10,34 +10,34 @@
     "rss"
   ],
   "totals": {
-    "items": 132,
+    "items": 133,
     "by_source": {
       "hn": 40,
       "cve": 30,
-      "github": 12,
+      "github": 13,
       "rss": 50
     },
     "by_recipe": {
       "hn_sec": 40,
       "gh_advisories": 30,
       "hackersnews": 30,
-      "github_sec": 12,
+      "github_sec": 13,
       "schneier": 10,
       "krebs": 10
     },
     "by_topic": {
       "security": 109,
-      "ai": 72,
-      "dev": 58,
-      "hardware": 14,
+      "ai": 73,
+      "dev": 61,
+      "hardware": 15,
       "biz": 10,
-      "crypto": 6,
+      "crypto": 8,
       "science": 4
     },
     "top_domains": [
       [
         "github.com",
-        44
+        45
       ],
       [
         "thehackernews.com",
@@ -1451,12 +1451,12 @@
       "title": "arnold117/iOS-NOIR",
       "url": "https://github.com/arnold117/iOS-NOIR",
       "ts": 1793934227.0,
-      "points": 310,
-      "comments": 58,
+      "points": 312,
+      "comments": 59,
       "author": "arnold117",
       "summary": "No-jailbreak iOS privacy, entitlement, sandbox & telemetry forensic auditor (inspired by Verlintas/NOIR)",
       "recipe": "github_sec",
-      "buzz": 494,
+      "buzz": 499,
       "topics": [
         "ai",
         "security"
@@ -1469,12 +1469,12 @@
       "title": "huggingface/safeagents",
       "url": "https://github.com/huggingface/safeagents",
       "ts": 1793195562.0,
-      "points": 131,
-      "comments": 8,
+      "points": 134,
+      "comments": 9,
       "author": "huggingface",
       "summary": "Safely run your agents using any coding harness",
       "recipe": "github_sec",
-      "buzz": 155,
+      "buzz": 161,
       "topics": [
         "ai",
         "dev"
@@ -1512,29 +1512,11 @@
       "author": "0x45dd",
       "summary": "Autonomous agentic network penetration-testing tool (authorized use only)",
       "recipe": "github_sec",
-      "buzz": 113,
+      "buzz": 103,
       "topics": [
         "ai"
       ],
       "date": "2026-11-02"
-    },
-    {
-      "uid": "gh:BountyForge-xyz/pwn-skill",
-      "source": "github",
-      "title": "BountyForge-xyz/pwn-skill",
-      "url": "https://github.com/BountyForge-xyz/pwn-skill",
-      "ts": 1793960371.0,
-      "points": 52,
-      "comments": 6,
-      "author": "BountyForge-xyz",
-      "summary": "Agent skill for binary exploitation and CTF pwn — stack, heap, format string, kernel, seccomp bypass.",
-      "recipe": "github_sec",
-      "buzz": 100,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-06"
     },
     {
       "uid": "gh:Balanov/skein",
@@ -1552,6 +1534,120 @@
         "ai"
       ],
       "date": "2026-11-02"
+    },
+    {
+      "uid": "rss:951b96997c00dd",
+      "source": "rss",
+      "title": "AI Security",
+      "url": "https://www.schneier.com/blog/archives/2026/11/ai-security.html",
+      "ts": 1794225994.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Bruce Schneier",
+      "summary": "<p>Two weeks ago, I attended the <a href=\"https://unpromptedcon.org/\">[un]prompted</a> AI security conference in San Francisco. It was an excellent event: three days of very dense talks about all aspects of AI security. (My talk was about integrous AI, and I will post it when it is online.)</p> <p>AI security can be divided into three broad topics. It&#8217;s important for researchers to understan",
+      "recipe": "schneier",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-09"
+    },
+    {
+      "uid": "gh:BountyForge-xyz/pwn-skill",
+      "source": "github",
+      "title": "BountyForge-xyz/pwn-skill",
+      "url": "https://github.com/BountyForge-xyz/pwn-skill",
+      "ts": 1793960371.0,
+      "points": 52,
+      "comments": 6,
+      "author": "BountyForge-xyz",
+      "summary": "Agent skill for binary exploitation and CTF pwn — stack, heap, format string, kernel, seccomp bypass.",
+      "recipe": "github_sec",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-06"
+    },
+    {
+      "uid": "rss:7b474482f4b9f6",
+      "source": "rss",
+      "title": "Default 'admin:admin' Server Password Helps Researchers Hack Two Automakers, Unlock and Start Cars",
+      "url": "https://thehackernews.com/2026/11/default-adminadmin-server-password.html",
+      "ts": 1794223673.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "The login systems behind two car brands' mobile apps could be taken over completely, two security researchers found, allowing them to access any customer's account and, for an owner with a connected car, unlock the doors and start the engine. Both apps signed customers in through ForgeRock, an identity platform now part of Ping Identity, and on those servers the researchers reached an",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "dev",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-09"
+    },
+    {
+      "uid": "rss:099ca1c739d2c7",
+      "source": "rss",
+      "title": "Web3Auth Flaw Exploited to Steal Keplr Crypto, Provider Empties Other Wallets for Safety",
+      "url": "https://thehackernews.com/2026/11/web3auth-flaw-exploited-to-steal-keplr.html",
+      "ts": 1794221785.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Some people who set up a Keplr crypto wallet with their Google or Apple account have had money stolen by an attacker. Keplr uses a company called Web3Auth to run that Google and Apple sign-in. The attacker used a security flaw at that company to reach the wallets, both companies said late last week. Web3Auth then used the attacker's own route to empty other at-risk wallets before the attacker",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "crypto",
+        "security"
+      ],
+      "date": "2026-11-09"
+    },
+    {
+      "uid": "rss:60cde870722437",
+      "source": "rss",
+      "title": "LNbits Urges All Operators to Shut Down Their Bitcoin Lightning Wallet Servers Amid Attacks",
+      "url": "https://thehackernews.com/2026/11/lnbits-urges-all-operators-to-shut-down.html",
+      "ts": 1794218481.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Everyone running LNbits, a free, open-source Bitcoin Lightning wallet system, should shut down their servers now because of a wave of attacks, the project said yesterday. It has several security fixes to release and asked operators to be careful until they are out. One operator said new accounts used an exploit to withdraw 2,285,545 satoshis, about 0.023 bitcoin, from his server before he could",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "crypto",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-09"
+    },
+    {
+      "uid": "rss:7230f925fc3053",
+      "source": "rss",
+      "title": "Taiwan-Based Hacker Used BOSSAI AI Agents to Steal Taipei Emergency Dispatch Records",
+      "url": "https://thehackernews.com/2026/11/taiwan-based-hacker-used-bossai-ai.html",
+      "ts": 1794214910.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "A single attacker using AI agents pulled emergency dispatch records covering seven Taipei districts, researchers at Acronis's Threat Research Unit said last week. The agents also found a Taipei fire department platform exposing patient data from 2018, including ECG readings and ambulance video footage, without a login. The researchers are highly confident that the attacker is a single person",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev"
+      ],
+      "date": "2026-11-09"
     },
     {
       "uid": "rss:819ca9452f53d6",
@@ -1606,6 +1702,23 @@
         "security"
       ],
       "date": "2026-11-09"
+    },
+    {
+      "uid": "gh:BowSinceEnt/resocket-elden-ring-cheat-2026-trainer-mod-menu-tools",
+      "source": "github",
+      "title": "BowSinceEnt/resocket-elden-ring-cheat-2026-trainer-mod-menu-tools",
+      "url": "https://github.com/BowSinceEnt/resocket-elden-ring-cheat-2026-trainer-mod-menu-tools",
+      "ts": 1793879929.0,
+      "points": 57,
+      "comments": 0,
+      "author": "BowSinceEnt",
+      "summary": "Elden Ring Cheat 2026 — Single-player modding and gameplay toolkit concept featuring character build optimization, rune planning, weapon upgrades, boss strategies, save management and offline trainer research.",
+      "recipe": "github_sec",
+      "buzz": 67,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-11-05"
     },
     {
       "uid": "gh:ratomirjovanovic/pandaward",
@@ -1753,59 +1866,6 @@
       "date": "2026-11-06"
     },
     {
-      "uid": "rss:d775a103c59030",
-      "source": "rss",
-      "title": "Microsoft Paint RCE Fix Now Available, but Windows Update Won't Deliver It",
-      "url": "https://thehackernews.com/2026/11/microsoft-paint-rce-fix-now-available.html",
-      "ts": 1793966803.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "A fix for CVE-[phone], a remote code execution flaw in Windows Paint, is now in the Microsoft Store. Paint gets this fix only through a Store update, not through Windows updates. The fixed build, 11.2609.401.0, was the newest Paint build in all ten countries The Hacker News checked today. The flaw is an out-of-bounds read that could let an attacker run code over a network. Microsoft rates",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-06"
-    },
-    {
-      "uid": "rss:7dd8ccbd5a1737",
-      "source": "rss",
-      "title": "Malicious Browser Extensions Could Use Claude Dispatch to Run Code on Users' Computers",
-      "url": "https://thehackernews.com/2026/11/malicious-browser-extensions-could-use.html",
-      "ts": 1793966795.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "A browser extension that can run scripts on claude.ai could make Claude Desktop run code on a person's computer, researchers at Forever Security, an endpoint security company, showed in a test. The attack needs Dispatch, a Claude feature that lets people send tasks from their phone to Claude Desktop. The flaw that makes this possible can still be exploited, the researchers said earlier this",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-06"
-    },
-    {
-      "uid": "rss:53d4ee7d94e589",
-      "source": "rss",
-      "title": "The Flood is Coming And The Pipes Were Already Full",
-      "url": "https://thehackernews.com/2026/11/the-flood-is-coming-and-pipes-were.html",
-      "ts": 1793964600.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "An update on Athena, and some unsolicited predictions on what's coming next On Saturday, Dario Amodei published We Must Pace the Frontier. I agree with him. Go read it if you haven't. I've spent the summer looking at what these models find, and the gap he describes between what they can do and what the rest of us are ready for is the one I've been staring at since May. The hardest piece of his",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-06"
-    },
-    {
       "uid": "gh:0xZyyz/ctfd-warden",
       "source": "github",
       "title": "0xZyyz/ctfd-warden",
@@ -1878,22 +1938,57 @@
       "date": "2026-11-03"
     },
     {
-      "uid": "rss:242c7ee3c56913",
+      "uid": "rss:d775a103c59030",
       "source": "rss",
-      "title": "AI Vulnerability Finding",
-      "url": "https://www.schneier.com/blog/archives/2026/11/ai-vulnerability-finding-2.html",
-      "ts": 1793620967.0,
+      "title": "Microsoft Paint RCE Fix Now Available, but Windows Update Won't Deliver It",
+      "url": "https://thehackernews.com/2026/11/microsoft-paint-rce-fix-now-available.html",
+      "ts": 1793966803.0,
       "points": 0,
       "comments": 0,
-      "author": "Bruce Schneier",
-      "summary": "<p>A <a href=\"https://x.com/NickADobos/status/[phone]23901\">comment</a>:</p> <blockquote><p>3% of &#8216;critical&#8217; software security bugs, in all of recorded history, have been found in the last month. This is on pace to find another ~100,000 bugs this year alone, adding ~26% more vulnerabilities to the all time total Do you realize how fucking insane that is?</p></blockquote> <p>Yes.",
-      "recipe": "schneier",
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "A fix for CVE-[phone], a remote code execution flaw in Windows Paint, is now in the Microsoft Store. Paint gets this fix only through a Store update, not through Windows updates. The fixed build, 11.2609.401.0, was the newest Paint build in all ten countries The Hacker News checked today. The flaw is an out-of-bounds read that could let an attacker run code over a network. Microsoft rates",
+      "recipe": "hackersnews",
       "buzz": 10,
       "topics": [
         "ai",
         "security"
       ],
-      "date": "2026-11-02"
+      "date": "2026-11-06"
+    },
+    {
+      "uid": "rss:7dd8ccbd5a1737",
+      "source": "rss",
+      "title": "Malicious Browser Extensions Could Use Claude Dispatch to Run Code on Users' Computers",
+      "url": "https://thehackernews.com/2026/11/malicious-browser-extensions-could-use.html",
+      "ts": 1793966795.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "A browser extension that can run scripts on claude.ai could make Claude Desktop run code on a person's computer, researchers at Forever Security, an endpoint security company, showed in a test. The attack needs Dispatch, a Claude feature that lets people send tasks from their phone to Claude Desktop. The flaw that makes this possible can still be exploited, the researchers said earlier this",
+      "recipe": "hackersnews",
+      "buzz": 10,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-06"
+    },
+    {
+      "uid": "rss:53d4ee7d94e589",
+      "source": "rss",
+      "title": "The Flood is Coming And The Pipes Were Already Full",
+      "url": "https://thehackernews.com/2026/11/the-flood-is-coming-and-pipes-were.html",
+      "ts": 1793964600.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "An update on Athena, and some unsolicited predictions on what's coming next On Saturday, Dario Amodei published We Must Pace the Frontier. I agree with him. Go read it if you haven't. I've spent the summer looking at what these models find, and the gap he describes between what they can do and what the rest of us are ready for is the one I've been staring at since May. The hardest piece of his",
+      "recipe": "hackersnews",
+      "buzz": 10,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-11-06"
     },
     {
       "uid": "rss:d0ae870a70402d",
@@ -2189,79 +2284,6 @@
       "date": "2026-11-04"
     },
     {
-      "uid": "rss:aacde79ee114df",
-      "source": "rss",
-      "title": "APT29-Linked Hackers Hijack Web Analytics Script to Deliver iOS and Android Exploits",
-      "url": "https://thehackernews.com/2026/11/apt29-linked-hackers-hijack-web.html",
-      "ts": 1793802472.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "The Russia-linked threat actor known as APT29 is presumed to be behind a large-scale watering hole campaign targeting iOS and Android users through compromised websites, fake domains, and a supply chain attack involving a Ukrainian web analytics service called Plerdy SEO Tracker. \"The injected JavaScript code collects browser and device attributes,\" Sekoia researchers Amaury-Jacques Garçon and",
-      "recipe": "hackersnews",
-      "buzz": 10,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-04"
-    },
-    {
-      "uid": "rss:e9ce784f8581ae",
-      "source": "rss",
-      "title": "Critical Rails Flaw Lets Attackers Write Server Files via Crafted ImageMagick Uploads",
-      "url": "https://thehackernews.com/2026/11/critical-rails-flaw-lets-attackers.html",
-      "ts": 1793794024.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "A critical flaw in Ruby on Rails could allow an unauthenticated attacker to write arbitrary files on an app's server by uploading a crafted file if the app processes uploads using ImageMagick. The Rails project disclosed the flaw in&nbsp;an advisory&nbsp;and fixed it in versions 8.1.4.1 and 8.0.5.2. The flaw is in Active Storage, the part of Rails that handles file uploads. Some apps store",
-      "recipe": "hackersnews",
-      "buzz": 10,
-      "topics": [
-        "ai",
-        "hardware"
-      ],
-      "date": "2026-11-04"
-    },
-    {
-      "uid": "rss:30689652636fcf",
-      "source": "rss",
-      "title": "Xen Hypervisor Flaws Let One Malicious VM Read and Write Any Other VM's Memory",
-      "url": "https://thehackernews.com/2026/11/xen-hypervisor-flaws-let-one-malicious.html",
-      "ts": 1793792787.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Two flaws in the Xen hypervisor allow a malicious guest virtual machine (VM) to read and write the memory of other VMs on the same host, including dom0. Dom0 is the VM that, by default, has full permissions and manages the others. Patches are out, and there is no known mitigation, the Xen Project said in an&nbsp;advisory&nbsp;on November 3. All Xen versions from 4.6 onward are vulnerable,",
-      "recipe": "hackersnews",
-      "buzz": 10,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-04"
-    },
-    {
-      "uid": "rss:c62e050b3bcf01",
-      "source": "rss",
-      "title": "Radio With No Radar: Why Agent Runtime Security Fails Without the Layers Beneath It",
-      "url": "https://thehackernews.com/2026/11/radio-with-no-radar-why-agent-runtime.html",
-      "ts": 1793792060.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Nearly every agent security pitch now ends on the same promise: the product stops the bad action in real time. The promise holds for one kind of agent, the kind whose traffic passes through a gateway the enterprise owns. Most agents never touch one. One recent case shows what that gap looks like in practice. An employee asked an AI assistant to trigger a mass-email automation. The automation",
-      "recipe": "hackersnews",
-      "buzz": 10,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-04"
-    },
-    {
       "uid": "rss:8651e625050eb8",
       "source": "rss",
       "title": "Widespread PHP Flaw May Cause Many Site Outages Today",
@@ -2411,6 +2433,24 @@
       "date": "2026-09-25"
     },
     {
+      "uid": "rss:242c7ee3c56913",
+      "source": "rss",
+      "title": "AI Vulnerability Finding",
+      "url": "https://www.schneier.com/blog/archives/2026/11/ai-vulnerability-finding-2.html",
+      "ts": 1793620967.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Bruce Schneier",
+      "summary": "<p>A <a href=\"https://x.com/NickADobos/status/[phone]23901\">comment</a>:</p> <blockquote><p>3% of &#8216;critical&#8217; software security bugs, in all of recorded history, have been found in the last month. This is on pace to find another ~100,000 bugs this year alone, adding ~26% more vulnerabilities to the all time total Do you realize how fucking insane that is?</p></blockquote> <p>Yes.",
+      "recipe": "schneier",
+      "buzz": 0,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-02"
+    },
+    {
       "uid": "rss:ee5a3711ce6c64",
       "source": "rss",
       "title": "Friday Squid Blogging: Bigfin Squid Off California Coast",
@@ -2501,23 +2541,6 @@
         "security"
       ],
       "date": "2026-10-26"
-    },
-    {
-      "uid": "rss:c5b7d9382d6e02",
-      "source": "rss",
-      "title": "Friday Squid Blogging: Increasing Squid Populations",
-      "url": "https://www.schneier.com/blog/archives/2026/10/friday-squid-blogging-increasing-squid-populations.html",
-      "ts": 1792789255.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Bruce Schneier",
-      "summary": "<p>This <a href=\"https://www.sciencealert.com/squid-are-taking-over-the-ocean-and-not-for-the-reason-you-might-think\">article</a> in <i>Nature</i> argues that it&#8217;s due to an overfishing of predators and warming sea temperatures.</p> <p>As usual, you can also use this squid post to talk about the security stories in the news that I haven&#8217;t covered.</p> <p><a href=\"https://www.schneier.c",
-      "recipe": "schneier",
-      "buzz": 0,
-      "topics": [
-        "security"
-      ],
-      "date": "2026-10-23"
     }
   ]
 }
