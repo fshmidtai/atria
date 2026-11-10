@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-10T09:05:46+00:00",
+  "generated_at": "2026-11-10T13:21:55+00:00",
   "sources_used": [
     "rss",
     "rss",
@@ -11,37 +11,31 @@
     "rss"
   ],
   "totals": {
-    "items": 128,
+    "items": 91,
     "by_source": {
-      "hn": 5,
+      "hn": 7,
       "github": 2,
-      "rss": 81,
-      "arxiv": 40
+      "rss": 82
     },
     "by_recipe": {
       "economist_fn": 40,
-      "arxiv_qfin": 40,
       "cnbc_top": 30,
-      "ft_home": 11,
-      "hn_fintech": 5,
+      "ft_home": 12,
+      "hn_fintech": 7,
       "github_fin": 2
     },
     "by_topic": {
-      "ai": 64,
-      "biz": 41,
-      "dev": 32,
-      "science": 14,
-      "hardware": 9,
-      "crypto": 7,
-      "security": 6
+      "ai": 42,
+      "biz": 28,
+      "dev": 15,
+      "crypto": 5,
+      "hardware": 4,
+      "security": 2,
+      "science": 2
     },
     "top_domains": [
       [
         "economist.com",
-        40
-      ],
-      [
-        "arxiv.org",
         40
       ],
       [
@@ -50,11 +44,11 @@
       ],
       [
         "ft.com",
-        11
+        12
       ],
       [
         "news.ycombinator.com",
-        2
+        3
       ],
       [
         "github.com",
@@ -62,6 +56,10 @@
       ],
       [
         "realizefi.com",
+        1
+      ],
+      [
+        "finterm.ai",
         1
       ],
       [
@@ -152,12 +150,12 @@
       "title": "zandy700/Ultimate-Tracker",
       "url": "https://github.com/zandy700/Ultimate-Tracker",
       "ts": 1793854789.0,
-      "points": 176,
+      "points": 180,
       "comments": 22,
       "author": "zandy700",
       "summary": "Predicts how news-driven supply-chain shocks ripple across S&P 500 stocks, with an event-study backtest and a hash-chained public prediction ledger. Built on MIT open-source SEC supply-graph code.",
       "recipe": "github_fin",
-      "buzz": 252,
+      "buzz": 256,
       "topics": [
         "ai",
         "hardware"
@@ -182,15 +180,33 @@
       "date": "2026-11-09"
     },
     {
-      "uid": "rss:fb2947e3312ca1",
+      "uid": "rss:98e4a4fc41486c",
       "source": "rss",
-      "title": "Trump says FBI is ‘looking into’ Nvidia’s Jensen Huang",
-      "url": "https://www.ft.com/content/cbabf2da-2079-4b69-88e3-0ba84cf8d6fd?syn-25a6b1a6=1",
-      "ts": 1794270956.0,
+      "title": "Anthropic targets valuation of up to $1.4tn in IPO",
+      "url": "https://www.ft.com/content/5654e210-4be3-4550-b975-129c9a2e7fe5?syn-25a6b1a6=1",
+      "ts": 1794316068.0,
       "points": 0,
       "comments": 0,
       "author": "",
-      "summary": "US company has been rocked by allegations its chief executive had an affair with a Chinese spy",
+      "summary": "The Claude maker says it and some of its investors plan to sell shares for as much as $78 each",
+      "recipe": "ft_home",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "biz"
+      ],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "rss:30b2405d719a4d",
+      "source": "rss",
+      "title": "SoftBank slumps to $7bn loss on US data centre writedown",
+      "url": "https://www.ft.com/content/5ceed157-0016-4822-a272-8b607911da5e?syn-25a6b1a6=1",
+      "ts": 1794308157.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "AI-focused Japanese group blames first quarterly loss in nearly two years on ‘evolving requirements’ in US projects",
       "recipe": "ft_home",
       "buzz": 80,
       "topics": [
@@ -199,36 +215,21 @@
       "date": "2026-11-10"
     },
     {
-      "uid": "rss:cb5941a1690943",
+      "uid": "rss:503a86f77cfc6f",
       "source": "rss",
-      "title": "Can Jensen Huang survive as Nvidia’s CEO after spy scandal?",
-      "url": "https://www.ft.com/content/0b20d24a-580a-41df-a5f3-7f7dba4f552f?syn-25a6b1a6=1",
-      "ts": 1794243772.0,
+      "title": "The index impact of SpaceX’s record-shattering IPO",
+      "url": "https://www.ft.com/content/141176cd-79ce-4633-9def-eaee96db1762",
+      "ts": 1794305482.0,
       "points": 0,
       "comments": 0,
       "author": "",
-      "summary": "Chipmaker’s co-founder has no obvious successor as leader of world’s second-largest company",
+      "summary": "Revisiting the Operation Overlord of IPO stuffing",
       "recipe": "ft_home",
       "buzz": 80,
       "topics": [
-        "biz",
-        "hardware"
+        "science",
+        "biz"
       ],
-      "date": "2026-11-09"
-    },
-    {
-      "uid": "rss:e29cf9551a059e",
-      "source": "rss",
-      "title": "Too big to fire",
-      "url": "https://www.ft.com/content/e1c37583-0b76-48ab-96b7-8e7da453fa88?syn-25a6b1a6=1",
-      "ts": 1794294616.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "Should Jensen Huang stay or go?",
-      "recipe": "ft_home",
-      "buzz": 80,
-      "topics": [],
       "date": "2026-11-10"
     },
     {
@@ -247,34 +248,89 @@
       "date": "2026-11-10"
     },
     {
-      "uid": "rss:04b6fe1a69dfe3",
+      "uid": "rss:ba67863e92e2b9",
       "source": "rss",
-      "title": "Japan can tell the world what really matters when prepping",
-      "url": "https://www.ft.com/content/559a8eeb-0e91-4920-8321-5066f81ea015?syn-25a6b1a6=1",
-      "ts": 1794271650.0,
+      "title": "Trump is taking the Alamo route",
+      "url": "https://www.ft.com/content/66e74f23-e61e-43de-aaf6-c2b61648da50?syn-25a6b1a6=1",
+      "ts": 1794311236.0,
       "points": 0,
       "comments": 0,
       "author": "",
-      "summary": "Telling people to stock up is one thing but the Japanese know that building a stockpile of civil credibility requires greater effort",
-      "recipe": "ft_home",
-      "buzz": 80,
-      "topics": [],
-      "date": "2026-11-10"
-    },
-    {
-      "uid": "rss:13b5d8a18af350",
-      "source": "rss",
-      "title": "No, Brits have not fallen out of love with work",
-      "url": "https://www.ft.com/content/9be099de-58b1-471c-aa05-92622585ffac?syn-25a6b1a6=1",
-      "ts": 1794286829.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "There is a more straightforward reason for employees’ decreased willingness to go above and beyond — not enough money and control",
+      "summary": "Accepting defeat with grace would go against a lifetime of going for broke",
       "recipe": "ft_home",
       "buzz": 80,
       "topics": [
         "ai"
+      ],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "rss:77d31fcfeb1f26",
+      "source": "rss",
+      "title": "VW pivots again as ‘In China, For China’ runs out of road",
+      "url": "https://www.ft.com/content/1186c272-afc7-4561-9bf8-aa3bc0464a91?syn-25a6b1a6=1",
+      "ts": 1794286821.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "The German group is changing its strategy in the world’s largest car market as it struggles with a sharp downturn",
+      "recipe": "ft_home",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "biz"
+      ],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "rss:fb2947e3312ca1",
+      "source": "rss",
+      "title": "Trump says FBI is ‘looking into’ Nvidia’s Jensen Huang",
+      "url": "https://www.ft.com/content/cbabf2da-2079-4b69-88e3-0ba84cf8d6fd?syn-25a6b1a6=1",
+      "ts": 1794270956.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "US company has been rocked by allegations its chief executive had an affair with a Chinese spy",
+      "recipe": "ft_home",
+      "buzz": 80,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "rss:25cf5405cabdbb",
+      "source": "rss",
+      "title": "Nvidia’s ‘key man’ risk",
+      "url": "https://www.ft.com/content/1c033a7e-ea9e-4509-8e9b-7a0df283d6ee?syn-25a6b1a6=1",
+      "ts": 1794248235.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "Some of the leading AI companies are dangerously reliant on single executives",
+      "recipe": "ft_home",
+      "buzz": 80,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-11-09"
+    },
+    {
+      "uid": "rss:7e3eb5ee07495f",
+      "source": "rss",
+      "title": "Top Federal Reserve official considers largest rate rise since 2022",
+      "url": "https://www.ft.com/content/72abed21-6043-4b2b-81b1-f3a2547da5b7?syn-25a6b1a6=1",
+      "ts": 1794301209.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "Governor Christopher Waller says policymakers should weigh a 50-basis-point move if US inflation fails to slow",
+      "recipe": "ft_home",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev"
       ],
       "date": "2026-11-10"
     },
@@ -301,7 +357,7 @@
       "source": "rss",
       "title": "US removes planes from second UK military base after Iran threat",
       "url": "https://www.ft.com/content/c2992864-c0ab-4e38-b47a-5c2c1e3cb056?syn-25a6b1a6=1",
-      "ts": 1794299096.0,
+      "ts": 1794304547.0,
       "points": 0,
       "comments": 0,
       "author": "",
@@ -318,7 +374,7 @@
     {
       "uid": "rss:f77715b75cd04f",
       "source": "rss",
-      "title": "Republican lawmaker moves to impeach US defence secretary Pete Hegseth",
+      "title": "Republican lawmaker moves to impeach Hegseth",
       "url": "https://www.ft.com/content/ed09fc96-5ad5-4ff8-a8a9-900740c6fcbb?syn-25a6b1a6=1",
       "ts": 1794262551.0,
       "points": 0,
@@ -331,312 +387,21 @@
       "date": "2026-11-09"
     },
     {
-      "uid": "rss:30b2405d719a4d",
+      "uid": "rss:df20b141791bcf",
       "source": "rss",
-      "title": "SoftBank posts unexpected $7bn loss on data centre writedown",
-      "url": "https://www.ft.com/content/5ceed157-0016-4822-a272-8b607911da5e?syn-25a6b1a6=1",
-      "ts": 1794299599.0,
+      "title": "Jensen Huang's affair with alleged Chinese spy further complicates Nvidia’s China problem",
+      "url": "https://www.cnbc.com/2026/11/10/jensen-huang-nvidia-china-ties.html",
+      "ts": 1794312001.0,
       "points": 0,
       "comments": 0,
       "author": "",
-      "summary": "AI-focused Japanese group blames first quarterly loss in nearly two years on ‘evolving requirements’ in US projects",
-      "recipe": "ft_home",
-      "buzz": 80,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-10"
-    },
-    {
-      "uid": "rss:04df1276f3c362",
-      "source": "rss",
-      "title": "Talks aimed at ending Russia’s war in Ukraine resume",
-      "url": "https://www.ft.com/content/352539b3-41fd-4418-a171-43975897ec0e?syn-25a6b1a6=1",
-      "ts": 1794286829.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "But expectations of a breakthrough are low because Putin is showing no sign of wanting to halt the conflict",
-      "recipe": "ft_home",
-      "buzz": 80,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-10"
-    },
-    {
-      "uid": "arxiv:2611.12565v1",
-      "source": "arxiv",
-      "title": "That Time of the Year Again: Government Pay Revisions in the Aggregate Economy",
-      "url": "https://arxiv.org/abs/2611.12565v1",
-      "ts": 1794238131.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Faisal Quaiyyum",
-      "summary": "Public pay is set by law in nominal terms, so inflation erodes its real value between legal acts until the government revises it. I model each revision as the choice of a forward-looking government, shaped by two costs that push in opposite directions. A fixed cost of acting makes revisions large and rare, whereas a convex cost of financing the increase at once makes them small and frequent. Throu",
-      "recipe": "arxiv_qfin",
-      "buzz": 80,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-09"
-    },
-    {
-      "uid": "arxiv:2611.12459v1",
-      "source": "arxiv",
-      "title": "Fiscal Commitment and the Additionality of Philanthropy: Heterogeneous Donor Purposes in a Shared Public Budget",
-      "url": "https://arxiv.org/abs/2611.12459v1",
-      "ts": 1794233464.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Christian Jaag",
-      "summary": "Philanthropic donors often value different public services, while a budget authority allocates public spending across a shared portfolio. Policy frameworks frequently seek to ensure that private finance supplements rather than displaces public funding. We distinguish baseline additionality, which preserves pre-gift public funding, from portfolio preservation, which preserves a service's provision",
-      "recipe": "arxiv_qfin",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "dev",
-        "science",
-        "biz"
-      ],
-      "date": "2026-11-09"
-    },
-    {
-      "uid": "arxiv:2611.12389v1",
-      "source": "arxiv",
-      "title": "Diversification Across Predictors: Heterogeneous Ensemble Learning for Cross-Sectional Return Prediction",
-      "url": "https://arxiv.org/abs/2611.12389v1",
-      "ts": 1794230934.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Danning Li",
-      "summary": "Cross-sectional stock return prediction remains challenging due to extremely low signal-to-noise ratios, high-dimensional factor spaces, and non-stationary predictor effectiveness. Individual model classes exhibit complementary failure modes in this regime: neural networks overfit noise due to high variance, while linear models underfit nonlinear structure due to high bias. We propose a heterogene",
-      "recipe": "arxiv_qfin",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "science"
-      ],
-      "date": "2026-11-09"
-    },
-    {
-      "uid": "arxiv:2611.12347v1",
-      "source": "arxiv",
-      "title": "Fueling Inflation Risks: An Oil Shortage Scenario",
-      "url": "https://arxiv.org/abs/2611.12347v1",
-      "ts": 1794229311.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Christiane Baumeister",
-      "summary": "Central banks routinely use alternative scenarios to assess risks to the economic outlook, but these are usually generated from linear models that are unable to speak to the likelihood of extreme outcomes. We develop a nonlinear modeling framework that turns a narrative oil market scenario into a fully probabilistic assessment of the dynamics of oil and gasoline prices, aggregate inflation, and ho",
-      "recipe": "arxiv_qfin",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "dev",
-        "science",
-        "biz"
-      ],
-      "date": "2026-11-09"
-    },
-    {
-      "uid": "arxiv:2611.12117v1",
-      "source": "arxiv",
-      "title": "Does fare communication format matter? Evidence from a randomised experiment in public transport",
-      "url": "https://arxiv.org/abs/2611.12117v1",
-      "ts": 1794216630.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Hannes Wallimann",
-      "summary": "Highly concentrated demand in public transport places pressure on infrastructure and reduces service quality. Pricing instruments-such as discounted off-peak single fare tickets-are a widely used tool for rescheduling demand across time. Yet no study has directly examined whether the price communication format of single fare tickets affects travel behaviour in terms of departure-time rescheduling.",
-      "recipe": "arxiv_qfin",
-      "buzz": 80,
-      "topics": [
-        "dev"
-      ],
-      "date": "2026-11-09"
-    },
-    {
-      "uid": "rss:8141dcd6ea3d2d",
-      "source": "rss",
-      "title": "Jensen Huang affair puts Nvidia's future at risk, with no clear successor to the renowned CEO",
-      "url": "https://www.cnbc.com/2026/11/09/jensen-huang-affair-nvidia-succession.html",
-      "ts": 1794293550.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "Jensen Huang is practically synonymous with Nvidia, the chipmaker he co-founded in 1993 and turned into one of the most valuable companies on the planet.",
+      "summary": "The allegations against Jensen Huang have brought new attention to the Nvidia CEO's potential influence over U.S. policy on chip sales to China.",
       "recipe": "cnbc_top",
       "buzz": 80,
       "topics": [
         "ai",
         "hardware"
       ],
-      "date": "2026-11-10"
-    },
-    {
-      "uid": "rss:f4401165d9408d",
-      "source": "rss",
-      "title": "Trump’s C-SPAN call marks latest surprise post-midterm appearance",
-      "url": "https://www.cnbc.com/2026/11/10/trump-cspan-call-elections.html",
-      "ts": 1794291549.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "Trump called C-SPAN's new primetime show unannounced after a surprise White House briefing-room and ballroom appearances.",
-      "recipe": "cnbc_top",
-      "buzz": 80,
-      "topics": [],
-      "date": "2026-11-10"
-    },
-    {
-      "uid": "rss:063a1e8de4e9d7",
-      "source": "rss",
-      "title": "FDA warns of vision loss risk linked to popular GLP-1 drugs like Wegovy, Zepbound",
-      "url": "https://www.cnbc.com/2026/11/10/fda-warning-vision-loss-glp1-wegovy-zepbound.html",
-      "ts": 1794298969.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "The agency has found evidence of a potential increased risk of a rare eye condition linked to the use of GLP-1 drugs used for weight management and diabetes.",
-      "recipe": "cnbc_top",
-      "buzz": 80,
-      "topics": [
-        "dev"
-      ],
-      "date": "2026-11-10"
-    },
-    {
-      "uid": "rss:853d1f5b76a588",
-      "source": "rss",
-      "title": "Trump says Iran war to end 'fairly soon,' plays down prospects of new strikes",
-      "url": "https://www.cnbc.com/2026/11/10/trump-iran-war-hormuz-.html",
-      "ts": 1794294002.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "“Iran militarily is effectively over,” Trump said, citing the destruction of its navy and surging inflation that he said has hollowed out Tehran's economy.",
-      "recipe": "cnbc_top",
-      "buzz": 80,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-10"
-    },
-    {
-      "uid": "rss:764a0d0665f005",
-      "source": "rss",
-      "title": "Hegseth impeachment articles introduced by Rep. Massie",
-      "url": "https://www.cnbc.com/2026/11/09/pete-hegseth-impeachment-articles-massie.html",
-      "ts": 1794264072.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "The House is likely to vote this week on articles of impeachment against Defense Secretary Pete Hegseth filed by Republican Rep. Thomas Masie.",
-      "recipe": "cnbc_top",
-      "buzz": 80,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-09"
-    },
-    {
-      "uid": "rss:e10a5b16f8eea6",
-      "source": "rss",
-      "title": "SoftBank swings to $7 billion loss after U.S. data center hit and Intel share decline",
-      "url": "https://www.cnbc.com/2026/11/10/softbank-2q-earnings-tech-selloff.html",
-      "ts": 1794301297.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "SoftBank Group announces fiscal second-quarter results for the year ending March 31, 2027.",
-      "recipe": "cnbc_top",
-      "buzz": 80,
-      "topics": [],
-      "date": "2026-11-10"
-    },
-    {
-      "uid": "rss:fdd04700534153",
-      "source": "rss",
-      "title": "Trump sees 'strong inclination' to end Russia-Ukraine war ahead of U.S.-brokered peace talks",
-      "url": "https://www.cnbc.com/2026/11/10/trump-russia-ukraine-abu-dhabi-war-talks.html",
-      "ts": 1794285997.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "President Trump signaled optimism for the end of Russia's war in Ukraine ahead of trilateral negotiation talks set to commence later today in Abu Dhabi.",
-      "recipe": "cnbc_top",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "dev"
-      ],
-      "date": "2026-11-10"
-    },
-    {
-      "uid": "rss:eb821882a84353",
-      "source": "rss",
-      "title": "Trump questions midterm election results, revives voting-machine conspiracy",
-      "url": "https://www.cnbc.com/2026/11/09/trump-election-results-democrats.html",
-      "ts": 1794264009.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "President Trump's questioning of the legitimacy of his loss in the 2020 election culminated with an attack on the U.S. Capitol by a mob of his supporters.",
-      "recipe": "cnbc_top",
-      "buzz": 80,
-      "topics": [
-        "dev"
-      ],
-      "date": "2026-11-09"
-    },
-    {
-      "uid": "rss:b662ff95047488",
-      "source": "rss",
-      "title": "TSMC's October sales jump as global chip boom rolls on",
-      "url": "https://www.cnbc.com/2026/11/10/tsmcs-october-sales-.html",
-      "ts": 1794289362.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "TSMC reports its monthly sales figures for October on Tuesday.",
-      "recipe": "cnbc_top",
-      "buzz": 80,
-      "topics": [
-        "hardware"
-      ],
-      "date": "2026-11-10"
-    },
-    {
-      "uid": "rss:3b327e0e5c3ffc",
-      "source": "rss",
-      "title": "SoftBank Group shares surge 14% as Asian tech stocks track Wall Street rebound",
-      "url": "https://www.cnbc.com/2026/11/10/ai-softbank-sk-hynix-samsung-wall-street-tech-stocks.html",
-      "ts": 1794297989.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "A sharp decline in oil prices lifted sentiment while renewed buying in semiconductor names overnight spilled over into Asia, following last week's bruising sell-off.",
-      "recipe": "cnbc_top",
-      "buzz": 80,
-      "topics": [
-        "hardware"
-      ],
-      "date": "2026-11-10"
-    },
-    {
-      "uid": "rss:fa27f124d761f4",
-      "source": "rss",
-      "title": "China’s monthly imports grow at fastest pace in five years as surplus crosses $1 trillion in 2026",
-      "url": "https://www.cnbc.com/2026/11/10/china-trade-october-exports-imports-surplus-.html",
-      "ts": 1794287035.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "Goods exports soared by 35.2% last month from a year earlier, exceeding expectations for a 33.5% jump in a Reuters poll and slowing from a 36.3% jump in September.",
-      "recipe": "cnbc_top",
-      "buzz": 80,
-      "topics": [],
       "date": "2026-11-10"
     },
     {
@@ -655,6 +420,157 @@
       "date": "2026-11-09"
     },
     {
+      "uid": "rss:237fcbcf320702",
+      "source": "rss",
+      "title": "Pete Hegseth decries impeachment push, defends Iran war handling",
+      "url": "https://www.cnbc.com/2026/11/10/pete-hegseth-impeachment-massie-iran.html",
+      "ts": 1794316789.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "Secretary of Defense Pete Hegseth railed against the Republican congressman who introduced articles of impeachment against him.",
+      "recipe": "cnbc_top",
+      "buzz": 80,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "rss:6a4be1c06477fa",
+      "source": "rss",
+      "title": "'Markets bottom on bad news' maxim rings true as chip stocks rally amid Nvidia scandal",
+      "url": "https://www.cnbc.com/2026/11/10/chip-stocks-rally-nvidia-scandal.html",
+      "ts": 1794316753.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "The cliche is one of those smart-sounding rules of thumb that proves true just often enough to remain a Wall Street cliché in good standing.",
+      "recipe": "cnbc_top",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "biz",
+        "hardware"
+      ],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "rss:0cac03bdf88b90",
+      "source": "rss",
+      "title": "Anthropic sets IPO price range of $70 to $78, looks to start trading Nov. 19, sources say",
+      "url": "https://www.cnbc.com/2026/11/10/anthropic-sets-price-range-of-70-to-78-in-upcoming-ipo.html",
+      "ts": 1794315447.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "Anthropic's IPO is expected to come roughly five months after Elon Musk took SpaceX public in a record offering.",
+      "recipe": "cnbc_top",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "science",
+        "biz"
+      ],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "rss:063a1e8de4e9d7",
+      "source": "rss",
+      "title": "FDA warns of vision loss risk linked to popular GLP-1 drugs like Wegovy, Zepbound",
+      "url": "https://www.cnbc.com/2026/11/10/fda-warning-vision-loss-glp1-wegovy-zepbound.html",
+      "ts": 1794304089.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "The agency has found evidence of a potential increased risk of a rare eye condition linked to the use of GLP-1 drugs used for weight management and diabetes.",
+      "recipe": "cnbc_top",
+      "buzz": 80,
+      "topics": [
+        "dev"
+      ],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "rss:582176a1044208",
+      "source": "rss",
+      "title": "Fed Governor Waller sees December hike likely, opens door to possible half-point increase",
+      "url": "https://www.cnbc.com/2026/11/10/fed-governor-waller-sees-december-hike-likely.html",
+      "ts": 1794301201.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "The policymaker said he \"is leaning toward\" a rate increase in December and could support a half-point hike depending on inflation data.",
+      "recipe": "cnbc_top",
+      "buzz": 80,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "rss:d6d41a40207d36",
+      "source": "rss",
+      "title": "Trump's 2028 successors are already fighting over who to blame for GOP midterm wipeout",
+      "url": "https://www.cnbc.com/2026/11/10/trump-vance-rubio-republican-desantis-midterms.html",
+      "ts": 1794308401.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "JD Vance, Marco Rubio and Ron DeSantis offer competing explanations for the GOP's midterm defeat as Trump keeps his potential successors guessing.",
+      "recipe": "cnbc_top",
+      "buzz": 80,
+      "topics": [],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "rss:abb6610f6b9d9e",
+      "source": "rss",
+      "title": "How GM is trying to talk used car shoppers into buying new vehicles",
+      "url": "https://www.cnbc.com/2026/11/10/gm-carbravo-used-car-shoppers.html",
+      "ts": 1794315601.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "Automakers say that substantial shares of the customers walking into a dealership looking for certified used cars end up buying new. Here's how it works.",
+      "recipe": "cnbc_top",
+      "buzz": 80,
+      "topics": [],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "rss:4e3f8dd10c868e",
+      "source": "rss",
+      "title": "Children’s Place files for bankruptcy protection, seeks buyer",
+      "url": "https://www.cnbc.com/2026/11/09/childrens-place-chapter-11-sale.html",
+      "ts": 1794257866.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "The Children's Place has filed for chapter 11 bankruptcy protection and is seeking bids from potential new owners by Dec. 9.",
+      "recipe": "cnbc_top",
+      "buzz": 80,
+      "topics": [],
+      "date": "2026-11-09"
+    },
+    {
+      "uid": "rss:63dc875d31486b",
+      "source": "rss",
+      "title": "Polymarket says annualized revenue has topped $1.8 billion",
+      "url": "https://www.cnbc.com/2026/11/10/polymarket-annualized-revenue-us-growth.html",
+      "ts": 1794315601.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "Amid growth of its U.S. exchange, the prediction market platform’s current annual run-rate is $1.8 billion.",
+      "recipe": "cnbc_top",
+      "buzz": 80,
+      "topics": [
+        "biz"
+      ],
+      "date": "2026-11-10"
+    },
+    {
       "uid": "rss:06758f1ab9ec37",
       "source": "rss",
       "title": "3 unexpected reasons the October jobs report was so strong",
@@ -667,40 +583,6 @@
       "recipe": "cnbc_top",
       "buzz": 80,
       "topics": [],
-      "date": "2026-11-09"
-    },
-    {
-      "uid": "rss:23f565bc7f4fab",
-      "source": "rss",
-      "title": "Skydance outlines its $6 billion in planned cost savings. Here's the breakdown",
-      "url": "https://www.cnbc.com/2026/11/09/skydance-cost-savings-breakdown.html",
-      "ts": 1794266078.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "The updates came alongside a third-quarter earnings report for the legacy Paramount Skydance.",
-      "recipe": "cnbc_top",
-      "buzz": 80,
-      "topics": [
-        "dev"
-      ],
-      "date": "2026-11-09"
-    },
-    {
-      "uid": "rss:d88cd9aedd5c56",
-      "source": "rss",
-      "title": "Nvidia's CEO turmoil gives newly empowered Democrats fresh ammunition in pursuit of oversight",
-      "url": "https://www.cnbc.com/2026/11/09/nvidia-jensen-huang-affair-congress-scrutiny.html",
-      "ts": 1794256176.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "Nvidia CEO Jensen Huang's extramarital affair with an alleged Chinese spy comes as the company is already about to face heightened scrutiny.",
-      "recipe": "cnbc_top",
-      "buzz": 80,
-      "topics": [
-        "ai"
-      ],
       "date": "2026-11-09"
     },
     {
@@ -722,38 +604,258 @@
       "date": "2026-11-09"
     },
     {
-      "uid": "rss:88f5658ab95491",
+      "uid": "rss:f4401165d9408d",
       "source": "rss",
-      "title": "CNBC's The China Connection newsletter: Wall Street dips in again. What needs to go right",
-      "url": "https://www.cnbc.com/2026/11/09/cnbcs-the-china-connection-newsletter-wall-street-dips-in-again.html",
-      "ts": 1794265202.0,
+      "title": "Trump’s C-SPAN call marks latest surprise post-midterm appearance",
+      "url": "https://www.cnbc.com/2026/11/10/trump-cspan-call-elections.html",
+      "ts": 1794291549.0,
       "points": 0,
       "comments": 0,
       "author": "",
-      "summary": "Following the latest Trump-Xi summit, China pledged further opening of its financial market to companies from all countries, including the U.S.",
+      "summary": "Trump called C-SPAN's new primetime show unannounced after a surprise White House briefing-room and ballroom appearances.",
+      "recipe": "cnbc_top",
+      "buzz": 80,
+      "topics": [],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "rss:e299e35fae0178",
+      "source": "rss",
+      "title": "Bilt bets on local businesses, hospitality and major sports franchises, expanding beyond residential rewards",
+      "url": "https://www.cnbc.com/2026/11/10/bilt-expands-beyond-residential-rewards.html",
+      "ts": 1794313937.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "Bilt is announcing the launch of two new platforms designed to help local businesses and event venues attract customers and build loyalty.",
       "recipe": "cnbc_top",
       "buzz": 80,
       "topics": [
-        "ai",
-        "biz",
-        "hardware"
+        "dev"
+      ],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "rss:b1e13f3e9bd266",
+      "source": "rss",
+      "title": "Stocks extend recovery from Thursday's sell-off. Plus, new trial data from Lilly, J&J",
+      "url": "https://www.cnbc.com/investingclub/2026/11/09/stocks-extend-recovery-from-thursdays-sell-off-plus-new-trial-data-from-lilly-jj-.html",
+      "ts": 1794254670.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "Every weekday, the Investing Club releases the Homestretch; an actionable afternoon update just in time for the last hour of trading.",
+      "recipe": "cnbc_top",
+      "buzz": 80,
+      "topics": [
+        "biz"
       ],
       "date": "2026-11-09"
     },
     {
-      "uid": "rss:4e3f8dd10c868e",
+      "uid": "rss:853d1f5b76a588",
       "source": "rss",
-      "title": "Children’s Place files for bankruptcy protection, seeks buyer",
-      "url": "https://www.cnbc.com/2026/11/09/childrens-place-chapter-11-sale.html",
-      "ts": 1794257866.0,
+      "title": "Trump says Iran war to end 'fairly soon,' plays down prospects of new strikes",
+      "url": "https://www.cnbc.com/2026/11/10/trump-iran-war-hormuz-.html",
+      "ts": 1794294002.0,
       "points": 0,
       "comments": 0,
       "author": "",
-      "summary": "The Children's Place has filed for chapter 11 bankruptcy protection and is seeking bids from potential new owners by Dec. 9.",
+      "summary": "“Iran militarily is effectively over,” Trump said, citing the destruction of its navy and surging inflation that he said has hollowed out Tehran's economy.",
+      "recipe": "cnbc_top",
+      "buzz": 80,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "rss:1bc8fd174cd5c7",
+      "source": "rss",
+      "title": "France blames Iran for supermarket refrigerator cyberattacks, weighs sanctions",
+      "url": "https://www.cnbc.com/2026/11/10/iran-fridge-cyberattacks-france.html",
+      "ts": 1794303264.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "France said the cyber unit of Iran's Islamic Revolutionary Guard Corps carried out an \"unprecedented campaign\" that caused millions of euros in damage.",
+      "recipe": "cnbc_top",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "biz"
+      ],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "rss:531eabd21bce6e",
+      "source": "rss",
+      "title": "Senate advances Trump-backed bipartisan bill to speed critical infrastructure projects",
+      "url": "https://www.cnbc.com/2026/11/09/senate-infrastructure-bill-data-centers.html",
+      "ts": 1794268446.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "The bill would force artificial intelligence companies and data center developers to pay their own way for power and grid enhancements.",
+      "recipe": "cnbc_top",
+      "buzz": 80,
+      "topics": [
+        "dev"
+      ],
+      "date": "2026-11-09"
+    },
+    {
+      "uid": "rss:9a55424638de1e",
+      "source": "rss",
+      "title": "Jim Cramer says Anthropic's IPO could make or break the AI trade. Here's why",
+      "url": "https://www.cnbc.com/2026/11/09/anthropic-ipo-ai-trade-jim-cramer.html",
+      "ts": 1794267015.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "Anthropic's initial public offering could be a crucial test of investor confidence in the AI trade, CNBC's Jim Cramer said.",
+      "recipe": "cnbc_top",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "biz"
+      ],
+      "date": "2026-11-09"
+    },
+    {
+      "uid": "rss:fdd04700534153",
+      "source": "rss",
+      "title": "Trump sees opening for Ukraine peace deal, but key questions remain ahead of Abu Dhabi talks",
+      "url": "https://www.cnbc.com/2026/11/10/trump-russia-ukraine-abu-dhabi-war-talks.html",
+      "ts": 1794311574.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "President Trump signaled optimism for the end of Russia's war in Ukraine ahead of trilateral negotiation talks on Tuesday in Abu Dhabi.",
+      "recipe": "cnbc_top",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev"
+      ],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "rss:23f565bc7f4fab",
+      "source": "rss",
+      "title": "Skydance outlines its $6 billion in planned cost savings. Here's the breakdown",
+      "url": "https://www.cnbc.com/2026/11/09/skydance-cost-savings-breakdown.html",
+      "ts": 1794266078.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "The updates came alongside a third-quarter earnings report for the legacy Paramount Skydance.",
+      "recipe": "cnbc_top",
+      "buzz": 80,
+      "topics": [
+        "dev"
+      ],
+      "date": "2026-11-09"
+    },
+    {
+      "uid": "rss:97013fa07db7b0",
+      "source": "rss",
+      "title": "Lucid misses Wall Street’s earnings expectations, expands loan from Saudi Arabia fund",
+      "url": "https://www.cnbc.com/2026/11/09/lucid-group-lcid-earnings-q3-2026.html",
+      "ts": 1794265553.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "The quarterly results are the first since Lucid CEO Silvio Napoli, who started leading the company in June, announced a restructuring plan.",
       "recipe": "cnbc_top",
       "buzz": 80,
       "topics": [],
       "date": "2026-11-09"
+    },
+    {
+      "uid": "rss:b662ff95047488",
+      "source": "rss",
+      "title": "TSMC's October sales jump as global chip boom rolls on",
+      "url": "https://www.cnbc.com/2026/11/10/tsmcs-october-sales-.html",
+      "ts": 1794289362.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "TSMC reports its monthly sales figures for October on Tuesday.",
+      "recipe": "cnbc_top",
+      "buzz": 80,
+      "topics": [
+        "hardware"
+      ],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "rss:748c146158efc6",
+      "source": "rss",
+      "title": "Brent crude falls below $90 for first time since August on Iran war de-escalation hopes",
+      "url": "https://www.cnbc.com/2026/11/10/oil-prices-trump-iran.html",
+      "ts": 1794307129.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "President Trump said Monday he thought the conflict was \"going to be ending fairly soon,\" but some analysts still see little chance of a lasting peace deal.",
+      "recipe": "cnbc_top",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev"
+      ],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "rss:e10a5b16f8eea6",
+      "source": "rss",
+      "title": "SoftBank swings to $7 billion loss after U.S. data center hit and Intel share decline",
+      "url": "https://www.cnbc.com/2026/11/10/softbank-2q-earnings-tech-selloff.html",
+      "ts": 1794301297.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "SoftBank Group announces fiscal second-quarter results for the year ending March 31, 2027.",
+      "recipe": "cnbc_top",
+      "buzz": 80,
+      "topics": [],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "rss:764a0d0665f005",
+      "source": "rss",
+      "title": "Hegseth impeachment articles introduced by Rep. Massie",
+      "url": "https://www.cnbc.com/2026/11/09/pete-hegseth-impeachment-articles-massie.html",
+      "ts": 1794264072.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "The House is likely to vote this week on articles of impeachment against Defense Secretary Pete Hegseth filed by Republican Rep. Thomas Masie.",
+      "recipe": "cnbc_top",
+      "buzz": 80,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-11-09"
+    },
+    {
+      "uid": "rss:fa27f124d761f4",
+      "source": "rss",
+      "title": "China's goods surplus tops $1 trillion for a second year amid calls for Beijing to rebalance trade",
+      "url": "https://www.cnbc.com/2026/11/10/china-trade-october-exports-imports-surplus-.html",
+      "ts": 1794306253.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "China's trade surplus topped $1 trillion as of October, potentially intensifying complaints from trading partners already wary over the glut of cheap Chinese goods.",
+      "recipe": "cnbc_top",
+      "buzz": 80,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-11-10"
     },
     {
       "uid": "rss:128f481e7a88e9",
@@ -790,358 +892,6 @@
         "biz"
       ],
       "date": "2026-11-09"
-    },
-    {
-      "uid": "rss:97013fa07db7b0",
-      "source": "rss",
-      "title": "Lucid misses Wall Street’s earnings expectations, expands loan from Saudi Arabia fund",
-      "url": "https://www.cnbc.com/2026/11/09/lucid-group-lcid-earnings-q3-2026.html",
-      "ts": 1794265553.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "The quarterly results are the first since Lucid CEO Silvio Napoli, who started leading the company in June, announced a restructuring plan.",
-      "recipe": "cnbc_top",
-      "buzz": 80,
-      "topics": [],
-      "date": "2026-11-09"
-    },
-    {
-      "uid": "rss:45380cd8887546",
-      "source": "rss",
-      "title": "A massive trade in Nvidia just went off – here are the details",
-      "url": "https://www.cnbc.com/2026/11/09/a-massive-trade-in-nvidia-just-went-off-here-are-the-details.html",
-      "ts": 1794249479.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "Despite Monday's sell-off, options traders are targeting new highs on Nvidia",
-      "recipe": "cnbc_top",
-      "buzz": 80,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-09"
-    },
-    {
-      "uid": "rss:418d9757325b79",
-      "source": "rss",
-      "title": "This beaten-down data center stock could be worth a look, says Mike Khouw",
-      "url": "https://www.cnbc.com/2026/11/09/this-beaten-down-data-center-stock-could-be-worth-a-look-says-mike-khouw.html",
-      "ts": 1794252237.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "United Rentals is trading at a below-market forward multiple. Effectively, one can buy superior, market-beating growth at a discounted market multiple.",
-      "recipe": "cnbc_top",
-      "buzz": 80,
-      "topics": [
-        "biz"
-      ],
-      "date": "2026-11-09"
-    },
-    {
-      "uid": "rss:4e87eba7b45691",
-      "source": "rss",
-      "title": "Trump administration proposes stricter work-search rules for unemployment benefits",
-      "url": "https://www.cnbc.com/2026/11/09/trump-unemployment-work-search-rule.html",
-      "ts": 1794254395.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "A Labor Department proposal would require unemployment claimants to report at least five qualifying work-search activities each week.",
-      "recipe": "cnbc_top",
-      "buzz": 80,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-09"
-    },
-    {
-      "uid": "rss:5cd12aaa3b54b6",
-      "source": "rss",
-      "title": "Elizabeth Warren set to take over the Senate banking committee. Here's what she plans to do",
-      "url": "https://www.cnbc.com/2026/11/09/elizabeth-warren-senate-banking-agenda.html",
-      "ts": 1794252883.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "Sen. Elizabeth Warren telegraphed her agenda for the Senate banking committee as Congress transfers to Democratic control",
-      "recipe": "cnbc_top",
-      "buzz": 80,
-      "topics": [],
-      "date": "2026-11-09"
-    },
-    {
-      "uid": "rss:3805091a6e80c1",
-      "source": "rss",
-      "title": "Anthropic releases first frontier models since Amodei's call for slowdown as IPO buzz builds",
-      "url": "https://www.cnbc.com/2026/11/09/anthropic-claude-fable-5-2-mythos-5-2.html",
-      "ts": 1794250801.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "The launch comes as Anthropic is gearing up for what is widely expected to be a blockbuster IPO",
-      "recipe": "cnbc_top",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "dev",
-        "biz"
-      ],
-      "date": "2026-11-09"
-    },
-    {
-      "uid": "rss:cd609863e2be95",
-      "source": "rss",
-      "title": "These states are offering extra ACA premium subsidies in 2027",
-      "url": "https://www.cnbc.com/2026/11/09/aca-state-subsidies-2027.html",
-      "ts": 1794229201.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "Roughly a dozen states are offering some premium assistance for Obamacare enrollees, following the lapse of enhanced federal subsidies at the end of 2025.",
-      "recipe": "cnbc_top",
-      "buzz": 80,
-      "topics": [],
-      "date": "2026-11-09"
-    },
-    {
-      "uid": "rss:ba16e47fa1d591",
-      "source": "rss",
-      "title": "Boeing to cut 5% of commercial airplane workers as production increase takes longer than expected",
-      "url": "https://www.cnbc.com/2026/11/09/boeing-layoffs-commercial-airplane.html",
-      "ts": 1794252958.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "Boeing has been working to stabilize production rates of its bestselling 737 Max planes, which are made outside of Seattle.",
-      "recipe": "cnbc_top",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "dev"
-      ],
-      "date": "2026-11-09"
-    },
-    {
-      "uid": "rss:780fd7287cbace",
-      "source": "rss",
-      "title": "Goldman CEO Solomon says AI financing remains strong despite market jitters",
-      "url": "https://www.cnbc.com/2026/11/09/goldman-ceo-ai-financing-market.html",
-      "ts": 1794248087.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "Goldman CEO David Solomon says investor appetite for AI infrastructure remains strong despite a reset in AI stocks and political uncertainty around data centers.",
-      "recipe": "cnbc_top",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "biz"
-      ],
-      "date": "2026-11-09"
-    },
-    {
-      "uid": "arxiv:2611.11783v1",
-      "source": "arxiv",
-      "title": "Fairness Drift: Assessing Algorithmic Fairness in a Moving Market",
-      "url": "https://arxiv.org/abs/2611.11783v1",
-      "ts": 1794192046.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Meng Liu",
-      "summary": "Flexible models and richer data can reduce systematic valuation errors and improve fairness. Yet algorithmic values stay fixed between updates while the market moves, so a new algorithm gains most against an intact distortion and least where uneven appreciation has eroded or just reversed it. We study property assessment, which sets tax bills and has long over-assessed cheaper homes. Cook County r",
-      "recipe": "arxiv_qfin",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "biz"
-      ],
-      "date": "2026-11-09"
-    },
-    {
-      "uid": "arxiv:2611.11652v1",
-      "source": "arxiv",
-      "title": "Adjoint Kernel Sensitivity of the Rough Heston Characteristic Exponent",
-      "url": "https://arxiv.org/abs/2611.11652v1",
-      "ts": 1794176349.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Carlos Escudero",
-      "summary": "Multi-factor approximations of rough volatility kernels affect the characteristic exponents used in Fourier-based derivative valuation. We derive an adjoint representation for the first-order sensitivity of the rough Heston characteristic exponent with respect to its memory kernel, with model parameters and the input variance curve held fixed. The Volterra--Riccati functional $\\mathcal L_T(K,z)$ a",
-      "recipe": "arxiv_qfin",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "science",
-        "biz"
-      ],
-      "date": "2026-11-08"
-    },
-    {
-      "uid": "arxiv:2611.11490v1",
-      "source": "arxiv",
-      "title": "Optimal power expansion planning under uncertainty in sub-Saharan Africa: A stochastic dual dynamic programming approach",
-      "url": "https://arxiv.org/abs/2611.11490v1",
-      "ts": 1794155585.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Arega Getaneh Abate",
-      "summary": "Universal electricity access and decarbonization are interlinked challenges for sub-Saharan Africa. Generation expansion planning methods used in the region rarely represent sequential and irreversible investment under demand and hydrological uncertainty. This paper develops a multistage stochastic generation expansion model solved with stochastic dual dynamic programming (SDDP) to address the pro",
-      "recipe": "arxiv_qfin",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "dev",
-        "science",
-        "biz"
-      ],
-      "date": "2026-11-08"
-    },
-    {
-      "uid": "arxiv:2611.11436v1",
-      "source": "arxiv",
-      "title": "Retrospective Analysis of Team-Following Trading Profitability in Pumpfun Meme Coins Using Funding Networks",
-      "url": "https://arxiv.org/abs/2611.11436v1",
-      "ts": 1794149938.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Fail Gafarov",
-      "summary": "If the right token-creation teams had been known, how much could following them have returned, and what is left when only information available before each launch is used? We study ten separately recorded Pumpfun windows (April 2024 to September 2026), each reconstructed independently from real-SOL reserve states and finite-capital accounts that start with one SOL. Teams are directed funding group",
-      "recipe": "arxiv_qfin",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "dev",
-        "crypto",
-        "biz"
-      ],
-      "date": "2026-11-08"
-    },
-    {
-      "uid": "arxiv:2611.11373v1",
-      "source": "arxiv",
-      "title": "Optimal execution in a fractional setting with reinforcement learning",
-      "url": "https://arxiv.org/abs/2611.11373v1",
-      "ts": 1794144688.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Matthieu Garcin",
-      "summary": "We consider the problem of optimal liquidation with linear market impact, as in the seminal work of Almgren and Chriss, but with an asset driven by a fractional Brownian motion. For $H \\neq 1/2$, we observe that the deterministic solution given by Almgren and Chriss is no longer optimal. We develop a strategy to exploit the information induced by the correlation between price increments. The strat",
-      "recipe": "arxiv_qfin",
-      "buzz": 30,
-      "topics": [
-        "dev",
-        "biz",
-        "security"
-      ],
-      "date": "2026-11-08"
-    },
-    {
-      "uid": "arxiv:2611.11112v1",
-      "source": "arxiv",
-      "title": "The Effect of the U.S. Federal Production Tax Credit on Negative Energy Prices",
-      "url": "https://arxiv.org/abs/2611.11112v1",
-      "ts": 1794109945.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Erik P. Johnson",
-      "summary": "Negative prices frequently arise in electricity markets and production subsidies are commonly cited as a leading cause. Using data from the U.S. Eastern Interconnection wholesale electricity markets for the period 2000-2023, we document that at least 18 percent of the total hours with negative energy prices cannot solely be attributed to the federal production tax credit (PTC), a large, persistent",
-      "recipe": "arxiv_qfin",
-      "buzz": 30,
-      "topics": [
-        "biz"
-      ],
-      "date": "2026-11-08"
-    },
-    {
-      "uid": "arxiv:2611.10956v1",
-      "source": "arxiv",
-      "title": "Risk-Sensitive Reinforcement Learning for an Options Market Maker: An Empirical Study with Real S&P 500 Options",
-      "url": "https://arxiv.org/abs/2611.10956v1",
-      "ts": 1794084095.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Jacky Chen",
-      "summary": "Options market makers absorb client order flow and must hedge the resulting inventory risk under trading frictions. We study whether an option hedging reinforcement learning (RL) agent trained on historical market data outperforms three alternatives in tail-risk protection: (i) traditional delta hedging, (ii) simple hedge-ratio rules, and (iii) the same agent trained in simulated markets. Most RL",
-      "recipe": "arxiv_qfin",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "biz",
-        "hardware"
-      ],
-      "date": "2026-11-07"
-    },
-    {
-      "uid": "arxiv:2611.10801v1",
-      "source": "arxiv",
-      "title": "Trained, Frozen, or Absent: Identifying What a Quantum Layer Contributes to Cross-Sectional Equity Ranking",
-      "url": "https://arxiv.org/abs/2611.10801v1",
-      "ts": 1794065356.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Chi-Sheng Chen",
-      "summary": "Hybrid quantumclassical models are increasingly proposed for nancial prediction, but reported gains are rarely separated from the classical components around them. We study a hybrid quantum temporal convolutional network for daily cross-sectional ranking of 2000 Tokyo Stock Exchange equities under a protocol built to make the quantum contribution identiable: six conditions (circuit trained, frozen",
-      "recipe": "arxiv_qfin",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "dev",
-        "science"
-      ],
-      "date": "2026-11-07"
-    },
-    {
-      "uid": "arxiv:2611.10791v1",
-      "source": "arxiv",
-      "title": "Winning Reviews, Losing Discovery? The Co-Evolutionary Game of AI Research and Peer Review",
-      "url": "https://arxiv.org/abs/2611.10791v1",
-      "ts": 1794064537.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Hongze Liu",
-      "summary": "Autonomous research systems can produce convincing manuscripts whose scientific value is difficult to verify, while automated reviewers can reward the appearance of completeness. We examine how this gap can become a self-reinforcing threat to the research community. In a two-population evolutionary game, authors choose between acceptance-oriented and exploratory research, and reviewers choose betw",
-      "recipe": "arxiv_qfin",
-      "buzz": 30,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-07"
-    },
-    {
-      "uid": "arxiv:2611.10731v1",
-      "source": "arxiv",
-      "title": "Have wind and solar energy increased electricity price volatility? And what is electricity price volatility, anyway?",
-      "url": "https://arxiv.org/abs/2611.10731v1",
-      "ts": 1794059065.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Lion Hirth",
-      "summary": "It is widely held that wind and solar power increase the volatility of electricity prices. This paper argues that the literature conflates two distinct types of price variation: across delivery time and across trading time. Determined simultaneously in the same day-ahead auction, prices for power to be delivered in distinct quarter-hours differ. This price dispersion, which I call \"variability,\" i",
-      "recipe": "arxiv_qfin",
-      "buzz": 30,
-      "topics": [
-        "dev",
-        "science"
-      ],
-      "date": "2026-11-07"
-    },
-    {
-      "uid": "rss:092aa9383df402",
-      "source": "rss",
-      "title": "Many workers lose unused FSA money — but could still come out ahead. Here's how",
-      "url": "https://www.cnbc.com/2026/11/07/fsa-forfeit.html",
-      "ts": 1794061801.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "While experts say it's best to use up your FSA money, the tax savings on your contributions could outweigh any amount you forfeit. Here's how to tell.",
-      "recipe": "cnbc_top",
-      "buzz": 30,
-      "topics": [],
-      "date": "2026-11-07"
     },
     {
       "uid": "rss:7356f57f0c17c3",
@@ -1264,454 +1014,23 @@
       "date": "2026-11-03"
     },
     {
-      "uid": "arxiv:2611.10574v1",
-      "source": "arxiv",
-      "title": "Is price-impact decay statistically identifiable by propagator estimation? Diffusive prices force the inferred kernel to be transient and fine-tuned",
-      "url": "https://arxiv.org/abs/2611.10574v1",
-      "ts": 1794040150.0,
-      "points": 0,
+      "uid": "hn:48896257",
+      "source": "hn",
+      "title": "Show HN: Finterm.ai Bloomberg terminal for Claude Code",
+      "url": "https://finterm.ai/",
+      "ts": 1783965130.0,
+      "points": 6,
       "comments": 0,
-      "author": "Shunta Fujiwara",
-      "summary": "Despite the long memory of market-order flow, price dynamics remain diffusive---a seemingly paradoxical coexistence known in econophysics as the diffusivity puzzle. The propagator model has long been regarded as a promising solution: price impact decays in time, finely balanced against the order-flow memory, and propagators inferred from data have been reported to be consistent with this fine bala",
-      "recipe": "arxiv_qfin",
-      "buzz": 10,
-      "topics": [
-        "ai",
-        "dev",
-        "science",
-        "biz"
-      ],
-      "date": "2026-11-07"
-    },
-    {
-      "uid": "arxiv:2611.10414v1",
-      "source": "arxiv",
-      "title": "Track or Follow? A Jev-Compatible Multi-Agent Trading System When Web News Lags the Market",
-      "url": "https://arxiv.org/abs/2611.10414v1",
-      "ts": 1794019633.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Yebo Feng",
-      "summary": "LLM agents increasingly trade on the Web news they read, yet much Web news about listed firms is published after, and about, the price move it reports, so a reader can agree with the market by following it instead of reading the event. We ask whether LLM judgments of Web news track the market's reaction to the reported event or follow it. To answer, we built a multi-agent trading system whose agen",
-      "recipe": "arxiv_qfin",
-      "buzz": 10,
-      "topics": [
-        "ai",
-        "biz"
-      ],
-      "date": "2026-11-07"
-    },
-    {
-      "uid": "arxiv:2611.10155v1",
-      "source": "arxiv",
-      "title": "When Is Prosocial Behavior Intuitive? The Moderating Role of Empathic Perspective Taking",
-      "url": "https://arxiv.org/abs/2611.10155v1",
-      "ts": 1793992892.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Enrico D'Ecclesiis",
-      "summary": "Why is prosocial behavior intuitive for some individuals but deliberative for others? We examine whether empathic perspective taking moderates the association between reflective processing and prosocial choice. We run a laboratory experiment with 652 participants, where we measure prosociality using a four-player Distribution Game that holds aggregate payoffs constant and orders allocations from s",
-      "recipe": "arxiv_qfin",
-      "buzz": 10,
-      "topics": [],
-      "date": "2026-11-06"
-    },
-    {
-      "uid": "arxiv:2611.09337v1",
-      "source": "arxiv",
-      "title": "Sanctions, Evasion, and Deterrence: Evidence from Speeding Enforcement",
-      "url": "https://arxiv.org/abs/2611.09337v1",
-      "ts": 1793964773.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Romain Gauriot",
-      "summary": "The design of sanctions plays a central role in shaping reoffending behavior. We study the effects of fixed monetary fines and accumulating penalty points on speeding recidivism and liability transfer. Exploiting a large increase in sanctions in Queensland, Australia, we estimate the causal effects of these sanctions on subsequent offending and nomination of other drivers. Higher demerit points in",
-      "recipe": "arxiv_qfin",
-      "buzz": 10,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-06"
-    },
-    {
-      "uid": "arxiv:2611.09286v1",
-      "source": "arxiv",
-      "title": "The End-of-Day Reversal After 2019: A Pre-Registered Test on S&P 500 Stocks Excluding Heavily Traded Names",
-      "url": "https://arxiv.org/abs/2611.09286v1",
-      "ts": 1793961626.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Alex Vidovich",
-      "summary": "Baltussen, Da and Soebhag (2025) document an end-of-day reversal in U.S. stocks through December 2019: intraday losers outperform intraday winners over the last half hour of trading. We test it on later data, on point-in-time S&P 500 members excluding about 80 heavily traded stocks we had examined in earlier, unpublished work. Under a private pre-registration, the 2016-2019 data had to reproduce t",
-      "recipe": "arxiv_qfin",
-      "buzz": 10,
-      "topics": [],
-      "date": "2026-11-06"
-    },
-    {
-      "uid": "arxiv:2611.09208v1",
-      "source": "arxiv",
-      "title": "The Network Adaptive Market Hypothesis: Detection, Attribution, and Network-Mediated Efficiency",
-      "url": "https://arxiv.org/abs/2611.09208v1",
-      "ts": 1793957411.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Hitesh Kumar Sahu",
-      "summary": "We propose the Network Adaptive Market Hypothesis (NAMH), a novel extension of the adaptive markets framework that conceptualizes market efficiency as a network-dependent equilibrium emerging from long-memory predictability and cross-market information transmission. Using G20 equity indices and five commodity futures over 2001-2026, we identify Japan as the central information hub, while the Unite",
-      "recipe": "arxiv_qfin",
-      "buzz": 10,
-      "topics": [
-        "dev",
-        "biz"
-      ],
-      "date": "2026-11-06"
-    },
-    {
-      "uid": "arxiv:2611.09012v1",
-      "source": "arxiv",
-      "title": "Towards Robust Reinforcement Learning Market Making: Lessons from Loss Function Experimentation",
-      "url": "https://arxiv.org/abs/2611.09012v1",
-      "ts": 1793943737.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Siddharth Nand",
-      "summary": "Market makers play a vital role in ensuring efficient trade within financial markets. Recent literature has delved into training market-making systems using reinforcement learning. This paper delves into the impact of various loss function formulations on risk management behavior within reinforcement-based market making. Through empirical evaluation, we contrast profit-maximizing strategies with r",
-      "recipe": "arxiv_qfin",
-      "buzz": 10,
-      "topics": [
-        "ai",
-        "science",
-        "biz"
-      ],
-      "date": "2026-11-06"
-    },
-    {
-      "uid": "arxiv:2611.08701v1",
-      "source": "arxiv",
-      "title": "Does a Trading Policy Need to Know What It Trades? Microstructure Invariance and Zero-Shot Transfer of Execution Policies",
-      "url": "https://arxiv.org/abs/2611.08701v1",
-      "ts": 1793912431.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Hieu Tran",
-      "summary": "Execution algorithms are calibrated asset by asset, because the queues, trade rates and bid-ask spreads they face differ by orders of magnitude across assets. For reinforcement learning this is zero-shot generalisation across contexts of very different scales, and microstructure invariance proposes a normalisation fixed by theory: measured in each asset's own units of time, size and price, markets",
-      "recipe": "arxiv_qfin",
-      "buzz": 10,
-      "topics": [
-        "science",
-        "biz"
-      ],
-      "date": "2026-11-05"
-    },
-    {
-      "uid": "arxiv:2611.08430v1",
-      "source": "arxiv",
-      "title": "Cross-Border Ownership and Input Access: Evidence from the Lithium Supply Chain",
-      "url": "https://arxiv.org/abs/2611.08430v1",
-      "ts": 1793903027.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Kei Irizawa",
-      "summary": "How does cross-border ownership shape the lithium supply chain? Using global data on mines and refineries, I estimate a model in which ownership can lower refiners' effective ore costs, encourage mines to restrict spot sales, and soften competition. To study these effects, I examine policies motivated by national security concerns about reliable access to critical mineral inputs: divestiture of Ch",
-      "recipe": "arxiv_qfin",
-      "buzz": 10,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-05"
-    },
-    {
-      "uid": "arxiv:2611.08031v1",
-      "source": "arxiv",
-      "title": "Economies of scale and the equity-efficiency trade-off: Evidence from a piped water network in rural Bangladesh",
-      "url": "https://arxiv.org/abs/2611.08031v1",
-      "ts": 1793886712.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Md. Ahasan Habib",
-      "summary": "Policymakers who set prices for public infrastructure often anticipate an equity-efficiency trade-off: while higher prices could increase revenues from fee-paying users, helping to offset costs, they may reduce take-up among the poor. But this trade-off is fundamentally altered in the presence of economies of scale, which are common in infrastructure networks. We elicit willingness to pay for a ho",
-      "recipe": "arxiv_qfin",
-      "buzz": 10,
-      "topics": [
-        "dev",
-        "biz"
-      ],
-      "date": "2026-11-05"
-    },
-    {
-      "uid": "arxiv:2611.07699v1",
-      "source": "arxiv",
-      "title": "Stay, Reposition, or Recharge: Battery-Aware Operation of Robotaxi Fleets",
-      "url": "https://arxiv.org/abs/2611.07699v1",
-      "ts": 1793870587.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Philipp Afèche",
-      "summary": "Electric robotaxis are rapidly expanding from pilots to scaled commercial deployment; unlike traditional human-driven ride-hailing vehicles, they require centralized fleet control and careful management of vehicle state of charge (SoC). We study how a fleet manager should jointly make service, empty repositioning, idling, and charging decisions in such systems. We develop a continuous-time fluid m",
-      "recipe": "arxiv_qfin",
-      "buzz": 10,
-      "topics": [
-        "ai",
-        "dev",
-        "hardware"
-      ],
-      "date": "2026-11-05"
-    },
-    {
-      "uid": "arxiv:2611.07464v1",
-      "source": "arxiv",
-      "title": "FINCOSMOS: An Open-World Evaluation Paradigm for Agents in Finance",
-      "url": "https://arxiv.org/abs/2611.07464v1",
-      "ts": 1793855984.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Yupeng Cao",
-      "summary": "Language agents increasingly work for users on the open Web, and finance is where trusting them is hardest. The data must come from the Web, the strategy lives in the user's head, and correctness depends on time, so an agent can fail silently: a strategy the user never asked for, unverified data, or a backtest that uses the future yields a report as convincing as a correct one. Existing benchmarks",
-      "recipe": "arxiv_qfin",
-      "buzz": 10,
+      "author": "cheeseblubber",
+      "summary": "Hi, my name is Kam, and today my cofounder Josh and I are shipping Finterm, a CLI that\ngives coding agents direct access to financial data: stock prices, options data, SEC\nfilings, and Ticker Deep Research, a filtered ticker news search. I’m a developer and have been a full-time trader for the past few years.Recently I have been using LLMs more and more in my trading and strategy.\nI always found i",
+      "recipe": "hn_fintech",
+      "buzz": 6,
       "topics": [
         "ai",
         "dev",
         "biz"
       ],
-      "date": "2026-11-05"
-    },
-    {
-      "uid": "arxiv:2611.06888v1",
-      "source": "arxiv",
-      "title": "Dull, Dirty, Dangerous? Working Conditions and the Limits of Occupational AI Exposure",
-      "url": "https://arxiv.org/abs/2611.06888v1",
-      "ts": 1793817700.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Siyi Yu",
-      "summary": "Automation is often justified as relief from dull, dirty, and dangerous work. I examine how these conditions relate to occupational AI exposure using 21 O*NET items across 754 US occupations. Higher exposure is associated with lower condition scores under a large language model (LLM) measure and AI Occupational Exposure (AIOE), with equal occupation weights and employment weights. Adjustment for p",
-      "recipe": "arxiv_qfin",
-      "buzz": 10,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-04"
-    },
-    {
-      "uid": "arxiv:2611.06696v1",
-      "source": "arxiv",
-      "title": "You Know What You Will Like: People Predict Their Own Ratings Better Than Recommender Systems",
-      "url": "https://arxiv.org/abs/2611.06696v1",
-      "ts": 1793808047.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Zihan Chen",
-      "summary": "Recommender systems usually learn what people want from what they have done. Platforms could also ask people directly, but asking is costly: 98.8% of the prompts in our data went unanswered. Theories of statistical prediction imply that a person's own forecast adds little to a recommender algorithm built from many people's behavior. Theories of dispersed knowledge imply that people hold informatio",
-      "recipe": "arxiv_qfin",
-      "buzz": 10,
-      "topics": [
-        "hardware"
-      ],
-      "date": "2026-11-04"
-    },
-    {
-      "uid": "arxiv:2611.06629v1",
-      "source": "arxiv",
-      "title": "Does Frontier AI Strengthen Cyber Defense? Evidence from Project Glasswing",
-      "url": "https://arxiv.org/abs/2611.06629v1",
-      "ts": 1793805150.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Thomas Mosk",
-      "summary": "Defenders and attackers race to find the same software flaws. I use the launch of Project Glasswing, which gave a small group of large US tech firms early access to Claude Mythos Preview, a model for finding software vulnerabilities, to study how access to frontier AI affects defenders, external researchers, and attackers. Using the universe of publicly disclosed vulnerabilities, I find that firms",
-      "recipe": "arxiv_qfin",
-      "buzz": 10,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-04"
-    },
-    {
-      "uid": "arxiv:2611.06607v1",
-      "source": "arxiv",
-      "title": "Hard to Fool: A Bounded LLM Research Loop for Quantitative Finance, and What Two Dozen Campaigns Found",
-      "url": "https://arxiv.org/abs/2611.06607v1",
-      "ts": 1793804259.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Henry Zhang",
-      "summary": "Agentic research loops that let a language model propose a change, run a fixed experiment and keep whatever improves the metric work well in machine learning. In trading research the same loop is a machine for producing false discoveries: a backtest that \"improves the metric\" is, by default, overfit, look-ahead, a multiple-comparisons artifact, cost-free, or market drift wearing a strategy. We des",
-      "recipe": "arxiv_qfin",
-      "buzz": 10,
-      "topics": [
-        "ai",
-        "biz"
-      ],
-      "date": "2026-11-04"
-    },
-    {
-      "uid": "arxiv:2611.08528v1",
-      "source": "arxiv",
-      "title": "Price-Volume Correlations Are Always Zero",
-      "url": "https://arxiv.org/abs/2611.08528v1",
-      "ts": 1793786884.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Victor Olkhov",
-      "summary": "We argue that the use of the empirical time series of values, volumes, and prices of consecutive trades made during the averaging interval to calculate the price-volume correlation in a way that follows the definition of correlation always gives zero correlation. We show that the usual expression for the empirical calculation of the correlation misleads the researchers and doesn't fulfill the defi",
-      "recipe": "arxiv_qfin",
-      "buzz": 10,
-      "topics": [
-        "ai",
-        "crypto"
-      ],
-      "date": "2026-11-04"
-    },
-    {
-      "uid": "arxiv:2611.05767v1",
-      "source": "arxiv",
-      "title": "Priced In or Bet On? Cram-School Lessons, Jeonse Leases, and Expected Appreciation in Seoul",
-      "url": "https://arxiv.org/abs/2611.05767v1",
-      "ts": 1793751522.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Samiha Tariq",
-      "summary": "South Korean families spend heavily on hagwons, private cram schools that prepare students for the university entrance exam. This paper asks what access to them is worth in housing and whether the premium includes expected appreciation. Using 2,197,510 Seoul apartment sales and jeonse (lump-sum deposit lease) contracts from 2015 to 2026, located with a new business-address geocoder, the analysis c",
-      "recipe": "arxiv_qfin",
-      "buzz": 10,
-      "topics": [
-        "science"
-      ],
-      "date": "2026-11-04"
-    },
-    {
-      "uid": "arxiv:2611.05714v1",
-      "source": "arxiv",
-      "title": "The potential impact of fiscal rule changes on digital products trade",
-      "url": "https://arxiv.org/abs/2611.05714v1",
-      "ts": 1793745580.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Sonja Mitikj",
-      "summary": "The WTO moratorium on customs duties on electronic transmissions lapsed in March 2026, allowing governments to impose tariffs on cross-border digital products, alongside other instruments such as digital services taxes (DSTs). Yet, how tariffs and DSTs compare in the revenue they raise and their effect on trade in digital products has not yet been assessed. Here we combine bilateral trade in 31 di",
-      "recipe": "arxiv_qfin",
-      "buzz": 10,
-      "topics": [
-        "ai",
-        "dev",
-        "biz"
-      ],
-      "date": "2026-11-03"
-    },
-    {
-      "uid": "arxiv:2611.05640v1",
-      "source": "arxiv",
-      "title": "Economic Policy Uncertainty Index for Poland: Data, Construction, and Validation",
-      "url": "https://arxiv.org/abs/2611.05640v1",
-      "ts": 1793741096.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Alina M. Landowska",
-      "summary": "We construct a continuous monthly Economic Policy Uncertainty (EPU) index for Poland spanning January 2000 to June 2026, following the newspaper-based Baker-Bloom-Davis (BBD) methodology. The index uses six deep-history Polish newspapers (Rzeczpospolita, Parkiet, Gazeta Wyborcza, Dziennik Gazeta Prawna, Gazeta Polska Codziennie, and Puls Biznesu), scaled by article volume, standardized to unit sta",
-      "recipe": "arxiv_qfin",
-      "buzz": 10,
-      "topics": [
-        "ai",
-        "science"
-      ],
-      "date": "2026-11-03"
-    },
-    {
-      "uid": "arxiv:2611.05553v1",
-      "source": "arxiv",
-      "title": "Decision Models as Scalable Economic Surrogates that Capture Human Variation",
-      "url": "https://arxiv.org/abs/2611.05553v1",
-      "ts": 1793735220.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Maxime Saxena",
-      "summary": "Decision Models (DMs), a new class of AI models, give fast responses and return a probability distribution over a fixed set of options. These properties make them candidate human surrogates in economic simulations and surveys, a role increasingly filled by Large Language Models (LLMs), which are costly at scale and under-represent the variation in human behaviour. We present a first evaluation of",
-      "recipe": "arxiv_qfin",
-      "buzz": 10,
-      "topics": [
-        "ai",
-        "biz"
-      ],
-      "date": "2026-11-03"
-    },
-    {
-      "uid": "arxiv:2611.05342v1",
-      "source": "arxiv",
-      "title": "Left-Digit Bias: Theory and Empirical Evidence from a Tax Salience Experiment",
-      "url": "https://arxiv.org/abs/2611.05342v1",
-      "ts": 1793731334.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Kaushil Patel",
-      "summary": "Demand often drops sharply at whole-dollar prices. To explain this phenomenon, known as left-digit bias, we develop a random utility model in which consumers consider a good only if its price is below a heterogeneous attention threshold. Masses of consumers with integer attention thresholds generate demand discontinuities. When a tax is introduced, the model predicts a weaker demand response compa",
-      "recipe": "arxiv_qfin",
-      "buzz": 10,
-      "topics": [
-        "ai",
-        "dev",
-        "science"
-      ],
-      "date": "2026-11-03"
-    },
-    {
-      "uid": "arxiv:2611.05218v1",
-      "source": "arxiv",
-      "title": "Beyond Anonymous Order Flow: Wallet Identity as a Feature for Short-Horizon Return Prediction",
-      "url": "https://arxiv.org/abs/2611.05218v1",
-      "ts": 1793725416.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Jingqiu Ding",
-      "summary": "Conventional public order-book data summarize trading without identifying the accounts behind it. Hyperliquid's Level-4 record also exposes persistent pseudonymous wallet addresses. We reconstruct full-depth books from consensus-ordered messages and evaluate wallet identity as a feature for short-horizon return prediction. The July 1-27, 2026 record covers 17.1 billion messages, 14.3 million aggre",
-      "recipe": "arxiv_qfin",
-      "buzz": 10,
-      "topics": [
-        "dev"
-      ],
-      "date": "2026-11-03"
-    },
-    {
-      "uid": "arxiv:2611.04826v1",
-      "source": "arxiv",
-      "title": "Safe Portfolio Learning from Untrusted Predictions: Signed Trust, Abstention, and Cross-Universe Polarity Failure",
-      "url": "https://arxiv.org/abs/2611.04826v1",
-      "ts": 1793710515.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Amirhossein MohammadpourAzari",
-      "summary": "Portfolio use of machine predictions must often proceed while the predictions' economic direction, reliability, and timing remain untrusted, and while feedback from overlapping multi-period positions arrives with delay. A controller chooses among Safe, Follow, and Reverse portfolio actions, so signal orientation is learned rather than assumed. A share-adaptive master updates action probabilities f",
-      "recipe": "arxiv_qfin",
-      "buzz": 10,
-      "topics": [
-        "ai",
-        "dev"
-      ],
-      "date": "2026-11-03"
-    },
-    {
-      "uid": "arxiv:2611.04555v1",
-      "source": "arxiv",
-      "title": "CosmosAlpha: Multi-Relational Graph Search with Pareto-Guided Exploration for LLM-Driven Alpha Mining",
-      "url": "https://arxiv.org/abs/2611.04555v1",
-      "ts": 1793697772.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Zhan-He Wang",
-      "summary": "Discovering predictive alpha factors from noisy financial data is a fundamental yet challenging problem in quantitative finance. LLM-driven formulaic alpha mining offers an attractive paradigm by combining interpretable symbolic expressions with iterative generation and refinement guided by quantitative feedback. However, existing generation-centric and tree-based search strategies primarily organ",
-      "recipe": "arxiv_qfin",
-      "buzz": 10,
-      "topics": [
-        "ai",
-        "dev",
-        "science"
-      ],
-      "date": "2026-11-03"
+      "date": "2026-07-13"
     },
     {
       "uid": "hn:47278733",
@@ -1731,6 +1050,24 @@
         "biz"
       ],
       "date": "2026-03-06"
+    },
+    {
+      "uid": "hn:45990088",
+      "source": "hn",
+      "title": "Ask HN: How do you build a \"trust layer\" for your platform?",
+      "url": "https://news.ycombinator.com/item?id=45990088",
+      "ts": 1763625243.0,
+      "points": 2,
+      "comments": 0,
+      "author": "gokulnair2001",
+      "summary": "I&#x27;m trying to understand how different teams handle platform integrity and user trust as they scale.<p>For those running consumer apps, marketplaces, fintech products, or any platform with significant user activity:\nHow do you currently build your “trust layer”?<p>Specifically:\n-&gt; How do you detect fake users, bots, device farms, or automated signups?\n-&gt; What early signals do you rely o",
+      "recipe": "hn_fintech",
+      "buzz": 2,
+      "topics": [
+        "dev",
+        "biz"
+      ],
+      "date": "2025-11-20"
     },
     {
       "uid": "hn:33629711",

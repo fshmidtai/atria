@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-10T09:06:33+00:00",
+  "generated_at": "2026-11-10T13:22:55+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -26,10 +26,10 @@
       "krebs": 10
     },
     "by_topic": {
-      "security": 109,
+      "security": 108,
       "ai": 73,
-      "dev": 58,
-      "hardware": 22,
+      "dev": 56,
+      "hardware": 23,
       "crypto": 11,
       "biz": 10,
       "science": 8
@@ -1402,12 +1402,12 @@
       "title": "arpanjot-coding/AVault",
       "url": "https://github.com/arpanjot-coding/AVault",
       "ts": 1793474487.0,
-      "points": 619,
+      "points": 620,
       "comments": 25,
       "author": "arpanjot-coding",
       "summary": "AVault - Call Recorder (No Root Required) | Privacy-first, hardware-encrypted audio vault for Android 12-16+. Rootless call recording via Shizuku with AES-256-GCM, biometrics & auto-cleanup.",
       "recipe": "github_sec",
-      "buzz": 694,
+      "buzz": 695,
       "topics": [
         "dev",
         "security"
@@ -1439,12 +1439,12 @@
       "title": "jmanico/grim-prompter",
       "url": "https://github.com/jmanico/grim-prompter",
       "ts": 1793189366.0,
-      "points": 406,
+      "points": 408,
       "comments": 33,
       "author": "jmanico",
       "summary": "Threat modeling for AI coding agents: point Claude Code, Codex or any agent at your repo and get an evidence-traced threat model. 36 architectures, 29 methods, MIT.",
       "recipe": "github_sec",
-      "buzz": 505,
+      "buzz": 507,
       "topics": [
         "ai",
         "dev"
@@ -1457,12 +1457,12 @@
       "title": "arnold117/iOS-NOIR",
       "url": "https://github.com/arnold117/iOS-NOIR",
       "ts": 1793934227.0,
-      "points": 312,
+      "points": 313,
       "comments": 59,
       "author": "arnold117",
       "summary": "No-jailbreak iOS privacy, entitlement, sandbox & telemetry forensic auditor (inspired by Verlintas/NOIR)",
       "recipe": "github_sec",
-      "buzz": 499,
+      "buzz": 500,
       "topics": [
         "ai",
         "security"
@@ -1525,6 +1525,21 @@
       "date": "2026-11-02"
     },
     {
+      "uid": "gh:wildorigins/wildos",
+      "source": "github",
+      "title": "wildorigins/wildos",
+      "url": "https://github.com/wildorigins/wildos",
+      "ts": 1794169078.0,
+      "points": 54,
+      "comments": 3,
+      "author": "wildorigins",
+      "summary": "A hardened Linux desktop, rebuilt from scratch, with your Windows apps built in. Free and open source.",
+      "recipe": "github_sec",
+      "buzz": 93,
+      "topics": [],
+      "date": "2026-11-08"
+    },
+    {
       "uid": "gh:Balanov/skein",
       "source": "github",
       "title": "Balanov/skein",
@@ -1542,23 +1557,22 @@
       "date": "2026-11-02"
     },
     {
-      "uid": "rss:951b96997c00dd",
+      "uid": "rss:d1660657e64a19",
       "source": "rss",
-      "title": "AI Security",
-      "url": "https://www.schneier.com/blog/archives/2026/11/ai-security.html",
-      "ts": 1794225994.0,
+      "title": "New OpenSSH Vulnerability",
+      "url": "https://www.schneier.com/blog/archives/2026/11/new-openssh-vulnerability.html",
+      "ts": 1794312166.0,
       "points": 0,
       "comments": 0,
       "author": "Bruce Schneier",
-      "summary": "<p>Two weeks ago, I attended the <a href=\"https://unpromptedcon.org/\">[un]prompted</a> AI security conference in San Francisco. It was an excellent event: three days of very dense talks about all aspects of AI security. (My talk was about integrous AI, and I will post it when it is online.)</p> <p>AI security can be divided into three broad topics. It&#8217;s important for researchers to understan",
+      "summary": "<p>It&#8217;s a <a href=\"https://www.bleepingcomputer.com/news/security/openssh-flaw-lets-attackers-log-into-password-disabled-linux-accounts/\">bad one</a>, and it&#8217;s been in the code for a decade:</p> <blockquote><p>A newly disclosed flaw involving OpenSSH and musl, dubbed &#8220;*sshole,&#8221; allows attackers to log in to certain Alpine Linux and other musl-based Linux accounts configured",
       "recipe": "schneier",
       "buzz": 80,
       "topics": [
         "ai",
-        "dev",
         "security"
       ],
-      "date": "2026-11-09"
+      "date": "2026-11-10"
     },
     {
       "uid": "gh:BountyForge-xyz/pwn-skill",
@@ -1577,6 +1591,115 @@
         "security"
       ],
       "date": "2026-11-06"
+    },
+    {
+      "uid": "rss:60e90b6a8fec8a",
+      "source": "rss",
+      "title": "Binance Warns of iOS Sandbox Escape That Could Expose Crypto Wallet Keys, No Fix Confirmed",
+      "url": "https://thehackernews.com/2026/11/binance-warns-of-ios-sandbox-escape.html",
+      "ts": 1794312931.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "An iOS sandbox escape published on GitHub lets an app read other apps' files on iPhones running iOS 26 and 27. That puts seed phrases, private keys, and login credentials at risk of exposure to malicious apps, Binance warned today. Apple's updates for iOS 26 and 27, released yesterday, do not list a fix. A researcher who goes by forcequit released the escape, called worse_query, on Sunday, a",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "dev",
+        "crypto"
+      ],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "rss:47e9fa6631a735",
+      "source": "rss",
+      "title": "Beyond the Alert: The Case for Rich Network Data",
+      "url": "https://thehackernews.com/2026/11/beyond-alert-case-for-rich-network-data.html",
+      "ts": 1794310693.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "At some point your security will fail. This isn’t pessimism. It’s not because your team and tools aren’t sophisticated enough. It’s the reason we have detections in the first place. And, it’s why once we accept that prevention has its limits, we arrive at an interdiction strategy: finding and disrupting what got in. After the alert The alert tells you something happened. However, gaining",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "rss:b9f286dc948bb1",
+      "source": "rss",
+      "title": "Apple Patches iMessage Group Chat Privacy Flaws and Bluetooth Pairing Vulnerabilities",
+      "url": "https://thehackernews.com/2026/11/apple-patches-imessage-group-chat.html",
+      "ts": 1794305811.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "An iMessage flaw could let a remote attacker join a group chat and receive its messages, Apple said yesterday, and it released updates to fix it. The updates also fix a separate iMessage flaw that could let someone added to a group access messages sent before they joined. As of today, other updates released yesterday for the iPhone XS, XS Max and XR, the iPad (7th generation) and some Apple",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "science",
+        "security"
+      ],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "rss:4679d1315fcd37",
+      "source": "rss",
+      "title": "Russian Turla Hackers Use New Cereal Malware to Steal Emails From Government Exchange Servers",
+      "url": "https://thehackernews.com/2026/11/russian-turla-hackers-use-new-cereal.html",
+      "ts": 1794305249.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "The Russia-aligned state-sponsored threat actor known as Turla (aka Snake) is wielding a previously undocumented cyber espionage toolset called Cereal that's used to break into victims' Microsoft Exchange servers with an aim to surreptitiously collect emails. According to an ESET report shared with The Hacker News ahead of publication, the sophisticated and modular tool is designed for",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "rss:2ca6d71153dd16",
+      "source": "rss",
+      "title": "SAP Patches Four CVSS 10.0 Flaws, Including Two Enabling Remote Code Execution",
+      "url": "https://thehackernews.com/2026/11/sap-patches-four-cvss-100-flaws.html",
+      "ts": 1794304960.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Four flaws that attackers could exploit without logging in were fixed today as part of SAP's monthly Security Patch Day—the vendor rates all four 10.0, the maximum CVSS score. Three are in the SAP NetWeaver application server, the software SAP systems run on, and one is in the Web Dispatcher, which receives web requests from the internet and passes them on to that server. The flaws in the Web",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "rss:fb0cc1d7cff596",
+      "source": "rss",
+      "title": "France Blames Iran for Sabotage Attack on Refrigeration Controllers at About 700 Retail Sites",
+      "url": "https://thehackernews.com/2026/11/france-blames-iran-for-sabotage-attack.html",
+      "ts": 1794301700.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "An October cyberattack on refrigeration controllers at about 700 French retail sites was carried out by a cyber unit of Iran's Islamic Revolutionary Guard Corps (IRGC), the French government said yesterday. The attackers broke into controllers on the night of October 11 and changed their defrost settings to high temperatures. That caused food losses and, in at least 15 cases, fires. The unit",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-11-10"
     },
     {
       "uid": "rss:a6154a3e80b604",
@@ -1729,80 +1852,6 @@
       "date": "2026-11-09"
     },
     {
-      "uid": "rss:7b474482f4b9f6",
-      "source": "rss",
-      "title": "Default 'admin:admin' Server Password Helps Researchers Hack Two Automakers, Unlock and Start Cars",
-      "url": "https://thehackernews.com/2026/11/default-adminadmin-server-password.html",
-      "ts": 1794223673.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "The login systems behind two car brands' mobile apps could be taken over completely, two security researchers found, allowing them to access any customer's account and, for an owner with a connected car, unlock the doors and start the engine. Both apps signed customers in through ForgeRock, an identity platform now part of Ping Identity, and on those servers the researchers reached an",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "dev",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-09"
-    },
-    {
-      "uid": "rss:099ca1c739d2c7",
-      "source": "rss",
-      "title": "Web3Auth Flaw Exploited to Steal Keplr Crypto, Provider Empties Other Wallets for Safety",
-      "url": "https://thehackernews.com/2026/11/web3auth-flaw-exploited-to-steal-keplr.html",
-      "ts": 1794221785.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Some people who set up a Keplr crypto wallet with their Google or Apple account have had money stolen by an attacker. Keplr uses a company called Web3Auth to run that Google and Apple sign-in. The attacker used a security flaw at that company to reach the wallets, both companies said late last week. Web3Auth then used the attacker's own route to empty other at-risk wallets before the attacker",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "dev",
-        "crypto",
-        "security"
-      ],
-      "date": "2026-11-09"
-    },
-    {
-      "uid": "rss:60cde870722437",
-      "source": "rss",
-      "title": "LNbits Urges All Operators to Shut Down Their Bitcoin Lightning Wallet Servers Amid Attacks",
-      "url": "https://thehackernews.com/2026/11/lnbits-urges-all-operators-to-shut-down.html",
-      "ts": 1794218481.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Everyone running LNbits, a free, open-source Bitcoin Lightning wallet system, should shut down their servers now because of a wave of attacks, the project said yesterday. It has several security fixes to release and asked operators to be careful until they are out. One operator said new accounts used an exploit to withdraw 2,285,545 satoshis, about 0.023 bitcoin, from his server before he could",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "crypto",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-09"
-    },
-    {
-      "uid": "gh:wildorigins/wildos",
-      "source": "github",
-      "title": "wildorigins/wildos",
-      "url": "https://github.com/wildorigins/wildos",
-      "ts": 1794169078.0,
-      "points": 42,
-      "comments": 2,
-      "author": "wildorigins",
-      "summary": "A hardened Linux desktop, rebuilt from scratch, with your Windows apps built in. Free and open source.",
-      "recipe": "github_sec",
-      "buzz": 78,
-      "topics": [],
-      "date": "2026-11-08"
-    },
-    {
       "uid": "gh:BowSinceEnt/resocket-elden-ring-cheat-2026-trainer-mod-menu-tools",
       "source": "github",
       "title": "BowSinceEnt/resocket-elden-ring-cheat-2026-trainer-mod-menu-tools",
@@ -1825,12 +1874,12 @@
       "title": "Alucard0x1/cve-2026-98432",
       "url": "https://github.com/Alucard0x1/cve-2026-98432",
       "ts": 1793378203.0,
-      "points": 27,
+      "points": 28,
       "comments": 7,
       "author": "Alucard0x1",
       "summary": "Proof-only PoC for CVE-[phone] (Linux IPv4/TCP ireq_opt use-after-free): race trigger, heap-reuse oracle, no code execution",
       "recipe": "github_sec",
-      "buzz": 48,
+      "buzz": 49,
       "topics": [
         "security"
       ],
@@ -1852,6 +1901,101 @@
         "hardware"
       ],
       "date": "2026-10-29"
+    },
+    {
+      "uid": "rss:951b96997c00dd",
+      "source": "rss",
+      "title": "AI Security",
+      "url": "https://www.schneier.com/blog/archives/2026/11/ai-security.html",
+      "ts": 1794225994.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Bruce Schneier",
+      "summary": "<p>Two weeks ago, I attended the <a href=\"https://unpromptedcon.org/\">[un]prompted</a> AI security conference in San Francisco. It was an excellent event: three days of very dense talks about all aspects of AI security. (My talk was about integrous AI, and I will post it when it is online.)</p> <p>AI security can be divided into three broad topics. It&#8217;s important for researchers to understan",
+      "recipe": "schneier",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-09"
+    },
+    {
+      "uid": "gh:0xZyyz/ctfd-warden",
+      "source": "github",
+      "title": "0xZyyz/ctfd-warden",
+      "url": "https://github.com/0xZyyz/ctfd-warden",
+      "ts": 1793308210.0,
+      "points": 24,
+      "comments": 2,
+      "author": "0xZyyz",
+      "summary": "Anti-cheat plugin for CTFd: tracks the activity of players and teams and catches AI agents, scripts, shared accounts, shared flags, flag brute-forcing and suspiciously fast solves.",
+      "recipe": "github_sec",
+      "buzz": 30,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-10-29"
+    },
+    {
+      "uid": "rss:7b474482f4b9f6",
+      "source": "rss",
+      "title": "Default 'admin:admin' Server Password Helps Researchers Hack Two Automakers, Unlock and Start Cars",
+      "url": "https://thehackernews.com/2026/11/default-adminadmin-server-password.html",
+      "ts": 1794223673.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "The login systems behind two car brands' mobile apps could be taken over completely, two security researchers found, allowing them to access any customer's account and, for an owner with a connected car, unlock the doors and start the engine. Both apps signed customers in through ForgeRock, an identity platform now part of Ping Identity, and on those servers the researchers reached an",
+      "recipe": "hackersnews",
+      "buzz": 30,
+      "topics": [
+        "dev",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-09"
+    },
+    {
+      "uid": "rss:099ca1c739d2c7",
+      "source": "rss",
+      "title": "Web3Auth Flaw Exploited to Steal Keplr Crypto, Provider Empties Other Wallets for Safety",
+      "url": "https://thehackernews.com/2026/11/web3auth-flaw-exploited-to-steal-keplr.html",
+      "ts": 1794221785.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Some people who set up a Keplr crypto wallet with their Google or Apple account have had money stolen by an attacker. Keplr uses a company called Web3Auth to run that Google and Apple sign-in. The attacker used a security flaw at that company to reach the wallets, both companies said late last week. Web3Auth then used the attacker's own route to empty other at-risk wallets before the attacker",
+      "recipe": "hackersnews",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "dev",
+        "crypto",
+        "security"
+      ],
+      "date": "2026-11-09"
+    },
+    {
+      "uid": "rss:60cde870722437",
+      "source": "rss",
+      "title": "LNbits Urges All Operators to Shut Down Their Bitcoin Lightning Wallet Servers Amid Attacks",
+      "url": "https://thehackernews.com/2026/11/lnbits-urges-all-operators-to-shut-down.html",
+      "ts": 1794218481.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Everyone running LNbits, a free, open-source Bitcoin Lightning wallet system, should shut down their servers now because of a wave of attacks, the project said yesterday. It has several security fixes to release and asked operators to be careful until they are out. One operator said new accounts used an exploit to withdraw 2,285,545 satoshis, about 0.023 bitcoin, from his server before he could",
+      "recipe": "hackersnews",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "crypto",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-09"
     },
     {
       "uid": "rss:7230f925fc3053",
@@ -1926,23 +2070,6 @@
       "date": "2026-11-09"
     },
     {
-      "uid": "gh:0xZyyz/ctfd-warden",
-      "source": "github",
-      "title": "0xZyyz/ctfd-warden",
-      "url": "https://github.com/0xZyyz/ctfd-warden",
-      "ts": 1793308210.0,
-      "points": 23,
-      "comments": 2,
-      "author": "0xZyyz",
-      "summary": "Anti-cheat plugin for CTFd: tracks the activity of players and teams and catches AI agents, scripts, shared accounts, shared flags, flag brute-forcing and suspiciously fast solves.",
-      "recipe": "github_sec",
-      "buzz": 29,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-10-29"
-    },
-    {
       "uid": "rss:7543ee8beb8b7e",
       "source": "rss",
       "title": "Want to Rent an Internet Address at the White House?",
@@ -1997,24 +2124,6 @@
         "dev"
       ],
       "date": "2026-11-06"
-    },
-    {
-      "uid": "rss:0dcc10ee0fa324",
-      "source": "rss",
-      "title": "AIs Hacking the Law",
-      "url": "https://www.schneier.com/blog/archives/2026/11/ais-hacking-the-law.html",
-      "ts": 1793707261.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Bruce Schneier",
-      "summary": "<p>In both a 2021 <a href=\"https://www.belfercenter.org/publication/coming-ai-hackers\">essay</a> and my 2022 book, <i><a href=\"https://www.schneier.com/books/a-hackers-mind/\">A Hacker&#8217;s Mind</a></i>, I talk about AIs finding vulnerabilities and exploits&#8212;hacking&#8212;the legal system.</p> <p><a href=\"https://www.felixringe.com/legal-exploits/\">Here&#8217;s</a> some demonstrations of th",
-      "recipe": "schneier",
-      "buzz": 10,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-03"
     },
     {
       "uid": "rss:15fca1b7faff4b",
@@ -2184,116 +2293,6 @@
       "date": "2026-11-06"
     },
     {
-      "uid": "rss:8e7b32e6a3f550",
-      "source": "rss",
-      "title": "Experts Demonstrate Barracuda Email Security Gateway Chain Enabling Root Access Without Login",
-      "url": "https://thehackernews.com/2026/11/experts-demonstrate-barracuda-email.html",
-      "ts": 1793943550.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Two flaws in Barracuda's Email Security Gateway, an email-filtering appliance, can be chained to run commands on it as root, its highest level of access, with no login required. The company released patches on Monday, and the security firm watchTowr detailed the attack chain on Thursday. One flaw, CVE-[phone], is an authorization bypass. An unauthenticated attacker can use it to restore a",
-      "recipe": "hackersnews",
-      "buzz": 10,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-06"
-    },
-    {
-      "uid": "rss:7d1426211b6649",
-      "source": "rss",
-      "title": "OpenSSH Issues Emergency Fix for Flaw Letting Long Passwords Bypass SSH Auth on Alpine Linux",
-      "url": "https://thehackernews.com/2026/11/openssh-issues-emergency-fix-for-flaw.html",
-      "ts": 1793896966.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Attackers can log in to accounts that have no password, such as SSH key-only accounts, on some Alpine Linux servers running the standard openssh-server package. They need network access to the server, an account name, and a password between 257 and 1,024 bytes long. OpenSSH, which rates the flaw critical, released version 10.6p2 today to block it. Alpine has published fixed packages for every",
-      "recipe": "hackersnews",
-      "buzz": 10,
-      "topics": [
-        "hardware"
-      ],
-      "date": "2026-11-05"
-    },
-    {
-      "uid": "rss:3bf0f5509b1b73",
-      "source": "rss",
-      "title": "Researchers Bypass ChatGPT Lockdown Mode to Exfiltrate Chats Without User Interaction",
-      "url": "https://thehackernews.com/2026/11/researchers-bypass-chatgpt-lockdown.html",
-      "ts": 1793896952.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Cybersecurity researchers have disclosed details of a now-patched vulnerability that could be exploited to bypass Lockdown Mode protections in OpenAI ChatGPT. Lockdown Mode was introduced by the artificial intelligence (AI) company in June 2026 as an optional setting to minimize data exfiltration risks arising from prompt injections. \"The flaw could enable silent chat data theft, phishing,",
-      "recipe": "hackersnews",
-      "buzz": 10,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-05"
-    },
-    {
-      "uid": "rss:7ecbfe39c223a7",
-      "source": "rss",
-      "title": "ThreatsDay: Apache OFBiz RCE, DreamHost Breach, DeFi Site Hijacks + 17 More Stories",
-      "url": "https://thehackernews.com/2026/11/threatsday-apache-ofbiz-rce-dreamhost.html",
-      "ts": 1793889670.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "How much damage can someone do without breaking much? Quite a lot, it seems. A stolen login can open doors across several systems. A trusted setting can be used to lock people out. Even a simple file copy can reach places it shouldn't. And while new tools are helping find security holes faster, some important systems are still taking months, sometimes over a year, to get patched. Not exactly a",
-      "recipe": "hackersnews",
-      "buzz": 10,
-      "topics": [
-        "dev",
-        "crypto",
-        "security"
-      ],
-      "date": "2026-11-05"
-    },
-    {
-      "uid": "rss:56280a47b8858a",
-      "source": "rss",
-      "title": "Is Your Exposure Management Platform Leaving You Exposed? Five Tests to Find Out",
-      "url": "https://thehackernews.com/2026/11/is-your-exposure-management-platform.html",
-      "ts": 1793881500.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "A critical finding can move through several security tools and still leave the organization exposed.&nbsp; The vulnerability has a severity score, and a ticket has reached the queue. Progress then depends on information the finding may lack: who owns the system, whether attackers can reach it, what protection exists, and how a change could affect the business.&nbsp; Each missing detail creates",
-      "recipe": "hackersnews",
-      "buzz": 10,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-05"
-    },
-    {
-      "uid": "rss:13fb52d553826f",
-      "source": "rss",
-      "title": "OpenAI AI Pipeline Generates 948 Linux Root Escalation Exploits in 30-Hour Run",
-      "url": "https://thehackernews.com/2026/11/openai-ai-pipeline-generates-948-linux.html",
-      "ts": 1793880534.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "OpenAI on Wednesday detailed a pipeline that employed an upcoming cyber-focused artificial intelligence (AI) model to validate and patch 948 local privilege escalation vulnerabilities in Linux for $1.2 million in API costs. \"Our prototype identified and analyzed 2,308 candidate Linux kernel findings, dynamically reproduced 1,724 vulnerabilities, and produced 948 local privilege escalation (LPE)",
-      "recipe": "hackersnews",
-      "buzz": 10,
-      "topics": [
-        "ai",
-        "dev",
-        "science",
-        "security"
-      ],
-      "date": "2026-11-05"
-    },
-    {
       "uid": "rss:6c4cd744eafd30",
       "source": "rss",
       "title": "Tech Firms Dismantle Botnet That Turned 1.3M TV Boxes Into Proxies",
@@ -2460,6 +2459,24 @@
       "date": "2026-09-25"
     },
     {
+      "uid": "rss:0dcc10ee0fa324",
+      "source": "rss",
+      "title": "AIs Hacking the Law",
+      "url": "https://www.schneier.com/blog/archives/2026/11/ais-hacking-the-law.html",
+      "ts": 1793707261.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Bruce Schneier",
+      "summary": "<p>In both a 2021 <a href=\"https://www.belfercenter.org/publication/coming-ai-hackers\">essay</a> and my 2022 book, <i><a href=\"https://www.schneier.com/books/a-hackers-mind/\">A Hacker&#8217;s Mind</a></i>, I talk about AIs finding vulnerabilities and exploits&#8212;hacking&#8212;the legal system.</p> <p><a href=\"https://www.felixringe.com/legal-exploits/\">Here&#8217;s</a> some demonstrations of th",
+      "recipe": "schneier",
+      "buzz": 0,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-03"
+    },
+    {
       "uid": "rss:242c7ee3c56913",
       "source": "rss",
       "title": "AI Vulnerability Finding",
@@ -2549,25 +2566,6 @@
         "biz"
       ],
       "date": "2026-10-27"
-    },
-    {
-      "uid": "rss:be1e76dc114850",
-      "source": "rss",
-      "title": "Bias in Qwen3-Coder Model",
-      "url": "https://www.schneier.com/blog/archives/2026/10/bias-in-qwen3-coder-model.html",
-      "ts": 1793012643.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Bruce Schneier",
-      "summary": "<p>Interesting <a href=\"https://www.hirundo.io/blog/qwen3-coder-vulnerabilities\">research</a>:</p> <blockquote><p>TL;DR: Chinese AI models now sit inside Western products, and some carry geopolitical triggers: tell the model who the code is for, and the security of what it writes changes. For the first time, we showed that this vulnerability lives in the model&#8217;s weights, and that removing th",
-      "recipe": "schneier",
-      "buzz": 0,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-10-26"
     }
   ]
 }
