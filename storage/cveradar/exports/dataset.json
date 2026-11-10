@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-10T13:22:02+00:00",
+  "generated_at": "2026-11-10T17:07:12+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -18,12 +18,12 @@
       "the_hacker_news": 30
     },
     "by_topic": {
-      "security": 52,
-      "ai": 40,
-      "dev": 33,
-      "hardware": 18,
-      "crypto": 9,
+      "security": 53,
+      "ai": 41,
+      "dev": 35,
+      "hardware": 13,
       "science": 8,
+      "crypto": 6,
       "biz": 1
     },
     "top_domains": [
@@ -39,62 +39,191 @@
   },
   "items": [
     {
-      "uid": "cve:GHSA-rjr3-43j3-4q8g",
+      "uid": "cve:GHSA-8vv3-6qpc-gpw6",
       "source": "cve",
-      "title": "CVE-2026-77596: Kubeflow Pipelines API server lacks authorization for shared pipeline uploads",
-      "url": "https://github.com/advisories/GHSA-rjr3-43j3-4q8g",
-      "ts": 1794262961.0,
+      "title": "CVE-2026-107846: bitcoinjs-lib: Undetected merkle node duplication in block root computation validates a forged transaction list",
+      "url": "https://github.com/advisories/GHSA-8vv3-6qpc-gpw6",
+      "ts": 1794326245.0,
       "points": 6000,
       "comments": 0,
-      "author": "github.com/kubeflow/pipelines",
-      "summary": "Severity: critical. ## Summary\n\nIn multi-user mode, the Kubeflow Pipelines API server's HTTP multipart upload endpoints (`POST /apis/v2beta1/pipelines/upload` and `POST /apis/v2beta1/pipelines/upload_version`) perform no authorization when the target namespace is empty. The authorization helper `canUploadVersionedPipel",
+      "author": "bitcoinjs-lib",
+      "summary": "Severity: critical. ### Summary\n`fastMerkleRoot` pads an odd level by hashing the last node with itself. It does not report that it did so, and `checkTxRoots` never looks for repeated transactions. A peer can therefore duplicate transactions to fill the pad and produce a block with a different transaction list but the",
       "recipe": "gh_advisories",
       "buzz": 6080,
       "topics": [
-        "dev",
-        "science",
-        "security",
-        "hardware"
+        "crypto",
+        "security"
       ],
-      "date": "2026-11-09"
+      "date": "2026-11-10"
     },
     {
-      "uid": "cve:GHSA-gj9m-f8ph-pmhr",
+      "uid": "cve:GHSA-62m9-f875-rqw6",
       "source": "cve",
-      "title": "CVE-2026-102895: GPUStack: Authentication bypass via trusted loopback source (reverse-proxy TCP peer or X-GPUStack-Real-IP header) grants unauthenticated admin",
-      "url": "https://github.com/advisories/GHSA-gj9m-f8ph-pmhr",
-      "ts": 1794262527.0,
+      "title": "CVE-2026-102894: GPUStack: SAML callback trusts an unverified SAMLResponse, allowing authentication bypass and account takeover",
+      "url": "https://github.com/advisories/GHSA-62m9-f875-rqw6",
+      "ts": 1794326235.0,
       "points": 6000,
       "comments": 0,
       "author": "gpustack",
-      "summary": "Severity: critical. ### Impact\n\nIn GPUStack before v2.2.0, `get_current_user` (in `gpustack/api/auth.py`) promotes any request whose source is considered loopback to the built-in administrator account when `force_auth_localhost` is `False` (the default). The \"source\" is derived by `client_ip_getter`, which can be made",
+      "summary": "Severity: critical. ### Impact\n\nThe callback Base64-decodes the posted XML, reads NameID and attributes, resolves or provisions the user, and mints a gpustack_session JWT — but never calls OneLogin_Saml2_Auth.process_response(), the step that verifies the signature, issuer, audience, destination, and time conditions.",
       "recipe": "gh_advisories",
       "buzz": 6080,
       "topics": [
+        "ai",
         "dev",
         "security",
         "hardware"
       ],
-      "date": "2026-11-09"
+      "date": "2026-11-10"
     },
     {
-      "uid": "cve:GHSA-rm8c-2cv8-jwf6",
+      "uid": "cve:GHSA-xggf-m53x-jc3f",
       "source": "cve",
-      "title": "CVE-2026-115770: Pocket ID: Email verification token remains valid after address change, enabling arbitrary verified-email spoofing",
-      "url": "https://github.com/advisories/GHSA-rm8c-2cv8-jwf6",
-      "ts": 1794262341.0,
+      "title": "CVE-2026-95860: node-opcua: Namespace-Level RBAC Fail-Open - Anonymous Write/Call Bypass via Unbound `DefaultRolePermissions",
+      "url": "https://github.com/advisories/GHSA-xggf-m53x-jc3f",
+      "ts": 1794326212.0,
       "points": 6000,
       "comments": 0,
-      "author": "github.com/pocket-id/pocket-id/backend",
-      "summary": "Severity: critical. ## Summary\n\nAn authenticated Pocket ID user can request an email-verification token while their account uses an address they control, change the account email address, and then redeem the previously issued token. The token is bound only to the user ID, not to the address to which it was sent, and ch",
+      "author": "node-opcua",
+      "summary": "Severity: critical. ## Summary\n\nAn unauthenticated (**Anonymous**) client can **Write** protected Variables and **Call** privileged Methods on any Node that lacks explicit per-node permissions.\n\nThis follows the inheritance model defined by OPC UA Part 3, §5.2.9, where nodes without an explicit `RolePermissions` attrib",
       "recipe": "gh_advisories",
       "buzz": 6080,
       "topics": [
         "ai",
         "crypto",
+        "science",
         "security"
       ],
-      "date": "2026-11-09"
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "cve:GHSA-xwgp-w3pj-q5h3",
+      "source": "cve",
+      "title": "CVE-2026-118670: OHIF Viewers: DOM-Based Cross Site Scripting (XSS) through MIME type of document",
+      "url": "https://github.com/advisories/GHSA-xwgp-w3pj-q5h3",
+      "ts": 1794326271.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "@ohif/extension-dicom-pdf",
+      "summary": "Severity: high. ### Summary\nAn XSS (Cross-Site Scripting) vulnerability occurs when an attacker is able to inject their own JavaScript code into a web page's source, which is subsequently processed by the victim's browser. A common cause of this vulnerability is the failure to validate user-supplied data before dis",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "cve:GHSA-rhr8-3pm8-cq29",
+      "source": "cve",
+      "title": "CVE-2026-119191: Forge: ASN.1 resource exhaustion via BIT STRING decoding in asn1.fromDer",
+      "url": "https://github.com/advisories/GHSA-rhr8-3pm8-cq29",
+      "ts": 1794326261.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "node-forge",
+      "summary": "Severity: high. ### Summary\n`asn1.fromDer()` decodes the contents of BIT STRINGs as ASN.1 by default. That decode ignored the `maxDepth` recursion limit (an incomplete fix of CVE-[phone]) and also decoded nested BIT STRINGs, keeping a full copy of the decoded contents at each level, so small crafted DER or PEM i",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "cve:GHSA-6qrw-m8cv-hcxf",
+      "source": "cve",
+      "title": "CVE-2026-119192: Forge: RSA PKCS#1 v1.5 signature forgery via non-canonical DigestInfo encoding",
+      "url": "https://github.com/advisories/GHSA-6qrw-m8cv-hcxf",
+      "ts": 1794326254.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "node-forge",
+      "summary": "Severity: high. ### Summary\nRSASSA-PKCS1-v1_5 signature verification (`publicKey.verify()` with the default scheme, also used by X.509 certificate and PKCS#7 verification) accepted non-canonical BER encodings of the DigestInfo, such as NULL parameters with content and non-minimal lengths. These leave attacker-contr",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "cve:GHSA-3hch-x692-6qj3",
+      "source": "cve",
+      "title": "CVE-2026-103002: GPUStack: Missing authorization on several cluster and resource endpoints allows cross-user access and cluster takeover",
+      "url": "https://github.com/advisories/GHSA-3hch-x692-6qj3",
+      "ts": 1794326240.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "gpustack",
+      "summary": "Severity: high. ### Impact\n\nAn authenticated non-administrative user could access a Kubernetes cluster they are not authorized to access through GPUStack's Kubernetes API proxy.\n\nThe `cluster_apiserver_proxy` handler did not perform a resource-level authorization check before forwarding requests to the selected clu",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "dev",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "cve:GHSA-2h4w-29cv-2cmv",
+      "source": "cve",
+      "title": "CVE-2026-113663: AG2: Newline injection in SandboxShellTool bypasses allowed=[...] and readonly=True, enabling arbitrary command execution",
+      "url": "https://github.com/advisories/GHSA-2h4w-29cv-2cmv",
+      "ts": 1794326237.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "ag2",
+      "summary": "Severity: high. ### Summary\nSandboxShellTool's restricted modes — allowed=[...] (explicit command allowlist) and readonly=True (implicit READONLY_COMMANDS allowlist) — can both be bypassed by embedding a newline character inside the command string. The filter only inspects a single-line set of shell metacharacters,",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "cve:GHSA-xxrh-5hgg-gj4h",
+      "source": "cve",
+      "title": "CVE-2026-102650: Nuxt Content: Unauthenticated SQLite Function DoS via Content Query API",
+      "url": "https://github.com/advisories/GHSA-xxrh-5hgg-gj4h",
+      "ts": 1794326232.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "@nuxt/content",
+      "summary": "Severity: high. ### Summary\n\nThe `POST /__nuxt_content/:collection/query` endpoint in `@nuxt/content` accepts an attacker-controlled `sql` field from the HTTP request body and executes it against a local SQLite database after passing it through an insufficient validator (`assertSafeQuery`). The validator only block",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "cve:GHSA-ghwv-vrp2-2975",
+      "source": "cve",
+      "title": "CVE-2026-119345: Cocos AI Intra-handshake attested TLS implementation is vulnerable to TOCTOU Attacks",
+      "url": "https://github.com/advisories/GHSA-ghwv-vrp2-2975",
+      "ts": 1794326214.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "github.com/ultravioletrs/cocos",
+      "summary": "Severity: high. ### Summary\nAn attacker who can modify the attested workload’s code, memory-backed state, or configuration after the initial attestation — but without necessarily terminating the existing TLS connection — can cause the peer to continue trusting the connection as if the originally attested state were",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-10"
     },
     {
       "uid": "cve:GHSA-ghgh-57qv-h687",
@@ -117,210 +246,135 @@
       "date": "2026-11-09"
     },
     {
-      "uid": "cve:GHSA-5xjx-9qx6-jcrv",
+      "uid": "cve:GHSA-h46v-rmh6-fq4f",
       "source": "cve",
-      "title": "CVE-2026-88968: Claude Code: TOCTOU Race in Edit Tool Allows File Writes Outside the Workspace",
-      "url": "https://github.com/advisories/GHSA-5xjx-9qx6-jcrv",
-      "ts": 1794264123.0,
-      "points": 3500,
+      "title": "CVE-2026-119189: Forge: X.509 pathLenConstraint not enforced by verifyCertificateChain() for CA certificates without keyUsage",
+      "url": "https://github.com/advisories/GHSA-h46v-rmh6-fq4f",
+      "ts": 1794326263.0,
+      "points": 1800,
       "comments": 0,
-      "author": "@anthropic-ai/claude-code",
-      "summary": "Severity: high. Claude Code validated Edit tool targets using point-in-time pathname and symlink resolution that was not bound to the underlying directory inodes or file descriptors. On macOS, a process running inside Claude Code's Bash sandbox could exploit the resulting time-of-check to time-of-use window by atom",
+      "author": "node-forge",
+      "summary": "Severity: medium. ### Summary\n`forge.pki.verifyCertificateChain()` enforces the `pathLenConstraint` of a CA certificate's `basicConstraints` extension only when that certificate also has a `keyUsage` extension. For a CA certificate with a `pathLenConstraint` and no `keyUsage`, chains with more intermediate CA certifi",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "cve:GHSA-chp3-j5qr-2vfr",
+      "source": "cve",
+      "title": "CVE-2026-115779: Effect: Cookie attribute injection via domain, path, and name fields in @effect/platform makeCookie()",
+      "url": "https://github.com/advisories/GHSA-chp3-j5qr-2vfr",
+      "ts": 1794326252.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "@effect/platform",
+      "summary": "Severity: medium. ### Impact\n\nThe `name`, `domain`, and `path` fields of `makeCookie()` were validated with a regex that allows `;`, the attribute separator in `Set-Cookie` headers. Because `serializeCookie()` writes those fields verbatim, a caller who passes untrusted input into any of them can append arbitrary attr",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "cve:GHSA-752m-7p75-49gf",
+      "source": "cve",
+      "title": "CVE-2026-110802: Altair: DOM-based XSS via attacker-controlled script URLs in the iframe sandbox",
+      "url": "https://github.com/advisories/GHSA-752m-7p75-49gf",
+      "ts": 1794326247.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "altair-static",
+      "summary": "Severity: medium. ### Summary\nAltair `8.5.7` accepts plugin configuration directly from the `iframe-sandbox` query string.\n\nWhen `plugin_sandbox_opts` contains `type: \"scripts\"` and an attacker-controlled URL in `scriptUrls`, the sandbox page creates a classic `<script src=\"...\">` element and loads the supplied scrip",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "cve:GHSA-65v8-q222-64xx",
+      "source": "cve",
+      "title": "CVE-2026-123370: compose-lint: `fix --apply` can delete a line the user did not select, including a security setting",
+      "url": "https://github.com/advisories/GHSA-65v8-q222-64xx",
+      "ts": 1794326222.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "compose-lint",
+      "summary": "Severity: medium. ### Impact\n\n`compose-lint fix --apply` converts the line numbers its fixers work with into positions in the file. The YAML parser treats a lone carriage return, U+0085, U+2028 and U+2029 as line breaks, but the conversion counted only `\\n`. One of those characters inside a quoted value, which most e",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "cve:GHSA-6f4g-xm8v-pgv6",
+      "source": "cve",
+      "title": "CVE-2026-123369: compose-lint: Compose file text can issue GitHub Actions workflow commands through the compose-lint Action",
+      "url": "https://github.com/advisories/GHSA-6f4g-xm8v-pgv6",
+      "ts": 1794326219.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "tmatens/compose-lint",
+      "summary": "Severity: medium. ### Impact\n\nThe GitHub Actions runner treats certain text in a step's output as commands. The legacy form, `##[command]`, is recognized anywhere in a line. compose-lint's text report prints service names, environment keys and lines of the Compose file, and it does not neutralize `##[`. Inside the co",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "cve:GHSA-358w-w75h-x6rx",
+      "source": "cve",
+      "title": "CVE-2026-119299: gopacket: SCTP chunk sub-decoder out-of-bounds panics on crafted segments",
+      "url": "https://github.com/advisories/GHSA-358w-w75h-x6rx",
+      "ts": 1794326209.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "github.com/gopacket/gopacket",
+      "summary": "Severity: medium. ## Summary\n\ngopacket decodes SCTP (IP protocol 132) by walking the chunk chain through per-chunk-type decoder functions (`decodeSCTPInit`, `decodeSCTPShutdown`, `decodeSCTPError`, `decodeSCTPSack`, in `layers/sctp.go`). Each of these reads fixed-size header fields and runs count-driven loops **witho",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "cve:GHSA-5m6c-38r8-5w76",
+      "source": "cve",
+      "title": "CVE-2026-102943: Dagu MCP DAG specification read bypasses path containment and workspace isolation",
+      "url": "https://github.com/advisories/GHSA-5m6c-38r8-5w76",
+      "ts": 1794326209.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "github.com/dagu-org/dagu/v2",
+      "summary": "Severity: medium. ## Summary\n\nThe traversal fix for CVE-[phone] was implemented as HTTP middleware installed only in the chi handler chain, but the MCP service calls the same API method in process, so arbitrary YAML file read is reachable again through the MCP tool surface with a viewer-role key. Read-only, limite",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
       "topics": [
         "ai",
         "dev",
         "science",
         "security"
       ],
-      "date": "2026-11-09"
-    },
-    {
-      "uid": "cve:GHSA-9hq4-hm3j-jmph",
-      "source": "cve",
-      "title": "CVE-2026-108262: DDEV incomplete tar symlink traversal fix allows host file overwrite - Incomplete fix of CVE-2026-32885",
-      "url": "https://github.com/advisories/GHSA-9hq4-hm3j-jmph",
-      "ts": 1794263878.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "github.com/ddev/ddev",
-      "summary": "Severity: high. ## Summary\n\nThe CVE-[phone] ZipSlip fix added a symlink-target escape check to Untar, but the check rebases an ABSOLUTE symlink target into dest before validating (filepath.Join(dest, \"/etc\") stays lexically inside dest and passes), while the symlink is then created with the RAW absolute target v",
-      "recipe": "gh_advisories",
-      "buzz": 3580,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-09"
-    },
-    {
-      "uid": "cve:GHSA-h89v-g948-47vp",
-      "source": "cve",
-      "title": "CVE-2026-97705: Moleculer: Unauthenticated Denial of Service via negative length field in the TCP transporter packet parser",
-      "url": "https://github.com/advisories/GHSA-h89v-g948-47vp",
-      "ts": 1794263476.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "moleculer",
-      "summary": "Severity: high. ### Summary\n\nThe TCP transporter's packet parser (`src/transporters/tcp/parser.js`) reads the packet length field with `Buffer.prototype.readInt32BE`, a signed read. A crafted packet whose length field has the sign bit set yields a negative `length`. The parser then advances past the parsed message",
-      "recipe": "gh_advisories",
-      "buzz": 3580,
-      "topics": [
-        "security"
-      ],
-      "date": "2026-11-09"
-    },
-    {
-      "uid": "cve:GHSA-85gg-2gfq-q95m",
-      "source": "cve",
-      "title": "CVE-2026-87008: Code Graph RAG structural tools follow out-of-root symlinks",
-      "url": "https://github.com/advisories/GHSA-85gg-2gfq-q95m",
-      "ts": 1794262601.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "code-graph-rag",
-      "summary": "Severity: high. A remote/local attacker who can get a symbolic link included in a source-code repository that code-graph-rag analyzes can cause the `structural_search` and `structural_replace` tools (backed by `AstGrepService`, exposed both as MCP tools and as agentic AI tools) to read and -- via `structural_replac",
-      "recipe": "gh_advisories",
-      "buzz": 3580,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-09"
-    },
-    {
-      "uid": "cve:GHSA-g3c2-rjq2-c763",
-      "source": "cve",
-      "title": "CVE-2026-102657: esm.sh: web.NewHandler allows arbitrary file read via encoded dot-segment path traversal",
-      "url": "https://github.com/advisories/GHSA-g3c2-rjq2-c763",
-      "ts": 1794261809.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "github.com/esm-dev/esm.sh/web",
-      "summary": "Severity: high. ### Summary\n\nThe documented `web.NewHandler` static file server can read files outside `Config.AppDir` when the request path contains URL-encoded dot-segments such as `%2e%2e`. Go's `ServeMux` redirects plain `/../` paths, but it passes encoded dot-segments to the handler after decoding `r.URL.Path`",
-      "recipe": "gh_advisories",
-      "buzz": 3580,
-      "topics": [
-        "ai",
-        "dev",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-09"
-    },
-    {
-      "uid": "cve:GHSA-j8j4-rw65-56r6",
-      "source": "cve",
-      "title": "CVE-2026-102340: Telepresence: Traffic Manager gRPC has no auth — any pod claims arbitrary namespace and intercepts services, receiving victim environment secrets",
-      "url": "https://github.com/advisories/GHSA-j8j4-rw65-56r6",
-      "ts": 1794261589.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "github.com/telepresenceio/telepresence",
-      "summary": "Severity: high. ## Summary\n\nTelepresence's Traffic Manager gRPC API (port 8081) requires no authentication. Any pod with cluster-network access to the Traffic Manager can register as a client in an arbitrary managed namespace and create intercepts against services in that namespace, regardless of Kubernetes RBAC. O",
-      "recipe": "gh_advisories",
-      "buzz": 3580,
-      "topics": [
-        "ai",
-        "dev",
-        "science",
-        "security"
-      ],
-      "date": "2026-11-09"
-    },
-    {
-      "uid": "cve:GHSA-6j3h-rp73-6rvf",
-      "source": "cve",
-      "title": "CVE-2026-102339: Telepresence: Tunnel endpoint accepts caller-supplied session ID with no ownership proof — active client sessions hijackable",
-      "url": "https://github.com/advisories/GHSA-6j3h-rp73-6rvf",
-      "ts": 1794261480.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "github.com/telepresenceio/telepresence/v2",
-      "summary": "Severity: high. ## Summary\n\nThe Traffic Manager `Tunnel` gRPC streaming endpoint accepts a session ID from the first bytes of the client-controlled message payload. No verification confirms the caller owns the session. An attacker supplying a valid active session ID receives a fully routed tunnel for that session,",
-      "recipe": "gh_advisories",
-      "buzz": 3580,
-      "topics": [
-        "security"
-      ],
-      "date": "2026-11-09"
-    },
-    {
-      "uid": "cve:GHSA-f42p-wjw5-97qh",
-      "source": "cve",
-      "title": "CVE-2026-102289: zizmor: Debug logging prints available GitHub credentials in cleartext",
-      "url": "https://github.com/advisories/GHSA-f42p-wjw5-97qh",
-      "ts": 1794261385.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "zizmor",
-      "summary": "Severity: high. ### Summary\n\nzizmor 1.27.0 exposes GitHub access tokens in cleartext when debug-level logging is enabled. Tokens supplied via environment variables (`GH_TOKEN`, `GITHUB_TOKEN`, `ZIZMOR_GITHUB_TOKEN`), or the corresponding command-line options (`--gh-token`, `--github-token`, `--zizmor-github-token`)",
-      "recipe": "gh_advisories",
-      "buzz": 3580,
-      "topics": [
-        "ai",
-        "dev",
-        "crypto",
-        "security"
-      ],
-      "date": "2026-11-09"
-    },
-    {
-      "uid": "cve:GHSA-rr8v-fxxf-c986",
-      "source": "cve",
-      "title": "CVE-2026-75598: Gradle Shadow: Zip Slip path traversal in ShadowCopyAction — no independent entry-name sanitization",
-      "url": "https://github.com/advisories/GHSA-rr8v-fxxf-c986",
-      "ts": 1794260893.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "com.gradleup.shadow:com.gradleup.shadow.gradle.plugin",
-      "summary": "Severity: high. ### Summary\nShadowCopyAction in the Shadow plugin does not validate or sanitize ZIP entry names before writing them to the output fat JAR. A malicious upstream dependency containing path traversal sequences (e.g. `../../../../tmp/pwned.txt`) in entry names will have those entries reproduced verbatim",
-      "recipe": "gh_advisories",
-      "buzz": 3580,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-09"
-    },
-    {
-      "uid": "cve:GHSA-vvr2-h2jp-838m",
-      "source": "cve",
-      "title": "CVE-2026-77604: Code Graph RAG: MCP paginated read_file path traversal / arbitrary file read",
-      "url": "https://github.com/advisories/GHSA-vvr2-h2jp-838m",
-      "ts": 1794259292.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "code-graph-rag",
-      "summary": "Severity: high. ### Summary\n\nThe `read_file` MCP tool in `codebase_rag/mcp/tools.py` contains a path traversal vulnerability in its paginated branch (when `offset` or `limit` is supplied). The handler constructs a file path using `Path(self.project_root) / file_path` without subsequently validating that the resolve",
-      "recipe": "gh_advisories",
-      "buzz": 3580,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-09"
-    },
-    {
-      "uid": "cve:GHSA-q4xm-p75h-h9p3",
-      "source": "cve",
-      "title": "CVE-2026-62662: Pocket ID: The client credentials grant allows any OIDC client to obtain tokens for arbitrary audiences",
-      "url": "https://github.com/advisories/GHSA-q4xm-p75h-h9p3",
-      "ts": 1794259024.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "github.com/pocket-id/pocket-id/backend",
-      "summary": "Severity: high. ## Summary\n\nThe client credentials grant (`grant_type=client_credentials`) does not validate the resource parameter before embedding it as the aud claim in the issued JWT. Any authenticated OIDC client can obtain a Pocket ID-signed access token claiming authorization for any arbitrary audience, incl",
-      "recipe": "gh_advisories",
-      "buzz": 3580,
-      "topics": [
-        "ai",
-        "crypto",
-        "security"
-      ],
-      "date": "2026-11-09"
+      "date": "2026-11-10"
     },
     {
       "uid": "cve:GHSA-g3qx-frcg-j979",
@@ -399,208 +453,207 @@
       "date": "2026-11-09"
     },
     {
-      "uid": "cve:GHSA-2xwh-426q-42c5",
+      "uid": "cve:GHSA-9wg5-mj3p-v49q",
       "source": "cve",
-      "title": "CVE-2026-88982: Kubeflow Pipelines: Cross-tenant execution-cache poisoning / output substitution via a namespace-blind cache key in the cache webhook (multi-user)",
-      "url": "https://github.com/advisories/GHSA-2xwh-426q-42c5",
-      "ts": 1794264213.0,
-      "points": 1800,
+      "title": "CVE-2026-118774: Forge: Certificate signature verified with the issuer's RSA signature scheme",
+      "url": "https://github.com/advisories/GHSA-9wg5-mj3p-v49q",
+      "ts": 1794326268.0,
+      "points": 700,
       "comments": 0,
-      "author": "github.com/kubeflow/pipelines",
-      "summary": "Severity: medium. ## Summary\n\nThe legacy Kubeflow Pipelines V1/raw-Argo execution cache does not separate cached results by Kubernetes namespace. In multi-user deployments where tenants share the cache service, a tenant can receive another tenant's cached outputs or seed outputs that are subsequently substituted into",
+      "author": "node-forge",
+      "summary": "Severity: low. ### Summary\n\nWhen verifying a certificate, node-forge chose the RSA padding scheme (PKCS#1 v1.5 or RSASSA-PSS) and PSS parameters from the issuer certificate's own signature algorithm instead of the certificate being verified. A certificate labeled as signed with RSASSA-PSS could pass `verifyCertifi",
       "recipe": "gh_advisories",
-      "buzz": 1880,
+      "buzz": 780,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "cve:GHSA-2vgq-wchc-25w7",
+      "source": "cve",
+      "title": "CVE-2026-118776: Forge: Incomplete PKCS#7 padding validation in AES/DES CBC and ECB decryption",
+      "url": "https://github.com/advisories/GHSA-2vgq-wchc-25w7",
+      "ts": 1794326266.0,
+      "points": 700,
+      "comments": 0,
+      "author": "node-forge",
+      "summary": "Severity: low. ### Summary\n`decipher.finish()` in CBC and ECB mode accepted malformed PKCS#7 padding: only the last byte was checked, against a limit of four blocks, so mismatched padding bytes, a zero count and oversized counts were accepted and up to four blocks of plaintext could be silently removed. Fixed in n",
+      "recipe": "gh_advisories",
+      "buzz": 780,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "cve:GHSA-p623-mxf7-qxjm",
+      "source": "cve",
+      "title": "CVE-2026-123364: OctoPrint: Stored XSS via saved connection parameters",
+      "url": "https://github.com/advisories/GHSA-p623-mxf7-qxjm",
+      "ts": 1794326249.0,
+      "points": 700,
+      "comments": 0,
+      "author": "OctoPrint",
+      "summary": "Severity: low. ## Impact\n\nOctoPrint versions 2.0.0rc1 up until version 2.0.0rc6 are susceptible to cross-site scripting via a specially crafted default `port` or `baudrate` setting on the bundled Serial Connector plugin, supplied via the API as new defaults during a `connect` request.\n\n## Patches\n\nThe vulnerabilit",
+      "recipe": "gh_advisories",
+      "buzz": 780,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "cve:GHSA-rm8w-w798-g545",
+      "source": "cve",
+      "title": "CVE-2026-123796: compose-lint: Incomplete fix for GHSA-jf3h-8jvx-vcrg: a run stopped at the finding limit quotes a secret from a CI-generated `.env`",
+      "url": "https://github.com/advisories/GHSA-rm8w-w798-g545",
+      "ts": 1794326242.0,
+      "points": 700,
+      "comments": 0,
+      "author": "compose-lint",
+      "summary": "Severity: low. ### Impact\n\nThis is an incomplete fix for GHSA-jf3h-8jvx-vcrg. 0.32.0 made findings quote the `${NAME}` a sibling `.env` filled in, instead of its value. The same release added a stop at 20,000 findings per document, and that stop is checked before the quoting step. A run that hits it reports the fi",
+      "recipe": "gh_advisories",
+      "buzz": 780,
+      "topics": [
+        "science",
+        "security"
+      ],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "cve:GHSA-whr6-fgpq-fpv9",
+      "source": "cve",
+      "title": "CVE-2026-123373: compose-lint: A committed symlink makes compose-lint quote a file from outside the project into its output",
+      "url": "https://github.com/advisories/GHSA-whr6-fgpq-fpv9",
+      "ts": 1794326230.0,
+      "points": 700,
+      "comments": 0,
+      "author": "compose-lint",
+      "summary": "Severity: low. ### Impact\n\nLike Docker Compose, compose-lint follows symlinks when it reads a project's files. Unlike Compose, compose-lint up to 0.24.0 could then put the contents of a file from *outside* the project into its output, where the author of a pull request can read it.\n\nA pull request can commit a sym",
+      "recipe": "gh_advisories",
+      "buzz": 780,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "cve:GHSA-88f4-frh5-gmcr",
+      "source": "cve",
+      "title": "CVE-2026-123371: compose-lint: A `.compose-lint.yml` symlinked outside the project is read, and a parse error quotes part of the target",
+      "url": "https://github.com/advisories/GHSA-88f4-frh5-gmcr",
+      "ts": 1794326227.0,
+      "points": 700,
+      "comments": 0,
+      "author": "compose-lint",
+      "summary": "Severity: low. ### Impact\n\ncompose-lint automatically reads a `.compose-lint.yml` policy file beside the Compose file. It is meant to read nothing outside the project directory, but it follows that file if it is a symlink, wherever it points.\n\nA pull request can commit `.compose-lint.yml` as a symlink to a file on",
+      "recipe": "gh_advisories",
+      "buzz": 780,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "cve:GHSA-jf3h-8jvx-vcrg",
+      "source": "cve",
+      "title": "CVE-2026-123372: compose-lint: A pull request can make compose-lint quote a secret from a CI-generated `.env` into its findings",
+      "url": "https://github.com/advisories/GHSA-jf3h-8jvx-vcrg",
+      "ts": 1794326225.0,
+      "points": 700,
+      "comments": 0,
+      "author": "compose-lint",
+      "summary": "Severity: low. ### Impact\n\nSince 0.22.0, compose-lint fills in `${VAR}` references from the `.env` beside the Compose file, as Compose does. The documentation says values under `environment:` are never resolved from a `.env`, \"that is where secrets live\". But `image:` values are resolved, and CL-0004 and CL-0019 q",
+      "recipe": "gh_advisories",
+      "buzz": 780,
       "topics": [
         "dev",
         "science",
         "security"
       ],
-      "date": "2026-11-09"
+      "date": "2026-11-10"
     },
     {
-      "uid": "cve:GHSA-x89h-7h96-v88f",
+      "uid": "cve:GHSA-6wcv-rj3c-mhv3",
       "source": "cve",
-      "title": "CVE-2026-119298: croc: Overwrite-confirmation bypass via a crafted \"croc-stdin-\" filename on receive",
-      "url": "https://github.com/advisories/GHSA-x89h-7h96-v88f",
-      "ts": 1794264012.0,
-      "points": 1800,
+      "title": "CVE-2026-123368: compose-lint: .env read through a symlink outside the project can expose the CI job's environment",
+      "url": "https://github.com/advisories/GHSA-6wcv-rj3c-mhv3",
+      "ts": 1794326216.0,
+      "points": 700,
       "comments": 0,
-      "author": "github.com/schollz/croc/v11",
-      "summary": "Severity: medium. ## Summary\n\ncroc is an end-to-end encrypted peer-to-peer file transfer tool. On the receiving side, the confirmation that normally protects an existing file from being overwritten or resumed is skipped whenever the received file's name starts with `croc-stdin-`, regardless of whether the incoming tr",
+      "author": "compose-lint",
+      "summary": "Severity: low. ### Impact\n\ncompose-lint fills in `${VAR}` references from the `.env` file next to the Compose file. It is meant to read nothing outside the project directory, and `env_file:`, `include:` and `extends:` paths are checked for that. The `.env` read is not. If `.env` is a symlink, compose-lint follows",
       "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-09"
-    },
-    {
-      "uid": "cve:GHSA-9qq5-422f-33c2",
-      "source": "cve",
-      "title": "CVE-2026-85737: Velociraptor: Low-priv analyst reads arbitrary server files via ungated sql() VQL plugin",
-      "url": "https://github.com/advisories/GHSA-9qq5-422f-33c2",
-      "ts": 1794263114.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "www.velocidex.com/golang/velociraptor",
-      "summary": "Severity: medium. ## Summary\n\nThe `sql()` VQL plugin runs a caller-supplied database driver and connection string with no permission check (`vql/parsers/sql/sql.go:93`, `SQLPlugin.Call`). For `driver='mysql'` or `driver='postgres'` the handle comes from `GetHandleOther` (`sql.go:39`), which passes the connection stri",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "dev",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-09"
-    },
-    {
-      "uid": "cve:GHSA-44r8-3p76-84mw",
-      "source": "cve",
-      "title": "CVE-2026-94619: FileGator: Missing authorization in POST /upload allows cross-user read and deletion of temporary files",
-      "url": "https://github.com/advisories/GHSA-44r8-3p76-84mw",
-      "ts": 1794262808.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "filegator/filegator",
-      "summary": "Severity: medium. ## Summary\n\n`POST /upload` uses the request-supplied `resumableFilename` directly as a key into the shared temporary directory, without the character filter it applies to `resumableIdentifier` and without namespacing it per user. A valid user holding the `upload` permission can read any file in that",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-09"
-    },
-    {
-      "uid": "cve:GHSA-f74m-x83r-c4v4",
-      "source": "cve",
-      "title": "CVE-2026-94618: FileGator: Missing authorization in GET /batchdownload allows cross-user retrieval of another user's archive",
-      "url": "https://github.com/advisories/GHSA-f74m-x83r-c4v4",
-      "ts": 1794262656.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "filegator/filegator",
-      "summary": "Severity: medium. ### Summary\n`GET /batchdownload` streams a batch ZIP to any requester who supplies its `uniqid`, without checking that the current user/session created it. In deployments where users have separate home directories, a valid low-privileged user who obtains an active archive id can download another use",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-09"
-    },
-    {
-      "uid": "cve:GHSA-cp25-j9x5-p5xm",
-      "source": "cve",
-      "title": "CVE-2026-103022: Urwid: handle_short_request() crashes on non-ASCII POST body (UnicodeEncodeError DoS)",
-      "url": "https://github.com/advisories/GHSA-cp25-j9x5-p5xm",
-      "ts": 1794261906.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "urwid",
-      "summary": "Severity: medium. ### Summary\nThe `handle_short_request()` function in `urwid/display/web.py` raises an unhandled `UnicodeEncodeError` when processing a POST request body containing non-ASCII bytes. The function reads POST input and encodes it to ASCII before writing to a named pipe. Any byte value above `0x7F` cause",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-09"
-    },
-    {
-      "uid": "cve:GHSA-9vhv-g5hf-m7m7",
-      "source": "cve",
-      "title": "CVE-2026-102610: fast-agent: `fast-agent serve` binds HTTP to 0.0.0.0 with no authentication by default; with --shell this is unauthenticated remote command execution",
-      "url": "https://github.com/advisories/GHSA-9vhv-g5hf-m7m7",
-      "ts": 1794261694.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "fast-agent-mcp",
-      "summary": "Severity: medium. ## Summary\n`fast-agent serve` exposes the agent over MCP. By default it uses HTTP transport bound to `0.0.0.0` (all interfaces) on port 8000 with **no authentication** (`auth=None`) and prints no warning. Any host that can reach the port can call the exposed `agent` tool. When the server is started",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-09"
-    },
-    {
-      "uid": "cve:GHSA-wchh-mrv2-5h4q",
-      "source": "cve",
-      "title": "CVE-2026-86041: ezBookkeeping: Source-IP allowlist (MCP & API token) is bypassable via a spoofed `X-Forwarded-For` header",
-      "url": "https://github.com/advisories/GHSA-wchh-mrv2-5h4q",
-      "ts": 1794261088.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "github.com/mayswind/ezbookkeeping",
-      "summary": "Severity: medium. ### Summary\nA remote attacker from any IP address defeats the operator-configured source-IP allowlist (`mcp_allowed_remote_ips` / `api_token_allowed_remote_ips`) by sending a single `X-Forwarded-For: <allowlisted-ip>` header. The router is created with `gin.New()` and never calls `SetTrustedProxies`",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "dev",
-        "crypto",
-        "security"
-      ],
-      "date": "2026-11-09"
-    },
-    {
-      "uid": "cve:GHSA-m27g-v28p-f9fx",
-      "source": "cve",
-      "title": "CVE-2026-63183: OmniAuth: Host Header Injection Vulnerability",
-      "url": "https://github.com/advisories/GHSA-m27g-v28p-f9fx",
-      "ts": 1794260944.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "omniauth",
-      "summary": "Severity: medium. ### Impact\nHost header injection risk when using Omniauth with a web framework that does not verify incoming host headers. An example of a framework that provides host header validation is modern Rails when [configured appropriately](https://guides.rubyonrails.org/v6.1.1/configuring.html#configuring",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
+      "buzz": 780,
       "topics": [
         "ai",
         "dev",
         "security"
       ],
-      "date": "2026-11-09"
+      "date": "2026-11-10"
     },
     {
-      "uid": "cve:GHSA-56x6-q882-mf27",
-      "source": "cve",
-      "title": "CVE-2026-77463: Remark42: Rate limit bypass via unconditional trust of X-Forwarded-For/X-Real-IP headers in direct-internet deployment",
-      "url": "https://github.com/advisories/GHSA-56x6-q882-mf27",
-      "ts": 1794259109.0,
-      "points": 1800,
+      "uid": "rss:264e6842930600",
+      "source": "rss",
+      "title": "Attackers Exploit AhsayCBS Flaws to Deploy Sandbox-Evading Python Backdoor",
+      "url": "https://thehackernews.com/2026/11/attackers-exploit-ahsaycbs-flaws-to.html",
+      "ts": 1794326455.0,
+      "points": 0,
       "comments": 0,
-      "author": "github.com/umputun/remark42/backend",
-      "summary": "Severity: medium. ### Summary\nRemark42 applied chi's `middleware.RealIP` globally, trusting `True-Client-IP` / `X-Real-IP` / `X-Forwarded-For` headers without verifying the request came from a trusted proxy. The per-IP rate limiters key on the overwritten `r.RemoteAddr`, so any client can bypass every per-IP rate lim",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Cybersecurity researchers have disclosed details of an attack that exploited two now-patched vulnerabilities in AhsayCBS to deliver a Python-based implant. The activity, observed by Huntress in October 2026, involves the exploitation of a chain comprising CVE-[phone] and CVE-[phone] to bypass authentication and execute arbitrary commands on affected systems. Patches for the two",
+      "recipe": "the_hacker_news",
+      "buzz": 80,
       "topics": [
+        "ai",
         "dev",
         "security"
       ],
-      "date": "2026-11-09"
+      "date": "2026-11-10"
     },
     {
-      "uid": "cve:GHSA-h7c4-q426-7jh9",
-      "source": "cve",
-      "title": "CVE-2026-76893: tsParticles: A single anonymous MCP session can monopolize HTTP mode and deny new clients",
-      "url": "https://github.com/advisories/GHSA-h7c4-q426-7jh9",
-      "ts": 1794258891.0,
-      "points": 1800,
+      "uid": "rss:58c14603cc636c",
+      "source": "rss",
+      "title": "Blind Eagle Uses Fake Court Notices to Deliver Remote Access Trojan Across Latin America",
+      "url": "https://thehackernews.com/2026/11/blind-eagle-uses-fake-court-notices-to.html",
+      "ts": 1794326324.0,
+      "points": 0,
       "comments": 0,
-      "author": "@tsparticles/mcp-server",
-      "summary": "Severity: medium. ## Summary\n\nThe HTTP mode of `@tsparticles/mcp-server` creates a single stateful `StreamableHTTPServerTransport` instance and reuses it for all clients. The first anonymous client that initializes the MCP endpoint claims the shared transport state, and later clients cannot create their own sessions.",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "The threat actor known as Blind Eagle has resurfaced with a new campaign targeting organizations in Latin America through judicial and administrative-themed phishing lures to deliver a remote access trojan (RAT) that shares its lineage with AsyncRAT and DCRat. \"The campaign uses Portuguese and Spanish lures that resemble court notifications, fiscalía notices, tutela proceedings, and",
+      "recipe": "the_hacker_news",
+      "buzz": 80,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "rss:c5e183005c5090",
+      "source": "rss",
+      "title": "Fireworks AI Breach Widens to Expose Customer Billing Data and Incomplete Model Weights",
+      "url": "https://thehackernews.com/2026/11/fireworks-ai-breach-widens-to-expose.html",
+      "ts": 1794324839.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Fireworks AI disclosed on Monday that its investigation into a security incident first reported early last month&nbsp; uncovered further malicious activity, affecting account and billing information, alongside secrets, datasets, and incomplete models for a \"limited set of accounts.\" In a notice published on October 10, 2026, the company said it detected unauthorized use of internal Fireworks",
+      "recipe": "the_hacker_news",
+      "buzz": 80,
       "topics": [
         "ai",
-        "security",
-        "hardware"
+        "dev",
+        "biz",
+        "security"
       ],
-      "date": "2026-11-09"
+      "date": "2026-11-10"
     },
     {
       "uid": "rss:60e90b6a8fec8a",
@@ -835,7 +888,7 @@
       "author": "info@thehackernews.com (The Hacker News)",
       "summary": "The South Asian cyber espionage group known as Bitter (aka APT-C-08, APT-Q-37, Hazy Tiger, Orange Yali, T-APT-17, and TA397) has been observed targeting South Asian organizations with a previously unreported remote access trojan called PapRAT. \"PapRAT has both C++ and Rust implementations,\" Fortinet FortiGuard Labs researcher Cara Lin said. \"Its capabilities include command execution, file",
       "recipe": "the_hacker_news",
-      "buzz": 80,
+      "buzz": 30,
       "topics": [
         "ai",
         "dev"
@@ -853,7 +906,7 @@
       "author": "info@thehackernews.com (The Hacker News)",
       "summary": "A system doesn't always need a complicated bug to let someone in. Sometimes, a blank password is enough. That's one of the bigger stories this week. And it gets worse when the tools meant to keep systems updated or running safely become part of the attack. Elsewhere, attackers are hiding inside normal web traffic, stealing credentials from network devices, and finding new uses for exposed",
       "recipe": "the_hacker_news",
-      "buzz": 80,
+      "buzz": 30,
       "topics": [
         "dev",
         "security",
@@ -1099,63 +1152,6 @@
       "topics": [
         "ai",
         "security"
-      ],
-      "date": "2026-11-06"
-    },
-    {
-      "uid": "rss:53d4ee7d94e589",
-      "source": "rss",
-      "title": "The Flood is Coming And The Pipes Were Already Full",
-      "url": "https://thehackernews.com/2026/11/the-flood-is-coming-and-pipes-were.html",
-      "ts": 1793964600.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "An update on Athena, and some unsolicited predictions on what's coming next On Saturday, Dario Amodei published We Must Pace the Frontier. I agree with him. Go read it if you haven't. I've spent the summer looking at what these models find, and the gap he describes between what they can do and what the rest of us are ready for is the one I've been staring at since May. The hardest piece of his",
-      "recipe": "the_hacker_news",
-      "buzz": 10,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-06"
-    },
-    {
-      "uid": "rss:d0ae870a70402d",
-      "source": "rss",
-      "title": "Chainalysis Breach Exposes All Users' Credentials, Forces Shutdown of Key Services",
-      "url": "https://thehackernews.com/2026/11/chainalysis-breach-exposes-all-users.html",
-      "ts": 1793952289.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Blockchain analysis firm Chainalysis has revealed that its ongoing investigation into the agentic cyber attack targeting its systems also exposed names, usernames, password hashes and live tokens for all users. \"While we investigated, we removed access to Reactor and Data Solutions,\" the company said. \"At this time we continue to have no evidence that any investigations data has been accessed",
-      "recipe": "the_hacker_news",
-      "buzz": 10,
-      "topics": [
-        "ai",
-        "dev",
-        "crypto",
-        "biz",
-        "security"
-      ],
-      "date": "2026-11-06"
-    },
-    {
-      "uid": "rss:4f2618c56ecaa5",
-      "source": "rss",
-      "title": "Hackers Hide Linux Backdoor in Control Web Panel Server to Execute Commands Without Logs",
-      "url": "https://thehackernews.com/2026/11/hackers-hide-linux-backdoor-in-control.html",
-      "ts": 1793944734.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "A backdoor has been found hiding in the web server that runs Control Web Panel (CWP), a free panel for managing Linux hosting servers, researchers at QiAnXin's XLab said this week. The backdoored web server executes commands that attackers send via web requests, and those requests never appear in its access logs. Installing it takes root access, so the attackers must already control the server.",
-      "recipe": "the_hacker_news",
-      "buzz": 10,
-      "topics": [
-        "ai",
-        "dev",
-        "hardware"
       ],
       "date": "2026-11-06"
     }

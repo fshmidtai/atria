@@ -5,7 +5,258 @@
     <link>https://sentinel-post.pages.dev</link>
     <description>Автономная радиостанция кибербезопасности: живые CVE, угрозы и защита — без сенсаций</description>
     <language>ru</language>
-    <lastBuildDate>Tue, 10 Nov 2026 13:22:55 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 17:07:41 GMT</lastBuildDate>
+    <item>
+      <title>Attackers Exploit AhsayCBS Flaws to Deploy Sandbox-Evading Python Backdoor</title>
+      <link>https://sentinel-post.pages.dev/item/attackers-exploit-ahsaycbs-flaws-to-deploy-sandbox-evading-pytho.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/attackers-exploit-ahsaycbs-flaws-to-deploy-sandbox-evading-pytho.html</guid>
+      <pubDate>Tue, 10 Nov 2026 16:00:55 GMT</pubDate>
+      <description>Cybersecurity researchers have disclosed details of an attack that exploited two now-patched vulnerabilities in AhsayCBS to deliver a Python-based implant. The activity, observed by Huntress in October 2026, involves the exploitation of a chain comprising CVE-[phone] and CVE-[phone] to bypass authen</description>
+    </item>
+    <item>
+      <title>Blind Eagle Uses Fake Court Notices to Deliver Remote Access Trojan Across Latin America</title>
+      <link>https://sentinel-post.pages.dev/item/blind-eagle-uses-fake-court-notices-to-deliver-remote-access-tro.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/blind-eagle-uses-fake-court-notices-to-deliver-remote-access-tro.html</guid>
+      <pubDate>Tue, 10 Nov 2026 15:58:44 GMT</pubDate>
+      <description>The threat actor known as Blind Eagle has resurfaced with a new campaign targeting organizations in Latin America through judicial and administrative-themed phishing lures to deliver a remote access trojan (RAT) that shares its lineage with AsyncRAT and DCRat. "The campaign uses Portuguese and Spani</description>
+    </item>
+    <item>
+      <title>CVE-2026-118670: OHIF Viewers: DOM-Based Cross Site Scripting (XSS) through MIME type of document</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-118670-ohif-viewers-dom-based-cross-site-scripting-xss-.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-118670-ohif-viewers-dom-based-cross-site-scripting-xss-.html</guid>
+      <pubDate>Tue, 10 Nov 2026 15:57:51 GMT</pubDate>
+      <description>Severity: high. ### Summary
+An XSS (Cross-Site Scripting) vulnerability occurs when an attacker is able to inject their own JavaScript code into a web page's source, which is subsequently processed by the victim's browser. A common cause of this vulnerability is the failure to validate user-supplied</description>
+    </item>
+    <item>
+      <title>CVE-2026-118774: Forge: Certificate signature verified with the issuer's RSA signature scheme</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-118774-forge-certificate-signature-verified-with-the-is.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-118774-forge-certificate-signature-verified-with-the-is.html</guid>
+      <pubDate>Tue, 10 Nov 2026 15:57:48 GMT</pubDate>
+      <description>Severity: low. ### Summary
+
+When verifying a certificate, node-forge chose the RSA padding scheme (PKCS#1 v1.5 or RSASSA-PSS) and PSS parameters from the issuer certificate's own signature algorithm instead of the certificate being verified. A certificate labeled as signed with RSASSA-PSS could pass</description>
+    </item>
+    <item>
+      <title>CVE-2026-118776: Forge: Incomplete PKCS#7 padding validation in AES/DES CBC and ECB decryption</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-118776-forge-incomplete-pkcs-7-padding-validation-in-ae.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-118776-forge-incomplete-pkcs-7-padding-validation-in-ae.html</guid>
+      <pubDate>Tue, 10 Nov 2026 15:57:46 GMT</pubDate>
+      <description>Severity: low. ### Summary
+`decipher.finish()` in CBC and ECB mode accepted malformed PKCS#7 padding: only the last byte was checked, against a limit of four blocks, so mismatched padding bytes, a zero count and oversized counts were accepted and up to four blocks of plaintext could be silently remo</description>
+    </item>
+    <item>
+      <title>CVE-2026-119189: Forge: X.509 pathLenConstraint not enforced by verifyCertificateChain() for CA certificates without keyUsage</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-119189-forge-x-509-pathlenconstraint-not-enforced-by-ve.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-119189-forge-x-509-pathlenconstraint-not-enforced-by-ve.html</guid>
+      <pubDate>Tue, 10 Nov 2026 15:57:43 GMT</pubDate>
+      <description>Severity: medium. ### Summary
+`forge.pki.verifyCertificateChain()` enforces the `pathLenConstraint` of a CA certificate's `basicConstraints` extension only when that certificate also has a `keyUsage` extension. For a CA certificate with a `pathLenConstraint` and no `keyUsage`, chains with more inter</description>
+    </item>
+    <item>
+      <title>CVE-2026-119191: Forge: ASN.1 resource exhaustion via BIT STRING decoding in asn1.fromDer</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-119191-forge-asn-1-resource-exhaustion-via-bit-string-d.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-119191-forge-asn-1-resource-exhaustion-via-bit-string-d.html</guid>
+      <pubDate>Tue, 10 Nov 2026 15:57:41 GMT</pubDate>
+      <description>Severity: high. ### Summary
+`asn1.fromDer()` decodes the contents of BIT STRINGs as ASN.1 by default. That decode ignored the `maxDepth` recursion limit (an incomplete fix of CVE-[phone]) and also decoded nested BIT STRINGs, keeping a full copy of the decoded contents at each level, so small crafted</description>
+    </item>
+    <item>
+      <title>CVE-2026-119192: Forge: RSA PKCS#1 v1.5 signature forgery via non-canonical DigestInfo encoding</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-119192-forge-rsa-pkcs-1-v1-5-signature-forgery-via-non-.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-119192-forge-rsa-pkcs-1-v1-5-signature-forgery-via-non-.html</guid>
+      <pubDate>Tue, 10 Nov 2026 15:57:34 GMT</pubDate>
+      <description>Severity: high. ### Summary
+RSASSA-PKCS1-v1_5 signature verification (`publicKey.verify()` with the default scheme, also used by X.509 certificate and PKCS#7 verification) accepted non-canonical BER encodings of the DigestInfo, such as NULL parameters with content and non-minimal lengths. These leav</description>
+    </item>
+    <item>
+      <title>CVE-2026-115779: Effect: Cookie attribute injection via domain, path, and name fields in @effect/platform makeCookie()</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-115779-effect-cookie-attribute-injection-via-domain-pat.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-115779-effect-cookie-attribute-injection-via-domain-pat.html</guid>
+      <pubDate>Tue, 10 Nov 2026 15:57:32 GMT</pubDate>
+      <description>Severity: medium. ### Impact
+
+The `name`, `domain`, and `path` fields of `makeCookie()` were validated with a regex that allows `;`, the attribute separator in `Set-Cookie` headers. Because `serializeCookie()` writes those fields verbatim, a caller who passes untrusted input into any of them can app</description>
+    </item>
+    <item>
+      <title>CVE-2026-123364: OctoPrint: Stored XSS via saved connection parameters</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-123364-octoprint-stored-xss-via-saved-connection-parame.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-123364-octoprint-stored-xss-via-saved-connection-parame.html</guid>
+      <pubDate>Tue, 10 Nov 2026 15:57:29 GMT</pubDate>
+      <description>Severity: low. ## Impact
+
+OctoPrint versions 2.0.0rc1 up until version 2.0.0rc6 are susceptible to cross-site scripting via a specially crafted default `port` or `baudrate` setting on the bundled Serial Connector plugin, supplied via the API as new defaults during a `connect` request.
+
+## Patches
+
+T</description>
+    </item>
+    <item>
+      <title>CVE-2026-110802: Altair: DOM-based XSS via attacker-controlled script URLs in the iframe sandbox</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-110802-altair-dom-based-xss-via-attacker-controlled-scr.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-110802-altair-dom-based-xss-via-attacker-controlled-scr.html</guid>
+      <pubDate>Tue, 10 Nov 2026 15:57:27 GMT</pubDate>
+      <description>Severity: medium. ### Summary
+Altair `8.5.7` accepts plugin configuration directly from the `iframe-sandbox` query string.
+
+When `plugin_sandbox_opts` contains `type: "scripts"` and an attacker-controlled URL in `scriptUrls`, the sandbox page creates a classic `&lt;script src="..."&gt;` element and loads </description>
+    </item>
+    <item>
+      <title>CVE-2026-107846: bitcoinjs-lib: Undetected merkle node duplication in block root computation validates a forged transaction list</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-107846-bitcoinjs-lib-undetected-merkle-node-duplication.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-107846-bitcoinjs-lib-undetected-merkle-node-duplication.html</guid>
+      <pubDate>Tue, 10 Nov 2026 15:57:25 GMT</pubDate>
+      <description>Severity: critical. ### Summary
+`fastMerkleRoot` pads an odd level by hashing the last node with itself. It does not report that it did so, and `checkTxRoots` never looks for repeated transactions. A peer can therefore duplicate transactions to fill the pad and produce a block with a different trans</description>
+    </item>
+    <item>
+      <title>CVE-2026-123796: compose-lint: Incomplete fix for GHSA-jf3h-8jvx-vcrg: a run stopped at the finding limit quotes a secret from a CI-generated `.env`</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-123796-compose-lint-incomplete-fix-for-ghsa-jf3h-8jvx-v.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-123796-compose-lint-incomplete-fix-for-ghsa-jf3h-8jvx-v.html</guid>
+      <pubDate>Tue, 10 Nov 2026 15:57:22 GMT</pubDate>
+      <description>Severity: low. ### Impact
+
+This is an incomplete fix for GHSA-jf3h-8jvx-vcrg. 0.32.0 made findings quote the `${NAME}` a sibling `.env` filled in, instead of its value. The same release added a stop at 20,000 findings per document, and that stop is checked before the quoting step. A run that hits it</description>
+    </item>
+    <item>
+      <title>CVE-2026-103002: GPUStack: Missing authorization on several cluster and resource endpoints allows cross-user access and cluster takeover</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-103002-gpustack-missing-authorization-on-several-cluste.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-103002-gpustack-missing-authorization-on-several-cluste.html</guid>
+      <pubDate>Tue, 10 Nov 2026 15:57:20 GMT</pubDate>
+      <description>Severity: high. ### Impact
+
+An authenticated non-administrative user could access a Kubernetes cluster they are not authorized to access through GPUStack's Kubernetes API proxy.
+
+The `cluster_apiserver_proxy` handler did not perform a resource-level authorization check before forwarding requests to </description>
+    </item>
+    <item>
+      <title>CVE-2026-113663: AG2: Newline injection in SandboxShellTool bypasses allowed=[...] and readonly=True, enabling arbitrary command execution</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-113663-ag2-newline-injection-in-sandboxshelltool-bypass.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-113663-ag2-newline-injection-in-sandboxshelltool-bypass.html</guid>
+      <pubDate>Tue, 10 Nov 2026 15:57:17 GMT</pubDate>
+      <description>Severity: high. ### Summary
+SandboxShellTool's restricted modes — allowed=[...] (explicit command allowlist) and readonly=True (implicit READONLY_COMMANDS allowlist) — can both be bypassed by embedding a newline character inside the command string. The filter only inspects a single-line set of shell</description>
+    </item>
+    <item>
+      <title>CVE-2026-102894: GPUStack: SAML callback trusts an unverified SAMLResponse, allowing authentication bypass and account takeover</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-102894-gpustack-saml-callback-trusts-an-unverified-saml.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-102894-gpustack-saml-callback-trusts-an-unverified-saml.html</guid>
+      <pubDate>Tue, 10 Nov 2026 15:57:15 GMT</pubDate>
+      <description>Severity: critical. ### Impact
+
+The callback Base64-decodes the posted XML, reads NameID and attributes, resolves or provisions the user, and mints a gpustack_session JWT — but never calls OneLogin_Saml2_Auth.process_response(), the step that verifies the signature, issuer, audience, destination, an</description>
+    </item>
+    <item>
+      <title>CVE-2026-102650: Nuxt Content: Unauthenticated SQLite Function DoS via Content Query API</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-102650-nuxt-content-unauthenticated-sqlite-function-dos.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-102650-nuxt-content-unauthenticated-sqlite-function-dos.html</guid>
+      <pubDate>Tue, 10 Nov 2026 15:57:12 GMT</pubDate>
+      <description>Severity: high. ### Summary
+
+The `POST /__nuxt_content/:collection/query` endpoint in `@nuxt/content` accepts an attacker-controlled `sql` field from the HTTP request body and executes it against a local SQLite database after passing it through an insufficient validator (`assertSafeQuery`). The vali</description>
+    </item>
+    <item>
+      <title>CVE-2026-123373: compose-lint: A committed symlink makes compose-lint quote a file from outside the project into its output</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-123373-compose-lint-a-committed-symlink-makes-compose-l.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-123373-compose-lint-a-committed-symlink-makes-compose-l.html</guid>
+      <pubDate>Tue, 10 Nov 2026 15:57:10 GMT</pubDate>
+      <description>Severity: low. ### Impact
+
+Like Docker Compose, compose-lint follows symlinks when it reads a project's files. Unlike Compose, compose-lint up to 0.24.0 could then put the contents of a file from *outside* the project into its output, where the author of a pull request can read it.
+
+A pull request c</description>
+    </item>
+    <item>
+      <title>CVE-2026-123371: compose-lint: A `.compose-lint.yml` symlinked outside the project is read, and a parse error quotes part of the target</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-123371-compose-lint-a-compose-lint-yml-symlinked-outsid.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-123371-compose-lint-a-compose-lint-yml-symlinked-outsid.html</guid>
+      <pubDate>Tue, 10 Nov 2026 15:57:07 GMT</pubDate>
+      <description>Severity: low. ### Impact
+
+compose-lint automatically reads a `.compose-lint.yml` policy file beside the Compose file. It is meant to read nothing outside the project directory, but it follows that file if it is a symlink, wherever it points.
+
+A pull request can commit `.compose-lint.yml` as a symli</description>
+    </item>
+    <item>
+      <title>CVE-2026-123372: compose-lint: A pull request can make compose-lint quote a secret from a CI-generated `.env` into its findings</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-123372-compose-lint-a-pull-request-can-make-compose-lin.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-123372-compose-lint-a-pull-request-can-make-compose-lin.html</guid>
+      <pubDate>Tue, 10 Nov 2026 15:57:05 GMT</pubDate>
+      <description>Severity: low. ### Impact
+
+Since 0.22.0, compose-lint fills in `${VAR}` references from the `.env` beside the Compose file, as Compose does. The documentation says values under `environment:` are never resolved from a `.env`, "that is where secrets live". But `image:` values are resolved, and CL-000</description>
+    </item>
+    <item>
+      <title>CVE-2026-123370: compose-lint: `fix --apply` can delete a line the user did not select, including a security setting</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-123370-compose-lint-fix-apply-can-delete-a-line-the-use.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-123370-compose-lint-fix-apply-can-delete-a-line-the-use.html</guid>
+      <pubDate>Tue, 10 Nov 2026 15:57:02 GMT</pubDate>
+      <description>Severity: medium. ### Impact
+
+`compose-lint fix --apply` converts the line numbers its fixers work with into positions in the file. The YAML parser treats a lone carriage return, U+0085, U+2028 and U+2029 as line breaks, but the conversion counted only `\n`. One of those characters inside a quoted v</description>
+    </item>
+    <item>
+      <title>CVE-2026-123369: compose-lint: Compose file text can issue GitHub Actions workflow commands through the compose-lint Action</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-123369-compose-lint-compose-file-text-can-issue-github-.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-123369-compose-lint-compose-file-text-can-issue-github-.html</guid>
+      <pubDate>Tue, 10 Nov 2026 15:56:59 GMT</pubDate>
+      <description>Severity: medium. ### Impact
+
+The GitHub Actions runner treats certain text in a step's output as commands. The legacy form, `##[command]`, is recognized anywhere in a line. compose-lint's text report prints service names, environment keys and lines of the Compose file, and it does not neutralize `#</description>
+    </item>
+    <item>
+      <title>CVE-2026-123368: compose-lint: .env read through a symlink outside the project can expose the CI job's environment</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-123368-compose-lint-env-read-through-a-symlink-outside-.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-123368-compose-lint-env-read-through-a-symlink-outside-.html</guid>
+      <pubDate>Tue, 10 Nov 2026 15:56:56 GMT</pubDate>
+      <description>Severity: low. ### Impact
+
+compose-lint fills in `${VAR}` references from the `.env` file next to the Compose file. It is meant to read nothing outside the project directory, and `env_file:`, `include:` and `extends:` paths are checked for that. The `.env` read is not. If `.env` is a symlink, compos</description>
+    </item>
+    <item>
+      <title>CVE-2026-119345: Cocos AI Intra-handshake attested TLS implementation is vulnerable to TOCTOU Attacks</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-119345-cocos-ai-intra-handshake-attested-tls-implementa.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-119345-cocos-ai-intra-handshake-attested-tls-implementa.html</guid>
+      <pubDate>Tue, 10 Nov 2026 15:56:54 GMT</pubDate>
+      <description>Severity: high. ### Summary
+An attacker who can modify the attested workload’s code, memory-backed state, or configuration after the initial attestation — but without necessarily terminating the existing TLS connection — can cause the peer to continue trusting the connection as if the originally att</description>
+    </item>
+    <item>
+      <title>CVE-2026-95860: node-opcua: Namespace-Level RBAC Fail-Open - Anonymous Write/Call Bypass via Unbound `DefaultRolePermissions</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-95860-node-opcua-namespace-level-rbac-fail-open-anonymo.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-95860-node-opcua-namespace-level-rbac-fail-open-anonymo.html</guid>
+      <pubDate>Tue, 10 Nov 2026 15:56:52 GMT</pubDate>
+      <description>Severity: critical. ## Summary
+
+An unauthenticated (**Anonymous**) client can **Write** protected Variables and **Call** privileged Methods on any Node that lacks explicit per-node permissions.
+
+This follows the inheritance model defined by OPC UA Part 3, §5.2.9, where nodes without an explicit `Rol</description>
+    </item>
+    <item>
+      <title>CVE-2026-119299: gopacket: SCTP chunk sub-decoder out-of-bounds panics on crafted segments</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-119299-gopacket-sctp-chunk-sub-decoder-out-of-bounds-pa.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-119299-gopacket-sctp-chunk-sub-decoder-out-of-bounds-pa.html</guid>
+      <pubDate>Tue, 10 Nov 2026 15:56:49 GMT</pubDate>
+      <description>Severity: medium. ## Summary
+
+gopacket decodes SCTP (IP protocol 132) by walking the chunk chain through per-chunk-type decoder functions (`decodeSCTPInit`, `decodeSCTPShutdown`, `decodeSCTPError`, `decodeSCTPSack`, in `layers/sctp.go`). Each of these reads fixed-size header fields and runs count-dr</description>
+    </item>
+    <item>
+      <title>CVE-2026-102943: Dagu MCP DAG specification read bypasses path containment and workspace isolation</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-102943-dagu-mcp-dag-specification-read-bypasses-path-co.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-102943-dagu-mcp-dag-specification-read-bypasses-path-co.html</guid>
+      <pubDate>Tue, 10 Nov 2026 15:56:49 GMT</pubDate>
+      <description>Severity: medium. ## Summary
+
+The traversal fix for CVE-[phone] was implemented as HTTP middleware installed only in the chi handler chain, but the MCP service calls the same API method in process, so arbitrary YAML file read is reachable again through the MCP tool surface with a viewer-role key. Re</description>
+    </item>
+    <item>
+      <title>Fireworks AI Breach Widens to Expose Customer Billing Data and Incomplete Model Weights</title>
+      <link>https://sentinel-post.pages.dev/item/fireworks-ai-breach-widens-to-expose-customer-billing-data-and-i.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/fireworks-ai-breach-widens-to-expose-customer-billing-data-and-i.html</guid>
+      <pubDate>Tue, 10 Nov 2026 15:33:59 GMT</pubDate>
+      <description>Fireworks AI disclosed on Monday that its investigation into a security incident first reported early last month&amp;nbsp; uncovered further malicious activity, affecting account and billing information, alongside secrets, datasets, and incomplete models for a "limited set of accounts." In a notice publ</description>
+    </item>
     <item>
       <title>Binance Warns of iOS Sandbox Escape That Could Expose Crypto Wallet Keys, No Fix Confirmed</title>
       <link>https://sentinel-post.pages.dev/item/binance-warns-of-ios-sandbox-escape-that-could-expose-crypto-wal.html</link>
@@ -19,236 +270,6 @@
       <guid isPermaLink="true">https://sentinel-post.pages.dev/item/new-openssh-vulnerability.html</guid>
       <pubDate>Tue, 10 Nov 2026 12:02:46 GMT</pubDate>
       <description>&lt;p&gt;It&amp;#8217;s a &lt;a href="https://www.bleepingcomputer.com/news/security/openssh-flaw-lets-attackers-log-into-password-disabled-linux-accounts/"&gt;bad one&lt;/a&gt;, and it&amp;#8217;s been in the code for a decade:&lt;/p&gt; &lt;blockquote&gt;&lt;p&gt;A newly disclosed flaw involving OpenSSH and musl, dubbed &amp;#8220;*sshole,&amp;#822</description>
-    </item>
-    <item>
-      <title>Beyond the Alert: The Case for Rich Network Data</title>
-      <link>https://sentinel-post.pages.dev/item/beyond-the-alert-the-case-for-rich-network-data.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/beyond-the-alert-the-case-for-rich-network-data.html</guid>
-      <pubDate>Tue, 10 Nov 2026 11:38:13 GMT</pubDate>
-      <description>At some point your security will fail. This isn’t pessimism. It’s not because your team and tools aren’t sophisticated enough. It’s the reason we have detections in the first place. And, it’s why once we accept that prevention has its limits, we arrive at an interdiction strategy: finding and disrup</description>
-    </item>
-    <item>
-      <title>Apple Patches iMessage Group Chat Privacy Flaws and Bluetooth Pairing Vulnerabilities</title>
-      <link>https://sentinel-post.pages.dev/item/apple-patches-imessage-group-chat-privacy-flaws-and-bluetooth-pa.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/apple-patches-imessage-group-chat-privacy-flaws-and-bluetooth-pa.html</guid>
-      <pubDate>Tue, 10 Nov 2026 10:16:51 GMT</pubDate>
-      <description>An iMessage flaw could let a remote attacker join a group chat and receive its messages, Apple said yesterday, and it released updates to fix it. The updates also fix a separate iMessage flaw that could let someone added to a group access messages sent before they joined. As of today, other updates </description>
-    </item>
-    <item>
-      <title>Russian Turla Hackers Use New Cereal Malware to Steal Emails From Government Exchange Servers</title>
-      <link>https://sentinel-post.pages.dev/item/russian-turla-hackers-use-new-cereal-malware-to-steal-emails-fro.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/russian-turla-hackers-use-new-cereal-malware-to-steal-emails-fro.html</guid>
-      <pubDate>Tue, 10 Nov 2026 10:07:29 GMT</pubDate>
-      <description>The Russia-aligned state-sponsored threat actor known as Turla (aka Snake) is wielding a previously undocumented cyber espionage toolset called Cereal that's used to break into victims' Microsoft Exchange servers with an aim to surreptitiously collect emails. According to an ESET report shared with </description>
-    </item>
-    <item>
-      <title>SAP Patches Four CVSS 10.0 Flaws, Including Two Enabling Remote Code Execution</title>
-      <link>https://sentinel-post.pages.dev/item/sap-patches-four-cvss-10-0-flaws-including-two-enabling-remote-c.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/sap-patches-four-cvss-10-0-flaws-including-two-enabling-remote-c.html</guid>
-      <pubDate>Tue, 10 Nov 2026 10:02:40 GMT</pubDate>
-      <description>Four flaws that attackers could exploit without logging in were fixed today as part of SAP's monthly Security Patch Day—the vendor rates all four 10.0, the maximum CVSS score. Three are in the SAP NetWeaver application server, the software SAP systems run on, and one is in the Web Dispatcher, which </description>
-    </item>
-    <item>
-      <title>France Blames Iran for Sabotage Attack on Refrigeration Controllers at About 700 Retail Sites</title>
-      <link>https://sentinel-post.pages.dev/item/france-blames-iran-for-sabotage-attack-on-refrigeration-controll.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/france-blames-iran-for-sabotage-attack-on-refrigeration-controll.html</guid>
-      <pubDate>Tue, 10 Nov 2026 09:08:20 GMT</pubDate>
-      <description>An October cyberattack on refrigeration controllers at about 700 French retail sites was carried out by a cyber unit of Iran's Islamic Revolutionary Guard Corps (IRGC), the French government said yesterday. The attackers broke into controllers on the night of October 11 and changed their defrost set</description>
-    </item>
-    <item>
-      <title>Anthropic's Claude Fable 5.2 Beats GPT-6 Cyber in Multi-Stage Cyberattack Benchmark</title>
-      <link>https://sentinel-post.pages.dev/item/anthropic-s-claude-fable-5-2-beats-gpt-6-cyber-in-multi-stage-cy.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/anthropic-s-claude-fable-5-2-beats-gpt-6-cyber-in-multi-stage-cy.html</guid>
-      <pubDate>Tue, 10 Nov 2026 08:16:14 GMT</pubDate>
-      <description>Anthropic on Monday released Claude Fable 5.2 and Claude Mythos 5.2 models, which it said exhibit improvements in coding, reasoning, and vision. During pre-release training, the large language models (LLMs) helped its engineers "complete otherwise-infeasible software migrations, designed three worki</description>
-    </item>
-    <item>
-      <title>Google Issues Chrome Security Update for Eighth Actively Exploited Zero-Day of 2026</title>
-      <link>https://sentinel-post.pages.dev/item/google-issues-chrome-security-update-for-eighth-actively-exploit.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/google-issues-chrome-security-update-for-eighth-actively-exploit.html</guid>
-      <pubDate>Tue, 10 Nov 2026 06:52:54 GMT</pubDate>
-      <description>Google on Monday released updates to patch nine security vulnerabilities, including one that has come under active exploitation in the wild. The high-severity vulnerability, assigned the CVE identifier CVE-[phone] (CVSS score: N/A), has been described as a use-after-free bug in the XML component. Us</description>
-    </item>
-    <item>
-      <title>N-able Takes N-central Cloud Offline After Researcher Discloses 33 Zero-Days with PoC Exploits</title>
-      <link>https://sentinel-post.pages.dev/item/n-able-takes-n-central-cloud-offline-after-researcher-discloses-.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/n-able-takes-n-central-cloud-offline-after-researcher-discloses-.html</guid>
-      <pubDate>Tue, 10 Nov 2026 06:44:36 GMT</pubDate>
-      <description>N-able said it has taken N-central Hosted Environments offline and is urging on-premises customers to shut down their servers until further notice following the public disclosure of over 30 vulnerabilities collectively tracked as Able2Shell. "As a precautionary measure, we are temporarily taking our</description>
-    </item>
-    <item>
-      <title>CISA Warns of Active Exploitation of OpenSSH, GPUStack, FreeSWITCH, and IBM Flaws</title>
-      <link>https://sentinel-post.pages.dev/item/cisa-warns-of-active-exploitation-of-openssh-gpustack-freeswitch.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cisa-warns-of-active-exploitation-of-openssh-gpustack-freeswitch.html</guid>
-      <pubDate>Tue, 10 Nov 2026 06:31:42 GMT</pubDate>
-      <description>The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Monday added four security flaws impacting GPUStack, SignalWire FreeSwitch, OpenBSD OpenSSH, and IBM Aspera Faspex to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation. The vulnerabilities are</description>
-    </item>
-    <item>
-      <title>CVE-2026-88986: Kubeflow Pipelines: Reflected XSS in the frontend pod information and events error responses</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-88986-kubeflow-pipelines-reflected-xss-in-the-frontend-.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-88986-kubeflow-pipelines-reflected-xss-in-the-frontend-.html</guid>
-      <pubDate>Mon, 09 Nov 2026 23:25:58 GMT</pubDate>
-      <description>Severity: medium. ## Summary
-
-The Kubeflow Pipelines frontend reflected untrusted pod names and namespaces into HTML error responses from the pod-information and pod-events routes. An attacker could craft a link that causes JavaScript to execute in the frontend's origin when a user follows it and re</description>
-    </item>
-    <item>
-      <title>CVE-2026-88985: Kubeflow Pipelines: SQL injection through unvalidated pagination tokens in Kubeflow Pipelines API server</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-88985-kubeflow-pipelines-sql-injection-through-unvalida.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-88985-kubeflow-pipelines-sql-injection-through-unvalida.html</guid>
-      <pubDate>Mon, 09 Nov 2026 23:25:00 GMT</pubDate>
-      <description>Severity: medium. ## Summary
-
-Kubeflow Pipelines API server does not sufficiently validate SQL identifier fields decoded from the `page_token` pagination parameter. Client-controlled fields can reach SQL query construction, allowing SQL injection through list APIs.
-
-This advisory consolidates the or</description>
-    </item>
-    <item>
-      <title>CVE-2026-77433: Kiwi TCMS account confirmation open redirect through protocol-relative URLs</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-77433-kiwi-tcms-account-confirmation-open-redirect-thro.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-77433-kiwi-tcms-account-confirmation-open-redirect-thro.html</guid>
-      <pubDate>Mon, 09 Nov 2026 23:24:14 GMT</pubDate>
-      <description>Severity: medium. ## Summary
-
-In Kiwi TCMS version 16.1, the fix for CVE-[phone] (open redirect via unvalidated `next` parameter) in the account confirmation endpoint is incomplete. The validation uses `startswith("/")` to check if the redirect URL is local, but this is bypassed by protocol-relative</description>
-    </item>
-    <item>
-      <title>CVE-2026-88984: Kubeflow Pipelines: RBAC bypass on shared pipelines allows any authenticated user to delete or modify global pipelines</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-88984-kubeflow-pipelines-rbac-bypass-on-shared-pipeline.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-88984-kubeflow-pipelines-rbac-bypass-on-shared-pipeline.html</guid>
-      <pubDate>Mon, 09 Nov 2026 22:48:03 GMT</pubDate>
-      <description>Severity: high. ## Summary
-
-In multi-user mode, the Kubeflow Pipelines API server skipped authorization checks for shared/global pipelines with an empty namespace. This exception applied to write and delete operations as well as reads, allowing an authenticated user to modify or delete shared pipeli</description>
-    </item>
-    <item>
-      <title>CVE-2026-88983: Kubeflow Pipelines — API server fetches a caller-supplied pipelineURL without host validation</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-88983-kubeflow-pipelines-api-server-fetches-a-caller-su.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-88983-kubeflow-pipelines-api-server-fetches-a-caller-su.html</guid>
-      <pubDate>Mon, 09 Nov 2026 22:44:17 GMT</pubDate>
-      <description>Severity: medium. ## Summary
-
-The Kubeflow Pipelines API server fetched caller-supplied pipeline package URLs without restricting the destination. A caller authorized to create a pipeline or pipeline version could cause requests to originate from the API server's network position, including to inter</description>
-    </item>
-    <item>
-      <title>CVE-2026-88982: Kubeflow Pipelines: Cross-tenant execution-cache poisoning / output substitution via a namespace-blind cache key in the cache webhook (multi-user)</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-88982-kubeflow-pipelines-cross-tenant-execution-cache-p.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-88982-kubeflow-pipelines-cross-tenant-execution-cache-p.html</guid>
-      <pubDate>Mon, 09 Nov 2026 22:43:33 GMT</pubDate>
-      <description>Severity: medium. ## Summary
-
-The legacy Kubeflow Pipelines V1/raw-Argo execution cache does not separate cached results by Kubernetes namespace. In multi-user deployments where tenants share the cache service, a tenant can receive another tenant's cached outputs or seed outputs that are subsequentl</description>
-    </item>
-    <item>
-      <title>CVE-2026-88968: Claude Code: TOCTOU Race in Edit Tool Allows File Writes Outside the Workspace</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-88968-claude-code-toctou-race-in-edit-tool-allows-file-.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-88968-claude-code-toctou-race-in-edit-tool-allows-file-.html</guid>
-      <pubDate>Mon, 09 Nov 2026 22:42:03 GMT</pubDate>
-      <description>Severity: high. Claude Code validated Edit tool targets using point-in-time pathname and symlink resolution that was not bound to the underlying directory inodes or file descriptors. On macOS, a process running inside Claude Code's Bash sandbox could exploit the resulting time-of-check to time-of-us</description>
-    </item>
-    <item>
-      <title>CVE-2026-119298: croc: Overwrite-confirmation bypass via a crafted "croc-stdin-" filename on receive</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-119298-croc-overwrite-confirmation-bypass-via-a-crafted.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-119298-croc-overwrite-confirmation-bypass-via-a-crafted.html</guid>
-      <pubDate>Mon, 09 Nov 2026 22:40:12 GMT</pubDate>
-      <description>Severity: medium. ## Summary
-
-croc is an end-to-end encrypted peer-to-peer file transfer tool. On the receiving side, the confirmation that normally protects an existing file from being overwritten or resumed is skipped whenever the received file's name starts with `croc-stdin-`, regardless of wheth</description>
-    </item>
-    <item>
-      <title>CVE-2026-108262: DDEV incomplete tar symlink traversal fix allows host file overwrite - Incomplete fix of CVE-2026-32885</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-108262-ddev-incomplete-tar-symlink-traversal-fix-allows.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-108262-ddev-incomplete-tar-symlink-traversal-fix-allows.html</guid>
-      <pubDate>Mon, 09 Nov 2026 22:37:58 GMT</pubDate>
-      <description>Severity: high. ## Summary
-
-The CVE-[phone] ZipSlip fix added a symlink-target escape check to Untar, but the check rebases an ABSOLUTE symlink target into dest before validating (filepath.Join(dest, "/etc") stays lexically inside dest and passes), while the symlink is then created with the RAW abso</description>
-    </item>
-    <item>
-      <title>CVE-2026-97705: Moleculer: Unauthenticated Denial of Service via negative length field in the TCP transporter packet parser</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-97705-moleculer-unauthenticated-denial-of-service-via-n.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-97705-moleculer-unauthenticated-denial-of-service-via-n.html</guid>
-      <pubDate>Mon, 09 Nov 2026 22:31:16 GMT</pubDate>
-      <description>Severity: high. ### Summary
-
-The TCP transporter's packet parser (`src/transporters/tcp/parser.js`) reads the packet length field with `Buffer.prototype.readInt32BE`, a signed read. A crafted packet whose length field has the sign bit set yields a negative `length`. The parser then advances past the</description>
-    </item>
-    <item>
-      <title>CVE-2026-85737: Velociraptor: Low-priv analyst reads arbitrary server files via ungated sql() VQL plugin</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-85737-velociraptor-low-priv-analyst-reads-arbitrary-ser.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-85737-velociraptor-low-priv-analyst-reads-arbitrary-ser.html</guid>
-      <pubDate>Mon, 09 Nov 2026 22:25:14 GMT</pubDate>
-      <description>Severity: medium. ## Summary
-
-The `sql()` VQL plugin runs a caller-supplied database driver and connection string with no permission check (`vql/parsers/sql/sql.go:93`, `SQLPlugin.Call`). For `driver='mysql'` or `driver='postgres'` the handle comes from `GetHandleOther` (`sql.go:39`), which passes t</description>
-    </item>
-    <item>
-      <title>CVE-2026-77596: Kubeflow Pipelines API server lacks authorization for shared pipeline uploads</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-77596-kubeflow-pipelines-api-server-lacks-authorization.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-77596-kubeflow-pipelines-api-server-lacks-authorization.html</guid>
-      <pubDate>Mon, 09 Nov 2026 22:22:41 GMT</pubDate>
-      <description>Severity: critical. ## Summary
-
-In multi-user mode, the Kubeflow Pipelines API server's HTTP multipart upload endpoints (`POST /apis/v2beta1/pipelines/upload` and `POST /apis/v2beta1/pipelines/upload_version`) perform no authorization when the target namespace is empty. The authorization helper `can</description>
-    </item>
-    <item>
-      <title>CVE-2026-94619: FileGator: Missing authorization in POST /upload allows cross-user read and deletion of temporary files</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-94619-filegator-missing-authorization-in-post-upload-al.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-94619-filegator-missing-authorization-in-post-upload-al.html</guid>
-      <pubDate>Mon, 09 Nov 2026 22:20:08 GMT</pubDate>
-      <description>Severity: medium. ## Summary
-
-`POST /upload` uses the request-supplied `resumableFilename` directly as a key into the shared temporary directory, without the character filter it applies to `resumableIdentifier` and without namespacing it per user. A valid user holding the `upload` permission can rea</description>
-    </item>
-    <item>
-      <title>CVE-2026-94618: FileGator: Missing authorization in GET /batchdownload allows cross-user retrieval of another user's archive</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-94618-filegator-missing-authorization-in-get-batchdownl.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-94618-filegator-missing-authorization-in-get-batchdownl.html</guid>
-      <pubDate>Mon, 09 Nov 2026 22:17:36 GMT</pubDate>
-      <description>Severity: medium. ### Summary
-`GET /batchdownload` streams a batch ZIP to any requester who supplies its `uniqid`, without checking that the current user/session created it. In deployments where users have separate home directories, a valid low-privileged user who obtains an active archive id can do</description>
-    </item>
-    <item>
-      <title>CVE-2026-87008: Code Graph RAG structural tools follow out-of-root symlinks</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-87008-code-graph-rag-structural-tools-follow-out-of-roo.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-87008-code-graph-rag-structural-tools-follow-out-of-roo.html</guid>
-      <pubDate>Mon, 09 Nov 2026 22:16:41 GMT</pubDate>
-      <description>Severity: high. A remote/local attacker who can get a symbolic link included in a source-code repository that code-graph-rag analyzes can cause the `structural_search` and `structural_replace` tools (backed by `AstGrepService`, exposed both as MCP tools and as agentic AI tools) to read and -- via `s</description>
-    </item>
-    <item>
-      <title>CVE-2026-102895: GPUStack: Authentication bypass via trusted loopback source (reverse-proxy TCP peer or X-GPUStack-Real-IP header) grants unauthenticated admin</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-102895-gpustack-authentication-bypass-via-trusted-loopb.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-102895-gpustack-authentication-bypass-via-trusted-loopb.html</guid>
-      <pubDate>Mon, 09 Nov 2026 22:15:27 GMT</pubDate>
-      <description>Severity: critical. ### Impact
-
-In GPUStack before v2.2.0, `get_current_user` (in `gpustack/api/auth.py`) promotes any request whose source is considered loopback to the built-in administrator account when `force_auth_localhost` is `False` (the default). The "source" is derived by `client_ip_getter`</description>
-    </item>
-    <item>
-      <title>CVE-2026-115770: Pocket ID: Email verification token remains valid after address change, enabling arbitrary verified-email spoofing</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-115770-pocket-id-email-verification-token-remains-valid.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-115770-pocket-id-email-verification-token-remains-valid.html</guid>
-      <pubDate>Mon, 09 Nov 2026 22:12:21 GMT</pubDate>
-      <description>Severity: critical. ## Summary
-
-An authenticated Pocket ID user can request an email-verification token while their account uses an address they control, change the account email address, and then redeem the previously issued token. The token is bound only to the user ID, not to the address to which</description>
-    </item>
-    <item>
-      <title>CVE-2026-103022: Urwid: handle_short_request() crashes on non-ASCII POST body (UnicodeEncodeError DoS)</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-103022-urwid-handle-short-request-crashes-on-non-ascii-.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-103022-urwid-handle-short-request-crashes-on-non-ascii-.html</guid>
-      <pubDate>Mon, 09 Nov 2026 22:05:06 GMT</pubDate>
-      <description>Severity: medium. ### Summary
-The `handle_short_request()` function in `urwid/display/web.py` raises an unhandled `UnicodeEncodeError` when processing a POST request body containing non-ASCII bytes. The function reads POST input and encodes it to ASCII before writing to a named pipe. Any byte value </description>
-    </item>
-    <item>
-      <title>CVE-2026-102657: esm.sh: web.NewHandler allows arbitrary file read via encoded dot-segment path traversal</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-102657-esm-sh-web-newhandler-allows-arbitrary-file-read.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-102657-esm-sh-web-newhandler-allows-arbitrary-file-read.html</guid>
-      <pubDate>Mon, 09 Nov 2026 22:03:29 GMT</pubDate>
-      <description>Severity: high. ### Summary
-
-The documented `web.NewHandler` static file server can read files outside `Config.AppDir` when the request path contains URL-encoded dot-segments such as `%2e%2e`. Go's `ServeMux` redirects plain `/../` paths, but it passes encoded dot-segments to the handler after decod</description>
     </item>
   </channel>
 </rss>
