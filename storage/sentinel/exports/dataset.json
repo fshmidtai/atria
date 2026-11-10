@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-10T17:07:41+00:00",
+  "generated_at": "2026-11-10T20:59:47+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -27,12 +27,12 @@
     },
     "by_topic": {
       "security": 109,
-      "ai": 74,
-      "dev": 58,
-      "hardware": 18,
+      "ai": 72,
+      "dev": 56,
+      "hardware": 17,
       "biz": 10,
-      "crypto": 8,
-      "science": 8
+      "crypto": 7,
+      "science": 3
     },
     "top_domains": [
       [
@@ -174,6 +174,24 @@
       "date": "2025-03-24"
     },
     {
+      "uid": "cve:GHSA-pcrw-h46h-c93h",
+      "source": "cve",
+      "title": "CVE-2026-125120: Mongoose: sanitizeFilter not applied on countDocuments",
+      "url": "https://github.com/advisories/GHSA-pcrw-h46h-c93h",
+      "ts": 1794339452.0,
+      "points": 6000,
+      "comments": 0,
+      "author": "mongoose",
+      "summary": "Severity: critical. ### Impact\n\n`sanitizeFilter` is Mongoose's mechanism for protecting against query selector injection attacks. In older versions of Mongoose, `sanitizeFilter` was not applied for `countDocuments()` queries.\n\n### Patches\n\nPatches have been released for all supported Mongoose major release lines. Pleas",
+      "recipe": "gh_advisories",
+      "buzz": 6080,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-10"
+    },
+    {
       "uid": "cve:GHSA-8vv3-6qpc-gpw6",
       "source": "cve",
       "title": "CVE-2026-107846: bitcoinjs-lib: Undetected merkle node duplication in block root computation validates a forged transaction list",
@@ -208,26 +226,6 @@
         "dev",
         "security",
         "hardware"
-      ],
-      "date": "2026-11-10"
-    },
-    {
-      "uid": "cve:GHSA-xggf-m53x-jc3f",
-      "source": "cve",
-      "title": "CVE-2026-95860: node-opcua: Namespace-Level RBAC Fail-Open - Anonymous Write/Call Bypass via Unbound `DefaultRolePermissions",
-      "url": "https://github.com/advisories/GHSA-xggf-m53x-jc3f",
-      "ts": 1794326212.0,
-      "points": 6000,
-      "comments": 0,
-      "author": "node-opcua",
-      "summary": "Severity: critical. ## Summary\n\nAn unauthenticated (**Anonymous**) client can **Write** protected Variables and **Call** privileged Methods on any Node that lacks explicit per-node permissions.\n\nThis follows the inheritance model defined by OPC UA Part 3, §5.2.9, where nodes without an explicit `RolePermissions` attrib",
-      "recipe": "gh_advisories",
-      "buzz": 6080,
-      "topics": [
-        "ai",
-        "crypto",
-        "science",
-        "security"
       ],
       "date": "2026-11-10"
     },
@@ -321,6 +319,60 @@
         "security"
       ],
       "date": "2021-01-11"
+    },
+    {
+      "uid": "cve:GHSA-8332-j7wj-wjw4",
+      "source": "cve",
+      "title": "CVE-2026-125117: Mongoose walks into inherited properties when hydrating, setting, and merging, allowing overwrites of built-in functions (denial of service) and shared schema state",
+      "url": "https://github.com/advisories/GHSA-8332-j7wj-wjw4",
+      "ts": 1794344176.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "mongoose",
+      "summary": "Severity: high. ### Summary\n\nThree Mongoose code paths copy data into objects by property name without checking whether the property is the object's own or inherited from its prototype:\n\n1. Loading a document from the database (`init()`, also used by `Model.hydrate()`)\n2. Setting a dotted path on a document (`$__se",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "cve:GHSA-gg4r-jv3p-qx3c",
+      "source": "cve",
+      "title": "CVE-2026-125119: Mongoose: Connection-level sanitizeFilter not applied",
+      "url": "https://github.com/advisories/GHSA-gg4r-jv3p-qx3c",
+      "ts": 1794340572.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "mongoose",
+      "summary": "Severity: high. ### Summary\n\nsanitizeFilter exists to stop query selector injection: it wraps operator objects such as `{ $ne: null }` in filter values in `$eq`, so they are matched literally. Set on a connection with `mongoose.connect()` or `createConnection(uri, { sanitizeFilter: true })`, the connection reports",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "cve:GHSA-5v64-555j-wjxm",
+      "source": "cve",
+      "title": "CVE-2026-125111: Rack: Multipart parsing allows DoS via unbounded scan buffer growth",
+      "url": "https://github.com/advisories/GHSA-5v64-555j-wjxm",
+      "ts": 1794339349.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "rack",
+      "summary": "Severity: high. ## Summary\n\n`Rack::Multipart::Parser` reads the request body in chunks of `rack.multipart.buffer_size` (1 MiB by default) into an internal scan buffer. Parsed bytes are only discarded from that buffer when a chunk ends inside a part body. A request whose parts are sized so that every chunk ends insi",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-10"
     },
     {
       "uid": "cve:GHSA-xwgp-w3pj-q5h3",
@@ -431,45 +483,6 @@
         "security"
       ],
       "date": "2026-11-10"
-    },
-    {
-      "uid": "cve:GHSA-ghwv-vrp2-2975",
-      "source": "cve",
-      "title": "CVE-2026-119345: Cocos AI Intra-handshake attested TLS implementation is vulnerable to TOCTOU Attacks",
-      "url": "https://github.com/advisories/GHSA-ghwv-vrp2-2975",
-      "ts": 1794326214.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "github.com/ultravioletrs/cocos",
-      "summary": "Severity: high. ### Summary\nAn attacker who can modify the attested workload’s code, memory-backed state, or configuration after the initial attestation — but without necessarily terminating the existing TLS connection — can cause the peer to continue trusting the connection as if the originally attested state were",
-      "recipe": "gh_advisories",
-      "buzz": 3580,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-10"
-    },
-    {
-      "uid": "cve:GHSA-ghgh-57qv-h687",
-      "source": "cve",
-      "title": "CVE-2026-88984: Kubeflow Pipelines: RBAC bypass on shared pipelines allows any authenticated user to delete or modify global pipelines",
-      "url": "https://github.com/advisories/GHSA-ghgh-57qv-h687",
-      "ts": 1794264483.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "github.com/kubeflow/pipelines",
-      "summary": "Severity: high. ## Summary\n\nIn multi-user mode, the Kubeflow Pipelines API server skipped authorization checks for shared/global pipelines with an empty namespace. This exception applied to write and delete operations as well as reads, allowing an authenticated user to modify or delete shared pipelines without the",
-      "recipe": "gh_advisories",
-      "buzz": 3580,
-      "topics": [
-        "dev",
-        "science",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-09"
     },
     {
       "uid": "hn:50172041",
@@ -782,6 +795,115 @@
       "date": "2020-09-30"
     },
     {
+      "uid": "cve:GHSA-wr5m-5jph-8m96",
+      "source": "cve",
+      "title": "CVE-2026-125116: Mongoose: Discriminator key values matching inherited properties (e.g. __t: 'constructor') bypass schema casting and can poison collections",
+      "url": "https://github.com/advisories/GHSA-wr5m-5jph-8m96",
+      "ts": 1794344238.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "mongoose",
+      "summary": "Severity: medium. ### Summary\n\nMongoose chooses which discriminator model or schema to use by looking up the discriminator key value (`__t` by default) in a plain object of registered discriminators, for example `Model.discriminators[doc.__t]`. That value comes from user documents and query filters. Because the looku",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "cve:GHSA-6972-9mcm-vhwj",
+      "source": "cve",
+      "title": "CVE-2026-125118: Mongoose: Prototype pollution via Schema.prototype.virtual()",
+      "url": "https://github.com/advisories/GHSA-6972-9mcm-vhwj",
+      "ts": 1794343593.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "mongoose",
+      "summary": "Severity: medium. ### Summary\n\nPrototype pollution via Schema.prototype.virtual() — the 2022 fix for CVE-2022-2564 / CVE-[phone] protected Schema.path()/add() but never virtual(), so the same class of bug is still exploitable in all maintained release lines.\n\n### Details\n\nIn lib/schema.js, Schema.prototype.virtual",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "cve:GHSA-wrr5-j383-f7h2",
+      "source": "cve",
+      "title": "CVE-2026-79914: NocoBase: @nocobase/plugin-action-custom-request allows server-side request forgery through runtime URL overrides",
+      "url": "https://github.com/advisories/GHSA-wrr5-j383-f7h2",
+      "ts": 1794338414.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "@nocobase/plugin-action-custom-request",
+      "summary": "Severity: medium. ### Summary\n\nA Server-Side Request Forgery vulnerability exists in NocoBase v2.1.10 in the `@nocobase/plugin-action-custom-request` plugin.\n\nA low-privileged authenticated user can call the `customRequests:send` endpoint and override the stored request URL at runtime using `options.url`. This causes",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "dev",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "cve:GHSA-2j8w-xcrc-x985",
+      "source": "cve",
+      "title": "CVE-2026-125109: Rack: Rack::Request#host_with_port (and #base_url / #url) return the raw invalid Host header — incomplete fix of CVE-2026-34835",
+      "url": "https://github.com/advisories/GHSA-2j8w-xcrc-x985",
+      "ts": 1794337888.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "rack",
+      "summary": "Severity: medium. ## Summary\n\n`Rack::Request#host_with_port`, and therefore `#base_url` and `#url`, return the raw authority string when it fails validation. An attacker-controlled `Host`, `X-Forwarded-Host`, or `Forwarded: host=` value containing characters that are not permitted in an authority is embedded verbatim",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "cve:GHSA-wvg4-6p58-3gh3",
+      "source": "cve",
+      "title": "CVE-2026-125110: Rack: Rack::Static header_rules bypass via dot-segment normalization mismatch",
+      "url": "https://github.com/advisories/GHSA-wvg4-6p58-3gh3",
+      "ts": 1794336607.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "rack",
+      "summary": "Severity: medium. ## Summary\n\n`Rack::Static` normalizes the request path with `Utils.clean_path_info` when deciding which file to serve, but matches `header_rules` against a path that is only URL-decoded. A request containing dot segments, raw or percent-encoded, is served the normalized target file while the header",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "cve:GHSA-r7j4-crjv-h467",
+      "source": "cve",
+      "title": "CVE-2026-125121: compose-lint: Text in a pull request can still issue CI workflow commands through compose-lint 0.31.0's output",
+      "url": "https://github.com/advisories/GHSA-r7j4-crjv-h467",
+      "ts": 1794335315.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "compose-lint",
+      "summary": "Severity: medium. ### Impact\n\n0.31.0 fixed GHSA-6f4g-xm8v-pgv6, where text from a Compose file became GitHub Actions workflow commands in compose-lint's output. The fix escapes the command openers in everything compose-lint prints, and the 0.31.0 changelog says the report \"escapes both openers (also covering Azure Pi",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-10"
+    },
+    {
       "uid": "cve:GHSA-h46v-rmh6-fq4f",
       "source": "cve",
       "title": "CVE-2026-119189: Forge: X.509 pathLenConstraint not enforced by verifyCertificateChain() for CA certificates without keyUsage",
@@ -835,158 +957,6 @@
         "security"
       ],
       "date": "2026-11-10"
-    },
-    {
-      "uid": "cve:GHSA-65v8-q222-64xx",
-      "source": "cve",
-      "title": "CVE-2026-123370: compose-lint: `fix --apply` can delete a line the user did not select, including a security setting",
-      "url": "https://github.com/advisories/GHSA-65v8-q222-64xx",
-      "ts": 1794326222.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "compose-lint",
-      "summary": "Severity: medium. ### Impact\n\n`compose-lint fix --apply` converts the line numbers its fixers work with into positions in the file. The YAML parser treats a lone carriage return, U+0085, U+2028 and U+2029 as line breaks, but the conversion counted only `\\n`. One of those characters inside a quoted value, which most e",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-10"
-    },
-    {
-      "uid": "cve:GHSA-6f4g-xm8v-pgv6",
-      "source": "cve",
-      "title": "CVE-2026-123369: compose-lint: Compose file text can issue GitHub Actions workflow commands through the compose-lint Action",
-      "url": "https://github.com/advisories/GHSA-6f4g-xm8v-pgv6",
-      "ts": 1794326219.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "tmatens/compose-lint",
-      "summary": "Severity: medium. ### Impact\n\nThe GitHub Actions runner treats certain text in a step's output as commands. The legacy form, `##[command]`, is recognized anywhere in a line. compose-lint's text report prints service names, environment keys and lines of the Compose file, and it does not neutralize `##[`. Inside the co",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-10"
-    },
-    {
-      "uid": "cve:GHSA-358w-w75h-x6rx",
-      "source": "cve",
-      "title": "CVE-2026-119299: gopacket: SCTP chunk sub-decoder out-of-bounds panics on crafted segments",
-      "url": "https://github.com/advisories/GHSA-358w-w75h-x6rx",
-      "ts": 1794326209.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "github.com/gopacket/gopacket",
-      "summary": "Severity: medium. ## Summary\n\ngopacket decodes SCTP (IP protocol 132) by walking the chunk chain through per-chunk-type decoder functions (`decodeSCTPInit`, `decodeSCTPShutdown`, `decodeSCTPError`, `decodeSCTPSack`, in `layers/sctp.go`). Each of these reads fixed-size header fields and runs count-driven loops **witho",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-10"
-    },
-    {
-      "uid": "cve:GHSA-5m6c-38r8-5w76",
-      "source": "cve",
-      "title": "CVE-2026-102943: Dagu MCP DAG specification read bypasses path containment and workspace isolation",
-      "url": "https://github.com/advisories/GHSA-5m6c-38r8-5w76",
-      "ts": 1794326209.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "github.com/dagu-org/dagu/v2",
-      "summary": "Severity: medium. ## Summary\n\nThe traversal fix for CVE-[phone] was implemented as HTTP middleware installed only in the chi handler chain, but the MCP service calls the same API method in process, so arbitrary YAML file read is reachable again through the MCP tool surface with a viewer-role key. Read-only, limite",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "dev",
-        "science",
-        "security"
-      ],
-      "date": "2026-11-10"
-    },
-    {
-      "uid": "cve:GHSA-g3qx-frcg-j979",
-      "source": "cve",
-      "title": "CVE-2026-88986: Kubeflow Pipelines: Reflected XSS in the frontend pod information and events error responses",
-      "url": "https://github.com/advisories/GHSA-g3qx-frcg-j979",
-      "ts": 1794266758.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "github.com/kubeflow/pipelines",
-      "summary": "Severity: medium. ## Summary\n\nThe Kubeflow Pipelines frontend reflected untrusted pod names and namespaces into HTML error responses from the pod-information and pod-events routes. An attacker could craft a link that causes JavaScript to execute in the frontend's origin when a user follows it and reaches an affected",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "dev",
-        "science",
-        "security"
-      ],
-      "date": "2026-11-09"
-    },
-    {
-      "uid": "cve:GHSA-r4mx-2gr2-8277",
-      "source": "cve",
-      "title": "CVE-2026-88985: Kubeflow Pipelines: SQL injection through unvalidated pagination tokens in Kubeflow Pipelines API server",
-      "url": "https://github.com/advisories/GHSA-r4mx-2gr2-8277",
-      "ts": 1794266700.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "github.com/kubeflow/pipelines",
-      "summary": "Severity: medium. ## Summary\n\nKubeflow Pipelines API server does not sufficiently validate SQL identifier fields decoded from the `page_token` pagination parameter. Client-controlled fields can reach SQL query construction, allowing SQL injection through list APIs.\n\nThis advisory consolidates the original pipeline-li",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "dev",
-        "crypto",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-09"
-    },
-    {
-      "uid": "cve:GHSA-gcwf-c25f-p9rv",
-      "source": "cve",
-      "title": "CVE-2026-77433: Kiwi TCMS account confirmation open redirect through protocol-relative URLs",
-      "url": "https://github.com/advisories/GHSA-gcwf-c25f-p9rv",
-      "ts": 1794266654.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "kiwitcms",
-      "summary": "Severity: medium. ## Summary\n\nIn Kiwi TCMS version 16.1, the fix for CVE-[phone] (open redirect via unvalidated `next` parameter) in the account confirmation endpoint is incomplete. The validation uses `startswith(\"/\")` to check if the redirect URL is local, but this is bypassed by protocol-relative URLs like `//e",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "security"
-      ],
-      "date": "2026-11-09"
-    },
-    {
-      "uid": "cve:GHSA-f7vj-6669-qvv4",
-      "source": "cve",
-      "title": "CVE-2026-88983: Kubeflow Pipelines — API server fetches a caller-supplied pipelineURL without host validation",
-      "url": "https://github.com/advisories/GHSA-f7vj-6669-qvv4",
-      "ts": 1794264257.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "github.com/kubeflow/pipelines",
-      "summary": "Severity: medium. ## Summary\n\nThe Kubeflow Pipelines API server fetched caller-supplied pipeline package URLs without restricting the destination. A caller authorized to create a pipeline or pipeline version could cause requests to originate from the API server's network position, including to internal services that",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "dev",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-09"
     },
     {
       "uid": "hn:48166459",
@@ -1247,6 +1217,78 @@
       "date": "2019-07-18"
     },
     {
+      "uid": "cve:GHSA-v995-44v6-5fqm",
+      "source": "cve",
+      "title": "CVE-2026-126062: JRuby: NONET is bypassed for external DTDs and entities when the systemId uses a short-form IPv4 host",
+      "url": "https://github.com/advisories/GHSA-v995-44v6-5fqm",
+      "ts": 1794343958.0,
+      "points": 700,
+      "comments": 0,
+      "author": "nokogiri",
+      "summary": "Severity: low. ### Summary\n\nOn JRuby, the `NONET` parse option did not block an external DTD or entity whose system identifier used a short-form IPv4 host, such as `http://127.1/` or `http://[phone]/`, or was an absolute path such as `/x.dtd` in a document parsed from a network URL. An application that parse",
+      "recipe": "gh_advisories",
+      "buzz": 780,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "cve:GHSA-3w22-6jfg-527w",
+      "source": "cve",
+      "title": "CVE-2026-126064: Nokogiri: Use-After-Free in Nokogiri when replacing an attribute value",
+      "url": "https://github.com/advisories/GHSA-3w22-6jfg-527w",
+      "ts": 1794343879.0,
+      "points": 700,
+      "comments": 0,
+      "author": "nokogiri",
+      "summary": "Severity: low. ### Summary\n\nNokogiri's CRuby native extension could leave a Ruby wrapper pointing to freed memory when replacing the value of an existing XML attribute via `Nokogiri::XML::Node#[]=` or `Nokogiri::XML::Node#lang=`. If Ruby code had already accessed the attribute's child nodes, replacing the value co",
+      "recipe": "gh_advisories",
+      "buzz": 780,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "cve:GHSA-4p39-36wj-23h4",
+      "source": "cve",
+      "title": "CVE-2026-126063: Nokogiri: Mutation XSS through `noscript` content in Nokogiri's HTML5 serializer",
+      "url": "https://github.com/advisories/GHSA-4p39-36wj-23h4",
+      "ts": 1794343656.0,
+      "points": 700,
+      "comments": 0,
+      "author": "nokogiri",
+      "summary": "Severity: low. ### Summary\n\nNokogiri's HTML5 serializer did not escape text inside `noscript` elements, or `<` and `>` inside attribute values. When a document parsed with the default options is serialized, a browser with scripting enabled can parse the output into markup that Nokogiri's parser never produced. Thi",
+      "recipe": "gh_advisories",
+      "buzz": 780,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "cve:GHSA-p8x9-v4hv-2w4g",
+      "source": "cve",
+      "title": "CVE-2026-125108: Rack: Multipart boundary ambiguity guard in Rack::Multipart::Parser can be bypassed with a quoted boundary value, allowing WAF bypass",
+      "url": "https://github.com/advisories/GHSA-p8x9-v4hv-2w4g",
+      "ts": 1794338788.0,
+      "points": 700,
+      "comments": 0,
+      "author": "rack",
+      "summary": "Severity: low. ## Summary\n\nThe guard added for CVE-[phone] (GHSA-vgpv-f759-9wx3), which rejects multipart requests with more than one `boundary` parameter, only inspects the part of the `Content-Type` header after the boundary it extracts. A `Content-Type` whose first `boundary` parameter is empty or begins wit",
+      "recipe": "gh_advisories",
+      "buzz": 780,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-11-10"
+    },
+    {
       "uid": "cve:GHSA-9wg5-mj3p-v49q",
       "source": "cve",
       "title": "CVE-2026-118774: Forge: Certificate signature verified with the issuer's RSA signature scheme",
@@ -1337,74 +1379,17 @@
       "date": "2026-11-10"
     },
     {
-      "uid": "cve:GHSA-88f4-frh5-gmcr",
-      "source": "cve",
-      "title": "CVE-2026-123371: compose-lint: A `.compose-lint.yml` symlinked outside the project is read, and a parse error quotes part of the target",
-      "url": "https://github.com/advisories/GHSA-88f4-frh5-gmcr",
-      "ts": 1794326227.0,
-      "points": 700,
-      "comments": 0,
-      "author": "compose-lint",
-      "summary": "Severity: low. ### Impact\n\ncompose-lint automatically reads a `.compose-lint.yml` policy file beside the Compose file. It is meant to read nothing outside the project directory, but it follows that file if it is a symlink, wherever it points.\n\nA pull request can commit `.compose-lint.yml` as a symlink to a file on",
-      "recipe": "gh_advisories",
-      "buzz": 780,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-10"
-    },
-    {
-      "uid": "cve:GHSA-jf3h-8jvx-vcrg",
-      "source": "cve",
-      "title": "CVE-2026-123372: compose-lint: A pull request can make compose-lint quote a secret from a CI-generated `.env` into its findings",
-      "url": "https://github.com/advisories/GHSA-jf3h-8jvx-vcrg",
-      "ts": 1794326225.0,
-      "points": 700,
-      "comments": 0,
-      "author": "compose-lint",
-      "summary": "Severity: low. ### Impact\n\nSince 0.22.0, compose-lint fills in `${VAR}` references from the `.env` beside the Compose file, as Compose does. The documentation says values under `environment:` are never resolved from a `.env`, \"that is where secrets live\". But `image:` values are resolved, and CL-0004 and CL-0019 q",
-      "recipe": "gh_advisories",
-      "buzz": 780,
-      "topics": [
-        "dev",
-        "science",
-        "security"
-      ],
-      "date": "2026-11-10"
-    },
-    {
-      "uid": "cve:GHSA-6wcv-rj3c-mhv3",
-      "source": "cve",
-      "title": "CVE-2026-123368: compose-lint: .env read through a symlink outside the project can expose the CI job's environment",
-      "url": "https://github.com/advisories/GHSA-6wcv-rj3c-mhv3",
-      "ts": 1794326216.0,
-      "points": 700,
-      "comments": 0,
-      "author": "compose-lint",
-      "summary": "Severity: low. ### Impact\n\ncompose-lint fills in `${VAR}` references from the `.env` file next to the Compose file. It is meant to read nothing outside the project directory, and `env_file:`, `include:` and `extends:` paths are checked for that. The `.env` read is not. If `.env` is a symlink, compose-lint follows",
-      "recipe": "gh_advisories",
-      "buzz": 780,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-10"
-    },
-    {
       "uid": "gh:arpanjot-coding/AVault",
       "source": "github",
       "title": "arpanjot-coding/AVault",
       "url": "https://github.com/arpanjot-coding/AVault",
       "ts": 1793474487.0,
-      "points": 620,
+      "points": 621,
       "comments": 25,
       "author": "arpanjot-coding",
       "summary": "AVault - Call Recorder (No Root Required) | Privacy-first, hardware-encrypted audio vault for Android 12-16+. Rootless call recording via Shizuku with AES-256-GCM, biometrics & auto-cleanup.",
       "recipe": "github_sec",
-      "buzz": 695,
+      "buzz": 696,
       "topics": [
         "dev",
         "security"
@@ -1417,12 +1402,12 @@
       "title": "mrhlaingbwardev/agentic-hacking-skills",
       "url": "https://github.com/mrhlaingbwardev/agentic-hacking-skills",
       "ts": 1793505604.0,
-      "points": 350,
+      "points": 349,
       "comments": 57,
       "author": "mrhlaingbwardev",
       "summary": "AI-Powered Web Security & Automation - Official bonus skills, agents & MCP configs for the 'Agentic Hacking' ebook (28 SKILL.md templates)",
       "recipe": "github_sec",
-      "buzz": 521,
+      "buzz": 520,
       "topics": [
         "ai",
         "dev",
@@ -1436,12 +1421,12 @@
       "title": "jmanico/grim-prompter",
       "url": "https://github.com/jmanico/grim-prompter",
       "ts": 1793189366.0,
-      "points": 408,
+      "points": 409,
       "comments": 33,
       "author": "jmanico",
       "summary": "Threat modeling for AI coding agents: point Claude Code, Codex or any agent at your repo and get an evidence-traced threat model. 36 architectures, 29 methods, MIT.",
       "recipe": "github_sec",
-      "buzz": 507,
+      "buzz": 508,
       "topics": [
         "ai",
         "dev"
@@ -1454,12 +1439,12 @@
       "title": "arnold117/iOS-NOIR",
       "url": "https://github.com/arnold117/iOS-NOIR",
       "ts": 1793934227.0,
-      "points": 313,
+      "points": 315,
       "comments": 59,
       "author": "arnold117",
       "summary": "No-jailbreak iOS privacy, entitlement, sandbox & telemetry forensic auditor (inspired by Verlintas/NOIR)",
       "recipe": "github_sec",
-      "buzz": 500,
+      "buzz": 502,
       "topics": [
         "ai",
         "security"
@@ -1472,12 +1457,12 @@
       "title": "huggingface/safeagents",
       "url": "https://github.com/huggingface/safeagents",
       "ts": 1793195562.0,
-      "points": 143,
+      "points": 144,
       "comments": 10,
       "author": "huggingface",
       "summary": "Safely run your agents using any coding harness",
       "recipe": "github_sec",
-      "buzz": 173,
+      "buzz": 174,
       "topics": [
         "ai",
         "dev"
@@ -1490,12 +1475,12 @@
       "title": "akari-sora/synology-nas-cli",
       "url": "https://github.com/akari-sora/synology-nas-cli",
       "ts": 1793353967.0,
-      "points": 100,
+      "points": 99,
       "comments": 11,
       "author": "akari-sora",
       "summary": "nas: a zero-dependency Python CLI + MCP server for Synology DSM 7. One-command audit and fix for the C3RB3R / .L0CK3D ransomware campaign; hand it to your AI agent. Mirror; canonical repo and issues: gitlab.com/aa[phone]/synology-nas-cli",
       "recipe": "github_sec",
-      "buzz": 133,
+      "buzz": 132,
       "topics": [
         "ai",
         "dev",
@@ -1525,12 +1510,12 @@
       "title": "0x45dd/pwner",
       "url": "https://github.com/0x45dd/pwner",
       "ts": 1793625315.0,
-      "points": 82,
+      "points": 81,
       "comments": 7,
       "author": "0x45dd",
       "summary": "Autonomous agentic network penetration-testing tool (authorized use only)",
       "recipe": "github_sec",
-      "buzz": 103,
+      "buzz": 102,
       "topics": [
         "ai"
       ],
@@ -1590,6 +1575,83 @@
       "date": "2026-11-06"
     },
     {
+      "uid": "rss:24b011f57ea44b",
+      "source": "rss",
+      "title": "Git Patches Flaw That Lets Malicious Repositories Execute Code During Recursive Clones",
+      "url": "https://thehackernews.com/2026/11/git-patches-flaw-that-lets-malicious.html",
+      "ts": 1794338590.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "A flaw in Git can let a malicious repository run an attacker's code on a computer that clones it recursively, together with its submodules. The Git project fixed it this week in Git 2.56.1, with matching fixes for the 2.50 through 2.55 series in 2.50.2, 2.51.3, 2.52.1, 2.53.1, 2.54.1 and 2.55.1. The flaw, tracked as CVE-[phone], is an integer truncation in how Git handles its index. An",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "rss:53a7456826e888",
+      "source": "rss",
+      "title": "SGLang RCE Exploit Breaches NEAR AI, Steals Data From 18 Agents and About 100 Users",
+      "url": "https://thehackernews.com/2026/11/sglang-rce-exploit-breaches-near-ai.html",
+      "ts": 1794338379.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "An attacker exploited a remote code execution flaw in SGLang, an open-source inference engine, and ran code on one of NEAR AI's inference servers last Sunday. The attacker could also have seen requests being processed on that server that day, including requests sent in confidential mode, the company said earlier this week. That mode processes requests inside a trusted execution environment (TEE",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "rss:46e9a0b4b613a4",
+      "source": "rss",
+      "title": "Hackers Exploit Critical Xen Orchestra Auth Bypass Flaw to Gain Admin Access",
+      "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-xen-orchestra.html",
+      "ts": 1794334341.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "French software company Vates VMS has warned of a critical security vulnerability in Xen Orchestra that it said is being actively exploited in the wild. The authentication bypass flaw, which does not yet have a CVE identifier, is tracked as VSA-2026-062. \"REST cookie parsing turns authenticationToken=j:%7B%7D into {},\" Vates VMS said in an alert. \"REST authentication passes that object to the",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "crypto",
+        "security"
+      ],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "rss:3f40027609a9c8",
+      "source": "rss",
+      "title": "Three China-Nexus Espionage Campaigns Linked Through Sparrow Malware Ecosystem",
+      "url": "https://thehackernews.com/2026/11/three-china-nexus-espionage-campaigns.html",
+      "ts": 1794332603.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Three distinct threat activity clusters with shared infrastructure and malware code similarities have been observed targeting telecommunications providers, government organizations, military entities, research institutions, and critical infrastructure across Latin America, Asia, and Europe over the past year. Check Point Research is tracking the clusters under the names SilentDelivery,",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-10"
+    },
+    {
       "uid": "rss:264e6842930600",
       "source": "rss",
       "title": "Attackers Exploit AhsayCBS Flaws to Deploy Sandbox-Evading Python Backdoor",
@@ -1598,7 +1660,7 @@
       "points": 0,
       "comments": 0,
       "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Cybersecurity researchers have disclosed details of an attack that exploited two now-patched vulnerabilities in AhsayCBS to deliver a Python-based implant. The activity, observed by Huntress in October 2026, involves the exploitation of a chain comprising CVE-[phone] and CVE-[phone] to bypass authentication and execute arbitrary commands on affected systems. Patches for the two",
+      "summary": "Cybersecurity researchers have disclosed details of an attack that exploited two now-patched vulnerabilities in AhsayCBS to deliver a Python-based implant. The activity, observed by Huntress in early October 2026, involves the exploitation of a chain comprising CVE-[phone] and CVE-[phone] to bypass authentication and execute arbitrary commands on affected systems. Patches for the two",
       "recipe": "hackersnews",
       "buzz": 80,
       "topics": [
@@ -1628,7 +1690,7 @@
     {
       "uid": "rss:c5e183005c5090",
       "source": "rss",
-      "title": "Fireworks AI Breach Widens to Expose Customer Billing Data and Incomplete Model Weights",
+      "title": "Fireworks AI Confirms Wider Breach Affecting Customer Datasets, Model Weights and Notion AI Chats",
       "url": "https://thehackernews.com/2026/11/fireworks-ai-breach-widens-to-expose.html",
       "ts": 1794324839.0,
       "points": 0,
@@ -1654,7 +1716,7 @@
       "points": 0,
       "comments": 0,
       "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "An iOS sandbox escape published on GitHub lets an app read other apps' files on iPhones running iOS 26 and 27. That puts seed phrases, private keys, and login credentials at risk of exposure to malicious apps, Binance warned today. Apple's updates for iOS 26 and 27, released yesterday, do not list a fix. A researcher who goes by forcequit released the escape, called worse_query, on Sunday, a",
+      "summary": "An iOS sandbox escape published on GitHub lets an app read other apps' files on iPhones running iOS 26 and 27. That puts seed phrases, private keys, and login credentials at risk of exposure to malicious apps, Binance warned today. Apple's updates for iOS 26 and 27, released yesterday, do not list a fix. A researcher who goes by forcequit,&nbsp;&nbsp;in collaboration with 0xjohnny,&nbsp;",
       "recipe": "hackersnews",
       "buzz": 80,
       "topics": [
@@ -1831,43 +1893,6 @@
       "date": "2026-11-10"
     },
     {
-      "uid": "rss:199419dac4261c",
-      "source": "rss",
-      "title": "Hackers Exploit Qubole's Trusted AWS Access to Breach Customer Accounts and Steal Data",
-      "url": "https://thehackernews.com/2026/11/hackers-exploit-quboles-trusted-aws.html",
-      "ts": 1794246681.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "An attacker broke into AWS accounts belonging to multiple Qubole customers between October 14 and October 26 and stole stored secrets and data, cloud security company Wiz said today. The attacker used credentials for an AWS account that Qubole's platform uses to reach those customers. How the attacker got those credentials has not been disclosed. Qubole, a data lake platform owned by Idera,",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-09"
-    },
-    {
-      "uid": "rss:64c0fe9ae1aacb",
-      "source": "rss",
-      "title": "Hackers Compromise Ethersphere's bee-js and Swarm Desktop to Deliver Wallet-Stealing Malware",
-      "url": "https://thehackernews.com/2026/11/hackers-compromise-etherspheres-bee-js.html",
-      "ts": 1794245788.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Attackers used the Ethersphere project's own release automation to publish malicious versions of two of its tools for the Swarm decentralized storage network: bee-js 13.3.0 and Swarm Desktop 0.56.2. Both releases download and run code built to steal the wallet key that Swarm Desktop keeps for its node, along with the stored password that unlocks it. The code is also built to install a backdoor",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-09"
-    },
-    {
       "uid": "gh:BowSinceEnt/resocket-elden-ring-cheat-2026-trainer-mod-menu-tools",
       "source": "github",
       "title": "BowSinceEnt/resocket-elden-ring-cheat-2026-trainer-mod-menu-tools",
@@ -1890,12 +1915,12 @@
       "title": "Alucard0x1/cve-2026-98432",
       "url": "https://github.com/Alucard0x1/cve-2026-98432",
       "ts": 1793378203.0,
-      "points": 28,
+      "points": 29,
       "comments": 7,
       "author": "Alucard0x1",
       "summary": "Proof-only PoC for CVE-[phone] (Linux IPv4/TCP ireq_opt use-after-free): race trigger, heap-reuse oracle, no code execution",
       "recipe": "github_sec",
-      "buzz": 49,
+      "buzz": 50,
       "topics": [
         "security"
       ],
@@ -1907,12 +1932,12 @@
       "title": "smartworldarafath/TeroVPN",
       "url": "https://github.com/smartworldarafath/TeroVPN",
       "ts": 1793264351.0,
-      "points": 34,
+      "points": 35,
       "comments": 1,
       "author": "smartworldarafath",
       "summary": "🛡️ Fast, secure, and private Android VPN powered by WireGuard MASQUE (HTTP/3) over Fastly edge with Proton UI & Liquid Glass design.",
       "recipe": "github_sec",
-      "buzz": 37,
+      "buzz": 38,
       "topics": [
         "hardware"
       ],
@@ -1953,6 +1978,43 @@
         "ai"
       ],
       "date": "2026-10-29"
+    },
+    {
+      "uid": "rss:199419dac4261c",
+      "source": "rss",
+      "title": "Hackers Exploit Qubole's Trusted AWS Access to Breach Customer Accounts and Steal Data",
+      "url": "https://thehackernews.com/2026/11/hackers-exploit-quboles-trusted-aws.html",
+      "ts": 1794246681.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "An attacker broke into AWS accounts belonging to multiple Qubole customers between October 14 and October 26 and stole stored secrets and data, cloud security company Wiz said today. The attacker used credentials for an AWS account that Qubole's platform uses to reach those customers. How the attacker got those credentials has not been disclosed. Qubole, a data lake platform owned by Idera,",
+      "recipe": "hackersnews",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-09"
+    },
+    {
+      "uid": "rss:64c0fe9ae1aacb",
+      "source": "rss",
+      "title": "Hackers Compromise Ethersphere's bee-js and Swarm Desktop to Deliver Wallet-Stealing Malware",
+      "url": "https://thehackernews.com/2026/11/hackers-compromise-etherspheres-bee-js.html",
+      "ts": 1794245788.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Attackers used the Ethersphere project's own release automation to publish malicious versions of two of its tools for the Swarm decentralized storage network: bee-js 13.3.0 and Swarm Desktop 0.56.2. Both releases download and run code built to steal the wallet key that Swarm Desktop keeps for its node, along with the stored password that unlocks it. The code is also built to install a backdoor",
+      "recipe": "hackersnews",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-09"
     },
     {
       "uid": "rss:361a84eba57ec0",
@@ -2212,79 +2274,6 @@
       "topics": [
         "security",
         "hardware"
-      ],
-      "date": "2026-11-06"
-    },
-    {
-      "uid": "rss:31e8a45d274dcf",
-      "source": "rss",
-      "title": "Hackers Target OpenSSH SSHole Flaw Within Hours of Disclosure, Gain Root on Honeypot",
-      "url": "https://thehackernews.com/2026/11/hackers-exploited-openssh-sshole-flaw.html",
-      "ts": 1793978509.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Threat actors are attempting to exploit a recently disclosed security flaw impacting OpenSSH that can enable sign-ins to accounts that have no password set, according to Previdian. The vulnerability, tracked as CVE-[phone] (CVSS score: 8.1) and codenamed SSHole (or *sshole), impacts Linux systems that run OpenSSH on the musl C library with Pluggable Authentication Modules (PAM) disabled,",
-      "recipe": "hackersnews",
-      "buzz": 10,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-06"
-    },
-    {
-      "uid": "rss:1a20a287bd65ec",
-      "source": "rss",
-      "title": "OpenAI Launches GPT-6 Cyber After AI Helps Find 81 Firefox Flaws, 948 Linux Exploits",
-      "url": "https://thehackernews.com/2026/11/openai-launches-gpt-6-cyber-after-ai.html",
-      "ts": 1793977112.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "OpenAI on Thursday unveiled GPT‑6 Cyber, which it described as a major step forward in security research that brings together stronger cybersecurity capabilities with a step-change improvement in model alignment. The new model is \"more capable at finding and fixing vulnerabilities, and far more reliable staying within the boundaries researchers set,\" OpenAI said. It has classified the model as",
-      "recipe": "hackersnews",
-      "buzz": 10,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-06"
-    },
-    {
-      "uid": "rss:d775a103c59030",
-      "source": "rss",
-      "title": "Microsoft Paint RCE Fix Now Available, but Windows Update Won't Deliver It",
-      "url": "https://thehackernews.com/2026/11/microsoft-paint-rce-fix-now-available.html",
-      "ts": 1793966803.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "A fix for CVE-[phone], a remote code execution flaw in Windows Paint, is now in the Microsoft Store. Paint gets this fix only through a Store update, not through Windows updates. The fixed build, 11.2609.401.0, was the newest Paint build in all ten countries The Hacker News checked today. The flaw is an out-of-bounds read that could let an attacker run code over a network. Microsoft rates",
-      "recipe": "hackersnews",
-      "buzz": 10,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-06"
-    },
-    {
-      "uid": "rss:7dd8ccbd5a1737",
-      "source": "rss",
-      "title": "Malicious Browser Extensions Could Use Claude Dispatch to Run Code on Users' Computers",
-      "url": "https://thehackernews.com/2026/11/malicious-browser-extensions-could-use.html",
-      "ts": 1793966795.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "A browser extension that can run scripts on claude.ai could make Claude Desktop run code on a person's computer, researchers at Forever Security, an endpoint security company, showed in a test. The attack needs Dispatch, a Claude feature that lets people send tasks from their phone to Claude Desktop. The flaw that makes this possible can still be exploited, the researchers said earlier this",
-      "recipe": "hackersnews",
-      "buzz": 10,
-      "topics": [
-        "ai",
-        "security"
       ],
       "date": "2026-11-06"
     },

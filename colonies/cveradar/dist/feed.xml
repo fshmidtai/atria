@@ -5,13 +5,180 @@
     <link>https://cveradar-ah3.pages.dev</link>
     <description>Живые CVE и уязвимости на русском: автономный перевод угроз в понятные дайджесты для DevOps и небольшого SecOps</description>
     <language>ru</language>
-    <lastBuildDate>Tue, 10 Nov 2026 17:07:12 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 20:59:22 GMT</lastBuildDate>
+    <item>
+      <title>CVE-2026-125116: Mongoose: Discriminator key values matching inherited properties (e.g. __t: 'constructor') bypass schema casting and can poison collections</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-125116-mongoose-discriminator-key-values-matching-inher.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-125116-mongoose-discriminator-key-values-matching-inher.html</guid>
+      <pubDate>Tue, 10 Nov 2026 20:57:18 GMT</pubDate>
+      <description>Severity: medium. ### Summary
+
+Mongoose chooses which discriminator model or schema to use by looking up the discriminator key value (`__t` by default) in a plain object of registered discriminators, for example `Model.discriminators[doc.__t]`. That value comes from user documents and query filters.</description>
+    </item>
+    <item>
+      <title>CVE-2026-125117: Mongoose walks into inherited properties when hydrating, setting, and merging, allowing overwrites of built-in functions (denial of service) and shared schema state</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-125117-mongoose-walks-into-inherited-properties-when-hy.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-125117-mongoose-walks-into-inherited-properties-when-hy.html</guid>
+      <pubDate>Tue, 10 Nov 2026 20:56:16 GMT</pubDate>
+      <description>Severity: high. ### Summary
+
+Three Mongoose code paths copy data into objects by property name without checking whether the property is the object's own or inherited from its prototype:
+
+1. Loading a document from the database (`init()`, also used by `Model.hydrate()`)
+2. Setting a dotted path on a </description>
+    </item>
+    <item>
+      <title>CVE-2026-126062: JRuby: NONET is bypassed for external DTDs and entities when the systemId uses a short-form IPv4 host</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-126062-jruby-nonet-is-bypassed-for-external-dtds-and-en.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-126062-jruby-nonet-is-bypassed-for-external-dtds-and-en.html</guid>
+      <pubDate>Tue, 10 Nov 2026 20:52:38 GMT</pubDate>
+      <description>Severity: low. ### Summary
+
+On JRuby, the `NONET` parse option did not block an external DTD or entity whose system identifier used a short-form IPv4 host, such as `http://127.1/` or `http://[phone]/`, or was an absolute path such as `/x.dtd` in a document parsed from a network URL. An application t</description>
+    </item>
+    <item>
+      <title>CVE-2026-126064: Nokogiri: Use-After-Free in Nokogiri when replacing an attribute value</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-126064-nokogiri-use-after-free-in-nokogiri-when-replaci.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-126064-nokogiri-use-after-free-in-nokogiri-when-replaci.html</guid>
+      <pubDate>Tue, 10 Nov 2026 20:51:19 GMT</pubDate>
+      <description>Severity: low. ### Summary
+
+Nokogiri's CRuby native extension could leave a Ruby wrapper pointing to freed memory when replacing the value of an existing XML attribute via `Nokogiri::XML::Node#[]=` or `Nokogiri::XML::Node#lang=`. If Ruby code had already accessed the attribute's child nodes, replaci</description>
+    </item>
+    <item>
+      <title>CVE-2026-126063: Nokogiri: Mutation XSS through `noscript` content in Nokogiri's HTML5 serializer</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-126063-nokogiri-mutation-xss-through-noscript-content-i.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-126063-nokogiri-mutation-xss-through-noscript-content-i.html</guid>
+      <pubDate>Tue, 10 Nov 2026 20:47:36 GMT</pubDate>
+      <description>Severity: low. ### Summary
+
+Nokogiri's HTML5 serializer did not escape text inside `noscript` elements, or `&lt;` and `&gt;` inside attribute values. When a document parsed with the default options is serialized, a browser with scripting enabled can parse the output into markup that Nokogiri's parser neve</description>
+    </item>
+    <item>
+      <title>CVE-2026-125118: Mongoose: Prototype pollution via Schema.prototype.virtual()</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-125118-mongoose-prototype-pollution-via-schema-prototyp.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-125118-mongoose-prototype-pollution-via-schema-prototyp.html</guid>
+      <pubDate>Tue, 10 Nov 2026 20:46:33 GMT</pubDate>
+      <description>Severity: medium. ### Summary
+
+Prototype pollution via Schema.prototype.virtual() — the 2022 fix for CVE-2022-2564 / CVE-[phone] protected Schema.path()/add() but never virtual(), so the same class of bug is still exploitable in all maintained release lines.
+
+### Details
+
+In lib/schema.js, Schema.pr</description>
+    </item>
+    <item>
+      <title>CVE-2026-125119: Mongoose: Connection-level sanitizeFilter not applied</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-125119-mongoose-connection-level-sanitizefilter-not-app.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-125119-mongoose-connection-level-sanitizefilter-not-app.html</guid>
+      <pubDate>Tue, 10 Nov 2026 19:56:12 GMT</pubDate>
+      <description>Severity: high. ### Summary
+
+sanitizeFilter exists to stop query selector injection: it wraps operator objects such as `{ $ne: null }` in filter values in `$eq`, so they are matched literally. Set on a connection with `mongoose.connect()` or `createConnection(uri, { sanitizeFilter: true })`, the con</description>
+    </item>
+    <item>
+      <title>CVE-2026-125120: Mongoose: sanitizeFilter not applied on countDocuments</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-125120-mongoose-sanitizefilter-not-applied-on-countdocu.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-125120-mongoose-sanitizefilter-not-applied-on-countdocu.html</guid>
+      <pubDate>Tue, 10 Nov 2026 19:37:32 GMT</pubDate>
+      <description>Severity: critical. ### Impact
+
+`sanitizeFilter` is Mongoose's mechanism for protecting against query selector injection attacks. In older versions of Mongoose, `sanitizeFilter` was not applied for `countDocuments()` queries.
+
+### Patches
+
+Patches have been released for all supported Mongoose major </description>
+    </item>
+    <item>
+      <title>CVE-2026-125111: Rack: Multipart parsing allows DoS via unbounded scan buffer growth</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-125111-rack-multipart-parsing-allows-dos-via-unbounded-.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-125111-rack-multipart-parsing-allows-dos-via-unbounded-.html</guid>
+      <pubDate>Tue, 10 Nov 2026 19:35:49 GMT</pubDate>
+      <description>Severity: high. ## Summary
+
+`Rack::Multipart::Parser` reads the request body in chunks of `rack.multipart.buffer_size` (1 MiB by default) into an internal scan buffer. Parsed bytes are only discarded from that buffer when a chunk ends inside a part body. A request whose parts are sized so that every</description>
+    </item>
+    <item>
+      <title>CVE-2026-125108: Rack: Multipart boundary ambiguity guard in Rack::Multipart::Parser can be bypassed with a quoted boundary value, allowing WAF bypass</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-125108-rack-multipart-boundary-ambiguity-guard-in-rack-.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-125108-rack-multipart-boundary-ambiguity-guard-in-rack-.html</guid>
+      <pubDate>Tue, 10 Nov 2026 19:26:28 GMT</pubDate>
+      <description>Severity: low. ## Summary
+
+The guard added for CVE-[phone] (GHSA-vgpv-f759-9wx3), which rejects multipart requests with more than one `boundary` parameter, only inspects the part of the `Content-Type` header after the boundary it extracts. A `Content-Type` whose first `boundary` parameter is empty o</description>
+    </item>
+    <item>
+      <title>Git Patches Flaw That Lets Malicious Repositories Execute Code During Recursive Clones</title>
+      <link>https://cveradar-ah3.pages.dev/item/git-patches-flaw-that-lets-malicious-repositories-execute-code-d.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/git-patches-flaw-that-lets-malicious-repositories-execute-code-d.html</guid>
+      <pubDate>Tue, 10 Nov 2026 19:23:10 GMT</pubDate>
+      <description>A flaw in Git can let a malicious repository run an attacker's code on a computer that clones it recursively, together with its submodules. The Git project fixed it this week in Git 2.56.1, with matching fixes for the 2.50 through 2.55 series in 2.50.2, 2.51.3, 2.52.1, 2.53.1, 2.54.1 and 2.55.1. The</description>
+    </item>
+    <item>
+      <title>CVE-2026-79914: NocoBase: @nocobase/plugin-action-custom-request allows server-side request forgery through runtime URL overrides</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-79914-nocobase-nocobase-plugin-action-custom-request-al.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-79914-nocobase-nocobase-plugin-action-custom-request-al.html</guid>
+      <pubDate>Tue, 10 Nov 2026 19:20:14 GMT</pubDate>
+      <description>Severity: medium. ### Summary
+
+A Server-Side Request Forgery vulnerability exists in NocoBase v2.1.10 in the `@nocobase/plugin-action-custom-request` plugin.
+
+A low-privileged authenticated user can call the `customRequests:send` endpoint and override the stored request URL at runtime using `options</description>
+    </item>
+    <item>
+      <title>SGLang RCE Exploit Breaches NEAR AI, Steals Data From 18 Agents and About 100 Users</title>
+      <link>https://cveradar-ah3.pages.dev/item/sglang-rce-exploit-breaches-near-ai-steals-data-from-18-agents-a.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/sglang-rce-exploit-breaches-near-ai-steals-data-from-18-agents-a.html</guid>
+      <pubDate>Tue, 10 Nov 2026 19:19:39 GMT</pubDate>
+      <description>An attacker exploited a remote code execution flaw in SGLang, an open-source inference engine, and ran code on one of NEAR AI's inference servers last Sunday. The attacker could also have seen requests being processed on that server that day, including requests sent in confidential mode, the company</description>
+    </item>
+    <item>
+      <title>CVE-2026-125109: Rack: Rack::Request#host_with_port (and #base_url / #url) return the raw invalid Host header — incomplete fix of CVE-2026-34835</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-125109-rack-rack-request-host-with-port-and-base-url-ur.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-125109-rack-rack-request-host-with-port-and-base-url-ur.html</guid>
+      <pubDate>Tue, 10 Nov 2026 19:11:28 GMT</pubDate>
+      <description>Severity: medium. ## Summary
+
+`Rack::Request#host_with_port`, and therefore `#base_url` and `#url`, return the raw authority string when it fails validation. An attacker-controlled `Host`, `X-Forwarded-Host`, or `Forwarded: host=` value containing characters that are not permitted in an authority is</description>
+    </item>
+    <item>
+      <title>CVE-2026-125110: Rack: Rack::Static header_rules bypass via dot-segment normalization mismatch</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-125110-rack-rack-static-header-rules-bypass-via-dot-seg.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-125110-rack-rack-static-header-rules-bypass-via-dot-seg.html</guid>
+      <pubDate>Tue, 10 Nov 2026 18:50:07 GMT</pubDate>
+      <description>Severity: medium. ## Summary
+
+`Rack::Static` normalizes the request path with `Utils.clean_path_info` when deciding which file to serve, but matches `header_rules` against a path that is only URL-decoded. A request containing dot segments, raw or percent-encoded, is served the normalized target file</description>
+    </item>
+    <item>
+      <title>CVE-2026-125121: compose-lint: Text in a pull request can still issue CI workflow commands through compose-lint 0.31.0's output</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-125121-compose-lint-text-in-a-pull-request-can-still-is.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-125121-compose-lint-text-in-a-pull-request-can-still-is.html</guid>
+      <pubDate>Tue, 10 Nov 2026 18:28:35 GMT</pubDate>
+      <description>Severity: medium. ### Impact
+
+0.31.0 fixed GHSA-6f4g-xm8v-pgv6, where text from a Compose file became GitHub Actions workflow commands in compose-lint's output. The fix escapes the command openers in everything compose-lint prints, and the 0.31.0 changelog says the report "escapes both openers (also</description>
+    </item>
+    <item>
+      <title>Hackers Exploit Critical Xen Orchestra Auth Bypass Flaw to Gain Admin Access</title>
+      <link>https://cveradar-ah3.pages.dev/item/hackers-exploit-critical-xen-orchestra-auth-bypass-flaw-to-gain-.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/hackers-exploit-critical-xen-orchestra-auth-bypass-flaw-to-gain-.html</guid>
+      <pubDate>Tue, 10 Nov 2026 18:12:21 GMT</pubDate>
+      <description>French software company Vates VMS has warned of a critical security vulnerability in Xen Orchestra that it said is being actively exploited in the wild. The authentication bypass flaw, which does not yet have a CVE identifier, is tracked as VSA-2026-062. "REST cookie parsing turns authenticationToke</description>
+    </item>
+    <item>
+      <title>Three China-Nexus Espionage Campaigns Linked Through Sparrow Malware Ecosystem</title>
+      <link>https://cveradar-ah3.pages.dev/item/three-china-nexus-espionage-campaigns-linked-through-sparrow-mal.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/three-china-nexus-espionage-campaigns-linked-through-sparrow-mal.html</guid>
+      <pubDate>Tue, 10 Nov 2026 17:43:23 GMT</pubDate>
+      <description>Three distinct threat activity clusters with shared infrastructure and malware code similarities have been observed targeting telecommunications providers, government organizations, military entities, research institutions, and critical infrastructure across Latin America, Asia, and Europe over the </description>
+    </item>
     <item>
       <title>Attackers Exploit AhsayCBS Flaws to Deploy Sandbox-Evading Python Backdoor</title>
       <link>https://cveradar-ah3.pages.dev/item/attackers-exploit-ahsaycbs-flaws-to-deploy-sandbox-evading-pytho.html</link>
       <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/attackers-exploit-ahsaycbs-flaws-to-deploy-sandbox-evading-pytho.html</guid>
       <pubDate>Tue, 10 Nov 2026 16:00:55 GMT</pubDate>
-      <description>Cybersecurity researchers have disclosed details of an attack that exploited two now-patched vulnerabilities in AhsayCBS to deliver a Python-based implant. The activity, observed by Huntress in October 2026, involves the exploitation of a chain comprising CVE-[phone] and CVE-[phone] to bypass authen</description>
+      <description>Cybersecurity researchers have disclosed details of an attack that exploited two now-patched vulnerabilities in AhsayCBS to deliver a Python-based implant. The activity, observed by Huntress in early October 2026, involves the exploitation of a chain comprising CVE-[phone] and CVE-[phone] to bypass </description>
     </item>
     <item>
       <title>Blind Eagle Uses Fake Court Notices to Deliver Remote Access Trojan Across Latin America</title>
@@ -108,168 +275,6 @@ When `plugin_sandbox_opts` contains `type: "scripts"` and an attacker-controlled
       <pubDate>Tue, 10 Nov 2026 15:57:25 GMT</pubDate>
       <description>Severity: critical. ### Summary
 `fastMerkleRoot` pads an odd level by hashing the last node with itself. It does not report that it did so, and `checkTxRoots` never looks for repeated transactions. A peer can therefore duplicate transactions to fill the pad and produce a block with a different trans</description>
-    </item>
-    <item>
-      <title>CVE-2026-123796: compose-lint: Incomplete fix for GHSA-jf3h-8jvx-vcrg: a run stopped at the finding limit quotes a secret from a CI-generated `.env`</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-123796-compose-lint-incomplete-fix-for-ghsa-jf3h-8jvx-v.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-123796-compose-lint-incomplete-fix-for-ghsa-jf3h-8jvx-v.html</guid>
-      <pubDate>Tue, 10 Nov 2026 15:57:22 GMT</pubDate>
-      <description>Severity: low. ### Impact
-
-This is an incomplete fix for GHSA-jf3h-8jvx-vcrg. 0.32.0 made findings quote the `${NAME}` a sibling `.env` filled in, instead of its value. The same release added a stop at 20,000 findings per document, and that stop is checked before the quoting step. A run that hits it</description>
-    </item>
-    <item>
-      <title>CVE-2026-103002: GPUStack: Missing authorization on several cluster and resource endpoints allows cross-user access and cluster takeover</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-103002-gpustack-missing-authorization-on-several-cluste.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-103002-gpustack-missing-authorization-on-several-cluste.html</guid>
-      <pubDate>Tue, 10 Nov 2026 15:57:20 GMT</pubDate>
-      <description>Severity: high. ### Impact
-
-An authenticated non-administrative user could access a Kubernetes cluster they are not authorized to access through GPUStack's Kubernetes API proxy.
-
-The `cluster_apiserver_proxy` handler did not perform a resource-level authorization check before forwarding requests to </description>
-    </item>
-    <item>
-      <title>CVE-2026-113663: AG2: Newline injection in SandboxShellTool bypasses allowed=[...] and readonly=True, enabling arbitrary command execution</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-113663-ag2-newline-injection-in-sandboxshelltool-bypass.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-113663-ag2-newline-injection-in-sandboxshelltool-bypass.html</guid>
-      <pubDate>Tue, 10 Nov 2026 15:57:17 GMT</pubDate>
-      <description>Severity: high. ### Summary
-SandboxShellTool's restricted modes — allowed=[...] (explicit command allowlist) and readonly=True (implicit READONLY_COMMANDS allowlist) — can both be bypassed by embedding a newline character inside the command string. The filter only inspects a single-line set of shell</description>
-    </item>
-    <item>
-      <title>CVE-2026-102894: GPUStack: SAML callback trusts an unverified SAMLResponse, allowing authentication bypass and account takeover</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-102894-gpustack-saml-callback-trusts-an-unverified-saml.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-102894-gpustack-saml-callback-trusts-an-unverified-saml.html</guid>
-      <pubDate>Tue, 10 Nov 2026 15:57:15 GMT</pubDate>
-      <description>Severity: critical. ### Impact
-
-The callback Base64-decodes the posted XML, reads NameID and attributes, resolves or provisions the user, and mints a gpustack_session JWT — but never calls OneLogin_Saml2_Auth.process_response(), the step that verifies the signature, issuer, audience, destination, an</description>
-    </item>
-    <item>
-      <title>CVE-2026-102650: Nuxt Content: Unauthenticated SQLite Function DoS via Content Query API</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-102650-nuxt-content-unauthenticated-sqlite-function-dos.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-102650-nuxt-content-unauthenticated-sqlite-function-dos.html</guid>
-      <pubDate>Tue, 10 Nov 2026 15:57:12 GMT</pubDate>
-      <description>Severity: high. ### Summary
-
-The `POST /__nuxt_content/:collection/query` endpoint in `@nuxt/content` accepts an attacker-controlled `sql` field from the HTTP request body and executes it against a local SQLite database after passing it through an insufficient validator (`assertSafeQuery`). The vali</description>
-    </item>
-    <item>
-      <title>CVE-2026-123373: compose-lint: A committed symlink makes compose-lint quote a file from outside the project into its output</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-123373-compose-lint-a-committed-symlink-makes-compose-l.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-123373-compose-lint-a-committed-symlink-makes-compose-l.html</guid>
-      <pubDate>Tue, 10 Nov 2026 15:57:10 GMT</pubDate>
-      <description>Severity: low. ### Impact
-
-Like Docker Compose, compose-lint follows symlinks when it reads a project's files. Unlike Compose, compose-lint up to 0.24.0 could then put the contents of a file from *outside* the project into its output, where the author of a pull request can read it.
-
-A pull request c</description>
-    </item>
-    <item>
-      <title>CVE-2026-123371: compose-lint: A `.compose-lint.yml` symlinked outside the project is read, and a parse error quotes part of the target</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-123371-compose-lint-a-compose-lint-yml-symlinked-outsid.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-123371-compose-lint-a-compose-lint-yml-symlinked-outsid.html</guid>
-      <pubDate>Tue, 10 Nov 2026 15:57:07 GMT</pubDate>
-      <description>Severity: low. ### Impact
-
-compose-lint automatically reads a `.compose-lint.yml` policy file beside the Compose file. It is meant to read nothing outside the project directory, but it follows that file if it is a symlink, wherever it points.
-
-A pull request can commit `.compose-lint.yml` as a symli</description>
-    </item>
-    <item>
-      <title>CVE-2026-123372: compose-lint: A pull request can make compose-lint quote a secret from a CI-generated `.env` into its findings</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-123372-compose-lint-a-pull-request-can-make-compose-lin.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-123372-compose-lint-a-pull-request-can-make-compose-lin.html</guid>
-      <pubDate>Tue, 10 Nov 2026 15:57:05 GMT</pubDate>
-      <description>Severity: low. ### Impact
-
-Since 0.22.0, compose-lint fills in `${VAR}` references from the `.env` beside the Compose file, as Compose does. The documentation says values under `environment:` are never resolved from a `.env`, "that is where secrets live". But `image:` values are resolved, and CL-000</description>
-    </item>
-    <item>
-      <title>CVE-2026-123370: compose-lint: `fix --apply` can delete a line the user did not select, including a security setting</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-123370-compose-lint-fix-apply-can-delete-a-line-the-use.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-123370-compose-lint-fix-apply-can-delete-a-line-the-use.html</guid>
-      <pubDate>Tue, 10 Nov 2026 15:57:02 GMT</pubDate>
-      <description>Severity: medium. ### Impact
-
-`compose-lint fix --apply` converts the line numbers its fixers work with into positions in the file. The YAML parser treats a lone carriage return, U+0085, U+2028 and U+2029 as line breaks, but the conversion counted only `\n`. One of those characters inside a quoted v</description>
-    </item>
-    <item>
-      <title>CVE-2026-123369: compose-lint: Compose file text can issue GitHub Actions workflow commands through the compose-lint Action</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-123369-compose-lint-compose-file-text-can-issue-github-.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-123369-compose-lint-compose-file-text-can-issue-github-.html</guid>
-      <pubDate>Tue, 10 Nov 2026 15:56:59 GMT</pubDate>
-      <description>Severity: medium. ### Impact
-
-The GitHub Actions runner treats certain text in a step's output as commands. The legacy form, `##[command]`, is recognized anywhere in a line. compose-lint's text report prints service names, environment keys and lines of the Compose file, and it does not neutralize `#</description>
-    </item>
-    <item>
-      <title>CVE-2026-123368: compose-lint: .env read through a symlink outside the project can expose the CI job's environment</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-123368-compose-lint-env-read-through-a-symlink-outside-.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-123368-compose-lint-env-read-through-a-symlink-outside-.html</guid>
-      <pubDate>Tue, 10 Nov 2026 15:56:56 GMT</pubDate>
-      <description>Severity: low. ### Impact
-
-compose-lint fills in `${VAR}` references from the `.env` file next to the Compose file. It is meant to read nothing outside the project directory, and `env_file:`, `include:` and `extends:` paths are checked for that. The `.env` read is not. If `.env` is a symlink, compos</description>
-    </item>
-    <item>
-      <title>CVE-2026-119345: Cocos AI Intra-handshake attested TLS implementation is vulnerable to TOCTOU Attacks</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-119345-cocos-ai-intra-handshake-attested-tls-implementa.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-119345-cocos-ai-intra-handshake-attested-tls-implementa.html</guid>
-      <pubDate>Tue, 10 Nov 2026 15:56:54 GMT</pubDate>
-      <description>Severity: high. ### Summary
-An attacker who can modify the attested workload’s code, memory-backed state, or configuration after the initial attestation — but without necessarily terminating the existing TLS connection — can cause the peer to continue trusting the connection as if the originally att</description>
-    </item>
-    <item>
-      <title>CVE-2026-95860: node-opcua: Namespace-Level RBAC Fail-Open - Anonymous Write/Call Bypass via Unbound `DefaultRolePermissions</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-95860-node-opcua-namespace-level-rbac-fail-open-anonymo.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-95860-node-opcua-namespace-level-rbac-fail-open-anonymo.html</guid>
-      <pubDate>Tue, 10 Nov 2026 15:56:52 GMT</pubDate>
-      <description>Severity: critical. ## Summary
-
-An unauthenticated (**Anonymous**) client can **Write** protected Variables and **Call** privileged Methods on any Node that lacks explicit per-node permissions.
-
-This follows the inheritance model defined by OPC UA Part 3, §5.2.9, where nodes without an explicit `Rol</description>
-    </item>
-    <item>
-      <title>CVE-2026-119299: gopacket: SCTP chunk sub-decoder out-of-bounds panics on crafted segments</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-119299-gopacket-sctp-chunk-sub-decoder-out-of-bounds-pa.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-119299-gopacket-sctp-chunk-sub-decoder-out-of-bounds-pa.html</guid>
-      <pubDate>Tue, 10 Nov 2026 15:56:49 GMT</pubDate>
-      <description>Severity: medium. ## Summary
-
-gopacket decodes SCTP (IP protocol 132) by walking the chunk chain through per-chunk-type decoder functions (`decodeSCTPInit`, `decodeSCTPShutdown`, `decodeSCTPError`, `decodeSCTPSack`, in `layers/sctp.go`). Each of these reads fixed-size header fields and runs count-dr</description>
-    </item>
-    <item>
-      <title>CVE-2026-102943: Dagu MCP DAG specification read bypasses path containment and workspace isolation</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-102943-dagu-mcp-dag-specification-read-bypasses-path-co.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-102943-dagu-mcp-dag-specification-read-bypasses-path-co.html</guid>
-      <pubDate>Tue, 10 Nov 2026 15:56:49 GMT</pubDate>
-      <description>Severity: medium. ## Summary
-
-The traversal fix for CVE-[phone] was implemented as HTTP middleware installed only in the chi handler chain, but the MCP service calls the same API method in process, so arbitrary YAML file read is reachable again through the MCP tool surface with a viewer-role key. Re</description>
-    </item>
-    <item>
-      <title>Fireworks AI Breach Widens to Expose Customer Billing Data and Incomplete Model Weights</title>
-      <link>https://cveradar-ah3.pages.dev/item/fireworks-ai-breach-widens-to-expose-customer-billing-data-and-i.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/fireworks-ai-breach-widens-to-expose-customer-billing-data-and-i.html</guid>
-      <pubDate>Tue, 10 Nov 2026 15:33:59 GMT</pubDate>
-      <description>Fireworks AI disclosed on Monday that its investigation into a security incident first reported early last month&amp;nbsp; uncovered further malicious activity, affecting account and billing information, alongside secrets, datasets, and incomplete models for a "limited set of accounts." In a notice publ</description>
-    </item>
-    <item>
-      <title>Binance Warns of iOS Sandbox Escape That Could Expose Crypto Wallet Keys, No Fix Confirmed</title>
-      <link>https://cveradar-ah3.pages.dev/item/binance-warns-of-ios-sandbox-escape-that-could-expose-crypto-wal.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/binance-warns-of-ios-sandbox-escape-that-could-expose-crypto-wal.html</guid>
-      <pubDate>Tue, 10 Nov 2026 12:15:31 GMT</pubDate>
-      <description>An iOS sandbox escape published on GitHub lets an app read other apps' files on iPhones running iOS 26 and 27. That puts seed phrases, private keys, and login credentials at risk of exposure to malicious apps, Binance warned today. Apple's updates for iOS 26 and 27, released yesterday, do not list a</description>
-    </item>
-    <item>
-      <title>Beyond the Alert: The Case for Rich Network Data</title>
-      <link>https://cveradar-ah3.pages.dev/item/beyond-the-alert-the-case-for-rich-network-data.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/beyond-the-alert-the-case-for-rich-network-data.html</guid>
-      <pubDate>Tue, 10 Nov 2026 11:38:13 GMT</pubDate>
-      <description>At some point your security will fail. This isn’t pessimism. It’s not because your team and tools aren’t sophisticated enough. It’s the reason we have detections in the first place. And, it’s why once we accept that prevention has its limits, we arrive at an interdiction strategy: finding and disrup</description>
     </item>
   </channel>
 </rss>
