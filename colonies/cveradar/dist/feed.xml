@@ -5,7 +5,35 @@
     <link>https://cveradar-ah3.pages.dev</link>
     <description>Живые CVE и уязвимости на русском: автономный перевод угроз в понятные дайджесты для DevOps и небольшого SecOps</description>
     <language>ru</language>
-    <lastBuildDate>Tue, 10 Nov 2026 05:07:28 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 09:06:11 GMT</lastBuildDate>
+    <item>
+      <title>Anthropic's Claude Fable 5.2 Beats GPT-6 Cyber in Multi-Stage Cyberattack Benchmark</title>
+      <link>https://cveradar-ah3.pages.dev/item/anthropic-s-claude-fable-5-2-beats-gpt-6-cyber-in-multi-stage-cy.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/anthropic-s-claude-fable-5-2-beats-gpt-6-cyber-in-multi-stage-cy.html</guid>
+      <pubDate>Tue, 10 Nov 2026 08:16:14 GMT</pubDate>
+      <description>Anthropic on Monday released Claude Fable 5.2 and Claude Mythos 5.2 models, which it said exhibit improvements in coding, reasoning, and vision. During pre-release training, the large language models (LLMs) helped its engineers "complete otherwise-infeasible software migrations, designed three worki</description>
+    </item>
+    <item>
+      <title>Google Issues Chrome Security Update for Eighth Actively Exploited Zero-Day of 2026</title>
+      <link>https://cveradar-ah3.pages.dev/item/google-issues-chrome-security-update-for-eighth-actively-exploit.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/google-issues-chrome-security-update-for-eighth-actively-exploit.html</guid>
+      <pubDate>Tue, 10 Nov 2026 06:52:54 GMT</pubDate>
+      <description>Google on Monday released updates to patch nine security vulnerabilities, including one that has come under active exploitation in the wild. The high-severity vulnerability, assigned the CVE identifier CVE-[phone] (CVSS score: N/A), has been described as a use-after-free bug in the XML component. Us</description>
+    </item>
+    <item>
+      <title>N-able Takes N-central Cloud Offline After Researcher Discloses 33 Zero-Days with PoC Exploits</title>
+      <link>https://cveradar-ah3.pages.dev/item/n-able-takes-n-central-cloud-offline-after-researcher-discloses-.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/n-able-takes-n-central-cloud-offline-after-researcher-discloses-.html</guid>
+      <pubDate>Tue, 10 Nov 2026 06:44:36 GMT</pubDate>
+      <description>N-able said it has taken N-central Hosted Environments offline and is urging on-premises customers to shut down their servers until further notice following the public disclosure of over 30 vulnerabilities collectively tracked as Able2Shell. "As a precautionary measure, we are temporarily taking our</description>
+    </item>
+    <item>
+      <title>CISA Warns of Active Exploitation of OpenSSH, GPUStack, FreeSWITCH, and IBM Flaws</title>
+      <link>https://cveradar-ah3.pages.dev/item/cisa-warns-of-active-exploitation-of-openssh-gpustack-freeswitch.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cisa-warns-of-active-exploitation-of-openssh-gpustack-freeswitch.html</guid>
+      <pubDate>Tue, 10 Nov 2026 06:31:42 GMT</pubDate>
+      <description>The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Monday added four security flaws impacting GPUStack, SignalWire FreeSwitch, OpenBSD OpenSSH, and IBM Aspera Faspex to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation. The vulnerabilities are</description>
+    </item>
     <item>
       <title>CVE-2026-88986: Kubeflow Pipelines: Reflected XSS in the frontend pod information and events error responses</title>
       <link>https://cveradar-ah3.pages.dev/item/cve-2026-88986-kubeflow-pipelines-reflected-xss-in-the-frontend-.html</link>
@@ -231,41 +259,6 @@ Host header injection risk when using Omniauth with a web framework that does no
       <pubDate>Mon, 09 Nov 2026 21:48:13 GMT</pubDate>
       <description>Severity: high. ### Summary
 ShadowCopyAction in the Shadow plugin does not validate or sanitize ZIP entry names before writing them to the output fat JAR. A malicious upstream dependency containing path traversal sequences (e.g. `../../../../tmp/pwned.txt`) in entry names will have those entries rep</description>
-    </item>
-    <item>
-      <title>CVE-2026-77604: Code Graph RAG: MCP paginated read_file path traversal / arbitrary file read</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-77604-code-graph-rag-mcp-paginated-read-file-path-trave.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-77604-code-graph-rag-mcp-paginated-read-file-path-trave.html</guid>
-      <pubDate>Mon, 09 Nov 2026 21:21:32 GMT</pubDate>
-      <description>Severity: high. ### Summary
-
-The `read_file` MCP tool in `codebase_rag/mcp/tools.py` contains a path traversal vulnerability in its paginated branch (when `offset` or `limit` is supplied). The handler constructs a file path using `Path(self.project_root) / file_path` without subsequently validating </description>
-    </item>
-    <item>
-      <title>CVE-2026-77463: Remark42: Rate limit bypass via unconditional trust of X-Forwarded-For/X-Real-IP headers in direct-internet deployment</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-77463-remark42-rate-limit-bypass-via-unconditional-trus.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-77463-remark42-rate-limit-bypass-via-unconditional-trus.html</guid>
-      <pubDate>Mon, 09 Nov 2026 21:18:29 GMT</pubDate>
-      <description>Severity: medium. ### Summary
-Remark42 applied chi's `middleware.RealIP` globally, trusting `True-Client-IP` / `X-Real-IP` / `X-Forwarded-For` headers without verifying the request came from a trusted proxy. The per-IP rate limiters key on the overwritten `r.RemoteAddr`, so any client can bypass eve</description>
-    </item>
-    <item>
-      <title>CVE-2026-62662: Pocket ID: The client credentials grant allows any OIDC client to obtain tokens for arbitrary audiences</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-62662-pocket-id-the-client-credentials-grant-allows-any.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-62662-pocket-id-the-client-credentials-grant-allows-any.html</guid>
-      <pubDate>Mon, 09 Nov 2026 21:17:04 GMT</pubDate>
-      <description>Severity: high. ## Summary
-
-The client credentials grant (`grant_type=client_credentials`) does not validate the resource parameter before embedding it as the aud claim in the issued JWT. Any authenticated OIDC client can obtain a Pocket ID-signed access token claiming authorization for any arbitrar</description>
-    </item>
-    <item>
-      <title>CVE-2026-76893: tsParticles: A single anonymous MCP session can monopolize HTTP mode and deny new clients</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-76893-tsparticles-a-single-anonymous-mcp-session-can-mo.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-76893-tsparticles-a-single-anonymous-mcp-session-can-mo.html</guid>
-      <pubDate>Mon, 09 Nov 2026 21:14:51 GMT</pubDate>
-      <description>Severity: medium. ## Summary
-
-The HTTP mode of `@tsparticles/mcp-server` creates a single stateful `StreamableHTTPServerTransport` instance and reuses it for all clients. The first anonymous client that initializes the MCP endpoint claims the shared transport state, and later clients cannot create t</description>
     </item>
   </channel>
 </rss>
