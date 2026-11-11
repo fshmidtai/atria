@@ -5,276 +5,332 @@
     <link>https://sentinel-post.pages.dev</link>
     <description>Автономная радиостанция кибербезопасности: живые CVE, угрозы и защита — без сенсаций</description>
     <language>ru</language>
-    <lastBuildDate>Tue, 10 Nov 2026 20:59:47 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 01:22:55 GMT</lastBuildDate>
     <item>
-      <title>CVE-2026-125116: Mongoose: Discriminator key values matching inherited properties (e.g. __t: 'constructor') bypass schema casting and can poison collections</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-125116-mongoose-discriminator-key-values-matching-inher.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-125116-mongoose-discriminator-key-values-matching-inher.html</guid>
-      <pubDate>Tue, 10 Nov 2026 20:57:18 GMT</pubDate>
-      <description>Severity: medium. ### Summary
+      <title>CVE-2026-118745: Microsoft Security Advisory CVE-2026-118745 - Visual Studio Remote Code Execution Vulnerability</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-118745-microsoft-security-advisory-cve-2026-118745-visu.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-118745-microsoft-security-advisory-cve-2026-118745-visu.html</guid>
+      <pubDate>Wed, 11 Nov 2026 00:47:20 GMT</pubDate>
+      <description>Severity: high. ## Executive summary
 
-Mongoose chooses which discriminator model or schema to use by looking up the discriminator key value (`__t` by default) in a plain object of registered discriminators, for example `Model.discriminators[doc.__t]`. That value comes from user documents and query filters.</description>
+Microsoft is releasing this security advisory to provide information about a vulnerability in .NET. This advisory provides guidance on updating affected applications and components.
+
+Crafted PDB line metadata can exceed the caller-provided buffer and cause a hea</description>
     </item>
     <item>
-      <title>CVE-2026-125117: Mongoose walks into inherited properties when hydrating, setting, and merging, allowing overwrites of built-in functions (denial of service) and shared schema state</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-125117-mongoose-walks-into-inherited-properties-when-hy.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-125117-mongoose-walks-into-inherited-properties-when-hy.html</guid>
-      <pubDate>Tue, 10 Nov 2026 20:56:16 GMT</pubDate>
-      <description>Severity: high. ### Summary
+      <title>CVE-2026-114152: Microsoft Security Advisory CVE-2026-114152 - Visual Studio Remote Code Execution Vulnerability</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-114152-microsoft-security-advisory-cve-2026-114152-visu.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-114152-microsoft-security-advisory-cve-2026-114152-visu.html</guid>
+      <pubDate>Wed, 11 Nov 2026 00:46:12 GMT</pubDate>
+      <description>Severity: high. ## Executive summary
 
-Three Mongoose code paths copy data into objects by property name without checking whether the property is the object's own or inherited from its prototype:
+Microsoft is releasing this security advisory to provide information about a vulnerability in .NET. This advisory provides guidance on updating affected applications and components.
 
-1. Loading a document from the database (`init()`, also used by `Model.hydrate()`)
-2. Setting a dotted path on a </description>
+Attacker-controlled COFF relocation offsets can cause an out-of-bounds stack wr</description>
     </item>
     <item>
-      <title>CVE-2026-126062: JRuby: NONET is bypassed for external DTDs and entities when the systemId uses a short-form IPv4 host</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-126062-jruby-nonet-is-bypassed-for-external-dtds-and-en.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-126062-jruby-nonet-is-bypassed-for-external-dtds-and-en.html</guid>
-      <pubDate>Tue, 10 Nov 2026 20:52:38 GMT</pubDate>
-      <description>Severity: low. ### Summary
+      <title>GHSA-6856-87hx-p5x7: Microsoft Security Advisory CVE-2026-105544 - .NET Elevation of Privilege Vulnerability</title>
+      <link>https://sentinel-post.pages.dev/item/ghsa-6856-87hx-p5x7-microsoft-security-advisory-cve-2026-105544-.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/ghsa-6856-87hx-p5x7-microsoft-security-advisory-cve-2026-105544-.html</guid>
+      <pubDate>Wed, 11 Nov 2026 00:39:12 GMT</pubDate>
+      <description>Severity: medium. ## Executive summary
 
-On JRuby, the `NONET` parse option did not block an external DTD or entity whose system identifier used a short-form IPv4 host, such as `http://127.1/` or `http://[phone]/`, or was an absolute path such as `/x.dtd` in a document parsed from a network URL. An application t</description>
+Microsoft is releasing this security advisory to provide information about a vulnerability in .NET. This advisory provides guidance on updating affected applications and components.
+
+The VSTest artifact postprocessor can consume a forged `executionComplete.jso</description>
     </item>
     <item>
-      <title>CVE-2026-126064: Nokogiri: Use-After-Free in Nokogiri when replacing an attribute value</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-126064-nokogiri-use-after-free-in-nokogiri-when-replaci.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-126064-nokogiri-use-after-free-in-nokogiri-when-replaci.html</guid>
-      <pubDate>Tue, 10 Nov 2026 20:51:19 GMT</pubDate>
-      <description>Severity: low. ### Summary
+      <title>CVE-2026-114151: Microsoft Security Advisory CVE-2026-114151 - Visual Studio Remote Code Execution Vulnerability</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-114151-microsoft-security-advisory-cve-2026-114151-visu.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-114151-microsoft-security-advisory-cve-2026-114151-visu.html</guid>
+      <pubDate>Wed, 11 Nov 2026 00:35:02 GMT</pubDate>
+      <description>Severity: high. ## Executive summary
 
-Nokogiri's CRuby native extension could leave a Ruby wrapper pointing to freed memory when replacing the value of an existing XML attribute via `Nokogiri::XML::Node#[]=` or `Nokogiri::XML::Node#lang=`. If Ruby code had already accessed the attribute's child nodes, replaci</description>
+Microsoft is releasing this security advisory to provide information about a vulnerability in .NET. This advisory provides guidance on updating affected applications and components.
+
+A crafted PDB `LF_DECIMAL` payload can trigger an out-of-bounds stack write whe</description>
     </item>
     <item>
-      <title>CVE-2026-126063: Nokogiri: Mutation XSS through `noscript` content in Nokogiri's HTML5 serializer</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-126063-nokogiri-mutation-xss-through-noscript-content-i.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-126063-nokogiri-mutation-xss-through-noscript-content-i.html</guid>
-      <pubDate>Tue, 10 Nov 2026 20:47:36 GMT</pubDate>
-      <description>Severity: low. ### Summary
+      <title>CVE-2026-114158: Microsoft Security Advisory CVE-2026-114158 - Visual Studio Remote Code Execution Vulnerability</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-114158-microsoft-security-advisory-cve-2026-114158-visu.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-114158-microsoft-security-advisory-cve-2026-114158-visu.html</guid>
+      <pubDate>Wed, 11 Nov 2026 00:34:13 GMT</pubDate>
+      <description>Severity: high. ## Executive summary
 
-Nokogiri's HTML5 serializer did not escape text inside `noscript` elements, or `&lt;` and `&gt;` inside attribute values. When a document parsed with the default options is serialized, a browser with scripting enabled can parse the output into markup that Nokogiri's parser neve</description>
+Microsoft is releasing this security advisory to provide information about a vulnerability in .NET. This advisory provides guidance on updating affected applications and components.
+
+A Portable PDB `EmbeddedSource` record with parent RID 0 can trigger an out-of-</description>
     </item>
     <item>
-      <title>CVE-2026-125118: Mongoose: Prototype pollution via Schema.prototype.virtual()</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-125118-mongoose-prototype-pollution-via-schema-prototyp.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-125118-mongoose-prototype-pollution-via-schema-prototyp.html</guid>
-      <pubDate>Tue, 10 Nov 2026 20:46:33 GMT</pubDate>
-      <description>Severity: medium. ### Summary
+      <title>CVE-2026-114159: Microsoft Security Advisory CVE-2026-114159 - Visual Studio Remote Code Execution Vulnerability</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-114159-microsoft-security-advisory-cve-2026-114159-visu.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-114159-microsoft-security-advisory-cve-2026-114159-visu.html</guid>
+      <pubDate>Wed, 11 Nov 2026 00:32:59 GMT</pubDate>
+      <description>Severity: high. ## Executive summary
 
-Prototype pollution via Schema.prototype.virtual() — the 2022 fix for CVE-2022-2564 / CVE-[phone] protected Schema.path()/add() but never virtual(), so the same class of bug is still exploitable in all maintained release lines.
+Microsoft is releasing this security advisory to provide information about a vulnerability in .NET. This advisory provides guidance on updating affected applications and components.
 
-### Details
-
-In lib/schema.js, Schema.pr</description>
+An oversized Portable PDB document name can be truncated during allocation and </description>
     </item>
     <item>
-      <title>CVE-2026-125119: Mongoose: Connection-level sanitizeFilter not applied</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-125119-mongoose-connection-level-sanitizefilter-not-app.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-125119-mongoose-connection-level-sanitizefilter-not-app.html</guid>
-      <pubDate>Tue, 10 Nov 2026 19:56:12 GMT</pubDate>
-      <description>Severity: high. ### Summary
+      <title>CVE-2026-120792: Microsoft Security Advisory CVE-2026-120792 - Aspire Information Disclosure Vulnerability</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-120792-microsoft-security-advisory-cve-2026-120792-aspi.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-120792-microsoft-security-advisory-cve-2026-120792-aspi.html</guid>
+      <pubDate>Wed, 11 Nov 2026 00:31:23 GMT</pubDate>
+      <description>Severity: high. ## Executive summary
 
-sanitizeFilter exists to stop query selector injection: it wraps operator objects such as `{ $ne: null }` in filter values in `$eq`, so they are matched literally. Set on a connection with `mongoose.connect()` or `createConnection(uri, { sanitizeFilter: true })`, the con</description>
+Microsoft is releasing this security advisory to provide information about a vulnerability in the Aspire CLI. This advisory provides guidance on updating affected applications and components.
+
+Insecure temporary files used by Aspire CLI can allow a local attacke</description>
     </item>
     <item>
-      <title>CVE-2026-125120: Mongoose: sanitizeFilter not applied on countDocuments</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-125120-mongoose-sanitizefilter-not-applied-on-countdocu.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-125120-mongoose-sanitizefilter-not-applied-on-countdocu.html</guid>
-      <pubDate>Tue, 10 Nov 2026 19:37:32 GMT</pubDate>
+      <title>CVE-2026-120778: Microsoft Security Advisory CVE-2026-120778 - Aspire Elevation of Privilege Vulnerability</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-120778-microsoft-security-advisory-cve-2026-120778-aspi.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-120778-microsoft-security-advisory-cve-2026-120778-aspi.html</guid>
+      <pubDate>Wed, 11 Nov 2026 00:30:06 GMT</pubDate>
+      <description>Severity: high. ## Executive summary
+
+Microsoft is releasing this security advisory to provide information about a vulnerability in the Aspire CLI. This advisory provides guidance on updating affected applications and components.
+
+An insecure temporary directory used by Aspire CLI-generated builds c</description>
+    </item>
+    <item>
+      <title>CVE-2026-114154: Microsoft Security Advisory CVE-2026-114154 - ASP.NET Core Denial of Service Vulnerability</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-114154-microsoft-security-advisory-cve-2026-114154-asp-.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-114154-microsoft-security-advisory-cve-2026-114154-asp-.html</guid>
+      <pubDate>Wed, 11 Nov 2026 00:28:01 GMT</pubDate>
+      <description>Severity: medium. ## Executive summary
+
+Microsoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components.
+
+Malformed chunked HttpSys requests containing conflicting content-len</description>
+    </item>
+    <item>
+      <title>CVE-2026-114157: Microsoft Security Advisory CVE-2026-114157 - ASP.NET Core Security Feature Bypass Vulnerability</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-114157-microsoft-security-advisory-cve-2026-114157-asp-.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-114157-microsoft-security-advisory-cve-2026-114157-asp-.html</guid>
+      <pubDate>Wed, 11 Nov 2026 00:25:04 GMT</pubDate>
+      <description>Severity: medium. ## Executive summary
+
+Microsoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core's Kestrel Named Pipes transport. This advisory provides guidance on updating affected applications and components.
+
+A Kestrel named-pipe listener configu</description>
+    </item>
+    <item>
+      <title>CVE-2026-114156: Microsoft Security Advisory CVE-2026-114156 - ASP.NET Core Security Feature Bypass Vulnerability</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-114156-microsoft-security-advisory-cve-2026-114156-asp-.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-114156-microsoft-security-advisory-cve-2026-114156-asp-.html</guid>
+      <pubDate>Wed, 11 Nov 2026 00:24:05 GMT</pubDate>
+      <description>Severity: medium. ## Executive summary
+
+Microsoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components.
+
+`PathString.StartsWithSegments` can mishandle percent-encoded backsla</description>
+    </item>
+    <item>
+      <title>CVE-2026-114147: Microsoft Security Advisory CVE-2026-114147 - ASP.NET Core Denial of Service Vulnerability</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-114147-microsoft-security-advisory-cve-2026-114147-asp-.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-114147-microsoft-security-advisory-cve-2026-114147-asp-.html</guid>
+      <pubDate>Wed, 11 Nov 2026 00:23:32 GMT</pubDate>
+      <description>Severity: high. ## Executive summary
+
+Microsoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components.
+
+SignalR Redis scale-out can mishandle case-mismatched group removal and</description>
+    </item>
+    <item>
+      <title>CVE-2026-109478: Microsoft Security Advisory CVE-2026-109478 - ASP.NET Core Denial of Service Vulnerability</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-109478-microsoft-security-advisory-cve-2026-109478-asp-.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-109478-microsoft-security-advisory-cve-2026-109478-asp-.html</guid>
+      <pubDate>Wed, 11 Nov 2026 00:22:43 GMT</pubDate>
+      <description>Severity: medium. ## Executive summary
+
+Microsoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components.
+
+Processing comma-separated HTTP header values can cause excessive all</description>
+    </item>
+    <item>
+      <title>CVE-2026-114146: Microsoft Security Advisory CVE-2026-114146 - ASP.NET Core Elevation of Privilege Vulnerability</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-114146-microsoft-security-advisory-cve-2026-114146-asp-.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-114146-microsoft-security-advisory-cve-2026-114146-asp-.html</guid>
+      <pubDate>Wed, 11 Nov 2026 00:21:56 GMT</pubDate>
+      <description>Severity: high. ## Executive summary
+
+Microsoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components.
+
+SignalR connections are not consistently bound to the identity negotiat</description>
+    </item>
+    <item>
+      <title>CVE-2026-114150: Microsoft Security Advisory CVE-2026-114150 - ASP.NET Core Information Disclosure Vulnerability</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-114150-microsoft-security-advisory-cve-2026-114150-asp-.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-114150-microsoft-security-advisory-cve-2026-114150-asp-.html</guid>
+      <pubDate>Wed, 11 Nov 2026 00:20:47 GMT</pubDate>
+      <description>Severity: medium. ## Executive summary
+
+Microsoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components.
+
+A reused `ResponseBufferingStream` can retain pooled tail memory and </description>
+    </item>
+    <item>
+      <title>CVE-2026-118748: Microsoft Security Advisory CVE-2026-118748 - ASP.NET Core Denial of Service Vulnerability</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-118748-microsoft-security-advisory-cve-2026-118748-asp-.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-118748-microsoft-security-advisory-cve-2026-118748-asp-.html</guid>
+      <pubDate>Wed, 11 Nov 2026 00:11:03 GMT</pubDate>
+      <description>Severity: medium. ## Executive summary
+
+Microsoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components.
+
+Blazor static-SSR client validation retains attacker-controlled rende</description>
+    </item>
+    <item>
+      <title>CVE-2026-114155: Microsoft Security Advisory CVE-2026-114155 - .NET Elevation of Privilege Vulnerability</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-114155-microsoft-security-advisory-cve-2026-114155-net-.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-114155-microsoft-security-advisory-cve-2026-114155-net-.html</guid>
+      <pubDate>Wed, 11 Nov 2026 00:09:46 GMT</pubDate>
+      <description>Severity: medium. ## Executive summary
+
+Microsoft is releasing this security advisory to provide information about a vulnerability in the .NET SDK's dotnet-watch component. This advisory provides guidance on updating affected SDK installations.
+
+A local attacker who can replace or modify a temporary</description>
+    </item>
+    <item>
+      <title>CVE-2026-109481: Microsoft Security Advisory CVE-2026-109481 - ASP.NET Core Elevation of Privilege Vulnerability</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-109481-microsoft-security-advisory-cve-2026-109481-asp-.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-109481-microsoft-security-advisory-cve-2026-109481-asp-.html</guid>
+      <pubDate>Tue, 10 Nov 2026 23:33:36 GMT</pubDate>
+      <description>Severity: medium. ## Executive summary
+
+Microsoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components.
+
+The Blazor/SignalR `/_blazor/refresh` path can accept a cross-site re</description>
+    </item>
+    <item>
+      <title>CVE-2026-118750: Microsoft Security Advisory CVE-2026-118750 - ASP.NET Core Denial of Service Vulnerability</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-118750-microsoft-security-advisory-cve-2026-118750-asp-.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-118750-microsoft-security-advisory-cve-2026-118750-asp-.html</guid>
+      <pubDate>Tue, 10 Nov 2026 23:32:00 GMT</pubDate>
+      <description>Severity: medium. ## Executive summary
+
+Microsoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components.
+
+FileBufferingReadStream buffer allocation can allow unauthenticated m</description>
+    </item>
+    <item>
+      <title>CVE-2026-120006: Microsoft Security Advisory CVE-2026-120006 - Aspire Elevation of Privilege Vulnerability</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-120006-microsoft-security-advisory-cve-2026-120006-aspi.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-120006-microsoft-security-advisory-cve-2026-120006-aspi.html</guid>
+      <pubDate>Tue, 10 Nov 2026 23:24:48 GMT</pubDate>
+      <description>Severity: high. ## Executive summary
+
+Microsoft is releasing this security advisory to provide information about a vulnerability in Aspire. This advisory provides guidance on updating affected applications and components.
+
+Disclosure of an Aspire Dashboard authentication cookie to a linked service c</description>
+    </item>
+    <item>
+      <title>CVE-2026-118746: Microsoft Security Advisory CVE-2026-118746 - .NET Security Feature Bypass Vulnerability</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-118746-microsoft-security-advisory-cve-2026-118746-net-.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-118746-microsoft-security-advisory-cve-2026-118746-net-.html</guid>
+      <pubDate>Tue, 10 Nov 2026 23:23:57 GMT</pubDate>
+      <description>Severity: medium. ## Executive summary
+
+Microsoft is releasing this security advisory to provide information about a vulnerability in .NET. This advisory provides guidance on updating affected applications and components.
+
+Unix Negotiate authentication can accept a request when required channel-bind</description>
+    </item>
+    <item>
+      <title>CVE-2026-109475: Microsoft Security Advisory CVE-2026-109475 - .NET Denial of Service Vulnerability</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-109475-microsoft-security-advisory-cve-2026-109475-net-.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-109475-microsoft-security-advisory-cve-2026-109475-net-.html</guid>
+      <pubDate>Tue, 10 Nov 2026 23:22:54 GMT</pubDate>
+      <description>Severity: medium. ## Executive summary
+
+Microsoft is releasing this security advisory to provide information about a vulnerability in .NET. This advisory provides guidance on updating affected applications and components.
+
+Managed `HttpListener` can recursively process an unterminated request line a</description>
+    </item>
+    <item>
+      <title>CVE-2026-120796: Microsoft Security Advisory CVE-2026-120796 - .NET Denial of Service Vulnerability</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-120796-microsoft-security-advisory-cve-2026-120796-net-.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-120796-microsoft-security-advisory-cve-2026-120796-net-.html</guid>
+      <pubDate>Tue, 10 Nov 2026 23:21:36 GMT</pubDate>
+      <description>Severity: medium. ## Executive summary
+
+Microsoft is releasing this security advisory to provide information about a vulnerability in .NET. This advisory provides guidance on updating affected applications and components.
+
+Inefficient algorithmic complexity in .NET allows an unauthorized attacker to</description>
+    </item>
+    <item>
+      <title>CVE-2026-118747: Microsoft Security Advisory CVE-2026-118747 - .NET Denial of Service Vulnerability</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-118747-microsoft-security-advisory-cve-2026-118747-net-.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-118747-microsoft-security-advisory-cve-2026-118747-net-.html</guid>
+      <pubDate>Tue, 10 Nov 2026 23:20:27 GMT</pubDate>
+      <description>Severity: medium. ## Executive summary
+
+Microsoft is releasing this security advisory to provide information about a vulnerability in .NET. This advisory provides guidance on updating affected applications and components.
+
+Colliding CBOR map keys can hash-flood uniqueness checks; the fix uses seeded</description>
+    </item>
+    <item>
+      <title>CVE-2026-118749: Microsoft Security Advisory CVE-2026-118749 - ASP.NET Core Denial of Service Vulnerability</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-118749-microsoft-security-advisory-cve-2026-118749-asp-.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-118749-microsoft-security-advisory-cve-2026-118749-asp-.html</guid>
+      <pubDate>Tue, 10 Nov 2026 23:08:34 GMT</pubDate>
+      <description>Severity: medium. ## Executive summary
+
+Microsoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components.
+
+Minimal API validation repeatedly copies a growing validation-error d</description>
+    </item>
+    <item>
+      <title>CVE-2026-114149: Microsoft Security Advisory CVE-2026-114149 - ASP.NET Core Denial of Service Vulnerability</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-114149-microsoft-security-advisory-cve-2026-114149-asp-.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-114149-microsoft-security-advisory-cve-2026-114149-asp-.html</guid>
+      <pubDate>Tue, 10 Nov 2026 23:06:32 GMT</pubDate>
+      <description>Severity: high. ## Executive summary
+
+Microsoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components.
+
+Multipart form processing can bypass the configured header-count limit </description>
+    </item>
+    <item>
+      <title>CVE-2026-109476: Microsoft Security Advisory CVE-2026-109476 - ASP.NET Core Information Disclosure Vulnerability</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-109476-microsoft-security-advisory-cve-2026-109476-asp-.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-109476-microsoft-security-advisory-cve-2026-109476-asp-.html</guid>
+      <pubDate>Tue, 10 Nov 2026 23:02:40 GMT</pubDate>
+      <description>Severity: medium. ## Executive summary
+
+Microsoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components.
+
+A crafted `X-Forwarded-Prefix` can inject cookie path delimiters unle</description>
+    </item>
+    <item>
+      <title>CVE-2026-126187: React: Unauthenticated Remote Code Execution in React Server Components</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-126187-react-unauthenticated-remote-code-execution-in-r.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-126187-react-unauthenticated-remote-code-execution-in-r.html</guid>
+      <pubDate>Tue, 10 Nov 2026 22:44:12 GMT</pubDate>
       <description>Severity: critical. ### Impact
 
-`sanitizeFilter` is Mongoose's mechanism for protecting against query selector injection attacks. In older versions of Mongoose, `sanitizeFilter` was not applied for `countDocuments()` queries.
+Crafted payloads targeting frameworks supporting React Server Components can lead to remote code execution. This only affects extremely rare cases where responses transport multiple typed arrays and an attacker-controlled value.
 
-### Patches
+Updating immediately is recommended.
 
-Patches have been released for all supported Mongoose major </description>
+</description>
     </item>
     <item>
-      <title>CVE-2026-125111: Rack: Multipart parsing allows DoS via unbounded scan buffer growth</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-125111-rack-multipart-parsing-allows-dos-via-unbounded-.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-125111-rack-multipart-parsing-allows-dos-via-unbounded-.html</guid>
-      <pubDate>Tue, 10 Nov 2026 19:35:49 GMT</pubDate>
-      <description>Severity: high. ## Summary
+      <title>CVE-2026-125123: compose-lint: File paths embedded in pull requests can inject CI workflow commands through command-line error messages</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-125123-compose-lint-file-paths-embedded-in-pull-request.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-125123-compose-lint-file-paths-embedded-in-pull-request.html</guid>
+      <pubDate>Tue, 10 Nov 2026 21:58:53 GMT</pubDate>
+      <description>Severity: low. ### Impact
 
-`Rack::Multipart::Parser` reads the request body in chunks of `rack.multipart.buffer_size` (1 MiB by default) into an internal scan buffer. Parsed bytes are only discarded from that buffer when a chunk ends inside a part body. A request whose parts are sized so that every</description>
+0.31.0 fixed GHSA-6f4g-xm8v-pgv6, where text from a Compose file became GitHub Actions workflow commands in compose-lint's output. The fix escapes the command openers in compose-lint's own output, but not in the argument parser's error messages. When a repository path reac</description>
     </item>
     <item>
-      <title>CVE-2026-125108: Rack: Multipart boundary ambiguity guard in Rack::Multipart::Parser can be bypassed with a quoted boundary value, allowing WAF bypass</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-125108-rack-multipart-boundary-ambiguity-guard-in-rack-.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-125108-rack-multipart-boundary-ambiguity-guard-in-rack-.html</guid>
-      <pubDate>Tue, 10 Nov 2026 19:26:28 GMT</pubDate>
-      <description>Severity: low. ## Summary
-
-The guard added for CVE-[phone] (GHSA-vgpv-f759-9wx3), which rejects multipart requests with more than one `boundary` parameter, only inspects the part of the `Content-Type` header after the boundary it extracts. A `Content-Type` whose first `boundary` parameter is empty o</description>
-    </item>
-    <item>
-      <title>Git Patches Flaw That Lets Malicious Repositories Execute Code During Recursive Clones</title>
-      <link>https://sentinel-post.pages.dev/item/git-patches-flaw-that-lets-malicious-repositories-execute-code-d.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/git-patches-flaw-that-lets-malicious-repositories-execute-code-d.html</guid>
-      <pubDate>Tue, 10 Nov 2026 19:23:10 GMT</pubDate>
-      <description>A flaw in Git can let a malicious repository run an attacker's code on a computer that clones it recursively, together with its submodules. The Git project fixed it this week in Git 2.56.1, with matching fixes for the 2.50 through 2.55 series in 2.50.2, 2.51.3, 2.52.1, 2.53.1, 2.54.1 and 2.55.1. The</description>
-    </item>
-    <item>
-      <title>CVE-2026-79914: NocoBase: @nocobase/plugin-action-custom-request allows server-side request forgery through runtime URL overrides</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-79914-nocobase-nocobase-plugin-action-custom-request-al.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-79914-nocobase-nocobase-plugin-action-custom-request-al.html</guid>
-      <pubDate>Tue, 10 Nov 2026 19:20:14 GMT</pubDate>
-      <description>Severity: medium. ### Summary
-
-A Server-Side Request Forgery vulnerability exists in NocoBase v2.1.10 in the `@nocobase/plugin-action-custom-request` plugin.
-
-A low-privileged authenticated user can call the `customRequests:send` endpoint and override the stored request URL at runtime using `options</description>
-    </item>
-    <item>
-      <title>SGLang RCE Exploit Breaches NEAR AI, Steals Data From 18 Agents and About 100 Users</title>
-      <link>https://sentinel-post.pages.dev/item/sglang-rce-exploit-breaches-near-ai-steals-data-from-18-agents-a.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/sglang-rce-exploit-breaches-near-ai-steals-data-from-18-agents-a.html</guid>
-      <pubDate>Tue, 10 Nov 2026 19:19:39 GMT</pubDate>
-      <description>An attacker exploited a remote code execution flaw in SGLang, an open-source inference engine, and ran code on one of NEAR AI's inference servers last Sunday. The attacker could also have seen requests being processed on that server that day, including requests sent in confidential mode, the company</description>
-    </item>
-    <item>
-      <title>CVE-2026-125109: Rack: Rack::Request#host_with_port (and #base_url / #url) return the raw invalid Host header — incomplete fix of CVE-2026-34835</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-125109-rack-rack-request-host-with-port-and-base-url-ur.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-125109-rack-rack-request-host-with-port-and-base-url-ur.html</guid>
-      <pubDate>Tue, 10 Nov 2026 19:11:28 GMT</pubDate>
-      <description>Severity: medium. ## Summary
-
-`Rack::Request#host_with_port`, and therefore `#base_url` and `#url`, return the raw authority string when it fails validation. An attacker-controlled `Host`, `X-Forwarded-Host`, or `Forwarded: host=` value containing characters that are not permitted in an authority is</description>
-    </item>
-    <item>
-      <title>CVE-2026-125110: Rack: Rack::Static header_rules bypass via dot-segment normalization mismatch</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-125110-rack-rack-static-header-rules-bypass-via-dot-seg.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-125110-rack-rack-static-header-rules-bypass-via-dot-seg.html</guid>
-      <pubDate>Tue, 10 Nov 2026 18:50:07 GMT</pubDate>
-      <description>Severity: medium. ## Summary
-
-`Rack::Static` normalizes the request path with `Utils.clean_path_info` when deciding which file to serve, but matches `header_rules` against a path that is only URL-decoded. A request containing dot segments, raw or percent-encoded, is served the normalized target file</description>
-    </item>
-    <item>
-      <title>CVE-2026-125121: compose-lint: Text in a pull request can still issue CI workflow commands through compose-lint 0.31.0's output</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-125121-compose-lint-text-in-a-pull-request-can-still-is.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-125121-compose-lint-text-in-a-pull-request-can-still-is.html</guid>
-      <pubDate>Tue, 10 Nov 2026 18:28:35 GMT</pubDate>
-      <description>Severity: medium. ### Impact
-
-0.31.0 fixed GHSA-6f4g-xm8v-pgv6, where text from a Compose file became GitHub Actions workflow commands in compose-lint's output. The fix escapes the command openers in everything compose-lint prints, and the 0.31.0 changelog says the report "escapes both openers (also</description>
-    </item>
-    <item>
-      <title>Hackers Exploit Critical Xen Orchestra Auth Bypass Flaw to Gain Admin Access</title>
-      <link>https://sentinel-post.pages.dev/item/hackers-exploit-critical-xen-orchestra-auth-bypass-flaw-to-gain-.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/hackers-exploit-critical-xen-orchestra-auth-bypass-flaw-to-gain-.html</guid>
-      <pubDate>Tue, 10 Nov 2026 18:12:21 GMT</pubDate>
-      <description>French software company Vates VMS has warned of a critical security vulnerability in Xen Orchestra that it said is being actively exploited in the wild. The authentication bypass flaw, which does not yet have a CVE identifier, is tracked as VSA-2026-062. "REST cookie parsing turns authenticationToke</description>
-    </item>
-    <item>
-      <title>Three China-Nexus Espionage Campaigns Linked Through Sparrow Malware Ecosystem</title>
-      <link>https://sentinel-post.pages.dev/item/three-china-nexus-espionage-campaigns-linked-through-sparrow-mal.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/three-china-nexus-espionage-campaigns-linked-through-sparrow-mal.html</guid>
-      <pubDate>Tue, 10 Nov 2026 17:43:23 GMT</pubDate>
-      <description>Three distinct threat activity clusters with shared infrastructure and malware code similarities have been observed targeting telecommunications providers, government organizations, military entities, research institutions, and critical infrastructure across Latin America, Asia, and Europe over the </description>
-    </item>
-    <item>
-      <title>Attackers Exploit AhsayCBS Flaws to Deploy Sandbox-Evading Python Backdoor</title>
-      <link>https://sentinel-post.pages.dev/item/attackers-exploit-ahsaycbs-flaws-to-deploy-sandbox-evading-pytho.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/attackers-exploit-ahsaycbs-flaws-to-deploy-sandbox-evading-pytho.html</guid>
-      <pubDate>Tue, 10 Nov 2026 16:00:55 GMT</pubDate>
-      <description>Cybersecurity researchers have disclosed details of an attack that exploited two now-patched vulnerabilities in AhsayCBS to deliver a Python-based implant. The activity, observed by Huntress in early October 2026, involves the exploitation of a chain comprising CVE-[phone] and CVE-[phone] to bypass </description>
-    </item>
-    <item>
-      <title>Blind Eagle Uses Fake Court Notices to Deliver Remote Access Trojan Across Latin America</title>
-      <link>https://sentinel-post.pages.dev/item/blind-eagle-uses-fake-court-notices-to-deliver-remote-access-tro.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/blind-eagle-uses-fake-court-notices-to-deliver-remote-access-tro.html</guid>
-      <pubDate>Tue, 10 Nov 2026 15:58:44 GMT</pubDate>
-      <description>The threat actor known as Blind Eagle has resurfaced with a new campaign targeting organizations in Latin America through judicial and administrative-themed phishing lures to deliver a remote access trojan (RAT) that shares its lineage with AsyncRAT and DCRat. "The campaign uses Portuguese and Spani</description>
-    </item>
-    <item>
-      <title>CVE-2026-118670: OHIF Viewers: DOM-Based Cross Site Scripting (XSS) through MIME type of document</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-118670-ohif-viewers-dom-based-cross-site-scripting-xss-.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-118670-ohif-viewers-dom-based-cross-site-scripting-xss-.html</guid>
-      <pubDate>Tue, 10 Nov 2026 15:57:51 GMT</pubDate>
-      <description>Severity: high. ### Summary
-An XSS (Cross-Site Scripting) vulnerability occurs when an attacker is able to inject their own JavaScript code into a web page's source, which is subsequently processed by the victim's browser. A common cause of this vulnerability is the failure to validate user-supplied</description>
-    </item>
-    <item>
-      <title>CVE-2026-118774: Forge: Certificate signature verified with the issuer's RSA signature scheme</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-118774-forge-certificate-signature-verified-with-the-is.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-118774-forge-certificate-signature-verified-with-the-is.html</guid>
-      <pubDate>Tue, 10 Nov 2026 15:57:48 GMT</pubDate>
-      <description>Severity: low. ### Summary
-
-When verifying a certificate, node-forge chose the RSA padding scheme (PKCS#1 v1.5 or RSASSA-PSS) and PSS parameters from the issuer certificate's own signature algorithm instead of the certificate being verified. A certificate labeled as signed with RSASSA-PSS could pass</description>
-    </item>
-    <item>
-      <title>CVE-2026-118776: Forge: Incomplete PKCS#7 padding validation in AES/DES CBC and ECB decryption</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-118776-forge-incomplete-pkcs-7-padding-validation-in-ae.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-118776-forge-incomplete-pkcs-7-padding-validation-in-ae.html</guid>
-      <pubDate>Tue, 10 Nov 2026 15:57:46 GMT</pubDate>
-      <description>Severity: low. ### Summary
-`decipher.finish()` in CBC and ECB mode accepted malformed PKCS#7 padding: only the last byte was checked, against a limit of four blocks, so mismatched padding bytes, a zero count and oversized counts were accepted and up to four blocks of plaintext could be silently remo</description>
-    </item>
-    <item>
-      <title>CVE-2026-119189: Forge: X.509 pathLenConstraint not enforced by verifyCertificateChain() for CA certificates without keyUsage</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-119189-forge-x-509-pathlenconstraint-not-enforced-by-ve.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-119189-forge-x-509-pathlenconstraint-not-enforced-by-ve.html</guid>
-      <pubDate>Tue, 10 Nov 2026 15:57:43 GMT</pubDate>
-      <description>Severity: medium. ### Summary
-`forge.pki.verifyCertificateChain()` enforces the `pathLenConstraint` of a CA certificate's `basicConstraints` extension only when that certificate also has a `keyUsage` extension. For a CA certificate with a `pathLenConstraint` and no `keyUsage`, chains with more inter</description>
-    </item>
-    <item>
-      <title>CVE-2026-119191: Forge: ASN.1 resource exhaustion via BIT STRING decoding in asn1.fromDer</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-119191-forge-asn-1-resource-exhaustion-via-bit-string-d.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-119191-forge-asn-1-resource-exhaustion-via-bit-string-d.html</guid>
-      <pubDate>Tue, 10 Nov 2026 15:57:41 GMT</pubDate>
-      <description>Severity: high. ### Summary
-`asn1.fromDer()` decodes the contents of BIT STRINGs as ASN.1 by default. That decode ignored the `maxDepth` recursion limit (an incomplete fix of CVE-[phone]) and also decoded nested BIT STRINGs, keeping a full copy of the decoded contents at each level, so small crafted</description>
-    </item>
-    <item>
-      <title>CVE-2026-119192: Forge: RSA PKCS#1 v1.5 signature forgery via non-canonical DigestInfo encoding</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-119192-forge-rsa-pkcs-1-v1-5-signature-forgery-via-non-.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-119192-forge-rsa-pkcs-1-v1-5-signature-forgery-via-non-.html</guid>
-      <pubDate>Tue, 10 Nov 2026 15:57:34 GMT</pubDate>
-      <description>Severity: high. ### Summary
-RSASSA-PKCS1-v1_5 signature verification (`publicKey.verify()` with the default scheme, also used by X.509 certificate and PKCS#7 verification) accepted non-canonical BER encodings of the DigestInfo, such as NULL parameters with content and non-minimal lengths. These leav</description>
-    </item>
-    <item>
-      <title>CVE-2026-115779: Effect: Cookie attribute injection via domain, path, and name fields in @effect/platform makeCookie()</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-115779-effect-cookie-attribute-injection-via-domain-pat.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-115779-effect-cookie-attribute-injection-via-domain-pat.html</guid>
-      <pubDate>Tue, 10 Nov 2026 15:57:32 GMT</pubDate>
-      <description>Severity: medium. ### Impact
-
-The `name`, `domain`, and `path` fields of `makeCookie()` were validated with a regex that allows `;`, the attribute separator in `Set-Cookie` headers. Because `serializeCookie()` writes those fields verbatim, a caller who passes untrusted input into any of them can app</description>
-    </item>
-    <item>
-      <title>CVE-2026-123364: OctoPrint: Stored XSS via saved connection parameters</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-123364-octoprint-stored-xss-via-saved-connection-parame.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-123364-octoprint-stored-xss-via-saved-connection-parame.html</guid>
-      <pubDate>Tue, 10 Nov 2026 15:57:29 GMT</pubDate>
-      <description>Severity: low. ## Impact
-
-OctoPrint versions 2.0.0rc1 up until version 2.0.0rc6 are susceptible to cross-site scripting via a specially crafted default `port` or `baudrate` setting on the bundled Serial Connector plugin, supplied via the API as new defaults during a `connect` request.
-
-## Patches
-
-T</description>
-    </item>
-    <item>
-      <title>CVE-2026-110802: Altair: DOM-based XSS via attacker-controlled script URLs in the iframe sandbox</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-110802-altair-dom-based-xss-via-attacker-controlled-scr.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-110802-altair-dom-based-xss-via-attacker-controlled-scr.html</guid>
-      <pubDate>Tue, 10 Nov 2026 15:57:27 GMT</pubDate>
-      <description>Severity: medium. ### Summary
-Altair `8.5.7` accepts plugin configuration directly from the `iframe-sandbox` query string.
-
-When `plugin_sandbox_opts` contains `type: "scripts"` and an attacker-controlled URL in `scriptUrls`, the sandbox page creates a classic `&lt;script src="..."&gt;` element and loads </description>
-    </item>
-    <item>
-      <title>CVE-2026-107846: bitcoinjs-lib: Undetected merkle node duplication in block root computation validates a forged transaction list</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-107846-bitcoinjs-lib-undetected-merkle-node-duplication.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-107846-bitcoinjs-lib-undetected-merkle-node-duplication.html</guid>
-      <pubDate>Tue, 10 Nov 2026 15:57:25 GMT</pubDate>
-      <description>Severity: critical. ### Summary
-`fastMerkleRoot` pads an odd level by hashing the last node with itself. It does not report that it did so, and `checkTxRoots` never looks for repeated transactions. A peer can therefore duplicate transactions to fill the pad and produce a block with a different trans</description>
+      <title>Microsoft Fixes Nearly 1,100 Security Vulnerabilities</title>
+      <link>https://sentinel-post.pages.dev/item/microsoft-fixes-nearly-1-100-security-vulnerabilities.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/microsoft-fixes-nearly-1-100-security-vulnerabilities.html</guid>
+      <pubDate>Tue, 10 Nov 2026 21:55:03 GMT</pubDate>
+      <description>Microsoft did another four-digit patch drop today, releasing updates to fix almost 1,100 security vulnerabilities in its Windows operating systems and supported software. This month's Patch Tuesday addresses 63 critical flaws -- including a zero-day in Microsoft Outlook -- and comes amid important s</description>
     </item>
   </channel>
 </rss>

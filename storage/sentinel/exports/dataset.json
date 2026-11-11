@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-10T20:59:47+00:00",
+  "generated_at": "2026-11-11T01:22:55+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -10,34 +10,34 @@
     "rss"
   ],
   "totals": {
-    "items": 134,
+    "items": 132,
     "by_source": {
       "hn": 40,
       "cve": 30,
-      "github": 14,
+      "github": 12,
       "rss": 50
     },
     "by_recipe": {
       "hn_sec": 40,
       "gh_advisories": 30,
       "hackersnews": 30,
-      "github_sec": 14,
-      "schneier": 10,
-      "krebs": 10
+      "github_sec": 12,
+      "krebs": 10,
+      "schneier": 10
     },
     "by_topic": {
-      "security": 109,
-      "ai": 72,
-      "dev": 56,
-      "hardware": 17,
+      "security": 110,
+      "dev": 70,
+      "ai": 59,
+      "hardware": 15,
       "biz": 10,
-      "crypto": 7,
+      "crypto": 6,
       "science": 3
     },
     "top_domains": [
       [
         "github.com",
-        46
+        44
       ],
       [
         "thehackernews.com",
@@ -174,55 +174,18 @@
       "date": "2025-03-24"
     },
     {
-      "uid": "cve:GHSA-pcrw-h46h-c93h",
+      "uid": "cve:GHSA-xqc2-xf4c-x3h3",
       "source": "cve",
-      "title": "CVE-2026-125120: Mongoose: sanitizeFilter not applied on countDocuments",
-      "url": "https://github.com/advisories/GHSA-pcrw-h46h-c93h",
-      "ts": 1794339452.0,
+      "title": "CVE-2026-126187: React: Unauthenticated Remote Code Execution in React Server Components",
+      "url": "https://github.com/advisories/GHSA-xqc2-xf4c-x3h3",
+      "ts": 1794350652.0,
       "points": 6000,
       "comments": 0,
-      "author": "mongoose",
-      "summary": "Severity: critical. ### Impact\n\n`sanitizeFilter` is Mongoose's mechanism for protecting against query selector injection attacks. In older versions of Mongoose, `sanitizeFilter` was not applied for `countDocuments()` queries.\n\n### Patches\n\nPatches have been released for all supported Mongoose major release lines. Pleas",
+      "author": "react-server-dom-parcel",
+      "summary": "Severity: critical. ### Impact\n\nCrafted payloads targeting frameworks supporting React Server Components can lead to remote code execution. This only affects extremely rare cases where responses transport multiple typed arrays and an attacker-controlled value.\n\nUpdating immediately is recommended.\n\nThe vulnerability ex",
       "recipe": "gh_advisories",
       "buzz": 6080,
       "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-10"
-    },
-    {
-      "uid": "cve:GHSA-8vv3-6qpc-gpw6",
-      "source": "cve",
-      "title": "CVE-2026-107846: bitcoinjs-lib: Undetected merkle node duplication in block root computation validates a forged transaction list",
-      "url": "https://github.com/advisories/GHSA-8vv3-6qpc-gpw6",
-      "ts": 1794326245.0,
-      "points": 6000,
-      "comments": 0,
-      "author": "bitcoinjs-lib",
-      "summary": "Severity: critical. ### Summary\n`fastMerkleRoot` pads an odd level by hashing the last node with itself. It does not report that it did so, and `checkTxRoots` never looks for repeated transactions. A peer can therefore duplicate transactions to fill the pad and produce a block with a different transaction list but the",
-      "recipe": "gh_advisories",
-      "buzz": 6080,
-      "topics": [
-        "crypto",
-        "security"
-      ],
-      "date": "2026-11-10"
-    },
-    {
-      "uid": "cve:GHSA-62m9-f875-rqw6",
-      "source": "cve",
-      "title": "CVE-2026-102894: GPUStack: SAML callback trusts an unverified SAMLResponse, allowing authentication bypass and account takeover",
-      "url": "https://github.com/advisories/GHSA-62m9-f875-rqw6",
-      "ts": 1794326235.0,
-      "points": 6000,
-      "comments": 0,
-      "author": "gpustack",
-      "summary": "Severity: critical. ### Impact\n\nThe callback Base64-decodes the posted XML, reads NameID and attributes, resolves or provisions the user, and mints a gpustack_session JWT — but never calls OneLogin_Saml2_Auth.process_response(), the step that verifies the signature, issuer, audience, destination, and time conditions.",
-      "recipe": "gh_advisories",
-      "buzz": 6080,
-      "topics": [
-        "ai",
         "dev",
         "security",
         "hardware"
@@ -321,15 +284,105 @@
       "date": "2021-01-11"
     },
     {
-      "uid": "cve:GHSA-8332-j7wj-wjw4",
+      "uid": "cve:GHSA-x8x8-p968-x646",
       "source": "cve",
-      "title": "CVE-2026-125117: Mongoose walks into inherited properties when hydrating, setting, and merging, allowing overwrites of built-in functions (denial of service) and shared schema state",
-      "url": "https://github.com/advisories/GHSA-8332-j7wj-wjw4",
-      "ts": 1794344176.0,
+      "title": "CVE-2026-118745: Microsoft Security Advisory CVE-2026-118745 - Visual Studio Remote Code Execution Vulnerability",
+      "url": "https://github.com/advisories/GHSA-x8x8-p968-x646",
+      "ts": 1794358040.0,
       "points": 3500,
       "comments": 0,
-      "author": "mongoose",
-      "summary": "Severity: high. ### Summary\n\nThree Mongoose code paths copy data into objects by property name without checking whether the property is the object's own or inherited from its prototype:\n\n1. Loading a document from the database (`init()`, also used by `Model.hydrate()`)\n2. Setting a dotted path on a document (`$__se",
+      "author": "Microsoft.NETCore.App.Runtime.win-x86",
+      "summary": "Severity: high. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in .NET. This advisory provides guidance on updating affected applications and components.\n\nCrafted PDB line metadata can exceed the caller-provided buffer and cause a heap out-of-bounds",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-11"
+    },
+    {
+      "uid": "cve:GHSA-xf35-v9jh-g65w",
+      "source": "cve",
+      "title": "CVE-2026-114152: Microsoft Security Advisory CVE-2026-114152 - Visual Studio Remote Code Execution Vulnerability",
+      "url": "https://github.com/advisories/GHSA-xf35-v9jh-g65w",
+      "ts": 1794357972.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "Microsoft.NETCore.App.Runtime.win-x86",
+      "summary": "Severity: high. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in .NET. This advisory provides guidance on updating affected applications and components.\n\nAttacker-controlled COFF relocation offsets can cause an out-of-bounds stack write in `DiaObjec",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-11"
+    },
+    {
+      "uid": "cve:GHSA-fpxj-5c99-g7vj",
+      "source": "cve",
+      "title": "CVE-2026-114151: Microsoft Security Advisory CVE-2026-114151 - Visual Studio Remote Code Execution Vulnerability",
+      "url": "https://github.com/advisories/GHSA-fpxj-5c99-g7vj",
+      "ts": 1794357302.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "Microsoft.NETCore.App.Runtime.win-x86",
+      "summary": "Severity: high. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in .NET. This advisory provides guidance on updating affected applications and components.\n\nA crafted PDB `LF_DECIMAL` payload can trigger an out-of-bounds stack write when processed by D",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-11"
+    },
+    {
+      "uid": "cve:GHSA-r8h3-p8p6-ggp7",
+      "source": "cve",
+      "title": "CVE-2026-114158: Microsoft Security Advisory CVE-2026-114158 - Visual Studio Remote Code Execution Vulnerability",
+      "url": "https://github.com/advisories/GHSA-r8h3-p8p6-ggp7",
+      "ts": 1794357253.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "Microsoft.NETCore.App.Runtime.win-x86",
+      "summary": "Severity: high. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in .NET. This advisory provides guidance on updating affected applications and components.\n\nA Portable PDB `EmbeddedSource` record with parent RID 0 can trigger an out-of-bounds write.\n\n#",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-11"
+    },
+    {
+      "uid": "cve:GHSA-3cgx-w6gm-fqrx",
+      "source": "cve",
+      "title": "CVE-2026-114159: Microsoft Security Advisory CVE-2026-114159 - Visual Studio Remote Code Execution Vulnerability",
+      "url": "https://github.com/advisories/GHSA-3cgx-w6gm-fqrx",
+      "ts": 1794357179.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "Microsoft.NETCore.App.Runtime.win-x86",
+      "summary": "Severity: high. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in .NET. This advisory provides guidance on updating affected applications and components.\n\nAn oversized Portable PDB document name can be truncated during allocation and cause a heap out",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-11"
+    },
+    {
+      "uid": "cve:GHSA-q6jf-24jf-m3cg",
+      "source": "cve",
+      "title": "CVE-2026-120792: Microsoft Security Advisory CVE-2026-120792 - Aspire Information Disclosure Vulnerability",
+      "url": "https://github.com/advisories/GHSA-q6jf-24jf-m3cg",
+      "ts": 1794357083.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "Aspire.Cli",
+      "summary": "Severity: high. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in the Aspire CLI. This advisory provides guidance on updating affected applications and components.\n\nInsecure temporary files used by Aspire CLI can allow a local attacker to obtain sens",
       "recipe": "gh_advisories",
       "buzz": 3580,
       "topics": [
@@ -337,35 +390,73 @@
         "dev",
         "security"
       ],
-      "date": "2026-11-10"
+      "date": "2026-11-11"
     },
     {
-      "uid": "cve:GHSA-gg4r-jv3p-qx3c",
+      "uid": "cve:GHSA-m63f-xhvm-6mv5",
       "source": "cve",
-      "title": "CVE-2026-125119: Mongoose: Connection-level sanitizeFilter not applied",
-      "url": "https://github.com/advisories/GHSA-gg4r-jv3p-qx3c",
-      "ts": 1794340572.0,
+      "title": "CVE-2026-120778: Microsoft Security Advisory CVE-2026-120778 - Aspire Elevation of Privilege Vulnerability",
+      "url": "https://github.com/advisories/GHSA-m63f-xhvm-6mv5",
+      "ts": 1794357006.0,
       "points": 3500,
       "comments": 0,
-      "author": "mongoose",
-      "summary": "Severity: high. ### Summary\n\nsanitizeFilter exists to stop query selector injection: it wraps operator objects such as `{ $ne: null }` in filter values in `$eq`, so they are matched literally. Set on a connection with `mongoose.connect()` or `createConnection(uri, { sanitizeFilter: true })`, the connection reports",
+      "author": "Aspire.Cli",
+      "summary": "Severity: high. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in the Aspire CLI. This advisory provides guidance on updating affected applications and components.\n\nAn insecure temporary directory used by Aspire CLI-generated builds can allow a local",
       "recipe": "gh_advisories",
       "buzz": 3580,
       "topics": [
+        "dev",
+        "science",
         "security"
       ],
-      "date": "2026-11-10"
+      "date": "2026-11-11"
     },
     {
-      "uid": "cve:GHSA-5v64-555j-wjxm",
+      "uid": "cve:GHSA-wr8v-9x5q-ggcm",
       "source": "cve",
-      "title": "CVE-2026-125111: Rack: Multipart parsing allows DoS via unbounded scan buffer growth",
-      "url": "https://github.com/advisories/GHSA-5v64-555j-wjxm",
-      "ts": 1794339349.0,
+      "title": "CVE-2026-114147: Microsoft Security Advisory CVE-2026-114147 - ASP.NET Core Denial of Service Vulnerability",
+      "url": "https://github.com/advisories/GHSA-wr8v-9x5q-ggcm",
+      "ts": 1794356612.0,
       "points": 3500,
       "comments": 0,
-      "author": "rack",
-      "summary": "Severity: high. ## Summary\n\n`Rack::Multipart::Parser` reads the request body in chunks of `rack.multipart.buffer_size` (1 MiB by default) into an internal scan buffer. Parsed bytes are only discarded from that buffer when a chunk ends inside a part body. A request whose parts are sized so that every chunk ends insi",
+      "author": "Microsoft.AspNetCore.SignalR.StackExchangeRedis",
+      "summary": "Severity: high. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components.\n\nSignalR Redis scale-out can mishandle case-mismatched group removal and leave subscript",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-11"
+    },
+    {
+      "uid": "cve:GHSA-67wp-ghc2-fw2g",
+      "source": "cve",
+      "title": "CVE-2026-114146: Microsoft Security Advisory CVE-2026-114146 - ASP.NET Core Elevation of Privilege Vulnerability",
+      "url": "https://github.com/advisories/GHSA-67wp-ghc2-fw2g",
+      "ts": 1794356516.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "Microsoft.AspNetCore.Http.Connections",
+      "summary": "Severity: high. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components.\n\nSignalR connections are not consistently bound to the identity negotiated at connection",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-11"
+    },
+    {
+      "uid": "cve:GHSA-f7vh-h5g3-7jrh",
+      "source": "cve",
+      "title": "CVE-2026-120006: Microsoft Security Advisory CVE-2026-120006 - Aspire Elevation of Privilege Vulnerability",
+      "url": "https://github.com/advisories/GHSA-f7vh-h5g3-7jrh",
+      "ts": 1794353088.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "Aspire.Hosting.AppHost",
+      "summary": "Severity: high. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in Aspire. This advisory provides guidance on updating affected applications and components.\n\nDisclosure of an Aspire Dashboard authentication cookie to a linked service can allow an atta",
       "recipe": "gh_advisories",
       "buzz": 3580,
       "topics": [
@@ -375,110 +466,18 @@
       "date": "2026-11-10"
     },
     {
-      "uid": "cve:GHSA-xwgp-w3pj-q5h3",
+      "uid": "cve:GHSA-x33c-w48q-qrgc",
       "source": "cve",
-      "title": "CVE-2026-118670: OHIF Viewers: DOM-Based Cross Site Scripting (XSS) through MIME type of document",
-      "url": "https://github.com/advisories/GHSA-xwgp-w3pj-q5h3",
-      "ts": 1794326271.0,
+      "title": "CVE-2026-114149: Microsoft Security Advisory CVE-2026-114149 - ASP.NET Core Denial of Service Vulnerability",
+      "url": "https://github.com/advisories/GHSA-x33c-w48q-qrgc",
+      "ts": 1794351992.0,
       "points": 3500,
       "comments": 0,
-      "author": "@ohif/extension-dicom-pdf",
-      "summary": "Severity: high. ### Summary\nAn XSS (Cross-Site Scripting) vulnerability occurs when an attacker is able to inject their own JavaScript code into a web page's source, which is subsequently processed by the victim's browser. A common cause of this vulnerability is the failure to validate user-supplied data before dis",
+      "author": "Microsoft.AspNetCore.App.Runtime.linux-arm",
+      "summary": "Severity: high. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components.\n\nMultipart form processing can bypass the configured header-count limit and consume exce",
       "recipe": "gh_advisories",
       "buzz": 3580,
       "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-10"
-    },
-    {
-      "uid": "cve:GHSA-rhr8-3pm8-cq29",
-      "source": "cve",
-      "title": "CVE-2026-119191: Forge: ASN.1 resource exhaustion via BIT STRING decoding in asn1.fromDer",
-      "url": "https://github.com/advisories/GHSA-rhr8-3pm8-cq29",
-      "ts": 1794326261.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "node-forge",
-      "summary": "Severity: high. ### Summary\n`asn1.fromDer()` decodes the contents of BIT STRINGs as ASN.1 by default. That decode ignored the `maxDepth` recursion limit (an incomplete fix of CVE-[phone]) and also decoded nested BIT STRINGs, keeping a full copy of the decoded contents at each level, so small crafted DER or PEM i",
-      "recipe": "gh_advisories",
-      "buzz": 3580,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-10"
-    },
-    {
-      "uid": "cve:GHSA-6qrw-m8cv-hcxf",
-      "source": "cve",
-      "title": "CVE-2026-119192: Forge: RSA PKCS#1 v1.5 signature forgery via non-canonical DigestInfo encoding",
-      "url": "https://github.com/advisories/GHSA-6qrw-m8cv-hcxf",
-      "ts": 1794326254.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "node-forge",
-      "summary": "Severity: high. ### Summary\nRSASSA-PKCS1-v1_5 signature verification (`publicKey.verify()` with the default scheme, also used by X.509 certificate and PKCS#7 verification) accepted non-canonical BER encodings of the DigestInfo, such as NULL parameters with content and non-minimal lengths. These leave attacker-contr",
-      "recipe": "gh_advisories",
-      "buzz": 3580,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-10"
-    },
-    {
-      "uid": "cve:GHSA-3hch-x692-6qj3",
-      "source": "cve",
-      "title": "CVE-2026-103002: GPUStack: Missing authorization on several cluster and resource endpoints allows cross-user access and cluster takeover",
-      "url": "https://github.com/advisories/GHSA-3hch-x692-6qj3",
-      "ts": 1794326240.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "gpustack",
-      "summary": "Severity: high. ### Impact\n\nAn authenticated non-administrative user could access a Kubernetes cluster they are not authorized to access through GPUStack's Kubernetes API proxy.\n\nThe `cluster_apiserver_proxy` handler did not perform a resource-level authorization check before forwarding requests to the selected clu",
-      "recipe": "gh_advisories",
-      "buzz": 3580,
-      "topics": [
-        "dev",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-10"
-    },
-    {
-      "uid": "cve:GHSA-2h4w-29cv-2cmv",
-      "source": "cve",
-      "title": "CVE-2026-113663: AG2: Newline injection in SandboxShellTool bypasses allowed=[...] and readonly=True, enabling arbitrary command execution",
-      "url": "https://github.com/advisories/GHSA-2h4w-29cv-2cmv",
-      "ts": 1794326237.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "ag2",
-      "summary": "Severity: high. ### Summary\nSandboxShellTool's restricted modes — allowed=[...] (explicit command allowlist) and readonly=True (implicit READONLY_COMMANDS allowlist) — can both be bypassed by embedding a newline character inside the command string. The filter only inspects a single-line set of shell metacharacters,",
-      "recipe": "gh_advisories",
-      "buzz": 3580,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-10"
-    },
-    {
-      "uid": "cve:GHSA-xxrh-5hgg-gj4h",
-      "source": "cve",
-      "title": "CVE-2026-102650: Nuxt Content: Unauthenticated SQLite Function DoS via Content Query API",
-      "url": "https://github.com/advisories/GHSA-xxrh-5hgg-gj4h",
-      "ts": 1794326232.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "@nuxt/content",
-      "summary": "Severity: high. ### Summary\n\nThe `POST /__nuxt_content/:collection/query` endpoint in `@nuxt/content` accepts an attacker-controlled `sql` field from the HTTP request body and executes it against a local SQLite database after passing it through an insufficient validator (`assertSafeQuery`). The validator only block",
-      "recipe": "gh_advisories",
-      "buzz": 3580,
-      "topics": [
-        "ai",
         "dev",
         "security"
       ],
@@ -795,142 +794,33 @@
       "date": "2020-09-30"
     },
     {
-      "uid": "cve:GHSA-wr5m-5jph-8m96",
+      "uid": "cve:GHSA-6856-87hx-p5x7",
       "source": "cve",
-      "title": "CVE-2026-125116: Mongoose: Discriminator key values matching inherited properties (e.g. __t: 'constructor') bypass schema casting and can poison collections",
-      "url": "https://github.com/advisories/GHSA-wr5m-5jph-8m96",
-      "ts": 1794344238.0,
+      "title": "GHSA-6856-87hx-p5x7: Microsoft Security Advisory CVE-2026-105544 - .NET Elevation of Privilege Vulnerability",
+      "url": "https://github.com/advisories/GHSA-6856-87hx-p5x7",
+      "ts": 1794357552.0,
       "points": 1800,
       "comments": 0,
-      "author": "mongoose",
-      "summary": "Severity: medium. ### Summary\n\nMongoose chooses which discriminator model or schema to use by looking up the discriminator key value (`__t` by default) in a plain object of registered discriminators, for example `Model.discriminators[doc.__t]`. That value comes from user documents and query filters. Because the looku",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-10"
-    },
-    {
-      "uid": "cve:GHSA-6972-9mcm-vhwj",
-      "source": "cve",
-      "title": "CVE-2026-125118: Mongoose: Prototype pollution via Schema.prototype.virtual()",
-      "url": "https://github.com/advisories/GHSA-6972-9mcm-vhwj",
-      "ts": 1794343593.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "mongoose",
-      "summary": "Severity: medium. ### Summary\n\nPrototype pollution via Schema.prototype.virtual() — the 2022 fix for CVE-2022-2564 / CVE-[phone] protected Schema.path()/add() but never virtual(), so the same class of bug is still exploitable in all maintained release lines.\n\n### Details\n\nIn lib/schema.js, Schema.prototype.virtual",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-10"
-    },
-    {
-      "uid": "cve:GHSA-wrr5-j383-f7h2",
-      "source": "cve",
-      "title": "CVE-2026-79914: NocoBase: @nocobase/plugin-action-custom-request allows server-side request forgery through runtime URL overrides",
-      "url": "https://github.com/advisories/GHSA-wrr5-j383-f7h2",
-      "ts": 1794338414.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "@nocobase/plugin-action-custom-request",
-      "summary": "Severity: medium. ### Summary\n\nA Server-Side Request Forgery vulnerability exists in NocoBase v2.1.10 in the `@nocobase/plugin-action-custom-request` plugin.\n\nA low-privileged authenticated user can call the `customRequests:send` endpoint and override the stored request URL at runtime using `options.url`. This causes",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "dev",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-10"
-    },
-    {
-      "uid": "cve:GHSA-2j8w-xcrc-x985",
-      "source": "cve",
-      "title": "CVE-2026-125109: Rack: Rack::Request#host_with_port (and #base_url / #url) return the raw invalid Host header — incomplete fix of CVE-2026-34835",
-      "url": "https://github.com/advisories/GHSA-2j8w-xcrc-x985",
-      "ts": 1794337888.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "rack",
-      "summary": "Severity: medium. ## Summary\n\n`Rack::Request#host_with_port`, and therefore `#base_url` and `#url`, return the raw authority string when it fails validation. An attacker-controlled `Host`, `X-Forwarded-Host`, or `Forwarded: host=` value containing characters that are not permitted in an authority is embedded verbatim",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-10"
-    },
-    {
-      "uid": "cve:GHSA-wvg4-6p58-3gh3",
-      "source": "cve",
-      "title": "CVE-2026-125110: Rack: Rack::Static header_rules bypass via dot-segment normalization mismatch",
-      "url": "https://github.com/advisories/GHSA-wvg4-6p58-3gh3",
-      "ts": 1794336607.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "rack",
-      "summary": "Severity: medium. ## Summary\n\n`Rack::Static` normalizes the request path with `Utils.clean_path_info` when deciding which file to serve, but matches `header_rules` against a path that is only URL-decoded. A request containing dot segments, raw or percent-encoded, is served the normalized target file while the header",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-10"
-    },
-    {
-      "uid": "cve:GHSA-r7j4-crjv-h467",
-      "source": "cve",
-      "title": "CVE-2026-125121: compose-lint: Text in a pull request can still issue CI workflow commands through compose-lint 0.31.0's output",
-      "url": "https://github.com/advisories/GHSA-r7j4-crjv-h467",
-      "ts": 1794335315.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "compose-lint",
-      "summary": "Severity: medium. ### Impact\n\n0.31.0 fixed GHSA-6f4g-xm8v-pgv6, where text from a Compose file became GitHub Actions workflow commands in compose-lint's output. The fix escapes the command openers in everything compose-lint prints, and the 0.31.0 changelog says the report \"escapes both openers (also covering Azure Pi",
+      "author": "Microsoft.TestPlatform.CLI",
+      "summary": "Severity: medium. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in .NET. This advisory provides guidance on updating affected applications and components.\n\nThe VSTest artifact postprocessor can consume a forged `executionComplete.json` from another lo",
       "recipe": "gh_advisories",
       "buzz": 1880,
       "topics": [
         "dev",
         "security"
       ],
-      "date": "2026-11-10"
+      "date": "2026-11-11"
     },
     {
-      "uid": "cve:GHSA-h46v-rmh6-fq4f",
+      "uid": "cve:GHSA-3893-7fxc-qvff",
       "source": "cve",
-      "title": "CVE-2026-119189: Forge: X.509 pathLenConstraint not enforced by verifyCertificateChain() for CA certificates without keyUsage",
-      "url": "https://github.com/advisories/GHSA-h46v-rmh6-fq4f",
-      "ts": 1794326263.0,
+      "title": "CVE-2026-114154: Microsoft Security Advisory CVE-2026-114154 - ASP.NET Core Denial of Service Vulnerability",
+      "url": "https://github.com/advisories/GHSA-3893-7fxc-qvff",
+      "ts": 1794356881.0,
       "points": 1800,
       "comments": 0,
-      "author": "node-forge",
-      "summary": "Severity: medium. ### Summary\n`forge.pki.verifyCertificateChain()` enforces the `pathLenConstraint` of a CA certificate's `basicConstraints` extension only when that certificate also has a `keyUsage` extension. For a CA certificate with a `pathLenConstraint` and no `keyUsage`, chains with more intermediate CA certifi",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-10"
-    },
-    {
-      "uid": "cve:GHSA-chp3-j5qr-2vfr",
-      "source": "cve",
-      "title": "CVE-2026-115779: Effect: Cookie attribute injection via domain, path, and name fields in @effect/platform makeCookie()",
-      "url": "https://github.com/advisories/GHSA-chp3-j5qr-2vfr",
-      "ts": 1794326252.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "@effect/platform",
-      "summary": "Severity: medium. ### Impact\n\nThe `name`, `domain`, and `path` fields of `makeCookie()` were validated with a regex that allows `;`, the attribute separator in `Set-Cookie` headers. Because `serializeCookie()` writes those fields verbatim, a caller who passes untrusted input into any of them can append arbitrary attr",
+      "author": "Microsoft.AspNetCore.Server.HttpSys",
+      "summary": "Severity: medium. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components.\n\nMalformed chunked HttpSys requests containing conflicting content-length headers can re",
       "recipe": "gh_advisories",
       "buzz": 1880,
       "topics": [
@@ -938,22 +828,258 @@
         "dev",
         "security"
       ],
-      "date": "2026-11-10"
+      "date": "2026-11-11"
     },
     {
-      "uid": "cve:GHSA-752m-7p75-49gf",
+      "uid": "cve:GHSA-7phj-vgxq-r67h",
       "source": "cve",
-      "title": "CVE-2026-110802: Altair: DOM-based XSS via attacker-controlled script URLs in the iframe sandbox",
-      "url": "https://github.com/advisories/GHSA-752m-7p75-49gf",
-      "ts": 1794326247.0,
+      "title": "CVE-2026-114157: Microsoft Security Advisory CVE-2026-114157 - ASP.NET Core Security Feature Bypass Vulnerability",
+      "url": "https://github.com/advisories/GHSA-7phj-vgxq-r67h",
+      "ts": 1794356704.0,
       "points": 1800,
       "comments": 0,
-      "author": "altair-static",
-      "summary": "Severity: medium. ### Summary\nAltair `8.5.7` accepts plugin configuration directly from the `iframe-sandbox` query string.\n\nWhen `plugin_sandbox_opts` contains `type: \"scripts\"` and an attacker-controlled URL in `scriptUrls`, the sandbox page creates a classic `<script src=\"...\">` element and loads the supplied scrip",
+      "author": "Microsoft.AspNetCore.App.Runtime.win-arm64",
+      "summary": "Severity: medium. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core's Kestrel Named Pipes transport. This advisory provides guidance on updating affected applications and components.\n\nA Kestrel named-pipe listener configured with `CurrentU",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-11"
+    },
+    {
+      "uid": "cve:GHSA-8w29-6cjc-h6w4",
+      "source": "cve",
+      "title": "CVE-2026-114156: Microsoft Security Advisory CVE-2026-114156 - ASP.NET Core Security Feature Bypass Vulnerability",
+      "url": "https://github.com/advisories/GHSA-8w29-6cjc-h6w4",
+      "ts": 1794356645.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "Microsoft.AspNetCore.App.Runtime.linux-arm",
+      "summary": "Severity: medium. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components.\n\n`PathString.StartsWithSegments` can mishandle percent-encoded backslashes and permit au",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-11"
+    },
+    {
+      "uid": "cve:GHSA-r3qf-p3jm-8h4p",
+      "source": "cve",
+      "title": "CVE-2026-109478: Microsoft Security Advisory CVE-2026-109478 - ASP.NET Core Denial of Service Vulnerability",
+      "url": "https://github.com/advisories/GHSA-r3qf-p3jm-8h4p",
+      "ts": 1794356563.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "Microsoft.AspNetCore.App.Runtime.linux-arm",
+      "summary": "Severity: medium. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components.\n\nProcessing comma-separated HTTP header values can cause excessive allocations and resou",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-11"
+    },
+    {
+      "uid": "cve:GHSA-6vjv-7wm8-p67r",
+      "source": "cve",
+      "title": "CVE-2026-114150: Microsoft Security Advisory CVE-2026-114150 - ASP.NET Core Information Disclosure Vulnerability",
+      "url": "https://github.com/advisories/GHSA-6vjv-7wm8-p67r",
+      "ts": 1794356447.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "Microsoft.AspNetCore.App.Runtime.linux-arm",
+      "summary": "Severity: medium. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components.\n\nA reused `ResponseBufferingStream` can retain pooled tail memory and expose response-bo",
       "recipe": "gh_advisories",
       "buzz": 1880,
       "topics": [
         "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-11"
+    },
+    {
+      "uid": "cve:GHSA-5h82-77p6-2wp3",
+      "source": "cve",
+      "title": "CVE-2026-118748: Microsoft Security Advisory CVE-2026-118748 - ASP.NET Core Denial of Service Vulnerability",
+      "url": "https://github.com/advisories/GHSA-5h82-77p6-2wp3",
+      "ts": 1794355863.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "Microsoft.AspNetCore.App.Runtime.linux-arm",
+      "summary": "Severity: medium. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components.\n\nBlazor static-SSR client validation retains attacker-controlled rendered field names in",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-11"
+    },
+    {
+      "uid": "cve:GHSA-q7j6-px74-p2vw",
+      "source": "cve",
+      "title": "CVE-2026-114155: Microsoft Security Advisory CVE-2026-114155 - .NET Elevation of Privilege Vulnerability",
+      "url": "https://github.com/advisories/GHSA-q7j6-px74-p2vw",
+      "ts": 1794355786.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "Microsoft.DotNet.HotReload.Watch.Aspire",
+      "summary": "Severity: medium. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in the .NET SDK's dotnet-watch component. This advisory provides guidance on updating affected SDK installations.\n\nA local attacker who can replace or modify a temporary solution file use",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-11"
+    },
+    {
+      "uid": "cve:GHSA-xw2x-23jm-j582",
+      "source": "cve",
+      "title": "CVE-2026-109481: Microsoft Security Advisory CVE-2026-109481 - ASP.NET Core Elevation of Privilege Vulnerability",
+      "url": "https://github.com/advisories/GHSA-xw2x-23jm-j582",
+      "ts": 1794353616.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "Microsoft.AspNetCore.App.Runtime.linux-arm",
+      "summary": "Severity: medium. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components.\n\nThe Blazor/SignalR `/_blazor/refresh` path can accept a cross-site request that binds a",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "cve:GHSA-6527-9fp8-r4x6",
+      "source": "cve",
+      "title": "CVE-2026-118750: Microsoft Security Advisory CVE-2026-118750 - ASP.NET Core Denial of Service Vulnerability",
+      "url": "https://github.com/advisories/GHSA-6527-9fp8-r4x6",
+      "ts": 1794353520.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "Microsoft.AspNetCore.WebUtilities",
+      "summary": "Severity: medium. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components.\n\nFileBufferingReadStream buffer allocation can allow unauthenticated multipart-form requ",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "cve:GHSA-ff4h-7rhj-jrjf",
+      "source": "cve",
+      "title": "CVE-2026-118746: Microsoft Security Advisory CVE-2026-118746 - .NET Security Feature Bypass Vulnerability",
+      "url": "https://github.com/advisories/GHSA-ff4h-7rhj-jrjf",
+      "ts": 1794353037.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "Microsoft.NETCore.App.Runtime.linux-arm",
+      "summary": "Severity: medium. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in .NET. This advisory provides guidance on updating affected applications and components.\n\nUnix Negotiate authentication can accept a request when required channel-binding information is",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "cve:GHSA-3g4v-f5gv-c7xf",
+      "source": "cve",
+      "title": "CVE-2026-109475: Microsoft Security Advisory CVE-2026-109475 - .NET Denial of Service Vulnerability",
+      "url": "https://github.com/advisories/GHSA-3g4v-f5gv-c7xf",
+      "ts": 1794352974.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "Microsoft.NETCore.App.Runtime.linux-arm",
+      "summary": "Severity: medium. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in .NET. This advisory provides guidance on updating affected applications and components.\n\nManaged `HttpListener` can recursively process an unterminated request line and exhaust the pro",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "cve:GHSA-cpw3-h88j-9f6x",
+      "source": "cve",
+      "title": "CVE-2026-120796: Microsoft Security Advisory CVE-2026-120796 - .NET Denial of Service Vulnerability",
+      "url": "https://github.com/advisories/GHSA-cpw3-h88j-9f6x",
+      "ts": 1794352896.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "Microsoft.NETCore.App.Runtime.linux-arm",
+      "summary": "Severity: medium. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in .NET. This advisory provides guidance on updating affected applications and components.\n\nInefficient algorithmic complexity in .NET allows an unauthorized attacker to deny service over",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "cve:GHSA-vmv3-wvjp-wqpj",
+      "source": "cve",
+      "title": "CVE-2026-118747: Microsoft Security Advisory CVE-2026-118747 - .NET Denial of Service Vulnerability",
+      "url": "https://github.com/advisories/GHSA-vmv3-wvjp-wqpj",
+      "ts": 1794352827.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "System.Formats.Cbor",
+      "summary": "Severity: medium. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in .NET. This advisory provides guidance on updating affected applications and components.\n\nColliding CBOR map keys can hash-flood uniqueness checks; the fix uses seeded Marvin hashing.",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "cve:GHSA-m28h-pj36-4364",
+      "source": "cve",
+      "title": "CVE-2026-118749: Microsoft Security Advisory CVE-2026-118749 - ASP.NET Core Denial of Service Vulnerability",
+      "url": "https://github.com/advisories/GHSA-m28h-pj36-4364",
+      "ts": 1794352114.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "Microsoft.AspNetCore.App.Runtime.linux-arm",
+      "summary": "Severity: medium. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components.\n\nMinimal API validation repeatedly copies a growing validation-error dictionary, allowin",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "cve:GHSA-xhj5-c3g8-pfj8",
+      "source": "cve",
+      "title": "CVE-2026-109476: Microsoft Security Advisory CVE-2026-109476 - ASP.NET Core Information Disclosure Vulnerability",
+      "url": "https://github.com/advisories/GHSA-xhj5-c3g8-pfj8",
+      "ts": 1794351760.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "Microsoft.AspNetCore.App.Runtime.linux-arm",
+      "summary": "Severity: medium. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components.\n\nA crafted `X-Forwarded-Prefix` can inject cookie path delimiters unless PathBase-derive",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "dev",
         "security"
       ],
       "date": "2026-11-10"
@@ -1217,158 +1343,33 @@
       "date": "2019-07-18"
     },
     {
-      "uid": "cve:GHSA-v995-44v6-5fqm",
+      "uid": "cve:GHSA-8v59-qmwv-4p6q",
       "source": "cve",
-      "title": "CVE-2026-126062: JRuby: NONET is bypassed for external DTDs and entities when the systemId uses a short-form IPv4 host",
-      "url": "https://github.com/advisories/GHSA-v995-44v6-5fqm",
-      "ts": 1794343958.0,
-      "points": 700,
-      "comments": 0,
-      "author": "nokogiri",
-      "summary": "Severity: low. ### Summary\n\nOn JRuby, the `NONET` parse option did not block an external DTD or entity whose system identifier used a short-form IPv4 host, such as `http://127.1/` or `http://[phone]/`, or was an absolute path such as `/x.dtd` in a document parsed from a network URL. An application that parse",
-      "recipe": "gh_advisories",
-      "buzz": 780,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-10"
-    },
-    {
-      "uid": "cve:GHSA-3w22-6jfg-527w",
-      "source": "cve",
-      "title": "CVE-2026-126064: Nokogiri: Use-After-Free in Nokogiri when replacing an attribute value",
-      "url": "https://github.com/advisories/GHSA-3w22-6jfg-527w",
-      "ts": 1794343879.0,
-      "points": 700,
-      "comments": 0,
-      "author": "nokogiri",
-      "summary": "Severity: low. ### Summary\n\nNokogiri's CRuby native extension could leave a Ruby wrapper pointing to freed memory when replacing the value of an existing XML attribute via `Nokogiri::XML::Node#[]=` or `Nokogiri::XML::Node#lang=`. If Ruby code had already accessed the attribute's child nodes, replacing the value co",
-      "recipe": "gh_advisories",
-      "buzz": 780,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-10"
-    },
-    {
-      "uid": "cve:GHSA-4p39-36wj-23h4",
-      "source": "cve",
-      "title": "CVE-2026-126063: Nokogiri: Mutation XSS through `noscript` content in Nokogiri's HTML5 serializer",
-      "url": "https://github.com/advisories/GHSA-4p39-36wj-23h4",
-      "ts": 1794343656.0,
-      "points": 700,
-      "comments": 0,
-      "author": "nokogiri",
-      "summary": "Severity: low. ### Summary\n\nNokogiri's HTML5 serializer did not escape text inside `noscript` elements, or `<` and `>` inside attribute values. When a document parsed with the default options is serialized, a browser with scripting enabled can parse the output into markup that Nokogiri's parser never produced. Thi",
-      "recipe": "gh_advisories",
-      "buzz": 780,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-10"
-    },
-    {
-      "uid": "cve:GHSA-p8x9-v4hv-2w4g",
-      "source": "cve",
-      "title": "CVE-2026-125108: Rack: Multipart boundary ambiguity guard in Rack::Multipart::Parser can be bypassed with a quoted boundary value, allowing WAF bypass",
-      "url": "https://github.com/advisories/GHSA-p8x9-v4hv-2w4g",
-      "ts": 1794338788.0,
-      "points": 700,
-      "comments": 0,
-      "author": "rack",
-      "summary": "Severity: low. ## Summary\n\nThe guard added for CVE-[phone] (GHSA-vgpv-f759-9wx3), which rejects multipart requests with more than one `boundary` parameter, only inspects the part of the `Content-Type` header after the boundary it extracts. A `Content-Type` whose first `boundary` parameter is empty or begins wit",
-      "recipe": "gh_advisories",
-      "buzz": 780,
-      "topics": [
-        "security"
-      ],
-      "date": "2026-11-10"
-    },
-    {
-      "uid": "cve:GHSA-9wg5-mj3p-v49q",
-      "source": "cve",
-      "title": "CVE-2026-118774: Forge: Certificate signature verified with the issuer's RSA signature scheme",
-      "url": "https://github.com/advisories/GHSA-9wg5-mj3p-v49q",
-      "ts": 1794326268.0,
-      "points": 700,
-      "comments": 0,
-      "author": "node-forge",
-      "summary": "Severity: low. ### Summary\n\nWhen verifying a certificate, node-forge chose the RSA padding scheme (PKCS#1 v1.5 or RSASSA-PSS) and PSS parameters from the issuer certificate's own signature algorithm instead of the certificate being verified. A certificate labeled as signed with RSASSA-PSS could pass `verifyCertifi",
-      "recipe": "gh_advisories",
-      "buzz": 780,
-      "topics": [
-        "security"
-      ],
-      "date": "2026-11-10"
-    },
-    {
-      "uid": "cve:GHSA-2vgq-wchc-25w7",
-      "source": "cve",
-      "title": "CVE-2026-118776: Forge: Incomplete PKCS#7 padding validation in AES/DES CBC and ECB decryption",
-      "url": "https://github.com/advisories/GHSA-2vgq-wchc-25w7",
-      "ts": 1794326266.0,
-      "points": 700,
-      "comments": 0,
-      "author": "node-forge",
-      "summary": "Severity: low. ### Summary\n`decipher.finish()` in CBC and ECB mode accepted malformed PKCS#7 padding: only the last byte was checked, against a limit of four blocks, so mismatched padding bytes, a zero count and oversized counts were accepted and up to four blocks of plaintext could be silently removed. Fixed in n",
-      "recipe": "gh_advisories",
-      "buzz": 780,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-10"
-    },
-    {
-      "uid": "cve:GHSA-p623-mxf7-qxjm",
-      "source": "cve",
-      "title": "CVE-2026-123364: OctoPrint: Stored XSS via saved connection parameters",
-      "url": "https://github.com/advisories/GHSA-p623-mxf7-qxjm",
-      "ts": 1794326249.0,
-      "points": 700,
-      "comments": 0,
-      "author": "OctoPrint",
-      "summary": "Severity: low. ## Impact\n\nOctoPrint versions 2.0.0rc1 up until version 2.0.0rc6 are susceptible to cross-site scripting via a specially crafted default `port` or `baudrate` setting on the bundled Serial Connector plugin, supplied via the API as new defaults during a `connect` request.\n\n## Patches\n\nThe vulnerabilit",
-      "recipe": "gh_advisories",
-      "buzz": 780,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-10"
-    },
-    {
-      "uid": "cve:GHSA-rm8w-w798-g545",
-      "source": "cve",
-      "title": "CVE-2026-123796: compose-lint: Incomplete fix for GHSA-jf3h-8jvx-vcrg: a run stopped at the finding limit quotes a secret from a CI-generated `.env`",
-      "url": "https://github.com/advisories/GHSA-rm8w-w798-g545",
-      "ts": 1794326242.0,
+      "title": "CVE-2026-125123: compose-lint: File paths embedded in pull requests can inject CI workflow commands through command-line error messages",
+      "url": "https://github.com/advisories/GHSA-8v59-qmwv-4p6q",
+      "ts": 1794347933.0,
       "points": 700,
       "comments": 0,
       "author": "compose-lint",
-      "summary": "Severity: low. ### Impact\n\nThis is an incomplete fix for GHSA-jf3h-8jvx-vcrg. 0.32.0 made findings quote the `${NAME}` a sibling `.env` filled in, instead of its value. The same release added a stop at 20,000 findings per document, and that stop is checked before the quoting step. A run that hits it reports the fi",
+      "summary": "Severity: low. ### Impact\n\n0.31.0 fixed GHSA-6f4g-xm8v-pgv6, where text from a Compose file became GitHub Actions workflow commands in compose-lint's output. The fix escapes the command openers in compose-lint's own output, but not in the argument parser's error messages. When a repository path reaches compose-lin",
       "recipe": "gh_advisories",
       "buzz": 780,
       "topics": [
-        "science",
+        "dev",
         "security"
       ],
       "date": "2026-11-10"
     },
     {
-      "uid": "cve:GHSA-whr6-fgpq-fpv9",
+      "uid": "cve:GHSA-xcf7-88g6-7xr8",
       "source": "cve",
-      "title": "CVE-2026-123373: compose-lint: A committed symlink makes compose-lint quote a file from outside the project into its output",
-      "url": "https://github.com/advisories/GHSA-whr6-fgpq-fpv9",
-      "ts": 1794326230.0,
+      "title": "CVE-2026-125125:  compose-lint: Workflow command injection through SARIF-directory errors triggered by pull request symlinks",
+      "url": "https://github.com/advisories/GHSA-xcf7-88g6-7xr8",
+      "ts": 1794347454.0,
       "points": 700,
       "comments": 0,
-      "author": "compose-lint",
-      "summary": "Severity: low. ### Impact\n\nLike Docker Compose, compose-lint follows symlinks when it reads a project's files. Unlike Compose, compose-lint up to 0.24.0 could then put the contents of a file from *outside* the project into its output, where the author of a pull request can read it.\n\nA pull request can commit a sym",
+      "author": "tmatens/compose-lint",
+      "summary": "Severity: low. ### Impact\n\nIn Action tags v0.30.0 and v0.31.0, when `sarif-file:` names a file in a subdirectory that can't be created, the Action prints the directory's resolved path in an error message. In v0.31.0 that message is outside the window in which the Action turns command processing off, and v0.30.0 ha",
       "recipe": "gh_advisories",
       "buzz": 780,
       "topics": [
@@ -1416,24 +1417,6 @@
       "date": "2026-11-01"
     },
     {
-      "uid": "gh:jmanico/grim-prompter",
-      "source": "github",
-      "title": "jmanico/grim-prompter",
-      "url": "https://github.com/jmanico/grim-prompter",
-      "ts": 1793189366.0,
-      "points": 409,
-      "comments": 33,
-      "author": "jmanico",
-      "summary": "Threat modeling for AI coding agents: point Claude Code, Codex or any agent at your repo and get an evidence-traced threat model. 36 architectures, 29 methods, MIT.",
-      "recipe": "github_sec",
-      "buzz": 508,
-      "topics": [
-        "ai",
-        "dev"
-      ],
-      "date": "2026-10-28"
-    },
-    {
       "uid": "gh:arnold117/iOS-NOIR",
       "source": "github",
       "title": "arnold117/iOS-NOIR",
@@ -1450,24 +1433,6 @@
         "security"
       ],
       "date": "2026-11-06"
-    },
-    {
-      "uid": "gh:huggingface/safeagents",
-      "source": "github",
-      "title": "huggingface/safeagents",
-      "url": "https://github.com/huggingface/safeagents",
-      "ts": 1793195562.0,
-      "points": 144,
-      "comments": 10,
-      "author": "huggingface",
-      "summary": "Safely run your agents using any coding harness",
-      "recipe": "github_sec",
-      "buzz": 174,
-      "topics": [
-        "ai",
-        "dev"
-      ],
-      "date": "2026-10-28"
     },
     {
       "uid": "gh:akari-sora/synology-nas-cli",
@@ -1495,12 +1460,12 @@
       "title": "wildorigins/wildos",
       "url": "https://github.com/wildorigins/wildos",
       "ts": 1794169078.0,
-      "points": 59,
+      "points": 61,
       "comments": 5,
       "author": "wildorigins",
       "summary": "A hardened Linux desktop, rebuilt from scratch, with your Windows apps built in. Free and open source.",
       "recipe": "github_sec",
-      "buzz": 104,
+      "buzz": 106,
       "topics": [],
       "date": "2026-11-08"
     },
@@ -1539,6 +1504,42 @@
       "date": "2026-11-02"
     },
     {
+      "uid": "gh:BountyForge-xyz/pwn-skill",
+      "source": "github",
+      "title": "BountyForge-xyz/pwn-skill",
+      "url": "https://github.com/BountyForge-xyz/pwn-skill",
+      "ts": 1793960371.0,
+      "points": 53,
+      "comments": 6,
+      "author": "BountyForge-xyz",
+      "summary": "Agent skill for binary exploitation and CTF pwn — stack, heap, format string, kernel, seccomp bypass.",
+      "recipe": "github_sec",
+      "buzz": 81,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-06"
+    },
+    {
+      "uid": "rss:cd21f33e2e3d64",
+      "source": "rss",
+      "title": "Microsoft Fixes Nearly 1,100 Security Vulnerabilities",
+      "url": "https://krebsonsecurity.com/2026/11/microsoft-fixes-nearly-1100-security-vulnerabilities/",
+      "ts": 1794347703.0,
+      "points": 0,
+      "comments": 0,
+      "author": "BrianKrebs",
+      "summary": "Microsoft did another four-digit patch drop today, releasing updates to fix almost 1,100 security vulnerabilities in its Windows operating systems and supported software. This month's Patch Tuesday addresses 63 critical flaws -- including a zero-day in Microsoft Outlook -- and comes amid important security updates from other software makers, including Adobe, Apple, Google and Mozilla.",
+      "recipe": "krebs",
+      "buzz": 80,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-10"
+    },
+    {
       "uid": "rss:d1660657e64a19",
       "source": "rss",
       "title": "New OpenSSH Vulnerability",
@@ -1555,24 +1556,6 @@
         "security"
       ],
       "date": "2026-11-10"
-    },
-    {
-      "uid": "gh:BountyForge-xyz/pwn-skill",
-      "source": "github",
-      "title": "BountyForge-xyz/pwn-skill",
-      "url": "https://github.com/BountyForge-xyz/pwn-skill",
-      "ts": 1793960371.0,
-      "points": 52,
-      "comments": 6,
-      "author": "BountyForge-xyz",
-      "summary": "Agent skill for binary exploitation and CTF pwn — stack, heap, format string, kernel, seccomp bypass.",
-      "recipe": "github_sec",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-06"
     },
     {
       "uid": "rss:24b011f57ea44b",
@@ -1915,12 +1898,12 @@
       "title": "Alucard0x1/cve-2026-98432",
       "url": "https://github.com/Alucard0x1/cve-2026-98432",
       "ts": 1793378203.0,
-      "points": 29,
+      "points": 30,
       "comments": 7,
       "author": "Alucard0x1",
       "summary": "Proof-only PoC for CVE-[phone] (Linux IPv4/TCP ireq_opt use-after-free): race trigger, heap-reuse oracle, no code execution",
       "recipe": "github_sec",
-      "buzz": 50,
+      "buzz": 51,
       "topics": [
         "security"
       ],
@@ -1932,12 +1915,12 @@
       "title": "smartworldarafath/TeroVPN",
       "url": "https://github.com/smartworldarafath/TeroVPN",
       "ts": 1793264351.0,
-      "points": 35,
+      "points": 36,
       "comments": 1,
       "author": "smartworldarafath",
       "summary": "🛡️ Fast, secure, and private Android VPN powered by WireGuard MASQUE (HTTP/3) over Fastly edge with Proton UI & Liquid Glass design.",
       "recipe": "github_sec",
-      "buzz": 38,
+      "buzz": 39,
       "topics": [
         "hardware"
       ],
@@ -2427,21 +2410,6 @@
         "security"
       ],
       "date": "2026-09-28"
-    },
-    {
-      "uid": "rss:9a3c108ea3f494",
-      "source": "rss",
-      "title": "U.S. Soldier Gets 70 Months in Prison for AT&T, Verizon Extortions",
-      "url": "https://krebsonsecurity.com/2026/09/u-s-soldier-gets-70-months-in-prison-for-att-verizon-extortions/",
-      "ts": 1790372680.0,
-      "points": 0,
-      "comments": 0,
-      "author": "BrianKrebs",
-      "summary": "A U.S. Army soldier who pleaded guilty to hacking into multiple telecommunications companies and stealing mobile call and text metadata for more than 100 million AT&#038;T customers in 2024 was sentenced to 70 months in federal prison today and ordered to pay nearly $300,000 in restitution to victims.",
-      "recipe": "krebs",
-      "buzz": 0,
-      "topics": [],
-      "date": "2026-09-25"
     },
     {
       "uid": "rss:0dcc10ee0fa324",
