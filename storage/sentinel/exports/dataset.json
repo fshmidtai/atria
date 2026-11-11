@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T13:28:22+00:00",
+  "generated_at": "2026-11-11T17:13:37+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -10,34 +10,34 @@
     "rss"
   ],
   "totals": {
-    "items": 132,
+    "items": 133,
     "by_source": {
       "hn": 40,
       "cve": 30,
-      "github": 12,
+      "github": 13,
       "rss": 50
     },
     "by_recipe": {
       "hn_sec": 40,
       "gh_advisories": 30,
       "hackersnews": 30,
-      "github_sec": 12,
+      "github_sec": 13,
       "krebs": 10,
       "schneier": 10
     },
     "by_topic": {
       "security": 110,
-      "dev": 72,
-      "ai": 58,
-      "hardware": 14,
+      "dev": 71,
+      "ai": 59,
+      "hardware": 13,
       "biz": 9,
-      "crypto": 6,
+      "crypto": 5,
       "science": 4
     },
     "top_domains": [
       [
         "github.com",
-        44
+        45
       ],
       [
         "thehackernews.com",
@@ -1398,25 +1398,6 @@
       "date": "2026-10-31"
     },
     {
-      "uid": "gh:mrhlaingbwardev/agentic-hacking-skills",
-      "source": "github",
-      "title": "mrhlaingbwardev/agentic-hacking-skills",
-      "url": "https://github.com/mrhlaingbwardev/agentic-hacking-skills",
-      "ts": 1793505604.0,
-      "points": 347,
-      "comments": 56,
-      "author": "mrhlaingbwardev",
-      "summary": "AI-Powered Web Security & Automation - Official bonus skills, agents & MCP configs for the 'Agentic Hacking' ebook (28 SKILL.md templates)",
-      "recipe": "github_sec",
-      "buzz": 515,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-01"
-    },
-    {
       "uid": "gh:arnold117/iOS-NOIR",
       "source": "github",
       "title": "arnold117/iOS-NOIR",
@@ -1433,6 +1414,25 @@
         "security"
       ],
       "date": "2026-11-06"
+    },
+    {
+      "uid": "gh:mrhlaingbwardev/agentic-hacking-skills",
+      "source": "github",
+      "title": "mrhlaingbwardev/agentic-hacking-skills",
+      "url": "https://github.com/mrhlaingbwardev/agentic-hacking-skills",
+      "ts": 1793505604.0,
+      "points": 339,
+      "comments": 54,
+      "author": "mrhlaingbwardev",
+      "summary": "AI-Powered Web Security & Automation - Official bonus skills, agents & MCP configs for the 'Agentic Hacking' ebook (28 SKILL.md templates)",
+      "recipe": "github_sec",
+      "buzz": 501,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-01"
     },
     {
       "uid": "gh:akari-sora/synology-nas-cli",
@@ -1460,14 +1460,31 @@
       "title": "wildorigins/wildos",
       "url": "https://github.com/wildorigins/wildos",
       "ts": 1794169078.0,
-      "points": 69,
+      "points": 71,
       "comments": 5,
       "author": "wildorigins",
       "summary": "A hardened Linux desktop, rebuilt from scratch, with your Windows apps built in. Free and open source.",
       "recipe": "github_sec",
-      "buzz": 114,
+      "buzz": 116,
       "topics": [],
       "date": "2026-11-08"
+    },
+    {
+      "uid": "gh:nestho/impacket-rs",
+      "source": "github",
+      "title": "nestho/impacket-rs",
+      "url": "https://github.com/nestho/impacket-rs",
+      "ts": 1794373116.0,
+      "points": 23,
+      "comments": 4,
+      "author": "nestho",
+      "summary": "High-performance, memory-safe pure-Rust redesign of Impacket protocols and Active Directory tools for Linux, macOS, and Windows.",
+      "recipe": "github_sec",
+      "buzz": 115,
+      "topics": [
+        "dev"
+      ],
+      "date": "2026-11-11"
     },
     {
       "uid": "gh:0x45dd/pwner",
@@ -1553,6 +1570,61 @@
       "buzz": 80,
       "topics": [
         "ai"
+      ],
+      "date": "2026-11-11"
+    },
+    {
+      "uid": "rss:a59f63d021cca1",
+      "source": "rss",
+      "title": "Critical Zoom Workplace Flaw Could Allow Unauthenticated Remote Privilege Escalation",
+      "url": "https://thehackernews.com/2026/11/critical-zoom-workplace-flaw-could.html",
+      "ts": 1794413566.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Zoom has released software updates to address two security flaws impacting Zoom Workplace for Windows, including a critical bug that could result in privilege escalation on affected systems. The vulnerabilities are listed below - CVE-[phone] (CVSS score: 9.6) - An improper input validation vulnerability that could allow an unauthenticated user to conduct an escalation of privilege via",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-11-11"
+    },
+    {
+      "uid": "rss:1e5084b7044859",
+      "source": "rss",
+      "title": "AntiFox AI Pentesting Platform Linked to Attacks That Accessed AWS Production Secrets",
+      "url": "https://thehackernews.com/2026/11/antifox-ai-pentesting-platform-linked.html",
+      "ts": 1794411267.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Cybersecurity researchers have disclosed details of a campaign in which an emerging agentic penetration testing platform called AntiFox has been used to steal Amazon Web Services (AWS) credentials and pivot laterally into compromised environments. \"In several recently observed intrusions, Alibaba Cloud systems hosting AntiFox interfaces were associated with confirmed malicious actions against",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-11"
+    },
+    {
+      "uid": "rss:0ba244cf0e376e",
+      "source": "rss",
+      "title": "Hackers Target Qlik Sense Servers With Reverse Shells, Stage ActiveMQ and Veeam Exploits",
+      "url": "https://thehackernews.com/2026/11/hackers-target-qlik-sense-servers-with.html",
+      "ts": 1794405660.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Threat actors have been observed targeting Qlik Sense servers to unsuccessfully deliver PowerShell reverse shell commands against multiple environments in October 2026. Cynet's CyOps and Research teams said they identified the suspicious activity in October 2026 against several E.U.-based customers within a narrow window of just over three minutes. The activity has been found to share some",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "security",
+        "hardware"
       ],
       "date": "2026-11-11"
     },
@@ -1765,62 +1837,6 @@
       "date": "2026-11-10"
     },
     {
-      "uid": "rss:264e6842930600",
-      "source": "rss",
-      "title": "Attackers Exploit AhsayCBS Flaws to Deploy Sandbox-Evading Python Backdoor",
-      "url": "https://thehackernews.com/2026/11/attackers-exploit-ahsaycbs-flaws-to.html",
-      "ts": 1794326455.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Cybersecurity researchers have disclosed details of an attack that exploited two now-patched vulnerabilities in AhsayCBS to deliver a Python-based implant. The activity, observed by Huntress in early October 2026, involves the exploitation of a chain comprising CVE-[phone] and CVE-[phone] to bypass authentication and execute arbitrary commands on affected systems. Patches for the two",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-10"
-    },
-    {
-      "uid": "rss:58c14603cc636c",
-      "source": "rss",
-      "title": "Blind Eagle Uses Fake Court Notices to Deliver Remote Access Trojan Across Latin America",
-      "url": "https://thehackernews.com/2026/11/blind-eagle-uses-fake-court-notices-to.html",
-      "ts": 1794326324.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "The threat actor known as Blind Eagle has resurfaced with a new campaign targeting organizations in Latin America through judicial and administrative-themed phishing lures to deliver a remote access trojan (RAT) that shares its lineage with AsyncRAT and DCRat. \"The campaign uses Portuguese and Spanish lures that resemble court notifications, fiscalía notices, tutela proceedings, and",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-10"
-    },
-    {
-      "uid": "rss:c5e183005c5090",
-      "source": "rss",
-      "title": "Fireworks AI Confirms Wider Breach Affecting Customer Datasets, Model Weights and Notion AI Chats",
-      "url": "https://thehackernews.com/2026/11/fireworks-ai-breach-widens-to-expose.html",
-      "ts": 1794324839.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Fireworks AI disclosed on Monday that its investigation into a security incident first reported early last month&nbsp; uncovered further malicious activity, affecting account and billing information, alongside secrets, datasets, and incomplete models for a \"limited set of accounts.\" In a notice published on October 10, 2026, the company said it detected unauthorized use of internal Fireworks",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "dev",
-        "biz",
-        "security"
-      ],
-      "date": "2026-11-10"
-    },
-    {
       "uid": "gh:BowSinceEnt/resocket-elden-ring-cheat-2026-trainer-mod-menu-tools",
       "source": "github",
       "title": "BowSinceEnt/resocket-elden-ring-cheat-2026-trainer-mod-menu-tools",
@@ -1924,6 +1940,62 @@
         "ai"
       ],
       "date": "2026-10-29"
+    },
+    {
+      "uid": "rss:264e6842930600",
+      "source": "rss",
+      "title": "Attackers Exploit AhsayCBS Flaws to Deploy Sandbox-Evading Python Backdoor",
+      "url": "https://thehackernews.com/2026/11/attackers-exploit-ahsaycbs-flaws-to.html",
+      "ts": 1794326455.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Cybersecurity researchers have disclosed details of an attack that exploited two now-patched vulnerabilities in AhsayCBS to deliver a Python-based implant. The activity, observed by Huntress in early October 2026, involves the exploitation of a chain comprising CVE-[phone] and CVE-[phone] to bypass authentication and execute arbitrary commands on affected systems. Patches for the two",
+      "recipe": "hackersnews",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "rss:58c14603cc636c",
+      "source": "rss",
+      "title": "Blind Eagle Uses Fake Court Notices to Deliver Remote Access Trojan Across Latin America",
+      "url": "https://thehackernews.com/2026/11/blind-eagle-uses-fake-court-notices-to.html",
+      "ts": 1794326324.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "The threat actor known as Blind Eagle has resurfaced with a new campaign targeting organizations in Latin America through judicial and administrative-themed phishing lures to deliver a remote access trojan (RAT) that shares its lineage with AsyncRAT and DCRat. \"The campaign uses Portuguese and Spanish lures that resemble court notifications, fiscalía notices, tutela proceedings, and",
+      "recipe": "hackersnews",
+      "buzz": 30,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "rss:c5e183005c5090",
+      "source": "rss",
+      "title": "Fireworks AI Confirms Wider Breach Affecting Customer Datasets, Model Weights and Notion AI Chats",
+      "url": "https://thehackernews.com/2026/11/fireworks-ai-breach-widens-to-expose.html",
+      "ts": 1794324839.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Fireworks AI disclosed on Monday that its investigation into a security incident first reported early last month&nbsp; uncovered further malicious activity, affecting account and billing information, alongside secrets, datasets, and incomplete models for a \"limited set of accounts.\" In a notice published on October 10, 2026, the company said it detected unauthorized use of internal Fireworks",
+      "recipe": "hackersnews",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "dev",
+        "biz",
+        "security"
+      ],
+      "date": "2026-11-10"
     },
     {
       "uid": "rss:60e90b6a8fec8a",
@@ -2162,64 +2234,6 @@
       "topics": [
         "ai",
         "dev"
-      ],
-      "date": "2026-11-09"
-    },
-    {
-      "uid": "rss:097299fa07e96e",
-      "source": "rss",
-      "title": "⚡ Weekly Recap: SSHole Exploited, APT Root RCE, Robot Takeovers, 15K Hacked Sites, and More",
-      "url": "https://thehackernews.com/2026/11/weekly-recap-sshole-exploited-apt-root.html",
-      "ts": 1794230905.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "A system doesn't always need a complicated bug to let someone in. Sometimes, a blank password is enough. That's one of the bigger stories this week. And it gets worse when the tools meant to keep systems updated or running safely become part of the attack. Elsewhere, attackers are hiding inside normal web traffic, stealing credentials from network devices, and finding new uses for exposed",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "dev",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-09"
-    },
-    {
-      "uid": "rss:7b474482f4b9f6",
-      "source": "rss",
-      "title": "Default 'admin:admin' Server Password Helps Researchers Hack Two Automakers, Unlock and Start Cars",
-      "url": "https://thehackernews.com/2026/11/default-adminadmin-server-password.html",
-      "ts": 1794223673.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "The login systems behind two car brands' mobile apps could be taken over completely, two security researchers found, allowing them to access any customer's account and, for an owner with a connected car, unlock the doors and start the engine. Both apps signed customers in through ForgeRock, an identity platform now part of Ping Identity, and on those servers the researchers reached an",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "dev",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-09"
-    },
-    {
-      "uid": "rss:099ca1c739d2c7",
-      "source": "rss",
-      "title": "Web3Auth Flaw Exploited to Steal Keplr Crypto, Provider Empties Other Wallets for Safety",
-      "url": "https://thehackernews.com/2026/11/web3auth-flaw-exploited-to-steal-keplr.html",
-      "ts": 1794221785.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Some people who set up a Keplr crypto wallet with their Google or Apple account have had money stolen by an attacker. Keplr uses a company called Web3Auth to run that Google and Apple sign-in. The attacker used a security flaw at that company to reach the wallets, both companies said late last week. Web3Auth then used the attacker's own route to empty other at-risk wallets before the attacker",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "dev",
-        "crypto",
-        "security"
       ],
       "date": "2026-11-09"
     },
