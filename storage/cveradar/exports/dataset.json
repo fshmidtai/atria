@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T21:47:26+00:00",
+  "generated_at": "2026-11-12T01:29:46+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -49,7 +49,7 @@
       "author": "react-server-dom-parcel",
       "summary": "Severity: critical. ### Impact\n\nCrafted payloads targeting frameworks supporting React Server Components can lead to remote code execution. This only affects extremely rare cases where responses transport multiple typed arrays and an attacker-controlled value.\n\nUpdating immediately is recommended.\n\nThe vulnerability ex",
       "recipe": "gh_advisories",
-      "buzz": 6080,
+      "buzz": 6030,
       "topics": [
         "dev",
         "security",
@@ -68,7 +68,7 @@
       "author": "Microsoft.NETCore.App.Runtime.win-x86",
       "summary": "Severity: high. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in .NET. This advisory provides guidance on updating affected applications and components.\n\nCrafted PDB line metadata can exceed the caller-provided buffer and cause a heap out-of-bounds",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "dev",
         "security"
@@ -86,7 +86,7 @@
       "author": "Microsoft.NETCore.App.Runtime.win-x86",
       "summary": "Severity: high. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in .NET. This advisory provides guidance on updating affected applications and components.\n\nAttacker-controlled COFF relocation offsets can cause an out-of-bounds stack write in `DiaObjec",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "dev",
         "security"
@@ -104,7 +104,7 @@
       "author": "Microsoft.NETCore.App.Runtime.win-x86",
       "summary": "Severity: high. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in .NET. This advisory provides guidance on updating affected applications and components.\n\nA crafted PDB `LF_DECIMAL` payload can trigger an out-of-bounds stack write when processed by D",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "dev",
         "security"
@@ -122,7 +122,7 @@
       "author": "Microsoft.NETCore.App.Runtime.win-x86",
       "summary": "Severity: high. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in .NET. This advisory provides guidance on updating affected applications and components.\n\nA Portable PDB `EmbeddedSource` record with parent RID 0 can trigger an out-of-bounds write.\n\n#",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "dev",
         "security"
@@ -140,7 +140,7 @@
       "author": "Microsoft.NETCore.App.Runtime.win-x86",
       "summary": "Severity: high. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in .NET. This advisory provides guidance on updating affected applications and components.\n\nAn oversized Portable PDB document name can be truncated during allocation and cause a heap out",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "dev",
         "security"
@@ -158,7 +158,7 @@
       "author": "Aspire.Cli",
       "summary": "Severity: high. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in the Aspire CLI. This advisory provides guidance on updating affected applications and components.\n\nInsecure temporary files used by Aspire CLI can allow a local attacker to obtain sens",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "ai",
         "dev",
@@ -177,7 +177,7 @@
       "author": "Aspire.Cli",
       "summary": "Severity: high. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in the Aspire CLI. This advisory provides guidance on updating affected applications and components.\n\nAn insecure temporary directory used by Aspire CLI-generated builds can allow a local",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "dev",
         "science",
@@ -196,7 +196,7 @@
       "author": "Microsoft.AspNetCore.SignalR.StackExchangeRedis",
       "summary": "Severity: high. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components.\n\nSignalR Redis scale-out can mishandle case-mismatched group removal and leave subscript",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "dev",
         "security"
@@ -214,7 +214,7 @@
       "author": "Microsoft.AspNetCore.Http.Connections",
       "summary": "Severity: high. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components.\n\nSignalR connections are not consistently bound to the identity negotiated at connection",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "dev",
         "security"
@@ -232,7 +232,7 @@
       "author": "Aspire.Hosting.AppHost",
       "summary": "Severity: high. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in Aspire. This advisory provides guidance on updating affected applications and components.\n\nDisclosure of an Aspire Dashboard authentication cookie to a linked service can allow an atta",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "dev",
         "security"
@@ -250,7 +250,7 @@
       "author": "Microsoft.AspNetCore.App.Runtime.linux-arm",
       "summary": "Severity: high. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components.\n\nMultipart form processing can bypass the configured header-count limit and consume exce",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "dev",
         "security"
@@ -268,7 +268,7 @@
       "author": "Microsoft.TestPlatform.CLI",
       "summary": "Severity: medium. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in .NET. This advisory provides guidance on updating affected applications and components.\n\nThe VSTest artifact postprocessor can consume a forged `executionComplete.json` from another lo",
       "recipe": "gh_advisories",
-      "buzz": 1880,
+      "buzz": 1830,
       "topics": [
         "dev",
         "security"
@@ -286,7 +286,7 @@
       "author": "Microsoft.AspNetCore.Server.HttpSys",
       "summary": "Severity: medium. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components.\n\nMalformed chunked HttpSys requests containing conflicting content-length headers can re",
       "recipe": "gh_advisories",
-      "buzz": 1880,
+      "buzz": 1830,
       "topics": [
         "ai",
         "dev",
@@ -305,7 +305,7 @@
       "author": "Microsoft.AspNetCore.App.Runtime.win-arm64",
       "summary": "Severity: medium. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core's Kestrel Named Pipes transport. This advisory provides guidance on updating affected applications and components.\n\nA Kestrel named-pipe listener configured with `CurrentU",
       "recipe": "gh_advisories",
-      "buzz": 1880,
+      "buzz": 1830,
       "topics": [
         "dev",
         "security"
@@ -323,7 +323,7 @@
       "author": "Microsoft.AspNetCore.App.Runtime.linux-arm",
       "summary": "Severity: medium. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components.\n\n`PathString.StartsWithSegments` can mishandle percent-encoded backslashes and permit au",
       "recipe": "gh_advisories",
-      "buzz": 1880,
+      "buzz": 1830,
       "topics": [
         "dev",
         "security"
@@ -341,7 +341,7 @@
       "author": "Microsoft.AspNetCore.App.Runtime.linux-arm",
       "summary": "Severity: medium. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components.\n\nProcessing comma-separated HTTP header values can cause excessive allocations and resou",
       "recipe": "gh_advisories",
-      "buzz": 1880,
+      "buzz": 1830,
       "topics": [
         "dev",
         "security"
@@ -359,7 +359,7 @@
       "author": "Microsoft.AspNetCore.App.Runtime.linux-arm",
       "summary": "Severity: medium. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components.\n\nA reused `ResponseBufferingStream` can retain pooled tail memory and expose response-bo",
       "recipe": "gh_advisories",
-      "buzz": 1880,
+      "buzz": 1830,
       "topics": [
         "ai",
         "dev",
@@ -378,7 +378,7 @@
       "author": "Microsoft.AspNetCore.App.Runtime.linux-arm",
       "summary": "Severity: medium. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components.\n\nBlazor static-SSR client validation retains attacker-controlled rendered field names in",
       "recipe": "gh_advisories",
-      "buzz": 1880,
+      "buzz": 1830,
       "topics": [
         "ai",
         "dev",
@@ -397,7 +397,7 @@
       "author": "Microsoft.DotNet.HotReload.Watch.Aspire",
       "summary": "Severity: medium. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in the .NET SDK's dotnet-watch component. This advisory provides guidance on updating affected SDK installations.\n\nA local attacker who can replace or modify a temporary solution file use",
       "recipe": "gh_advisories",
-      "buzz": 1880,
+      "buzz": 1830,
       "topics": [
         "dev",
         "security"
@@ -415,7 +415,7 @@
       "author": "Microsoft.AspNetCore.App.Runtime.linux-arm",
       "summary": "Severity: medium. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components.\n\nThe Blazor/SignalR `/_blazor/refresh` path can accept a cross-site request that binds a",
       "recipe": "gh_advisories",
-      "buzz": 1880,
+      "buzz": 1830,
       "topics": [
         "dev",
         "security"
@@ -433,7 +433,7 @@
       "author": "Microsoft.AspNetCore.WebUtilities",
       "summary": "Severity: medium. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components.\n\nFileBufferingReadStream buffer allocation can allow unauthenticated multipart-form requ",
       "recipe": "gh_advisories",
-      "buzz": 1880,
+      "buzz": 1830,
       "topics": [
         "dev",
         "security"
@@ -451,7 +451,7 @@
       "author": "Microsoft.NETCore.App.Runtime.linux-arm",
       "summary": "Severity: medium. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in .NET. This advisory provides guidance on updating affected applications and components.\n\nUnix Negotiate authentication can accept a request when required channel-binding information is",
       "recipe": "gh_advisories",
-      "buzz": 1880,
+      "buzz": 1830,
       "topics": [
         "dev",
         "security"
@@ -469,7 +469,7 @@
       "author": "Microsoft.NETCore.App.Runtime.linux-arm",
       "summary": "Severity: medium. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in .NET. This advisory provides guidance on updating affected applications and components.\n\nManaged `HttpListener` can recursively process an unterminated request line and exhaust the pro",
       "recipe": "gh_advisories",
-      "buzz": 1880,
+      "buzz": 1830,
       "topics": [
         "dev",
         "security"
@@ -487,7 +487,7 @@
       "author": "Microsoft.NETCore.App.Runtime.linux-arm",
       "summary": "Severity: medium. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in .NET. This advisory provides guidance on updating affected applications and components.\n\nInefficient algorithmic complexity in .NET allows an unauthorized attacker to deny service over",
       "recipe": "gh_advisories",
-      "buzz": 1880,
+      "buzz": 1830,
       "topics": [
         "dev",
         "security"
@@ -505,7 +505,7 @@
       "author": "System.Formats.Cbor",
       "summary": "Severity: medium. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in .NET. This advisory provides guidance on updating affected applications and components.\n\nColliding CBOR map keys can hash-flood uniqueness checks; the fix uses seeded Marvin hashing.",
       "recipe": "gh_advisories",
-      "buzz": 1880,
+      "buzz": 1830,
       "topics": [
         "dev",
         "security"
@@ -523,7 +523,7 @@
       "author": "Microsoft.AspNetCore.App.Runtime.linux-arm",
       "summary": "Severity: medium. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components.\n\nMinimal API validation repeatedly copies a growing validation-error dictionary, allowin",
       "recipe": "gh_advisories",
-      "buzz": 1880,
+      "buzz": 1830,
       "topics": [
         "dev",
         "security"
@@ -541,7 +541,7 @@
       "author": "Microsoft.AspNetCore.App.Runtime.linux-arm",
       "summary": "Severity: medium. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components.\n\nA crafted `X-Forwarded-Prefix` can inject cookie path delimiters unless PathBase-derive",
       "recipe": "gh_advisories",
-      "buzz": 1880,
+      "buzz": 1830,
       "topics": [
         "dev",
         "security"
@@ -559,7 +559,7 @@
       "author": "compose-lint",
       "summary": "Severity: low. ### Impact\n\n0.31.0 fixed GHSA-6f4g-xm8v-pgv6, where text from a Compose file became GitHub Actions workflow commands in compose-lint's output. The fix escapes the command openers in compose-lint's own output, but not in the argument parser's error messages. When a repository path reaches compose-lin",
       "recipe": "gh_advisories",
-      "buzz": 780,
+      "buzz": 730,
       "topics": [
         "dev",
         "security"
@@ -577,7 +577,7 @@
       "author": "tmatens/compose-lint",
       "summary": "Severity: low. ### Impact\n\nIn Action tags v0.30.0 and v0.31.0, when `sarif-file:` names a file in a subdirectory that can't be created, the Action prints the directory's resolved path in an error message. In v0.31.0 that message is outside the window in which the Action turns command processing off, and v0.30.0 ha",
       "recipe": "gh_advisories",
-      "buzz": 780,
+      "buzz": 730,
       "topics": [
         "ai",
         "dev",

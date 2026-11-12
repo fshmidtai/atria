@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T21:47:56+00:00",
+  "generated_at": "2026-11-12T01:30:15+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -10,26 +10,26 @@
     "rss"
   ],
   "totals": {
-    "items": 134,
+    "items": 132,
     "by_source": {
       "hn": 40,
       "cve": 30,
-      "github": 14,
+      "github": 12,
       "rss": 50
     },
     "by_recipe": {
       "hn_sec": 40,
       "gh_advisories": 30,
       "hackersnews": 30,
-      "github_sec": 14,
+      "github_sec": 12,
       "krebs": 10,
       "schneier": 10
     },
     "by_topic": {
       "security": 111,
       "dev": 71,
-      "ai": 59,
-      "hardware": 13,
+      "ai": 58,
+      "hardware": 12,
       "biz": 8,
       "crypto": 5,
       "science": 4
@@ -37,7 +37,7 @@
     "top_domains": [
       [
         "github.com",
-        46
+        44
       ],
       [
         "thehackernews.com",
@@ -184,7 +184,7 @@
       "author": "react-server-dom-parcel",
       "summary": "Severity: critical. ### Impact\n\nCrafted payloads targeting frameworks supporting React Server Components can lead to remote code execution. This only affects extremely rare cases where responses transport multiple typed arrays and an attacker-controlled value.\n\nUpdating immediately is recommended.\n\nThe vulnerability ex",
       "recipe": "gh_advisories",
-      "buzz": 6080,
+      "buzz": 6030,
       "topics": [
         "dev",
         "security",
@@ -284,6 +284,23 @@
       "date": "2021-01-11"
     },
     {
+      "uid": "hn:50172041",
+      "source": "hn",
+      "title": "Security advisory: Critical remote code execution vulnerabilities, update now",
+      "url": "https://www.php.net/archive/2026.php#2026-10-21-5",
+      "ts": 1792527350.0,
+      "points": 1561,
+      "comments": 659,
+      "author": "xd",
+      "summary": "<a href=\"https:&#x2F;&#x2F;cert.europa.eu&#x2F;publications&#x2F;security-advisories&#x2F;2026-018&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;cert.europa.eu&#x2F;publications&#x2F;security-advisories&#x2F;2026...</a><p><a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=[phone]\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=[phone]</a>",
+      "recipe": "hn_sec",
+      "buzz": 3538,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-10-20"
+    },
+    {
       "uid": "cve:GHSA-x8x8-p968-x646",
       "source": "cve",
       "title": "CVE-2026-118745: Microsoft Security Advisory CVE-2026-118745 - Visual Studio Remote Code Execution Vulnerability",
@@ -294,7 +311,7 @@
       "author": "Microsoft.NETCore.App.Runtime.win-x86",
       "summary": "Severity: high. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in .NET. This advisory provides guidance on updating affected applications and components.\n\nCrafted PDB line metadata can exceed the caller-provided buffer and cause a heap out-of-bounds",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "dev",
         "security"
@@ -312,7 +329,7 @@
       "author": "Microsoft.NETCore.App.Runtime.win-x86",
       "summary": "Severity: high. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in .NET. This advisory provides guidance on updating affected applications and components.\n\nAttacker-controlled COFF relocation offsets can cause an out-of-bounds stack write in `DiaObjec",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "dev",
         "security"
@@ -330,7 +347,7 @@
       "author": "Microsoft.NETCore.App.Runtime.win-x86",
       "summary": "Severity: high. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in .NET. This advisory provides guidance on updating affected applications and components.\n\nA crafted PDB `LF_DECIMAL` payload can trigger an out-of-bounds stack write when processed by D",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "dev",
         "security"
@@ -348,7 +365,7 @@
       "author": "Microsoft.NETCore.App.Runtime.win-x86",
       "summary": "Severity: high. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in .NET. This advisory provides guidance on updating affected applications and components.\n\nA Portable PDB `EmbeddedSource` record with parent RID 0 can trigger an out-of-bounds write.\n\n#",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "dev",
         "security"
@@ -366,7 +383,7 @@
       "author": "Microsoft.NETCore.App.Runtime.win-x86",
       "summary": "Severity: high. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in .NET. This advisory provides guidance on updating affected applications and components.\n\nAn oversized Portable PDB document name can be truncated during allocation and cause a heap out",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "dev",
         "security"
@@ -384,7 +401,7 @@
       "author": "Aspire.Cli",
       "summary": "Severity: high. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in the Aspire CLI. This advisory provides guidance on updating affected applications and components.\n\nInsecure temporary files used by Aspire CLI can allow a local attacker to obtain sens",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "ai",
         "dev",
@@ -403,7 +420,7 @@
       "author": "Aspire.Cli",
       "summary": "Severity: high. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in the Aspire CLI. This advisory provides guidance on updating affected applications and components.\n\nAn insecure temporary directory used by Aspire CLI-generated builds can allow a local",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "dev",
         "science",
@@ -422,7 +439,7 @@
       "author": "Microsoft.AspNetCore.SignalR.StackExchangeRedis",
       "summary": "Severity: high. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components.\n\nSignalR Redis scale-out can mishandle case-mismatched group removal and leave subscript",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "dev",
         "security"
@@ -440,7 +457,7 @@
       "author": "Microsoft.AspNetCore.Http.Connections",
       "summary": "Severity: high. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components.\n\nSignalR connections are not consistently bound to the identity negotiated at connection",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "dev",
         "security"
@@ -458,7 +475,7 @@
       "author": "Aspire.Hosting.AppHost",
       "summary": "Severity: high. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in Aspire. This advisory provides guidance on updating affected applications and components.\n\nDisclosure of an Aspire Dashboard authentication cookie to a linked service can allow an atta",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "dev",
         "security"
@@ -476,29 +493,12 @@
       "author": "Microsoft.AspNetCore.App.Runtime.linux-arm",
       "summary": "Severity: high. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components.\n\nMultipart form processing can bypass the configured header-count limit and consume exce",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "dev",
         "security"
       ],
       "date": "2026-11-10"
-    },
-    {
-      "uid": "hn:50172041",
-      "source": "hn",
-      "title": "Security advisory: Critical remote code execution vulnerabilities, update now",
-      "url": "https://www.php.net/archive/2026.php#2026-10-21-5",
-      "ts": 1792527350.0,
-      "points": 1561,
-      "comments": 659,
-      "author": "xd",
-      "summary": "<a href=\"https:&#x2F;&#x2F;cert.europa.eu&#x2F;publications&#x2F;security-advisories&#x2F;2026-018&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;cert.europa.eu&#x2F;publications&#x2F;security-advisories&#x2F;2026...</a><p><a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=[phone]\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=[phone]</a>",
-      "recipe": "hn_sec",
-      "buzz": 3538,
-      "topics": [
-        "security"
-      ],
-      "date": "2026-10-20"
     },
     {
       "uid": "hn:32148218",
@@ -794,297 +794,6 @@
       "date": "2020-09-30"
     },
     {
-      "uid": "cve:GHSA-6856-87hx-p5x7",
-      "source": "cve",
-      "title": "GHSA-6856-87hx-p5x7: Microsoft Security Advisory CVE-2026-105544 - .NET Elevation of Privilege Vulnerability",
-      "url": "https://github.com/advisories/GHSA-6856-87hx-p5x7",
-      "ts": 1794357552.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "Microsoft.TestPlatform.CLI",
-      "summary": "Severity: medium. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in .NET. This advisory provides guidance on updating affected applications and components.\n\nThe VSTest artifact postprocessor can consume a forged `executionComplete.json` from another lo",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-11"
-    },
-    {
-      "uid": "cve:GHSA-3893-7fxc-qvff",
-      "source": "cve",
-      "title": "CVE-2026-114154: Microsoft Security Advisory CVE-2026-114154 - ASP.NET Core Denial of Service Vulnerability",
-      "url": "https://github.com/advisories/GHSA-3893-7fxc-qvff",
-      "ts": 1794356881.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "Microsoft.AspNetCore.Server.HttpSys",
-      "summary": "Severity: medium. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components.\n\nMalformed chunked HttpSys requests containing conflicting content-length headers can re",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-11"
-    },
-    {
-      "uid": "cve:GHSA-7phj-vgxq-r67h",
-      "source": "cve",
-      "title": "CVE-2026-114157: Microsoft Security Advisory CVE-2026-114157 - ASP.NET Core Security Feature Bypass Vulnerability",
-      "url": "https://github.com/advisories/GHSA-7phj-vgxq-r67h",
-      "ts": 1794356704.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "Microsoft.AspNetCore.App.Runtime.win-arm64",
-      "summary": "Severity: medium. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core's Kestrel Named Pipes transport. This advisory provides guidance on updating affected applications and components.\n\nA Kestrel named-pipe listener configured with `CurrentU",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-11"
-    },
-    {
-      "uid": "cve:GHSA-8w29-6cjc-h6w4",
-      "source": "cve",
-      "title": "CVE-2026-114156: Microsoft Security Advisory CVE-2026-114156 - ASP.NET Core Security Feature Bypass Vulnerability",
-      "url": "https://github.com/advisories/GHSA-8w29-6cjc-h6w4",
-      "ts": 1794356645.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "Microsoft.AspNetCore.App.Runtime.linux-arm",
-      "summary": "Severity: medium. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components.\n\n`PathString.StartsWithSegments` can mishandle percent-encoded backslashes and permit au",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-11"
-    },
-    {
-      "uid": "cve:GHSA-r3qf-p3jm-8h4p",
-      "source": "cve",
-      "title": "CVE-2026-109478: Microsoft Security Advisory CVE-2026-109478 - ASP.NET Core Denial of Service Vulnerability",
-      "url": "https://github.com/advisories/GHSA-r3qf-p3jm-8h4p",
-      "ts": 1794356563.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "Microsoft.AspNetCore.App.Runtime.linux-arm",
-      "summary": "Severity: medium. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components.\n\nProcessing comma-separated HTTP header values can cause excessive allocations and resou",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-11"
-    },
-    {
-      "uid": "cve:GHSA-6vjv-7wm8-p67r",
-      "source": "cve",
-      "title": "CVE-2026-114150: Microsoft Security Advisory CVE-2026-114150 - ASP.NET Core Information Disclosure Vulnerability",
-      "url": "https://github.com/advisories/GHSA-6vjv-7wm8-p67r",
-      "ts": 1794356447.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "Microsoft.AspNetCore.App.Runtime.linux-arm",
-      "summary": "Severity: medium. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components.\n\nA reused `ResponseBufferingStream` can retain pooled tail memory and expose response-bo",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-11"
-    },
-    {
-      "uid": "cve:GHSA-5h82-77p6-2wp3",
-      "source": "cve",
-      "title": "CVE-2026-118748: Microsoft Security Advisory CVE-2026-118748 - ASP.NET Core Denial of Service Vulnerability",
-      "url": "https://github.com/advisories/GHSA-5h82-77p6-2wp3",
-      "ts": 1794355863.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "Microsoft.AspNetCore.App.Runtime.linux-arm",
-      "summary": "Severity: medium. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components.\n\nBlazor static-SSR client validation retains attacker-controlled rendered field names in",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-11"
-    },
-    {
-      "uid": "cve:GHSA-q7j6-px74-p2vw",
-      "source": "cve",
-      "title": "CVE-2026-114155: Microsoft Security Advisory CVE-2026-114155 - .NET Elevation of Privilege Vulnerability",
-      "url": "https://github.com/advisories/GHSA-q7j6-px74-p2vw",
-      "ts": 1794355786.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "Microsoft.DotNet.HotReload.Watch.Aspire",
-      "summary": "Severity: medium. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in the .NET SDK's dotnet-watch component. This advisory provides guidance on updating affected SDK installations.\n\nA local attacker who can replace or modify a temporary solution file use",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-11"
-    },
-    {
-      "uid": "cve:GHSA-xw2x-23jm-j582",
-      "source": "cve",
-      "title": "CVE-2026-109481: Microsoft Security Advisory CVE-2026-109481 - ASP.NET Core Elevation of Privilege Vulnerability",
-      "url": "https://github.com/advisories/GHSA-xw2x-23jm-j582",
-      "ts": 1794353616.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "Microsoft.AspNetCore.App.Runtime.linux-arm",
-      "summary": "Severity: medium. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components.\n\nThe Blazor/SignalR `/_blazor/refresh` path can accept a cross-site request that binds a",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-10"
-    },
-    {
-      "uid": "cve:GHSA-6527-9fp8-r4x6",
-      "source": "cve",
-      "title": "CVE-2026-118750: Microsoft Security Advisory CVE-2026-118750 - ASP.NET Core Denial of Service Vulnerability",
-      "url": "https://github.com/advisories/GHSA-6527-9fp8-r4x6",
-      "ts": 1794353520.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "Microsoft.AspNetCore.WebUtilities",
-      "summary": "Severity: medium. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components.\n\nFileBufferingReadStream buffer allocation can allow unauthenticated multipart-form requ",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-10"
-    },
-    {
-      "uid": "cve:GHSA-ff4h-7rhj-jrjf",
-      "source": "cve",
-      "title": "CVE-2026-118746: Microsoft Security Advisory CVE-2026-118746 - .NET Security Feature Bypass Vulnerability",
-      "url": "https://github.com/advisories/GHSA-ff4h-7rhj-jrjf",
-      "ts": 1794353037.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "Microsoft.NETCore.App.Runtime.linux-arm",
-      "summary": "Severity: medium. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in .NET. This advisory provides guidance on updating affected applications and components.\n\nUnix Negotiate authentication can accept a request when required channel-binding information is",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-10"
-    },
-    {
-      "uid": "cve:GHSA-3g4v-f5gv-c7xf",
-      "source": "cve",
-      "title": "CVE-2026-109475: Microsoft Security Advisory CVE-2026-109475 - .NET Denial of Service Vulnerability",
-      "url": "https://github.com/advisories/GHSA-3g4v-f5gv-c7xf",
-      "ts": 1794352974.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "Microsoft.NETCore.App.Runtime.linux-arm",
-      "summary": "Severity: medium. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in .NET. This advisory provides guidance on updating affected applications and components.\n\nManaged `HttpListener` can recursively process an unterminated request line and exhaust the pro",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-10"
-    },
-    {
-      "uid": "cve:GHSA-cpw3-h88j-9f6x",
-      "source": "cve",
-      "title": "CVE-2026-120796: Microsoft Security Advisory CVE-2026-120796 - .NET Denial of Service Vulnerability",
-      "url": "https://github.com/advisories/GHSA-cpw3-h88j-9f6x",
-      "ts": 1794352896.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "Microsoft.NETCore.App.Runtime.linux-arm",
-      "summary": "Severity: medium. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in .NET. This advisory provides guidance on updating affected applications and components.\n\nInefficient algorithmic complexity in .NET allows an unauthorized attacker to deny service over",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-10"
-    },
-    {
-      "uid": "cve:GHSA-vmv3-wvjp-wqpj",
-      "source": "cve",
-      "title": "CVE-2026-118747: Microsoft Security Advisory CVE-2026-118747 - .NET Denial of Service Vulnerability",
-      "url": "https://github.com/advisories/GHSA-vmv3-wvjp-wqpj",
-      "ts": 1794352827.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "System.Formats.Cbor",
-      "summary": "Severity: medium. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in .NET. This advisory provides guidance on updating affected applications and components.\n\nColliding CBOR map keys can hash-flood uniqueness checks; the fix uses seeded Marvin hashing.",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-10"
-    },
-    {
-      "uid": "cve:GHSA-m28h-pj36-4364",
-      "source": "cve",
-      "title": "CVE-2026-118749: Microsoft Security Advisory CVE-2026-118749 - ASP.NET Core Denial of Service Vulnerability",
-      "url": "https://github.com/advisories/GHSA-m28h-pj36-4364",
-      "ts": 1794352114.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "Microsoft.AspNetCore.App.Runtime.linux-arm",
-      "summary": "Severity: medium. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components.\n\nMinimal API validation repeatedly copies a growing validation-error dictionary, allowin",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-10"
-    },
-    {
-      "uid": "cve:GHSA-xhj5-c3g8-pfj8",
-      "source": "cve",
-      "title": "CVE-2026-109476: Microsoft Security Advisory CVE-2026-109476 - ASP.NET Core Information Disclosure Vulnerability",
-      "url": "https://github.com/advisories/GHSA-xhj5-c3g8-pfj8",
-      "ts": 1794351760.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "Microsoft.AspNetCore.App.Runtime.linux-arm",
-      "summary": "Severity: medium. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components.\n\nA crafted `X-Forwarded-Prefix` can inject cookie path delimiters unless PathBase-derive",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-10"
-    },
-    {
       "uid": "hn:48166459",
       "source": "hn",
       "title": "Mozilla to UK regulators: VPNs are essential privacy and security tools",
@@ -1134,6 +843,297 @@
         "security"
       ],
       "date": "2016-12-15"
+    },
+    {
+      "uid": "cve:GHSA-6856-87hx-p5x7",
+      "source": "cve",
+      "title": "GHSA-6856-87hx-p5x7: Microsoft Security Advisory CVE-2026-105544 - .NET Elevation of Privilege Vulnerability",
+      "url": "https://github.com/advisories/GHSA-6856-87hx-p5x7",
+      "ts": 1794357552.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "Microsoft.TestPlatform.CLI",
+      "summary": "Severity: medium. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in .NET. This advisory provides guidance on updating affected applications and components.\n\nThe VSTest artifact postprocessor can consume a forged `executionComplete.json` from another lo",
+      "recipe": "gh_advisories",
+      "buzz": 1830,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-11"
+    },
+    {
+      "uid": "cve:GHSA-3893-7fxc-qvff",
+      "source": "cve",
+      "title": "CVE-2026-114154: Microsoft Security Advisory CVE-2026-114154 - ASP.NET Core Denial of Service Vulnerability",
+      "url": "https://github.com/advisories/GHSA-3893-7fxc-qvff",
+      "ts": 1794356881.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "Microsoft.AspNetCore.Server.HttpSys",
+      "summary": "Severity: medium. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components.\n\nMalformed chunked HttpSys requests containing conflicting content-length headers can re",
+      "recipe": "gh_advisories",
+      "buzz": 1830,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-11"
+    },
+    {
+      "uid": "cve:GHSA-7phj-vgxq-r67h",
+      "source": "cve",
+      "title": "CVE-2026-114157: Microsoft Security Advisory CVE-2026-114157 - ASP.NET Core Security Feature Bypass Vulnerability",
+      "url": "https://github.com/advisories/GHSA-7phj-vgxq-r67h",
+      "ts": 1794356704.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "Microsoft.AspNetCore.App.Runtime.win-arm64",
+      "summary": "Severity: medium. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core's Kestrel Named Pipes transport. This advisory provides guidance on updating affected applications and components.\n\nA Kestrel named-pipe listener configured with `CurrentU",
+      "recipe": "gh_advisories",
+      "buzz": 1830,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-11"
+    },
+    {
+      "uid": "cve:GHSA-8w29-6cjc-h6w4",
+      "source": "cve",
+      "title": "CVE-2026-114156: Microsoft Security Advisory CVE-2026-114156 - ASP.NET Core Security Feature Bypass Vulnerability",
+      "url": "https://github.com/advisories/GHSA-8w29-6cjc-h6w4",
+      "ts": 1794356645.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "Microsoft.AspNetCore.App.Runtime.linux-arm",
+      "summary": "Severity: medium. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components.\n\n`PathString.StartsWithSegments` can mishandle percent-encoded backslashes and permit au",
+      "recipe": "gh_advisories",
+      "buzz": 1830,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-11"
+    },
+    {
+      "uid": "cve:GHSA-r3qf-p3jm-8h4p",
+      "source": "cve",
+      "title": "CVE-2026-109478: Microsoft Security Advisory CVE-2026-109478 - ASP.NET Core Denial of Service Vulnerability",
+      "url": "https://github.com/advisories/GHSA-r3qf-p3jm-8h4p",
+      "ts": 1794356563.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "Microsoft.AspNetCore.App.Runtime.linux-arm",
+      "summary": "Severity: medium. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components.\n\nProcessing comma-separated HTTP header values can cause excessive allocations and resou",
+      "recipe": "gh_advisories",
+      "buzz": 1830,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-11"
+    },
+    {
+      "uid": "cve:GHSA-6vjv-7wm8-p67r",
+      "source": "cve",
+      "title": "CVE-2026-114150: Microsoft Security Advisory CVE-2026-114150 - ASP.NET Core Information Disclosure Vulnerability",
+      "url": "https://github.com/advisories/GHSA-6vjv-7wm8-p67r",
+      "ts": 1794356447.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "Microsoft.AspNetCore.App.Runtime.linux-arm",
+      "summary": "Severity: medium. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components.\n\nA reused `ResponseBufferingStream` can retain pooled tail memory and expose response-bo",
+      "recipe": "gh_advisories",
+      "buzz": 1830,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-11"
+    },
+    {
+      "uid": "cve:GHSA-5h82-77p6-2wp3",
+      "source": "cve",
+      "title": "CVE-2026-118748: Microsoft Security Advisory CVE-2026-118748 - ASP.NET Core Denial of Service Vulnerability",
+      "url": "https://github.com/advisories/GHSA-5h82-77p6-2wp3",
+      "ts": 1794355863.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "Microsoft.AspNetCore.App.Runtime.linux-arm",
+      "summary": "Severity: medium. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components.\n\nBlazor static-SSR client validation retains attacker-controlled rendered field names in",
+      "recipe": "gh_advisories",
+      "buzz": 1830,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-11"
+    },
+    {
+      "uid": "cve:GHSA-q7j6-px74-p2vw",
+      "source": "cve",
+      "title": "CVE-2026-114155: Microsoft Security Advisory CVE-2026-114155 - .NET Elevation of Privilege Vulnerability",
+      "url": "https://github.com/advisories/GHSA-q7j6-px74-p2vw",
+      "ts": 1794355786.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "Microsoft.DotNet.HotReload.Watch.Aspire",
+      "summary": "Severity: medium. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in the .NET SDK's dotnet-watch component. This advisory provides guidance on updating affected SDK installations.\n\nA local attacker who can replace or modify a temporary solution file use",
+      "recipe": "gh_advisories",
+      "buzz": 1830,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-11"
+    },
+    {
+      "uid": "cve:GHSA-xw2x-23jm-j582",
+      "source": "cve",
+      "title": "CVE-2026-109481: Microsoft Security Advisory CVE-2026-109481 - ASP.NET Core Elevation of Privilege Vulnerability",
+      "url": "https://github.com/advisories/GHSA-xw2x-23jm-j582",
+      "ts": 1794353616.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "Microsoft.AspNetCore.App.Runtime.linux-arm",
+      "summary": "Severity: medium. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components.\n\nThe Blazor/SignalR `/_blazor/refresh` path can accept a cross-site request that binds a",
+      "recipe": "gh_advisories",
+      "buzz": 1830,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "cve:GHSA-6527-9fp8-r4x6",
+      "source": "cve",
+      "title": "CVE-2026-118750: Microsoft Security Advisory CVE-2026-118750 - ASP.NET Core Denial of Service Vulnerability",
+      "url": "https://github.com/advisories/GHSA-6527-9fp8-r4x6",
+      "ts": 1794353520.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "Microsoft.AspNetCore.WebUtilities",
+      "summary": "Severity: medium. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components.\n\nFileBufferingReadStream buffer allocation can allow unauthenticated multipart-form requ",
+      "recipe": "gh_advisories",
+      "buzz": 1830,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "cve:GHSA-ff4h-7rhj-jrjf",
+      "source": "cve",
+      "title": "CVE-2026-118746: Microsoft Security Advisory CVE-2026-118746 - .NET Security Feature Bypass Vulnerability",
+      "url": "https://github.com/advisories/GHSA-ff4h-7rhj-jrjf",
+      "ts": 1794353037.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "Microsoft.NETCore.App.Runtime.linux-arm",
+      "summary": "Severity: medium. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in .NET. This advisory provides guidance on updating affected applications and components.\n\nUnix Negotiate authentication can accept a request when required channel-binding information is",
+      "recipe": "gh_advisories",
+      "buzz": 1830,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "cve:GHSA-3g4v-f5gv-c7xf",
+      "source": "cve",
+      "title": "CVE-2026-109475: Microsoft Security Advisory CVE-2026-109475 - .NET Denial of Service Vulnerability",
+      "url": "https://github.com/advisories/GHSA-3g4v-f5gv-c7xf",
+      "ts": 1794352974.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "Microsoft.NETCore.App.Runtime.linux-arm",
+      "summary": "Severity: medium. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in .NET. This advisory provides guidance on updating affected applications and components.\n\nManaged `HttpListener` can recursively process an unterminated request line and exhaust the pro",
+      "recipe": "gh_advisories",
+      "buzz": 1830,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "cve:GHSA-cpw3-h88j-9f6x",
+      "source": "cve",
+      "title": "CVE-2026-120796: Microsoft Security Advisory CVE-2026-120796 - .NET Denial of Service Vulnerability",
+      "url": "https://github.com/advisories/GHSA-cpw3-h88j-9f6x",
+      "ts": 1794352896.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "Microsoft.NETCore.App.Runtime.linux-arm",
+      "summary": "Severity: medium. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in .NET. This advisory provides guidance on updating affected applications and components.\n\nInefficient algorithmic complexity in .NET allows an unauthorized attacker to deny service over",
+      "recipe": "gh_advisories",
+      "buzz": 1830,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "cve:GHSA-vmv3-wvjp-wqpj",
+      "source": "cve",
+      "title": "CVE-2026-118747: Microsoft Security Advisory CVE-2026-118747 - .NET Denial of Service Vulnerability",
+      "url": "https://github.com/advisories/GHSA-vmv3-wvjp-wqpj",
+      "ts": 1794352827.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "System.Formats.Cbor",
+      "summary": "Severity: medium. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in .NET. This advisory provides guidance on updating affected applications and components.\n\nColliding CBOR map keys can hash-flood uniqueness checks; the fix uses seeded Marvin hashing.",
+      "recipe": "gh_advisories",
+      "buzz": 1830,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "cve:GHSA-m28h-pj36-4364",
+      "source": "cve",
+      "title": "CVE-2026-118749: Microsoft Security Advisory CVE-2026-118749 - ASP.NET Core Denial of Service Vulnerability",
+      "url": "https://github.com/advisories/GHSA-m28h-pj36-4364",
+      "ts": 1794352114.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "Microsoft.AspNetCore.App.Runtime.linux-arm",
+      "summary": "Severity: medium. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components.\n\nMinimal API validation repeatedly copies a growing validation-error dictionary, allowin",
+      "recipe": "gh_advisories",
+      "buzz": 1830,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "cve:GHSA-xhj5-c3g8-pfj8",
+      "source": "cve",
+      "title": "CVE-2026-109476: Microsoft Security Advisory CVE-2026-109476 - ASP.NET Core Information Disclosure Vulnerability",
+      "url": "https://github.com/advisories/GHSA-xhj5-c3g8-pfj8",
+      "ts": 1794351760.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "Microsoft.AspNetCore.App.Runtime.linux-arm",
+      "summary": "Severity: medium. ## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components.\n\nA crafted `X-Forwarded-Prefix` can inject cookie path delimiters unless PathBase-derive",
+      "recipe": "gh_advisories",
+      "buzz": 1830,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-10"
     },
     {
       "uid": "hn:25843874",
@@ -1353,7 +1353,7 @@
       "author": "compose-lint",
       "summary": "Severity: low. ### Impact\n\n0.31.0 fixed GHSA-6f4g-xm8v-pgv6, where text from a Compose file became GitHub Actions workflow commands in compose-lint's output. The fix escapes the command openers in compose-lint's own output, but not in the argument parser's error messages. When a repository path reaches compose-lin",
       "recipe": "gh_advisories",
-      "buzz": 780,
+      "buzz": 730,
       "topics": [
         "dev",
         "security"
@@ -1371,7 +1371,7 @@
       "author": "tmatens/compose-lint",
       "summary": "Severity: low. ### Impact\n\nIn Action tags v0.30.0 and v0.31.0, when `sarif-file:` names a file in a subdirectory that can't be created, the Action prints the directory's resolved path in an error message. In v0.31.0 that message is outside the window in which the Action turns command processing off, and v0.30.0 ha",
       "recipe": "gh_advisories",
-      "buzz": 780,
+      "buzz": 730,
       "topics": [
         "ai",
         "dev",
@@ -1404,11 +1404,11 @@
       "url": "https://github.com/arnold117/iOS-NOIR",
       "ts": 1793934227.0,
       "points": 317,
-      "comments": 59,
+      "comments": 60,
       "author": "arnold117",
       "summary": "No-jailbreak iOS privacy, entitlement, sandbox & telemetry forensic auditor (inspired by Verlintas/NOIR)",
       "recipe": "github_sec",
-      "buzz": 504,
+      "buzz": 507,
       "topics": [
         "ai",
         "security"
@@ -1421,12 +1421,12 @@
       "title": "mrhlaingbwardev/agentic-hacking-skills",
       "url": "https://github.com/mrhlaingbwardev/agentic-hacking-skills",
       "ts": 1793505604.0,
-      "points": 336,
+      "points": 332,
       "comments": 52,
       "author": "mrhlaingbwardev",
       "summary": "AI-Powered Web Security & Automation - Official bonus skills, agents & MCP configs for the 'Agentic Hacking' ebook (28 SKILL.md templates)",
       "recipe": "github_sec",
-      "buzz": 492,
+      "buzz": 488,
       "topics": [
         "ai",
         "dev",
@@ -1455,17 +1455,34 @@
       "date": "2026-10-30"
     },
     {
+      "uid": "gh:raca2024/ashampoo-undelete-recovery",
+      "source": "github",
+      "title": "raca2024/ashampoo-undelete-recovery",
+      "url": "https://github.com/raca2024/ashampoo-undelete-recovery",
+      "ts": 1794338557.0,
+      "points": 102,
+      "comments": 0,
+      "author": "raca2024",
+      "summary": "Ashampoo Undeleter: Windows file recovery and drive scanning security tool",
+      "recipe": "github_sec",
+      "buzz": 132,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-11-10"
+    },
+    {
       "uid": "gh:nestho/impacket-rs",
       "source": "github",
       "title": "nestho/impacket-rs",
       "url": "https://github.com/nestho/impacket-rs",
       "ts": 1794373116.0,
-      "points": 30,
+      "points": 34,
       "comments": 5,
       "author": "nestho",
       "summary": "High-performance, memory-safe pure-Rust redesign of Impacket protocols and Active Directory tools for Linux, macOS, and Windows.",
       "recipe": "github_sec",
-      "buzz": 125,
+      "buzz": 129,
       "topics": [
         "dev"
       ],
@@ -1494,12 +1511,12 @@
       "title": "wildorigins/wildos",
       "url": "https://github.com/wildorigins/wildos",
       "ts": 1794169078.0,
-      "points": 74,
+      "points": 75,
       "comments": 5,
       "author": "wildorigins",
       "summary": "A hardened Linux desktop, rebuilt from scratch, with your Windows apps built in. Free and open source.",
       "recipe": "github_sec",
-      "buzz": 99,
+      "buzz": 100,
       "topics": [],
       "date": "2026-11-08"
     },
@@ -1555,24 +1572,6 @@
         "security"
       ],
       "date": "2026-11-11"
-    },
-    {
-      "uid": "rss:cd21f33e2e3d64",
-      "source": "rss",
-      "title": "Microsoft Fixes Nearly 1,100 Security Vulnerabilities",
-      "url": "https://krebsonsecurity.com/2026/11/microsoft-fixes-nearly-1100-security-vulnerabilities/",
-      "ts": 1794347703.0,
-      "points": 0,
-      "comments": 0,
-      "author": "BrianKrebs",
-      "summary": "Microsoft did another four-digit patch drop today, releasing updates to fix almost 1,100 security vulnerabilities in its Windows operating systems and supported software. This month's Patch Tuesday addresses 63 critical flaws -- including a zero-day in Microsoft Outlook -- and comes amid important security updates from other software makers, including Adobe, Apple, Google and Mozilla.",
-      "recipe": "krebs",
-      "buzz": 80,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-10"
     },
     {
       "uid": "rss:0fefb47e915baa",
@@ -1778,23 +1777,6 @@
       "date": "2026-11-11"
     },
     {
-      "uid": "gh:raca2024/ashampoo-undelete-recovery",
-      "source": "github",
-      "title": "raca2024/ashampoo-undelete-recovery",
-      "url": "https://github.com/raca2024/ashampoo-undelete-recovery",
-      "ts": 1794338557.0,
-      "points": 45,
-      "comments": 0,
-      "author": "raca2024",
-      "summary": "Ashampoo Undeleter: Windows file recovery and drive scanning security tool",
-      "recipe": "github_sec",
-      "buzz": 75,
-      "topics": [
-        "security"
-      ],
-      "date": "2026-11-10"
-    },
-    {
       "uid": "gh:BowSinceEnt/resocket-elden-ring-cheat-2026-trainer-mod-menu-tools",
       "source": "github",
       "title": "BowSinceEnt/resocket-elden-ring-cheat-2026-trainer-mod-menu-tools",
@@ -1829,21 +1811,22 @@
       "date": "2026-10-30"
     },
     {
-      "uid": "gh:smartworldarafath/TeroVPN",
-      "source": "github",
-      "title": "smartworldarafath/TeroVPN",
-      "url": "https://github.com/smartworldarafath/TeroVPN",
-      "ts": 1793264351.0,
-      "points": 36,
-      "comments": 1,
-      "author": "smartworldarafath",
-      "summary": "🛡️ Fast, secure, and private Android VPN powered by WireGuard MASQUE (HTTP/3) over Fastly edge with Proton UI & Liquid Glass design.",
-      "recipe": "github_sec",
-      "buzz": 39,
+      "uid": "rss:cd21f33e2e3d64",
+      "source": "rss",
+      "title": "Microsoft Fixes Nearly 1,100 Security Vulnerabilities",
+      "url": "https://krebsonsecurity.com/2026/11/microsoft-fixes-nearly-1100-security-vulnerabilities/",
+      "ts": 1794347703.0,
+      "points": 0,
+      "comments": 0,
+      "author": "BrianKrebs",
+      "summary": "Microsoft did another four-digit patch drop today, releasing updates to fix almost 1,100 security vulnerabilities in its Windows operating systems and supported software. This month's Patch Tuesday addresses 63 critical flaws -- including a zero-day in Microsoft Outlook -- and comes amid important security updates from other software makers, including Adobe, Apple, Google and Mozilla.",
+      "recipe": "krebs",
+      "buzz": 30,
       "topics": [
-        "hardware"
+        "dev",
+        "security"
       ],
-      "date": "2026-10-29"
+      "date": "2026-11-10"
     },
     {
       "uid": "rss:d1660657e64a19",
@@ -1881,23 +1864,6 @@
         "security"
       ],
       "date": "2026-11-09"
-    },
-    {
-      "uid": "gh:0xZyyz/ctfd-warden",
-      "source": "github",
-      "title": "0xZyyz/ctfd-warden",
-      "url": "https://github.com/0xZyyz/ctfd-warden",
-      "ts": 1793308210.0,
-      "points": 24,
-      "comments": 2,
-      "author": "0xZyyz",
-      "summary": "Anti-cheat plugin for CTFd: tracks the activity of players and teams and catches AI agents, scripts, shared accounts, shared flags, flag brute-forcing and suspiciously fast solves.",
-      "recipe": "github_sec",
-      "buzz": 30,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-10-29"
     },
     {
       "uid": "rss:24b011f57ea44b",
