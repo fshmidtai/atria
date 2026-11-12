@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T05:16:30+00:00",
+  "generated_at": "2026-11-12T09:17:00+00:00",
   "sources_used": [
     "rss",
     "rss",
@@ -11,31 +11,37 @@
     "rss"
   ],
   "totals": {
-    "items": 87,
+    "items": 128,
     "by_source": {
-      "hn": 6,
+      "hn": 7,
       "github": 3,
-      "rss": 78
+      "rss": 78,
+      "arxiv": 40
     },
     "by_recipe": {
       "economist_fn": 40,
+      "arxiv_qfin": 40,
       "cnbc_top": 30,
       "ft_home": 8,
-      "hn_fintech": 6,
+      "hn_fintech": 7,
       "github_fin": 3
     },
     "by_topic": {
-      "ai": 36,
-      "biz": 25,
-      "dev": 16,
-      "hardware": 5,
-      "crypto": 3,
-      "security": 3,
-      "science": 2
+      "ai": 64,
+      "biz": 48,
+      "dev": 36,
+      "science": 17,
+      "hardware": 10,
+      "security": 7,
+      "crypto": 5
     },
     "top_domains": [
       [
         "economist.com",
+        40
+      ],
+      [
+        "arxiv.org",
         40
       ],
       [
@@ -47,12 +53,12 @@
         8
       ],
       [
-        "github.com",
+        "news.ycombinator.com",
         3
       ],
       [
-        "news.ycombinator.com",
-        2
+        "github.com",
+        3
       ],
       [
         "realizefi.com",
@@ -177,35 +183,35 @@
     {
       "uid": "rss:d3e680bc54e255",
       "source": "rss",
-      "title": "Nvidia board to decide Jensen Huang’s fate after revelation of affair with subordinate",
+      "title": "Nvidia board to decide Jensen Huang’s fate",
       "url": "https://www.ft.com/content/d3838274-a055-4d5d-a1ff-48f2979a08f0?syn-25a6b1a6=1",
       "ts": 1794446004.0,
       "points": 0,
       "comments": 0,
       "author": "",
-      "summary": "Head of US chip giant comes under mounting pressure days after claims he had affair with alleged Chinese spy",
+      "summary": "Revelation of affair with subordinate piles pressure on CEO days after news of relationship with alleged Chinese spy",
       "recipe": "ft_home",
       "buzz": 80,
       "topics": [
         "ai",
-        "dev",
-        "hardware"
+        "dev"
       ],
       "date": "2026-11-12"
     },
     {
       "uid": "rss:004c71ab8ef34e",
       "source": "rss",
-      "title": "Nvidia shares tumble in after-market trading",
+      "title": "Nvidia shares slide as board considers Huang’s future",
       "url": "https://www.ft.com/content/a93307a7-e2cd-4abd-bd89-c38832d8c40e?syn-25a6b1a6=1",
-      "ts": 1794454765.0,
+      "ts": 1794473843.0,
       "points": 0,
       "comments": 0,
       "author": "",
-      "summary": "Stock sinks almost 9 per cent in after-market trading as chief executive’s fate hangs in balance following more revelations",
+      "summary": "Stock sinks almost 9% after-market as chief executive’s fate hangs in balance following more revelations",
       "recipe": "ft_home",
       "buzz": 80,
       "topics": [
+        "dev",
         "biz"
       ],
       "date": "2026-11-12"
@@ -228,21 +234,21 @@
       "date": "2026-11-12"
     },
     {
-      "uid": "rss:d36da1b91d6c82",
+      "uid": "rss:ef52c93bc110de",
       "source": "rss",
-      "title": "Can India clean up Delhi’s deadly smog?",
-      "url": "https://www.ft.com/content/e58eec04-845b-4330-8d01-69b0313a60c1?syn-25a6b1a6=1",
-      "ts": 1794442092.0,
+      "title": "Who could run Nvidia after Jensen Huang?",
+      "url": "https://www.ft.com/content/e47f7d4a-88d7-41e4-8c77-8ea8e0769353?syn-25a6b1a6=1",
+      "ts": 1794470092.0,
       "points": 0,
       "comments": 0,
       "author": "",
-      "summary": "Residents ask why a country that can land a spacecraft on the Moon cannot prevent citizens in its capital choking on bad air",
+      "summary": "Chip giant co-founder’s future as chief executive is uncertain following report of a second affair",
       "recipe": "ft_home",
       "buzz": 80,
       "topics": [
         "ai",
-        "dev",
-        "science"
+        "biz",
+        "hardware"
       ],
       "date": "2026-11-12"
     },
@@ -260,24 +266,6 @@
       "buzz": 80,
       "topics": [],
       "date": "2026-11-12"
-    },
-    {
-      "uid": "rss:7e4dab9ffd4c48",
-      "source": "rss",
-      "title": "Thousands of schools in Italy, Scotland and Ireland receive bomb threats",
-      "url": "https://www.ft.com/content/7bbc0a5e-b7e2-4a3f-874f-a63de94e922d?syn-25a6b1a6=1",
-      "ts": 1794411584.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "Incidents appear to be latest co-ordinated attack aimed at disrupting life in Europe",
-      "recipe": "ft_home",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "dev"
-      ],
-      "date": "2026-11-11"
     },
     {
       "uid": "rss:8e16f1833258f4",
@@ -298,38 +286,55 @@
       "date": "2026-11-11"
     },
     {
-      "uid": "rss:555fc230f8de85",
+      "uid": "rss:6c8d3ab0c7be29",
       "source": "rss",
-      "title": "China warns of ‘severe’ punishment for offshore trust tax evaders",
-      "url": "https://www.ft.com/content/278528e2-dd2d-4020-853d-2a7a9d49a359?syn-25a6b1a6=1",
-      "ts": 1794452128.0,
+      "title": "EU and UK set to delay 10% tariff on electric cars",
+      "url": "https://www.ft.com/content/b6c31ee9-0837-4fb0-83d9-a0e70100d0a3?syn-25a6b1a6=1",
+      "ts": 1794459621.0,
       "points": 0,
       "comments": 0,
       "author": "",
-      "summary": "Revenue from personal income tax jumps 90 per cent as scrutiny tightens over the country’s wealthiest",
+      "summary": "European carmakers had warned the levy would make them more vulnerable to Chinese competition",
       "recipe": "ft_home",
       "buzz": 80,
       "topics": [
-        "dev",
-        "biz"
+        "security"
       ],
       "date": "2026-11-12"
     },
     {
-      "uid": "rss:c97de9ed580132",
+      "uid": "rss:968fe947493095",
       "source": "rss",
-      "title": "Nvidia board meeting to decide CEO Jensen Huang’s fate stretches into evening",
-      "url": "https://www.cnbc.com/2026/11/11/nvidia-jensen-huang-affair-employee.html",
-      "ts": 1794455216.0,
+      "title": "France signals support for Spain’s ECB presidential candidate",
+      "url": "https://www.ft.com/content/b0d03a62-a75d-41f9-bac3-1518cefe400a?syn-25a6b1a6=1",
+      "ts": 1794459621.0,
       "points": 0,
       "comments": 0,
       "author": "",
-      "summary": "Nvidia's board is meeting days after CEO Jensen Huang admitted to an affair with a woman who is believed by U.S. intelligence of being a Chinese spy.",
-      "recipe": "cnbc_top",
+      "summary": "Pablo Hernández de Cos’s bid gains momentum as Paris and Berlin eye package deal on central bank leadership",
+      "recipe": "ft_home",
       "buzz": 80,
       "topics": [
         "ai",
         "dev"
+      ],
+      "date": "2026-11-12"
+    },
+    {
+      "uid": "rss:d93a2b1c574e7b",
+      "source": "rss",
+      "title": "Nvidia stock falls 7% as investors await Jensen Huang’s fate",
+      "url": "https://www.cnbc.com/2026/11/12/nvidia-nvda-jensen-huang-second-affair.html",
+      "ts": 1794474942.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "Nvidia's board met on Wednesday to discuss whether to oust Jensen Huang as CEO.",
+      "recipe": "cnbc_top",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "biz"
       ],
       "date": "2026-11-12"
     },
@@ -367,21 +372,19 @@
       "date": "2026-11-12"
     },
     {
-      "uid": "rss:1cc45e8886bbc7",
+      "uid": "rss:faff88e93e1453",
       "source": "rss",
-      "title": "The world's super-rich are piling into alternative investments. Here's why",
-      "url": "https://www.cnbc.com/2026/11/12/rich-wealth-alternative-assets-.html",
-      "ts": 1794454604.0,
+      "title": "Scott Colom wins Mississippi Senate election over incumbent Republican Hyde-Smith",
+      "url": "https://www.cnbc.com/2026/11/11/democrat-scott-colom-projected-to-win-mississippi-senate-election-over-incumbent-hyde-smith.html",
+      "ts": 1794439897.0,
       "points": 0,
       "comments": 0,
       "author": "",
-      "summary": "Alternative investments now account for 60% of single-family office portfolios, surpassing traditional assets for the first time, according to BNY Wealth.",
+      "summary": "Scott Colom will be the first Democrat elected to the Senate from the state since 1982, and Mississippi's first Black senator since Reconstruction.",
       "recipe": "cnbc_top",
       "buzz": 80,
-      "topics": [
-        "biz"
-      ],
-      "date": "2026-11-12"
+      "topics": [],
+      "date": "2026-11-11"
     },
     {
       "uid": "rss:9855bd770ac2c3",
@@ -397,6 +400,25 @@
       "buzz": 80,
       "topics": [
         "ai"
+      ],
+      "date": "2026-11-12"
+    },
+    {
+      "uid": "rss:2bef895c813c4f",
+      "source": "rss",
+      "title": "Treasury yields edge higher as investors await fresh inflation and housing data",
+      "url": "https://www.cnbc.com/2026/11/12/us-treasurys-bonds-yields.html",
+      "ts": 1794469125.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "Treasury yields rose as bond markets reopened following Veterans Day.",
+      "recipe": "cnbc_top",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "biz",
+        "hardware"
       ],
       "date": "2026-11-12"
     },
@@ -419,21 +441,6 @@
       "date": "2026-11-11"
     },
     {
-      "uid": "rss:faff88e93e1453",
-      "source": "rss",
-      "title": "Scott Colom wins Mississippi Senate election over incumbent Republican Hyde-Smith",
-      "url": "https://www.cnbc.com/2026/11/11/democrat-scott-colom-projected-to-win-mississippi-senate-election-over-incumbent-hyde-smith.html",
-      "ts": 1794439897.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "Scott Colom will be the first Democrat elected to the Senate from the state since 1982, and Mississippi's first Black senator since Reconstruction.",
-      "recipe": "cnbc_top",
-      "buzz": 80,
-      "topics": [],
-      "date": "2026-11-11"
-    },
-    {
       "uid": "rss:4b0c484f08e3de",
       "source": "rss",
       "title": "Feds arrest top official of healthcare company, alleging illegal drug importation",
@@ -447,6 +454,40 @@
       "buzz": 80,
       "topics": [],
       "date": "2026-11-11"
+    },
+    {
+      "uid": "rss:39023985693aab",
+      "source": "rss",
+      "title": "Meta head of infrastructure will leave and be succeeded by former AWS cloud exec",
+      "url": "https://www.cnbc.com/2026/11/11/meta-infrastructure-departure-aws-cloud.html",
+      "ts": 1794444368.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "Meta's head of infrastructure and co-head of engineering Santosh Janardhan will leave in 2027, with former AWS senior vice president David Brown taking over.",
+      "recipe": "cnbc_top",
+      "buzz": 80,
+      "topics": [
+        "dev"
+      ],
+      "date": "2026-11-12"
+    },
+    {
+      "uid": "rss:1cc45e8886bbc7",
+      "source": "rss",
+      "title": "The world's super-rich are piling into alternative investments. Here's why",
+      "url": "https://www.cnbc.com/2026/11/12/rich-wealth-alternative-assets-.html",
+      "ts": 1794454604.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "Alternative investments now account for 60% of single-family office portfolios, surpassing traditional assets for the first time, according to BNY Wealth.",
+      "recipe": "cnbc_top",
+      "buzz": 80,
+      "topics": [
+        "biz"
+      ],
+      "date": "2026-11-12"
     },
     {
       "uid": "rss:2763b53d0638c7",
@@ -483,19 +524,19 @@
       "date": "2026-11-11"
     },
     {
-      "uid": "rss:0c6bc4e64733f7",
+      "uid": "rss:3663a4953b9dce",
       "source": "rss",
-      "title": "Mississippi Senate: Scott Colom lead over Hyde-Smith pops to more than 4,400 votes",
-      "url": "https://www.cnbc.com/2026/11/10/mississippi-senate-scott-colom-hyde-smith.html",
-      "ts": 1794426939.0,
+      "title": "Prediction markets tied to clinical trials and drug approvals draw lawmakers' ire",
+      "url": "https://www.cnbc.com/2026/11/11/kalsi-polymarket-prediction-market-senators-hhs-drug-approval.html",
+      "ts": 1794424583.0,
       "points": 0,
       "comments": 0,
       "author": "",
-      "summary": "Tuesday was the deadline for provisional ballots to be resolved in Mississippi, and the deadline for the receipt of mail-in absentee ballots.",
+      "summary": "Sens. Angela Alsobrooks and Ron Wyden are asking what steps the Department of Health and Human Services has taken to mitigate risks from the markets.",
       "recipe": "cnbc_top",
       "buzz": 80,
       "topics": [
-        "ai"
+        "biz"
       ],
       "date": "2026-11-11"
     },
@@ -513,23 +554,6 @@
       "buzz": 80,
       "topics": [
         "ai",
-        "biz"
-      ],
-      "date": "2026-11-11"
-    },
-    {
-      "uid": "rss:3663a4953b9dce",
-      "source": "rss",
-      "title": "Prediction markets tied to clinical trials and drug approvals draw lawmakers' ire",
-      "url": "https://www.cnbc.com/2026/11/11/kalsi-polymarket-prediction-market-senators-hhs-drug-approval.html",
-      "ts": 1794424583.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "Sens. Angela Alsobrooks and Ron Wyden are asking what steps the Department of Health and Human Services has taken to mitigate risks from the markets.",
-      "recipe": "cnbc_top",
-      "buzz": 80,
-      "topics": [
         "biz"
       ],
       "date": "2026-11-11"
@@ -568,6 +592,25 @@
         "dev"
       ],
       "date": "2026-11-11"
+    },
+    {
+      "uid": "rss:7ea6427ec2fe0e",
+      "source": "rss",
+      "title": "Ukrainian defense tech startup hits $6 billion valuation as investors bet on battle-tested drones",
+      "url": "https://www.cnbc.com/2026/11/12/uforce-defense-tech-drones-warfare-ukraine.html",
+      "ts": 1794474322.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "UFORCE's NEMESIS drones have completed 300,000 combat flights, and its MAGURA naval vessels have contributed to the destruction of Russian warships.",
+      "recipe": "cnbc_top",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "biz",
+        "hardware"
+      ],
+      "date": "2026-11-12"
     },
     {
       "uid": "rss:3d3cc31a91a8f8",
@@ -621,23 +664,6 @@
         "dev"
       ],
       "date": "2026-11-11"
-    },
-    {
-      "uid": "rss:39023985693aab",
-      "source": "rss",
-      "title": "Meta head of infrastructure will leave and be succeeded by former AWS cloud exec",
-      "url": "https://www.cnbc.com/2026/11/11/meta-infrastructure-departure-aws-cloud.html",
-      "ts": 1794444368.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "Meta's head of infrastructure and co-head of engineering Santosh Janardhan will leave in 2027, with former AWS senior vice president David Brown taking over.",
-      "recipe": "cnbc_top",
-      "buzz": 80,
-      "topics": [
-        "dev"
-      ],
-      "date": "2026-11-12"
     },
     {
       "uid": "rss:41f046c9d960b5",
@@ -859,19 +885,311 @@
       "date": "2026-11-09"
     },
     {
-      "uid": "rss:ea87fedfe20882",
-      "source": "rss",
-      "title": "White House vows to press ahead with tariffs despite midterm backlash over rising prices",
-      "url": "https://www.cnbc.com/2026/11/10/trump-tariffs-midterms-gary-cohn-inflation.html",
-      "ts": 1794347146.0,
+      "uid": "arxiv:2611.14245v1",
+      "source": "arxiv",
+      "title": "Deep Learning for Operator Maps in Optimal Liquidation",
+      "url": "https://arxiv.org/abs/2611.14245v1",
+      "ts": 1794326201.0,
       "points": 0,
       "comments": 0,
-      "author": "",
-      "summary": "Business executives warned at a Washington summit of rising costs and shifting supply chains as polls showed growing opposition to Trump's tariffs.",
-      "recipe": "cnbc_top",
+      "author": "Ryan Donnelly",
+      "summary": "We analyze the solution map of a optimal execution problem in which price dynamics are subject to a general transient impact kernel. Given the structure of the optimal trading strategy derived by Abi Jaber and Neuman in \\cite{https://doi.org/10.1111/mafi.12465}, we show that the strategy is locally Lipschitz continuous with respect to the underlying model parameters governing temporary and transie",
+      "recipe": "arxiv_qfin",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "science"
+      ],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "arxiv:2611.14146v1",
+      "source": "arxiv",
+      "title": "Estimating multidimensional poverty under incomplete data in North Macedonia",
+      "url": "https://arxiv.org/abs/2611.14146v1",
+      "ts": 1794321242.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Maja Gerovska Mitev",
+      "summary": "Multidimensional Poverty Indices (MPIs) are available for more than 100 countries, but rarely below the national or regional level. Local estimates require knowing how deprivations overlap within households, yet the sources that cover every locality, such as censuses and geospatial data, cannot be linked at the household level. We show how to measure local multidimensional poverty under such incom",
+      "recipe": "arxiv_qfin",
       "buzz": 30,
       "topics": [
         "ai"
+      ],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "arxiv:2611.14117v1",
+      "source": "arxiv",
+      "title": "Fine-Tuning an Order-Flow Foundation Model for Sub-Second Forecasting",
+      "url": "https://arxiv.org/abs/2611.14117v1",
+      "ts": 1794319659.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Fedor Shabashev",
+      "summary": "Generative models have become the standard approach in language and vision. These models are typically pretrained first and then fine-tuned. Recent work demonstrates how to pretrain an autoregressive generative model on Level-3 order-flow data. However, to our knowledge, no one has fine-tuned such a model yet for downstream tasks. Here we first pretrain a 300M-parameter generative model on Level-3",
+      "recipe": "arxiv_qfin",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "science",
+        "hardware"
+      ],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "arxiv:2611.13866v1",
+      "source": "arxiv",
+      "title": "Economic Benefits of Cross-Border Electricity Trade and Domestic Electricity Production in Switzerland",
+      "url": "https://arxiv.org/abs/2611.13866v1",
+      "ts": 1794306323.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Benjamin Lietti",
+      "summary": "This paper assesses the economic benefits of cross-border electricity trade in the context of rising energy prices and geopolitical uncertainty. Switzerland provides a particularly compelling case because of its geographical location and limited integration into the EU electricity market. We first use the Nexus-e framework to simulate the generation capacity and transmission grid expansion require",
+      "recipe": "arxiv_qfin",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "dev",
+        "science",
+        "biz"
+      ],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "arxiv:2611.13715v1",
+      "source": "arxiv",
+      "title": "Optimal Regulation and Information Institutions with Hidden Network Equilibria",
+      "url": "https://arxiv.org/abs/2611.13715v1",
+      "ts": 1794298199.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Christian Jaag",
+      "summary": "Aggregate outcomes can conceal network configurations that expose households to uninsurable risk and require different public services. We study a regulator's joint choice of a corrective activity charge and an information institution in a two-population network game. Although aggregate behavior follows an exact stable law, distinct specialization equilibria require different targeted intervention",
+      "recipe": "arxiv_qfin",
+      "buzz": 30,
+      "topics": [],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "arxiv:2611.13616v1",
+      "source": "arxiv",
+      "title": "Optimal Trading Speed on Blockchain",
+      "url": "https://arxiv.org/abs/2611.13616v1",
+      "ts": 1794289942.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Ruizhe Jia",
+      "summary": "On blockchain-based exchanges, faster blocks weaken the priority-fee competition among arbitrageurs and shift rents from the block producer to them. Equilibrium liquidity peaks at an interior block speed; beyond a threshold, an active liquidity provider cream-skims and passive capital shrinks. Evidence from the Base Flashblocks upgrade, a tenfold block-speed increase, confirms the predictions. Pri",
+      "recipe": "arxiv_qfin",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "dev",
+        "crypto"
+      ],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "arxiv:2611.13550v1",
+      "source": "arxiv",
+      "title": "Tabular Foundation Models in Financial Predictions",
+      "url": "https://arxiv.org/abs/2611.13550v1",
+      "ts": 1794283780.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Ed deHaan",
+      "summary": "This technical note introduces tabular foundation models (TFMs) to accounting research and evaluates their performance in one common benchmark task: predicting firms' next-year earnings changes. TFMs produce numeric predictions and learn in context, without post-release training or tuning, making them natural and easy to use for forecasting. The TFMs we study are pretrained on synthetic tabular da",
+      "recipe": "arxiv_qfin",
+      "buzz": 30,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-11-10"
+    },
+    {
+      "uid": "arxiv:2611.13365v1",
+      "source": "arxiv",
+      "title": "Making sense of rule 605",
+      "url": "https://arxiv.org/abs/2611.13365v1",
+      "ts": 1794267524.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Peter B. Lerner",
+      "summary": "The paper analyzes monthly reports of two companies: one market maker, Virtu, and one broker-dealer, SoHo, in the period between January 2021 and March 2024. The predictive power of standard methods for the probability laws of stock orders- linear regression and LSTM- is poor, despite their probability laws being relatively stable. However, the month-to-month correlations are highly stable and pre",
+      "recipe": "arxiv_qfin",
+      "buzz": 30,
+      "topics": [
+        "science",
+        "biz"
+      ],
+      "date": "2026-11-09"
+    },
+    {
+      "uid": "arxiv:2611.13259v1",
+      "source": "arxiv",
+      "title": "Choosing Complexity: Cognitive Ability, Overconfidence, and Task Choice",
+      "url": "https://arxiv.org/abs/2611.13259v1",
+      "ts": 1794259814.0,
+      "points": 0,
+      "comments": 0,
+      "author": "David Gill",
+      "summary": "Workers and organizations routinely choose between complex tasks that differ in their success-payment tradeoff. We study how cognitive ability and overconfidence shape this choice of task complexity, both theoretically and experimentally. Consistent with our model, we find that more cognitively able individuals choose more complex tasks. Conditional on cognitive ability, we find that more overconf",
+      "recipe": "arxiv_qfin",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "dev"
+      ],
+      "date": "2026-11-09"
+    },
+    {
+      "uid": "arxiv:2611.13230v1",
+      "source": "arxiv",
+      "title": "Dynamic investment and coordination in teams: Theory and experimental evidence",
+      "url": "https://arxiv.org/abs/2611.13230v1",
+      "ts": 1794257871.0,
+      "points": 0,
+      "comments": 0,
+      "author": "David Gill",
+      "summary": "Teamwork requires more than the general skills that team members bring. In successful teams, members invest in team-specific skill or capital that accumulates within the team and raises the return to coordinated production. We provide the first systematic analysis of dynamic investment in such team skill. Adopting a dynamic game approach, we develop a novel theoretical framework where investment i",
+      "recipe": "arxiv_qfin",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "dev",
+        "science",
+        "biz"
+      ],
+      "date": "2026-11-09"
+    },
+    {
+      "uid": "arxiv:2611.13194v1",
+      "source": "arxiv",
+      "title": "Taste or Strategy? Nationalistic Bias and Competitor Penalties in Figure Skating Judging",
+      "url": "https://arxiv.org/abs/2611.13194v1",
+      "ts": 1794255500.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Jialin Liu",
+      "summary": "Many decisions rest on expert panels whose members have ties to some candidates, and favoritism is hard to tell from shared taste or better information. Using a rich dataset from figure skating, we find evidence of a strategic compatriot premium and a targeted penalty on the compatriot's close rivals. The premium falls along a randomly drawn start order and, before 2022/23, rises when close rivals",
+      "recipe": "arxiv_qfin",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "dev"
+      ],
+      "date": "2026-11-09"
+    },
+    {
+      "uid": "arxiv:2611.12565v1",
+      "source": "arxiv",
+      "title": "That Time of the Year Again: Government Pay Revisions in the Aggregate Economy",
+      "url": "https://arxiv.org/abs/2611.12565v1",
+      "ts": 1794238131.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Faisal Quaiyyum",
+      "summary": "Public pay is set by law in nominal terms, so inflation erodes its real value between legal acts until the government revises it. I model each revision as the choice of a forward-looking government, shaped by two costs that push in opposite directions. A fixed cost of acting makes revisions large and rare, whereas a convex cost of financing the increase at once makes them small and frequent. Throu",
+      "recipe": "arxiv_qfin",
+      "buzz": 30,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-11-09"
+    },
+    {
+      "uid": "arxiv:2611.12459v1",
+      "source": "arxiv",
+      "title": "Fiscal Commitment and the Additionality of Philanthropy: Heterogeneous Donor Purposes in a Shared Public Budget",
+      "url": "https://arxiv.org/abs/2611.12459v1",
+      "ts": 1794233464.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Christian Jaag",
+      "summary": "Philanthropic donors often value different public services, while a budget authority allocates public spending across a shared portfolio. Policy frameworks frequently seek to ensure that private finance supplements rather than displaces public funding. We distinguish baseline additionality, which preserves pre-gift public funding, from portfolio preservation, which preserves a service's provision",
+      "recipe": "arxiv_qfin",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "dev",
+        "science",
+        "biz"
+      ],
+      "date": "2026-11-09"
+    },
+    {
+      "uid": "arxiv:2611.12389v1",
+      "source": "arxiv",
+      "title": "Diversification Across Predictors: Heterogeneous Ensemble Learning for Cross-Sectional Return Prediction",
+      "url": "https://arxiv.org/abs/2611.12389v1",
+      "ts": 1794230934.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Danning Li",
+      "summary": "Cross-sectional stock return prediction remains challenging due to extremely low signal-to-noise ratios, high-dimensional factor spaces, and non-stationary predictor effectiveness. Individual model classes exhibit complementary failure modes in this regime: neural networks overfit noise due to high variance, while linear models underfit nonlinear structure due to high bias. We propose a heterogene",
+      "recipe": "arxiv_qfin",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "science"
+      ],
+      "date": "2026-11-09"
+    },
+    {
+      "uid": "arxiv:2611.12347v1",
+      "source": "arxiv",
+      "title": "Fueling Inflation Risks: An Oil Shortage Scenario",
+      "url": "https://arxiv.org/abs/2611.12347v1",
+      "ts": 1794229311.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Christiane Baumeister",
+      "summary": "Central banks routinely use alternative scenarios to assess risks to the economic outlook, but these are usually generated from linear models that are unable to speak to the likelihood of extreme outcomes. We develop a nonlinear modeling framework that turns a narrative oil market scenario into a fully probabilistic assessment of the dynamics of oil and gasoline prices, aggregate inflation, and ho",
+      "recipe": "arxiv_qfin",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "dev",
+        "science",
+        "biz"
+      ],
+      "date": "2026-11-09"
+    },
+    {
+      "uid": "arxiv:2611.12117v1",
+      "source": "arxiv",
+      "title": "Does fare communication format matter? Evidence from a randomised experiment in public transport",
+      "url": "https://arxiv.org/abs/2611.12117v1",
+      "ts": 1794216630.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Hannes Wallimann",
+      "summary": "Highly concentrated demand in public transport places pressure on infrastructure and reduces service quality. Pricing instruments-such as discounted off-peak single fare tickets-are a widely used tool for rescheduling demand across time. Yet no study has directly examined whether the price communication format of single fare tickets affects travel behaviour in terms of departure-time rescheduling.",
+      "recipe": "arxiv_qfin",
+      "buzz": 30,
+      "topics": [
+        "dev"
+      ],
+      "date": "2026-11-09"
+    },
+    {
+      "uid": "arxiv:2611.10731v2",
+      "source": "arxiv",
+      "title": "Have wind and solar energy increased electricity price volatility? And what is electricity price volatility, anyway?",
+      "url": "https://arxiv.org/abs/2611.10731v2",
+      "ts": 1794299126.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Lion Hirth",
+      "summary": "It is widely held that wind and solar power increase the volatility of electricity prices. This paper argues that the literature conflates two distinct types of price variation: across delivery time and across trading time. Determined simultaneously in the same day-ahead auction, prices for power to be delivered in distinct quarter-hours differ. This price dispersion, which I call \"variability\", i",
+      "recipe": "arxiv_qfin",
+      "buzz": 30,
+      "topics": [
+        "dev",
+        "science"
       ],
       "date": "2026-11-10"
     },
@@ -946,6 +1264,390 @@
       "date": "2026-11-05"
     },
     {
+      "uid": "arxiv:2611.11783v1",
+      "source": "arxiv",
+      "title": "Fairness Drift: Assessing Algorithmic Fairness in a Moving Market",
+      "url": "https://arxiv.org/abs/2611.11783v1",
+      "ts": 1794192046.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Meng Liu",
+      "summary": "Flexible models and richer data can reduce systematic valuation errors and improve fairness. Yet algorithmic values stay fixed between updates while the market moves, so a new algorithm gains most against an intact distortion and least where uneven appreciation has eroded or just reversed it. We study property assessment, which sets tax bills and has long over-assessed cheaper homes. Cook County r",
+      "recipe": "arxiv_qfin",
+      "buzz": 10,
+      "topics": [
+        "ai",
+        "biz"
+      ],
+      "date": "2026-11-09"
+    },
+    {
+      "uid": "arxiv:2611.11652v1",
+      "source": "arxiv",
+      "title": "Adjoint Kernel Sensitivity of the Rough Heston Characteristic Exponent",
+      "url": "https://arxiv.org/abs/2611.11652v1",
+      "ts": 1794176349.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Carlos Escudero",
+      "summary": "Multi-factor approximations of rough volatility kernels affect the characteristic exponents used in Fourier-based derivative valuation. We derive an adjoint representation for the first-order sensitivity of the rough Heston characteristic exponent with respect to its memory kernel, with model parameters and the input variance curve held fixed. The Volterra--Riccati functional $\\mathcal L_T(K,z)$ a",
+      "recipe": "arxiv_qfin",
+      "buzz": 10,
+      "topics": [
+        "ai",
+        "science",
+        "biz"
+      ],
+      "date": "2026-11-08"
+    },
+    {
+      "uid": "arxiv:2611.11490v1",
+      "source": "arxiv",
+      "title": "Optimal power expansion planning under uncertainty in sub-Saharan Africa: A stochastic dual dynamic programming approach",
+      "url": "https://arxiv.org/abs/2611.11490v1",
+      "ts": 1794155585.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Arega Getaneh Abate",
+      "summary": "Universal electricity access and decarbonization are interlinked challenges for sub-Saharan Africa. Generation expansion planning methods used in the region rarely represent sequential and irreversible investment under demand and hydrological uncertainty. This paper develops a multistage stochastic generation expansion model solved with stochastic dual dynamic programming (SDDP) to address the pro",
+      "recipe": "arxiv_qfin",
+      "buzz": 10,
+      "topics": [
+        "ai",
+        "dev",
+        "science",
+        "biz"
+      ],
+      "date": "2026-11-08"
+    },
+    {
+      "uid": "arxiv:2611.11436v1",
+      "source": "arxiv",
+      "title": "Retrospective Analysis of Team-Following Trading Profitability in Pumpfun Meme Coins Using Funding Networks",
+      "url": "https://arxiv.org/abs/2611.11436v1",
+      "ts": 1794149938.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Fail Gafarov",
+      "summary": "If the right token-creation teams had been known, how much could following them have returned, and what is left when only information available before each launch is used? We study ten separately recorded Pumpfun windows (April 2024 to September 2026), each reconstructed independently from real-SOL reserve states and finite-capital accounts that start with one SOL. Teams are directed funding group",
+      "recipe": "arxiv_qfin",
+      "buzz": 10,
+      "topics": [
+        "ai",
+        "dev",
+        "crypto",
+        "biz"
+      ],
+      "date": "2026-11-08"
+    },
+    {
+      "uid": "arxiv:2611.11373v1",
+      "source": "arxiv",
+      "title": "Optimal execution in a fractional setting with reinforcement learning",
+      "url": "https://arxiv.org/abs/2611.11373v1",
+      "ts": 1794144688.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Matthieu Garcin",
+      "summary": "We consider the problem of optimal liquidation with linear market impact, as in the seminal work of Almgren and Chriss, but with an asset driven by a fractional Brownian motion. For $H \\neq 1/2$, we observe that the deterministic solution given by Almgren and Chriss is no longer optimal. We develop a strategy to exploit the information induced by the correlation between price increments. The strat",
+      "recipe": "arxiv_qfin",
+      "buzz": 10,
+      "topics": [
+        "dev",
+        "biz",
+        "security"
+      ],
+      "date": "2026-11-08"
+    },
+    {
+      "uid": "arxiv:2611.12987v1",
+      "source": "arxiv",
+      "title": "Global Trends and Heterogeneity in Modified Adjusted Net Savings",
+      "url": "https://arxiv.org/abs/2611.12987v1",
+      "ts": 1794130708.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Xin Xiao",
+      "summary": "Modified adjusted net savings is a derived weak sustainability indicator obtained by subtracting education expenditure from adjusted net savings (ANS). Because ANS equals net national savings plus education expenditure minus natural-resource depletion and carbon dioxide damage, MANS isolates the savings and depletion components and is useful when education expenditure would otherwise dominate cros",
+      "recipe": "arxiv_qfin",
+      "buzz": 10,
+      "topics": [
+        "ai",
+        "dev",
+        "science"
+      ],
+      "date": "2026-11-08"
+    },
+    {
+      "uid": "arxiv:2611.11112v1",
+      "source": "arxiv",
+      "title": "The Effect of the U.S. Federal Production Tax Credit on Negative Energy Prices",
+      "url": "https://arxiv.org/abs/2611.11112v1",
+      "ts": 1794109945.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Erik P. Johnson",
+      "summary": "Negative prices frequently arise in electricity markets and production subsidies are commonly cited as a leading cause. Using data from the U.S. Eastern Interconnection wholesale electricity markets for the period 2000-2023, we document that at least 18 percent of the total hours with negative energy prices cannot solely be attributed to the federal production tax credit (PTC), a large, persistent",
+      "recipe": "arxiv_qfin",
+      "buzz": 10,
+      "topics": [
+        "biz"
+      ],
+      "date": "2026-11-08"
+    },
+    {
+      "uid": "arxiv:2611.10956v1",
+      "source": "arxiv",
+      "title": "Risk-Sensitive Reinforcement Learning for an Options Market Maker: An Empirical Study with Real S&P 500 Options",
+      "url": "https://arxiv.org/abs/2611.10956v1",
+      "ts": 1794084095.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Jacky Chen",
+      "summary": "Options market makers absorb client order flow and must hedge the resulting inventory risk under trading frictions. We study whether an option hedging reinforcement learning (RL) agent trained on historical market data outperforms three alternatives in tail-risk protection: (i) traditional delta hedging, (ii) simple hedge-ratio rules, and (iii) the same agent trained in simulated markets. Most RL",
+      "recipe": "arxiv_qfin",
+      "buzz": 10,
+      "topics": [
+        "ai",
+        "biz",
+        "hardware"
+      ],
+      "date": "2026-11-07"
+    },
+    {
+      "uid": "arxiv:2611.10801v1",
+      "source": "arxiv",
+      "title": "Trained, Frozen, or Absent: Identifying What a Quantum Layer Contributes to Cross-Sectional Equity Ranking",
+      "url": "https://arxiv.org/abs/2611.10801v1",
+      "ts": 1794065356.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Chi-Sheng Chen",
+      "summary": "Hybrid quantumclassical models are increasingly proposed for nancial prediction, but reported gains are rarely separated from the classical components around them. We study a hybrid quantum temporal convolutional network for daily cross-sectional ranking of 2000 Tokyo Stock Exchange equities under a protocol built to make the quantum contribution identiable: six conditions (circuit trained, frozen",
+      "recipe": "arxiv_qfin",
+      "buzz": 10,
+      "topics": [
+        "ai",
+        "dev",
+        "science"
+      ],
+      "date": "2026-11-07"
+    },
+    {
+      "uid": "arxiv:2611.10791v1",
+      "source": "arxiv",
+      "title": "Winning Reviews, Losing Discovery? The Co-Evolutionary Game of AI Research and Peer Review",
+      "url": "https://arxiv.org/abs/2611.10791v1",
+      "ts": 1794064537.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Hongze Liu",
+      "summary": "Autonomous research systems can produce convincing manuscripts whose scientific value is difficult to verify, while automated reviewers can reward the appearance of completeness. We examine how this gap can become a self-reinforcing threat to the research community. In a two-population evolutionary game, authors choose between acceptance-oriented and exploratory research, and reviewers choose betw",
+      "recipe": "arxiv_qfin",
+      "buzz": 10,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-11-07"
+    },
+    {
+      "uid": "arxiv:2611.10574v1",
+      "source": "arxiv",
+      "title": "Is price-impact decay statistically identifiable by propagator estimation? Diffusive prices force the inferred kernel to be transient and fine-tuned",
+      "url": "https://arxiv.org/abs/2611.10574v1",
+      "ts": 1794040150.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Shunta Fujiwara",
+      "summary": "Despite the long memory of market-order flow, price dynamics remain diffusive---a seemingly paradoxical coexistence known in econophysics as the diffusivity puzzle. The propagator model has long been regarded as a promising solution: price impact decays in time, finely balanced against the order-flow memory, and propagators inferred from data have been reported to be consistent with this fine bala",
+      "recipe": "arxiv_qfin",
+      "buzz": 10,
+      "topics": [
+        "ai",
+        "dev",
+        "science",
+        "biz"
+      ],
+      "date": "2026-11-07"
+    },
+    {
+      "uid": "arxiv:2611.10414v1",
+      "source": "arxiv",
+      "title": "Track or Follow? A Jev-Compatible Multi-Agent Trading System When Web News Lags the Market",
+      "url": "https://arxiv.org/abs/2611.10414v1",
+      "ts": 1794019633.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Yebo Feng",
+      "summary": "LLM agents increasingly trade on the Web news they read, yet much Web news about listed firms is published after, and about, the price move it reports, so a reader can agree with the market by following it instead of reading the event. We ask whether LLM judgments of Web news track the market's reaction to the reported event or follow it. To answer, we built a multi-agent trading system whose agen",
+      "recipe": "arxiv_qfin",
+      "buzz": 10,
+      "topics": [
+        "ai",
+        "biz"
+      ],
+      "date": "2026-11-07"
+    },
+    {
+      "uid": "arxiv:2611.10155v1",
+      "source": "arxiv",
+      "title": "When Is Prosocial Behavior Intuitive? The Moderating Role of Empathic Perspective Taking",
+      "url": "https://arxiv.org/abs/2611.10155v1",
+      "ts": 1793992892.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Enrico D'Ecclesiis",
+      "summary": "Why is prosocial behavior intuitive for some individuals but deliberative for others? We examine whether empathic perspective taking moderates the association between reflective processing and prosocial choice. We run a laboratory experiment with 652 participants, where we measure prosociality using a four-player Distribution Game that holds aggregate payoffs constant and orders allocations from s",
+      "recipe": "arxiv_qfin",
+      "buzz": 10,
+      "topics": [],
+      "date": "2026-11-06"
+    },
+    {
+      "uid": "arxiv:2611.09337v1",
+      "source": "arxiv",
+      "title": "Sanctions, Evasion, and Deterrence: Evidence from Speeding Enforcement",
+      "url": "https://arxiv.org/abs/2611.09337v1",
+      "ts": 1793964773.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Romain Gauriot",
+      "summary": "The design of sanctions plays a central role in shaping reoffending behavior. We study the effects of fixed monetary fines and accumulating penalty points on speeding recidivism and liability transfer. Exploiting a large increase in sanctions in Queensland, Australia, we estimate the causal effects of these sanctions on subsequent offending and nomination of other drivers. Higher demerit points in",
+      "recipe": "arxiv_qfin",
+      "buzz": 10,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-06"
+    },
+    {
+      "uid": "arxiv:2611.09286v1",
+      "source": "arxiv",
+      "title": "The End-of-Day Reversal After 2019: A Pre-Registered Test on S&P 500 Stocks Excluding Heavily Traded Names",
+      "url": "https://arxiv.org/abs/2611.09286v1",
+      "ts": 1793961626.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Alex Vidovich",
+      "summary": "Baltussen, Da and Soebhag (2025) document an end-of-day reversal in U.S. stocks through December 2019: intraday losers outperform intraday winners over the last half hour of trading. We test it on later data, on point-in-time S&P 500 members excluding about 80 heavily traded stocks we had examined in earlier, unpublished work. Under a private pre-registration, the 2016-2019 data had to reproduce t",
+      "recipe": "arxiv_qfin",
+      "buzz": 10,
+      "topics": [],
+      "date": "2026-11-06"
+    },
+    {
+      "uid": "arxiv:2611.09208v1",
+      "source": "arxiv",
+      "title": "The Network Adaptive Market Hypothesis: Detection, Attribution, and Network-Mediated Efficiency",
+      "url": "https://arxiv.org/abs/2611.09208v1",
+      "ts": 1793957411.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Hitesh Kumar Sahu",
+      "summary": "We propose the Network Adaptive Market Hypothesis (NAMH), a novel extension of the adaptive markets framework that conceptualizes market efficiency as a network-dependent equilibrium emerging from long-memory predictability and cross-market information transmission. Using G20 equity indices and five commodity futures over 2001-2026, we identify Japan as the central information hub, while the Unite",
+      "recipe": "arxiv_qfin",
+      "buzz": 10,
+      "topics": [
+        "dev",
+        "biz"
+      ],
+      "date": "2026-11-06"
+    },
+    {
+      "uid": "arxiv:2611.09012v1",
+      "source": "arxiv",
+      "title": "Towards Robust Reinforcement Learning Market Making: Lessons from Loss Function Experimentation",
+      "url": "https://arxiv.org/abs/2611.09012v1",
+      "ts": 1793943737.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Siddharth Nand",
+      "summary": "Market makers play a vital role in ensuring efficient trade within financial markets. Recent literature has delved into training market-making systems using reinforcement learning. This paper delves into the impact of various loss function formulations on risk management behavior within reinforcement-based market making. Through empirical evaluation, we contrast profit-maximizing strategies with r",
+      "recipe": "arxiv_qfin",
+      "buzz": 10,
+      "topics": [
+        "ai",
+        "science",
+        "biz"
+      ],
+      "date": "2026-11-06"
+    },
+    {
+      "uid": "arxiv:2611.08701v1",
+      "source": "arxiv",
+      "title": "Does a Trading Policy Need to Know What It Trades? Microstructure Invariance and Zero-Shot Transfer of Execution Policies",
+      "url": "https://arxiv.org/abs/2611.08701v1",
+      "ts": 1793912431.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Hieu Tran",
+      "summary": "Execution algorithms are calibrated asset by asset, because the queues, trade rates and bid-ask spreads they face differ by orders of magnitude across assets. For reinforcement learning this is zero-shot generalisation across contexts of very different scales, and microstructure invariance proposes a normalisation fixed by theory: measured in each asset's own units of time, size and price, markets",
+      "recipe": "arxiv_qfin",
+      "buzz": 10,
+      "topics": [
+        "science",
+        "biz"
+      ],
+      "date": "2026-11-05"
+    },
+    {
+      "uid": "arxiv:2611.08430v1",
+      "source": "arxiv",
+      "title": "Cross-Border Ownership and Input Access: Evidence from the Lithium Supply Chain",
+      "url": "https://arxiv.org/abs/2611.08430v1",
+      "ts": 1793903027.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Kei Irizawa",
+      "summary": "How does cross-border ownership shape the lithium supply chain? Using global data on mines and refineries, I estimate a model in which ownership can lower refiners' effective ore costs, encourage mines to restrict spot sales, and soften competition. To study these effects, I examine policies motivated by national security concerns about reliable access to critical mineral inputs: divestiture of Ch",
+      "recipe": "arxiv_qfin",
+      "buzz": 10,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-05"
+    },
+    {
+      "uid": "arxiv:2611.08031v1",
+      "source": "arxiv",
+      "title": "Economies of scale and the equity-efficiency trade-off: Evidence from a piped water network in rural Bangladesh",
+      "url": "https://arxiv.org/abs/2611.08031v1",
+      "ts": 1793886712.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Md. Ahasan Habib",
+      "summary": "Policymakers who set prices for public infrastructure often anticipate an equity-efficiency trade-off: while higher prices could increase revenues from fee-paying users, helping to offset costs, they may reduce take-up among the poor. But this trade-off is fundamentally altered in the presence of economies of scale, which are common in infrastructure networks. We elicit willingness to pay for a ho",
+      "recipe": "arxiv_qfin",
+      "buzz": 10,
+      "topics": [
+        "dev",
+        "biz"
+      ],
+      "date": "2026-11-05"
+    },
+    {
+      "uid": "arxiv:2611.07699v1",
+      "source": "arxiv",
+      "title": "Stay, Reposition, or Recharge: Battery-Aware Operation of Robotaxi Fleets",
+      "url": "https://arxiv.org/abs/2611.07699v1",
+      "ts": 1793870587.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Philipp Afèche",
+      "summary": "Electric robotaxis are rapidly expanding from pilots to scaled commercial deployment; unlike traditional human-driven ride-hailing vehicles, they require centralized fleet control and careful management of vehicle state of charge (SoC). We study how a fleet manager should jointly make service, empty repositioning, idling, and charging decisions in such systems. We develop a continuous-time fluid m",
+      "recipe": "arxiv_qfin",
+      "buzz": 10,
+      "topics": [
+        "ai",
+        "dev",
+        "hardware"
+      ],
+      "date": "2026-11-05"
+    },
+    {
       "uid": "hn:48896257",
       "source": "hn",
       "title": "Show HN: Finterm.ai Bloomberg terminal for Claude Code",
@@ -982,6 +1684,24 @@
         "biz"
       ],
       "date": "2026-03-06"
+    },
+    {
+      "uid": "hn:45990088",
+      "source": "hn",
+      "title": "Ask HN: How do you build a \"trust layer\" for your platform?",
+      "url": "https://news.ycombinator.com/item?id=45990088",
+      "ts": 1763625243.0,
+      "points": 2,
+      "comments": 0,
+      "author": "gokulnair2001",
+      "summary": "I&#x27;m trying to understand how different teams handle platform integrity and user trust as they scale.<p>For those running consumer apps, marketplaces, fintech products, or any platform with significant user activity:\nHow do you currently build your “trust layer”?<p>Specifically:\n-&gt; How do you detect fake users, bots, device farms, or automated signups?\n-&gt; What early signals do you rely o",
+      "recipe": "hn_fintech",
+      "buzz": 2,
+      "topics": [
+        "dev",
+        "biz"
+      ],
+      "date": "2025-11-20"
     },
     {
       "uid": "hn:33629711",
@@ -1525,6 +2245,42 @@
         "biz"
       ],
       "date": "2026-10-01"
+    },
+    {
+      "uid": "arxiv:2611.07464v1",
+      "source": "arxiv",
+      "title": "FINCOSMOS: An Open-World Evaluation Paradigm for Agents in Finance",
+      "url": "https://arxiv.org/abs/2611.07464v1",
+      "ts": 1793855984.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Yupeng Cao",
+      "summary": "Language agents increasingly work for users on the open Web, and finance is where trusting them is hardest. The data must come from the Web, the strategy lives in the user's head, and correctness depends on time, so an agent can fail silently: a strategy the user never asked for, unverified data, or a backtest that uses the future yields a report as convincing as a correct one. Existing benchmarks",
+      "recipe": "arxiv_qfin",
+      "buzz": 0,
+      "topics": [
+        "ai",
+        "dev",
+        "biz"
+      ],
+      "date": "2026-11-05"
+    },
+    {
+      "uid": "arxiv:2611.06888v1",
+      "source": "arxiv",
+      "title": "Dull, Dirty, Dangerous? Working Conditions and the Limits of Occupational AI Exposure",
+      "url": "https://arxiv.org/abs/2611.06888v1",
+      "ts": 1793817700.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Siyi Yu",
+      "summary": "Automation is often justified as relief from dull, dirty, and dangerous work. I examine how these conditions relate to occupational AI exposure using 21 O*NET items across 754 US occupations. Higher exposure is associated with lower condition scores under a large language model (LLM) measure and AI Occupational Exposure (AIOE), with equal occupation weights and employment weights. Adjustment for p",
+      "recipe": "arxiv_qfin",
+      "buzz": 0,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-11-04"
     }
   ]
 }

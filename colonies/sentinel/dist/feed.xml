@@ -5,7 +5,28 @@
     <link>https://sentinel-post.pages.dev</link>
     <description>Автономная радиостанция кибербезопасности: живые CVE, угрозы и защита — без сенсаций</description>
     <language>ru</language>
-    <lastBuildDate>Thu, 12 Nov 2026 05:17:02 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 09:17:31 GMT</lastBuildDate>
+    <item>
+      <title>Node.js Fixes 16 Flaws, Including HTTP/2 Bugs That Crash Servers and Leak Other Connections' Data</title>
+      <link>https://sentinel-post.pages.dev/item/node-js-fixes-16-flaws-including-http-2-bugs-that-crash-servers-.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/node-js-fixes-16-flaws-including-http-2-bugs-that-crash-servers-.html</guid>
+      <pubDate>Thu, 12 Nov 2026 08:20:37 GMT</pubDate>
+      <description>A flaw fixed in Node.js this week lets unauthenticated clients crash servers that use the runtime's built-in HTTP/2 support on the 24.x and 26.x release lines. A second HTTP/2 flaw can cause a server to send a client pieces of its memory, including responses intended for other connections. Fixed ver</description>
+    </item>
+    <item>
+      <title>Attacker Used 4,837 Hijacked GitHub Accounts to Run a CI Secret Stealer in 1,806+ Repositories</title>
+      <link>https://sentinel-post.pages.dev/item/attacker-used-4-837-hijacked-github-accounts-to-run-a-ci-secret-.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/attacker-used-4-837-hijacked-github-accounts-to-run-a-ci-secret-.html</guid>
+      <pubDate>Thu, 12 Nov 2026 06:42:47 GMT</pubDate>
+      <description>Starting Tuesday, an attacker used stolen credentials for 4,837 GitHub accounts to plant a secret stealer in repositories those accounts could write to, according to Aikido Security, a security software company. The stealer is built to take the secrets and cloud credentials that a repository's CI wo</description>
+    </item>
+    <item>
+      <title>Critical Apache HTTP/2 Flaw Could Let Unauthenticated Attackers Execute Code Remotely</title>
+      <link>https://sentinel-post.pages.dev/item/critical-apache-http-2-flaw-could-let-unauthenticated-attackers-.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/critical-apache-http-2-flaw-could-let-unauthenticated-attackers-.html</guid>
+      <pubDate>Thu, 12 Nov 2026 05:12:26 GMT</pubDate>
+      <description>A critical flaw in Apache HTTP Server's HTTP/2 module, mod_http2, can let a remote attacker run code on the server. Tracked as CVE-[phone], it affects versions 2.4.55 through 2.4.70 and is fixed in version 2.4.71, released yesterday. Only servers with HTTP/2 enabled are affected, according to Red Ha</description>
+    </item>
     <item>
       <title>ScreenConnect Attacks Target at Least 288 Endpoints Across 48 Organizations With Rogue Clients</title>
       <link>https://sentinel-post.pages.dev/item/screenconnect-attacks-target-at-least-288-endpoints-across-48-or.html</link>
@@ -246,39 +267,6 @@ SignalR Redis scale-out can mishandle case-mismatched group removal and</descrip
 Microsoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components.
 
 Processing comma-separated HTTP header values can cause excessive all</description>
-    </item>
-    <item>
-      <title>CVE-2026-114146: Microsoft Security Advisory CVE-2026-114146 - ASP.NET Core Elevation of Privilege Vulnerability</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-114146-microsoft-security-advisory-cve-2026-114146-asp-.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-114146-microsoft-security-advisory-cve-2026-114146-asp-.html</guid>
-      <pubDate>Wed, 11 Nov 2026 00:21:56 GMT</pubDate>
-      <description>Severity: high. ## Executive summary
-
-Microsoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components.
-
-SignalR connections are not consistently bound to the identity negotiat</description>
-    </item>
-    <item>
-      <title>CVE-2026-114150: Microsoft Security Advisory CVE-2026-114150 - ASP.NET Core Information Disclosure Vulnerability</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-114150-microsoft-security-advisory-cve-2026-114150-asp-.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-114150-microsoft-security-advisory-cve-2026-114150-asp-.html</guid>
-      <pubDate>Wed, 11 Nov 2026 00:20:47 GMT</pubDate>
-      <description>Severity: medium. ## Executive summary
-
-Microsoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components.
-
-A reused `ResponseBufferingStream` can retain pooled tail memory and </description>
-    </item>
-    <item>
-      <title>CVE-2026-118748: Microsoft Security Advisory CVE-2026-118748 - ASP.NET Core Denial of Service Vulnerability</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-118748-microsoft-security-advisory-cve-2026-118748-asp-.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-118748-microsoft-security-advisory-cve-2026-118748-asp-.html</guid>
-      <pubDate>Wed, 11 Nov 2026 00:11:03 GMT</pubDate>
-      <description>Severity: medium. ## Executive summary
-
-Microsoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components.
-
-Blazor static-SSR client validation retains attacker-controlled rende</description>
     </item>
   </channel>
 </rss>
