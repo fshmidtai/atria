@@ -5,13 +5,34 @@
     <link>https://cveradar-ah3.pages.dev</link>
     <description>Живые CVE и уязвимости на русском: автономный перевод угроз в понятные дайджесты для DevOps и небольшого SecOps</description>
     <language>ru</language>
-    <lastBuildDate>Fri, 13 Nov 2026 09:14:20 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 13:27:23 GMT</lastBuildDate>
+    <item>
+      <title>When an AI Agent Goes Wrong, Can You Stop It?</title>
+      <link>https://cveradar-ah3.pages.dev/item/when-an-ai-agent-goes-wrong-can-you-stop-it.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/when-an-ai-agent-goes-wrong-can-you-stop-it.html</guid>
+      <pubDate>Fri, 13 Nov 2026 11:52:31 GMT</pubDate>
+      <description>Suppose an AI agent is asked to sort support tickets and look up account details. A ticket contains instructions that lead the agent to export records to an unfamiliar destination. The agent can make the request because its identity has access to the records and its connected tools allow the action.</description>
+    </item>
+    <item>
+      <title>SilentAir Hijacks Asian Telecom Networks to Intercept SMS 2FA Codes and Spy on Taiwanese Users</title>
+      <link>https://cveradar-ah3.pages.dev/item/silentair-hijacks-asian-telecom-networks-to-intercept-sms-2fa-co.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/silentair-hijacks-asian-telecom-networks-to-intercept-sms-2fa-co.html</guid>
+      <pubDate>Fri, 13 Nov 2026 11:10:40 GMT</pubDate>
+      <description>A newly identified spying group used hacked equipment inside Asian mobile operators to intercept the calls and texts of selected people, mostly in Taiwan. Enea, a telecom and cybersecurity software company based in Stockholm, found the group's attack sources in at least six Asian countries and named</description>
+    </item>
+    <item>
+      <title>Operation Endgame Takes Down Gootloader, CastleRAT and StealC Servers, Seizes 6.4M Stolen Logins</title>
+      <link>https://cveradar-ah3.pages.dev/item/operation-endgame-takes-down-gootloader-castlerat-and-stealc-ser.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/operation-endgame-takes-down-gootloader-castlerat-and-stealc-ser.html</guid>
+      <pubDate>Fri, 13 Nov 2026 10:55:03 GMT</pubDate>
+      <description>An international police operation took down servers behind Gootloader, CastleRAT and StealC this week. Criminals used the three malware tools to gain access to computers, steal passwords, and launch ransomware attacks. Police also seized about 6.4 million stolen logins belonging to more than 40,000 </description>
+    </item>
     <item>
       <title>Hackers Exploit PHP2Shell Flaws in Check Point Gateways to Deploy TSGA Backdoor and Wipe ESXi Files</title>
       <link>https://cveradar-ah3.pages.dev/item/hackers-exploit-php2shell-flaws-in-check-point-gateways-to-deplo.html</link>
       <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/hackers-exploit-php2shell-flaws-in-check-point-gateways-to-deplo.html</guid>
       <pubDate>Fri, 13 Nov 2026 08:05:49 GMT</pubDate>
-      <description>An unknown threat actor has been observed targeting unpatched Check Point Security Gateways to obtain initial access via the PHP2Shell vulnerabilities and then a previously reported local privilege escalation flaw in Gaia OS&amp;nbsp; to deploy a backdoor called TSGA. The activity, detailed by Check Poi</description>
+      <description>An unknown threat actor has been observed targeting unpatched Check Point Security Gateways to obtain initial access via the PHP2Shell vulnerabilities and then a previously unreported local privilege escalation flaw in Gaia OS&amp;nbsp; to deploy a backdoor called TSGA. The activity, detailed by Check P</description>
     </item>
     <item>
       <title>Hackers Exploit N-central Flaws to Infect 21 Servers, Including 19 Running Hotfix 2</title>
@@ -248,35 +269,6 @@ The **JRuby** implementation of msgpack (`msgpack` gem, `java` platform — pure
       <description>Severity: low. ## Summary
 
 The `@astrojs/solid-js` renderer wraps named slot content passed to Solid components in an `&lt;astro-slot&gt;` element, and writes the slot name into its `name` attribute without HTML escaping. A slot name containing `"` could end the attribute and inject arbitrary HTML into th</description>
-    </item>
-    <item>
-      <title>CVE-2026-126362: Astro: Reflected XSS via unescaped slot names in @astrojs/svelte</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-126362-astro-reflected-xss-via-unescaped-slot-names-in-.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-126362-astro-reflected-xss-via-unescaped-slot-names-in-.html</guid>
-      <pubDate>Thu, 12 Nov 2026 22:34:04 GMT</pubDate>
-      <description>Severity: low. ## Summary
-
-The `@astrojs/svelte` renderer wraps slotted content passed to Svelte components in an `&lt;astro-slot&gt;` element, and writes the slot name into its `name` attribute without HTML escaping. A slot name containing `"` could end the attribute and inject arbitrary HTML into the pa</description>
-    </item>
-    <item>
-      <title>CVE-2026-126350: Addressable: Regular Expression Denial of Service in templates with certain exploded expressions</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-126350-addressable-regular-expression-denial-of-service.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-126350-addressable-regular-expression-denial-of-service.html</guid>
-      <pubDate>Thu, 12 Nov 2026 22:30:37 GMT</pubDate>
-      <description>Severity: medium. ### Impact
-
-Within the URI template implementation in Addressable, templates using the `*` (explode) modifier with the `/`, `.`, `;`, `?` or `&amp;` operators (e.g., `{/segments*}`, `{.ext*}`, `{;params*}`, `{?query*}`) generate regular expressions vulnerable to catastrophic backtracki</description>
-    </item>
-    <item>
-      <title>CVE-2026-126352: Addressable: Regular Expression Denial of Service in templates with multiple variables</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-126352-addressable-regular-expression-denial-of-service.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-126352-addressable-regular-expression-denial-of-service.html</guid>
-      <pubDate>Thu, 12 Nov 2026 22:29:35 GMT</pubDate>
-      <description>Severity: medium. ### Impact
-
-Within the URI template implementation in Addressable, templates that put several variables in one expression generate regular expressions vulnerable to excessive backtracking:
-
-1. Expressions with any operator other than `+` and `#` (e.g., `{/owner,repo,ref}`, `{.a,b}`</description>
     </item>
   </channel>
 </rss>
