@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13T05:21:50+00:00",
+  "generated_at": "2026-11-13T09:19:20+00:00",
   "sources_used": [
     "hn_search",
     "github_search",
@@ -9,31 +9,31 @@
     "rss"
   ],
   "totals": {
-    "items": 146,
+    "items": 147,
     "by_source": {
       "hn": 60,
-      "github": 66,
+      "github": 67,
       "rss": 20
     },
     "by_recipe": {
       "show_hn": 60,
       "github_ai": 40,
-      "github_llm": 26,
+      "github_llm": 27,
       "tc_ai": 20
     },
     "by_topic": {
-      "ai": 86,
+      "ai": 87,
       "dev": 55,
-      "hardware": 12,
+      "hardware": 13,
       "biz": 10,
-      "science": 9,
       "security": 8,
+      "science": 8,
       "crypto": 1
     },
     "top_domains": [
       [
         "github.com",
-        72
+        73
       ],
       [
         "techcrunch.com",
@@ -316,12 +316,12 @@
       "title": "Show HN: HackerBooks – HackerTube, but for books mentioned on HN",
       "url": "https://hackerbooks.org",
       "ts": 1793548708.0,
-      "points": 1869,
+      "points": 1870,
       "comments": 308,
       "author": "roansh",
       "summary": "Saw Karpathy&#x27;s HackerTube and wanted the same thing for books. So I had Claude build one (Opus 5.5).<p>It&#x27;s ~16.5k books that at least two different HN commenters brought up, from 2007 till now. Each book links back to the comments that mentioned it. Data is downloadable from the about page.<p>To be clear: Claude wrote almost all of it, including the data pipeline and the site. I mostly",
       "recipe": "show_hn",
-      "buzz": 2793,
+      "buzz": 2794,
       "topics": [],
       "date": "2026-11-01"
     },
@@ -479,6 +479,24 @@
       "date": "2020-10-07"
     },
     {
+      "uid": "gh:Sandflow-ai/sand3d",
+      "source": "github",
+      "title": "Sandflow-ai/sand3d",
+      "url": "https://github.com/Sandflow-ai/sand3d",
+      "ts": 1793694183.0,
+      "points": 1937,
+      "comments": 214,
+      "author": "Sandflow-ai",
+      "summary": "3D modeling in Python, built for LLMs.",
+      "recipe": "github_llm",
+      "buzz": 2579,
+      "topics": [
+        "ai",
+        "dev"
+      ],
+      "date": "2026-11-03"
+    },
+    {
       "uid": "hn:48490024",
       "source": "hn",
       "title": "Show HN: Homebrew 6.0.0",
@@ -495,24 +513,6 @@
         "security"
       ],
       "date": "2026-06-11"
-    },
-    {
-      "uid": "gh:Sandflow-ai/sand3d",
-      "source": "github",
-      "title": "Sandflow-ai/sand3d",
-      "url": "https://github.com/Sandflow-ai/sand3d",
-      "ts": 1793694183.0,
-      "points": 1928,
-      "comments": 213,
-      "author": "Sandflow-ai",
-      "summary": "3D modeling in Python, built for LLMs.",
-      "recipe": "github_llm",
-      "buzz": 2567,
-      "topics": [
-        "ai",
-        "dev"
-      ],
-      "date": "2026-11-03"
     },
     {
       "uid": "hn:34066824",
@@ -1017,12 +1017,12 @@
       "title": "agentes-chat/agentes-chat",
       "url": "https://github.com/agentes-chat/agentes-chat",
       "ts": 1794185428.0,
-      "points": 1231,
-      "comments": 202,
+      "points": 1252,
+      "comments": 206,
       "author": "agentes-chat",
       "summary": "Open-source, self-hosted Slack alternative where your team and AI agents work together in channels and DMs. Agents run on Claude, ChatGPT/Codex, Gemini or Grok, with MCP tools, their own computer and browser, routines, memory and approvals. Web, desktop and phone apps. Docker Compose + Postgres. AGPL-3.0.",
       "recipe": "github_llm",
-      "buzz": 1847,
+      "buzz": 1880,
       "topics": [
         "ai",
         "dev"
@@ -1162,12 +1162,12 @@
       "title": "SAOS-3624/dsh-see-now",
       "url": "https://github.com/SAOS-3624/dsh-see-now",
       "ts": 1793539954.0,
-      "points": 613,
+      "points": 616,
       "comments": 63,
       "author": "SAOS-3624",
       "summary": "让 AI 实时看见你的屏幕：按变化量筛选帧、多帧拼进一张图，静止画面几乎不花 token",
       "recipe": "github_llm",
-      "buzz": 802,
+      "buzz": 805,
       "topics": [
         "ai",
         "crypto"
@@ -1180,12 +1180,12 @@
       "title": "Dodaios/ste80-humanizer",
       "url": "https://github.com/Dodaios/ste80-humanizer",
       "ts": 1794244739.0,
-      "points": 465,
+      "points": 471,
       "comments": 29,
       "author": "Dodaios",
       "summary": "STE80 Humanizer: agent skill that removes AI tells and rewrites text 80% of the way to ASD-STE100 (Simplified Technical English), the method Andrej Karpathy shared.",
       "recipe": "github_llm",
-      "buzz": 562,
+      "buzz": 568,
       "topics": [
         "ai"
       ],
@@ -1197,12 +1197,12 @@
       "title": "Interactive-Active-AI/NextTransformer",
       "url": "https://github.com/Interactive-Active-AI/NextTransformer",
       "ts": 1793432773.0,
-      "points": 409,
+      "points": 410,
       "comments": 33,
       "author": "Interactive-Active-AI",
       "summary": ":sunrise: A comprehensive, cutting-edge open-source framework for next-generation Transformers/LLM, with compute-matched benchmarking and a platform for autonomous architecture research.",
       "recipe": "github_llm",
-      "buzz": 508,
+      "buzz": 509,
       "topics": [
         "ai",
         "dev",
@@ -1231,17 +1231,35 @@
       "date": "2026-11-01"
     },
     {
+      "uid": "gh:hyperionaidev/smolmaxxing",
+      "source": "github",
+      "title": "hyperionaidev/smolmaxxing",
+      "url": "https://github.com/hyperionaidev/smolmaxxing",
+      "ts": 1793776181.0,
+      "points": 427,
+      "comments": 14,
+      "author": "hyperionaidev",
+      "summary": "maxxing the ability to run different LLMs on the smallest devices possible",
+      "recipe": "github_llm",
+      "buzz": 469,
+      "topics": [
+        "ai",
+        "dev"
+      ],
+      "date": "2026-11-04"
+    },
+    {
       "uid": "gh:TIGER-AI-Lab/WebsiteBench",
       "source": "github",
       "title": "TIGER-AI-Lab/WebsiteBench",
       "url": "https://github.com/TIGER-AI-Lab/WebsiteBench",
       "ts": 1793797130.0,
-      "points": 300,
-      "comments": 40,
+      "points": 308,
+      "comments": 41,
       "author": "TIGER-AI-Lab",
       "summary": "Can AI agents rebuild websites through browser exploration?",
       "recipe": "github_ai",
-      "buzz": 420,
+      "buzz": 431,
       "topics": [
         "ai"
       ],
@@ -1253,12 +1271,12 @@
       "title": "yucezerey/turkish-anti-ai-skill",
       "url": "https://github.com/yucezerey/turkish-anti-ai-skill",
       "ts": 1793909308.0,
-      "points": 308,
+      "points": 309,
       "comments": 25,
       "author": "yucezerey",
       "summary": "Türkçe metinlerdeki yapay zeka izlerini (AI slop, translationese, çeviri kokan cümle mimarisi ve TDK hatalarını) temizleyen Agent Skill ve Humanizer paketi.",
       "recipe": "github_llm",
-      "buzz": 383,
+      "buzz": 384,
       "topics": [
         "ai"
       ],
@@ -1270,12 +1288,12 @@
       "title": "zaxiu88888/issue-rag",
       "url": "https://github.com/zaxiu88888/issue-rag",
       "ts": 1793532745.0,
-      "points": 345,
+      "points": 357,
       "comments": 6,
       "author": "zaxiu88888",
       "summary": "RAG over GitHub issues, with a hand-reviewed eval set and an audit of the judge itself. Reports the interval, not just the best number.",
       "recipe": "github_llm",
-      "buzz": 363,
+      "buzz": 375,
       "topics": [
         "ai",
         "dev"
@@ -1324,12 +1342,12 @@
       "title": "huawei-csl/MACaQ",
       "url": "https://github.com/huawei-csl/MACaQ",
       "ts": 1794300742.0,
-      "points": 215,
-      "comments": 11,
+      "points": 219,
+      "comments": 13,
       "author": "huawei-csl",
       "summary": "SOTA model-agnostic quantization for GGUF, local inference and beyond. Quantize and run text, image, video and audio models with llama.cpp, vLLM, Diffusers and PyTorch.",
       "recipe": "github_llm",
-      "buzz": 278,
+      "buzz": 268,
       "topics": [
         "ai",
         "dev"
@@ -1342,12 +1360,12 @@
       "title": "fanhuayishiy/ai-crew-pass",
       "url": "https://github.com/fanhuayishiy/ai-crew-pass",
       "ts": 1793983622.0,
-      "points": 185,
+      "points": 186,
       "comments": 15,
       "author": "fanhuayishiy",
       "summary": "万物工牌｜AI 角色、人物特别篇与自定义 3D 工牌，支持拖拽翻面和透明 PNG 下载。微信公众号：风花AI实验室。",
       "recipe": "github_ai",
-      "buzz": 240,
+      "buzz": 241,
       "topics": [
         "ai"
       ],
@@ -1360,11 +1378,11 @@
       "url": "https://github.com/HimanshuMohanty-Git24/gitaviswa",
       "ts": 1793769611.0,
       "points": 102,
-      "comments": 43,
+      "comments": 44,
       "author": "HimanshuMohanty-Git24",
       "summary": "GitaViśva (गीताविश्व): the Bhagavad Gita as a living knowledge graph. Explore all 700 verses in 3D, read 20 classical commentaries, listen to recitations, ask a GraphRAG companion with your own free API key, and keep a private journal. Works offline.",
       "recipe": "github_llm",
-      "buzz": 231,
+      "buzz": 234,
       "topics": [
         "ai",
         "dev",
@@ -1378,12 +1396,12 @@
       "title": "beiwocaishijia/gezhi-sheets",
       "url": "https://github.com/beiwocaishijia/gezhi-sheets",
       "ts": 1794194963.0,
-      "points": 96,
-      "comments": 33,
+      "points": 107,
+      "comments": 34,
       "author": "beiwocaishijia",
       "summary": "格知 AI · Gezhi Sheets｜让表格听懂你的话。支持 GLM、Kimi、豆包、DeepSeek、Qwen 的本地 AI 表格助手。",
       "recipe": "github_ai",
-      "buzz": 205,
+      "buzz": 219,
       "topics": [
         "ai"
       ],
@@ -1442,42 +1460,42 @@
       "date": "2026-10-31"
     },
     {
-      "uid": "gh:joeseesun/xnews",
-      "source": "github",
-      "title": "joeseesun/xnews",
-      "url": "https://github.com/joeseesun/xnews",
-      "ts": 1793896960.0,
-      "points": 131,
-      "comments": 16,
-      "author": "joeseesun",
-      "summary": "X News — overseas founder posts & AI videos, rewritten in Qiaomu Chinese",
-      "recipe": "github_ai",
-      "buzz": 179,
-      "topics": [
-        "ai",
-        "dev",
-        "biz"
-      ],
-      "date": "2026-11-05"
-    },
-    {
       "uid": "gh:glincker/awesome-selfhosted-ai",
       "source": "github",
       "title": "glincker/awesome-selfhosted-ai",
       "url": "https://github.com/glincker/awesome-selfhosted-ai",
       "ts": 1793425840.0,
       "points": 125,
-      "comments": 18,
+      "comments": 19,
       "author": "glincker",
       "summary": "Curated list of self-hosted open-source AI: local LLMs, chat UIs, agents, MCP servers, RAG, speech and image generation. Health-checked weekly, dead projects removed automatically.",
       "recipe": "github_llm",
-      "buzz": 179,
+      "buzz": 182,
       "topics": [
         "ai",
         "science",
         "hardware"
       ],
       "date": "2026-10-31"
+    },
+    {
+      "uid": "gh:joeseesun/xnews",
+      "source": "github",
+      "title": "joeseesun/xnews",
+      "url": "https://github.com/joeseesun/xnews",
+      "ts": 1793896960.0,
+      "points": 132,
+      "comments": 16,
+      "author": "joeseesun",
+      "summary": "X News — overseas founder posts & AI videos, rewritten in Qiaomu Chinese",
+      "recipe": "github_ai",
+      "buzz": 180,
+      "topics": [
+        "ai",
+        "dev",
+        "biz"
+      ],
+      "date": "2026-11-05"
     },
     {
       "uid": "gh:Aevonix/FlashAlign",
@@ -1497,19 +1515,23 @@
       "date": "2026-10-31"
     },
     {
-      "uid": "gh:NamtaoProductions/0rwx.com",
+      "uid": "gh:hitkeeen/blender-ai-mcp-addon",
       "source": "github",
-      "title": "NamtaoProductions/0rwx.com",
-      "url": "https://github.com/NamtaoProductions/0rwx.com",
-      "ts": 1794042731.0,
-      "points": 104,
-      "comments": 11,
-      "author": "NamtaoProductions",
-      "summary": "",
-      "recipe": "github_ai",
-      "buzz": 147,
-      "topics": [],
-      "date": "2026-11-07"
+      "title": "hitkeeen/blender-ai-mcp-addon",
+      "url": "https://github.com/hitkeeen/blender-ai-mcp-addon",
+      "ts": 1794493935.0,
+      "points": 91,
+      "comments": 1,
+      "author": "hitkeeen",
+      "summary": "AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with ChatGPT/GPT, Claude, Gemini, Ollama, OpenCode. Blender AI addon, copilot for 3D, bpy Python scripting, MCP integration.",
+      "recipe": "github_llm",
+      "buzz": 174,
+      "topics": [
+        "ai",
+        "dev",
+        "hardware"
+      ],
+      "date": "2026-11-12"
     },
     {
       "uid": "gh:bytesbay/pi-gpui",
@@ -1517,12 +1539,12 @@
       "title": "bytesbay/pi-gpui",
       "url": "https://github.com/bytesbay/pi-gpui",
       "ts": 1793830379.0,
-      "points": 117,
-      "comments": 10,
+      "points": 122,
+      "comments": 11,
       "author": "bytesbay",
       "summary": "A native GUI for the pi coding agent, built with Rust and GPUI. For macOS (Apple silicon) and Linux.",
       "recipe": "github_llm",
-      "buzz": 147,
+      "buzz": 155,
       "topics": [
         "ai",
         "dev",
@@ -1531,17 +1553,32 @@
       "date": "2026-11-04"
     },
     {
+      "uid": "gh:NamtaoProductions/0rwx.com",
+      "source": "github",
+      "title": "NamtaoProductions/0rwx.com",
+      "url": "https://github.com/NamtaoProductions/0rwx.com",
+      "ts": 1794042731.0,
+      "points": 105,
+      "comments": 11,
+      "author": "NamtaoProductions",
+      "summary": "",
+      "recipe": "github_ai",
+      "buzz": 148,
+      "topics": [],
+      "date": "2026-11-07"
+    },
+    {
       "uid": "gh:gitcommit90/1Helm",
       "source": "github",
       "title": "gitcommit90/1Helm",
       "url": "https://github.com/gitcommit90/1Helm",
       "ts": 1794526530.0,
-      "points": 61,
+      "points": 62,
       "comments": 0,
       "author": "gitcommit90",
       "summary": "A personal AI workspace on your own Cloudflare account, with persistent memory, channel computers, and your choice of AI provider.",
       "recipe": "github_ai",
-      "buzz": 141,
+      "buzz": 142,
       "topics": [
         "ai",
         "dev",
@@ -1565,6 +1602,42 @@
         "ai"
       ],
       "date": "2026-11-10"
+    },
+    {
+      "uid": "gh:8hjkkwikl8/ai-portfolio",
+      "source": "github",
+      "title": "8hjkkwikl8/ai-portfolio",
+      "url": "https://github.com/8hjkkwikl8/ai-portfolio",
+      "ts": 1794374894.0,
+      "points": 100,
+      "comments": 0,
+      "author": "8hjkkwikl8",
+      "summary": "三个可运行的 AI 工程项目：可追溯 RAG、提示词评测与受守护的 NL2SQL 分析",
+      "recipe": "github_ai",
+      "buzz": 130,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-11-11"
+    },
+    {
+      "uid": "gh:xl03-bit/sm120-nvfp4-training",
+      "source": "github",
+      "title": "xl03-bit/sm120-nvfp4-training",
+      "url": "https://github.com/xl03-bit/sm120-nvfp4-training",
+      "ts": 1793605196.0,
+      "points": 94,
+      "comments": 12,
+      "author": "xl03-bit",
+      "summary": "Full NVFP4 training for GeForce RTX 50-series and RTX PRO 6000 Blackwell GPUs (SM120). Built on Infatoshi/nvfp4-sm120, with software stochastic rounding, random Hadamard transforms and six profiles for speed and memory. On one RTX 5060 Ti 16GB, validation loss fell over 2,048 full-parameter FineWeb updates of a 4.06B model.",
+      "recipe": "github_ai",
+      "buzz": 130,
+      "topics": [
+        "ai",
+        "biz",
+        "hardware"
+      ],
+      "date": "2026-11-02"
     },
     {
       "uid": "gh:Bil0000/Hill-Climb",
@@ -1602,25 +1675,6 @@
       "date": "2026-11-02"
     },
     {
-      "uid": "gh:xl03-bit/sm120-nvfp4-training",
-      "source": "github",
-      "title": "xl03-bit/sm120-nvfp4-training",
-      "url": "https://github.com/xl03-bit/sm120-nvfp4-training",
-      "ts": 1793605196.0,
-      "points": 92,
-      "comments": 12,
-      "author": "xl03-bit",
-      "summary": "Full NVFP4 training for GeForce RTX 50-series and RTX PRO 6000 Blackwell GPUs (SM120). Built on Infatoshi/nvfp4-sm120, with software stochastic rounding, random Hadamard transforms and six profiles for speed and memory. On one RTX 5060 Ti 16GB, validation loss fell over 2,048 full-parameter FineWeb updates of a 4.06B model.",
-      "recipe": "github_ai",
-      "buzz": 128,
-      "topics": [
-        "ai",
-        "biz",
-        "hardware"
-      ],
-      "date": "2026-11-02"
-    },
-    {
       "uid": "gh:DKKD13/dsh-finance",
       "source": "github",
       "title": "DKKD13/dsh-finance",
@@ -1638,17 +1692,17 @@
       "date": "2026-11-01"
     },
     {
-      "uid": "gh:8hjkkwikl8/ai-portfolio",
+      "uid": "gh:molly554/whiteboard-ai-tutor",
       "source": "github",
-      "title": "8hjkkwikl8/ai-portfolio",
-      "url": "https://github.com/8hjkkwikl8/ai-portfolio",
-      "ts": 1794374894.0,
-      "points": 93,
-      "comments": 0,
-      "author": "8hjkkwikl8",
-      "summary": "三个可运行的 AI 工程项目：可追溯 RAG、提示词评测与受守护的 NL2SQL 分析",
-      "recipe": "github_ai",
-      "buzz": 123,
+      "title": "molly554/whiteboard-ai-tutor",
+      "url": "https://github.com/molly554/whiteboard-ai-tutor",
+      "ts": 1794396141.0,
+      "points": 74,
+      "comments": 7,
+      "author": "molly554",
+      "summary": "Open-source AI tutor that teaches on a whiteboard. Benchmark of 6 LLMs (Claude, Gemini, DeepSeek): 288 lessons drawn stroke by stroke, blind-reviewed. 白板 AI 导师 / AI 老师讲课评测",
+      "recipe": "github_llm",
+      "buzz": 125,
       "topics": [
         "ai"
       ],
@@ -1660,12 +1714,12 @@
       "title": "munitkala/selfsemester",
       "url": "https://github.com/munitkala/selfsemester",
       "ts": 1793825456.0,
-      "points": 87,
+      "points": 90,
       "comments": 8,
       "author": "munitkala",
       "summary": "Windows app that turns any subject into a full, scheduled, graded course, built and marked by your own Claude Code",
       "recipe": "github_llm",
-      "buzz": 111,
+      "buzz": 114,
       "topics": [],
       "date": "2026-11-04"
     },
@@ -1761,12 +1815,12 @@
       "title": "shany9200/Three",
       "url": "https://github.com/shany9200/Three",
       "ts": 1793927228.0,
-      "points": 98,
+      "points": 100,
       "comments": 0,
       "author": "shany9200",
       "summary": "A self-extending AI agent that runs anywhere Termux runs. Writes its own capabilities, remembers across sessions.",
       "recipe": "github_llm",
-      "buzz": 98,
+      "buzz": 100,
       "topics": [
         "ai"
       ],
@@ -1778,16 +1832,50 @@
       "title": "mintlify/agent-traffic",
       "url": "https://github.com/mintlify/agent-traffic",
       "ts": 1794275954.0,
-      "points": 72,
+      "points": 74,
       "comments": 3,
       "author": "mintlify",
       "summary": "Tell agents, AI crawlers, search crawlers and bots apart from people",
       "recipe": "github_llm",
-      "buzz": 91,
+      "buzz": 93,
       "topics": [
         "ai"
       ],
       "date": "2026-11-10"
+    },
+    {
+      "uid": "gh:sahinmola5-rgb/coregold-vcc-terminal",
+      "source": "github",
+      "title": "sahinmola5-rgb/coregold-vcc-terminal",
+      "url": "https://github.com/sahinmola5-rgb/coregold-vcc-terminal",
+      "ts": 1793430693.0,
+      "points": 91,
+      "comments": 0,
+      "author": "sahinmola5-rgb",
+      "summary": "别再拿国内双币卡去肉身试探 Stripe Radar。 发卡行评分（Issuer Risk Score）一旦被标黑，换十次代理 IP 也是 0.05 秒秒拒。",
+      "recipe": "github_ai",
+      "buzz": 91,
+      "topics": [
+        "dev"
+      ],
+      "date": "2026-10-31"
+    },
+    {
+      "uid": "gh:keyshadougherty70-dev/coregold-reseller-api",
+      "source": "github",
+      "title": "keyshadougherty70-dev/coregold-reseller-api",
+      "url": "https://github.com/keyshadougherty70-dev/coregold-reseller-api",
+      "ts": 1793429497.0,
+      "points": 90,
+      "comments": 0,
+      "author": "keyshadougherty70-dev",
+      "summary": "⚡ 别找二手卡贩子了！号商与 API 中继站专属批量供卡底座",
+      "recipe": "github_ai",
+      "buzz": 90,
+      "topics": [
+        "dev"
+      ],
+      "date": "2026-10-31"
     },
     {
       "uid": "gh:bytedance/axion1_0",
@@ -1807,87 +1895,17 @@
       "date": "2026-11-02"
     },
     {
-      "uid": "gh:sahinmola5-rgb/coregold-vcc-terminal",
-      "source": "github",
-      "title": "sahinmola5-rgb/coregold-vcc-terminal",
-      "url": "https://github.com/sahinmola5-rgb/coregold-vcc-terminal",
-      "ts": 1793430693.0,
-      "points": 86,
-      "comments": 0,
-      "author": "sahinmola5-rgb",
-      "summary": "别再拿国内双币卡去肉身试探 Stripe Radar。 发卡行评分（Issuer Risk Score）一旦被标黑，换十次代理 IP 也是 0.05 秒秒拒。",
-      "recipe": "github_ai",
-      "buzz": 86,
-      "topics": [
-        "dev"
-      ],
-      "date": "2026-10-31"
-    },
-    {
-      "uid": "gh:keyshadougherty70-dev/coregold-reseller-api",
-      "source": "github",
-      "title": "keyshadougherty70-dev/coregold-reseller-api",
-      "url": "https://github.com/keyshadougherty70-dev/coregold-reseller-api",
-      "ts": 1793429497.0,
-      "points": 85,
-      "comments": 0,
-      "author": "keyshadougherty70-dev",
-      "summary": "⚡ 别找二手卡贩子了！号商与 API 中继站专属批量供卡底座",
-      "recipe": "github_ai",
-      "buzz": 85,
-      "topics": [
-        "dev"
-      ],
-      "date": "2026-10-31"
-    },
-    {
-      "uid": "gh:leishifu666/lsf-website-design",
-      "source": "github",
-      "title": "leishifu666/lsf-website-design",
-      "url": "https://github.com/leishifu666/lsf-website-design",
-      "ts": 1793726415.0,
-      "points": 64,
-      "comments": 7,
-      "author": "leishifu666",
-      "summary": "LSF-网站设计基础版：参考创作、原创探索与独立评审，含 GPT 6 PRO、Claude Opus 5.5 和 DeepSeek V4.1 Flash 作品截图",
-      "recipe": "github_ai",
-      "buzz": 85,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-03"
-    },
-    {
-      "uid": "gh:Jumbomuffin777/Frontier-UI",
-      "source": "github",
-      "title": "Jumbomuffin777/Frontier-UI",
-      "url": "https://github.com/Jumbomuffin777/Frontier-UI",
-      "ts": 1793515283.0,
-      "points": 69,
-      "comments": 5,
-      "author": "Jumbomuffin777",
-      "summary": "ChatGPT-style generative UI for Open WebUI: photo galleries, live maps with real routes, multi-day trips, budgets, calculators, live weather & stocks, link previews, and one-click Word/Excel/PowerPoint exports via ArtCraft. One file, no API keys.",
-      "recipe": "github_llm",
-      "buzz": 84,
-      "topics": [
-        "ai",
-        "dev",
-        "science"
-      ],
-      "date": "2026-11-01"
-    },
-    {
       "uid": "gh:jailsonbronk21-sketch/deepseek-r1-failover-vcc",
       "source": "github",
       "title": "jailsonbronk21-sketch/deepseek-r1-failover-vcc",
       "url": "https://github.com/jailsonbronk21-sketch/deepseek-r1-failover-vcc",
       "ts": 1793433173.0,
-      "points": 82,
+      "points": 87,
       "comments": 0,
       "author": "jailsonbronk21-sketch",
       "summary": "⚡ DeepSeek-R1 宕机备用指南：用 CoreGold 1 分钟拉起 Claude / OpenAI 逃生通道",
       "recipe": "github_ai",
-      "buzz": 82,
+      "buzz": 87,
       "topics": [
         "ai"
       ],
@@ -1899,32 +1917,31 @@
       "title": "davidcitahernandez-debug/computer-use-agent-vault",
       "url": "https://github.com/davidcitahernandez-debug/computer-use-agent-vault",
       "ts": 1793587719.0,
-      "points": 82,
+      "points": 87,
       "comments": 0,
       "author": "davidcitahernandez-debug",
       "summary": "🤖 敢让 AI 自己操作电脑？先给你的 Agent 挂上一道“支付沙箱",
       "recipe": "github_ai",
-      "buzz": 82,
+      "buzz": 87,
       "topics": [
         "ai"
       ],
       "date": "2026-11-02"
     },
     {
-      "uid": "gh:sshah03/recalc",
+      "uid": "gh:leishifu666/lsf-website-design",
       "source": "github",
-      "title": "sshah03/recalc",
-      "url": "https://github.com/sshah03/recalc",
-      "ts": 1793740568.0,
-      "points": 73,
-      "comments": 3,
-      "author": "sshah03",
-      "summary": "A spreadsheet you share with your AI agents: every cell can hold a value, a formula, a terminal command, or a Claude Code or Codex agent.",
-      "recipe": "github_llm",
-      "buzz": 82,
+      "title": "leishifu666/lsf-website-design",
+      "url": "https://github.com/leishifu666/lsf-website-design",
+      "ts": 1793726415.0,
+      "points": 65,
+      "comments": 7,
+      "author": "leishifu666",
+      "summary": "LSF-网站设计基础版：参考创作、原创探索与独立评审，含 GPT 6 PRO、Claude Opus 5.5 和 DeepSeek V4.1 Flash 作品截图",
+      "recipe": "github_ai",
+      "buzz": 86,
       "topics": [
-        "ai",
-        "dev"
+        "ai"
       ],
       "date": "2026-11-03"
     },
@@ -1934,16 +1951,68 @@
       "title": "drophubsuporte-web/coregold-ai-runner",
       "url": "https://github.com/drophubsuporte-web/coregold-ai-runner",
       "ts": 1793432269.0,
-      "points": 80,
+      "points": 85,
       "comments": 0,
       "author": "drophubsuporte-web",
       "summary": "⚡ 别让支付卡死 AI 生产力！用 CoreGold 彻底解决 Cursor / Claude 充值风控",
       "recipe": "github_ai",
-      "buzz": 80,
+      "buzz": 85,
       "topics": [
         "ai"
       ],
       "date": "2026-10-31"
+    },
+    {
+      "uid": "gh:montimazumder14-del/coregold-cloud-gpu-pay",
+      "source": "github",
+      "title": "montimazumder14-del/coregold-cloud-gpu-pay",
+      "url": "https://github.com/montimazumder14-del/coregold-cloud-gpu-pay",
+      "ts": 1793596286.0,
+      "points": 83,
+      "comments": 0,
+      "author": "montimazumder14-del",
+      "summary": "别让支付掐死你的 GPU 算力！用 CoreGold 解决 Lambda Labs / RunPod 充值风控",
+      "recipe": "github_ai",
+      "buzz": 83,
+      "topics": [
+        "hardware"
+      ],
+      "date": "2026-11-02"
+    },
+    {
+      "uid": "gh:tdelowar17-tech/coregold-agent-paygate",
+      "source": "github",
+      "title": "tdelowar17-tech/coregold-agent-paygate",
+      "url": "https://github.com/tdelowar17-tech/coregold-agent-paygate",
+      "ts": 1793589650.0,
+      "points": 81,
+      "comments": 0,
+      "author": "tdelowar17-tech",
+      "summary": "⚡ 别让“幽灵退款”封掉你的生产力号！CoreGold 破解 2026 最新 AI 结算风控",
+      "recipe": "github_ai",
+      "buzz": 81,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-11-02"
+    },
+    {
+      "uid": "gh:jeger2019-collab/openai-o3-deepseek-billing-proxy",
+      "source": "github",
+      "title": "jeger2019-collab/openai-o3-deepseek-billing-proxy",
+      "url": "https://github.com/jeger2019-collab/openai-o3-deepseek-billing-proxy",
+      "ts": 1793598413.0,
+      "points": 80,
+      "comments": 0,
+      "author": "jeger2019-collab",
+      "summary": "深度推理时代 API 支付灾备：彻底搞定 o3-mini / Claude 3.7 扣费风控",
+      "recipe": "github_ai",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev"
+      ],
+      "date": "2026-11-02"
     },
     {
       "uid": "rss:8f90ee80710e8d",
@@ -2281,101 +2350,17 @@
       "date": "2026-11-12"
     },
     {
-      "uid": "gh:montimazumder14-del/coregold-cloud-gpu-pay",
-      "source": "github",
-      "title": "montimazumder14-del/coregold-cloud-gpu-pay",
-      "url": "https://github.com/montimazumder14-del/coregold-cloud-gpu-pay",
-      "ts": 1793596286.0,
-      "points": 78,
-      "comments": 0,
-      "author": "montimazumder14-del",
-      "summary": "别让支付掐死你的 GPU 算力！用 CoreGold 解决 Lambda Labs / RunPod 充值风控",
-      "recipe": "github_ai",
-      "buzz": 78,
-      "topics": [
-        "hardware"
-      ],
-      "date": "2026-11-02"
-    },
-    {
-      "uid": "gh:Ritrls/dream-arcade-demo",
-      "source": "github",
-      "title": "Ritrls/dream-arcade-demo",
-      "url": "https://github.com/Ritrls/dream-arcade-demo",
-      "ts": 1793714141.0,
-      "points": 77,
-      "comments": 0,
-      "author": "Ritrls",
-      "summary": "自然语言创造单位：RunningHub 生成属性、技能和素材，直接带入线路防守、口袋 RTS 和增量矿场。",
-      "recipe": "github_ai",
-      "buzz": 77,
-      "topics": [],
-      "date": "2026-11-03"
-    },
-    {
-      "uid": "gh:tdelowar17-tech/coregold-agent-paygate",
-      "source": "github",
-      "title": "tdelowar17-tech/coregold-agent-paygate",
-      "url": "https://github.com/tdelowar17-tech/coregold-agent-paygate",
-      "ts": 1793589650.0,
-      "points": 76,
-      "comments": 0,
-      "author": "tdelowar17-tech",
-      "summary": "⚡ 别让“幽灵退款”封掉你的生产力号！CoreGold 破解 2026 最新 AI 结算风控",
-      "recipe": "github_ai",
-      "buzz": 76,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-02"
-    },
-    {
-      "uid": "gh:jeger2019-collab/openai-o3-deepseek-billing-proxy",
-      "source": "github",
-      "title": "jeger2019-collab/openai-o3-deepseek-billing-proxy",
-      "url": "https://github.com/jeger2019-collab/openai-o3-deepseek-billing-proxy",
-      "ts": 1793598413.0,
-      "points": 74,
-      "comments": 0,
-      "author": "jeger2019-collab",
-      "summary": "深度推理时代 API 支付灾备：彻底搞定 o3-mini / Claude 3.7 扣费风控",
-      "recipe": "github_ai",
-      "buzz": 74,
-      "topics": [
-        "ai",
-        "dev"
-      ],
-      "date": "2026-11-02"
-    },
-    {
-      "uid": "gh:ruletascasiteveo1-bot/coregold-multimodal-pay",
-      "source": "github",
-      "title": "ruletascasiteveo1-bot/coregold-multimodal-pay",
-      "url": "https://github.com/ruletascasiteveo1-bot/coregold-multimodal-pay",
-      "ts": 1793591996.0,
-      "points": 73,
-      "comments": 0,
-      "author": "ruletascasiteveo1-bot",
-      "summary": "别让支付卡死生成式视频！用 CoreGold 解决 Sora / Runway / 顶流视频 AI 充值风控",
-      "recipe": "github_ai",
-      "buzz": 73,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-02"
-    },
-    {
       "uid": "gh:adinurlanova218-png/ai-payment-router-proxy",
       "source": "github",
       "title": "adinurlanova218-png/ai-payment-router-proxy",
       "url": "https://github.com/adinurlanova218-png/ai-payment-router-proxy",
       "ts": 1793600011.0,
-      "points": 73,
+      "points": 79,
       "comments": 0,
       "author": "adinurlanova218-png",
       "summary": "⚡ 别让支付打断生产力：AI API 与自动化 Agent 扣费避坑指南",
       "recipe": "github_ai",
-      "buzz": 73,
+      "buzz": 79,
       "topics": [
         "ai",
         "dev"
@@ -2388,12 +2373,44 @@
       "title": "alanautofin-a11y/open-operator-payment-proxy",
       "url": "https://github.com/alanautofin-a11y/open-operator-payment-proxy",
       "ts": 1793599118.0,
-      "points": 72,
+      "points": 78,
       "comments": 0,
       "author": "alanautofin-a11y",
       "summary": "当 AI Agent 开始替你操作浏览器：为什么你的支付通道会瞬间瘫痪？",
       "recipe": "github_ai",
-      "buzz": 72,
+      "buzz": 78,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-11-02"
+    },
+    {
+      "uid": "gh:Ritrls/dream-arcade-demo",
+      "source": "github",
+      "title": "Ritrls/dream-arcade-demo",
+      "url": "https://github.com/Ritrls/dream-arcade-demo",
+      "ts": 1793714141.0,
+      "points": 78,
+      "comments": 0,
+      "author": "Ritrls",
+      "summary": "自然语言创造单位：RunningHub 生成属性、技能和素材，直接带入线路防守、口袋 RTS 和增量矿场。",
+      "recipe": "github_ai",
+      "buzz": 78,
+      "topics": [],
+      "date": "2026-11-03"
+    },
+    {
+      "uid": "gh:ruletascasiteveo1-bot/coregold-multimodal-pay",
+      "source": "github",
+      "title": "ruletascasiteveo1-bot/coregold-multimodal-pay",
+      "url": "https://github.com/ruletascasiteveo1-bot/coregold-multimodal-pay",
+      "ts": 1793591996.0,
+      "points": 77,
+      "comments": 0,
+      "author": "ruletascasiteveo1-bot",
+      "summary": "别让支付卡死生成式视频！用 CoreGold 解决 Sora / Runway / 顶流视频 AI 充值风控",
+      "recipe": "github_ai",
+      "buzz": 77,
       "topics": [
         "ai"
       ],
@@ -2405,12 +2422,12 @@
       "title": "ahmedaydinmustafa6767-sketch/claude-pro-subscription-guide",
       "url": "https://github.com/ahmedaydinmustafa6767-sketch/claude-pro-subscription-guide",
       "ts": 1793600760.0,
-      "points": 70,
+      "points": 76,
       "comments": 0,
       "author": "ahmedaydinmustafa6767-sketch",
       "summary": "⚡ 2026 最新实测：手把手教你用 CoreGold 3 分钟开通 Claude Pro / Team",
       "recipe": "github_ai",
-      "buzz": 70,
+      "buzz": 76,
       "topics": [
         "dev"
       ],
@@ -2422,12 +2439,12 @@
       "title": "visitantexbox64-byte/cursor-pro-subscription-guide",
       "url": "https://github.com/visitantexbox64-byte/cursor-pro-subscription-guide",
       "ts": 1793693560.0,
-      "points": 68,
+      "points": 74,
       "comments": 0,
       "author": "visitantexbox64-byte",
       "summary": "⚡ 2026 最新实测：手把手教你用 CoreGold 3 分钟开通 Cursor Pro / Business",
       "recipe": "github_ai",
-      "buzz": 68,
+      "buzz": 74,
       "topics": [
         "dev"
       ],
@@ -2439,12 +2456,12 @@
       "title": "eragritchiegg15-beep/elevenlabs-voice-api-pay",
       "url": "https://github.com/eragritchiegg15-beep/elevenlabs-voice-api-pay",
       "ts": 1793700089.0,
-      "points": 65,
+      "points": 71,
       "comments": 0,
       "author": "eragritchiegg15-beep",
       "summary": "ElevenLabs 与海外 AI 拟真音频平台充值实战：CoreGold 商业虚拟卡破解 Stripe 大额扣费拦截与防滥用连坐。",
       "recipe": "github_ai",
-      "buzz": 65,
+      "buzz": 71,
       "topics": [
         "ai",
         "dev"
@@ -2457,16 +2474,84 @@
       "title": "raudhatulirfandta-droid/claude-code-billing-setup",
       "url": "https://github.com/raudhatulirfandta-droid/claude-code-billing-setup",
       "ts": 1793695374.0,
-      "points": 65,
+      "points": 71,
       "comments": 0,
       "author": "raudhatulirfandta-droid",
       "summary": "Claude 3.7 混合思考与 Claude Code 终端免拒绑卡：用 CoreGold 商业卡破除 Anthropic 幽灵退款砍单。",
       "recipe": "github_ai",
-      "buzz": 65,
+      "buzz": 71,
       "topics": [
         "ai"
       ],
       "date": "2026-11-03"
+    },
+    {
+      "uid": "gh:victorcuscahua1974-afk/ai-video-studio-billing-guard",
+      "source": "github",
+      "title": "victorcuscahua1974-afk/ai-video-studio-billing-guard",
+      "url": "https://github.com/victorcuscahua1974-afk/ai-video-studio-billing-guard",
+      "ts": 1793698403.0,
+      "points": 69,
+      "comments": 0,
+      "author": "victorcuscahua1974-afk",
+      "summary": "Sora、Runway Gen-3 与 Midjourney 大额订阅专属卡：防跨境风控拦截、多账号渲染连坐与忘记取消续费。",
+      "recipe": "github_ai",
+      "buzz": 69,
+      "topics": [
+        "ai",
+        "dev"
+      ],
+      "date": "2026-11-03"
+    },
+    {
+      "uid": "gh:kristofermeyer9-cloud/huggingface-pro-inference-pay",
+      "source": "github",
+      "title": "kristofermeyer9-cloud/huggingface-pro-inference-pay",
+      "url": "https://github.com/kristofermeyer9-cloud/huggingface-pro-inference-pay",
+      "ts": 1793789439.0,
+      "points": 66,
+      "comments": 0,
+      "author": "kristofermeyer9-cloud",
+      "summary": "Hugging Face Pro 与 Inference Endpoints 扣费指南：解决部署模型卡密拒付与弹性计费穿透。",
+      "recipe": "github_ai",
+      "buzz": 66,
+      "topics": [],
+      "date": "2026-11-04"
+    },
+    {
+      "uid": "gh:sojibyyy6-lab/apple-pay-us-ai-subscription",
+      "source": "github",
+      "title": "sojibyyy6-lab/apple-pay-us-ai-subscription",
+      "url": "https://github.com/sojibyyy6-lab/apple-pay-us-ai-subscription",
+      "ts": 1793786528.0,
+      "points": 66,
+      "comments": 0,
+      "author": "sojibyyy6-lab",
+      "summary": "Apple Pay 绑定美区虚拟卡指南：免风控订阅 ChatGPT、Claude 与海外 AI，破解无原生美卡难题。",
+      "recipe": "github_ai",
+      "buzz": 66,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-11-04"
+    },
+    {
+      "uid": "gh:bazongotalato-cyber/deepseek-api-overseas-proxy",
+      "source": "github",
+      "title": "bazongotalato-cyber/deepseek-api-overseas-proxy",
+      "url": "https://github.com/bazongotalato-cyber/deepseek-api-overseas-proxy",
+      "ts": 1793787711.0,
+      "points": 65,
+      "comments": 0,
+      "author": "bazongotalato-cyber",
+      "summary": "DeepSeek-R1 / V3 海外云端实例调用结算：CoreGold 虚拟卡解决第三方托管平台充值拒付与预算穿透。",
+      "recipe": "github_ai",
+      "buzz": 65,
+      "topics": [
+        "ai",
+        "dev"
+      ],
+      "date": "2026-11-04"
     },
     {
       "uid": "gh:DespiteVoltcloud/InterviewCopilot-rpocket-team",
@@ -2484,85 +2569,17 @@
       "date": "2026-11-05"
     },
     {
-      "uid": "gh:victorcuscahua1974-afk/ai-video-studio-billing-guard",
-      "source": "github",
-      "title": "victorcuscahua1974-afk/ai-video-studio-billing-guard",
-      "url": "https://github.com/victorcuscahua1974-afk/ai-video-studio-billing-guard",
-      "ts": 1793698403.0,
-      "points": 63,
-      "comments": 0,
-      "author": "victorcuscahua1974-afk",
-      "summary": "Sora、Runway Gen-3 与 Midjourney 大额订阅专属卡：防跨境风控拦截、多账号渲染连坐与忘记取消续费。",
-      "recipe": "github_ai",
-      "buzz": 63,
-      "topics": [
-        "ai",
-        "dev"
-      ],
-      "date": "2026-11-03"
-    },
-    {
-      "uid": "gh:kristofermeyer9-cloud/huggingface-pro-inference-pay",
-      "source": "github",
-      "title": "kristofermeyer9-cloud/huggingface-pro-inference-pay",
-      "url": "https://github.com/kristofermeyer9-cloud/huggingface-pro-inference-pay",
-      "ts": 1793789439.0,
-      "points": 60,
-      "comments": 0,
-      "author": "kristofermeyer9-cloud",
-      "summary": "Hugging Face Pro 与 Inference Endpoints 扣费指南：解决部署模型卡密拒付与弹性计费穿透。",
-      "recipe": "github_ai",
-      "buzz": 60,
-      "topics": [],
-      "date": "2026-11-04"
-    },
-    {
-      "uid": "gh:sojibyyy6-lab/apple-pay-us-ai-subscription",
-      "source": "github",
-      "title": "sojibyyy6-lab/apple-pay-us-ai-subscription",
-      "url": "https://github.com/sojibyyy6-lab/apple-pay-us-ai-subscription",
-      "ts": 1793786528.0,
-      "points": 60,
-      "comments": 0,
-      "author": "sojibyyy6-lab",
-      "summary": "Apple Pay 绑定美区虚拟卡指南：免风控订阅 ChatGPT、Claude 与海外 AI，破解无原生美卡难题。",
-      "recipe": "github_ai",
-      "buzz": 60,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-04"
-    },
-    {
-      "uid": "gh:bazongotalato-cyber/deepseek-api-overseas-proxy",
-      "source": "github",
-      "title": "bazongotalato-cyber/deepseek-api-overseas-proxy",
-      "url": "https://github.com/bazongotalato-cyber/deepseek-api-overseas-proxy",
-      "ts": 1793787711.0,
-      "points": 59,
-      "comments": 0,
-      "author": "bazongotalato-cyber",
-      "summary": "DeepSeek-R1 / V3 海外云端实例调用结算：CoreGold 虚拟卡解决第三方托管平台充值拒付与预算穿透。",
-      "recipe": "github_ai",
-      "buzz": 59,
-      "topics": [
-        "ai",
-        "dev"
-      ],
-      "date": "2026-11-04"
-    },
-    {
       "uid": "gh:davidsorianop021-cmd/perplexity-pro-applepay-",
       "source": "github",
       "title": "davidsorianop021-cmd/perplexity-pro-applepay-",
       "url": "https://github.com/davidsorianop021-cmd/perplexity-pro-applepay-",
       "ts": 1793788095.0,
-      "points": 58,
+      "points": 64,
       "comments": 0,
       "author": "davidsorianop021-cmd",
       "summary": "Perplexity Pro 深度研究与搜索订阅：支持 Apple Pay 与网页双通道，告别拒付与连坐封禁",
       "recipe": "github_ai",
-      "buzz": 58,
+      "buzz": 64,
       "topics": [],
       "date": "2026-11-04"
     },
@@ -2572,12 +2589,12 @@
       "title": "manassiradao368-tech/gemini-2-flash-thinking-api-guard",
       "url": "https://github.com/manassiradao368-tech/gemini-2-flash-thinking-api-guard",
       "ts": 1793848489.0,
-      "points": 57,
+      "points": 63,
       "comments": 0,
       "author": "manassiradao368-tech",
       "summary": "Google Gemini 2.0 Flash Thinking 深度长思考 API 扣费避坑：解决 GCP 预授权频繁拒付、并发配额超支与账单熔断。",
       "recipe": "github_ai",
-      "buzz": 57,
+      "buzz": 63,
       "topics": [
         "dev"
       ],
@@ -2589,12 +2606,12 @@
       "title": "lidambrunel309-ship-it/OpenAI-GPT-6.1-Terra-GPT-6-Astra-",
       "url": "https://github.com/lidambrunel309-ship-it/OpenAI-GPT-6.1-Terra-GPT-6-Astra-",
       "ts": 1793849677.0,
-      "points": 57,
+      "points": 61,
       "comments": 0,
       "author": "lidambrunel309-ship-it",
       "summary": "gpt-6-terra-pro-subscription-guide",
       "recipe": "github_ai",
-      "buzz": 57,
+      "buzz": 61,
       "topics": [
         "ai",
         "dev"
