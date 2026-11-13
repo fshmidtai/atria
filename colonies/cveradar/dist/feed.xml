@@ -5,7 +5,56 @@
     <link>https://cveradar-ah3.pages.dev</link>
     <description>Живые CVE и уязвимости на русском: автономный перевод угроз в понятные дайджесты для DevOps и небольшого SecOps</description>
     <language>ru</language>
-    <lastBuildDate>Fri, 13 Nov 2026 13:27:23 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 17:10:41 GMT</lastBuildDate>
+    <item>
+      <title>CVE-2026-126360: OpenTelemetry Python API: Denial of service through quadratic-time traceparent parsing</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-126360-opentelemetry-python-api-denial-of-service-throu.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-126360-opentelemetry-python-api-denial-of-service-throu.html</guid>
+      <pubDate>Fri, 13 Nov 2026 16:43:18 GMT</pubDate>
+      <description>Severity: medium. ## Summary
+
+`TraceContextTextMapPropagator.extract()` in `opentelemetry-api` is vulnerable to regular expression denial of service (ReDoS) when processing a specially crafted `traceparent` value.
+
+A malformed value containing a trace-context prefix followed by a long whitespace seq</description>
+    </item>
+    <item>
+      <title>CVE-2026-126191: Soup Sieve: Exponential ReDoS in selector compilation via \9-run in CSS_ESCAPES/IDENTIFIER</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-126191-soup-sieve-exponential-redos-in-selector-compila.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-126191-soup-sieve-exponential-redos-in-selector-compila.html</guid>
+      <pubDate>Fri, 13 Nov 2026 16:39:43 GMT</pubDate>
+      <description>Severity: high. ### Summary
+The IDENTIFIER/CSS_ESCAPES regex (css_parser.py:119-124) exhibits exponential backtracking on a run of ambiguous digit-escapes (`\9`) in an attribute-name or tag position of an otherwise well-formed selector. It fires at compile time (before the SELECTOR_LIMIT guard) via </description>
+    </item>
+    <item>
+      <title>CVE-2026-126193: Soup Sieve: Uncontrolled recursion in CSS parser lets nested pseudo-class selectors exhaust the Python call stack</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-126193-soup-sieve-uncontrolled-recursion-in-css-parser-.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-126193-soup-sieve-uncontrolled-recursion-in-css-parser-.html</guid>
+      <pubDate>Fri, 13 Nov 2026 16:34:59 GMT</pubDate>
+      <description>Severity: medium. ## Summary
+
+The Soup Sieve CSS selector parser recurses once per level of nested pseudo-class selector (`:is()`, `:not()`, `:where()`, `:has()`) without any limit on nesting depth. An unauthenticated attacker who can supply a CSS selector string to `soupsieve.compile()`, `soupsieve</description>
+    </item>
+    <item>
+      <title>New Mior and Skyfall Attacks Let Rogue Cloud Hosts Steal Secrets From AMD SEV-SNP VMs</title>
+      <link>https://cveradar-ah3.pages.dev/item/new-mior-and-skyfall-attacks-let-rogue-cloud-hosts-steal-secrets.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/new-mior-and-skyfall-attacks-let-rogue-cloud-hosts-steal-secrets.html</guid>
+      <pubDate>Fri, 13 Nov 2026 15:27:05 GMT</pubDate>
+      <description>Two attacks made public this week allow a malicious host to read data inside AMD SEV-SNP-protected virtual machines (VMs), which are built to keep the server's operator out. One of them, Mior, can also modify a VM's memory and fake the signed report confirming which software it runs. Both need contr</description>
+    </item>
+    <item>
+      <title>FBI Says North Korean Hackers Stole Over $400 Million in Crypto Using Deepfake Video Calls</title>
+      <link>https://cveradar-ah3.pages.dev/item/fbi-says-north-korean-hackers-stole-over-400-million-in-crypto-u.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/fbi-says-north-korean-hackers-stole-over-400-million-in-crypto-u.html</guid>
+      <pubDate>Fri, 13 Nov 2026 14:28:58 GMT</pubDate>
+      <description>The U.S. Federal Bureau of Investigation (FBI) has established that threat actors tied to the Democratic People's Republic of Korea (DPRK aka North Korea) have stolen more than $400 million worth of cryptocurrency as part of a social engineering scheme codenamed FaceStealer in the last 18 months. As</description>
+    </item>
+    <item>
+      <title>Trezor Confirms Hidden Implants in CryptoBilis-Sold Wallets That Can Steal Recovery Phrases</title>
+      <link>https://cveradar-ah3.pages.dev/item/trezor-confirms-hidden-implants-in-cryptobilis-sold-wallets-that.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/trezor-confirms-hidden-implants-in-cryptobilis-sold-wallets-that.html</guid>
+      <pubDate>Fri, 13 Nov 2026 13:54:20 GMT</pubDate>
+      <description>Three Trezor Safe 5 wallets bought from the reseller CryptoBilis contain an implant, an extra circuit board that can copy their recovery phrases, hardware wallet maker Trezor said yesterday. The implant reads the phrase from the wallet's screen and sends it over the mobile network to a server contro</description>
+    </item>
     <item>
       <title>When an AI Agent Goes Wrong, Can You Stop It?</title>
       <link>https://cveradar-ah3.pages.dev/item/when-an-ai-agent-goes-wrong-can-you-stop-it.html</link>
@@ -213,62 +262,6 @@ The `css` helper in `hono/css` escapes a `/` that follows `&lt;` inside an inter
       <description>Severity: medium. ### Summary
 
 The StringMatcher/PathMatcher for `safe_regex` builds its RE2 as `^${regex}$` with no surrounding group. Because alternation has the lowest precedence, a pattern `"a|b|c"` compiles to `/^a|b|c$/` -- "starts with a" OR "contains b" OR "ends with c" instead of a full mat</description>
-    </item>
-    <item>
-      <title>CVE-2026-128065: @grpc/grpc-js: RBAC override configs in VirtualHost and Route resources are not applied</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-128065-grpc-grpc-js-rbac-override-configs-in-virtualhos.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-128065-grpc-grpc-js-rbac-override-configs-in-virtualhos.html</guid>
-      <pubDate>Thu, 12 Nov 2026 22:55:47 GMT</pubDate>
-      <description>Severity: medium. ### Summary
-
-`XdsServer` in `@grpc/grpc-js-xds` does not apply `RBACPerRoute` overrides from matching Route or VirtualHost resources. When a trusted xDS control plane supplies a broad top-level ALLOW policy and a stricter override, `XdsServer` ACKs the resources but evaluates the R</description>
-    </item>
-    <item>
-      <title>CVE-2026-126366: msgpack-ruby JRuby decoder makes uncapped header-count allocations; a 5-byte message forces multi-GiB OOM</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-126366-msgpack-ruby-jruby-decoder-makes-uncapped-header.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-126366-msgpack-ruby-jruby-decoder-makes-uncapped-header.html</guid>
-      <pubDate>Thu, 12 Nov 2026 22:54:59 GMT</pubDate>
-      <description>Severity: high. ### Summary
-
-The **JRuby** implementation of msgpack (`msgpack` gem, `java` platform — pure Java decoder under `ext/java/`) sizes containers directly from the element count written in the message header, with **no cap at all**: no equivalent of the C unpacker's `SHRT_MAX` clamp (sinc</description>
-    </item>
-    <item>
-      <title>CVE-2026-126348: Addressable display_uri can show misleading hosts with invalid Punycode A-labels</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-126348-addressable-display-uri-can-show-misleading-host.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-126348-addressable-display-uri-can-show-misleading-host.html</guid>
-      <pubDate>Thu, 12 Nov 2026 22:44:57 GMT</pubDate>
-      <description>Severity: medium. ### Impact
-
-`Addressable::IDNA.to_unicode`, in the pure-Ruby IDNA implementation, decodes Punycode labels (labels beginning with `xn--`) that are not valid A-labels. Those labels are returned in decoded form, when they should be returned unchanged. That includes:
-
-- labels that dec</description>
-    </item>
-    <item>
-      <title>CVE-2026-126349: Addressable display_uri can show misleading hosts containing bidi and invisible characters</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-126349-addressable-display-uri-can-show-misleading-host.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-126349-addressable-display-uri-can-show-misleading-host.html</guid>
-      <pubDate>Thu, 12 Nov 2026 22:44:15 GMT</pubDate>
-      <description>Severity: low. ### Impact
-
-`Addressable::IDNA.to_unicode` decodes Punycode labels (labels beginning with `xn--`) that contain characters which change how text is displayed without being visible themselves. These include bidirectional controls such as U+202E RIGHT-TO-LEFT OVERRIDE and U+2066–U+2069, </description>
-    </item>
-    <item>
-      <title>CVE-2026-126351: Addressable: Denial of service in URI path normalization</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-126351-addressable-denial-of-service-in-uri-path-normal.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-126351-addressable-denial-of-service-in-uri-path-normal.html</guid>
-      <pubDate>Thu, 12 Nov 2026 22:35:33 GMT</pubDate>
-      <description>Severity: medium. ### Impact
-
-`Addressable::URI.normalize_path` takes time quadratic in the number of nested dot segments in a path (e.g., `"/" + "a/" * n + "../" * n`, which for n = 3 is `/a/a/a/../../../`), because it removes one dot segment per pass over the whole path. `URI#normalize`, `URI#norm</description>
-    </item>
-    <item>
-      <title>CVE-2026-126363: Astro: Reflected XSS via unescaped slot names in @astrojs/solid-js</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-126363-astro-reflected-xss-via-unescaped-slot-names-in-.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-126363-astro-reflected-xss-via-unescaped-slot-names-in-.html</guid>
-      <pubDate>Thu, 12 Nov 2026 22:34:44 GMT</pubDate>
-      <description>Severity: low. ## Summary
-
-The `@astrojs/solid-js` renderer wraps named slot content passed to Solid components in an `&lt;astro-slot&gt;` element, and writes the slot name into its `name` attribute without HTML escaping. A slot name containing `"` could end the attribute and inject arbitrary HTML into th</description>
     </item>
   </channel>
 </rss>

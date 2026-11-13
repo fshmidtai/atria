@@ -8,6 +8,7 @@ hn:43128253,hn,Apple pulls data protection tool after UK government security row
 hn:39452494,hn,"Insecure vehicles should be banned, not security tools like the Flipper Zero",https://saveflipper.ca/,4130,2024-02-21,security
 hn:30051054,hn,Ask HN: Gmail account security,https://news.ycombinator.com/item?id=30051054,3830,2022-01-23,ai|dev|security
 hn:25729088,hn,"70TB of Parler users’ messages, videos, and posts leaked by security researchers",https://cybernews.com/news/70tb-of-parler-users-messages-videos-and-posts-leaked-by-security-researchers/,3745,2021-01-11,dev|security
+cve:GHSA-6655-6qjp-jx7x,cve,CVE-2026-126191: Soup Sieve: Exponential ReDoS in selector compilation via \9-run in CSS_ESCAPES/IDENTIFIER,https://github.com/advisories/GHSA-6655-6qjp-jx7x,3580,2026-11-13,dev|security
 cve:GHSA-mmhr-3c5m-f64f,cve,CVE-2026-126190: Soup Sieve: Polynomial-time denial of service in the descendant combinator,https://github.com/advisories/GHSA-mmhr-3c5m-f64f,3580,2026-11-13,ai|security
 cve:GHSA-wm3x-v3qw-4jh3,cve,CVE-2026-126081: Action Pack: Possible Strong Parameters Bypass in Parameters#each_key,https://github.com/advisories/GHSA-wm3x-v3qw-4jh3,3580,2026-11-12,ai|security
 cve:GHSA-xcvg-w56q-r89m,cve,CVE-2026-128067: Pillow: Heap buffer overflow saving TIFF with libtiff when tags override image size,https://github.com/advisories/GHSA-xcvg-w56q-r89m,3580,2026-11-12,dev|security
@@ -30,6 +31,8 @@ hn:23180975,hn,Security Flaws in Adobe Acrobat Reader Allow Gaining Root on macO
 hn:50182987,hn,"Today's PHP security release, and how we're strengthening security",https://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security/,2034,2026-10-21,security
 hn:17592422,hn,Google: Security Keys Neutralized Employee Phishing,https://krebsonsecurity.com/2018/07/google-security-keys-neutered-employee-phishing/,2002,2018-07-23,security
 hn:24636166,hn,Apple’s T2 security chip jailbreak,https://reportcybercrime.com/hackers-jailbreak-apples-t2-security-chip-powered-by-bridgeos/,1881,2020-09-30,ai|security|hardware
+cve:GHSA-mf5v-w3w3-f6cg,cve,CVE-2026-126360: OpenTelemetry Python API: Denial of service through quadratic-time traceparent parsing,https://github.com/advisories/GHSA-mf5v-w3w3-f6cg,1880,2026-11-13,ai|dev|science|security
+cve:GHSA-7g44-g9rc-x53w,cve,CVE-2026-126193: Soup Sieve: Uncontrolled recursion in CSS parser lets nested pseudo-class selectors exhaust the Python call stack,https://github.com/advisories/GHSA-7g44-g9rc-x53w,1880,2026-11-13,dev|security
 cve:GHSA-4j63-6c4x-wfg4,cve,CVE-2026-126192: Soup Sieve: General sibling combinator inside :has() matches untrusted HTML in quadratic time,https://github.com/advisories/GHSA-4j63-6c4x-wfg4,1880,2026-11-13,ai|dev|science|security|hardware
 cve:GHSA-rwvh-fw6r-pwvp,cve,CVE-2026-126072: Action Pack: Possible DoS vulnerability in Action Controller Live streaming,https://github.com/advisories/GHSA-rwvh-fw6r-pwvp,1880,2026-11-12,security
 cve:GHSA-x6mj-8jx9-qhqv,cve,CVE-2026-126077: Action Pack: Possible sensitive session information leak in Active Storage proxy mode,https://github.com/advisories/GHSA-x6mj-8jx9-qhqv,1880,2026-11-12,ai|security
@@ -46,6 +49,3 @@ cve:GHSA-r7hq-q2xm-6c5m,cve,CVE-2026-126367: @grpc/grpc-js: safe_regex incorrect
 cve:GHSA-gg5j-6742-v827,cve,CVE-2026-128065: @grpc/grpc-js: RBAC override configs in VirtualHost and Route resources are not applied,https://github.com/advisories/GHSA-gg5j-6742-v827,1880,2026-11-12,dev|security|hardware
 cve:GHSA-9crm-g4mf-wc5j,cve,CVE-2026-126348: Addressable display_uri can show misleading hosts with invalid Punycode A-labels,https://github.com/advisories/GHSA-9crm-g4mf-wc5j,1880,2026-11-12,security
 cve:GHSA-qq38-m9mg-xjj5,cve,CVE-2026-126351: Addressable: Denial of service in URI path normalization,https://github.com/advisories/GHSA-qq38-m9mg-xjj5,1880,2026-11-12,security
-cve:GHSA-j82w-28jv-3pmj,cve,CVE-2026-126350: Addressable: Regular Expression Denial of Service in templates with certain exploded expressions,https://github.com/advisories/GHSA-j82w-28jv-3pmj,1880,2026-11-12,ai|science|security
-cve:GHSA-9f42-57jx-vpp3,cve,CVE-2026-126352: Addressable: Regular Expression Denial of Service in templates with multiple variables,https://github.com/advisories/GHSA-9f42-57jx-vpp3,1880,2026-11-12,science|security
-cve:GHSA-8gmh-2hhj-2hv9,cve,CVE-2026-126354: Addressable URI normalization resolves some dotted path segments to the wrong path,https://github.com/advisories/GHSA-8gmh-2hhj-2hv9,1880,2026-11-12,ai|security

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13T13:32:11+00:00",
+  "generated_at": "2026-11-13T17:15:22+00:00",
   "sources_used": [
     "hn_search",
     "github_search",
@@ -9,31 +9,31 @@
     "rss"
   ],
   "totals": {
-    "items": 147,
+    "items": 133,
     "by_source": {
       "hn": 60,
-      "github": 67,
+      "github": 53,
       "rss": 20
     },
     "by_recipe": {
       "show_hn": 60,
       "github_ai": 40,
-      "github_llm": 27,
-      "tc_ai": 20
+      "tc_ai": 20,
+      "github_llm": 13
     },
     "by_topic": {
-      "ai": 87,
-      "dev": 57,
-      "hardware": 12,
-      "biz": 10,
-      "security": 8,
-      "science": 8,
+      "ai": 85,
+      "science": 43,
+      "dev": 40,
+      "security": 7,
+      "biz": 7,
+      "hardware": 6,
       "crypto": 1
     },
     "top_domains": [
       [
         "github.com",
-        73
+        59
       ],
       [
         "techcrunch.com",
@@ -429,6 +429,24 @@
       "date": "2023-04-12"
     },
     {
+      "uid": "gh:Sandflow-ai/sand3d",
+      "source": "github",
+      "title": "Sandflow-ai/sand3d",
+      "url": "https://github.com/Sandflow-ai/sand3d",
+      "ts": 1793694183.0,
+      "points": 1956,
+      "comments": 216,
+      "author": "Sandflow-ai",
+      "summary": "3D modeling in Python, built for LLMs.",
+      "recipe": "github_llm",
+      "buzz": 2604,
+      "topics": [
+        "ai",
+        "dev"
+      ],
+      "date": "2026-11-03"
+    },
+    {
       "uid": "hn:13338592",
       "source": "hn",
       "title": "Show HN: Alacritty, a GPU-accelerated terminal emulator written in Rust",
@@ -445,24 +463,6 @@
         "hardware"
       ],
       "date": "2017-01-06"
-    },
-    {
-      "uid": "gh:Sandflow-ai/sand3d",
-      "source": "github",
-      "title": "Sandflow-ai/sand3d",
-      "url": "https://github.com/Sandflow-ai/sand3d",
-      "ts": 1793694183.0,
-      "points": 1953,
-      "comments": 215,
-      "author": "Sandflow-ai",
-      "summary": "3D modeling in Python, built for LLMs.",
-      "recipe": "github_llm",
-      "buzz": 2598,
-      "topics": [
-        "ai",
-        "dev"
-      ],
-      "date": "2026-11-03"
     },
     {
       "uid": "hn:33357197",
@@ -918,6 +918,24 @@
       "date": "2022-06-01"
     },
     {
+      "uid": "gh:agentes-chat/agentes-chat",
+      "source": "github",
+      "title": "agentes-chat/agentes-chat",
+      "url": "https://github.com/agentes-chat/agentes-chat",
+      "ts": 1794185428.0,
+      "points": 1304,
+      "comments": 217,
+      "author": "agentes-chat",
+      "summary": "Open-source, self-hosted Slack alternative where your team and AI agents work together in channels and DMs. Agents run on Claude, ChatGPT/Codex, Gemini or Grok, with MCP tools, their own computer and browser, routines, memory and approvals. Web, desktop and phone apps. Docker Compose + Postgres. AGPL-3.0.",
+      "recipe": "github_llm",
+      "buzz": 1965,
+      "topics": [
+        "ai",
+        "dev"
+      ],
+      "date": "2026-11-09"
+    },
+    {
       "uid": "hn:42645218",
       "source": "hn",
       "title": "Show HN: Tetris in a PDF",
@@ -948,24 +966,6 @@
         "ai"
       ],
       "date": "2025-05-06"
-    },
-    {
-      "uid": "gh:agentes-chat/agentes-chat",
-      "source": "github",
-      "title": "agentes-chat/agentes-chat",
-      "url": "https://github.com/agentes-chat/agentes-chat",
-      "ts": 1794185428.0,
-      "points": 1282,
-      "comments": 213,
-      "author": "agentes-chat",
-      "summary": "Open-source, self-hosted Slack alternative where your team and AI agents work together in channels and DMs. Agents run on Claude, ChatGPT/Codex, Gemini or Grok, with MCP tools, their own computer and browser, routines, memory and approvals. Web, desktop and phone apps. Docker Compose + Postgres. AGPL-3.0.",
-      "recipe": "github_llm",
-      "buzz": 1931,
-      "topics": [
-        "ai",
-        "dev"
-      ],
-      "date": "2026-11-09"
     },
     {
       "uid": "hn:40843867",
@@ -1162,12 +1162,12 @@
       "title": "SAOS-3624/dsh-see-now",
       "url": "https://github.com/SAOS-3624/dsh-see-now",
       "ts": 1793539954.0,
-      "points": 621,
-      "comments": 63,
+      "points": 623,
+      "comments": 64,
       "author": "SAOS-3624",
       "summary": "让 AI 实时看见你的屏幕：按变化量筛选帧、多帧拼进一张图，静止画面几乎不花 token",
       "recipe": "github_llm",
-      "buzz": 810,
+      "buzz": 815,
       "topics": [
         "ai",
         "crypto"
@@ -1175,39 +1175,39 @@
       "date": "2026-11-01"
     },
     {
-      "uid": "gh:Dodaios/ste80-humanizer",
-      "source": "github",
-      "title": "Dodaios/ste80-humanizer",
-      "url": "https://github.com/Dodaios/ste80-humanizer",
-      "ts": 1794244739.0,
-      "points": 476,
-      "comments": 29,
-      "author": "Dodaios",
-      "summary": "STE80 Humanizer: agent skill that removes AI tells and rewrites text 80% of the way to ASD-STE100 (Simplified Technical English), the method Andrej Karpathy shared.",
-      "recipe": "github_llm",
-      "buzz": 573,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-09"
-    },
-    {
       "uid": "gh:hyperionaidev/smolmaxxing",
       "source": "github",
       "title": "hyperionaidev/smolmaxxing",
       "url": "https://github.com/hyperionaidev/smolmaxxing",
       "ts": 1793776181.0,
-      "points": 524,
-      "comments": 15,
+      "points": 593,
+      "comments": 20,
       "author": "hyperionaidev",
       "summary": "maxxing the ability to run different LLMs on the smallest devices possible",
       "recipe": "github_llm",
-      "buzz": 569,
+      "buzz": 653,
       "topics": [
         "ai",
         "dev"
       ],
       "date": "2026-11-04"
+    },
+    {
+      "uid": "gh:Dodaios/ste80-humanizer",
+      "source": "github",
+      "title": "Dodaios/ste80-humanizer",
+      "url": "https://github.com/Dodaios/ste80-humanizer",
+      "ts": 1794244739.0,
+      "points": 482,
+      "comments": 29,
+      "author": "Dodaios",
+      "summary": "STE80 Humanizer: agent skill that removes AI tells and rewrites text 80% of the way to ASD-STE100 (Simplified Technical English), the method Andrej Karpathy shared.",
+      "recipe": "github_llm",
+      "buzz": 579,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-11-09"
     },
     {
       "uid": "gh:Interactive-Active-AI/NextTransformer",
@@ -1254,12 +1254,12 @@
       "title": "TIGER-AI-Lab/WebsiteBench",
       "url": "https://github.com/TIGER-AI-Lab/WebsiteBench",
       "ts": 1793797130.0,
-      "points": 318,
+      "points": 327,
       "comments": 41,
       "author": "TIGER-AI-Lab",
       "summary": "Can AI agents rebuild websites through browser exploration?",
       "recipe": "github_ai",
-      "buzz": 441,
+      "buzz": 450,
       "topics": [
         "ai"
       ],
@@ -1271,12 +1271,12 @@
       "title": "zaxiu88888/issue-rag",
       "url": "https://github.com/zaxiu88888/issue-rag",
       "ts": 1793532745.0,
-      "points": 374,
+      "points": 379,
       "comments": 6,
       "author": "zaxiu88888",
       "summary": "RAG over GitHub issues, with a hand-reviewed eval set and an audit of the judge itself. Reports the interval, not just the best number.",
       "recipe": "github_llm",
-      "buzz": 392,
+      "buzz": 397,
       "topics": [
         "ai",
         "dev"
@@ -1307,11 +1307,11 @@
       "url": "https://github.com/Balanov/uncut",
       "ts": 1793553570.0,
       "points": 266,
-      "comments": 20,
+      "comments": 19,
       "author": "Balanov",
       "summary": "The lossless, headless coding agent harness. One 7 MB static binary, four tools, plain stdin/stdout, no silent cuts.",
       "recipe": "github_llm",
-      "buzz": 326,
+      "buzz": 323,
       "topics": [
         "ai",
         "dev"
@@ -1319,35 +1319,17 @@
       "date": "2026-11-01"
     },
     {
-      "uid": "gh:RapidSailorFreeze/studsmith",
-      "source": "github",
-      "title": "RapidSailorFreeze/studsmith",
-      "url": "https://github.com/RapidSailorFreeze/studsmith",
-      "ts": 1794143470.0,
-      "points": 95,
-      "comments": 60,
-      "author": "RapidSailorFreeze",
-      "summary": "Free AI agent for Roblox Studio: plans, writes Luau, shows a diff and playtests its own changes. Windows app. 免费的 Roblox Studio AI 智能体。",
-      "recipe": "github_llm",
-      "buzz": 285,
-      "topics": [
-        "ai",
-        "dev"
-      ],
-      "date": "2026-11-08"
-    },
-    {
       "uid": "gh:huawei-csl/MACaQ",
       "source": "github",
       "title": "huawei-csl/MACaQ",
       "url": "https://github.com/huawei-csl/MACaQ",
       "ts": 1794300742.0,
-      "points": 221,
+      "points": 224,
       "comments": 13,
       "author": "huawei-csl",
       "summary": "SOTA model-agnostic quantization for GGUF, local inference and beyond. Quantize and run text, image, video and audio models with llama.cpp, vLLM, Diffusers and PyTorch.",
       "recipe": "github_llm",
-      "buzz": 270,
+      "buzz": 273,
       "topics": [
         "ai",
         "dev"
@@ -1365,47 +1347,680 @@
       "author": "fanhuayishiy",
       "summary": "万物工牌｜AI 角色、人物特别篇与自定义 3D 工牌，支持拖拽翻面和透明 PNG 下载。微信公众号：风花AI实验室。",
       "recipe": "github_ai",
-      "buzz": 241,
+      "buzz": 231,
       "topics": [
         "ai"
       ],
       "date": "2026-11-06"
     },
     {
-      "uid": "gh:HimanshuMohanty-Git24/gitaviswa",
+      "uid": "gh:SandyPandyMandy/ai--manus",
       "source": "github",
-      "title": "HimanshuMohanty-Git24/gitaviswa",
-      "url": "https://github.com/HimanshuMohanty-Git24/gitaviswa",
-      "ts": 1793769611.0,
-      "points": 103,
-      "comments": 45,
-      "author": "HimanshuMohanty-Git24",
-      "summary": "GitaViśva (गीताविश्व): the Bhagavad Gita as a living knowledge graph. Explore all 700 verses in 3D, read 20 classical commentaries, listen to recitations, ask a GraphRAG companion with your own free API key, and keep a private journal. Works offline.",
-      "recipe": "github_llm",
-      "buzz": 238,
+      "title": "SandyPandyMandy/ai--manus",
+      "url": "https://github.com/SandyPandyMandy/ai--manus",
+      "ts": 1794581092.0,
+      "points": 148,
+      "comments": 0,
+      "author": "SandyPandyMandy",
+      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
+      "recipe": "github_ai",
+      "buzz": 228,
+      "topics": [
+        "ai",
+        "science"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "uid": "gh:sofixleon-arch/ai--manus",
+      "source": "github",
+      "title": "sofixleon-arch/ai--manus",
+      "url": "https://github.com/sofixleon-arch/ai--manus",
+      "ts": 1794581136.0,
+      "points": 148,
+      "comments": 0,
+      "author": "sofixleon-arch",
+      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
+      "recipe": "github_ai",
+      "buzz": 228,
+      "topics": [
+        "ai",
+        "science"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "uid": "gh:python001-dev/manus--ai",
+      "source": "github",
+      "title": "python001-dev/manus--ai",
+      "url": "https://github.com/python001-dev/manus--ai",
+      "ts": 1794581242.0,
+      "points": 148,
+      "comments": 0,
+      "author": "python001-dev",
+      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
+      "recipe": "github_ai",
+      "buzz": 228,
       "topics": [
         "ai",
         "dev",
-        "hardware"
+        "science"
       ],
-      "date": "2026-11-04"
+      "date": "2026-11-13"
     },
     {
-      "uid": "gh:beiwocaishijia/gezhi-sheets",
+      "uid": "gh:ITprogamatikDedSec/ai--manus",
       "source": "github",
-      "title": "beiwocaishijia/gezhi-sheets",
-      "url": "https://github.com/beiwocaishijia/gezhi-sheets",
-      "ts": 1794194963.0,
-      "points": 125,
-      "comments": 34,
-      "author": "beiwocaishijia",
-      "summary": "格知 AI · Gezhi Sheets｜让表格听懂你的话。支持 GLM、Kimi、豆包、DeepSeek、Qwen 的本地 AI 表格助手。",
+      "title": "ITprogamatikDedSec/ai--manus",
+      "url": "https://github.com/ITprogamatikDedSec/ai--manus",
+      "ts": 1794581437.0,
+      "points": 148,
+      "comments": 0,
+      "author": "ITprogamatikDedSec",
+      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
       "recipe": "github_ai",
-      "buzz": 237,
+      "buzz": 228,
       "topics": [
-        "ai"
+        "ai",
+        "science"
       ],
-      "date": "2026-11-09"
+      "date": "2026-11-13"
+    },
+    {
+      "uid": "gh:mtn-imran-khan/manus--ai",
+      "source": "github",
+      "title": "mtn-imran-khan/manus--ai",
+      "url": "https://github.com/mtn-imran-khan/manus--ai",
+      "ts": 1794581275.0,
+      "points": 148,
+      "comments": 0,
+      "author": "mtn-imran-khan",
+      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
+      "recipe": "github_ai",
+      "buzz": 228,
+      "topics": [
+        "ai",
+        "science"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "uid": "gh:qweqeqeqweqeqwe/manus--ai",
+      "source": "github",
+      "title": "qweqeqeqweqeqwe/manus--ai",
+      "url": "https://github.com/qweqeqeqweqeqwe/manus--ai",
+      "ts": 1794581313.0,
+      "points": 148,
+      "comments": 0,
+      "author": "qweqeqeqweqeqwe",
+      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
+      "recipe": "github_ai",
+      "buzz": 228,
+      "topics": [
+        "ai",
+        "science"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "uid": "gh:arberpilafi8-blip/ai--manus",
+      "source": "github",
+      "title": "arberpilafi8-blip/ai--manus",
+      "url": "https://github.com/arberpilafi8-blip/ai--manus",
+      "ts": 1794581255.0,
+      "points": 148,
+      "comments": 0,
+      "author": "arberpilafi8-blip",
+      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
+      "recipe": "github_ai",
+      "buzz": 228,
+      "topics": [
+        "ai",
+        "science"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "uid": "gh:kazim768/manus--ai",
+      "source": "github",
+      "title": "kazim768/manus--ai",
+      "url": "https://github.com/kazim768/manus--ai",
+      "ts": 1794581107.0,
+      "points": 148,
+      "comments": 0,
+      "author": "kazim768",
+      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
+      "recipe": "github_ai",
+      "buzz": 228,
+      "topics": [
+        "ai",
+        "science"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "uid": "gh:xombiensar/ai--manus",
+      "source": "github",
+      "title": "xombiensar/ai--manus",
+      "url": "https://github.com/xombiensar/ai--manus",
+      "ts": 1794581045.0,
+      "points": 148,
+      "comments": 0,
+      "author": "xombiensar",
+      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
+      "recipe": "github_ai",
+      "buzz": 228,
+      "topics": [
+        "ai",
+        "science"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "uid": "gh:python001-dev/ai--manus",
+      "source": "github",
+      "title": "python001-dev/ai--manus",
+      "url": "https://github.com/python001-dev/ai--manus",
+      "ts": 1794581221.0,
+      "points": 148,
+      "comments": 0,
+      "author": "python001-dev",
+      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
+      "recipe": "github_ai",
+      "buzz": 228,
+      "topics": [
+        "ai",
+        "dev",
+        "science"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "uid": "gh:buttheadtrenton16-byte/manus--ai",
+      "source": "github",
+      "title": "buttheadtrenton16-byte/manus--ai",
+      "url": "https://github.com/buttheadtrenton16-byte/manus--ai",
+      "ts": 1794581156.0,
+      "points": 148,
+      "comments": 0,
+      "author": "buttheadtrenton16-byte",
+      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
+      "recipe": "github_ai",
+      "buzz": 228,
+      "topics": [
+        "ai",
+        "science"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "uid": "gh:Axillios1/ai--manus",
+      "source": "github",
+      "title": "Axillios1/ai--manus",
+      "url": "https://github.com/Axillios1/ai--manus",
+      "ts": 1794581045.0,
+      "points": 148,
+      "comments": 0,
+      "author": "Axillios1",
+      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
+      "recipe": "github_ai",
+      "buzz": 228,
+      "topics": [
+        "ai",
+        "science"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "uid": "gh:Floxaep1/ai--manus",
+      "source": "github",
+      "title": "Floxaep1/ai--manus",
+      "url": "https://github.com/Floxaep1/ai--manus",
+      "ts": 1794581173.0,
+      "points": 148,
+      "comments": 0,
+      "author": "Floxaep1",
+      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
+      "recipe": "github_ai",
+      "buzz": 228,
+      "topics": [
+        "ai",
+        "science"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "uid": "gh:Floxaep1/manus--ai",
+      "source": "github",
+      "title": "Floxaep1/manus--ai",
+      "url": "https://github.com/Floxaep1/manus--ai",
+      "ts": 1794581189.0,
+      "points": 148,
+      "comments": 0,
+      "author": "Floxaep1",
+      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
+      "recipe": "github_ai",
+      "buzz": 228,
+      "topics": [
+        "ai",
+        "science"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "uid": "gh:rambotronado112-sudo/manus--ai",
+      "source": "github",
+      "title": "rambotronado112-sudo/manus--ai",
+      "url": "https://github.com/rambotronado112-sudo/manus--ai",
+      "ts": 1794581232.0,
+      "points": 148,
+      "comments": 0,
+      "author": "rambotronado112-sudo",
+      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
+      "recipe": "github_ai",
+      "buzz": 228,
+      "topics": [
+        "ai",
+        "science"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "uid": "gh:jose-perez-thecloudgroup/ai--manus",
+      "source": "github",
+      "title": "jose-perez-thecloudgroup/ai--manus",
+      "url": "https://github.com/jose-perez-thecloudgroup/ai--manus",
+      "ts": 1794581166.0,
+      "points": 148,
+      "comments": 0,
+      "author": "jose-perez-thecloudgroup",
+      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
+      "recipe": "github_ai",
+      "buzz": 228,
+      "topics": [
+        "ai",
+        "science"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "uid": "gh:AcgBoss/ai--manus",
+      "source": "github",
+      "title": "AcgBoss/ai--manus",
+      "url": "https://github.com/AcgBoss/ai--manus",
+      "ts": 1794581126.0,
+      "points": 148,
+      "comments": 0,
+      "author": "AcgBoss",
+      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
+      "recipe": "github_ai",
+      "buzz": 228,
+      "topics": [
+        "ai",
+        "science"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "uid": "gh:qweqeqeqweqeqwe/ai--manus",
+      "source": "github",
+      "title": "qweqeqeqweqeqwe/ai--manus",
+      "url": "https://github.com/qweqeqeqweqeqwe/ai--manus",
+      "ts": 1794581295.0,
+      "points": 148,
+      "comments": 0,
+      "author": "qweqeqeqweqeqwe",
+      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
+      "recipe": "github_ai",
+      "buzz": 228,
+      "topics": [
+        "ai",
+        "science"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "uid": "gh:Redderz-code/manus--ai",
+      "source": "github",
+      "title": "Redderz-code/manus--ai",
+      "url": "https://github.com/Redderz-code/manus--ai",
+      "ts": 1794581285.0,
+      "points": 148,
+      "comments": 0,
+      "author": "Redderz-code",
+      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
+      "recipe": "github_ai",
+      "buzz": 228,
+      "topics": [
+        "ai",
+        "science"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "uid": "gh:WLfear/manus--ai",
+      "source": "github",
+      "title": "WLfear/manus--ai",
+      "url": "https://github.com/WLfear/manus--ai",
+      "ts": 1794581153.0,
+      "points": 148,
+      "comments": 0,
+      "author": "WLfear",
+      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
+      "recipe": "github_ai",
+      "buzz": 228,
+      "topics": [
+        "ai",
+        "science"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "uid": "gh:Ronni35/ai--manus",
+      "source": "github",
+      "title": "Ronni35/ai--manus",
+      "url": "https://github.com/Ronni35/ai--manus",
+      "ts": 1794581045.0,
+      "points": 148,
+      "comments": 0,
+      "author": "Ronni35",
+      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
+      "recipe": "github_ai",
+      "buzz": 228,
+      "topics": [
+        "ai",
+        "science"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "uid": "gh:SandyPandyMandy/manus--ai",
+      "source": "github",
+      "title": "SandyPandyMandy/manus--ai",
+      "url": "https://github.com/SandyPandyMandy/manus--ai",
+      "ts": 1794581111.0,
+      "points": 148,
+      "comments": 0,
+      "author": "SandyPandyMandy",
+      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
+      "recipe": "github_ai",
+      "buzz": 228,
+      "topics": [
+        "ai",
+        "science"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "uid": "gh:bk9cj/manus--ai",
+      "source": "github",
+      "title": "bk9cj/manus--ai",
+      "url": "https://github.com/bk9cj/manus--ai",
+      "ts": 1794581160.0,
+      "points": 148,
+      "comments": 0,
+      "author": "bk9cj",
+      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
+      "recipe": "github_ai",
+      "buzz": 228,
+      "topics": [
+        "ai",
+        "science"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "uid": "gh:sidvvkk/ai--manus",
+      "source": "github",
+      "title": "sidvvkk/ai--manus",
+      "url": "https://github.com/sidvvkk/ai--manus",
+      "ts": 1794581088.0,
+      "points": 148,
+      "comments": 0,
+      "author": "sidvvkk",
+      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
+      "recipe": "github_ai",
+      "buzz": 228,
+      "topics": [
+        "ai",
+        "science"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "uid": "gh:rambotronado112-sudo/ai--manus",
+      "source": "github",
+      "title": "rambotronado112-sudo/ai--manus",
+      "url": "https://github.com/rambotronado112-sudo/ai--manus",
+      "ts": 1794581213.0,
+      "points": 148,
+      "comments": 0,
+      "author": "rambotronado112-sudo",
+      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
+      "recipe": "github_ai",
+      "buzz": 228,
+      "topics": [
+        "ai",
+        "science"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "uid": "gh:XTwiNSaraX/ai--manus",
+      "source": "github",
+      "title": "XTwiNSaraX/ai--manus",
+      "url": "https://github.com/XTwiNSaraX/ai--manus",
+      "ts": 1794581101.0,
+      "points": 148,
+      "comments": 0,
+      "author": "XTwiNSaraX",
+      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
+      "recipe": "github_ai",
+      "buzz": 228,
+      "topics": [
+        "ai",
+        "science"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "uid": "gh:AcgBoss/manus--ai",
+      "source": "github",
+      "title": "AcgBoss/manus--ai",
+      "url": "https://github.com/AcgBoss/manus--ai",
+      "ts": 1794581145.0,
+      "points": 148,
+      "comments": 0,
+      "author": "AcgBoss",
+      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
+      "recipe": "github_ai",
+      "buzz": 228,
+      "topics": [
+        "ai",
+        "science"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "uid": "gh:sofixleon-arch/manus--ai",
+      "source": "github",
+      "title": "sofixleon-arch/manus--ai",
+      "url": "https://github.com/sofixleon-arch/manus--ai",
+      "ts": 1794581153.0,
+      "points": 148,
+      "comments": 0,
+      "author": "sofixleon-arch",
+      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
+      "recipe": "github_ai",
+      "buzz": 228,
+      "topics": [
+        "ai",
+        "science"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "uid": "gh:alphafalcongamer-creator/ai--manus",
+      "source": "github",
+      "title": "alphafalcongamer-creator/ai--manus",
+      "url": "https://github.com/alphafalcongamer-creator/ai--manus",
+      "ts": 1794581217.0,
+      "points": 148,
+      "comments": 0,
+      "author": "alphafalcongamer-creator",
+      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
+      "recipe": "github_ai",
+      "buzz": 228,
+      "topics": [
+        "ai",
+        "science"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "uid": "gh:stancaedy10-glitch/ai--manus",
+      "source": "github",
+      "title": "stancaedy10-glitch/ai--manus",
+      "url": "https://github.com/stancaedy10-glitch/ai--manus",
+      "ts": 1794581225.0,
+      "points": 148,
+      "comments": 0,
+      "author": "stancaedy10-glitch",
+      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
+      "recipe": "github_ai",
+      "buzz": 228,
+      "topics": [
+        "ai",
+        "science"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "uid": "gh:stancaedy10-glitch/manus--ai",
+      "source": "github",
+      "title": "stancaedy10-glitch/manus--ai",
+      "url": "https://github.com/stancaedy10-glitch/manus--ai",
+      "ts": 1794581242.0,
+      "points": 148,
+      "comments": 0,
+      "author": "stancaedy10-glitch",
+      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
+      "recipe": "github_ai",
+      "buzz": 228,
+      "topics": [
+        "ai",
+        "science"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "uid": "gh:XTwiNSaraX/manus--ai",
+      "source": "github",
+      "title": "XTwiNSaraX/manus--ai",
+      "url": "https://github.com/XTwiNSaraX/manus--ai",
+      "ts": 1794581122.0,
+      "points": 148,
+      "comments": 0,
+      "author": "XTwiNSaraX",
+      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
+      "recipe": "github_ai",
+      "buzz": 228,
+      "topics": [
+        "ai",
+        "science"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "uid": "gh:melchersimon011-bot/ai--manus",
+      "source": "github",
+      "title": "melchersimon011-bot/ai--manus",
+      "url": "https://github.com/melchersimon011-bot/ai--manus",
+      "ts": 1794581180.0,
+      "points": 148,
+      "comments": 0,
+      "author": "melchersimon011-bot",
+      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
+      "recipe": "github_ai",
+      "buzz": 228,
+      "topics": [
+        "ai",
+        "science"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "uid": "gh:eagrafki-byte/ai--manus",
+      "source": "github",
+      "title": "eagrafki-byte/ai--manus",
+      "url": "https://github.com/eagrafki-byte/ai--manus",
+      "ts": 1794581175.0,
+      "points": 148,
+      "comments": 0,
+      "author": "eagrafki-byte",
+      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
+      "recipe": "github_ai",
+      "buzz": 228,
+      "topics": [
+        "ai",
+        "science"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "uid": "gh:agdinis/ai--manus",
+      "source": "github",
+      "title": "agdinis/ai--manus",
+      "url": "https://github.com/agdinis/ai--manus",
+      "ts": 1794581049.0,
+      "points": 148,
+      "comments": 0,
+      "author": "agdinis",
+      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
+      "recipe": "github_ai",
+      "buzz": 228,
+      "topics": [
+        "ai",
+        "science"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "uid": "gh:lebronstx-collab/manus--ai",
+      "source": "github",
+      "title": "lebronstx-collab/manus--ai",
+      "url": "https://github.com/lebronstx-collab/manus--ai",
+      "ts": 1794581267.0,
+      "points": 148,
+      "comments": 0,
+      "author": "lebronstx-collab",
+      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
+      "recipe": "github_llm",
+      "buzz": 228,
+      "topics": [
+        "ai",
+        "science"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "uid": "gh:Obasideyvid/manus--ai",
+      "source": "github",
+      "title": "Obasideyvid/manus--ai",
+      "url": "https://github.com/Obasideyvid/manus--ai",
+      "ts": 1794581064.0,
+      "points": 148,
+      "comments": 0,
+      "author": "Obasideyvid",
+      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
+      "recipe": "github_llm",
+      "buzz": 228,
+      "topics": [
+        "ai",
+        "dev",
+        "science"
+      ],
+      "date": "2026-11-13"
     },
     {
       "uid": "gh:mankidev/codixel",
@@ -1430,12 +2045,12 @@
       "title": "bookleme/bookleme",
       "url": "https://github.com/bookleme/bookleme",
       "ts": 1794194967.0,
-      "points": 182,
+      "points": 184,
       "comments": 1,
       "author": "bookleme",
       "summary": "读了么（BookLeme）· 把一本书编译成 Agent Skill —— 双引擎 + 可插拔体裁插件 + 逐字忠实度回验",
       "recipe": "github_llm",
-      "buzz": 195,
+      "buzz": 197,
       "topics": [
         "ai"
       ],
@@ -1460,560 +2075,57 @@
       "date": "2026-10-31"
     },
     {
-      "uid": "gh:hitkeeen/blender-ai-mcp-addon",
-      "source": "github",
-      "title": "hitkeeen/blender-ai-mcp-addon",
-      "url": "https://github.com/hitkeeen/blender-ai-mcp-addon",
-      "ts": 1794493935.0,
-      "points": 105,
-      "comments": 1,
-      "author": "hitkeeen",
-      "summary": "AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with ChatGPT/GPT, Claude, Gemini, Ollama, OpenCode. Blender AI addon, copilot for 3D, bpy Python scripting, MCP integration.",
-      "recipe": "github_llm",
-      "buzz": 188,
-      "topics": [
-        "ai",
-        "dev",
-        "hardware"
-      ],
-      "date": "2026-11-12"
-    },
-    {
-      "uid": "gh:glincker/awesome-selfhosted-ai",
-      "source": "github",
-      "title": "glincker/awesome-selfhosted-ai",
-      "url": "https://github.com/glincker/awesome-selfhosted-ai",
-      "ts": 1793425840.0,
-      "points": 125,
-      "comments": 19,
-      "author": "glincker",
-      "summary": "Curated list of self-hosted open-source AI: local LLMs, chat UIs, agents, MCP servers, RAG, speech and image generation. Health-checked weekly, dead projects removed automatically.",
-      "recipe": "github_llm",
-      "buzz": 182,
-      "topics": [
-        "ai",
-        "science",
-        "hardware"
-      ],
-      "date": "2026-10-31"
-    },
-    {
-      "uid": "gh:joeseesun/xnews",
-      "source": "github",
-      "title": "joeseesun/xnews",
-      "url": "https://github.com/joeseesun/xnews",
-      "ts": 1793896960.0,
-      "points": 132,
-      "comments": 16,
-      "author": "joeseesun",
-      "summary": "X News — overseas founder posts & AI videos, rewritten in Qiaomu Chinese",
-      "recipe": "github_ai",
-      "buzz": 180,
-      "topics": [
-        "ai",
-        "dev",
-        "biz"
-      ],
-      "date": "2026-11-05"
-    },
-    {
-      "uid": "gh:Aevonix/FlashAlign",
-      "source": "github",
-      "title": "Aevonix/FlashAlign",
-      "url": "https://github.com/Aevonix/FlashAlign",
-      "ts": 1793425032.0,
-      "points": 126,
-      "comments": 16,
-      "author": "Aevonix",
-      "summary": "ReAlign models instantly, on demand. Per-request alignment for verified users and channels, or Always On. Use directly or with Hermes, OpenClaw and custom harnesses.",
-      "recipe": "github_llm",
-      "buzz": 174,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-10-31"
-    },
-    {
-      "uid": "gh:bytesbay/pi-gpui",
-      "source": "github",
-      "title": "bytesbay/pi-gpui",
-      "url": "https://github.com/bytesbay/pi-gpui",
-      "ts": 1793830379.0,
-      "points": 126,
-      "comments": 11,
-      "author": "bytesbay",
-      "summary": "A native GUI for the pi coding agent, built with Rust and GPUI. For macOS (Apple silicon) and Linux.",
-      "recipe": "github_llm",
-      "buzz": 159,
-      "topics": [
-        "ai",
-        "dev",
-        "hardware"
-      ],
-      "date": "2026-11-04"
-    },
-    {
-      "uid": "gh:NamtaoProductions/0rwx.com",
-      "source": "github",
-      "title": "NamtaoProductions/0rwx.com",
-      "url": "https://github.com/NamtaoProductions/0rwx.com",
-      "ts": 1794042731.0,
-      "points": 106,
-      "comments": 11,
-      "author": "NamtaoProductions",
-      "summary": "",
-      "recipe": "github_ai",
-      "buzz": 149,
-      "topics": [],
-      "date": "2026-11-07"
-    },
-    {
-      "uid": "gh:gitcommit90/1Helm",
-      "source": "github",
-      "title": "gitcommit90/1Helm",
-      "url": "https://github.com/gitcommit90/1Helm",
-      "ts": 1794526530.0,
-      "points": 62,
+      "uid": "rss:a89e405114485a",
+      "source": "rss",
+      "title": "ChatGPT’s new Wallet lets AI agents shop and check out for you",
+      "url": "https://techcrunch.com/2026/11/13/chatgpts-new-wallet-lets-ai-agents-shop-and-check-out-for-you/",
+      "ts": 1794585612.0,
+      "points": 0,
       "comments": 0,
-      "author": "gitcommit90",
-      "summary": "A personal AI workspace on your own Cloudflare account, with persistent memory, channel computers, and your choice of AI provider.",
-      "recipe": "github_ai",
-      "buzz": 142,
-      "topics": [
-        "ai",
-        "dev",
-        "science"
-      ],
-      "date": "2026-11-12"
-    },
-    {
-      "uid": "gh:molly554/whiteboard-ai-tutor",
-      "source": "github",
-      "title": "molly554/whiteboard-ai-tutor",
-      "url": "https://github.com/molly554/whiteboard-ai-tutor",
-      "ts": 1794396141.0,
-      "points": 82,
-      "comments": 7,
-      "author": "molly554",
-      "summary": "Open-source AI tutor that teaches on a whiteboard. Benchmark of 6 LLMs (Claude, Gemini, DeepSeek): 288 lessons drawn stroke by stroke, blind-reviewed. 白板 AI 导师 / AI 老师讲课评测",
-      "recipe": "github_llm",
-      "buzz": 133,
+      "author": "Sarah Perez",
+      "summary": "ChatGPT Wallet lets AI agents shop and check out on users' behalf, starting with a limited rollout to U.S. Pro subscribers.",
+      "recipe": "tc_ai",
+      "buzz": 80,
       "topics": [
         "ai"
       ],
-      "date": "2026-11-11"
+      "date": "2026-11-13"
     },
     {
-      "uid": "gh:8hjkkwikl8/ai-portfolio",
-      "source": "github",
-      "title": "8hjkkwikl8/ai-portfolio",
-      "url": "https://github.com/8hjkkwikl8/ai-portfolio",
-      "ts": 1794374894.0,
-      "points": 100,
+      "uid": "rss:9c558a7ae32683",
+      "source": "rss",
+      "title": "The unfolding Jensen Huang scandal: a timeline",
+      "url": "https://techcrunch.com/2026/11/13/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/",
+      "ts": 1794585480.0,
+      "points": 0,
       "comments": 0,
-      "author": "8hjkkwikl8",
-      "summary": "三个可运行的 AI 工程项目：可追溯 RAG、提示词评测与受守护的 NL2SQL 分析",
-      "recipe": "github_ai",
-      "buzz": 130,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-11"
-    },
-    {
-      "uid": "gh:xl03-bit/sm120-nvfp4-training",
-      "source": "github",
-      "title": "xl03-bit/sm120-nvfp4-training",
-      "url": "https://github.com/xl03-bit/sm120-nvfp4-training",
-      "ts": 1793605196.0,
-      "points": 94,
-      "comments": 12,
-      "author": "xl03-bit",
-      "summary": "Full NVFP4 training for GeForce RTX 50-series and RTX PRO 6000 Blackwell GPUs (SM120). Built on Infatoshi/nvfp4-sm120, with software stochastic rounding, random Hadamard transforms and six profiles for speed and memory. On one RTX 5060 Ti 16GB, validation loss fell over 2,048 full-parameter FineWeb updates of a 4.06B model.",
-      "recipe": "github_ai",
-      "buzz": 130,
-      "topics": [
-        "ai",
-        "biz",
-        "hardware"
-      ],
-      "date": "2026-11-02"
-    },
-    {
-      "uid": "gh:Bil0000/Hill-Climb",
-      "source": "github",
-      "title": "Bil0000/Hill-Climb",
-      "url": "https://github.com/Bil0000/Hill-Climb",
-      "ts": 1793650532.0,
-      "points": 111,
-      "comments": 6,
-      "author": "Bil0000",
-      "summary": "Make your coding agent prove \"done\". Each change is kept only if a locked test or benchmark scores it better. Claude Code and Codex skill.",
-      "recipe": "github_llm",
-      "buzz": 129,
-      "topics": [
-        "ai",
-        "dev"
-      ],
-      "date": "2026-11-02"
-    },
-    {
-      "uid": "gh:vixhal-baraiya/qwenFS",
-      "source": "github",
-      "title": "vixhal-baraiya/qwenFS",
-      "url": "https://github.com/vixhal-baraiya/qwenFS",
-      "ts": 1793655821.0,
-      "points": 96,
-      "comments": 11,
-      "author": "vixhal-baraiya",
-      "summary": "Qwen3.5-2B with a filesystem compiled and inserted directly into its weights.",
-      "recipe": "github_llm",
-      "buzz": 129,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-02"
-    },
-    {
-      "uid": "gh:DKKD13/dsh-finance",
-      "source": "github",
-      "title": "DKKD13/dsh-finance",
-      "url": "https://github.com/DKKD13/dsh-finance",
-      "ts": 1793533985.0,
-      "points": 126,
-      "comments": 0,
-      "author": "DKKD13",
-      "summary": "DKKD13 个人开发的第三方 DSH 金融研究插件：研究 Skills、证据资料库、个股图表与模拟基金。与 DeepSeek 官方无隶属关系。",
-      "recipe": "github_ai",
-      "buzz": 126,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-01"
-    },
-    {
-      "uid": "gh:munitkala/selfsemester",
-      "source": "github",
-      "title": "munitkala/selfsemester",
-      "url": "https://github.com/munitkala/selfsemester",
-      "ts": 1793825456.0,
-      "points": 90,
-      "comments": 8,
-      "author": "munitkala",
-      "summary": "Windows app that turns any subject into a full, scheduled, graded course, built and marked by your own Claude Code",
-      "recipe": "github_llm",
-      "buzz": 114,
-      "topics": [],
-      "date": "2026-11-04"
-    },
-    {
-      "uid": "gh:Veloresearch/kinetic",
-      "source": "github",
-      "title": "Veloresearch/kinetic",
-      "url": "https://github.com/Veloresearch/kinetic",
-      "ts": 1794308619.0,
-      "points": 86,
-      "comments": 6,
-      "author": "Veloresearch",
-      "summary": "The open engine for running AI on your own computer. Fast, exact, open source.",
-      "recipe": "github_llm",
-      "buzz": 114,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-10"
-    },
-    {
-      "uid": "gh:onlyreadai/onlyread",
-      "source": "github",
-      "title": "onlyreadai/onlyread",
-      "url": "https://github.com/onlyreadai/onlyread",
-      "ts": 1793878343.0,
-      "points": 87,
-      "comments": 7,
-      "author": "onlyreadai",
-      "summary": "Make AI browser agents read-only: a Chrome extension that refuses writes (send, post, edit, delete) before they leave the browser.",
-      "recipe": "github_llm",
-      "buzz": 108,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-05"
-    },
-    {
-      "uid": "gh:professorsolderin/project-lighthouse",
-      "source": "github",
-      "title": "professorsolderin/project-lighthouse",
-      "url": "https://github.com/professorsolderin/project-lighthouse",
-      "ts": 1794220881.0,
-      "points": 82,
-      "comments": 5,
-      "author": "professorsolderin",
-      "summary": "Project Lighthouse — shining AI on the pages history never read: transcriptions, deep reads and findings from the notebooks of Gauss, Riemann, Euler and more",
-      "recipe": "github_ai",
-      "buzz": 107,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-09"
-    },
-    {
-      "uid": "gh:shany9200/Three",
-      "source": "github",
-      "title": "shany9200/Three",
-      "url": "https://github.com/shany9200/Three",
-      "ts": 1793927228.0,
-      "points": 107,
-      "comments": 0,
-      "author": "shany9200",
-      "summary": "A self-extending AI agent that runs anywhere Termux runs. Writes its own capabilities, remembers across sessions.",
-      "recipe": "github_llm",
-      "buzz": 107,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-06"
-    },
-    {
-      "uid": "gh:cacheMon/PrefixSim",
-      "source": "github",
-      "title": "cacheMon/PrefixSim",
-      "url": "https://github.com/cacheMon/PrefixSim",
-      "ts": 1793827354.0,
-      "points": 76,
-      "comments": 10,
-      "author": "cacheMon",
-      "summary": "A simulator for LLM Inference prefix cache",
-      "recipe": "github_llm",
-      "buzz": 106,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-04"
-    },
-    {
-      "uid": "gh:0x45dd/pwner",
-      "source": "github",
-      "title": "0x45dd/pwner",
-      "url": "https://github.com/0x45dd/pwner",
-      "ts": 1793625315.0,
-      "points": 83,
-      "comments": 7,
-      "author": "0x45dd",
-      "summary": "Autonomous agentic network penetration-testing tool (authorized use only)",
-      "recipe": "github_llm",
-      "buzz": 104,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-02"
-    },
-    {
-      "uid": "gh:ensignalp/kota",
-      "source": "github",
-      "title": "ensignalp/kota",
-      "url": "https://github.com/ensignalp/kota",
-      "ts": 1794084124.0,
-      "points": 87,
-      "comments": 2,
-      "author": "ensignalp",
-      "summary": "AI kullanım limitleri GNOME üst panelinde — Claude, Codex, Gemini, Copilot, API bakiyeleri · AI usage limits in the GNOME top bar",
-      "recipe": "github_ai",
-      "buzz": 103,
-      "topics": [
-        "ai",
-        "dev"
-      ],
-      "date": "2026-11-07"
-    },
-    {
-      "uid": "gh:sahinmola5-rgb/coregold-vcc-terminal",
-      "source": "github",
-      "title": "sahinmola5-rgb/coregold-vcc-terminal",
-      "url": "https://github.com/sahinmola5-rgb/coregold-vcc-terminal",
-      "ts": 1793430693.0,
-      "points": 91,
-      "comments": 0,
-      "author": "sahinmola5-rgb",
-      "summary": "别再拿国内双币卡去肉身试探 Stripe Radar。 发卡行评分（Issuer Risk Score）一旦被标黑，换十次代理 IP 也是 0.05 秒秒拒。",
-      "recipe": "github_ai",
-      "buzz": 91,
-      "topics": [
-        "dev"
-      ],
-      "date": "2026-10-31"
-    },
-    {
-      "uid": "gh:bytedance/axion1_0",
-      "source": "github",
-      "title": "bytedance/axion1_0",
-      "url": "https://github.com/bytedance/axion1_0",
-      "ts": 1793594558.0,
-      "points": 73,
-      "comments": 6,
-      "author": "bytedance",
-      "summary": "Frontier-level agent capabilities with nothing more than high-quality data and a simple training recipe: 2 SFT + RL, no mid-training/DPO/OPD. Full recipe released.",
-      "recipe": "github_ai",
-      "buzz": 91,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-02"
-    },
-    {
-      "uid": "gh:joydle/borg",
-      "source": "github",
-      "title": "joydle/borg",
-      "url": "https://github.com/joydle/borg",
-      "ts": 1794072842.0,
-      "points": 75,
-      "comments": 2,
-      "author": "joydle",
-      "summary": "Supervised agent runtime for Rust: compose LLM calls into pipelines that cancel, isolate panics, retry, budget and resume.",
-      "recipe": "github_llm",
-      "buzz": 91,
-      "topics": [
-        "ai",
-        "dev"
-      ],
-      "date": "2026-11-07"
-    },
-    {
-      "uid": "gh:keyshadougherty70-dev/coregold-reseller-api",
-      "source": "github",
-      "title": "keyshadougherty70-dev/coregold-reseller-api",
-      "url": "https://github.com/keyshadougherty70-dev/coregold-reseller-api",
-      "ts": 1793429497.0,
-      "points": 90,
-      "comments": 0,
-      "author": "keyshadougherty70-dev",
-      "summary": "⚡ 别找二手卡贩子了！号商与 API 中继站专属批量供卡底座",
-      "recipe": "github_ai",
-      "buzz": 90,
-      "topics": [
-        "dev"
-      ],
-      "date": "2026-10-31"
-    },
-    {
-      "uid": "gh:jailsonbronk21-sketch/deepseek-r1-failover-vcc",
-      "source": "github",
-      "title": "jailsonbronk21-sketch/deepseek-r1-failover-vcc",
-      "url": "https://github.com/jailsonbronk21-sketch/deepseek-r1-failover-vcc",
-      "ts": 1793433173.0,
-      "points": 87,
-      "comments": 0,
-      "author": "jailsonbronk21-sketch",
-      "summary": "⚡ DeepSeek-R1 宕机备用指南：用 CoreGold 1 分钟拉起 Claude / OpenAI 逃生通道",
-      "recipe": "github_ai",
-      "buzz": 87,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-10-31"
-    },
-    {
-      "uid": "gh:davidcitahernandez-debug/computer-use-agent-vault",
-      "source": "github",
-      "title": "davidcitahernandez-debug/computer-use-agent-vault",
-      "url": "https://github.com/davidcitahernandez-debug/computer-use-agent-vault",
-      "ts": 1793587719.0,
-      "points": 87,
-      "comments": 0,
-      "author": "davidcitahernandez-debug",
-      "summary": "🤖 敢让 AI 自己操作电脑？先给你的 Agent 挂上一道“支付沙箱",
-      "recipe": "github_ai",
-      "buzz": 87,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-02"
-    },
-    {
-      "uid": "gh:leishifu666/lsf-website-design",
-      "source": "github",
-      "title": "leishifu666/lsf-website-design",
-      "url": "https://github.com/leishifu666/lsf-website-design",
-      "ts": 1793726415.0,
-      "points": 65,
-      "comments": 7,
-      "author": "leishifu666",
-      "summary": "LSF-网站设计基础版：参考创作、原创探索与独立评审，含 GPT 6 PRO、Claude Opus 5.5 和 DeepSeek V4.1 Flash 作品截图",
-      "recipe": "github_ai",
-      "buzz": 86,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-03"
-    },
-    {
-      "uid": "gh:drophubsuporte-web/coregold-ai-runner",
-      "source": "github",
-      "title": "drophubsuporte-web/coregold-ai-runner",
-      "url": "https://github.com/drophubsuporte-web/coregold-ai-runner",
-      "ts": 1793432269.0,
-      "points": 85,
-      "comments": 0,
-      "author": "drophubsuporte-web",
-      "summary": "⚡ 别让支付卡死 AI 生产力！用 CoreGold 彻底解决 Cursor / Claude 充值风控",
-      "recipe": "github_ai",
-      "buzz": 85,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-10-31"
-    },
-    {
-      "uid": "gh:montimazumder14-del/coregold-cloud-gpu-pay",
-      "source": "github",
-      "title": "montimazumder14-del/coregold-cloud-gpu-pay",
-      "url": "https://github.com/montimazumder14-del/coregold-cloud-gpu-pay",
-      "ts": 1793596286.0,
-      "points": 83,
-      "comments": 0,
-      "author": "montimazumder14-del",
-      "summary": "别让支付掐死你的 GPU 算力！用 CoreGold 解决 Lambda Labs / RunPod 充值风控",
-      "recipe": "github_ai",
-      "buzz": 83,
-      "topics": [
-        "hardware"
-      ],
-      "date": "2026-11-02"
-    },
-    {
-      "uid": "gh:tdelowar17-tech/coregold-agent-paygate",
-      "source": "github",
-      "title": "tdelowar17-tech/coregold-agent-paygate",
-      "url": "https://github.com/tdelowar17-tech/coregold-agent-paygate",
-      "ts": 1793589650.0,
-      "points": 82,
-      "comments": 0,
-      "author": "tdelowar17-tech",
-      "summary": "⚡ 别让“幽灵退款”封掉你的生产力号！CoreGold 破解 2026 最新 AI 结算风控",
-      "recipe": "github_ai",
-      "buzz": 82,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-02"
-    },
-    {
-      "uid": "gh:jeger2019-collab/openai-o3-deepseek-billing-proxy",
-      "source": "github",
-      "title": "jeger2019-collab/openai-o3-deepseek-billing-proxy",
-      "url": "https://github.com/jeger2019-collab/openai-o3-deepseek-billing-proxy",
-      "ts": 1793598413.0,
-      "points": 80,
-      "comments": 0,
-      "author": "jeger2019-collab",
-      "summary": "深度推理时代 API 支付灾备：彻底搞定 o3-mini / Claude 3.7 扣费风控",
-      "recipe": "github_ai",
+      "author": "Amanda Silberling",
+      "summary": "Jensen Huang has resigned from Nvidia following an affair, which could have ramifications for national security as the U.S. and China race to develop the most advanced AI infrastructure.",
+      "recipe": "tc_ai",
       "buzz": 80,
       "topics": [
         "ai",
-        "dev"
+        "dev",
+        "security"
       ],
-      "date": "2026-11-02"
+      "date": "2026-11-13"
+    },
+    {
+      "uid": "rss:c6494705d362bb",
+      "source": "rss",
+      "title": "ElevenLabs’ new app combines meeting note-taking and dictation for teams",
+      "url": "https://techcrunch.com/2026/11/13/elevenlabs-new-app-combines-meeting-note-taking-and-dictation-for-teams/",
+      "ts": 1794581088.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Ivan Mehta",
+      "summary": "ElevenAI is a new meeting notetaker and dictation app aimed at teams and enterprises.",
+      "recipe": "tc_ai",
+      "buzz": 80,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-11-13"
     },
     {
       "uid": "rss:eac079c142ed13",
@@ -2082,25 +2194,6 @@
       "buzz": 80,
       "topics": [
         "ai"
-      ],
-      "date": "2026-11-12"
-    },
-    {
-      "uid": "rss:e4e424eaad3ac6",
-      "source": "rss",
-      "title": "The unfolding Jensen Huang scandal: a timeline",
-      "url": "https://techcrunch.com/2026/11/12/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/",
-      "ts": 1794519300.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Amanda Silberling",
-      "summary": "Jensen Huang has resigned from Nvidia following an affair, which could have ramifications for national security as the U.S. and China race to develop the most advanced AI infrastructure.",
-      "recipe": "tc_ai",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
       ],
       "date": "2026-11-12"
     },
@@ -2239,7 +2332,7 @@
       "author": "Tim De Chant",
       "summary": "SoftBank lost over $3 billion preordering natural gas turbines to power AI data centers. Here's what the loss means to power markets.",
       "recipe": "tc_ai",
-      "buzz": 80,
+      "buzz": 30,
       "topics": [
         "ai",
         "biz"
@@ -2257,7 +2350,7 @@
       "author": "Aisha Malik",
       "summary": "Rather than giving consumers yet another photo-editing tool, Phota Labs aims to use advances in AI to automate the editing process so it’s easier for anyone to turn everyday moments into better photos.",
       "recipe": "tc_ai",
-      "buzz": 80,
+      "buzz": 30,
       "topics": [
         "ai"
       ],
@@ -2274,7 +2367,7 @@
       "author": "Aisha Malik",
       "summary": "Huang, who was ousted as CEO following reports of an alleged affair with a woman suspected of spying for China, agreed to testify Wednesday after several senior lawmakers threatened to subpoena him.",
       "recipe": "tc_ai",
-      "buzz": 80,
+      "buzz": 30,
       "topics": [
         "ai"
       ],
@@ -2291,7 +2384,7 @@
       "author": "Julie Bort",
       "summary": "Nvidia's ousted CEO Jensen Huang's downfall isn’t just your run-of-the-mill salacious billionaire sex scandal. He was using his influence to push the AI industry in some very specific ways.",
       "recipe": "tc_ai",
-      "buzz": 80,
+      "buzz": 30,
       "topics": [
         "ai"
       ],
@@ -2308,7 +2401,7 @@
       "author": "Sarah Perez",
       "summary": "In a post on Truth Social, President Trump says only one man can take Jensen Huang's place as head of Nvidia: Tim Cook.",
       "recipe": "tc_ai",
-      "buzz": 80,
+      "buzz": 30,
       "topics": [
         "ai",
         "dev"
@@ -2326,314 +2419,9 @@
       "author": "Amanda Silberling",
       "summary": "Nvidia CFO Colette Kress is taking over as an interim replacement for longtime CEO Jensen Huang, who is embroiled in scandal.",
       "recipe": "tc_ai",
-      "buzz": 80,
+      "buzz": 30,
       "topics": [],
       "date": "2026-11-12"
-    },
-    {
-      "uid": "rss:a8b4ef01f1e068",
-      "source": "rss",
-      "title": "Norwest pushes deeper into AI with new $4B fund",
-      "url": "https://techcrunch.com/2026/11/12/norwest-pushes-deeper-into-ai-with-new-4b-fund/",
-      "ts": 1794496694.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Kirsten Korosec",
-      "summary": "This is the investment firm's largest fund to date.",
-      "recipe": "tc_ai",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "biz"
-      ],
-      "date": "2026-11-12"
-    },
-    {
-      "uid": "rss:2843d5b0f258e5",
-      "source": "rss",
-      "title": "Cyberattack on Fireworks AI allowed hackers to access Notion customers’ chat transcripts",
-      "url": "https://techcrunch.com/2026/11/12/cyberattack-on-fireworks-ai-allowed-hackers-to-access-notion-customers-chat-transcripts/",
-      "ts": 1794495748.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Zack Whittaker",
-      "summary": "This is Fireworks' second data breach in as many months.",
-      "recipe": "tc_ai",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-12"
-    },
-    {
-      "uid": "gh:adinurlanova218-png/ai-payment-router-proxy",
-      "source": "github",
-      "title": "adinurlanova218-png/ai-payment-router-proxy",
-      "url": "https://github.com/adinurlanova218-png/ai-payment-router-proxy",
-      "ts": 1793600011.0,
-      "points": 79,
-      "comments": 0,
-      "author": "adinurlanova218-png",
-      "summary": "⚡ 别让支付打断生产力：AI API 与自动化 Agent 扣费避坑指南",
-      "recipe": "github_ai",
-      "buzz": 79,
-      "topics": [
-        "ai",
-        "dev"
-      ],
-      "date": "2026-11-02"
-    },
-    {
-      "uid": "gh:ruletascasiteveo1-bot/coregold-multimodal-pay",
-      "source": "github",
-      "title": "ruletascasiteveo1-bot/coregold-multimodal-pay",
-      "url": "https://github.com/ruletascasiteveo1-bot/coregold-multimodal-pay",
-      "ts": 1793591996.0,
-      "points": 78,
-      "comments": 0,
-      "author": "ruletascasiteveo1-bot",
-      "summary": "别让支付卡死生成式视频！用 CoreGold 解决 Sora / Runway / 顶流视频 AI 充值风控",
-      "recipe": "github_ai",
-      "buzz": 78,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-02"
-    },
-    {
-      "uid": "gh:ahmedaydinmustafa6767-sketch/claude-pro-subscription-guide",
-      "source": "github",
-      "title": "ahmedaydinmustafa6767-sketch/claude-pro-subscription-guide",
-      "url": "https://github.com/ahmedaydinmustafa6767-sketch/claude-pro-subscription-guide",
-      "ts": 1793600760.0,
-      "points": 78,
-      "comments": 0,
-      "author": "ahmedaydinmustafa6767-sketch",
-      "summary": "⚡ 2026 最新实测：手把手教你用 CoreGold 3 分钟开通 Claude Pro / Team",
-      "recipe": "github_ai",
-      "buzz": 78,
-      "topics": [
-        "dev"
-      ],
-      "date": "2026-11-02"
-    },
-    {
-      "uid": "gh:alanautofin-a11y/open-operator-payment-proxy",
-      "source": "github",
-      "title": "alanautofin-a11y/open-operator-payment-proxy",
-      "url": "https://github.com/alanautofin-a11y/open-operator-payment-proxy",
-      "ts": 1793599118.0,
-      "points": 78,
-      "comments": 0,
-      "author": "alanautofin-a11y",
-      "summary": "当 AI Agent 开始替你操作浏览器：为什么你的支付通道会瞬间瘫痪？",
-      "recipe": "github_ai",
-      "buzz": 78,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-02"
-    },
-    {
-      "uid": "gh:Ritrls/dream-arcade-demo",
-      "source": "github",
-      "title": "Ritrls/dream-arcade-demo",
-      "url": "https://github.com/Ritrls/dream-arcade-demo",
-      "ts": 1793714141.0,
-      "points": 78,
-      "comments": 0,
-      "author": "Ritrls",
-      "summary": "自然语言创造单位：RunningHub 生成属性、技能和素材，直接带入线路防守、口袋 RTS 和增量矿场。",
-      "recipe": "github_ai",
-      "buzz": 78,
-      "topics": [],
-      "date": "2026-11-03"
-    },
-    {
-      "uid": "gh:visitantexbox64-byte/cursor-pro-subscription-guide",
-      "source": "github",
-      "title": "visitantexbox64-byte/cursor-pro-subscription-guide",
-      "url": "https://github.com/visitantexbox64-byte/cursor-pro-subscription-guide",
-      "ts": 1793693560.0,
-      "points": 74,
-      "comments": 0,
-      "author": "visitantexbox64-byte",
-      "summary": "⚡ 2026 最新实测：手把手教你用 CoreGold 3 分钟开通 Cursor Pro / Business",
-      "recipe": "github_ai",
-      "buzz": 74,
-      "topics": [
-        "dev"
-      ],
-      "date": "2026-11-03"
-    },
-    {
-      "uid": "gh:victorcuscahua1974-afk/ai-video-studio-billing-guard",
-      "source": "github",
-      "title": "victorcuscahua1974-afk/ai-video-studio-billing-guard",
-      "url": "https://github.com/victorcuscahua1974-afk/ai-video-studio-billing-guard",
-      "ts": 1793698403.0,
-      "points": 71,
-      "comments": 0,
-      "author": "victorcuscahua1974-afk",
-      "summary": "Sora、Runway Gen-3 与 Midjourney 大额订阅专属卡：防跨境风控拦截、多账号渲染连坐与忘记取消续费。",
-      "recipe": "github_ai",
-      "buzz": 71,
-      "topics": [
-        "ai",
-        "dev"
-      ],
-      "date": "2026-11-03"
-    },
-    {
-      "uid": "gh:eragritchiegg15-beep/elevenlabs-voice-api-pay",
-      "source": "github",
-      "title": "eragritchiegg15-beep/elevenlabs-voice-api-pay",
-      "url": "https://github.com/eragritchiegg15-beep/elevenlabs-voice-api-pay",
-      "ts": 1793700089.0,
-      "points": 71,
-      "comments": 0,
-      "author": "eragritchiegg15-beep",
-      "summary": "ElevenLabs 与海外 AI 拟真音频平台充值实战：CoreGold 商业虚拟卡破解 Stripe 大额扣费拦截与防滥用连坐。",
-      "recipe": "github_ai",
-      "buzz": 71,
-      "topics": [
-        "ai",
-        "dev"
-      ],
-      "date": "2026-11-03"
-    },
-    {
-      "uid": "gh:raudhatulirfandta-droid/claude-code-billing-setup",
-      "source": "github",
-      "title": "raudhatulirfandta-droid/claude-code-billing-setup",
-      "url": "https://github.com/raudhatulirfandta-droid/claude-code-billing-setup",
-      "ts": 1793695374.0,
-      "points": 71,
-      "comments": 0,
-      "author": "raudhatulirfandta-droid",
-      "summary": "Claude 3.7 混合思考与 Claude Code 终端免拒绑卡：用 CoreGold 商业卡破除 Anthropic 幽灵退款砍单。",
-      "recipe": "github_ai",
-      "buzz": 71,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-03"
-    },
-    {
-      "uid": "gh:kristofermeyer9-cloud/huggingface-pro-inference-pay",
-      "source": "github",
-      "title": "kristofermeyer9-cloud/huggingface-pro-inference-pay",
-      "url": "https://github.com/kristofermeyer9-cloud/huggingface-pro-inference-pay",
-      "ts": 1793789439.0,
-      "points": 66,
-      "comments": 0,
-      "author": "kristofermeyer9-cloud",
-      "summary": "Hugging Face Pro 与 Inference Endpoints 扣费指南：解决部署模型卡密拒付与弹性计费穿透。",
-      "recipe": "github_ai",
-      "buzz": 66,
-      "topics": [],
-      "date": "2026-11-04"
-    },
-    {
-      "uid": "gh:sojibyyy6-lab/apple-pay-us-ai-subscription",
-      "source": "github",
-      "title": "sojibyyy6-lab/apple-pay-us-ai-subscription",
-      "url": "https://github.com/sojibyyy6-lab/apple-pay-us-ai-subscription",
-      "ts": 1793786528.0,
-      "points": 66,
-      "comments": 0,
-      "author": "sojibyyy6-lab",
-      "summary": "Apple Pay 绑定美区虚拟卡指南：免风控订阅 ChatGPT、Claude 与海外 AI，破解无原生美卡难题。",
-      "recipe": "github_ai",
-      "buzz": 66,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-04"
-    },
-    {
-      "uid": "gh:bazongotalato-cyber/deepseek-api-overseas-proxy",
-      "source": "github",
-      "title": "bazongotalato-cyber/deepseek-api-overseas-proxy",
-      "url": "https://github.com/bazongotalato-cyber/deepseek-api-overseas-proxy",
-      "ts": 1793787711.0,
-      "points": 65,
-      "comments": 0,
-      "author": "bazongotalato-cyber",
-      "summary": "DeepSeek-R1 / V3 海外云端实例调用结算：CoreGold 虚拟卡解决第三方托管平台充值拒付与预算穿透。",
-      "recipe": "github_ai",
-      "buzz": 65,
-      "topics": [
-        "ai",
-        "dev"
-      ],
-      "date": "2026-11-04"
-    },
-    {
-      "uid": "gh:DespiteVoltcloud/InterviewCopilot-rpocket-team",
-      "source": "github",
-      "title": "DespiteVoltcloud/InterviewCopilot-rpocket-team",
-      "url": "https://github.com/DespiteVoltcloud/InterviewCopilot-rpocket-team",
-      "ts": 1793879806.0,
-      "points": 64,
-      "comments": 0,
-      "author": "DespiteVoltcloud",
-      "summary": "EdTech application designed to bridge the gap between learning and landing your dream job",
-      "recipe": "github_ai",
-      "buzz": 64,
-      "topics": [],
-      "date": "2026-11-05"
-    },
-    {
-      "uid": "gh:davidsorianop021-cmd/perplexity-pro-applepay-",
-      "source": "github",
-      "title": "davidsorianop021-cmd/perplexity-pro-applepay-",
-      "url": "https://github.com/davidsorianop021-cmd/perplexity-pro-applepay-",
-      "ts": 1793788095.0,
-      "points": 64,
-      "comments": 0,
-      "author": "davidsorianop021-cmd",
-      "summary": "Perplexity Pro 深度研究与搜索订阅：支持 Apple Pay 与网页双通道，告别拒付与连坐封禁",
-      "recipe": "github_ai",
-      "buzz": 64,
-      "topics": [],
-      "date": "2026-11-04"
-    },
-    {
-      "uid": "gh:manassiradao368-tech/gemini-2-flash-thinking-api-guard",
-      "source": "github",
-      "title": "manassiradao368-tech/gemini-2-flash-thinking-api-guard",
-      "url": "https://github.com/manassiradao368-tech/gemini-2-flash-thinking-api-guard",
-      "ts": 1793848489.0,
-      "points": 63,
-      "comments": 0,
-      "author": "manassiradao368-tech",
-      "summary": "Google Gemini 2.0 Flash Thinking 深度长思考 API 扣费避坑：解决 GCP 预授权频繁拒付、并发配额超支与账单熔断。",
-      "recipe": "github_ai",
-      "buzz": 63,
-      "topics": [
-        "dev"
-      ],
-      "date": "2026-11-05"
-    },
-    {
-      "uid": "gh:lidambrunel309-ship-it/OpenAI-GPT-6.1-Terra-GPT-6-Astra-",
-      "source": "github",
-      "title": "lidambrunel309-ship-it/OpenAI-GPT-6.1-Terra-GPT-6-Astra-",
-      "url": "https://github.com/lidambrunel309-ship-it/OpenAI-GPT-6.1-Terra-GPT-6-Astra-",
-      "ts": 1793849677.0,
-      "points": 61,
-      "comments": 0,
-      "author": "lidambrunel309-ship-it",
-      "summary": "gpt-6-terra-pro-subscription-guide",
-      "recipe": "github_ai",
-      "buzz": 61,
-      "topics": [
-        "ai",
-        "dev"
-      ],
-      "date": "2026-11-05"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13T13:27:23+00:00",
+  "generated_at": "2026-11-13T17:10:40+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -18,13 +18,13 @@
       "the_hacker_news": 30
     },
     "by_topic": {
-      "security": 54,
-      "ai": 42,
-      "dev": 30,
-      "hardware": 12,
+      "security": 52,
+      "ai": 40,
+      "dev": 33,
+      "hardware": 13,
       "science": 6,
-      "crypto": 2,
-      "biz": 1
+      "crypto": 4,
+      "biz": 2
     },
     "top_domains": [
       [
@@ -74,6 +74,24 @@
         "hardware"
       ],
       "date": "2026-11-12"
+    },
+    {
+      "uid": "cve:GHSA-6655-6qjp-jx7x",
+      "source": "cve",
+      "title": "CVE-2026-126191: Soup Sieve: Exponential ReDoS in selector compilation via \\9-run in CSS_ESCAPES/IDENTIFIER",
+      "url": "https://github.com/advisories/GHSA-6655-6qjp-jx7x",
+      "ts": 1794587983.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "soupsieve",
+      "summary": "Severity: high. ### Summary\nThe IDENTIFIER/CSS_ESCAPES regex (css_parser.py:119-124) exhibits exponential backtracking on a run of ambiguous digit-escapes (`\\9`) in an attribute-name or tag position of an otherwise well-formed selector. It fires at compile time (before the SELECTOR_LIMIT guard) via the public `soup",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-13"
     },
     {
       "uid": "cve:GHSA-mmhr-3c5m-f64f",
@@ -146,6 +164,44 @@
         "security"
       ],
       "date": "2026-11-12"
+    },
+    {
+      "uid": "cve:GHSA-mf5v-w3w3-f6cg",
+      "source": "cve",
+      "title": "CVE-2026-126360: OpenTelemetry Python API: Denial of service through quadratic-time traceparent parsing",
+      "url": "https://github.com/advisories/GHSA-mf5v-w3w3-f6cg",
+      "ts": 1794588198.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "opentelemetry-api",
+      "summary": "Severity: medium. ## Summary\n\n`TraceContextTextMapPropagator.extract()` in `opentelemetry-api` is vulnerable to regular expression denial of service (ReDoS) when processing a specially crafted `traceparent` value.\n\nA malformed value containing a trace-context prefix followed by a long whitespace sequence and an embed",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "dev",
+        "science",
+        "security"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "uid": "cve:GHSA-7g44-g9rc-x53w",
+      "source": "cve",
+      "title": "CVE-2026-126193: Soup Sieve: Uncontrolled recursion in CSS parser lets nested pseudo-class selectors exhaust the Python call stack",
+      "url": "https://github.com/advisories/GHSA-7g44-g9rc-x53w",
+      "ts": 1794587699.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "soupsieve",
+      "summary": "Severity: medium. ## Summary\n\nThe Soup Sieve CSS selector parser recurses once per level of nested pseudo-class selector (`:is()`, `:not()`, `:where()`, `:has()`) without any limit on nesting depth. An unauthenticated attacker who can supply a CSS selector string to `soupsieve.compile()`, `soupsieve.select()`, or Bea",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-13"
     },
     {
       "uid": "cve:GHSA-4j63-6c4x-wfg4",
@@ -458,61 +514,6 @@
       "date": "2026-11-12"
     },
     {
-      "uid": "cve:GHSA-9f42-57jx-vpp3",
-      "source": "cve",
-      "title": "CVE-2026-126352: Addressable: Regular Expression Denial of Service in templates with multiple variables",
-      "url": "https://github.com/advisories/GHSA-9f42-57jx-vpp3",
-      "ts": 1794522575.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "addressable",
-      "summary": "Severity: medium. ### Impact\n\nWithin the URI template implementation in Addressable, templates that put several variables in one expression generate regular expressions vulnerable to excessive backtracking:\n\n1. Expressions with any operator other than `+` and `#` (e.g., `{/owner,repo,ref}`, `{.a,b}`, `{a,b,c}`, `{;a,",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "science",
-        "security"
-      ],
-      "date": "2026-11-12"
-    },
-    {
-      "uid": "cve:GHSA-8gmh-2hhj-2hv9",
-      "source": "cve",
-      "title": "CVE-2026-126354: Addressable URI normalization resolves some dotted path segments to the wrong path",
-      "url": "https://github.com/advisories/GHSA-8gmh-2hhj-2hv9",
-      "ts": 1794522478.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "addressable",
-      "summary": "Severity: medium. ### Summary\n\n`Addressable::URI.normalize_path` resolves some paths containing `..` segments to a different path than RFC 3986 does. When a path climbs above the root before any other `..` is resolved, the segments that later `..` segments should remove are instead kept: `/../../public/x/../../secret",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-12"
-    },
-    {
-      "uid": "cve:GHSA-r4jh-29pc-gfqr",
-      "source": "cve",
-      "title": "CVE-2026-126346: basic-ftp: Uncaught exception crashes the Node.js process when a password (or resumed-download path) contains CR/LF",
-      "url": "https://github.com/advisories/GHSA-r4jh-29pc-gfqr",
-      "ts": 1794522230.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "basic-ftp",
-      "summary": "Severity: medium. ### Summary\n\nClient.login() calls FTPContext.send() from inside the control-socket data event handler. send() throws on CR, LF or NUL, and nothing catches the throw. A password containing \\r\\n therefore raises an uncaught exception and terminates the whole Node.js process. It does not reject the ret",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-12"
-    },
-    {
       "uid": "cve:GHSA-3gg2-335m-rxc6",
       "source": "cve",
       "title": "CVE-2026-126359: Hono: `css` helper does not escape a closing tag split between the template and an interpolated value, allowing HTML injection",
@@ -587,6 +588,63 @@
         "security"
       ],
       "date": "2026-11-12"
+    },
+    {
+      "uid": "rss:563cd8d18fd7e0",
+      "source": "rss",
+      "title": "New Mior and Skyfall Attacks Let Rogue Cloud Hosts Steal Secrets From AMD SEV-SNP VMs",
+      "url": "https://thehackernews.com/2026/11/new-mior-and-skyfall-attacks-let-rogue.html",
+      "ts": 1794583625.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Two attacks made public this week allow a malicious host to read data inside AMD SEV-SNP-protected virtual machines (VMs), which are built to keep the server's operator out. One of them, Mior, can also modify a VM's memory and fake the signed report confirming which software it runs. Both need control of the server's hypervisor, and Mior also needs control of the server's BIOS. Researchers",
+      "recipe": "the_hacker_news",
+      "buzz": 80,
+      "topics": [
+        "dev",
+        "hardware"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "uid": "rss:6518422fdf409b",
+      "source": "rss",
+      "title": "FBI Says North Korean Hackers Stole Over $400 Million in Crypto Using Deepfake Video Calls",
+      "url": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html",
+      "ts": 1794580138.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "The U.S. Federal Bureau of Investigation (FBI) has established that threat actors tied to the Democratic People's Republic of Korea (DPRK aka North Korea) have stolen more than $400 million worth of cryptocurrency as part of a social engineering scheme codenamed FaceStealer in the last 18 months. As part of a coordinated set of actions announced by the U.S. government, the cloud-based",
+      "recipe": "the_hacker_news",
+      "buzz": 80,
+      "topics": [
+        "dev",
+        "crypto",
+        "biz"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "uid": "rss:e01f78786aae3f",
+      "source": "rss",
+      "title": "Trezor Confirms Hidden Implants in CryptoBilis-Sold Wallets That Can Steal Recovery Phrases",
+      "url": "https://thehackernews.com/2026/11/trezor-confirms-hidden-hardware.html",
+      "ts": 1794578060.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Three Trezor Safe 5 wallets bought from the reseller CryptoBilis contain an implant, an extra circuit board that can copy their recovery phrases, hardware wallet maker Trezor said yesterday. The implant reads the phrase from the wallet's screen and sends it over the mobile network to a server controlled by the attackers. The company examined one of the wallets in its lab, identified the other",
+      "recipe": "the_hacker_news",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "crypto",
+        "hardware"
+      ],
+      "date": "2026-11-13"
     },
     {
       "uid": "rss:dea5a8ecb640ff",
@@ -747,7 +805,7 @@
       "author": "info@thehackernews.com (The Hacker News)",
       "summary": "A critical flaw in Red Hat Quay allows an attacker who can access a Quay registry to read and overwrite private container images in every repository. Quay enables anonymous access by default, and while it is enabled, the attacker needs no account. When it is off, anyone with a valid account can still exploit the flaw, Red Hat said yesterday. The company has released fixed builds for eight Quay",
       "recipe": "the_hacker_news",
-      "buzz": 80,
+      "buzz": 30,
       "topics": [
         "ai",
         "security"
@@ -765,7 +823,7 @@
       "author": "info@thehackernews.com (The Hacker News)",
       "summary": "Citrix has released patches for multiple critical security flaws impacting NetScaler ADC, Citrix NetScaler Gateway, and NetScaler Console that could lead to denial-of-service (DoS) or an authentication bypass. The critical vulnerabilities that impact NetScaler ADC and NetScaler Gateway are listed below - CVE-[phone] (CVSS score: 9.3) - A memory overflow vulnerability in Packet",
       "recipe": "the_hacker_news",
-      "buzz": 80,
+      "buzz": 30,
       "topics": [
         "security"
       ],
@@ -782,7 +840,7 @@
       "author": "info@thehackernews.com (The Hacker News)",
       "summary": "Cybersecurity researchers have found that lookalike domains masquerading as artificial intelligence (AI) tools are being used to serve ClickFix-style lures, browser-hijacking malware, and a set of extensions that hijack user searches. This delivery pattern has been codenamed TypoPrompting by Island. \"AI-app lookalikes that turn an attempt to reach a familiar tool into a prompt to verify,",
       "recipe": "the_hacker_news",
-      "buzz": 80,
+      "buzz": 30,
       "topics": [
         "ai",
         "security"
@@ -1087,61 +1145,6 @@
       "buzz": 30,
       "topics": [
         "dev"
-      ],
-      "date": "2026-11-11"
-    },
-    {
-      "uid": "rss:1847c39d5f7545",
-      "source": "rss",
-      "title": "Microsoft Patches 1,259 Flaws, Including Exploited Outlook Bug That May Expose NTLMv2 Hashes",
-      "url": "https://thehackernews.com/2026/11/microsoft-patches-1259-flaws-including.html",
-      "ts": 1794385073.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Microsoft on Tuesday released patches for a total of 1,259 vulnerabilities spanning its software portfolio, the second consecutive month where the patch volume has exceeded 1,000 flaws. These cover 726 flaws in Windows, 174 in Office, 61 in Developer Tools, 59 in SQL Server, 53 in Developer Tools, and 27 in SharePoint Server. The patches also include 165 non-Microsoft-issued CVE identifiers.",
-      "recipe": "the_hacker_news",
-      "buzz": 30,
-      "topics": [
-        "dev",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-11"
-    },
-    {
-      "uid": "rss:1c58edc680c770",
-      "source": "rss",
-      "title": "Railway Says Stolen Customer AI Keys Led to $740,000 in Estimated Unauthorized Usage Charges",
-      "url": "https://thehackernews.com/2026/11/railway-says-stolen-customer-ai-keys.html",
-      "ts": 1794383344.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "AI provider keys that customers stored on Railway were stolen in an October breach and used to commit an estimated $740,000 in unauthorized spending, the platform-as-a-service provider said yesterday. It has promised to pay those charges itself when an AI provider will not refund them. The company builds and runs apps for its customers and stores their secrets, such as API keys and database",
-      "recipe": "the_hacker_news",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-11"
-    },
-    {
-      "uid": "rss:d2c948589677fd",
-      "source": "rss",
-      "title": "Microsoft Researchers Show AI Agents Can Be Backdoored by Editing Fewer Than 10 Neurons",
-      "url": "https://thehackernews.com/2026/11/microsoft-researchers-show-ai-agents.html",
-      "ts": 1794381665.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "An AI model can be given a hidden backdoor by editing fewer than 10 of its rarely used neurons, without retraining the model, Microsoft researchers have shown. When a chosen trigger appears, the model outputs an attacker's command, which an agent using that model would run with the agent's own permissions. The attacker must be able to change the model's weights. The team tested the method on",
-      "recipe": "the_hacker_news",
-      "buzz": 30,
-      "topics": [
-        "ai"
       ],
       "date": "2026-11-11"
     }
