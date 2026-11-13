@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13T17:11:21+00:00",
+  "generated_at": "2026-11-13T21:05:31+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -26,13 +26,13 @@
       "krebs": 10
     },
     "by_topic": {
-      "security": 109,
-      "ai": 71,
-      "dev": 54,
-      "hardware": 17,
+      "security": 110,
+      "ai": 66,
+      "dev": 52,
+      "hardware": 24,
+      "science": 9,
       "biz": 7,
-      "crypto": 6,
-      "science": 6
+      "crypto": 6
     },
     "top_domains": [
       [
@@ -192,25 +192,6 @@
       "date": "2026-11-13"
     },
     {
-      "uid": "cve:GHSA-f3w6-w445-fwh9",
-      "source": "cve",
-      "title": "CVE-2026-122006: Active Storage: Possible arbitrary file write and read in image analysis",
-      "url": "https://github.com/advisories/GHSA-f3w6-w445-fwh9",
-      "ts": 1794527211.0,
-      "points": 6000,
-      "comments": 0,
-      "author": "activestorage",
-      "summary": "Severity: critical. ### Impact\nA Rails application that processes attachments with ImageMagick may allow an unauthenticated attacker to write arbitrary files on the server and, when attachments are stored with the Disk service, to read arbitrary files readable by the application process. Those files typically include `",
-      "recipe": "gh_advisories",
-      "buzz": 6080,
-      "topics": [
-        "ai",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-12"
-    },
-    {
       "uid": "hn:48997548",
       "source": "hn",
       "title": "OpenAI and Hugging Face address security incident during model evaluation",
@@ -302,6 +283,97 @@
       "date": "2021-01-11"
     },
     {
+      "uid": "cve:GHSA-8fx7-8jr8-84rv",
+      "source": "cve",
+      "title": "CVE-2026-126303: NLTK: Unbounded CPU consumption in SteppingRecursiveDescentParser.parse() with ambiguous or self-embedding grammars",
+      "url": "https://github.com/advisories/GHSA-8fx7-8jr8-84rv",
+      "ts": 1794603739.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "nltk",
+      "summary": "Severity: high. ## Summary\n\n`nltk.parse.recursivedescent.SteppingRecursiveDescentParser.parse()` performs an unbounded top-down search over ambiguous or self-embedding context-free grammars with no wall-clock or step limit. An actor who can influence the grammar and supply a short input to a caller that uses this p",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "uid": "cve:GHSA-qg35-44qx-7vrr",
+      "source": "cve",
+      "title": "CVE-2026-126304: NLTK: Symlink escape in YCOECorpusReader lets a psd/pos directory symlink read files outside the corpus root within the data sandbox",
+      "url": "https://github.com/advisories/GHSA-qg35-44qx-7vrr",
+      "ts": 1794603316.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "nltk",
+      "summary": "Severity: high. ## Summary\n\n`YCOECorpusReader` builds two nested corpus sub-readers whose roots are derived from `self.root.join(\"psd\")` and `self.root.join(\"pos\")` (nltk/corpus/reader/ycoe.py). Because `FileSystemPathPointer.join()` (nltk/data.py) performs a purely lexical containment check and never resolves syml",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "uid": "cve:GHSA-vvf4-9x63-8xvv",
+      "source": "cve",
+      "title": "CVE-2026-128089: dnspython has excessive memory and CPU use",
+      "url": "https://github.com/advisories/GHSA-vvf4-9x63-8xvv",
+      "ts": 1794601153.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "dnspython",
+      "summary": "Severity: high. ### Summary\n\nA maliciously crafted zone file could use a WKS record to consume excessive memory and CPU, possibly causing the process to exit due to memory exhaustion.\n\n### Details\n\nThe `from_text()` parser does not check that a WKS record service number is between 0 and 65535 inclusive.  It then us",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "ai",
+        "dev",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "uid": "cve:GHSA-6vhm-j9h7-f9gh",
+      "source": "cve",
+      "title": "CVE-2026-128082: AutoMapper: Uncontrolled Recursion with Constructor Parameters",
+      "url": "https://github.com/advisories/GHSA-6vhm-j9h7-f9gh",
+      "ts": 1794597662.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "AutoMapper",
+      "summary": "Severity: high. ### Summary\n`MaxDepth`, whether set explicitly or applied by default (64) to self-referential type maps, was not enforced when the recursion goes through constructor parameters. Mapping a deeply nested source to a destination built through its constructor, such as a positional `record`, recurses wit",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "uid": "cve:GHSA-gpwp-5797-mjff",
+      "source": "cve",
+      "title": "CVE-2026-128081: AutoMapper: Denial of Service via uncontrolled recursion that bypasses MaxDepth",
+      "url": "https://github.com/advisories/GHSA-gpwp-5797-mjff",
+      "ts": 1794595637.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "AutoMapper",
+      "summary": "Severity: high. ### Summary\nThe default and explicit `MaxDepth` limits added for CVE-[phone] don't apply to several mapping paths. Mapping a deeply nested source through any of them recurses without bound and throws a `StackOverflowException`, which can't be caught and terminates the process.\n\n### Affected paths",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-11-13"
+    },
+    {
       "uid": "cve:GHSA-6655-6qjp-jx7x",
       "source": "cve",
       "title": "CVE-2026-126191: Soup Sieve: Exponential ReDoS in selector compilation via \\9-run in CSS_ESCAPES/IDENTIFIER",
@@ -320,76 +392,42 @@
       "date": "2026-11-13"
     },
     {
-      "uid": "cve:GHSA-mmhr-3c5m-f64f",
+      "uid": "cve:GHSA-7r4r-6ppg-7ff8",
       "source": "cve",
-      "title": "CVE-2026-126190: Soup Sieve: Polynomial-time denial of service in the descendant combinator",
-      "url": "https://github.com/advisories/GHSA-mmhr-3c5m-f64f",
-      "ts": 1794530986.0,
+      "title": "GHSA-7r4r-6ppg-7ff8: Duplicate Advisory: Symlink escape in YCOECorpusReader lets a psd/pos directory symlink read files outside the corpus root within the data sandbox",
+      "url": "https://github.com/advisories/GHSA-7r4r-6ppg-7ff8",
+      "ts": 1794573077.0,
       "points": 3500,
       "comments": 0,
-      "author": "soupsieve",
-      "summary": "Severity: high. ## Summary\n\nMatching a selector that uses the descendant combinator (`a b`) takes time that grows polynomially with how deeply the document is nested, and each extra descendant combinator in the selector raises the degree by one. A selector with `k` descendant combinators takes `O(n^(k+1))` time on",
+      "author": "nltk",
+      "summary": "Severity: high. ## Duplicate Advisory\n\nThis advisory has been withdrawn because it is a duplicate of GHSA-qg35-44qx-7vrr. This link is maintained to preserve external references.\n\n## Original Description\nNLTK from 3.10.0 before 3.10.4 contains a symlink escape vulnerability in YCOECorpusReader that allows attackers",
       "recipe": "gh_advisories",
       "buzz": 3580,
       "topics": [
         "ai",
+        "dev",
         "security"
       ],
       "date": "2026-11-13"
     },
     {
-      "uid": "cve:GHSA-wm3x-v3qw-4jh3",
+      "uid": "cve:GHSA-4hvg-fv5c-9936",
       "source": "cve",
-      "title": "CVE-2026-126081: Action Pack: Possible Strong Parameters Bypass in Parameters#each_key",
-      "url": "https://github.com/advisories/GHSA-wm3x-v3qw-4jh3",
-      "ts": 1794526629.0,
+      "title": "GHSA-4hvg-fv5c-9936: Duplicate Advisory: Unbounded CPU consumption in NLTK SteppingRecursiveDescentParser.parse() with ambiguous or self-embedding grammars",
+      "url": "https://github.com/advisories/GHSA-4hvg-fv5c-9936",
+      "ts": 1794573077.0,
       "points": 3500,
       "comments": 0,
-      "author": "actionpack",
-      "summary": "Severity: high. ### Impact\n`ActionController::Parameters#each_key` delegates to the internal `ActiveSupport::HashWithIndifferentAccess` that holds the request parameters, so when called with a block it returns that hash instead of the `Parameters` instance. The hash does not respond to `permitted?`, so Active Model",
+      "author": "nltk",
+      "summary": "Severity: high. ## Duplicate Advisory\n\nThis advisory has been withdrawn because it is a duplicate of GHSA-8fx7-8jr8-84rv. This link is maintained to preserve external references.\n\n## Original Description\nNLTK before 3.10.4 contains an uncontrolled resource consumption vulnerability in SteppingRecursiveDescentParser",
       "recipe": "gh_advisories",
       "buzz": 3580,
       "topics": [
         "ai",
-        "security"
+        "security",
+        "hardware"
       ],
-      "date": "2026-11-12"
-    },
-    {
-      "uid": "cve:GHSA-xcvg-w56q-r89m",
-      "source": "cve",
-      "title": "CVE-2026-128067: Pillow: Heap buffer overflow saving TIFF with libtiff when tags override image size",
-      "url": "https://github.com/advisories/GHSA-xcvg-w56q-r89m",
-      "ts": 1794526483.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "Pillow",
-      "summary": "Severity: high. ```\n============================================================================\nANT-2026-CS7N494P  [high]  CWE-787  memory-safety\nHeap buffer overflow saving TIFF with libtiff when tags override image size\nLocation: src/libImaging/TiffDecode.c:1035  in ImagingLibTiffEncode()\nCommit:   a707c6b21c313",
-      "recipe": "gh_advisories",
-      "buzz": 3580,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-12"
-    },
-    {
-      "uid": "cve:GHSA-73v3-wf97-vpgj",
-      "source": "cve",
-      "title": "CVE-2026-126366: msgpack-ruby JRuby decoder makes uncapped header-count allocations; a 5-byte message forces multi-GiB OOM",
-      "url": "https://github.com/advisories/GHSA-73v3-wf97-vpgj",
-      "ts": 1794524099.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "msgpack",
-      "summary": "Severity: high. ### Summary\n\nThe **JRuby** implementation of msgpack (`msgpack` gem, `java` platform — pure Java decoder under `ext/java/`) sizes containers directly from the element count written in the message header, with **no cap at all**: no equivalent of the C unpacker's `SHRT_MAX` clamp (since 1.7.3) and non",
-      "recipe": "gh_advisories",
-      "buzz": 3580,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-12"
+      "date": "2026-11-13"
     },
     {
       "uid": "hn:50172041",
@@ -702,6 +740,263 @@
       "date": "2020-09-30"
     },
     {
+      "uid": "cve:GHSA-mw6w-2fmv-pvw3",
+      "source": "cve",
+      "title": "CVE-2026-128117: SvelteKit: adapter-node crashes with an unhandled URIError when `reroute` rewrites malformed pathnames",
+      "url": "https://github.com/advisories/GHSA-mw6w-2fmv-pvw3",
+      "ts": 1794603104.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "@sveltejs/kit",
+      "summary": "Severity: medium. When `reroute` turned an invalid percent-encoded path into a valid path, it could potentially trigger a comparison that would crash the server.",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "uid": "cve:GHSA-jf9x-2fg2-hx4w",
+      "source": "cve",
+      "title": "CVE-2026-128121: SvelteKit: Prerendered paths are interpreted as regular expressions in Vercel route config generated by @sveltejs/adapter-vercel and @sveltejs/adapter-static",
+      "url": "https://github.com/advisories/GHSA-jf9x-2fg2-hx4w",
+      "ts": 1794602603.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "@sveltejs/adapter-vercel",
+      "summary": "Severity: medium. If an attacker could influence a link that was crawled during the prerender phase, that link could later be interpreted as a regex in the Vercel routing configuration.",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "science",
+        "security"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "uid": "cve:GHSA-5wg4-q3ww-283h",
+      "source": "cve",
+      "title": "CVE-2026-128122: SvelteKit: Prerendered redirect paths can inject arbitrary rules into the `_redirects` file generated by `@sveltejs/adapter-cloudflare`",
+      "url": "https://github.com/advisories/GHSA-5wg4-q3ww-283h",
+      "ts": 1794602355.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "@sveltejs/adapter-cloudflare",
+      "summary": "Severity: medium. If an attacker can influence the links crawled during prerendering, they can influence the redirects entries that are added to the Cloudflare platform redirects generated during the adapt phase of the build.",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "science",
+        "security"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "uid": "cve:GHSA-rqw3-x7hx-mm3p",
+      "source": "cve",
+      "title": "CVE-2026-128123: SvelteKit: `@sveltejs/adapter-node` crashes when proxying certain requests via `fetch`",
+      "url": "https://github.com/advisories/GHSA-rqw3-x7hx-mm3p",
+      "ts": 1794602213.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "@sveltejs/adapter-node",
+      "summary": "Severity: medium. In affected versions, `@sveltejs/adapter-node` can attempt to add a header to an immutable request in a context that causes the server to crash, denying service to any other requests routed to that server.",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "uid": "cve:GHSA-r99w-jh2x-3mg9",
+      "source": "cve",
+      "title": "CVE-2026-128077: Nuxt: Incomplete fix for GHSA-9v7c-q64q-vv33: a leading `//` in the request path bypasses `server/middleware` path checks and server route rules on page routes",
+      "url": "https://github.com/advisories/GHSA-r99w-jh2x-3mg9",
+      "ts": 1794598341.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "@nuxt/nitro-server",
+      "summary": "Severity: medium. ### Summary\n\nSince `4.6.0`, Nuxt parses a request path that starts with `//` as a URL with a host before rendering a page, so `//x/admin` renders the page at `/admin`. Nitro's routing, Nitro's route rules and `server/middleware` see the path as `//x/admin`, so server-side checks keyed on `/admin` do",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "dev",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "uid": "cve:GHSA-3v2p-hm54-8qcq",
+      "source": "cve",
+      "title": "CVE-2026-128080: OpenTelemetry JavaScript: Insertion of Sensitive Information into Log File and Exposure of Sensitive Information to an Unauthorized Actor in @opentelemetry/instrumentation-http",
+      "url": "https://github.com/advisories/GHSA-3v2p-hm54-8qcq",
+      "ts": 1794598160.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "@opentelemetry/instrumentation-http",
+      "summary": "Severity: medium. ### Summary\n\n`@opentelemetry/instrumentation-http` redacts sensitive URL query parameters on **outgoing (client) spans** but not on **incoming (server) spans**. The server-span path writes the raw query string verbatim into the `url.query` attribute, so credentials embedded in inbound request URLs —",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "uid": "cve:GHSA-rrfc-gjm9-cgrj",
+      "source": "cve",
+      "title": "CVE-2026-128086: OpenTelemetry-Go: Eager W3C baggage-property materialization causes bounded memory-allocation amplification",
+      "url": "https://github.com/advisories/GHSA-rrfc-gjm9-cgrj",
+      "ts": 1794596890.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "go.opentelemetry.io/otel/baggage",
+      "summary": "Severity: medium. ## Summary\n\nOpenTelemetry Go eagerly materializes W3C baggage metadata into property objects during parsing. Slice growth, serialization, and copying into the internal representation cause **bounded but disproportionate memory-allocation amplification** for a valid, densely populated header. In v1.4",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "science",
+        "security"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "uid": "cve:GHSA-q7gw-24fr-5p69",
+      "source": "cve",
+      "title": "CVE-2026-128085: opentelemetry-go: AttributeValueLengthLimit is fully bypassed by attribute values composed of valid U+FFFD runes",
+      "url": "https://github.com/advisories/GHSA-q7gw-24fr-5p69",
+      "ts": 1794596455.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "go.opentelemetry.io/otel/sdk",
+      "summary": "Severity: medium. ## Summary\n\nThe `AttributeValueLengthLimit` span/log-record limit can be bypassed entirely with attribute values that consist of valid U+FFFD (REPLACEMENT CHARACTER) runes. The counting-based truncation introduced by the fix for GHSA-p9f8-wvj8-2fg8 (commit `e016a78c9`, first released in v1.33.0) has",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "uid": "cve:GHSA-4fqr-96q8-xrfx",
+      "source": "cve",
+      "title": "CVE-2026-128084: sqlite3-ruby: Possible SQL query truncation when a string is 4 GiB or larger",
+      "url": "https://github.com/advisories/GHSA-4fqr-96q8-xrfx",
+      "ts": 1794596278.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "sqlite3",
+      "summary": "Severity: medium. ### Summary\n\nsqlite3-ruby cast Ruby string lengths (`long`) to `int` before passing them to SQLite. On 64-bit platforms, a string of 4 GiB (2^32 bytes) or larger had its length wrap, so SQLite saw only the first `length mod 2^32` bytes. An attacker who controls the length of a SQL string could trunc",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "uid": "cve:GHSA-r3h5-4585-7x3w",
+      "source": "cve",
+      "title": "CVE-2026-126364: Astro: Image endpoint in @astrojs/node can read files from a case-variant sibling of the output directory on case-sensitive filesystems",
+      "url": "https://github.com/advisories/GHSA-r3h5-4585-7x3w",
+      "ts": 1794594959.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "@astrojs/node",
+      "summary": "Severity: medium. ## Summary\n\nThe `/_image` endpoint used by the `@astrojs/node` adapter checks that a requested local image is inside the build output directory before reading it from disk. That check compared paths case-insensitively. On case-sensitive filesystems (such as Linux), a directory whose path differs fro",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "uid": "cve:GHSA-mjrq-cffv-q4qc",
+      "source": "cve",
+      "title": "CVE-2026-128070: Nuxt dev server serves files from a parent directory with a stray lockfile or workspace file",
+      "url": "https://github.com/advisories/GHSA-mjrq-cffv-q4qc",
+      "ts": 1794593509.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "@nuxt/schema",
+      "summary": "Severity: medium. ### Summary\n\nNuxt can pick a parent directory that does not declare a workspace as its default `workspaceDir`: the farthest directory with a lockfile when the project is not inside a git repository, or the farthest directory with a `pnpm-workspace.yaml` or `deno.json` file, even one that only holds",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "dev",
+        "science",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "uid": "cve:GHSA-h7wh-q2qr-458c",
+      "source": "cve",
+      "title": "CVE-2026-128069: rails-html-sanitizer: Possible XSS via shared scrubber state in concurrent calls",
+      "url": "https://github.com/advisories/GHSA-h7wh-q2qr-458c",
+      "ts": 1794593356.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "rails-html-sanitizer",
+      "summary": "Severity: medium. ## Summary\n\n`Rails::HTML::SafeListSanitizer` (both the HTML4 and HTML5 variants) shares one `Rails::HTML::PermitScrubber` across every `sanitize` call on the same instance, assigning its `tags` and `attributes` on each call without synchronization. Two concurrent `sanitize` calls with different `tag",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "uid": "cve:GHSA-jv6m-48w5-5rpr",
+      "source": "cve",
+      "title": "CVE-2026-128079: envd: Host file disclosure through requirements path traversal and TOCTOU",
+      "url": "https://github.com/advisories/GHSA-jv6m-48w5-5rpr",
+      "ts": 1794593115.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "envd",
+      "summary": "Severity: medium. ### Summary\n\nenvd’s `install.python_packages(requirements=...)` could read files outside the build context on the host. Content interpreted as dependency entries could appear in build logs and build-step metadata.\n\nCommit f576c92, released in v1.3.5, added path containment validation but left a time",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "uid": "cve:GHSA-cpgf-5mjf-73p7",
+      "source": "cve",
+      "title": "CVE-2026-128068: rails-html-sanitizer: Possible regular expression denial of service with certain configurations",
+      "url": "https://github.com/advisories/GHSA-cpgf-5mjf-73p7",
+      "ts": 1794592478.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "rails-html-sanitizer",
+      "summary": "Severity: medium. ## Summary\n\n`Rails::HTML::PermitScrubber` restricts the `href` and `xlink:href` attributes of SVG reference elements to local references. That check matched the attribute value against `/^\\s*[^#\\s].*/m`. In Ruby `^` anchors to every line start and `\\s` matches newlines, so an all-whitespace value ma",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "science",
+        "security"
+      ],
+      "date": "2026-11-13"
+    },
+    {
       "uid": "cve:GHSA-mf5v-w3w3-f6cg",
       "source": "cve",
       "title": "CVE-2026-126360: OpenTelemetry Python API: Denial of service through quadratic-time traceparent parsing",
@@ -738,316 +1033,6 @@
         "security"
       ],
       "date": "2026-11-13"
-    },
-    {
-      "uid": "cve:GHSA-4j63-6c4x-wfg4",
-      "source": "cve",
-      "title": "CVE-2026-126192: Soup Sieve: General sibling combinator inside :has() matches untrusted HTML in quadratic time",
-      "url": "https://github.com/advisories/GHSA-4j63-6c4x-wfg4",
-      "ts": 1794530718.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "soupsieve",
-      "summary": "Severity: medium. ## Summary\n\nMatching a selector that puts a general-sibling combinator inside `:has()`, such as `div:has(a ~ b)`, against untrusted HTML runs in O(n²) time in the number of sibling elements. A single small document with a few thousand siblings ties the process up for a minute of CPU, so an applicati",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "dev",
-        "science",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-13"
-    },
-    {
-      "uid": "cve:GHSA-rwvh-fw6r-pwvp",
-      "source": "cve",
-      "title": "CVE-2026-126072: Action Pack: Possible DoS vulnerability in Action Controller Live streaming",
-      "url": "https://github.com/advisories/GHSA-rwvh-fw6r-pwvp",
-      "ts": 1794527124.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "actionpack",
-      "summary": "Severity: medium. ### Impact\n`ActionController::Live::Buffer#close` pushes its end-of-stream marker onto the response's bounded queue while it holds the buffer's monitor. When the client has stopped reading and the queue is full, the push blocks, and `Buffer#abort`, which runs when the client disconnects or a write t",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "security"
-      ],
-      "date": "2026-11-12"
-    },
-    {
-      "uid": "cve:GHSA-x6mj-8jx9-qhqv",
-      "source": "cve",
-      "title": "CVE-2026-126077: Action Pack: Possible sensitive session information leak in Active Storage proxy mode",
-      "url": "https://github.com/advisories/GHSA-x6mj-8jx9-qhqv",
-      "ts": 1794527079.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "actionpack",
-      "summary": "Severity: medium. ### Impact\nWhen `ActionDispatch::Cookies` reads a signed or encrypted cookie that was written under a rotated secret (`config.action_dispatch.cookies_rotations`) or in the format that a `:hybrid` cookie serializer migrates from, it writes the cookie back to the response in the current format, and th",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-12"
-    },
-    {
-      "uid": "cve:GHSA-v6rj-xm57-3p59",
-      "source": "cve",
-      "title": "CVE-2026-126078: Action View: Possible XSS vulnerability in highlight helper",
-      "url": "https://github.com/advisories/GHSA-v6rj-xm57-3p59",
-      "ts": 1794526910.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "actionview",
-      "summary": "Severity: medium. ### Impact\n`ActionView::Helpers::TextHelper#highlight` substitutes each matched phrase into the `:highlighter` string without escaping it and returns the result marked HTML-safe. Because sanitizing leaves quote characters in text unescaped, a match substituted into a quoted attribute value of the hi",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-12"
-    },
-    {
-      "uid": "cve:GHSA-rq8q-p985-fjq7",
-      "source": "cve",
-      "title": "CVE-2026-126070: Action View: Possible XSS vulnerability in strip_tags",
-      "url": "https://github.com/advisories/GHSA-rq8q-p985-fjq7",
-      "ts": 1794526781.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "actionview",
-      "summary": "Severity: medium. ### Impact\n`strip_tags` in Action View returns its sanitized output marked `html_safe`, but the underlying sanitizer encodes only `&`, `<` and `>`, leaving `\"` and `'` unencoded. Because ERB does not escape a string marked `html_safe`, untrusted input passed through `strip_tags` and rendered inside",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-12"
-    },
-    {
-      "uid": "cve:GHSA-2p2f-4rq4-gjwc",
-      "source": "cve",
-      "title": "CVE-2026-126079: Action View: Possible XSS vulnerability in text helpers",
-      "url": "https://github.com/advisories/GHSA-2p2f-4rq4-gjwc",
-      "ts": 1794526737.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "actionview",
-      "summary": "Severity: medium. ### Impact\nWith the HTML5 sanitizer (`Rails::HTML5::Sanitizer`, the default vendor on CRuby for applications using `load_defaults 7.1` or later), Nokogiri before 1.19.5 serializes `<` and `>` unescaped inside attribute values. The Action View text helpers `highlight` and `simple_format` sanitize the",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-12"
-    },
-    {
-      "uid": "cve:GHSA-3w93-6hmw-whh4",
-      "source": "cve",
-      "title": "CVE-2026-126084: Active Storage: Unsigned Content-Type in GCS direct uploads with cache_control",
-      "url": "https://github.com/advisories/GHSA-3w93-6hmw-whh4",
-      "ts": 1794526675.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "activestorage",
-      "summary": "Severity: medium. ### Impact\nWhen a GCS service is configured with the `cache_control` option, `ActiveStorage::Service::GCSService#url_for_direct_upload` signs direct-upload URLs with V4, and the V4 signature covers only the `Cache-Control` and `Host` headers. A direct-upload client can therefore send a `Content-Type",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-12"
-    },
-    {
-      "uid": "cve:GHSA-wqgw-9xfh-qf2g",
-      "source": "cve",
-      "title": "CVE-2026-128066: Pillow: Memory DoS in TIFF and EXIF IFD parsing via overlapping tag data",
-      "url": "https://github.com/advisories/GHSA-wqgw-9xfh-qf2g",
-      "ts": 1794526539.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "Pillow",
-      "summary": "Severity: medium. ```\n============================================================================\nANT-2026-D7STJUWL  [medium]  CWE-770  dos\nMemory DoS in TIFF and EXIF IFD parsing via overlapping tag data\nLocation: src/PIL/TiffImagePlugin.py:927  in ImageFileDirectory_v2.load()\nCommit:   a707c6b21c313880d0771e54965d",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "security"
-      ],
-      "date": "2026-11-12"
-    },
-    {
-      "uid": "cve:GHSA-46wx-v44x-9hh2",
-      "source": "cve",
-      "title": "CVE-2026-126355: Hono: `csrf()` does not check requests sent by hyperlink auditing (`text/ping`)",
-      "url": "https://github.com/advisories/GHSA-46wx-v44x-9hh2",
-      "ts": 1794526285.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "hono",
-      "summary": "Severity: medium. ### Summary\n\n`csrf()` validates a request only when its `Content-Type` is one of the three types an HTML form can send. Chromium's hyperlink auditing (`<a ping>`) sends a cross-origin POST with the user's cookies and the content type `text/ping`, which is not in that list. The middleware does not lo",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-12"
-    },
-    {
-      "uid": "cve:GHSA-4h7h-rv7c-7m2v",
-      "source": "cve",
-      "title": "CVE-2026-126356: Hono: `validator('form')` skips validation for `multipart/form-data` requests with extra parameters",
-      "url": "https://github.com/advisories/GHSA-4h7h-rv7c-7m2v",
-      "ts": 1794526245.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "hono",
-      "summary": "Severity: medium. ### Summary\n\n`validator('form')` only recognizes a `multipart/form-data` `Content-Type` that carries nothing but a single `boundary` parameter. A request with another legal parameter, such as `charset`, or with extra whitespace after the `;` is not recognized as a form. The validation callback then",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "science",
-        "security"
-      ],
-      "date": "2026-11-12"
-    },
-    {
-      "uid": "cve:GHSA-4m76-xfj5-7975",
-      "source": "cve",
-      "title": "CVE-2026-126357: Hono: `mount()` and `app.mount()` can forward a path that bypasses middleware scoped inside the mount prefix",
-      "url": "https://github.com/advisories/GHSA-4m76-xfj5-7975",
-      "ts": 1794525851.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "hono",
-      "summary": "Severity: medium. ### Summary\n\n`mount()` and `app.mount()` remove the mount prefix from the request path and forward the rest to the mounted application. Two mistakes in that step let a crafted request reach a route of the mounted application that the outer application protects with path-scoped middleware, such as an",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-12"
-    },
-    {
-      "uid": "cve:GHSA-h7mg-cq63-vhpq",
-      "source": "cve",
-      "title": "CVE-2026-126358: Hono: RegExpRouter skips wildcard middleware for some route sets and for paths with an encoded line terminator",
-      "url": "https://github.com/advisories/GHSA-h7mg-cq63-vhpq",
-      "ts": 1794525810.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "hono",
-      "summary": "Severity: medium. ### Summary\n\nRegExpRouter, which the default `SmartRouter` selects for most applications, skipped wildcard middleware in three cases, so a route handler ran without the middleware registered for it:\n\n1. Middleware whose parameter is written with the explicit default pattern, such as `/api/:tenant{[^",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-12"
-    },
-    {
-      "uid": "cve:GHSA-r7hq-q2xm-6c5m",
-      "source": "cve",
-      "title": "CVE-2026-126367: @grpc/grpc-js: safe_regex incorrectly applies partial string matching for patterns with alternation",
-      "url": "https://github.com/advisories/GHSA-r7hq-q2xm-6c5m",
-      "ts": 1794525717.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "@grpc/grpc-js-xds",
-      "summary": "Severity: medium. ### Summary\n\nThe StringMatcher/PathMatcher for `safe_regex` builds its RE2 as `^${regex}$` with no surrounding group. Because alternation has the lowest precedence, a pattern `\"a|b|c\"` compiles to `/^a|b|c$/` -- \"starts with a\" OR \"contains b\" OR \"ends with c\" instead of a full match of the whole va",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-12"
-    },
-    {
-      "uid": "cve:GHSA-gg5j-6742-v827",
-      "source": "cve",
-      "title": "CVE-2026-128065: @grpc/grpc-js: RBAC override configs in VirtualHost and Route resources are not applied",
-      "url": "https://github.com/advisories/GHSA-gg5j-6742-v827",
-      "ts": 1794524147.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "@grpc/grpc-js-xds",
-      "summary": "Severity: medium. ### Summary\n\n`XdsServer` in `@grpc/grpc-js-xds` does not apply `RBACPerRoute` overrides from matching Route or VirtualHost resources. When a trusted xDS control plane supplies a broad top-level ALLOW policy and a stricter override, `XdsServer` ACKs the resources but evaluates the RPC under the top-l",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "dev",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-12"
-    },
-    {
-      "uid": "cve:GHSA-9crm-g4mf-wc5j",
-      "source": "cve",
-      "title": "CVE-2026-126348: Addressable display_uri can show misleading hosts with invalid Punycode A-labels",
-      "url": "https://github.com/advisories/GHSA-9crm-g4mf-wc5j",
-      "ts": 1794523497.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "addressable",
-      "summary": "Severity: medium. ### Impact\n\n`Addressable::IDNA.to_unicode`, in the pure-Ruby IDNA implementation, decodes Punycode labels (labels beginning with `xn--`) that are not valid A-labels. Those labels are returned in decoded form, when they should be returned unchanged. That includes:\n\n- labels that decode to only ASCII",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "security"
-      ],
-      "date": "2026-11-12"
-    },
-    {
-      "uid": "cve:GHSA-qq38-m9mg-xjj5",
-      "source": "cve",
-      "title": "CVE-2026-126351: Addressable: Denial of service in URI path normalization",
-      "url": "https://github.com/advisories/GHSA-qq38-m9mg-xjj5",
-      "ts": 1794522933.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "addressable",
-      "summary": "Severity: medium. ### Impact\n\n`Addressable::URI.normalize_path` takes time quadratic in the number of nested dot segments in a path (e.g., `\"/\" + \"a/\" * n + \"../\" * n`, which for n = 3 is `/a/a/a/../../../`), because it removes one dot segment per pass over the whole path. `URI#normalize`, `URI#normalized_path`, `URI",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "security"
-      ],
-      "date": "2026-11-12"
-    },
-    {
-      "uid": "cve:GHSA-j82w-28jv-3pmj",
-      "source": "cve",
-      "title": "CVE-2026-126350: Addressable: Regular Expression Denial of Service in templates with certain exploded expressions",
-      "url": "https://github.com/advisories/GHSA-j82w-28jv-3pmj",
-      "ts": 1794522637.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "addressable",
-      "summary": "Severity: medium. ### Impact\n\nWithin the URI template implementation in Addressable, templates using the `*` (explode) modifier with the `/`, `.`, `;`, `?` or `&` operators (e.g., `{/segments*}`, `{.ext*}`, `{;params*}`, `{?query*}`) generate regular expressions vulnerable to catastrophic backtracking. When `Template",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "science",
-        "security"
-      ],
-      "date": "2026-11-12"
     },
     {
       "uid": "hn:48166459",
@@ -1308,72 +1293,69 @@
       "date": "2019-07-18"
     },
     {
-      "uid": "cve:GHSA-3gg2-335m-rxc6",
+      "uid": "cve:GHSA-5cjw-f85j-cv6r",
       "source": "cve",
-      "title": "CVE-2026-126359: Hono: `css` helper does not escape a closing tag split between the template and an interpolated value, allowing HTML injection",
-      "url": "https://github.com/advisories/GHSA-3gg2-335m-rxc6",
-      "ts": 1794525756.0,
+      "title": "CVE-2026-126347: Tornado: Open redirect via triple-slash redirect paths",
+      "url": "https://github.com/advisories/GHSA-5cjw-f85j-cv6r",
+      "ts": 1794601882.0,
       "points": 700,
       "comments": 0,
-      "author": "hono",
-      "summary": "Severity: low. ### Summary\n\nThe `css` helper in `hono/css` escapes a `/` that follows `<` inside an interpolated value so that a value cannot close the `<style>` element. The check only looks inside each value. When the text before a value ends with `<`, whether that is the template itself or an earlier interpolat",
+      "author": "tornado",
+      "summary": "Severity: low. ### Summary\n\nDue to differences in the way browsers and Python's `urllib` parse urls, browsers treat a string starting with three or more slashes as a protocol-level redirect, while `urllib` does not. This means that the 6.6.0 fix for the RedirectHandler open redirect (CVE-[phone], commit cc75ab",
       "recipe": "gh_advisories",
       "buzz": 780,
       "topics": [
-        "ai",
         "dev",
         "security"
       ],
-      "date": "2026-11-12"
+      "date": "2026-11-13"
     },
     {
-      "uid": "cve:GHSA-539f-xcgw-2gjg",
+      "uid": "cve:GHSA-9264-jvgf-6w2f",
       "source": "cve",
-      "title": "CVE-2026-126349: Addressable display_uri can show misleading hosts containing bidi and invisible characters",
-      "url": "https://github.com/advisories/GHSA-539f-xcgw-2gjg",
-      "ts": 1794523455.0,
+      "title": "CVE-2026-128087: russh kex_done: Shared-secret callback runs before server host-key verification",
+      "url": "https://github.com/advisories/GHSA-9264-jvgf-6w2f",
+      "ts": 1794597616.0,
       "points": 700,
       "comments": 0,
-      "author": "addressable",
-      "summary": "Severity: low. ### Impact\n\n`Addressable::IDNA.to_unicode` decodes Punycode labels (labels beginning with `xn--`) that contain characters which change how text is displayed without being visible themselves. These include bidirectional controls such as U+202E RIGHT-TO-LEFT OVERRIDE and U+2066–U+2069, zero-width char",
+      "author": "russh",
+      "summary": "Severity: low. ### Summary\n\nA malicious SSH server whose host key is rejected can still cause russh's `client::Handler::kex_done()` callback to execute with the raw key-exchange shared secret. Applications using the callback for its documented protocol-bridging purpose may derive keys, initialize a secondary data",
       "recipe": "gh_advisories",
       "buzz": 780,
       "topics": [
-        "ai",
-        "dev",
-        "security"
+        "security",
+        "hardware"
       ],
-      "date": "2026-11-12"
+      "date": "2026-11-13"
     },
     {
-      "uid": "cve:GHSA-jmv2-qgxf-f995",
+      "uid": "cve:GHSA-736f-c93q-9fwx",
       "source": "cve",
-      "title": "CVE-2026-126363: Astro: Reflected XSS via unescaped slot names in @astrojs/solid-js",
-      "url": "https://github.com/advisories/GHSA-jmv2-qgxf-f995",
-      "ts": 1794522884.0,
+      "title": "CVE-2026-128088: russh try_sign: asynchronous confirmation can sign after agent lock",
+      "url": "https://github.com/advisories/GHSA-736f-c93q-9fwx",
+      "ts": 1794597046.0,
       "points": 700,
       "comments": 0,
-      "author": "@astrojs/solid-js",
-      "summary": "Severity: low. ## Summary\n\nThe `@astrojs/solid-js` renderer wraps named slot content passed to Solid components in an `<astro-slot>` element, and writes the slot name into its `name` attribute without HTML escaping. A slot name containing `\"` could end the attribute and inject arbitrary HTML into the page.\n\nFor ex",
+      "author": "russh",
+      "summary": "Severity: low. ### Summary\n\nIn russh `0.65.0`, a sign request for a confirmation-constrained key can retain\nand use the private key after another connection locks the agent. `try_sign()`\nsnapshots an `Arc<PrivateKey>` before awaiting `Agent::confirm()` and does not\nrevalidate the shared lock state after the await.",
       "recipe": "gh_advisories",
       "buzz": 780,
       "topics": [
         "ai",
-        "dev",
         "security"
       ],
-      "date": "2026-11-12"
+      "date": "2026-11-13"
     },
     {
-      "uid": "cve:GHSA-f4j9-crrj-867q",
+      "uid": "cve:GHSA-63hm-g96r-2m2q",
       "source": "cve",
-      "title": "CVE-2026-126362: Astro: Reflected XSS via unescaped slot names in @astrojs/svelte",
-      "url": "https://github.com/advisories/GHSA-f4j9-crrj-867q",
-      "ts": 1794522844.0,
+      "title": "CVE-2026-128083: Laravel: Task Output Injection - Concurrency Process",
+      "url": "https://github.com/advisories/GHSA-63hm-g96r-2m2q",
+      "ts": 1794596071.0,
       "points": 700,
       "comments": 0,
-      "author": "@astrojs/svelte",
-      "summary": "Severity: low. ## Summary\n\nThe `@astrojs/svelte` renderer wraps slotted content passed to Svelte components in an `<astro-slot>` element, and writes the slot name into its `name` attribute without HTML escaping. A slot name containing `\"` could end the attribute and inject arbitrary HTML into the page.\n\nFor exampl",
+      "author": "laravel/framework",
+      "summary": "Severity: low. ### Summary\n\nIf a concurrency task prints user-controlled text, an attacker can forge the framework's internal result message and achieve remote code execution in certain conditions\n\n### Pre-reqs\n\nInsecure code and insecure handling of user provided input (devs trust user-provided input) :\n\n1. App h",
       "recipe": "gh_advisories",
       "buzz": 780,
       "topics": [
@@ -1381,7 +1363,26 @@
         "dev",
         "security"
       ],
-      "date": "2026-11-12"
+      "date": "2026-11-13"
+    },
+    {
+      "uid": "cve:GHSA-mh32-jxcr-mh9f",
+      "source": "cve",
+      "title": "CVE-2026-126361: Astro: XSS via attribute injection in dynamic tag names",
+      "url": "https://github.com/advisories/GHSA-mh32-jxcr-mh9f",
+      "ts": 1794595194.0,
+      "points": 700,
+      "comments": 0,
+      "author": "astro",
+      "summary": "Severity: low. ## Summary\n\nWhen a dynamic tag (`const Tag = ...; <Tag />`) resolves to a string, Astro renders it as a raw HTML element name. The name was filtered to remove characters that could inject attributes, but the filter did not handle `/`. Because HTML parsers treat `/` inside a tag as an attribute separ",
+      "recipe": "gh_advisories",
+      "buzz": 780,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-13"
     },
     {
       "uid": "gh:arpanjot-coding/AVault",
@@ -1408,11 +1409,11 @@
       "url": "https://github.com/arnold117/iOS-NOIR",
       "ts": 1793934227.0,
       "points": 322,
-      "comments": 60,
+      "comments": 61,
       "author": "arnold117",
       "summary": "No-jailbreak iOS privacy, entitlement, sandbox & telemetry forensic auditor (inspired by Verlintas/NOIR)",
       "recipe": "github_sec",
-      "buzz": 502,
+      "buzz": 505,
       "topics": [
         "ai",
         "security"
@@ -1444,12 +1445,12 @@
       "title": "nestho/impacket-rs",
       "url": "https://github.com/nestho/impacket-rs",
       "ts": 1794373116.0,
-      "points": 86,
+      "points": 87,
       "comments": 13,
       "author": "nestho",
       "summary": "High-performance, memory-safe pure-Rust redesign of Impacket protocols and Active Directory tools for Linux, macOS, and Windows.",
       "recipe": "github_sec",
-      "buzz": 155,
+      "buzz": 156,
       "topics": [
         "dev"
       ],
@@ -1466,7 +1467,7 @@
       "author": "raca2024",
       "summary": "Ashampoo Undeleter: Windows file recovery and drive scanning security tool",
       "recipe": "github_sec",
-      "buzz": 132,
+      "buzz": 112,
       "topics": [
         "security"
       ],
@@ -1535,6 +1536,26 @@
       "buzz": 80,
       "topics": [
         "ai"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "uid": "rss:b5af83d54bc054",
+      "source": "rss",
+      "title": "PostgreSQL Patches 52 Flaws, Including 22-Year-Old Bug Enabling Authenticated RCE",
+      "url": "https://thehackernews.com/2026/11/postgresql-patches-52-flaws-including.html",
+      "ts": 1794588788.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "A type confusion flaw in PostgreSQL lets a database user who can create objects run code on the server. Updates released yesterday fix it, along with 51 other security flaws. Full protection from this flaw also requires rebuilding any C-language extensions installed on the server. The flaw, tracked as CVE-2026-6460, has a CVSS score of 8.8. Any code run this way has the rights of the operating",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "dev",
+        "science",
+        "security",
+        "hardware"
       ],
       "date": "2026-11-13"
     },
@@ -1689,61 +1710,6 @@
       "date": "2026-11-13"
     },
     {
-      "uid": "rss:86a86bcab9397b",
-      "source": "rss",
-      "title": "Webinar: See How Identity Blind Spots Put Your SOC at Risk and How to Close Them",
-      "url": "https://thehackernews.com/2026/11/your-soc-sees-alert-but-does-it-know.html",
-      "ts": 1794506835.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Security teams have more alerts, logs, and monitoring tools than ever. Yet when an attack happens, one simple question can still take too long to answer: Who or what is behind this activity, and what can they access? A suspicious login might belong to an employee. An unusual API call could come from a machine account. Or an AI agent might be accessing sensitive systems using permissions nobody",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-12"
-    },
-    {
-      "uid": "rss:4113826891eb49",
-      "source": "rss",
-      "title": "ThreatsDay: 59 Linux Kernel Bugs, Falcon Spyware, GSocket Backdoors + 17 More Stories",
-      "url": "https://thehackernews.com/2026/11/threatsday-59-linux-kernel-bugs-falcon.html",
-      "ts": 1794506571.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "A search result isn't always safe. An access request isn't always harmless. And a familiar account doesn't always mean a familiar person is using it. Simple things to remember. Yet a surprising amount of this week's trouble starts right there. Attackers are using fake websites, stolen access, and trusted tools to get into places they shouldn't be. AI is helping them build attacks faster, while",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "dev"
-      ],
-      "date": "2026-11-12"
-    },
-    {
-      "uid": "rss:441837c1812847",
-      "source": "rss",
-      "title": "New SignDrop Zero-Day Exploit Turns Windows CLFS Security Feature Into SYSTEM Access",
-      "url": "https://thehackernews.com/2026/11/new-signdrop-zero-day-exploit-turns.html",
-      "ts": 1794505827.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Public exploit code released earlier this week claims that a local Windows user can gain SYSTEM privileges through the Common Log File System driver. The proof of concept, called SignDrop, targets a log-authentication feature added to the driver last year. It abuses how clfs.sys creates companion files when a privileged process opens a prepared log, using path redirection to take control of",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-12"
-    },
-    {
       "uid": "gh:BountyForge-xyz/pwn-skill",
       "source": "github",
       "title": "BountyForge-xyz/pwn-skill",
@@ -1762,6 +1728,23 @@
       "date": "2026-11-06"
     },
     {
+      "uid": "gh:zhidun2027/zhidun",
+      "source": "github",
+      "title": "zhidun2027/zhidun",
+      "url": "https://github.com/zhidun2027/zhidun",
+      "ts": 1794458402.0,
+      "points": 23,
+      "comments": 4,
+      "author": "zhidun2027",
+      "summary": "Android APK hardening — DEX encryption, native shell engine, anti-tamper. Fully documented and auditable.",
+      "recipe": "github_sec",
+      "buzz": 65,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-11-12"
+    },
+    {
       "uid": "gh:BowSinceEnt/resocket-elden-ring-cheat-2026-trainer-mod-menu-tools",
       "source": "github",
       "title": "BowSinceEnt/resocket-elden-ring-cheat-2026-trainer-mod-menu-tools",
@@ -1777,23 +1760,6 @@
         "ai"
       ],
       "date": "2026-11-05"
-    },
-    {
-      "uid": "gh:zhidun2027/zhidun",
-      "source": "github",
-      "title": "zhidun2027/zhidun",
-      "url": "https://github.com/zhidun2027/zhidun",
-      "ts": 1794458402.0,
-      "points": 23,
-      "comments": 2,
-      "author": "zhidun2027",
-      "summary": "Android APK hardening — DEX encryption, native shell engine, anti-tamper. Fully documented and auditable.",
-      "recipe": "github_sec",
-      "buzz": 59,
-      "topics": [
-        "security"
-      ],
-      "date": "2026-11-12"
     },
     {
       "uid": "rss:a29bdb614c93f8",
@@ -1865,6 +1831,61 @@
         "ai"
       ],
       "date": "2026-11-11"
+    },
+    {
+      "uid": "rss:86a86bcab9397b",
+      "source": "rss",
+      "title": "Webinar: See How Identity Blind Spots Put Your SOC at Risk and How to Close Them",
+      "url": "https://thehackernews.com/2026/11/your-soc-sees-alert-but-does-it-know.html",
+      "ts": 1794506835.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Security teams have more alerts, logs, and monitoring tools than ever. Yet when an attack happens, one simple question can still take too long to answer: Who or what is behind this activity, and what can they access? A suspicious login might belong to an employee. An unusual API call could come from a machine account. Or an AI agent might be accessing sensitive systems using permissions nobody",
+      "recipe": "hackersnews",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-12"
+    },
+    {
+      "uid": "rss:4113826891eb49",
+      "source": "rss",
+      "title": "ThreatsDay: 59 Linux Kernel Bugs, Falcon Spyware, GSocket Backdoors + 17 More Stories",
+      "url": "https://thehackernews.com/2026/11/threatsday-59-linux-kernel-bugs-falcon.html",
+      "ts": 1794506571.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "A search result isn't always safe. An access request isn't always harmless. And a familiar account doesn't always mean a familiar person is using it. Simple things to remember. Yet a surprising amount of this week's trouble starts right there. Attackers are using fake websites, stolen access, and trusted tools to get into places they shouldn't be. AI is helping them build attacks faster, while",
+      "recipe": "hackersnews",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "dev"
+      ],
+      "date": "2026-11-12"
+    },
+    {
+      "uid": "rss:441837c1812847",
+      "source": "rss",
+      "title": "New SignDrop Zero-Day Exploit Turns Windows CLFS Security Feature Into SYSTEM Access",
+      "url": "https://thehackernews.com/2026/11/new-signdrop-zero-day-exploit-turns.html",
+      "ts": 1794505827.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Public exploit code released earlier this week claims that a local Windows user can gain SYSTEM privileges through the Common Log File System driver. The proof of concept, called SignDrop, targets a log-authentication feature added to the driver last year. It abuses how clfs.sys creates companion files when a privileged process opens a prepared log, using path redirection to take control of",
+      "recipe": "hackersnews",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-12"
     },
     {
       "uid": "rss:5878815c9e8fbe",
@@ -2204,34 +2225,17 @@
       "date": "2026-11-11"
     },
     {
-      "uid": "rss:49c6078f580657",
-      "source": "rss",
-      "title": "eMudhra Revokes 8 More CAs It Previously Declared Unaffected by Key Compromise",
-      "url": "https://thehackernews.com/2026/11/emudhra-revokes-8-more-cas-it.html",
-      "ts": 1794398453.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "The in-house Python script behind eMudhra's October key compromise has now cost the company 8 more of its intermediate certificate authorities (CAs), even though it did not weaken their keys. Each intermediate CA has its own private key, which the company uses to sign the certificates it issues. The 8 intermediate CAs compromised in October had a different problem: a single line in the script",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "dev"
-      ],
-      "date": "2026-11-11"
-    },
-    {
       "uid": "gh:Attention-Span-AI/Tego",
       "source": "github",
       "title": "Attention-Span-AI/Tego",
       "url": "https://github.com/Attention-Span-AI/Tego",
       "ts": 1793595582.0,
-      "points": 22,
+      "points": 23,
       "comments": 2,
       "author": "Attention-Span-AI",
       "summary": "Tego limits what any AI agent can touch on Linux, and records every run. Rules for MCP servers, CI jobs, Python workers, 24/7 assistants and coding agents, enforced by the kernel.",
       "recipe": "github_sec",
-      "buzz": 28,
+      "buzz": 29,
       "topics": [
         "ai",
         "dev",

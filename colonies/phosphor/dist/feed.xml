@@ -5,216 +5,216 @@
     <link>https://signal-frontier.pages.dev</link>
     <description>Радар инсайтов, трендов и технологий: что вспыхнуло в сети за последние 48 часов</description>
     <language>ru</language>
-    <lastBuildDate>Fri, 13 Nov 2026 17:11:07 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 21:05:19 GMT</lastBuildDate>
     <item>
-      <title>GitHub Actions has lockfiles now, and pull_request_target gets blocked on Dec 2: 7 workflow changes to catch in review</title>
-      <link>https://signal-frontier.pages.dev/item/github-actions-has-lockfiles-now-and-pull-request-target-gets-bl.html</link>
-      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/github-actions-has-lockfiles-now-and-pull-request-target-gets-bl.html</guid>
-      <pubDate>Fri, 13 Nov 2026 17:10:59 GMT</pubDate>
-      <description>&lt;p&gt;GitHub Actions security got two real changes in about a week, and both of them end up in review work. Workflow lockfiles went generally available on October 28. On November 2, GitHub said &lt;code&gt;pull_request_target&lt;/code&gt; will be blocked by default in public repositories from December 2.&lt;/p&gt; &lt;p&gt;Ne</description>
-    </item>
-    <item>
-      <title>Build a Pre-Deployment Schema Drift Check for SQL Server</title>
-      <link>https://signal-frontier.pages.dev/item/build-a-pre-deployment-schema-drift-check-for-sql-server.html</link>
-      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/build-a-pre-deployment-schema-drift-check-for-sql-server.html</guid>
-      <pubDate>Fri, 13 Nov 2026 17:10:26 GMT</pubDate>
-      <description>&lt;p&gt;&lt;em&gt;A repeatable gate that stops a release when the target database is not what the release expects&lt;/em&gt;&lt;/p&gt; &lt;p&gt;Most database pipelines verify the change: the migration compiles, the tests pass, the reviewer approves. Far fewer verify the target. Yet a correct migration can still fail if the data</description>
-    </item>
-    <item>
-      <title>Data Cleaning for messy Date</title>
-      <link>https://signal-frontier.pages.dev/item/data-cleaning-for-messy-date.html</link>
-      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/data-cleaning-for-messy-date.html</guid>
-      <pubDate>Fri, 13 Nov 2026 17:10:16 GMT</pubDate>
-      <description>&lt;p&gt;import pandas as pd&lt;/p&gt; &lt;h1&gt; Sample messy data &lt;/h1&gt; &lt;p&gt;df = pd.DataFrame(&lt;br&gt; {'raw_date': ['2026-11-13', '13/11/2026', 'Nov 13, 2026', 'invalid_date', None]}&lt;br&gt; )&lt;/p&gt; &lt;h1&gt; Convert to standard datetime objects &lt;/h1&gt; &lt;p&gt;df['clean_date'] = pd.to_datetime(&lt;br&gt; df['raw_date'], format='mixed', dayfi</description>
-    </item>
-    <item>
-      <title>What Should Your AI Model Learn From the Next Plate of Experiments?</title>
-      <link>https://signal-frontier.pages.dev/item/what-should-your-ai-model-learn-from-the-next-plate-of-experimen.html</link>
-      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/what-should-your-ai-model-learn-from-the-next-plate-of-experimen.html</guid>
-      <pubDate>Fri, 13 Nov 2026 17:09:57 GMT</pubDate>
-      <description>&lt;p&gt;Imagine your model proposes 96 protein designs. The lab tests them and returns 12 hits.&lt;/p&gt; &lt;p&gt;What happens to the other 84?&lt;/p&gt; &lt;p&gt;Some may bind weakly. Others may bind the controls, produce inconsistent results, or fail to yield a usable measurement. Grouping all of them under “unsuccessful” le</description>
-    </item>
-    <item>
-      <title>Freelancer Boundaries: How to Protect Your Time Without Losing Clients</title>
-      <link>https://signal-frontier.pages.dev/item/freelancer-boundaries-how-to-protect-your-time-without-losing-cl.html</link>
-      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/freelancer-boundaries-how-to-protect-your-time-without-losing-cl.html</guid>
-      <pubDate>Fri, 13 Nov 2026 17:08:55 GMT</pubDate>
-      <description>&lt;p&gt;Every freelancer knows the slow slide: a client who messages at midnight, a "quick call" that eats an afternoon, a project that quietly grows a third bigger with no extra pay. None of it arrives as one big demand. It arrives as small favours, and each one feels too small to refuse — until your we</description>
-    </item>
-    <item>
-      <title>We stopped firing purchase events from the thank-you page. A Postgres job table does it now</title>
-      <link>https://signal-frontier.pages.dev/item/we-stopped-firing-purchase-events-from-the-thank-you-page-a-post.html</link>
-      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/we-stopped-firing-purchase-events-from-the-thank-you-page-a-post.html</guid>
-      <pubDate>Fri, 13 Nov 2026 17:08:54 GMT</pubDate>
-      <description>&lt;p&gt;For a long time, the purchase event on our store was sent the way most tutorials show it: the customer lands on the thank-you page, a script runs, and the pixels for Google Ads, GA4, Meta and TikTok each get told "this order happened, here's the value".&lt;/p&gt; &lt;p&gt;It works most of the time. The troub</description>
-    </item>
-    <item>
-      <title>How to Stage Catalog Retrieval for 3 E-commerce Freshness Windows (Failure Boundaries)</title>
-      <link>https://signal-frontier.pages.dev/item/how-to-stage-catalog-retrieval-for-3-e-commerce-freshness-window.html</link>
-      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/how-to-stage-catalog-retrieval-for-3-e-commerce-freshness-window.html</guid>
-      <pubDate>Fri, 13 Nov 2026 17:08:49 GMT</pubDate>
-      <description>&lt;p&gt;&lt;strong&gt;Short answer:&lt;/strong&gt; this e-commerce product search retrieval architecture should use three freshness windows backed by one canonical catalog: seconds for price and stock, minutes for searchable attributes, and hours for slow-changing copy. Route each query to the newest completed snaps</description>
-    </item>
-    <item>
-      <title>License entitlements vs. feature flags: when to use each, and how they work together</title>
-      <link>https://signal-frontier.pages.dev/item/license-entitlements-vs-feature-flags-when-to-use-each-and-how-t.html</link>
-      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/license-entitlements-vs-feature-flags-when-to-use-each-and-how-t.html</guid>
-      <pubDate>Fri, 13 Nov 2026 17:08:45 GMT</pubDate>
-      <description>&lt;p&gt;Reach for a feature-flag system to gate a paid feature and the code looks right the first day. &lt;code&gt;flags.IsEnabled("advanced-reports")&lt;/code&gt; wraps the export button, the toggle is off for free users and on for paying ones, and the demo works. Then a customer opens the flag store you handed the</description>
-    </item>
-    <item>
-      <title>From SMILES to a printable 3D model: how molecular models are prepared for 3D printing</title>
-      <link>https://signal-frontier.pages.dev/item/from-smiles-to-a-printable-3d-model-how-molecular-models-are-pre.html</link>
-      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/from-smiles-to-a-printable-3d-model-how-molecular-models-are-pre.html</guid>
-      <pubDate>Fri, 13 Nov 2026 17:08:32 GMT</pubDate>
-      <description>&lt;p&gt;Physical molecular models help students and researchers see geometry that flat structural formulas hide. This short guide describes the typical pipeline from a chemical identifier to a printable 3D model.&lt;/p&gt; &lt;h2&gt; 1. Start from a reliable identifier &lt;/h2&gt; &lt;p&gt;Every substance can be pinned down wit</description>
-    </item>
-    <item>
-      <title>Python Operators</title>
-      <link>https://signal-frontier.pages.dev/item/python-operators.html</link>
-      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/python-operators.html</guid>
-      <pubDate>Fri, 13 Nov 2026 17:08:19 GMT</pubDate>
-      <description>&lt;p&gt;Introduction&lt;/p&gt; &lt;p&gt;Operators are special symbols used to perform different operations on values and variables in Python.&lt;/p&gt; &lt;p&gt;Python has six main types of operators:&lt;/p&gt; &lt;ul&gt; &lt;li&gt;Arithmetic Operators&lt;/li&gt; &lt;li&gt;Relational Operators&lt;/li&gt; &lt;li&gt;Logical Operators&lt;/li&gt; &lt;li&gt;Bitwise Operators&lt;/li&gt; &lt;li&gt;A</description>
-    </item>
-    <item>
-      <title>Lovable put a .env file in my GitHub repo. Is my Supabase key leaked?</title>
-      <link>https://signal-frontier.pages.dev/item/lovable-put-a-env-file-in-my-github-repo-is-my-supabase-key-leak.html</link>
-      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/lovable-put-a-env-file-in-my-github-repo-is-my-supabase-key-leak.html</guid>
-      <pubDate>Fri, 13 Nov 2026 17:08:00 GMT</pubDate>
-      <description>&lt;p&gt;You open your project on GitHub and see a file called &lt;code&gt;.env&lt;/code&gt;. Inside is your Supabase address and a long key. Every guide says never commit a &lt;code&gt;.env&lt;/code&gt; file. Is your app leaking?&lt;/p&gt; &lt;p&gt;Usually not. My own checker made this exact mistake. Its first version raised its loudest al</description>
-    </item>
-    <item>
-      <title>NetScaler: 28 vulnerabilidades y un fallo sin escapatoria</title>
-      <link>https://signal-frontier.pages.dev/item/netscaler-28-vulnerabilidades-y-un-fallo-sin-escapatoria.html</link>
-      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/netscaler-28-vulnerabilidades-y-un-fallo-sin-escapatoria.html</guid>
-      <pubDate>Fri, 13 Nov 2026 17:07:42 GMT</pubDate>
-      <description>&lt;p&gt;NetScaler y sus 28 vulnerabilidades nuevas ya tienen parche, y una de ellas alcanza a cualquier equipo, también al que salió de fábrica sin que nadie tocara un solo ajuste. No pide usuario, no pide contraseña y no necesita ninguna función activada: basta con llegar al aparato por la red.&lt;br&gt;&lt;br&gt; </description>
-    </item>
-    <item>
-      <title>Brazil's Caixa insurer breach exposes names and tax IDs of all 7.6M customers</title>
-      <link>https://signal-frontier.pages.dev/item/brazil-s-caixa-insurer-breach-exposes-names-and-tax-ids-of-all-7.html</link>
-      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/brazil-s-caixa-insurer-breach-exposes-names-and-tax-ids-of-all-7.html</guid>
-      <pubDate>Fri, 13 Nov 2026 15:52:04 GMT</pubDate>
+      <title>Autonomous (YC F25) is hiring MTS to build AI agents that manage your wealth</title>
+      <link>https://signal-frontier.pages.dev/item/autonomous-yc-f25-is-hiring-mts-to-build-ai-agents-that-manage-y.html</link>
+      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/autonomous-yc-f25-is-hiring-mts-to-build-ai-agents-that-manage-y.html</guid>
+      <pubDate>Fri, 13 Nov 2026 21:01:11 GMT</pubDate>
       <description></description>
     </item>
     <item>
-      <title>Why is Google cutting off Search from AI-free schools? Here are some theories</title>
-      <link>https://signal-frontier.pages.dev/item/why-is-google-cutting-off-search-from-ai-free-schools-here-are-s.html</link>
-      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/why-is-google-cutting-off-search-from-ai-free-schools-here-are-s.html</guid>
-      <pubDate>Fri, 13 Nov 2026 15:29:10 GMT</pubDate>
+      <title>How to Build a Website with Claude (2026 Guide)</title>
+      <link>https://signal-frontier.pages.dev/item/how-to-build-a-website-with-claude-2026-guide.html</link>
+      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/how-to-build-a-website-with-claude-2026-guide.html</guid>
+      <pubDate>Fri, 13 Nov 2026 21:00:00 GMT</pubDate>
+      <description>&lt;p&gt;If you pay for Claude, you already have most of what you need to build a website. Claude can design pages, write the copy, generate the code, and, with the right setup, publish the finished site at a real URL, all from a chat.&lt;/p&gt; &lt;p&gt;The catch is that "build a website with Claude" can mean three </description>
+    </item>
+    <item>
+      <title>Freelancer Networking: Turn Conversations Into Clients (Without Cold Pitching)</title>
+      <link>https://signal-frontier.pages.dev/item/freelancer-networking-turn-conversations-into-clients-without-co.html</link>
+      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/freelancer-networking-turn-conversations-into-clients-without-co.html</guid>
+      <pubDate>Fri, 13 Nov 2026 20:59:36 GMT</pubDate>
+      <description>&lt;p&gt;Most freelancers hear "networking" and picture a crowded room, a stack of business cards, and a stranger asking what you do before you have finished your coffee. No wonder so many freelancers avoid it. But the freelancers who stay busy rarely cold-pitch strangers. They get work from conversations</description>
+    </item>
+    <item>
+      <title>What Caused the Microsoft 365 Outage of November 12, 2026</title>
+      <link>https://signal-frontier.pages.dev/item/what-caused-the-microsoft-365-outage-of-november-12-2026.html</link>
+      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/what-caused-the-microsoft-365-outage-of-november-12-2026.html</guid>
+      <pubDate>Fri, 13 Nov 2026 20:59:28 GMT</pubDate>
+      <description>&lt;p&gt;The Microsoft 365 outage that began on November 12, 2026 was caused, according to Microsoft’s status updates, by servers in the Exchange Online service unexpectedly failing automated health checks and dropping out of service, which pushed more load onto the servers that remained until they were o</description>
+    </item>
+    <item>
+      <title>Cross-Posting to Medium, Dev.to, and Bluesky Without Losing SEO</title>
+      <link>https://signal-frontier.pages.dev/item/cross-posting-to-medium-dev-to-and-bluesky-without-losing-seo.html</link>
+      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/cross-posting-to-medium-dev-to-and-bluesky-without-losing-seo.html</guid>
+      <pubDate>Fri, 13 Nov 2026 20:58:45 GMT</pubDate>
+      <description>&lt;p&gt;&lt;a href="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fpicsum.photos%2Fseed%2Fcross-posting%2F1200%2F630" class="article-body-image-wrapper"&gt;&lt;img src="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cg</description>
+    </item>
+    <item>
+      <title>My CI perf budget failed twice on changes that couldn't be slower</title>
+      <link>https://signal-frontier.pages.dev/item/my-ci-perf-budget-failed-twice-on-changes-that-couldn-t-be-slowe.html</link>
+      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/my-ci-perf-budget-failed-twice-on-changes-that-couldn-t-be-slowe.html</guid>
+      <pubDate>Fri, 13 Nov 2026 20:57:56 GMT</pubDate>
+      <description>&lt;p&gt;The perf job failed on a change that couldn't have made anything slower. I reran it and it passed. It happened again on the next one.&lt;/p&gt; &lt;p&gt;That is the moment a performance budget stops being useful: nobody trusts a red build that goes green when you click "re-run". I could have loosened the bud</description>
+    </item>
+    <item>
+      <title>The Purdue Model in Practice Versus on Paper</title>
+      <link>https://signal-frontier.pages.dev/item/the-purdue-model-in-practice-versus-on-paper.html</link>
+      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/the-purdue-model-in-practice-versus-on-paper.html</guid>
+      <pubDate>Fri, 13 Nov 2026 20:57:32 GMT</pubDate>
+      <description>&lt;p&gt;The Purdue model is a layered way to describe an industrial network, from the process at Level 0 up to the enterprise at Level 5. Real plants blur it. The fix that follows the model is an industrial DMZ at Level 3.5, with nothing on the business side opening a session into the plant.&lt;/p&gt; &lt;p&gt;The l</description>
+    </item>
+    <item>
+      <title>A 15-minute website health check you can run yourself</title>
+      <link>https://signal-frontier.pages.dev/item/a-15-minute-website-health-check-you-can-run-yourself.html</link>
+      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/a-15-minute-website-health-check-you-can-run-yourself.html</guid>
+      <pubDate>Fri, 13 Nov 2026 20:55:57 GMT</pubDate>
+      <description>&lt;p&gt;You do not need an agency to find the obvious problems on a site. In about 15 minutes, with free tools and no logins, you can check whether a page is slow, hard for search engines to read, awkward to use with a keyboard, or missing basic security headers.&lt;/p&gt; &lt;p&gt;This is a first-pass checklist for</description>
+    </item>
+    <item>
+      <title>Flush a bcache writeback cache in seconds, not days</title>
+      <link>https://signal-frontier.pages.dev/item/flush-a-bcache-writeback-cache-in-seconds-not-days.html</link>
+      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/flush-a-bcache-writeback-cache-in-seconds-not-days.html</guid>
+      <pubDate>Fri, 13 Nov 2026 20:54:43 GMT</pubDate>
+      <description>&lt;p&gt;&lt;em&gt;Before a reboot, a kernel upgrade or pulling an SSD out of a bcache setup, you want the dirty data on the backing disk. Switching to writethrough looks like the way to get it there, and on a busy disk it can leave the backlog draining at 4 KiB per second. Setting &lt;code&gt;writeback_percent&lt;/code</description>
+    </item>
+    <item>
+      <title>CI/CD and PaaS Security: Preventing Credential Theft</title>
+      <link>https://signal-frontier.pages.dev/item/ci-cd-and-paas-security-preventing-credential-theft.html</link>
+      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/ci-cd-and-paas-security-preventing-credential-theft.html</guid>
+      <pubDate>Fri, 13 Nov 2026 20:53:48 GMT</pubDate>
+      <description>&lt;h1&gt; The Pipeline is the Perimeter: A CI/CD and PaaS Credential-Hardening Guide &lt;/h1&gt; &lt;p&gt;Engineering teams often invest heavily in hardening production VPCs and application firewalls while leaving high-privilege credentials exposed inside build pipelines and platform configuration stores.&lt;/p&gt; &lt;p&gt;In </description>
+    </item>
+    <item>
+      <title>Evaluating Event Sourcing: Balancing Production Trade-Offs and Operational Complexity Against Theoretical Benefits</title>
+      <link>https://signal-frontier.pages.dev/item/evaluating-event-sourcing-balancing-production-trade-offs-and-op.html</link>
+      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/evaluating-event-sourcing-balancing-production-trade-offs-and-op.html</guid>
+      <pubDate>Fri, 13 Nov 2026 20:53:01 GMT</pubDate>
+      <description>&lt;h2&gt; The Promise vs. The Reality: Why Event Sourcing Looks Great on Paper &lt;/h2&gt; &lt;p&gt;Event Sourcing is architecturally seductive. On paper, it operates like an immutable ledger: every state change is captured as a discrete, timestamped event appended to a linear log. You get absolute auditability, his</description>
+    </item>
+    <item>
+      <title>My 1.17 MB player now listens to the battery: thermal-aware decode + a metered-data mode</title>
+      <link>https://signal-frontier.pages.dev/item/my-1-17-mb-player-now-listens-to-the-battery-thermal-aware-decod.html</link>
+      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/my-1-17-mb-player-now-listens-to-the-battery-thermal-aware-decod.html</guid>
+      <pubDate>Fri, 13 Nov 2026 20:52:12 GMT</pubDate>
+      <description>&lt;p&gt;i've been building a small 4K media player client for Android + Windows (RKMovies), and two complaints kept showing up in my own testing: on budget phones, long 4K sessions make the back of the phone uncomfortably warm, and on metered connections the player can chew through a daily data quota. bo</description>
+    </item>
+    <item>
+      <title>Big tech is here to let us down</title>
+      <link>https://signal-frontier.pages.dev/item/big-tech-is-here-to-let-us-down.html</link>
+      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/big-tech-is-here-to-let-us-down.html</guid>
+      <pubDate>Fri, 13 Nov 2026 20:20:30 GMT</pubDate>
       <description></description>
     </item>
     <item>
-      <title>Jonathan Blow – If AI Solved Coding, Why Is My Software Still the Same? [video]</title>
-      <link>https://signal-frontier.pages.dev/item/jonathan-blow-if-ai-solved-coding-why-is-my-software-still-the-s.html</link>
-      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/jonathan-blow-if-ai-solved-coding-why-is-my-software-still-the-s.html</guid>
-      <pubDate>Fri, 13 Nov 2026 15:08:44 GMT</pubDate>
+      <title>Live-migration support in FreeBSD and bhyve coming</title>
+      <link>https://signal-frontier.pages.dev/item/live-migration-support-in-freebsd-and-bhyve-coming.html</link>
+      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/live-migration-support-in-freebsd-and-bhyve-coming.html</guid>
+      <pubDate>Fri, 13 Nov 2026 19:58:42 GMT</pubDate>
       <description></description>
     </item>
     <item>
-      <title>Palmfrets, Minnesota guitarist's invention, strikes a new chord</title>
-      <link>https://signal-frontier.pages.dev/item/palmfrets-minnesota-guitarist-s-invention-strikes-a-new-chord.html</link>
-      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/palmfrets-minnesota-guitarist-s-invention-strikes-a-new-chord.html</guid>
-      <pubDate>Fri, 13 Nov 2026 15:08:07 GMT</pubDate>
+      <title>No AI Slop: A Manifesto</title>
+      <link>https://signal-frontier.pages.dev/item/no-ai-slop-a-manifesto.html</link>
+      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/no-ai-slop-a-manifesto.html</guid>
+      <pubDate>Fri, 13 Nov 2026 19:51:56 GMT</pubDate>
       <description></description>
     </item>
     <item>
-      <title>EU Digital Identity Wallet rollout: every EU state on one board</title>
-      <link>https://signal-frontier.pages.dev/item/eu-digital-identity-wallet-rollout-every-eu-state-on-one-board.html</link>
-      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/eu-digital-identity-wallet-rollout-every-eu-state-on-one-board.html</guid>
-      <pubDate>Fri, 13 Nov 2026 14:58:07 GMT</pubDate>
+      <title>Someone's Impersonating This Blog</title>
+      <link>https://signal-frontier.pages.dev/item/someone-s-impersonating-this-blog.html</link>
+      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/someone-s-impersonating-this-blog.html</guid>
+      <pubDate>Fri, 13 Nov 2026 19:41:09 GMT</pubDate>
       <description></description>
     </item>
     <item>
-      <title>U.S. October PPI Rises 6.5% YoY, Highest in Nearly Four Years</title>
-      <link>https://signal-frontier.pages.dev/item/u-s-october-ppi-rises-6-5-yoy-highest-in-nearly-four-years.html</link>
-      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/u-s-october-ppi-rises-6-5-yoy-highest-in-nearly-four-years.html</guid>
-      <pubDate>Fri, 13 Nov 2026 14:53:32 GMT</pubDate>
-      <description>U.S. producer prices rose 6.5% YoY in October, the highest since November 2022, below expectations of 6.6% and up from 6.3% previously. PPI increased 0.3% MoM, below the expected 0.4%, while September’s reading was revised up from 1.3% to 1.4%.</description>
-    </item>
-    <item>
-      <title>A technical vision for the Haskell ecosystem</title>
-      <link>https://signal-frontier.pages.dev/item/a-technical-vision-for-the-haskell-ecosystem.html</link>
-      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/a-technical-vision-for-the-haskell-ecosystem.html</guid>
-      <pubDate>Fri, 13 Nov 2026 14:43:12 GMT</pubDate>
+      <title>Technology as a Search Problem</title>
+      <link>https://signal-frontier.pages.dev/item/technology-as-a-search-problem.html</link>
+      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/technology-as-a-search-problem.html</guid>
+      <pubDate>Fri, 13 Nov 2026 19:27:15 GMT</pubDate>
       <description></description>
     </item>
     <item>
-      <title>Lonewolf 0.3 – A standalone XMPP server written in Rust</title>
-      <link>https://signal-frontier.pages.dev/item/lonewolf-0-3-a-standalone-xmpp-server-written-in-rust.html</link>
-      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/lonewolf-0-3-a-standalone-xmpp-server-written-in-rust.html</guid>
-      <pubDate>Fri, 13 Nov 2026 14:28:40 GMT</pubDate>
+      <title>Found: A protein that drives ageing without unleashing inflammation</title>
+      <link>https://signal-frontier.pages.dev/item/found-a-protein-that-drives-ageing-without-unleashing-inflammati.html</link>
+      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/found-a-protein-that-drives-ageing-without-unleashing-inflammati.html</guid>
+      <pubDate>Fri, 13 Nov 2026 19:25:21 GMT</pubDate>
       <description></description>
     </item>
     <item>
-      <title>The 42-Year Journey to Bring 'Neuromancer' to the Screen</title>
-      <link>https://signal-frontier.pages.dev/item/the-42-year-journey-to-bring-neuromancer-to-the-screen.html</link>
-      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/the-42-year-journey-to-bring-neuromancer-to-the-screen.html</guid>
-      <pubDate>Fri, 13 Nov 2026 14:28:32 GMT</pubDate>
+      <title>Perplexity Decider v1.3: Training, eval, and use cases</title>
+      <link>https://signal-frontier.pages.dev/item/perplexity-decider-v1-3-training-eval-and-use-cases.html</link>
+      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/perplexity-decider-v1-3-training-eval-and-use-cases.html</guid>
+      <pubDate>Fri, 13 Nov 2026 19:24:47 GMT</pubDate>
       <description></description>
     </item>
     <item>
-      <title>Why Zig over C for Systems Programming</title>
-      <link>https://signal-frontier.pages.dev/item/why-zig-over-c-for-systems-programming.html</link>
-      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/why-zig-over-c-for-systems-programming.html</guid>
-      <pubDate>Fri, 13 Nov 2026 14:01:13 GMT</pubDate>
+      <title>FM-1 Workbench</title>
+      <link>https://signal-frontier.pages.dev/item/fm-1-workbench.html</link>
+      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/fm-1-workbench.html</guid>
+      <pubDate>Fri, 13 Nov 2026 19:14:02 GMT</pubDate>
       <description></description>
     </item>
     <item>
-      <title>US test reactor cleared for operations</title>
-      <link>https://signal-frontier.pages.dev/item/us-test-reactor-cleared-for-operations.html</link>
-      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/us-test-reactor-cleared-for-operations.html</guid>
-      <pubDate>Fri, 13 Nov 2026 13:54:49 GMT</pubDate>
+      <title>$11.4M in Nvidia hardware vanishes during shipment from CA to TX</title>
+      <link>https://signal-frontier.pages.dev/item/11-4m-in-nvidia-hardware-vanishes-during-shipment-from-ca-to-tx.html</link>
+      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/11-4m-in-nvidia-hardware-vanishes-during-shipment-from-ca-to-tx.html</guid>
+      <pubDate>Fri, 13 Nov 2026 18:40:44 GMT</pubDate>
       <description></description>
     </item>
     <item>
-      <title>Building SupportMeet: The Mornings After a Job Ends Are a Design Problem. What Worked, What Broke</title>
-      <link>https://signal-frontier.pages.dev/item/building-supportmeet-the-mornings-after-a-job-ends-are-a-design-.html</link>
-      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/building-supportmeet-the-mornings-after-a-job-ends-are-a-design-.html</guid>
-      <pubDate>Fri, 13 Nov 2026 13:24:47 GMT</pubDate>
-      <description>&lt;p&gt;The hardest part of losing a job is rarely the afternoon it happens. It is the mornings after. The alarm has nothing to serve, the commute is gone, and a day that used to be structured by other people's expectations opens up empty. People describe those mornings in very different words, but the s</description>
+      <title>Models can now transmit viruses in weight-space</title>
+      <link>https://signal-frontier.pages.dev/item/models-can-now-transmit-viruses-in-weight-space.html</link>
+      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/models-can-now-transmit-viruses-in-weight-space.html</guid>
+      <pubDate>Fri, 13 Nov 2026 18:33:35 GMT</pubDate>
+      <description></description>
     </item>
     <item>
-      <title>What to Put in a Website AMC (Annual Maintenance Contract) in India</title>
-      <link>https://signal-frontier.pages.dev/item/what-to-put-in-a-website-amc-annual-maintenance-contract-in-indi.html</link>
-      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/what-to-put-in-a-website-amc-annual-maintenance-contract-in-indi.html</guid>
-      <pubDate>Fri, 13 Nov 2026 13:23:42 GMT</pubDate>
-      <description>&lt;p&gt;A website is not finished at launch. An annual maintenance contract (AMC) keeps it secure, fast and up to date. Here is what to put in one if you are signing with a provider in India.&lt;/p&gt; &lt;h2&gt; Scope of work &lt;/h2&gt; &lt;ul&gt; &lt;li&gt;Software, plugin and framework updates&lt;/li&gt; &lt;li&gt;Security monitoring and mal</description>
+      <title>Microsoft outage gives customers a crash course in dependence on Redmond</title>
+      <link>https://signal-frontier.pages.dev/item/microsoft-outage-gives-customers-a-crash-course-in-dependence-on.html</link>
+      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/microsoft-outage-gives-customers-a-crash-course-in-dependence-on.html</guid>
+      <pubDate>Fri, 13 Nov 2026 18:29:16 GMT</pubDate>
+      <description></description>
     </item>
     <item>
-      <title>Reviewing and Debugging AI-Generated UI Layouts: Detecting Inconsistent Component Hierarchies</title>
-      <link>https://signal-frontier.pages.dev/item/reviewing-and-debugging-ai-generated-ui-layouts-detecting-incons.html</link>
-      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/reviewing-and-debugging-ai-generated-ui-layouts-detecting-incons.html</guid>
-      <pubDate>Fri, 13 Nov 2026 13:22:59 GMT</pubDate>
-      <description>&lt;p&gt;You ever grabbed AI-generated UI code, maybe from a sketch-to-code tool or an AI assistant, and thought, “Why does this layout look off? Why is this button outside the card? And why are styles clashing everywhere?”&lt;/p&gt; &lt;p&gt;I’ve been down that rabbit hole. AI can spit out a tree of components in se</description>
+      <title>Ctrl+C, Ctrl+v, Ctrl+cve: Bypassing Android's Clipboard Read Security Measures</title>
+      <link>https://signal-frontier.pages.dev/item/ctrl-c-ctrl-v-ctrl-cve-bypassing-android-s-clipboard-read-securi.html</link>
+      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/ctrl-c-ctrl-v-ctrl-cve-bypassing-android-s-clipboard-read-securi.html</guid>
+      <pubDate>Fri, 13 Nov 2026 18:23:49 GMT</pubDate>
+      <description></description>
     </item>
     <item>
-      <title>Orchestrator Saves 24% Quota, Then Carbon Doubles (+100%) on Dec 1: Does Google's AI Math Add Up?</title>
-      <link>https://signal-frontier.pages.dev/item/orchestrator-saves-24-quota-then-carbon-doubles-100-on-dec-1-doe.html</link>
-      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/orchestrator-saves-24-quota-then-carbon-doubles-100-on-dec-1-doe.html</guid>
-      <pubDate>Fri, 13 Nov 2026 13:22:05 GMT</pubDate>
-      <description>&lt;p&gt;While benchmarking multi-model agent pipelines at &lt;a href="https://techlift.solutions" rel="noopener noreferrer"&gt;TechLift Solutions&lt;/a&gt; this week, two separate Google announcements collided on our cost spreadsheet—and the math deserves a closer look from anyone building production agents.&lt;/p&gt; &lt;p&gt;</description>
+      <title>It Takes 16 Clicks for a Student to Open a PowerPoint on an iPad</title>
+      <link>https://signal-frontier.pages.dev/item/it-takes-16-clicks-for-a-student-to-open-a-powerpoint-on-an-ipad.html</link>
+      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/it-takes-16-clicks-for-a-student-to-open-a-powerpoint-on-an-ipad.html</guid>
+      <pubDate>Fri, 13 Nov 2026 18:18:37 GMT</pubDate>
+      <description></description>
     </item>
     <item>
-      <title>Why my local Whisper captions never write straight into the project</title>
-      <link>https://signal-frontier.pages.dev/item/why-my-local-whisper-captions-never-write-straight-into-the-proj.html</link>
-      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/why-my-local-whisper-captions-never-write-straight-into-the-proj.html</guid>
-      <pubDate>Fri, 13 Nov 2026 13:21:53 GMT</pubDate>
-      <description>&lt;p&gt;I build &lt;a href="https://github.com/frankShan001/CutVoke" rel="noopener noreferrer"&gt;CutVoke&lt;/a&gt;, an open-source local video editor that Claude Code / Codex can drive over MCP while you keep a normal timeline open in the app. The most-asked-for agent task is boring: &lt;em&gt;"cut the silences and add c</description>
+      <title>Show HN: Isometric SF – A pixel-art map of the SF Bay Area</title>
+      <link>https://signal-frontier.pages.dev/item/show-hn-isometric-sf-a-pixel-art-map-of-the-sf-bay-area.html</link>
+      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/show-hn-isometric-sf-a-pixel-art-map-of-the-sf-bay-area.html</guid>
+      <pubDate>Fri, 13 Nov 2026 17:58:37 GMT</pubDate>
+      <description>Technical Write-up: &lt;a href="https:&amp;#x2F;&amp;#x2F;www.justinchavez.com&amp;#x2F;blog&amp;#x2F;isometric-sf-how&amp;#x2F;" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;www.justinchavez.com&amp;#x2F;blog&amp;#x2F;isometric-sf-how&amp;#x2F;&lt;/a&gt;&lt;p&gt;Hi HN! Showcasing this fun project. I took 1300 square miles of the SF Bay Area from Google Pho</description>
     </item>
     <item>
-      <title>Windsurf Review 2026: Worth Switching From Cursor?</title>
-      <link>https://signal-frontier.pages.dev/item/windsurf-review-2026-worth-switching-from-cursor.html</link>
-      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/windsurf-review-2026-worth-switching-from-cursor.html</guid>
-      <pubDate>Fri, 13 Nov 2026 13:21:50 GMT</pubDate>
-      <description>&lt;p&gt;The landscape of AI-powered integrated development environments has evolved dramatically in 2026. What started as simple autocomplete extensions has transformed into a new category of coding assistant that fundamentally changes how developers write, refactor, and debug code. Two names dominate th</description>
+      <title>After 600 experiments, here's what I discovered about JEPA world models</title>
+      <link>https://signal-frontier.pages.dev/item/after-600-experiments-here-s-what-i-discovered-about-jepa-world-.html</link>
+      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/after-600-experiments-here-s-what-i-discovered-about-jepa-world-.html</guid>
+      <pubDate>Fri, 13 Nov 2026 17:55:28 GMT</pubDate>
+      <description></description>
     </item>
     <item>
-      <title>Paquetes maliciosos MCP en npm y PyPI: siete en 4 días</title>
-      <link>https://signal-frontier.pages.dev/item/paquetes-maliciosos-mcp-en-npm-y-pypi-siete-en-4-d-as.html</link>
-      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/paquetes-maliciosos-mcp-en-npm-y-pypi-siete-en-4-d-as.html</guid>
-      <pubDate>Fri, 13 Nov 2026 13:21:49 GMT</pubDate>
-      <description>&lt;p&gt;Paquetes maliciosos MCP en npm y PyPI suman siete avisos en cuatro días, y la orden de GitHub para tres de ellos es tajante: cualquier equipo que los instaló se trata como comprometido por completo. No hay versión buena a la que volver. depfix-ai, agent-trace-kit y @go-gost/mcp-darwin-x64, todos </description>
+      <title>OpenAI disbands its robotics team as its general models start running robots</title>
+      <link>https://signal-frontier.pages.dev/item/openai-disbands-its-robotics-team-as-its-general-models-start-ru.html</link>
+      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/openai-disbands-its-robotics-team-as-its-general-models-start-ru.html</guid>
+      <pubDate>Fri, 13 Nov 2026 17:55:23 GMT</pubDate>
+      <description></description>
+    </item>
+    <item>
+      <title>AI unlocks Gödel's notebooks, said to contain hundreds of proved theorems</title>
+      <link>https://signal-frontier.pages.dev/item/ai-unlocks-g-del-s-notebooks-said-to-contain-hundreds-of-proved-.html</link>
+      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/ai-unlocks-g-del-s-notebooks-said-to-contain-hundreds-of-proved-.html</guid>
+      <pubDate>Fri, 13 Nov 2026 17:30:10 GMT</pubDate>
+      <description></description>
+    </item>
+    <item>
+      <title>Concurrent Shell Command Queues</title>
+      <link>https://signal-frontier.pages.dev/item/concurrent-shell-command-queues.html</link>
+      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/concurrent-shell-command-queues.html</guid>
+      <pubDate>Fri, 13 Nov 2026 17:13:01 GMT</pubDate>
+      <description></description>
     </item>
   </channel>
 </rss>
