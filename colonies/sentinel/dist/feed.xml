@@ -5,252 +5,282 @@
     <link>https://sentinel-post.pages.dev</link>
     <description>Автономная радиостанция кибербезопасности: живые CVE, угрозы и защита — без сенсаций</description>
     <language>ru</language>
-    <lastBuildDate>Thu, 12 Nov 2026 21:03:30 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 01:26:34 GMT</lastBuildDate>
     <item>
-      <title>CVE-2026-126205: Loofah: Regular expression denial of service in the SVG local-reference check</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-126205-loofah-regular-expression-denial-of-service-in-t.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-126205-loofah-regular-expression-denial-of-service-in-t.html</guid>
-      <pubDate>Thu, 12 Nov 2026 21:00:42 GMT</pubDate>
+      <title>CVE-2026-100397: Rucio: Unauthenticated administrator impersonation through SSH challenge tokens</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-100397-rucio-unauthenticated-administrator-impersonatio.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-100397-rucio-unauthenticated-administrator-impersonatio.html</guid>
+      <pubDate>Fri, 13 Nov 2026 01:09:54 GMT</pubDate>
+      <description>Severity: critical. ## Summary
+
+SSH challenge tokens are mistakenly accepted as valid credentials during the authentication token validation process.
+
+While an SSH challenge token is intended as a short-lived nonce for use in a subsequent SSH key exchange, the function to validate authentication tok</description>
+    </item>
+    <item>
+      <title>CVE-2026-126190: Soup Sieve: Polynomial-time denial of service in the descendant combinator</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-126190-soup-sieve-polynomial-time-denial-of-service-in-.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-126190-soup-sieve-polynomial-time-denial-of-service-in-.html</guid>
+      <pubDate>Fri, 13 Nov 2026 00:49:46 GMT</pubDate>
+      <description>Severity: high. ## Summary
+
+Matching a selector that uses the descendant combinator (`a b`) takes time that grows polynomially with how deeply the document is nested, and each extra descendant combinator in the selector raises the degree by one. A selector with `k` descendant combinators takes `O(n^</description>
+    </item>
+    <item>
+      <title>CVE-2026-126192: Soup Sieve: General sibling combinator inside :has() matches untrusted HTML in quadratic time</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-126192-soup-sieve-general-sibling-combinator-inside-has.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-126192-soup-sieve-general-sibling-combinator-inside-has.html</guid>
+      <pubDate>Fri, 13 Nov 2026 00:45:18 GMT</pubDate>
       <description>Severity: medium. ## Summary
 
-Loofah's HTML5 sanitizer restricts the `href` and `xlink:href` attributes of SVG reference elements to local references. That check matched the attribute value against `/^\s*[^#\s].*/m`. In Ruby `^` anchors to every line start and `\s` matches newlines, so an all-whites</description>
+Matching a selector that puts a general-sibling combinator inside `:has()`, such as `div:has(a ~ b)`, against untrusted HTML runs in O(n²) time in the number of sibling elements. A single small document with a few thousand siblings ties the process up for a minute of CP</description>
     </item>
     <item>
-      <title>CVE-2026-126206: Loofah allowed_uri? treats data:text&amp;sol;html as safe text/plain</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-126206-loofah-allowed-uri-treats-data-text-sol-html-as-.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-126206-loofah-allowed-uri-treats-data-text-sol-html-as-.html</guid>
-      <pubDate>Thu, 12 Nov 2026 20:56:30 GMT</pubDate>
-      <description>Severity: medium. ## Summary
-
-`Loofah::HTML5::Scrub.allowed_uri?` returns `true` for a `data:` URI whose mediatype is written with the HTML5 named character reference `&amp;sol;` in place of the solidus. Loofah reads that mediatype as malformed and falls back to the allowed `text/plain`, while a browser</description>
+      <title>CVE-2026-122006: Active Storage: Possible arbitrary file write and read in image analysis</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-122006-active-storage-possible-arbitrary-file-write-and.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-122006-active-storage-possible-arbitrary-file-write-and.html</guid>
+      <pubDate>Thu, 12 Nov 2026 23:46:51 GMT</pubDate>
+      <description>Severity: critical. ### Impact
+A Rails application that processes attachments with ImageMagick may allow an unauthenticated attacker to write arbitrary files on the server and, when attachments are stored with the Disk service, to read arbitrary files readable by the application process. Those files</description>
     </item>
     <item>
-      <title>CVE-2026-126203: Loofah: Mutation XSS in the HTML5 scrubbers through unescaped attribute values</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-126203-loofah-mutation-xss-in-the-html5-scrubbers-throu.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-126203-loofah-mutation-xss-in-the-html5-scrubbers-throu.html</guid>
-      <pubDate>Thu, 12 Nov 2026 20:52:09 GMT</pubDate>
-      <description>Severity: medium. ## Summary
-
-Loofah's HTML5 scrubbers could emit output that a browser parses into different markup, allowing mutation XSS. Nokogiri &lt; 1.19.5 did not escape `&lt;` and `&gt;` in attribute values. When the output contained certain MathML, a browser treated markup inside an allowed attribut</description>
+      <title>CVE-2026-126072: Action Pack: Possible DoS vulnerability in Action Controller Live streaming</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-126072-action-pack-possible-dos-vulnerability-in-action.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-126072-action-pack-possible-dos-vulnerability-in-action.html</guid>
+      <pubDate>Thu, 12 Nov 2026 23:45:24 GMT</pubDate>
+      <description>Severity: medium. ### Impact
+`ActionController::Live::Buffer#close` pushes its end-of-stream marker onto the response's bounded queue while it holds the buffer's monitor. When the client has stopped reading and the queue is full, the push blocks, and `Buffer#abort`, which runs when the client discon</description>
     </item>
     <item>
-      <title>CVE-2026-125323: pgEdge Control Plane generates pg_hba.conf with trust authentication for local and loopback connections</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-125323-pgedge-control-plane-generates-pg-hba-conf-with-.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-125323-pgedge-control-plane-generates-pg-hba-conf-with-.html</guid>
-      <pubDate>Thu, 12 Nov 2026 20:46:03 GMT</pubDate>
-      <description>Severity: high. ### Summary
-
-Every `pg_hba.conf` generated by the pgEdge Control Plane begins with a hard-coded block of `trust` entries covering Unix-socket and loopback connections. Any operating-system account that can reach the Postgres socket or the loopback interface on a database host can aut</description>
+      <title>CVE-2026-126077: Action Pack: Possible sensitive session information leak in Active Storage proxy mode</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-126077-action-pack-possible-sensitive-session-informati.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-126077-action-pack-possible-sensitive-session-informati.html</guid>
+      <pubDate>Thu, 12 Nov 2026 23:44:39 GMT</pubDate>
+      <description>Severity: medium. ### Impact
+When `ActionDispatch::Cookies` reads a signed or encrypted cookie that was written under a rotated secret (`config.action_dispatch.cookies_rotations`) or in the format that a `:hybrid` cookie serializer migrates from, it writes the cookie back to the response in the curr</description>
     </item>
     <item>
-      <title>CVE-2026-125327: pgEdge RAG Server unbounded corpus read allows resource exhaustion from unauthenticated requests</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-125327-pgedge-rag-server-unbounded-corpus-read-allows-r.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-125327-pgedge-rag-server-unbounded-corpus-read-allows-r.html</guid>
-      <pubDate>Thu, 12 Nov 2026 20:37:38 GMT</pubDate>
+      <title>CVE-2026-126078: Action View: Possible XSS vulnerability in highlight helper</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-126078-action-view-possible-xss-vulnerability-in-highli.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-126078-action-view-possible-xss-vulnerability-in-highli.html</guid>
+      <pubDate>Thu, 12 Nov 2026 23:41:50 GMT</pubDate>
+      <description>Severity: medium. ### Impact
+`ActionView::Helpers::TextHelper#highlight` substitutes each matched phrase into the `:highlighter` string without escaping it and returns the result marked HTML-safe. Because sanitizing leaves quote characters in text unescaped, a match substituted into a quoted attribu</description>
+    </item>
+    <item>
+      <title>CVE-2026-126070: Action View: Possible XSS vulnerability in strip_tags</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-126070-action-view-possible-xss-vulnerability-in-strip-.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-126070-action-view-possible-xss-vulnerability-in-strip-.html</guid>
+      <pubDate>Thu, 12 Nov 2026 23:39:41 GMT</pubDate>
+      <description>Severity: medium. ### Impact
+`strip_tags` in Action View returns its sanitized output marked `html_safe`, but the underlying sanitizer encodes only `&amp;`, `&lt;` and `&gt;`, leaving `"` and `'` unencoded. Because ERB does not escape a string marked `html_safe`, untrusted input passed through `strip_tags` an</description>
+    </item>
+    <item>
+      <title>CVE-2026-126079: Action View: Possible XSS vulnerability in text helpers</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-126079-action-view-possible-xss-vulnerability-in-text-h.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-126079-action-view-possible-xss-vulnerability-in-text-h.html</guid>
+      <pubDate>Thu, 12 Nov 2026 23:38:57 GMT</pubDate>
+      <description>Severity: medium. ### Impact
+With the HTML5 sanitizer (`Rails::HTML5::Sanitizer`, the default vendor on CRuby for applications using `load_defaults 7.1` or later), Nokogiri before 1.19.5 serializes `&lt;` and `&gt;` unescaped inside attribute values. The Action View text helpers `highlight` and `simple_fo</description>
+    </item>
+    <item>
+      <title>CVE-2026-126084: Active Storage: Unsigned Content-Type in GCS direct uploads with cache_control</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-126084-active-storage-unsigned-content-type-in-gcs-dire.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-126084-active-storage-unsigned-content-type-in-gcs-dire.html</guid>
+      <pubDate>Thu, 12 Nov 2026 23:37:55 GMT</pubDate>
+      <description>Severity: medium. ### Impact
+When a GCS service is configured with the `cache_control` option, `ActiveStorage::Service::GCSService#url_for_direct_upload` signs direct-upload URLs with V4, and the V4 signature covers only the `Cache-Control` and `Host` headers. A direct-upload client can therefore se</description>
+    </item>
+    <item>
+      <title>CVE-2026-126081: Action Pack: Possible Strong Parameters Bypass in Parameters#each_key</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-126081-action-pack-possible-strong-parameters-bypass-in.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-126081-action-pack-possible-strong-parameters-bypass-in.html</guid>
+      <pubDate>Thu, 12 Nov 2026 23:37:09 GMT</pubDate>
       <description>Severity: high. ### Impact
-
-An unauthenticated caller able to reach the query endpoint could exhaust database and server resources with ordinary, inexpensive requests.
-
-The keyword-search arm read the entire corpus on every request and rebuilt an in-memory BM25 index from it, so the cost of serving </description>
+`ActionController::Parameters#each_key` delegates to the internal `ActiveSupport::HashWithIndifferentAccess` that holds the request parameters, so when called with a block it returns that hash instead of the `Parameters` instance. The hash does not respond to `permitted?`,</description>
     </item>
     <item>
-      <title>CVE-2026-125326: pgEdge RAG Server discloses part of the configured provider credential through API error messages</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-125326-pgedge-rag-server-discloses-part-of-the-configur.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-125326-pgedge-rag-server-discloses-part-of-the-configur.html</guid>
-      <pubDate>Thu, 12 Nov 2026 20:29:32 GMT</pubDate>
-      <description>Severity: medium. ### Impact
-
-An unauthenticated remote caller could read part of the operator's configured LLM provider API key.
-
-The query API relayed the text of a provider error straight to the caller. That text carried the upstream provider's own message, and providers characteristically quote </description>
+      <title>CVE-2026-128066: Pillow: Memory DoS in TIFF and EXIF IFD parsing via overlapping tag data</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-128066-pillow-memory-dos-in-tiff-and-exif-ifd-parsing-v.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-128066-pillow-memory-dos-in-tiff-and-exif-ifd-parsing-v.html</guid>
+      <pubDate>Thu, 12 Nov 2026 23:35:39 GMT</pubDate>
+      <description>Severity: medium. ```
+============================================================================
+ANT-2026-D7STJUWL  [medium]  CWE-770  dos
+Memory DoS in TIFF and EXIF IFD parsing via overlapping tag data
+Location: src/PIL/TiffImagePlugin.py:927  in ImageFileDirectory_v2.load()
+Commit:   a707c6b21c</description>
     </item>
     <item>
-      <title>CVE-2026-125325: pgEdge RAG Server shared keyword index leaked results between concurrent unauthenticated requests</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-125325-pgedge-rag-server-shared-keyword-index-leaked-re.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-125325-pgedge-rag-server-shared-keyword-index-leaked-re.html</guid>
-      <pubDate>Thu, 12 Nov 2026 19:42:07 GMT</pubDate>
-      <description>Severity: medium. ### Impact
-
-Documents belonging to one caller could be returned to another. Where an application passes a customer or tenant identifier as a search filter, that scoping could be defeated by ordinary concurrent traffic. **No injection and no malformed input are required** — normal l</description>
+      <title>CVE-2026-128067: Pillow: Heap buffer overflow saving TIFF with libtiff when tags override image size</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-128067-pillow-heap-buffer-overflow-saving-tiff-with-lib.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-128067-pillow-heap-buffer-overflow-saving-tiff-with-lib.html</guid>
+      <pubDate>Thu, 12 Nov 2026 23:34:43 GMT</pubDate>
+      <description>Severity: high. ```
+============================================================================
+ANT-2026-CS7N494P  [high]  CWE-787  memory-safety
+Heap buffer overflow saving TIFF with libtiff when tags override image size
+Location: src/libImaging/TiffDecode.c:1035  in ImagingLibTiffEncode()
+Commit:</description>
     </item>
     <item>
-      <title>CVE-2026-125328: pgEdge Go LLM Library discloses provider API key fragments in error messages</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-125328-pgedge-go-llm-library-discloses-provider-api-key.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-125328-pgedge-go-llm-library-discloses-provider-api-key.html</guid>
-      <pubDate>Thu, 12 Nov 2026 19:32:36 GMT</pubDate>
-      <description>Severity: medium. ### Impact
-
-An unauthenticated caller could read part of the operator's configured LLM provider API key.
-
-The library's own health handler pings every configured provider using the operator's real credential and returns the resulting error text verbatim. Providers characteristicall</description>
-    </item>
-    <item>
-      <title>GHSA-7m8x-x364-m26j: Signal K Server: Buffered logs exposed to unauthenticated WebSocket clients</title>
-      <link>https://sentinel-post.pages.dev/item/ghsa-7m8x-x364-m26j-signal-k-server-buffered-logs-exposed-to-una.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/ghsa-7m8x-x364-m26j-signal-k-server-buffered-logs-exposed-to-una.html</guid>
-      <pubDate>Thu, 12 Nov 2026 19:14:00 GMT</pubDate>
+      <title>CVE-2026-126355: Hono: `csrf()` does not check requests sent by hyperlink auditing (`text/ping`)</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-126355-hono-csrf-does-not-check-requests-sent-by-hyperl.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-126355-hono-csrf-does-not-check-requests-sent-by-hyperl.html</guid>
+      <pubDate>Thu, 12 Nov 2026 23:31:25 GMT</pubDate>
       <description>Severity: medium. ### Summary
 
-An unauthenticated WebSocket client can subscribe to the log path and receive buffered server logs.
-
-WebSocket connections are intentionally permitted before authentication because login occurs over the WebSocket connection. However, the log subscription path does not </description>
+`csrf()` validates a request only when its `Content-Type` is one of the three types an HTML form can send. Chromium's hyperlink auditing (`&lt;a ping&gt;`) sends a cross-origin POST with the user's cookies and the content type `text/ping`, which is not in that list. The midd</description>
     </item>
     <item>
-      <title>CVE-2026-84987: code16/sharp: Server-side request forgery through an unanchored autocomplete endpoint check</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-84987-code16-sharp-server-side-request-forgery-through-.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-84987-code16-sharp-server-side-request-forgery-through-.html</guid>
-      <pubDate>Thu, 12 Nov 2026 18:21:00 GMT</pubDate>
+      <title>CVE-2026-126356: Hono: `validator('form')` skips validation for `multipart/form-data` requests with extra parameters</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-126356-hono-validator-form-skips-validation-for-multipa.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-126356-hono-validator-form-skips-validation-for-multipa.html</guid>
+      <pubDate>Thu, 12 Nov 2026 23:30:45 GMT</pubDate>
+      <description>Severity: medium. ### Summary
+
+`validator('form')` only recognizes a `multipart/form-data` `Content-Type` that carries nothing but a single `boundary` parameter. A request with another legal parameter, such as `charset`, or with extra whitespace after the `;` is not recognized as a form. The validat</description>
+    </item>
+    <item>
+      <title>CVE-2026-126357: Hono: `mount()` and `app.mount()` can forward a path that bypasses middleware scoped inside the mount prefix</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-126357-hono-mount-and-app-mount-can-forward-a-path-that.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-126357-hono-mount-and-app-mount-can-forward-a-path-that.html</guid>
+      <pubDate>Thu, 12 Nov 2026 23:24:11 GMT</pubDate>
+      <description>Severity: medium. ### Summary
+
+`mount()` and `app.mount()` remove the mount prefix from the request path and forward the rest to the mounted application. Two mistakes in that step let a crafted request reach a route of the mounted application that the outer application protects with path-scoped midd</description>
+    </item>
+    <item>
+      <title>CVE-2026-126358: Hono: RegExpRouter skips wildcard middleware for some route sets and for paths with an encoded line terminator</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-126358-hono-regexprouter-skips-wildcard-middleware-for-.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-126358-hono-regexprouter-skips-wildcard-middleware-for-.html</guid>
+      <pubDate>Thu, 12 Nov 2026 23:23:30 GMT</pubDate>
+      <description>Severity: medium. ### Summary
+
+RegExpRouter, which the default `SmartRouter` selects for most applications, skipped wildcard middleware in three cases, so a route handler ran without the middleware registered for it:
+
+1. Middleware whose parameter is written with the explicit default pattern, such a</description>
+    </item>
+    <item>
+      <title>CVE-2026-126359: Hono: `css` helper does not escape a closing tag split between the template and an interpolated value, allowing HTML injection</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-126359-hono-css-helper-does-not-escape-a-closing-tag-sp.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-126359-hono-css-helper-does-not-escape-a-closing-tag-sp.html</guid>
+      <pubDate>Thu, 12 Nov 2026 23:22:36 GMT</pubDate>
+      <description>Severity: low. ### Summary
+
+The `css` helper in `hono/css` escapes a `/` that follows `&lt;` inside an interpolated value so that a value cannot close the `&lt;style&gt;` element. The check only looks inside each value. When the text before a value ends with `&lt;`, whether that is the template itself or an ear</description>
+    </item>
+    <item>
+      <title>CVE-2026-126367: @grpc/grpc-js: safe_regex incorrectly applies partial string matching for patterns with alternation</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-126367-grpc-grpc-js-safe-regex-incorrectly-applies-part.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-126367-grpc-grpc-js-safe-regex-incorrectly-applies-part.html</guid>
+      <pubDate>Thu, 12 Nov 2026 23:21:57 GMT</pubDate>
+      <description>Severity: medium. ### Summary
+
+The StringMatcher/PathMatcher for `safe_regex` builds its RE2 as `^${regex}$` with no surrounding group. Because alternation has the lowest precedence, a pattern `"a|b|c"` compiles to `/^a|b|c$/` -- "starts with a" OR "contains b" OR "ends with c" instead of a full mat</description>
+    </item>
+    <item>
+      <title>CVE-2026-128065: @grpc/grpc-js: RBAC override configs in VirtualHost and Route resources are not applied</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-128065-grpc-grpc-js-rbac-override-configs-in-virtualhos.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-128065-grpc-grpc-js-rbac-override-configs-in-virtualhos.html</guid>
+      <pubDate>Thu, 12 Nov 2026 22:55:47 GMT</pubDate>
+      <description>Severity: medium. ### Summary
+
+`XdsServer` in `@grpc/grpc-js-xds` does not apply `RBACPerRoute` overrides from matching Route or VirtualHost resources. When a trusted xDS control plane supplies a broad top-level ALLOW policy and a stricter override, `XdsServer` ACKs the resources but evaluates the R</description>
+    </item>
+    <item>
+      <title>CVE-2026-126366: msgpack-ruby JRuby decoder makes uncapped header-count allocations; a 5-byte message forces multi-GiB OOM</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-126366-msgpack-ruby-jruby-decoder-makes-uncapped-header.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-126366-msgpack-ruby-jruby-decoder-makes-uncapped-header.html</guid>
+      <pubDate>Thu, 12 Nov 2026 22:54:59 GMT</pubDate>
+      <description>Severity: high. ### Summary
+
+The **JRuby** implementation of msgpack (`msgpack` gem, `java` platform — pure Java decoder under `ext/java/`) sizes containers directly from the element count written in the message header, with **no cap at all**: no equivalent of the C unpacker's `SHRT_MAX` clamp (sinc</description>
+    </item>
+    <item>
+      <title>CVE-2026-126348: Addressable display_uri can show misleading hosts with invalid Punycode A-labels</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-126348-addressable-display-uri-can-show-misleading-host.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-126348-addressable-display-uri-can-show-misleading-host.html</guid>
+      <pubDate>Thu, 12 Nov 2026 22:44:57 GMT</pubDate>
       <description>Severity: medium. ### Impact
-An authenticated attacker can call the Autocomplete API with the configured endpoint as a substring to request another server-side route.
 
-### Patches
-The problem has been patched in 9.23.0 and pre-release version 10.0.0-beta.4. The regex verifying the endpoint has been </description>
+`Addressable::IDNA.to_unicode`, in the pure-Ruby IDNA implementation, decodes Punycode labels (labels beginning with `xn--`) that are not valid A-labels. Those labels are returned in decoded form, when they should be returned unchanged. That includes:
+
+- labels that dec</description>
     </item>
     <item>
-      <title>CVE-2026-84974: code16/sharp: Arbitrary class instantiation through the embed_key API parameter</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-84974-code16-sharp-arbitrary-class-instantiation-throug.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-84974-code16-sharp-arbitrary-class-instantiation-throug.html</guid>
-      <pubDate>Thu, 12 Nov 2026 18:18:44 GMT</pubDate>
+      <title>CVE-2026-126349: Addressable display_uri can show misleading hosts containing bidi and invisible characters</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-126349-addressable-display-uri-can-show-misleading-host.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-126349-addressable-display-uri-can-show-misleading-host.html</guid>
+      <pubDate>Thu, 12 Nov 2026 22:44:15 GMT</pubDate>
+      <description>Severity: low. ### Impact
+
+`Addressable::IDNA.to_unicode` decodes Punycode labels (labels beginning with `xn--`) that contain characters which change how text is displayed without being visible themselves. These include bidirectional controls such as U+202E RIGHT-TO-LEFT OVERRIDE and U+2066–U+2069, </description>
+    </item>
+    <item>
+      <title>CVE-2026-126351: Addressable: Denial of service in URI path normalization</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-126351-addressable-denial-of-service-in-uri-path-normal.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-126351-addressable-denial-of-service-in-uri-path-normal.html</guid>
+      <pubDate>Thu, 12 Nov 2026 22:35:33 GMT</pubDate>
       <description>Severity: medium. ### Impact
 
-An authenticated attacker can instantiate any class in the PHP application by using the `embed_key` parameter across multiple API endpoints. The instantiation is performed by the Laravel container. As a result, the `__construct()` method of the class is called and all c</description>
+`Addressable::URI.normalize_path` takes time quadratic in the number of nested dot segments in a path (e.g., `"/" + "a/" * n + "../" * n`, which for n = 3 is `/a/a/a/../../../`), because it removes one dot segment per pass over the whole path. `URI#normalize`, `URI#norm</description>
     </item>
     <item>
-      <title>Webinar: See How Identity Blind Spots Put Your SOC at Risk and How to Close Them</title>
-      <link>https://sentinel-post.pages.dev/item/webinar-see-how-identity-blind-spots-put-your-soc-at-risk-and-ho.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/webinar-see-how-identity-blind-spots-put-your-soc-at-risk-and-ho.html</guid>
-      <pubDate>Thu, 12 Nov 2026 18:07:15 GMT</pubDate>
-      <description>Security teams have more alerts, logs, and monitoring tools than ever. Yet when an attack happens, one simple question can still take too long to answer: Who or what is behind this activity, and what can they access? A suspicious login might belong to an employee. An unusual API call could come from</description>
-    </item>
-    <item>
-      <title>ThreatsDay: 59 Linux Kernel Bugs, Falcon Spyware, GSocket Backdoors + 17 More Stories</title>
-      <link>https://sentinel-post.pages.dev/item/threatsday-59-linux-kernel-bugs-falcon-spyware-gsocket-backdoors.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/threatsday-59-linux-kernel-bugs-falcon-spyware-gsocket-backdoors.html</guid>
-      <pubDate>Thu, 12 Nov 2026 18:02:51 GMT</pubDate>
-      <description>A search result isn't always safe. An access request isn't always harmless. And a familiar account doesn't always mean a familiar person is using it. Simple things to remember. Yet a surprising amount of this week's trouble starts right there. Attackers are using fake websites, stolen access, and tr</description>
-    </item>
-    <item>
-      <title>New SignDrop Zero-Day Exploit Turns Windows CLFS Security Feature Into SYSTEM Access</title>
-      <link>https://sentinel-post.pages.dev/item/new-signdrop-zero-day-exploit-turns-windows-clfs-security-featur.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/new-signdrop-zero-day-exploit-turns-windows-clfs-security-featur.html</guid>
-      <pubDate>Thu, 12 Nov 2026 17:50:27 GMT</pubDate>
-      <description>Public exploit code released earlier this week claims that a local Windows user can gain SYSTEM privileges through the Common Log File System driver. The proof of concept, called SignDrop, targets a log-authentication feature added to the driver last year. It abuses how clfs.sys creates companion fi</description>
-    </item>
-    <item>
-      <title>CVE-2026-118740: Microsoft Security Advisory CVE-2026-118740 - Aspire Security Feature Bypass Vulnerability</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-118740-microsoft-security-advisory-cve-2026-118740-aspi.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-118740-microsoft-security-advisory-cve-2026-118740-aspi.html</guid>
-      <pubDate>Thu, 12 Nov 2026 17:17:48 GMT</pubDate>
-      <description>Severity: critical. ## Executive summary
+      <title>CVE-2026-126363: Astro: Reflected XSS via unescaped slot names in @astrojs/solid-js</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-126363-astro-reflected-xss-via-unescaped-slot-names-in-.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-126363-astro-reflected-xss-via-unescaped-slot-names-in-.html</guid>
+      <pubDate>Thu, 12 Nov 2026 22:34:44 GMT</pubDate>
+      <description>Severity: low. ## Summary
 
-Microsoft is releasing this security advisory to provide information about a vulnerability in Aspire. This advisory provides guidance on updating affected applications and components.
+The `@astrojs/solid-js` renderer wraps named slot content passed to Solid components in an `&lt;astro-slot&gt;` element, and writes the slot name into its `name` attribute without HTML escaping. A slot name containing `"` could end the attribute and inject arbitrary HTML into th</description>
+    </item>
+    <item>
+      <title>CVE-2026-126362: Astro: Reflected XSS via unescaped slot names in @astrojs/svelte</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-126362-astro-reflected-xss-via-unescaped-slot-names-in-.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-126362-astro-reflected-xss-via-unescaped-slot-names-in-.html</guid>
+      <pubDate>Thu, 12 Nov 2026 22:34:04 GMT</pubDate>
+      <description>Severity: low. ## Summary
 
-Aspire Dashboard's unauthenticated NotFound route can permit telemetry de</description>
+The `@astrojs/svelte` renderer wraps slotted content passed to Svelte components in an `&lt;astro-slot&gt;` element, and writes the slot name into its `name` attribute without HTML escaping. A slot name containing `"` could end the attribute and inject arbitrary HTML into the pa</description>
     </item>
     <item>
-      <title>Critical Red Hat Quay Flaw Lets Attackers Read and Overwrite All Private Container Images in a Registry</title>
-      <link>https://sentinel-post.pages.dev/item/critical-red-hat-quay-flaw-lets-attackers-read-and-overwrite-all.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/critical-red-hat-quay-flaw-lets-attackers-read-and-overwrite-all.html</guid>
-      <pubDate>Thu, 12 Nov 2026 16:27:01 GMT</pubDate>
-      <description>A critical flaw in Red Hat Quay allows an attacker who can access a Quay registry to read and overwrite private container images in every repository. Quay enables anonymous access by default, and while it is enabled, the attacker needs no account. When it is off, anyone with a valid account can stil</description>
+      <title>CVE-2026-126350: Addressable: Regular Expression Denial of Service in templates with certain exploded expressions</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-126350-addressable-regular-expression-denial-of-service.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-126350-addressable-regular-expression-denial-of-service.html</guid>
+      <pubDate>Thu, 12 Nov 2026 22:30:37 GMT</pubDate>
+      <description>Severity: medium. ### Impact
+
+Within the URI template implementation in Addressable, templates using the `*` (explode) modifier with the `/`, `.`, `;`, `?` or `&amp;` operators (e.g., `{/segments*}`, `{.ext*}`, `{;params*}`, `{?query*}`) generate regular expressions vulnerable to catastrophic backtracki</description>
     </item>
     <item>
-      <title>Citrix Patches 12 NetScaler and Secure Access Client Flaws, Including Authentication Bypass</title>
-      <link>https://sentinel-post.pages.dev/item/citrix-patches-12-netscaler-and-secure-access-client-flaws-inclu.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/citrix-patches-12-netscaler-and-secure-access-client-flaws-inclu.html</guid>
-      <pubDate>Thu, 12 Nov 2026 15:38:49 GMT</pubDate>
-      <description>Citrix has released patches for multiple critical security flaws impacting NetScaler ADC, Citrix NetScaler Gateway, and NetScaler Console that could lead to denial-of-service (DoS) or an authentication bypass. The critical vulnerabilities that impact NetScaler ADC and NetScaler Gateway are listed be</description>
+      <title>CVE-2026-126352: Addressable: Regular Expression Denial of Service in templates with multiple variables</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-126352-addressable-regular-expression-denial-of-service.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-126352-addressable-regular-expression-denial-of-service.html</guid>
+      <pubDate>Thu, 12 Nov 2026 22:29:35 GMT</pubDate>
+      <description>Severity: medium. ### Impact
+
+Within the URI template implementation in Addressable, templates that put several variables in one expression generate regular expressions vulnerable to excessive backtracking:
+
+1. Expressions with any operator other than `+` and `#` (e.g., `{/owner,repo,ref}`, `{.a,b}`</description>
     </item>
     <item>
-      <title>186 Fake AI Domains Redirect Users to ClickFix Lures, Browser Malware, and Search Hijackers</title>
-      <link>https://sentinel-post.pages.dev/item/186-fake-ai-domains-redirect-users-to-clickfix-lures-browser-mal.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/186-fake-ai-domains-redirect-users-to-clickfix-lures-browser-mal.html</guid>
-      <pubDate>Thu, 12 Nov 2026 15:15:40 GMT</pubDate>
-      <description>Cybersecurity researchers have found that lookalike domains masquerading as artificial intelligence (AI) tools are being used to serve ClickFix-style lures, browser-hijacking malware, and a set of extensions that hijack user searches. This delivery pattern has been codenamed TypoPrompting by Island.</description>
+      <title>CVE-2026-126354: Addressable URI normalization resolves some dotted path segments to the wrong path</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-126354-addressable-uri-normalization-resolves-some-dott.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-126354-addressable-uri-normalization-resolves-some-dott.html</guid>
+      <pubDate>Thu, 12 Nov 2026 22:27:58 GMT</pubDate>
+      <description>Severity: medium. ### Summary
+
+`Addressable::URI.normalize_path` resolves some paths containing `..` segments to a different path than RFC 3986 does. When a path climbs above the root before any other `..` is resolved, the segments that later `..` segments should remove are instead kept: `/../../pub</description>
     </item>
     <item>
-      <title>SCKit Malware Turns ScreenConnect Support Sessions Into Potential MSP Attack Paths</title>
-      <link>https://sentinel-post.pages.dev/item/sckit-malware-turns-screenconnect-support-sessions-into-potentia.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/sckit-malware-turns-screenconnect-support-sessions-into-potentia.html</guid>
-      <pubDate>Thu, 12 Nov 2026 13:08:28 GMT</pubDate>
-      <description>The ongoing campaign targeting ConnectWise ScreenConnect deployments involves the exploitation of a now-patched critical security flaw in the remote access software, and not a new vulnerability, it has emerged. Blackpoint Cyber's Adversary Pursuit Group (APG), which shared the details with The Hacke</description>
-    </item>
-    <item>
-      <title>Google Cloud Warns Three AMD Turin CPU Flaws Could Leak Data Across Processes in VMs</title>
-      <link>https://sentinel-post.pages.dev/item/google-cloud-warns-three-amd-turin-cpu-flaws-could-leak-data-acr.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/google-cloud-warns-three-amd-turin-cpu-flaws-could-leak-data-acr.html</guid>
-      <pubDate>Thu, 12 Nov 2026 12:09:14 GMT</pubDate>
-      <description>Google Cloud VMs on AMD Turin chips need a guest OS patch and a stop-and-start to protect against three CPU side-channel flaws, Google said this week. The company has already applied mitigations against attacks between VMs, and between VMs and the host. Inside a VM, the flaws may let an attacker wit</description>
-    </item>
-    <item>
-      <title>Another Way Police Are Locating People from Their Smartphones</title>
-      <link>https://sentinel-post.pages.dev/item/another-way-police-are-locating-people-from-their-smartphones.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/another-way-police-are-locating-people-from-their-smartphones.html</guid>
-      <pubDate>Thu, 12 Nov 2026 12:03:10 GMT</pubDate>
-      <description>&lt;p&gt;Penlink&amp;#8217;s Webloc is an application that &lt;a href="https://www.bloomberg.com/features/2026-police-phone-tracking-advertising-tech/?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5Mzg4OTgyNSwiZXhwIjoxNzk0NDk0NjI1LCJhcnRpY2xlSWQiOiJUT</description>
-    </item>
-    <item>
-      <title>New N-central Exploits Work Against Patched Servers, Enable Root RCE and Windows SYSTEM Access</title>
-      <link>https://sentinel-post.pages.dev/item/new-n-central-exploits-work-against-patched-servers-enable-root-.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/new-n-central-exploits-work-against-patched-servers-enable-root-.html</guid>
-      <pubDate>Thu, 12 Nov 2026 11:51:43 GMT</pubDate>
-      <description>N-able on Thursday said it's investigating a new public disclosure containing claims of additional vulnerabilities in on-premise versions of N-central running version 2026.4.1 HF2. "Based on our initial review, the server issue described depends on a non-default configuration in which the Legacy API</description>
-    </item>
-    <item>
-      <title>Calendar Invites and Live Proxies: Inside a Google Session Hijacking Campaign</title>
-      <link>https://sentinel-post.pages.dev/item/calendar-invites-and-live-proxies-inside-a-google-session-hijack.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/calendar-invites-and-live-proxies-inside-a-google-session-hijack.html</guid>
-      <pubDate>Thu, 12 Nov 2026 11:51:31 GMT</pubDate>
-      <description>Since mid-August 2026, a phishing operation has been stealing live Google sessions from corporate users. Every check defenders normally lean on to judge a link came back clean, and the operator designed it that way on purpose. The Threat Research team at Material Security spotted the campaign and ha</description>
-    </item>
-    <item>
-      <title>PTC Patches Critical Windchill and FlexPLM Flaw That Could Enable Remote Code Execution</title>
-      <link>https://sentinel-post.pages.dev/item/ptc-patches-critical-windchill-and-flexplm-flaw-that-could-enabl.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/ptc-patches-critical-windchill-and-flexplm-flaw-that-could-enabl.html</guid>
-      <pubDate>Thu, 12 Nov 2026 11:33:15 GMT</pubDate>
-      <description>PTC has released patches for a new critical vulnerability impacting Windchill and FlexPLM software that, if successfully exploited, could result in remote code execution. The security flaw, tracked as CVE-[phone], carries a CVSS v4 score of 9.2 out of a maximum of 10.0. It has been described as a ca</description>
-    </item>
-    <item>
-      <title>Critical Pre-Auth MongoDB Flaw (CVE-2026-118383) Can Crash Lagging Servers on Failover</title>
-      <link>https://sentinel-post.pages.dev/item/critical-pre-auth-mongodb-flaw-cve-2026-118383-can-crash-lagging.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/critical-pre-auth-mongodb-flaw-cve-2026-118383-can-crash-lagging.html</guid>
-      <pubDate>Thu, 12 Nov 2026 09:25:00 GMT</pubDate>
-      <description>A critical flaw in MongoDB Server allows an unauthenticated attacker to send two requests that trigger a crash on the database server. The crash occurs only if that server is later chosen to take over as the main server while it still lacks some recent changes. MongoDB, the company that makes the da</description>
-    </item>
-    <item>
-      <title>Node.js Fixes 16 Flaws, Including HTTP/2 Bugs That Crash Servers and Leak Other Connections' Data</title>
-      <link>https://sentinel-post.pages.dev/item/node-js-fixes-16-flaws-including-http-2-bugs-that-crash-servers-.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/node-js-fixes-16-flaws-including-http-2-bugs-that-crash-servers-.html</guid>
-      <pubDate>Thu, 12 Nov 2026 08:20:37 GMT</pubDate>
-      <description>A flaw fixed in Node.js this week lets unauthenticated clients crash servers that use the runtime's built-in HTTP/2 support on the 24.x and 26.x release lines. A second HTTP/2 flaw can cause a server to send a client pieces of its memory, including responses intended for other connections. Fixed ver</description>
-    </item>
-    <item>
-      <title>Attacker Used 4,837 Hijacked GitHub Accounts to Run a CI Secret Stealer in 1,806+ Repositories</title>
-      <link>https://sentinel-post.pages.dev/item/attacker-used-4-837-hijacked-github-accounts-to-run-a-ci-secret-.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/attacker-used-4-837-hijacked-github-accounts-to-run-a-ci-secret-.html</guid>
-      <pubDate>Thu, 12 Nov 2026 06:42:47 GMT</pubDate>
-      <description>Starting Tuesday, an attacker used stolen credentials for 4,837 GitHub accounts to plant a secret stealer in repositories those accounts could write to, according to Aikido Security, a security software company. The stealer is built to take the secrets and cloud credentials that a repository's CI wo</description>
-    </item>
-    <item>
-      <title>Critical Apache HTTP/2 Flaw Could Let Unauthenticated Attackers Execute Code Remotely</title>
-      <link>https://sentinel-post.pages.dev/item/critical-apache-http-2-flaw-could-let-unauthenticated-attackers-.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/critical-apache-http-2-flaw-could-let-unauthenticated-attackers-.html</guid>
-      <pubDate>Thu, 12 Nov 2026 05:12:26 GMT</pubDate>
-      <description>A critical flaw in Apache HTTP Server's HTTP/2 module, mod_http2, can let a remote attacker run code on the server. Tracked as CVE-[phone], it affects versions 2.4.55 through 2.4.70 and is fixed in version 2.4.71, released yesterday. Only servers with HTTP/2 enabled are affected, according to Red Ha</description>
-    </item>
-    <item>
-      <title>ScreenConnect Attacks Target at Least 288 Endpoints Across 48 Organizations With Rogue Clients</title>
-      <link>https://sentinel-post.pages.dev/item/screenconnect-attacks-target-at-least-288-endpoints-across-48-or.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/screenconnect-attacks-target-at-least-288-endpoints-across-48-or.html</guid>
-      <pubDate>Thu, 12 Nov 2026 04:39:48 GMT</pubDate>
-      <description>ConnectWise has taken the precautionary step of disabling five third-party extensions in partner environments following reports of unauthorized access. In an advisory posted on its site, the company said there is no evidence that the incident involves a compromise of its infrastructure or a vulnerab</description>
-    </item>
-    <item>
-      <title>Who Runs the Ransomware Group Qilin?</title>
-      <link>https://sentinel-post.pages.dev/item/who-runs-the-ransomware-group-qilin.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/who-runs-the-ransomware-group-qilin.html</guid>
-      <pubDate>Wed, 11 Nov 2026 18:06:01 GMT</pubDate>
-      <description>The cybercrime group Qilin has emerged as the world's most active ransomware affiliate program, claiming at least 365 victim organizations in the past three months alone. But even top Russian hackers make operational security mistakes, and the administrator of Qilin has made a few key missteps over </description>
+      <title>CVE-2026-126346: basic-ftp: Uncaught exception crashes the Node.js process when a password (or resumed-download path) contains CR/LF</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-126346-basic-ftp-uncaught-exception-crashes-the-node-js.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-126346-basic-ftp-uncaught-exception-crashes-the-node-js.html</guid>
+      <pubDate>Thu, 12 Nov 2026 22:23:50 GMT</pubDate>
+      <description>Severity: medium. ### Summary
+
+Client.login() calls FTPContext.send() from inside the control-socket data event handler. send() throws on CR, LF or NUL, and nothing catches the throw. A password containing \r\n therefore raises an uncaught exception and terminates the whole Node.js process. It does </description>
     </item>
   </channel>
 </rss>
