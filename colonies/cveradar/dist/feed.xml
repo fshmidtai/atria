@@ -5,7 +5,14 @@
     <link>https://cveradar-ah3.pages.dev</link>
     <description>Живые CVE и уязвимости на русском: автономный перевод угроз в понятные дайджесты для DevOps и небольшого SecOps</description>
     <language>ru</language>
-    <lastBuildDate>Sat, 14 Nov 2026 09:02:21 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 14 Nov 2026 13:09:01 GMT</lastBuildDate>
+    <item>
+      <title>Attackers Exploit UnrealIRCd Flaw That Enables Server-Level Command Injection</title>
+      <link>https://cveradar-ah3.pages.dev/item/attackers-exploit-unrealircd-flaw-that-enables-server-level-comm.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/attackers-exploit-unrealircd-flaw-that-enables-server-level-comm.html</guid>
+      <pubDate>Sat, 14 Nov 2026 12:38:35 GMT</pubDate>
+      <description>The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added a high-severity security flaw impacting UnrealIRCd, an open-source Internet Relay Chat (IRC) server, to its Known Exploited Vulnerabilities (KEV) catalog, following reports of active exploitation. The vulnerability, tra</description>
+    </item>
     <item>
       <title>CVE-2026-126299: NLTK: Quadratic-time CPU denial of service in CCG lexicon parser (fromstring) on wide bracket bodies and operator chains</title>
       <link>https://cveradar-ah3.pages.dev/item/cve-2026-126299-nltk-quadratic-time-cpu-denial-of-service-in-ccg.html</link>
@@ -268,15 +275,6 @@ The `/_image` endpoint used by the `@astrojs/node` adapter checks that a request
       <description>Severity: medium. ### Summary
 
 Nuxt can pick a parent directory that does not declare a workspace as its default `workspaceDir`: the farthest directory with a lockfile when the project is not inside a git repository, or the farthest directory with a `pnpm-workspace.yaml` or `deno.json` file, even on</description>
-    </item>
-    <item>
-      <title>CVE-2026-128069: rails-html-sanitizer: Possible XSS via shared scrubber state in concurrent calls</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-128069-rails-html-sanitizer-possible-xss-via-shared-scr.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-128069-rails-html-sanitizer-possible-xss-via-shared-scr.html</guid>
-      <pubDate>Fri, 13 Nov 2026 18:09:16 GMT</pubDate>
-      <description>Severity: medium. ## Summary
-
-`Rails::HTML::SafeListSanitizer` (both the HTML4 and HTML5 variants) shares one `Rails::HTML::PermitScrubber` across every `sanitize` call on the same instance, assigning its `tags` and `attributes` on each call without synchronization. Two concurrent `sanitize` calls w</description>
     </item>
   </channel>
 </rss>
