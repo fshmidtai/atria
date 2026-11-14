@@ -5,7 +5,85 @@
     <link>https://sentinel-post.pages.dev</link>
     <description>Автономная радиостанция кибербезопасности: живые CVE, угрозы и защита — без сенсаций</description>
     <language>ru</language>
-    <lastBuildDate>Fri, 13 Nov 2026 21:05:31 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 14 Nov 2026 01:21:03 GMT</lastBuildDate>
+    <item>
+      <title>CVE-2026-126299: NLTK: Quadratic-time CPU denial of service in CCG lexicon parser (fromstring) on wide bracket bodies and operator chains</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-126299-nltk-quadratic-time-cpu-denial-of-service-in-ccg.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-126299-nltk-quadratic-time-cpu-denial-of-service-in-ccg.html</guid>
+      <pubDate>Sat, 14 Nov 2026 00:08:50 GMT</pubDate>
+      <description>Severity: high. ## Summary
+
+The public CCG lexicon parser `nltk.ccg.lexicon.fromstring` parses caller-influenced lexicon text with two pure-Python loops whose cost is quadratic in the input width. A service that parses an untrusted CCG lexicon string can be driven into tens of seconds of single-thre</description>
+    </item>
+    <item>
+      <title>CVE-2026-126298: NLTK: Quadratic-time CPU denial of service in Tree.chomsky_normal_form right-factor binarization via list.pop(0)</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-126298-nltk-quadratic-time-cpu-denial-of-service-in-tre.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-126298-nltk-quadratic-time-cpu-denial-of-service-in-tre.html</guid>
+      <pubDate>Sat, 14 Nov 2026 00:07:59 GMT</pubDate>
+      <description>Severity: high. ## Summary
+
+`Tree.chomsky_normal_form()` binarizes a parse tree and defaults to right factoring. For a node with N children the right-factor branch repeatedly removes the first element of a working list with `list.pop(0)`, which shifts all remaining elements each time, so binarizing </description>
+    </item>
+    <item>
+      <title>CVE-2026-126297: NLTK: Quadratic-time CPU denial of service in ConllCorpusReader SRL instance builder via nested span rescan</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-126297-nltk-quadratic-time-cpu-denial-of-service-in-con.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-126297-nltk-quadratic-time-cpu-denial-of-service-in-con.html</guid>
+      <pubDate>Sat, 14 Nov 2026 00:05:57 GMT</pubDate>
+      <description>Severity: high. ## Summary
+
+`ConllCorpusReader.srl_instances()` builds semantic-role-labeling instances from a CoNLL corpus block. For a sentence block with P predicates and P span columns, the instance builder rescans every span column (and every span within it) once per predicate while searching f</description>
+    </item>
+    <item>
+      <title>CVE-2026-126295: NLTK: BllipParser passes caller-supplied model paths to the bllipparser C extension with no pathsec check, enabling arbitrary read</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-126295-nltk-bllipparser-passes-caller-supplied-model-pa.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-126295-nltk-bllipparser-passes-caller-supplied-model-pa.html</guid>
+      <pubDate>Fri, 13 Nov 2026 23:20:56 GMT</pubDate>
+      <description>Severity: medium. ## Summary
+
+`BllipParser` in `nltk/parse/bllip.py` hands caller-supplied filesystem paths to the native `bllipparser` C extension without routing them through NLTK's `pathsec` validation. The constructor parameters `parser_model`, `reranker_features`, and `reranker_weights`, and th</description>
+    </item>
+    <item>
+      <title>CVE-2026-62297: ag-psd can exhaust memory when parsing crafted PSD dimensions</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-62297-ag-psd-can-exhaust-memory-when-parsing-crafted-ps.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-62297-ag-psd-can-exhaust-memory-when-parsing-crafted-ps.html</guid>
+      <pubDate>Fri, 13 Nov 2026 23:19:38 GMT</pubDate>
+      <description>Severity: high. ### Summary
+readPsd() commits the image/layer buffers from the declared header geometry (width x height x channels x depth, and per-layer rectangles) before validating those values against the actual data. A tiny crafted PSD declaring huge geometry forces a multi-gigabyte allocation.</description>
+    </item>
+    <item>
+      <title>CVE-2026-62683: File Browser: Trailing-slash directory deletion leaves public shares active for recreated paths</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-62683-file-browser-trailing-slash-directory-deletion-le.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-62683-file-browser-trailing-slash-directory-deletion-le.html</guid>
+      <pubDate>Fri, 13 Nov 2026 23:12:06 GMT</pubDate>
+      <description>Severity: low. ## Summary
+
+File Browser v2.63.15 can leave a public directory share behind when the shared directory is deleted through a path with a trailing slash. The share cleanup path calls `DeleteWithPathPrefix(file.Path, userID)`, but the Bolt backend performs the database prefix query with t</description>
+    </item>
+    <item>
+      <title>Friday Squid Blogging: Pacific Flying Squid Populations Dropping in Korean Waters</title>
+      <link>https://sentinel-post.pages.dev/item/friday-squid-blogging-pacific-flying-squid-populations-dropping-.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/friday-squid-blogging-pacific-flying-squid-populations-dropping-.html</guid>
+      <pubDate>Fri, 13 Nov 2026 22:00:49 GMT</pubDate>
+      <description>&lt;p&gt;Climate change is the &lt;a href="https://news.mongabay.com/2026/11/south-koreas-beloved-squid-may-vanish-from-its-waters-due-to-climate-change-heat-waves/"&gt;issue&lt;/a&gt;.&lt;/p&gt; &lt;p&gt;As usual, you can also use this squid post to talk about the security stories in the news that I haven&amp;#8217;t covered.&lt;/p&gt; &lt;</description>
+    </item>
+    <item>
+      <title>GHSA-gpwc-27cw-rh9r: NLTK: Quadratic CPU exhaustion in LegalitySyllableTokenizer.tokenize via unguarded onset reversal loop</title>
+      <link>https://sentinel-post.pages.dev/item/ghsa-gpwc-27cw-rh9r-nltk-quadratic-cpu-exhaustion-in-legalitysyl.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/ghsa-gpwc-27cw-rh9r-nltk-quadratic-cpu-exhaustion-in-legalitysyl.html</guid>
+      <pubDate>Fri, 13 Nov 2026 21:16:34 GMT</pubDate>
+      <description>Severity: medium. ## Summary
+
+`LegalitySyllableTokenizer.tokenize` in the NLTK tokenizer package contains an unguarded O(n^2) processing loop. When the method is called on a single token that consists of a long run of vowels (for example `"a" * n`), it consumes CPU time proportional to the square of</description>
+    </item>
+    <item>
+      <title>CVE-2026-126300: NLTK: Quadratic CPU exhaustion in TreebankWordTokenizer.span_tokenize via list.pop(0) in quote-restore loop</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-126300-nltk-quadratic-cpu-exhaustion-in-treebankwordtok.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-126300-nltk-quadratic-cpu-exhaustion-in-treebankwordtok.html</guid>
+      <pubDate>Fri, 13 Nov 2026 21:08:55 GMT</pubDate>
+      <description>Severity: medium. ## Summary
+
+`TreebankWordTokenizer.span_tokenize` in the NLTK tokenizer package contains an unguarded O(n^2) processing loop in its quote-restoration step. When the method is invoked on text containing a long run of double-quote characters (for example `'"' * n`), it performs a `li</description>
+    </item>
     <item>
       <title>CVE-2026-126303: NLTK: Unbounded CPU consumption in SteppingRecursiveDescentParser.parse() with ambiguous or self-embedding grammars</title>
       <link>https://sentinel-post.pages.dev/item/cve-2026-126303-nltk-unbounded-cpu-consumption-in-steppingrecurs.html</link>
@@ -197,84 +275,6 @@ The `/_image` endpoint used by the `@astrojs/node` adapter checks that a request
       <description>Severity: medium. ### Summary
 
 Nuxt can pick a parent directory that does not declare a workspace as its default `workspaceDir`: the farthest directory with a lockfile when the project is not inside a git repository, or the farthest directory with a `pnpm-workspace.yaml` or `deno.json` file, even on</description>
-    </item>
-    <item>
-      <title>CVE-2026-128069: rails-html-sanitizer: Possible XSS via shared scrubber state in concurrent calls</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-128069-rails-html-sanitizer-possible-xss-via-shared-scr.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-128069-rails-html-sanitizer-possible-xss-via-shared-scr.html</guid>
-      <pubDate>Fri, 13 Nov 2026 18:09:16 GMT</pubDate>
-      <description>Severity: medium. ## Summary
-
-`Rails::HTML::SafeListSanitizer` (both the HTML4 and HTML5 variants) shares one `Rails::HTML::PermitScrubber` across every `sanitize` call on the same instance, assigning its `tags` and `attributes` on each call without synchronization. Two concurrent `sanitize` calls w</description>
-    </item>
-    <item>
-      <title>CVE-2026-128079: envd: Host file disclosure through requirements path traversal and TOCTOU</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-128079-envd-host-file-disclosure-through-requirements-p.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-128079-envd-host-file-disclosure-through-requirements-p.html</guid>
-      <pubDate>Fri, 13 Nov 2026 18:05:15 GMT</pubDate>
-      <description>Severity: medium. ### Summary
-
-envd’s `install.python_packages(requirements=...)` could read files outside the build context on the host. Content interpreted as dependency entries could appear in build logs and build-step metadata.
-
-Commit f576c92, released in v1.3.5, added path containment validati</description>
-    </item>
-    <item>
-      <title>CVE-2026-128068: rails-html-sanitizer: Possible regular expression denial of service with certain configurations</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-128068-rails-html-sanitizer-possible-regular-expression.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-128068-rails-html-sanitizer-possible-regular-expression.html</guid>
-      <pubDate>Fri, 13 Nov 2026 17:54:38 GMT</pubDate>
-      <description>Severity: medium. ## Summary
-
-`Rails::HTML::PermitScrubber` restricts the `href` and `xlink:href` attributes of SVG reference elements to local references. That check matched the attribute value against `/^\s*[^#\s].*/m`. In Ruby `^` anchors to every line start and `\s` matches newlines, so an all-w</description>
-    </item>
-    <item>
-      <title>PostgreSQL Patches 52 Flaws, Including 22-Year-Old Bug Enabling Authenticated RCE</title>
-      <link>https://sentinel-post.pages.dev/item/postgresql-patches-52-flaws-including-22-year-old-bug-enabling-a.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/postgresql-patches-52-flaws-including-22-year-old-bug-enabling-a.html</guid>
-      <pubDate>Fri, 13 Nov 2026 16:53:08 GMT</pubDate>
-      <description>A type confusion flaw in PostgreSQL lets a database user who can create objects run code on the server. Updates released yesterday fix it, along with 51 other security flaws. Full protection from this flaw also requires rebuilding any C-language extensions installed on the server. The flaw, tracked </description>
-    </item>
-    <item>
-      <title>CVE-2026-126360: OpenTelemetry Python API: Denial of service through quadratic-time traceparent parsing</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-126360-opentelemetry-python-api-denial-of-service-throu.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-126360-opentelemetry-python-api-denial-of-service-throu.html</guid>
-      <pubDate>Fri, 13 Nov 2026 16:43:18 GMT</pubDate>
-      <description>Severity: medium. ## Summary
-
-`TraceContextTextMapPropagator.extract()` in `opentelemetry-api` is vulnerable to regular expression denial of service (ReDoS) when processing a specially crafted `traceparent` value.
-
-A malformed value containing a trace-context prefix followed by a long whitespace seq</description>
-    </item>
-    <item>
-      <title>CVE-2026-126191: Soup Sieve: Exponential ReDoS in selector compilation via \9-run in CSS_ESCAPES/IDENTIFIER</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-126191-soup-sieve-exponential-redos-in-selector-compila.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-126191-soup-sieve-exponential-redos-in-selector-compila.html</guid>
-      <pubDate>Fri, 13 Nov 2026 16:39:43 GMT</pubDate>
-      <description>Severity: high. ### Summary
-The IDENTIFIER/CSS_ESCAPES regex (css_parser.py:119-124) exhibits exponential backtracking on a run of ambiguous digit-escapes (`\9`) in an attribute-name or tag position of an otherwise well-formed selector. It fires at compile time (before the SELECTOR_LIMIT guard) via </description>
-    </item>
-    <item>
-      <title>CVE-2026-126193: Soup Sieve: Uncontrolled recursion in CSS parser lets nested pseudo-class selectors exhaust the Python call stack</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-126193-soup-sieve-uncontrolled-recursion-in-css-parser-.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-126193-soup-sieve-uncontrolled-recursion-in-css-parser-.html</guid>
-      <pubDate>Fri, 13 Nov 2026 16:34:59 GMT</pubDate>
-      <description>Severity: medium. ## Summary
-
-The Soup Sieve CSS selector parser recurses once per level of nested pseudo-class selector (`:is()`, `:not()`, `:where()`, `:has()`) without any limit on nesting depth. An unauthenticated attacker who can supply a CSS selector string to `soupsieve.compile()`, `soupsieve</description>
-    </item>
-    <item>
-      <title>New Mior and Skyfall Attacks Let Rogue Cloud Hosts Steal Secrets From AMD SEV-SNP VMs</title>
-      <link>https://sentinel-post.pages.dev/item/new-mior-and-skyfall-attacks-let-rogue-cloud-hosts-steal-secrets.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/new-mior-and-skyfall-attacks-let-rogue-cloud-hosts-steal-secrets.html</guid>
-      <pubDate>Fri, 13 Nov 2026 15:27:05 GMT</pubDate>
-      <description>Two attacks made public this week allow a malicious host to read data inside AMD SEV-SNP-protected virtual machines (VMs), which are built to keep the server's operator out. One of them, Mior, can also modify a VM's memory and fake the signed report confirming which software it runs. Both need contr</description>
-    </item>
-    <item>
-      <title>FBI Says North Korean Hackers Stole Over $400 Million in Crypto Using Deepfake Video Calls</title>
-      <link>https://sentinel-post.pages.dev/item/fbi-says-north-korean-hackers-stole-over-400-million-in-crypto-u.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/fbi-says-north-korean-hackers-stole-over-400-million-in-crypto-u.html</guid>
-      <pubDate>Fri, 13 Nov 2026 14:28:58 GMT</pubDate>
-      <description>The U.S. Federal Bureau of Investigation (FBI) has established that threat actors tied to the Democratic People's Republic of Korea (DPRK aka North Korea) have stolen more than $400 million worth of cryptocurrency as part of a social engineering scheme codenamed FaceStealer in the last 18 months. As</description>
     </item>
   </channel>
 </rss>

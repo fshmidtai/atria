@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13T21:05:04+00:00",
+  "generated_at": "2026-11-14T01:20:38+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -18,12 +18,12 @@
       "the_hacker_news": 30
     },
     "by_topic": {
-      "security": 53,
-      "ai": 35,
-      "dev": 31,
-      "hardware": 20,
-      "science": 9,
-      "crypto": 4,
+      "security": 52,
+      "ai": 37,
+      "dev": 29,
+      "hardware": 24,
+      "science": 7,
+      "crypto": 5,
       "biz": 2
     },
     "top_domains": [
@@ -39,19 +39,77 @@
   },
   "items": [
     {
-      "uid": "cve:GHSA-x585-4vv8-2mh2",
+      "uid": "cve:GHSA-89p3-fcch-88ph",
       "source": "cve",
-      "title": "CVE-2026-100397: Rucio: Unauthenticated administrator impersonation through SSH challenge tokens",
-      "url": "https://github.com/advisories/GHSA-x585-4vv8-2mh2",
-      "ts": 1794532194.0,
-      "points": 6000,
+      "title": "CVE-2026-126299: NLTK: Quadratic-time CPU denial of service in CCG lexicon parser (fromstring) on wide bracket bodies and operator chains",
+      "url": "https://github.com/advisories/GHSA-89p3-fcch-88ph",
+      "ts": 1794614930.0,
+      "points": 3500,
       "comments": 0,
-      "author": "rucio",
-      "summary": "Severity: critical. ## Summary\n\nSSH challenge tokens are mistakenly accepted as valid credentials during the authentication token validation process.\n\nWhile an SSH challenge token is intended as a short-lived nonce for use in a subsequent SSH key exchange, the function to validate authentication tokens does not differe",
+      "author": "nltk",
+      "summary": "Severity: high. ## Summary\n\nThe public CCG lexicon parser `nltk.ccg.lexicon.fromstring` parses caller-influenced lexicon text with two pure-Python loops whose cost is quadratic in the input width. A service that parses an untrusted CCG lexicon string can be driven into tens of seconds of single-threaded CPU by a fe",
       "recipe": "gh_advisories",
-      "buzz": 6080,
+      "buzz": 3580,
       "topics": [
-        "crypto",
+        "ai",
+        "dev",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-14"
+    },
+    {
+      "uid": "cve:GHSA-r53h-rw34-8h97",
+      "source": "cve",
+      "title": "CVE-2026-126298: NLTK: Quadratic-time CPU denial of service in Tree.chomsky_normal_form right-factor binarization via list.pop(0)",
+      "url": "https://github.com/advisories/GHSA-r53h-rw34-8h97",
+      "ts": 1794614879.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "nltk",
+      "summary": "Severity: high. ## Summary\n\n`Tree.chomsky_normal_form()` binarizes a parse tree and defaults to right factoring. For a node with N children the right-factor branch repeatedly removes the first element of a working list with `list.pop(0)`, which shifts all remaining elements each time, so binarizing one wide node co",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "ai",
+        "dev",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-14"
+    },
+    {
+      "uid": "cve:GHSA-v8f3-6phw-6mh9",
+      "source": "cve",
+      "title": "CVE-2026-126297: NLTK: Quadratic-time CPU denial of service in ConllCorpusReader SRL instance builder via nested span rescan",
+      "url": "https://github.com/advisories/GHSA-v8f3-6phw-6mh9",
+      "ts": 1794614757.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "nltk",
+      "summary": "Severity: high. ## Summary\n\n`ConllCorpusReader.srl_instances()` builds semantic-role-labeling instances from a CoNLL corpus block. For a sentence block with P predicates and P span columns, the instance builder rescans every span column (and every span within it) once per predicate while searching for each predicat",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-14"
+    },
+    {
+      "uid": "cve:GHSA-qfx6-q44v-9qqw",
+      "source": "cve",
+      "title": "CVE-2026-62297: ag-psd can exhaust memory when parsing crafted PSD dimensions",
+      "url": "https://github.com/advisories/GHSA-qfx6-q44v-9qqw",
+      "ts": 1794611978.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "ag-psd",
+      "summary": "Severity: high. ### Summary\nreadPsd() commits the image/layer buffers from the declared header geometry (width x height x channels x depth, and per-layer rectangles) before validating those values against the actual data. A tiny crafted PSD declaring huge geometry forces a multi-gigabyte allocation.\n\n### Impact\nOn",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "ai",
         "security"
       ],
       "date": "2026-11-13"
@@ -148,56 +206,57 @@
       "date": "2026-11-13"
     },
     {
-      "uid": "cve:GHSA-6655-6qjp-jx7x",
+      "uid": "cve:GHSA-fg9w-wfp5-j933",
       "source": "cve",
-      "title": "CVE-2026-126191: Soup Sieve: Exponential ReDoS in selector compilation via \\9-run in CSS_ESCAPES/IDENTIFIER",
-      "url": "https://github.com/advisories/GHSA-6655-6qjp-jx7x",
-      "ts": 1794587983.0,
-      "points": 3500,
+      "title": "CVE-2026-126295: NLTK: BllipParser passes caller-supplied model paths to the bllipparser C extension with no pathsec check, enabling arbitrary read",
+      "url": "https://github.com/advisories/GHSA-fg9w-wfp5-j933",
+      "ts": 1794612056.0,
+      "points": 1800,
       "comments": 0,
-      "author": "soupsieve",
-      "summary": "Severity: high. ### Summary\nThe IDENTIFIER/CSS_ESCAPES regex (css_parser.py:119-124) exhibits exponential backtracking on a run of ambiguous digit-escapes (`\\9`) in an attribute-name or tag position of an otherwise well-formed selector. It fires at compile time (before the SELECTOR_LIMIT guard) via the public `soup",
+      "author": "nltk",
+      "summary": "Severity: medium. ## Summary\n\n`BllipParser` in `nltk/parse/bllip.py` hands caller-supplied filesystem paths to the native `bllipparser` C extension without routing them through NLTK's `pathsec` validation. The constructor parameters `parser_model`, `reranker_features`, and `reranker_weights`, and the alternative `fro",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 1880,
       "topics": [
-        "dev",
+        "ai",
         "security"
       ],
       "date": "2026-11-13"
     },
     {
-      "uid": "cve:GHSA-7r4r-6ppg-7ff8",
+      "uid": "cve:GHSA-gpwc-27cw-rh9r",
       "source": "cve",
-      "title": "GHSA-7r4r-6ppg-7ff8: Duplicate Advisory: Symlink escape in YCOECorpusReader lets a psd/pos directory symlink read files outside the corpus root within the data sandbox",
-      "url": "https://github.com/advisories/GHSA-7r4r-6ppg-7ff8",
-      "ts": 1794573077.0,
-      "points": 3500,
+      "title": "GHSA-gpwc-27cw-rh9r: NLTK: Quadratic CPU exhaustion in LegalitySyllableTokenizer.tokenize via unguarded onset reversal loop",
+      "url": "https://github.com/advisories/GHSA-gpwc-27cw-rh9r",
+      "ts": 1794604594.0,
+      "points": 1800,
       "comments": 0,
       "author": "nltk",
-      "summary": "Severity: high. ## Duplicate Advisory\n\nThis advisory has been withdrawn because it is a duplicate of GHSA-qg35-44qx-7vrr. This link is maintained to preserve external references.\n\n## Original Description\nNLTK from 3.10.0 before 3.10.4 contains a symlink escape vulnerability in YCOECorpusReader that allows attackers",
+      "summary": "Severity: medium. ## Summary\n\n`LegalitySyllableTokenizer.tokenize` in the NLTK tokenizer package contains an unguarded O(n^2) processing loop. When the method is called on a single token that consists of a long run of vowels (for example `\"a\" * n`), it consumes CPU time proportional to the square of the token length.",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 1880,
       "topics": [
         "ai",
-        "dev",
-        "security"
+        "crypto",
+        "hardware"
       ],
       "date": "2026-11-13"
     },
     {
-      "uid": "cve:GHSA-4hvg-fv5c-9936",
+      "uid": "cve:GHSA-ffr9-mgrr-wcvr",
       "source": "cve",
-      "title": "GHSA-4hvg-fv5c-9936: Duplicate Advisory: Unbounded CPU consumption in NLTK SteppingRecursiveDescentParser.parse() with ambiguous or self-embedding grammars",
-      "url": "https://github.com/advisories/GHSA-4hvg-fv5c-9936",
-      "ts": 1794573077.0,
-      "points": 3500,
+      "title": "CVE-2026-126300: NLTK: Quadratic CPU exhaustion in TreebankWordTokenizer.span_tokenize via list.pop(0) in quote-restore loop",
+      "url": "https://github.com/advisories/GHSA-ffr9-mgrr-wcvr",
+      "ts": 1794604135.0,
+      "points": 1800,
       "comments": 0,
       "author": "nltk",
-      "summary": "Severity: high. ## Duplicate Advisory\n\nThis advisory has been withdrawn because it is a duplicate of GHSA-8fx7-8jr8-84rv. This link is maintained to preserve external references.\n\n## Original Description\nNLTK before 3.10.4 contains an uncontrolled resource consumption vulnerability in SteppingRecursiveDescentParser",
+      "summary": "Severity: medium. ## Summary\n\n`TreebankWordTokenizer.span_tokenize` in the NLTK tokenizer package contains an unguarded O(n^2) processing loop in its quote-restoration step. When the method is invoked on text containing a long run of double-quote characters (for example `'\"' * n`), it performs a `list.pop(0)` operati",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 1880,
       "topics": [
         "ai",
+        "crypto",
         "security",
         "hardware"
       ],
@@ -423,76 +482,19 @@
       "date": "2026-11-13"
     },
     {
-      "uid": "cve:GHSA-jv6m-48w5-5rpr",
+      "uid": "cve:GHSA-pp88-jhwj-5qh5",
       "source": "cve",
-      "title": "CVE-2026-128079: envd: Host file disclosure through requirements path traversal and TOCTOU",
-      "url": "https://github.com/advisories/GHSA-jv6m-48w5-5rpr",
-      "ts": 1794593115.0,
-      "points": 1800,
+      "title": "CVE-2026-62683: File Browser: Trailing-slash directory deletion leaves public shares active for recreated paths",
+      "url": "https://github.com/advisories/GHSA-pp88-jhwj-5qh5",
+      "ts": 1794611526.0,
+      "points": 700,
       "comments": 0,
-      "author": "envd",
-      "summary": "Severity: medium. ### Summary\n\nenvd’s `install.python_packages(requirements=...)` could read files outside the build context on the host. Content interpreted as dependency entries could appear in build logs and build-step metadata.\n\nCommit f576c92, released in v1.3.5, added path containment validation but left a time",
+      "author": "github.com/filebrowser/filebrowser/v2",
+      "summary": "Severity: low. ## Summary\n\nFile Browser v2.63.15 can leave a public directory share behind when the shared directory is deleted through a path with a trailing slash. The share cleanup path calls `DeleteWithPathPrefix(file.Path, userID)`, but the Bolt backend performs the database prefix query with the unnormalized",
       "recipe": "gh_advisories",
-      "buzz": 1880,
+      "buzz": 780,
       "topics": [
         "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-13"
-    },
-    {
-      "uid": "cve:GHSA-cpgf-5mjf-73p7",
-      "source": "cve",
-      "title": "CVE-2026-128068: rails-html-sanitizer: Possible regular expression denial of service with certain configurations",
-      "url": "https://github.com/advisories/GHSA-cpgf-5mjf-73p7",
-      "ts": 1794592478.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "rails-html-sanitizer",
-      "summary": "Severity: medium. ## Summary\n\n`Rails::HTML::PermitScrubber` restricts the `href` and `xlink:href` attributes of SVG reference elements to local references. That check matched the attribute value against `/^\\s*[^#\\s].*/m`. In Ruby `^` anchors to every line start and `\\s` matches newlines, so an all-whitespace value ma",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "science",
-        "security"
-      ],
-      "date": "2026-11-13"
-    },
-    {
-      "uid": "cve:GHSA-mf5v-w3w3-f6cg",
-      "source": "cve",
-      "title": "CVE-2026-126360: OpenTelemetry Python API: Denial of service through quadratic-time traceparent parsing",
-      "url": "https://github.com/advisories/GHSA-mf5v-w3w3-f6cg",
-      "ts": 1794588198.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "opentelemetry-api",
-      "summary": "Severity: medium. ## Summary\n\n`TraceContextTextMapPropagator.extract()` in `opentelemetry-api` is vulnerable to regular expression denial of service (ReDoS) when processing a specially crafted `traceparent` value.\n\nA malformed value containing a trace-context prefix followed by a long whitespace sequence and an embed",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "dev",
-        "science",
-        "security"
-      ],
-      "date": "2026-11-13"
-    },
-    {
-      "uid": "cve:GHSA-7g44-g9rc-x53w",
-      "source": "cve",
-      "title": "CVE-2026-126193: Soup Sieve: Uncontrolled recursion in CSS parser lets nested pseudo-class selectors exhaust the Python call stack",
-      "url": "https://github.com/advisories/GHSA-7g44-g9rc-x53w",
-      "ts": 1794587699.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "soupsieve",
-      "summary": "Severity: medium. ## Summary\n\nThe Soup Sieve CSS selector parser recurses once per level of nested pseudo-class selector (`:is()`, `:not()`, `:where()`, `:has()`) without any limit on nesting depth. An unauthenticated attacker who can supply a CSS selector string to `soupsieve.compile()`, `soupsieve.select()`, or Bea",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
         "dev",
         "security"
       ],
