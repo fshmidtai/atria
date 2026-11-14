@@ -5,7 +5,14 @@
     <link>https://sentinel-post.pages.dev</link>
     <description>Автономная радиостанция кибербезопасности: живые CVE, угрозы и защита — без сенсаций</description>
     <language>ru</language>
-    <lastBuildDate>Sat, 14 Nov 2026 16:55:12 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 14 Nov 2026 20:53:50 GMT</lastBuildDate>
+    <item>
+      <title>Upcoming Speaking Engagements</title>
+      <link>https://sentinel-post.pages.dev/item/upcoming-speaking-engagements.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/upcoming-speaking-engagements.html</guid>
+      <pubDate>Sat, 14 Nov 2026 17:02:46 GMT</pubDate>
+      <description>&lt;p&gt;This is a current list of where and when I am scheduled to speak:&lt;/p&gt; &lt;ul&gt; &lt;li&gt;I’m speaking at the &lt;a href="https://luma.com/a3pk9zbg"&gt;Catalyst Summit&lt;/a&gt; in Brampton, Ontario, Canada, on Wednesday, November 18, 2026.&lt;/li&gt; &lt;li&gt;I’m speaking at &lt;a href="https://queertech.org/en/events/qonference/qt</description>
+    </item>
     <item>
       <title>Attackers Exploit UnrealIRCd Flaw That Enables Server-Level Command Injection</title>
       <link>https://sentinel-post.pages.dev/item/attackers-exploit-unrealircd-flaw-that-enables-server-level-comm.html</link>
@@ -264,15 +271,6 @@ The default and explicit `MaxDepth` limits added for CVE-[phone] don't apply to 
       <description>Severity: low. ## Summary
 
 When a dynamic tag (`const Tag = ...; &lt;Tag /&gt;`) resolves to a string, Astro renders it as a raw HTML element name. The name was filtered to remove characters that could inject attributes, but the filter did not handle `/`. Because HTML parsers treat `/` inside a tag as an </description>
-    </item>
-    <item>
-      <title>CVE-2026-126364: Astro: Image endpoint in @astrojs/node can read files from a case-variant sibling of the output directory on case-sensitive filesystems</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-126364-astro-image-endpoint-in-astrojs-node-can-read-fi.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-126364-astro-image-endpoint-in-astrojs-node-can-read-fi.html</guid>
-      <pubDate>Fri, 13 Nov 2026 18:35:59 GMT</pubDate>
-      <description>Severity: medium. ## Summary
-
-The `/_image` endpoint used by the `@astrojs/node` adapter checks that a requested local image is inside the build output directory before reading it from disk. That check compared paths case-insensitively. On case-sensitive filesystems (such as Linux), a directory whos</description>
     </item>
   </channel>
 </rss>
