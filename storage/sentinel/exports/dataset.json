@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T13:09:24+00:00",
+  "generated_at": "2026-11-14T16:55:12+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -10,24 +10,24 @@
     "rss"
   ],
   "totals": {
-    "items": 131,
+    "items": 132,
     "by_source": {
       "hn": 40,
       "cve": 30,
-      "github": 11,
+      "github": 12,
       "rss": 50
     },
     "by_recipe": {
       "hn_sec": 40,
       "gh_advisories": 30,
       "hackersnews": 30,
-      "github_sec": 11,
+      "github_sec": 12,
       "schneier": 10,
       "krebs": 10
     },
     "by_topic": {
       "security": 109,
-      "ai": 68,
+      "ai": 69,
       "dev": 47,
       "hardware": 29,
       "science": 8,
@@ -37,7 +37,7 @@
     "top_domains": [
       [
         "github.com",
-        43
+        44
       ],
       [
         "thehackernews.com",
@@ -1429,12 +1429,12 @@
       "title": "nestho/impacket-rs",
       "url": "https://github.com/nestho/impacket-rs",
       "ts": 1794373116.0,
-      "points": 89,
+      "points": 90,
       "comments": 13,
       "author": "nestho",
       "summary": "High-performance, memory-safe pure-Rust redesign of Impacket protocols and Active Directory tools for Linux, macOS, and Windows.",
       "recipe": "github_sec",
-      "buzz": 138,
+      "buzz": 139,
       "topics": [
         "dev"
       ],
@@ -1490,21 +1490,38 @@
       "date": "2026-11-02"
     },
     {
-      "uid": "gh:Balanov/skein",
+      "uid": "gh:Balanov/verdict",
       "source": "github",
-      "title": "Balanov/skein",
-      "url": "https://github.com/Balanov/skein",
-      "ts": 1793663825.0,
-      "points": 85,
-      "comments": 1,
+      "title": "Balanov/verdict",
+      "url": "https://github.com/Balanov/verdict",
+      "ts": 1793646891.0,
+      "points": 94,
+      "comments": 2,
       "author": "Balanov",
-      "summary": "Fail-closed swarm orchestration with epoch-fenced work and late-completion rejection.",
+      "summary": "A 197 KB local semantic verifier for AI agent tool calls. Exit code 0 is not proof.",
       "recipe": "github_sec",
-      "buzz": 88,
+      "buzz": 100,
       "topics": [
         "ai"
       ],
       "date": "2026-11-02"
+    },
+    {
+      "uid": "gh:BowSinceEnt/resocket-elden-ring-cheat-2026-trainer-mod-menu-tools",
+      "source": "github",
+      "title": "BowSinceEnt/resocket-elden-ring-cheat-2026-trainer-mod-menu-tools",
+      "url": "https://github.com/BowSinceEnt/resocket-elden-ring-cheat-2026-trainer-mod-menu-tools",
+      "ts": 1793879929.0,
+      "points": 89,
+      "comments": 0,
+      "author": "BowSinceEnt",
+      "summary": "Elden Ring Cheat 2026 — Single-player modding and gameplay toolkit concept featuring character build optimization, rune planning, weapon upgrades, boss strategies, save management and offline trainer research.",
+      "recipe": "github_sec",
+      "buzz": 89,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-11-05"
     },
     {
       "uid": "rss:1da07c9934607e",
@@ -1544,83 +1561,6 @@
       "date": "2026-11-14"
     },
     {
-      "uid": "rss:b5af83d54bc054",
-      "source": "rss",
-      "title": "PostgreSQL Patches 52 Flaws, Including 22-Year-Old Bug Enabling Authenticated RCE",
-      "url": "https://thehackernews.com/2026/11/postgresql-patches-52-flaws-including.html",
-      "ts": 1794588788.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "A type confusion flaw in PostgreSQL lets a database user who can create objects run code on the server. Updates released yesterday fix it, along with 51 other security flaws. Full protection from this flaw also requires rebuilding any C-language extensions installed on the server. The flaw, tracked as CVE-2026-6460, has a CVSS score of 8.8. Any code run this way has the rights of the operating",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "dev",
-        "science",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-13"
-    },
-    {
-      "uid": "rss:563cd8d18fd7e0",
-      "source": "rss",
-      "title": "New Mior and Skyfall Attacks Let Rogue Cloud Hosts Steal Secrets From AMD SEV-SNP VMs",
-      "url": "https://thehackernews.com/2026/11/new-mior-and-skyfall-attacks-let-rogue.html",
-      "ts": 1794583625.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Two attacks made public this week allow a malicious host to read data inside AMD SEV-SNP-protected virtual machines (VMs), which are built to keep the server's operator out. One of them, Mior, can also modify a VM's memory and fake the signed report confirming which software it runs. Both need control of the server's hypervisor, and Mior also needs control of the server's BIOS. Researchers",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "dev",
-        "hardware"
-      ],
-      "date": "2026-11-13"
-    },
-    {
-      "uid": "rss:6518422fdf409b",
-      "source": "rss",
-      "title": "FBI Says North Korean Hackers Stole Over $400 Million in Crypto Using Deepfake Video Calls",
-      "url": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html",
-      "ts": 1794580138.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "The U.S. Federal Bureau of Investigation (FBI) has established that threat actors tied to the Democratic People's Republic of Korea (DPRK aka North Korea) have stolen more than $400 million worth of cryptocurrency as part of a social engineering scheme codenamed FaceStealer in the last 18 months. As part of a coordinated set of actions announced by the U.S. government, the cloud-based",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "dev",
-        "crypto",
-        "biz"
-      ],
-      "date": "2026-11-13"
-    },
-    {
-      "uid": "rss:e01f78786aae3f",
-      "source": "rss",
-      "title": "Trezor Confirms Hidden Implants in CryptoBilis-Sold Wallets That Can Steal Recovery Phrases",
-      "url": "https://thehackernews.com/2026/11/trezor-confirms-hidden-hardware.html",
-      "ts": 1794578060.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Three Trezor Safe 5 wallets bought from the reseller CryptoBilis contain an implant, an extra circuit board that can copy their recovery phrases, hardware wallet maker Trezor said yesterday. The implant reads the phrase from the wallet's screen and sends it over the mobile network to a server controlled by the attackers. The company examined one of the wallets in its lab, identified the other",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "dev",
-        "crypto",
-        "hardware"
-      ],
-      "date": "2026-11-13"
-    },
-    {
       "uid": "gh:BountyForge-xyz/pwn-skill",
       "source": "github",
       "title": "BountyForge-xyz/pwn-skill",
@@ -1639,21 +1579,21 @@
       "date": "2026-11-06"
     },
     {
-      "uid": "gh:BowSinceEnt/resocket-elden-ring-cheat-2026-trainer-mod-menu-tools",
+      "uid": "gh:Balanov/latch",
       "source": "github",
-      "title": "BowSinceEnt/resocket-elden-ring-cheat-2026-trainer-mod-menu-tools",
-      "url": "https://github.com/BowSinceEnt/resocket-elden-ring-cheat-2026-trainer-mod-menu-tools",
-      "ts": 1793879929.0,
-      "points": 71,
-      "comments": 0,
-      "author": "BowSinceEnt",
-      "summary": "Elden Ring Cheat 2026 — Single-player modding and gameplay toolkit concept featuring character build optimization, rune planning, weapon upgrades, boss strategies, save management and offline trainer research.",
+      "title": "Balanov/latch",
+      "url": "https://github.com/Balanov/latch",
+      "ts": 1793811471.0,
+      "points": 63,
+      "comments": 2,
+      "author": "Balanov",
+      "summary": "One tiny HTTPS contract between any agent and any service. Quote, approve, commit, receipt. Zero dependencies. MIT.",
       "recipe": "github_sec",
-      "buzz": 71,
+      "buzz": 69,
       "topics": [
         "ai"
       ],
-      "date": "2026-11-05"
+      "date": "2026-11-04"
     },
     {
       "uid": "gh:zhidun2027/zhidun",
@@ -1743,6 +1683,83 @@
         "hardware"
       ],
       "date": "2026-11-02"
+    },
+    {
+      "uid": "rss:b5af83d54bc054",
+      "source": "rss",
+      "title": "PostgreSQL Patches 52 Flaws, Including 22-Year-Old Bug Enabling Authenticated RCE",
+      "url": "https://thehackernews.com/2026/11/postgresql-patches-52-flaws-including.html",
+      "ts": 1794588788.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "A type confusion flaw in PostgreSQL lets a database user who can create objects run code on the server. Updates released yesterday fix it, along with 51 other security flaws. Full protection from this flaw also requires rebuilding any C-language extensions installed on the server. The flaw, tracked as CVE-2026-6460, has a CVSS score of 8.8. Any code run this way has the rights of the operating",
+      "recipe": "hackersnews",
+      "buzz": 30,
+      "topics": [
+        "dev",
+        "science",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "uid": "rss:563cd8d18fd7e0",
+      "source": "rss",
+      "title": "New Mior and Skyfall Attacks Let Rogue Cloud Hosts Steal Secrets From AMD SEV-SNP VMs",
+      "url": "https://thehackernews.com/2026/11/new-mior-and-skyfall-attacks-let-rogue.html",
+      "ts": 1794583625.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Two attacks made public this week allow a malicious host to read data inside AMD SEV-SNP-protected virtual machines (VMs), which are built to keep the server's operator out. One of them, Mior, can also modify a VM's memory and fake the signed report confirming which software it runs. Both need control of the server's hypervisor, and Mior also needs control of the server's BIOS. Researchers",
+      "recipe": "hackersnews",
+      "buzz": 30,
+      "topics": [
+        "dev",
+        "hardware"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "uid": "rss:6518422fdf409b",
+      "source": "rss",
+      "title": "FBI Says North Korean Hackers Stole Over $400 Million in Crypto Using Deepfake Video Calls",
+      "url": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html",
+      "ts": 1794580138.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "The U.S. Federal Bureau of Investigation (FBI) has established that threat actors tied to the Democratic People's Republic of Korea (DPRK aka North Korea) have stolen more than $400 million worth of cryptocurrency as part of a social engineering scheme codenamed FaceStealer in the last 18 months. As part of a coordinated set of actions announced by the U.S. government, the cloud-based",
+      "recipe": "hackersnews",
+      "buzz": 30,
+      "topics": [
+        "dev",
+        "crypto",
+        "biz"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "uid": "rss:e01f78786aae3f",
+      "source": "rss",
+      "title": "Trezor Confirms Hidden Implants in CryptoBilis-Sold Wallets That Can Steal Recovery Phrases",
+      "url": "https://thehackernews.com/2026/11/trezor-confirms-hidden-hardware.html",
+      "ts": 1794578060.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Three Trezor Safe 5 wallets bought from the reseller CryptoBilis contain an implant, an extra circuit board that can copy their recovery phrases, hardware wallet maker Trezor said yesterday. The implant reads the phrase from the wallet's screen and sends it over the mobile network to a server controlled by the attackers. The company examined one of the wallets in its lab, identified the other",
+      "recipe": "hackersnews",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "dev",
+        "crypto",
+        "hardware"
+      ],
+      "date": "2026-11-13"
     },
     {
       "uid": "rss:dea5a8ecb640ff",
@@ -2135,61 +2152,6 @@
       "date": "2026-11-12"
     },
     {
-      "uid": "rss:a59f63d021cca1",
-      "source": "rss",
-      "title": "Critical Zoom Workplace Flaw Could Allow Unauthenticated Remote Privilege Escalation",
-      "url": "https://thehackernews.com/2026/11/critical-zoom-workplace-flaw-could.html",
-      "ts": 1794413566.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Zoom has released software updates to address two security flaws impacting Zoom Workplace for Windows, including a critical bug that could result in privilege escalation on affected systems. The vulnerabilities are listed below - CVE-[phone] (CVSS score: 9.6) - An improper input validation vulnerability that could allow an unauthenticated user to conduct an escalation of privilege via",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "security"
-      ],
-      "date": "2026-11-11"
-    },
-    {
-      "uid": "rss:1e5084b7044859",
-      "source": "rss",
-      "title": "AntiFox AI Pentesting Platform Linked to Attacks That Accessed AWS Production Secrets",
-      "url": "https://thehackernews.com/2026/11/antifox-ai-pentesting-platform-linked.html",
-      "ts": 1794411267.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Cybersecurity researchers have disclosed details of a campaign in which an emerging agentic penetration testing platform called AntiFox has been used to steal Amazon Web Services (AWS) credentials and pivot laterally into compromised environments. \"In several recently observed intrusions, Alibaba Cloud systems hosting AntiFox interfaces were associated with confirmed malicious actions against",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-11"
-    },
-    {
-      "uid": "rss:0ba244cf0e376e",
-      "source": "rss",
-      "title": "Hackers Target Qlik Sense Servers With Reverse Shells, Stage ActiveMQ and Veeam Exploits",
-      "url": "https://thehackernews.com/2026/11/hackers-target-qlik-sense-servers-with.html",
-      "ts": 1794405660.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Threat actors have been observed targeting Qlik Sense servers to unsuccessfully deliver PowerShell reverse shell commands against multiple environments in October 2026. Cynet's CyOps and Research teams said they identified the suspicious activity in October 2026 against several E.U.-based customers within a narrow window of just over three minutes. The activity has been found to share some",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "dev",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-11"
-    },
-    {
       "uid": "rss:cd21f33e2e3d64",
       "source": "rss",
       "title": "Microsoft Fixes Nearly 1,100 Security Vulnerabilities",
@@ -2260,6 +2222,61 @@
         "security"
       ],
       "date": "2026-11-09"
+    },
+    {
+      "uid": "rss:a59f63d021cca1",
+      "source": "rss",
+      "title": "Critical Zoom Workplace Flaw Could Allow Unauthenticated Remote Privilege Escalation",
+      "url": "https://thehackernews.com/2026/11/critical-zoom-workplace-flaw-could.html",
+      "ts": 1794413566.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Zoom has released software updates to address two security flaws impacting Zoom Workplace for Windows, including a critical bug that could result in privilege escalation on affected systems. The vulnerabilities are listed below - CVE-[phone] (CVSS score: 9.6) - An improper input validation vulnerability that could allow an unauthenticated user to conduct an escalation of privilege via",
+      "recipe": "hackersnews",
+      "buzz": 10,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-11-11"
+    },
+    {
+      "uid": "rss:1e5084b7044859",
+      "source": "rss",
+      "title": "AntiFox AI Pentesting Platform Linked to Attacks That Accessed AWS Production Secrets",
+      "url": "https://thehackernews.com/2026/11/antifox-ai-pentesting-platform-linked.html",
+      "ts": 1794411267.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Cybersecurity researchers have disclosed details of a campaign in which an emerging agentic penetration testing platform called AntiFox has been used to steal Amazon Web Services (AWS) credentials and pivot laterally into compromised environments. \"In several recently observed intrusions, Alibaba Cloud systems hosting AntiFox interfaces were associated with confirmed malicious actions against",
+      "recipe": "hackersnews",
+      "buzz": 10,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-11"
+    },
+    {
+      "uid": "rss:0ba244cf0e376e",
+      "source": "rss",
+      "title": "Hackers Target Qlik Sense Servers With Reverse Shells, Stage ActiveMQ and Veeam Exploits",
+      "url": "https://thehackernews.com/2026/11/hackers-target-qlik-sense-servers-with.html",
+      "ts": 1794405660.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Threat actors have been observed targeting Qlik Sense servers to unsuccessfully deliver PowerShell reverse shell commands against multiple environments in October 2026. Cynet's CyOps and Research teams said they identified the suspicious activity in October 2026 against several E.U.-based customers within a narrow window of just over three minutes. The activity has been found to share some",
+      "recipe": "hackersnews",
+      "buzz": 10,
+      "topics": [
+        "ai",
+        "dev",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-11"
     },
     {
       "uid": "rss:76db4888ae7508",

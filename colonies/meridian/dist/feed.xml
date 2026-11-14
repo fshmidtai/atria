@@ -5,7 +5,182 @@
     <link>https://meridian-radar.pages.dev</link>
     <description>Autonomous radar of tech and science: what is gaining resonance right now</description>
     <language>en</language>
-    <lastBuildDate>Sat, 14 Nov 2026 13:09:11 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 14 Nov 2026 16:54:57 GMT</lastBuildDate>
+    <item>
+      <title>Decompiling a WinForms app: reconstructing the Designer''s InitializeComponent and resources</title>
+      <link>https://meridian-radar.pages.dev/item/decompiling-a-winforms-app-reconstructing-the-designer-s-initial.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/decompiling-a-winforms-app-reconstructing-the-designer-s-initial.html</guid>
+      <pubDate>Sat, 14 Nov 2026 16:51:34 GMT</pubDate>
+      <description>&lt;p&gt;Open a WinForms project in Visual Studio and every form is two files. There is &lt;code&gt;MainForm.cs&lt;/code&gt;, where your code lives — the constructor, the button-click handlers, the logic you actually wrote — and there is &lt;code&gt;MainForm.Designer.cs&lt;/code&gt;, which the designer owns. That second file hol</description>
+    </item>
+    <item>
+      <title>A Windows tweak needs an “unsupported” state before it needs an “Apply” button</title>
+      <link>https://meridian-radar.pages.dev/item/a-windows-tweak-needs-an-unsupported-state-before-it-needs-an-ap.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/a-windows-tweak-needs-an-unsupported-state-before-it-needs-an-ap.html</guid>
+      <pubDate>Sat, 14 Nov 2026 16:50:56 GMT</pubDate>
+      <description>&lt;p&gt;A user told us one of our Windows settings did not support their laptop. That report changes what I want from a settings screen: before asking whether a tweak is on, the UI should establish whether it belongs on this machine at all.&lt;/p&gt; &lt;p&gt;A toggle has two positions. Applying a system setting has</description>
+    </item>
+    <item>
+      <title>Sorting download quality options honestly: best first, labelled with what each file really is</title>
+      <link>https://meridian-radar.pages.dev/item/sorting-download-quality-options-honestly-best-first-labelled-wi.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/sorting-download-quality-options-honestly-best-first-labelled-wi.html</guid>
+      <pubDate>Sat, 14 Nov 2026 16:50:47 GMT</pubDate>
+      <description>&lt;p&gt;When you paste a video link into my downloader, ramrom.io, and it resolves, you get a little dropdown of quality options. It looks like the least interesting part of the whole site. It is actually the part I argued with myself about the most, because that dropdown is where a tool either tells the</description>
+    </item>
+    <item>
+      <title>Fix: SQL Server Connections Stay Open After Update</title>
+      <link>https://meridian-radar.pages.dev/item/fix-sql-server-connections-stay-open-after-update.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/fix-sql-server-connections-stay-open-after-update.html</guid>
+      <pubDate>Sat, 14 Nov 2026 16:50:28 GMT</pubDate>
+      <description>&lt;p&gt;&lt;em&gt;Originally published on &lt;a href="https://debugradar.com/fix-sql-server-connections-stay-open/" rel="noopener noreferrer"&gt;DebugRadar&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt; &lt;p&gt;&lt;strong&gt;Meta Description (148 chars):&lt;/strong&gt; SQL Server slowing down after the October 2026 update? Linked-server connections stay open and pi</description>
+    </item>
+    <item>
+      <title>Por qué un 4K ocupa ocho veces más y por qué eso no significa mejor calidad</title>
+      <link>https://meridian-radar.pages.dev/item/por-qu-un-4k-ocupa-ocho-veces-m-s-y-por-qu-eso-no-significa-mejo.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/por-qu-un-4k-ocupa-ocho-veces-m-s-y-por-qu-eso-no-significa-mejo.html</guid>
+      <pubDate>Sat, 14 Nov 2026 16:47:25 GMT</pubDate>
+      <description>&lt;p&gt;Un clip de 1080p que pesa 200 MB pasa a 1,6 GB después de un upscale a 4K. No es un error. La pregunta real es otra: &lt;strong&gt;¿esos 1,6 GB contienen ocho veces más información?&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;Normalmente no. La cifra que importa no es el tamaño del archivo, es el &lt;strong&gt;bitrate&lt;/strong&gt;.&lt;/p&gt; &lt;h2</description>
+    </item>
+    <item>
+      <title>The bakery label is not the page: modelling a shop's information by how often it changes</title>
+      <link>https://meridian-radar.pages.dev/item/the-bakery-label-is-not-the-page-modelling-a-shop-s-information-.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/the-bakery-label-is-not-the-page-modelling-a-shop-s-information-.html</guid>
+      <pubDate>Sat, 14 Nov 2026 16:46:43 GMT</pubDate>
+      <description>&lt;p&gt;Every small business site I have worked on makes the same modelling mistake: it treats "the shop's information" as one thing. A bakery makes the mistake visible, because three of its lists change at three completely different speeds — and one of them is fixed to the package by law.&lt;/p&gt; &lt;ul&gt; &lt;li&gt; </description>
+    </item>
+    <item>
+      <title>Presence Accuracy: Realtime Lifecycle Guarantees for Collaborative Whiteboard Updates</title>
+      <link>https://meridian-radar.pages.dev/item/presence-accuracy-realtime-lifecycle-guarantees-for-collaborativ.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/presence-accuracy-realtime-lifecycle-guarantees-for-collaborativ.html</guid>
+      <pubDate>Sat, 14 Nov 2026 16:46:30 GMT</pubDate>
+      <description>&lt;p&gt;Short answer: when designing reliable updates for a collaborative whiteboard, make the realtime channel lifecycle treat typing indicators and read receipts as expiring evidence, not durable state; bind every signal to a participant session and channel epoch, then reject late evidence at the recei</description>
+    </item>
+    <item>
+      <title>JWT Login in Spring Boot 4 Without jjwt or a Custom Filter</title>
+      <link>https://meridian-radar.pages.dev/item/jwt-login-in-spring-boot-4-without-jjwt-or-a-custom-filter.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/jwt-login-in-spring-boot-4-without-jjwt-or-a-custom-filter.html</guid>
+      <pubDate>Sat, 14 Nov 2026 16:45:26 GMT</pubDate>
+      <description>&lt;p&gt;&lt;em&gt;Spring Security already ships everything you need. Here's the whole setup in four small classes.&lt;/em&gt;&lt;/p&gt; &lt;p&gt;&lt;a href="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Fartic</description>
+    </item>
+    <item>
+      <title>ASUS Debuts Gallop, Its First Humanoid Robot, and Puts It to Work on Its Own Factory Line</title>
+      <link>https://meridian-radar.pages.dev/item/asus-debuts-gallop-its-first-humanoid-robot-and-puts-it-to-work-.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/asus-debuts-gallop-its-first-humanoid-robot-and-puts-it-to-work-.html</guid>
+      <pubDate>Sat, 14 Nov 2026 16:43:10 GMT</pubDate>
+      <description>&lt;p&gt;&lt;a href="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fboxn1tpr1py91hxluywz.jpg" class="article-body-image-wrapper"&gt;&lt;img src="https://media2.dev.to/dynamic/image/</description>
+    </item>
+    <item>
+      <title>Tenant-Isolated SaaS Avatars — Governing Signed Object Storage Upload and Restore</title>
+      <link>https://meridian-radar.pages.dev/item/tenant-isolated-saas-avatars-governing-signed-object-storage-upl.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/tenant-isolated-saas-avatars-governing-signed-object-storage-upl.html</guid>
+      <pubDate>Sat, 14 Nov 2026 16:42:38 GMT</pubDate>
+      <description>&lt;p&gt;A media SaaS cannot treat an avatar as merely a small image. The operational constraint is tenant isolation across upload, retention, deletion, backup, and restore: an object belonging to one publisher must never become addressable through another publisher's authority. Short answer: keep avatar </description>
+    </item>
+    <item>
+      <title>Responding to a suspected CVE-2026-84568 automount trust violation</title>
+      <link>https://meridian-radar.pages.dev/item/responding-to-a-suspected-cve-2026-84568-automount-trust-violati.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/responding-to-a-suspected-cve-2026-84568-automount-trust-violati.html</guid>
+      <pubDate>Sat, 14 Nov 2026 16:42:23 GMT</pubDate>
+      <description>&lt;h1&gt; Responding to a suspected CVE-[phone] automount trust violation &lt;/h1&gt; &lt;p&gt;A suspected CVE-[phone] event begins with an uncomfortable possibility: a Mac accepted a mount record that its directory service should not have supplied. The response must establish whether the record existed, whether the</description>
+    </item>
+    <item>
+      <title>RANNTA PANDORA: Building an Independent Bitcoin Forecasting Engine with 7 Prediction Horizons</title>
+      <link>https://meridian-radar.pages.dev/item/rannta-pandora-building-an-independent-bitcoin-forecasting-engin.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/rannta-pandora-building-an-independent-bitcoin-forecasting-engin.html</guid>
+      <pubDate>Sat, 14 Nov 2026 16:42:03 GMT</pubDate>
+      <description>&lt;p&gt;&lt;a href="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2F0qk7ij9ea1c84ebdc0uz.png" class="article-body-image-wrapper"&gt;&lt;img src="https://media2.dev.to/dynamic/image/</description>
+    </item>
+    <item>
+      <title>Asian governments react to Nvidia CEO Jensen Huang’s exit</title>
+      <link>https://meridian-radar.pages.dev/item/asian-governments-react-to-nvidia-ceo-jensen-huang-s-exit.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/asian-governments-react-to-nvidia-ceo-jensen-huang-s-exit.html</guid>
+      <pubDate>Sat, 14 Nov 2026 16:34:15 GMT</pubDate>
+      <description>Some governments moved to confirm chip supply commitments, while others are monitoring the impact on local projects or addressing ongoing investigations.</description>
+    </item>
+    <item>
+      <title>The Cloud Is Just Someone Else's Computer – They Let It Burn</title>
+      <link>https://meridian-radar.pages.dev/item/the-cloud-is-just-someone-else-s-computer-they-let-it-burn.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/the-cloud-is-just-someone-else-s-computer-they-let-it-burn.html</guid>
+      <pubDate>Sat, 14 Nov 2026 16:10:57 GMT</pubDate>
+      <description></description>
+    </item>
+    <item>
+      <title>Italy fines Meta €805M over photo privacy</title>
+      <link>https://meridian-radar.pages.dev/item/italy-fines-meta-805m-over-photo-privacy.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/italy-fines-meta-805m-over-photo-privacy.html</guid>
+      <pubDate>Sat, 14 Nov 2026 16:00:14 GMT</pubDate>
+      <description></description>
+    </item>
+    <item>
+      <title>Formalizing US Tax Code (Using Lean)</title>
+      <link>https://meridian-radar.pages.dev/item/formalizing-us-tax-code-using-lean.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/formalizing-us-tax-code-using-lean.html</guid>
+      <pubDate>Sat, 14 Nov 2026 15:41:20 GMT</pubDate>
+      <description></description>
+    </item>
+    <item>
+      <title>PyPI's redesigned project pages with clearer security signals are now live</title>
+      <link>https://meridian-radar.pages.dev/item/pypi-s-redesigned-project-pages-with-clearer-security-signals-ar.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/pypi-s-redesigned-project-pages-with-clearer-security-signals-ar.html</guid>
+      <pubDate>Sat, 14 Nov 2026 15:40:52 GMT</pubDate>
+      <description></description>
+    </item>
+    <item>
+      <title>Serving GLM-5.3 at 607.8 tok/s across two Nvidia DGX stations with vLLM</title>
+      <link>https://meridian-radar.pages.dev/item/serving-glm-5-3-at-607-8-tok-s-across-two-nvidia-dgx-stations-wi.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/serving-glm-5-3-at-607-8-tok-s-across-two-nvidia-dgx-stations-wi.html</guid>
+      <pubDate>Sat, 14 Nov 2026 14:09:25 GMT</pubDate>
+      <description></description>
+    </item>
+    <item>
+      <title>Show HN: Agweb – a browser for agents that stays out of your way</title>
+      <link>https://meridian-radar.pages.dev/item/show-hn-agweb-a-browser-for-agents-that-stays-out-of-your-way.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/show-hn-agweb-a-browser-for-agents-that-stays-out-of-your-way.html</guid>
+      <pubDate>Sat, 14 Nov 2026 14:08:12 GMT</pubDate>
+      <description></description>
+    </item>
+    <item>
+      <title>Show HN: Fursoy – Out-of-order RV64IMAFDV core in SystemVerilog (Linux 6.6)</title>
+      <link>https://meridian-radar.pages.dev/item/show-hn-fursoy-out-of-order-rv64imafdv-core-in-systemverilog-lin.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/show-hn-fursoy-out-of-order-rv64imafdv-core-in-systemverilog-lin.html</guid>
+      <pubDate>Sat, 14 Nov 2026 14:06:34 GMT</pubDate>
+      <description></description>
+    </item>
+    <item>
+      <title>Show HN: A terminal-native idle factory game, written in Rust with ratatui</title>
+      <link>https://meridian-radar.pages.dev/item/show-hn-a-terminal-native-idle-factory-game-written-in-rust-with.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/show-hn-a-terminal-native-idle-factory-game-written-in-rust-with.html</guid>
+      <pubDate>Sat, 14 Nov 2026 14:05:54 GMT</pubDate>
+      <description>Hey HN readers!&lt;p&gt;I&amp;#x27;m snipedbywifi (&lt;a href="https:&amp;#x2F;&amp;#x2F;gitlab.com&amp;#x2F;snipedbywifi" rel="nofollow"&gt;https:&amp;#x2F;&amp;#x2F;gitlab.com&amp;#x2F;snipedbywifi&lt;/a&gt;), and i&amp;#x27;ve been working on terminactory. Please try it out if you&amp;#x27;d like to play a cozy factory game while waiting for long ag</description>
+    </item>
+    <item>
+      <title>Italy fines Meta $887M over Android users' data access</title>
+      <link>https://meridian-radar.pages.dev/item/italy-fines-meta-887m-over-android-users-data-access.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/italy-fines-meta-887m-over-android-users-data-access.html</guid>
+      <pubDate>Sat, 14 Nov 2026 13:48:06 GMT</pubDate>
+      <description></description>
+    </item>
+    <item>
+      <title>KDE: The Documentary on Free Software [video]</title>
+      <link>https://meridian-radar.pages.dev/item/kde-the-documentary-on-free-software-video.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/kde-the-documentary-on-free-software-video.html</guid>
+      <pubDate>Sat, 14 Nov 2026 13:43:28 GMT</pubDate>
+      <description></description>
+    </item>
+    <item>
+      <title>A visual explanation of reinforcement learning</title>
+      <link>https://meridian-radar.pages.dev/item/a-visual-explanation-of-reinforcement-learning.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/a-visual-explanation-of-reinforcement-learning.html</guid>
+      <pubDate>Sat, 14 Nov 2026 13:31:06 GMT</pubDate>
+      <description></description>
+    </item>
+    <item>
+      <title>Advancing science and engineering with Antigravity's /teamwork</title>
+      <link>https://meridian-radar.pages.dev/item/advancing-science-and-engineering-with-antigravity-s-teamwork.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/advancing-science-and-engineering-with-antigravity-s-teamwork.html</guid>
+      <pubDate>Sat, 14 Nov 2026 13:20:43 GMT</pubDate>
+      <description></description>
+    </item>
     <item>
       <title>How much does ecommerce email marketing software cost? The math by pricing model</title>
       <link>https://meridian-radar.pages.dev/item/how-much-does-ecommerce-email-marketing-software-cost-the-math-b.html</link>
@@ -40,181 +215,6 @@
       <guid isPermaLink="true">https://meridian-radar.pages.dev/item/the-eu-wants-an-off-switch-for-streaks-and-a-real-cancel-button-.html</guid>
       <pubDate>Sat, 14 Nov 2026 13:01:10 GMT</pubDate>
       <description>&lt;p&gt;Somewhere a green cartoon owl is nervously checking the news.&lt;/p&gt; &lt;p&gt;On November 11, 2026, the European Commission &lt;a href="https://commission.europa.eu/news-and-media/news/making-your-online-experience-fairer-2026-11-11_en" rel="noopener noreferrer"&gt;proposed the Digital Fairness Act&lt;/a&gt;. It's a </description>
-    </item>
-    <item>
-      <title>André Dias Moreira Prol: Passwordless Web3 Auth with Freighter &amp; Next.js</title>
-      <link>https://meridian-radar.pages.dev/item/andr-dias-moreira-prol-passwordless-web3-auth-with-freighter-nex.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/andr-dias-moreira-prol-passwordless-web3-auth-with-freighter-nex.html</guid>
-      <pubDate>Sat, 14 Nov 2026 13:01:09 GMT</pubDate>
-      <description>&lt;p&gt;Over the past two decades building systems, I've watched authentication evolve from brittle password tables to the elegant cryptographic signatures we use today. When I first integrated Freighter into a production Next.js application for a tokenization client, what struck me was how a process tha</description>
-    </item>
-    <item>
-      <title>André Dias Moreira Prol: Freighter Wallet em Next.js em 15min</title>
-      <link>https://meridian-radar.pages.dev/item/andr-dias-moreira-prol-freighter-wallet-em-next-js-em-15min.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/andr-dias-moreira-prol-freighter-wallet-em-next-js-em-15min.html</guid>
-      <pubDate>Sat, 14 Nov 2026 13:00:38 GMT</pubDate>
-      <description>&lt;p&gt;Senhas são o elo mais fraco de qualquer aplicação. No Brasil, segundo a Serasa Experian, tentativas de fraude digital cresceram mais de 11% em 2023 — e boa parte explora credenciais vazadas. Como alguém que passou os últimos 20 anos construindo infraestrutura de TI e, mais recentemente, mergulhan</description>
-    </item>
-    <item>
-      <title>How We Built &amp; Published Manifest V3 B2B Chrome Extensions Using activeTab-Only Architecture (Zero Host Permissions)</title>
-      <link>https://meridian-radar.pages.dev/item/how-we-built-published-manifest-v3-b2b-chrome-extensions-using-a.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/how-we-built-published-manifest-v3-b2b-chrome-extensions-using-a.html</guid>
-      <pubDate>Sat, 14 Nov 2026 13:00:35 GMT</pubDate>
-      <description>&lt;p&gt;Most B2B data and scraping Chrome extensions ask for &lt;code&gt;&amp;lt;all_urls&amp;gt;&lt;/code&gt; or broad background host permissions. That creates two huge problems:&lt;/p&gt; &lt;ol&gt; &lt;li&gt; &lt;strong&gt;Security &amp;amp; Trust:&lt;/strong&gt; Engineering teams and growth operators hesitate to install extensions that can silently rea</description>
-    </item>
-    <item>
-      <title>Free Custom Domain Email in 2026: What Actually Works (and What Breaks in 2027)</title>
-      <link>https://meridian-radar.pages.dev/item/free-custom-domain-email-in-2026-what-actually-works-and-what-br.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/free-custom-domain-email-in-2026-what-actually-works-and-what-br.html</guid>
-      <pubDate>Sat, 14 Nov 2026 13:00:29 GMT</pubDate>
-      <description>&lt;p&gt;&lt;em&gt;This guide was first published on &lt;a href="https://saurabhbhayana.com/free-custom-domain-email" rel="noopener noreferrer"&gt;saurabhbhayana.com&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt; &lt;p&gt;A customer finds your business, likes what they see, and goes to email you. The address says &lt;a href="mailto:[email]"&gt;[email]&lt;/a&gt;. Noth</description>
-    </item>
-    <item>
-      <title>Mobile Dev Plugin: portare emulatori, device e debug “dentro” i tool di sviluppo agentico</title>
-      <link>https://meridian-radar.pages.dev/item/mobile-dev-plugin-portare-emulatori-device-e-debug-dentro-i-tool.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/mobile-dev-plugin-portare-emulatori-device-e-debug-dentro-i-tool.html</guid>
-      <pubDate>Sat, 14 Nov 2026 13:00:27 GMT</pubDate>
-      <description>&lt;blockquote&gt; &lt;p&gt;Un layer pratico per collegare simulatori, telefoni reali e strumenti di ispezione ai moderni ambienti con agenti, senza tornare a flussi frammentati.&lt;/p&gt; &lt;/blockquote&gt; &lt;p&gt;Negli ultimi mesi lo sviluppo “con agenti” ha spostato il baricentro del lavoro: meno tempo passato a scrivere o</description>
-    </item>
-    <item>
-      <title>The day after the Microsoft 365 outage: what we learned and what you can do now</title>
-      <link>https://meridian-radar.pages.dev/item/the-day-after-the-microsoft-365-outage-what-we-learned-and-what-.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/the-day-after-the-microsoft-365-outage-what-we-learned-and-what-.html</guid>
-      <pubDate>Sat, 14 Nov 2026 13:00:05 GMT</pubDate>
-      <description>&lt;p&gt;On Thursday 12 November 2026, Exchange Online, Teams, SharePoint Online, Microsoft 365 Copilot and Defender XDR failed or ran degraded worldwide. This post sorts it out: what is documented, what is still open, what we learn from it, and what you can do today without rebuilding your whole infrastr</description>
-    </item>
-    <item>
-      <title>Preventing Feedback Loops in a Two-Way Vue Unit Converter</title>
-      <link>https://meridian-radar.pages.dev/item/preventing-feedback-loops-in-a-two-way-vue-unit-converter.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/preventing-feedback-loops-in-a-two-way-vue-unit-converter.html</guid>
-      <pubDate>Sat, 14 Nov 2026 13:00:04 GMT</pubDate>
-      <description>&lt;p&gt;If both fields in a Vue unit converter are editable, how do you stop a calculated result from overwriting the user's input? I use explicit conversion directions and synchronous watchers so that each numeric edit updates the opposite field without bouncing back.&lt;/p&gt; &lt;p&gt;A Vue length converter gave </description>
-    </item>
-    <item>
-      <title>AMR Electrical Architecture — Ch.09: Sensor Architecture [EN]</title>
-      <link>https://meridian-radar.pages.dev/item/amr-electrical-architecture-ch-09-sensor-architecture-en.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/amr-electrical-architecture-ch-09-sensor-architecture-en.html</guid>
-      <pubDate>Sat, 14 Nov 2026 09:00:40 GMT</pubDate>
-      <description>&lt;blockquote&gt; &lt;p&gt;STATERA Library · Series 07 · Volume 13 · Chapter 09 · EN&lt;br&gt; Source: &lt;a href="https://github.com/Statera-Library/07_Vol_13_AMR_Electrical_Architecture/blob/main/13_09_Sensor_Architecture/13_09_Sensor_Architecture_EN.md" rel="noopener noreferrer"&gt;https://github.com/Statera-Library/07</description>
-    </item>
-    <item>
-      <title>AMR Electrical Architecture — Ch.08: Battery Architecture [EN]</title>
-      <link>https://meridian-radar.pages.dev/item/amr-electrical-architecture-ch-08-battery-architecture-en.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/amr-electrical-architecture-ch-08-battery-architecture-en.html</guid>
-      <pubDate>Sat, 14 Nov 2026 09:00:32 GMT</pubDate>
-      <description>&lt;blockquote&gt; &lt;p&gt;STATERA Library · Series 07 · Volume 13 · Chapter 08 · EN&lt;br&gt; Source: &lt;a href="https://github.com/Statera-Library/07_Vol_13_AMR_Electrical_Architecture/blob/main/13_08_Battery_Architecture/13_08_Battery_Architecture_EN.md" rel="noopener noreferrer"&gt;https://github.com/Statera-Library/</description>
-    </item>
-    <item>
-      <title>AMR Electrical Architecture — Ch.07: CAD2SCAN AMR [EN]</title>
-      <link>https://meridian-radar.pages.dev/item/amr-electrical-architecture-ch-07-cad2scan-amr-en.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/amr-electrical-architecture-ch-07-cad2scan-amr-en.html</guid>
-      <pubDate>Sat, 14 Nov 2026 09:00:25 GMT</pubDate>
-      <description>&lt;blockquote&gt; &lt;p&gt;STATERA Library · Series 07 · Volume 13 · Chapter 07 · EN&lt;br&gt; Source: &lt;a href="https://github.com/Statera-Library/07_Vol_13_AMR_Electrical_Architecture/blob/main/13_07_CAD2SCAN_AMR/13_07_CAD2SCAN_AMR_EN.md" rel="noopener noreferrer"&gt;https://github.com/Statera-Library/07_Vol_13_AMR_El</description>
-    </item>
-    <item>
-      <title>AMR Electrical Architecture — Ch.06: GPR AMR [EN]</title>
-      <link>https://meridian-radar.pages.dev/item/amr-electrical-architecture-ch-06-gpr-amr-en.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/amr-electrical-architecture-ch-06-gpr-amr-en.html</guid>
-      <pubDate>Sat, 14 Nov 2026 09:00:17 GMT</pubDate>
-      <description>&lt;blockquote&gt; &lt;p&gt;STATERA Library · Series 07 · Volume 13 · Chapter 06 · EN&lt;br&gt; Source: &lt;a href="https://github.com/Statera-Library/07_Vol_13_AMR_Electrical_Architecture/blob/main/13_06_GPR_AMR/13_06_GPR_AMR_EN.md" rel="noopener noreferrer"&gt;https://github.com/Statera-Library/07_Vol_13_AMR_Electrical_A</description>
-    </item>
-    <item>
-      <title>Uptime Kuma had never added a monitor on its own, so I wrote kuma-discover</title>
-      <link>https://meridian-radar.pages.dev/item/uptime-kuma-had-never-added-a-monitor-on-its-own-so-i-wrote-kuma.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/uptime-kuma-had-never-added-a-monitor-on-its-own-so-i-wrote-kuma.html</guid>
-      <pubDate>Sat, 14 Nov 2026 09:00:16 GMT</pubDate>
-      <description>&lt;p&gt;On 7 October I moved Uptime Kuma onto my ZimaBlade. While I was repointing everything at it, I noticed something a bit embarrassing: nothing had ever added a monitor automatically. Kuma watched exactly what I'd remembered to click into it, and nothing else. Every new container was unwatched until</description>
-    </item>
-    <item>
-      <title>AMR Electrical Architecture — Ch.05: Security AMR [EN]</title>
-      <link>https://meridian-radar.pages.dev/item/amr-electrical-architecture-ch-05-security-amr-en.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/amr-electrical-architecture-ch-05-security-amr-en.html</guid>
-      <pubDate>Sat, 14 Nov 2026 09:00:09 GMT</pubDate>
-      <description>&lt;blockquote&gt; &lt;p&gt;STATERA Library · Series 07 · Volume 13 · Chapter 05 · EN&lt;br&gt; Source: &lt;a href="https://github.com/Statera-Library/07_Vol_13_AMR_Electrical_Architecture/blob/main/13_05_Security_AMR/13_05_Security_AMR_EN.md" rel="noopener noreferrer"&gt;https://github.com/Statera-Library/07_Vol_13_AMR_El</description>
-    </item>
-    <item>
-      <title>How to scope an MVP so a developer can estimate it</title>
-      <link>https://meridian-radar.pages.dev/item/how-to-scope-an-mvp-so-a-developer-can-estimate-it.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/how-to-scope-an-mvp-so-a-developer-can-estimate-it.html</guid>
-      <pubDate>Sat, 14 Nov 2026 09:00:04 GMT</pubDate>
-      <description>&lt;p&gt;&lt;em&gt;Originally published on &lt;a href="https://shipfastdev.com/blog/how-to-scope-an-mvp" rel="noopener noreferrer"&gt;shipfastdev.com&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt; &lt;p&gt;To scope an MVP, write down the one problem you are testing and the one user who has it, map the single flow that takes that user from arrival to the m</description>
-    </item>
-    <item>
-      <title>Jensen Huang Resigns: Nvidia Faces a Leadership Test</title>
-      <link>https://meridian-radar.pages.dev/item/jensen-huang-resigns-nvidia-faces-a-leadership-test.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/jensen-huang-resigns-nvidia-faces-a-leadership-test.html</guid>
-      <pubDate>Sat, 14 Nov 2026 09:00:03 GMT</pubDate>
-      <description>&lt;p&gt;Jensen Huang has resigned as Nvidia’s president, chief executive and board member, effective immediately, the company announced on 12 November 2026. Chief financial officer Colette Kress will serve as interim CEO while keeping the finance role; the board says it will consider internal and externa</description>
-    </item>
-    <item>
-      <title>AMR Electrical Architecture — Ch.04: Inspection AMR [EN]</title>
-      <link>https://meridian-radar.pages.dev/item/amr-electrical-architecture-ch-04-inspection-amr-en.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/amr-electrical-architecture-ch-04-inspection-amr-en.html</guid>
-      <pubDate>Sat, 14 Nov 2026 09:00:01 GMT</pubDate>
-      <description>&lt;blockquote&gt; &lt;p&gt;STATERA Library · Series 07 · Volume 13 · Chapter 04 · EN&lt;br&gt; Source: &lt;a href="https://github.com/Statera-Library/07_Vol_13_AMR_Electrical_Architecture/blob/main/13_04_Inspection_AMR/13_04_Inspection_AMR_EN.md" rel="noopener noreferrer"&gt;https://github.com/Statera-Library/07_Vol_13_AM</description>
-    </item>
-    <item>
-      <title>A 3D configurator for glass walls and movable partitions, drawn into the customer's room</title>
-      <link>https://meridian-radar.pages.dev/item/a-3d-configurator-for-glass-walls-and-movable-partitions-drawn-i.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/a-3d-configurator-for-glass-walls-and-movable-partitions-drawn-i.html</guid>
-      <pubDate>Sat, 14 Nov 2026 09:00:00 GMT</pubDate>
-      <description>&lt;p&gt;A glass partition is hard to picture from a catalogue. The customer is buying for a specific opening, and they cannot tell from a product photo how the muntin split or the profile colour will read in their own room. So the quote turns into a week of emails, and some of them go cold.&lt;/p&gt; &lt;p&gt;I buil</description>
-    </item>
-    <item>
-      <title>Light a product configurator with an environment map, not point lights</title>
-      <link>https://meridian-radar.pages.dev/item/light-a-product-configurator-with-an-environment-map-not-point-l.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/light-a-product-configurator-with-an-environment-map-not-point-l.html</guid>
-      <pubDate>Sat, 14 Nov 2026 09:00:00 GMT</pubDate>
-      <description>&lt;p&gt;A product in a configurator lives or dies on how it is lit. The default instinct, drop in a couple of &lt;code&gt;PointLight&lt;/code&gt;s and a &lt;code&gt;DirectionalLight&lt;/code&gt;, makes metal look like grey plastic and glass look like nothing. For PBR materials the answer is an environment map, and it is less wo</description>
-    </item>
-    <item>
-      <title>AMR Electrical Architecture — Ch.03: Fleet AMR [EN]</title>
-      <link>https://meridian-radar.pages.dev/item/amr-electrical-architecture-ch-03-fleet-amr-en.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/amr-electrical-architecture-ch-03-fleet-amr-en.html</guid>
-      <pubDate>Sat, 14 Nov 2026 08:59:52 GMT</pubDate>
-      <description>&lt;blockquote&gt; &lt;p&gt;STATERA Library · Series 07 · Volume 13 · Chapter 03 · EN&lt;br&gt; Source: &lt;a href="https://github.com/Statera-Library/07_Vol_13_AMR_Electrical_Architecture/blob/main/13_03_Fleet_AMR/13_03_Fleet_AMR_EN.md" rel="noopener noreferrer"&gt;https://github.com/Statera-Library/07_Vol_13_AMR_Electric</description>
-    </item>
-    <item>
-      <title>Why a NAT VPS can cost $1: the economics of an IPv4 address</title>
-      <link>https://meridian-radar.pages.dev/item/why-a-nat-vps-can-cost-1-the-economics-of-an-ipv4-address.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/why-a-nat-vps-can-cost-1-the-economics-of-an-ipv4-address.html</guid>
-      <pubDate>Sat, 14 Nov 2026 06:59:46 GMT</pubDate>
-      <description></description>
-    </item>
-    <item>
-      <title>Monitoring Jenkins with Prometheus: queue, executors, build duration, and five PromQL alerts</title>
-      <link>https://meridian-radar.pages.dev/item/monitoring-jenkins-with-prometheus-queue-executors-build-duratio.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/monitoring-jenkins-with-prometheus-queue-executors-build-duratio.html</guid>
-      <pubDate>Sat, 14 Nov 2026 05:06:07 GMT</pubDate>
-      <description>&lt;p&gt;Jenkins problems usually surface as complaints: "my build is stuck", "no agents available", "everything was green yesterday". The Jenkins UI shows the current state, but not how the queue grew or when the free executors ran out. This post covers the metrics that answer those questions and five al</description>
-    </item>
-    <item>
-      <title>Reading the IL View and Navigating Metadata Tokens in Glass</title>
-      <link>https://meridian-radar.pages.dev/item/reading-the-il-view-and-navigating-metadata-tokens-in-glass.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/reading-the-il-view-and-navigating-metadata-tokens-in-glass.html</guid>
-      <pubDate>Sat, 14 Nov 2026 05:05:50 GMT</pubDate>
-      <description>&lt;p&gt;The C# that a decompiler shows you is a reconstruction. It is usually faithful, but it is an interpretation of something more precise: the Intermediate Language (IL) the compiler actually emitted, plus the metadata tables that give every name, type and signature its meaning. When the reconstructi</description>
-    </item>
-    <item>
-      <title>Build 'Find My Photos' for Event Galleries with Amazon Rekognition and Node.js</title>
-      <link>https://meridian-radar.pages.dev/item/build-find-my-photos-for-event-galleries-with-amazon-rekognition.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/build-find-my-photos-for-event-galleries-with-amazon-rekognition.html</guid>
-      <pubDate>Sat, 14 Nov 2026 05:05:22 GMT</pubDate>
-      <description>&lt;p&gt;After a wedding, a conference or a marathon, the photographer uploads three thousand photos and every guest asks the same question: which ones am I in? Scrolling through a gallery that size is miserable. Uploading one selfie and getting back only your photos is a feature people actually remember.</description>
-    </item>
-    <item>
-      <title>Finding and Killing N+1 Queries in a Rails API Before Your Users Notice</title>
-      <link>https://meridian-radar.pages.dev/item/finding-and-killing-n-1-queries-in-a-rails-api-before-your-users.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/finding-and-killing-n-1-queries-in-a-rails-api-before-your-users.html</guid>
-      <pubDate>Sat, 14 Nov 2026 05:05:10 GMT</pubDate>
-      <description>&lt;p&gt;A dashboard that loads in 300 ms on your laptop and 9 seconds in production usually has the same cause: an N+1 query. With ten rows of seed data it is invisible. With two thousand orders, each pulling its customer, its address and its line items, one request quietly becomes six thousand database </description>
-    </item>
-    <item>
-      <title>A Screen-Privacy Tool Should Not Upload the Page It Protects</title>
-      <link>https://meridian-radar.pages.dev/item/a-screen-privacy-tool-should-not-upload-the-page-it-protects.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/a-screen-privacy-tool-should-not-upload-the-page-it-protects.html</guid>
-      <pubDate>Sat, 14 Nov 2026 05:05:01 GMT</pubDate>
-      <description>&lt;p&gt;A browser privacy tool needs to inspect what is on a page before it can hide sensitive information. That creates an important question: where does the inspection happen?&lt;/p&gt; &lt;p&gt;If the page contains an API key, customer email, account number, internal URL, or private message, sending that content </description>
     </item>
   </channel>
 </rss>
