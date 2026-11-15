@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T20:53:50+00:00",
+  "generated_at": "2026-11-15T01:25:35+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -26,9 +26,9 @@
       "krebs": 10
     },
     "by_topic": {
-      "security": 108,
+      "security": 107,
       "ai": 68,
-      "dev": 47,
+      "dev": 46,
       "hardware": 29,
       "science": 8,
       "biz": 7,
@@ -265,6 +265,23 @@
       "date": "2021-01-11"
     },
     {
+      "uid": "hn:50172041",
+      "source": "hn",
+      "title": "Security advisory: Critical remote code execution vulnerabilities, update now",
+      "url": "https://www.php.net/archive/2026.php#2026-10-21-5",
+      "ts": 1792527350.0,
+      "points": 1561,
+      "comments": 659,
+      "author": "xd",
+      "summary": "<a href=\"https:&#x2F;&#x2F;cert.europa.eu&#x2F;publications&#x2F;security-advisories&#x2F;2026-018&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;cert.europa.eu&#x2F;publications&#x2F;security-advisories&#x2F;2026...</a><p><a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=[phone]\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=[phone]</a>",
+      "recipe": "hn_sec",
+      "buzz": 3538,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-10-20"
+    },
+    {
       "uid": "cve:GHSA-89p3-fcch-88ph",
       "source": "cve",
       "title": "CVE-2026-126299: NLTK: Quadratic-time CPU denial of service in CCG lexicon parser (fromstring) on wide bracket bodies and operator chains",
@@ -275,7 +292,7 @@
       "author": "nltk",
       "summary": "Severity: high. ## Summary\n\nThe public CCG lexicon parser `nltk.ccg.lexicon.fromstring` parses caller-influenced lexicon text with two pure-Python loops whose cost is quadratic in the input width. A service that parses an untrusted CCG lexicon string can be driven into tens of seconds of single-threaded CPU by a fe",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "ai",
         "dev",
@@ -295,7 +312,7 @@
       "author": "nltk",
       "summary": "Severity: high. ## Summary\n\n`Tree.chomsky_normal_form()` binarizes a parse tree and defaults to right factoring. For a node with N children the right-factor branch repeatedly removes the first element of a working list with `list.pop(0)`, which shifts all remaining elements each time, so binarizing one wide node co",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "ai",
         "dev",
@@ -315,7 +332,7 @@
       "author": "nltk",
       "summary": "Severity: high. ## Summary\n\n`ConllCorpusReader.srl_instances()` builds semantic-role-labeling instances from a CoNLL corpus block. For a sentence block with P predicates and P span columns, the instance builder rescans every span column (and every span within it) once per predicate while searching for each predicat",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "security",
         "hardware"
@@ -333,7 +350,7 @@
       "author": "ag-psd",
       "summary": "Severity: high. ### Summary\nreadPsd() commits the image/layer buffers from the declared header geometry (width x height x channels x depth, and per-layer rectangles) before validating those values against the actual data. A tiny crafted PSD declaring huge geometry forces a multi-gigabyte allocation.\n\n### Impact\nOn",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "ai",
         "security"
@@ -351,7 +368,7 @@
       "author": "nltk",
       "summary": "Severity: high. ## Summary\n\n`nltk.parse.recursivedescent.SteppingRecursiveDescentParser.parse()` performs an unbounded top-down search over ambiguous or self-embedding context-free grammars with no wall-clock or step limit. An actor who can influence the grammar and supply a short input to a caller that uses this p",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "security",
         "hardware"
@@ -369,30 +386,13 @@
       "author": "nltk",
       "summary": "Severity: high. ## Summary\n\n`YCOECorpusReader` builds two nested corpus sub-readers whose roots are derived from `self.root.join(\"psd\")` and `self.root.join(\"pos\")` (nltk/corpus/reader/ycoe.py). Because `FileSystemPathPointer.join()` (nltk/data.py) performs a purely lexical containment check and never resolves syml",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "ai",
         "dev",
         "security"
       ],
       "date": "2026-11-13"
-    },
-    {
-      "uid": "hn:50172041",
-      "source": "hn",
-      "title": "Security advisory: Critical remote code execution vulnerabilities, update now",
-      "url": "https://www.php.net/archive/2026.php#2026-10-21-5",
-      "ts": 1792527350.0,
-      "points": 1561,
-      "comments": 659,
-      "author": "xd",
-      "summary": "<a href=\"https:&#x2F;&#x2F;cert.europa.eu&#x2F;publications&#x2F;security-advisories&#x2F;2026-018&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;cert.europa.eu&#x2F;publications&#x2F;security-advisories&#x2F;2026...</a><p><a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=[phone]\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=[phone]</a>",
-      "recipe": "hn_sec",
-      "buzz": 3538,
-      "topics": [
-        "security"
-      ],
-      "date": "2026-10-20"
     },
     {
       "uid": "cve:GHSA-vvf4-9x63-8xvv",
@@ -742,63 +742,6 @@
       "date": "2020-09-30"
     },
     {
-      "uid": "cve:GHSA-fg9w-wfp5-j933",
-      "source": "cve",
-      "title": "CVE-2026-126295: NLTK: BllipParser passes caller-supplied model paths to the bllipparser C extension with no pathsec check, enabling arbitrary read",
-      "url": "https://github.com/advisories/GHSA-fg9w-wfp5-j933",
-      "ts": 1794612056.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "nltk",
-      "summary": "Severity: medium. ## Summary\n\n`BllipParser` in `nltk/parse/bllip.py` hands caller-supplied filesystem paths to the native `bllipparser` C extension without routing them through NLTK's `pathsec` validation. The constructor parameters `parser_model`, `reranker_features`, and `reranker_weights`, and the alternative `fro",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-13"
-    },
-    {
-      "uid": "cve:GHSA-gpwc-27cw-rh9r",
-      "source": "cve",
-      "title": "GHSA-gpwc-27cw-rh9r: NLTK: Quadratic CPU exhaustion in LegalitySyllableTokenizer.tokenize via unguarded onset reversal loop",
-      "url": "https://github.com/advisories/GHSA-gpwc-27cw-rh9r",
-      "ts": 1794604594.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "nltk",
-      "summary": "Severity: medium. ## Summary\n\n`LegalitySyllableTokenizer.tokenize` in the NLTK tokenizer package contains an unguarded O(n^2) processing loop. When the method is called on a single token that consists of a long run of vowels (for example `\"a\" * n`), it consumes CPU time proportional to the square of the token length.",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "crypto",
-        "hardware"
-      ],
-      "date": "2026-11-13"
-    },
-    {
-      "uid": "cve:GHSA-ffr9-mgrr-wcvr",
-      "source": "cve",
-      "title": "CVE-2026-126300: NLTK: Quadratic CPU exhaustion in TreebankWordTokenizer.span_tokenize via list.pop(0) in quote-restore loop",
-      "url": "https://github.com/advisories/GHSA-ffr9-mgrr-wcvr",
-      "ts": 1794604135.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "nltk",
-      "summary": "Severity: medium. ## Summary\n\n`TreebankWordTokenizer.span_tokenize` in the NLTK tokenizer package contains an unguarded O(n^2) processing loop in its quote-restoration step. When the method is invoked on text containing a long run of double-quote characters (for example `'\"' * n`), it performs a `list.pop(0)` operati",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "crypto",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-13"
-    },
-    {
       "uid": "hn:48166459",
       "source": "hn",
       "title": "Mozilla to UK regulators: VPNs are essential privacy and security tools",
@@ -848,6 +791,63 @@
         "security"
       ],
       "date": "2016-12-15"
+    },
+    {
+      "uid": "cve:GHSA-fg9w-wfp5-j933",
+      "source": "cve",
+      "title": "CVE-2026-126295: NLTK: BllipParser passes caller-supplied model paths to the bllipparser C extension with no pathsec check, enabling arbitrary read",
+      "url": "https://github.com/advisories/GHSA-fg9w-wfp5-j933",
+      "ts": 1794612056.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "nltk",
+      "summary": "Severity: medium. ## Summary\n\n`BllipParser` in `nltk/parse/bllip.py` hands caller-supplied filesystem paths to the native `bllipparser` C extension without routing them through NLTK's `pathsec` validation. The constructor parameters `parser_model`, `reranker_features`, and `reranker_weights`, and the alternative `fro",
+      "recipe": "gh_advisories",
+      "buzz": 1830,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "uid": "cve:GHSA-gpwc-27cw-rh9r",
+      "source": "cve",
+      "title": "GHSA-gpwc-27cw-rh9r: NLTK: Quadratic CPU exhaustion in LegalitySyllableTokenizer.tokenize via unguarded onset reversal loop",
+      "url": "https://github.com/advisories/GHSA-gpwc-27cw-rh9r",
+      "ts": 1794604594.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "nltk",
+      "summary": "Severity: medium. ## Summary\n\n`LegalitySyllableTokenizer.tokenize` in the NLTK tokenizer package contains an unguarded O(n^2) processing loop. When the method is called on a single token that consists of a long run of vowels (for example `\"a\" * n`), it consumes CPU time proportional to the square of the token length.",
+      "recipe": "gh_advisories",
+      "buzz": 1830,
+      "topics": [
+        "ai",
+        "crypto",
+        "hardware"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "uid": "cve:GHSA-ffr9-mgrr-wcvr",
+      "source": "cve",
+      "title": "CVE-2026-126300: NLTK: Quadratic CPU exhaustion in TreebankWordTokenizer.span_tokenize via list.pop(0) in quote-restore loop",
+      "url": "https://github.com/advisories/GHSA-ffr9-mgrr-wcvr",
+      "ts": 1794604135.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "nltk",
+      "summary": "Severity: medium. ## Summary\n\n`TreebankWordTokenizer.span_tokenize` in the NLTK tokenizer package contains an unguarded O(n^2) processing loop in its quote-restoration step. When the method is invoked on text containing a long run of double-quote characters (for example `'\"' * n`), it performs a `list.pop(0)` operati",
+      "recipe": "gh_advisories",
+      "buzz": 1830,
+      "topics": [
+        "ai",
+        "crypto",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-13"
     },
     {
       "uid": "cve:GHSA-mw6w-2fmv-pvw3",
@@ -1286,7 +1286,7 @@
       "author": "github.com/filebrowser/filebrowser/v2",
       "summary": "Severity: low. ## Summary\n\nFile Browser v2.63.15 can leave a public directory share behind when the shared directory is deleted through a path with a trailing slash. The share cleanup path calls `DeleteWithPathPrefix(file.Path, userID)`, but the Bolt backend performs the database prefix query with the unnormalized",
       "recipe": "gh_advisories",
-      "buzz": 780,
+      "buzz": 730,
       "topics": [
         "ai",
         "dev",
@@ -1405,25 +1405,6 @@
       "date": "2026-11-06"
     },
     {
-      "uid": "gh:mrhlaingbwardev/agentic-hacking-skills",
-      "source": "github",
-      "title": "mrhlaingbwardev/agentic-hacking-skills",
-      "url": "https://github.com/mrhlaingbwardev/agentic-hacking-skills",
-      "ts": 1793505604.0,
-      "points": 330,
-      "comments": 52,
-      "author": "mrhlaingbwardev",
-      "summary": "AI-Powered Web Security & Automation - Official bonus skills, agents & MCP configs for the 'Agentic Hacking' ebook (28 SKILL.md templates)",
-      "recipe": "github_sec",
-      "buzz": 486,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-01"
-    },
-    {
       "uid": "gh:nestho/impacket-rs",
       "source": "github",
       "title": "nestho/impacket-rs",
@@ -1539,25 +1520,6 @@
       "date": "2026-11-14"
     },
     {
-      "uid": "rss:1da07c9934607e",
-      "source": "rss",
-      "title": "Friday Squid Blogging: Pacific Flying Squid Populations Dropping in Korean Waters",
-      "url": "https://www.schneier.com/blog/archives/2026/11/friday-squid-blogging-pacific-flying-squid-populations-dropping-in-korean-waters.html",
-      "ts": 1794607249.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Bruce Schneier",
-      "summary": "<p>Climate change is the <a href=\"https://news.mongabay.com/2026/11/south-koreas-beloved-squid-may-vanish-from-its-waters-due-to-climate-change-heat-waves/\">issue</a>.</p> <p>As usual, you can also use this squid post to talk about the security stories in the news that I haven&#8217;t covered.</p> <p><a href=\"https://www.schneier.com/blog/archives/2024/06/new-blog-moderation-policy.html\">Blog mode",
-      "recipe": "schneier",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "science",
-        "security"
-      ],
-      "date": "2026-11-13"
-    },
-    {
       "uid": "rss:d6bc4ec6947cb8",
       "source": "rss",
       "title": "Attackers Exploit UnrealIRCd Flaw That Enables Server-Level Command Injection",
@@ -1581,12 +1543,12 @@
       "title": "BountyForge-xyz/pwn-skill",
       "url": "https://github.com/BountyForge-xyz/pwn-skill",
       "ts": 1793960371.0,
-      "points": 54,
+      "points": 55,
       "comments": 6,
       "author": "BountyForge-xyz",
       "summary": "Agent skill for binary exploitation and CTF pwn — stack, heap, format string, kernel, seccomp bypass.",
       "recipe": "github_sec",
-      "buzz": 72,
+      "buzz": 73,
       "topics": [
         "ai",
         "security"
@@ -1600,11 +1562,11 @@
       "url": "https://github.com/Balanov/latch",
       "ts": 1793811471.0,
       "points": 63,
-      "comments": 2,
+      "comments": 3,
       "author": "Balanov",
       "summary": "One tiny HTTPS contract between any agent and any service. Quote, approve, commit, receipt. Zero dependencies. MIT.",
       "recipe": "github_sec",
-      "buzz": 69,
+      "buzz": 72,
       "topics": [
         "ai"
       ],
@@ -1626,6 +1588,42 @@
         "security"
       ],
       "date": "2026-11-12"
+    },
+    {
+      "uid": "gh:humanethq/airgap-check",
+      "source": "github",
+      "title": "humanethq/airgap-check",
+      "url": "https://github.com/humanethq/airgap-check",
+      "ts": 1794174928.0,
+      "points": 21,
+      "comments": 0,
+      "author": "humanethq",
+      "summary": "Audit AI repositories for offline (--network none) crashes, silent telemetry, and .env secret routing",
+      "recipe": "github_sec",
+      "buzz": 31,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-11-08"
+    },
+    {
+      "uid": "rss:1da07c9934607e",
+      "source": "rss",
+      "title": "Friday Squid Blogging: Pacific Flying Squid Populations Dropping in Korean Waters",
+      "url": "https://www.schneier.com/blog/archives/2026/11/friday-squid-blogging-pacific-flying-squid-populations-dropping-in-korean-waters.html",
+      "ts": 1794607249.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Bruce Schneier",
+      "summary": "<p>Climate change is the <a href=\"https://news.mongabay.com/2026/11/south-koreas-beloved-squid-may-vanish-from-its-waters-due-to-climate-change-heat-waves/\">issue</a>.</p> <p>As usual, you can also use this squid post to talk about the security stories in the news that I haven&#8217;t covered.</p> <p><a href=\"https://www.schneier.com/blog/archives/2024/06/new-blog-moderation-policy.html\">Blog mode",
+      "recipe": "schneier",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "science",
+        "security"
+      ],
+      "date": "2026-11-13"
     },
     {
       "uid": "rss:1d8b68bb6887db",

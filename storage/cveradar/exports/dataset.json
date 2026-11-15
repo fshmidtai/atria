@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T20:53:27+00:00",
+  "generated_at": "2026-11-15T01:25:09+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -49,7 +49,7 @@
       "author": "nltk",
       "summary": "Severity: high. ## Summary\n\nThe public CCG lexicon parser `nltk.ccg.lexicon.fromstring` parses caller-influenced lexicon text with two pure-Python loops whose cost is quadratic in the input width. A service that parses an untrusted CCG lexicon string can be driven into tens of seconds of single-threaded CPU by a fe",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "ai",
         "dev",
@@ -69,7 +69,7 @@
       "author": "nltk",
       "summary": "Severity: high. ## Summary\n\n`Tree.chomsky_normal_form()` binarizes a parse tree and defaults to right factoring. For a node with N children the right-factor branch repeatedly removes the first element of a working list with `list.pop(0)`, which shifts all remaining elements each time, so binarizing one wide node co",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "ai",
         "dev",
@@ -89,7 +89,7 @@
       "author": "nltk",
       "summary": "Severity: high. ## Summary\n\n`ConllCorpusReader.srl_instances()` builds semantic-role-labeling instances from a CoNLL corpus block. For a sentence block with P predicates and P span columns, the instance builder rescans every span column (and every span within it) once per predicate while searching for each predicat",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "security",
         "hardware"
@@ -107,7 +107,7 @@
       "author": "ag-psd",
       "summary": "Severity: high. ### Summary\nreadPsd() commits the image/layer buffers from the declared header geometry (width x height x channels x depth, and per-layer rectangles) before validating those values against the actual data. A tiny crafted PSD declaring huge geometry forces a multi-gigabyte allocation.\n\n### Impact\nOn",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "ai",
         "security"
@@ -125,7 +125,7 @@
       "author": "nltk",
       "summary": "Severity: high. ## Summary\n\n`nltk.parse.recursivedescent.SteppingRecursiveDescentParser.parse()` performs an unbounded top-down search over ambiguous or self-embedding context-free grammars with no wall-clock or step limit. An actor who can influence the grammar and supply a short input to a caller that uses this p",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "security",
         "hardware"
@@ -143,7 +143,7 @@
       "author": "nltk",
       "summary": "Severity: high. ## Summary\n\n`YCOECorpusReader` builds two nested corpus sub-readers whose roots are derived from `self.root.join(\"psd\")` and `self.root.join(\"pos\")` (nltk/corpus/reader/ycoe.py). Because `FileSystemPathPointer.join()` (nltk/data.py) performs a purely lexical containment check and never resolves syml",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "ai",
         "dev",
@@ -216,7 +216,7 @@
       "author": "nltk",
       "summary": "Severity: medium. ## Summary\n\n`BllipParser` in `nltk/parse/bllip.py` hands caller-supplied filesystem paths to the native `bllipparser` C extension without routing them through NLTK's `pathsec` validation. The constructor parameters `parser_model`, `reranker_features`, and `reranker_weights`, and the alternative `fro",
       "recipe": "gh_advisories",
-      "buzz": 1880,
+      "buzz": 1830,
       "topics": [
         "ai",
         "security"
@@ -234,7 +234,7 @@
       "author": "nltk",
       "summary": "Severity: medium. ## Summary\n\n`LegalitySyllableTokenizer.tokenize` in the NLTK tokenizer package contains an unguarded O(n^2) processing loop. When the method is called on a single token that consists of a long run of vowels (for example `\"a\" * n`), it consumes CPU time proportional to the square of the token length.",
       "recipe": "gh_advisories",
-      "buzz": 1880,
+      "buzz": 1830,
       "topics": [
         "ai",
         "crypto",
@@ -253,7 +253,7 @@
       "author": "nltk",
       "summary": "Severity: medium. ## Summary\n\n`TreebankWordTokenizer.span_tokenize` in the NLTK tokenizer package contains an unguarded O(n^2) processing loop in its quote-restoration step. When the method is invoked on text containing a long run of double-quote characters (for example `'\"' * n`), it performs a `list.pop(0)` operati",
       "recipe": "gh_advisories",
-      "buzz": 1880,
+      "buzz": 1830,
       "topics": [
         "ai",
         "crypto",
@@ -492,7 +492,7 @@
       "author": "github.com/filebrowser/filebrowser/v2",
       "summary": "Severity: low. ## Summary\n\nFile Browser v2.63.15 can leave a public directory share behind when the shared directory is deleted through a path with a trailing slash. The share cleanup path calls `DeleteWithPathPrefix(file.Path, userID)`, but the Bolt backend performs the database prefix query with the unnormalized",
       "recipe": "gh_advisories",
-      "buzz": 780,
+      "buzz": 730,
       "topics": [
         "ai",
         "dev",
