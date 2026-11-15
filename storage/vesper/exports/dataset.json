@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T09:06:46+00:00",
+  "generated_at": "2026-11-15T13:15:31+00:00",
   "sources_used": [
     "hn_search",
     "github_search",
@@ -9,30 +9,30 @@
     "rss"
   ],
   "totals": {
-    "items": 127,
+    "items": 131,
     "by_source": {
       "hn": 60,
-      "github": 47,
+      "github": 51,
       "rss": 20
     },
     "by_recipe": {
       "show_hn": 60,
       "github_ai": 40,
       "tc_ai": 20,
-      "github_llm": 7
+      "github_llm": 11
     },
     "by_topic": {
-      "ai": 78,
-      "dev": 46,
-      "science": 29,
+      "ai": 82,
+      "dev": 47,
+      "science": 31,
+      "biz": 11,
       "hardware": 10,
-      "biz": 10,
       "security": 6
     },
     "top_domains": [
       [
         "github.com",
-        53
+        57
       ],
       [
         "techcrunch.com",
@@ -362,12 +362,12 @@
       "title": "Sandflow-ai/sand3d",
       "url": "https://github.com/Sandflow-ai/sand3d",
       "ts": 1793694183.0,
-      "points": 2010,
-      "comments": 223,
+      "points": 2019,
+      "comments": 224,
       "author": "Sandflow-ai",
       "summary": "3D modeling in Python, built for LLMs.",
       "recipe": "github_llm",
-      "buzz": 2679,
+      "buzz": 2691,
       "topics": [
         "ai",
         "dev"
@@ -845,6 +845,24 @@
       "date": "2021-08-17"
     },
     {
+      "uid": "gh:agentes-chat/agentes-chat",
+      "source": "github",
+      "title": "agentes-chat/agentes-chat",
+      "url": "https://github.com/agentes-chat/agentes-chat",
+      "ts": 1794185428.0,
+      "points": 1459,
+      "comments": 257,
+      "author": "agentes-chat",
+      "summary": "Open-source, self-hosted Slack alternative where your team and AI agents work together in channels and DMs. Agents run on Claude, ChatGPT/Codex, Gemini or Grok, with MCP tools, their own computer and browser, routines, memory and approvals. Web, desktop and phone apps. Docker Compose + Postgres. AGPL-3.0.",
+      "recipe": "github_llm",
+      "buzz": 2240,
+      "topics": [
+        "ai",
+        "dev"
+      ],
+      "date": "2026-11-09"
+    },
+    {
       "uid": "hn:32690410",
       "source": "hn",
       "title": "Show HN: I'm building an open-source Amazon",
@@ -908,24 +926,6 @@
         "security"
       ],
       "date": "2017-01-18"
-    },
-    {
-      "uid": "gh:agentes-chat/agentes-chat",
-      "source": "github",
-      "title": "agentes-chat/agentes-chat",
-      "url": "https://github.com/agentes-chat/agentes-chat",
-      "ts": 1794185428.0,
-      "points": 1430,
-      "comments": 252,
-      "author": "agentes-chat",
-      "summary": "Open-source, self-hosted Slack alternative where your team and AI agents work together in channels and DMs. Agents run on Claude, ChatGPT/Codex, Gemini or Grok, with MCP tools, their own computer and browser, routines, memory and approvals. Web, desktop and phone apps. Docker Compose + Postgres. AGPL-3.0.",
-      "recipe": "github_llm",
-      "buzz": 2196,
-      "topics": [
-        "ai",
-        "dev"
-      ],
-      "date": "2026-11-09"
     },
     {
       "uid": "hn:45231378",
@@ -1423,12 +1423,12 @@
       "title": "toppatronweave/GitHub-Copilot-app",
       "url": "https://github.com/toppatronweave/GitHub-Copilot-app",
       "ts": 1794684320.0,
-      "points": 665,
+      "points": 666,
       "comments": 309,
       "author": "toppatronweave",
       "summary": "The GitHub Copilot app is an agent-native desktop experience for finding, running, steering, and landing software work across your GitHub repositories.",
       "recipe": "github_ai",
-      "buzz": 1672,
+      "buzz": 1673,
       "topics": [
         "ai",
         "dev"
@@ -1516,6 +1516,41 @@
       "date": "2026-11-14"
     },
     {
+      "uid": "gh:Dodaios/ste80-humanizer",
+      "source": "github",
+      "title": "Dodaios/ste80-humanizer",
+      "url": "https://github.com/Dodaios/ste80-humanizer",
+      "ts": 1794244739.0,
+      "points": 661,
+      "comments": 45,
+      "author": "Dodaios",
+      "summary": "STE80 Humanizer: agent skill that removes AI tells and rewrites text 80% of the way to ASD-STE100 (Simplified Technical English), the method Andrej Karpathy shared.",
+      "recipe": "github_llm",
+      "buzz": 806,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-11-09"
+    },
+    {
+      "uid": "gh:hyperionaidev/smolmaxxing",
+      "source": "github",
+      "title": "hyperionaidev/smolmaxxing",
+      "url": "https://github.com/hyperionaidev/smolmaxxing",
+      "ts": 1793776181.0,
+      "points": 721,
+      "comments": 23,
+      "author": "hyperionaidev",
+      "summary": "maxxing the ability to run different LLMs on the smallest devices possible",
+      "recipe": "github_llm",
+      "buzz": 790,
+      "topics": [
+        "ai",
+        "dev"
+      ],
+      "date": "2026-11-04"
+    },
+    {
       "uid": "gh:trackboatwrightplan/GitHub-Copilot-app",
       "source": "github",
       "title": "trackboatwrightplan/GitHub-Copilot-app",
@@ -1550,24 +1585,6 @@
         "dev"
       ],
       "date": "2026-11-14"
-    },
-    {
-      "uid": "gh:hyperionaidev/smolmaxxing",
-      "source": "github",
-      "title": "hyperionaidev/smolmaxxing",
-      "url": "https://github.com/hyperionaidev/smolmaxxing",
-      "ts": 1793776181.0,
-      "points": 714,
-      "comments": 23,
-      "author": "hyperionaidev",
-      "summary": "maxxing the ability to run different LLMs on the smallest devices possible",
-      "recipe": "github_llm",
-      "buzz": 783,
-      "topics": [
-        "ai",
-        "dev"
-      ],
-      "date": "2026-11-04"
     },
     {
       "uid": "gh:topapothecarycanal/ai--manus2.0",
@@ -1622,23 +1639,6 @@
         "dev"
       ],
       "date": "2026-11-14"
-    },
-    {
-      "uid": "gh:Dodaios/ste80-humanizer",
-      "source": "github",
-      "title": "Dodaios/ste80-humanizer",
-      "url": "https://github.com/Dodaios/ste80-humanizer",
-      "ts": 1794244739.0,
-      "points": 639,
-      "comments": 44,
-      "author": "Dodaios",
-      "summary": "STE80 Humanizer: agent skill that removes AI tells and rewrites text 80% of the way to ASD-STE100 (Simplified Technical English), the method Andrej Karpathy shared.",
-      "recipe": "github_llm",
-      "buzz": 781,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-09"
     },
     {
       "uid": "gh:TrapBladesmith/GitHub-Copilot-app",
@@ -1755,12 +1755,12 @@
       "title": "TIGER-AI-Lab/WebsiteBench",
       "url": "https://github.com/TIGER-AI-Lab/WebsiteBench",
       "ts": 1793797130.0,
-      "points": 397,
+      "points": 407,
       "comments": 41,
       "author": "TIGER-AI-Lab",
       "summary": "Can AI agents rebuild websites through browser exploration?",
       "recipe": "github_ai",
-      "buzz": 520,
+      "buzz": 530,
       "topics": [
         "ai"
       ],
@@ -1772,12 +1772,12 @@
       "title": "hitkeeen/blender-ai-mcp-addon",
       "url": "https://github.com/hitkeeen/blender-ai-mcp-addon",
       "ts": 1794493935.0,
-      "points": 424,
-      "comments": 6,
+      "points": 441,
+      "comments": 7,
       "author": "hitkeeen",
       "summary": "AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with ChatGPT/GPT, Claude, Gemini, Ollama, OpenCode. Blender AI addon, copilot for 3D, bpy Python scripting, MCP integration.",
       "recipe": "github_llm",
-      "buzz": 472,
+      "buzz": 492,
       "topics": [
         "ai",
         "dev",
@@ -1786,21 +1786,57 @@
       "date": "2026-11-12"
     },
     {
+      "uid": "gh:StormBrawlerSack/legwork-osint-ai-investigator",
+      "source": "github",
+      "title": "StormBrawlerSack/legwork-osint-ai-investigator",
+      "url": "https://github.com/StormBrawlerSack/legwork-osint-ai-investigator",
+      "ts": 1794576628.0,
+      "points": 318,
+      "comments": 26,
+      "author": "StormBrawlerSack",
+      "summary": "AI OSINT investigator for Windows: ask a question in plain words and get an answer built from public sources, with a source on every sentence.",
+      "recipe": "github_llm",
+      "buzz": 426,
+      "topics": [
+        "ai",
+        "biz"
+      ],
+      "date": "2026-11-13"
+    },
+    {
       "uid": "gh:yucezerey/turkish-anti-ai-skill",
       "source": "github",
       "title": "yucezerey/turkish-anti-ai-skill",
       "url": "https://github.com/yucezerey/turkish-anti-ai-skill",
       "ts": 1793909308.0,
-      "points": 318,
-      "comments": 25,
+      "points": 322,
+      "comments": 26,
       "author": "yucezerey",
       "summary": "Türkçe metinlerdeki yapay zeka izlerini (AI slop, translationese, çeviri kokan cümle mimarisi ve TDK hatalarını) temizleyen Agent Skill ve Humanizer paketi.",
       "recipe": "github_llm",
-      "buzz": 393,
+      "buzz": 400,
       "topics": [
         "ai"
       ],
       "date": "2026-11-05"
+    },
+    {
+      "uid": "gh:huawei-csl/MACaQ",
+      "source": "github",
+      "title": "huawei-csl/MACaQ",
+      "url": "https://github.com/huawei-csl/MACaQ",
+      "ts": 1794300742.0,
+      "points": 300,
+      "comments": 21,
+      "author": "huawei-csl",
+      "summary": "SOTA model-agnostic quantization for GGUF, local inference and beyond. Quantize and run text, image, video and audio models with llama.cpp, vLLM, Diffusers and PyTorch.",
+      "recipe": "github_llm",
+      "buzz": 373,
+      "topics": [
+        "ai",
+        "dev"
+      ],
+      "date": "2026-11-10"
     },
     {
       "uid": "gh:armsworminterface/ai--manus",
@@ -1875,24 +1911,6 @@
       "date": "2026-11-13"
     },
     {
-      "uid": "gh:TorusBarbarianMap9/ai--manus",
-      "source": "github",
-      "title": "TorusBarbarianMap9/ai--manus",
-      "url": "https://github.com/TorusBarbarianMap9/ai--manus",
-      "ts": 1794588321.0,
-      "points": 296,
-      "comments": 0,
-      "author": "TorusBarbarianMap9",
-      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
-      "recipe": "github_ai",
-      "buzz": 326,
-      "topics": [
-        "ai",
-        "science"
-      ],
-      "date": "2026-11-13"
-    },
-    {
       "uid": "gh:AdmiralEmporium/ai--manus",
       "source": "github",
       "title": "AdmiralEmporium/ai--manus",
@@ -1901,24 +1919,6 @@
       "points": 296,
       "comments": 0,
       "author": "AdmiralEmporium",
-      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
-      "recipe": "github_ai",
-      "buzz": 326,
-      "topics": [
-        "ai",
-        "science"
-      ],
-      "date": "2026-11-13"
-    },
-    {
-      "uid": "gh:BarrierCenter/ai--manus",
-      "source": "github",
-      "title": "BarrierCenter/ai--manus",
-      "url": "https://github.com/BarrierCenter/ai--manus",
-      "ts": 1794588414.0,
-      "points": 296,
-      "comments": 0,
-      "author": "BarrierCenter",
       "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
       "recipe": "github_ai",
       "buzz": 326,
@@ -1947,6 +1947,42 @@
       "date": "2026-11-13"
     },
     {
+      "uid": "gh:TorusBarbarianMap9/ai--manus",
+      "source": "github",
+      "title": "TorusBarbarianMap9/ai--manus",
+      "url": "https://github.com/TorusBarbarianMap9/ai--manus",
+      "ts": 1794588321.0,
+      "points": 296,
+      "comments": 0,
+      "author": "TorusBarbarianMap9",
+      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
+      "recipe": "github_ai",
+      "buzz": 326,
+      "topics": [
+        "ai",
+        "science"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "uid": "gh:BarrierCenter/ai--manus",
+      "source": "github",
+      "title": "BarrierCenter/ai--manus",
+      "url": "https://github.com/BarrierCenter/ai--manus",
+      "ts": 1794588414.0,
+      "points": 296,
+      "comments": 0,
+      "author": "BarrierCenter",
+      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
+      "recipe": "github_ai",
+      "buzz": 326,
+      "topics": [
+        "ai",
+        "science"
+      ],
+      "date": "2026-11-13"
+    },
+    {
       "uid": "gh:ClampOverlord46/ai--manus",
       "source": "github",
       "title": "ClampOverlord46/ai--manus",
@@ -1957,6 +1993,42 @@
       "author": "ClampOverlord46",
       "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
       "recipe": "github_ai",
+      "buzz": 326,
+      "topics": [
+        "ai",
+        "science"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "uid": "gh:ApothecaryDesign/ai--manus",
+      "source": "github",
+      "title": "ApothecaryDesign/ai--manus",
+      "url": "https://github.com/ApothecaryDesign/ai--manus",
+      "ts": 1794588333.0,
+      "points": 296,
+      "comments": 0,
+      "author": "ApothecaryDesign",
+      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
+      "recipe": "github_llm",
+      "buzz": 326,
+      "topics": [
+        "ai",
+        "science"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "uid": "gh:Feathershosmash/ai--manus",
+      "source": "github",
+      "title": "Feathershosmash/ai--manus",
+      "url": "https://github.com/Feathershosmash/ai--manus",
+      "ts": 1794588236.0,
+      "points": 296,
+      "comments": 0,
+      "author": "Feathershosmash",
+      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
+      "recipe": "github_llm",
       "buzz": 326,
       "topics": [
         "ai",

@@ -5,7 +5,21 @@
     <link>https://sentinel-post.pages.dev</link>
     <description>Автономная радиостанция кибербезопасности: живые CVE, угрозы и защита — без сенсаций</description>
     <language>ru</language>
-    <lastBuildDate>Sun, 15 Nov 2026 09:02:04 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 15 Nov 2026 13:11:17 GMT</lastBuildDate>
+    <item>
+      <title>Italy Fines Meta €805 Million Over Facebook's Android Gallery Access Without Explicit Consent</title>
+      <link>https://sentinel-post.pages.dev/item/italy-fines-meta-805-million-over-facebook-s-android-gallery-acc.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/italy-fines-meta-805-million-over-facebook-s-android-gallery-acc.html</guid>
+      <pubDate>Sun, 15 Nov 2026 11:27:31 GMT</pubDate>
+      <description>Meta was fined €805 million in Italy yesterday over a Facebook for Android feature that suggests photos and videos from users' phone galleries for them to post. The Garante, Italy's data protection authority, found that the feature was enabled by default and that the app accessed Italian users' phot</description>
+    </item>
+    <item>
+      <title>Cursor Says Stolen Fireworks AI Key Led to Trojanized Claude Code Extension Incident</title>
+      <link>https://sentinel-post.pages.dev/item/cursor-says-stolen-fireworks-ai-key-led-to-trojanized-claude-cod.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cursor-says-stolen-fireworks-ai-key-led-to-trojanized-claude-cod.html</guid>
+      <pubDate>Sun, 15 Nov 2026 08:22:04 GMT</pubDate>
+      <description>The compromise of Anthropic's official Claude Code extension on Cursor's extension marketplace was the result of the theft of an access key that was exposed in the wake of a breach targeting Fireworks AI. "An attacker obtained an access key we had issued to Fireworks," Cursor said in a Friday update</description>
+    </item>
     <item>
       <title>Upcoming Speaking Engagements</title>
       <link>https://sentinel-post.pages.dev/item/upcoming-speaking-engagements.html</link>
@@ -252,25 +266,6 @@ If a concurrency task prints user-controlled text, an attacker can forge the fra
 ### Pre-reqs
 
 Insecure code and insecure handling of user provided input (devs trust user-provided inp</description>
-    </item>
-    <item>
-      <title>CVE-2026-128081: AutoMapper: Denial of Service via uncontrolled recursion that bypasses MaxDepth</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-128081-automapper-denial-of-service-via-uncontrolled-re.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-128081-automapper-denial-of-service-via-uncontrolled-re.html</guid>
-      <pubDate>Fri, 13 Nov 2026 18:47:17 GMT</pubDate>
-      <description>Severity: high. ### Summary
-The default and explicit `MaxDepth` limits added for CVE-[phone] don't apply to several mapping paths. Mapping a deeply nested source through any of them recurses without bound and throws a `StackOverflowException`, which can't be caught and terminates the process.
-
-### A</description>
-    </item>
-    <item>
-      <title>CVE-2026-126361: Astro: XSS via attribute injection in dynamic tag names</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-126361-astro-xss-via-attribute-injection-in-dynamic-tag.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-126361-astro-xss-via-attribute-injection-in-dynamic-tag.html</guid>
-      <pubDate>Fri, 13 Nov 2026 18:39:54 GMT</pubDate>
-      <description>Severity: low. ## Summary
-
-When a dynamic tag (`const Tag = ...; &lt;Tag /&gt;`) resolves to a string, Astro renders it as a raw HTML element name. The name was filtered to remove characters that could inject attributes, but the filter did not handle `/`. Because HTML parsers treat `/` inside a tag as an </description>
     </item>
   </channel>
 </rss>

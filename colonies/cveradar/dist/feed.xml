@@ -5,7 +5,21 @@
     <link>https://cveradar-ah3.pages.dev</link>
     <description>Живые CVE и уязвимости на русском: автономный перевод угроз в понятные дайджесты для DevOps и небольшого SecOps</description>
     <language>ru</language>
-    <lastBuildDate>Sun, 15 Nov 2026 09:01:39 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 15 Nov 2026 13:10:52 GMT</lastBuildDate>
+    <item>
+      <title>Italy Fines Meta €805 Million Over Facebook's Android Gallery Access Without Explicit Consent</title>
+      <link>https://cveradar-ah3.pages.dev/item/italy-fines-meta-805-million-over-facebook-s-android-gallery-acc.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/italy-fines-meta-805-million-over-facebook-s-android-gallery-acc.html</guid>
+      <pubDate>Sun, 15 Nov 2026 11:27:31 GMT</pubDate>
+      <description>Meta was fined €805 million in Italy yesterday over a Facebook for Android feature that suggests photos and videos from users' phone galleries for them to post. The Garante, Italy's data protection authority, found that the feature was enabled by default and that the app accessed Italian users' phot</description>
+    </item>
+    <item>
+      <title>Cursor Says Stolen Fireworks AI Key Led to Trojanized Claude Code Extension Incident</title>
+      <link>https://cveradar-ah3.pages.dev/item/cursor-says-stolen-fireworks-ai-key-led-to-trojanized-claude-cod.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cursor-says-stolen-fireworks-ai-key-led-to-trojanized-claude-cod.html</guid>
+      <pubDate>Sun, 15 Nov 2026 08:22:04 GMT</pubDate>
+      <description>The compromise of Anthropic's official Claude Code extension on Cursor's extension marketplace was the result of the theft of an access key that was exposed in the wake of a breach targeting Fireworks AI. "An attacker obtained an access key we had issued to Fireworks," Cursor said in a Friday update</description>
+    </item>
     <item>
       <title>Attackers Exploit UnrealIRCd Flaw That Enables Server-Level Command Injection</title>
       <link>https://cveradar-ah3.pages.dev/item/attackers-exploit-unrealircd-flaw-that-enables-server-level-comm.html</link>
@@ -257,24 +271,6 @@ The default and explicit `MaxDepth` limits added for CVE-[phone] don't apply to 
       <description>Severity: low. ## Summary
 
 When a dynamic tag (`const Tag = ...; &lt;Tag /&gt;`) resolves to a string, Astro renders it as a raw HTML element name. The name was filtered to remove characters that could inject attributes, but the filter did not handle `/`. Because HTML parsers treat `/` inside a tag as an </description>
-    </item>
-    <item>
-      <title>CVE-2026-126364: Astro: Image endpoint in @astrojs/node can read files from a case-variant sibling of the output directory on case-sensitive filesystems</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-126364-astro-image-endpoint-in-astrojs-node-can-read-fi.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-126364-astro-image-endpoint-in-astrojs-node-can-read-fi.html</guid>
-      <pubDate>Fri, 13 Nov 2026 18:35:59 GMT</pubDate>
-      <description>Severity: medium. ## Summary
-
-The `/_image` endpoint used by the `@astrojs/node` adapter checks that a requested local image is inside the build output directory before reading it from disk. That check compared paths case-insensitively. On case-sensitive filesystems (such as Linux), a directory whos</description>
-    </item>
-    <item>
-      <title>CVE-2026-128070: Nuxt dev server serves files from a parent directory with a stray lockfile or workspace file</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-128070-nuxt-dev-server-serves-files-from-a-parent-direc.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-128070-nuxt-dev-server-serves-files-from-a-parent-direc.html</guid>
-      <pubDate>Fri, 13 Nov 2026 18:11:49 GMT</pubDate>
-      <description>Severity: medium. ### Summary
-
-Nuxt can pick a parent directory that does not declare a workspace as its default `workspaceDir`: the farthest directory with a lockfile when the project is not inside a git repository, or the farthest directory with a `pnpm-workspace.yaml` or `deno.json` file, even on</description>
     </item>
   </channel>
 </rss>
