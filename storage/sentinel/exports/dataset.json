@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T05:09:33+00:00",
+  "generated_at": "2026-11-15T09:02:04+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -1393,11 +1393,11 @@
       "url": "https://github.com/arnold117/iOS-NOIR",
       "ts": 1793934227.0,
       "points": 322,
-      "comments": 62,
+      "comments": 61,
       "author": "arnold117",
       "summary": "No-jailbreak iOS privacy, entitlement, sandbox & telemetry forensic auditor (inspired by Verlintas/NOIR)",
       "recipe": "github_sec",
-      "buzz": 508,
+      "buzz": 505,
       "topics": [
         "ai",
         "security"
@@ -1410,12 +1410,12 @@
       "title": "nestho/impacket-rs",
       "url": "https://github.com/nestho/impacket-rs",
       "ts": 1794373116.0,
-      "points": 90,
+      "points": 91,
       "comments": 13,
       "author": "nestho",
       "summary": "High-performance, memory-safe pure-Rust redesign of Impacket protocols and Active Directory tools for Linux, macOS, and Windows.",
       "recipe": "github_sec",
-      "buzz": 139,
+      "buzz": 140,
       "topics": [
         "dev"
       ],
@@ -1578,12 +1578,12 @@
       "title": "zhidun2027/zhidun",
       "url": "https://github.com/zhidun2027/zhidun",
       "ts": 1794458402.0,
-      "points": 36,
+      "points": 38,
       "comments": 4,
       "author": "zhidun2027",
       "summary": "Android APK hardening — DEX encryption, native shell engine, anti-tamper. Fully documented and auditable.",
       "recipe": "github_sec",
-      "buzz": 58,
+      "buzz": 60,
       "topics": [
         "security"
       ],
@@ -2074,60 +2074,6 @@
       "date": "2026-11-12"
     },
     {
-      "uid": "rss:b7438992801e2a",
-      "source": "rss",
-      "title": "Node.js Fixes 16 Flaws, Including HTTP/2 Bugs That Crash Servers and Leak Other Connections' Data",
-      "url": "https://thehackernews.com/2026/11/nodejs-fixes-16-flaws-including-http2.html",
-      "ts": 1794471637.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "A flaw fixed in Node.js this week lets unauthenticated clients crash servers that use the runtime's built-in HTTP/2 support on the 24.x and 26.x release lines. A second HTTP/2 flaw can cause a server to send a client pieces of its memory, including responses intended for other connections. Fixed versions were released for all three supported lines: 22.23.5, 24.22.3, and 26.13.1. The crash",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "hardware"
-      ],
-      "date": "2026-11-12"
-    },
-    {
-      "uid": "rss:a2f9fe039c16b3",
-      "source": "rss",
-      "title": "Attacker Used 4,837 Hijacked GitHub Accounts to Run a CI Secret Stealer in 1,806+ Repositories",
-      "url": "https://thehackernews.com/2026/11/4837-hijacked-github-accounts-ran-ci.html",
-      "ts": 1794465767.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Starting Tuesday, an attacker used stolen credentials for 4,837 GitHub accounts to plant a secret stealer in repositories those accounts could write to, according to Aikido Security, a security software company. The stealer is built to take the secrets and cloud credentials that a repository's CI workflows can reach. It ran in at least 1,806 repositories, where the attacker has likely collected",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-12"
-    },
-    {
-      "uid": "rss:968c2e5da9a495",
-      "source": "rss",
-      "title": "Critical Apache HTTP/2 Flaw Could Let Unauthenticated Attackers Execute Code Remotely",
-      "url": "https://thehackernews.com/2026/11/critical-apache-http2-flaw-could-let.html",
-      "ts": 1794460346.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "A critical flaw in Apache HTTP Server's HTTP/2 module, mod_http2, can let a remote attacker run code on the server. Tracked as CVE-[phone], it affects versions 2.4.55 through 2.4.70 and is fixed in version 2.4.71, released yesterday. Only servers with HTTP/2 enabled are affected, according to Red Hat, which ships the server as part of Red Hat Enterprise Linux. An attacker who can reach the",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-12"
-    },
-    {
       "uid": "rss:a29bdb614c93f8",
       "source": "rss",
       "title": "Who Runs the Ransomware Group Qilin?",
@@ -2216,6 +2162,60 @@
         "security"
       ],
       "date": "2026-11-09"
+    },
+    {
+      "uid": "rss:b7438992801e2a",
+      "source": "rss",
+      "title": "Node.js Fixes 16 Flaws, Including HTTP/2 Bugs That Crash Servers and Leak Other Connections' Data",
+      "url": "https://thehackernews.com/2026/11/nodejs-fixes-16-flaws-including-http2.html",
+      "ts": 1794471637.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "A flaw fixed in Node.js this week lets unauthenticated clients crash servers that use the runtime's built-in HTTP/2 support on the 24.x and 26.x release lines. A second HTTP/2 flaw can cause a server to send a client pieces of its memory, including responses intended for other connections. Fixed versions were released for all three supported lines: 22.23.5, 24.22.3, and 26.13.1. The crash",
+      "recipe": "hackersnews",
+      "buzz": 10,
+      "topics": [
+        "hardware"
+      ],
+      "date": "2026-11-12"
+    },
+    {
+      "uid": "rss:a2f9fe039c16b3",
+      "source": "rss",
+      "title": "Attacker Used 4,837 Hijacked GitHub Accounts to Run a CI Secret Stealer in 1,806+ Repositories",
+      "url": "https://thehackernews.com/2026/11/4837-hijacked-github-accounts-ran-ci.html",
+      "ts": 1794465767.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Starting Tuesday, an attacker used stolen credentials for 4,837 GitHub accounts to plant a secret stealer in repositories those accounts could write to, according to Aikido Security, a security software company. The stealer is built to take the secrets and cloud credentials that a repository's CI workflows can reach. It ran in at least 1,806 repositories, where the attacker has likely collected",
+      "recipe": "hackersnews",
+      "buzz": 10,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-12"
+    },
+    {
+      "uid": "rss:968c2e5da9a495",
+      "source": "rss",
+      "title": "Critical Apache HTTP/2 Flaw Could Let Unauthenticated Attackers Execute Code Remotely",
+      "url": "https://thehackernews.com/2026/11/critical-apache-http2-flaw-could-let.html",
+      "ts": 1794460346.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "A critical flaw in Apache HTTP Server's HTTP/2 module, mod_http2, can let a remote attacker run code on the server. Tracked as CVE-[phone], it affects versions 2.4.55 through 2.4.70 and is fixed in version 2.4.71, released yesterday. Only servers with HTTP/2 enabled are affected, according to Red Hat, which ships the server as part of Red Hat Enterprise Linux. An attacker who can reach the",
+      "recipe": "hackersnews",
+      "buzz": 10,
+      "topics": [
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-12"
     },
     {
       "uid": "rss:359238dcdbcfcb",
