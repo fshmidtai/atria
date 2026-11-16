@@ -5,7 +5,7 @@
     <link>https://sentinel-post.pages.dev</link>
     <description>Автономная радиостанция кибербезопасности: живые CVE, угрозы и защита — без сенсаций</description>
     <language>ru</language>
-    <lastBuildDate>Mon, 16 Nov 2026 01:41:48 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 16 Nov 2026 05:42:32 GMT</lastBuildDate>
     <item>
       <title>LoopGrubDolmen/wallet-security-desk</title>
       <link>https://sentinel-post.pages.dev/item/loopgrubdolmen-wallet-security-desk.html</link>
@@ -40,6 +40,13 @@
       <guid isPermaLink="true">https://sentinel-post.pages.dev/item/attackers-exploit-unrealircd-flaw-that-enables-server-level-comm.html</guid>
       <pubDate>Sat, 14 Nov 2026 12:38:35 GMT</pubDate>
       <description>The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added a high-severity security flaw impacting UnrealIRCd, an open-source Internet Relay Chat (IRC) server, to its Known Exploited Vulnerabilities (KEV) catalog, following reports of active exploitation. The vulnerability, tra</description>
+    </item>
+    <item>
+      <title>khanh0209q/NextDNS-Config-Set-And-Forget</title>
+      <link>https://sentinel-post.pages.dev/item/khanh0209q-nextdns-config-set-and-forget.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/khanh0209q-nextdns-config-set-and-forget.html</guid>
+      <pubDate>Sat, 14 Nov 2026 04:35:51 GMT</pubDate>
+      <description>A zero-breakage, set-and-forget NextDNS configuration for Home &amp; Office</description>
     </item>
     <item>
       <title>CVE-2026-126299: NLTK: Quadratic-time CPU denial of service in CCG lexicon parser (fromstring) on wide bracket bodies and operator chains</title>
@@ -251,15 +258,6 @@ OpenTelemetry Go eagerly materializes W3C baggage metadata into property objects
       <description>Severity: medium. ## Summary
 
 The `AttributeValueLengthLimit` span/log-record limit can be bypassed entirely with attribute values that consist of valid U+FFFD (REPLACEMENT CHARACTER) runes. The counting-based truncation introduced by the fix for GHSA-p9f8-wvj8-2fg8 (commit `e016a78c9`, first releas</description>
-    </item>
-    <item>
-      <title>CVE-2026-128084: sqlite3-ruby: Possible SQL query truncation when a string is 4 GiB or larger</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-128084-sqlite3-ruby-possible-sql-query-truncation-when-.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-128084-sqlite3-ruby-possible-sql-query-truncation-when-.html</guid>
-      <pubDate>Fri, 13 Nov 2026 18:57:58 GMT</pubDate>
-      <description>Severity: medium. ### Summary
-
-sqlite3-ruby cast Ruby string lengths (`long`) to `int` before passing them to SQLite. On 64-bit platforms, a string of 4 GiB (2^32 bytes) or larger had its length wrap, so SQLite saw only the first `length mod 2^32` bytes. An attacker who controls the length of a SQL </description>
     </item>
   </channel>
 </rss>
