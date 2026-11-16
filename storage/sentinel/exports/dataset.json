@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T10:20:32+00:00",
+  "generated_at": "2026-11-16T15:23:11+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -26,13 +26,13 @@
       "krebs": 10
     },
     "by_topic": {
-      "security": 106,
-      "ai": 66,
+      "security": 107,
+      "ai": 75,
       "dev": 47,
-      "hardware": 29,
+      "hardware": 30,
       "biz": 9,
-      "science": 7,
-      "crypto": 6
+      "crypto": 7,
+      "science": 6
     },
     "top_domains": [
       [
@@ -265,6 +265,191 @@
       "date": "2021-01-11"
     },
     {
+      "uid": "cve:GHSA-m9j8-jcmv-hp69",
+      "source": "cve",
+      "title": "CVE-2026-128118: SvelteKit: Build-time server-only module import guard could fail, resulting in server secrets being statically replaced in client bundle",
+      "url": "https://github.com/advisories/GHSA-m9j8-jcmv-hp69",
+      "ts": 1794841140.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "@sveltejs/kit",
+      "summary": "Severity: high. Under certain circumstances, server-only imports, which typically cannot be included in the client bundle, could make their way into it, potentially exposing secrets. This could only occur when those server-only imports were made through `src/params.js`.",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "ai",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-16"
+    },
+    {
+      "uid": "cve:GHSA-3r8g-jcqq-3p5j",
+      "source": "cve",
+      "title": "CVE-2026-128120: SvelteKit: DoS while parsing form data from a remote functions `form`",
+      "url": "https://github.com/advisories/GHSA-3r8g-jcqq-3p5j",
+      "ts": 1794841055.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "@sveltejs/kit",
+      "summary": "Severity: high. This only affects applications using the experimental remote functions flag and utilizing the `form`, `query`, or `command` remote functions. A specially-crafted request could block the event loop for extended periods of time during parsing.",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-11-16"
+    },
+    {
+      "uid": "cve:GHSA-jm3w-gw2p-xjfj",
+      "source": "cve",
+      "title": "CVE-2026-128124: AIOHTTP: Event loop stall in add_domain() wildcard matching",
+      "url": "https://github.com/advisories/GHSA-jm3w-gw2p-xjfj",
+      "ts": 1794840995.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "aiohttp",
+      "summary": "Severity: high. ### Summary\n\n`Application.add_domain()` compiled each `*` in a host mask to `[^:]*`. With two or more wildcards in a mask, matching a long `Host` header that does not match the mask took polynomial time on the event loop.\n\n### Impact\n\nAn attacker could stall a server that registers a domain mask wit",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "ai",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-16"
+    },
+    {
+      "uid": "cve:GHSA-xgw8-8ccx-rmqh",
+      "source": "cve",
+      "title": "CVE-2026-128126: AIOHTTP: Too many URL-encoded form fields block the event loop",
+      "url": "https://github.com/advisories/GHSA-xgw8-8ccx-rmqh",
+      "ts": 1794840850.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "aiohttp",
+      "summary": "Severity: high. ### Summary\n\n`Request.post()` had no limit on the number of fields in a URL-encoded form body. Inserting a large number of repeated keys into a `MultiDict` took quadratic time on the event loop.\n\n### Impact\n\nAn attacker could block the event loop with a form POST within the default `client_max_size`",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-16"
+    },
+    {
+      "uid": "cve:GHSA-24c4-3p7v-29cm",
+      "source": "cve",
+      "title": "CVE-2026-128127: AIOHTTP: Base64 multipart parts bypass client_max_size",
+      "url": "https://github.com/advisories/GHSA-24c4-3p7v-29cm",
+      "ts": 1794840792.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "aiohttp",
+      "summary": "Severity: high. ### Summary\n\nWhen reading a multipart part with `Content-Transfer-Encoding: base64`, `BodyPartReader.read_chunk()` kept reading until the chunk length was a multiple of 4, with no byte limit. A part with a short `Content-Length`, or a long run of whitespace, could cause the entire remaining body to",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "ai",
+        "dev",
+        "science",
+        "security"
+      ],
+      "date": "2026-11-16"
+    },
+    {
+      "uid": "cve:GHSA-3rp8-rxj8-mvjw",
+      "source": "cve",
+      "title": "CVE-2026-128128: AIOHTTP: WebSocket max_msg_size bypass via integer overflow",
+      "url": "https://github.com/advisories/GHSA-3rp8-rxj8-mvjw",
+      "ts": 1794840760.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "aiohttp",
+      "summary": "Severity: high. ### Summary\n\nThe `max_msg_size` check in the WebSocket reader added the declared frame length to the size of the partial message already buffered. In the C extension this addition is 64-bit arithmetic, so a declared length close to 2**63 overflowed and the check passed.\n\n### Impact\n\nAn attacker coul",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-16"
+    },
+    {
+      "uid": "cve:GHSA-pw86-h8fm-j323",
+      "source": "cve",
+      "title": "CVE-2026-128129: AIOHTTP: Unbounded buffering of data received during an upgrade request",
+      "url": "https://github.com/advisories/GHSA-pw86-h8fm-j323",
+      "ts": 1794840725.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "aiohttp",
+      "summary": "Severity: high. ### Summary\n\nWhile a request flagged as an upgrade (e.g. a WebSocket handshake) was being handled, all further data received on the connection was buffered with no size limit or flow control until the handler completed.\n\n### Impact\n\nAn attacker could cause unbounded memory use by streaming data behi",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-16"
+    },
+    {
+      "uid": "cve:GHSA-28qf-cpwq-vmc2",
+      "source": "cve",
+      "title": "CVE-2026-128130: AIOHTTP: Pure-Python parser request replay and buffer growth behind a declined upgrade",
+      "url": "https://github.com/advisories/GHSA-28qf-cpwq-vmc2",
+      "ts": 1794840713.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "aiohttp",
+      "summary": "Severity: high. ### Summary\n\nWhen the pipelined request queue was full, the pure-Python parser stored the unparsed remainder internally and also returned it to the caller. After a handler declined an upgrade request, the buffered data was re-fed, so the buffer grew with each handled request and already-handled requ",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-16"
+    },
+    {
+      "uid": "cve:GHSA-h4cc-hm5h-fmm9",
+      "source": "cve",
+      "title": "CVE-2026-128131: AIOHTTP: Concatenated compressed streams cause excessive CPU use",
+      "url": "https://github.com/advisories/GHSA-h4cc-hm5h-fmm9",
+      "ts": 1794840687.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "aiohttp",
+      "summary": "Severity: high. ### Summary\n\nWhen decompressing a payload made up of many concatenated compressed members (gzip, deflate or zstd), each member was decoded by passing the entire remaining input to a new decompressor, resulting in quadratic CPU time. Empty members produce no output, so `client_max_size` and output ba",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "ai",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-16"
+    },
+    {
+      "uid": "cve:GHSA-5rmc-48h2-hvcm",
+      "source": "cve",
+      "title": "CVE-2026-128132: AIOHTTP: WebSocket receive queue limits bypassed by small or compressed messages",
+      "url": "https://github.com/advisories/GHSA-5rmc-48h2-hvcm",
+      "ts": 1794840661.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "aiohttp",
+      "summary": "Severity: high. ### Summary\n\nThe WebSocket reader continued parsing frames already received after the receive queue had paused the transport, and empty messages were not counted towards the queue size. With permessage-deflate, a single read of compressed frames could add many megabytes of decompressed messages to t",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-16"
+    },
+    {
       "uid": "hn:50172041",
       "source": "hn",
       "title": "Security advisory: Critical remote code execution vulnerabilities, update now",
@@ -390,60 +575,6 @@
       "topics": [
         "ai",
         "dev",
-        "security"
-      ],
-      "date": "2026-11-13"
-    },
-    {
-      "uid": "cve:GHSA-vvf4-9x63-8xvv",
-      "source": "cve",
-      "title": "CVE-2026-128089: dnspython has excessive memory and CPU use",
-      "url": "https://github.com/advisories/GHSA-vvf4-9x63-8xvv",
-      "ts": 1794601153.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "dnspython",
-      "summary": "Severity: high. ### Summary\n\nA maliciously crafted zone file could use a WKS record to consume excessive memory and CPU, possibly causing the process to exit due to memory exhaustion.\n\n### Details\n\nThe `from_text()` parser does not check that a WKS record service number is between 0 and 65535 inclusive.  It then us",
-      "recipe": "gh_advisories",
-      "buzz": 3530,
-      "topics": [
-        "ai",
-        "dev",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-13"
-    },
-    {
-      "uid": "cve:GHSA-6vhm-j9h7-f9gh",
-      "source": "cve",
-      "title": "CVE-2026-128082: AutoMapper: Uncontrolled Recursion with Constructor Parameters",
-      "url": "https://github.com/advisories/GHSA-6vhm-j9h7-f9gh",
-      "ts": 1794597662.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "AutoMapper",
-      "summary": "Severity: high. ### Summary\n`MaxDepth`, whether set explicitly or applied by default (64) to self-referential type maps, was not enforced when the recursion goes through constructor parameters. Mapping a deeply nested source to a destination built through its constructor, such as a positional `record`, recurses wit",
-      "recipe": "gh_advisories",
-      "buzz": 3530,
-      "topics": [
-        "security"
-      ],
-      "date": "2026-11-13"
-    },
-    {
-      "uid": "cve:GHSA-gpwp-5797-mjff",
-      "source": "cve",
-      "title": "CVE-2026-128081: AutoMapper: Denial of Service via uncontrolled recursion that bypasses MaxDepth",
-      "url": "https://github.com/advisories/GHSA-gpwp-5797-mjff",
-      "ts": 1794595637.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "AutoMapper",
-      "summary": "Severity: high. ### Summary\nThe default and explicit `MaxDepth` limits added for CVE-[phone] don't apply to several mapping paths. Mapping a deeply nested source through any of them recurses without bound and throws a `StackOverflowException`, which can't be caught and terminates the process.\n\n### Affected paths",
-      "recipe": "gh_advisories",
-      "buzz": 3530,
-      "topics": [
         "security"
       ],
       "date": "2026-11-13"
@@ -742,6 +873,159 @@
       "date": "2020-09-30"
     },
     {
+      "uid": "cve:GHSA-96x6-fvhx-49hg",
+      "source": "cve",
+      "title": "CVE-2026-128075: Nuxt exposes the message and data of unhandled errors thrown during server rendering",
+      "url": "https://github.com/advisories/GHSA-96x6-fvhx-49hg",
+      "ts": 1794841286.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "nuxt",
+      "summary": "Severity: medium. ### Summary\n\nWhen a page, plugin or route middleware throws an error that is not an HTTP error, Nuxt wraps it with `createError` before rendering the error page. The wrapped error was treated as one the app raised deliberately, so in production its `message` and `data` were sent to the client in the",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-16"
+    },
+    {
+      "uid": "cve:GHSA-r9jc-w898-3fv6",
+      "source": "cve",
+      "title": "CVE-2026-128074: Nuxt payload URL generation has quadratic cost for repeated slashes in the request path",
+      "url": "https://github.com/advisories/GHSA-r9jc-w898-3fv6",
+      "ts": 1794841241.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "nuxt",
+      "summary": "Severity: medium. ### Summary\n\nNuxt strips trailing slashes from the request path with a regular expression whose cost grows quadratically with the length of a run of consecutive slashes. A single unauthenticated request with a long run of slashes can occupy the server's event loop for a noticeable time, delaying eve",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "science",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-16"
+    },
+    {
+      "uid": "cve:GHSA-f3x9-2chm-73c8",
+      "source": "cve",
+      "title": "CVE-2026-128071: Nuxt: Incomplete fix for GHSA-6gq8-jgmh-3ffp: an encoded slash (`%2F`) in the request path bypasses route rules on catch-all page routes",
+      "url": "https://github.com/advisories/GHSA-f3x9-2chm-73c8",
+      "ts": 1794841185.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "nuxt",
+      "summary": "Severity: medium. ### Summary\n\nNuxt matches route rules against the request path with encoded slashes (`%2F`) left encoded, while the page router decodes them into route params. A request that spells a slash as `%2F` can therefore render a page through a catch-all route without the route rules configured for the path",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-16"
+    },
+    {
+      "uid": "cve:GHSA-5pv8-vvhc-h7jv",
+      "source": "cve",
+      "title": "CVE-2026-128125: AIOHTTP: Unbounded cookie storage in client CookieJar",
+      "url": "https://github.com/advisories/GHSA-5pv8-vvhc-h7jv",
+      "ts": 1794840906.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "aiohttp",
+      "summary": "Severity: medium. ### Summary\n\n`Set-Cookie` parsing created additional cookies from unrecognised `name=value` attributes, and `CookieJar` had no limit on the number of cookies stored or sent. A server could make the client store a very large number of cookies and generate very large `Cookie` headers.\n\n### Impact\n\nA m",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "science",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-16"
+    },
+    {
+      "uid": "cve:GHSA-6cf5-gc4q-fm3x",
+      "source": "cve",
+      "title": "CVE-2026-128119: SvelteKit: Private `query.batch` functions could collide, producing unexpected parameter / function combinations",
+      "url": "https://github.com/advisories/GHSA-6cf5-gc4q-fm3x",
+      "ts": 1794840543.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "@sveltejs/kit",
+      "summary": "Severity: medium. Under certain circumstances, private (non-exported) `query.batch` functions could end up sharing a batch, resulting in the arguments from one function being passed to another. This only affects apps using the experimental remote functions flag and non-exported `query.batch` functions.",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-16"
+    },
+    {
+      "uid": "cve:GHSA-rqp5-r3wg-vg35",
+      "source": "cve",
+      "title": "CVE-2026-128116: SvelteKit: Protocol-relative module import during server-side route resolution allows cross-origin script execution",
+      "url": "https://github.com/advisories/GHSA-rqp5-r3wg-vg35",
+      "ts": 1794840534.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "@sveltejs/kit",
+      "summary": "Severity: medium. If an attacker could, using some form of social engineering or other exploit, get a user to use client-side navigation to navigate to a specially-crafted link, the attacker could cause code from another domain to be imported and run on the user's machine. This only affected apps with `router.resolut",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "dev",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-16"
+    },
+    {
+      "uid": "cve:GHSA-xmfg-f9cm-w86q",
+      "source": "cve",
+      "title": "CVE-2026-126302: NLTK: Symlink escape in chat80.sql_query bypasses the pathsec data-root sandbox to read out-of-root SQLite databases",
+      "url": "https://github.com/advisories/GHSA-xmfg-f9cm-w86q",
+      "ts": 1794840443.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "nltk",
+      "summary": "Severity: medium. ## Summary\n\n`nltk.sem.chat80.sql_query()` opens a SQLite database by handing the result of `nltk.data.find(dbname)` straight to `sqlite3.connect()` without the path-containment check that the NLTK data sandbox (`nltk.pathsec`) is meant to enforce. `nltk.data.find()` applies only lexical checks to th",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-16"
+    },
+    {
+      "uid": "cve:GHSA-59f9-gqg8-mqpj",
+      "source": "cve",
+      "title": "CVE-2026-126296: NLTK: Path Traversal in save_maxent_params / load_maxent_params Allow Arbitrary File READ/WRITE",
+      "url": "https://github.com/advisories/GHSA-59f9-gqg8-mqpj",
+      "ts": 1794840385.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "nltk",
+      "summary": "Severity: medium. ### Summary\nPath traversal in NLTK's save_maxent_params() and load_maxent_params() allows arbitrary file write and arbitrary file read outside the directories permitted by NLTK's pathsec security mechanism.\n\nThis vulnerability was previously reported through Huntr, accepted by the NLTK project, and",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-16"
+    },
+    {
       "uid": "hn:48166459",
       "source": "hn",
       "title": "Mozilla to UK regulators: VPNs are essential privacy and security tools",
@@ -813,7 +1097,7 @@
     {
       "uid": "cve:GHSA-gpwc-27cw-rh9r",
       "source": "cve",
-      "title": "GHSA-gpwc-27cw-rh9r: NLTK: Quadratic CPU exhaustion in LegalitySyllableTokenizer.tokenize via unguarded onset reversal loop",
+      "title": "CVE-2026-126301: NLTK: Quadratic CPU exhaustion in LegalitySyllableTokenizer.tokenize via unguarded onset reversal loop",
       "url": "https://github.com/advisories/GHSA-gpwc-27cw-rh9r",
       "ts": 1794604594.0,
       "points": 1800,
@@ -825,6 +1109,7 @@
       "topics": [
         "ai",
         "crypto",
+        "security",
         "hardware"
       ],
       "date": "2026-11-13"
@@ -846,225 +1131,6 @@
         "crypto",
         "security",
         "hardware"
-      ],
-      "date": "2026-11-13"
-    },
-    {
-      "uid": "cve:GHSA-mw6w-2fmv-pvw3",
-      "source": "cve",
-      "title": "CVE-2026-128117: SvelteKit: adapter-node crashes with an unhandled URIError when `reroute` rewrites malformed pathnames",
-      "url": "https://github.com/advisories/GHSA-mw6w-2fmv-pvw3",
-      "ts": 1794603104.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "@sveltejs/kit",
-      "summary": "Severity: medium. When `reroute` turned an invalid percent-encoded path into a valid path, it could potentially trigger a comparison that would crash the server.",
-      "recipe": "gh_advisories",
-      "buzz": 1830,
-      "topics": [
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-13"
-    },
-    {
-      "uid": "cve:GHSA-jf9x-2fg2-hx4w",
-      "source": "cve",
-      "title": "CVE-2026-128121: SvelteKit: Prerendered paths are interpreted as regular expressions in Vercel route config generated by @sveltejs/adapter-vercel and @sveltejs/adapter-static",
-      "url": "https://github.com/advisories/GHSA-jf9x-2fg2-hx4w",
-      "ts": 1794602603.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "@sveltejs/adapter-vercel",
-      "summary": "Severity: medium. If an attacker could influence a link that was crawled during the prerender phase, that link could later be interpreted as a regex in the Vercel routing configuration.",
-      "recipe": "gh_advisories",
-      "buzz": 1830,
-      "topics": [
-        "science",
-        "security"
-      ],
-      "date": "2026-11-13"
-    },
-    {
-      "uid": "cve:GHSA-5wg4-q3ww-283h",
-      "source": "cve",
-      "title": "CVE-2026-128122: SvelteKit: Prerendered redirect paths can inject arbitrary rules into the `_redirects` file generated by `@sveltejs/adapter-cloudflare`",
-      "url": "https://github.com/advisories/GHSA-5wg4-q3ww-283h",
-      "ts": 1794602355.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "@sveltejs/adapter-cloudflare",
-      "summary": "Severity: medium. If an attacker can influence the links crawled during prerendering, they can influence the redirects entries that are added to the Cloudflare platform redirects generated during the adapt phase of the build.",
-      "recipe": "gh_advisories",
-      "buzz": 1830,
-      "topics": [
-        "science",
-        "security"
-      ],
-      "date": "2026-11-13"
-    },
-    {
-      "uid": "cve:GHSA-rqw3-x7hx-mm3p",
-      "source": "cve",
-      "title": "CVE-2026-128123: SvelteKit: `@sveltejs/adapter-node` crashes when proxying certain requests via `fetch`",
-      "url": "https://github.com/advisories/GHSA-rqw3-x7hx-mm3p",
-      "ts": 1794602213.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "@sveltejs/adapter-node",
-      "summary": "Severity: medium. In affected versions, `@sveltejs/adapter-node` can attempt to add a header to an immutable request in a context that causes the server to crash, denying service to any other requests routed to that server.",
-      "recipe": "gh_advisories",
-      "buzz": 1830,
-      "topics": [
-        "ai",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-13"
-    },
-    {
-      "uid": "cve:GHSA-r99w-jh2x-3mg9",
-      "source": "cve",
-      "title": "CVE-2026-128077: Nuxt: Incomplete fix for GHSA-9v7c-q64q-vv33: a leading `//` in the request path bypasses `server/middleware` path checks and server route rules on page routes",
-      "url": "https://github.com/advisories/GHSA-r99w-jh2x-3mg9",
-      "ts": 1794598341.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "@nuxt/nitro-server",
-      "summary": "Severity: medium. ### Summary\n\nSince `4.6.0`, Nuxt parses a request path that starts with `//` as a URL with a host before rendering a page, so `//x/admin` renders the page at `/admin`. Nitro's routing, Nitro's route rules and `server/middleware` see the path as `//x/admin`, so server-side checks keyed on `/admin` do",
-      "recipe": "gh_advisories",
-      "buzz": 1830,
-      "topics": [
-        "dev",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-13"
-    },
-    {
-      "uid": "cve:GHSA-3v2p-hm54-8qcq",
-      "source": "cve",
-      "title": "CVE-2026-128080: OpenTelemetry JavaScript: Insertion of Sensitive Information into Log File and Exposure of Sensitive Information to an Unauthorized Actor in @opentelemetry/instrumentation-http",
-      "url": "https://github.com/advisories/GHSA-3v2p-hm54-8qcq",
-      "ts": 1794598160.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "@opentelemetry/instrumentation-http",
-      "summary": "Severity: medium. ### Summary\n\n`@opentelemetry/instrumentation-http` redacts sensitive URL query parameters on **outgoing (client) spans** but not on **incoming (server) spans**. The server-span path writes the raw query string verbatim into the `url.query` attribute, so credentials embedded in inbound request URLs —",
-      "recipe": "gh_advisories",
-      "buzz": 1830,
-      "topics": [
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-13"
-    },
-    {
-      "uid": "cve:GHSA-rrfc-gjm9-cgrj",
-      "source": "cve",
-      "title": "CVE-2026-128086: OpenTelemetry-Go: Eager W3C baggage-property materialization causes bounded memory-allocation amplification",
-      "url": "https://github.com/advisories/GHSA-rrfc-gjm9-cgrj",
-      "ts": 1794596890.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "go.opentelemetry.io/otel/baggage",
-      "summary": "Severity: medium. ## Summary\n\nOpenTelemetry Go eagerly materializes W3C baggage metadata into property objects during parsing. Slice growth, serialization, and copying into the internal representation cause **bounded but disproportionate memory-allocation amplification** for a valid, densely populated header. In v1.4",
-      "recipe": "gh_advisories",
-      "buzz": 1830,
-      "topics": [
-        "science",
-        "security"
-      ],
-      "date": "2026-11-13"
-    },
-    {
-      "uid": "cve:GHSA-q7gw-24fr-5p69",
-      "source": "cve",
-      "title": "CVE-2026-128085: opentelemetry-go: AttributeValueLengthLimit is fully bypassed by attribute values composed of valid U+FFFD runes",
-      "url": "https://github.com/advisories/GHSA-q7gw-24fr-5p69",
-      "ts": 1794596455.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "go.opentelemetry.io/otel/sdk",
-      "summary": "Severity: medium. ## Summary\n\nThe `AttributeValueLengthLimit` span/log-record limit can be bypassed entirely with attribute values that consist of valid U+FFFD (REPLACEMENT CHARACTER) runes. The counting-based truncation introduced by the fix for GHSA-p9f8-wvj8-2fg8 (commit `e016a78c9`, first released in v1.33.0) has",
-      "recipe": "gh_advisories",
-      "buzz": 1830,
-      "topics": [
-        "security"
-      ],
-      "date": "2026-11-13"
-    },
-    {
-      "uid": "cve:GHSA-4fqr-96q8-xrfx",
-      "source": "cve",
-      "title": "CVE-2026-128084: sqlite3-ruby: Possible SQL query truncation when a string is 4 GiB or larger",
-      "url": "https://github.com/advisories/GHSA-4fqr-96q8-xrfx",
-      "ts": 1794596278.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "sqlite3",
-      "summary": "Severity: medium. ### Summary\n\nsqlite3-ruby cast Ruby string lengths (`long`) to `int` before passing them to SQLite. On 64-bit platforms, a string of 4 GiB (2^32 bytes) or larger had its length wrap, so SQLite saw only the first `length mod 2^32` bytes. An attacker who controls the length of a SQL string could trunc",
-      "recipe": "gh_advisories",
-      "buzz": 1830,
-      "topics": [
-        "security"
-      ],
-      "date": "2026-11-13"
-    },
-    {
-      "uid": "cve:GHSA-r3h5-4585-7x3w",
-      "source": "cve",
-      "title": "CVE-2026-126364: Astro: Image endpoint in @astrojs/node can read files from a case-variant sibling of the output directory on case-sensitive filesystems",
-      "url": "https://github.com/advisories/GHSA-r3h5-4585-7x3w",
-      "ts": 1794594959.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "@astrojs/node",
-      "summary": "Severity: medium. ## Summary\n\nThe `/_image` endpoint used by the `@astrojs/node` adapter checks that a requested local image is inside the build output directory before reading it from disk. That check compared paths case-insensitively. On case-sensitive filesystems (such as Linux), a directory whose path differs fro",
-      "recipe": "gh_advisories",
-      "buzz": 1830,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-13"
-    },
-    {
-      "uid": "cve:GHSA-mjrq-cffv-q4qc",
-      "source": "cve",
-      "title": "CVE-2026-128070: Nuxt dev server serves files from a parent directory with a stray lockfile or workspace file",
-      "url": "https://github.com/advisories/GHSA-mjrq-cffv-q4qc",
-      "ts": 1794593509.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "@nuxt/schema",
-      "summary": "Severity: medium. ### Summary\n\nNuxt can pick a parent directory that does not declare a workspace as its default `workspaceDir`: the farthest directory with a lockfile when the project is not inside a git repository, or the farthest directory with a `pnpm-workspace.yaml` or `deno.json` file, even one that only holds",
-      "recipe": "gh_advisories",
-      "buzz": 1830,
-      "topics": [
-        "ai",
-        "dev",
-        "science",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-13"
-    },
-    {
-      "uid": "cve:GHSA-h7wh-q2qr-458c",
-      "source": "cve",
-      "title": "CVE-2026-128069: rails-html-sanitizer: Possible XSS via shared scrubber state in concurrent calls",
-      "url": "https://github.com/advisories/GHSA-h7wh-q2qr-458c",
-      "ts": 1794593356.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "rails-html-sanitizer",
-      "summary": "Severity: medium. ## Summary\n\n`Rails::HTML::SafeListSanitizer` (both the HTML4 and HTML5 variants) shares one `Rails::HTML::PermitScrubber` across every `sanitize` call on the same instance, assigning its `tags` and `attributes` on each call without synchronization. Two concurrent `sanitize` calls with different `tag",
-      "recipe": "gh_advisories",
-      "buzz": 1830,
-      "topics": [
-        "ai",
-        "security"
       ],
       "date": "2026-11-13"
     },
@@ -1276,6 +1342,43 @@
       "date": "2019-07-18"
     },
     {
+      "uid": "cve:GHSA-hf59-9xwc-2g4p",
+      "source": "cve",
+      "title": "CVE-2026-128076: Nuxt: Colliding island props can share one `/__nuxt_island` path (incomplete fix for CVE-2026-46342)",
+      "url": "https://github.com/advisories/GHSA-hf59-9xwc-2g4p",
+      "ts": 1794841342.0,
+      "points": 700,
+      "comments": 0,
+      "author": "nuxt",
+      "summary": "Severity: low. ### Summary\n\nThe fix for CVE-[phone] (GHSA-g8wj-3cr3-6w7v) binds each `/__nuxt_island/<Name>_<hash>.json` path to its props by hashing the `(name, props, context, source)` tuple. That hash was computed over `ohash`'s serialization, which does not escape quotes inside strings or delimiters inside",
+      "recipe": "gh_advisories",
+      "buzz": 780,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-16"
+    },
+    {
+      "uid": "cve:GHSA-x2wv-5868-p7v2",
+      "source": "cve",
+      "title": "CVE-2026-128072: @nuxt/webpack-builder and @nuxt/rspack-builder dev server serves built source to DNS rebinding pages",
+      "url": "https://github.com/advisories/GHSA-x2wv-5868-p7v2",
+      "ts": 1794841209.0,
+      "points": 700,
+      "comments": 0,
+      "author": "@nuxt/webpack-builder",
+      "summary": "Severity: low. ### Summary\n\nWhen using the webpack or rspack builder, the dev server serves built client chunks to any request whose `Host` header matches its `Origin`/`Referer`, or that carries `Sec-Fetch-Site: same-origin`. After a DNS rebinding attack both headers name the attacker's hostname, so a malicious pa",
+      "recipe": "gh_advisories",
+      "buzz": 780,
+      "topics": [
+        "dev",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-16"
+    },
+    {
       "uid": "cve:GHSA-pp88-jhwj-5qh5",
       "source": "cve",
       "title": "CVE-2026-62683: File Browser: Trailing-slash directory deletion leaves public shares active for recreated paths",
@@ -1285,98 +1388,6 @@
       "comments": 0,
       "author": "github.com/filebrowser/filebrowser/v2",
       "summary": "Severity: low. ## Summary\n\nFile Browser v2.63.15 can leave a public directory share behind when the shared directory is deleted through a path with a trailing slash. The share cleanup path calls `DeleteWithPathPrefix(file.Path, userID)`, but the Bolt backend performs the database prefix query with the unnormalized",
-      "recipe": "gh_advisories",
-      "buzz": 730,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-13"
-    },
-    {
-      "uid": "cve:GHSA-5cjw-f85j-cv6r",
-      "source": "cve",
-      "title": "CVE-2026-126347: Tornado: Open redirect via triple-slash redirect paths",
-      "url": "https://github.com/advisories/GHSA-5cjw-f85j-cv6r",
-      "ts": 1794601882.0,
-      "points": 700,
-      "comments": 0,
-      "author": "tornado",
-      "summary": "Severity: low. ### Summary\n\nDue to differences in the way browsers and Python's `urllib` parse urls, browsers treat a string starting with three or more slashes as a protocol-level redirect, while `urllib` does not. This means that the 6.6.0 fix for the RedirectHandler open redirect (CVE-[phone], commit cc75ab",
-      "recipe": "gh_advisories",
-      "buzz": 730,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-13"
-    },
-    {
-      "uid": "cve:GHSA-9264-jvgf-6w2f",
-      "source": "cve",
-      "title": "CVE-2026-128087: russh kex_done: Shared-secret callback runs before server host-key verification",
-      "url": "https://github.com/advisories/GHSA-9264-jvgf-6w2f",
-      "ts": 1794597616.0,
-      "points": 700,
-      "comments": 0,
-      "author": "russh",
-      "summary": "Severity: low. ### Summary\n\nA malicious SSH server whose host key is rejected can still cause russh's `client::Handler::kex_done()` callback to execute with the raw key-exchange shared secret. Applications using the callback for its documented protocol-bridging purpose may derive keys, initialize a secondary data",
-      "recipe": "gh_advisories",
-      "buzz": 730,
-      "topics": [
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-13"
-    },
-    {
-      "uid": "cve:GHSA-736f-c93q-9fwx",
-      "source": "cve",
-      "title": "CVE-2026-128088: russh try_sign: asynchronous confirmation can sign after agent lock",
-      "url": "https://github.com/advisories/GHSA-736f-c93q-9fwx",
-      "ts": 1794597046.0,
-      "points": 700,
-      "comments": 0,
-      "author": "russh",
-      "summary": "Severity: low. ### Summary\n\nIn russh `0.65.0`, a sign request for a confirmation-constrained key can retain\nand use the private key after another connection locks the agent. `try_sign()`\nsnapshots an `Arc<PrivateKey>` before awaiting `Agent::confirm()` and does not\nrevalidate the shared lock state after the await.",
-      "recipe": "gh_advisories",
-      "buzz": 730,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-13"
-    },
-    {
-      "uid": "cve:GHSA-63hm-g96r-2m2q",
-      "source": "cve",
-      "title": "CVE-2026-128083: Laravel: Task Output Injection - Concurrency Process",
-      "url": "https://github.com/advisories/GHSA-63hm-g96r-2m2q",
-      "ts": 1794596071.0,
-      "points": 700,
-      "comments": 0,
-      "author": "laravel/framework",
-      "summary": "Severity: low. ### Summary\n\nIf a concurrency task prints user-controlled text, an attacker can forge the framework's internal result message and achieve remote code execution in certain conditions\n\n### Pre-reqs\n\nInsecure code and insecure handling of user provided input (devs trust user-provided input) :\n\n1. App h",
-      "recipe": "gh_advisories",
-      "buzz": 730,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-13"
-    },
-    {
-      "uid": "cve:GHSA-mh32-jxcr-mh9f",
-      "source": "cve",
-      "title": "CVE-2026-126361: Astro: XSS via attribute injection in dynamic tag names",
-      "url": "https://github.com/advisories/GHSA-mh32-jxcr-mh9f",
-      "ts": 1794595194.0,
-      "points": 700,
-      "comments": 0,
-      "author": "astro",
-      "summary": "Severity: low. ## Summary\n\nWhen a dynamic tag (`const Tag = ...; <Tag />`) resolves to a string, Astro renders it as a raw HTML element name. The name was filtered to remove characters that could inject attributes, but the filter did not handle `/`. Because HTML parsers treat `/` inside a tag as an attribute separ",
       "recipe": "gh_advisories",
       "buzz": 730,
       "topics": [
@@ -1423,36 +1434,36 @@
       "date": "2026-11-15"
     },
     {
-      "uid": "gh:nestho/impacket-rs",
-      "source": "github",
-      "title": "nestho/impacket-rs",
-      "url": "https://github.com/nestho/impacket-rs",
-      "ts": 1794373116.0,
-      "points": 94,
-      "comments": 13,
-      "author": "nestho",
-      "summary": "High-performance, memory-safe pure-Rust redesign of Impacket protocols and Active Directory tools for Linux, macOS, and Windows.",
-      "recipe": "github_sec",
-      "buzz": 143,
-      "topics": [
-        "dev"
-      ],
-      "date": "2026-11-11"
-    },
-    {
       "uid": "gh:Aabyss-Team/Threat-Broadcast-Plus",
       "source": "github",
       "title": "Aabyss-Team/Threat-Broadcast-Plus",
       "url": "https://github.com/Aabyss-Team/Threat-Broadcast-Plus",
       "ts": 1794800456.0,
-      "points": 37,
-      "comments": 8,
+      "points": 56,
+      "comments": 12,
       "author": "Aabyss-Team",
       "summary": "网络安全威胁情报播报-Plus升级版",
       "recipe": "github_sec",
-      "buzz": 141,
+      "buzz": 172,
       "topics": [],
       "date": "2026-11-16"
+    },
+    {
+      "uid": "gh:nestho/impacket-rs",
+      "source": "github",
+      "title": "nestho/impacket-rs",
+      "url": "https://github.com/nestho/impacket-rs",
+      "ts": 1794373116.0,
+      "points": 95,
+      "comments": 13,
+      "author": "nestho",
+      "summary": "High-performance, memory-safe pure-Rust redesign of Impacket protocols and Active Directory tools for Linux, macOS, and Windows.",
+      "recipe": "github_sec",
+      "buzz": 144,
+      "topics": [
+        "dev"
+      ],
+      "date": "2026-11-11"
     },
     {
       "uid": "gh:raca2024/ashampoo-undelete-recovery",
@@ -1477,31 +1488,14 @@
       "title": "wildorigins/wildos",
       "url": "https://github.com/wildorigins/wildos",
       "ts": 1794169078.0,
-      "points": 88,
+      "points": 90,
       "comments": 5,
       "author": "wildorigins",
       "summary": "A hardened Linux desktop, rebuilt from scratch, with your Windows apps built in. Free and open source.",
       "recipe": "github_sec",
-      "buzz": 103,
+      "buzz": 105,
       "topics": [],
       "date": "2026-11-08"
-    },
-    {
-      "uid": "gh:BowSinceEnt/resocket-elden-ring-cheat-2026-trainer-mod-menu-tools",
-      "source": "github",
-      "title": "BowSinceEnt/resocket-elden-ring-cheat-2026-trainer-mod-menu-tools",
-      "url": "https://github.com/BowSinceEnt/resocket-elden-ring-cheat-2026-trainer-mod-menu-tools",
-      "ts": 1793879929.0,
-      "points": 88,
-      "comments": 0,
-      "author": "BowSinceEnt",
-      "summary": "Elden Ring Cheat 2026 — Single-player modding and gameplay toolkit concept featuring character build optimization, rune planning, weapon upgrades, boss strategies, save management and offline trainer research.",
-      "recipe": "github_sec",
-      "buzz": 88,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-05"
     },
     {
       "uid": "gh:zhidun2027/zhidun",
@@ -1519,6 +1513,80 @@
         "security"
       ],
       "date": "2026-11-12"
+    },
+    {
+      "uid": "rss:139fe93a86c6e7",
+      "source": "rss",
+      "title": "Usable Security at Luxury Hotels",
+      "url": "https://www.schneier.com/blog/archives/2026/11/usable-security-at-luxury-hotels.html",
+      "ts": 1794830718.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Bruce Schneier",
+      "summary": "<p>Interesting <a href=\"https://www.benthamsgaze.org/2026/11/11/phishing-at-the-front-desk-usable-security-in-luxury-hotels/\">case study</a> from luxury hotels. Attackers used a fake booking request to gain access to a reservations inbox, where they copied genuine refund requests and got fraudulent ones approved.</p> <p>This is a good illustration why &#8220;just don&#8217;t click on links&#8221;",
+      "recipe": "schneier",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-16"
+    },
+    {
+      "uid": "rss:d915d3970c878b",
+      "source": "rss",
+      "title": "Six Unpatched Danfoss Refrigeration Controller Flaws Could Allow Remote Takeover Without Login",
+      "url": "https://thehackernews.com/2026/11/six-unpatched-danfoss-refrigeration.html",
+      "ts": 1794832461.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Six flaws in Danfoss AK-SM800A refrigeration controllers could let a remote attacker take over a controller without logging in, Dutch security consultancy Midnight Blue said earlier this week. No patch is available, and the researchers say the newest firmware, version 5.4.0, does not fix the flaws. Government cybersecurity agencies in Belgium, Ireland and Germany told operators this week to",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-16"
+    },
+    {
+      "uid": "rss:be5d8dc6dee516",
+      "source": "rss",
+      "title": "Retadup Worm Resurfaces 7 Years After Takedown to Spread CoffeeLoader Malware",
+      "url": "https://thehackernews.com/2026/11/retadup-worm-resurfaces-7-years-after.html",
+      "ts": 1794832398.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Cybersecurity researchers have disclosed details of a new variant of CoffeeLoader, a malware designed to deliver additional payloads to infected machines. \"On launch, the NSIS-based installer executable dropped a file named '7z.dll' into a temporary directory and ran it through rundll32.exe,\" Kaspersky said in an analysis published today. \"The '7z.dll' file was a patched version of the",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-16"
+    },
+    {
+      "uid": "rss:83c4ecf04b85f1",
+      "source": "rss",
+      "title": "SANSAR Linux Cryptomining Malware Uses Modified NVIDIA Library to Hide GPU Activity",
+      "url": "https://thehackernews.com/2026/11/sansar-linux-cryptomining-malware-uses.html",
+      "ts": 1794821577.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "A financially motivated threat activity cluster tracked as REF3364 has been attributed to a Linux-focused cryptocurrency mining operation that tampers with the readings used to detect high GPU workloads. Central to the intrusion is a toolkit called SANSAR, a Rust-based orchestrator that receives commands over the TOR anonymity network to manage CPU and GPU miners. The activity was observed in",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "dev",
+        "crypto",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-16"
     },
     {
       "uid": "rss:67bb3d5c3273f9",
@@ -1560,23 +1628,6 @@
       "date": "2026-11-16"
     },
     {
-      "uid": "rss:fb43e89fb20d8c",
-      "source": "rss",
-      "title": "Italy Fines Meta €805 Million Over Facebook's Android Gallery Access Without Explicit Consent",
-      "url": "https://thehackernews.com/2026/11/italy-fines-meta-805-million-over.html",
-      "ts": 1794742051.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Meta was fined €805 million in Italy yesterday over a Facebook for Android feature that suggests photos and videos from users' phone galleries for them to post. The Garante, Italy's data protection authority, found that the feature was enabled by default and that the app accessed Italian users' photos, videos, and related metadata without their explicit consent. The company has 60 days to",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "dev"
-      ],
-      "date": "2026-11-15"
-    },
-    {
       "uid": "gh:BountyForge-xyz/pwn-skill",
       "source": "github",
       "title": "BountyForge-xyz/pwn-skill",
@@ -1612,17 +1663,34 @@
       "date": "2026-11-04"
     },
     {
+      "uid": "gh:BowSinceEnt/resocket-elden-ring-cheat-2026-trainer-mod-menu-tools",
+      "source": "github",
+      "title": "BowSinceEnt/resocket-elden-ring-cheat-2026-trainer-mod-menu-tools",
+      "url": "https://github.com/BowSinceEnt/resocket-elden-ring-cheat-2026-trainer-mod-menu-tools",
+      "ts": 1793879929.0,
+      "points": 58,
+      "comments": 0,
+      "author": "BowSinceEnt",
+      "summary": "Elden Ring Cheat 2026 — Single-player modding and gameplay toolkit concept featuring character build optimization, rune planning, weapon upgrades, boss strategies, save management and offline trainer research.",
+      "recipe": "github_sec",
+      "buzz": 58,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-11-05"
+    },
+    {
       "uid": "gh:khanh0209q/NextDNS-Config-Set-And-Forget",
       "source": "github",
       "title": "khanh0209q/NextDNS-Config-Set-And-Forget",
       "url": "https://github.com/khanh0209q/NextDNS-Config-Set-And-Forget",
       "ts": 1794630951.0,
-      "points": 22,
+      "points": 25,
       "comments": 1,
       "author": "khanh0209q",
       "summary": "A zero-breakage, set-and-forget NextDNS configuration for Home & Office",
       "recipe": "github_sec",
-      "buzz": 55,
+      "buzz": 58,
       "topics": [],
       "date": "2026-11-14"
     },
@@ -1632,12 +1700,12 @@
       "title": "NPCmillionaire/unredact.tools",
       "url": "https://github.com/NPCmillionaire/unredact.tools",
       "ts": 1794511431.0,
-      "points": 29,
-      "comments": 0,
+      "points": 32,
+      "comments": 1,
       "author": "NPCmillionaire",
       "summary": "See what your files leak (GPS, serials, authors, failed redactions, deleted text, watermarks), then scrub them.",
       "recipe": "github_sec",
-      "buzz": 39,
+      "buzz": 45,
       "topics": [
         "ai"
       ],
@@ -1678,21 +1746,21 @@
       "date": "2026-11-13"
     },
     {
-      "uid": "rss:1d8b68bb6887db",
+      "uid": "rss:fb43e89fb20d8c",
       "source": "rss",
-      "title": "AI Doesn’t Have to Go Rogue to Break the World",
-      "url": "https://www.schneier.com/blog/archives/2026/11/ai-doesnt-have-to-go-rogue-to-break-the-world.html",
-      "ts": 1794571424.0,
+      "title": "Italy Fines Meta €805 Million Over Facebook's Android Gallery Access Without Explicit Consent",
+      "url": "https://thehackernews.com/2026/11/italy-fines-meta-805-million-over.html",
+      "ts": 1794742051.0,
       "points": 0,
       "comments": 0,
-      "author": "Bruce Schneier",
-      "summary": "<p><em>This essay is adapted from <a href=\"https://www.youtube.com/watch?v=eEBv0STiYhI\">a keynote speech</a> delivered at the DEF CON 34 conference in Las Vegas on August 7, 2026. The essay originally appeared in <a href=\"https://www.schneier.com/essays/archives/2026/11/ai-doesnt-have-to-go-rogue-to-break-the-world.html\">CyberScoop</a>.</em></p> <p>I want to talk about AI hacking. There are three",
-      "recipe": "schneier",
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Meta was fined €805 million in Italy yesterday over a Facebook for Android feature that suggests photos and videos from users' phone galleries for them to post. The Garante, Italy's data protection authority, found that the feature was enabled by default and that the app accessed Italian users' photos, videos, and related metadata without their explicit consent. The company has 60 days to",
+      "recipe": "hackersnews",
       "buzz": 30,
       "topics": [
-        "ai"
+        "dev"
       ],
-      "date": "2026-11-13"
+      "date": "2026-11-15"
     },
     {
       "uid": "rss:5b8a9ede72c818",
@@ -1771,101 +1839,6 @@
       "date": "2026-11-13"
     },
     {
-      "uid": "rss:6518422fdf409b",
-      "source": "rss",
-      "title": "FBI Says North Korean Hackers Stole Over $400 Million in Crypto Using Deepfake Video Calls",
-      "url": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html",
-      "ts": 1794580138.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "The U.S. Federal Bureau of Investigation (FBI) has established that threat actors tied to the Democratic People's Republic of Korea (DPRK aka North Korea) have stolen more than $400 million worth of cryptocurrency as part of a social engineering scheme codenamed FaceStealer in the last 18 months. As part of a coordinated set of actions announced by the U.S. government, the cloud-based",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "dev",
-        "crypto",
-        "biz"
-      ],
-      "date": "2026-11-13"
-    },
-    {
-      "uid": "rss:e01f78786aae3f",
-      "source": "rss",
-      "title": "Trezor Confirms Hidden Implants in CryptoBilis-Sold Wallets That Can Steal Recovery Phrases",
-      "url": "https://thehackernews.com/2026/11/trezor-confirms-hidden-hardware.html",
-      "ts": 1794578060.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Three Trezor Safe 5 wallets bought from the reseller CryptoBilis contain an implant, an extra circuit board that can copy their recovery phrases, hardware wallet maker Trezor said yesterday. The implant reads the phrase from the wallet's screen and sends it over the mobile network to a server controlled by the attackers. The company examined one of the wallets in its lab, identified the other",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "dev",
-        "crypto",
-        "hardware"
-      ],
-      "date": "2026-11-13"
-    },
-    {
-      "uid": "rss:dea5a8ecb640ff",
-      "source": "rss",
-      "title": "When an AI Agent Goes Wrong, Can You Stop It?",
-      "url": "https://thehackernews.com/2026/11/when-ai-agent-goes-wrong-can-you-stop-it.html",
-      "ts": 1794570751.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Suppose an AI agent is asked to sort support tickets and look up account details. A ticket contains instructions that lead the agent to export records to an unfamiliar destination. The agent can make the request because its identity has access to the records and its connected tools allow the action. That kind of scenario raises a response question: what does “stop the agent” actually mean? A",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "dev"
-      ],
-      "date": "2026-11-13"
-    },
-    {
-      "uid": "rss:9e14c9af6278c0",
-      "source": "rss",
-      "title": "SilentAir Hijacks Asian Telecom Networks to Intercept SMS 2FA Codes and Spy on Taiwanese Users",
-      "url": "https://thehackernews.com/2026/11/silentair-hijacks-asian-telecom.html",
-      "ts": 1794568240.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "A newly identified spying group used hacked equipment inside Asian mobile operators to intercept the calls and texts of selected people, mostly in Taiwan. Enea, a telecom and cybersecurity software company based in Stockholm, found the group's attack sources in at least six Asian countries and named it SilentAir this week. It assessed with high confidence that SilentAir is a state-level actor,",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-13"
-    },
-    {
-      "uid": "rss:e06c8e5c15a1fa",
-      "source": "rss",
-      "title": "Operation Endgame Takes Down Gootloader, CastleRAT and StealC Servers, Seizes 6.4M Stolen Logins",
-      "url": "https://thehackernews.com/2026/11/operation-endgame-takes-down-gootloader.html",
-      "ts": 1794567303.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "An international police operation took down servers behind Gootloader, CastleRAT and StealC this week. Criminals used the three malware tools to gain access to computers, steal passwords, and launch ransomware attacks. Police also seized about 6.4 million stolen logins belonging to more than 40,000 victims, according to Germany's Federal Criminal Police Office (BKA). Gootloader is a loader:",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-13"
-    },
-    {
       "uid": "gh:humanethq/airgap-check",
       "source": "github",
       "title": "humanethq/airgap-check",
@@ -1917,6 +1890,23 @@
         "security"
       ],
       "date": "2026-11-10"
+    },
+    {
+      "uid": "rss:1d8b68bb6887db",
+      "source": "rss",
+      "title": "AI Doesn’t Have to Go Rogue to Break the World",
+      "url": "https://www.schneier.com/blog/archives/2026/11/ai-doesnt-have-to-go-rogue-to-break-the-world.html",
+      "ts": 1794571424.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Bruce Schneier",
+      "summary": "<p><em>This essay is adapted from <a href=\"https://www.youtube.com/watch?v=eEBv0STiYhI\">a keynote speech</a> delivered at the DEF CON 34 conference in Las Vegas on August 7, 2026. The essay originally appeared in <a href=\"https://www.schneier.com/essays/archives/2026/11/ai-doesnt-have-to-go-rogue-to-break-the-world.html\">CyberScoop</a>.</em></p> <p>I want to talk about AI hacking. There are three",
+      "recipe": "schneier",
+      "buzz": 10,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-11-13"
     },
     {
       "uid": "rss:e2006326489748",
@@ -1972,23 +1962,99 @@
       "date": "2026-11-10"
     },
     {
-      "uid": "rss:951b96997c00dd",
+      "uid": "rss:6518422fdf409b",
       "source": "rss",
-      "title": "AI Security",
-      "url": "https://www.schneier.com/blog/archives/2026/11/ai-security.html",
-      "ts": 1794225994.0,
+      "title": "FBI Says North Korean Hackers Stole Over $400 Million in Crypto Using Deepfake Video Calls",
+      "url": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html",
+      "ts": 1794580138.0,
       "points": 0,
       "comments": 0,
-      "author": "Bruce Schneier",
-      "summary": "<p>Two weeks ago, I attended the <a href=\"https://unpromptedcon.org/\">[un]prompted</a> AI security conference in San Francisco. It was an excellent event: three days of very dense talks about all aspects of AI security. (My talk was about integrous AI, and I will post it when it is online.)</p> <p>AI security can be divided into three broad topics. It&#8217;s important for researchers to understan",
-      "recipe": "schneier",
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "The U.S. Federal Bureau of Investigation (FBI) has established that threat actors tied to the Democratic People's Republic of Korea (DPRK aka North Korea) have stolen more than $400 million worth of cryptocurrency as part of a social engineering scheme codenamed FaceStealer in the last 18 months. As part of a coordinated set of actions announced by the U.S. government, the cloud-based",
+      "recipe": "hackersnews",
+      "buzz": 10,
+      "topics": [
+        "dev",
+        "crypto",
+        "biz"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "uid": "rss:e01f78786aae3f",
+      "source": "rss",
+      "title": "Trezor Confirms Hidden Implants in CryptoBilis-Sold Wallets That Can Steal Recovery Phrases",
+      "url": "https://thehackernews.com/2026/11/trezor-confirms-hidden-hardware.html",
+      "ts": 1794578060.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Three Trezor Safe 5 wallets bought from the reseller CryptoBilis contain an implant, an extra circuit board that can copy their recovery phrases, hardware wallet maker Trezor said yesterday. The implant reads the phrase from the wallet's screen and sends it over the mobile network to a server controlled by the attackers. The company examined one of the wallets in its lab, identified the other",
+      "recipe": "hackersnews",
+      "buzz": 10,
+      "topics": [
+        "ai",
+        "dev",
+        "crypto",
+        "hardware"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "uid": "rss:dea5a8ecb640ff",
+      "source": "rss",
+      "title": "When an AI Agent Goes Wrong, Can You Stop It?",
+      "url": "https://thehackernews.com/2026/11/when-ai-agent-goes-wrong-can-you-stop-it.html",
+      "ts": 1794570751.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Suppose an AI agent is asked to sort support tickets and look up account details. A ticket contains instructions that lead the agent to export records to an unfamiliar destination. The agent can make the request because its identity has access to the records and its connected tools allow the action. That kind of scenario raises a response question: what does “stop the agent” actually mean? A",
+      "recipe": "hackersnews",
+      "buzz": 10,
+      "topics": [
+        "ai",
+        "dev"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "uid": "rss:9e14c9af6278c0",
+      "source": "rss",
+      "title": "SilentAir Hijacks Asian Telecom Networks to Intercept SMS 2FA Codes and Spy on Taiwanese Users",
+      "url": "https://thehackernews.com/2026/11/silentair-hijacks-asian-telecom.html",
+      "ts": 1794568240.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "A newly identified spying group used hacked equipment inside Asian mobile operators to intercept the calls and texts of selected people, mostly in Taiwan. Enea, a telecom and cybersecurity software company based in Stockholm, found the group's attack sources in at least six Asian countries and named it SilentAir this week. It assessed with high confidence that SilentAir is a state-level actor,",
+      "recipe": "hackersnews",
       "buzz": 10,
       "topics": [
         "ai",
         "dev",
         "security"
       ],
-      "date": "2026-11-09"
+      "date": "2026-11-13"
+    },
+    {
+      "uid": "rss:e06c8e5c15a1fa",
+      "source": "rss",
+      "title": "Operation Endgame Takes Down Gootloader, CastleRAT and StealC Servers, Seizes 6.4M Stolen Logins",
+      "url": "https://thehackernews.com/2026/11/operation-endgame-takes-down-gootloader.html",
+      "ts": 1794567303.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "An international police operation took down servers behind Gootloader, CastleRAT and StealC this week. Criminals used the three malware tools to gain access to computers, steal passwords, and launch ransomware attacks. Police also seized about 6.4 million stolen logins belonging to more than 40,000 victims, according to Germany's Federal Criminal Police Office (BKA). Gootloader is a loader:",
+      "recipe": "hackersnews",
+      "buzz": 10,
+      "topics": [
+        "ai",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-13"
     },
     {
       "uid": "rss:358e4358544293",
@@ -2269,62 +2335,6 @@
       "date": "2026-11-12"
     },
     {
-      "uid": "rss:a2f9fe039c16b3",
-      "source": "rss",
-      "title": "Attacker Used 4,837 Hijacked GitHub Accounts to Run a CI Secret Stealer in 1,806+ Repositories",
-      "url": "https://thehackernews.com/2026/11/4837-hijacked-github-accounts-ran-ci.html",
-      "ts": 1794465767.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Starting Tuesday, an attacker used stolen credentials for 4,837 GitHub accounts to plant a secret stealer in repositories those accounts could write to, according to Aikido Security, a security software company. The stealer is built to take the secrets and cloud credentials that a repository's CI workflows can reach. It ran in at least 1,806 repositories, where the attacker has likely collected",
-      "recipe": "hackersnews",
-      "buzz": 10,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-12"
-    },
-    {
-      "uid": "rss:968c2e5da9a495",
-      "source": "rss",
-      "title": "Critical Apache HTTP/2 Flaw Could Let Unauthenticated Attackers Execute Code Remotely",
-      "url": "https://thehackernews.com/2026/11/critical-apache-http2-flaw-could-let.html",
-      "ts": 1794460346.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "A critical flaw in Apache HTTP Server's HTTP/2 module, mod_http2, can let a remote attacker run code on the server. Tracked as CVE-[phone], it affects versions 2.4.55 through 2.4.70 and is fixed in version 2.4.71, released yesterday. Only servers with HTTP/2 enabled are affected, according to Red Hat, which ships the server as part of Red Hat Enterprise Linux. An attacker who can reach the",
-      "recipe": "hackersnews",
-      "buzz": 10,
-      "topics": [
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-12"
-    },
-    {
-      "uid": "rss:359238dcdbcfcb",
-      "source": "rss",
-      "title": "ScreenConnect Attacks Target at Least 288 Endpoints Across 48 Organizations With Rogue Clients",
-      "url": "https://thehackernews.com/2026/11/screenconnect-attacks-target-at-least.html",
-      "ts": 1794458388.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "ConnectWise has taken the precautionary step of disabling five third-party extensions in partner environments following reports of unauthorized access. In an advisory posted on its site, the company said there is no evidence that the incident involves a compromise of its infrastructure or a vulnerability in the ScreenConnect software. \"Our initial assessment suggests the activity may involve",
-      "recipe": "hackersnews",
-      "buzz": 10,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-12"
-    },
-    {
       "uid": "rss:7543ee8beb8b7e",
       "source": "rss",
       "title": "Want to Rent an Internet Address at the White House?",
@@ -2477,6 +2487,25 @@
       "date": "2026-10-07"
     },
     {
+      "uid": "rss:951b96997c00dd",
+      "source": "rss",
+      "title": "AI Security",
+      "url": "https://www.schneier.com/blog/archives/2026/11/ai-security.html",
+      "ts": 1794225994.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Bruce Schneier",
+      "summary": "<p>Two weeks ago, I attended the <a href=\"https://unpromptedcon.org/\">[un]prompted</a> AI security conference in San Francisco. It was an excellent event: three days of very dense talks about all aspects of AI security. (My talk was about integrous AI, and I will post it when it is online.)</p> <p>AI security can be divided into three broad topics. It&#8217;s important for researchers to understan",
+      "recipe": "schneier",
+      "buzz": 0,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-09"
+    },
+    {
       "uid": "rss:e6f5c93e0a9e2b",
       "source": "rss",
       "title": "Friday Squid Blogging: New Jurassic Squid Predecessors",
@@ -2511,24 +2540,6 @@
         "dev"
       ],
       "date": "2026-11-06"
-    },
-    {
-      "uid": "rss:0dcc10ee0fa324",
-      "source": "rss",
-      "title": "AIs Hacking the Law",
-      "url": "https://www.schneier.com/blog/archives/2026/11/ais-hacking-the-law.html",
-      "ts": 1793707261.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Bruce Schneier",
-      "summary": "<p>In both a 2021 <a href=\"https://www.belfercenter.org/publication/coming-ai-hackers\">essay</a> and my 2022 book, <i><a href=\"https://www.schneier.com/books/a-hackers-mind/\">A Hacker&#8217;s Mind</a></i>, I talk about AIs finding vulnerabilities and exploits&#8212;hacking&#8212;the legal system.</p> <p><a href=\"https://www.felixringe.com/legal-exploits/\">Here&#8217;s</a> some demonstrations of th",
-      "recipe": "schneier",
-      "buzz": 0,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-03"
     }
   ]
 }

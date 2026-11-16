@@ -5,7 +5,217 @@
     <link>https://cveradar-ah3.pages.dev</link>
     <description>Живые CVE и уязвимости на русском: автономный перевод угроз в понятные дайджесты для DevOps и небольшого SecOps</description>
     <language>ru</language>
-    <lastBuildDate>Mon, 16 Nov 2026 10:20:03 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 16 Nov 2026 15:22:47 GMT</lastBuildDate>
+    <item>
+      <title>CVE-2026-128076: Nuxt: Colliding island props can share one `/__nuxt_island` path (incomplete fix for CVE-2026-46342)</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-128076-nuxt-colliding-island-props-can-share-one-nuxt-i.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-128076-nuxt-colliding-island-props-can-share-one-nuxt-i.html</guid>
+      <pubDate>Mon, 16 Nov 2026 15:02:22 GMT</pubDate>
+      <description>Severity: low. ### Summary
+
+The fix for CVE-[phone] (GHSA-g8wj-3cr3-6w7v) binds each `/__nuxt_island/&lt;Name&gt;_&lt;hash&gt;.json` path to its props by hashing the `(name, props, context, source)` tuple. That hash was computed over `ohash`'s serialization, which does not escape quotes inside strings or delimi</description>
+    </item>
+    <item>
+      <title>CVE-2026-128075: Nuxt exposes the message and data of unhandled errors thrown during server rendering</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-128075-nuxt-exposes-the-message-and-data-of-unhandled-e.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-128075-nuxt-exposes-the-message-and-data-of-unhandled-e.html</guid>
+      <pubDate>Mon, 16 Nov 2026 15:01:26 GMT</pubDate>
+      <description>Severity: medium. ### Summary
+
+When a page, plugin or route middleware throws an error that is not an HTTP error, Nuxt wraps it with `createError` before rendering the error page. The wrapped error was treated as one the app raised deliberately, so in production its `message` and `data` were sent to</description>
+    </item>
+    <item>
+      <title>CVE-2026-128074: Nuxt payload URL generation has quadratic cost for repeated slashes in the request path</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-128074-nuxt-payload-url-generation-has-quadratic-cost-f.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-128074-nuxt-payload-url-generation-has-quadratic-cost-f.html</guid>
+      <pubDate>Mon, 16 Nov 2026 15:00:41 GMT</pubDate>
+      <description>Severity: medium. ### Summary
+
+Nuxt strips trailing slashes from the request path with a regular expression whose cost grows quadratically with the length of a run of consecutive slashes. A single unauthenticated request with a long run of slashes can occupy the server's event loop for a noticeable </description>
+    </item>
+    <item>
+      <title>CVE-2026-128072: @nuxt/webpack-builder and @nuxt/rspack-builder dev server serves built source to DNS rebinding pages</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-128072-nuxt-webpack-builder-and-nuxt-rspack-builder-dev.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-128072-nuxt-webpack-builder-and-nuxt-rspack-builder-dev.html</guid>
+      <pubDate>Mon, 16 Nov 2026 15:00:09 GMT</pubDate>
+      <description>Severity: low. ### Summary
+
+When using the webpack or rspack builder, the dev server serves built client chunks to any request whose `Host` header matches its `Origin`/`Referer`, or that carries `Sec-Fetch-Site: same-origin`. After a DNS rebinding attack both headers name the attacker's hostname, so</description>
+    </item>
+    <item>
+      <title>CVE-2026-128071: Nuxt: Incomplete fix for GHSA-6gq8-jgmh-3ffp: an encoded slash (`%2F`) in the request path bypasses route rules on catch-all page routes</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-128071-nuxt-incomplete-fix-for-ghsa-6gq8-jgmh-3ffp-an-e.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-128071-nuxt-incomplete-fix-for-ghsa-6gq8-jgmh-3ffp-an-e.html</guid>
+      <pubDate>Mon, 16 Nov 2026 14:59:45 GMT</pubDate>
+      <description>Severity: medium. ### Summary
+
+Nuxt matches route rules against the request path with encoded slashes (`%2F`) left encoded, while the page router decodes them into route params. A request that spells a slash as `%2F` can therefore render a page through a catch-all route without the route rules confi</description>
+    </item>
+    <item>
+      <title>CVE-2026-128118: SvelteKit: Build-time server-only module import guard could fail, resulting in server secrets being statically replaced in client bundle</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-128118-sveltekit-build-time-server-only-module-import-g.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-128118-sveltekit-build-time-server-only-module-import-g.html</guid>
+      <pubDate>Mon, 16 Nov 2026 14:59:00 GMT</pubDate>
+      <description>Severity: high. Under certain circumstances, server-only imports, which typically cannot be included in the client bundle, could make their way into it, potentially exposing secrets. This could only occur when those server-only imports were made through `src/params.js`.</description>
+    </item>
+    <item>
+      <title>CVE-2026-128120: SvelteKit: DoS while parsing form data from a remote functions `form`</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-128120-sveltekit-dos-while-parsing-form-data-from-a-rem.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-128120-sveltekit-dos-while-parsing-form-data-from-a-rem.html</guid>
+      <pubDate>Mon, 16 Nov 2026 14:57:35 GMT</pubDate>
+      <description>Severity: high. This only affects applications using the experimental remote functions flag and utilizing the `form`, `query`, or `command` remote functions. A specially-crafted request could block the event loop for extended periods of time during parsing.</description>
+    </item>
+    <item>
+      <title>CVE-2026-128124: AIOHTTP: Event loop stall in add_domain() wildcard matching</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-128124-aiohttp-event-loop-stall-in-add-domain-wildcard-.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-128124-aiohttp-event-loop-stall-in-add-domain-wildcard-.html</guid>
+      <pubDate>Mon, 16 Nov 2026 14:56:35 GMT</pubDate>
+      <description>Severity: high. ### Summary
+
+`Application.add_domain()` compiled each `*` in a host mask to `[^:]*`. With two or more wildcards in a mask, matching a long `Host` header that does not match the mask took polynomial time on the event loop.
+
+### Impact
+
+An attacker could stall a server that registers a</description>
+    </item>
+    <item>
+      <title>CVE-2026-128125: AIOHTTP: Unbounded cookie storage in client CookieJar</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-128125-aiohttp-unbounded-cookie-storage-in-client-cooki.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-128125-aiohttp-unbounded-cookie-storage-in-client-cooki.html</guid>
+      <pubDate>Mon, 16 Nov 2026 14:55:06 GMT</pubDate>
+      <description>Severity: medium. ### Summary
+
+`Set-Cookie` parsing created additional cookies from unrecognised `name=value` attributes, and `CookieJar` had no limit on the number of cookies stored or sent. A server could make the client store a very large number of cookies and generate very large `Cookie` headers</description>
+    </item>
+    <item>
+      <title>CVE-2026-128126: AIOHTTP: Too many URL-encoded form fields block the event loop</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-128126-aiohttp-too-many-url-encoded-form-fields-block-t.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-128126-aiohttp-too-many-url-encoded-form-fields-block-t.html</guid>
+      <pubDate>Mon, 16 Nov 2026 14:54:10 GMT</pubDate>
+      <description>Severity: high. ### Summary
+
+`Request.post()` had no limit on the number of fields in a URL-encoded form body. Inserting a large number of repeated keys into a `MultiDict` took quadratic time on the event loop.
+
+### Impact
+
+An attacker could block the event loop with a form POST within the default `</description>
+    </item>
+    <item>
+      <title>CVE-2026-128127: AIOHTTP: Base64 multipart parts bypass client_max_size</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-128127-aiohttp-base64-multipart-parts-bypass-client-max.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-128127-aiohttp-base64-multipart-parts-bypass-client-max.html</guid>
+      <pubDate>Mon, 16 Nov 2026 14:53:12 GMT</pubDate>
+      <description>Severity: high. ### Summary
+
+When reading a multipart part with `Content-Transfer-Encoding: base64`, `BodyPartReader.read_chunk()` kept reading until the chunk length was a multiple of 4, with no byte limit. A part with a short `Content-Length`, or a long run of whitespace, could cause the entire re</description>
+    </item>
+    <item>
+      <title>CVE-2026-128128: AIOHTTP: WebSocket max_msg_size bypass via integer overflow</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-128128-aiohttp-websocket-max-msg-size-bypass-via-intege.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-128128-aiohttp-websocket-max-msg-size-bypass-via-intege.html</guid>
+      <pubDate>Mon, 16 Nov 2026 14:52:40 GMT</pubDate>
+      <description>Severity: high. ### Summary
+
+The `max_msg_size` check in the WebSocket reader added the declared frame length to the size of the partial message already buffered. In the C extension this addition is 64-bit arithmetic, so a declared length close to 2**63 overflowed and the check passed.
+
+### Impact
+
+</description>
+    </item>
+    <item>
+      <title>CVE-2026-128129: AIOHTTP: Unbounded buffering of data received during an upgrade request</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-128129-aiohttp-unbounded-buffering-of-data-received-dur.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-128129-aiohttp-unbounded-buffering-of-data-received-dur.html</guid>
+      <pubDate>Mon, 16 Nov 2026 14:52:05 GMT</pubDate>
+      <description>Severity: high. ### Summary
+
+While a request flagged as an upgrade (e.g. a WebSocket handshake) was being handled, all further data received on the connection was buffered with no size limit or flow control until the handler completed.
+
+### Impact
+
+An attacker could cause unbounded memory use by str</description>
+    </item>
+    <item>
+      <title>CVE-2026-128130: AIOHTTP: Pure-Python parser request replay and buffer growth behind a declined upgrade</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-128130-aiohttp-pure-python-parser-request-replay-and-bu.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-128130-aiohttp-pure-python-parser-request-replay-and-bu.html</guid>
+      <pubDate>Mon, 16 Nov 2026 14:51:53 GMT</pubDate>
+      <description>Severity: high. ### Summary
+
+When the pipelined request queue was full, the pure-Python parser stored the unparsed remainder internally and also returned it to the caller. After a handler declined an upgrade request, the buffered data was re-fed, so the buffer grew with each handled request and alre</description>
+    </item>
+    <item>
+      <title>CVE-2026-128131: AIOHTTP: Concatenated compressed streams cause excessive CPU use</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-128131-aiohttp-concatenated-compressed-streams-cause-ex.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-128131-aiohttp-concatenated-compressed-streams-cause-ex.html</guid>
+      <pubDate>Mon, 16 Nov 2026 14:51:27 GMT</pubDate>
+      <description>Severity: high. ### Summary
+
+When decompressing a payload made up of many concatenated compressed members (gzip, deflate or zstd), each member was decoded by passing the entire remaining input to a new decompressor, resulting in quadratic CPU time. Empty members produce no output, so `client_max_siz</description>
+    </item>
+    <item>
+      <title>CVE-2026-128132: AIOHTTP: WebSocket receive queue limits bypassed by small or compressed messages</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-128132-aiohttp-websocket-receive-queue-limits-bypassed-.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-128132-aiohttp-websocket-receive-queue-limits-bypassed-.html</guid>
+      <pubDate>Mon, 16 Nov 2026 14:51:01 GMT</pubDate>
+      <description>Severity: high. ### Summary
+
+The WebSocket reader continued parsing frames already received after the receive queue had paused the transport, and empty messages were not counted towards the queue size. With permessage-deflate, a single read of compressed frames could add many megabytes of decompress</description>
+    </item>
+    <item>
+      <title>CVE-2026-128119: SvelteKit: Private `query.batch` functions could collide, producing unexpected parameter / function combinations</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-128119-sveltekit-private-query-batch-functions-could-co.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-128119-sveltekit-private-query-batch-functions-could-co.html</guid>
+      <pubDate>Mon, 16 Nov 2026 14:49:03 GMT</pubDate>
+      <description>Severity: medium. Under certain circumstances, private (non-exported) `query.batch` functions could end up sharing a batch, resulting in the arguments from one function being passed to another. This only affects apps using the experimental remote functions flag and non-exported `query.batch` functio</description>
+    </item>
+    <item>
+      <title>CVE-2026-128116: SvelteKit: Protocol-relative module import during server-side route resolution allows cross-origin script execution</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-128116-sveltekit-protocol-relative-module-import-during.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-128116-sveltekit-protocol-relative-module-import-during.html</guid>
+      <pubDate>Mon, 16 Nov 2026 14:48:54 GMT</pubDate>
+      <description>Severity: medium. If an attacker could, using some form of social engineering or other exploit, get a user to use client-side navigation to navigate to a specially-crafted link, the attacker could cause code from another domain to be imported and run on the user's machine. This only affected apps wi</description>
+    </item>
+    <item>
+      <title>CVE-2026-126302: NLTK: Symlink escape in chat80.sql_query bypasses the pathsec data-root sandbox to read out-of-root SQLite databases</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-126302-nltk-symlink-escape-in-chat80-sql-query-bypasses.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-126302-nltk-symlink-escape-in-chat80-sql-query-bypasses.html</guid>
+      <pubDate>Mon, 16 Nov 2026 14:47:23 GMT</pubDate>
+      <description>Severity: medium. ## Summary
+
+`nltk.sem.chat80.sql_query()` opens a SQLite database by handing the result of `nltk.data.find(dbname)` straight to `sqlite3.connect()` without the path-containment check that the NLTK data sandbox (`nltk.pathsec`) is meant to enforce. `nltk.data.find()` applies only le</description>
+    </item>
+    <item>
+      <title>CVE-2026-126296: NLTK: Path Traversal in save_maxent_params / load_maxent_params Allow Arbitrary File READ/WRITE</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-126296-nltk-path-traversal-in-save-maxent-params-load-m.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-126296-nltk-path-traversal-in-save-maxent-params-load-m.html</guid>
+      <pubDate>Mon, 16 Nov 2026 14:46:25 GMT</pubDate>
+      <description>Severity: medium. ### Summary
+Path traversal in NLTK's save_maxent_params() and load_maxent_params() allows arbitrary file write and arbitrary file read outside the directories permitted by NLTK's pathsec security mechanism.
+
+This vulnerability was previously reported through Huntr, accepted by the </description>
+    </item>
+    <item>
+      <title>Six Unpatched Danfoss Refrigeration Controller Flaws Could Allow Remote Takeover Without Login</title>
+      <link>https://cveradar-ah3.pages.dev/item/six-unpatched-danfoss-refrigeration-controller-flaws-could-allow.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/six-unpatched-danfoss-refrigeration-controller-flaws-could-allow.html</guid>
+      <pubDate>Mon, 16 Nov 2026 12:34:21 GMT</pubDate>
+      <description>Six flaws in Danfoss AK-SM800A refrigeration controllers could let a remote attacker take over a controller without logging in, Dutch security consultancy Midnight Blue said earlier this week. No patch is available, and the researchers say the newest firmware, version 5.4.0, does not fix the flaws. </description>
+    </item>
+    <item>
+      <title>Retadup Worm Resurfaces 7 Years After Takedown to Spread CoffeeLoader Malware</title>
+      <link>https://cveradar-ah3.pages.dev/item/retadup-worm-resurfaces-7-years-after-takedown-to-spread-coffeel.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/retadup-worm-resurfaces-7-years-after-takedown-to-spread-coffeel.html</guid>
+      <pubDate>Mon, 16 Nov 2026 12:33:18 GMT</pubDate>
+      <description>Cybersecurity researchers have disclosed details of a new variant of CoffeeLoader, a malware designed to deliver additional payloads to infected machines. "On launch, the NSIS-based installer executable dropped a file named '7z.dll' into a temporary directory and ran it through rundll32.exe," Kasper</description>
+    </item>
+    <item>
+      <title>SANSAR Linux Cryptomining Malware Uses Modified NVIDIA Library to Hide GPU Activity</title>
+      <link>https://cveradar-ah3.pages.dev/item/sansar-linux-cryptomining-malware-uses-modified-nvidia-library-t.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/sansar-linux-cryptomining-malware-uses-modified-nvidia-library-t.html</guid>
+      <pubDate>Mon, 16 Nov 2026 09:32:57 GMT</pubDate>
+      <description>A financially motivated threat activity cluster tracked as REF3364 has been attributed to a Linux-focused cryptocurrency mining operation that tampers with the readings used to detect high GPU workloads. Central to the intrusion is a toolkit called SANSAR, a Rust-based orchestrator that receives com</description>
+    </item>
     <item>
       <title>Amazon Uncovers AI Agent Campaign Targeting LiteLLM, Dify, and Other Apps for API Keys</title>
       <link>https://cveradar-ah3.pages.dev/item/amazon-uncovers-ai-agent-campaign-targeting-litellm-dify-and-oth.html</link>
@@ -58,214 +268,6 @@ The public CCG lexicon parser `nltk.ccg.lexicon.fromstring` parses caller-influe
       <description>Severity: high. ## Summary
 
 `Tree.chomsky_normal_form()` binarizes a parse tree and defaults to right factoring. For a node with N children the right-factor branch repeatedly removes the first element of a working list with `list.pop(0)`, which shifts all remaining elements each time, so binarizing </description>
-    </item>
-    <item>
-      <title>CVE-2026-126297: NLTK: Quadratic-time CPU denial of service in ConllCorpusReader SRL instance builder via nested span rescan</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-126297-nltk-quadratic-time-cpu-denial-of-service-in-con.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-126297-nltk-quadratic-time-cpu-denial-of-service-in-con.html</guid>
-      <pubDate>Sat, 14 Nov 2026 00:05:57 GMT</pubDate>
-      <description>Severity: high. ## Summary
-
-`ConllCorpusReader.srl_instances()` builds semantic-role-labeling instances from a CoNLL corpus block. For a sentence block with P predicates and P span columns, the instance builder rescans every span column (and every span within it) once per predicate while searching f</description>
-    </item>
-    <item>
-      <title>CVE-2026-126295: NLTK: BllipParser passes caller-supplied model paths to the bllipparser C extension with no pathsec check, enabling arbitrary read</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-126295-nltk-bllipparser-passes-caller-supplied-model-pa.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-126295-nltk-bllipparser-passes-caller-supplied-model-pa.html</guid>
-      <pubDate>Fri, 13 Nov 2026 23:20:56 GMT</pubDate>
-      <description>Severity: medium. ## Summary
-
-`BllipParser` in `nltk/parse/bllip.py` hands caller-supplied filesystem paths to the native `bllipparser` C extension without routing them through NLTK's `pathsec` validation. The constructor parameters `parser_model`, `reranker_features`, and `reranker_weights`, and th</description>
-    </item>
-    <item>
-      <title>CVE-2026-62297: ag-psd can exhaust memory when parsing crafted PSD dimensions</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-62297-ag-psd-can-exhaust-memory-when-parsing-crafted-ps.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-62297-ag-psd-can-exhaust-memory-when-parsing-crafted-ps.html</guid>
-      <pubDate>Fri, 13 Nov 2026 23:19:38 GMT</pubDate>
-      <description>Severity: high. ### Summary
-readPsd() commits the image/layer buffers from the declared header geometry (width x height x channels x depth, and per-layer rectangles) before validating those values against the actual data. A tiny crafted PSD declaring huge geometry forces a multi-gigabyte allocation.</description>
-    </item>
-    <item>
-      <title>CVE-2026-62683: File Browser: Trailing-slash directory deletion leaves public shares active for recreated paths</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-62683-file-browser-trailing-slash-directory-deletion-le.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-62683-file-browser-trailing-slash-directory-deletion-le.html</guid>
-      <pubDate>Fri, 13 Nov 2026 23:12:06 GMT</pubDate>
-      <description>Severity: low. ## Summary
-
-File Browser v2.63.15 can leave a public directory share behind when the shared directory is deleted through a path with a trailing slash. The share cleanup path calls `DeleteWithPathPrefix(file.Path, userID)`, but the Bolt backend performs the database prefix query with t</description>
-    </item>
-    <item>
-      <title>GHSA-gpwc-27cw-rh9r: NLTK: Quadratic CPU exhaustion in LegalitySyllableTokenizer.tokenize via unguarded onset reversal loop</title>
-      <link>https://cveradar-ah3.pages.dev/item/ghsa-gpwc-27cw-rh9r-nltk-quadratic-cpu-exhaustion-in-legalitysyl.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/ghsa-gpwc-27cw-rh9r-nltk-quadratic-cpu-exhaustion-in-legalitysyl.html</guid>
-      <pubDate>Fri, 13 Nov 2026 21:16:34 GMT</pubDate>
-      <description>Severity: medium. ## Summary
-
-`LegalitySyllableTokenizer.tokenize` in the NLTK tokenizer package contains an unguarded O(n^2) processing loop. When the method is called on a single token that consists of a long run of vowels (for example `"a" * n`), it consumes CPU time proportional to the square of</description>
-    </item>
-    <item>
-      <title>CVE-2026-126300: NLTK: Quadratic CPU exhaustion in TreebankWordTokenizer.span_tokenize via list.pop(0) in quote-restore loop</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-126300-nltk-quadratic-cpu-exhaustion-in-treebankwordtok.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-126300-nltk-quadratic-cpu-exhaustion-in-treebankwordtok.html</guid>
-      <pubDate>Fri, 13 Nov 2026 21:08:55 GMT</pubDate>
-      <description>Severity: medium. ## Summary
-
-`TreebankWordTokenizer.span_tokenize` in the NLTK tokenizer package contains an unguarded O(n^2) processing loop in its quote-restoration step. When the method is invoked on text containing a long run of double-quote characters (for example `'"' * n`), it performs a `li</description>
-    </item>
-    <item>
-      <title>CVE-2026-126303: NLTK: Unbounded CPU consumption in SteppingRecursiveDescentParser.parse() with ambiguous or self-embedding grammars</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-126303-nltk-unbounded-cpu-consumption-in-steppingrecurs.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-126303-nltk-unbounded-cpu-consumption-in-steppingrecurs.html</guid>
-      <pubDate>Fri, 13 Nov 2026 21:02:19 GMT</pubDate>
-      <description>Severity: high. ## Summary
-
-`nltk.parse.recursivedescent.SteppingRecursiveDescentParser.parse()` performs an unbounded top-down search over ambiguous or self-embedding context-free grammars with no wall-clock or step limit. An actor who can influence the grammar and supply a short input to a caller </description>
-    </item>
-    <item>
-      <title>CVE-2026-126304: NLTK: Symlink escape in YCOECorpusReader lets a psd/pos directory symlink read files outside the corpus root within the data sandbox</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-126304-nltk-symlink-escape-in-ycoecorpusreader-lets-a-p.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-126304-nltk-symlink-escape-in-ycoecorpusreader-lets-a-p.html</guid>
-      <pubDate>Fri, 13 Nov 2026 20:55:16 GMT</pubDate>
-      <description>Severity: high. ## Summary
-
-`YCOECorpusReader` builds two nested corpus sub-readers whose roots are derived from `self.root.join("psd")` and `self.root.join("pos")` (nltk/corpus/reader/ycoe.py). Because `FileSystemPathPointer.join()` (nltk/data.py) performs a purely lexical containment check and nev</description>
-    </item>
-    <item>
-      <title>CVE-2026-128117: SvelteKit: adapter-node crashes with an unhandled URIError when `reroute` rewrites malformed pathnames</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-128117-sveltekit-adapter-node-crashes-with-an-unhandled.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-128117-sveltekit-adapter-node-crashes-with-an-unhandled.html</guid>
-      <pubDate>Fri, 13 Nov 2026 20:51:44 GMT</pubDate>
-      <description>Severity: medium. When `reroute` turned an invalid percent-encoded path into a valid path, it could potentially trigger a comparison that would crash the server.</description>
-    </item>
-    <item>
-      <title>CVE-2026-128121: SvelteKit: Prerendered paths are interpreted as regular expressions in Vercel route config generated by @sveltejs/adapter-vercel and @sveltejs/adapter-static</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-128121-sveltekit-prerendered-paths-are-interpreted-as-r.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-128121-sveltekit-prerendered-paths-are-interpreted-as-r.html</guid>
-      <pubDate>Fri, 13 Nov 2026 20:43:23 GMT</pubDate>
-      <description>Severity: medium. If an attacker could influence a link that was crawled during the prerender phase, that link could later be interpreted as a regex in the Vercel routing configuration.</description>
-    </item>
-    <item>
-      <title>CVE-2026-128122: SvelteKit: Prerendered redirect paths can inject arbitrary rules into the `_redirects` file generated by `@sveltejs/adapter-cloudflare`</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-128122-sveltekit-prerendered-redirect-paths-can-inject-.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-128122-sveltekit-prerendered-redirect-paths-can-inject-.html</guid>
-      <pubDate>Fri, 13 Nov 2026 20:39:15 GMT</pubDate>
-      <description>Severity: medium. If an attacker can influence the links crawled during prerendering, they can influence the redirects entries that are added to the Cloudflare platform redirects generated during the adapt phase of the build.</description>
-    </item>
-    <item>
-      <title>CVE-2026-128123: SvelteKit: `@sveltejs/adapter-node` crashes when proxying certain requests via `fetch`</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-128123-sveltekit-sveltejs-adapter-node-crashes-when-pro.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-128123-sveltekit-sveltejs-adapter-node-crashes-when-pro.html</guid>
-      <pubDate>Fri, 13 Nov 2026 20:36:53 GMT</pubDate>
-      <description>Severity: medium. In affected versions, `@sveltejs/adapter-node` can attempt to add a header to an immutable request in a context that causes the server to crash, denying service to any other requests routed to that server.</description>
-    </item>
-    <item>
-      <title>CVE-2026-126347: Tornado: Open redirect via triple-slash redirect paths</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-126347-tornado-open-redirect-via-triple-slash-redirect-.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-126347-tornado-open-redirect-via-triple-slash-redirect-.html</guid>
-      <pubDate>Fri, 13 Nov 2026 20:31:22 GMT</pubDate>
-      <description>Severity: low. ### Summary
-
-Due to differences in the way browsers and Python's `urllib` parse urls, browsers treat a string starting with three or more slashes as a protocol-level redirect, while `urllib` does not. This means that the 6.6.0 fix for the RedirectHandler open redirect (CVE-[phone], co</description>
-    </item>
-    <item>
-      <title>CVE-2026-128089: dnspython has excessive memory and CPU use</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-128089-dnspython-has-excessive-memory-and-cpu-use.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-128089-dnspython-has-excessive-memory-and-cpu-use.html</guid>
-      <pubDate>Fri, 13 Nov 2026 20:19:13 GMT</pubDate>
-      <description>Severity: high. ### Summary
-
-A maliciously crafted zone file could use a WKS record to consume excessive memory and CPU, possibly causing the process to exit due to memory exhaustion.
-
-### Details
-
-The `from_text()` parser does not check that a WKS record service number is between 0 and 65535 inclus</description>
-    </item>
-    <item>
-      <title>CVE-2026-128077: Nuxt: Incomplete fix for GHSA-9v7c-q64q-vv33: a leading `//` in the request path bypasses `server/middleware` path checks and server route rules on page routes</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-128077-nuxt-incomplete-fix-for-ghsa-9v7c-q64q-vv33-a-le.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-128077-nuxt-incomplete-fix-for-ghsa-9v7c-q64q-vv33-a-le.html</guid>
-      <pubDate>Fri, 13 Nov 2026 19:32:21 GMT</pubDate>
-      <description>Severity: medium. ### Summary
-
-Since `4.6.0`, Nuxt parses a request path that starts with `//` as a URL with a host before rendering a page, so `//x/admin` renders the page at `/admin`. Nitro's routing, Nitro's route rules and `server/middleware` see the path as `//x/admin`, so server-side checks ke</description>
-    </item>
-    <item>
-      <title>CVE-2026-128080: OpenTelemetry JavaScript: Insertion of Sensitive Information into Log File and Exposure of Sensitive Information to an Unauthorized Actor in @opentelemetry/instrumentation-http</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-128080-opentelemetry-javascript-insertion-of-sensitive-.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-128080-opentelemetry-javascript-insertion-of-sensitive-.html</guid>
-      <pubDate>Fri, 13 Nov 2026 19:29:20 GMT</pubDate>
-      <description>Severity: medium. ### Summary
-
-`@opentelemetry/instrumentation-http` redacts sensitive URL query parameters on **outgoing (client) spans** but not on **incoming (server) spans**. The server-span path writes the raw query string verbatim into the `url.query` attribute, so credentials embedded in inbo</description>
-    </item>
-    <item>
-      <title>CVE-2026-128082: AutoMapper: Uncontrolled Recursion with Constructor Parameters</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-128082-automapper-uncontrolled-recursion-with-construct.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-128082-automapper-uncontrolled-recursion-with-construct.html</guid>
-      <pubDate>Fri, 13 Nov 2026 19:21:02 GMT</pubDate>
-      <description>Severity: high. ### Summary
-`MaxDepth`, whether set explicitly or applied by default (64) to self-referential type maps, was not enforced when the recursion goes through constructor parameters. Mapping a deeply nested source to a destination built through its constructor, such as a positional `recor</description>
-    </item>
-    <item>
-      <title>CVE-2026-128087: russh kex_done: Shared-secret callback runs before server host-key verification</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-128087-russh-kex-done-shared-secret-callback-runs-befor.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-128087-russh-kex-done-shared-secret-callback-runs-befor.html</guid>
-      <pubDate>Fri, 13 Nov 2026 19:20:16 GMT</pubDate>
-      <description>Severity: low. ### Summary
-
-A malicious SSH server whose host key is rejected can still cause russh's `client::Handler::kex_done()` callback to execute with the raw key-exchange shared secret. Applications using the callback for its documented protocol-bridging purpose may derive keys, initialize a </description>
-    </item>
-    <item>
-      <title>CVE-2026-128088: russh try_sign: asynchronous confirmation can sign after agent lock</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-128088-russh-try-sign-asynchronous-confirmation-can-sig.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-128088-russh-try-sign-asynchronous-confirmation-can-sig.html</guid>
-      <pubDate>Fri, 13 Nov 2026 19:10:46 GMT</pubDate>
-      <description>Severity: low. ### Summary
-
-In russh `0.65.0`, a sign request for a confirmation-constrained key can retain
-and use the private key after another connection locks the agent. `try_sign()`
-snapshots an `Arc&lt;PrivateKey&gt;` before awaiting `Agent::confirm()` and does not
-revalidate the shared lock state a</description>
-    </item>
-    <item>
-      <title>CVE-2026-128086: OpenTelemetry-Go: Eager W3C baggage-property materialization causes bounded memory-allocation amplification</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-128086-opentelemetry-go-eager-w3c-baggage-property-mate.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-128086-opentelemetry-go-eager-w3c-baggage-property-mate.html</guid>
-      <pubDate>Fri, 13 Nov 2026 19:08:10 GMT</pubDate>
-      <description>Severity: medium. ## Summary
-
-OpenTelemetry Go eagerly materializes W3C baggage metadata into property objects during parsing. Slice growth, serialization, and copying into the internal representation cause **bounded but disproportionate memory-allocation amplification** for a valid, densely populat</description>
-    </item>
-    <item>
-      <title>CVE-2026-128085: opentelemetry-go: AttributeValueLengthLimit is fully bypassed by attribute values composed of valid U+FFFD runes</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-128085-opentelemetry-go-attributevaluelengthlimit-is-fu.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-128085-opentelemetry-go-attributevaluelengthlimit-is-fu.html</guid>
-      <pubDate>Fri, 13 Nov 2026 19:00:55 GMT</pubDate>
-      <description>Severity: medium. ## Summary
-
-The `AttributeValueLengthLimit` span/log-record limit can be bypassed entirely with attribute values that consist of valid U+FFFD (REPLACEMENT CHARACTER) runes. The counting-based truncation introduced by the fix for GHSA-p9f8-wvj8-2fg8 (commit `e016a78c9`, first releas</description>
-    </item>
-    <item>
-      <title>CVE-2026-128084: sqlite3-ruby: Possible SQL query truncation when a string is 4 GiB or larger</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-128084-sqlite3-ruby-possible-sql-query-truncation-when-.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-128084-sqlite3-ruby-possible-sql-query-truncation-when-.html</guid>
-      <pubDate>Fri, 13 Nov 2026 18:57:58 GMT</pubDate>
-      <description>Severity: medium. ### Summary
-
-sqlite3-ruby cast Ruby string lengths (`long`) to `int` before passing them to SQLite. On 64-bit platforms, a string of 4 GiB (2^32 bytes) or larger had its length wrap, so SQLite saw only the first `length mod 2^32` bytes. An attacker who controls the length of a SQL </description>
-    </item>
-    <item>
-      <title>CVE-2026-128083: Laravel: Task Output Injection - Concurrency Process</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-128083-laravel-task-output-injection-concurrency-proces.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-128083-laravel-task-output-injection-concurrency-proces.html</guid>
-      <pubDate>Fri, 13 Nov 2026 18:54:31 GMT</pubDate>
-      <description>Severity: low. ### Summary
-
-If a concurrency task prints user-controlled text, an attacker can forge the framework's internal result message and achieve remote code execution in certain conditions
-
-### Pre-reqs
-
-Insecure code and insecure handling of user provided input (devs trust user-provided inp</description>
     </item>
   </channel>
 </rss>
