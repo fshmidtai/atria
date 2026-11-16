@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T20:54:14+00:00",
+  "generated_at": "2026-11-16T01:41:48+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -10,26 +10,26 @@
     "rss"
   ],
   "totals": {
-    "items": 132,
+    "items": 130,
     "by_source": {
       "hn": 40,
       "cve": 30,
-      "github": 12,
+      "github": 10,
       "rss": 50
     },
     "by_recipe": {
       "hn_sec": 40,
       "gh_advisories": 30,
       "hackersnews": 30,
-      "github_sec": 12,
+      "github_sec": 10,
       "schneier": 10,
       "krebs": 10
     },
     "by_topic": {
-      "security": 106,
-      "ai": 67,
-      "dev": 46,
-      "hardware": 28,
+      "security": 107,
+      "ai": 65,
+      "dev": 45,
+      "hardware": 27,
       "biz": 8,
       "science": 7,
       "crypto": 6
@@ -37,7 +37,7 @@
     "top_domains": [
       [
         "github.com",
-        44
+        42
       ],
       [
         "thehackernews.com",
@@ -1405,6 +1405,24 @@
       "date": "2026-11-06"
     },
     {
+      "uid": "gh:LoopGrubDolmen/wallet-security-desk",
+      "source": "github",
+      "title": "LoopGrubDolmen/wallet-security-desk",
+      "url": "https://github.com/LoopGrubDolmen/wallet-security-desk",
+      "ts": 1794768281.0,
+      "points": 98,
+      "comments": 0,
+      "author": "LoopGrubDolmen",
+      "summary": "Self-custody wallet hygiene desk — seed storage drills and phishing red flags.",
+      "recipe": "github_sec",
+      "buzz": 178,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-15"
+    },
+    {
       "uid": "gh:nestho/impacket-rs",
       "source": "github",
       "title": "nestho/impacket-rs",
@@ -1439,51 +1457,17 @@
       "date": "2026-11-10"
     },
     {
-      "uid": "gh:0x45dd/pwner",
-      "source": "github",
-      "title": "0x45dd/pwner",
-      "url": "https://github.com/0x45dd/pwner",
-      "ts": 1793625315.0,
-      "points": 84,
-      "comments": 7,
-      "author": "0x45dd",
-      "summary": "Autonomous agentic network penetration-testing tool (authorized use only)",
-      "recipe": "github_sec",
-      "buzz": 105,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-02"
-    },
-    {
-      "uid": "gh:Balanov/verdict",
-      "source": "github",
-      "title": "Balanov/verdict",
-      "url": "https://github.com/Balanov/verdict",
-      "ts": 1793646891.0,
-      "points": 94,
-      "comments": 3,
-      "author": "Balanov",
-      "summary": "A 197 KB local semantic verifier for AI agent tool calls. Exit code 0 is not proof.",
-      "recipe": "github_sec",
-      "buzz": 103,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-02"
-    },
-    {
       "uid": "gh:wildorigins/wildos",
       "source": "github",
       "title": "wildorigins/wildos",
       "url": "https://github.com/wildorigins/wildos",
       "ts": 1794169078.0,
-      "points": 86,
+      "points": 87,
       "comments": 5,
       "author": "wildorigins",
       "summary": "A hardened Linux desktop, rebuilt from scratch, with your Windows apps built in. Free and open source.",
       "recipe": "github_sec",
-      "buzz": 101,
+      "buzz": 102,
       "topics": [],
       "date": "2026-11-08"
     },
@@ -1594,23 +1578,6 @@
       "date": "2026-11-12"
     },
     {
-      "uid": "gh:humanethq/airgap-check",
-      "source": "github",
-      "title": "humanethq/airgap-check",
-      "url": "https://github.com/humanethq/airgap-check",
-      "ts": 1794174928.0,
-      "points": 21,
-      "comments": 0,
-      "author": "humanethq",
-      "summary": "Audit AI repositories for offline (--network none) crashes, silent telemetry, and .env secret routing",
-      "recipe": "github_sec",
-      "buzz": 31,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-08"
-    },
-    {
       "uid": "rss:e109a4e996ba8e",
       "source": "rss",
       "title": "Upcoming Speaking Engagements",
@@ -1660,25 +1627,6 @@
         "ai"
       ],
       "date": "2026-11-13"
-    },
-    {
-      "uid": "gh:Attention-Span-AI/Tego",
-      "source": "github",
-      "title": "Attention-Span-AI/Tego",
-      "url": "https://github.com/Attention-Span-AI/Tego",
-      "ts": 1793595582.0,
-      "points": 24,
-      "comments": 2,
-      "author": "Attention-Span-AI",
-      "summary": "Tego limits what any AI agent can touch on Linux, and records every run. Rules for MCP servers, CI jobs, Python workers, 24/7 assistants and coding agents, enforced by the kernel.",
-      "recipe": "github_sec",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "dev",
-        "hardware"
-      ],
-      "date": "2026-11-02"
     },
     {
       "uid": "rss:d6bc4ec6947cb8",
@@ -1867,6 +1815,23 @@
         "hardware"
       ],
       "date": "2026-11-13"
+    },
+    {
+      "uid": "gh:humanethq/airgap-check",
+      "source": "github",
+      "title": "humanethq/airgap-check",
+      "url": "https://github.com/humanethq/airgap-check",
+      "ts": 1794174928.0,
+      "points": 21,
+      "comments": 0,
+      "author": "humanethq",
+      "summary": "Audit AI repositories for offline (--network none) crashes, silent telemetry, and .env secret routing",
+      "recipe": "github_sec",
+      "buzz": 21,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-11-08"
     },
     {
       "uid": "rss:a29bdb614c93f8",

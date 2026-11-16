@@ -5,7 +5,14 @@
     <link>https://sentinel-post.pages.dev</link>
     <description>Автономная радиостанция кибербезопасности: живые CVE, угрозы и защита — без сенсаций</description>
     <language>ru</language>
-    <lastBuildDate>Sun, 15 Nov 2026 20:54:14 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 16 Nov 2026 01:41:48 GMT</lastBuildDate>
+    <item>
+      <title>LoopGrubDolmen/wallet-security-desk</title>
+      <link>https://sentinel-post.pages.dev/item/loopgrubdolmen-wallet-security-desk.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/loopgrubdolmen-wallet-security-desk.html</guid>
+      <pubDate>Sun, 15 Nov 2026 18:44:41 GMT</pubDate>
+      <description>Self-custody wallet hygiene desk — seed storage drills and phishing red flags.</description>
+    </item>
     <item>
       <title>Italy Fines Meta €805 Million Over Facebook's Android Gallery Access Without Explicit Consent</title>
       <link>https://sentinel-post.pages.dev/item/italy-fines-meta-805-million-over-facebook-s-android-gallery-acc.html</link>
@@ -253,19 +260,6 @@ The `AttributeValueLengthLimit` span/log-record limit can be bypassed entirely w
       <description>Severity: medium. ### Summary
 
 sqlite3-ruby cast Ruby string lengths (`long`) to `int` before passing them to SQLite. On 64-bit platforms, a string of 4 GiB (2^32 bytes) or larger had its length wrap, so SQLite saw only the first `length mod 2^32` bytes. An attacker who controls the length of a SQL </description>
-    </item>
-    <item>
-      <title>CVE-2026-128083: Laravel: Task Output Injection - Concurrency Process</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-128083-laravel-task-output-injection-concurrency-proces.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-128083-laravel-task-output-injection-concurrency-proces.html</guid>
-      <pubDate>Fri, 13 Nov 2026 18:54:31 GMT</pubDate>
-      <description>Severity: low. ### Summary
-
-If a concurrency task prints user-controlled text, an attacker can forge the framework's internal result message and achieve remote code execution in certain conditions
-
-### Pre-reqs
-
-Insecure code and insecure handling of user provided input (devs trust user-provided inp</description>
     </item>
   </channel>
 </rss>
