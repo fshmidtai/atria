@@ -5,7 +5,7 @@
     <link>https://cveradar-ah3.pages.dev</link>
     <description>Живые CVE и уязвимости на русском: автономный перевод угроз в понятные дайджесты для DevOps и небольшого SecOps</description>
     <language>ru</language>
-    <lastBuildDate>Mon, 16 Nov 2026 15:22:47 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 16 Nov 2026 17:28:35 GMT</lastBuildDate>
     <item>
       <title>CVE-2026-128076: Nuxt: Colliding island props can share one `/__nuxt_island` path (incomplete fix for CVE-2026-46342)</title>
       <link>https://cveradar-ah3.pages.dev/item/cve-2026-128076-nuxt-colliding-island-props-can-share-one-nuxt-i.html</link>
@@ -196,6 +196,20 @@ Path traversal in NLTK's save_maxent_params() and load_maxent_params() allows ar
 This vulnerability was previously reported through Huntr, accepted by the </description>
     </item>
     <item>
+      <title>Google Finds Hackers Using AI Agents to Build and Run Exploits From Software Patches</title>
+      <link>https://cveradar-ah3.pages.dev/item/google-finds-hackers-using-ai-agents-to-build-and-run-exploits-f.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/google-finds-hackers-using-ai-agents-to-build-and-run-exploits-f.html</guid>
+      <pubDate>Mon, 16 Nov 2026 14:00:00 GMT</pubDate>
+      <description>Google on Monday revealed that adversarial use of artificial intelligence (AI) by threat actors has gone beyond manual prompting to deploying autonomous multi-agent offensive frameworks like ARTEX, CAIRN, CyberStrikeAI, and PentAGI to execute multi-stage intrusions at greater operational velocity. I</description>
+    </item>
+    <item>
+      <title>⚡ Weekly Recap: N-able 0-Days, Windows 0-Days, Chrome 0-Days, Fridge 0-Days, and More Bad Days</title>
+      <link>https://cveradar-ah3.pages.dev/item/weekly-recap-n-able-0-days-windows-0-days-chrome-0-days-fridge-0.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/weekly-recap-n-able-0-days-windows-0-days-chrome-0-days-fridge-0.html</guid>
+      <pubDate>Mon, 16 Nov 2026 13:27:20 GMT</pubDate>
+      <description>A default password opened doors it never should have. A trusted update delivered malware. Even a security feature became a way to break in. Different stories, same problem: the things meant to protect us aren't always doing their job. Meanwhile, AI is making bug hunting faster, old flaws are still p</description>
+    </item>
+    <item>
       <title>Six Unpatched Danfoss Refrigeration Controller Flaws Could Allow Remote Takeover Without Login</title>
       <link>https://cveradar-ah3.pages.dev/item/six-unpatched-danfoss-refrigeration-controller-flaws-could-allow.html</link>
       <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/six-unpatched-danfoss-refrigeration-controller-flaws-could-allow.html</guid>
@@ -250,24 +264,6 @@ This vulnerability was previously reported through Huntr, accepted by the </desc
       <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/attackers-exploit-unrealircd-flaw-that-enables-server-level-comm.html</guid>
       <pubDate>Sat, 14 Nov 2026 12:38:35 GMT</pubDate>
       <description>The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added a high-severity security flaw impacting UnrealIRCd, an open-source Internet Relay Chat (IRC) server, to its Known Exploited Vulnerabilities (KEV) catalog, following reports of active exploitation. The vulnerability, tra</description>
-    </item>
-    <item>
-      <title>CVE-2026-126299: NLTK: Quadratic-time CPU denial of service in CCG lexicon parser (fromstring) on wide bracket bodies and operator chains</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-126299-nltk-quadratic-time-cpu-denial-of-service-in-ccg.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-126299-nltk-quadratic-time-cpu-denial-of-service-in-ccg.html</guid>
-      <pubDate>Sat, 14 Nov 2026 00:08:50 GMT</pubDate>
-      <description>Severity: high. ## Summary
-
-The public CCG lexicon parser `nltk.ccg.lexicon.fromstring` parses caller-influenced lexicon text with two pure-Python loops whose cost is quadratic in the input width. A service that parses an untrusted CCG lexicon string can be driven into tens of seconds of single-thre</description>
-    </item>
-    <item>
-      <title>CVE-2026-126298: NLTK: Quadratic-time CPU denial of service in Tree.chomsky_normal_form right-factor binarization via list.pop(0)</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-126298-nltk-quadratic-time-cpu-denial-of-service-in-tre.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-126298-nltk-quadratic-time-cpu-denial-of-service-in-tre.html</guid>
-      <pubDate>Sat, 14 Nov 2026 00:07:59 GMT</pubDate>
-      <description>Severity: high. ## Summary
-
-`Tree.chomsky_normal_form()` binarizes a parse tree and defaults to right factoring. For a node with N children the right-factor branch repeatedly removes the first element of a working list with `list.pop(0)`, which shifts all remaining elements each time, so binarizing </description>
     </item>
   </channel>
 </rss>

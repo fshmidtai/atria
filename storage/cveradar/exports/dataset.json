@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T15:22:47+00:00",
+  "generated_at": "2026-11-16T17:28:35+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -18,10 +18,10 @@
       "the_hacker_news": 30
     },
     "by_topic": {
-      "security": 51,
-      "ai": 44,
-      "dev": 30,
-      "hardware": 27,
+      "security": 52,
+      "ai": 45,
+      "dev": 31,
+      "hardware": 25,
       "science": 5,
       "crypto": 5,
       "biz": 4
@@ -604,6 +604,44 @@
       "date": "2026-11-13"
     },
     {
+      "uid": "rss:a848b6775e4e6c",
+      "source": "rss",
+      "title": "Google Finds Hackers Using AI Agents to Build and Run Exploits From Software Patches",
+      "url": "https://thehackernews.com/2026/11/google-finds-hackers-using-ai-agents-to.html",
+      "ts": 1794837600.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Google on Monday revealed that adversarial use of artificial intelligence (AI) by threat actors has gone beyond manual prompting to deploying autonomous multi-agent offensive frameworks like ARTEX, CAIRN, CyberStrikeAI, and PentAGI to execute multi-stage intrusions at greater operational velocity. In tandem, threat actors are leveraging the power and capabilities of large language models (LLMs)",
+      "recipe": "the_hacker_news",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-16"
+    },
+    {
+      "uid": "rss:ef045dd0f58580",
+      "source": "rss",
+      "title": "⚡ Weekly Recap: N-able 0-Days, Windows 0-Days, Chrome 0-Days, Fridge 0-Days, and More Bad Days",
+      "url": "https://thehackernews.com/2026/11/weekly-recap-n-able-0-days-windows-0.html",
+      "ts": 1794835640.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "A default password opened doors it never should have. A trusted update delivered malware. Even a security feature became a way to break in. Different stories, same problem: the things meant to protect us aren't always doing their job. Meanwhile, AI is making bug hunting faster, old flaws are still paying off, and attackers keep finding easy ways in. Some attacks take real skill. Others barely",
+      "recipe": "the_hacker_news",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-16"
+    },
+    {
       "uid": "rss:d915d3970c878b",
       "source": "rss",
       "title": "Six Unpatched Danfoss Refrigeration Controller Flaws Could Allow Remote Takeover Without Login",
@@ -764,7 +802,7 @@
       "author": "info@thehackernews.com (The Hacker News)",
       "summary": "A type confusion flaw in PostgreSQL lets a database user who can create objects run code on the server. Updates released yesterday fix it, along with 51 other security flaws. Full protection from this flaw also requires rebuilding any C-language extensions installed on the server. The flaw, tracked as CVE-2026-6460, has a CVSS score of 8.8. Any code run this way has the rights of the operating",
       "recipe": "the_hacker_news",
-      "buzz": 30,
+      "buzz": 10,
       "topics": [
         "dev",
         "science",
@@ -784,7 +822,7 @@
       "author": "info@thehackernews.com (The Hacker News)",
       "summary": "Two attacks made public this week allow a malicious host to read data inside AMD SEV-SNP-protected virtual machines (VMs), which are built to keep the server's operator out. One of them, Mior, can also modify a VM's memory and fake the signed report confirming which software it runs. Both need control of the server's hypervisor, and Mior also needs control of the server's BIOS. Researchers",
       "recipe": "the_hacker_news",
-      "buzz": 30,
+      "buzz": 10,
       "topics": [
         "dev",
         "hardware"
@@ -1124,43 +1162,6 @@
       "topics": [
         "dev",
         "security"
-      ],
-      "date": "2026-11-12"
-    },
-    {
-      "uid": "rss:93bdb63a34b532",
-      "source": "rss",
-      "title": "Critical Pre-Auth MongoDB Flaw (CVE-2026-118383) Can Crash Lagging Servers on Failover",
-      "url": "https://thehackernews.com/2026/11/critical-pre-auth-mongodb-flaw-cve-2026.html",
-      "ts": 1794475500.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "A critical flaw in MongoDB Server allows an unauthenticated attacker to send two requests that trigger a crash on the database server. The crash occurs only if that server is later chosen to take over as the main server while it still lacks some recent changes. MongoDB, the company that makes the database, released fixed versions earlier this week. The affected servers are members of a replica",
-      "recipe": "the_hacker_news",
-      "buzz": 10,
-      "topics": [
-        "ai",
-        "dev",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-12"
-    },
-    {
-      "uid": "rss:b7438992801e2a",
-      "source": "rss",
-      "title": "Node.js Fixes 16 Flaws, Including HTTP/2 Bugs That Crash Servers and Leak Other Connections' Data",
-      "url": "https://thehackernews.com/2026/11/nodejs-fixes-16-flaws-including-http2.html",
-      "ts": 1794471637.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "A flaw fixed in Node.js this week lets unauthenticated clients crash servers that use the runtime's built-in HTTP/2 support on the 24.x and 26.x release lines. A second HTTP/2 flaw can cause a server to send a client pieces of its memory, including responses intended for other connections. Fixed versions were released for all three supported lines: 22.23.5, 24.22.3, and 26.13.1. The crash",
-      "recipe": "the_hacker_news",
-      "buzz": 10,
-      "topics": [
-        "hardware"
       ],
       "date": "2026-11-12"
     }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T15:23:11+00:00",
+  "generated_at": "2026-11-16T17:29:02+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -26,10 +26,10 @@
       "krebs": 10
     },
     "by_topic": {
-      "security": 107,
-      "ai": 75,
-      "dev": 47,
-      "hardware": 30,
+      "security": 108,
+      "ai": 76,
+      "dev": 48,
+      "hardware": 28,
       "biz": 9,
       "crypto": 7,
       "science": 6
@@ -1439,12 +1439,12 @@
       "title": "Aabyss-Team/Threat-Broadcast-Plus",
       "url": "https://github.com/Aabyss-Team/Threat-Broadcast-Plus",
       "ts": 1794800456.0,
-      "points": 56,
+      "points": 58,
       "comments": 12,
       "author": "Aabyss-Team",
       "summary": "网络安全威胁情报播报-Plus升级版",
       "recipe": "github_sec",
-      "buzz": 172,
+      "buzz": 174,
       "topics": [],
       "date": "2026-11-16"
     },
@@ -1488,12 +1488,12 @@
       "title": "wildorigins/wildos",
       "url": "https://github.com/wildorigins/wildos",
       "ts": 1794169078.0,
-      "points": 90,
+      "points": 91,
       "comments": 5,
       "author": "wildorigins",
       "summary": "A hardened Linux desktop, rebuilt from scratch, with your Windows apps built in. Free and open source.",
       "recipe": "github_sec",
-      "buzz": 105,
+      "buzz": 106,
       "topics": [],
       "date": "2026-11-08"
     },
@@ -1528,6 +1528,44 @@
       "buzz": 80,
       "topics": [
         "ai",
+        "security"
+      ],
+      "date": "2026-11-16"
+    },
+    {
+      "uid": "rss:a848b6775e4e6c",
+      "source": "rss",
+      "title": "Google Finds Hackers Using AI Agents to Build and Run Exploits From Software Patches",
+      "url": "https://thehackernews.com/2026/11/google-finds-hackers-using-ai-agents-to.html",
+      "ts": 1794837600.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Google on Monday revealed that adversarial use of artificial intelligence (AI) by threat actors has gone beyond manual prompting to deploying autonomous multi-agent offensive frameworks like ARTEX, CAIRN, CyberStrikeAI, and PentAGI to execute multi-stage intrusions at greater operational velocity. In tandem, threat actors are leveraging the power and capabilities of large language models (LLMs)",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-16"
+    },
+    {
+      "uid": "rss:ef045dd0f58580",
+      "source": "rss",
+      "title": "⚡ Weekly Recap: N-able 0-Days, Windows 0-Days, Chrome 0-Days, Fridge 0-Days, and More Bad Days",
+      "url": "https://thehackernews.com/2026/11/weekly-recap-n-able-0-days-windows-0.html",
+      "ts": 1794835640.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "A default password opened doors it never should have. A trusted update delivered malware. Even a security feature became a way to break in. Different stories, same problem: the things meant to protect us aren't always doing their job. Meanwhile, AI is making bug hunting faster, old flaws are still paying off, and attackers keep finding easy ways in. Some attacks take real skill. Others barely",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
         "security"
       ],
       "date": "2026-11-16"
@@ -1801,44 +1839,6 @@
       "date": "2026-11-14"
     },
     {
-      "uid": "rss:b5af83d54bc054",
-      "source": "rss",
-      "title": "PostgreSQL Patches 52 Flaws, Including 22-Year-Old Bug Enabling Authenticated RCE",
-      "url": "https://thehackernews.com/2026/11/postgresql-patches-52-flaws-including.html",
-      "ts": 1794588788.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "A type confusion flaw in PostgreSQL lets a database user who can create objects run code on the server. Updates released yesterday fix it, along with 51 other security flaws. Full protection from this flaw also requires rebuilding any C-language extensions installed on the server. The flaw, tracked as CVE-2026-6460, has a CVSS score of 8.8. Any code run this way has the rights of the operating",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "dev",
-        "science",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-13"
-    },
-    {
-      "uid": "rss:563cd8d18fd7e0",
-      "source": "rss",
-      "title": "New Mior and Skyfall Attacks Let Rogue Cloud Hosts Steal Secrets From AMD SEV-SNP VMs",
-      "url": "https://thehackernews.com/2026/11/new-mior-and-skyfall-attacks-let-rogue.html",
-      "ts": 1794583625.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Two attacks made public this week allow a malicious host to read data inside AMD SEV-SNP-protected virtual machines (VMs), which are built to keep the server's operator out. One of them, Mior, can also modify a VM's memory and fake the signed report confirming which software it runs. Both need control of the server's hypervisor, and Mior also needs control of the server's BIOS. Researchers",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "dev",
-        "hardware"
-      ],
-      "date": "2026-11-13"
-    },
-    {
       "uid": "gh:humanethq/airgap-check",
       "source": "github",
       "title": "humanethq/airgap-check",
@@ -1960,6 +1960,44 @@
         "security"
       ],
       "date": "2026-11-10"
+    },
+    {
+      "uid": "rss:b5af83d54bc054",
+      "source": "rss",
+      "title": "PostgreSQL Patches 52 Flaws, Including 22-Year-Old Bug Enabling Authenticated RCE",
+      "url": "https://thehackernews.com/2026/11/postgresql-patches-52-flaws-including.html",
+      "ts": 1794588788.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "A type confusion flaw in PostgreSQL lets a database user who can create objects run code on the server. Updates released yesterday fix it, along with 51 other security flaws. Full protection from this flaw also requires rebuilding any C-language extensions installed on the server. The flaw, tracked as CVE-2026-6460, has a CVSS score of 8.8. Any code run this way has the rights of the operating",
+      "recipe": "hackersnews",
+      "buzz": 10,
+      "topics": [
+        "dev",
+        "science",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "uid": "rss:563cd8d18fd7e0",
+      "source": "rss",
+      "title": "New Mior and Skyfall Attacks Let Rogue Cloud Hosts Steal Secrets From AMD SEV-SNP VMs",
+      "url": "https://thehackernews.com/2026/11/new-mior-and-skyfall-attacks-let-rogue.html",
+      "ts": 1794583625.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Two attacks made public this week allow a malicious host to read data inside AMD SEV-SNP-protected virtual machines (VMs), which are built to keep the server's operator out. One of them, Mior, can also modify a VM's memory and fake the signed report confirming which software it runs. Both need control of the server's hypervisor, and Mior also needs control of the server's BIOS. Researchers",
+      "recipe": "hackersnews",
+      "buzz": 10,
+      "topics": [
+        "dev",
+        "hardware"
+      ],
+      "date": "2026-11-13"
     },
     {
       "uid": "rss:6518422fdf409b",
@@ -2294,43 +2332,6 @@
       "topics": [
         "dev",
         "security"
-      ],
-      "date": "2026-11-12"
-    },
-    {
-      "uid": "rss:93bdb63a34b532",
-      "source": "rss",
-      "title": "Critical Pre-Auth MongoDB Flaw (CVE-2026-118383) Can Crash Lagging Servers on Failover",
-      "url": "https://thehackernews.com/2026/11/critical-pre-auth-mongodb-flaw-cve-2026.html",
-      "ts": 1794475500.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "A critical flaw in MongoDB Server allows an unauthenticated attacker to send two requests that trigger a crash on the database server. The crash occurs only if that server is later chosen to take over as the main server while it still lacks some recent changes. MongoDB, the company that makes the database, released fixed versions earlier this week. The affected servers are members of a replica",
-      "recipe": "hackersnews",
-      "buzz": 10,
-      "topics": [
-        "ai",
-        "dev",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-12"
-    },
-    {
-      "uid": "rss:b7438992801e2a",
-      "source": "rss",
-      "title": "Node.js Fixes 16 Flaws, Including HTTP/2 Bugs That Crash Servers and Leak Other Connections' Data",
-      "url": "https://thehackernews.com/2026/11/nodejs-fixes-16-flaws-including-http2.html",
-      "ts": 1794471637.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "A flaw fixed in Node.js this week lets unauthenticated clients crash servers that use the runtime's built-in HTTP/2 support on the 24.x and 26.x release lines. A second HTTP/2 flaw can cause a server to send a client pieces of its memory, including responses intended for other connections. Fixed versions were released for all three supported lines: 22.23.5, 24.22.3, and 26.13.1. The crash",
-      "recipe": "hackersnews",
-      "buzz": 10,
-      "topics": [
-        "hardware"
       ],
       "date": "2026-11-12"
     },
