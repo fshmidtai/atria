@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T17:29:02+00:00",
+  "generated_at": "2026-11-16T21:03:09+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -27,9 +27,9 @@
     },
     "by_topic": {
       "security": 108,
-      "ai": 76,
+      "ai": 75,
       "dev": 48,
-      "hardware": 28,
+      "hardware": 27,
       "biz": 9,
       "crypto": 7,
       "science": 6
@@ -263,6 +263,24 @@
         "security"
       ],
       "date": "2021-01-11"
+    },
+    {
+      "uid": "cve:GHSA-7mxv-7h3q-9324",
+      "source": "cve",
+      "title": "CVE-2026-128134: NLTK dot2img runs Graphviz 'dot' without the trusted-exec chokepoint, enabling local code execution via a writable PATH element",
+      "url": "https://github.com/advisories/GHSA-7mxv-7h3q-9324",
+      "ts": 1794854751.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "nltk",
+      "summary": "Severity: high. ## Summary\n\n`nltk.parse.dependencygraph.dot2img` invokes the Graphviz `dot` executable without the trusted-execution guarantees that NLTK applies to its other native-tool wrappers. The function resolves `dot` by bare name and then runs the resolved absolute path with a raw `subprocess.run`, omitting",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-16"
     },
     {
       "uid": "cve:GHSA-m9j8-jcmv-hp69",
@@ -538,43 +556,6 @@
       "buzz": 3530,
       "topics": [
         "ai",
-        "security"
-      ],
-      "date": "2026-11-13"
-    },
-    {
-      "uid": "cve:GHSA-8fx7-8jr8-84rv",
-      "source": "cve",
-      "title": "CVE-2026-126303: NLTK: Unbounded CPU consumption in SteppingRecursiveDescentParser.parse() with ambiguous or self-embedding grammars",
-      "url": "https://github.com/advisories/GHSA-8fx7-8jr8-84rv",
-      "ts": 1794603739.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "nltk",
-      "summary": "Severity: high. ## Summary\n\n`nltk.parse.recursivedescent.SteppingRecursiveDescentParser.parse()` performs an unbounded top-down search over ambiguous or self-embedding context-free grammars with no wall-clock or step limit. An actor who can influence the grammar and supply a short input to a caller that uses this p",
-      "recipe": "gh_advisories",
-      "buzz": 3530,
-      "topics": [
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-13"
-    },
-    {
-      "uid": "cve:GHSA-qg35-44qx-7vrr",
-      "source": "cve",
-      "title": "CVE-2026-126304: NLTK: Symlink escape in YCOECorpusReader lets a psd/pos directory symlink read files outside the corpus root within the data sandbox",
-      "url": "https://github.com/advisories/GHSA-qg35-44qx-7vrr",
-      "ts": 1794603316.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "nltk",
-      "summary": "Severity: high. ## Summary\n\n`YCOECorpusReader` builds two nested corpus sub-readers whose roots are derived from `self.root.join(\"psd\")` and `self.root.join(\"pos\")` (nltk/corpus/reader/ycoe.py). Because `FileSystemPathPointer.join()` (nltk/data.py) performs a purely lexical containment check and never resolves syml",
-      "recipe": "gh_advisories",
-      "buzz": 3530,
-      "topics": [
-        "ai",
-        "dev",
         "security"
       ],
       "date": "2026-11-13"
@@ -871,6 +852,23 @@
         "hardware"
       ],
       "date": "2020-09-30"
+    },
+    {
+      "uid": "cve:GHSA-mfr8-8qww-v76h",
+      "source": "cve",
+      "title": "CVE-2026-119790: Next.js: Information disclosure across root params when a 'use cache' function is called through unstable_cache()",
+      "url": "https://github.com/advisories/GHSA-mfr8-8qww-v76h",
+      "ts": 1794855082.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "next",
+      "summary": "Severity: medium. Next.js applications with `'use cache'` can disclose cached data across root params when the same `'use cache'` function is called both directly during rendering and through `unstable_cache()`, and that function reads a root param. Root params are route parameters of the root layout, and application",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-11-16"
     },
     {
       "uid": "cve:GHSA-96x6-fvhx-49hg",
@@ -1416,35 +1414,17 @@
       "date": "2026-11-06"
     },
     {
-      "uid": "gh:LoopGrubDolmen/wallet-security-desk",
-      "source": "github",
-      "title": "LoopGrubDolmen/wallet-security-desk",
-      "url": "https://github.com/LoopGrubDolmen/wallet-security-desk",
-      "ts": 1794768281.0,
-      "points": 98,
-      "comments": 0,
-      "author": "LoopGrubDolmen",
-      "summary": "Self-custody wallet hygiene desk — seed storage drills and phishing red flags.",
-      "recipe": "github_sec",
-      "buzz": 178,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-15"
-    },
-    {
       "uid": "gh:Aabyss-Team/Threat-Broadcast-Plus",
       "source": "github",
       "title": "Aabyss-Team/Threat-Broadcast-Plus",
       "url": "https://github.com/Aabyss-Team/Threat-Broadcast-Plus",
       "ts": 1794800456.0,
-      "points": 58,
+      "points": 59,
       "comments": 12,
       "author": "Aabyss-Team",
       "summary": "网络安全威胁情报播报-Plus升级版",
       "recipe": "github_sec",
-      "buzz": 174,
+      "buzz": 175,
       "topics": [],
       "date": "2026-11-16"
     },
@@ -1464,6 +1444,24 @@
         "dev"
       ],
       "date": "2026-11-11"
+    },
+    {
+      "uid": "gh:LoopGrubDolmen/wallet-security-desk",
+      "source": "github",
+      "title": "LoopGrubDolmen/wallet-security-desk",
+      "url": "https://github.com/LoopGrubDolmen/wallet-security-desk",
+      "ts": 1794768281.0,
+      "points": 98,
+      "comments": 0,
+      "author": "LoopGrubDolmen",
+      "summary": "Self-custody wallet hygiene desk — seed storage drills and phishing red flags.",
+      "recipe": "github_sec",
+      "buzz": 128,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-15"
     },
     {
       "uid": "gh:raca2024/ashampoo-undelete-recovery",
@@ -1488,12 +1486,12 @@
       "title": "wildorigins/wildos",
       "url": "https://github.com/wildorigins/wildos",
       "ts": 1794169078.0,
-      "points": 91,
+      "points": 92,
       "comments": 5,
       "author": "wildorigins",
       "summary": "A hardened Linux desktop, rebuilt from scratch, with your Windows apps built in. Free and open source.",
       "recipe": "github_sec",
-      "buzz": 106,
+      "buzz": 107,
       "topics": [],
       "date": "2026-11-08"
     },
@@ -1738,12 +1736,12 @@
       "title": "NPCmillionaire/unredact.tools",
       "url": "https://github.com/NPCmillionaire/unredact.tools",
       "ts": 1794511431.0,
-      "points": 32,
+      "points": 35,
       "comments": 1,
       "author": "NPCmillionaire",
       "summary": "See what your files leak (GPS, serials, authors, failed redactions, deleted text, watermarks), then scrub them.",
       "recipe": "github_sec",
-      "buzz": 45,
+      "buzz": 48,
       "topics": [
         "ai"
       ],

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T17:28:35+00:00",
+  "generated_at": "2026-11-16T21:02:49+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -19,9 +19,9 @@
     },
     "by_topic": {
       "security": 52,
-      "ai": 45,
+      "ai": 44,
       "dev": 31,
-      "hardware": 25,
+      "hardware": 24,
       "science": 5,
       "crypto": 5,
       "biz": 4
@@ -38,6 +38,24 @@
     ]
   },
   "items": [
+    {
+      "uid": "cve:GHSA-7mxv-7h3q-9324",
+      "source": "cve",
+      "title": "CVE-2026-128134: NLTK dot2img runs Graphviz 'dot' without the trusted-exec chokepoint, enabling local code execution via a writable PATH element",
+      "url": "https://github.com/advisories/GHSA-7mxv-7h3q-9324",
+      "ts": 1794854751.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "nltk",
+      "summary": "Severity: high. ## Summary\n\n`nltk.parse.dependencygraph.dot2img` invokes the Graphviz `dot` executable without the trusted-execution guarantees that NLTK applies to its other native-tool wrappers. The function resolves `dot` by bare name and then runs the resolved absolute path with a raw `subprocess.run`, omitting",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-16"
+    },
     {
       "uid": "cve:GHSA-m9j8-jcmv-hp69",
       "source": "cve",
@@ -300,41 +318,21 @@
       "date": "2026-11-13"
     },
     {
-      "uid": "cve:GHSA-8fx7-8jr8-84rv",
+      "uid": "cve:GHSA-mfr8-8qww-v76h",
       "source": "cve",
-      "title": "CVE-2026-126303: NLTK: Unbounded CPU consumption in SteppingRecursiveDescentParser.parse() with ambiguous or self-embedding grammars",
-      "url": "https://github.com/advisories/GHSA-8fx7-8jr8-84rv",
-      "ts": 1794603739.0,
-      "points": 3500,
+      "title": "CVE-2026-119790: Next.js: Information disclosure across root params when a 'use cache' function is called through unstable_cache()",
+      "url": "https://github.com/advisories/GHSA-mfr8-8qww-v76h",
+      "ts": 1794855082.0,
+      "points": 1800,
       "comments": 0,
-      "author": "nltk",
-      "summary": "Severity: high. ## Summary\n\n`nltk.parse.recursivedescent.SteppingRecursiveDescentParser.parse()` performs an unbounded top-down search over ambiguous or self-embedding context-free grammars with no wall-clock or step limit. An actor who can influence the grammar and supply a short input to a caller that uses this p",
+      "author": "next",
+      "summary": "Severity: medium. Next.js applications with `'use cache'` can disclose cached data across root params when the same `'use cache'` function is called both directly during rendering and through `unstable_cache()`, and that function reads a root param. Root params are route parameters of the root layout, and application",
       "recipe": "gh_advisories",
-      "buzz": 3530,
+      "buzz": 1880,
       "topics": [
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-13"
-    },
-    {
-      "uid": "cve:GHSA-qg35-44qx-7vrr",
-      "source": "cve",
-      "title": "CVE-2026-126304: NLTK: Symlink escape in YCOECorpusReader lets a psd/pos directory symlink read files outside the corpus root within the data sandbox",
-      "url": "https://github.com/advisories/GHSA-qg35-44qx-7vrr",
-      "ts": 1794603316.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "nltk",
-      "summary": "Severity: high. ## Summary\n\n`YCOECorpusReader` builds two nested corpus sub-readers whose roots are derived from `self.root.join(\"psd\")` and `self.root.join(\"pos\")` (nltk/corpus/reader/ycoe.py). Because `FileSystemPathPointer.join()` (nltk/data.py) performs a purely lexical containment check and never resolves syml",
-      "recipe": "gh_advisories",
-      "buzz": 3530,
-      "topics": [
-        "ai",
-        "dev",
         "security"
       ],
-      "date": "2026-11-13"
+      "date": "2026-11-16"
     },
     {
       "uid": "cve:GHSA-96x6-fvhx-49hg",

@@ -5,7 +5,23 @@
     <link>https://cveradar-ah3.pages.dev</link>
     <description>Живые CVE и уязвимости на русском: автономный перевод угроз в понятные дайджесты для DevOps и небольшого SecOps</description>
     <language>ru</language>
-    <lastBuildDate>Mon, 16 Nov 2026 17:28:35 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 16 Nov 2026 21:02:49 GMT</lastBuildDate>
+    <item>
+      <title>CVE-2026-119790: Next.js: Information disclosure across root params when a 'use cache' function is called through unstable_cache()</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-119790-next-js-information-disclosure-across-root-param.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-119790-next-js-information-disclosure-across-root-param.html</guid>
+      <pubDate>Mon, 16 Nov 2026 18:51:22 GMT</pubDate>
+      <description>Severity: medium. Next.js applications with `'use cache'` can disclose cached data across root params when the same `'use cache'` function is called both directly during rendering and through `unstable_cache()`, and that function reads a root param. Root params are route parameters of the root layou</description>
+    </item>
+    <item>
+      <title>CVE-2026-128134: NLTK dot2img runs Graphviz 'dot' without the trusted-exec chokepoint, enabling local code execution via a writable PATH element</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-128134-nltk-dot2img-runs-graphviz-dot-without-the-trust.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-128134-nltk-dot2img-runs-graphviz-dot-without-the-trust.html</guid>
+      <pubDate>Mon, 16 Nov 2026 18:45:51 GMT</pubDate>
+      <description>Severity: high. ## Summary
+
+`nltk.parse.dependencygraph.dot2img` invokes the Graphviz `dot` executable without the trusted-execution guarantees that NLTK applies to its other native-tool wrappers. The function resolves `dot` by bare name and then runs the resolved absolute path with a raw `subproces</description>
+    </item>
     <item>
       <title>CVE-2026-128076: Nuxt: Colliding island props can share one `/__nuxt_island` path (incomplete fix for CVE-2026-46342)</title>
       <link>https://cveradar-ah3.pages.dev/item/cve-2026-128076-nuxt-colliding-island-props-can-share-one-nuxt-i.html</link>
@@ -250,20 +266,6 @@ This vulnerability was previously reported through Huntr, accepted by the </desc
       <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/italy-fines-meta-805-million-over-facebook-s-android-gallery-acc.html</guid>
       <pubDate>Sun, 15 Nov 2026 11:27:31 GMT</pubDate>
       <description>Meta was fined €805 million in Italy yesterday over a Facebook for Android feature that suggests photos and videos from users' phone galleries for them to post. The Garante, Italy's data protection authority, found that the feature was enabled by default and that the app accessed Italian users' phot</description>
-    </item>
-    <item>
-      <title>Cursor Says Stolen Fireworks AI Key Led to Trojanized Claude Code Extension Incident</title>
-      <link>https://cveradar-ah3.pages.dev/item/cursor-says-stolen-fireworks-ai-key-led-to-trojanized-claude-cod.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cursor-says-stolen-fireworks-ai-key-led-to-trojanized-claude-cod.html</guid>
-      <pubDate>Sun, 15 Nov 2026 08:22:04 GMT</pubDate>
-      <description>The compromise of Anthropic's official Claude Code extension on Cursor's extension marketplace was the result of the theft of an access key that was exposed in the wake of a breach targeting Fireworks AI. "An attacker obtained an access key we had issued to Fireworks," Cursor said in a Friday update</description>
-    </item>
-    <item>
-      <title>Attackers Exploit UnrealIRCd Flaw That Enables Server-Level Command Injection</title>
-      <link>https://cveradar-ah3.pages.dev/item/attackers-exploit-unrealircd-flaw-that-enables-server-level-comm.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/attackers-exploit-unrealircd-flaw-that-enables-server-level-comm.html</guid>
-      <pubDate>Sat, 14 Nov 2026 12:38:35 GMT</pubDate>
-      <description>The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added a high-severity security flaw impacting UnrealIRCd, an open-source Internet Relay Chat (IRC) server, to its Known Exploited Vulnerabilities (KEV) catalog, following reports of active exploitation. The vulnerability, tra</description>
     </item>
   </channel>
 </rss>
