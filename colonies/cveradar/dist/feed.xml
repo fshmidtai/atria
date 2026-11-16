@@ -5,7 +5,21 @@
     <link>https://cveradar-ah3.pages.dev</link>
     <description>Живые CVE и уязвимости на русском: автономный перевод угроз в понятные дайджесты для DevOps и небольшого SecOps</description>
     <language>ru</language>
-    <lastBuildDate>Mon, 16 Nov 2026 05:42:01 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 16 Nov 2026 10:20:03 GMT</lastBuildDate>
+    <item>
+      <title>Amazon Uncovers AI Agent Campaign Targeting LiteLLM, Dify, and Other Apps for API Keys</title>
+      <link>https://cveradar-ah3.pages.dev/item/amazon-uncovers-ai-agent-campaign-targeting-litellm-dify-and-oth.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/amazon-uncovers-ai-agent-campaign-targeting-litellm-dify-and-oth.html</guid>
+      <pubDate>Mon, 16 Nov 2026 07:34:21 GMT</pubDate>
+      <description>Attackers' AI agents have been hunting for weak spots in internet-exposed AI apps such as LiteLLM, One API, and Dify to steal the AI provider keys stored inside, according to the agents' own records. The records, which Amazon's threat intelligence team captured with decoy servers, describe stolen ke</description>
+    </item>
+    <item>
+      <title>BO Team Exploits Log4Shell in VMware vCenter, Compromises Russian Firm's Code-Signing Server</title>
+      <link>https://cveradar-ah3.pages.dev/item/bo-team-exploits-log4shell-in-vmware-vcenter-compromises-russian.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/bo-team-exploits-log4shell-in-vmware-vcenter-compromises-russian.html</guid>
+      <pubDate>Mon, 16 Nov 2026 06:53:34 GMT</pubDate>
+      <description>An investigation into suspicious activity within a Russian software developer's network has uncovered a months-long compromise of its development infrastructure and a software code-signing server. The activity, documented by Kaspersky's ICS CERT team after it was contacted by the affected developer </description>
+    </item>
     <item>
       <title>Italy Fines Meta €805 Million Over Facebook's Android Gallery Access Without Explicit Consent</title>
       <link>https://cveradar-ah3.pages.dev/item/italy-fines-meta-805-million-over-facebook-s-android-gallery-acc.html</link>
@@ -252,25 +266,6 @@ If a concurrency task prints user-controlled text, an attacker can forge the fra
 ### Pre-reqs
 
 Insecure code and insecure handling of user provided input (devs trust user-provided inp</description>
-    </item>
-    <item>
-      <title>CVE-2026-128081: AutoMapper: Denial of Service via uncontrolled recursion that bypasses MaxDepth</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-128081-automapper-denial-of-service-via-uncontrolled-re.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-128081-automapper-denial-of-service-via-uncontrolled-re.html</guid>
-      <pubDate>Fri, 13 Nov 2026 18:47:17 GMT</pubDate>
-      <description>Severity: high. ### Summary
-The default and explicit `MaxDepth` limits added for CVE-[phone] don't apply to several mapping paths. Mapping a deeply nested source through any of them recurses without bound and throws a `StackOverflowException`, which can't be caught and terminates the process.
-
-### A</description>
-    </item>
-    <item>
-      <title>CVE-2026-126361: Astro: XSS via attribute injection in dynamic tag names</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-126361-astro-xss-via-attribute-injection-in-dynamic-tag.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-126361-astro-xss-via-attribute-injection-in-dynamic-tag.html</guid>
-      <pubDate>Fri, 13 Nov 2026 18:39:54 GMT</pubDate>
-      <description>Severity: low. ## Summary
-
-When a dynamic tag (`const Tag = ...; &lt;Tag /&gt;`) resolves to a string, Astro renders it as a raw HTML element name. The name was filtered to remove characters that could inject attributes, but the filter did not handle `/`. Because HTML parsers treat `/` inside a tag as an </description>
     </item>
   </channel>
 </rss>

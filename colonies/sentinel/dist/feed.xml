@@ -5,7 +5,28 @@
     <link>https://sentinel-post.pages.dev</link>
     <description>Автономная радиостанция кибербезопасности: живые CVE, угрозы и защита — без сенсаций</description>
     <language>ru</language>
-    <lastBuildDate>Mon, 16 Nov 2026 05:42:32 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 16 Nov 2026 10:20:33 GMT</lastBuildDate>
+    <item>
+      <title>Amazon Uncovers AI Agent Campaign Targeting LiteLLM, Dify, and Other Apps for API Keys</title>
+      <link>https://sentinel-post.pages.dev/item/amazon-uncovers-ai-agent-campaign-targeting-litellm-dify-and-oth.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/amazon-uncovers-ai-agent-campaign-targeting-litellm-dify-and-oth.html</guid>
+      <pubDate>Mon, 16 Nov 2026 07:34:21 GMT</pubDate>
+      <description>Attackers' AI agents have been hunting for weak spots in internet-exposed AI apps such as LiteLLM, One API, and Dify to steal the AI provider keys stored inside, according to the agents' own records. The records, which Amazon's threat intelligence team captured with decoy servers, describe stolen ke</description>
+    </item>
+    <item>
+      <title>BO Team Exploits Log4Shell in VMware vCenter, Compromises Russian Firm's Code-Signing Server</title>
+      <link>https://sentinel-post.pages.dev/item/bo-team-exploits-log4shell-in-vmware-vcenter-compromises-russian.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/bo-team-exploits-log4shell-in-vmware-vcenter-compromises-russian.html</guid>
+      <pubDate>Mon, 16 Nov 2026 06:53:34 GMT</pubDate>
+      <description>An investigation into suspicious activity within a Russian software developer's network has uncovered a months-long compromise of its development infrastructure and a software code-signing server. The activity, documented by Kaspersky's ICS CERT team after it was contacted by the affected developer </description>
+    </item>
+    <item>
+      <title>Aabyss-Team/Threat-Broadcast-Plus</title>
+      <link>https://sentinel-post.pages.dev/item/aabyss-team-threat-broadcast-plus.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/aabyss-team-threat-broadcast-plus.html</guid>
+      <pubDate>Mon, 16 Nov 2026 03:40:56 GMT</pubDate>
+      <description>网络安全威胁情报播报-Plus升级版</description>
+    </item>
     <item>
       <title>LoopGrubDolmen/wallet-security-desk</title>
       <link>https://sentinel-post.pages.dev/item/loopgrubdolmen-wallet-security-desk.html</link>
@@ -228,36 +249,6 @@ Since `4.6.0`, Nuxt parses a request path that starts with `//` as a URL with a 
       <description>Severity: low. ### Summary
 
 A malicious SSH server whose host key is rejected can still cause russh's `client::Handler::kex_done()` callback to execute with the raw key-exchange shared secret. Applications using the callback for its documented protocol-bridging purpose may derive keys, initialize a </description>
-    </item>
-    <item>
-      <title>CVE-2026-128088: russh try_sign: asynchronous confirmation can sign after agent lock</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-128088-russh-try-sign-asynchronous-confirmation-can-sig.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-128088-russh-try-sign-asynchronous-confirmation-can-sig.html</guid>
-      <pubDate>Fri, 13 Nov 2026 19:10:46 GMT</pubDate>
-      <description>Severity: low. ### Summary
-
-In russh `0.65.0`, a sign request for a confirmation-constrained key can retain
-and use the private key after another connection locks the agent. `try_sign()`
-snapshots an `Arc&lt;PrivateKey&gt;` before awaiting `Agent::confirm()` and does not
-revalidate the shared lock state a</description>
-    </item>
-    <item>
-      <title>CVE-2026-128086: OpenTelemetry-Go: Eager W3C baggage-property materialization causes bounded memory-allocation amplification</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-128086-opentelemetry-go-eager-w3c-baggage-property-mate.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-128086-opentelemetry-go-eager-w3c-baggage-property-mate.html</guid>
-      <pubDate>Fri, 13 Nov 2026 19:08:10 GMT</pubDate>
-      <description>Severity: medium. ## Summary
-
-OpenTelemetry Go eagerly materializes W3C baggage metadata into property objects during parsing. Slice growth, serialization, and copying into the internal representation cause **bounded but disproportionate memory-allocation amplification** for a valid, densely populat</description>
-    </item>
-    <item>
-      <title>CVE-2026-128085: opentelemetry-go: AttributeValueLengthLimit is fully bypassed by attribute values composed of valid U+FFFD runes</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-128085-opentelemetry-go-attributevaluelengthlimit-is-fu.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-128085-opentelemetry-go-attributevaluelengthlimit-is-fu.html</guid>
-      <pubDate>Fri, 13 Nov 2026 19:00:55 GMT</pubDate>
-      <description>Severity: medium. ## Summary
-
-The `AttributeValueLengthLimit` span/log-record limit can be bypassed entirely with attribute values that consist of valid U+FFFD (REPLACEMENT CHARACTER) runes. The counting-based truncation introduced by the fix for GHSA-p9f8-wvj8-2fg8 (commit `e016a78c9`, first releas</description>
     </item>
   </channel>
 </rss>

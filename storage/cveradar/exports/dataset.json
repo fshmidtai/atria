@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T05:42:01+00:00",
+  "generated_at": "2026-11-16T10:20:03+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -18,13 +18,13 @@
       "the_hacker_news": 30
     },
     "by_topic": {
-      "security": 51,
+      "security": 50,
       "ai": 35,
-      "dev": 28,
-      "hardware": 24,
+      "dev": 30,
+      "hardware": 26,
       "science": 6,
       "crypto": 4,
-      "biz": 3
+      "biz": 4
     },
     "top_domains": [
       [
@@ -593,6 +593,45 @@
       "date": "2026-11-13"
     },
     {
+      "uid": "rss:67bb3d5c3273f9",
+      "source": "rss",
+      "title": "Amazon Uncovers AI Agent Campaign Targeting LiteLLM, Dify, and Other Apps for API Keys",
+      "url": "https://thehackernews.com/2026/11/amazon-uncovers-ai-agent-campaign.html",
+      "ts": 1794814461.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Attackers' AI agents have been hunting for weak spots in internet-exposed AI apps such as LiteLLM, One API, and Dify to steal the AI provider keys stored inside, according to the agents' own records. The records, which Amazon's threat intelligence team captured with decoy servers, describe stolen keys being used to run the AI models that powered the search for more keys. The team said this",
+      "recipe": "the_hacker_news",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "hardware"
+      ],
+      "date": "2026-11-16"
+    },
+    {
+      "uid": "rss:fdb8ff73358b89",
+      "source": "rss",
+      "title": "BO Team Exploits Log4Shell in VMware vCenter, Compromises Russian Firm's Code-Signing Server",
+      "url": "https://thehackernews.com/2026/11/bo-team-exploits-log4shell-in-vmware.html",
+      "ts": 1794812014.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "An investigation into suspicious activity within a Russian software developer's network has uncovered a months-long compromise of its development infrastructure and a software code-signing server. The activity, documented by Kaspersky's ICS CERT team after it was contacted by the affected developer in June 2025, has been attributed to a threat actor named BO Team (aka Black Owl, Hoody Hyena,",
+      "recipe": "the_hacker_news",
+      "buzz": 80,
+      "topics": [
+        "dev",
+        "biz",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-16"
+    },
+    {
       "uid": "rss:fb43e89fb20d8c",
       "source": "rss",
       "title": "Italy Fines Meta €805 Million Over Facebook's Android Gallery Access Without Explicit Consent",
@@ -620,7 +659,7 @@
       "author": "info@thehackernews.com (The Hacker News)",
       "summary": "The compromise of Anthropic's official Claude Code extension on Cursor's extension marketplace was the result of the theft of an access key that was exposed in the wake of a breach targeting Fireworks AI. \"An attacker obtained an access key we had issued to Fireworks,\" Cursor said in a Friday update. \"The key was exposed by Fireworks, and the attacker used it to copy data from a read-only",
       "recipe": "the_hacker_news",
-      "buzz": 80,
+      "buzz": 30,
       "topics": [
         "ai",
         "dev",
@@ -791,7 +830,7 @@
       "author": "info@thehackernews.com (The Hacker News)",
       "summary": "An unknown threat actor has been observed targeting unpatched Check Point Security Gateways to obtain initial access via the PHP2Shell vulnerabilities and then a previously unreported local privilege escalation flaw in Gaia OS&nbsp; to deploy a backdoor called TSGA. The activity, detailed by Check Point, began on October 30, 2026, and targeted Israeli organizations, with a broader follow-up",
       "recipe": "the_hacker_news",
-      "buzz": 30,
+      "buzz": 10,
       "topics": [
         "ai",
         "security"
@@ -809,7 +848,7 @@
       "author": "info@thehackernews.com (The Hacker News)",
       "summary": "N-able on Thursday said it's taking additional precautions in the wake of public disclosure of a new set of flaws tracked as 4EverAble2Shell and Agent2Shell. \"We are restricting certain N-central features and integrations,\" the company said in a Thursday update. \"These measures may affect some functionality, but we believe taking additional precautions while remediation is completed is the",
       "recipe": "the_hacker_news",
-      "buzz": 30,
+      "buzz": 10,
       "topics": [
         "ai",
         "security",
@@ -1113,41 +1152,6 @@
         "security"
       ],
       "date": "2026-11-12"
-    },
-    {
-      "uid": "rss:a59f63d021cca1",
-      "source": "rss",
-      "title": "Critical Zoom Workplace Flaw Could Allow Unauthenticated Remote Privilege Escalation",
-      "url": "https://thehackernews.com/2026/11/critical-zoom-workplace-flaw-could.html",
-      "ts": 1794413566.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Zoom has released software updates to address two security flaws impacting Zoom Workplace for Windows, including a critical bug that could result in privilege escalation on affected systems. The vulnerabilities are listed below - CVE-[phone] (CVSS score: 9.6) - An improper input validation vulnerability that could allow an unauthenticated user to conduct an escalation of privilege via",
-      "recipe": "the_hacker_news",
-      "buzz": 10,
-      "topics": [
-        "security"
-      ],
-      "date": "2026-11-11"
-    },
-    {
-      "uid": "rss:1e5084b7044859",
-      "source": "rss",
-      "title": "AntiFox AI Pentesting Platform Linked to Attacks That Accessed AWS Production Secrets",
-      "url": "https://thehackernews.com/2026/11/antifox-ai-pentesting-platform-linked.html",
-      "ts": 1794411267.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Cybersecurity researchers have disclosed details of a campaign in which an emerging agentic penetration testing platform called AntiFox has been used to steal Amazon Web Services (AWS) credentials and pivot laterally into compromised environments. \"In several recently observed intrusions, Alibaba Cloud systems hosting AntiFox interfaces were associated with confirmed malicious actions against",
-      "recipe": "the_hacker_news",
-      "buzz": 10,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-11"
     }
   ]
 }
