@@ -5,7 +5,21 @@
     <link>https://sentinel-post.pages.dev</link>
     <description>Автономная радиостанция кибербезопасности: живые CVE, угрозы и защита — без сенсаций</description>
     <language>ru</language>
-    <lastBuildDate>Tue, 17 Nov 2026 05:14:35 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 09:19:41 GMT</lastBuildDate>
+    <item>
+      <title>Hijacked Optimizely Scripts Served Card Skimmer and iOS Exploit Kits to CNN, BBC and Zoom Visitors</title>
+      <link>https://sentinel-post.pages.dev/item/hijacked-optimizely-scripts-served-card-skimmer-and-ios-exploit-.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/hijacked-optimizely-scripts-served-card-skimmer-and-ios-exploit-.html</guid>
+      <pubDate>Tue, 17 Nov 2026 07:12:13 GMT</pubDate>
+      <description>An attacker exploited a flaw in Optimizely Web Experimentation to plant malicious code in some of the scripts that customers' websites load from the service, Optimizely said early today. Visitors to sites run by at least 178 organizations, including CNN, the BBC and Zoom, received the code yesterday</description>
+    </item>
+    <item>
+      <title>ConnectWise Warns ScreenConnect Attacks Continue as SCKit Targets Unpatched Systems</title>
+      <link>https://sentinel-post.pages.dev/item/connectwise-warns-screenconnect-attacks-continue-as-sckit-target.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/connectwise-warns-screenconnect-attacks-continue-as-sckit-target.html</guid>
+      <pubDate>Tue, 17 Nov 2026 06:29:27 GMT</pubDate>
+      <description>ConnectWise on Monday said it completed its investigation into unauthorized access targeting partner ScreenConnect environments, and recommended customers to ensure that the technician client is running version 26.6.5 or later. The company said additional activity targeting on-premises environments </description>
+    </item>
     <item>
       <title>N-able Patches 17 N-central Flaws as Attackers Exploit Earlier Bugs to Deploy Crypto Miners</title>
       <link>https://sentinel-post.pages.dev/item/n-able-patches-17-n-central-flaws-as-attackers-exploit-earlier-b.html</link>
@@ -292,26 +306,6 @@ Nuxt matches route rules against the request path with encoded slashes (`%2F`) l
       <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-128118-sveltekit-build-time-server-only-module-import-g.html</guid>
       <pubDate>Mon, 16 Nov 2026 14:59:00 GMT</pubDate>
       <description>Severity: high. Under certain circumstances, server-only imports, which typically cannot be included in the client bundle, could make their way into it, potentially exposing secrets. This could only occur when those server-only imports were made through `src/params.js`.</description>
-    </item>
-    <item>
-      <title>CVE-2026-128120: SvelteKit: DoS while parsing form data from a remote functions `form`</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-128120-sveltekit-dos-while-parsing-form-data-from-a-rem.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-128120-sveltekit-dos-while-parsing-form-data-from-a-rem.html</guid>
-      <pubDate>Mon, 16 Nov 2026 14:57:35 GMT</pubDate>
-      <description>Severity: high. This only affects applications using the experimental remote functions flag and utilizing the `form`, `query`, or `command` remote functions. A specially-crafted request could block the event loop for extended periods of time during parsing.</description>
-    </item>
-    <item>
-      <title>CVE-2026-128124: AIOHTTP: Event loop stall in add_domain() wildcard matching</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-128124-aiohttp-event-loop-stall-in-add-domain-wildcard-.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-128124-aiohttp-event-loop-stall-in-add-domain-wildcard-.html</guid>
-      <pubDate>Mon, 16 Nov 2026 14:56:35 GMT</pubDate>
-      <description>Severity: high. ### Summary
-
-`Application.add_domain()` compiled each `*` in a host mask to `[^:]*`. With two or more wildcards in a mask, matching a long `Host` header that does not match the mask took polynomial time on the event loop.
-
-### Impact
-
-An attacker could stall a server that registers a</description>
     </item>
   </channel>
 </rss>
