@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T21:03:09+00:00",
+  "generated_at": "2026-11-17T01:30:55+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -27,12 +27,12 @@
     },
     "by_topic": {
       "security": 108,
-      "ai": 75,
-      "dev": 48,
-      "hardware": 27,
+      "ai": 71,
+      "dev": 56,
+      "hardware": 24,
       "biz": 9,
-      "crypto": 7,
-      "science": 6
+      "science": 5,
+      "crypto": 5
     },
     "top_domains": [
       [
@@ -265,6 +265,138 @@
       "date": "2021-01-11"
     },
     {
+      "uid": "cve:GHSA-c94f-87xg-65wf",
+      "source": "cve",
+      "title": "CVE-2026-91115: Silverstripe Framework: RCE via i18nTextCollectorTask writer parameter",
+      "url": "https://github.com/advisories/GHSA-c94f-87xg-65wf",
+      "ts": 1794868512.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "silverstripe/framework",
+      "summary": "Severity: high. ### Impact\nThe writer option of the i18nTextCollectorTask dev task was passed to the injector without validation. A crafted dev task URL could create arbitrary objects with attacker-controlled constructor arguments and run code on the server. Because the dev task did not ask for confirmation, an adm",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "dev",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-16"
+    },
+    {
+      "uid": "cve:GHSA-8vf2-hxg5-crqh",
+      "source": "cve",
+      "title": "CVE-2026-129236: Kubeshark: MCP `start_kubeshark` argument injection via `pod_regex` → image redirect → cluster takeover",
+      "url": "https://github.com/advisories/GHSA-8vf2-hxg5-crqh",
+      "ts": 1794867452.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "github.com/kubeshark/kubeshark",
+      "summary": "Severity: high. **Ecosystem / package:** Go — `github.com/kubeshark/kubeshark` (the `kubeshark`\nCLI, `kubeshark mcp` subcommand)\n**Affected component:** `cmd/mcpRunner.go`, MCP tool `start_kubeshark`\n**Affected versions:** `>= v53.1.0`, `< v53.4.0` (the flaw shipped with the MCP\ncommand's first release; v53.3.0 was",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-16"
+    },
+    {
+      "uid": "cve:GHSA-72px-j8gh-p79x",
+      "source": "cve",
+      "title": "CVE-2026-129297: mail-parser: Sender IP address spoofing in get_server_ipaddress()",
+      "url": "https://github.com/advisories/GHSA-72px-j8gh-p79x",
+      "ts": 1794867114.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "mail-parser",
+      "summary": "Severity: high. ### Patches\n\nFixed in **4.6.2**. Upgrade with `pip install --upgrade mail-parser`.\n\nCandidate addresses are now selected by position, not by appearance — a bracketed address\nthe sender wrote is byte-identical to one the MTA wrote, so no amount of pattern matching\ncan tell them apart:\n\n- the first to",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "ai",
+        "dev",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-16"
+    },
+    {
+      "uid": "cve:GHSA-r7w7-vpq8-c5vv",
+      "source": "cve",
+      "title": "CVE-2026-129295: mail-parser is vulnerable to polynomial ReDoS in email header parsing",
+      "url": "https://github.com/advisories/GHSA-r7w7-vpq8-c5vv",
+      "ts": 1794867068.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "mail-parser",
+      "summary": "Severity: high. ### Summary\n\nTwo regular expressions used while parsing email headers backtrack\npolynomially on attacker-controlled input. Parsing a single small, well-formed\nemail can consume minutes to hours of CPU, denying service to any process that\nparses untrusted mail.\n\nBoth are reachable from an ordinary `p",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "ai",
+        "dev",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-16"
+    },
+    {
+      "uid": "cve:GHSA-259w-wmqg-fp76",
+      "source": "cve",
+      "title": "CVE-2026-86046: termux-sync: Arbitrary file write during restore via attacker-controlled manifest source path",
+      "url": "https://github.com/advisories/GHSA-259w-wmqg-fp76",
+      "ts": 1794866964.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "termux-sync",
+      "summary": "Severity: high. termux-sync restore trusts fields inside an untrusted backup manifest and uses them as the extraction destination without validation.\n\nDuring restore, each archive entry is handled as:\n\n  src_dir = Path(info.get(\"source\", ...)).parent\n  extract_archive(archive, src_dir, ...)\n\nextract_archive opens t",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-16"
+    },
+    {
+      "uid": "cve:GHSA-jq3q-62jc-fqq9",
+      "source": "cve",
+      "title": "CVE-2026-68934: code-review-mcp-server: Command injection via unsanitized folderPath/baseBranch parameters",
+      "url": "https://github.com/advisories/GHSA-jq3q-62jc-fqq9",
+      "ts": 1794866946.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "code-review-mcp-server",
+      "summary": "Severity: high. ### Impact\n\n`code-review-mcp-server` exposes MCP tools (`getLocalGitDiff`, `codeReview`, `createPR`, `getPRTemplate`) that accept `folderPath` and `baseBranch` string parameters. These caller-controlled values were interpolated directly into shell command strings executed via `child_process.execSync",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "dev",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-16"
+    },
+    {
+      "uid": "cve:GHSA-w553-pwx6-3mg9",
+      "source": "cve",
+      "title": "CVE-2026-63182: lightsaml allows Signature wrapping bypass",
+      "url": "https://github.com/advisories/GHSA-w553-pwx6-3mg9",
+      "ts": 1794866918.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "litesaml/lightsaml",
+      "summary": "Severity: high. ### Summary\n\nLightSaml 5.0.0 (latest release; also confirmed on 4.6.1) validates an inbound `samlp:Response` by collecting its direct-child `saml:Assertion` elements and validating each one's `ds:Signature` via robrichards/xmlseclibs. The two layers disagree on which element a signature actually cov",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-16"
+    },
+    {
       "uid": "cve:GHSA-7mxv-7h3q-9324",
       "source": "cve",
       "title": "CVE-2026-128134: NLTK dot2img runs Graphviz 'dot' without the trusted-exec chokepoint, enabling local code execution via a writable PATH element",
@@ -338,136 +470,6 @@
       "date": "2026-11-16"
     },
     {
-      "uid": "cve:GHSA-xgw8-8ccx-rmqh",
-      "source": "cve",
-      "title": "CVE-2026-128126: AIOHTTP: Too many URL-encoded form fields block the event loop",
-      "url": "https://github.com/advisories/GHSA-xgw8-8ccx-rmqh",
-      "ts": 1794840850.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "aiohttp",
-      "summary": "Severity: high. ### Summary\n\n`Request.post()` had no limit on the number of fields in a URL-encoded form body. Inserting a large number of repeated keys into a `MultiDict` took quadratic time on the event loop.\n\n### Impact\n\nAn attacker could block the event loop with a form POST within the default `client_max_size`",
-      "recipe": "gh_advisories",
-      "buzz": 3580,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-16"
-    },
-    {
-      "uid": "cve:GHSA-24c4-3p7v-29cm",
-      "source": "cve",
-      "title": "CVE-2026-128127: AIOHTTP: Base64 multipart parts bypass client_max_size",
-      "url": "https://github.com/advisories/GHSA-24c4-3p7v-29cm",
-      "ts": 1794840792.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "aiohttp",
-      "summary": "Severity: high. ### Summary\n\nWhen reading a multipart part with `Content-Transfer-Encoding: base64`, `BodyPartReader.read_chunk()` kept reading until the chunk length was a multiple of 4, with no byte limit. A part with a short `Content-Length`, or a long run of whitespace, could cause the entire remaining body to",
-      "recipe": "gh_advisories",
-      "buzz": 3580,
-      "topics": [
-        "ai",
-        "dev",
-        "science",
-        "security"
-      ],
-      "date": "2026-11-16"
-    },
-    {
-      "uid": "cve:GHSA-3rp8-rxj8-mvjw",
-      "source": "cve",
-      "title": "CVE-2026-128128: AIOHTTP: WebSocket max_msg_size bypass via integer overflow",
-      "url": "https://github.com/advisories/GHSA-3rp8-rxj8-mvjw",
-      "ts": 1794840760.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "aiohttp",
-      "summary": "Severity: high. ### Summary\n\nThe `max_msg_size` check in the WebSocket reader added the declared frame length to the size of the partial message already buffered. In the C extension this addition is 64-bit arithmetic, so a declared length close to 2**63 overflowed and the check passed.\n\n### Impact\n\nAn attacker coul",
-      "recipe": "gh_advisories",
-      "buzz": 3580,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-16"
-    },
-    {
-      "uid": "cve:GHSA-pw86-h8fm-j323",
-      "source": "cve",
-      "title": "CVE-2026-128129: AIOHTTP: Unbounded buffering of data received during an upgrade request",
-      "url": "https://github.com/advisories/GHSA-pw86-h8fm-j323",
-      "ts": 1794840725.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "aiohttp",
-      "summary": "Severity: high. ### Summary\n\nWhile a request flagged as an upgrade (e.g. a WebSocket handshake) was being handled, all further data received on the connection was buffered with no size limit or flow control until the handler completed.\n\n### Impact\n\nAn attacker could cause unbounded memory use by streaming data behi",
-      "recipe": "gh_advisories",
-      "buzz": 3580,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-16"
-    },
-    {
-      "uid": "cve:GHSA-28qf-cpwq-vmc2",
-      "source": "cve",
-      "title": "CVE-2026-128130: AIOHTTP: Pure-Python parser request replay and buffer growth behind a declined upgrade",
-      "url": "https://github.com/advisories/GHSA-28qf-cpwq-vmc2",
-      "ts": 1794840713.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "aiohttp",
-      "summary": "Severity: high. ### Summary\n\nWhen the pipelined request queue was full, the pure-Python parser stored the unparsed remainder internally and also returned it to the caller. After a handler declined an upgrade request, the buffered data was re-fed, so the buffer grew with each handled request and already-handled requ",
-      "recipe": "gh_advisories",
-      "buzz": 3580,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-16"
-    },
-    {
-      "uid": "cve:GHSA-h4cc-hm5h-fmm9",
-      "source": "cve",
-      "title": "CVE-2026-128131: AIOHTTP: Concatenated compressed streams cause excessive CPU use",
-      "url": "https://github.com/advisories/GHSA-h4cc-hm5h-fmm9",
-      "ts": 1794840687.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "aiohttp",
-      "summary": "Severity: high. ### Summary\n\nWhen decompressing a payload made up of many concatenated compressed members (gzip, deflate or zstd), each member was decoded by passing the entire remaining input to a new decompressor, resulting in quadratic CPU time. Empty members produce no output, so `client_max_size` and output ba",
-      "recipe": "gh_advisories",
-      "buzz": 3580,
-      "topics": [
-        "ai",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-16"
-    },
-    {
-      "uid": "cve:GHSA-5rmc-48h2-hvcm",
-      "source": "cve",
-      "title": "CVE-2026-128132: AIOHTTP: WebSocket receive queue limits bypassed by small or compressed messages",
-      "url": "https://github.com/advisories/GHSA-5rmc-48h2-hvcm",
-      "ts": 1794840661.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "aiohttp",
-      "summary": "Severity: high. ### Summary\n\nThe WebSocket reader continued parsing frames already received after the receive queue had paused the transport, and empty messages were not counted towards the queue size. With permessage-deflate, a single read of compressed frames could add many megabytes of decompressed messages to t",
-      "recipe": "gh_advisories",
-      "buzz": 3580,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-16"
-    },
-    {
       "uid": "hn:50172041",
       "source": "hn",
       "title": "Security advisory: Critical remote code execution vulnerabilities, update now",
@@ -483,82 +485,6 @@
         "security"
       ],
       "date": "2026-10-20"
-    },
-    {
-      "uid": "cve:GHSA-89p3-fcch-88ph",
-      "source": "cve",
-      "title": "CVE-2026-126299: NLTK: Quadratic-time CPU denial of service in CCG lexicon parser (fromstring) on wide bracket bodies and operator chains",
-      "url": "https://github.com/advisories/GHSA-89p3-fcch-88ph",
-      "ts": 1794614930.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "nltk",
-      "summary": "Severity: high. ## Summary\n\nThe public CCG lexicon parser `nltk.ccg.lexicon.fromstring` parses caller-influenced lexicon text with two pure-Python loops whose cost is quadratic in the input width. A service that parses an untrusted CCG lexicon string can be driven into tens of seconds of single-threaded CPU by a fe",
-      "recipe": "gh_advisories",
-      "buzz": 3530,
-      "topics": [
-        "ai",
-        "dev",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-14"
-    },
-    {
-      "uid": "cve:GHSA-r53h-rw34-8h97",
-      "source": "cve",
-      "title": "CVE-2026-126298: NLTK: Quadratic-time CPU denial of service in Tree.chomsky_normal_form right-factor binarization via list.pop(0)",
-      "url": "https://github.com/advisories/GHSA-r53h-rw34-8h97",
-      "ts": 1794614879.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "nltk",
-      "summary": "Severity: high. ## Summary\n\n`Tree.chomsky_normal_form()` binarizes a parse tree and defaults to right factoring. For a node with N children the right-factor branch repeatedly removes the first element of a working list with `list.pop(0)`, which shifts all remaining elements each time, so binarizing one wide node co",
-      "recipe": "gh_advisories",
-      "buzz": 3530,
-      "topics": [
-        "ai",
-        "dev",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-14"
-    },
-    {
-      "uid": "cve:GHSA-v8f3-6phw-6mh9",
-      "source": "cve",
-      "title": "CVE-2026-126297: NLTK: Quadratic-time CPU denial of service in ConllCorpusReader SRL instance builder via nested span rescan",
-      "url": "https://github.com/advisories/GHSA-v8f3-6phw-6mh9",
-      "ts": 1794614757.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "nltk",
-      "summary": "Severity: high. ## Summary\n\n`ConllCorpusReader.srl_instances()` builds semantic-role-labeling instances from a CoNLL corpus block. For a sentence block with P predicates and P span columns, the instance builder rescans every span column (and every span within it) once per predicate while searching for each predicat",
-      "recipe": "gh_advisories",
-      "buzz": 3530,
-      "topics": [
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-14"
-    },
-    {
-      "uid": "cve:GHSA-qfx6-q44v-9qqw",
-      "source": "cve",
-      "title": "CVE-2026-62297: ag-psd can exhaust memory when parsing crafted PSD dimensions",
-      "url": "https://github.com/advisories/GHSA-qfx6-q44v-9qqw",
-      "ts": 1794611978.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "ag-psd",
-      "summary": "Severity: high. ### Summary\nreadPsd() commits the image/layer buffers from the declared header geometry (width x height x channels x depth, and per-layer rectangles) before validating those values against the actual data. A tiny crafted PSD declaring huge geometry forces a multi-gigabyte allocation.\n\n### Impact\nOn",
-      "recipe": "gh_advisories",
-      "buzz": 3530,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-13"
     },
     {
       "uid": "hn:32148218",
@@ -854,6 +780,231 @@
       "date": "2020-09-30"
     },
     {
+      "uid": "cve:GHSA-vx32-xf7g-9ghr",
+      "source": "cve",
+      "title": "CVE-2026-129237: qbee-agent: Docker Compose build context Zip Slip writes outside context directory",
+      "url": "https://github.com/advisories/GHSA-vx32-xf7g-9ghr",
+      "ts": 1794868540.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "go.qbee.io/agent",
+      "summary": "Severity: medium. ## Summary\n\n`qbee-agent` contains a Zip Slip vulnerability in `app/utils/tar.go`. The tar extractor checks whether an entry remains inside the destination directory with:\n\n```go\nstrings.HasPrefix(targetPath, destdirClean)\n```\n\nThis does not enforce a path separator boundary. If the destination direc",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-16"
+    },
+    {
+      "uid": "cve:GHSA-4qv2-g5vp-wjjw",
+      "source": "cve",
+      "title": "CVE-2026-91113: Silverstripe Framework: User-controlled ClassName allows unauthorized record type change",
+      "url": "https://github.com/advisories/GHSA-4qv2-g5vp-wjjw",
+      "ts": 1794868499.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "silverstripe/framework",
+      "summary": "Severity: medium. ### Impact\nA user who can edit a record through a GridField detail form could change the record to an unrelated class, without the permission checks for that class.\n\n### Reported by\nLachlan Davidson, Carapace",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-16"
+    },
+    {
+      "uid": "cve:GHSA-rg72-5958-c65m",
+      "source": "cve",
+      "title": "CVE-2026-91112: Silverstripe Framework: CMS_ACCESS_SecurityAdmin privilege escalation",
+      "url": "https://github.com/advisories/GHSA-rg72-5958-c65m",
+      "ts": 1794868242.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "silverstripe/framework",
+      "summary": "Severity: medium. ### Impact\nA user with access to the Security section (CMS_ACCESS_SecurityAdmin) but without the ADMIN permission could edit a group that grants ADMIN through a role or a parent group, and use it to escalate their own privileges.\n\n### Reported by\nLachlan Davidson, Carapace",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-16"
+    },
+    {
+      "uid": "cve:GHSA-3qh3-54qg-gpq3",
+      "source": "cve",
+      "title": "CVE-2026-88989: Silverstripe Framework: Auth bypass GridFieldDetailForm",
+      "url": "https://github.com/advisories/GHSA-3qh3-54qg-gpq3",
+      "ts": 1794868199.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "silverstripe/framework",
+      "summary": "Severity: medium. ### Impact\nA CMS user who can edit records through a GridField detail form could create new records without the permission to create them, by sending a save request directly.\n\n### Reported by\nHDWSec - https://hdwsec.fr",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-16"
+    },
+    {
+      "uid": "cve:GHSA-xwg4-8hqh-79jq",
+      "source": "cve",
+      "title": "CVE-2026-88988: Silverstripe Framework: XSS via SVG data URI",
+      "url": "https://github.com/advisories/GHSA-xwg4-8hqh-79jq",
+      "ts": 1794868066.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "silverstripe/framework",
+      "summary": "Severity: medium. ### Impact\nThe HTML sanitiser did not remove SVG data URIs. A CMS author could store content that runs JavaScript in the browser of another user who views it.\n\n### Reported by\nHDWSec - https://hdwsec.fr",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-16"
+    },
+    {
+      "uid": "cve:GHSA-qqrg-8jpm-8mph",
+      "source": "cve",
+      "title": "CVE-2026-88987: Silverstripe Framework: XSS via XHTML data URI",
+      "url": "https://github.com/advisories/GHSA-qqrg-8jpm-8mph",
+      "ts": 1794868057.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "silverstripe/framework",
+      "summary": "Severity: medium. ### Impact\nThe HTML sanitiser did not remove XHTML and XML data URIs. A CMS author could store content that runs JavaScript in the browser of another user who views it.\n\n### Reported by\nJack Wallace from Bastion Security",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-16"
+    },
+    {
+      "uid": "cve:GHSA-7h45-q5jx-7r87",
+      "source": "cve",
+      "title": "CVE-2026-129239: Directus: Share update allows reassigning user_created and role",
+      "url": "https://github.com/advisories/GHSA-7h45-q5jx-7r87",
+      "ts": 1794867953.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "directus",
+      "summary": "Severity: medium. ### Summary\n\nA non-admin user who can update their own shares can reassign a share's creator (`user_created`), `role`, `item`, and `collection` fields after the share is created. The update is authorized against the row as it existed before the change, and the resulting row is never revalidated, so",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-16"
+    },
+    {
+      "uid": "cve:GHSA-8cgq-x343-p74c",
+      "source": "cve",
+      "title": "CVE-2026-129301: mail-parser: One hostile attachment aborts `write_attachments()` and silently drops the rest of the batch",
+      "url": "https://github.com/advisories/GHSA-8cgq-x343-p74c",
+      "ts": 1794867733.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "mail-parser",
+      "summary": "Severity: medium. ### Impact\n\n`write_attachments()` called `_safe_attachment_filename()` and `write_sample()` inside its loop\nwith no guard, so a single crafted attachment raised out of the whole save. Every attachment\n**after** the malicious one was silently never written, with no error surfaced to a caller that\ncat",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-16"
+    },
+    {
+      "uid": "cve:GHSA-xhrq-2mqv-q8wx",
+      "source": "cve",
+      "title": "CVE-2026-129300: mail-parser: Uncaught `OverflowError` / `OSError` on an out-of-range `Received` date",
+      "url": "https://github.com/advisories/GHSA-xhrq-2mqv-q8wx",
+      "ts": 1794867632.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "mail-parser",
+      "summary": "Severity: medium. ### Impact\n\nA `Received` header whose trailing date carries an out-of-range year, or a timezone offset\nlarge enough to push the timestamp past the int64 epoch range, raises an exception that is\n**outside the `MailParser*` hierarchy**. A caller that catches only mail-parser exceptions\ndoes not catch",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-16"
+    },
+    {
+      "uid": "cve:GHSA-gj7r-p794-hhq5",
+      "source": "cve",
+      "title": "CVE-2026-129235: Kubeshark: MCP `download_file` writes fetched bytes to an unvalidated destination path",
+      "url": "https://github.com/advisories/GHSA-gj7r-p794-hhq5",
+      "ts": 1794867538.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "github.com/kubeshark/kubeshark",
+      "summary": "Severity: medium. **Ecosystem / package:** Go — `github.com/kubeshark/kubeshark` (the `kubeshark`\nCLI, `kubeshark mcp` subcommand)\n**Affected component:** `cmd/mcpRunner.go`, MCP tool `download_file`\n**Affected versions:** `>= v53.1.0`, `< v53.4.0` (the flaw shipped with the\ntool's first release; v53.3.0 was the last",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-16"
+    },
+    {
+      "uid": "cve:GHSA-24mq-4vc6-2prf",
+      "source": "cve",
+      "title": "CVE-2026-129299: mail-parser: Uncaught exceptions and silent header loss in mail-parser on attacker-controlled input",
+      "url": "https://github.com/advisories/GHSA-24mq-4vc6-2prf",
+      "ts": 1794867171.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "mail-parser",
+      "summary": "Severity: medium. ### Impact\n\nTwo effects, sharing the root cause of Advisory 1 — header names chosen by the sender were\nresolved through Python attribute lookup and rewritten before lookup.\n\n**Uncaught exceptions.** A crafted message raises an exception that is *outside* the\n`MailParser*` hierarchy, so a caller catc",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-16"
+    },
+    {
+      "uid": "cve:GHSA-fr3h-cpq2-9496",
+      "source": "cve",
+      "title": "CVE-2026-129296: mail-parser: Path Traversal vulnerability in attachment extraction",
+      "url": "https://github.com/advisories/GHSA-fr3h-cpq2-9496",
+      "ts": 1794867055.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "mail-parser",
+      "summary": "Severity: medium. A path traversal vulnerability was identified in mail-parser when extracting email attachments using the write_attachments() and write_sample() APIs.\n\nA specially crafted email containing malicious attachment filenames (for example, using directory traversal sequences such as \"../\" or absolute files",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-16"
+    },
+    {
       "uid": "cve:GHSA-mfr8-8qww-v76h",
       "source": "cve",
       "title": "CVE-2026-119790: Next.js: Information disclosure across root params when a 'use cache' function is called through unstable_cache()",
@@ -948,82 +1099,6 @@
       "date": "2026-11-16"
     },
     {
-      "uid": "cve:GHSA-6cf5-gc4q-fm3x",
-      "source": "cve",
-      "title": "CVE-2026-128119: SvelteKit: Private `query.batch` functions could collide, producing unexpected parameter / function combinations",
-      "url": "https://github.com/advisories/GHSA-6cf5-gc4q-fm3x",
-      "ts": 1794840543.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "@sveltejs/kit",
-      "summary": "Severity: medium. Under certain circumstances, private (non-exported) `query.batch` functions could end up sharing a batch, resulting in the arguments from one function being passed to another. This only affects apps using the experimental remote functions flag and non-exported `query.batch` functions.",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-16"
-    },
-    {
-      "uid": "cve:GHSA-rqp5-r3wg-vg35",
-      "source": "cve",
-      "title": "CVE-2026-128116: SvelteKit: Protocol-relative module import during server-side route resolution allows cross-origin script execution",
-      "url": "https://github.com/advisories/GHSA-rqp5-r3wg-vg35",
-      "ts": 1794840534.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "@sveltejs/kit",
-      "summary": "Severity: medium. If an attacker could, using some form of social engineering or other exploit, get a user to use client-side navigation to navigate to a specially-crafted link, the attacker could cause code from another domain to be imported and run on the user's machine. This only affected apps with `router.resolut",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "dev",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-16"
-    },
-    {
-      "uid": "cve:GHSA-xmfg-f9cm-w86q",
-      "source": "cve",
-      "title": "CVE-2026-126302: NLTK: Symlink escape in chat80.sql_query bypasses the pathsec data-root sandbox to read out-of-root SQLite databases",
-      "url": "https://github.com/advisories/GHSA-xmfg-f9cm-w86q",
-      "ts": 1794840443.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "nltk",
-      "summary": "Severity: medium. ## Summary\n\n`nltk.sem.chat80.sql_query()` opens a SQLite database by handing the result of `nltk.data.find(dbname)` straight to `sqlite3.connect()` without the path-containment check that the NLTK data sandbox (`nltk.pathsec`) is meant to enforce. `nltk.data.find()` applies only lexical checks to th",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-16"
-    },
-    {
-      "uid": "cve:GHSA-59f9-gqg8-mqpj",
-      "source": "cve",
-      "title": "CVE-2026-126296: NLTK: Path Traversal in save_maxent_params / load_maxent_params Allow Arbitrary File READ/WRITE",
-      "url": "https://github.com/advisories/GHSA-59f9-gqg8-mqpj",
-      "ts": 1794840385.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "nltk",
-      "summary": "Severity: medium. ### Summary\nPath traversal in NLTK's save_maxent_params() and load_maxent_params() allows arbitrary file write and arbitrary file read outside the directories permitted by NLTK's pathsec security mechanism.\n\nThis vulnerability was previously reported through Huntr, accepted by the NLTK project, and",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-16"
-    },
-    {
       "uid": "hn:48166459",
       "source": "hn",
       "title": "Mozilla to UK regulators: VPNs are essential privacy and security tools",
@@ -1073,64 +1148,6 @@
         "security"
       ],
       "date": "2016-12-15"
-    },
-    {
-      "uid": "cve:GHSA-fg9w-wfp5-j933",
-      "source": "cve",
-      "title": "CVE-2026-126295: NLTK: BllipParser passes caller-supplied model paths to the bllipparser C extension with no pathsec check, enabling arbitrary read",
-      "url": "https://github.com/advisories/GHSA-fg9w-wfp5-j933",
-      "ts": 1794612056.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "nltk",
-      "summary": "Severity: medium. ## Summary\n\n`BllipParser` in `nltk/parse/bllip.py` hands caller-supplied filesystem paths to the native `bllipparser` C extension without routing them through NLTK's `pathsec` validation. The constructor parameters `parser_model`, `reranker_features`, and `reranker_weights`, and the alternative `fro",
-      "recipe": "gh_advisories",
-      "buzz": 1830,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-13"
-    },
-    {
-      "uid": "cve:GHSA-gpwc-27cw-rh9r",
-      "source": "cve",
-      "title": "CVE-2026-126301: NLTK: Quadratic CPU exhaustion in LegalitySyllableTokenizer.tokenize via unguarded onset reversal loop",
-      "url": "https://github.com/advisories/GHSA-gpwc-27cw-rh9r",
-      "ts": 1794604594.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "nltk",
-      "summary": "Severity: medium. ## Summary\n\n`LegalitySyllableTokenizer.tokenize` in the NLTK tokenizer package contains an unguarded O(n^2) processing loop. When the method is called on a single token that consists of a long run of vowels (for example `\"a\" * n`), it consumes CPU time proportional to the square of the token length.",
-      "recipe": "gh_advisories",
-      "buzz": 1830,
-      "topics": [
-        "ai",
-        "crypto",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-13"
-    },
-    {
-      "uid": "cve:GHSA-ffr9-mgrr-wcvr",
-      "source": "cve",
-      "title": "CVE-2026-126300: NLTK: Quadratic CPU exhaustion in TreebankWordTokenizer.span_tokenize via list.pop(0) in quote-restore loop",
-      "url": "https://github.com/advisories/GHSA-ffr9-mgrr-wcvr",
-      "ts": 1794604135.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "nltk",
-      "summary": "Severity: medium. ## Summary\n\n`TreebankWordTokenizer.span_tokenize` in the NLTK tokenizer package contains an unguarded O(n^2) processing loop in its quote-restoration step. When the method is invoked on text containing a long run of double-quote characters (for example `'\"' * n`), it performs a `list.pop(0)` operati",
-      "recipe": "gh_advisories",
-      "buzz": 1830,
-      "topics": [
-        "ai",
-        "crypto",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-13"
     },
     {
       "uid": "hn:25843874",
@@ -1377,25 +1394,6 @@
       "date": "2026-11-16"
     },
     {
-      "uid": "cve:GHSA-pp88-jhwj-5qh5",
-      "source": "cve",
-      "title": "CVE-2026-62683: File Browser: Trailing-slash directory deletion leaves public shares active for recreated paths",
-      "url": "https://github.com/advisories/GHSA-pp88-jhwj-5qh5",
-      "ts": 1794611526.0,
-      "points": 700,
-      "comments": 0,
-      "author": "github.com/filebrowser/filebrowser/v2",
-      "summary": "Severity: low. ## Summary\n\nFile Browser v2.63.15 can leave a public directory share behind when the shared directory is deleted through a path with a trailing slash. The share cleanup path calls `DeleteWithPathPrefix(file.Path, userID)`, but the Bolt backend performs the database prefix query with the unnormalized",
-      "recipe": "gh_advisories",
-      "buzz": 730,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-13"
-    },
-    {
       "uid": "gh:arnold117/iOS-NOIR",
       "source": "github",
       "title": "arnold117/iOS-NOIR",
@@ -1419,12 +1417,12 @@
       "title": "Aabyss-Team/Threat-Broadcast-Plus",
       "url": "https://github.com/Aabyss-Team/Threat-Broadcast-Plus",
       "ts": 1794800456.0,
-      "points": 59,
+      "points": 61,
       "comments": 12,
       "author": "Aabyss-Team",
       "summary": "网络安全威胁情报播报-Plus升级版",
       "recipe": "github_sec",
-      "buzz": 175,
+      "buzz": 177,
       "topics": [],
       "date": "2026-11-16"
     },
@@ -1486,12 +1484,12 @@
       "title": "wildorigins/wildos",
       "url": "https://github.com/wildorigins/wildos",
       "ts": 1794169078.0,
-      "points": 92,
+      "points": 93,
       "comments": 5,
       "author": "wildorigins",
       "summary": "A hardened Linux desktop, rebuilt from scratch, with your Windows apps built in. Free and open source.",
       "recipe": "github_sec",
-      "buzz": 107,
+      "buzz": 108,
       "topics": [],
       "date": "2026-11-08"
     },
@@ -1501,12 +1499,12 @@
       "title": "zhidun2027/zhidun",
       "url": "https://github.com/zhidun2027/zhidun",
       "ts": 1794458402.0,
-      "points": 51,
+      "points": 65,
       "comments": 8,
       "author": "zhidun2027",
       "summary": "Android APK hardening — DEX encryption, native shell engine, anti-tamper. Fully documented and auditable.",
       "recipe": "github_sec",
-      "buzz": 85,
+      "buzz": 99,
       "topics": [
         "security"
       ],
@@ -1699,6 +1697,21 @@
       "date": "2026-11-04"
     },
     {
+      "uid": "gh:khanh0209q/NextDNS-Config-Set-And-Forget",
+      "source": "github",
+      "title": "khanh0209q/NextDNS-Config-Set-And-Forget",
+      "url": "https://github.com/khanh0209q/NextDNS-Config-Set-And-Forget",
+      "ts": 1794630951.0,
+      "points": 26,
+      "comments": 1,
+      "author": "khanh0209q",
+      "summary": "A zero-breakage, set-and-forget NextDNS configuration for Home & Office",
+      "recipe": "github_sec",
+      "buzz": 59,
+      "topics": [],
+      "date": "2026-11-14"
+    },
+    {
       "uid": "gh:BowSinceEnt/resocket-elden-ring-cheat-2026-trainer-mod-menu-tools",
       "source": "github",
       "title": "BowSinceEnt/resocket-elden-ring-cheat-2026-trainer-mod-menu-tools",
@@ -1716,32 +1729,17 @@
       "date": "2026-11-05"
     },
     {
-      "uid": "gh:khanh0209q/NextDNS-Config-Set-And-Forget",
-      "source": "github",
-      "title": "khanh0209q/NextDNS-Config-Set-And-Forget",
-      "url": "https://github.com/khanh0209q/NextDNS-Config-Set-And-Forget",
-      "ts": 1794630951.0,
-      "points": 25,
-      "comments": 1,
-      "author": "khanh0209q",
-      "summary": "A zero-breakage, set-and-forget NextDNS configuration for Home & Office",
-      "recipe": "github_sec",
-      "buzz": 58,
-      "topics": [],
-      "date": "2026-11-14"
-    },
-    {
       "uid": "gh:NPCmillionaire/unredact.tools",
       "source": "github",
       "title": "NPCmillionaire/unredact.tools",
       "url": "https://github.com/NPCmillionaire/unredact.tools",
       "ts": 1794511431.0,
-      "points": 35,
+      "points": 36,
       "comments": 1,
       "author": "NPCmillionaire",
       "summary": "See what your files leak (GPS, serials, authors, failed redactions, deleted text, watermarks), then scrub them.",
       "recipe": "github_sec",
-      "buzz": 48,
+      "buzz": 49,
       "topics": [
         "ai"
       ],
@@ -1761,25 +1759,6 @@
       "buzz": 30,
       "topics": [],
       "date": "2026-11-14"
-    },
-    {
-      "uid": "rss:1da07c9934607e",
-      "source": "rss",
-      "title": "Friday Squid Blogging: Pacific Flying Squid Populations Dropping in Korean Waters",
-      "url": "https://www.schneier.com/blog/archives/2026/11/friday-squid-blogging-pacific-flying-squid-populations-dropping-in-korean-waters.html",
-      "ts": 1794607249.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Bruce Schneier",
-      "summary": "<p>Climate change is the <a href=\"https://news.mongabay.com/2026/11/south-koreas-beloved-squid-may-vanish-from-its-waters-due-to-climate-change-heat-waves/\">issue</a>.</p> <p>As usual, you can also use this squid post to talk about the security stories in the news that I haven&#8217;t covered.</p> <p><a href=\"https://www.schneier.com/blog/archives/2024/06/new-blog-moderation-policy.html\">Blog mode",
-      "recipe": "schneier",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "science",
-        "security"
-      ],
-      "date": "2026-11-13"
     },
     {
       "uid": "rss:fb43e89fb20d8c",
@@ -1888,6 +1867,25 @@
         "security"
       ],
       "date": "2026-11-10"
+    },
+    {
+      "uid": "rss:1da07c9934607e",
+      "source": "rss",
+      "title": "Friday Squid Blogging: Pacific Flying Squid Populations Dropping in Korean Waters",
+      "url": "https://www.schneier.com/blog/archives/2026/11/friday-squid-blogging-pacific-flying-squid-populations-dropping-in-korean-waters.html",
+      "ts": 1794607249.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Bruce Schneier",
+      "summary": "<p>Climate change is the <a href=\"https://news.mongabay.com/2026/11/south-koreas-beloved-squid-may-vanish-from-its-waters-due-to-climate-change-heat-waves/\">issue</a>.</p> <p>As usual, you can also use this squid post to talk about the security stories in the news that I haven&#8217;t covered.</p> <p><a href=\"https://www.schneier.com/blog/archives/2024/06/new-blog-moderation-policy.html\">Blog mode",
+      "recipe": "schneier",
+      "buzz": 10,
+      "topics": [
+        "ai",
+        "science",
+        "security"
+      ],
+      "date": "2026-11-13"
     },
     {
       "uid": "rss:1d8b68bb6887db",

@@ -1,31 +1,31 @@
 cve_id,severity,package,title,url,date
+CVE-2026-91115,high,silverstripe/framework,CVE-2026-91115: Silverstripe Framework: RCE via i18nTextCollectorTask writer parameter,https://github.com/advisories/GHSA-c94f-87xg-65wf,2026-11-16
+CVE-2026-129236,high,github.com/kubeshark/kubeshark,CVE-2026-129236: Kubeshark: MCP `start_kubeshark` argument injection via `pod_regex` → image redirect → cluster takeover,https://github.com/advisories/GHSA-8vf2-hxg5-crqh,2026-11-16
+CVE-2026-129297,high,mail-parser,CVE-2026-129297: mail-parser: Sender IP address spoofing in get_server_ipaddress(),https://github.com/advisories/GHSA-72px-j8gh-p79x,2026-11-16
+CVE-2026-129295,high,mail-parser,CVE-2026-129295: mail-parser is vulnerable to polynomial ReDoS in email header parsing,https://github.com/advisories/GHSA-r7w7-vpq8-c5vv,2026-11-16
+CVE-2026-86046,high,termux-sync,CVE-2026-86046: termux-sync: Arbitrary file write during restore via attacker-controlled manifest source path,https://github.com/advisories/GHSA-259w-wmqg-fp76,2026-11-16
+CVE-2026-68934,high,code-review-mcp-server,CVE-2026-68934: code-review-mcp-server: Command injection via unsanitized folderPath/baseBranch parameters,https://github.com/advisories/GHSA-jq3q-62jc-fqq9,2026-11-16
+CVE-2026-63182,high,litesaml/lightsaml,CVE-2026-63182: lightsaml allows Signature wrapping bypass,https://github.com/advisories/GHSA-w553-pwx6-3mg9,2026-11-16
 CVE-2026-128134,high,nltk,"CVE-2026-128134: NLTK dot2img runs Graphviz 'dot' without the trusted-exec chokepoint, enabling local code execution via a writable PATH element",https://github.com/advisories/GHSA-7mxv-7h3q-9324,2026-11-16
 CVE-2026-128118,high,@sveltejs/kit,"CVE-2026-128118: SvelteKit: Build-time server-only module import guard could fail, resulting in server secrets being statically replaced in client bundle",https://github.com/advisories/GHSA-m9j8-jcmv-hp69,2026-11-16
 CVE-2026-128120,high,@sveltejs/kit,CVE-2026-128120: SvelteKit: DoS while parsing form data from a remote functions `form`,https://github.com/advisories/GHSA-3r8g-jcqq-3p5j,2026-11-16
 CVE-2026-128124,high,aiohttp,CVE-2026-128124: AIOHTTP: Event loop stall in add_domain() wildcard matching,https://github.com/advisories/GHSA-jm3w-gw2p-xjfj,2026-11-16
-CVE-2026-128126,high,aiohttp,CVE-2026-128126: AIOHTTP: Too many URL-encoded form fields block the event loop,https://github.com/advisories/GHSA-xgw8-8ccx-rmqh,2026-11-16
-CVE-2026-128127,high,aiohttp,CVE-2026-128127: AIOHTTP: Base64 multipart parts bypass client_max_size,https://github.com/advisories/GHSA-24c4-3p7v-29cm,2026-11-16
-CVE-2026-128128,high,aiohttp,CVE-2026-128128: AIOHTTP: WebSocket max_msg_size bypass via integer overflow,https://github.com/advisories/GHSA-3rp8-rxj8-mvjw,2026-11-16
-CVE-2026-128129,high,aiohttp,CVE-2026-128129: AIOHTTP: Unbounded buffering of data received during an upgrade request,https://github.com/advisories/GHSA-pw86-h8fm-j323,2026-11-16
-CVE-2026-128130,high,aiohttp,CVE-2026-128130: AIOHTTP: Pure-Python parser request replay and buffer growth behind a declined upgrade,https://github.com/advisories/GHSA-28qf-cpwq-vmc2,2026-11-16
-CVE-2026-128131,high,aiohttp,CVE-2026-128131: AIOHTTP: Concatenated compressed streams cause excessive CPU use,https://github.com/advisories/GHSA-h4cc-hm5h-fmm9,2026-11-16
-CVE-2026-128132,high,aiohttp,CVE-2026-128132: AIOHTTP: WebSocket receive queue limits bypassed by small or compressed messages,https://github.com/advisories/GHSA-5rmc-48h2-hvcm,2026-11-16
-CVE-2026-126299,high,nltk,CVE-2026-126299: NLTK: Quadratic-time CPU denial of service in CCG lexicon parser (fromstring) on wide bracket bodies and operator chains,https://github.com/advisories/GHSA-89p3-fcch-88ph,2026-11-14
-CVE-2026-126298,high,nltk,CVE-2026-126298: NLTK: Quadratic-time CPU denial of service in Tree.chomsky_normal_form right-factor binarization via list.pop(0),https://github.com/advisories/GHSA-r53h-rw34-8h97,2026-11-14
-CVE-2026-126297,high,nltk,CVE-2026-126297: NLTK: Quadratic-time CPU denial of service in ConllCorpusReader SRL instance builder via nested span rescan,https://github.com/advisories/GHSA-v8f3-6phw-6mh9,2026-11-14
-CVE-2026-62297,high,ag-psd,CVE-2026-62297: ag-psd can exhaust memory when parsing crafted PSD dimensions,https://github.com/advisories/GHSA-qfx6-q44v-9qqw,2026-11-13
+CVE-2026-129237,medium,go.qbee.io/agent,CVE-2026-129237: qbee-agent: Docker Compose build context Zip Slip writes outside context directory,https://github.com/advisories/GHSA-vx32-xf7g-9ghr,2026-11-16
+CVE-2026-91113,medium,silverstripe/framework,CVE-2026-91113: Silverstripe Framework: User-controlled ClassName allows unauthorized record type change,https://github.com/advisories/GHSA-4qv2-g5vp-wjjw,2026-11-16
+CVE-2026-91112,medium,silverstripe/framework,CVE-2026-91112: Silverstripe Framework: CMS_ACCESS_SecurityAdmin privilege escalation,https://github.com/advisories/GHSA-rg72-5958-c65m,2026-11-16
+CVE-2026-88989,medium,silverstripe/framework,CVE-2026-88989: Silverstripe Framework: Auth bypass GridFieldDetailForm,https://github.com/advisories/GHSA-3qh3-54qg-gpq3,2026-11-16
+CVE-2026-88988,medium,silverstripe/framework,CVE-2026-88988: Silverstripe Framework: XSS via SVG data URI,https://github.com/advisories/GHSA-xwg4-8hqh-79jq,2026-11-16
+CVE-2026-88987,medium,silverstripe/framework,CVE-2026-88987: Silverstripe Framework: XSS via XHTML data URI,https://github.com/advisories/GHSA-qqrg-8jpm-8mph,2026-11-16
+CVE-2026-129239,medium,directus,CVE-2026-129239: Directus: Share update allows reassigning user_created and role,https://github.com/advisories/GHSA-7h45-q5jx-7r87,2026-11-16
+CVE-2026-129301,medium,mail-parser,CVE-2026-129301: mail-parser: One hostile attachment aborts `write_attachments()` and silently drops the rest of the batch,https://github.com/advisories/GHSA-8cgq-x343-p74c,2026-11-16
+CVE-2026-129300,medium,mail-parser,CVE-2026-129300: mail-parser: Uncaught `OverflowError` / `OSError` on an out-of-range `Received` date,https://github.com/advisories/GHSA-xhrq-2mqv-q8wx,2026-11-16
+CVE-2026-129235,medium,github.com/kubeshark/kubeshark,CVE-2026-129235: Kubeshark: MCP `download_file` writes fetched bytes to an unvalidated destination path,https://github.com/advisories/GHSA-gj7r-p794-hhq5,2026-11-16
+CVE-2026-129299,medium,mail-parser,CVE-2026-129299: mail-parser: Uncaught exceptions and silent header loss in mail-parser on attacker-controlled input,https://github.com/advisories/GHSA-24mq-4vc6-2prf,2026-11-16
+CVE-2026-129296,medium,mail-parser,CVE-2026-129296: mail-parser: Path Traversal vulnerability in attachment extraction,https://github.com/advisories/GHSA-fr3h-cpq2-9496,2026-11-16
 CVE-2026-119790,medium,next,CVE-2026-119790: Next.js: Information disclosure across root params when a 'use cache' function is called through unstable_cache(),https://github.com/advisories/GHSA-mfr8-8qww-v76h,2026-11-16
 CVE-2026-128075,medium,nuxt,CVE-2026-128075: Nuxt exposes the message and data of unhandled errors thrown during server rendering,https://github.com/advisories/GHSA-96x6-fvhx-49hg,2026-11-16
 CVE-2026-128074,medium,nuxt,CVE-2026-128074: Nuxt payload URL generation has quadratic cost for repeated slashes in the request path,https://github.com/advisories/GHSA-r9jc-w898-3fv6,2026-11-16
 CVE-2026-128071,medium,nuxt,CVE-2026-128071: Nuxt: Incomplete fix for GHSA-6gq8-jgmh-3ffp: an encoded slash (`%2F`) in the request path bypasses route rules on catch-all page routes,https://github.com/advisories/GHSA-f3x9-2chm-73c8,2026-11-16
 CVE-2026-128125,medium,aiohttp,CVE-2026-128125: AIOHTTP: Unbounded cookie storage in client CookieJar,https://github.com/advisories/GHSA-5pv8-vvhc-h7jv,2026-11-16
-CVE-2026-128119,medium,@sveltejs/kit,"CVE-2026-128119: SvelteKit: Private `query.batch` functions could collide, producing unexpected parameter / function combinations",https://github.com/advisories/GHSA-6cf5-gc4q-fm3x,2026-11-16
-CVE-2026-128116,medium,@sveltejs/kit,CVE-2026-128116: SvelteKit: Protocol-relative module import during server-side route resolution allows cross-origin script execution,https://github.com/advisories/GHSA-rqp5-r3wg-vg35,2026-11-16
-CVE-2026-126302,medium,nltk,CVE-2026-126302: NLTK: Symlink escape in chat80.sql_query bypasses the pathsec data-root sandbox to read out-of-root SQLite databases,https://github.com/advisories/GHSA-xmfg-f9cm-w86q,2026-11-16
-CVE-2026-126296,medium,nltk,CVE-2026-126296: NLTK: Path Traversal in save_maxent_params / load_maxent_params Allow Arbitrary File READ/WRITE,https://github.com/advisories/GHSA-59f9-gqg8-mqpj,2026-11-16
-CVE-2026-126295,medium,nltk,"CVE-2026-126295: NLTK: BllipParser passes caller-supplied model paths to the bllipparser C extension with no pathsec check, enabling arbitrary read",https://github.com/advisories/GHSA-fg9w-wfp5-j933,2026-11-13
-CVE-2026-126301,medium,nltk,CVE-2026-126301: NLTK: Quadratic CPU exhaustion in LegalitySyllableTokenizer.tokenize via unguarded onset reversal loop,https://github.com/advisories/GHSA-gpwc-27cw-rh9r,2026-11-13
-CVE-2026-126300,medium,nltk,CVE-2026-126300: NLTK: Quadratic CPU exhaustion in TreebankWordTokenizer.span_tokenize via list.pop(0) in quote-restore loop,https://github.com/advisories/GHSA-ffr9-mgrr-wcvr,2026-11-13
 CVE-2026-128076,low,nuxt,CVE-2026-128076: Nuxt: Colliding island props can share one `/__nuxt_island` path (incomplete fix for CVE-2026-46342),https://github.com/advisories/GHSA-hf59-9xwc-2g4p,2026-11-16
 CVE-2026-128072,low,@nuxt/webpack-builder,CVE-2026-128072: @nuxt/webpack-builder and @nuxt/rspack-builder dev server serves built source to DNS rebinding pages,https://github.com/advisories/GHSA-x2wv-5868-p7v2,2026-11-16
-CVE-2026-62683,low,github.com/filebrowser/filebrowser/v2,CVE-2026-62683: File Browser: Trailing-slash directory deletion leaves public shares active for recreated paths,https://github.com/advisories/GHSA-pp88-jhwj-5qh5,2026-11-13

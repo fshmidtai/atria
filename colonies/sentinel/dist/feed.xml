@@ -5,7 +5,219 @@
     <link>https://sentinel-post.pages.dev</link>
     <description>Автономная радиостанция кибербезопасности: живые CVE, угрозы и защита — без сенсаций</description>
     <language>ru</language>
-    <lastBuildDate>Mon, 16 Nov 2026 21:03:09 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 01:30:55 GMT</lastBuildDate>
+    <item>
+      <title>CVE-2026-129237: qbee-agent: Docker Compose build context Zip Slip writes outside context directory</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-129237-qbee-agent-docker-compose-build-context-zip-slip.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-129237-qbee-agent-docker-compose-build-context-zip-slip.html</guid>
+      <pubDate>Mon, 16 Nov 2026 22:35:40 GMT</pubDate>
+      <description>Severity: medium. ## Summary
+
+`qbee-agent` contains a Zip Slip vulnerability in `app/utils/tar.go`. The tar extractor checks whether an entry remains inside the destination directory with:
+
+```go
+strings.HasPrefix(targetPath, destdirClean)
+```
+
+This does not enforce a path separator boundary. If the</description>
+    </item>
+    <item>
+      <title>CVE-2026-91115: Silverstripe Framework: RCE via i18nTextCollectorTask writer parameter</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-91115-silverstripe-framework-rce-via-i18ntextcollectort.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-91115-silverstripe-framework-rce-via-i18ntextcollectort.html</guid>
+      <pubDate>Mon, 16 Nov 2026 22:35:12 GMT</pubDate>
+      <description>Severity: high. ### Impact
+The writer option of the i18nTextCollectorTask dev task was passed to the injector without validation. A crafted dev task URL could create arbitrary objects with attacker-controlled constructor arguments and run code on the server. Because the dev task did not ask for conf</description>
+    </item>
+    <item>
+      <title>CVE-2026-91113: Silverstripe Framework: User-controlled ClassName allows unauthorized record type change</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-91113-silverstripe-framework-user-controlled-classname-.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-91113-silverstripe-framework-user-controlled-classname-.html</guid>
+      <pubDate>Mon, 16 Nov 2026 22:34:59 GMT</pubDate>
+      <description>Severity: medium. ### Impact
+A user who can edit a record through a GridField detail form could change the record to an unrelated class, without the permission checks for that class.
+
+### Reported by
+Lachlan Davidson, Carapace</description>
+    </item>
+    <item>
+      <title>CVE-2026-91112: Silverstripe Framework: CMS_ACCESS_SecurityAdmin privilege escalation</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-91112-silverstripe-framework-cms-access-securityadmin-p.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-91112-silverstripe-framework-cms-access-securityadmin-p.html</guid>
+      <pubDate>Mon, 16 Nov 2026 22:30:42 GMT</pubDate>
+      <description>Severity: medium. ### Impact
+A user with access to the Security section (CMS_ACCESS_SecurityAdmin) but without the ADMIN permission could edit a group that grants ADMIN through a role or a parent group, and use it to escalate their own privileges.
+
+### Reported by
+Lachlan Davidson, Carapace</description>
+    </item>
+    <item>
+      <title>CVE-2026-88989: Silverstripe Framework: Auth bypass GridFieldDetailForm</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-88989-silverstripe-framework-auth-bypass-gridfielddetai.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-88989-silverstripe-framework-auth-bypass-gridfielddetai.html</guid>
+      <pubDate>Mon, 16 Nov 2026 22:29:59 GMT</pubDate>
+      <description>Severity: medium. ### Impact
+A CMS user who can edit records through a GridField detail form could create new records without the permission to create them, by sending a save request directly.
+
+### Reported by
+HDWSec - https://hdwsec.fr</description>
+    </item>
+    <item>
+      <title>CVE-2026-88988: Silverstripe Framework: XSS via SVG data URI</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-88988-silverstripe-framework-xss-via-svg-data-uri.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-88988-silverstripe-framework-xss-via-svg-data-uri.html</guid>
+      <pubDate>Mon, 16 Nov 2026 22:27:46 GMT</pubDate>
+      <description>Severity: medium. ### Impact
+The HTML sanitiser did not remove SVG data URIs. A CMS author could store content that runs JavaScript in the browser of another user who views it.
+
+### Reported by
+HDWSec - https://hdwsec.fr</description>
+    </item>
+    <item>
+      <title>CVE-2026-88987: Silverstripe Framework: XSS via XHTML data URI</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-88987-silverstripe-framework-xss-via-xhtml-data-uri.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-88987-silverstripe-framework-xss-via-xhtml-data-uri.html</guid>
+      <pubDate>Mon, 16 Nov 2026 22:27:37 GMT</pubDate>
+      <description>Severity: medium. ### Impact
+The HTML sanitiser did not remove XHTML and XML data URIs. A CMS author could store content that runs JavaScript in the browser of another user who views it.
+
+### Reported by
+Jack Wallace from Bastion Security</description>
+    </item>
+    <item>
+      <title>CVE-2026-129239: Directus: Share update allows reassigning user_created and role</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-129239-directus-share-update-allows-reassigning-user-cr.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-129239-directus-share-update-allows-reassigning-user-cr.html</guid>
+      <pubDate>Mon, 16 Nov 2026 22:25:53 GMT</pubDate>
+      <description>Severity: medium. ### Summary
+
+A non-admin user who can update their own shares can reassign a share's creator (`user_created`), `role`, `item`, and `collection` fields after the share is created. The update is authorized against the row as it existed before the change, and the resulting row is neve</description>
+    </item>
+    <item>
+      <title>CVE-2026-129301: mail-parser: One hostile attachment aborts `write_attachments()` and silently drops the rest of the batch</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-129301-mail-parser-one-hostile-attachment-aborts-write-.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-129301-mail-parser-one-hostile-attachment-aborts-write-.html</guid>
+      <pubDate>Mon, 16 Nov 2026 22:22:13 GMT</pubDate>
+      <description>Severity: medium. ### Impact
+
+`write_attachments()` called `_safe_attachment_filename()` and `write_sample()` inside its loop
+with no guard, so a single crafted attachment raised out of the whole save. Every attachment
+**after** the malicious one was silently never written, with no error surfaced to</description>
+    </item>
+    <item>
+      <title>CVE-2026-129300: mail-parser: Uncaught `OverflowError` / `OSError` on an out-of-range `Received` date</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-129300-mail-parser-uncaught-overflowerror-oserror-on-an.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-129300-mail-parser-uncaught-overflowerror-oserror-on-an.html</guid>
+      <pubDate>Mon, 16 Nov 2026 22:20:32 GMT</pubDate>
+      <description>Severity: medium. ### Impact
+
+A `Received` header whose trailing date carries an out-of-range year, or a timezone offset
+large enough to push the timestamp past the int64 epoch range, raises an exception that is
+**outside the `MailParser*` hierarchy**. A caller that catches only mail-parser exceptio</description>
+    </item>
+    <item>
+      <title>CVE-2026-129235: Kubeshark: MCP `download_file` writes fetched bytes to an unvalidated destination path</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-129235-kubeshark-mcp-download-file-writes-fetched-bytes.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-129235-kubeshark-mcp-download-file-writes-fetched-bytes.html</guid>
+      <pubDate>Mon, 16 Nov 2026 22:18:58 GMT</pubDate>
+      <description>Severity: medium. **Ecosystem / package:** Go — `github.com/kubeshark/kubeshark` (the `kubeshark`
+CLI, `kubeshark mcp` subcommand)
+**Affected component:** `cmd/mcpRunner.go`, MCP tool `download_file`
+**Affected versions:** `&gt;= v53.1.0`, `&lt; v53.4.0` (the flaw shipped with the
+tool's first release; v5</description>
+    </item>
+    <item>
+      <title>CVE-2026-129236: Kubeshark: MCP `start_kubeshark` argument injection via `pod_regex` → image redirect → cluster takeover</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-129236-kubeshark-mcp-start-kubeshark-argument-injection.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-129236-kubeshark-mcp-start-kubeshark-argument-injection.html</guid>
+      <pubDate>Mon, 16 Nov 2026 22:17:32 GMT</pubDate>
+      <description>Severity: high. **Ecosystem / package:** Go — `github.com/kubeshark/kubeshark` (the `kubeshark`
+CLI, `kubeshark mcp` subcommand)
+**Affected component:** `cmd/mcpRunner.go`, MCP tool `start_kubeshark`
+**Affected versions:** `&gt;= v53.1.0`, `&lt; v53.4.0` (the flaw shipped with the MCP
+command's first rele</description>
+    </item>
+    <item>
+      <title>CVE-2026-129299: mail-parser: Uncaught exceptions and silent header loss in mail-parser on attacker-controlled input</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-129299-mail-parser-uncaught-exceptions-and-silent-heade.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-129299-mail-parser-uncaught-exceptions-and-silent-heade.html</guid>
+      <pubDate>Mon, 16 Nov 2026 22:12:51 GMT</pubDate>
+      <description>Severity: medium. ### Impact
+
+Two effects, sharing the root cause of Advisory 1 — header names chosen by the sender were
+resolved through Python attribute lookup and rewritten before lookup.
+
+**Uncaught exceptions.** A crafted message raises an exception that is *outside* the
+`MailParser*` hierarchy</description>
+    </item>
+    <item>
+      <title>CVE-2026-129297: mail-parser: Sender IP address spoofing in get_server_ipaddress()</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-129297-mail-parser-sender-ip-address-spoofing-in-get-se.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-129297-mail-parser-sender-ip-address-spoofing-in-get-se.html</guid>
+      <pubDate>Mon, 16 Nov 2026 22:11:54 GMT</pubDate>
+      <description>Severity: high. ### Patches
+
+Fixed in **4.6.2**. Upgrade with `pip install --upgrade mail-parser`.
+
+Candidate addresses are now selected by position, not by appearance — a bracketed address
+the sender wrote is byte-identical to one the MTA wrote, so no amount of pattern matching
+can tell them apart:</description>
+    </item>
+    <item>
+      <title>CVE-2026-129295: mail-parser is vulnerable to polynomial ReDoS in email header parsing</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-129295-mail-parser-is-vulnerable-to-polynomial-redos-in.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-129295-mail-parser-is-vulnerable-to-polynomial-redos-in.html</guid>
+      <pubDate>Mon, 16 Nov 2026 22:11:08 GMT</pubDate>
+      <description>Severity: high. ### Summary
+
+Two regular expressions used while parsing email headers backtrack
+polynomially on attacker-controlled input. Parsing a single small, well-formed
+email can consume minutes to hours of CPU, denying service to any process that
+parses untrusted mail.
+
+Both are reachable fro</description>
+    </item>
+    <item>
+      <title>CVE-2026-129296: mail-parser: Path Traversal vulnerability in attachment extraction</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-129296-mail-parser-path-traversal-vulnerability-in-atta.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-129296-mail-parser-path-traversal-vulnerability-in-atta.html</guid>
+      <pubDate>Mon, 16 Nov 2026 22:10:55 GMT</pubDate>
+      <description>Severity: medium. A path traversal vulnerability was identified in mail-parser when extracting email attachments using the write_attachments() and write_sample() APIs.
+
+A specially crafted email containing malicious attachment filenames (for example, using directory traversal sequences such as "../"</description>
+    </item>
+    <item>
+      <title>CVE-2026-86046: termux-sync: Arbitrary file write during restore via attacker-controlled manifest source path</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-86046-termux-sync-arbitrary-file-write-during-restore-v.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-86046-termux-sync-arbitrary-file-write-during-restore-v.html</guid>
+      <pubDate>Mon, 16 Nov 2026 22:09:24 GMT</pubDate>
+      <description>Severity: high. termux-sync restore trusts fields inside an untrusted backup manifest and uses them as the extraction destination without validation.
+
+During restore, each archive entry is handled as:
+
+  src_dir = Path(info.get("source", ...)).parent
+  extract_archive(archive, src_dir, ...)
+
+extract</description>
+    </item>
+    <item>
+      <title>CVE-2026-68934: code-review-mcp-server: Command injection via unsanitized folderPath/baseBranch parameters</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-68934-code-review-mcp-server-command-injection-via-unsa.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-68934-code-review-mcp-server-command-injection-via-unsa.html</guid>
+      <pubDate>Mon, 16 Nov 2026 22:09:06 GMT</pubDate>
+      <description>Severity: high. ### Impact
+
+`code-review-mcp-server` exposes MCP tools (`getLocalGitDiff`, `codeReview`, `createPR`, `getPRTemplate`) that accept `folderPath` and `baseBranch` string parameters. These caller-controlled values were interpolated directly into shell command strings executed via `child_</description>
+    </item>
+    <item>
+      <title>CVE-2026-63182: lightsaml allows Signature wrapping bypass</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-63182-lightsaml-allows-signature-wrapping-bypass.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-63182-lightsaml-allows-signature-wrapping-bypass.html</guid>
+      <pubDate>Mon, 16 Nov 2026 22:08:38 GMT</pubDate>
+      <description>Severity: high. ### Summary
+
+LightSaml 5.0.0 (latest release; also confirmed on 4.6.1) validates an inbound `samlp:Response` by collecting its direct-child `saml:Assertion` elements and validating each one's `ds:Signature` via robrichards/xmlseclibs. The two layers disagree on which element a signat</description>
+    </item>
     <item>
       <title>CVE-2026-119790: Next.js: Information disclosure across root params when a 'use cache' function is called through unstable_cache()</title>
       <link>https://sentinel-post.pages.dev/item/cve-2026-119790-next-js-information-disclosure-across-root-param.html</link>
@@ -102,170 +314,6 @@ An attacker could stall a server that registers a</description>
       <description>Severity: medium. ### Summary
 
 `Set-Cookie` parsing created additional cookies from unrecognised `name=value` attributes, and `CookieJar` had no limit on the number of cookies stored or sent. A server could make the client store a very large number of cookies and generate very large `Cookie` headers</description>
-    </item>
-    <item>
-      <title>CVE-2026-128126: AIOHTTP: Too many URL-encoded form fields block the event loop</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-128126-aiohttp-too-many-url-encoded-form-fields-block-t.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-128126-aiohttp-too-many-url-encoded-form-fields-block-t.html</guid>
-      <pubDate>Mon, 16 Nov 2026 14:54:10 GMT</pubDate>
-      <description>Severity: high. ### Summary
-
-`Request.post()` had no limit on the number of fields in a URL-encoded form body. Inserting a large number of repeated keys into a `MultiDict` took quadratic time on the event loop.
-
-### Impact
-
-An attacker could block the event loop with a form POST within the default `</description>
-    </item>
-    <item>
-      <title>CVE-2026-128127: AIOHTTP: Base64 multipart parts bypass client_max_size</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-128127-aiohttp-base64-multipart-parts-bypass-client-max.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-128127-aiohttp-base64-multipart-parts-bypass-client-max.html</guid>
-      <pubDate>Mon, 16 Nov 2026 14:53:12 GMT</pubDate>
-      <description>Severity: high. ### Summary
-
-When reading a multipart part with `Content-Transfer-Encoding: base64`, `BodyPartReader.read_chunk()` kept reading until the chunk length was a multiple of 4, with no byte limit. A part with a short `Content-Length`, or a long run of whitespace, could cause the entire re</description>
-    </item>
-    <item>
-      <title>CVE-2026-128128: AIOHTTP: WebSocket max_msg_size bypass via integer overflow</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-128128-aiohttp-websocket-max-msg-size-bypass-via-intege.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-128128-aiohttp-websocket-max-msg-size-bypass-via-intege.html</guid>
-      <pubDate>Mon, 16 Nov 2026 14:52:40 GMT</pubDate>
-      <description>Severity: high. ### Summary
-
-The `max_msg_size` check in the WebSocket reader added the declared frame length to the size of the partial message already buffered. In the C extension this addition is 64-bit arithmetic, so a declared length close to 2**63 overflowed and the check passed.
-
-### Impact
-
-</description>
-    </item>
-    <item>
-      <title>CVE-2026-128129: AIOHTTP: Unbounded buffering of data received during an upgrade request</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-128129-aiohttp-unbounded-buffering-of-data-received-dur.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-128129-aiohttp-unbounded-buffering-of-data-received-dur.html</guid>
-      <pubDate>Mon, 16 Nov 2026 14:52:05 GMT</pubDate>
-      <description>Severity: high. ### Summary
-
-While a request flagged as an upgrade (e.g. a WebSocket handshake) was being handled, all further data received on the connection was buffered with no size limit or flow control until the handler completed.
-
-### Impact
-
-An attacker could cause unbounded memory use by str</description>
-    </item>
-    <item>
-      <title>CVE-2026-128130: AIOHTTP: Pure-Python parser request replay and buffer growth behind a declined upgrade</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-128130-aiohttp-pure-python-parser-request-replay-and-bu.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-128130-aiohttp-pure-python-parser-request-replay-and-bu.html</guid>
-      <pubDate>Mon, 16 Nov 2026 14:51:53 GMT</pubDate>
-      <description>Severity: high. ### Summary
-
-When the pipelined request queue was full, the pure-Python parser stored the unparsed remainder internally and also returned it to the caller. After a handler declined an upgrade request, the buffered data was re-fed, so the buffer grew with each handled request and alre</description>
-    </item>
-    <item>
-      <title>CVE-2026-128131: AIOHTTP: Concatenated compressed streams cause excessive CPU use</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-128131-aiohttp-concatenated-compressed-streams-cause-ex.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-128131-aiohttp-concatenated-compressed-streams-cause-ex.html</guid>
-      <pubDate>Mon, 16 Nov 2026 14:51:27 GMT</pubDate>
-      <description>Severity: high. ### Summary
-
-When decompressing a payload made up of many concatenated compressed members (gzip, deflate or zstd), each member was decoded by passing the entire remaining input to a new decompressor, resulting in quadratic CPU time. Empty members produce no output, so `client_max_siz</description>
-    </item>
-    <item>
-      <title>CVE-2026-128132: AIOHTTP: WebSocket receive queue limits bypassed by small or compressed messages</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-128132-aiohttp-websocket-receive-queue-limits-bypassed-.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-128132-aiohttp-websocket-receive-queue-limits-bypassed-.html</guid>
-      <pubDate>Mon, 16 Nov 2026 14:51:01 GMT</pubDate>
-      <description>Severity: high. ### Summary
-
-The WebSocket reader continued parsing frames already received after the receive queue had paused the transport, and empty messages were not counted towards the queue size. With permessage-deflate, a single read of compressed frames could add many megabytes of decompress</description>
-    </item>
-    <item>
-      <title>CVE-2026-128119: SvelteKit: Private `query.batch` functions could collide, producing unexpected parameter / function combinations</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-128119-sveltekit-private-query-batch-functions-could-co.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-128119-sveltekit-private-query-batch-functions-could-co.html</guid>
-      <pubDate>Mon, 16 Nov 2026 14:49:03 GMT</pubDate>
-      <description>Severity: medium. Under certain circumstances, private (non-exported) `query.batch` functions could end up sharing a batch, resulting in the arguments from one function being passed to another. This only affects apps using the experimental remote functions flag and non-exported `query.batch` functio</description>
-    </item>
-    <item>
-      <title>CVE-2026-128116: SvelteKit: Protocol-relative module import during server-side route resolution allows cross-origin script execution</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-128116-sveltekit-protocol-relative-module-import-during.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-128116-sveltekit-protocol-relative-module-import-during.html</guid>
-      <pubDate>Mon, 16 Nov 2026 14:48:54 GMT</pubDate>
-      <description>Severity: medium. If an attacker could, using some form of social engineering or other exploit, get a user to use client-side navigation to navigate to a specially-crafted link, the attacker could cause code from another domain to be imported and run on the user's machine. This only affected apps wi</description>
-    </item>
-    <item>
-      <title>CVE-2026-126302: NLTK: Symlink escape in chat80.sql_query bypasses the pathsec data-root sandbox to read out-of-root SQLite databases</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-126302-nltk-symlink-escape-in-chat80-sql-query-bypasses.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-126302-nltk-symlink-escape-in-chat80-sql-query-bypasses.html</guid>
-      <pubDate>Mon, 16 Nov 2026 14:47:23 GMT</pubDate>
-      <description>Severity: medium. ## Summary
-
-`nltk.sem.chat80.sql_query()` opens a SQLite database by handing the result of `nltk.data.find(dbname)` straight to `sqlite3.connect()` without the path-containment check that the NLTK data sandbox (`nltk.pathsec`) is meant to enforce. `nltk.data.find()` applies only le</description>
-    </item>
-    <item>
-      <title>CVE-2026-126296: NLTK: Path Traversal in save_maxent_params / load_maxent_params Allow Arbitrary File READ/WRITE</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-126296-nltk-path-traversal-in-save-maxent-params-load-m.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-126296-nltk-path-traversal-in-save-maxent-params-load-m.html</guid>
-      <pubDate>Mon, 16 Nov 2026 14:46:25 GMT</pubDate>
-      <description>Severity: medium. ### Summary
-Path traversal in NLTK's save_maxent_params() and load_maxent_params() allows arbitrary file write and arbitrary file read outside the directories permitted by NLTK's pathsec security mechanism.
-
-This vulnerability was previously reported through Huntr, accepted by the </description>
-    </item>
-    <item>
-      <title>Google Finds Hackers Using AI Agents to Build and Run Exploits From Software Patches</title>
-      <link>https://sentinel-post.pages.dev/item/google-finds-hackers-using-ai-agents-to-build-and-run-exploits-f.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/google-finds-hackers-using-ai-agents-to-build-and-run-exploits-f.html</guid>
-      <pubDate>Mon, 16 Nov 2026 14:00:00 GMT</pubDate>
-      <description>Google on Monday revealed that adversarial use of artificial intelligence (AI) by threat actors has gone beyond manual prompting to deploying autonomous multi-agent offensive frameworks like ARTEX, CAIRN, CyberStrikeAI, and PentAGI to execute multi-stage intrusions at greater operational velocity. I</description>
-    </item>
-    <item>
-      <title>⚡ Weekly Recap: N-able 0-Days, Windows 0-Days, Chrome 0-Days, Fridge 0-Days, and More Bad Days</title>
-      <link>https://sentinel-post.pages.dev/item/weekly-recap-n-able-0-days-windows-0-days-chrome-0-days-fridge-0.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/weekly-recap-n-able-0-days-windows-0-days-chrome-0-days-fridge-0.html</guid>
-      <pubDate>Mon, 16 Nov 2026 13:27:20 GMT</pubDate>
-      <description>A default password opened doors it never should have. A trusted update delivered malware. Even a security feature became a way to break in. Different stories, same problem: the things meant to protect us aren't always doing their job. Meanwhile, AI is making bug hunting faster, old flaws are still p</description>
-    </item>
-    <item>
-      <title>Six Unpatched Danfoss Refrigeration Controller Flaws Could Allow Remote Takeover Without Login</title>
-      <link>https://sentinel-post.pages.dev/item/six-unpatched-danfoss-refrigeration-controller-flaws-could-allow.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/six-unpatched-danfoss-refrigeration-controller-flaws-could-allow.html</guid>
-      <pubDate>Mon, 16 Nov 2026 12:34:21 GMT</pubDate>
-      <description>Six flaws in Danfoss AK-SM800A refrigeration controllers could let a remote attacker take over a controller without logging in, Dutch security consultancy Midnight Blue said earlier this week. No patch is available, and the researchers say the newest firmware, version 5.4.0, does not fix the flaws. </description>
-    </item>
-    <item>
-      <title>Retadup Worm Resurfaces 7 Years After Takedown to Spread CoffeeLoader Malware</title>
-      <link>https://sentinel-post.pages.dev/item/retadup-worm-resurfaces-7-years-after-takedown-to-spread-coffeel.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/retadup-worm-resurfaces-7-years-after-takedown-to-spread-coffeel.html</guid>
-      <pubDate>Mon, 16 Nov 2026 12:33:18 GMT</pubDate>
-      <description>Cybersecurity researchers have disclosed details of a new variant of CoffeeLoader, a malware designed to deliver additional payloads to infected machines. "On launch, the NSIS-based installer executable dropped a file named '7z.dll' into a temporary directory and ran it through rundll32.exe," Kasper</description>
-    </item>
-    <item>
-      <title>Usable Security at Luxury Hotels</title>
-      <link>https://sentinel-post.pages.dev/item/usable-security-at-luxury-hotels.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/usable-security-at-luxury-hotels.html</guid>
-      <pubDate>Mon, 16 Nov 2026 12:05:18 GMT</pubDate>
-      <description>&lt;p&gt;Interesting &lt;a href="https://www.benthamsgaze.org/2026/11/11/phishing-at-the-front-desk-usable-security-in-luxury-hotels/"&gt;case study&lt;/a&gt; from luxury hotels. Attackers used a fake booking request to gain access to a reservations inbox, where they copied genuine refund requests and got fraudulent </description>
-    </item>
-    <item>
-      <title>SANSAR Linux Cryptomining Malware Uses Modified NVIDIA Library to Hide GPU Activity</title>
-      <link>https://sentinel-post.pages.dev/item/sansar-linux-cryptomining-malware-uses-modified-nvidia-library-t.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/sansar-linux-cryptomining-malware-uses-modified-nvidia-library-t.html</guid>
-      <pubDate>Mon, 16 Nov 2026 09:32:57 GMT</pubDate>
-      <description>A financially motivated threat activity cluster tracked as REF3364 has been attributed to a Linux-focused cryptocurrency mining operation that tampers with the readings used to detect high GPU workloads. Central to the intrusion is a toolkit called SANSAR, a Rust-based orchestrator that receives com</description>
-    </item>
-    <item>
-      <title>Amazon Uncovers AI Agent Campaign Targeting LiteLLM, Dify, and Other Apps for API Keys</title>
-      <link>https://sentinel-post.pages.dev/item/amazon-uncovers-ai-agent-campaign-targeting-litellm-dify-and-oth.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/amazon-uncovers-ai-agent-campaign-targeting-litellm-dify-and-oth.html</guid>
-      <pubDate>Mon, 16 Nov 2026 07:34:21 GMT</pubDate>
-      <description>Attackers' AI agents have been hunting for weak spots in internet-exposed AI apps such as LiteLLM, One API, and Dify to steal the AI provider keys stored inside, according to the agents' own records. The records, which Amazon's threat intelligence team captured with decoy servers, describe stolen ke</description>
-    </item>
-    <item>
-      <title>BO Team Exploits Log4Shell in VMware vCenter, Compromises Russian Firm's Code-Signing Server</title>
-      <link>https://sentinel-post.pages.dev/item/bo-team-exploits-log4shell-in-vmware-vcenter-compromises-russian.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/bo-team-exploits-log4shell-in-vmware-vcenter-compromises-russian.html</guid>
-      <pubDate>Mon, 16 Nov 2026 06:53:34 GMT</pubDate>
-      <description>An investigation into suspicious activity within a Russian software developer's network has uncovered a months-long compromise of its development infrastructure and a software code-signing server. The activity, documented by Kaspersky's ICS CERT team after it was contacted by the affected developer </description>
     </item>
   </channel>
 </rss>
