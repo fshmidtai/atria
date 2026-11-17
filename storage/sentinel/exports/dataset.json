@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T13:29:17+00:00",
+  "generated_at": "2026-11-17T17:19:33+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -29,7 +29,7 @@
       "security": 108,
       "ai": 73,
       "dev": 56,
-      "hardware": 22,
+      "hardware": 21,
       "biz": 9,
       "crypto": 7,
       "science": 5
@@ -415,6 +415,23 @@
       "date": "2026-11-16"
     },
     {
+      "uid": "hn:50172041",
+      "source": "hn",
+      "title": "Security advisory: Critical remote code execution vulnerabilities, update now",
+      "url": "https://www.php.net/archive/2026.php#2026-10-21-5",
+      "ts": 1792527350.0,
+      "points": 1561,
+      "comments": 659,
+      "author": "xd",
+      "summary": "<a href=\"https:&#x2F;&#x2F;cert.europa.eu&#x2F;publications&#x2F;security-advisories&#x2F;2026-018&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;cert.europa.eu&#x2F;publications&#x2F;security-advisories&#x2F;2026...</a><p><a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=[phone]\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=[phone]</a>",
+      "recipe": "hn_sec",
+      "buzz": 3538,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-10-20"
+    },
+    {
       "uid": "cve:GHSA-m9j8-jcmv-hp69",
       "source": "cve",
       "title": "CVE-2026-128118: SvelteKit: Build-time server-only module import guard could fail, resulting in server secrets being statically replaced in client bundle",
@@ -425,7 +442,7 @@
       "author": "@sveltejs/kit",
       "summary": "Severity: high. Under certain circumstances, server-only imports, which typically cannot be included in the client bundle, could make their way into it, potentially exposing secrets. This could only occur when those server-only imports were made through `src/params.js`.",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "ai",
         "security",
@@ -444,7 +461,7 @@
       "author": "@sveltejs/kit",
       "summary": "Severity: high. This only affects applications using the experimental remote functions flag and utilizing the `form`, `query`, or `command` remote functions. A specially-crafted request could block the event loop for extended periods of time during parsing.",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "security"
       ],
@@ -461,30 +478,13 @@
       "author": "aiohttp",
       "summary": "Severity: high. ### Summary\n\n`Application.add_domain()` compiled each `*` in a host mask to `[^:]*`. With two or more wildcards in a mask, matching a long `Host` header that does not match the mask took polynomial time on the event loop.\n\n### Impact\n\nAn attacker could stall a server that registers a domain mask wit",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "ai",
         "security",
         "hardware"
       ],
       "date": "2026-11-16"
-    },
-    {
-      "uid": "hn:50172041",
-      "source": "hn",
-      "title": "Security advisory: Critical remote code execution vulnerabilities, update now",
-      "url": "https://www.php.net/archive/2026.php#2026-10-21-5",
-      "ts": 1792527350.0,
-      "points": 1561,
-      "comments": 659,
-      "author": "xd",
-      "summary": "<a href=\"https:&#x2F;&#x2F;cert.europa.eu&#x2F;publications&#x2F;security-advisories&#x2F;2026-018&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;cert.europa.eu&#x2F;publications&#x2F;security-advisories&#x2F;2026...</a><p><a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=[phone]\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=[phone]</a>",
-      "recipe": "hn_sec",
-      "buzz": 3538,
-      "topics": [
-        "security"
-      ],
-      "date": "2026-10-20"
     },
     {
       "uid": "hn:32148218",
@@ -780,6 +780,25 @@
       "date": "2020-09-30"
     },
     {
+      "uid": "cve:GHSA-vc7v-qv4w-wrv8",
+      "source": "cve",
+      "title": "CVE-2026-119351: Next.js: Cache leak across root param values in nested 'use cache' functions via delayed inner stream metadata",
+      "url": "https://github.com/advisories/GHSA-vc7v-qv4w-wrv8",
+      "ts": 1794932006.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "next",
+      "summary": "Severity: medium. With Cache Components enabled, an outer `'use cache'` function can be keyed incorrectly even when its inner `'use cache'` call generates a fresh entry. If the inner function reads a root param (via `next/root-params`) and returns a value that still contains pending promises — for example an object w",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "science",
+        "security"
+      ],
+      "date": "2026-11-17"
+    },
+    {
       "uid": "cve:GHSA-vx32-xf7g-9ghr",
       "source": "cve",
       "title": "CVE-2026-129237: qbee-agent: Docker Compose build context Zip Slip writes outside context directory",
@@ -1022,83 +1041,6 @@
       "date": "2026-11-16"
     },
     {
-      "uid": "cve:GHSA-96x6-fvhx-49hg",
-      "source": "cve",
-      "title": "CVE-2026-128075: Nuxt exposes the message and data of unhandled errors thrown during server rendering",
-      "url": "https://github.com/advisories/GHSA-96x6-fvhx-49hg",
-      "ts": 1794841286.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "nuxt",
-      "summary": "Severity: medium. ### Summary\n\nWhen a page, plugin or route middleware throws an error that is not an HTTP error, Nuxt wraps it with `createError` before rendering the error page. The wrapped error was treated as one the app raised deliberately, so in production its `message` and `data` were sent to the client in the",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-16"
-    },
-    {
-      "uid": "cve:GHSA-r9jc-w898-3fv6",
-      "source": "cve",
-      "title": "CVE-2026-128074: Nuxt payload URL generation has quadratic cost for repeated slashes in the request path",
-      "url": "https://github.com/advisories/GHSA-r9jc-w898-3fv6",
-      "ts": 1794841241.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "nuxt",
-      "summary": "Severity: medium. ### Summary\n\nNuxt strips trailing slashes from the request path with a regular expression whose cost grows quadratically with the length of a run of consecutive slashes. A single unauthenticated request with a long run of slashes can occupy the server's event loop for a noticeable time, delaying eve",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "science",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-16"
-    },
-    {
-      "uid": "cve:GHSA-f3x9-2chm-73c8",
-      "source": "cve",
-      "title": "CVE-2026-128071: Nuxt: Incomplete fix for GHSA-6gq8-jgmh-3ffp: an encoded slash (`%2F`) in the request path bypasses route rules on catch-all page routes",
-      "url": "https://github.com/advisories/GHSA-f3x9-2chm-73c8",
-      "ts": 1794841185.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "nuxt",
-      "summary": "Severity: medium. ### Summary\n\nNuxt matches route rules against the request path with encoded slashes (`%2F`) left encoded, while the page router decodes them into route params. A request that spells a slash as `%2F` can therefore render a page through a catch-all route without the route rules configured for the path",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-16"
-    },
-    {
-      "uid": "cve:GHSA-5pv8-vvhc-h7jv",
-      "source": "cve",
-      "title": "CVE-2026-128125: AIOHTTP: Unbounded cookie storage in client CookieJar",
-      "url": "https://github.com/advisories/GHSA-5pv8-vvhc-h7jv",
-      "ts": 1794840906.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "aiohttp",
-      "summary": "Severity: medium. ### Summary\n\n`Set-Cookie` parsing created additional cookies from unrecognised `name=value` attributes, and `CookieJar` had no limit on the number of cookies stored or sent. A server could make the client store a very large number of cookies and generate very large `Cookie` headers.\n\n### Impact\n\nA m",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "science",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-16"
-    },
-    {
       "uid": "hn:48166459",
       "source": "hn",
       "title": "Mozilla to UK regulators: VPNs are essential privacy and security tools",
@@ -1148,6 +1090,63 @@
         "security"
       ],
       "date": "2016-12-15"
+    },
+    {
+      "uid": "cve:GHSA-96x6-fvhx-49hg",
+      "source": "cve",
+      "title": "CVE-2026-128075: Nuxt exposes the message and data of unhandled errors thrown during server rendering",
+      "url": "https://github.com/advisories/GHSA-96x6-fvhx-49hg",
+      "ts": 1794841286.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "nuxt",
+      "summary": "Severity: medium. ### Summary\n\nWhen a page, plugin or route middleware throws an error that is not an HTTP error, Nuxt wraps it with `createError` before rendering the error page. The wrapped error was treated as one the app raised deliberately, so in production its `message` and `data` were sent to the client in the",
+      "recipe": "gh_advisories",
+      "buzz": 1830,
+      "topics": [
+        "ai",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-16"
+    },
+    {
+      "uid": "cve:GHSA-r9jc-w898-3fv6",
+      "source": "cve",
+      "title": "CVE-2026-128074: Nuxt payload URL generation has quadratic cost for repeated slashes in the request path",
+      "url": "https://github.com/advisories/GHSA-r9jc-w898-3fv6",
+      "ts": 1794841241.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "nuxt",
+      "summary": "Severity: medium. ### Summary\n\nNuxt strips trailing slashes from the request path with a regular expression whose cost grows quadratically with the length of a run of consecutive slashes. A single unauthenticated request with a long run of slashes can occupy the server's event loop for a noticeable time, delaying eve",
+      "recipe": "gh_advisories",
+      "buzz": 1830,
+      "topics": [
+        "ai",
+        "science",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-16"
+    },
+    {
+      "uid": "cve:GHSA-f3x9-2chm-73c8",
+      "source": "cve",
+      "title": "CVE-2026-128071: Nuxt: Incomplete fix for GHSA-6gq8-jgmh-3ffp: an encoded slash (`%2F`) in the request path bypasses route rules on catch-all page routes",
+      "url": "https://github.com/advisories/GHSA-f3x9-2chm-73c8",
+      "ts": 1794841185.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "nuxt",
+      "summary": "Severity: medium. ### Summary\n\nNuxt matches route rules against the request path with encoded slashes (`%2F`) left encoded, while the page router decodes them into route params. A request that spells a slash as `%2F` can therefore render a page through a catch-all route without the route rules configured for the path",
+      "recipe": "gh_advisories",
+      "buzz": 1830,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-16"
     },
     {
       "uid": "hn:25843874",
@@ -1367,7 +1366,7 @@
       "author": "nuxt",
       "summary": "Severity: low. ### Summary\n\nThe fix for CVE-[phone] (GHSA-g8wj-3cr3-6w7v) binds each `/__nuxt_island/<Name>_<hash>.json` path to its props by hashing the `(name, props, context, source)` tuple. That hash was computed over `ohash`'s serialization, which does not escape quotes inside strings or delimiters inside",
       "recipe": "gh_advisories",
-      "buzz": 780,
+      "buzz": 730,
       "topics": [
         "dev",
         "security"
@@ -1385,7 +1384,7 @@
       "author": "@nuxt/webpack-builder",
       "summary": "Severity: low. ### Summary\n\nWhen using the webpack or rspack builder, the dev server serves built client chunks to any request whose `Host` header matches its `Origin`/`Referer`, or that carries `Sec-Fetch-Site: same-origin`. After a DNS rebinding attack both headers name the attacker's hostname, so a malicious pa",
       "recipe": "gh_advisories",
-      "buzz": 780,
+      "buzz": 730,
       "topics": [
         "dev",
         "security",
@@ -1434,12 +1433,12 @@
       "title": "Aabyss-Team/Threat-Broadcast-Plus",
       "url": "https://github.com/Aabyss-Team/Threat-Broadcast-Plus",
       "ts": 1794800456.0,
-      "points": 71,
+      "points": 72,
       "comments": 14,
       "author": "Aabyss-Team",
       "summary": "网络安全威胁情报播报-Plus升级版",
       "recipe": "github_sec",
-      "buzz": 143,
+      "buzz": 144,
       "topics": [],
       "date": "2026-11-16"
     },
@@ -1662,25 +1661,6 @@
       "date": "2026-11-17"
     },
     {
-      "uid": "rss:a848b6775e4e6c",
-      "source": "rss",
-      "title": "Google Finds Hackers Using AI Agents to Build and Run Exploits From Software Patches",
-      "url": "https://thehackernews.com/2026/11/google-finds-hackers-using-ai-agents-to.html",
-      "ts": 1794837600.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Google on Monday revealed that adversarial use of artificial intelligence (AI) by threat actors has gone beyond manual prompting to deploying autonomous multi-agent offensive frameworks like ARTEX, CAIRN, CyberStrikeAI, and PentAGI to execute multi-stage intrusions at greater operational velocity. In tandem, threat actors are leveraging the power and capabilities of large language models (LLMs)",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-16"
-    },
-    {
       "uid": "gh:BountyForge-xyz/pwn-skill",
       "source": "github",
       "title": "BountyForge-xyz/pwn-skill",
@@ -1697,23 +1677,6 @@
         "security"
       ],
       "date": "2026-11-06"
-    },
-    {
-      "uid": "gh:BowSinceEnt/resocket-elden-ring-cheat-2026-trainer-mod-menu-tools",
-      "source": "github",
-      "title": "BowSinceEnt/resocket-elden-ring-cheat-2026-trainer-mod-menu-tools",
-      "url": "https://github.com/BowSinceEnt/resocket-elden-ring-cheat-2026-trainer-mod-menu-tools",
-      "ts": 1793879929.0,
-      "points": 72,
-      "comments": 0,
-      "author": "BowSinceEnt",
-      "summary": "Elden Ring Cheat 2026 — Single-player modding and gameplay toolkit concept featuring character build optimization, rune planning, weapon upgrades, boss strategies, save management and offline trainer research.",
-      "recipe": "github_sec",
-      "buzz": 72,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-05"
     },
     {
       "uid": "gh:Balanov/latch",
@@ -1738,12 +1701,12 @@
       "title": "NPCmillionaire/unredact.tools",
       "url": "https://github.com/NPCmillionaire/unredact.tools",
       "ts": 1794511431.0,
-      "points": 38,
+      "points": 39,
       "comments": 1,
       "author": "NPCmillionaire",
       "summary": "See what your files leak (GPS, serials, authors, failed redactions, deleted text, watermarks), then scrub them.",
       "recipe": "github_sec",
-      "buzz": 51,
+      "buzz": 52,
       "topics": [
         "ai"
       ],
@@ -1765,6 +1728,23 @@
       "date": "2026-11-14"
     },
     {
+      "uid": "gh:BowSinceEnt/resocket-elden-ring-cheat-2026-trainer-mod-menu-tools",
+      "source": "github",
+      "title": "BowSinceEnt/resocket-elden-ring-cheat-2026-trainer-mod-menu-tools",
+      "url": "https://github.com/BowSinceEnt/resocket-elden-ring-cheat-2026-trainer-mod-menu-tools",
+      "ts": 1793879929.0,
+      "points": 32,
+      "comments": 0,
+      "author": "BowSinceEnt",
+      "summary": "Elden Ring Cheat 2026 — Single-player modding and gameplay toolkit concept featuring character build optimization, rune planning, weapon upgrades, boss strategies, save management and offline trainer research.",
+      "recipe": "github_sec",
+      "buzz": 32,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-11-05"
+    },
+    {
       "uid": "rss:139fe93a86c6e7",
       "source": "rss",
       "title": "Usable Security at Luxury Hotels",
@@ -1783,19 +1763,23 @@
       "date": "2026-11-16"
     },
     {
-      "uid": "rss:e109a4e996ba8e",
+      "uid": "rss:a848b6775e4e6c",
       "source": "rss",
-      "title": "Upcoming Speaking Engagements",
-      "url": "https://www.schneier.com/blog/archives/2026/11/upcoming-speaking-engagements-62.html",
-      "ts": 1794675766.0,
+      "title": "Google Finds Hackers Using AI Agents to Build and Run Exploits From Software Patches",
+      "url": "https://thehackernews.com/2026/11/google-finds-hackers-using-ai-agents-to.html",
+      "ts": 1794837600.0,
       "points": 0,
       "comments": 0,
-      "author": "Bruce Schneier",
-      "summary": "<p>This is a current list of where and when I am scheduled to speak:</p> <ul> <li>I’m speaking at the <a href=\"https://luma.com/a3pk9zbg\">Catalyst Summit</a> in Brampton, Ontario, Canada, on Wednesday, November 18, 2026.</li> <li>I’m speaking at <a href=\"https://queertech.org/en/events/qonference/qtq-2026\">QT Qonference 2026</a> in Toronto, Ontario, Canada, on Thursday, November 19, 2026.</li> </u",
-      "recipe": "schneier",
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Google on Monday revealed that adversarial use of artificial intelligence (AI) by threat actors has gone beyond manual prompting to deploying autonomous multi-agent offensive frameworks like ARTEX, CAIRN, CyberStrikeAI, and PentAGI to execute multi-stage intrusions at greater operational velocity. In tandem, threat actors are leveraging the power and capabilities of large language models (LLMs)",
+      "recipe": "hackersnews",
       "buzz": 30,
-      "topics": [],
-      "date": "2026-11-14"
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-16"
     },
     {
       "uid": "rss:ef045dd0f58580",
@@ -2000,6 +1984,21 @@
         "security"
       ],
       "date": "2026-11-10"
+    },
+    {
+      "uid": "rss:e109a4e996ba8e",
+      "source": "rss",
+      "title": "Upcoming Speaking Engagements",
+      "url": "https://www.schneier.com/blog/archives/2026/11/upcoming-speaking-engagements-62.html",
+      "ts": 1794675766.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Bruce Schneier",
+      "summary": "<p>This is a current list of where and when I am scheduled to speak:</p> <ul> <li>I’m speaking at the <a href=\"https://luma.com/a3pk9zbg\">Catalyst Summit</a> in Brampton, Ontario, Canada, on Wednesday, November 18, 2026.</li> <li>I’m speaking at <a href=\"https://queertech.org/en/events/qonference/qtq-2026\">QT Qonference 2026</a> in Toronto, Ontario, Canada, on Thursday, November 19, 2026.</li> </u",
+      "recipe": "schneier",
+      "buzz": 10,
+      "topics": [],
+      "date": "2026-11-14"
     },
     {
       "uid": "rss:1da07c9934607e",

@@ -10,6 +10,7 @@ CVE-2026-128134,high,nltk,"CVE-2026-128134: NLTK dot2img runs Graphviz 'dot' wit
 CVE-2026-128118,high,@sveltejs/kit,"CVE-2026-128118: SvelteKit: Build-time server-only module import guard could fail, resulting in server secrets being statically replaced in client bundle",https://github.com/advisories/GHSA-m9j8-jcmv-hp69,2026-11-16
 CVE-2026-128120,high,@sveltejs/kit,CVE-2026-128120: SvelteKit: DoS while parsing form data from a remote functions `form`,https://github.com/advisories/GHSA-3r8g-jcqq-3p5j,2026-11-16
 CVE-2026-128124,high,aiohttp,CVE-2026-128124: AIOHTTP: Event loop stall in add_domain() wildcard matching,https://github.com/advisories/GHSA-jm3w-gw2p-xjfj,2026-11-16
+CVE-2026-119351,medium,next,CVE-2026-119351: Next.js: Cache leak across root param values in nested 'use cache' functions via delayed inner stream metadata,https://github.com/advisories/GHSA-vc7v-qv4w-wrv8,2026-11-17
 CVE-2026-129237,medium,go.qbee.io/agent,CVE-2026-129237: qbee-agent: Docker Compose build context Zip Slip writes outside context directory,https://github.com/advisories/GHSA-vx32-xf7g-9ghr,2026-11-16
 CVE-2026-91113,medium,silverstripe/framework,CVE-2026-91113: Silverstripe Framework: User-controlled ClassName allows unauthorized record type change,https://github.com/advisories/GHSA-4qv2-g5vp-wjjw,2026-11-16
 CVE-2026-91112,medium,silverstripe/framework,CVE-2026-91112: Silverstripe Framework: CMS_ACCESS_SecurityAdmin privilege escalation,https://github.com/advisories/GHSA-rg72-5958-c65m,2026-11-16
@@ -26,6 +27,5 @@ CVE-2026-119790,medium,next,CVE-2026-119790: Next.js: Information disclosure acr
 CVE-2026-128075,medium,nuxt,CVE-2026-128075: Nuxt exposes the message and data of unhandled errors thrown during server rendering,https://github.com/advisories/GHSA-96x6-fvhx-49hg,2026-11-16
 CVE-2026-128074,medium,nuxt,CVE-2026-128074: Nuxt payload URL generation has quadratic cost for repeated slashes in the request path,https://github.com/advisories/GHSA-r9jc-w898-3fv6,2026-11-16
 CVE-2026-128071,medium,nuxt,CVE-2026-128071: Nuxt: Incomplete fix for GHSA-6gq8-jgmh-3ffp: an encoded slash (`%2F`) in the request path bypasses route rules on catch-all page routes,https://github.com/advisories/GHSA-f3x9-2chm-73c8,2026-11-16
-CVE-2026-128125,medium,aiohttp,CVE-2026-128125: AIOHTTP: Unbounded cookie storage in client CookieJar,https://github.com/advisories/GHSA-5pv8-vvhc-h7jv,2026-11-16
 CVE-2026-128076,low,nuxt,CVE-2026-128076: Nuxt: Colliding island props can share one `/__nuxt_island` path (incomplete fix for CVE-2026-46342),https://github.com/advisories/GHSA-hf59-9xwc-2g4p,2026-11-16
 CVE-2026-128072,low,@nuxt/webpack-builder,CVE-2026-128072: @nuxt/webpack-builder and @nuxt/rspack-builder dev server serves built source to DNS rebinding pages,https://github.com/advisories/GHSA-x2wv-5868-p7v2,2026-11-16

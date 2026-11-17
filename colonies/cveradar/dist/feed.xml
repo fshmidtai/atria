@@ -5,7 +5,14 @@
     <link>https://cveradar-ah3.pages.dev</link>
     <description>Живые CVE и уязвимости на русском: автономный перевод угроз в понятные дайджесты для DevOps и небольшого SecOps</description>
     <language>ru</language>
-    <lastBuildDate>Tue, 17 Nov 2026 13:28:33 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 17:18:59 GMT</lastBuildDate>
+    <item>
+      <title>CVE-2026-119351: Next.js: Cache leak across root param values in nested 'use cache' functions via delayed inner stream metadata</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-119351-next-js-cache-leak-across-root-param-values-in-n.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-119351-next-js-cache-leak-across-root-param-values-in-n.html</guid>
+      <pubDate>Tue, 17 Nov 2026 16:13:26 GMT</pubDate>
+      <description>Severity: medium. With Cache Components enabled, an outer `'use cache'` function can be keyed incorrectly even when its inner `'use cache'` call generates a fresh entry. If the inner function reads a root param (via `next/root-params`) and returns a value that still contains pending promises — for e</description>
+    </item>
     <item>
       <title>Hackers Found a Way Around GitHub SHA Pinning. This Webinar Explains How to Close the Gap</title>
       <link>https://cveradar-ah3.pages.dev/item/hackers-found-a-way-around-github-sha-pinning-this-webinar-expla.html</link>
@@ -291,15 +298,6 @@ LightSaml 5.0.0 (latest release; also confirmed on 4.6.1) validates an inbound `
       <description>Severity: low. ### Summary
 
 The fix for CVE-[phone] (GHSA-g8wj-3cr3-6w7v) binds each `/__nuxt_island/&lt;Name&gt;_&lt;hash&gt;.json` path to its props by hashing the `(name, props, context, source)` tuple. That hash was computed over `ohash`'s serialization, which does not escape quotes inside strings or delimi</description>
-    </item>
-    <item>
-      <title>CVE-2026-128075: Nuxt exposes the message and data of unhandled errors thrown during server rendering</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-128075-nuxt-exposes-the-message-and-data-of-unhandled-e.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-128075-nuxt-exposes-the-message-and-data-of-unhandled-e.html</guid>
-      <pubDate>Mon, 16 Nov 2026 15:01:26 GMT</pubDate>
-      <description>Severity: medium. ### Summary
-
-When a page, plugin or route middleware throws an error that is not an HTTP error, Nuxt wraps it with `createError` before rendering the error page. The wrapped error was treated as one the app raised deliberately, so in production its `message` and `data` were sent to</description>
     </item>
   </channel>
 </rss>

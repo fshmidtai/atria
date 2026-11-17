@@ -14,10 +14,10 @@ cve:GHSA-259w-wmqg-fp76,cve,CVE-2026-86046: termux-sync: Arbitrary file write du
 cve:GHSA-jq3q-62jc-fqq9,cve,CVE-2026-68934: code-review-mcp-server: Command injection via unsanitized folderPath/baseBranch parameters,https://github.com/advisories/GHSA-jq3q-62jc-fqq9,3580,2026-11-16,dev|security|hardware
 cve:GHSA-w553-pwx6-3mg9,cve,CVE-2026-63182: lightsaml allows Signature wrapping bypass,https://github.com/advisories/GHSA-w553-pwx6-3mg9,3580,2026-11-16,ai|security
 cve:GHSA-7mxv-7h3q-9324,cve,"CVE-2026-128134: NLTK dot2img runs Graphviz 'dot' without the trusted-exec chokepoint, enabling local code execution via a writable PATH element",https://github.com/advisories/GHSA-7mxv-7h3q-9324,3580,2026-11-16,dev|security
-cve:GHSA-m9j8-jcmv-hp69,cve,"CVE-2026-128118: SvelteKit: Build-time server-only module import guard could fail, resulting in server secrets being statically replaced in client bundle",https://github.com/advisories/GHSA-m9j8-jcmv-hp69,3580,2026-11-16,ai|security|hardware
-cve:GHSA-3r8g-jcqq-3p5j,cve,CVE-2026-128120: SvelteKit: DoS while parsing form data from a remote functions `form`,https://github.com/advisories/GHSA-3r8g-jcqq-3p5j,3580,2026-11-16,security
-cve:GHSA-jm3w-gw2p-xjfj,cve,CVE-2026-128124: AIOHTTP: Event loop stall in add_domain() wildcard matching,https://github.com/advisories/GHSA-jm3w-gw2p-xjfj,3580,2026-11-16,ai|security|hardware
 hn:50172041,hn,"Security advisory: Critical remote code execution vulnerabilities, update now",https://www.php.net/archive/2026.php#2026-10-21-5,3538,2026-10-20,security
+cve:GHSA-m9j8-jcmv-hp69,cve,"CVE-2026-128118: SvelteKit: Build-time server-only module import guard could fail, resulting in server secrets being statically replaced in client bundle",https://github.com/advisories/GHSA-m9j8-jcmv-hp69,3530,2026-11-16,ai|security|hardware
+cve:GHSA-3r8g-jcqq-3p5j,cve,CVE-2026-128120: SvelteKit: DoS while parsing form data from a remote functions `form`,https://github.com/advisories/GHSA-3r8g-jcqq-3p5j,3530,2026-11-16,security
+cve:GHSA-jm3w-gw2p-xjfj,cve,CVE-2026-128124: AIOHTTP: Event loop stall in add_domain() wildcard matching,https://github.com/advisories/GHSA-jm3w-gw2p-xjfj,3530,2026-11-16,ai|security|hardware
 hn:32148218,hn,FCC: TikTok is unacceptable security risk and should be removed from app stores,https://blog.malwarebytes.com/privacy-2/2022/07/tiktok-is-unacceptable-security-risk-and-should-be-removed-from-app-stores-says-fcc/,3376,2022-07-19,security
 hn:41392128,hn,Bypassing airport security via SQL injection,https://ian.sh/tsa,3324,2024-08-29,ai|security
 hn:41792500,hn,Internet Archive: Security breach alert,https://www.theverge.com/2024/10/9/24266419/internet-archive-ddos-attack-pop-up-message,2912,2024-10-09,security
@@ -35,6 +35,7 @@ hn:23180975,hn,Security Flaws in Adobe Acrobat Reader Allow Gaining Root on macO
 hn:50182987,hn,"Today's PHP security release, and how we're strengthening security",https://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security/,2034,2026-10-21,security
 hn:17592422,hn,Google: Security Keys Neutralized Employee Phishing,https://krebsonsecurity.com/2018/07/google-security-keys-neutered-employee-phishing/,2002,2018-07-23,security
 hn:24636166,hn,Apple’s T2 security chip jailbreak,https://reportcybercrime.com/hackers-jailbreak-apples-t2-security-chip-powered-by-bridgeos/,1881,2020-09-30,ai|security|hardware
+cve:GHSA-vc7v-qv4w-wrv8,cve,CVE-2026-119351: Next.js: Cache leak across root param values in nested 'use cache' functions via delayed inner stream metadata,https://github.com/advisories/GHSA-vc7v-qv4w-wrv8,1880,2026-11-17,ai|science|security
 cve:GHSA-vx32-xf7g-9ghr,cve,CVE-2026-129237: qbee-agent: Docker Compose build context Zip Slip writes outside context directory,https://github.com/advisories/GHSA-vx32-xf7g-9ghr,1880,2026-11-16,ai|dev|security
 cve:GHSA-4qv2-g5vp-wjjw,cve,CVE-2026-91113: Silverstripe Framework: User-controlled ClassName allows unauthorized record type change,https://github.com/advisories/GHSA-4qv2-g5vp-wjjw,1880,2026-11-16,ai|dev|security
 cve:GHSA-rg72-5958-c65m,cve,CVE-2026-91112: Silverstripe Framework: CMS_ACCESS_SecurityAdmin privilege escalation,https://github.com/advisories/GHSA-rg72-5958-c65m,1880,2026-11-16,dev|security
@@ -48,4 +49,3 @@ cve:GHSA-gj7r-p794-hhq5,cve,CVE-2026-129235: Kubeshark: MCP `download_file` writ
 cve:GHSA-24mq-4vc6-2prf,cve,CVE-2026-129299: mail-parser: Uncaught exceptions and silent header loss in mail-parser on attacker-controlled input,https://github.com/advisories/GHSA-24mq-4vc6-2prf,1880,2026-11-16,ai|dev|security
 cve:GHSA-fr3h-cpq2-9496,cve,CVE-2026-129296: mail-parser: Path Traversal vulnerability in attachment extraction,https://github.com/advisories/GHSA-fr3h-cpq2-9496,1880,2026-11-16,ai|dev|security
 cve:GHSA-mfr8-8qww-v76h,cve,CVE-2026-119790: Next.js: Information disclosure across root params when a 'use cache' function is called through unstable_cache(),https://github.com/advisories/GHSA-mfr8-8qww-v76h,1880,2026-11-16,security
-cve:GHSA-96x6-fvhx-49hg,cve,CVE-2026-128075: Nuxt exposes the message and data of unhandled errors thrown during server rendering,https://github.com/advisories/GHSA-96x6-fvhx-49hg,1880,2026-11-16,ai|security|hardware

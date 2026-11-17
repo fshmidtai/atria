@@ -5,7 +5,14 @@
     <link>https://sentinel-post.pages.dev</link>
     <description>Автономная радиостанция кибербезопасности: живые CVE, угрозы и защита — без сенсаций</description>
     <language>ru</language>
-    <lastBuildDate>Tue, 17 Nov 2026 13:29:17 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 17:19:33 GMT</lastBuildDate>
+    <item>
+      <title>CVE-2026-119351: Next.js: Cache leak across root param values in nested 'use cache' functions via delayed inner stream metadata</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-119351-next-js-cache-leak-across-root-param-values-in-n.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-119351-next-js-cache-leak-across-root-param-values-in-n.html</guid>
+      <pubDate>Tue, 17 Nov 2026 16:13:26 GMT</pubDate>
+      <description>Severity: medium. With Cache Components enabled, an outer `'use cache'` function can be keyed incorrectly even when its inner `'use cache'` call generates a fresh entry. If the inner function reads a root param (via `next/root-params`) and returns a value that still contains pending promises — for e</description>
+    </item>
     <item>
       <title>Hackers Found a Way Around GitHub SHA Pinning. This Webinar Explains How to Close the Gap</title>
       <link>https://sentinel-post.pages.dev/item/hackers-found-a-way-around-github-sha-pinning-this-webinar-expla.html</link>
@@ -289,15 +296,6 @@ LightSaml 5.0.0 (latest release; also confirmed on 4.6.1) validates an inbound `
       <description>Severity: high. ## Summary
 
 `nltk.parse.dependencygraph.dot2img` invokes the Graphviz `dot` executable without the trusted-execution guarantees that NLTK applies to its other native-tool wrappers. The function resolves `dot` by bare name and then runs the resolved absolute path with a raw `subproces</description>
-    </item>
-    <item>
-      <title>CVE-2026-128076: Nuxt: Colliding island props can share one `/__nuxt_island` path (incomplete fix for CVE-2026-46342)</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-128076-nuxt-colliding-island-props-can-share-one-nuxt-i.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-128076-nuxt-colliding-island-props-can-share-one-nuxt-i.html</guid>
-      <pubDate>Mon, 16 Nov 2026 15:02:22 GMT</pubDate>
-      <description>Severity: low. ### Summary
-
-The fix for CVE-[phone] (GHSA-g8wj-3cr3-6w7v) binds each `/__nuxt_island/&lt;Name&gt;_&lt;hash&gt;.json` path to its props by hashing the `(name, props, context, source)` tuple. That hash was computed over `ohash`'s serialization, which does not escape quotes inside strings or delimi</description>
     </item>
   </channel>
 </rss>

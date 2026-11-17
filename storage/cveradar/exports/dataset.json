@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T13:28:33+00:00",
+  "generated_at": "2026-11-17T17:18:59+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -21,7 +21,7 @@
       "security": 52,
       "ai": 42,
       "dev": 39,
-      "hardware": 19,
+      "hardware": 18,
       "biz": 4,
       "crypto": 4,
       "science": 3
@@ -199,7 +199,7 @@
       "author": "@sveltejs/kit",
       "summary": "Severity: high. Under certain circumstances, server-only imports, which typically cannot be included in the client bundle, could make their way into it, potentially exposing secrets. This could only occur when those server-only imports were made through `src/params.js`.",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "ai",
         "security",
@@ -218,7 +218,7 @@
       "author": "@sveltejs/kit",
       "summary": "Severity: high. This only affects applications using the experimental remote functions flag and utilizing the `form`, `query`, or `command` remote functions. A specially-crafted request could block the event loop for extended periods of time during parsing.",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "security"
       ],
@@ -235,13 +235,32 @@
       "author": "aiohttp",
       "summary": "Severity: high. ### Summary\n\n`Application.add_domain()` compiled each `*` in a host mask to `[^:]*`. With two or more wildcards in a mask, matching a long `Host` header that does not match the mask took polynomial time on the event loop.\n\n### Impact\n\nAn attacker could stall a server that registers a domain mask wit",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "ai",
         "security",
         "hardware"
       ],
       "date": "2026-11-16"
+    },
+    {
+      "uid": "cve:GHSA-vc7v-qv4w-wrv8",
+      "source": "cve",
+      "title": "CVE-2026-119351: Next.js: Cache leak across root param values in nested 'use cache' functions via delayed inner stream metadata",
+      "url": "https://github.com/advisories/GHSA-vc7v-qv4w-wrv8",
+      "ts": 1794932006.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "next",
+      "summary": "Severity: medium. With Cache Components enabled, an outer `'use cache'` function can be keyed incorrectly even when its inner `'use cache'` call generates a fresh entry. If the inner function reads a root param (via `next/root-params`) and returns a value that still contains pending promises — for example an object w",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "science",
+        "security"
+      ],
+      "date": "2026-11-17"
     },
     {
       "uid": "cve:GHSA-vx32-xf7g-9ghr",
@@ -496,7 +515,7 @@
       "author": "nuxt",
       "summary": "Severity: medium. ### Summary\n\nWhen a page, plugin or route middleware throws an error that is not an HTTP error, Nuxt wraps it with `createError` before rendering the error page. The wrapped error was treated as one the app raised deliberately, so in production its `message` and `data` were sent to the client in the",
       "recipe": "gh_advisories",
-      "buzz": 1880,
+      "buzz": 1830,
       "topics": [
         "ai",
         "security",
@@ -515,7 +534,7 @@
       "author": "nuxt",
       "summary": "Severity: medium. ### Summary\n\nNuxt strips trailing slashes from the request path with a regular expression whose cost grows quadratically with the length of a run of consecutive slashes. A single unauthenticated request with a long run of slashes can occupy the server's event loop for a noticeable time, delaying eve",
       "recipe": "gh_advisories",
-      "buzz": 1880,
+      "buzz": 1830,
       "topics": [
         "ai",
         "science",
@@ -535,30 +554,10 @@
       "author": "nuxt",
       "summary": "Severity: medium. ### Summary\n\nNuxt matches route rules against the request path with encoded slashes (`%2F`) left encoded, while the page router decodes them into route params. A request that spells a slash as `%2F` can therefore render a page through a catch-all route without the route rules configured for the path",
       "recipe": "gh_advisories",
-      "buzz": 1880,
+      "buzz": 1830,
       "topics": [
         "ai",
         "security"
-      ],
-      "date": "2026-11-16"
-    },
-    {
-      "uid": "cve:GHSA-5pv8-vvhc-h7jv",
-      "source": "cve",
-      "title": "CVE-2026-128125: AIOHTTP: Unbounded cookie storage in client CookieJar",
-      "url": "https://github.com/advisories/GHSA-5pv8-vvhc-h7jv",
-      "ts": 1794840906.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "aiohttp",
-      "summary": "Severity: medium. ### Summary\n\n`Set-Cookie` parsing created additional cookies from unrecognised `name=value` attributes, and `CookieJar` had no limit on the number of cookies stored or sent. A server could make the client store a very large number of cookies and generate very large `Cookie` headers.\n\n### Impact\n\nA m",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "science",
-        "security",
-        "hardware"
       ],
       "date": "2026-11-16"
     },
@@ -573,7 +572,7 @@
       "author": "nuxt",
       "summary": "Severity: low. ### Summary\n\nThe fix for CVE-[phone] (GHSA-g8wj-3cr3-6w7v) binds each `/__nuxt_island/<Name>_<hash>.json` path to its props by hashing the `(name, props, context, source)` tuple. That hash was computed over `ohash`'s serialization, which does not escape quotes inside strings or delimiters inside",
       "recipe": "gh_advisories",
-      "buzz": 780,
+      "buzz": 730,
       "topics": [
         "dev",
         "security"
@@ -591,7 +590,7 @@
       "author": "@nuxt/webpack-builder",
       "summary": "Severity: low. ### Summary\n\nWhen using the webpack or rspack builder, the dev server serves built client chunks to any request whose `Host` header matches its `Origin`/`Referer`, or that carries `Sec-Fetch-Site: same-origin`. After a DNS rebinding attack both headers name the attacker's hostname, so a malicious pa",
       "recipe": "gh_advisories",
-      "buzz": 780,
+      "buzz": 730,
       "topics": [
         "dev",
         "security",
@@ -741,7 +740,7 @@
       "author": "info@thehackernews.com (The Hacker News)",
       "summary": "Google on Monday revealed that adversarial use of artificial intelligence (AI) by threat actors has gone beyond manual prompting to deploying autonomous multi-agent offensive frameworks like ARTEX, CAIRN, CyberStrikeAI, and PentAGI to execute multi-stage intrusions at greater operational velocity. In tandem, threat actors are leveraging the power and capabilities of large language models (LLMs)",
       "recipe": "the_hacker_news",
-      "buzz": 80,
+      "buzz": 30,
       "topics": [
         "ai",
         "dev",
