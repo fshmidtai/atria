@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T09:19:41+00:00",
+  "generated_at": "2026-11-17T13:29:17+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -26,13 +26,13 @@
       "krebs": 10
     },
     "by_topic": {
-      "security": 107,
-      "ai": 72,
-      "dev": 54,
-      "hardware": 23,
+      "security": 108,
+      "ai": 73,
+      "dev": 56,
+      "hardware": 22,
       "biz": 9,
-      "crypto": 6,
-      "science": 4
+      "crypto": 7,
+      "science": 5
     },
     "top_domains": [
       [
@@ -1399,12 +1399,12 @@
       "title": "arnold117/iOS-NOIR",
       "url": "https://github.com/arnold117/iOS-NOIR",
       "ts": 1793934227.0,
-      "points": 322,
+      "points": 323,
       "comments": 61,
       "author": "arnold117",
       "summary": "No-jailbreak iOS privacy, entitlement, sandbox & telemetry forensic auditor (inspired by Verlintas/NOIR)",
       "recipe": "github_sec",
-      "buzz": 505,
+      "buzz": 506,
       "topics": [
         "ai",
         "security"
@@ -1434,12 +1434,12 @@
       "title": "Aabyss-Team/Threat-Broadcast-Plus",
       "url": "https://github.com/Aabyss-Team/Threat-Broadcast-Plus",
       "ts": 1794800456.0,
-      "points": 69,
+      "points": 71,
       "comments": 14,
       "author": "Aabyss-Team",
       "summary": "网络安全威胁情报播报-Plus升级版",
       "recipe": "github_sec",
-      "buzz": 141,
+      "buzz": 143,
       "topics": [],
       "date": "2026-11-16"
     },
@@ -1511,22 +1511,99 @@
       "date": "2026-11-12"
     },
     {
-      "uid": "rss:139fe93a86c6e7",
+      "uid": "rss:20cbd8174f0c08",
       "source": "rss",
-      "title": "Usable Security at Luxury Hotels",
-      "url": "https://www.schneier.com/blog/archives/2026/11/usable-security-at-luxury-hotels.html",
-      "ts": 1794830718.0,
+      "title": "Formal Verification of the Signal Protocol Using AI",
+      "url": "https://www.schneier.com/blog/archives/2026/11/formal-verification-of-the-signal-protocol-using-ai.html",
+      "ts": 1794917197.0,
       "points": 0,
       "comments": 0,
       "author": "Bruce Schneier",
-      "summary": "<p>Interesting <a href=\"https://www.benthamsgaze.org/2026/11/11/phishing-at-the-front-desk-usable-security-in-luxury-hotels/\">case study</a> from luxury hotels. Attackers used a fake booking request to gain access to a reservations inbox, where they copied genuine refund requests and got fraudulent ones approved.</p> <p>This is a good illustration why &#8220;just don&#8217;t click on links&#8221;",
+      "summary": "<p><a href=\"https://www.wired.com/story/a-new-ai-tool-from-google-deepmind-formally-verified-the-signal-protocol/\">This</a> seems like a good thing:</p> <blockquote><p>Google Deepmind researchers used agentic AI to mathematically prove, or “formally verify,” a number of the Signal protocol’s key cryptographic guarantees­a landmark development for the widely used cryptography and AI itself.</p> <p>",
       "recipe": "schneier",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "crypto",
+        "science"
+      ],
+      "date": "2026-11-17"
+    },
+    {
+      "uid": "rss:1c024142ae254b",
+      "source": "rss",
+      "title": "Hackers Found a Way Around GitHub SHA Pinning. This Webinar Explains How to Close the Gap",
+      "url": "https://thehackernews.com/2026/11/hackers-found-way-around-github-sha.html",
+      "ts": 1794918306.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Pinning GitHub Actions to an exact version of their code, known as SHA pinning, has become the go-to defense against software supply chain attacks. Attackers have already found a way around it. In March 2026, the hackers who hijacked Trivy, a widely used open-source security scanner, planted malicious code that looked like it came from GitHub's official checkout tool. They even labeled it a",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-17"
+    },
+    {
+      "uid": "rss:e916a14ca26c1c",
+      "source": "rss",
+      "title": "Researchers Detail iPhone Flaw That Let Apps Record Audio Despite Denied Microphone Permission",
+      "url": "https://thehackernews.com/2026/11/researchers-detail-iphone-flaw-that-let.html",
+      "ts": 1794917676.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "A now-patched flaw in Apple's audio service let apps on iPhones and iPads record audio even after the user tapped \"Don't Allow\" on the microphone prompt. The first security updates with the fix came out on August 17. Neither Apple nor the two researchers who found the flaw report that it was used in attacks. Nik Tsytsarkin of Meta Red Team X published the technical details last week. Mustafa",
+      "recipe": "hackersnews",
       "buzz": 80,
       "topics": [
         "ai",
         "security"
       ],
-      "date": "2026-11-16"
+      "date": "2026-11-17"
+    },
+    {
+      "uid": "rss:36ff9887a88dfa",
+      "source": "rss",
+      "title": "New GitDoor and GraphDoor Backdoors Turn GitHub and SharePoint Into Covert C2 Channels",
+      "url": "https://thehackernews.com/2026/11/new-gitdoor-and-graphdoor-backdoors.html",
+      "ts": 1794914418.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Government sectors in Asia and Africa have been targeted by an active cyber intrusion campaign that delivers to previously undocumented backdoors that leverage legitimate services like Microsoft SharePoint and GitHub for command‑and‑control (C2). The activity has been codenamed Operation ShadowCloud by Kaspersky. The Russian cybersecurity company said it identified the campaign in early 2026.",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-17"
+    },
+    {
+      "uid": "rss:11e77f747a99ec",
+      "source": "rss",
+      "title": "Apple Tightens macOS App Permissions to Limit Data Access Amid AI Agent Security Risks",
+      "url": "https://thehackernews.com/2026/11/apple-tightens-macos-app-permissions-to.html",
+      "ts": 1794913651.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Apple on Monday introduced new controls that allow Mac users to give more granular access to data they give to apps, including those that use artificial intelligence (AI) agents. The changes, currently previewed in macOS 27.3 beta 2, relate to increased transparency and more options for two of its APIs: Device Control and Data Access, and Full Disk Access. \"Before granting an app such",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-17"
     },
     {
       "uid": "rss:ab3ce7e511f8c6",
@@ -1604,81 +1681,6 @@
       "date": "2026-11-16"
     },
     {
-      "uid": "rss:ef045dd0f58580",
-      "source": "rss",
-      "title": "⚡ Weekly Recap: N-able 0-Days, Windows 0-Days, Chrome 0-Days, Fridge 0-Days, and More Bad Days",
-      "url": "https://thehackernews.com/2026/11/weekly-recap-n-able-0-days-windows-0.html",
-      "ts": 1794835640.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "A default password opened doors it never should have. A trusted update delivered malware. Even a security feature became a way to break in. Different stories, same problem: the things meant to protect us aren't always doing their job. Meanwhile, AI is making bug hunting faster, old flaws are still paying off, and attackers keep finding easy ways in. Some attacks take real skill. Others barely",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-16"
-    },
-    {
-      "uid": "rss:d915d3970c878b",
-      "source": "rss",
-      "title": "Six Unpatched Danfoss Refrigeration Controller Flaws Could Allow Remote Takeover Without Login",
-      "url": "https://thehackernews.com/2026/11/six-unpatched-danfoss-refrigeration.html",
-      "ts": 1794832461.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Six flaws in Danfoss AK-SM800A refrigeration controllers could let a remote attacker take over a controller without logging in, Dutch security consultancy Midnight Blue said earlier this week. No patch is available, and the researchers say the newest firmware, version 5.4.0, does not fix the flaws. Government cybersecurity agencies in Belgium, Ireland and Germany told operators this week to",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-16"
-    },
-    {
-      "uid": "rss:be5d8dc6dee516",
-      "source": "rss",
-      "title": "Retadup Worm Resurfaces 7 Years After Takedown to Spread CoffeeLoader Malware",
-      "url": "https://thehackernews.com/2026/11/retadup-worm-resurfaces-7-years-after.html",
-      "ts": 1794832398.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Cybersecurity researchers have disclosed details of a new variant of CoffeeLoader, a malware designed to deliver additional payloads to infected machines. \"On launch, the NSIS-based installer executable dropped a file named '7z.dll' into a temporary directory and ran it through rundll32.exe,\" Kaspersky said in an analysis published today. \"The '7z.dll' file was a patched version of the",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-16"
-    },
-    {
-      "uid": "rss:83c4ecf04b85f1",
-      "source": "rss",
-      "title": "SANSAR Linux Cryptomining Malware Uses Modified NVIDIA Library to Hide GPU Activity",
-      "url": "https://thehackernews.com/2026/11/sansar-linux-cryptomining-malware-uses.html",
-      "ts": 1794821577.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "A financially motivated threat activity cluster tracked as REF3364 has been attributed to a Linux-focused cryptocurrency mining operation that tampers with the readings used to detect high GPU workloads. Central to the intrusion is a toolkit called SANSAR, a Rust-based orchestrator that receives commands over the TOR anonymity network to manage CPU and GPU miners. The activity was observed in",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "dev",
-        "crypto",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-16"
-    },
-    {
       "uid": "gh:BountyForge-xyz/pwn-skill",
       "source": "github",
       "title": "BountyForge-xyz/pwn-skill",
@@ -1695,6 +1697,23 @@
         "security"
       ],
       "date": "2026-11-06"
+    },
+    {
+      "uid": "gh:BowSinceEnt/resocket-elden-ring-cheat-2026-trainer-mod-menu-tools",
+      "source": "github",
+      "title": "BowSinceEnt/resocket-elden-ring-cheat-2026-trainer-mod-menu-tools",
+      "url": "https://github.com/BowSinceEnt/resocket-elden-ring-cheat-2026-trainer-mod-menu-tools",
+      "ts": 1793879929.0,
+      "points": 72,
+      "comments": 0,
+      "author": "BowSinceEnt",
+      "summary": "Elden Ring Cheat 2026 — Single-player modding and gameplay toolkit concept featuring character build optimization, rune planning, weapon upgrades, boss strategies, save management and offline trainer research.",
+      "recipe": "github_sec",
+      "buzz": 72,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-11-05"
     },
     {
       "uid": "gh:Balanov/latch",
@@ -1714,34 +1733,17 @@
       "date": "2026-11-04"
     },
     {
-      "uid": "gh:BowSinceEnt/resocket-elden-ring-cheat-2026-trainer-mod-menu-tools",
-      "source": "github",
-      "title": "BowSinceEnt/resocket-elden-ring-cheat-2026-trainer-mod-menu-tools",
-      "url": "https://github.com/BowSinceEnt/resocket-elden-ring-cheat-2026-trainer-mod-menu-tools",
-      "ts": 1793879929.0,
-      "points": 58,
-      "comments": 0,
-      "author": "BowSinceEnt",
-      "summary": "Elden Ring Cheat 2026 — Single-player modding and gameplay toolkit concept featuring character build optimization, rune planning, weapon upgrades, boss strategies, save management and offline trainer research.",
-      "recipe": "github_sec",
-      "buzz": 58,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-05"
-    },
-    {
       "uid": "gh:NPCmillionaire/unredact.tools",
       "source": "github",
       "title": "NPCmillionaire/unredact.tools",
       "url": "https://github.com/NPCmillionaire/unredact.tools",
       "ts": 1794511431.0,
-      "points": 36,
+      "points": 38,
       "comments": 1,
       "author": "NPCmillionaire",
       "summary": "See what your files leak (GPS, serials, authors, failed redactions, deleted text, watermarks), then scrub them.",
       "recipe": "github_sec",
-      "buzz": 49,
+      "buzz": 51,
       "topics": [
         "ai"
       ],
@@ -1753,14 +1755,32 @@
       "title": "khanh0209q/NextDNS-Config-Set-And-Forget",
       "url": "https://github.com/khanh0209q/NextDNS-Config-Set-And-Forget",
       "ts": 1794630951.0,
-      "points": 27,
+      "points": 28,
       "comments": 1,
       "author": "khanh0209q",
       "summary": "A zero-breakage, set-and-forget NextDNS configuration for Home & Office",
       "recipe": "github_sec",
-      "buzz": 40,
+      "buzz": 41,
       "topics": [],
       "date": "2026-11-14"
+    },
+    {
+      "uid": "rss:139fe93a86c6e7",
+      "source": "rss",
+      "title": "Usable Security at Luxury Hotels",
+      "url": "https://www.schneier.com/blog/archives/2026/11/usable-security-at-luxury-hotels.html",
+      "ts": 1794830718.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Bruce Schneier",
+      "summary": "<p>Interesting <a href=\"https://www.benthamsgaze.org/2026/11/11/phishing-at-the-front-desk-usable-security-in-luxury-hotels/\">case study</a> from luxury hotels. Attackers used a fake booking request to gain access to a reservations inbox, where they copied genuine refund requests and got fraudulent ones approved.</p> <p>This is a good illustration why &#8220;just don&#8217;t click on links&#8221;",
+      "recipe": "schneier",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-16"
     },
     {
       "uid": "rss:e109a4e996ba8e",
@@ -1776,6 +1796,81 @@
       "buzz": 30,
       "topics": [],
       "date": "2026-11-14"
+    },
+    {
+      "uid": "rss:ef045dd0f58580",
+      "source": "rss",
+      "title": "⚡ Weekly Recap: N-able 0-Days, Windows 0-Days, Chrome 0-Days, Fridge 0-Days, and More Bad Days",
+      "url": "https://thehackernews.com/2026/11/weekly-recap-n-able-0-days-windows-0.html",
+      "ts": 1794835640.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "A default password opened doors it never should have. A trusted update delivered malware. Even a security feature became a way to break in. Different stories, same problem: the things meant to protect us aren't always doing their job. Meanwhile, AI is making bug hunting faster, old flaws are still paying off, and attackers keep finding easy ways in. Some attacks take real skill. Others barely",
+      "recipe": "hackersnews",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-16"
+    },
+    {
+      "uid": "rss:d915d3970c878b",
+      "source": "rss",
+      "title": "Six Unpatched Danfoss Refrigeration Controller Flaws Could Allow Remote Takeover Without Login",
+      "url": "https://thehackernews.com/2026/11/six-unpatched-danfoss-refrigeration.html",
+      "ts": 1794832461.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Six flaws in Danfoss AK-SM800A refrigeration controllers could let a remote attacker take over a controller without logging in, Dutch security consultancy Midnight Blue said earlier this week. No patch is available, and the researchers say the newest firmware, version 5.4.0, does not fix the flaws. Government cybersecurity agencies in Belgium, Ireland and Germany told operators this week to",
+      "recipe": "hackersnews",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-16"
+    },
+    {
+      "uid": "rss:be5d8dc6dee516",
+      "source": "rss",
+      "title": "Retadup Worm Resurfaces 7 Years After Takedown to Spread CoffeeLoader Malware",
+      "url": "https://thehackernews.com/2026/11/retadup-worm-resurfaces-7-years-after.html",
+      "ts": 1794832398.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Cybersecurity researchers have disclosed details of a new variant of CoffeeLoader, a malware designed to deliver additional payloads to infected machines. \"On launch, the NSIS-based installer executable dropped a file named '7z.dll' into a temporary directory and ran it through rundll32.exe,\" Kaspersky said in an analysis published today. \"The '7z.dll' file was a patched version of the",
+      "recipe": "hackersnews",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-16"
+    },
+    {
+      "uid": "rss:83c4ecf04b85f1",
+      "source": "rss",
+      "title": "SANSAR Linux Cryptomining Malware Uses Modified NVIDIA Library to Hide GPU Activity",
+      "url": "https://thehackernews.com/2026/11/sansar-linux-cryptomining-malware-uses.html",
+      "ts": 1794821577.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "A financially motivated threat activity cluster tracked as REF3364 has been attributed to a Linux-focused cryptocurrency mining operation that tampers with the readings used to detect high GPU workloads. Central to the intrusion is a toolkit called SANSAR, a Rust-based orchestrator that receives commands over the TOR anonymity network to manage CPU and GPU miners. The activity was observed in",
+      "recipe": "hackersnews",
+      "buzz": 30,
+      "topics": [
+        "dev",
+        "crypto",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-16"
     },
     {
       "uid": "rss:67bb3d5c3273f9",
@@ -1852,24 +1947,6 @@
         "security"
       ],
       "date": "2026-11-15"
-    },
-    {
-      "uid": "rss:d6bc4ec6947cb8",
-      "source": "rss",
-      "title": "Attackers Exploit UnrealIRCd Flaw That Enables Server-Level Command Injection",
-      "url": "https://thehackernews.com/2026/11/attackers-exploit-unrealircd-flaw-that.html",
-      "ts": 1794659915.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added a high-severity security flaw impacting UnrealIRCd, an open-source Internet Relay Chat (IRC) server, to its Known Exploited Vulnerabilities (KEV) catalog, following reports of active exploitation. The vulnerability, tracked as CVE-[phone] (CVSS score: 8.6), is a case of improper neutralization of delimiters",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-14"
     },
     {
       "uid": "gh:humanethq/airgap-check",
@@ -1996,22 +2073,22 @@
       "date": "2026-11-11"
     },
     {
-      "uid": "rss:d1660657e64a19",
+      "uid": "rss:d6bc4ec6947cb8",
       "source": "rss",
-      "title": "New OpenSSH Vulnerability",
-      "url": "https://www.schneier.com/blog/archives/2026/11/new-openssh-vulnerability.html",
-      "ts": 1794312166.0,
+      "title": "Attackers Exploit UnrealIRCd Flaw That Enables Server-Level Command Injection",
+      "url": "https://thehackernews.com/2026/11/attackers-exploit-unrealircd-flaw-that.html",
+      "ts": 1794659915.0,
       "points": 0,
       "comments": 0,
-      "author": "Bruce Schneier",
-      "summary": "<p>It&#8217;s a <a href=\"https://www.bleepingcomputer.com/news/security/openssh-flaw-lets-attackers-log-into-password-disabled-linux-accounts/\">bad one</a>, and it&#8217;s been in the code for a decade:</p> <blockquote><p>A newly disclosed flaw involving OpenSSH and musl, dubbed &#8220;*sshole,&#8221; allows attackers to log in to certain Alpine Linux and other musl-based Linux accounts configured",
-      "recipe": "schneier",
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added a high-severity security flaw impacting UnrealIRCd, an open-source Internet Relay Chat (IRC) server, to its Known Exploited Vulnerabilities (KEV) catalog, following reports of active exploitation. The vulnerability, tracked as CVE-[phone] (CVSS score: 8.6), is a case of improper neutralization of delimiters",
+      "recipe": "hackersnews",
       "buzz": 10,
       "topics": [
-        "ai",
-        "security"
+        "security",
+        "hardware"
       ],
-      "date": "2026-11-10"
+      "date": "2026-11-14"
     },
     {
       "uid": "rss:b5af83d54bc054",
@@ -2257,78 +2334,6 @@
       "date": "2026-11-12"
     },
     {
-      "uid": "rss:81f13eec87fc35",
-      "source": "rss",
-      "title": "Citrix Patches 12 NetScaler and Secure Access Client Flaws, Including Authentication Bypass",
-      "url": "https://thehackernews.com/2026/11/citrix-patches-12-netscaler-and-secure.html",
-      "ts": 1794497929.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Citrix has released patches for multiple critical security flaws impacting NetScaler ADC, Citrix NetScaler Gateway, and NetScaler Console that could lead to denial-of-service (DoS) or an authentication bypass. The critical vulnerabilities that impact NetScaler ADC and NetScaler Gateway are listed below - CVE-[phone] (CVSS score: 9.3) - A memory overflow vulnerability in Packet",
-      "recipe": "hackersnews",
-      "buzz": 10,
-      "topics": [
-        "security"
-      ],
-      "date": "2026-11-12"
-    },
-    {
-      "uid": "rss:f1e0ce3a4e2c76",
-      "source": "rss",
-      "title": "186 Fake AI Domains Redirect Users to ClickFix Lures, Browser Malware, and Search Hijackers",
-      "url": "https://thehackernews.com/2026/11/186-fake-ai-domains-redirect-users-to.html",
-      "ts": 1794496540.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Cybersecurity researchers have found that lookalike domains masquerading as artificial intelligence (AI) tools are being used to serve ClickFix-style lures, browser-hijacking malware, and a set of extensions that hijack user searches. This delivery pattern has been codenamed TypoPrompting by Island. \"AI-app lookalikes that turn an attempt to reach a familiar tool into a prompt to verify,",
-      "recipe": "hackersnews",
-      "buzz": 10,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-12"
-    },
-    {
-      "uid": "rss:3d39e23c92ea0d",
-      "source": "rss",
-      "title": "SCKit Malware Turns ScreenConnect Support Sessions Into Potential MSP Attack Paths",
-      "url": "https://thehackernews.com/2026/11/sckit-malware-targets-screenconnect.html",
-      "ts": 1794488908.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "The ongoing campaign targeting ConnectWise ScreenConnect deployments involves the exploitation of a now-patched critical security flaw in the remote access software, and not a new vulnerability, it has emerged. Blackpoint Cyber's Adversary Pursuit Group (APG), which shared the details with The Hacker News, said the recovered attacker toolkit exploits CVE-[phone] (CVSS score: 9.9), an",
-      "recipe": "hackersnews",
-      "buzz": 10,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-12"
-    },
-    {
-      "uid": "rss:ef2da881786316",
-      "source": "rss",
-      "title": "Google Cloud Warns Three AMD Turin CPU Flaws Could Leak Data Across Processes in VMs",
-      "url": "https://thehackernews.com/2026/11/google-cloud-warns-three-amd-turin-cpu.html",
-      "ts": 1794485354.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Google Cloud VMs on AMD Turin chips need a guest OS patch and a stop-and-start to protect against three CPU side-channel flaws, Google said this week. The company has already applied mitigations against attacks between VMs, and between VMs and the host. Inside a VM, the flaws may let an attacker with code on the same processor core infer data from other processes or the kernel. The affected",
-      "recipe": "hackersnews",
-      "buzz": 10,
-      "topics": [
-        "ai",
-        "dev",
-        "hardware"
-      ],
-      "date": "2026-11-12"
-    },
-    {
       "uid": "rss:7543ee8beb8b7e",
       "source": "rss",
       "title": "Want to Rent an Internet Address at the White House?",
@@ -2481,6 +2486,24 @@
       "date": "2026-10-07"
     },
     {
+      "uid": "rss:d1660657e64a19",
+      "source": "rss",
+      "title": "New OpenSSH Vulnerability",
+      "url": "https://www.schneier.com/blog/archives/2026/11/new-openssh-vulnerability.html",
+      "ts": 1794312166.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Bruce Schneier",
+      "summary": "<p>It&#8217;s a <a href=\"https://www.bleepingcomputer.com/news/security/openssh-flaw-lets-attackers-log-into-password-disabled-linux-accounts/\">bad one</a>, and it&#8217;s been in the code for a decade:</p> <blockquote><p>A newly disclosed flaw involving OpenSSH and musl, dubbed &#8220;*sshole,&#8221; allows attackers to log in to certain Alpine Linux and other musl-based Linux accounts configured",
+      "recipe": "schneier",
+      "buzz": 0,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-10"
+    },
+    {
       "uid": "rss:951b96997c00dd",
       "source": "rss",
       "title": "AI Security",
@@ -2509,24 +2532,6 @@
       "comments": 0,
       "author": "Bruce Schneier",
       "summary": "<p>News story: &#8220;<a href=\"https://www.sciencedaily.com/releases/2026/10/[phone].htm\">Scientists discover a bizarre Jurassic &#8216;squid&#8217; unlike anything ever seen</a>.&#8221;</p> <blockquote><p>Scientists have identified the &#8220;fattest&#8221; belemnite ever discovered, a bizarre, barrel-shaped squid relative that lived in Wyoming&#8217;s ancient seas 160 million years ago. The",
-      "recipe": "schneier",
-      "buzz": 0,
-      "topics": [
-        "ai",
-        "dev"
-      ],
-      "date": "2026-11-06"
-    },
-    {
-      "uid": "rss:42827a83e3b0b8",
-      "source": "rss",
-      "title": "Pinpointing Location of Videos from Background Airplane Sounds",
-      "url": "https://www.schneier.com/blog/archives/2026/11/pinpointing-location-of-videos-from-background-airplane-sounds.html",
-      "ts": 1793982507.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Bruce Schneier",
-      "summary": "<p>This is <a href=\"https://gizmodo.com/a-youtuber-figured-out-how-to-find-almost-anyone-using-airplane-sounds-[phone]\">fascinating</a>:</p> <blockquote><p>The video describes a technique that can reveal where an otherwise unidentifiable recording was made by analyzing its audio for the faint sounds of passing aircraft. The technique is both fascinating and frightening.</p> <p>It works by looki",
       "recipe": "schneier",
       "buzz": 0,
       "topics": [
