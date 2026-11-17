@@ -5,13 +5,122 @@
     <link>https://cveradar-ah3.pages.dev</link>
     <description>Живые CVE и уязвимости на русском: автономный перевод угроз в понятные дайджесты для DevOps и небольшого SecOps</description>
     <language>ru</language>
-    <lastBuildDate>Tue, 17 Nov 2026 17:18:59 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 21:06:24 GMT</lastBuildDate>
+    <item>
+      <title>CVE-2026-110789: libp2p: ASN.1 DER decoder drives an unbounded synchronous loop on attacker-controlled length fields, stalling the Node event loop pre-auth</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-110789-libp2p-asn-1-der-decoder-drives-an-unbounded-syn.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-110789-libp2p-asn-1-der-decoder-drives-an-unbounded-syn.html</guid>
+      <pubDate>Tue, 17 Nov 2026 21:05:08 GMT</pubDate>
+      <description>Severity: high. ### Summary
+A remote peer can stall a js-libp2p node's entire event loop for ~4–5 seconds per connection (and transiently allocate ~2 GB) by sending a ~15-byte crafted `publicKey` inside an Identify message. The malformed key reaches the DER decoder before any peer-id/signature check</description>
+    </item>
+    <item>
+      <title>CVE-2026-110782: SAML2: Incomplete fix of CVE-2026-49283: unsigned embedded Response bypasses HTTP-Artifact signature verification (no embedded-Issuer binding)</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-110782-saml2-incomplete-fix-of-cve-2026-49283-unsigned-.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-110782-saml2-incomplete-fix-of-cve-2026-49283-unsigned-.html</guid>
+      <pubDate>Tue, 17 Nov 2026 21:00:58 GMT</pubDate>
+      <description>Severity: high. ## Summary
+CVE-[phone] / GHSA-6929-8p9f-26jx ("HTTP-Artifact TLS validator confusion allows cross-IdP authentication bypass") was fixed so that `HTTPArtifact::receive()` verifies the embedded SAML `Response` using the IdP metadata signing keys. The current implementation (master `31c</description>
+    </item>
+    <item>
+      <title>CVE-2026-69241: Filament Curator: Stored XSS via unsanitized SVG upload served inline</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-69241-filament-curator-stored-xss-via-unsanitized-svg-u.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-69241-filament-curator-stored-xss-via-unsanitized-svg-u.html</guid>
+      <pubDate>Tue, 17 Nov 2026 20:54:26 GMT</pubDate>
+      <description>Severity: medium. ## Summary
+
+  SVG files uploaded through the Curator media panel are stored and served inline without any
+  sanitization. An authenticated user with permission to upload media can upload an SVG
+  containing embedded JavaScript. When another panel user opens that file via the **View</description>
+    </item>
+    <item>
+      <title>CVE-2026-63389: Filament Curator: Cross-tenant media metadata disclosure via Curator picker search</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-63389-filament-curator-cross-tenant-media-metadata-disc.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-63389-filament-curator-cross-tenant-media-metadata-disc.html</guid>
+      <pubDate>Tue, 17 Nov 2026 20:49:28 GMT</pubDate>
+      <description>Severity: medium. Summary
+
+  In multitenant Filament panels, an authenticated user could retrieve media metadata belonging to other tenants
+  by typing in the Curator media-picker search box. The search query omitted the tenant ownership scope that the
+  normal file listing applies.
+
+  Details
+
+  Cu</description>
+    </item>
+    <item>
+      <title>CVE-2026-62336: qbee-agent: Local Privilege Escalation and Arbitrary File Tampering via Symlink Following in createFile helper</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-62336-qbee-agent-local-privilege-escalation-and-arbitra.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-62336-qbee-agent-local-privilege-escalation-and-arbitra.html</guid>
+      <pubDate>Tue, 17 Nov 2026 20:48:02 GMT</pubDate>
+      <description>Severity: high. This is a Local Privilege Escalation (LPE) vulnerability stemming from improper symlink handling (CWE-59: Link Following) and improper ownership management (CWE-282) inside the qbee-agent file manager logic.
+
+### Impact
+
+Any managed device running qbee-agent up to the affected versio</description>
+    </item>
+    <item>
+      <title>CVE-2026-63672: EGroupware: User-Controlled Identity Provider Selection in SAML Authentication</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-63672-egroupware-user-controlled-identity-provider-sele.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-63672-egroupware-user-controlled-identity-provider-sele.html</guid>
+      <pubDate>Tue, 17 Nov 2026 20:47:22 GMT</pubDate>
+      <description>Severity: medium. ### Summary
+The login() function at line 130 passes the raw user-supplied value `$_REQUEST['idp']` directly to SimpleSAMLphp's `requireAuth()` with only a regex check that the string starts with 'https://'. No validation is performed against a list of configured, trusted IdP entity</description>
+    </item>
+    <item>
+      <title>CVE-2026-14265: AWS-advanced-jdbc-wrapper: Java Deserialization RCE via Cache Poisoning</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-14265-aws-advanced-jdbc-wrapper-java-deserialization-rc.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-14265-aws-advanced-jdbc-wrapper-java-deserialization-rc.html</guid>
+      <pubDate>Tue, 17 Nov 2026 20:39:21 GMT</pubDate>
+      <description>Severity: high. ### Impact
+The AWS Advanced JDBC Wrapper is an open-source JDBC driver wrapper that extends a JDBC driver to enable Amazon Aurora and AWS Cloud features such as failover handling and caching. We identified CVE-[phone], an issue in the RemoteQueryCachePlugin of the AWS Advanced JDBC W</description>
+    </item>
+    <item>
+      <title>CVE-2026-63634: pympp allows excessive sponsored transaction fees through padded calldata</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-63634-pympp-allows-excessive-sponsored-transaction-fees.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-63634-pympp-allows-excessive-sponsored-transaction-fees.html</guid>
+      <pubDate>Tue, 17 Nov 2026 20:04:56 GMT</pubDate>
+      <description>Severity: medium. ### Details
+When the server acts as the fee_payer, `pympp` 0.8.0 validates calldata using `eth_abi` decoding, which is lenient about trailing bytes. The `FeePayerPolicy` caps `gas_limit` (≤ 2 M) and `max_fee_per_gas` (≤ 100 Gwei) but does **not** check calldata length.
+
+Tempo uses </description>
+    </item>
+    <item>
+      <title>CVE-2026-53998: Phoenix: Format String Injection in applyChatTemplate</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-53998-phoenix-format-string-injection-in-applychattempl.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-53998-phoenix-format-string-injection-in-applychattempl.html</guid>
+      <pubDate>Tue, 17 Nov 2026 20:02:29 GMT</pubDate>
+      <description>Severity: critical. - Summary
+
+A format string injection vulnerability in the applyChatTemplate GraphQL endpoint allows an attacker to read server-side environment variables, cryptographic secrets, and internal module attributes directly from the API response. On default Phoenix installations where </description>
+    </item>
+    <item>
+      <title>Researchers Claim Two RCE Exploits That Bypass Telegram’s New Android Defenses</title>
+      <link>https://cveradar-ah3.pages.dev/item/researchers-claim-two-rce-exploits-that-bypass-telegram-s-new-an.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/researchers-claim-two-rce-exploits-that-bypass-telegram-s-new-an.html</guid>
+      <pubDate>Tue, 17 Nov 2026 19:34:20 GMT</pubDate>
+      <description>A malicious widget can bypass the security filter that Telegram added to its Android app last week and run code outside it, according to NebuSec, a security company. Widgets are small interactive blocks that bots send inside chat messages, and their JavaScript runs on the user's phone. The researche</description>
+    </item>
     <item>
       <title>CVE-2026-119351: Next.js: Cache leak across root param values in nested 'use cache' functions via delayed inner stream metadata</title>
       <link>https://cveradar-ah3.pages.dev/item/cve-2026-119351-next-js-cache-leak-across-root-param-values-in-n.html</link>
       <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-119351-next-js-cache-leak-across-root-param-values-in-n.html</guid>
       <pubDate>Tue, 17 Nov 2026 16:13:26 GMT</pubDate>
       <description>Severity: medium. With Cache Components enabled, an outer `'use cache'` function can be keyed incorrectly even when its inner `'use cache'` call generates a fresh entry. If the inner function reads a root param (via `next/root-params`) and returns a value that still contains pending promises — for e</description>
+    </item>
+    <item>
+      <title>Oracle to Patch 11 Java Flaws Today as Critical OpenJDK RCE (CVE-2026-114938) Report Emerges</title>
+      <link>https://cveradar-ah3.pages.dev/item/oracle-to-patch-11-java-flaws-today-as-critical-openjdk-rce-cve-.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/oracle-to-patch-11-java-flaws-today-as-critical-openjdk-rce-cve-.html</guid>
+      <pubDate>Tue, 17 Nov 2026 15:17:36 GMT</pubDate>
+      <description>Oracle is preparing to release security patches for 11 vulnerabilities in Java SE on Tuesday, November 17, 2026, all of which may be exploited remotely without authentication, as separate reports warn of a potentially critical remote code execution (RCE) flaw affecting OpenJDK. The 11 vulnerabilitie</description>
+    </item>
+    <item>
+      <title>Trigram Campaign Impersonates About 50 AI and Blockchain Brands to Target Devs with Infostealers</title>
+      <link>https://cveradar-ah3.pages.dev/item/trigram-campaign-impersonates-about-50-ai-and-blockchain-brands-.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/trigram-campaign-impersonates-about-50-ai-and-blockchain-brands-.html</guid>
+      <pubDate>Tue, 17 Nov 2026 15:17:28 GMT</pubDate>
+      <description>Artificial intelligence (AI), blockchain, and logistics sectors across Europe and the U.S. have emerged as the target of a large-scale, industrialized campaign dubbed Trigram. "Trigram is a large-scale campaign that impersonates about 50 brands in the blockchain and AI sectors, to trick developers i</description>
     </item>
     <item>
       <title>Hackers Found a Way Around GitHub SHA Pinning. This Webinar Explains How to Close the Gap</title>
@@ -170,134 +279,6 @@ with no guard, so a single crafted attachment raised out of the whole save. Ever
 A `Received` header whose trailing date carries an out-of-range year, or a timezone offset
 large enough to push the timestamp past the int64 epoch range, raises an exception that is
 **outside the `MailParser*` hierarchy**. A caller that catches only mail-parser exceptio</description>
-    </item>
-    <item>
-      <title>CVE-2026-129235: Kubeshark: MCP `download_file` writes fetched bytes to an unvalidated destination path</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-129235-kubeshark-mcp-download-file-writes-fetched-bytes.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-129235-kubeshark-mcp-download-file-writes-fetched-bytes.html</guid>
-      <pubDate>Mon, 16 Nov 2026 22:18:58 GMT</pubDate>
-      <description>Severity: medium. **Ecosystem / package:** Go — `github.com/kubeshark/kubeshark` (the `kubeshark`
-CLI, `kubeshark mcp` subcommand)
-**Affected component:** `cmd/mcpRunner.go`, MCP tool `download_file`
-**Affected versions:** `&gt;= v53.1.0`, `&lt; v53.4.0` (the flaw shipped with the
-tool's first release; v5</description>
-    </item>
-    <item>
-      <title>CVE-2026-129236: Kubeshark: MCP `start_kubeshark` argument injection via `pod_regex` → image redirect → cluster takeover</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-129236-kubeshark-mcp-start-kubeshark-argument-injection.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-129236-kubeshark-mcp-start-kubeshark-argument-injection.html</guid>
-      <pubDate>Mon, 16 Nov 2026 22:17:32 GMT</pubDate>
-      <description>Severity: high. **Ecosystem / package:** Go — `github.com/kubeshark/kubeshark` (the `kubeshark`
-CLI, `kubeshark mcp` subcommand)
-**Affected component:** `cmd/mcpRunner.go`, MCP tool `start_kubeshark`
-**Affected versions:** `&gt;= v53.1.0`, `&lt; v53.4.0` (the flaw shipped with the MCP
-command's first rele</description>
-    </item>
-    <item>
-      <title>CVE-2026-129299: mail-parser: Uncaught exceptions and silent header loss in mail-parser on attacker-controlled input</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-129299-mail-parser-uncaught-exceptions-and-silent-heade.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-129299-mail-parser-uncaught-exceptions-and-silent-heade.html</guid>
-      <pubDate>Mon, 16 Nov 2026 22:12:51 GMT</pubDate>
-      <description>Severity: medium. ### Impact
-
-Two effects, sharing the root cause of Advisory 1 — header names chosen by the sender were
-resolved through Python attribute lookup and rewritten before lookup.
-
-**Uncaught exceptions.** A crafted message raises an exception that is *outside* the
-`MailParser*` hierarchy</description>
-    </item>
-    <item>
-      <title>CVE-2026-129297: mail-parser: Sender IP address spoofing in get_server_ipaddress()</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-129297-mail-parser-sender-ip-address-spoofing-in-get-se.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-129297-mail-parser-sender-ip-address-spoofing-in-get-se.html</guid>
-      <pubDate>Mon, 16 Nov 2026 22:11:54 GMT</pubDate>
-      <description>Severity: high. ### Patches
-
-Fixed in **4.6.2**. Upgrade with `pip install --upgrade mail-parser`.
-
-Candidate addresses are now selected by position, not by appearance — a bracketed address
-the sender wrote is byte-identical to one the MTA wrote, so no amount of pattern matching
-can tell them apart:</description>
-    </item>
-    <item>
-      <title>CVE-2026-129295: mail-parser is vulnerable to polynomial ReDoS in email header parsing</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-129295-mail-parser-is-vulnerable-to-polynomial-redos-in.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-129295-mail-parser-is-vulnerable-to-polynomial-redos-in.html</guid>
-      <pubDate>Mon, 16 Nov 2026 22:11:08 GMT</pubDate>
-      <description>Severity: high. ### Summary
-
-Two regular expressions used while parsing email headers backtrack
-polynomially on attacker-controlled input. Parsing a single small, well-formed
-email can consume minutes to hours of CPU, denying service to any process that
-parses untrusted mail.
-
-Both are reachable fro</description>
-    </item>
-    <item>
-      <title>CVE-2026-129296: mail-parser: Path Traversal vulnerability in attachment extraction</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-129296-mail-parser-path-traversal-vulnerability-in-atta.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-129296-mail-parser-path-traversal-vulnerability-in-atta.html</guid>
-      <pubDate>Mon, 16 Nov 2026 22:10:55 GMT</pubDate>
-      <description>Severity: medium. A path traversal vulnerability was identified in mail-parser when extracting email attachments using the write_attachments() and write_sample() APIs.
-
-A specially crafted email containing malicious attachment filenames (for example, using directory traversal sequences such as "../"</description>
-    </item>
-    <item>
-      <title>CVE-2026-86046: termux-sync: Arbitrary file write during restore via attacker-controlled manifest source path</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-86046-termux-sync-arbitrary-file-write-during-restore-v.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-86046-termux-sync-arbitrary-file-write-during-restore-v.html</guid>
-      <pubDate>Mon, 16 Nov 2026 22:09:24 GMT</pubDate>
-      <description>Severity: high. termux-sync restore trusts fields inside an untrusted backup manifest and uses them as the extraction destination without validation.
-
-During restore, each archive entry is handled as:
-
-  src_dir = Path(info.get("source", ...)).parent
-  extract_archive(archive, src_dir, ...)
-
-extract</description>
-    </item>
-    <item>
-      <title>CVE-2026-68934: code-review-mcp-server: Command injection via unsanitized folderPath/baseBranch parameters</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-68934-code-review-mcp-server-command-injection-via-unsa.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-68934-code-review-mcp-server-command-injection-via-unsa.html</guid>
-      <pubDate>Mon, 16 Nov 2026 22:09:06 GMT</pubDate>
-      <description>Severity: high. ### Impact
-
-`code-review-mcp-server` exposes MCP tools (`getLocalGitDiff`, `codeReview`, `createPR`, `getPRTemplate`) that accept `folderPath` and `baseBranch` string parameters. These caller-controlled values were interpolated directly into shell command strings executed via `child_</description>
-    </item>
-    <item>
-      <title>CVE-2026-63182: lightsaml allows Signature wrapping bypass</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-63182-lightsaml-allows-signature-wrapping-bypass.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-63182-lightsaml-allows-signature-wrapping-bypass.html</guid>
-      <pubDate>Mon, 16 Nov 2026 22:08:38 GMT</pubDate>
-      <description>Severity: high. ### Summary
-
-LightSaml 5.0.0 (latest release; also confirmed on 4.6.1) validates an inbound `samlp:Response` by collecting its direct-child `saml:Assertion` elements and validating each one's `ds:Signature` via robrichards/xmlseclibs. The two layers disagree on which element a signat</description>
-    </item>
-    <item>
-      <title>CVE-2026-119790: Next.js: Information disclosure across root params when a 'use cache' function is called through unstable_cache()</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-119790-next-js-information-disclosure-across-root-param.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-119790-next-js-information-disclosure-across-root-param.html</guid>
-      <pubDate>Mon, 16 Nov 2026 18:51:22 GMT</pubDate>
-      <description>Severity: medium. Next.js applications with `'use cache'` can disclose cached data across root params when the same `'use cache'` function is called both directly during rendering and through `unstable_cache()`, and that function reads a root param. Root params are route parameters of the root layou</description>
-    </item>
-    <item>
-      <title>CVE-2026-128134: NLTK dot2img runs Graphviz 'dot' without the trusted-exec chokepoint, enabling local code execution via a writable PATH element</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-128134-nltk-dot2img-runs-graphviz-dot-without-the-trust.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-128134-nltk-dot2img-runs-graphviz-dot-without-the-trust.html</guid>
-      <pubDate>Mon, 16 Nov 2026 18:45:51 GMT</pubDate>
-      <description>Severity: high. ## Summary
-
-`nltk.parse.dependencygraph.dot2img` invokes the Graphviz `dot` executable without the trusted-execution guarantees that NLTK applies to its other native-tool wrappers. The function resolves `dot` by bare name and then runs the resolved absolute path with a raw `subproces</description>
-    </item>
-    <item>
-      <title>CVE-2026-128076: Nuxt: Colliding island props can share one `/__nuxt_island` path (incomplete fix for CVE-2026-46342)</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-128076-nuxt-colliding-island-props-can-share-one-nuxt-i.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-128076-nuxt-colliding-island-props-can-share-one-nuxt-i.html</guid>
-      <pubDate>Mon, 16 Nov 2026 15:02:22 GMT</pubDate>
-      <description>Severity: low. ### Summary
-
-The fix for CVE-[phone] (GHSA-g8wj-3cr3-6w7v) binds each `/__nuxt_island/&lt;Name&gt;_&lt;hash&gt;.json` path to its props by hashing the `(name, props, context, source)` tuple. That hash was computed over `ohash`'s serialization, which does not escape quotes inside strings or delimi</description>
     </item>
   </channel>
 </rss>

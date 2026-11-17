@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T17:18:59+00:00",
+  "generated_at": "2026-11-17T21:06:24+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -19,11 +19,11 @@
     },
     "by_topic": {
       "security": 52,
-      "ai": 42,
-      "dev": 39,
-      "hardware": 18,
+      "dev": 43,
+      "ai": 43,
+      "hardware": 16,
+      "crypto": 6,
       "biz": 4,
-      "crypto": 4,
       "science": 3
     },
     "top_domains": [
@@ -38,6 +38,101 @@
     ]
   },
   "items": [
+    {
+      "uid": "cve:GHSA-gfv3-m769-5xm3",
+      "source": "cve",
+      "title": "CVE-2026-53998: Phoenix: Format String Injection in applyChatTemplate",
+      "url": "https://github.com/advisories/GHSA-gfv3-m769-5xm3",
+      "ts": 1794945749.0,
+      "points": 6000,
+      "comments": 0,
+      "author": "arize-phoenix",
+      "summary": "Severity: critical. - Summary\n\nA format string injection vulnerability in the applyChatTemplate GraphQL endpoint allows an attacker to read server-side environment variables, cryptographic secrets, and internal module attributes directly from the API response. On default Phoenix installations where authentication is di",
+      "recipe": "gh_advisories",
+      "buzz": 6080,
+      "topics": [
+        "dev",
+        "crypto",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-17"
+    },
+    {
+      "uid": "cve:GHSA-rvfr-cqwq-rc4j",
+      "source": "cve",
+      "title": "CVE-2026-110789: libp2p: ASN.1 DER decoder drives an unbounded synchronous loop on attacker-controlled length fields, stalling the Node event loop pre-auth",
+      "url": "https://github.com/advisories/GHSA-rvfr-cqwq-rc4j",
+      "ts": 1794949508.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "@libp2p/crypto",
+      "summary": "Severity: high. ### Summary\nA remote peer can stall a js-libp2p node's entire event loop for ~4–5 seconds per connection (and transiently allocate ~2 GB) by sending a ~15-byte crafted `publicKey` inside an Identify message. The malformed key reaches the DER decoder before any peer-id/signature check, so the attack",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-17"
+    },
+    {
+      "uid": "cve:GHSA-r7hw-jx6r-756g",
+      "source": "cve",
+      "title": "CVE-2026-110782: SAML2: Incomplete fix of CVE-2026-49283: unsigned embedded Response bypasses HTTP-Artifact signature verification (no embedded-Issuer binding)",
+      "url": "https://github.com/advisories/GHSA-r7hw-jx6r-756g",
+      "ts": 1794949258.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "simplesamlphp/saml2",
+      "summary": "Severity: high. ## Summary\nCVE-[phone] / GHSA-6929-8p9f-26jx (\"HTTP-Artifact TLS validator confusion allows cross-IdP authentication bypass\") was fixed so that `HTTPArtifact::receive()` verifies the embedded SAML `Response` using the IdP metadata signing keys. The current implementation (master `31c72c1d`, relea",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "ai",
+        "science",
+        "security"
+      ],
+      "date": "2026-11-17"
+    },
+    {
+      "uid": "cve:GHSA-xhv5-8fpq-g7hf",
+      "source": "cve",
+      "title": "CVE-2026-62336: qbee-agent: Local Privilege Escalation and Arbitrary File Tampering via Symlink Following in createFile helper",
+      "url": "https://github.com/advisories/GHSA-xhv5-8fpq-g7hf",
+      "ts": 1794948482.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "go.qbee.io/agent",
+      "summary": "Severity: high. This is a Local Privilege Escalation (LPE) vulnerability stemming from improper symlink handling (CWE-59: Link Following) and improper ownership management (CWE-282) inside the qbee-agent file manager logic.\n\n### Impact\n\nAny managed device running qbee-agent up to the affected versions. The impact m",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-17"
+    },
+    {
+      "uid": "cve:GHSA-c5q4-97jw-jggh",
+      "source": "cve",
+      "title": "CVE-2026-14265: AWS-advanced-jdbc-wrapper: Java Deserialization RCE via Cache Poisoning",
+      "url": "https://github.com/advisories/GHSA-c5q4-97jw-jggh",
+      "ts": 1794947961.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "software.amazon.jdbc:aws-advanced-jdbc-wrapper",
+      "summary": "Severity: high. ### Impact\nThe AWS Advanced JDBC Wrapper is an open-source JDBC driver wrapper that extends a JDBC driver to enable Amazon Aurora and AWS Cloud features such as failover handling and caching. We identified CVE-[phone], an issue in the RemoteQueryCachePlugin of the AWS Advanced JDBC Wrapper. When",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-17"
+    },
     {
       "uid": "cve:GHSA-c94f-87xg-65wf",
       "source": "cve",
@@ -171,77 +266,79 @@
       "date": "2026-11-16"
     },
     {
-      "uid": "cve:GHSA-7mxv-7h3q-9324",
+      "uid": "cve:GHSA-8vm9-f75m-5h2m",
       "source": "cve",
-      "title": "CVE-2026-128134: NLTK dot2img runs Graphviz 'dot' without the trusted-exec chokepoint, enabling local code execution via a writable PATH element",
-      "url": "https://github.com/advisories/GHSA-7mxv-7h3q-9324",
-      "ts": 1794854751.0,
-      "points": 3500,
+      "title": "CVE-2026-69241: Filament Curator: Stored XSS via unsanitized SVG upload served inline",
+      "url": "https://github.com/advisories/GHSA-8vm9-f75m-5h2m",
+      "ts": 1794948866.0,
+      "points": 1800,
       "comments": 0,
-      "author": "nltk",
-      "summary": "Severity: high. ## Summary\n\n`nltk.parse.dependencygraph.dot2img` invokes the Graphviz `dot` executable without the trusted-execution guarantees that NLTK applies to its other native-tool wrappers. The function resolves `dot` by bare name and then runs the resolved absolute path with a raw `subprocess.run`, omitting",
+      "author": "awcodes/filament-curator",
+      "summary": "Severity: medium. ## Summary\n\n  SVG files uploaded through the Curator media panel are stored and served inline without any\n  sanitization. An authenticated user with permission to upload media can upload an SVG\n  containing embedded JavaScript. When another panel user opens that file via the **View**\n  action (which",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 1880,
       "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-17"
+    },
+    {
+      "uid": "cve:GHSA-828w-6qgx-3rcf",
+      "source": "cve",
+      "title": "CVE-2026-63389: Filament Curator: Cross-tenant media metadata disclosure via Curator picker search",
+      "url": "https://github.com/advisories/GHSA-828w-6qgx-3rcf",
+      "ts": 1794948568.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "awcodes/filament-curator",
+      "summary": "Severity: medium. Summary\n\n  In multitenant Filament panels, an authenticated user could retrieve media metadata belonging to other tenants\n  by typing in the Curator media-picker search box. The search query omitted the tenant ownership scope that the\n  normal file listing applies.\n\n  Details\n\n  CuratorPanel::update",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-17"
+    },
+    {
+      "uid": "cve:GHSA-pr4x-6fj4-gm4h",
+      "source": "cve",
+      "title": "CVE-2026-63672: EGroupware: User-Controlled Identity Provider Selection in SAML Authentication",
+      "url": "https://github.com/advisories/GHSA-pr4x-6fj4-gm4h",
+      "ts": 1794948442.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "egroupware/egroupware",
+      "summary": "Severity: medium. ### Summary\nThe login() function at line 130 passes the raw user-supplied value `$_REQUEST['idp']` directly to SimpleSAMLphp's `requireAuth()` with only a regex check that the string starts with 'https://'. No validation is performed against a list of configured, trusted IdP entity IDs. An unauthent",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
         "dev",
         "security"
       ],
-      "date": "2026-11-16"
+      "date": "2026-11-17"
     },
     {
-      "uid": "cve:GHSA-m9j8-jcmv-hp69",
+      "uid": "cve:GHSA-v858-xh7w-8jr5",
       "source": "cve",
-      "title": "CVE-2026-128118: SvelteKit: Build-time server-only module import guard could fail, resulting in server secrets being statically replaced in client bundle",
-      "url": "https://github.com/advisories/GHSA-m9j8-jcmv-hp69",
-      "ts": 1794841140.0,
-      "points": 3500,
+      "title": "CVE-2026-63634: pympp allows excessive sponsored transaction fees through padded calldata",
+      "url": "https://github.com/advisories/GHSA-v858-xh7w-8jr5",
+      "ts": 1794945896.0,
+      "points": 1800,
       "comments": 0,
-      "author": "@sveltejs/kit",
-      "summary": "Severity: high. Under certain circumstances, server-only imports, which typically cannot be included in the client bundle, could make their way into it, potentially exposing secrets. This could only occur when those server-only imports were made through `src/params.js`.",
+      "author": "pympp",
+      "summary": "Severity: medium. ### Details\nWhen the server acts as the fee_payer, `pympp` 0.8.0 validates calldata using `eth_abi` decoding, which is lenient about trailing bytes. The `FeePayerPolicy` caps `gas_limit` (≤ 2 M) and `max_fee_per_gas` (≤ 100 Gwei) but does **not** check calldata length.\n\nTempo uses legacy calldata ga",
       "recipe": "gh_advisories",
-      "buzz": 3530,
+      "buzz": 1880,
       "topics": [
         "ai",
+        "dev",
         "security",
         "hardware"
       ],
-      "date": "2026-11-16"
-    },
-    {
-      "uid": "cve:GHSA-3r8g-jcqq-3p5j",
-      "source": "cve",
-      "title": "CVE-2026-128120: SvelteKit: DoS while parsing form data from a remote functions `form`",
-      "url": "https://github.com/advisories/GHSA-3r8g-jcqq-3p5j",
-      "ts": 1794841055.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "@sveltejs/kit",
-      "summary": "Severity: high. This only affects applications using the experimental remote functions flag and utilizing the `form`, `query`, or `command` remote functions. A specially-crafted request could block the event loop for extended periods of time during parsing.",
-      "recipe": "gh_advisories",
-      "buzz": 3530,
-      "topics": [
-        "security"
-      ],
-      "date": "2026-11-16"
-    },
-    {
-      "uid": "cve:GHSA-jm3w-gw2p-xjfj",
-      "source": "cve",
-      "title": "CVE-2026-128124: AIOHTTP: Event loop stall in add_domain() wildcard matching",
-      "url": "https://github.com/advisories/GHSA-jm3w-gw2p-xjfj",
-      "ts": 1794840995.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "aiohttp",
-      "summary": "Severity: high. ### Summary\n\n`Application.add_domain()` compiled each `*` in a host mask to `[^:]*`. With two or more wildcards in a mask, matching a long `Host` header that does not match the mask took polynomial time on the event loop.\n\n### Impact\n\nAn attacker could stall a server that registers a domain mask wit",
-      "recipe": "gh_advisories",
-      "buzz": 3530,
-      "topics": [
-        "ai",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-16"
+      "date": "2026-11-17"
     },
     {
       "uid": "cve:GHSA-vc7v-qv4w-wrv8",
@@ -498,105 +595,67 @@
       "author": "next",
       "summary": "Severity: medium. Next.js applications with `'use cache'` can disclose cached data across root params when the same `'use cache'` function is called both directly during rendering and through `unstable_cache()`, and that function reads a root param. Root params are route parameters of the root layout, and application",
       "recipe": "gh_advisories",
-      "buzz": 1880,
+      "buzz": 1830,
       "topics": [
         "security"
       ],
       "date": "2026-11-16"
     },
     {
-      "uid": "cve:GHSA-96x6-fvhx-49hg",
-      "source": "cve",
-      "title": "CVE-2026-128075: Nuxt exposes the message and data of unhandled errors thrown during server rendering",
-      "url": "https://github.com/advisories/GHSA-96x6-fvhx-49hg",
-      "ts": 1794841286.0,
-      "points": 1800,
+      "uid": "rss:2041eca737d343",
+      "source": "rss",
+      "title": "Researchers Claim Two RCE Exploits That Bypass Telegram’s New Android Defenses",
+      "url": "https://thehackernews.com/2026/11/researchers-claim-two-rce-exploits-that.html",
+      "ts": 1794944060.0,
+      "points": 0,
       "comments": 0,
-      "author": "nuxt",
-      "summary": "Severity: medium. ### Summary\n\nWhen a page, plugin or route middleware throws an error that is not an HTTP error, Nuxt wraps it with `createError` before rendering the error page. The wrapped error was treated as one the app raised deliberately, so in production its `message` and `data` were sent to the client in the",
-      "recipe": "gh_advisories",
-      "buzz": 1830,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "A malicious widget can bypass the security filter that Telegram added to its Android app last week and run code outside it, according to NebuSec, a security company. Widgets are small interactive blocks that bots send inside chat messages, and their JavaScript runs on the user's phone. The researchers ran their demonstration on a Telegram test server, because only approved bots can send",
+      "recipe": "the_hacker_news",
+      "buzz": 80,
       "topics": [
         "ai",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-16"
-    },
-    {
-      "uid": "cve:GHSA-r9jc-w898-3fv6",
-      "source": "cve",
-      "title": "CVE-2026-128074: Nuxt payload URL generation has quadratic cost for repeated slashes in the request path",
-      "url": "https://github.com/advisories/GHSA-r9jc-w898-3fv6",
-      "ts": 1794841241.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "nuxt",
-      "summary": "Severity: medium. ### Summary\n\nNuxt strips trailing slashes from the request path with a regular expression whose cost grows quadratically with the length of a run of consecutive slashes. A single unauthenticated request with a long run of slashes can occupy the server's event loop for a noticeable time, delaying eve",
-      "recipe": "gh_advisories",
-      "buzz": 1830,
-      "topics": [
-        "ai",
-        "science",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-16"
-    },
-    {
-      "uid": "cve:GHSA-f3x9-2chm-73c8",
-      "source": "cve",
-      "title": "CVE-2026-128071: Nuxt: Incomplete fix for GHSA-6gq8-jgmh-3ffp: an encoded slash (`%2F`) in the request path bypasses route rules on catch-all page routes",
-      "url": "https://github.com/advisories/GHSA-f3x9-2chm-73c8",
-      "ts": 1794841185.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "nuxt",
-      "summary": "Severity: medium. ### Summary\n\nNuxt matches route rules against the request path with encoded slashes (`%2F`) left encoded, while the page router decodes them into route params. A request that spells a slash as `%2F` can therefore render a page through a catch-all route without the route rules configured for the path",
-      "recipe": "gh_advisories",
-      "buzz": 1830,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-16"
-    },
-    {
-      "uid": "cve:GHSA-hf59-9xwc-2g4p",
-      "source": "cve",
-      "title": "CVE-2026-128076: Nuxt: Colliding island props can share one `/__nuxt_island` path (incomplete fix for CVE-2026-46342)",
-      "url": "https://github.com/advisories/GHSA-hf59-9xwc-2g4p",
-      "ts": 1794841342.0,
-      "points": 700,
-      "comments": 0,
-      "author": "nuxt",
-      "summary": "Severity: low. ### Summary\n\nThe fix for CVE-[phone] (GHSA-g8wj-3cr3-6w7v) binds each `/__nuxt_island/<Name>_<hash>.json` path to its props by hashing the `(name, props, context, source)` tuple. That hash was computed over `ohash`'s serialization, which does not escape quotes inside strings or delimiters inside",
-      "recipe": "gh_advisories",
-      "buzz": 730,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-16"
-    },
-    {
-      "uid": "cve:GHSA-x2wv-5868-p7v2",
-      "source": "cve",
-      "title": "CVE-2026-128072: @nuxt/webpack-builder and @nuxt/rspack-builder dev server serves built source to DNS rebinding pages",
-      "url": "https://github.com/advisories/GHSA-x2wv-5868-p7v2",
-      "ts": 1794841209.0,
-      "points": 700,
-      "comments": 0,
-      "author": "@nuxt/webpack-builder",
-      "summary": "Severity: low. ### Summary\n\nWhen using the webpack or rspack builder, the dev server serves built client chunks to any request whose `Host` header matches its `Origin`/`Referer`, or that carries `Sec-Fetch-Site: same-origin`. After a DNS rebinding attack both headers name the attacker's hostname, so a malicious pa",
-      "recipe": "gh_advisories",
-      "buzz": 730,
-      "topics": [
         "dev",
         "security",
         "hardware"
       ],
-      "date": "2026-11-16"
+      "date": "2026-11-17"
+    },
+    {
+      "uid": "rss:03ac2339a65ac4",
+      "source": "rss",
+      "title": "Oracle to Patch 11 Java Flaws Today as Critical OpenJDK RCE (CVE-2026-114938) Report Emerges",
+      "url": "https://thehackernews.com/2026/11/oracle-to-patch-11-java-flaws-today-as.html",
+      "ts": 1794928656.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Oracle is preparing to release security patches for 11 vulnerabilities in Java SE on Tuesday, November 17, 2026, all of which may be exploited remotely without authentication, as separate reports warn of a potentially critical remote code execution (RCE) flaw affecting OpenJDK. The 11 vulnerabilities carry a maximum CVSS 3.1 severity score of 8.1, according to Oracle's advance security notice.",
+      "recipe": "the_hacker_news",
+      "buzz": 80,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-11-17"
+    },
+    {
+      "uid": "rss:f53039a88443dd",
+      "source": "rss",
+      "title": "Trigram Campaign Impersonates About 50 AI and Blockchain Brands to Target Devs with Infostealers",
+      "url": "https://thehackernews.com/2026/11/trigram-campaign-impersonates-about-50.html",
+      "ts": 1794928648.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Artificial intelligence (AI), blockchain, and logistics sectors across Europe and the U.S. have emerged as the target of a large-scale, industrialized campaign dubbed Trigram. \"Trigram is a large-scale campaign that impersonates about 50 brands in the blockchain and AI sectors, to trick developers into executing an infostealer themselves,\" Stormshield said in a deep-dive technical report",
+      "recipe": "the_hacker_news",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "crypto"
+      ],
+      "date": "2026-11-17"
     },
     {
       "uid": "rss:1c024142ae254b",
@@ -700,7 +759,7 @@
       "points": 0,
       "comments": 0,
       "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "ConnectWise on Monday said it completed its investigation into unauthorized access targeting partner ScreenConnect environments, and recommended customers to ensure that the technician client is running version 26.6.5 or later. The company said additional activity targeting on-premises environments continues to be reported where the identified third-party extensions remain enabled, and",
+      "summary": "ConnectWise on Monday said it completed its investigation into unauthorized access targeting partner ScreenConnect environments, and recommended customers to ensure that the technician client is running version 26.6.5 or later. The company said additional activity targeting on-premises environments continues to be reported where the identified third-party extensions remain enabled and",
       "recipe": "the_hacker_news",
       "buzz": 80,
       "topics": [
@@ -1102,60 +1161,6 @@
       "topics": [
         "ai",
         "dev",
-        "security"
-      ],
-      "date": "2026-11-12"
-    },
-    {
-      "uid": "rss:4113826891eb49",
-      "source": "rss",
-      "title": "ThreatsDay: 59 Linux Kernel Bugs, Falcon Spyware, GSocket Backdoors + 17 More Stories",
-      "url": "https://thehackernews.com/2026/11/threatsday-59-linux-kernel-bugs-falcon.html",
-      "ts": 1794506571.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "A search result isn't always safe. An access request isn't always harmless. And a familiar account doesn't always mean a familiar person is using it. Simple things to remember. Yet a surprising amount of this week's trouble starts right there. Attackers are using fake websites, stolen access, and trusted tools to get into places they shouldn't be. AI is helping them build attacks faster, while",
-      "recipe": "the_hacker_news",
-      "buzz": 10,
-      "topics": [
-        "ai",
-        "dev"
-      ],
-      "date": "2026-11-12"
-    },
-    {
-      "uid": "rss:441837c1812847",
-      "source": "rss",
-      "title": "New SignDrop Zero-Day Exploit Turns Windows CLFS Security Feature Into SYSTEM Access",
-      "url": "https://thehackernews.com/2026/11/new-signdrop-zero-day-exploit-turns.html",
-      "ts": 1794505827.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Public exploit code released earlier this week claims that a local Windows user can gain SYSTEM privileges through the Common Log File System driver. The proof of concept, called SignDrop, targets a log-authentication feature added to the driver last year. It abuses how clfs.sys creates companion files when a privileged process opens a prepared log, using path redirection to take control of",
-      "recipe": "the_hacker_news",
-      "buzz": 10,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-12"
-    },
-    {
-      "uid": "rss:5878815c9e8fbe",
-      "source": "rss",
-      "title": "Critical Red Hat Quay Flaw Lets Attackers Read and Overwrite All Private Container Images in a Registry",
-      "url": "https://thehackernews.com/2026/11/critical-red-hat-quay-flaw-lets.html",
-      "ts": 1794500821.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "A critical flaw in Red Hat Quay allows an attacker who can access a Quay registry to read and overwrite private container images in every repository. Quay enables anonymous access by default, and while it is enabled, the attacker needs no account. When it is off, anyone with a valid account can still exploit the flaw, Red Hat said yesterday. The company has released fixed builds for eight Quay",
-      "recipe": "the_hacker_news",
-      "buzz": 10,
-      "topics": [
-        "ai",
         "security"
       ],
       "date": "2026-11-12"
