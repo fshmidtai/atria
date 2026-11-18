@@ -5,7 +5,126 @@
     <link>https://meridian-radar.pages.dev</link>
     <description>Autonomous radar of tech and science: what is gaining resonance right now</description>
     <language>en</language>
-    <lastBuildDate>Wed, 18 Nov 2026 05:18:42 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 09:19:13 GMT</lastBuildDate>
+    <item>
+      <title>Why 1.2.3 means different things in npm and Cargo</title>
+      <link>https://meridian-radar.pages.dev/item/why-1-2-3-means-different-things-in-npm-and-cargo.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/why-1-2-3-means-different-things-in-npm-and-cargo.html</guid>
+      <pubDate>Wed, 18 Nov 2026 09:19:11 GMT</pubDate>
+      <description>&lt;p&gt;Imagine you’re reviewing two dependency changes, one in &lt;code&gt;package.json&lt;/code&gt; and one in &lt;code&gt;Cargo.toml&lt;/code&gt;. Both use &lt;code&gt;1.2.3&lt;/code&gt;. If version &lt;code&gt;1.5.0&lt;/code&gt; is available, can the package manager select it?&lt;/p&gt; &lt;p&gt;&lt;strong&gt;Cargo can. npm needs a wider range.&lt;/strong&gt;&lt;/p&gt; &lt;h2&gt; Th</description>
+    </item>
+    <item>
+      <title>Signal #137: AWS Emulator, Vercel Video Gen, and More</title>
+      <link>https://meridian-radar.pages.dev/item/signal-137-aws-emulator-vercel-video-gen-and-more.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/signal-137-aws-emulator-vercel-video-gen-and-more.html</guid>
+      <pubDate>Wed, 18 Nov 2026 09:16:34 GMT</pubDate>
+      <description>&lt;p&gt;This week's batch leans toward infrastructure you can run locally and pipelines you can wire together without glue code. A local AWS emulator now covers 200+ services over HTTPS, Vercel's gateway picked up short-form video generation with synchronized audio, and Gradio's new workflow primitive tu</description>
+    </item>
+    <item>
+      <title>WireGuard MTU behind PPPoE: why the default 1420 hangs over IPv6, measured in network namespaces</title>
+      <link>https://meridian-radar.pages.dev/item/wireguard-mtu-behind-pppoe-why-the-default-1420-hangs-over-ipv6-.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/wireguard-mtu-behind-pppoe-why-the-default-1420-hangs-over-ipv6-.html</guid>
+      <pubDate>Wed, 18 Nov 2026 09:15:58 GMT</pubDate>
+      <description>&lt;p&gt;The usual WireGuard MTU advice is "use 1420, or 1380 if things break". I wanted to know what actually breaks, so I built the path in network namespaces on a Linux 6.8 kernel and measured it: a client, a router, and a server, where the router to server leg has an MTU of 1492 like a PPPoE DSL line.</description>
+    </item>
+    <item>
+      <title>Decoding Predatory QR SaaS: How We Built Free, Offline Vector QR Generation in Your Browser</title>
+      <link>https://meridian-radar.pages.dev/item/decoding-predatory-qr-saas-how-we-built-free-offline-vector-qr-g.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/decoding-predatory-qr-saas-how-we-built-free-offline-vector-qr-g.html</guid>
+      <pubDate>Wed, 18 Nov 2026 09:15:26 GMT</pubDate>
+      <description>&lt;p&gt;Alright, fellow engineers, let's talk about something that's been nagging at me, and honestly, it feels like a bad joke. In an era where front-end frameworks rival desktop application capabilities and WebAssembly is pushing the boundaries of in-browser performance, we're witnessing a proliferatio</description>
+    </item>
+    <item>
+      <title>How Much Coil Does a Motor Lamination Really Use? A Python Strip Utilization Calculator</title>
+      <link>https://meridian-radar.pages.dev/item/how-much-coil-does-a-motor-lamination-really-use-a-python-strip-.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/how-much-coil-does-a-motor-lamination-really-use-a-python-strip-.html</guid>
+      <pubDate>Wed, 18 Nov 2026 09:13:59 GMT</pubDate>
+      <description>&lt;p&gt;Ask for a quote on motor laminations and the number that surprises people is rarely the price per tonne. It is how much of the coil ends up as scrap.&lt;/p&gt; &lt;p&gt;A stator lamination is a ring with slots. The bore slug and the slot punchings are scrap unless somebody reuses them, and the round outline </description>
+    </item>
+    <item>
+      <title>How to Review, Edit and Delete What Your AI Coding Tools Remember About Your Project</title>
+      <link>https://meridian-radar.pages.dev/item/how-to-review-edit-and-delete-what-your-ai-coding-tools-remember.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/how-to-review-edit-and-delete-what-your-ai-coding-tools-remember.html</guid>
+      <pubDate>Wed, 18 Nov 2026 09:13:41 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Delete AI coding assistant memory&lt;/strong&gt; is the act of permanently removing a stored decision, fix or preference from the memory your AI coding tools read, so that no future session is briefed with it. It is different from clearing a chat. Clearing a chat empties one conversation, while</description>
+    </item>
+    <item>
+      <title>How to set up DMARC (and fix "No DMARC record found")</title>
+      <link>https://meridian-radar.pages.dev/item/how-to-set-up-dmarc-and-fix-no-dmarc-record-found.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/how-to-set-up-dmarc-and-fix-no-dmarc-record-found.html</guid>
+      <pubDate>Wed, 18 Nov 2026 09:13:14 GMT</pubDate>
+      <description>&lt;p&gt;DMARC is one TXT record at _dmarc.yourdomain that tells inboxes what to do with fakes and sends you reports.&lt;/p&gt; &lt;h2&gt; Start here &lt;/h2&gt; &lt;blockquote&gt; &lt;p&gt;v=DMARC1; p=none; rua=mailto:&lt;a href="mailto:[email]"&gt;[email]&lt;/a&gt;&lt;/p&gt; &lt;/blockquote&gt; &lt;p&gt;Add it as a TXT record with host &lt;code&gt;_dmarc&lt;/code&gt;. &lt;code</description>
+    </item>
+    <item>
+      <title>Giving Claude a memory that survives the conversation, through one MCP URL</title>
+      <link>https://meridian-radar.pages.dev/item/giving-claude-a-memory-that-survives-the-conversation-through-on.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/giving-claude-a-memory-that-survives-the-conversation-through-on.html</guid>
+      <pubDate>Wed, 18 Nov 2026 09:13:11 GMT</pubDate>
+      <description>&lt;p&gt;You decided something with Claude yesterday: the project signs in with an e-mail code, no passwords. Today, in a new conversation, you explain it again. And again next week.&lt;/p&gt; &lt;p&gt;Memory for Claude means a decision made in one conversation can be found in the next one, without you repeating it. </description>
+    </item>
+    <item>
+      <title>DKIM passes but DMARC still fails: the alignment trap</title>
+      <link>https://meridian-radar.pages.dev/item/dkim-passes-but-dmarc-still-fails-the-alignment-trap.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/dkim-passes-but-dmarc-still-fails-the-alignment-trap.html</guid>
+      <pubDate>Wed, 18 Nov 2026 09:12:52 GMT</pubDate>
+      <description>&lt;p&gt;DMARC needs the domain that passed to match your From address. Many tools sign with their own domain, so DKIM passes but DMARC still fails.&lt;/p&gt; &lt;h2&gt; Why it happens &lt;/h2&gt; &lt;p&gt;DMARC asks one question: did SPF or DKIM pass &lt;strong&gt;for the same domain that's in the From line&lt;/strong&gt;? That match is ca</description>
+    </item>
+    <item>
+      <title>Why I Built 40+ Privacy-First Browser Utilities That Never Upload Your Files</title>
+      <link>https://meridian-radar.pages.dev/item/why-i-built-40-privacy-first-browser-utilities-that-never-upload.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/why-i-built-40-privacy-first-browser-utilities-that-never-upload.html</guid>
+      <pubDate>Wed, 18 Nov 2026 09:12:45 GMT</pubDate>
+      <description>&lt;p&gt;Most "free" online utility websites follow the exact same annoying playbook:&lt;/p&gt; &lt;ol&gt; &lt;li&gt;You drag and drop a sensitive PDF, invoice, or &lt;code&gt;.env&lt;/code&gt; configuration file.&lt;/li&gt; &lt;li&gt;It silently uploads your private data to an unknown backend server.&lt;/li&gt; &lt;li&gt;It hits you with a 2-file daily limi</description>
+    </item>
+    <item>
+      <title>Google Analytics MCP: the official server or a URL you paste into Claude</title>
+      <link>https://meridian-radar.pages.dev/item/google-analytics-mcp-the-official-server-or-a-url-you-paste-into.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/google-analytics-mcp-the-official-server-or-a-url-you-paste-into.html</guid>
+      <pubDate>Wed, 18 Nov 2026 09:12:35 GMT</pubDate>
+      <description>&lt;p&gt;You want to ask Claude how your site is doing, without opening GA4 and building an exploration. There are two MCP paths today, and which one fits depends on whether you want to run Python and gcloud.&lt;/p&gt; &lt;h2&gt; 1. Google's official Google Analytics MCP server &lt;/h2&gt; &lt;p&gt;Google maintains an open sourc</description>
+    </item>
+    <item>
+      <title>Connecting Google Search Console to Claude with MCP, read only</title>
+      <link>https://meridian-radar.pages.dev/item/connecting-google-search-console-to-claude-with-mcp-read-only.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/connecting-google-search-console-to-claude-with-mcp-read-only.html</guid>
+      <pubDate>Wed, 18 Nov 2026 09:12:00 GMT</pubDate>
+      <description>&lt;p&gt;You want to ask Claude what Google thinks of your site: which searches bring people in, which page dropped in position, whether the new page is indexed yet. Without opening Search Console, building filters and exporting CSVs.&lt;/p&gt; &lt;p&gt;The way to do that is a remote MCP server. You paste one URL int</description>
+    </item>
+    <item>
+      <title>Talos Linux</title>
+      <link>https://meridian-radar.pages.dev/item/talos-linux.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/talos-linux.html</guid>
+      <pubDate>Wed, 18 Nov 2026 08:17:44 GMT</pubDate>
+      <description></description>
+    </item>
+    <item>
+      <title>Australia's full national topographic library at your fingertips</title>
+      <link>https://meridian-radar.pages.dev/item/australia-s-full-national-topographic-library-at-your-fingertips.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/australia-s-full-national-topographic-library-at-your-fingertips.html</guid>
+      <pubDate>Wed, 18 Nov 2026 07:10:46 GMT</pubDate>
+      <description></description>
+    </item>
+    <item>
+      <title>AI is killing All About Berlin</title>
+      <link>https://meridian-radar.pages.dev/item/ai-is-killing-all-about-berlin.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/ai-is-killing-all-about-berlin.html</guid>
+      <pubDate>Wed, 18 Nov 2026 06:47:26 GMT</pubDate>
+      <description></description>
+    </item>
+    <item>
+      <title>Why Fibonacci?</title>
+      <link>https://meridian-radar.pages.dev/item/why-fibonacci.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/why-fibonacci.html</guid>
+      <pubDate>Wed, 18 Nov 2026 05:35:02 GMT</pubDate>
+      <description></description>
+    </item>
+    <item>
+      <title>Interviewed at a YC startup, found out they used my LinkedIn without permission</title>
+      <link>https://meridian-radar.pages.dev/item/interviewed-at-a-yc-startup-found-out-they-used-my-linkedin-with.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/interviewed-at-a-yc-startup-found-out-they-used-my-linkedin-with.html</guid>
+      <pubDate>Wed, 18 Nov 2026 05:11:30 GMT</pubDate>
+      <description></description>
+    </item>
     <item>
       <title>How many LLM agent sessions can one GPU serve? Measured: 8 to 256 sessions on one NVIDIA L4, every step exact</title>
       <link>https://meridian-radar.pages.dev/item/how-many-llm-agent-sessions-can-one-gpu-serve-measured-8-to-256-.html</link>
@@ -95,125 +214,6 @@
       <link>https://meridian-radar.pages.dev/item/why-is-gemini-4-carbon-taking-so-long.html</link>
       <guid isPermaLink="true">https://meridian-radar.pages.dev/item/why-is-gemini-4-carbon-taking-so-long.html</guid>
       <pubDate>Wed, 18 Nov 2026 04:14:04 GMT</pubDate>
-      <description></description>
-    </item>
-    <item>
-      <title>H-1B Executive Actions in 2026 [pdf]</title>
-      <link>https://meridian-radar.pages.dev/item/h-1b-executive-actions-in-2026-pdf.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/h-1b-executive-actions-in-2026-pdf.html</guid>
-      <pubDate>Wed, 18 Nov 2026 03:37:35 GMT</pubDate>
-      <description></description>
-    </item>
-    <item>
-      <title>GoGoGrandparent (YC S16) Is a Front End JavaScript / TypeScript Engineer</title>
-      <link>https://meridian-radar.pages.dev/item/gogograndparent-yc-s16-is-a-front-end-javascript-typescript-engi.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/gogograndparent-yc-s16-is-a-front-end-javascript-typescript-engi.html</guid>
-      <pubDate>Wed, 18 Nov 2026 03:35:47 GMT</pubDate>
-      <description></description>
-    </item>
-    <item>
-      <title>Nvidia’s startup stakes ballooned to $65B, but Huang’s exit puts future deals in doubt</title>
-      <link>https://meridian-radar.pages.dev/item/nvidia-s-startup-stakes-ballooned-to-65b-but-huang-s-exit-puts-f.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/nvidia-s-startup-stakes-ballooned-to-65b-but-huang-s-exit-puts-f.html</guid>
-      <pubDate>Wed, 18 Nov 2026 01:44:21 GMT</pubDate>
-      <description>The value of Nvidia’s private investments has nearly tripled over the past nine months, fueled by Jensen Huang’s aggressive dealmaking and rising valuations of its existing portfolio companies.</description>
-    </item>
-    <item>
-      <title>Understanding CSRF: How Attackers Trick Users Into Performing Unauthorized Actions</title>
-      <link>https://meridian-radar.pages.dev/item/understanding-csrf-how-attackers-trick-users-into-performing-una.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/understanding-csrf-how-attackers-trick-users-into-performing-una.html</guid>
-      <pubDate>Wed, 18 Nov 2026 01:26:25 GMT</pubDate>
-      <description>&lt;h1&gt; Understanding CSRF: How Attackers Trick Users Into Performing Unauthorized Actions &lt;/h1&gt; &lt;p&gt;Imagine you're logged into your bank account in one browser tab.&lt;/p&gt; &lt;p&gt;You open another tab and visit a website that contains malicious content.&lt;/p&gt; &lt;p&gt;Without realizing it, your browser sends a request</description>
-    </item>
-    <item>
-      <title>I built a small macOS terminal that lets you take back a prompt you sent to Claude Code</title>
-      <link>https://meridian-radar.pages.dev/item/i-built-a-small-macos-terminal-that-lets-you-take-back-a-prompt-.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/i-built-a-small-macos-terminal-that-lets-you-take-back-a-prompt-.html</guid>
-      <pubDate>Wed, 18 Nov 2026 01:25:55 GMT</pubDate>
-      <description>&lt;p&gt;lmux is a small macOS terminal I use to run a bunch of Claude Code and Codex sessions at once. The feature I reach for most is taking back a prompt I sent to the wrong session.&lt;/p&gt; &lt;p&gt;The layout is borrowed from cmux: workspaces in a sidebar, splits, tabs in each pane. A few people on Reddit call</description>
-    </item>
-    <item>
-      <title>Can an AI Assistant Read Your Election Office? We Checked All 50 States, DC and 35 Countries.</title>
-      <link>https://meridian-radar.pages.dev/item/can-an-ai-assistant-read-your-election-office-we-checked-all-50-.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/can-an-ai-assistant-read-your-election-office-we-checked-all-50-.html</guid>
-      <pubDate>Wed, 18 Nov 2026 01:25:16 GMT</pubDate>
-      <description>&lt;p&gt;People now ask AI assistants where to vote, how to check their registration and when results are certified. The assistant can answer from training data, which may be a year old, or it can read the official election office site. We wanted to know what it gets when it tries the second option.&lt;/p&gt; &lt;</description>
-    </item>
-    <item>
-      <title>Course Narration as Code: Lint and Budget an E-Learning Voiceover in Python Before It Hits Murf</title>
-      <link>https://meridian-radar.pages.dev/item/course-narration-as-code-lint-and-budget-an-e-learning-voiceover.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/course-narration-as-code-lint-and-budget-an-e-learning-voiceover.html</guid>
-      <pubDate>Wed, 18 Nov 2026 01:25:08 GMT</pubDate>
-      <description>&lt;p&gt;Disclosure: I'm a Murf AI affiliate. This post links only to my own site, &lt;a href="https://infinityme.dev/" rel="noopener noreferrer"&gt;infinityme.dev&lt;/a&gt;, and some pages there contain affiliate links to Murf. If you buy through them I may earn a commission at no extra cost to you.&lt;/p&gt; &lt;p&gt;If you bu</description>
-    </item>
-    <item>
-      <title>Meta Hackathon: IRON VR Call of Duty Game</title>
-      <link>https://meridian-radar.pages.dev/item/meta-hackathon-iron-vr-call-of-duty-game.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/meta-hackathon-iron-vr-call-of-duty-game.html</guid>
-      <pubDate>Wed, 18 Nov 2026 01:25:06 GMT</pubDate>
-      <description>&lt;p&gt;Inspiration&lt;br&gt; I was playing Call of Duty and decided to why not build with the use of AI or NOT and build a call of duty like game similar to the PS5 or xbox.&lt;/p&gt; &lt;p&gt;What it does&lt;br&gt; Iron VR is bot a desktop and VR headeset game. IRON FRONT VR — Operation Black Iron A Call of Duty-style first-p</description>
-    </item>
-    <item>
-      <title>IFRITH: Network Threat Hunter &amp; Site Attribution Engine. Passive LAN visibility + MITM primitives.</title>
-      <link>https://meridian-radar.pages.dev/item/ifrith-network-threat-hunter-site-attribution-engine-passive-lan.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/ifrith-network-threat-hunter-site-attribution-engine-passive-lan.html</guid>
-      <pubDate>Wed, 18 Nov 2026 01:24:46 GMT</pubDate>
-      <description>&lt;p&gt;⚠️ Legal &amp;amp; Ethical Notice — READ FIRST&lt;/p&gt; &lt;p&gt;IFRITH is a gray-hat tool. It ships offensive primitives (ARP poisoning, rogue DHCP, RA/NDP injection, TLS interception, DNS forgery) wrapped inside a defensive environment. That duality is intentional — but it comes with a hard rule:&lt;/p&gt; &lt;p&gt;Run I</description>
-    </item>
-    <item>
-      <title>We Checked 15 Big Healthcare Sites. A Third Turned Our Agent Away Before It Read a Word.</title>
-      <link>https://meridian-radar.pages.dev/item/we-checked-15-big-healthcare-sites-a-third-turned-our-agent-away.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/we-checked-15-big-healthcare-sites-a-third-turned-our-agent-away.html</guid>
-      <pubDate>Wed, 18 Nov 2026 01:24:31 GMT</pubDate>
-      <description>&lt;p&gt;In September, OpenAI said &lt;a href="https://openai.com/index/chatgpt-connects-health-records-and-healthcare-sources" rel="noopener noreferrer"&gt;ChatGPT for Healthcare can connect to Epic records&lt;/a&gt;, with UCSF Health as a pilot. That is AI inside the hospital, working on data the hospital controls.</description>
-    </item>
-    <item>
-      <title>Electron and the Chrome DevTools Protocol: Connecting CDP Sessions, Inspecting Targets, and Automating Diagnostics</title>
-      <link>https://meridian-radar.pages.dev/item/electron-and-the-chrome-devtools-protocol-connecting-cdp-session.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/electron-and-the-chrome-devtools-protocol-connecting-cdp-session.html</guid>
-      <pubDate>Wed, 18 Nov 2026 01:24:30 GMT</pubDate>
-      <description>&lt;p&gt;When you open DevTools in an Electron app, the panel you click through is only the surface. Underneath, every interaction — reading a variable, stepping through code, capturing a console line, taking a screenshot, sampling performance — travels over the Chrome DevTools Protocol (CDP), a text-base</description>
-    </item>
-    <item>
-      <title>What we learned building an AI receptionist that speaks Greek</title>
-      <link>https://meridian-radar.pages.dev/item/what-we-learned-building-an-ai-receptionist-that-speaks-greek.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/what-we-learned-building-an-ai-receptionist-that-speaks-greek.html</guid>
-      <pubDate>Wed, 18 Nov 2026 01:24:21 GMT</pubDate>
-      <description>&lt;p&gt;Most AI phone agents are built for English first. Greek is usually an afterthought: a translated prompt, a voice that sounds like a foreign newsreader, and a speech model that trips over names like "Papadopoulos" or street names like "Leoforos Kifisias".&lt;/p&gt; &lt;p&gt;We build &lt;a href="https://lovacall.</description>
-    </item>
-    <item>
-      <title>Real-Estate Listing Retrieval for Relocation Teams (A Change-Aware Indexing Walkthrough)</title>
-      <link>https://meridian-radar.pages.dev/item/real-estate-listing-retrieval-for-relocation-teams-a-change-awar.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/real-estate-listing-retrieval-for-relocation-teams-a-change-awar.html</guid>
-      <pubDate>Wed, 18 Nov 2026 01:23:56 GMT</pubDate>
-      <description>&lt;p&gt;Short answer: use incremental indexing with explicit collections, bounded queries, and traceable source context; for a relocation logistics team watching real-estate pages, re-index only changed listings, remove deleted ones, and promote the design only after a labeled retrieval test passes.&lt;/p&gt; </description>
-    </item>
-    <item>
-      <title>My MCP Server Passed My Tests and Failed a Strict Client on One Missing Field</title>
-      <link>https://meridian-radar.pages.dev/item/my-mcp-server-passed-my-tests-and-failed-a-strict-client-on-one-.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/my-mcp-server-passed-my-tests-and-failed-a-strict-client-on-one-.html</guid>
-      <pubDate>Wed, 18 Nov 2026 01:23:32 GMT</pubDate>
-      <description>&lt;h1&gt; My MCP Server Passed My Tests and Failed a Strict Client on One Missing Field &lt;/h1&gt; &lt;p&gt;Your MCP server can return the right answer, with a 200 status, and still break a real client.&lt;/p&gt; &lt;p&gt;That is what an outside audit taught us on November 17. An AI auditor graded our MCP server in an outside </description>
-    </item>
-    <item>
-      <title>Understanding Host Headers: How One Server Hosts Multiple Websites and How Attackers Exploit It</title>
-      <link>https://meridian-radar.pages.dev/item/understanding-host-headers-how-one-server-hosts-multiple-website.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/understanding-host-headers-how-one-server-hosts-multiple-website.html</guid>
-      <pubDate>Wed, 18 Nov 2026 01:23:16 GMT</pubDate>
-      <description>&lt;h1&gt; Understanding Host Headers: How One Server Hosts Multiple Websites and How Attackers Exploit It &lt;/h1&gt; &lt;p&gt;Have you ever wondered how a single VPS can host multiple websites using just one public IP address?&lt;/p&gt; &lt;p&gt;For example:&lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;code&gt;example.com&lt;/code&gt;&lt;/li&gt; &lt;li&gt;&lt;code&gt;shop.example.com</description>
-    </item>
-    <item>
-      <title>Cerebras Disaggregated Inference</title>
-      <link>https://meridian-radar.pages.dev/item/cerebras-disaggregated-inference.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/cerebras-disaggregated-inference.html</guid>
-      <pubDate>Wed, 18 Nov 2026 00:56:23 GMT</pubDate>
-      <description></description>
-    </item>
-    <item>
-      <title>ID.me terms required for IRS sign-in</title>
-      <link>https://meridian-radar.pages.dev/item/id-me-terms-required-for-irs-sign-in.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/id-me-terms-required-for-irs-sign-in.html</guid>
-      <pubDate>Wed, 18 Nov 2026 00:51:45 GMT</pubDate>
       <description></description>
     </item>
   </channel>

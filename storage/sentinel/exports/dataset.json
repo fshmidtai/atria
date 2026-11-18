@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T05:18:57+00:00",
+  "generated_at": "2026-11-18T09:19:28+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -28,11 +28,11 @@
     "by_topic": {
       "security": 108,
       "ai": 72,
-      "dev": 60,
-      "hardware": 21,
+      "dev": 61,
+      "hardware": 20,
+      "biz": 10,
       "crypto": 9,
-      "biz": 9,
-      "science": 5
+      "science": 6
     },
     "top_domains": [
       [
@@ -1434,12 +1434,12 @@
       "title": "nestho/impacket-rs",
       "url": "https://github.com/nestho/impacket-rs",
       "ts": 1794373116.0,
-      "points": 96,
-      "comments": 13,
+      "points": 97,
+      "comments": 14,
       "author": "nestho",
       "summary": "High-performance, memory-safe pure-Rust redesign of Impacket protocols and Active Directory tools for Linux, macOS, and Windows.",
       "recipe": "github_sec",
-      "buzz": 135,
+      "buzz": 139,
       "topics": [
         "dev"
       ],
@@ -1469,12 +1469,12 @@
       "title": "zhidun2027/zhidun",
       "url": "https://github.com/zhidun2027/zhidun",
       "ts": 1794458402.0,
-      "points": 77,
+      "points": 81,
       "comments": 8,
       "author": "zhidun2027",
       "summary": "Android APK hardening — DEX encryption, native shell engine, anti-tamper. Fully documented and auditable.",
       "recipe": "github_sec",
-      "buzz": 111,
+      "buzz": 115,
       "topics": [
         "security"
       ],
@@ -1553,9 +1553,48 @@
       "date": "2026-11-17"
     },
     {
+      "uid": "rss:eb400c4d4b568d",
+      "source": "rss",
+      "title": "Attackers Compromise Microsoft's Agent Framework PyPI Package to Steal Cloud Credentials",
+      "url": "https://thehackernews.com/2026/11/attackers-compromise-microsofts-agent.html",
+      "ts": 1794984326.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Threat actors have compromised Microsoft's agent-framework package to push a credential stealer, according to reports from Aikido, Chainguard, Endor Labs, OX Security, SafeDep, Socket, StepSecurity, and Google-owned Wiz. The malicious versions, 1.26.1 and 1.26.2, were published 33 minutes apart on November 17, 2026, and are designed to run a credential stealer on every Python start. As of",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-18"
+    },
+    {
+      "uid": "rss:a64d85f43b086d",
+      "source": "rss",
+      "title": "Russian COLD RELIC Hackers Use Stolen Google Workspace Data to Breach Second U.S. Organization",
+      "url": "https://thehackernews.com/2026/11/russian-cold-relic-hackers-use-stolen.html",
+      "ts": 1794981484.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "The Russia-linked cyber espionage group known as Cold Relic (formerly COLDRIVER and UNC4057) has been observed weaponizing a single cloud compromise into a launchpad for a series of linked intrusions resulting in third-party compromise. Google's Mandiant and Threat Intelligence Group (GTIG) said it investigated a 2026 compromise at a U.S.-based organization in which the adversary leveraged",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "science",
+        "biz",
+        "security"
+      ],
+      "date": "2026-11-18"
+    },
+    {
       "uid": "rss:deec20c9952c51",
       "source": "rss",
-      "title": "Java4Shell (CVE-2026-114938) Enables Pre-Auth RCE in Jira, Jenkins, Keycloak on Java 17+ AVX-512 VBMI Servers",
+      "title": "Java4Shell Flaw (CVE-2026-114938) Enables Pre-Auth RCE in Jira, Jenkins, Keycloak and More",
       "url": "https://thehackernews.com/2026/11/java4shell-cve-2026-114938-enables-pre.html",
       "ts": 1794976061.0,
       "points": 0,
@@ -1703,43 +1742,6 @@
       "date": "2026-11-17"
     },
     {
-      "uid": "rss:ab3ce7e511f8c6",
-      "source": "rss",
-      "title": "Hijacked Optimizely Scripts Served Card Skimmer and iOS Exploit Kits to CNN, BBC and Zoom Visitors",
-      "url": "https://thehackernews.com/2026/11/hijacked-optimizely-scripts-served-card.html",
-      "ts": 1794899533.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "An attacker exploited a flaw in Optimizely Web Experimentation to plant malicious code in some of the scripts that customers' websites load from the service, Optimizely said early today. Visitors to sites run by at least 178 organizations, including CNN, the BBC and Zoom, received the code yesterday, according to Report URI, a firm that monitors the scripts websites run. The code was built to",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-17"
-    },
-    {
-      "uid": "rss:1478251080c724",
-      "source": "rss",
-      "title": "ConnectWise Warns ScreenConnect Attacks Continue as SCKit Targets Unpatched Systems",
-      "url": "https://thehackernews.com/2026/11/connectwise-warns-screenconnect-attacks.html",
-      "ts": 1794896967.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "ConnectWise on Monday said it completed its investigation into unauthorized access targeting partner ScreenConnect environments, and recommended customers to ensure that the technician client is running version 26.6.5 or later. The company said additional activity targeting on-premises environments continues to be reported where the identified third-party extensions remain enabled and",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "dev",
-        "biz"
-      ],
-      "date": "2026-11-17"
-    },
-    {
       "uid": "gh:BountyForge-xyz/pwn-skill",
       "source": "github",
       "title": "BountyForge-xyz/pwn-skill",
@@ -1763,12 +1765,12 @@
       "title": "NPCmillionaire/unredact.tools",
       "url": "https://github.com/NPCmillionaire/unredact.tools",
       "ts": 1794511431.0,
-      "points": 40,
+      "points": 41,
       "comments": 2,
       "author": "NPCmillionaire",
       "summary": "See what your files leak (GPS, serials, authors, failed redactions, deleted text, watermarks), then scrub them.",
       "recipe": "github_sec",
-      "buzz": 56,
+      "buzz": 57,
       "topics": [
         "ai"
       ],
@@ -1780,12 +1782,12 @@
       "title": "khanh0209q/NextDNS-Config-Set-And-Forget",
       "url": "https://github.com/khanh0209q/NextDNS-Config-Set-And-Forget",
       "ts": 1794630951.0,
-      "points": 29,
+      "points": 30,
       "comments": 1,
       "author": "khanh0209q",
       "summary": "A zero-breakage, set-and-forget NextDNS configuration for Home & Office.",
       "recipe": "github_sec",
-      "buzz": 42,
+      "buzz": 43,
       "topics": [],
       "date": "2026-11-14"
     },
@@ -1823,6 +1825,43 @@
         "security"
       ],
       "date": "2026-11-16"
+    },
+    {
+      "uid": "rss:ab3ce7e511f8c6",
+      "source": "rss",
+      "title": "Hijacked Optimizely Scripts Served Card Skimmer and iOS Exploit Kits to CNN, BBC and Zoom Visitors",
+      "url": "https://thehackernews.com/2026/11/hijacked-optimizely-scripts-served-card.html",
+      "ts": 1794899533.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "An attacker exploited a flaw in Optimizely Web Experimentation to plant malicious code in some of the scripts that customers' websites load from the service, Optimizely said early today. Visitors to sites run by at least 178 organizations, including CNN, the BBC and Zoom, received the code yesterday, according to Report URI, a firm that monitors the scripts websites run. The code was built to",
+      "recipe": "hackersnews",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-17"
+    },
+    {
+      "uid": "rss:1478251080c724",
+      "source": "rss",
+      "title": "ConnectWise Warns ScreenConnect Attacks Continue as SCKit Targets Unpatched Systems",
+      "url": "https://thehackernews.com/2026/11/connectwise-warns-screenconnect-attacks.html",
+      "ts": 1794896967.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "ConnectWise on Monday said it completed its investigation into unauthorized access targeting partner ScreenConnect environments, and recommended customers to ensure that the technician client is running version 26.6.5 or later. The company said additional activity targeting on-premises environments continues to be reported where the identified third-party extensions remain enabled and",
+      "recipe": "hackersnews",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "dev",
+        "biz"
+      ],
+      "date": "2026-11-17"
     },
     {
       "uid": "rss:b3c5657f82d0e1",
@@ -1994,26 +2033,6 @@
       "date": "2026-11-15"
     },
     {
-      "uid": "rss:5b8a9ede72c818",
-      "source": "rss",
-      "title": "Cursor Says Stolen Fireworks AI Key Led to Trojanized Claude Code Extension Incident",
-      "url": "https://thehackernews.com/2026/11/stolen-fireworks-ai-key-led-to-cursor.html",
-      "ts": 1794730924.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "The compromise of Anthropic's official Claude Code extension on Cursor's extension marketplace was the result of the theft of an access key that was exposed in the wake of a breach targeting Fireworks AI. \"An attacker obtained an access key we had issued to Fireworks,\" Cursor said in a Friday update. \"The key was exposed by Fireworks, and the attacker used it to copy data from a read-only",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "dev",
-        "biz",
-        "security"
-      ],
-      "date": "2026-11-15"
-    },
-    {
       "uid": "gh:humanethq/airgap-check",
       "source": "github",
       "title": "humanethq/airgap-check",
@@ -2133,6 +2152,26 @@
         "ai"
       ],
       "date": "2026-11-11"
+    },
+    {
+      "uid": "rss:5b8a9ede72c818",
+      "source": "rss",
+      "title": "Cursor Says Stolen Fireworks AI Key Led to Trojanized Claude Code Extension Incident",
+      "url": "https://thehackernews.com/2026/11/stolen-fireworks-ai-key-led-to-cursor.html",
+      "ts": 1794730924.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "The compromise of Anthropic's official Claude Code extension on Cursor's extension marketplace was the result of the theft of an access key that was exposed in the wake of a breach targeting Fireworks AI. \"An attacker obtained an access key we had issued to Fireworks,\" Cursor said in a Friday update. \"The key was exposed by Fireworks, and the attacker used it to copy data from a read-only",
+      "recipe": "hackersnews",
+      "buzz": 10,
+      "topics": [
+        "ai",
+        "dev",
+        "biz",
+        "security"
+      ],
+      "date": "2026-11-15"
     },
     {
       "uid": "rss:d6bc4ec6947cb8",
@@ -2276,43 +2315,6 @@
       "comments": 0,
       "author": "info@thehackernews.com (The Hacker News)",
       "summary": "An international police operation took down servers behind Gootloader, CastleRAT and StealC this week. Criminals used the three malware tools to gain access to computers, steal passwords, and launch ransomware attacks. Police also seized about 6.4 million stolen logins belonging to more than 40,000 victims, according to Germany's Federal Criminal Police Office (BKA). Gootloader is a loader:",
-      "recipe": "hackersnews",
-      "buzz": 10,
-      "topics": [
-        "ai",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-13"
-    },
-    {
-      "uid": "rss:358e4358544293",
-      "source": "rss",
-      "title": "Hackers Exploit PHP2Shell Flaws in Check Point Gateways to Deploy TSGA Backdoor and Wipe ESXi Files",
-      "url": "https://thehackernews.com/2026/11/hackers-exploit-php2shell-flaws-in.html",
-      "ts": 1794557149.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "An unknown threat actor has been observed targeting unpatched Check Point Security Gateways to obtain initial access via the PHP2Shell vulnerabilities and then a previously unreported local privilege escalation flaw in Gaia OS&nbsp; to deploy a backdoor called TSGA. The activity, detailed by Check Point, began on October 30, 2026, and targeted Israeli organizations, with a broader follow-up",
-      "recipe": "hackersnews",
-      "buzz": 10,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-13"
-    },
-    {
-      "uid": "rss:5ef31f54b9efc4",
-      "source": "rss",
-      "title": "Hackers Exploit N-central Flaws to Infect 21 Servers, Including 19 Running Hotfix 2",
-      "url": "https://thehackernews.com/2026/11/hackers-exploit-n-central-flaws-to.html",
-      "ts": 1794548608.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "N-able on Thursday said it's taking additional precautions in the wake of public disclosure of a new set of flaws tracked as 4EverAble2Shell and Agent2Shell. \"We are restricting certain N-central features and integrations,\" the company said in a Thursday update. \"These measures may affect some functionality, but we believe taking additional precautions while remediation is completed is the",
       "recipe": "hackersnews",
       "buzz": 10,
       "topics": [
