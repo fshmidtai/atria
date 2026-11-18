@@ -1,5 +1,7 @@
 cve_id,severity,package,title,url,date
+CVE-2026-130001,critical,mustache,CVE-2026-130001: Mustache for Ruby: RCE using built-in method access,https://github.com/advisories/GHSA-5hrj-7fc3-cmx9,2026-11-18
 CVE-2026-53998,critical,arize-phoenix,CVE-2026-53998: Phoenix: Format String Injection in applyChatTemplate,https://github.com/advisories/GHSA-gfv3-m769-5xm3,2026-11-17
+CVE-2026-63496,high,@augment-vir/node,CVE-2026-63496: augment-virShell allows Command Injection in `grep()` via Unsanitized `searchPattern`,https://github.com/advisories/GHSA-xvcc-vqjv-phqh,2026-11-18
 CVE-2026-119793,high,@libp2p/gossipsub,CVE-2026-119793: libp2p: gossipsub creates a permanent topics-map entry per distinct subscription with no cap in the default config,https://github.com/advisories/GHSA-x2vm-cf3p-m2w8,2026-11-17
 CVE-2026-110789,high,@libp2p/crypto,"CVE-2026-110789: libp2p: ASN.1 DER decoder drives an unbounded synchronous loop on attacker-controlled length fields, stalling the Node event loop pre-auth",https://github.com/advisories/GHSA-rvfr-cqwq-rc4j,2026-11-17
 CVE-2026-110782,high,simplesamlphp/saml2,CVE-2026-110782: SAML2: Incomplete fix of CVE-2026-49283: unsigned embedded Response bypasses HTTP-Artifact signature verification (no embedded-Issuer binding),https://github.com/advisories/GHSA-r7hw-jx6r-756g,2026-11-17
@@ -9,9 +11,7 @@ CVE-2026-91115,high,silverstripe/framework,CVE-2026-91115: Silverstripe Framewor
 CVE-2026-129236,high,github.com/kubeshark/kubeshark,CVE-2026-129236: Kubeshark: MCP `start_kubeshark` argument injection via `pod_regex` → image redirect → cluster takeover,https://github.com/advisories/GHSA-8vf2-hxg5-crqh,2026-11-16
 CVE-2026-129297,high,mail-parser,CVE-2026-129297: mail-parser: Sender IP address spoofing in get_server_ipaddress(),https://github.com/advisories/GHSA-72px-j8gh-p79x,2026-11-16
 CVE-2026-129295,high,mail-parser,CVE-2026-129295: mail-parser is vulnerable to polynomial ReDoS in email header parsing,https://github.com/advisories/GHSA-r7w7-vpq8-c5vv,2026-11-16
-CVE-2026-86046,high,termux-sync,CVE-2026-86046: termux-sync: Arbitrary file write during restore via attacker-controlled manifest source path,https://github.com/advisories/GHSA-259w-wmqg-fp76,2026-11-16
-CVE-2026-68934,high,code-review-mcp-server,CVE-2026-68934: code-review-mcp-server: Command injection via unsanitized folderPath/baseBranch parameters,https://github.com/advisories/GHSA-jq3q-62jc-fqq9,2026-11-16
-CVE-2026-63182,high,litesaml/lightsaml,CVE-2026-63182: lightsaml allows Signature wrapping bypass,https://github.com/advisories/GHSA-w553-pwx6-3mg9,2026-11-16
+CVE-2026-61618,medium,snark-verifier,CVE-2026-61618: snark-verifier accepts non-canonical KZG accumulator limb encodings,https://github.com/advisories/GHSA-265x-v3qf-ff6p,2026-11-18
 CVE-2026-69241,medium,awcodes/filament-curator,CVE-2026-69241: Filament Curator: Stored XSS via unsanitized SVG upload served inline,https://github.com/advisories/GHSA-8vm9-f75m-5h2m,2026-11-17
 CVE-2026-63389,medium,awcodes/filament-curator,CVE-2026-63389: Filament Curator: Cross-tenant media metadata disclosure via Curator picker search,https://github.com/advisories/GHSA-828w-6qgx-3rcf,2026-11-17
 CVE-2026-63672,medium,egroupware/egroupware,CVE-2026-63672: EGroupware: User-Controlled Identity Provider Selection in SAML Authentication,https://github.com/advisories/GHSA-pr4x-6fj4-gm4h,2026-11-17

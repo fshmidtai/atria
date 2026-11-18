@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T13:30:40+00:00",
+  "generated_at": "2026-11-18T17:20:19+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -18,12 +18,12 @@
       "the_hacker_news": 30
     },
     "by_topic": {
-      "security": 54,
-      "dev": 41,
-      "ai": 41,
-      "hardware": 15,
+      "security": 55,
+      "ai": 42,
+      "dev": 40,
+      "hardware": 13,
+      "science": 5,
       "crypto": 4,
-      "science": 4,
       "biz": 4
     },
     "top_domains": [
@@ -38,6 +38,25 @@
     ]
   },
   "items": [
+    {
+      "uid": "cve:GHSA-5hrj-7fc3-cmx9",
+      "source": "cve",
+      "title": "CVE-2026-130001: Mustache for Ruby: RCE using built-in method access",
+      "url": "https://github.com/advisories/GHSA-5hrj-7fc3-cmx9",
+      "ts": 1795019309.0,
+      "points": 6000,
+      "comments": 0,
+      "author": "mustache",
+      "summary": "Severity: critical. > [!NOTE]\n> The vulnerability was fully disclosed to the maintainer in private prior to security advisories were enabled for the project.\n> This advisory presents a limited information for initial release to provide a time window for installing updates. Full information with PoCs would be added late",
+      "recipe": "gh_advisories",
+      "buzz": 6080,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-18"
+    },
     {
       "uid": "cve:GHSA-gfv3-m769-5xm3",
       "source": "cve",
@@ -57,6 +76,23 @@
         "hardware"
       ],
       "date": "2026-11-17"
+    },
+    {
+      "uid": "cve:GHSA-xvcc-vqjv-phqh",
+      "source": "cve",
+      "title": "CVE-2026-63496: augment-virShell allows Command Injection in `grep()` via Unsanitized `searchPattern`",
+      "url": "https://github.com/advisories/GHSA-xvcc-vqjv-phqh",
+      "ts": 1795018552.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "@augment-vir/node",
+      "summary": "Severity: high. ## Shell Command Injection in `grep()` via Unsanitized `searchPattern`\n\n### Summary\n\nThe `grep()` function exported by `@augment-vir/node` inserts caller-controlled search patterns directly into a double-quoted shell command string without sanitization (`grep.ts:310`). When the constructed command i",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-11-18"
     },
     {
       "uid": "cve:GHSA-x2vm-cf3p-m2w8",
@@ -228,59 +264,23 @@
       "date": "2026-11-16"
     },
     {
-      "uid": "cve:GHSA-259w-wmqg-fp76",
+      "uid": "cve:GHSA-265x-v3qf-ff6p",
       "source": "cve",
-      "title": "CVE-2026-86046: termux-sync: Arbitrary file write during restore via attacker-controlled manifest source path",
-      "url": "https://github.com/advisories/GHSA-259w-wmqg-fp76",
-      "ts": 1794866964.0,
-      "points": 3500,
+      "title": "CVE-2026-61618: snark-verifier accepts non-canonical KZG accumulator limb encodings",
+      "url": "https://github.com/advisories/GHSA-265x-v3qf-ff6p",
+      "ts": 1795018414.0,
+      "points": 1800,
       "comments": 0,
-      "author": "termux-sync",
-      "summary": "Severity: high. termux-sync restore trusts fields inside an untrusted backup manifest and uses them as the extraction destination without validation.\n\nDuring restore, each archive entry is handled as:\n\n  src_dir = Path(info.get(\"source\", ...)).parent\n  extract_archive(archive, src_dir, ...)\n\nextract_archive opens t",
+      "author": "snark-verifier",
+      "summary": "Severity: medium. ### Summary\nKZG accumulator public-instance limbs were decoded without consistently enforcing canonical limb bounds before reconstructing elliptic-curve coordinates.\n\nIn the generated EVM verifier, accumulator coordinates were reconstructed from public-instance limbs using shifted additions before p",
       "recipe": "gh_advisories",
-      "buzz": 3530,
+      "buzz": 1880,
       "topics": [
         "dev",
+        "science",
         "security"
       ],
-      "date": "2026-11-16"
-    },
-    {
-      "uid": "cve:GHSA-jq3q-62jc-fqq9",
-      "source": "cve",
-      "title": "CVE-2026-68934: code-review-mcp-server: Command injection via unsanitized folderPath/baseBranch parameters",
-      "url": "https://github.com/advisories/GHSA-jq3q-62jc-fqq9",
-      "ts": 1794866946.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "code-review-mcp-server",
-      "summary": "Severity: high. ### Impact\n\n`code-review-mcp-server` exposes MCP tools (`getLocalGitDiff`, `codeReview`, `createPR`, `getPRTemplate`) that accept `folderPath` and `baseBranch` string parameters. These caller-controlled values were interpolated directly into shell command strings executed via `child_process.execSync",
-      "recipe": "gh_advisories",
-      "buzz": 3530,
-      "topics": [
-        "dev",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-16"
-    },
-    {
-      "uid": "cve:GHSA-w553-pwx6-3mg9",
-      "source": "cve",
-      "title": "CVE-2026-63182: lightsaml allows Signature wrapping bypass",
-      "url": "https://github.com/advisories/GHSA-w553-pwx6-3mg9",
-      "ts": 1794866918.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "litesaml/lightsaml",
-      "summary": "Severity: high. ### Summary\n\nLightSaml 5.0.0 (latest release; also confirmed on 4.6.1) validates an inbound `samlp:Response` by collecting its direct-child `saml:Assertion` elements and validating each one's `ds:Signature` via robrichards/xmlseclibs. The two layers disagree on which element a signature actually cov",
-      "recipe": "gh_advisories",
-      "buzz": 3530,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-16"
+      "date": "2026-11-18"
     },
     {
       "uid": "cve:GHSA-8vm9-f75m-5h2m",
@@ -368,7 +368,7 @@
       "author": "next",
       "summary": "Severity: medium. With Cache Components enabled, an outer `'use cache'` function can be keyed incorrectly even when its inner `'use cache'` call generates a fresh entry. If the inner function reads a root param (via `next/root-params`) and returns a value that still contains pending promises — for example an object w",
       "recipe": "gh_advisories",
-      "buzz": 1880,
+      "buzz": 1830,
       "topics": [
         "ai",
         "science",
@@ -602,6 +602,24 @@
       "date": "2026-11-16"
     },
     {
+      "uid": "rss:ec675127a0303a",
+      "source": "rss",
+      "title": "New EggStreme Malware Variant Goes Silent to Evade Security Tools in Government Attacks",
+      "url": "https://thehackernews.com/2026/11/eggstreme-hackers-rebuild-malware-with.html",
+      "ts": 1795011088.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "The suspected Chinese advanced persistent threat (APT) group behind the sophisticated EggStreme malware has rebuilt its toolkit as it continues to target government organizations in the Philippines. \"When attackers are exposed, the cheap response is to rotate,\" Bitdefender said in a technical report shared with The Hacker News. \"A file hash changes with every recompile, a domain costs a few",
+      "recipe": "the_hacker_news",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-18"
+    },
+    {
       "uid": "rss:186a434790fa0e",
       "source": "rss",
       "title": "New Attack Bypasses TPM Lockout to Crack Windows Hello and BitLocker PINs in Days, Not Years",
@@ -779,7 +797,7 @@
       "author": "info@thehackernews.com (The Hacker News)",
       "summary": "Oracle is preparing to release security patches for 11 vulnerabilities in Java SE on Tuesday, November 17, 2026, all of which may be exploited remotely without authentication, as separate reports warn of a potentially critical remote code execution (RCE) flaw affecting OpenJDK. The 11 vulnerabilities carry a maximum CVSS 3.1 severity score of 8.1, according to Oracle's advance security notice.",
       "recipe": "the_hacker_news",
-      "buzz": 80,
+      "buzz": 30,
       "topics": [
         "security"
       ],
@@ -796,7 +814,7 @@
       "author": "info@thehackernews.com (The Hacker News)",
       "summary": "Artificial intelligence (AI), blockchain, and logistics sectors across Europe and the U.S. have emerged as the target of a large-scale, industrialized campaign dubbed Trigram. \"Trigram is a large-scale campaign that impersonates about 50 brands in the blockchain and AI sectors, to trick developers into executing an infostealer themselves,\" Stormshield said in a deep-dive technical report",
       "recipe": "the_hacker_news",
-      "buzz": 80,
+      "buzz": 30,
       "topics": [
         "ai",
         "dev",
@@ -1139,24 +1157,6 @@
         "dev",
         "science",
         "security",
-        "hardware"
-      ],
-      "date": "2026-11-13"
-    },
-    {
-      "uid": "rss:563cd8d18fd7e0",
-      "source": "rss",
-      "title": "New Mior and Skyfall Attacks Let Rogue Cloud Hosts Steal Secrets From AMD SEV-SNP VMs",
-      "url": "https://thehackernews.com/2026/11/new-mior-and-skyfall-attacks-let-rogue.html",
-      "ts": 1794583625.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Two attacks made public this week allow a malicious host to read data inside AMD SEV-SNP-protected virtual machines (VMs), which are built to keep the server's operator out. One of them, Mior, can also modify a VM's memory and fake the signed report confirming which software it runs. Both need control of the server's hypervisor, and Mior also needs control of the server's BIOS. Researchers",
-      "recipe": "the_hacker_news",
-      "buzz": 10,
-      "topics": [
-        "dev",
         "hardware"
       ],
       "date": "2026-11-13"

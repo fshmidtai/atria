@@ -1,12 +1,14 @@
 uid,source,title,url,buzz,date,topics
 hn:37392676,hn,Ask HN: I’m an FCC Commissioner proposing regulation of IoT security updates,https://news.ycombinator.com/item?id=37392676,6162,2023-09-05,dev|security
 hn:43462783,hn,U.S. national-security leaders included me in a group chat,https://www.theatlantic.com/politics/archive/2025/03/trump-administration-accidentally-texted-me-its-war-plans/682151/,6156,2025-03-24,security
+cve:GHSA-5hrj-7fc3-cmx9,cve,CVE-2026-130001: Mustache for Ruby: RCE using built-in method access,https://github.com/advisories/GHSA-5hrj-7fc3-cmx9,6080,2026-11-18,ai|dev|security
 cve:GHSA-gfv3-m769-5xm3,cve,CVE-2026-53998: Phoenix: Format String Injection in applyChatTemplate,https://github.com/advisories/GHSA-gfv3-m769-5xm3,6080,2026-11-17,dev|crypto|security|hardware
 hn:48997548,hn,OpenAI and Hugging Face address security incident during model evaluation,https://openai.com/index/hugging-face-model-evaluation-security-incident/,5103,2026-07-21,ai|dev|biz|security
 hn:43128253,hn,Apple pulls data protection tool after UK government security row,https://www.bbc.com/news/articles/cgj54eq4vejo,4974,2025-02-21,security
 hn:39452494,hn,"Insecure vehicles should be banned, not security tools like the Flipper Zero",https://saveflipper.ca/,4130,2024-02-21,security
 hn:30051054,hn,Ask HN: Gmail account security,https://news.ycombinator.com/item?id=30051054,3830,2022-01-23,ai|dev|security
 hn:25729088,hn,"70TB of Parler users’ messages, videos, and posts leaked by security researchers",https://cybernews.com/news/70tb-of-parler-users-messages-videos-and-posts-leaked-by-security-researchers/,3745,2021-01-11,dev|security
+cve:GHSA-xvcc-vqjv-phqh,cve,CVE-2026-63496: augment-virShell allows Command Injection in `grep()` via Unsanitized `searchPattern`,https://github.com/advisories/GHSA-xvcc-vqjv-phqh,3580,2026-11-18,security
 cve:GHSA-x2vm-cf3p-m2w8,cve,CVE-2026-119793: libp2p: gossipsub creates a permanent topics-map entry per distinct subscription with no cap in the default config,https://github.com/advisories/GHSA-x2vm-cf3p-m2w8,3580,2026-11-17,security
 cve:GHSA-rvfr-cqwq-rc4j,cve,"CVE-2026-110789: libp2p: ASN.1 DER decoder drives an unbounded synchronous loop on attacker-controlled length fields, stalling the Node event loop pre-auth",https://github.com/advisories/GHSA-rvfr-cqwq-rc4j,3580,2026-11-17,dev|security
 cve:GHSA-r7hw-jx6r-756g,cve,CVE-2026-110782: SAML2: Incomplete fix of CVE-2026-49283: unsigned embedded Response bypasses HTTP-Artifact signature verification (no embedded-Issuer binding),https://github.com/advisories/GHSA-r7hw-jx6r-756g,3580,2026-11-17,ai|science|security
@@ -17,9 +19,6 @@ cve:GHSA-c94f-87xg-65wf,cve,CVE-2026-91115: Silverstripe Framework: RCE via i18n
 cve:GHSA-8vf2-hxg5-crqh,cve,CVE-2026-129236: Kubeshark: MCP `start_kubeshark` argument injection via `pod_regex` → image redirect → cluster takeover,https://github.com/advisories/GHSA-8vf2-hxg5-crqh,3530,2026-11-16,dev|security
 cve:GHSA-72px-j8gh-p79x,cve,CVE-2026-129297: mail-parser: Sender IP address spoofing in get_server_ipaddress(),https://github.com/advisories/GHSA-72px-j8gh-p79x,3530,2026-11-16,ai|dev|security|hardware
 cve:GHSA-r7w7-vpq8-c5vv,cve,CVE-2026-129295: mail-parser is vulnerable to polynomial ReDoS in email header parsing,https://github.com/advisories/GHSA-r7w7-vpq8-c5vv,3530,2026-11-16,ai|dev|security|hardware
-cve:GHSA-259w-wmqg-fp76,cve,CVE-2026-86046: termux-sync: Arbitrary file write during restore via attacker-controlled manifest source path,https://github.com/advisories/GHSA-259w-wmqg-fp76,3530,2026-11-16,dev|security
-cve:GHSA-jq3q-62jc-fqq9,cve,CVE-2026-68934: code-review-mcp-server: Command injection via unsanitized folderPath/baseBranch parameters,https://github.com/advisories/GHSA-jq3q-62jc-fqq9,3530,2026-11-16,dev|security|hardware
-cve:GHSA-w553-pwx6-3mg9,cve,CVE-2026-63182: lightsaml allows Signature wrapping bypass,https://github.com/advisories/GHSA-w553-pwx6-3mg9,3530,2026-11-16,ai|security
 hn:32148218,hn,FCC: TikTok is unacceptable security risk and should be removed from app stores,https://blog.malwarebytes.com/privacy-2/2022/07/tiktok-is-unacceptable-security-risk-and-should-be-removed-from-app-stores-says-fcc/,3376,2022-07-19,security
 hn:41392128,hn,Bypassing airport security via SQL injection,https://ian.sh/tsa,3324,2024-08-29,ai|security
 hn:41792500,hn,Internet Archive: Security breach alert,https://www.theverge.com/2024/10/9/24266419/internet-archive-ddos-attack-pop-up-message,2912,2024-10-09,security
@@ -37,14 +36,15 @@ hn:23180975,hn,Security Flaws in Adobe Acrobat Reader Allow Gaining Root on macO
 hn:50182987,hn,"Today's PHP security release, and how we're strengthening security",https://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security/,2034,2026-10-21,security
 hn:17592422,hn,Google: Security Keys Neutralized Employee Phishing,https://krebsonsecurity.com/2018/07/google-security-keys-neutered-employee-phishing/,2002,2018-07-23,security
 hn:24636166,hn,Apple’s T2 security chip jailbreak,https://reportcybercrime.com/hackers-jailbreak-apples-t2-security-chip-powered-by-bridgeos/,1881,2020-09-30,ai|security|hardware
+cve:GHSA-265x-v3qf-ff6p,cve,CVE-2026-61618: snark-verifier accepts non-canonical KZG accumulator limb encodings,https://github.com/advisories/GHSA-265x-v3qf-ff6p,1880,2026-11-18,dev|science|security
 cve:GHSA-8vm9-f75m-5h2m,cve,CVE-2026-69241: Filament Curator: Stored XSS via unsanitized SVG upload served inline,https://github.com/advisories/GHSA-8vm9-f75m-5h2m,1880,2026-11-17,ai|security
 cve:GHSA-828w-6qgx-3rcf,cve,CVE-2026-63389: Filament Curator: Cross-tenant media metadata disclosure via Curator picker search,https://github.com/advisories/GHSA-828w-6qgx-3rcf,1880,2026-11-17,ai|security
 cve:GHSA-pr4x-6fj4-gm4h,cve,CVE-2026-63672: EGroupware: User-Controlled Identity Provider Selection in SAML Authentication,https://github.com/advisories/GHSA-pr4x-6fj4-gm4h,1880,2026-11-17,ai|dev|security
 cve:GHSA-v858-xh7w-8jr5,cve,CVE-2026-63634: pympp allows excessive sponsored transaction fees through padded calldata,https://github.com/advisories/GHSA-v858-xh7w-8jr5,1880,2026-11-17,ai|dev|security|hardware
-cve:GHSA-vc7v-qv4w-wrv8,cve,CVE-2026-119351: Next.js: Cache leak across root param values in nested 'use cache' functions via delayed inner stream metadata,https://github.com/advisories/GHSA-vc7v-qv4w-wrv8,1880,2026-11-17,ai|science|security
 hn:48166459,hn,Mozilla to UK regulators: VPNs are essential privacy and security tools,https://blog.mozilla.org/netpolicy/2026/05/15/mozilla-to-uk-regulators-vpns-are-essential-privacy-and-security-tools-and-should-not-be-undermined/,1876,2026-05-17,security
 hn:6944118,hn,Secret contract tied NSA and security industry pioneer,http://www.reuters.com/article/2013/12/20/us-usa-security-rsa-idUSBRE9BJ1C220131220,1859,2013-12-20,security
 hn:13182120,hn,Yahoo installed a backdoor for the NSA behind the back of the security team,https://diracdeltas.github.io/blog/surveillance/,1849,2016-12-15,security
+cve:GHSA-vc7v-qv4w-wrv8,cve,CVE-2026-119351: Next.js: Cache leak across root param values in nested 'use cache' functions via delayed inner stream metadata,https://github.com/advisories/GHSA-vc7v-qv4w-wrv8,1830,2026-11-17,ai|science|security
 cve:GHSA-vx32-xf7g-9ghr,cve,CVE-2026-129237: qbee-agent: Docker Compose build context Zip Slip writes outside context directory,https://github.com/advisories/GHSA-vx32-xf7g-9ghr,1830,2026-11-16,ai|dev|security
 cve:GHSA-4qv2-g5vp-wjjw,cve,CVE-2026-91113: Silverstripe Framework: User-controlled ClassName allows unauthorized record type change,https://github.com/advisories/GHSA-4qv2-g5vp-wjjw,1830,2026-11-16,ai|dev|security
 cve:GHSA-rg72-5958-c65m,cve,CVE-2026-91112: Silverstripe Framework: CMS_ACCESS_SecurityAdmin privilege escalation,https://github.com/advisories/GHSA-rg72-5958-c65m,1830,2026-11-16,dev|security

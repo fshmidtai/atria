@@ -5,7 +5,44 @@
     <link>https://sentinel-post.pages.dev</link>
     <description>Автономная радиостанция кибербезопасности: живые CVE, угрозы и защита — без сенсаций</description>
     <language>ru</language>
-    <lastBuildDate>Wed, 18 Nov 2026 13:31:16 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 17:20:46 GMT</lastBuildDate>
+    <item>
+      <title>CVE-2026-130001: Mustache for Ruby: RCE using built-in method access</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-130001-mustache-for-ruby-rce-using-built-in-method-acce.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-130001-mustache-for-ruby-rce-using-built-in-method-acce.html</guid>
+      <pubDate>Wed, 18 Nov 2026 16:28:29 GMT</pubDate>
+      <description>Severity: critical. &gt; [!NOTE]
+&gt; The vulnerability was fully disclosed to the maintainer in private prior to security advisories were enabled for the project.
+&gt; This advisory presents a limited information for initial release to provide a time window for installing updates. Full information with PoCs</description>
+    </item>
+    <item>
+      <title>CVE-2026-63496: augment-virShell allows Command Injection in `grep()` via Unsanitized `searchPattern`</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-63496-augment-virshell-allows-command-injection-in-grep.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-63496-augment-virshell-allows-command-injection-in-grep.html</guid>
+      <pubDate>Wed, 18 Nov 2026 16:15:52 GMT</pubDate>
+      <description>Severity: high. ## Shell Command Injection in `grep()` via Unsanitized `searchPattern`
+
+### Summary
+
+The `grep()` function exported by `@augment-vir/node` inserts caller-controlled search patterns directly into a double-quoted shell command string without sanitization (`grep.ts:310`). When the const</description>
+    </item>
+    <item>
+      <title>CVE-2026-61618: snark-verifier accepts non-canonical KZG accumulator limb encodings</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-61618-snark-verifier-accepts-non-canonical-kzg-accumula.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-61618-snark-verifier-accepts-non-canonical-kzg-accumula.html</guid>
+      <pubDate>Wed, 18 Nov 2026 16:13:34 GMT</pubDate>
+      <description>Severity: medium. ### Summary
+KZG accumulator public-instance limbs were decoded without consistently enforcing canonical limb bounds before reconstructing elliptic-curve coordinates.
+
+In the generated EVM verifier, accumulator coordinates were reconstructed from public-instance limbs using shifted </description>
+    </item>
+    <item>
+      <title>New EggStreme Malware Variant Goes Silent to Evade Security Tools in Government Attacks</title>
+      <link>https://sentinel-post.pages.dev/item/new-eggstreme-malware-variant-goes-silent-to-evade-security-tool.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/new-eggstreme-malware-variant-goes-silent-to-evade-security-tool.html</guid>
+      <pubDate>Wed, 18 Nov 2026 14:11:28 GMT</pubDate>
+      <description>The suspected Chinese advanced persistent threat (APT) group behind the sophisticated EggStreme malware has rebuilt its toolkit as it continues to target government organizations in the Philippines. "When attackers are exposed, the cheap response is to rotate," Bitdefender said in a technical report</description>
+    </item>
     <item>
       <title>New Attack Bypasses TPM Lockout to Crack Windows Hello and BitLocker PINs in Days, Not Years</title>
       <link>https://sentinel-post.pages.dev/item/new-attack-bypasses-tpm-lockout-to-crack-windows-hello-and-bitlo.html</link>
@@ -213,34 +250,6 @@ A format string injection vulnerability in the applyChatTemplate GraphQL endpoin
       <guid isPermaLink="true">https://sentinel-post.pages.dev/item/hackers-found-a-way-around-github-sha-pinning-this-webinar-expla.html</guid>
       <pubDate>Tue, 17 Nov 2026 12:25:06 GMT</pubDate>
       <description>Pinning GitHub Actions to an exact version of their code, known as SHA pinning, has become the go-to defense against software supply chain attacks. Attackers have already found a way around it. In March 2026, the hackers who hijacked Trivy, a widely used open-source security scanner, planted malicio</description>
-    </item>
-    <item>
-      <title>Researchers Detail iPhone Flaw That Let Apps Record Audio Despite Denied Microphone Permission</title>
-      <link>https://sentinel-post.pages.dev/item/researchers-detail-iphone-flaw-that-let-apps-record-audio-despit.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/researchers-detail-iphone-flaw-that-let-apps-record-audio-despit.html</guid>
-      <pubDate>Tue, 17 Nov 2026 12:14:36 GMT</pubDate>
-      <description>A now-patched flaw in Apple's audio service let apps on iPhones and iPads record audio even after the user tapped "Don't Allow" on the microphone prompt. The first security updates with the fix came out on August 17. Neither Apple nor the two researchers who found the flaw report that it was used in</description>
-    </item>
-    <item>
-      <title>Formal Verification of the Signal Protocol Using AI</title>
-      <link>https://sentinel-post.pages.dev/item/formal-verification-of-the-signal-protocol-using-ai.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/formal-verification-of-the-signal-protocol-using-ai.html</guid>
-      <pubDate>Tue, 17 Nov 2026 12:06:37 GMT</pubDate>
-      <description>&lt;p&gt;&lt;a href="https://www.wired.com/story/a-new-ai-tool-from-google-deepmind-formally-verified-the-signal-protocol/"&gt;This&lt;/a&gt; seems like a good thing:&lt;/p&gt; &lt;blockquote&gt;&lt;p&gt;Google Deepmind researchers used agentic AI to mathematically prove, or “formally verify,” a number of the Signal protocol’s key cry</description>
-    </item>
-    <item>
-      <title>New GitDoor and GraphDoor Backdoors Turn GitHub and SharePoint Into Covert C2 Channels</title>
-      <link>https://sentinel-post.pages.dev/item/new-gitdoor-and-graphdoor-backdoors-turn-github-and-sharepoint-i.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/new-gitdoor-and-graphdoor-backdoors-turn-github-and-sharepoint-i.html</guid>
-      <pubDate>Tue, 17 Nov 2026 11:20:18 GMT</pubDate>
-      <description>Government sectors in Asia and Africa have been targeted by an active cyber intrusion campaign that delivers to previously undocumented backdoors that leverage legitimate services like Microsoft SharePoint and GitHub for command‑and‑control (C2). The activity has been codenamed Operation ShadowCloud</description>
-    </item>
-    <item>
-      <title>Apple Tightens macOS App Permissions to Limit Data Access Amid AI Agent Security Risks</title>
-      <link>https://sentinel-post.pages.dev/item/apple-tightens-macos-app-permissions-to-limit-data-access-amid-a.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/apple-tightens-macos-app-permissions-to-limit-data-access-amid-a.html</guid>
-      <pubDate>Tue, 17 Nov 2026 11:07:31 GMT</pubDate>
-      <description>Apple on Monday introduced new controls that allow Mac users to give more granular access to data they give to apps, including those that use artificial intelligence (AI) agents. The changes, currently previewed in macOS 27.3 beta 2, relate to increased transparency and more options for two of its A</description>
     </item>
   </channel>
 </rss>

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T13:31:16+00:00",
+  "generated_at": "2026-11-18T17:20:46+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -26,13 +26,13 @@
       "schneier": 10
     },
     "by_topic": {
-      "security": 110,
-      "ai": 71,
-      "dev": 58,
-      "hardware": 19,
+      "security": 111,
+      "ai": 72,
+      "dev": 57,
+      "hardware": 17,
       "biz": 9,
       "crypto": 7,
-      "science": 6
+      "science": 7
     },
     "top_domains": [
       [
@@ -174,6 +174,25 @@
       "date": "2025-03-24"
     },
     {
+      "uid": "cve:GHSA-5hrj-7fc3-cmx9",
+      "source": "cve",
+      "title": "CVE-2026-130001: Mustache for Ruby: RCE using built-in method access",
+      "url": "https://github.com/advisories/GHSA-5hrj-7fc3-cmx9",
+      "ts": 1795019309.0,
+      "points": 6000,
+      "comments": 0,
+      "author": "mustache",
+      "summary": "Severity: critical. > [!NOTE]\n> The vulnerability was fully disclosed to the maintainer in private prior to security advisories were enabled for the project.\n> This advisory presents a limited information for initial release to provide a time window for installing updates. Full information with PoCs would be added late",
+      "recipe": "gh_advisories",
+      "buzz": 6080,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-18"
+    },
+    {
       "uid": "cve:GHSA-gfv3-m769-5xm3",
       "source": "cve",
       "title": "CVE-2026-53998: Phoenix: Format String Injection in applyChatTemplate",
@@ -283,6 +302,23 @@
         "security"
       ],
       "date": "2021-01-11"
+    },
+    {
+      "uid": "cve:GHSA-xvcc-vqjv-phqh",
+      "source": "cve",
+      "title": "CVE-2026-63496: augment-virShell allows Command Injection in `grep()` via Unsanitized `searchPattern`",
+      "url": "https://github.com/advisories/GHSA-xvcc-vqjv-phqh",
+      "ts": 1795018552.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "@augment-vir/node",
+      "summary": "Severity: high. ## Shell Command Injection in `grep()` via Unsanitized `searchPattern`\n\n### Summary\n\nThe `grep()` function exported by `@augment-vir/node` inserts caller-controlled search patterns directly into a double-quoted shell command string without sanitization (`grep.ts:310`). When the constructed command i",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-11-18"
     },
     {
       "uid": "cve:GHSA-x2vm-cf3p-m2w8",
@@ -467,61 +503,6 @@
         "dev",
         "security",
         "hardware"
-      ],
-      "date": "2026-11-16"
-    },
-    {
-      "uid": "cve:GHSA-259w-wmqg-fp76",
-      "source": "cve",
-      "title": "CVE-2026-86046: termux-sync: Arbitrary file write during restore via attacker-controlled manifest source path",
-      "url": "https://github.com/advisories/GHSA-259w-wmqg-fp76",
-      "ts": 1794866964.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "termux-sync",
-      "summary": "Severity: high. termux-sync restore trusts fields inside an untrusted backup manifest and uses them as the extraction destination without validation.\n\nDuring restore, each archive entry is handled as:\n\n  src_dir = Path(info.get(\"source\", ...)).parent\n  extract_archive(archive, src_dir, ...)\n\nextract_archive opens t",
-      "recipe": "gh_advisories",
-      "buzz": 3530,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-16"
-    },
-    {
-      "uid": "cve:GHSA-jq3q-62jc-fqq9",
-      "source": "cve",
-      "title": "CVE-2026-68934: code-review-mcp-server: Command injection via unsanitized folderPath/baseBranch parameters",
-      "url": "https://github.com/advisories/GHSA-jq3q-62jc-fqq9",
-      "ts": 1794866946.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "code-review-mcp-server",
-      "summary": "Severity: high. ### Impact\n\n`code-review-mcp-server` exposes MCP tools (`getLocalGitDiff`, `codeReview`, `createPR`, `getPRTemplate`) that accept `folderPath` and `baseBranch` string parameters. These caller-controlled values were interpolated directly into shell command strings executed via `child_process.execSync",
-      "recipe": "gh_advisories",
-      "buzz": 3530,
-      "topics": [
-        "dev",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-16"
-    },
-    {
-      "uid": "cve:GHSA-w553-pwx6-3mg9",
-      "source": "cve",
-      "title": "CVE-2026-63182: lightsaml allows Signature wrapping bypass",
-      "url": "https://github.com/advisories/GHSA-w553-pwx6-3mg9",
-      "ts": 1794866918.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "litesaml/lightsaml",
-      "summary": "Severity: high. ### Summary\n\nLightSaml 5.0.0 (latest release; also confirmed on 4.6.1) validates an inbound `samlp:Response` by collecting its direct-child `saml:Assertion` elements and validating each one's `ds:Signature` via robrichards/xmlseclibs. The two layers disagree on which element a signature actually cov",
-      "recipe": "gh_advisories",
-      "buzz": 3530,
-      "topics": [
-        "ai",
-        "security"
       ],
       "date": "2026-11-16"
     },
@@ -819,6 +800,25 @@
       "date": "2020-09-30"
     },
     {
+      "uid": "cve:GHSA-265x-v3qf-ff6p",
+      "source": "cve",
+      "title": "CVE-2026-61618: snark-verifier accepts non-canonical KZG accumulator limb encodings",
+      "url": "https://github.com/advisories/GHSA-265x-v3qf-ff6p",
+      "ts": 1795018414.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "snark-verifier",
+      "summary": "Severity: medium. ### Summary\nKZG accumulator public-instance limbs were decoded without consistently enforcing canonical limb bounds before reconstructing elliptic-curve coordinates.\n\nIn the generated EVM verifier, accumulator coordinates were reconstructed from public-instance limbs using shifted additions before p",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "dev",
+        "science",
+        "security"
+      ],
+      "date": "2026-11-18"
+    },
+    {
       "uid": "cve:GHSA-8vm9-f75m-5h2m",
       "source": "cve",
       "title": "CVE-2026-69241: Filament Curator: Stored XSS via unsanitized SVG upload served inline",
@@ -894,25 +894,6 @@
       "date": "2026-11-17"
     },
     {
-      "uid": "cve:GHSA-vc7v-qv4w-wrv8",
-      "source": "cve",
-      "title": "CVE-2026-119351: Next.js: Cache leak across root param values in nested 'use cache' functions via delayed inner stream metadata",
-      "url": "https://github.com/advisories/GHSA-vc7v-qv4w-wrv8",
-      "ts": 1794932006.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "next",
-      "summary": "Severity: medium. With Cache Components enabled, an outer `'use cache'` function can be keyed incorrectly even when its inner `'use cache'` call generates a fresh entry. If the inner function reads a root param (via `next/root-params`) and returns a value that still contains pending promises — for example an object w",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "science",
-        "security"
-      ],
-      "date": "2026-11-17"
-    },
-    {
       "uid": "hn:48166459",
       "source": "hn",
       "title": "Mozilla to UK regulators: VPNs are essential privacy and security tools",
@@ -962,6 +943,25 @@
         "security"
       ],
       "date": "2016-12-15"
+    },
+    {
+      "uid": "cve:GHSA-vc7v-qv4w-wrv8",
+      "source": "cve",
+      "title": "CVE-2026-119351: Next.js: Cache leak across root param values in nested 'use cache' functions via delayed inner stream metadata",
+      "url": "https://github.com/advisories/GHSA-vc7v-qv4w-wrv8",
+      "ts": 1794932006.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "next",
+      "summary": "Severity: medium. With Cache Components enabled, an outer `'use cache'` function can be keyed incorrectly even when its inner `'use cache'` call generates a fresh entry. If the inner function reads a root param (via `next/root-params`) and returns a value that still contains pending promises — for example an object w",
+      "recipe": "gh_advisories",
+      "buzz": 1830,
+      "topics": [
+        "ai",
+        "science",
+        "security"
+      ],
+      "date": "2026-11-17"
     },
     {
       "uid": "cve:GHSA-vx32-xf7g-9ghr",
@@ -1451,12 +1451,12 @@
       "title": "LoopGrubDolmen/wallet-security-desk",
       "url": "https://github.com/LoopGrubDolmen/wallet-security-desk",
       "ts": 1794768281.0,
-      "points": 98,
+      "points": 92,
       "comments": 0,
       "author": "LoopGrubDolmen",
       "summary": "Self-custody wallet hygiene desk — seed storage drills and phishing red flags.",
       "recipe": "github_sec",
-      "buzz": 128,
+      "buzz": 122,
       "topics": [
         "ai",
         "security"
@@ -1486,12 +1486,12 @@
       "title": "rammahmagdy/Latch",
       "url": "https://github.com/rammahmagdy/Latch",
       "ts": 1794964122.0,
-      "points": 24,
+      "points": 27,
       "comments": 2,
       "author": "rammahmagdy",
       "summary": "Lock any app or folder behind Touch ID, Windows Hello or a password. Mac and Windows. Free for personal use.",
       "recipe": "github_sec",
-      "buzz": 110,
+      "buzz": 113,
       "topics": [],
       "date": "2026-11-18"
     },
@@ -1562,6 +1562,24 @@
       "topics": [
         "ai",
         "dev"
+      ],
+      "date": "2026-11-18"
+    },
+    {
+      "uid": "rss:ec675127a0303a",
+      "source": "rss",
+      "title": "New EggStreme Malware Variant Goes Silent to Evade Security Tools in Government Attacks",
+      "url": "https://thehackernews.com/2026/11/eggstreme-hackers-rebuild-malware-with.html",
+      "ts": 1795011088.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "The suspected Chinese advanced persistent threat (APT) group behind the sophisticated EggStreme malware has rebuilt its toolkit as it continues to target government organizations in the Philippines. \"When attackers are exposed, the cheap response is to rotate,\" Bitdefender said in a technical report shared with The Hacker News. \"A file hash changes with every recompile, a domain costs a few",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "security"
       ],
       "date": "2026-11-18"
     },
@@ -1733,42 +1751,6 @@
       "date": "2026-11-17"
     },
     {
-      "uid": "rss:03ac2339a65ac4",
-      "source": "rss",
-      "title": "Oracle to Patch 11 Java Flaws Today as Critical OpenJDK RCE (CVE-2026-114938) Report Emerges",
-      "url": "https://thehackernews.com/2026/11/oracle-to-patch-11-java-flaws-today-as.html",
-      "ts": 1794928656.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Oracle is preparing to release security patches for 11 vulnerabilities in Java SE on Tuesday, November 17, 2026, all of which may be exploited remotely without authentication, as separate reports warn of a potentially critical remote code execution (RCE) flaw affecting OpenJDK. The 11 vulnerabilities carry a maximum CVSS 3.1 severity score of 8.1, according to Oracle's advance security notice.",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "security"
-      ],
-      "date": "2026-11-17"
-    },
-    {
-      "uid": "rss:f53039a88443dd",
-      "source": "rss",
-      "title": "Trigram Campaign Impersonates About 50 AI and Blockchain Brands to Target Devs with Infostealers",
-      "url": "https://thehackernews.com/2026/11/trigram-campaign-impersonates-about-50.html",
-      "ts": 1794928648.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Artificial intelligence (AI), blockchain, and logistics sectors across Europe and the U.S. have emerged as the target of a large-scale, industrialized campaign dubbed Trigram. \"Trigram is a large-scale campaign that impersonates about 50 brands in the blockchain and AI sectors, to trick developers into executing an infostealer themselves,\" Stormshield said in a deep-dive technical report",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "dev",
-        "crypto"
-      ],
-      "date": "2026-11-17"
-    },
-    {
       "uid": "gh:BountyForge-xyz/pwn-skill",
       "source": "github",
       "title": "BountyForge-xyz/pwn-skill",
@@ -1792,12 +1774,12 @@
       "title": "NPCmillionaire/unredact.tools",
       "url": "https://github.com/NPCmillionaire/unredact.tools",
       "ts": 1794511431.0,
-      "points": 41,
+      "points": 44,
       "comments": 2,
       "author": "NPCmillionaire",
       "summary": "See what your files leak (GPS, serials, authors, failed redactions, deleted text, watermarks), then scrub them.",
       "recipe": "github_sec",
-      "buzz": 57,
+      "buzz": 60,
       "topics": [
         "ai"
       ],
@@ -1872,6 +1854,42 @@
         "security"
       ],
       "date": "2026-11-16"
+    },
+    {
+      "uid": "rss:03ac2339a65ac4",
+      "source": "rss",
+      "title": "Oracle to Patch 11 Java Flaws Today as Critical OpenJDK RCE (CVE-2026-114938) Report Emerges",
+      "url": "https://thehackernews.com/2026/11/oracle-to-patch-11-java-flaws-today-as.html",
+      "ts": 1794928656.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Oracle is preparing to release security patches for 11 vulnerabilities in Java SE on Tuesday, November 17, 2026, all of which may be exploited remotely without authentication, as separate reports warn of a potentially critical remote code execution (RCE) flaw affecting OpenJDK. The 11 vulnerabilities carry a maximum CVSS 3.1 severity score of 8.1, according to Oracle's advance security notice.",
+      "recipe": "hackersnews",
+      "buzz": 30,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-11-17"
+    },
+    {
+      "uid": "rss:f53039a88443dd",
+      "source": "rss",
+      "title": "Trigram Campaign Impersonates About 50 AI and Blockchain Brands to Target Devs with Infostealers",
+      "url": "https://thehackernews.com/2026/11/trigram-campaign-impersonates-about-50.html",
+      "ts": 1794928648.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Artificial intelligence (AI), blockchain, and logistics sectors across Europe and the U.S. have emerged as the target of a large-scale, industrialized campaign dubbed Trigram. \"Trigram is a large-scale campaign that impersonates about 50 brands in the blockchain and AI sectors, to trick developers into executing an infostealer themselves,\" Stormshield said in a deep-dive technical report",
+      "recipe": "hackersnews",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "dev",
+        "crypto"
+      ],
+      "date": "2026-11-17"
     },
     {
       "uid": "rss:1c024142ae254b",
@@ -2312,24 +2330,6 @@
         "dev",
         "science",
         "security",
-        "hardware"
-      ],
-      "date": "2026-11-13"
-    },
-    {
-      "uid": "rss:563cd8d18fd7e0",
-      "source": "rss",
-      "title": "New Mior and Skyfall Attacks Let Rogue Cloud Hosts Steal Secrets From AMD SEV-SNP VMs",
-      "url": "https://thehackernews.com/2026/11/new-mior-and-skyfall-attacks-let-rogue.html",
-      "ts": 1794583625.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Two attacks made public this week allow a malicious host to read data inside AMD SEV-SNP-protected virtual machines (VMs), which are built to keep the server's operator out. One of them, Mior, can also modify a VM's memory and fake the signed report confirming which software it runs. Both need control of the server's hypervisor, and Mior also needs control of the server's BIOS. Researchers",
-      "recipe": "hackersnews",
-      "buzz": 10,
-      "topics": [
-        "dev",
         "hardware"
       ],
       "date": "2026-11-13"

@@ -1,5 +1,7 @@
 uid,source,title,url,buzz,date,topics
+cve:GHSA-5hrj-7fc3-cmx9,cve,CVE-2026-130001: Mustache for Ruby: RCE using built-in method access,https://github.com/advisories/GHSA-5hrj-7fc3-cmx9,6080,2026-11-18,ai|dev|security
 cve:GHSA-gfv3-m769-5xm3,cve,CVE-2026-53998: Phoenix: Format String Injection in applyChatTemplate,https://github.com/advisories/GHSA-gfv3-m769-5xm3,6080,2026-11-17,dev|crypto|security|hardware
+cve:GHSA-xvcc-vqjv-phqh,cve,CVE-2026-63496: augment-virShell allows Command Injection in `grep()` via Unsanitized `searchPattern`,https://github.com/advisories/GHSA-xvcc-vqjv-phqh,3580,2026-11-18,security
 cve:GHSA-x2vm-cf3p-m2w8,cve,CVE-2026-119793: libp2p: gossipsub creates a permanent topics-map entry per distinct subscription with no cap in the default config,https://github.com/advisories/GHSA-x2vm-cf3p-m2w8,3580,2026-11-17,security
 cve:GHSA-rvfr-cqwq-rc4j,cve,"CVE-2026-110789: libp2p: ASN.1 DER decoder drives an unbounded synchronous loop on attacker-controlled length fields, stalling the Node event loop pre-auth",https://github.com/advisories/GHSA-rvfr-cqwq-rc4j,3580,2026-11-17,dev|security
 cve:GHSA-r7hw-jx6r-756g,cve,CVE-2026-110782: SAML2: Incomplete fix of CVE-2026-49283: unsigned embedded Response bypasses HTTP-Artifact signature verification (no embedded-Issuer binding),https://github.com/advisories/GHSA-r7hw-jx6r-756g,3580,2026-11-17,ai|science|security
@@ -9,14 +11,12 @@ cve:GHSA-c94f-87xg-65wf,cve,CVE-2026-91115: Silverstripe Framework: RCE via i18n
 cve:GHSA-8vf2-hxg5-crqh,cve,CVE-2026-129236: Kubeshark: MCP `start_kubeshark` argument injection via `pod_regex` → image redirect → cluster takeover,https://github.com/advisories/GHSA-8vf2-hxg5-crqh,3530,2026-11-16,dev|security
 cve:GHSA-72px-j8gh-p79x,cve,CVE-2026-129297: mail-parser: Sender IP address spoofing in get_server_ipaddress(),https://github.com/advisories/GHSA-72px-j8gh-p79x,3530,2026-11-16,ai|dev|security|hardware
 cve:GHSA-r7w7-vpq8-c5vv,cve,CVE-2026-129295: mail-parser is vulnerable to polynomial ReDoS in email header parsing,https://github.com/advisories/GHSA-r7w7-vpq8-c5vv,3530,2026-11-16,ai|dev|security|hardware
-cve:GHSA-259w-wmqg-fp76,cve,CVE-2026-86046: termux-sync: Arbitrary file write during restore via attacker-controlled manifest source path,https://github.com/advisories/GHSA-259w-wmqg-fp76,3530,2026-11-16,dev|security
-cve:GHSA-jq3q-62jc-fqq9,cve,CVE-2026-68934: code-review-mcp-server: Command injection via unsanitized folderPath/baseBranch parameters,https://github.com/advisories/GHSA-jq3q-62jc-fqq9,3530,2026-11-16,dev|security|hardware
-cve:GHSA-w553-pwx6-3mg9,cve,CVE-2026-63182: lightsaml allows Signature wrapping bypass,https://github.com/advisories/GHSA-w553-pwx6-3mg9,3530,2026-11-16,ai|security
+cve:GHSA-265x-v3qf-ff6p,cve,CVE-2026-61618: snark-verifier accepts non-canonical KZG accumulator limb encodings,https://github.com/advisories/GHSA-265x-v3qf-ff6p,1880,2026-11-18,dev|science|security
 cve:GHSA-8vm9-f75m-5h2m,cve,CVE-2026-69241: Filament Curator: Stored XSS via unsanitized SVG upload served inline,https://github.com/advisories/GHSA-8vm9-f75m-5h2m,1880,2026-11-17,ai|security
 cve:GHSA-828w-6qgx-3rcf,cve,CVE-2026-63389: Filament Curator: Cross-tenant media metadata disclosure via Curator picker search,https://github.com/advisories/GHSA-828w-6qgx-3rcf,1880,2026-11-17,ai|security
 cve:GHSA-pr4x-6fj4-gm4h,cve,CVE-2026-63672: EGroupware: User-Controlled Identity Provider Selection in SAML Authentication,https://github.com/advisories/GHSA-pr4x-6fj4-gm4h,1880,2026-11-17,ai|dev|security
 cve:GHSA-v858-xh7w-8jr5,cve,CVE-2026-63634: pympp allows excessive sponsored transaction fees through padded calldata,https://github.com/advisories/GHSA-v858-xh7w-8jr5,1880,2026-11-17,ai|dev|security|hardware
-cve:GHSA-vc7v-qv4w-wrv8,cve,CVE-2026-119351: Next.js: Cache leak across root param values in nested 'use cache' functions via delayed inner stream metadata,https://github.com/advisories/GHSA-vc7v-qv4w-wrv8,1880,2026-11-17,ai|science|security
+cve:GHSA-vc7v-qv4w-wrv8,cve,CVE-2026-119351: Next.js: Cache leak across root param values in nested 'use cache' functions via delayed inner stream metadata,https://github.com/advisories/GHSA-vc7v-qv4w-wrv8,1830,2026-11-17,ai|science|security
 cve:GHSA-vx32-xf7g-9ghr,cve,CVE-2026-129237: qbee-agent: Docker Compose build context Zip Slip writes outside context directory,https://github.com/advisories/GHSA-vx32-xf7g-9ghr,1830,2026-11-16,ai|dev|security
 cve:GHSA-4qv2-g5vp-wjjw,cve,CVE-2026-91113: Silverstripe Framework: User-controlled ClassName allows unauthorized record type change,https://github.com/advisories/GHSA-4qv2-g5vp-wjjw,1830,2026-11-16,ai|dev|security
 cve:GHSA-rg72-5958-c65m,cve,CVE-2026-91112: Silverstripe Framework: CMS_ACCESS_SecurityAdmin privilege escalation,https://github.com/advisories/GHSA-rg72-5958-c65m,1830,2026-11-16,dev|security
@@ -29,6 +29,7 @@ cve:GHSA-xhrq-2mqv-q8wx,cve,CVE-2026-129300: mail-parser: Uncaught `OverflowErro
 cve:GHSA-gj7r-p794-hhq5,cve,CVE-2026-129235: Kubeshark: MCP `download_file` writes fetched bytes to an unvalidated destination path,https://github.com/advisories/GHSA-gj7r-p794-hhq5,1830,2026-11-16,dev|security
 cve:GHSA-24mq-4vc6-2prf,cve,CVE-2026-129299: mail-parser: Uncaught exceptions and silent header loss in mail-parser on attacker-controlled input,https://github.com/advisories/GHSA-24mq-4vc6-2prf,1830,2026-11-16,ai|dev|security
 cve:GHSA-fr3h-cpq2-9496,cve,CVE-2026-129296: mail-parser: Path Traversal vulnerability in attachment extraction,https://github.com/advisories/GHSA-fr3h-cpq2-9496,1830,2026-11-16,ai|dev|security
+rss:ec675127a0303a,rss,New EggStreme Malware Variant Goes Silent to Evade Security Tools in Government Attacks,https://thehackernews.com/2026/11/eggstreme-hackers-rebuild-malware-with.html,80,2026-11-18,ai|security
 rss:186a434790fa0e,rss,"New Attack Bypasses TPM Lockout to Crack Windows Hello and BitLocker PINs in Days, Not Years",https://thehackernews.com/2026/11/flash-chip-attack-bypasses-tpm-lockout.html,80,2026-11-18,dev
 rss:ef8d44482a5df2,rss,AI Pentesting Checklist for Web Apps: 15 Questions to Ask Before Choosing a Vendor,https://thehackernews.com/2026/11/ai-pentesting-checklist-for-web-apps-15.html,80,2026-11-18,ai|security
 rss:deec20c9952c51,rss,"Java4Shell Flaw (CVE-2026-114938) Enables Pre-Auth RCE in Jira, Jenkins, Keycloak and More",https://thehackernews.com/2026/11/java4shell-cve-2026-114938-enables-pre.html,80,2026-11-18,dev|security|hardware
@@ -38,8 +39,8 @@ rss:dd81c2f42ccc53,rss,CISA Urges Immediate Patching of Java4Shell Flaw That Cou
 rss:eb400c4d4b568d,rss,Attackers Compromise Microsoft's Agent Framework PyPI Package to Steal Cloud Credentials,https://thehackernews.com/2026/11/attackers-compromise-microsofts-agent.html,80,2026-11-18,ai|dev|security
 rss:a64d85f43b086d,rss,Russian COLD RELIC Hackers Use Stolen Google Workspace Data to Breach Second U.S. Organization,https://thehackernews.com/2026/11/russian-cold-relic-hackers-use-stolen.html,80,2026-11-18,ai|science|biz|security
 rss:2041eca737d343,rss,Researchers Claim Two RCE Exploits That Bypass Telegram’s New Android Defenses,https://thehackernews.com/2026/11/researchers-claim-two-rce-exploits-that.html,80,2026-11-17,ai|dev|security|hardware
-rss:03ac2339a65ac4,rss,Oracle to Patch 11 Java Flaws Today as Critical OpenJDK RCE (CVE-2026-114938) Report Emerges,https://thehackernews.com/2026/11/oracle-to-patch-11-java-flaws-today-as.html,80,2026-11-17,security
-rss:f53039a88443dd,rss,Trigram Campaign Impersonates About 50 AI and Blockchain Brands to Target Devs with Infostealers,https://thehackernews.com/2026/11/trigram-campaign-impersonates-about-50.html,80,2026-11-17,ai|dev|crypto
+rss:03ac2339a65ac4,rss,Oracle to Patch 11 Java Flaws Today as Critical OpenJDK RCE (CVE-2026-114938) Report Emerges,https://thehackernews.com/2026/11/oracle-to-patch-11-java-flaws-today-as.html,30,2026-11-17,security
+rss:f53039a88443dd,rss,Trigram Campaign Impersonates About 50 AI and Blockchain Brands to Target Devs with Infostealers,https://thehackernews.com/2026/11/trigram-campaign-impersonates-about-50.html,30,2026-11-17,ai|dev|crypto
 rss:1c024142ae254b,rss,Hackers Found a Way Around GitHub SHA Pinning. This Webinar Explains How to Close the Gap,https://thehackernews.com/2026/11/hackers-found-way-around-github-sha.html,30,2026-11-17,ai|dev|security
 rss:e916a14ca26c1c,rss,Researchers Detail iPhone Flaw That Let Apps Record Audio Despite Denied Microphone Permission,https://thehackernews.com/2026/11/researchers-detail-iphone-flaw-that-let.html,30,2026-11-17,ai|security
 rss:36ff9887a88dfa,rss,New GitDoor and GraphDoor Backdoors Turn GitHub and SharePoint Into Covert C2 Channels,https://thehackernews.com/2026/11/new-gitdoor-and-graphdoor-backdoors.html,30,2026-11-17,ai|dev|security
@@ -48,4 +49,3 @@ rss:ab3ce7e511f8c6,rss,"Hijacked Optimizely Scripts Served Card Skimmer and iOS 
 rss:1478251080c724,rss,ConnectWise Warns ScreenConnect Attacks Continue as SCKit Targets Unpatched Systems,https://thehackernews.com/2026/11/connectwise-warns-screenconnect-attacks.html,30,2026-11-17,ai|dev|biz
 rss:b3c5657f82d0e1,rss,N-able Patches 17 N-central Flaws as Attackers Exploit Earlier Bugs to Deploy Crypto Miners,https://thehackernews.com/2026/11/n-able-patches-17-n-central-flaws-as.html,30,2026-11-17,ai|crypto|security
 rss:a848b6775e4e6c,rss,Google Finds Hackers Using AI Agents to Build and Run Exploits From Software Patches,https://thehackernews.com/2026/11/google-finds-hackers-using-ai-agents-to.html,30,2026-11-16,ai|dev|security
-rss:ef045dd0f58580,rss,"⚡ Weekly Recap: N-able 0-Days, Windows 0-Days, Chrome 0-Days, Fridge 0-Days, and More Bad Days",https://thehackernews.com/2026/11/weekly-recap-n-able-0-days-windows-0.html,30,2026-11-16,ai|dev|security

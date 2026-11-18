@@ -5,7 +5,44 @@
     <link>https://cveradar-ah3.pages.dev</link>
     <description>Живые CVE и уязвимости на русском: автономный перевод угроз в понятные дайджесты для DevOps и небольшого SecOps</description>
     <language>ru</language>
-    <lastBuildDate>Wed, 18 Nov 2026 13:30:40 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 17:20:20 GMT</lastBuildDate>
+    <item>
+      <title>CVE-2026-130001: Mustache for Ruby: RCE using built-in method access</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-130001-mustache-for-ruby-rce-using-built-in-method-acce.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-130001-mustache-for-ruby-rce-using-built-in-method-acce.html</guid>
+      <pubDate>Wed, 18 Nov 2026 16:28:29 GMT</pubDate>
+      <description>Severity: critical. &gt; [!NOTE]
+&gt; The vulnerability was fully disclosed to the maintainer in private prior to security advisories were enabled for the project.
+&gt; This advisory presents a limited information for initial release to provide a time window for installing updates. Full information with PoCs</description>
+    </item>
+    <item>
+      <title>CVE-2026-63496: augment-virShell allows Command Injection in `grep()` via Unsanitized `searchPattern`</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-63496-augment-virshell-allows-command-injection-in-grep.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-63496-augment-virshell-allows-command-injection-in-grep.html</guid>
+      <pubDate>Wed, 18 Nov 2026 16:15:52 GMT</pubDate>
+      <description>Severity: high. ## Shell Command Injection in `grep()` via Unsanitized `searchPattern`
+
+### Summary
+
+The `grep()` function exported by `@augment-vir/node` inserts caller-controlled search patterns directly into a double-quoted shell command string without sanitization (`grep.ts:310`). When the const</description>
+    </item>
+    <item>
+      <title>CVE-2026-61618: snark-verifier accepts non-canonical KZG accumulator limb encodings</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-61618-snark-verifier-accepts-non-canonical-kzg-accumula.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-61618-snark-verifier-accepts-non-canonical-kzg-accumula.html</guid>
+      <pubDate>Wed, 18 Nov 2026 16:13:34 GMT</pubDate>
+      <description>Severity: medium. ### Summary
+KZG accumulator public-instance limbs were decoded without consistently enforcing canonical limb bounds before reconstructing elliptic-curve coordinates.
+
+In the generated EVM verifier, accumulator coordinates were reconstructed from public-instance limbs using shifted </description>
+    </item>
+    <item>
+      <title>New EggStreme Malware Variant Goes Silent to Evade Security Tools in Government Attacks</title>
+      <link>https://cveradar-ah3.pages.dev/item/new-eggstreme-malware-variant-goes-silent-to-evade-security-tool.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/new-eggstreme-malware-variant-goes-silent-to-evade-security-tool.html</guid>
+      <pubDate>Wed, 18 Nov 2026 14:11:28 GMT</pubDate>
+      <description>The suspected Chinese advanced persistent threat (APT) group behind the sophisticated EggStreme malware has rebuilt its toolkit as it continues to target government organizations in the Philippines. "When attackers are exposed, the cheap response is to rotate," Bitdefender said in a technical report</description>
+    </item>
     <item>
       <title>New Attack Bypasses TPM Lockout to Crack Windows Hello and BitLocker PINs in Days, Not Years</title>
       <link>https://cveradar-ah3.pages.dev/item/new-attack-bypasses-tpm-lockout-to-crack-windows-hello-and-bitlo.html</link>
@@ -213,42 +250,6 @@ A format string injection vulnerability in the applyChatTemplate GraphQL endpoin
       <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/apple-tightens-macos-app-permissions-to-limit-data-access-amid-a.html</guid>
       <pubDate>Tue, 17 Nov 2026 11:07:31 GMT</pubDate>
       <description>Apple on Monday introduced new controls that allow Mac users to give more granular access to data they give to apps, including those that use artificial intelligence (AI) agents. The changes, currently previewed in macOS 27.3 beta 2, relate to increased transparency and more options for two of its A</description>
-    </item>
-    <item>
-      <title>Hijacked Optimizely Scripts Served Card Skimmer and iOS Exploit Kits to CNN, BBC and Zoom Visitors</title>
-      <link>https://cveradar-ah3.pages.dev/item/hijacked-optimizely-scripts-served-card-skimmer-and-ios-exploit-.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/hijacked-optimizely-scripts-served-card-skimmer-and-ios-exploit-.html</guid>
-      <pubDate>Tue, 17 Nov 2026 07:12:13 GMT</pubDate>
-      <description>An attacker exploited a flaw in Optimizely Web Experimentation to plant malicious code in some of the scripts that customers' websites load from the service, Optimizely said early today. Visitors to sites run by at least 178 organizations, including CNN, the BBC and Zoom, received the code yesterday</description>
-    </item>
-    <item>
-      <title>ConnectWise Warns ScreenConnect Attacks Continue as SCKit Targets Unpatched Systems</title>
-      <link>https://cveradar-ah3.pages.dev/item/connectwise-warns-screenconnect-attacks-continue-as-sckit-target.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/connectwise-warns-screenconnect-attacks-continue-as-sckit-target.html</guid>
-      <pubDate>Tue, 17 Nov 2026 06:29:27 GMT</pubDate>
-      <description>ConnectWise on Monday said it completed its investigation into unauthorized access targeting partner ScreenConnect environments, and recommended customers to ensure that the technician client is running version 26.6.5 or later. The company said additional activity targeting on-premises environments </description>
-    </item>
-    <item>
-      <title>N-able Patches 17 N-central Flaws as Attackers Exploit Earlier Bugs to Deploy Crypto Miners</title>
-      <link>https://cveradar-ah3.pages.dev/item/n-able-patches-17-n-central-flaws-as-attackers-exploit-earlier-b.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/n-able-patches-17-n-central-flaws-as-attackers-exploit-earlier-b.html</guid>
-      <pubDate>Tue, 17 Nov 2026 05:00:34 GMT</pubDate>
-      <description>N-able has released a new security update to address additional critical security flaws impacting N-central. Describing N-central 2026.4 Hotfix 3 as a critical security update, the company said it includes a number of security patches and fixes that enhance the security of the Remote Monitoring and </description>
-    </item>
-    <item>
-      <title>CVE-2026-129237: qbee-agent: Docker Compose build context Zip Slip writes outside context directory</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-129237-qbee-agent-docker-compose-build-context-zip-slip.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-129237-qbee-agent-docker-compose-build-context-zip-slip.html</guid>
-      <pubDate>Mon, 16 Nov 2026 22:35:40 GMT</pubDate>
-      <description>Severity: medium. ## Summary
-
-`qbee-agent` contains a Zip Slip vulnerability in `app/utils/tar.go`. The tar extractor checks whether an entry remains inside the destination directory with:
-
-```go
-strings.HasPrefix(targetPath, destdirClean)
-```
-
-This does not enforce a path separator boundary. If the</description>
     </item>
   </channel>
 </rss>
