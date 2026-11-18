@@ -1,6 +1,11 @@
 cve_id,severity,package,title,url,date
+CVE-2026-69157,critical,atomic-server,CVE-2026-69157: Atomic Server: Unauthenticated `/setup` invite grants write access to the entire Drive,https://github.com/advisories/GHSA-pfwx-xjp4-qxcj,2026-11-18
 CVE-2026-130001,critical,mustache,CVE-2026-130001: Mustache for Ruby: RCE using built-in method access,https://github.com/advisories/GHSA-5hrj-7fc3-cmx9,2026-11-18
 CVE-2026-53998,critical,arize-phoenix,CVE-2026-53998: Phoenix: Format String Injection in applyChatTemplate,https://github.com/advisories/GHSA-gfv3-m769-5xm3,2026-11-17
+CVE-2026-71481,high,altcha-org/altcha,CVE-2026-71481: ALTCHA PHP: verifySolution bypasses HMAC signature check when challenge signature is absent,https://github.com/advisories/GHSA-82w8-65qw-gch6,2026-11-18
+CVE-2026-69158,high,atomic-server,CVE-2026-69158: Atomic Server: Unauthenticated full-response SSRF in Atomic-Server /bookmark endpoint,https://github.com/advisories/GHSA-ff87-73jp-f3v4,2026-11-18
+CVE-2026-69156,high,atomic-server,CVE-2026-69156: Atomic Server: Arbitrary file read via user-controlled `internalId` in the `/download` handler (leaks root agent private key),https://github.com/advisories/GHSA-8vc4-8hjq-988p,2026-11-18
+CVE-2026-69155,high,atomic-server,CVE-2026-69155: Atomic Server: Stored XSS via uploaded files served inline (same-origin) on `/download` → account takeover,https://github.com/advisories/GHSA-x277-3wcg-g9r2,2026-11-18
 CVE-2026-63496,high,@augment-vir/node,CVE-2026-63496: augment-virShell allows Command Injection in `grep()` via Unsanitized `searchPattern`,https://github.com/advisories/GHSA-xvcc-vqjv-phqh,2026-11-18
 CVE-2026-119793,high,@libp2p/gossipsub,CVE-2026-119793: libp2p: gossipsub creates a permanent topics-map entry per distinct subscription with no cap in the default config,https://github.com/advisories/GHSA-x2vm-cf3p-m2w8,2026-11-17
 CVE-2026-110789,high,@libp2p/crypto,"CVE-2026-110789: libp2p: ASN.1 DER decoder drives an unbounded synchronous loop on attacker-controlled length fields, stalling the Node event loop pre-auth",https://github.com/advisories/GHSA-rvfr-cqwq-rc4j,2026-11-17
@@ -8,9 +13,7 @@ CVE-2026-110782,high,simplesamlphp/saml2,CVE-2026-110782: SAML2: Incomplete fix 
 CVE-2026-62336,high,go.qbee.io/agent,CVE-2026-62336: qbee-agent: Local Privilege Escalation and Arbitrary File Tampering via Symlink Following in createFile helper,https://github.com/advisories/GHSA-xhv5-8fpq-g7hf,2026-11-17
 CVE-2026-14265,high,software.amazon.jdbc:aws-advanced-jdbc-wrapper,CVE-2026-14265: AWS-advanced-jdbc-wrapper: Java Deserialization RCE via Cache Poisoning,https://github.com/advisories/GHSA-c5q4-97jw-jggh,2026-11-17
 CVE-2026-91115,high,silverstripe/framework,CVE-2026-91115: Silverstripe Framework: RCE via i18nTextCollectorTask writer parameter,https://github.com/advisories/GHSA-c94f-87xg-65wf,2026-11-16
-CVE-2026-129236,high,github.com/kubeshark/kubeshark,CVE-2026-129236: Kubeshark: MCP `start_kubeshark` argument injection via `pod_regex` → image redirect → cluster takeover,https://github.com/advisories/GHSA-8vf2-hxg5-crqh,2026-11-16
-CVE-2026-129297,high,mail-parser,CVE-2026-129297: mail-parser: Sender IP address spoofing in get_server_ipaddress(),https://github.com/advisories/GHSA-72px-j8gh-p79x,2026-11-16
-CVE-2026-129295,high,mail-parser,CVE-2026-129295: mail-parser is vulnerable to polynomial ReDoS in email header parsing,https://github.com/advisories/GHSA-r7w7-vpq8-c5vv,2026-11-16
+CVE-2026-71425,medium,outstatic,CVE-2026-71425: Outstatic: Authenticated GitHub REST proxy can send OAuth token to non-GitHub origins,https://github.com/advisories/GHSA-7jvc-9xq8-frff,2026-11-18
 CVE-2026-61618,medium,snark-verifier,CVE-2026-61618: snark-verifier accepts non-canonical KZG accumulator limb encodings,https://github.com/advisories/GHSA-265x-v3qf-ff6p,2026-11-18
 CVE-2026-69241,medium,awcodes/filament-curator,CVE-2026-69241: Filament Curator: Stored XSS via unsanitized SVG upload served inline,https://github.com/advisories/GHSA-8vm9-f75m-5h2m,2026-11-17
 CVE-2026-63389,medium,awcodes/filament-curator,CVE-2026-63389: Filament Curator: Cross-tenant media metadata disclosure via Curator picker search,https://github.com/advisories/GHSA-828w-6qgx-3rcf,2026-11-17
@@ -26,6 +29,3 @@ CVE-2026-88987,medium,silverstripe/framework,CVE-2026-88987: Silverstripe Framew
 CVE-2026-129239,medium,directus,CVE-2026-129239: Directus: Share update allows reassigning user_created and role,https://github.com/advisories/GHSA-7h45-q5jx-7r87,2026-11-16
 CVE-2026-129301,medium,mail-parser,CVE-2026-129301: mail-parser: One hostile attachment aborts `write_attachments()` and silently drops the rest of the batch,https://github.com/advisories/GHSA-8cgq-x343-p74c,2026-11-16
 CVE-2026-129300,medium,mail-parser,CVE-2026-129300: mail-parser: Uncaught `OverflowError` / `OSError` on an out-of-range `Received` date,https://github.com/advisories/GHSA-xhrq-2mqv-q8wx,2026-11-16
-CVE-2026-129235,medium,github.com/kubeshark/kubeshark,CVE-2026-129235: Kubeshark: MCP `download_file` writes fetched bytes to an unvalidated destination path,https://github.com/advisories/GHSA-gj7r-p794-hhq5,2026-11-16
-CVE-2026-129299,medium,mail-parser,CVE-2026-129299: mail-parser: Uncaught exceptions and silent header loss in mail-parser on attacker-controlled input,https://github.com/advisories/GHSA-24mq-4vc6-2prf,2026-11-16
-CVE-2026-129296,medium,mail-parser,CVE-2026-129296: mail-parser: Path Traversal vulnerability in attachment extraction,https://github.com/advisories/GHSA-fr3h-cpq2-9496,2026-11-16

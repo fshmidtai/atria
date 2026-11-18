@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T17:20:46+00:00",
+  "generated_at": "2026-11-18T21:08:57+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -28,11 +28,11 @@
     "by_topic": {
       "security": 111,
       "ai": 72,
-      "dev": 57,
-      "hardware": 17,
-      "biz": 9,
-      "crypto": 7,
-      "science": 7
+      "dev": 53,
+      "hardware": 19,
+      "crypto": 8,
+      "biz": 8,
+      "science": 6
     },
     "top_domains": [
       [
@@ -174,6 +174,26 @@
       "date": "2025-03-24"
     },
     {
+      "uid": "cve:GHSA-pfwx-xjp4-qxcj",
+      "source": "cve",
+      "title": "CVE-2026-69157: Atomic Server: Unauthenticated `/setup` invite grants write access to the entire Drive",
+      "url": "https://github.com/advisories/GHSA-pfwx-xjp4-qxcj",
+      "ts": 1795034553.0,
+      "points": 6000,
+      "comments": 0,
+      "author": "atomic-server",
+      "summary": "Severity: critical. ## Summary\n\natomic-server provisions a well-known invite at `{server}/setup` with `write = true`, `target` = the Drive root, and `usagesLeft = 1`. Invite redemption **ignores the redeemer's identity** (`for_agent: _` in `server/src/plugins/invite.rs:22`), so possession of the URL is the only require",
+      "recipe": "gh_advisories",
+      "buzz": 6080,
+      "topics": [
+        "ai",
+        "dev",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-18"
+    },
+    {
       "uid": "cve:GHSA-5hrj-7fc3-cmx9",
       "source": "cve",
       "title": "CVE-2026-130001: Mustache for Ruby: RCE using built-in method access",
@@ -203,7 +223,7 @@
       "author": "arize-phoenix",
       "summary": "Severity: critical. - Summary\n\nA format string injection vulnerability in the applyChatTemplate GraphQL endpoint allows an attacker to read server-side environment variables, cryptographic secrets, and internal module attributes directly from the API response. On default Phoenix installations where authentication is di",
       "recipe": "gh_advisories",
-      "buzz": 6080,
+      "buzz": 6030,
       "topics": [
         "dev",
         "crypto",
@@ -304,6 +324,80 @@
       "date": "2021-01-11"
     },
     {
+      "uid": "cve:GHSA-82w8-65qw-gch6",
+      "source": "cve",
+      "title": "CVE-2026-71481: ALTCHA PHP: verifySolution bypasses HMAC signature check when challenge signature is absent",
+      "url": "https://github.com/advisories/GHSA-82w8-65qw-gch6",
+      "ts": 1795034898.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "altcha-org/altcha",
+      "summary": "Severity: high. In altcha-org/altcha v2, the verifySolution method skips HMAC signature verification when the signature field is absent from the challenge payload, even when hmacSignatureSecret is configured.\n\nAn attacker who strips the signature key from the challenge JSON passes the condition as false, bypassing",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-11-18"
+    },
+    {
+      "uid": "cve:GHSA-ff87-73jp-f3v4",
+      "source": "cve",
+      "title": "CVE-2026-69158: Atomic Server: Unauthenticated full-response SSRF in Atomic-Server /bookmark endpoint",
+      "url": "https://github.com/advisories/GHSA-ff87-73jp-f3v4",
+      "ts": 1795034570.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "atomic-server",
+      "summary": "Severity: high. ## Summary\n\nAtomic-Server exposes a `GET /bookmark` endpoint that fetches an attacker-supplied URL server-side, parses the response, and reflects the fetched content back to the caller. The endpoint requires no authentication and performs no authorization of its own, and the underlying fetch helper",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "dev",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-18"
+    },
+    {
+      "uid": "cve:GHSA-8vc4-8hjq-988p",
+      "source": "cve",
+      "title": "CVE-2026-69156: Atomic Server: Arbitrary file read via user-controlled `internalId` in the `/download` handler (leaks root agent private key)",
+      "url": "https://github.com/advisories/GHSA-8vc4-8hjq-988p",
+      "ts": 1795034535.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "atomic-server",
+      "summary": "Severity: high. ## Summary\n\nThe Commit apply path enforces **no allowlist of writable properties**, so any authenticated Agent can set the `internalId` string (datatype `string`, no character validation) on a resource it owns. The `/download` handler then uses that value **verbatim** as a filesystem path — `file_pa",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "ai",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-18"
+    },
+    {
+      "uid": "cve:GHSA-x277-3wcg-g9r2",
+      "source": "cve",
+      "title": "CVE-2026-69155: Atomic Server: Stored XSS via uploaded files served inline (same-origin) on `/download` → account takeover",
+      "url": "https://github.com/advisories/GHSA-x277-3wcg-g9r2",
+      "ts": 1795034506.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "atomic-server",
+      "summary": "Severity: high. ## Summary\n\nFiles uploaded via `POST /upload` are served back by `GET /download/{path}` using `actix_files::NamedFile`. For `text/html` and `image/svg+xml`, actix-files (0.6.6) sets `Content-Disposition: inline`, so the browser **renders** the file instead of downloading it. The `/download` route se",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "ai",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-18"
+    },
+    {
       "uid": "cve:GHSA-xvcc-vqjv-phqh",
       "source": "cve",
       "title": "CVE-2026-63496: augment-virShell allows Command Injection in `grep()` via Unsanitized `searchPattern`",
@@ -319,98 +413,6 @@
         "security"
       ],
       "date": "2026-11-18"
-    },
-    {
-      "uid": "cve:GHSA-x2vm-cf3p-m2w8",
-      "source": "cve",
-      "title": "CVE-2026-119793: libp2p: gossipsub creates a permanent topics-map entry per distinct subscription with no cap in the default config",
-      "url": "https://github.com/advisories/GHSA-x2vm-cf3p-m2w8",
-      "ts": 1794949580.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "@libp2p/gossipsub",
-      "summary": "Severity: high. ### Summary\nA single gossipsub peer can grow a node's `topics` map without bound by flooding subscription RPCs, because the default configuration has no global, per-peer, or topic-length cap and peer scoring does not penalise subscription volume. The peer is never greylisted, so the growth continues",
-      "recipe": "gh_advisories",
-      "buzz": 3580,
-      "topics": [
-        "security"
-      ],
-      "date": "2026-11-17"
-    },
-    {
-      "uid": "cve:GHSA-rvfr-cqwq-rc4j",
-      "source": "cve",
-      "title": "CVE-2026-110789: libp2p: ASN.1 DER decoder drives an unbounded synchronous loop on attacker-controlled length fields, stalling the Node event loop pre-auth",
-      "url": "https://github.com/advisories/GHSA-rvfr-cqwq-rc4j",
-      "ts": 1794949508.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "@libp2p/crypto",
-      "summary": "Severity: high. ### Summary\nA remote peer can stall a js-libp2p node's entire event loop for ~4–5 seconds per connection (and transiently allocate ~2 GB) by sending a ~15-byte crafted `publicKey` inside an Identify message. The malformed key reaches the DER decoder before any peer-id/signature check, so the attack",
-      "recipe": "gh_advisories",
-      "buzz": 3580,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-17"
-    },
-    {
-      "uid": "cve:GHSA-r7hw-jx6r-756g",
-      "source": "cve",
-      "title": "CVE-2026-110782: SAML2: Incomplete fix of CVE-2026-49283: unsigned embedded Response bypasses HTTP-Artifact signature verification (no embedded-Issuer binding)",
-      "url": "https://github.com/advisories/GHSA-r7hw-jx6r-756g",
-      "ts": 1794949258.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "simplesamlphp/saml2",
-      "summary": "Severity: high. ## Summary\nCVE-[phone] / GHSA-6929-8p9f-26jx (\"HTTP-Artifact TLS validator confusion allows cross-IdP authentication bypass\") was fixed so that `HTTPArtifact::receive()` verifies the embedded SAML `Response` using the IdP metadata signing keys. The current implementation (master `31c72c1d`, relea",
-      "recipe": "gh_advisories",
-      "buzz": 3580,
-      "topics": [
-        "ai",
-        "science",
-        "security"
-      ],
-      "date": "2026-11-17"
-    },
-    {
-      "uid": "cve:GHSA-xhv5-8fpq-g7hf",
-      "source": "cve",
-      "title": "CVE-2026-62336: qbee-agent: Local Privilege Escalation and Arbitrary File Tampering via Symlink Following in createFile helper",
-      "url": "https://github.com/advisories/GHSA-xhv5-8fpq-g7hf",
-      "ts": 1794948482.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "go.qbee.io/agent",
-      "summary": "Severity: high. This is a Local Privilege Escalation (LPE) vulnerability stemming from improper symlink handling (CWE-59: Link Following) and improper ownership management (CWE-282) inside the qbee-agent file manager logic.\n\n### Impact\n\nAny managed device running qbee-agent up to the affected versions. The impact m",
-      "recipe": "gh_advisories",
-      "buzz": 3580,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-17"
-    },
-    {
-      "uid": "cve:GHSA-c5q4-97jw-jggh",
-      "source": "cve",
-      "title": "CVE-2026-14265: AWS-advanced-jdbc-wrapper: Java Deserialization RCE via Cache Poisoning",
-      "url": "https://github.com/advisories/GHSA-c5q4-97jw-jggh",
-      "ts": 1794947961.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "software.amazon.jdbc:aws-advanced-jdbc-wrapper",
-      "summary": "Severity: high. ### Impact\nThe AWS Advanced JDBC Wrapper is an open-source JDBC driver wrapper that extends a JDBC driver to enable Amazon Aurora and AWS Cloud features such as failover handling and caching. We identified CVE-[phone], an issue in the RemoteQueryCachePlugin of the AWS Advanced JDBC Wrapper. When",
-      "recipe": "gh_advisories",
-      "buzz": 3580,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-17"
     },
     {
       "uid": "hn:50172041",
@@ -430,6 +432,98 @@
       "date": "2026-10-20"
     },
     {
+      "uid": "cve:GHSA-x2vm-cf3p-m2w8",
+      "source": "cve",
+      "title": "CVE-2026-119793: libp2p: gossipsub creates a permanent topics-map entry per distinct subscription with no cap in the default config",
+      "url": "https://github.com/advisories/GHSA-x2vm-cf3p-m2w8",
+      "ts": 1794949580.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "@libp2p/gossipsub",
+      "summary": "Severity: high. ### Summary\nA single gossipsub peer can grow a node's `topics` map without bound by flooding subscription RPCs, because the default configuration has no global, per-peer, or topic-length cap and peer scoring does not penalise subscription volume. The peer is never greylisted, so the growth continues",
+      "recipe": "gh_advisories",
+      "buzz": 3530,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-11-17"
+    },
+    {
+      "uid": "cve:GHSA-rvfr-cqwq-rc4j",
+      "source": "cve",
+      "title": "CVE-2026-110789: libp2p: ASN.1 DER decoder drives an unbounded synchronous loop on attacker-controlled length fields, stalling the Node event loop pre-auth",
+      "url": "https://github.com/advisories/GHSA-rvfr-cqwq-rc4j",
+      "ts": 1794949508.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "@libp2p/crypto",
+      "summary": "Severity: high. ### Summary\nA remote peer can stall a js-libp2p node's entire event loop for ~4–5 seconds per connection (and transiently allocate ~2 GB) by sending a ~15-byte crafted `publicKey` inside an Identify message. The malformed key reaches the DER decoder before any peer-id/signature check, so the attack",
+      "recipe": "gh_advisories",
+      "buzz": 3530,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-17"
+    },
+    {
+      "uid": "cve:GHSA-r7hw-jx6r-756g",
+      "source": "cve",
+      "title": "CVE-2026-110782: SAML2: Incomplete fix of CVE-2026-49283: unsigned embedded Response bypasses HTTP-Artifact signature verification (no embedded-Issuer binding)",
+      "url": "https://github.com/advisories/GHSA-r7hw-jx6r-756g",
+      "ts": 1794949258.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "simplesamlphp/saml2",
+      "summary": "Severity: high. ## Summary\nCVE-[phone] / GHSA-6929-8p9f-26jx (\"HTTP-Artifact TLS validator confusion allows cross-IdP authentication bypass\") was fixed so that `HTTPArtifact::receive()` verifies the embedded SAML `Response` using the IdP metadata signing keys. The current implementation (master `31c72c1d`, relea",
+      "recipe": "gh_advisories",
+      "buzz": 3530,
+      "topics": [
+        "ai",
+        "science",
+        "security"
+      ],
+      "date": "2026-11-17"
+    },
+    {
+      "uid": "cve:GHSA-xhv5-8fpq-g7hf",
+      "source": "cve",
+      "title": "CVE-2026-62336: qbee-agent: Local Privilege Escalation and Arbitrary File Tampering via Symlink Following in createFile helper",
+      "url": "https://github.com/advisories/GHSA-xhv5-8fpq-g7hf",
+      "ts": 1794948482.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "go.qbee.io/agent",
+      "summary": "Severity: high. This is a Local Privilege Escalation (LPE) vulnerability stemming from improper symlink handling (CWE-59: Link Following) and improper ownership management (CWE-282) inside the qbee-agent file manager logic.\n\n### Impact\n\nAny managed device running qbee-agent up to the affected versions. The impact m",
+      "recipe": "gh_advisories",
+      "buzz": 3530,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-17"
+    },
+    {
+      "uid": "cve:GHSA-c5q4-97jw-jggh",
+      "source": "cve",
+      "title": "CVE-2026-14265: AWS-advanced-jdbc-wrapper: Java Deserialization RCE via Cache Poisoning",
+      "url": "https://github.com/advisories/GHSA-c5q4-97jw-jggh",
+      "ts": 1794947961.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "software.amazon.jdbc:aws-advanced-jdbc-wrapper",
+      "summary": "Severity: high. ### Impact\nThe AWS Advanced JDBC Wrapper is an open-source JDBC driver wrapper that extends a JDBC driver to enable Amazon Aurora and AWS Cloud features such as failover handling and caching. We identified CVE-[phone], an issue in the RemoteQueryCachePlugin of the AWS Advanced JDBC Wrapper. When",
+      "recipe": "gh_advisories",
+      "buzz": 3530,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-17"
+    },
+    {
       "uid": "cve:GHSA-c94f-87xg-65wf",
       "source": "cve",
       "title": "CVE-2026-91115: Silverstripe Framework: RCE via i18nTextCollectorTask writer parameter",
@@ -442,64 +536,6 @@
       "recipe": "gh_advisories",
       "buzz": 3530,
       "topics": [
-        "dev",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-16"
-    },
-    {
-      "uid": "cve:GHSA-8vf2-hxg5-crqh",
-      "source": "cve",
-      "title": "CVE-2026-129236: Kubeshark: MCP `start_kubeshark` argument injection via `pod_regex` → image redirect → cluster takeover",
-      "url": "https://github.com/advisories/GHSA-8vf2-hxg5-crqh",
-      "ts": 1794867452.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "github.com/kubeshark/kubeshark",
-      "summary": "Severity: high. **Ecosystem / package:** Go — `github.com/kubeshark/kubeshark` (the `kubeshark`\nCLI, `kubeshark mcp` subcommand)\n**Affected component:** `cmd/mcpRunner.go`, MCP tool `start_kubeshark`\n**Affected versions:** `>= v53.1.0`, `< v53.4.0` (the flaw shipped with the MCP\ncommand's first release; v53.3.0 was",
-      "recipe": "gh_advisories",
-      "buzz": 3530,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-16"
-    },
-    {
-      "uid": "cve:GHSA-72px-j8gh-p79x",
-      "source": "cve",
-      "title": "CVE-2026-129297: mail-parser: Sender IP address spoofing in get_server_ipaddress()",
-      "url": "https://github.com/advisories/GHSA-72px-j8gh-p79x",
-      "ts": 1794867114.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "mail-parser",
-      "summary": "Severity: high. ### Patches\n\nFixed in **4.6.2**. Upgrade with `pip install --upgrade mail-parser`.\n\nCandidate addresses are now selected by position, not by appearance — a bracketed address\nthe sender wrote is byte-identical to one the MTA wrote, so no amount of pattern matching\ncan tell them apart:\n\n- the first to",
-      "recipe": "gh_advisories",
-      "buzz": 3530,
-      "topics": [
-        "ai",
-        "dev",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-16"
-    },
-    {
-      "uid": "cve:GHSA-r7w7-vpq8-c5vv",
-      "source": "cve",
-      "title": "CVE-2026-129295: mail-parser is vulnerable to polynomial ReDoS in email header parsing",
-      "url": "https://github.com/advisories/GHSA-r7w7-vpq8-c5vv",
-      "ts": 1794867068.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "mail-parser",
-      "summary": "Severity: high. ### Summary\n\nTwo regular expressions used while parsing email headers backtrack\npolynomially on attacker-controlled input. Parsing a single small, well-formed\nemail can consume minutes to hours of CPU, denying service to any process that\nparses untrusted mail.\n\nBoth are reachable from an ordinary `p",
-      "recipe": "gh_advisories",
-      "buzz": 3530,
-      "topics": [
-        "ai",
         "dev",
         "security",
         "hardware"
@@ -800,6 +836,25 @@
       "date": "2020-09-30"
     },
     {
+      "uid": "cve:GHSA-7jvc-9xq8-frff",
+      "source": "cve",
+      "title": "CVE-2026-71425: Outstatic: Authenticated GitHub REST proxy can send OAuth token to non-GitHub origins",
+      "url": "https://github.com/advisories/GHSA-7jvc-9xq8-frff",
+      "ts": 1795034623.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "outstatic",
+      "summary": "Severity: medium. ### Impact\nOutstatic’s authenticated GitHub REST proxy accepted an unvalidated endpoint parameter and constructed an upstream GitHub API URL by string concatenation while attaching the authenticated user’s GitHub OAuth token.\n\nA user with access to the Outstatic dashboard could craft a request that",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "dev",
+        "crypto",
+        "security"
+      ],
+      "date": "2026-11-18"
+    },
+    {
       "uid": "cve:GHSA-265x-v3qf-ff6p",
       "source": "cve",
       "title": "CVE-2026-61618: snark-verifier accepts non-canonical KZG accumulator limb encodings",
@@ -817,81 +872,6 @@
         "security"
       ],
       "date": "2026-11-18"
-    },
-    {
-      "uid": "cve:GHSA-8vm9-f75m-5h2m",
-      "source": "cve",
-      "title": "CVE-2026-69241: Filament Curator: Stored XSS via unsanitized SVG upload served inline",
-      "url": "https://github.com/advisories/GHSA-8vm9-f75m-5h2m",
-      "ts": 1794948866.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "awcodes/filament-curator",
-      "summary": "Severity: medium. ## Summary\n\n  SVG files uploaded through the Curator media panel are stored and served inline without any\n  sanitization. An authenticated user with permission to upload media can upload an SVG\n  containing embedded JavaScript. When another panel user opens that file via the **View**\n  action (which",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-17"
-    },
-    {
-      "uid": "cve:GHSA-828w-6qgx-3rcf",
-      "source": "cve",
-      "title": "CVE-2026-63389: Filament Curator: Cross-tenant media metadata disclosure via Curator picker search",
-      "url": "https://github.com/advisories/GHSA-828w-6qgx-3rcf",
-      "ts": 1794948568.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "awcodes/filament-curator",
-      "summary": "Severity: medium. Summary\n\n  In multitenant Filament panels, an authenticated user could retrieve media metadata belonging to other tenants\n  by typing in the Curator media-picker search box. The search query omitted the tenant ownership scope that the\n  normal file listing applies.\n\n  Details\n\n  CuratorPanel::update",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-17"
-    },
-    {
-      "uid": "cve:GHSA-pr4x-6fj4-gm4h",
-      "source": "cve",
-      "title": "CVE-2026-63672: EGroupware: User-Controlled Identity Provider Selection in SAML Authentication",
-      "url": "https://github.com/advisories/GHSA-pr4x-6fj4-gm4h",
-      "ts": 1794948442.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "egroupware/egroupware",
-      "summary": "Severity: medium. ### Summary\nThe login() function at line 130 passes the raw user-supplied value `$_REQUEST['idp']` directly to SimpleSAMLphp's `requireAuth()` with only a regex check that the string starts with 'https://'. No validation is performed against a list of configured, trusted IdP entity IDs. An unauthent",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-17"
-    },
-    {
-      "uid": "cve:GHSA-v858-xh7w-8jr5",
-      "source": "cve",
-      "title": "CVE-2026-63634: pympp allows excessive sponsored transaction fees through padded calldata",
-      "url": "https://github.com/advisories/GHSA-v858-xh7w-8jr5",
-      "ts": 1794945896.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "pympp",
-      "summary": "Severity: medium. ### Details\nWhen the server acts as the fee_payer, `pympp` 0.8.0 validates calldata using `eth_abi` decoding, which is lenient about trailing bytes. The `FeePayerPolicy` caps `gas_limit` (≤ 2 M) and `max_fee_per_gas` (≤ 100 Gwei) but does **not** check calldata length.\n\nTempo uses legacy calldata ga",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "dev",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-17"
     },
     {
       "uid": "hn:48166459",
@@ -943,6 +923,81 @@
         "security"
       ],
       "date": "2016-12-15"
+    },
+    {
+      "uid": "cve:GHSA-8vm9-f75m-5h2m",
+      "source": "cve",
+      "title": "CVE-2026-69241: Filament Curator: Stored XSS via unsanitized SVG upload served inline",
+      "url": "https://github.com/advisories/GHSA-8vm9-f75m-5h2m",
+      "ts": 1794948866.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "awcodes/filament-curator",
+      "summary": "Severity: medium. ## Summary\n\n  SVG files uploaded through the Curator media panel are stored and served inline without any\n  sanitization. An authenticated user with permission to upload media can upload an SVG\n  containing embedded JavaScript. When another panel user opens that file via the **View**\n  action (which",
+      "recipe": "gh_advisories",
+      "buzz": 1830,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-17"
+    },
+    {
+      "uid": "cve:GHSA-828w-6qgx-3rcf",
+      "source": "cve",
+      "title": "CVE-2026-63389: Filament Curator: Cross-tenant media metadata disclosure via Curator picker search",
+      "url": "https://github.com/advisories/GHSA-828w-6qgx-3rcf",
+      "ts": 1794948568.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "awcodes/filament-curator",
+      "summary": "Severity: medium. Summary\n\n  In multitenant Filament panels, an authenticated user could retrieve media metadata belonging to other tenants\n  by typing in the Curator media-picker search box. The search query omitted the tenant ownership scope that the\n  normal file listing applies.\n\n  Details\n\n  CuratorPanel::update",
+      "recipe": "gh_advisories",
+      "buzz": 1830,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-17"
+    },
+    {
+      "uid": "cve:GHSA-pr4x-6fj4-gm4h",
+      "source": "cve",
+      "title": "CVE-2026-63672: EGroupware: User-Controlled Identity Provider Selection in SAML Authentication",
+      "url": "https://github.com/advisories/GHSA-pr4x-6fj4-gm4h",
+      "ts": 1794948442.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "egroupware/egroupware",
+      "summary": "Severity: medium. ### Summary\nThe login() function at line 130 passes the raw user-supplied value `$_REQUEST['idp']` directly to SimpleSAMLphp's `requireAuth()` with only a regex check that the string starts with 'https://'. No validation is performed against a list of configured, trusted IdP entity IDs. An unauthent",
+      "recipe": "gh_advisories",
+      "buzz": 1830,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-17"
+    },
+    {
+      "uid": "cve:GHSA-v858-xh7w-8jr5",
+      "source": "cve",
+      "title": "CVE-2026-63634: pympp allows excessive sponsored transaction fees through padded calldata",
+      "url": "https://github.com/advisories/GHSA-v858-xh7w-8jr5",
+      "ts": 1794945896.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "pympp",
+      "summary": "Severity: medium. ### Details\nWhen the server acts as the fee_payer, `pympp` 0.8.0 validates calldata using `eth_abi` decoding, which is lenient about trailing bytes. The `FeePayerPolicy` caps `gas_limit` (≤ 2 M) and `max_fee_per_gas` (≤ 100 Gwei) but does **not** check calldata length.\n\nTempo uses legacy calldata ga",
+      "recipe": "gh_advisories",
+      "buzz": 1830,
+      "topics": [
+        "ai",
+        "dev",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-17"
     },
     {
       "uid": "cve:GHSA-vc7v-qv4w-wrv8",
@@ -1123,62 +1178,6 @@
       "comments": 0,
       "author": "mail-parser",
       "summary": "Severity: medium. ### Impact\n\nA `Received` header whose trailing date carries an out-of-range year, or a timezone offset\nlarge enough to push the timestamp past the int64 epoch range, raises an exception that is\n**outside the `MailParser*` hierarchy**. A caller that catches only mail-parser exceptions\ndoes not catch",
-      "recipe": "gh_advisories",
-      "buzz": 1830,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-16"
-    },
-    {
-      "uid": "cve:GHSA-gj7r-p794-hhq5",
-      "source": "cve",
-      "title": "CVE-2026-129235: Kubeshark: MCP `download_file` writes fetched bytes to an unvalidated destination path",
-      "url": "https://github.com/advisories/GHSA-gj7r-p794-hhq5",
-      "ts": 1794867538.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "github.com/kubeshark/kubeshark",
-      "summary": "Severity: medium. **Ecosystem / package:** Go — `github.com/kubeshark/kubeshark` (the `kubeshark`\nCLI, `kubeshark mcp` subcommand)\n**Affected component:** `cmd/mcpRunner.go`, MCP tool `download_file`\n**Affected versions:** `>= v53.1.0`, `< v53.4.0` (the flaw shipped with the\ntool's first release; v53.3.0 was the last",
-      "recipe": "gh_advisories",
-      "buzz": 1830,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-16"
-    },
-    {
-      "uid": "cve:GHSA-24mq-4vc6-2prf",
-      "source": "cve",
-      "title": "CVE-2026-129299: mail-parser: Uncaught exceptions and silent header loss in mail-parser on attacker-controlled input",
-      "url": "https://github.com/advisories/GHSA-24mq-4vc6-2prf",
-      "ts": 1794867171.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "mail-parser",
-      "summary": "Severity: medium. ### Impact\n\nTwo effects, sharing the root cause of Advisory 1 — header names chosen by the sender were\nresolved through Python attribute lookup and rewritten before lookup.\n\n**Uncaught exceptions.** A crafted message raises an exception that is *outside* the\n`MailParser*` hierarchy, so a caller catc",
-      "recipe": "gh_advisories",
-      "buzz": 1830,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-16"
-    },
-    {
-      "uid": "cve:GHSA-fr3h-cpq2-9496",
-      "source": "cve",
-      "title": "CVE-2026-129296: mail-parser: Path Traversal vulnerability in attachment extraction",
-      "url": "https://github.com/advisories/GHSA-fr3h-cpq2-9496",
-      "ts": 1794867055.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "mail-parser",
-      "summary": "Severity: medium. A path traversal vulnerability was identified in mail-parser when extracting email attachments using the write_attachments() and write_sample() APIs.\n\nA specially crafted email containing malicious attachment filenames (for example, using directory traversal sequences such as \"../\" or absolute files",
       "recipe": "gh_advisories",
       "buzz": 1830,
       "topics": [
@@ -1434,34 +1433,16 @@
       "title": "nestho/impacket-rs",
       "url": "https://github.com/nestho/impacket-rs",
       "ts": 1794373116.0,
-      "points": 97,
+      "points": 98,
       "comments": 14,
       "author": "nestho",
       "summary": "High-performance, memory-safe pure-Rust redesign of Impacket protocols and Active Directory tools for Linux, macOS, and Windows.",
       "recipe": "github_sec",
-      "buzz": 139,
+      "buzz": 140,
       "topics": [
         "dev"
       ],
       "date": "2026-11-11"
-    },
-    {
-      "uid": "gh:LoopGrubDolmen/wallet-security-desk",
-      "source": "github",
-      "title": "LoopGrubDolmen/wallet-security-desk",
-      "url": "https://github.com/LoopGrubDolmen/wallet-security-desk",
-      "ts": 1794768281.0,
-      "points": 92,
-      "comments": 0,
-      "author": "LoopGrubDolmen",
-      "summary": "Self-custody wallet hygiene desk — seed storage drills and phishing red flags.",
-      "recipe": "github_sec",
-      "buzz": 122,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-15"
     },
     {
       "uid": "gh:zhidun2027/zhidun",
@@ -1469,12 +1450,12 @@
       "title": "zhidun2027/zhidun",
       "url": "https://github.com/zhidun2027/zhidun",
       "ts": 1794458402.0,
-      "points": 81,
+      "points": 95,
       "comments": 8,
       "author": "zhidun2027",
       "summary": "Android APK hardening — DEX encryption, native shell engine, anti-tamper. Fully documented and auditable.",
       "recipe": "github_sec",
-      "buzz": 115,
+      "buzz": 129,
       "topics": [
         "security"
       ],
@@ -1486,12 +1467,12 @@
       "title": "rammahmagdy/Latch",
       "url": "https://github.com/rammahmagdy/Latch",
       "ts": 1794964122.0,
-      "points": 27,
+      "points": 29,
       "comments": 2,
       "author": "rammahmagdy",
       "summary": "Lock any app or folder behind Touch ID, Windows Hello or a password. Mac and Windows. Free for personal use.",
       "recipe": "github_sec",
-      "buzz": 113,
+      "buzz": 115,
       "topics": [],
       "date": "2026-11-18"
     },
@@ -1528,6 +1509,24 @@
       "date": "2026-11-10"
     },
     {
+      "uid": "gh:LoopGrubDolmen/wallet-security-desk",
+      "source": "github",
+      "title": "LoopGrubDolmen/wallet-security-desk",
+      "url": "https://github.com/LoopGrubDolmen/wallet-security-desk",
+      "ts": 1794768281.0,
+      "points": 92,
+      "comments": 0,
+      "author": "LoopGrubDolmen",
+      "summary": "Self-custody wallet hygiene desk — seed storage drills and phishing red flags.",
+      "recipe": "github_sec",
+      "buzz": 102,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-15"
+    },
+    {
       "uid": "rss:c077b9eec9aa33",
       "source": "rss",
       "title": "Attackers Used Optimizely to A/B Test Malware on Top Websites",
@@ -1562,6 +1561,62 @@
       "topics": [
         "ai",
         "dev"
+      ],
+      "date": "2026-11-18"
+    },
+    {
+      "uid": "rss:a678fbb9471f9e",
+      "source": "rss",
+      "title": "10-Year-Old NGINX HTTP/2 Flaw Lets Unauthenticated Attackers Execute Code on Servers",
+      "url": "https://thehackernews.com/2026/11/10-year-old-nginx-http2-flaw-lets.html",
+      "ts": 1795026677.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "A flaw in NGINX's HTTP/2 support can allow an attacker to run code on servers with HTTP/2 enabled, without needing to log in. The decade-old flaw, CVE-[phone], dubbed \"nginx2root,\" has been present in NGINX's open-source code since version 1.9.5, released on September 22, 2015. Fixed versions 1.31.9 and 1.30.7 came out today. F5, the company behind NGINX, says attackers can run code where",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-18"
+    },
+    {
+      "uid": "rss:e51e69194c3dc7",
+      "source": "rss",
+      "title": "F5 Warns 6 Critical BIG-IP Flaws Can Crash Traffic in Specific Setups, May Allow RCE",
+      "url": "https://thehackernews.com/2026/11/f5-warns-6-critical-big-ip-flaws-can.html",
+      "ts": 1795025739.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Six critical vulnerabilities in F5 BIG-IP allow an attacker to crash the Traffic Management Microkernel (TMM) without logging in, disrupting traffic until the TMM restarts. Each flaw needs a specific setup on a virtual server: an iRule that uses a particular command, or an APM policy that includes two particular kinds of agent. F5, which makes BIG-IP, disclosed the flaws today and says they",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-18"
+    },
+    {
+      "uid": "rss:80c8ce0e2c3e95",
+      "source": "rss",
+      "title": "Critical Apache Roller RCE Flaw Under Active Exploitation, No Authentication Required",
+      "url": "https://thehackernews.com/2026/11/critical-apache-roller-rce-flaw-under.html",
+      "ts": 1795021845.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "A critical security flaw in Apache Roller, an open-source, Java-based blogging platform, has come under active exploitation in the wild, according to the Apache Software Foundation (ASF) The vulnerability, tracked as CVE-[phone] (CVSS score: 9.8), is a case of unauthenticated deserialization in the XML-RPC endpoint that could lead to remote code execution. \"Deserialization of Untrusted",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
       ],
       "date": "2026-11-18"
     },
@@ -1731,26 +1786,6 @@
       "date": "2026-11-18"
     },
     {
-      "uid": "rss:2041eca737d343",
-      "source": "rss",
-      "title": "Researchers Claim Two RCE Exploits That Bypass Telegram’s New Android Defenses",
-      "url": "https://thehackernews.com/2026/11/researchers-claim-two-rce-exploits-that.html",
-      "ts": 1794944060.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "A malicious widget can bypass the security filter that Telegram added to its Android app last week and run code outside it, according to NebuSec, a security company. Widgets are small interactive blocks that bots send inside chat messages, and their JavaScript runs on the user's phone. The researchers ran their demonstration on a Telegram test server, because only approved bots can send",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "dev",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-17"
-    },
-    {
       "uid": "gh:BountyForge-xyz/pwn-skill",
       "source": "github",
       "title": "BountyForge-xyz/pwn-skill",
@@ -1854,6 +1889,26 @@
         "security"
       ],
       "date": "2026-11-16"
+    },
+    {
+      "uid": "rss:2041eca737d343",
+      "source": "rss",
+      "title": "Researchers Claim Two RCE Exploits That Bypass Telegram’s New Android Defenses",
+      "url": "https://thehackernews.com/2026/11/researchers-claim-two-rce-exploits-that.html",
+      "ts": 1794944060.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "A malicious widget can bypass the security filter that Telegram added to its Android app last week and run code outside it, according to NebuSec, a security company. Widgets are small interactive blocks that bots send inside chat messages, and their JavaScript runs on the user's phone. The researchers ran their demonstration on a Telegram test server, because only approved bots can send",
+      "recipe": "hackersnews",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "dev",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-17"
     },
     {
       "uid": "rss:03ac2339a65ac4",
@@ -2173,24 +2228,6 @@
       "date": "2026-11-08"
     },
     {
-      "uid": "rss:a29bdb614c93f8",
-      "source": "rss",
-      "title": "Who Runs the Ransomware Group Qilin?",
-      "url": "https://krebsonsecurity.com/2026/11/who-runs-the-ransomware-group-qilin/",
-      "ts": 1794420361.0,
-      "points": 0,
-      "comments": 0,
-      "author": "BrianKrebs",
-      "summary": "The cybercrime group Qilin has emerged as the world's most active ransomware affiliate program, claiming at least 365 victim organizations in the past three months alone. But even top Russian hackers make operational security mistakes, and the administrator of Qilin has made a few key missteps over the last decade that all point to a 36-year-old man living in St. Petersburg, Russia.",
-      "recipe": "krebs",
-      "buzz": 10,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-11"
-    },
-    {
       "uid": "rss:e109a4e996ba8e",
       "source": "rss",
       "title": "Upcoming Speaking Engagements",
@@ -2277,62 +2314,22 @@
       "date": "2026-11-15"
     },
     {
-      "uid": "rss:5b8a9ede72c818",
+      "uid": "rss:a29bdb614c93f8",
       "source": "rss",
-      "title": "Cursor Says Stolen Fireworks AI Key Led to Trojanized Claude Code Extension Incident",
-      "url": "https://thehackernews.com/2026/11/stolen-fireworks-ai-key-led-to-cursor.html",
-      "ts": 1794730924.0,
+      "title": "Who Runs the Ransomware Group Qilin?",
+      "url": "https://krebsonsecurity.com/2026/11/who-runs-the-ransomware-group-qilin/",
+      "ts": 1794420361.0,
       "points": 0,
       "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "The compromise of Anthropic's official Claude Code extension on Cursor's extension marketplace was the result of the theft of an access key that was exposed in the wake of a breach targeting Fireworks AI. \"An attacker obtained an access key we had issued to Fireworks,\" Cursor said in a Friday update. \"The key was exposed by Fireworks, and the attacker used it to copy data from a read-only",
-      "recipe": "hackersnews",
-      "buzz": 10,
+      "author": "BrianKrebs",
+      "summary": "The cybercrime group Qilin has emerged as the world's most active ransomware affiliate program, claiming at least 365 victim organizations in the past three months alone. But even top Russian hackers make operational security mistakes, and the administrator of Qilin has made a few key missteps over the last decade that all point to a 36-year-old man living in St. Petersburg, Russia.",
+      "recipe": "krebs",
+      "buzz": 0,
       "topics": [
         "ai",
-        "dev",
-        "biz",
         "security"
       ],
-      "date": "2026-11-15"
-    },
-    {
-      "uid": "rss:d6bc4ec6947cb8",
-      "source": "rss",
-      "title": "Attackers Exploit UnrealIRCd Flaw That Enables Server-Level Command Injection",
-      "url": "https://thehackernews.com/2026/11/attackers-exploit-unrealircd-flaw-that.html",
-      "ts": 1794659915.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added a high-severity security flaw impacting UnrealIRCd, an open-source Internet Relay Chat (IRC) server, to its Known Exploited Vulnerabilities (KEV) catalog, following reports of active exploitation. The vulnerability, tracked as CVE-[phone] (CVSS score: 8.6), is a case of improper neutralization of delimiters",
-      "recipe": "hackersnews",
-      "buzz": 10,
-      "topics": [
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-14"
-    },
-    {
-      "uid": "rss:b5af83d54bc054",
-      "source": "rss",
-      "title": "PostgreSQL Patches 52 Flaws, Including 22-Year-Old Bug Enabling Authenticated RCE",
-      "url": "https://thehackernews.com/2026/11/postgresql-patches-52-flaws-including.html",
-      "ts": 1794588788.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "A type confusion flaw in PostgreSQL lets a database user who can create objects run code on the server. Updates released yesterday fix it, along with 51 other security flaws. Full protection from this flaw also requires rebuilding any C-language extensions installed on the server. The flaw, tracked as CVE-2026-6460, has a CVSS score of 8.8. Any code run this way has the rights of the operating",
-      "recipe": "hackersnews",
-      "buzz": 10,
-      "topics": [
-        "dev",
-        "science",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-13"
+      "date": "2026-11-11"
     },
     {
       "uid": "rss:cd21f33e2e3d64",
