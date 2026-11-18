@@ -1,5 +1,6 @@
 cve_id,severity,package,title,url,date
 CVE-2026-53998,critical,arize-phoenix,CVE-2026-53998: Phoenix: Format String Injection in applyChatTemplate,https://github.com/advisories/GHSA-gfv3-m769-5xm3,2026-11-17
+CVE-2026-119793,high,@libp2p/gossipsub,CVE-2026-119793: libp2p: gossipsub creates a permanent topics-map entry per distinct subscription with no cap in the default config,https://github.com/advisories/GHSA-x2vm-cf3p-m2w8,2026-11-17
 CVE-2026-110789,high,@libp2p/crypto,"CVE-2026-110789: libp2p: ASN.1 DER decoder drives an unbounded synchronous loop on attacker-controlled length fields, stalling the Node event loop pre-auth",https://github.com/advisories/GHSA-rvfr-cqwq-rc4j,2026-11-17
 CVE-2026-110782,high,simplesamlphp/saml2,CVE-2026-110782: SAML2: Incomplete fix of CVE-2026-49283: unsigned embedded Response bypasses HTTP-Artifact signature verification (no embedded-Issuer binding),https://github.com/advisories/GHSA-r7hw-jx6r-756g,2026-11-17
 CVE-2026-62336,high,go.qbee.io/agent,CVE-2026-62336: qbee-agent: Local Privilege Escalation and Arbitrary File Tampering via Symlink Following in createFile helper,https://github.com/advisories/GHSA-xhv5-8fpq-g7hf,2026-11-17
@@ -28,4 +29,3 @@ CVE-2026-129300,medium,mail-parser,CVE-2026-129300: mail-parser: Uncaught `Overf
 CVE-2026-129235,medium,github.com/kubeshark/kubeshark,CVE-2026-129235: Kubeshark: MCP `download_file` writes fetched bytes to an unvalidated destination path,https://github.com/advisories/GHSA-gj7r-p794-hhq5,2026-11-16
 CVE-2026-129299,medium,mail-parser,CVE-2026-129299: mail-parser: Uncaught exceptions and silent header loss in mail-parser on attacker-controlled input,https://github.com/advisories/GHSA-24mq-4vc6-2prf,2026-11-16
 CVE-2026-129296,medium,mail-parser,CVE-2026-129296: mail-parser: Path Traversal vulnerability in attachment extraction,https://github.com/advisories/GHSA-fr3h-cpq2-9496,2026-11-16
-CVE-2026-119790,medium,next,CVE-2026-119790: Next.js: Information disclosure across root params when a 'use cache' function is called through unstable_cache(),https://github.com/advisories/GHSA-mfr8-8qww-v76h,2026-11-16

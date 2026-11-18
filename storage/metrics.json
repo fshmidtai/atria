@@ -1,6 +1,6 @@
 {
-  "generated_at": 1794949846.1742256,
-  "elapsed_s": 310.77,
+  "generated_at": 1794966062.8044593,
+  "elapsed_s": 455.05,
   "tick": {
     "ran": 10,
     "failed": 0,
@@ -18,7 +18,7 @@
       "role": "scout",
       "colony": "core",
       "status": "active",
-      "spawned": 1794949535.4117053,
+      "spawned": 1794965607.850494,
       "note": ""
     },
     {
@@ -27,7 +27,7 @@
       "role": "refinery",
       "colony": "core",
       "status": "active",
-      "spawned": 1794949535.4132822,
+      "spawned": 1794965607.8522062,
       "note": ""
     },
     {
@@ -36,7 +36,7 @@
       "role": "writer",
       "colony": "core",
       "status": "active",
-      "spawned": 1794949535.414649,
+      "spawned": 1794965607.8536856,
       "note": ""
     },
     {
@@ -45,7 +45,7 @@
       "role": "trade",
       "colony": "core",
       "status": "active",
-      "spawned": 1794949535.4160442,
+      "spawned": 1794965607.8551414,
       "note": ""
     }
   ],
@@ -253,37 +253,30 @@
         "indexnow_key": "703c9a540f4d657f217326ac9c8a5560"
       },
       "totals": {
-        "items": 133,
+        "items": 89,
         "by_source": {
-          "hn": 7,
+          "hn": 5,
           "github": 4,
-          "rss": 82,
-          "arxiv": 40
+          "rss": 80
         },
         "by_recipe": {
           "economist_fn": 40,
-          "arxiv_qfin": 40,
           "cnbc_top": 30,
-          "ft_home": 12,
-          "hn_fintech": 7,
+          "ft_home": 10,
+          "hn_fintech": 5,
           "github_fin": 4
         },
         "by_topic": {
-          "ai": 73,
-          "biz": 42,
-          "dev": 36,
-          "science": 22,
-          "hardware": 10,
-          "crypto": 7,
-          "security": 3
+          "ai": 39,
+          "biz": 25,
+          "dev": 12,
+          "hardware": 9,
+          "crypto": 3,
+          "science": 3
         },
         "top_domains": [
           [
             "economist.com",
-            40
-          ],
-          [
-            "arxiv.org",
             40
           ],
           [
@@ -292,7 +285,7 @@
           ],
           [
             "ft.com",
-            12
+            10
           ],
           [
             "github.com",
@@ -300,14 +293,10 @@
           ],
           [
             "news.ycombinator.com",
-            3
+            2
           ],
           [
             "realizefi.com",
-            1
-          ],
-          [
-            "finterm.ai",
             1
           ],
           [
@@ -320,14 +309,14 @@
           ]
         ]
       },
-      "pages": 79,
+      "pages": 78,
       "qa": "QA ok:11 warn:0 err:0",
       "products": {
         "digest_top.csv": {
           "rows": 50
         },
         "trend_index.csv": {
-          "rows": 7,
+          "rows": 6,
           "has_prev": true
         }
       },
@@ -371,7 +360,7 @@
         {
           "title": "Glosszumlattice/quickbooks-ledger-alts",
           "source": "github",
-          "buzz": 180,
+          "buzz": 130,
           "url": "https://github.com/Glosszumlattice/quickbooks-ledger-alts",
           "topics": [
             "ai",
@@ -412,13 +401,14 @@
           "topics": []
         },
         {
-          "title": "Jensen Huang says he is prepared to return as Nvidia CEO",
+          "title": "Nvidia insists Huang will not return as CEO as it reports strong sales",
           "source": "rss",
           "buzz": 80,
-          "url": "https://www.ft.com/content/e265542c-25d9-4a82-8cb7-e4a4b641cdda?syn-25a6b1a6=1",
+          "url": "https://www.ft.com/content/3a8881b8-068c-4950-9238-4f8eb1efc870?syn-25a6b1a6=1",
           "topics": [
             "ai",
-            "biz"
+            "biz",
+            "hardware"
           ]
         },
         {
@@ -427,15 +417,6 @@
           "buzz": 80,
           "url": "https://www.ft.com/content/65ff066f-a81c-4d24-95da-73c2d7b83a27?syn-25a6b1a6=1",
           "topics": []
-        },
-        {
-          "title": "US tech stocks slide ahead of Nvidia results",
-          "source": "rss",
-          "buzz": 80,
-          "url": "https://www.ft.com/content/4a3b9892-67c6-4177-8503-80c0a5eb3b60?syn-25a6b1a6=1",
-          "topics": [
-            "dev"
-          ]
         },
         {
           "title": "Nvidia stopped disclosing Singapore sales as revenues hit $104bn",
@@ -461,6 +442,15 @@
           "source": "rss",
           "buzz": 80,
           "url": "https://www.ft.com/content/551f078e-4cd5-4302-8143-96b8ed5c9eeb?syn-25a6b1a6=1",
+          "topics": [
+            "ai"
+          ]
+        },
+        {
+          "title": "Leak of 15mn Deutsche Bank files exposes systemic failures",
+          "source": "rss",
+          "buzz": 80,
+          "url": "https://www.ft.com/content/df518845-ed97-4a38-8a38-7fa9d4d24003?syn-25a6b1a6=1",
           "topics": [
             "ai"
           ]
@@ -550,6 +540,15 @@
           ]
         },
         {
+          "title": "CVE-2026-119793: libp2p: gossipsub creates a permanent topics-map entry per distinct subscription with no cap in the default config",
+          "source": "cve",
+          "buzz": 3580,
+          "url": "https://github.com/advisories/GHSA-x2vm-cf3p-m2w8",
+          "topics": [
+            "security"
+          ]
+        },
+        {
           "title": "CVE-2026-110789: libp2p: ASN.1 DER decoder drives an unbounded synchronous loop on attacker-controlled length fields, stalling the Node event loop pre-auth",
           "source": "cve",
           "buzz": 3580,
@@ -595,7 +594,7 @@
         {
           "title": "CVE-2026-91115: Silverstripe Framework: RCE via i18nTextCollectorTask writer parameter",
           "source": "cve",
-          "buzz": 3580,
+          "buzz": 3530,
           "url": "https://github.com/advisories/GHSA-c94f-87xg-65wf",
           "topics": [
             "dev",
@@ -606,7 +605,7 @@
         {
           "title": "CVE-2026-129236: Kubeshark: MCP `start_kubeshark` argument injection via `pod_regex` → image redirect → cluster takeover",
           "source": "cve",
-          "buzz": 3580,
+          "buzz": 3530,
           "url": "https://github.com/advisories/GHSA-8vf2-hxg5-crqh",
           "topics": [
             "dev",
@@ -616,7 +615,7 @@
         {
           "title": "CVE-2026-129297: mail-parser: Sender IP address spoofing in get_server_ipaddress()",
           "source": "cve",
-          "buzz": 3580,
+          "buzz": 3530,
           "url": "https://github.com/advisories/GHSA-72px-j8gh-p79x",
           "topics": [
             "ai",
@@ -628,7 +627,7 @@
         {
           "title": "CVE-2026-129295: mail-parser is vulnerable to polynomial ReDoS in email header parsing",
           "source": "cve",
-          "buzz": 3580,
+          "buzz": 3530,
           "url": "https://github.com/advisories/GHSA-r7w7-vpq8-c5vv",
           "topics": [
             "ai",
@@ -640,7 +639,7 @@
         {
           "title": "CVE-2026-86046: termux-sync: Arbitrary file write during restore via attacker-controlled manifest source path",
           "source": "cve",
-          "buzz": 3580,
+          "buzz": 3530,
           "url": "https://github.com/advisories/GHSA-259w-wmqg-fp76",
           "topics": [
             "dev",
@@ -650,7 +649,7 @@
         {
           "title": "CVE-2026-68934: code-review-mcp-server: Command injection via unsanitized folderPath/baseBranch parameters",
           "source": "cve",
-          "buzz": 3580,
+          "buzz": 3530,
           "url": "https://github.com/advisories/GHSA-jq3q-62jc-fqq9",
           "topics": [
             "dev",
@@ -661,7 +660,7 @@
         {
           "title": "CVE-2026-63182: lightsaml allows Signature wrapping bypass",
           "source": "cve",
-          "buzz": 3580,
+          "buzz": 3530,
           "url": "https://github.com/advisories/GHSA-w553-pwx6-3mg9",
           "topics": [
             "ai",
@@ -685,17 +684,6 @@
           "url": "https://github.com/advisories/GHSA-828w-6qgx-3rcf",
           "topics": [
             "ai",
-            "security"
-          ]
-        },
-        {
-          "title": "CVE-2026-63672: EGroupware: User-Controlled Identity Provider Selection in SAML Authentication",
-          "source": "cve",
-          "buzz": 1880,
-          "url": "https://github.com/advisories/GHSA-pr4x-6fj4-gm4h",
-          "topics": [
-            "ai",
-            "dev",
             "security"
           ]
         }
@@ -877,33 +865,33 @@
         "indexnow_key": "a25fa1b212ed720f9eca9bac90f6c8a0"
       },
       "totals": {
-        "items": 163,
+        "items": 161,
         "by_source": {
           "github": 40,
-          "hn": 31,
+          "hn": 30,
           "rss": 32,
-          "arxiv": 60
+          "arxiv": 59
         },
         "by_recipe": {
-          "arxiv": 60,
+          "arxiv": 59,
           "github_search": 40,
-          "hn_front": 31,
+          "hn_front": 30,
           "tc_ai": 20,
           "devto": 12
         },
         "by_topic": {
-          "ai": 118,
-          "dev": 67,
+          "ai": 116,
+          "dev": 63,
           "science": 35,
-          "hardware": 22,
-          "biz": 13,
-          "security": 12,
-          "crypto": 7
+          "hardware": 24,
+          "biz": 16,
+          "security": 7,
+          "crypto": 5
         },
         "top_domains": [
           [
             "arxiv.org",
-            62
+            60
           ],
           [
             "github.com",
@@ -919,10 +907,6 @@
           ],
           [
             "openai.com",
-            2
-          ],
-          [
-            "cs.cmu.edu",
             1
           ],
           [
@@ -938,15 +922,15 @@
             1
           ],
           [
-            "claude.dev",
-            1
-          ],
-          [
-            "runta.com",
-            1
-          ],
-          [
             "ft.com",
+            1
+          ],
+          [
+            "calif.io",
+            1
+          ],
+          [
+            "claude.dev",
             1
           ],
           [
@@ -954,23 +938,11 @@
             1
           ],
           [
-            "visualbasic.world",
+            "runta.com",
             1
           ],
           [
-            "alloyhtml.com",
-            1
-          ],
-          [
-            "spiraldb.com",
-            1
-          ],
-          [
-            "puri.sm",
-            1
-          ],
-          [
-            "solidjs.com",
+            "blog.cloudflare.com",
             1
           ],
           [
@@ -978,15 +950,19 @@
             1
           ],
           [
+            "solidjs.com",
+            1
+          ],
+          [
             "phrack.org",
             1
           ],
           [
-            "nautil.us",
+            "complexdiscovery.com",
             1
           ],
           [
-            "read.corematter.com",
+            "newsletter.posthog.com",
             1
           ],
           [
@@ -994,11 +970,23 @@
             1
           ],
           [
+            "read.corematter.com",
+            1
+          ],
+          [
             "starsling.dev",
             1
           ],
           [
-            "egm.dev",
+            "wiki.archiveteam.org",
+            1
+          ],
+          [
+            "revscope.co",
+            1
+          ],
+          [
+            "hy.tencent.ai",
             1
           ]
         ]
@@ -1018,7 +1006,7 @@
         {
           "title": "deepseek-ai/chat-demo",
           "source": "github",
-          "buzz": 7457,
+          "buzz": 7510,
           "url": "https://github.com/deepseek-ai/chat-demo",
           "topics": [
             "ai"
@@ -1035,33 +1023,16 @@
           ]
         },
         {
-          "title": "duwqijlk/muse-protocol",
-          "source": "github",
-          "buzz": 3454,
-          "url": "https://github.com/duwqijlk/muse-protocol",
-          "topics": [
-            "ai",
-            "dev"
-          ]
-        },
-        {
           "title": "gylive/google-ultra",
           "source": "github",
-          "buzz": 3355,
+          "buzz": 3827,
           "url": "https://github.com/gylive/google-ultra",
-          "topics": []
-        },
-        {
-          "title": "Carnegie Mellon is putting computer science courses on YouTube for free",
-          "source": "hn",
-          "buzz": 3177,
-          "url": "https://www.cs.cmu.edu/learn/",
           "topics": []
         },
         {
           "title": "krisgfx9/Wireless-Device-Battery-Monitor",
           "source": "github",
-          "buzz": 3109,
+          "buzz": 3484,
           "url": "https://github.com/krisgfx9/Wireless-Device-Battery-Monitor",
           "topics": [
             "ai",
@@ -1069,9 +1040,28 @@
           ]
         },
         {
+          "title": "duwqijlk/muse-protocol",
+          "source": "github",
+          "buzz": 3480,
+          "url": "https://github.com/duwqijlk/muse-protocol",
+          "topics": [
+            "ai",
+            "dev"
+          ]
+        },
+        {
+          "title": "GPT‑6.2 Astra and Sol",
+          "source": "hn",
+          "buzz": 3222,
+          "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+          "topics": [
+            "ai"
+          ]
+        },
+        {
           "title": "Noniv/abyssal-garden",
           "source": "github",
-          "buzz": 3079,
+          "buzz": 3152,
           "url": "https://github.com/Noniv/abyssal-garden",
           "topics": [
             "ai",
@@ -1080,36 +1070,18 @@
           ]
         },
         {
-          "title": "apex-compute/ANR",
-          "source": "github",
-          "buzz": 2752,
-          "url": "https://github.com/apex-compute/ANR",
-          "topics": [
-            "ai"
-          ]
-        },
-        {
           "title": "New Evidence Shows School Phone Bans Are Gradually Improving Test Scores",
           "source": "hn",
-          "buzz": 2701,
+          "buzz": 2975,
           "url": "https://www.nytimes.com/2026/11/17/upshot/school-phone-bans-study-scores.html",
           "topics": [
             "dev"
           ]
         },
         {
-          "title": "GPT‑6.2 Astra and Sol",
-          "source": "hn",
-          "buzz": 2344,
-          "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
-          "topics": [
-            "ai"
-          ]
-        },
-        {
           "title": "Immortal-Protocols/lastbook",
           "source": "github",
-          "buzz": 2220,
+          "buzz": 2503,
           "url": "https://github.com/Immortal-Protocols/lastbook",
           "topics": [
             "ai",
@@ -1120,36 +1092,56 @@
         {
           "title": "ZiChuanLan/freebie-radar",
           "source": "github",
-          "buzz": 2144,
+          "buzz": 2181,
           "url": "https://github.com/ZiChuanLan/freebie-radar",
           "topics": [
             "ai"
           ]
         },
         {
+          "title": "Highly classified US national security communications network goes down",
+          "source": "hn",
+          "buzz": 2177,
+          "url": "https://www.cnn.com/2026/11/17/politics/highly-classified-national-security-communications-network-goes-down",
+          "topics": [
+            "security"
+          ]
+        },
+        {
           "title": "CzzzzzzJ/mdldm-maitian",
           "source": "github",
-          "buzz": 1973,
+          "buzz": 2063,
           "url": "https://github.com/CzzzzzzJ/mdldm-maitian",
           "topics": [
             "ai"
           ]
         },
         {
-          "title": "Eynnzerr/TelemetryCleaner",
-          "source": "github",
-          "buzz": 1842,
-          "url": "https://github.com/Eynnzerr/TelemetryCleaner",
-          "topics": []
-        },
-        {
           "title": "haziqahmedqasmi/PeakCut",
           "source": "github",
-          "buzz": 1710,
+          "buzz": 1750,
           "url": "https://github.com/haziqahmedqasmi/PeakCut",
           "topics": [
             "ai",
             "dev"
+          ]
+        },
+        {
+          "title": "Apple Services Down",
+          "source": "hn",
+          "buzz": 1748,
+          "url": "https://developer.apple.com/system-status/",
+          "topics": []
+        },
+        {
+          "title": "erkamyaman/rust-anything",
+          "source": "github",
+          "buzz": 1684,
+          "url": "https://github.com/erkamyaman/rust-anything",
+          "topics": [
+            "ai",
+            "dev",
+            "hardware"
           ]
         }
       ]
@@ -1177,32 +1169,32 @@
         "indexnow_key": "24a2a3be6c9916e5d406ab9f8ff51e4d"
       },
       "totals": {
-        "items": 143,
+        "items": 141,
         "by_source": {
           "github": 40,
-          "hn": 31,
+          "hn": 30,
           "rss": 12,
-          "arxiv": 60
+          "arxiv": 59
         },
         "by_recipe": {
-          "arxiv": 60,
+          "arxiv": 59,
           "github_search": 40,
-          "hn_front": 31,
+          "hn_front": 30,
           "devto": 12
         },
         "by_topic": {
           "ai": 102,
-          "dev": 63,
+          "dev": 61,
           "science": 35,
-          "hardware": 21,
-          "security": 7,
-          "biz": 7,
-          "crypto": 7
+          "hardware": 23,
+          "biz": 8,
+          "security": 5,
+          "crypto": 5
         },
         "top_domains": [
           [
             "arxiv.org",
-            62
+            60
           ],
           [
             "github.com",
@@ -1214,10 +1206,6 @@
           ],
           [
             "openai.com",
-            2
-          ],
-          [
-            "cs.cmu.edu",
             1
           ],
           [
@@ -1233,15 +1221,15 @@
             1
           ],
           [
-            "claude.dev",
-            1
-          ],
-          [
-            "runta.com",
-            1
-          ],
-          [
             "ft.com",
+            1
+          ],
+          [
+            "calif.io",
+            1
+          ],
+          [
+            "claude.dev",
             1
           ],
           [
@@ -1249,23 +1237,11 @@
             1
           ],
           [
-            "visualbasic.world",
+            "runta.com",
             1
           ],
           [
-            "alloyhtml.com",
-            1
-          ],
-          [
-            "spiraldb.com",
-            1
-          ],
-          [
-            "puri.sm",
-            1
-          ],
-          [
-            "solidjs.com",
+            "blog.cloudflare.com",
             1
           ],
           [
@@ -1273,15 +1249,19 @@
             1
           ],
           [
+            "solidjs.com",
+            1
+          ],
+          [
             "phrack.org",
             1
           ],
           [
-            "nautil.us",
+            "complexdiscovery.com",
             1
           ],
           [
-            "read.corematter.com",
+            "newsletter.posthog.com",
             1
           ],
           [
@@ -1289,15 +1269,27 @@
             1
           ],
           [
+            "read.corematter.com",
+            1
+          ],
+          [
             "starsling.dev",
             1
           ],
           [
-            "egm.dev",
+            "wiki.archiveteam.org",
             1
           ],
           [
-            "human-md.ai",
+            "revscope.co",
+            1
+          ],
+          [
+            "hy.tencent.ai",
+            1
+          ],
+          [
+            "consumerrights.wiki",
             1
           ]
         ]
@@ -1317,7 +1309,7 @@
         {
           "title": "deepseek-ai/chat-demo",
           "source": "github",
-          "buzz": 7457,
+          "buzz": 7510,
           "url": "https://github.com/deepseek-ai/chat-demo",
           "topics": [
             "ai"
@@ -1334,33 +1326,16 @@
           ]
         },
         {
-          "title": "duwqijlk/muse-protocol",
-          "source": "github",
-          "buzz": 3454,
-          "url": "https://github.com/duwqijlk/muse-protocol",
-          "topics": [
-            "ai",
-            "dev"
-          ]
-        },
-        {
           "title": "gylive/google-ultra",
           "source": "github",
-          "buzz": 3355,
+          "buzz": 3827,
           "url": "https://github.com/gylive/google-ultra",
-          "topics": []
-        },
-        {
-          "title": "Carnegie Mellon is putting computer science courses on YouTube for free",
-          "source": "hn",
-          "buzz": 3177,
-          "url": "https://www.cs.cmu.edu/learn/",
           "topics": []
         },
         {
           "title": "krisgfx9/Wireless-Device-Battery-Monitor",
           "source": "github",
-          "buzz": 3109,
+          "buzz": 3484,
           "url": "https://github.com/krisgfx9/Wireless-Device-Battery-Monitor",
           "topics": [
             "ai",
@@ -1368,9 +1343,28 @@
           ]
         },
         {
+          "title": "duwqijlk/muse-protocol",
+          "source": "github",
+          "buzz": 3480,
+          "url": "https://github.com/duwqijlk/muse-protocol",
+          "topics": [
+            "ai",
+            "dev"
+          ]
+        },
+        {
+          "title": "GPT‑6.2 Astra and Sol",
+          "source": "hn",
+          "buzz": 3222,
+          "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+          "topics": [
+            "ai"
+          ]
+        },
+        {
           "title": "Noniv/abyssal-garden",
           "source": "github",
-          "buzz": 3079,
+          "buzz": 3152,
           "url": "https://github.com/Noniv/abyssal-garden",
           "topics": [
             "ai",
@@ -1379,36 +1373,18 @@
           ]
         },
         {
-          "title": "apex-compute/ANR",
-          "source": "github",
-          "buzz": 2752,
-          "url": "https://github.com/apex-compute/ANR",
-          "topics": [
-            "ai"
-          ]
-        },
-        {
           "title": "New Evidence Shows School Phone Bans Are Gradually Improving Test Scores",
           "source": "hn",
-          "buzz": 2701,
+          "buzz": 2975,
           "url": "https://www.nytimes.com/2026/11/17/upshot/school-phone-bans-study-scores.html",
           "topics": [
             "dev"
           ]
         },
         {
-          "title": "GPT‑6.2 Astra and Sol",
-          "source": "hn",
-          "buzz": 2344,
-          "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
-          "topics": [
-            "ai"
-          ]
-        },
-        {
           "title": "Immortal-Protocols/lastbook",
           "source": "github",
-          "buzz": 2220,
+          "buzz": 2503,
           "url": "https://github.com/Immortal-Protocols/lastbook",
           "topics": [
             "ai",
@@ -1419,36 +1395,56 @@
         {
           "title": "ZiChuanLan/freebie-radar",
           "source": "github",
-          "buzz": 2144,
+          "buzz": 2181,
           "url": "https://github.com/ZiChuanLan/freebie-radar",
           "topics": [
             "ai"
           ]
         },
         {
+          "title": "Highly classified US national security communications network goes down",
+          "source": "hn",
+          "buzz": 2177,
+          "url": "https://www.cnn.com/2026/11/17/politics/highly-classified-national-security-communications-network-goes-down",
+          "topics": [
+            "security"
+          ]
+        },
+        {
           "title": "CzzzzzzJ/mdldm-maitian",
           "source": "github",
-          "buzz": 1973,
+          "buzz": 2063,
           "url": "https://github.com/CzzzzzzJ/mdldm-maitian",
           "topics": [
             "ai"
           ]
         },
         {
-          "title": "Eynnzerr/TelemetryCleaner",
-          "source": "github",
-          "buzz": 1842,
-          "url": "https://github.com/Eynnzerr/TelemetryCleaner",
-          "topics": []
-        },
-        {
           "title": "haziqahmedqasmi/PeakCut",
           "source": "github",
-          "buzz": 1710,
+          "buzz": 1750,
           "url": "https://github.com/haziqahmedqasmi/PeakCut",
           "topics": [
             "ai",
             "dev"
+          ]
+        },
+        {
+          "title": "Apple Services Down",
+          "source": "hn",
+          "buzz": 1748,
+          "url": "https://developer.apple.com/system-status/",
+          "topics": []
+        },
+        {
+          "title": "erkamyaman/rust-anything",
+          "source": "github",
+          "buzz": 1684,
+          "url": "https://github.com/erkamyaman/rust-anything",
+          "topics": [
+            "ai",
+            "dev",
+            "hardware"
           ]
         }
       ]
@@ -1629,24 +1625,24 @@
         "indexnow_key": "6aa8e80f84e43d6e13f6e0b6a2edd4b4"
       },
       "totals": {
-        "items": 133,
+        "items": 132,
         "by_source": {
           "hn": 40,
           "cve": 30,
-          "github": 13,
+          "github": 12,
           "rss": 50
         },
         "by_recipe": {
           "hn_sec": 40,
           "gh_advisories": 30,
           "hackersnews": 30,
-          "github_sec": 13,
+          "github_sec": 12,
           "schneier": 10,
           "krebs": 10
         },
         "by_topic": {
           "security": 108,
-          "ai": 74,
+          "ai": 73,
           "dev": 60,
           "hardware": 19,
           "crypto": 9,
@@ -1656,7 +1652,7 @@
         "top_domains": [
           [
             "github.com",
-            45
+            44
           ],
           [
             "thehackernews.com",
@@ -1906,24 +1902,23 @@
           ]
         },
         {
+          "title": "Security advisory: Critical remote code execution vulnerabilities, update now",
+          "source": "hn",
+          "buzz": 3538,
+          "url": "https://www.php.net/archive/2026.php#2026-10-21-5",
+          "topics": [
+            "security"
+          ]
+        },
+        {
           "title": "CVE-2026-91115: Silverstripe Framework: RCE via i18nTextCollectorTask writer parameter",
           "source": "cve",
-          "buzz": 3580,
+          "buzz": 3530,
           "url": "https://github.com/advisories/GHSA-c94f-87xg-65wf",
           "topics": [
             "dev",
             "security",
             "hardware"
-          ]
-        },
-        {
-          "title": "CVE-2026-129236: Kubeshark: MCP `start_kubeshark` argument injection via `pod_regex` → image redirect → cluster takeover",
-          "source": "cve",
-          "buzz": 3580,
-          "url": "https://github.com/advisories/GHSA-8vf2-hxg5-crqh",
-          "topics": [
-            "dev",
-            "security"
           ]
         }
       ]
@@ -1954,24 +1949,23 @@
         "indexnow_key": "e1cb61b8dfeae7ffb7abba5340ab1b3a"
       },
       "totals": {
-        "items": 15,
+        "items": 16,
         "by_source": {
-          "html": 15
+          "html": 16
         },
         "by_recipe": {
+          "freetender_supply": 5,
           "freetender_rf": 4,
-          "freetender_edu": 4,
-          "freetender_supply": 3,
-          "freetender_it": 3,
+          "freetender_edu": 3,
+          "freetender_agri": 2,
+          "freetender_it": 1,
           "freetender_constr": 1
         },
-        "by_topic": {
-          "security": 1
-        },
+        "by_topic": {},
         "top_domains": [
           [
             "freetender.net",
-            15
+            16
           ]
         ]
       },
@@ -1979,10 +1973,10 @@
       "qa": "QA ok:11 warn:0 err:0",
       "products": {
         "digest_top.csv": {
-          "rows": 15
+          "rows": 16
         },
         "trend_index.csv": {
-          "rows": 1,
+          "rows": 0,
           "has_prev": true
         }
       },
@@ -2016,47 +2010,45 @@
           "topics": []
         },
         {
-          "title": "1. Постфильтр угольный тонкой очистки IL-10W-C-EZ Производительность – 1,9 л/мин Пористость – 10 микрон Ресурс – 6000 л Давление – до 6,8 атм Температура воды – от 2°C до 38°C Соединительный размер –",
+          "title": "Поставка 3D принтера",
           "source": "html",
           "buzz": 80,
-          "url": "https://freetender.net/tender/1-il-10w-c-ez-19-10-6000-68-2c-38c-b2bs-l15416398-3-9-1",
+          "url": "https://freetender.net/tender/3d-32616586396",
           "topics": []
         },
         {
-          "title": "Поставка материала нетканого SPL 60(F.C.) 0,82х130м",
+          "title": "Поставка бумаги листовой для офисной техники формата А-4",
           "source": "html",
           "buzz": 80,
-          "url": "https://freetender.net/tender/spl-60fc-082130-b2bs-l4684140-4-11-1",
+          "url": "https://freetender.net/tender/4-b2bs-l15415847-3-9-1",
           "topics": []
         },
         {
-          "title": "Поставка одежды (3)",
+          "title": "Выполнение работ по монтажу системы контроля и управления доступом (СКУД) по адресу: Алтайский край, г. Барнаул, ул. Деповская, д. 13а в рамках реализации мероприятий по антитеррористической защищенности объектов (территорий)",
           "source": "html",
           "buzz": 80,
-          "url": "https://freetender.net/tender/3-0848300046026000667",
+          "url": "https://freetender.net/tender/13-0817200000326018026",
           "topics": []
         },
         {
-          "title": "Оказание услуг по передаче на условиях простой (неисключительной) лицензии права на использование антивирусного программного обеспечения «Kaspersky Endpoint Security для бизнеса – стандартный Russian Edition»",
+          "title": "Оказание услуг по замене теплоносителя в системе холодоснабжения объекта Корпус № 1 ГБУЗ СК «КДКБ»",
           "source": "html",
           "buzz": 80,
-          "url": "https://freetender.net/tender/kaspersky-endpoint-security-russian-edition-0141200001326000008",
-          "topics": [
-            "security"
-          ]
-        },
-        {
-          "title": "Оказание услуг по абонентскому обслуживанию и технической поддержке абонентских терминалов системы «ГЛОНАСС»/GPS и датчиков уровня топлива",
-          "source": "html",
-          "buzz": 80,
-          "url": "https://freetender.net/tender/gps-b2bs-l15416431-3-9-1",
+          "url": "https://freetender.net/tender/no-1-b2bs-l15415896-3-9-1",
           "topics": []
         },
         {
-          "title": "Оказание услуг по представлению канала связи L2 VPN на объекте МУ \"СК \"Клинский\" по адресу: г.о. Клин, д. Слобода, ул. Центральная, 19",
+          "title": "поставка расходных материалов, инструментов, оборудования для оснащения мастерской по профессии «21.01.03 Бурильщик эксплуатационных и разведочных скважин» для проведения демонстрационного экзамена",
           "source": "html",
           "buzz": 80,
-          "url": "https://freetender.net/tender/l2-vpn-19-b2bs-l15416476-3-9-1",
+          "url": "https://freetender.net/tender/210103-b2bs-l15415909-3-9-1",
+          "topics": []
+        },
+        {
+          "title": "Закупка в 2026 товара (видеокамеры) для нужд МАОУ «Православная гимназия» г. Звенигорода.",
+          "source": "html",
+          "buzz": 80,
+          "url": "https://freetender.net/tender/2026-b2bs-l15415924-3-9-1",
           "topics": []
         },
         {
@@ -2074,13 +2066,6 @@
           "topics": []
         },
         {
-          "title": "Оказание услуг по дополнительной образовательной программе в рамках Всероссийского конгресса сметчиков 2026: курсы повышения квалификации «Ценообразование и сметное нормирование в строительстве»",
-          "source": "html",
-          "buzz": 80,
-          "url": "https://freetender.net/tender/2026-b2bs-l15417595-3-9-1",
-          "topics": []
-        },
-        {
           "title": "Комплекс образовательных услуг по программам повышения квалификации и профессиональной переподготовки «Школа Главбуха госучреждения. Все программы. Тариф 5 доступов»,12 мес.",
           "source": "html",
           "buzz": 80,
@@ -2092,6 +2077,13 @@
           "source": "html",
           "buzz": 80,
           "url": "https://freetender.net/tender/8-b2bs-l15417997-3-9-1",
+          "topics": []
+        },
+        {
+          "title": "Поставка в МБДОУ № 40 \"Медвежонок\" продуктов питания (ХЛЕБ, ХЛЕБОБУЛОЧНЫЕ ИЗДЕЛИЯ, КОНДИТЕРСКИЕ ИЗДЕЛИЯ, МУКОМОЛЬНАЯ ПРОДУКЦИЯ, БАКАЛЕЯ, ОВОЩИ КОНСЕРВИРОВАННЫЕ, СУХОФРУКТЫ) с 01.12.2026 по 30.12.2026",
+          "source": "html",
+          "buzz": 80,
+          "url": "https://freetender.net/tender/no-40-01122026-30122026-b2bs-l15415343-3-9-1",
           "topics": []
         }
       ]
@@ -2132,11 +2124,11 @@
           "github_llm": 5
         },
         "by_topic": {
-          "ai": 75,
-          "dev": 40,
-          "science": 14,
-          "biz": 10,
-          "security": 9,
+          "ai": 73,
+          "dev": 37,
+          "science": 15,
+          "biz": 12,
+          "security": 6,
           "hardware": 5
         },
         "top_domains": [

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T21:06:51+00:00",
+  "generated_at": "2026-11-18T01:35:27+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -10,24 +10,24 @@
     "rss"
   ],
   "totals": {
-    "items": 133,
+    "items": 132,
     "by_source": {
       "hn": 40,
       "cve": 30,
-      "github": 13,
+      "github": 12,
       "rss": 50
     },
     "by_recipe": {
       "hn_sec": 40,
       "gh_advisories": 30,
       "hackersnews": 30,
-      "github_sec": 13,
+      "github_sec": 12,
       "schneier": 10,
       "krebs": 10
     },
     "by_topic": {
       "security": 108,
-      "ai": 74,
+      "ai": 73,
       "dev": 60,
       "hardware": 19,
       "crypto": 9,
@@ -37,7 +37,7 @@
     "top_domains": [
       [
         "github.com",
-        45
+        44
       ],
       [
         "thehackernews.com",
@@ -377,6 +377,23 @@
       "date": "2026-11-17"
     },
     {
+      "uid": "hn:50172041",
+      "source": "hn",
+      "title": "Security advisory: Critical remote code execution vulnerabilities, update now",
+      "url": "https://www.php.net/archive/2026.php#2026-10-21-5",
+      "ts": 1792527350.0,
+      "points": 1561,
+      "comments": 659,
+      "author": "xd",
+      "summary": "<a href=\"https:&#x2F;&#x2F;cert.europa.eu&#x2F;publications&#x2F;security-advisories&#x2F;2026-018&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;cert.europa.eu&#x2F;publications&#x2F;security-advisories&#x2F;2026...</a><p><a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=[phone]\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=[phone]</a>",
+      "recipe": "hn_sec",
+      "buzz": 3538,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-10-20"
+    },
+    {
       "uid": "cve:GHSA-c94f-87xg-65wf",
       "source": "cve",
       "title": "CVE-2026-91115: Silverstripe Framework: RCE via i18nTextCollectorTask writer parameter",
@@ -387,7 +404,7 @@
       "author": "silverstripe/framework",
       "summary": "Severity: high. ### Impact\nThe writer option of the i18nTextCollectorTask dev task was passed to the injector without validation. A crafted dev task URL could create arbitrary objects with attacker-controlled constructor arguments and run code on the server. Because the dev task did not ask for confirmation, an adm",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "dev",
         "security",
@@ -406,7 +423,7 @@
       "author": "github.com/kubeshark/kubeshark",
       "summary": "Severity: high. **Ecosystem / package:** Go — `github.com/kubeshark/kubeshark` (the `kubeshark`\nCLI, `kubeshark mcp` subcommand)\n**Affected component:** `cmd/mcpRunner.go`, MCP tool `start_kubeshark`\n**Affected versions:** `>= v53.1.0`, `< v53.4.0` (the flaw shipped with the MCP\ncommand's first release; v53.3.0 was",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "dev",
         "security"
@@ -424,7 +441,7 @@
       "author": "mail-parser",
       "summary": "Severity: high. ### Patches\n\nFixed in **4.6.2**. Upgrade with `pip install --upgrade mail-parser`.\n\nCandidate addresses are now selected by position, not by appearance — a bracketed address\nthe sender wrote is byte-identical to one the MTA wrote, so no amount of pattern matching\ncan tell them apart:\n\n- the first to",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "ai",
         "dev",
@@ -444,7 +461,7 @@
       "author": "mail-parser",
       "summary": "Severity: high. ### Summary\n\nTwo regular expressions used while parsing email headers backtrack\npolynomially on attacker-controlled input. Parsing a single small, well-formed\nemail can consume minutes to hours of CPU, denying service to any process that\nparses untrusted mail.\n\nBoth are reachable from an ordinary `p",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "ai",
         "dev",
@@ -464,7 +481,7 @@
       "author": "termux-sync",
       "summary": "Severity: high. termux-sync restore trusts fields inside an untrusted backup manifest and uses them as the extraction destination without validation.\n\nDuring restore, each archive entry is handled as:\n\n  src_dir = Path(info.get(\"source\", ...)).parent\n  extract_archive(archive, src_dir, ...)\n\nextract_archive opens t",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "dev",
         "security"
@@ -482,7 +499,7 @@
       "author": "code-review-mcp-server",
       "summary": "Severity: high. ### Impact\n\n`code-review-mcp-server` exposes MCP tools (`getLocalGitDiff`, `codeReview`, `createPR`, `getPRTemplate`) that accept `folderPath` and `baseBranch` string parameters. These caller-controlled values were interpolated directly into shell command strings executed via `child_process.execSync",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "dev",
         "security",
@@ -501,29 +518,12 @@
       "author": "litesaml/lightsaml",
       "summary": "Severity: high. ### Summary\n\nLightSaml 5.0.0 (latest release; also confirmed on 4.6.1) validates an inbound `samlp:Response` by collecting its direct-child `saml:Assertion` elements and validating each one's `ds:Signature` via robrichards/xmlseclibs. The two layers disagree on which element a signature actually cov",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "ai",
         "security"
       ],
       "date": "2026-11-16"
-    },
-    {
-      "uid": "hn:50172041",
-      "source": "hn",
-      "title": "Security advisory: Critical remote code execution vulnerabilities, update now",
-      "url": "https://www.php.net/archive/2026.php#2026-10-21-5",
-      "ts": 1792527350.0,
-      "points": 1561,
-      "comments": 659,
-      "author": "xd",
-      "summary": "<a href=\"https:&#x2F;&#x2F;cert.europa.eu&#x2F;publications&#x2F;security-advisories&#x2F;2026-018&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;cert.europa.eu&#x2F;publications&#x2F;security-advisories&#x2F;2026...</a><p><a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=[phone]\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=[phone]</a>",
-      "recipe": "hn_sec",
-      "buzz": 3538,
-      "topics": [
-        "security"
-      ],
-      "date": "2026-10-20"
     },
     {
       "uid": "hn:32148218",
@@ -913,231 +913,6 @@
       "date": "2026-11-17"
     },
     {
-      "uid": "cve:GHSA-vx32-xf7g-9ghr",
-      "source": "cve",
-      "title": "CVE-2026-129237: qbee-agent: Docker Compose build context Zip Slip writes outside context directory",
-      "url": "https://github.com/advisories/GHSA-vx32-xf7g-9ghr",
-      "ts": 1794868540.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "go.qbee.io/agent",
-      "summary": "Severity: medium. ## Summary\n\n`qbee-agent` contains a Zip Slip vulnerability in `app/utils/tar.go`. The tar extractor checks whether an entry remains inside the destination directory with:\n\n```go\nstrings.HasPrefix(targetPath, destdirClean)\n```\n\nThis does not enforce a path separator boundary. If the destination direc",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-16"
-    },
-    {
-      "uid": "cve:GHSA-4qv2-g5vp-wjjw",
-      "source": "cve",
-      "title": "CVE-2026-91113: Silverstripe Framework: User-controlled ClassName allows unauthorized record type change",
-      "url": "https://github.com/advisories/GHSA-4qv2-g5vp-wjjw",
-      "ts": 1794868499.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "silverstripe/framework",
-      "summary": "Severity: medium. ### Impact\nA user who can edit a record through a GridField detail form could change the record to an unrelated class, without the permission checks for that class.\n\n### Reported by\nLachlan Davidson, Carapace",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-16"
-    },
-    {
-      "uid": "cve:GHSA-rg72-5958-c65m",
-      "source": "cve",
-      "title": "CVE-2026-91112: Silverstripe Framework: CMS_ACCESS_SecurityAdmin privilege escalation",
-      "url": "https://github.com/advisories/GHSA-rg72-5958-c65m",
-      "ts": 1794868242.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "silverstripe/framework",
-      "summary": "Severity: medium. ### Impact\nA user with access to the Security section (CMS_ACCESS_SecurityAdmin) but without the ADMIN permission could edit a group that grants ADMIN through a role or a parent group, and use it to escalate their own privileges.\n\n### Reported by\nLachlan Davidson, Carapace",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-16"
-    },
-    {
-      "uid": "cve:GHSA-3qh3-54qg-gpq3",
-      "source": "cve",
-      "title": "CVE-2026-88989: Silverstripe Framework: Auth bypass GridFieldDetailForm",
-      "url": "https://github.com/advisories/GHSA-3qh3-54qg-gpq3",
-      "ts": 1794868199.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "silverstripe/framework",
-      "summary": "Severity: medium. ### Impact\nA CMS user who can edit records through a GridField detail form could create new records without the permission to create them, by sending a save request directly.\n\n### Reported by\nHDWSec - https://hdwsec.fr",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-16"
-    },
-    {
-      "uid": "cve:GHSA-xwg4-8hqh-79jq",
-      "source": "cve",
-      "title": "CVE-2026-88988: Silverstripe Framework: XSS via SVG data URI",
-      "url": "https://github.com/advisories/GHSA-xwg4-8hqh-79jq",
-      "ts": 1794868066.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "silverstripe/framework",
-      "summary": "Severity: medium. ### Impact\nThe HTML sanitiser did not remove SVG data URIs. A CMS author could store content that runs JavaScript in the browser of another user who views it.\n\n### Reported by\nHDWSec - https://hdwsec.fr",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-16"
-    },
-    {
-      "uid": "cve:GHSA-qqrg-8jpm-8mph",
-      "source": "cve",
-      "title": "CVE-2026-88987: Silverstripe Framework: XSS via XHTML data URI",
-      "url": "https://github.com/advisories/GHSA-qqrg-8jpm-8mph",
-      "ts": 1794868057.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "silverstripe/framework",
-      "summary": "Severity: medium. ### Impact\nThe HTML sanitiser did not remove XHTML and XML data URIs. A CMS author could store content that runs JavaScript in the browser of another user who views it.\n\n### Reported by\nJack Wallace from Bastion Security",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-16"
-    },
-    {
-      "uid": "cve:GHSA-7h45-q5jx-7r87",
-      "source": "cve",
-      "title": "CVE-2026-129239: Directus: Share update allows reassigning user_created and role",
-      "url": "https://github.com/advisories/GHSA-7h45-q5jx-7r87",
-      "ts": 1794867953.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "directus",
-      "summary": "Severity: medium. ### Summary\n\nA non-admin user who can update their own shares can reassign a share's creator (`user_created`), `role`, `item`, and `collection` fields after the share is created. The update is authorized against the row as it existed before the change, and the resulting row is never revalidated, so",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-16"
-    },
-    {
-      "uid": "cve:GHSA-8cgq-x343-p74c",
-      "source": "cve",
-      "title": "CVE-2026-129301: mail-parser: One hostile attachment aborts `write_attachments()` and silently drops the rest of the batch",
-      "url": "https://github.com/advisories/GHSA-8cgq-x343-p74c",
-      "ts": 1794867733.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "mail-parser",
-      "summary": "Severity: medium. ### Impact\n\n`write_attachments()` called `_safe_attachment_filename()` and `write_sample()` inside its loop\nwith no guard, so a single crafted attachment raised out of the whole save. Every attachment\n**after** the malicious one was silently never written, with no error surfaced to a caller that\ncat",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-16"
-    },
-    {
-      "uid": "cve:GHSA-xhrq-2mqv-q8wx",
-      "source": "cve",
-      "title": "CVE-2026-129300: mail-parser: Uncaught `OverflowError` / `OSError` on an out-of-range `Received` date",
-      "url": "https://github.com/advisories/GHSA-xhrq-2mqv-q8wx",
-      "ts": 1794867632.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "mail-parser",
-      "summary": "Severity: medium. ### Impact\n\nA `Received` header whose trailing date carries an out-of-range year, or a timezone offset\nlarge enough to push the timestamp past the int64 epoch range, raises an exception that is\n**outside the `MailParser*` hierarchy**. A caller that catches only mail-parser exceptions\ndoes not catch",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-16"
-    },
-    {
-      "uid": "cve:GHSA-gj7r-p794-hhq5",
-      "source": "cve",
-      "title": "CVE-2026-129235: Kubeshark: MCP `download_file` writes fetched bytes to an unvalidated destination path",
-      "url": "https://github.com/advisories/GHSA-gj7r-p794-hhq5",
-      "ts": 1794867538.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "github.com/kubeshark/kubeshark",
-      "summary": "Severity: medium. **Ecosystem / package:** Go — `github.com/kubeshark/kubeshark` (the `kubeshark`\nCLI, `kubeshark mcp` subcommand)\n**Affected component:** `cmd/mcpRunner.go`, MCP tool `download_file`\n**Affected versions:** `>= v53.1.0`, `< v53.4.0` (the flaw shipped with the\ntool's first release; v53.3.0 was the last",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-16"
-    },
-    {
-      "uid": "cve:GHSA-24mq-4vc6-2prf",
-      "source": "cve",
-      "title": "CVE-2026-129299: mail-parser: Uncaught exceptions and silent header loss in mail-parser on attacker-controlled input",
-      "url": "https://github.com/advisories/GHSA-24mq-4vc6-2prf",
-      "ts": 1794867171.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "mail-parser",
-      "summary": "Severity: medium. ### Impact\n\nTwo effects, sharing the root cause of Advisory 1 — header names chosen by the sender were\nresolved through Python attribute lookup and rewritten before lookup.\n\n**Uncaught exceptions.** A crafted message raises an exception that is *outside* the\n`MailParser*` hierarchy, so a caller catc",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-16"
-    },
-    {
-      "uid": "cve:GHSA-fr3h-cpq2-9496",
-      "source": "cve",
-      "title": "CVE-2026-129296: mail-parser: Path Traversal vulnerability in attachment extraction",
-      "url": "https://github.com/advisories/GHSA-fr3h-cpq2-9496",
-      "ts": 1794867055.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "mail-parser",
-      "summary": "Severity: medium. A path traversal vulnerability was identified in mail-parser when extracting email attachments using the write_attachments() and write_sample() APIs.\n\nA specially crafted email containing malicious attachment filenames (for example, using directory traversal sequences such as \"../\" or absolute files",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-16"
-    },
-    {
       "uid": "hn:48166459",
       "source": "hn",
       "title": "Mozilla to UK regulators: VPNs are essential privacy and security tools",
@@ -1187,6 +962,231 @@
         "security"
       ],
       "date": "2016-12-15"
+    },
+    {
+      "uid": "cve:GHSA-vx32-xf7g-9ghr",
+      "source": "cve",
+      "title": "CVE-2026-129237: qbee-agent: Docker Compose build context Zip Slip writes outside context directory",
+      "url": "https://github.com/advisories/GHSA-vx32-xf7g-9ghr",
+      "ts": 1794868540.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "go.qbee.io/agent",
+      "summary": "Severity: medium. ## Summary\n\n`qbee-agent` contains a Zip Slip vulnerability in `app/utils/tar.go`. The tar extractor checks whether an entry remains inside the destination directory with:\n\n```go\nstrings.HasPrefix(targetPath, destdirClean)\n```\n\nThis does not enforce a path separator boundary. If the destination direc",
+      "recipe": "gh_advisories",
+      "buzz": 1830,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-16"
+    },
+    {
+      "uid": "cve:GHSA-4qv2-g5vp-wjjw",
+      "source": "cve",
+      "title": "CVE-2026-91113: Silverstripe Framework: User-controlled ClassName allows unauthorized record type change",
+      "url": "https://github.com/advisories/GHSA-4qv2-g5vp-wjjw",
+      "ts": 1794868499.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "silverstripe/framework",
+      "summary": "Severity: medium. ### Impact\nA user who can edit a record through a GridField detail form could change the record to an unrelated class, without the permission checks for that class.\n\n### Reported by\nLachlan Davidson, Carapace",
+      "recipe": "gh_advisories",
+      "buzz": 1830,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-16"
+    },
+    {
+      "uid": "cve:GHSA-rg72-5958-c65m",
+      "source": "cve",
+      "title": "CVE-2026-91112: Silverstripe Framework: CMS_ACCESS_SecurityAdmin privilege escalation",
+      "url": "https://github.com/advisories/GHSA-rg72-5958-c65m",
+      "ts": 1794868242.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "silverstripe/framework",
+      "summary": "Severity: medium. ### Impact\nA user with access to the Security section (CMS_ACCESS_SecurityAdmin) but without the ADMIN permission could edit a group that grants ADMIN through a role or a parent group, and use it to escalate their own privileges.\n\n### Reported by\nLachlan Davidson, Carapace",
+      "recipe": "gh_advisories",
+      "buzz": 1830,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-16"
+    },
+    {
+      "uid": "cve:GHSA-3qh3-54qg-gpq3",
+      "source": "cve",
+      "title": "CVE-2026-88989: Silverstripe Framework: Auth bypass GridFieldDetailForm",
+      "url": "https://github.com/advisories/GHSA-3qh3-54qg-gpq3",
+      "ts": 1794868199.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "silverstripe/framework",
+      "summary": "Severity: medium. ### Impact\nA CMS user who can edit records through a GridField detail form could create new records without the permission to create them, by sending a save request directly.\n\n### Reported by\nHDWSec - https://hdwsec.fr",
+      "recipe": "gh_advisories",
+      "buzz": 1830,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-16"
+    },
+    {
+      "uid": "cve:GHSA-xwg4-8hqh-79jq",
+      "source": "cve",
+      "title": "CVE-2026-88988: Silverstripe Framework: XSS via SVG data URI",
+      "url": "https://github.com/advisories/GHSA-xwg4-8hqh-79jq",
+      "ts": 1794868066.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "silverstripe/framework",
+      "summary": "Severity: medium. ### Impact\nThe HTML sanitiser did not remove SVG data URIs. A CMS author could store content that runs JavaScript in the browser of another user who views it.\n\n### Reported by\nHDWSec - https://hdwsec.fr",
+      "recipe": "gh_advisories",
+      "buzz": 1830,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-16"
+    },
+    {
+      "uid": "cve:GHSA-qqrg-8jpm-8mph",
+      "source": "cve",
+      "title": "CVE-2026-88987: Silverstripe Framework: XSS via XHTML data URI",
+      "url": "https://github.com/advisories/GHSA-qqrg-8jpm-8mph",
+      "ts": 1794868057.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "silverstripe/framework",
+      "summary": "Severity: medium. ### Impact\nThe HTML sanitiser did not remove XHTML and XML data URIs. A CMS author could store content that runs JavaScript in the browser of another user who views it.\n\n### Reported by\nJack Wallace from Bastion Security",
+      "recipe": "gh_advisories",
+      "buzz": 1830,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-16"
+    },
+    {
+      "uid": "cve:GHSA-7h45-q5jx-7r87",
+      "source": "cve",
+      "title": "CVE-2026-129239: Directus: Share update allows reassigning user_created and role",
+      "url": "https://github.com/advisories/GHSA-7h45-q5jx-7r87",
+      "ts": 1794867953.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "directus",
+      "summary": "Severity: medium. ### Summary\n\nA non-admin user who can update their own shares can reassign a share's creator (`user_created`), `role`, `item`, and `collection` fields after the share is created. The update is authorized against the row as it existed before the change, and the resulting row is never revalidated, so",
+      "recipe": "gh_advisories",
+      "buzz": 1830,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-16"
+    },
+    {
+      "uid": "cve:GHSA-8cgq-x343-p74c",
+      "source": "cve",
+      "title": "CVE-2026-129301: mail-parser: One hostile attachment aborts `write_attachments()` and silently drops the rest of the batch",
+      "url": "https://github.com/advisories/GHSA-8cgq-x343-p74c",
+      "ts": 1794867733.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "mail-parser",
+      "summary": "Severity: medium. ### Impact\n\n`write_attachments()` called `_safe_attachment_filename()` and `write_sample()` inside its loop\nwith no guard, so a single crafted attachment raised out of the whole save. Every attachment\n**after** the malicious one was silently never written, with no error surfaced to a caller that\ncat",
+      "recipe": "gh_advisories",
+      "buzz": 1830,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-16"
+    },
+    {
+      "uid": "cve:GHSA-xhrq-2mqv-q8wx",
+      "source": "cve",
+      "title": "CVE-2026-129300: mail-parser: Uncaught `OverflowError` / `OSError` on an out-of-range `Received` date",
+      "url": "https://github.com/advisories/GHSA-xhrq-2mqv-q8wx",
+      "ts": 1794867632.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "mail-parser",
+      "summary": "Severity: medium. ### Impact\n\nA `Received` header whose trailing date carries an out-of-range year, or a timezone offset\nlarge enough to push the timestamp past the int64 epoch range, raises an exception that is\n**outside the `MailParser*` hierarchy**. A caller that catches only mail-parser exceptions\ndoes not catch",
+      "recipe": "gh_advisories",
+      "buzz": 1830,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-16"
+    },
+    {
+      "uid": "cve:GHSA-gj7r-p794-hhq5",
+      "source": "cve",
+      "title": "CVE-2026-129235: Kubeshark: MCP `download_file` writes fetched bytes to an unvalidated destination path",
+      "url": "https://github.com/advisories/GHSA-gj7r-p794-hhq5",
+      "ts": 1794867538.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "github.com/kubeshark/kubeshark",
+      "summary": "Severity: medium. **Ecosystem / package:** Go — `github.com/kubeshark/kubeshark` (the `kubeshark`\nCLI, `kubeshark mcp` subcommand)\n**Affected component:** `cmd/mcpRunner.go`, MCP tool `download_file`\n**Affected versions:** `>= v53.1.0`, `< v53.4.0` (the flaw shipped with the\ntool's first release; v53.3.0 was the last",
+      "recipe": "gh_advisories",
+      "buzz": 1830,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-16"
+    },
+    {
+      "uid": "cve:GHSA-24mq-4vc6-2prf",
+      "source": "cve",
+      "title": "CVE-2026-129299: mail-parser: Uncaught exceptions and silent header loss in mail-parser on attacker-controlled input",
+      "url": "https://github.com/advisories/GHSA-24mq-4vc6-2prf",
+      "ts": 1794867171.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "mail-parser",
+      "summary": "Severity: medium. ### Impact\n\nTwo effects, sharing the root cause of Advisory 1 — header names chosen by the sender were\nresolved through Python attribute lookup and rewritten before lookup.\n\n**Uncaught exceptions.** A crafted message raises an exception that is *outside* the\n`MailParser*` hierarchy, so a caller catc",
+      "recipe": "gh_advisories",
+      "buzz": 1830,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-16"
+    },
+    {
+      "uid": "cve:GHSA-fr3h-cpq2-9496",
+      "source": "cve",
+      "title": "CVE-2026-129296: mail-parser: Path Traversal vulnerability in attachment extraction",
+      "url": "https://github.com/advisories/GHSA-fr3h-cpq2-9496",
+      "ts": 1794867055.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "mail-parser",
+      "summary": "Severity: medium. A path traversal vulnerability was identified in mail-parser when extracting email attachments using the write_attachments() and write_sample() APIs.\n\nA specially crafted email containing malicious attachment filenames (for example, using directory traversal sequences such as \"../\" or absolute files",
+      "recipe": "gh_advisories",
+      "buzz": 1830,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-16"
     },
     {
       "uid": "hn:25843874",
@@ -1738,34 +1738,17 @@
       "date": "2026-11-06"
     },
     {
-      "uid": "gh:Balanov/latch",
-      "source": "github",
-      "title": "Balanov/latch",
-      "url": "https://github.com/Balanov/latch",
-      "ts": 1793811471.0,
-      "points": 63,
-      "comments": 3,
-      "author": "Balanov",
-      "summary": "One tiny HTTPS contract between any agent and any service. Quote, approve, commit, receipt. Zero dependencies. MIT.",
-      "recipe": "github_sec",
-      "buzz": 72,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-04"
-    },
-    {
       "uid": "gh:NPCmillionaire/unredact.tools",
       "source": "github",
       "title": "NPCmillionaire/unredact.tools",
       "url": "https://github.com/NPCmillionaire/unredact.tools",
       "ts": 1794511431.0,
-      "points": 39,
-      "comments": 1,
+      "points": 40,
+      "comments": 2,
       "author": "NPCmillionaire",
       "summary": "See what your files leak (GPS, serials, authors, failed redactions, deleted text, watermarks), then scrub them.",
       "recipe": "github_sec",
-      "buzz": 52,
+      "buzz": 56,
       "topics": [
         "ai"
       ],
@@ -2025,24 +2008,6 @@
         "security"
       ],
       "date": "2026-11-11"
-    },
-    {
-      "uid": "rss:cd21f33e2e3d64",
-      "source": "rss",
-      "title": "Microsoft Fixes Nearly 1,100 Security Vulnerabilities",
-      "url": "https://krebsonsecurity.com/2026/11/microsoft-fixes-nearly-1100-security-vulnerabilities/",
-      "ts": 1794347703.0,
-      "points": 0,
-      "comments": 0,
-      "author": "BrianKrebs",
-      "summary": "Microsoft did another four-digit patch drop today, releasing updates to fix almost 1,100 security vulnerabilities in its Windows operating systems and supported software. This month's Patch Tuesday addresses 63 critical flaws -- including a zero-day in Microsoft Outlook -- and comes amid important security updates from other software makers, including Adobe, Apple, Google and Mozilla.",
-      "recipe": "krebs",
-      "buzz": 10,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-10"
     },
     {
       "uid": "rss:e109a4e996ba8e",
@@ -2336,6 +2301,24 @@
         "security"
       ],
       "date": "2026-11-12"
+    },
+    {
+      "uid": "rss:cd21f33e2e3d64",
+      "source": "rss",
+      "title": "Microsoft Fixes Nearly 1,100 Security Vulnerabilities",
+      "url": "https://krebsonsecurity.com/2026/11/microsoft-fixes-nearly-1100-security-vulnerabilities/",
+      "ts": 1794347703.0,
+      "points": 0,
+      "comments": 0,
+      "author": "BrianKrebs",
+      "summary": "Microsoft did another four-digit patch drop today, releasing updates to fix almost 1,100 security vulnerabilities in its Windows operating systems and supported software. This month's Patch Tuesday addresses 63 critical flaws -- including a zero-day in Microsoft Outlook -- and comes amid important security updates from other software makers, including Adobe, Apple, Google and Mozilla.",
+      "recipe": "krebs",
+      "buzz": 0,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-10"
     },
     {
       "uid": "rss:7543ee8beb8b7e",

@@ -5,7 +5,15 @@
     <link>https://cveradar-ah3.pages.dev</link>
     <description>Живые CVE и уязвимости на русском: автономный перевод угроз в понятные дайджесты для DevOps и небольшого SecOps</description>
     <language>ru</language>
-    <lastBuildDate>Tue, 17 Nov 2026 21:06:24 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 01:34:42 GMT</lastBuildDate>
+    <item>
+      <title>CVE-2026-119793: libp2p: gossipsub creates a permanent topics-map entry per distinct subscription with no cap in the default config</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-119793-libp2p-gossipsub-creates-a-permanent-topics-map-.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-119793-libp2p-gossipsub-creates-a-permanent-topics-map-.html</guid>
+      <pubDate>Tue, 17 Nov 2026 21:06:20 GMT</pubDate>
+      <description>Severity: high. ### Summary
+A single gossipsub peer can grow a node's `topics` map without bound by flooding subscription RPCs, because the default configuration has no global, per-peer, or topic-length cap and peer scoring does not penalise subscription volume. The peer is never greylisted, so the </description>
+    </item>
     <item>
       <title>CVE-2026-110789: libp2p: ASN.1 DER decoder drives an unbounded synchronous loop on attacker-controlled length fields, stalling the Node event loop pre-auth</title>
       <link>https://cveradar-ah3.pages.dev/item/cve-2026-110789-libp2p-asn-1-der-decoder-drives-an-unbounded-syn.html</link>
@@ -268,17 +276,6 @@ A non-admin user who can update their own shares can reassign a share's creator 
 `write_attachments()` called `_safe_attachment_filename()` and `write_sample()` inside its loop
 with no guard, so a single crafted attachment raised out of the whole save. Every attachment
 **after** the malicious one was silently never written, with no error surfaced to</description>
-    </item>
-    <item>
-      <title>CVE-2026-129300: mail-parser: Uncaught `OverflowError` / `OSError` on an out-of-range `Received` date</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-129300-mail-parser-uncaught-overflowerror-oserror-on-an.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-129300-mail-parser-uncaught-overflowerror-oserror-on-an.html</guid>
-      <pubDate>Mon, 16 Nov 2026 22:20:32 GMT</pubDate>
-      <description>Severity: medium. ### Impact
-
-A `Received` header whose trailing date carries an out-of-range year, or a timezone offset
-large enough to push the timestamp past the int64 epoch range, raises an exception that is
-**outside the `MailParser*` hierarchy**. A caller that catches only mail-parser exceptio</description>
     </item>
   </channel>
 </rss>
