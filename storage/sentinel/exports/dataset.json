@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T01:35:27+00:00",
+  "generated_at": "2026-11-18T05:18:57+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -22,14 +22,14 @@
       "gh_advisories": 30,
       "hackersnews": 30,
       "github_sec": 12,
-      "schneier": 10,
-      "krebs": 10
+      "krebs": 10,
+      "schneier": 10
     },
     "by_topic": {
       "security": 108,
-      "ai": 73,
+      "ai": 72,
       "dev": 60,
-      "hardware": 19,
+      "hardware": 21,
       "crypto": 9,
       "biz": 9,
       "science": 5
@@ -1401,17 +1401,32 @@
       "title": "arnold117/iOS-NOIR",
       "url": "https://github.com/arnold117/iOS-NOIR",
       "ts": 1793934227.0,
-      "points": 323,
+      "points": 324,
       "comments": 61,
       "author": "arnold117",
       "summary": "No-jailbreak iOS privacy, entitlement, sandbox & telemetry forensic auditor (inspired by Verlintas/NOIR)",
       "recipe": "github_sec",
-      "buzz": 506,
+      "buzz": 507,
       "topics": [
         "ai",
         "security"
       ],
       "date": "2026-11-06"
+    },
+    {
+      "uid": "gh:Aabyss-Team/Threat-Broadcast-Plus",
+      "source": "github",
+      "title": "Aabyss-Team/Threat-Broadcast-Plus",
+      "url": "https://github.com/Aabyss-Team/Threat-Broadcast-Plus",
+      "ts": 1794800456.0,
+      "points": 73,
+      "comments": 14,
+      "author": "Aabyss-Team",
+      "summary": "网络安全威胁情报播报-Plus升级版",
+      "recipe": "github_sec",
+      "buzz": 145,
+      "topics": [],
+      "date": "2026-11-16"
     },
     {
       "uid": "gh:nestho/impacket-rs",
@@ -1424,26 +1439,11 @@
       "author": "nestho",
       "summary": "High-performance, memory-safe pure-Rust redesign of Impacket protocols and Active Directory tools for Linux, macOS, and Windows.",
       "recipe": "github_sec",
-      "buzz": 145,
+      "buzz": 135,
       "topics": [
         "dev"
       ],
       "date": "2026-11-11"
-    },
-    {
-      "uid": "gh:Aabyss-Team/Threat-Broadcast-Plus",
-      "source": "github",
-      "title": "Aabyss-Team/Threat-Broadcast-Plus",
-      "url": "https://github.com/Aabyss-Team/Threat-Broadcast-Plus",
-      "ts": 1794800456.0,
-      "points": 72,
-      "comments": 14,
-      "author": "Aabyss-Team",
-      "summary": "网络安全威胁情报播报-Plus升级版",
-      "recipe": "github_sec",
-      "buzz": 144,
-      "topics": [],
-      "date": "2026-11-16"
     },
     {
       "uid": "gh:LoopGrubDolmen/wallet-security-desk",
@@ -1462,6 +1462,23 @@
         "security"
       ],
       "date": "2026-11-15"
+    },
+    {
+      "uid": "gh:zhidun2027/zhidun",
+      "source": "github",
+      "title": "zhidun2027/zhidun",
+      "url": "https://github.com/zhidun2027/zhidun",
+      "ts": 1794458402.0,
+      "points": 77,
+      "comments": 8,
+      "author": "zhidun2027",
+      "summary": "Android APK hardening — DEX encryption, native shell engine, anti-tamper. Fully documented and auditable.",
+      "recipe": "github_sec",
+      "buzz": 111,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-11-12"
     },
     {
       "uid": "gh:wildorigins/wildos",
@@ -1496,21 +1513,24 @@
       "date": "2026-11-10"
     },
     {
-      "uid": "gh:zhidun2027/zhidun",
-      "source": "github",
-      "title": "zhidun2027/zhidun",
-      "url": "https://github.com/zhidun2027/zhidun",
-      "ts": 1794458402.0,
-      "points": 65,
-      "comments": 8,
-      "author": "zhidun2027",
-      "summary": "Android APK hardening — DEX encryption, native shell engine, anti-tamper. Fully documented and auditable.",
-      "recipe": "github_sec",
-      "buzz": 99,
+      "uid": "rss:c077b9eec9aa33",
+      "source": "rss",
+      "title": "Attackers Used Optimizely to A/B Test Malware on Top Websites",
+      "url": "https://krebsonsecurity.com/2026/11/attackers-used-optimizely-to-a-b-test-malware-on-top-websites/",
+      "ts": 1794970324.0,
+      "points": 0,
+      "comments": 0,
+      "author": "BrianKrebs",
+      "summary": "At least 178 top web destinations unwittingly served a variety of malware exploits against visitors over the past 24 hours thanks to a security vulnerability involving Optimizely, a company that helps websites customize user experiences and test out new features. Experts say the incident, which saw data-stealing malicious software silently injected into sites like the BBC, CNN, Equifax, Ledger and",
+      "recipe": "krebs",
+      "buzz": 80,
       "topics": [
-        "security"
+        "ai",
+        "dev",
+        "security",
+        "hardware"
       ],
-      "date": "2026-11-12"
+      "date": "2026-11-18"
     },
     {
       "uid": "rss:20cbd8174f0c08",
@@ -1531,6 +1551,25 @@
         "science"
       ],
       "date": "2026-11-17"
+    },
+    {
+      "uid": "rss:deec20c9952c51",
+      "source": "rss",
+      "title": "Java4Shell (CVE-2026-114938) Enables Pre-Auth RCE in Jira, Jenkins, Keycloak on Java 17+ AVX-512 VBMI Servers",
+      "url": "https://thehackernews.com/2026/11/java4shell-cve-2026-114938-enables-pre.html",
+      "ts": 1794976061.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "A Java flaw called Java4Shell can let attackers without an account run their own code on Jira, Jenkins, Keycloak, and three other widely used applications, says Calif, the security research firm that disclosed it this week. The flaw is present in Java 17.0.6 and later, and the vulnerable code runs only on x86-64 Intel and AMD chips that support the AVX-512 VBMI feature. Tracked as",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "dev",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-18"
     },
     {
       "uid": "rss:2041eca737d343",
@@ -1701,25 +1740,6 @@
       "date": "2026-11-17"
     },
     {
-      "uid": "rss:b3c5657f82d0e1",
-      "source": "rss",
-      "title": "N-able Patches 17 N-central Flaws as Attackers Exploit Earlier Bugs to Deploy Crypto Miners",
-      "url": "https://thehackernews.com/2026/11/n-able-patches-17-n-central-flaws-as.html",
-      "ts": 1794891634.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "N-able has released a new security update to address additional critical security flaws impacting N-central. Describing N-central 2026.4 Hotfix 3 as a critical security update, the company said it includes a number of security patches and fixes that enhance the security of the Remote Monitoring and Management (RMM) and Unified Endpoint Management (UEM) platform. \"HF3 builds on the",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "crypto",
-        "security"
-      ],
-      "date": "2026-11-17"
-    },
-    {
       "uid": "gh:BountyForge-xyz/pwn-skill",
       "source": "github",
       "title": "BountyForge-xyz/pwn-skill",
@@ -1763,7 +1783,7 @@
       "points": 29,
       "comments": 1,
       "author": "khanh0209q",
-      "summary": "A zero-breakage, set-and-forget NextDNS configuration for Home & Office",
+      "summary": "A zero-breakage, set-and-forget NextDNS configuration for Home & Office.",
       "recipe": "github_sec",
       "buzz": 42,
       "topics": [],
@@ -1803,6 +1823,25 @@
         "security"
       ],
       "date": "2026-11-16"
+    },
+    {
+      "uid": "rss:b3c5657f82d0e1",
+      "source": "rss",
+      "title": "N-able Patches 17 N-central Flaws as Attackers Exploit Earlier Bugs to Deploy Crypto Miners",
+      "url": "https://thehackernews.com/2026/11/n-able-patches-17-n-central-flaws-as.html",
+      "ts": 1794891634.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "N-able has released a new security update to address additional critical security flaws impacting N-central. Describing N-central 2026.4 Hotfix 3 as a critical security update, the company said it includes a number of security patches and fixes that enhance the security of the Remote Monitoring and Management (RMM) and Unified Endpoint Management (UEM) platform. \"HF3 builds on the",
+      "recipe": "hackersnews",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "crypto",
+        "security"
+      ],
+      "date": "2026-11-17"
     },
     {
       "uid": "rss:a848b6775e4e6c",
@@ -2284,25 +2323,6 @@
       "date": "2026-11-13"
     },
     {
-      "uid": "rss:86a86bcab9397b",
-      "source": "rss",
-      "title": "Webinar: See How Identity Blind Spots Put Your SOC at Risk and How to Close Them",
-      "url": "https://thehackernews.com/2026/11/your-soc-sees-alert-but-does-it-know.html",
-      "ts": 1794506835.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Security teams have more alerts, logs, and monitoring tools than ever. Yet when an attack happens, one simple question can still take too long to answer: Who or what is behind this activity, and what can they access? A suspicious login might belong to an employee. An unusual API call could come from a machine account. Or an AI agent might be accessing sensitive systems using permissions nobody",
-      "recipe": "hackersnews",
-      "buzz": 10,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-12"
-    },
-    {
       "uid": "rss:cd21f33e2e3d64",
       "source": "rss",
       "title": "Microsoft Fixes Nearly 1,100 Security Vulnerabilities",
@@ -2452,25 +2472,6 @@
         "security"
       ],
       "date": "2026-10-10"
-    },
-    {
-      "uid": "rss:82b1e37b8f7fb8",
-      "source": "rss",
-      "title": "ShinyHunters Extorted Boeing Spin-off Prior to Arrests",
-      "url": "https://krebsonsecurity.com/2026/10/shinyhunters-extorted-boeing-spin-off-prior-to-arrests/",
-      "ts": 1791380925.0,
-      "points": 0,
-      "comments": 0,
-      "author": "BrianKrebs",
-      "summary": "A teenager from Amman, Jordan suspected of leading the prolific data theft and extortion group ShinyHunters has been detained and is reportedly cooperating with the FBI to identify other members of the hacking gang. KrebsOnSecurity has learned that the suspect, who uses the hacker handle \"Rey,\" was detained as ShinyHunters was in the process of extorting a business unit recently divested by the gl",
-      "recipe": "krebs",
-      "buzz": 0,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-10-07"
     },
     {
       "uid": "rss:d1660657e64a19",

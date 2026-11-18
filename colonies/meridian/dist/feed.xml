@@ -5,7 +5,119 @@
     <link>https://meridian-radar.pages.dev</link>
     <description>Autonomous radar of tech and science: what is gaining resonance right now</description>
     <language>en</language>
-    <lastBuildDate>Wed, 18 Nov 2026 01:35:10 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 05:18:42 GMT</lastBuildDate>
+    <item>
+      <title>How many LLM agent sessions can one GPU serve? Measured: 8 to 256 sessions on one NVIDIA L4, every step exact</title>
+      <link>https://meridian-radar.pages.dev/item/how-many-llm-agent-sessions-can-one-gpu-serve-measured-8-to-256-.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/how-many-llm-agent-sessions-can-one-gpu-serve-measured-8-to-256-.html</guid>
+      <pubDate>Wed, 18 Nov 2026 05:11:23 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Concurrent LLM agent sessions per GPU depend on how much prompt each session sends and how much KV cache it holds. If the host holds the state and shows the model only the exact state, each session's prompt stays the size of the state and does not grow with the steps, so many sessions fit</description>
+    </item>
+    <item>
+      <title>Outvoted: Logster and the Lone Command in a Busy Room</title>
+      <link>https://meridian-radar.pages.dev/item/outvoted-logster-and-the-lone-command-in-a-busy-room.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/outvoted-logster-and-the-lone-command-in-a-busy-room.html</guid>
+      <pubDate>Wed, 18 Nov 2026 05:11:05 GMT</pubDate>
+      <description>&lt;p&gt;Hand someone a page with a hundred lines of routine activity and one odd line in the middle, then ask whether the page looks suspicious. Most people will say no, and they are right: the page doesn't look suspicious. The line does.&lt;/p&gt; &lt;p&gt;Detection systems face this question every time they judge </description>
+    </item>
+    <item>
+      <title>Should We Build or Buy AI? A Layer-by-Layer Build, Buy or Partner Framework</title>
+      <link>https://meridian-radar.pages.dev/item/should-we-build-or-buy-ai-a-layer-by-layer-build-buy-or-partner-.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/should-we-build-or-buy-ai-a-layer-by-layer-build-buy-or-partner-.html</guid>
+      <pubDate>Wed, 18 Nov 2026 05:10:46 GMT</pubDate>
+      <description>&lt;p&gt;Ask whether to build or buy AI once, at portfolio level, and you will almost certainly get it wrong: too much in-house engineering on commodity plumbing, too little investment in the logic and data that set you apart. The fix is to decide per layer of the stack, against weighted criteria and hard</description>
+    </item>
+    <item>
+      <title>GPU inference cluster TCO: PUE and electricity costs</title>
+      <link>https://meridian-radar.pages.dev/item/gpu-inference-cluster-tco-pue-and-electricity-costs.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/gpu-inference-cluster-tco-pue-and-electricity-costs.html</guid>
+      <pubDate>Wed, 18 Nov 2026 05:10:45 GMT</pubDate>
+      <description>&lt;p&gt;The GPU sticker price is 30 to 40 per cent of what an inference cluster really costs. The rest is electricity at facility prices rather than nameplate watts, cooling, interconnect fabric, storage, people, and the spare capacity you hold for traffic peaks. Here is the full three-year model, a fill</description>
+    </item>
+    <item>
+      <title>3 Simple Git Aliases That Save Me 15 Minutes Every Single Day</title>
+      <link>https://meridian-radar.pages.dev/item/3-simple-git-aliases-that-save-me-15-minutes-every-single-day.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/3-simple-git-aliases-that-save-me-15-minutes-every-single-day.html</guid>
+      <pubDate>Wed, 18 Nov 2026 05:10:28 GMT</pubDate>
+      <description>&lt;p&gt;You don't need a massive Zsh plugin pack to speed up your daily Git workflow. Adding three short aliases to your &lt;code&gt;~/.gitconfig&lt;/code&gt; eliminates the repetitive commands you type 40 times a day.&lt;/p&gt; &lt;h2&gt; 1. &lt;code&gt;git st&lt;/code&gt; — Clean Short Status &lt;/h2&gt; &lt;p&gt;Instead of typing &lt;code&gt;git status&lt;/</description>
+    </item>
+    <item>
+      <title>Host-held state for LLM agents: five questions to ask LangGraph, Letta, smolagents, PydanticAI and AXI, with measured answers</title>
+      <link>https://meridian-radar.pages.dev/item/host-held-state-for-llm-agents-five-questions-to-ask-langgraph-l.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/host-held-state-for-llm-agents-five-questions-to-ask-langgraph-l.html</guid>
+      <pubDate>Wed, 18 Nov 2026 05:10:28 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Host-held state means the application, not the chat history, is the source of truth for what an agent has done. Several frameworks keep state on the host in some form. What decides whether the state stays right over many steps is five design questions. Below are those questions, how the A</description>
+    </item>
+    <item>
+      <title>Docker Compose Production Template: PostgreSQL + Redis + Nginx + Backup</title>
+      <link>https://meridian-radar.pages.dev/item/docker-compose-production-template-postgresql-redis-nginx-backup.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/docker-compose-production-template-postgresql-redis-nginx-backup.html</guid>
+      <pubDate>Wed, 18 Nov 2026 05:10:00 GMT</pubDate>
+      <description>&lt;p&gt;You have a hardened VPS (Article #1). Now you need a &lt;strong&gt;production-ready Docker Compose stack&lt;/strong&gt; that you can drop in and run. This template gives you:&lt;/p&gt; &lt;ul&gt; &lt;li&gt; &lt;strong&gt;PostgreSQL&lt;/strong&gt; with proper persistence, healthchecks, and backup&lt;/li&gt; &lt;li&gt; &lt;strong&gt;Redis&lt;/strong&gt; for cachi</description>
+    </item>
+    <item>
+      <title>Behind every Pay by Bank click: six API calls and a bank you didn't choose</title>
+      <link>https://meridian-radar.pages.dev/item/behind-every-pay-by-bank-click-six-api-calls-and-a-bank-you-didn.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/behind-every-pay-by-bank-click-six-api-calls-and-a-bank-you-didn.html</guid>
+      <pubDate>Wed, 18 Nov 2026 05:09:49 GMT</pubDate>
+      <description>&lt;p&gt;When you add Pay by Bank to a checkout, you call one endpoint. Your provider gives you a link, the customer taps it, picks their bank, approves, and comes back. Done.&lt;/p&gt; &lt;p&gt;At the bank end, that one tap is about six API calls. And the bank isn't one you picked. Your customer picked it. If they b</description>
+    </item>
+    <item>
+      <title>Why LLM latency grows with conversation length, and the measured fix: a flat 0.1605 s to 0.1651 s step over 20,000 steps</title>
+      <link>https://meridian-radar.pages.dev/item/why-llm-latency-grows-with-conversation-length-and-the-measured-.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/why-llm-latency-grows-with-conversation-length-and-the-measured-.html</guid>
+      <pubDate>Wed, 18 Nov 2026 05:09:35 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;LLM latency grows with conversation length because the prompt the model must read grows with it. If the host holds the state and shows the model the exact state instead of the history, the prompt stays the size of the state and the step time stays flat. Measured: a step took 0.1605 s earl</description>
+    </item>
+    <item>
+      <title>scale_vaapi: VAProfile not supported on Debian 12 Intel</title>
+      <link>https://meridian-radar.pages.dev/item/scale-vaapi-vaprofile-not-supported-on-debian-12-intel.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/scale-vaapi-vaprofile-not-supported-on-debian-12-intel.html</guid>
+      <pubDate>Wed, 18 Nov 2026 05:09:29 GMT</pubDate>
+      <description>&lt;p&gt;&lt;em&gt;If ffmpeg's &lt;code&gt;scale_vaapi&lt;/code&gt; fails with "the requested VAProfile is not supported" on Debian 12 with a Gen9 Intel iGPU, one package swap, &lt;code&gt;intel-media-va-driver-non-free&lt;/code&gt;, brings hardware transcoding back: 1080p to 720p ran at 12.5x real time from an unprivileged account in</description>
+    </item>
+    <item>
+      <title>I Built a Floating Browser AI Desk Pet with Chrome Document Picture-in-Picture &amp; Web Audio</title>
+      <link>https://meridian-radar.pages.dev/item/i-built-a-floating-browser-ai-desk-pet-with-chrome-document-pict.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/i-built-a-floating-browser-ai-desk-pet-with-chrome-document-pict.html</guid>
+      <pubDate>Wed, 18 Nov 2026 05:09:13 GMT</pubDate>
+      <description>&lt;p&gt;We all open 30 tabs, start a Pomodoro timer in one tab, lose it under VS Code five minutes later, and keep scattered todo thoughts in random scratchpads.&lt;/p&gt; &lt;p&gt;So I built &lt;strong&gt;&lt;a href="https://pochidesk.vercel.app" rel="noopener noreferrer"&gt;PochiDesk&lt;/a&gt;&lt;/strong&gt; — a 100% local-first pixel AI</description>
+    </item>
+    <item>
+      <title>LLM agent token cost: why a kept chat grows with the square of the steps, and the measured fix (prompt caching counted)</title>
+      <link>https://meridian-radar.pages.dev/item/llm-agent-token-cost-why-a-kept-chat-grows-with-the-square-of-th.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/llm-agent-token-cost-why-a-kept-chat-grows-with-the-square-of-th.html</guid>
+      <pubDate>Wed, 18 Nov 2026 05:08:38 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;An agent that keeps its whole chat resends everything on every step, so the tokens it sends grow with the square of the number of steps. Holding the state on the host and showing the model the exact state keeps the prompt the size of the state. Measured on Gemini 3.8 Flash: 85 times fewer</description>
+    </item>
+    <item>
+      <title>Why is Gemini 4 Carbon taking so long?</title>
+      <link>https://meridian-radar.pages.dev/item/why-is-gemini-4-carbon-taking-so-long.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/why-is-gemini-4-carbon-taking-so-long.html</guid>
+      <pubDate>Wed, 18 Nov 2026 04:14:04 GMT</pubDate>
+      <description></description>
+    </item>
+    <item>
+      <title>H-1B Executive Actions in 2026 [pdf]</title>
+      <link>https://meridian-radar.pages.dev/item/h-1b-executive-actions-in-2026-pdf.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/h-1b-executive-actions-in-2026-pdf.html</guid>
+      <pubDate>Wed, 18 Nov 2026 03:37:35 GMT</pubDate>
+      <description></description>
+    </item>
+    <item>
+      <title>GoGoGrandparent (YC S16) Is a Front End JavaScript / TypeScript Engineer</title>
+      <link>https://meridian-radar.pages.dev/item/gogograndparent-yc-s16-is-a-front-end-javascript-typescript-engi.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/gogograndparent-yc-s16-is-a-front-end-javascript-typescript-engi.html</guid>
+      <pubDate>Wed, 18 Nov 2026 03:35:47 GMT</pubDate>
+      <description></description>
+    </item>
+    <item>
+      <title>Nvidia’s startup stakes ballooned to $65B, but Huang’s exit puts future deals in doubt</title>
+      <link>https://meridian-radar.pages.dev/item/nvidia-s-startup-stakes-ballooned-to-65b-but-huang-s-exit-puts-f.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/nvidia-s-startup-stakes-ballooned-to-65b-but-huang-s-exit-puts-f.html</guid>
+      <pubDate>Wed, 18 Nov 2026 01:44:21 GMT</pubDate>
+      <description>The value of Nvidia’s private investments has nearly tripled over the past nine months, fueled by Jensen Huang’s aggressive dealmaking and rising valuations of its existing portfolio companies.</description>
+    </item>
     <item>
       <title>Understanding CSRF: How Attackers Trick Users Into Performing Unauthorized Actions</title>
       <link>https://meridian-radar.pages.dev/item/understanding-csrf-how-attackers-trick-users-into-performing-una.html</link>
@@ -103,118 +215,6 @@
       <guid isPermaLink="true">https://meridian-radar.pages.dev/item/id-me-terms-required-for-irs-sign-in.html</guid>
       <pubDate>Wed, 18 Nov 2026 00:51:45 GMT</pubDate>
       <description></description>
-    </item>
-    <item>
-      <title>Google's AI answers reducing search traffic by 40%</title>
-      <link>https://meridian-radar.pages.dev/item/google-s-ai-answers-reducing-search-traffic-by-40.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/google-s-ai-answers-reducing-search-traffic-by-40.html</guid>
-      <pubDate>Wed, 18 Nov 2026 00:17:58 GMT</pubDate>
-      <description></description>
-    </item>
-    <item>
-      <title>Nvidia promises that revenue will keep soaring — for now</title>
-      <link>https://meridian-radar.pages.dev/item/nvidia-promises-that-revenue-will-keep-soaring-for-now.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/nvidia-promises-that-revenue-will-keep-soaring-for-now.html</guid>
-      <pubDate>Wed, 18 Nov 2026 00:16:50 GMT</pubDate>
-      <description>Despite the turmoil Nvidia is in after the departure of its disgraced founder and CEO Jensen Huang, the company projected that its streak of record-breaking revenue isn't about to stop.</description>
-    </item>
-    <item>
-      <title>Nvidia is abandoning China after Jensen Huang’s ouster</title>
-      <link>https://meridian-radar.pages.dev/item/nvidia-is-abandoning-china-after-jensen-huang-s-ouster.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/nvidia-is-abandoning-china-after-jensen-huang-s-ouster.html</guid>
-      <pubDate>Tue, 17 Nov 2026 23:37:48 GMT</pubDate>
-      <description>Nvidia's interim CEO says the company is done selling chips to China. How much will that cost?</description>
-    </item>
-    <item>
-      <title>Archive Team is archiving the Apple Support Community (closes November 20, 2026)</title>
-      <link>https://meridian-radar.pages.dev/item/archive-team-is-archiving-the-apple-support-community-closes-nov.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/archive-team-is-archiving-the-apple-support-community-closes-nov.html</guid>
-      <pubDate>Tue, 17 Nov 2026 23:32:58 GMT</pubDate>
-      <description></description>
-    </item>
-    <item>
-      <title>Microsoft's ONNX Runtime has disappeared from GitHub</title>
-      <link>https://meridian-radar.pages.dev/item/microsoft-s-onnx-runtime-has-disappeared-from-github.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/microsoft-s-onnx-runtime-has-disappeared-from-github.html</guid>
-      <pubDate>Tue, 17 Nov 2026 23:18:49 GMT</pubDate>
-      <description></description>
-    </item>
-    <item>
-      <title>Nvidia says its open source AI strategy remains intact after Jensen Huang’s exit</title>
-      <link>https://meridian-radar.pages.dev/item/nvidia-says-its-open-source-ai-strategy-remains-intact-after-jen.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/nvidia-says-its-open-source-ai-strategy-remains-intact-after-jen.html</guid>
-      <pubDate>Tue, 17 Nov 2026 23:04:35 GMT</pubDate>
-      <description>Nvidia's interim CEO reaffirmed its open source AI strategy and plans to acquire Hugging Face, despite Jensen Huang's sudden departure.</description>
-    </item>
-    <item>
-      <title>Nvidia says it doesn’t plan to reappoint Jensen Huang as CEO</title>
-      <link>https://meridian-radar.pages.dev/item/nvidia-says-it-doesn-t-plan-to-reappoint-jensen-huang-as-ceo.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/nvidia-says-it-doesn-t-plan-to-reappoint-jensen-huang-as-ceo.html</guid>
-      <pubDate>Tue, 17 Nov 2026 22:42:27 GMT</pubDate>
-      <description>The former CEO offered to return to his top role at the company after his resignation last week.</description>
-    </item>
-    <item>
-      <title>Amazon and Google will together own nearly 30% of Anthropic after its IPO</title>
-      <link>https://meridian-radar.pages.dev/item/amazon-and-google-will-together-own-nearly-30-of-anthropic-after.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/amazon-and-google-will-together-own-nearly-30-of-anthropic-after.html</guid>
-      <pubDate>Tue, 17 Nov 2026 22:29:05 GMT</pubDate>
-      <description>Amazon will own just under 15% of Anthropic after the IPO, with the option to go much higher. Google is a close second with holdings of nearly 14%.</description>
-    </item>
-    <item>
-      <title>Latent Lattice Language Models</title>
-      <link>https://meridian-radar.pages.dev/item/latent-lattice-language-models.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/latent-lattice-language-models.html</guid>
-      <pubDate>Tue, 17 Nov 2026 22:17:18 GMT</pubDate>
-      <description></description>
-    </item>
-    <item>
-      <title>Quad9's withdrawal from France: A canary in the coal mine</title>
-      <link>https://meridian-radar.pages.dev/item/quad9-s-withdrawal-from-france-a-canary-in-the-coal-mine.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/quad9-s-withdrawal-from-france-a-canary-in-the-coal-mine.html</guid>
-      <pubDate>Tue, 17 Nov 2026 22:13:34 GMT</pubDate>
-      <description></description>
-    </item>
-    <item>
-      <title>SEC reportedly investigating Nvidia amid Huang exit</title>
-      <link>https://meridian-radar.pages.dev/item/sec-reportedly-investigating-nvidia-amid-huang-exit.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/sec-reportedly-investigating-nvidia-amid-huang-exit.html</guid>
-      <pubDate>Tue, 17 Nov 2026 21:48:07 GMT</pubDate>
-      <description>The SEC is opening a probe into Nvidia following the departure of CEO Jensen Huang, who admitted to an affair with an alleged Chinese spy, reports The Wall Street Journal.</description>
-    </item>
-    <item>
-      <title>Google joins the tech outage trend by announcing it’s not having one</title>
-      <link>https://meridian-radar.pages.dev/item/google-joins-the-tech-outage-trend-by-announcing-it-s-not-having.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/google-joins-the-tech-outage-trend-by-announcing-it-s-not-having.html</guid>
-      <pubDate>Tue, 17 Nov 2026 21:34:50 GMT</pubDate>
-      <description>With tech outages seemingly everywhere, Google took the unusual step of announcing that Gmail is working just fine, actually.</description>
-    </item>
-    <item>
-      <title>Harvard researchers find AI coding agents shifted the bottleneck to code review</title>
-      <link>https://meridian-radar.pages.dev/item/harvard-researchers-find-ai-coding-agents-shifted-the-bottleneck.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/harvard-researchers-find-ai-coding-agents-shifted-the-bottleneck.html</guid>
-      <pubDate>Tue, 17 Nov 2026 21:16:12 GMT</pubDate>
-      <description></description>
-    </item>
-    <item>
-      <title>Java4Shell: RCE in OpenJDK when processing Base64</title>
-      <link>https://meridian-radar.pages.dev/item/java4shell-rce-in-openjdk-when-processing-base64.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/java4shell-rce-in-openjdk-when-processing-base64.html</guid>
-      <pubDate>Tue, 17 Nov 2026 21:11:28 GMT</pubDate>
-      <description></description>
-    </item>
-    <item>
-      <title>Tencent Hy4 Flash</title>
-      <link>https://meridian-radar.pages.dev/item/tencent-hy4-flash.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/tencent-hy4-flash.html</guid>
-      <pubDate>Tue, 17 Nov 2026 21:06:08 GMT</pubDate>
-      <description></description>
-    </item>
-    <item>
-      <title>LLM de 1,2B offline no Android: seis lições de arquitetura além da quantização</title>
-      <link>https://meridian-radar.pages.dev/item/llm-de-1-2b-offline-no-android-seis-li-es-de-arquitetura-al-m-da.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/llm-de-1-2b-offline-no-android-seis-li-es-de-arquitetura-al-m-da.html</guid>
-      <pubDate>Tue, 17 Nov 2026 21:03:23 GMT</pubDate>
-      <description>&lt;h1&gt; O que muda quando a IA de vendas roda no Android, sem depender da nuvem? &lt;/h1&gt; &lt;p&gt;Em um projeto de assistente comercial para pequenos negócios, a arquitetura parecia simples: receber uma pergunta, consultar as informações do vendedor e sugerir a resposta. O desafio real foi fazer isso &lt;strong&gt;n</description>
     </item>
   </channel>
 </rss>

@@ -5,7 +5,112 @@
     <link>https://signal-frontier.pages.dev</link>
     <description>Радар инсайтов, трендов и технологий: что вспыхнуло в сети за последние 48 часов</description>
     <language>ru</language>
-    <lastBuildDate>Wed, 18 Nov 2026 01:35:14 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 05:18:46 GMT</lastBuildDate>
+    <item>
+      <title>How many LLM agent sessions can one GPU serve? Measured: 8 to 256 sessions on one NVIDIA L4, every step exact</title>
+      <link>https://signal-frontier.pages.dev/item/how-many-llm-agent-sessions-can-one-gpu-serve-measured-8-to-256-.html</link>
+      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/how-many-llm-agent-sessions-can-one-gpu-serve-measured-8-to-256-.html</guid>
+      <pubDate>Wed, 18 Nov 2026 05:11:23 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Concurrent LLM agent sessions per GPU depend on how much prompt each session sends and how much KV cache it holds. If the host holds the state and shows the model only the exact state, each session's prompt stays the size of the state and does not grow with the steps, so many sessions fit</description>
+    </item>
+    <item>
+      <title>Outvoted: Logster and the Lone Command in a Busy Room</title>
+      <link>https://signal-frontier.pages.dev/item/outvoted-logster-and-the-lone-command-in-a-busy-room.html</link>
+      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/outvoted-logster-and-the-lone-command-in-a-busy-room.html</guid>
+      <pubDate>Wed, 18 Nov 2026 05:11:05 GMT</pubDate>
+      <description>&lt;p&gt;Hand someone a page with a hundred lines of routine activity and one odd line in the middle, then ask whether the page looks suspicious. Most people will say no, and they are right: the page doesn't look suspicious. The line does.&lt;/p&gt; &lt;p&gt;Detection systems face this question every time they judge </description>
+    </item>
+    <item>
+      <title>Should We Build or Buy AI? A Layer-by-Layer Build, Buy or Partner Framework</title>
+      <link>https://signal-frontier.pages.dev/item/should-we-build-or-buy-ai-a-layer-by-layer-build-buy-or-partner-.html</link>
+      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/should-we-build-or-buy-ai-a-layer-by-layer-build-buy-or-partner-.html</guid>
+      <pubDate>Wed, 18 Nov 2026 05:10:46 GMT</pubDate>
+      <description>&lt;p&gt;Ask whether to build or buy AI once, at portfolio level, and you will almost certainly get it wrong: too much in-house engineering on commodity plumbing, too little investment in the logic and data that set you apart. The fix is to decide per layer of the stack, against weighted criteria and hard</description>
+    </item>
+    <item>
+      <title>GPU inference cluster TCO: PUE and electricity costs</title>
+      <link>https://signal-frontier.pages.dev/item/gpu-inference-cluster-tco-pue-and-electricity-costs.html</link>
+      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/gpu-inference-cluster-tco-pue-and-electricity-costs.html</guid>
+      <pubDate>Wed, 18 Nov 2026 05:10:45 GMT</pubDate>
+      <description>&lt;p&gt;The GPU sticker price is 30 to 40 per cent of what an inference cluster really costs. The rest is electricity at facility prices rather than nameplate watts, cooling, interconnect fabric, storage, people, and the spare capacity you hold for traffic peaks. Here is the full three-year model, a fill</description>
+    </item>
+    <item>
+      <title>3 Simple Git Aliases That Save Me 15 Minutes Every Single Day</title>
+      <link>https://signal-frontier.pages.dev/item/3-simple-git-aliases-that-save-me-15-minutes-every-single-day.html</link>
+      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/3-simple-git-aliases-that-save-me-15-minutes-every-single-day.html</guid>
+      <pubDate>Wed, 18 Nov 2026 05:10:28 GMT</pubDate>
+      <description>&lt;p&gt;You don't need a massive Zsh plugin pack to speed up your daily Git workflow. Adding three short aliases to your &lt;code&gt;~/.gitconfig&lt;/code&gt; eliminates the repetitive commands you type 40 times a day.&lt;/p&gt; &lt;h2&gt; 1. &lt;code&gt;git st&lt;/code&gt; — Clean Short Status &lt;/h2&gt; &lt;p&gt;Instead of typing &lt;code&gt;git status&lt;/</description>
+    </item>
+    <item>
+      <title>Host-held state for LLM agents: five questions to ask LangGraph, Letta, smolagents, PydanticAI and AXI, with measured answers</title>
+      <link>https://signal-frontier.pages.dev/item/host-held-state-for-llm-agents-five-questions-to-ask-langgraph-l.html</link>
+      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/host-held-state-for-llm-agents-five-questions-to-ask-langgraph-l.html</guid>
+      <pubDate>Wed, 18 Nov 2026 05:10:28 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;Host-held state means the application, not the chat history, is the source of truth for what an agent has done. Several frameworks keep state on the host in some form. What decides whether the state stays right over many steps is five design questions. Below are those questions, how the A</description>
+    </item>
+    <item>
+      <title>Docker Compose Production Template: PostgreSQL + Redis + Nginx + Backup</title>
+      <link>https://signal-frontier.pages.dev/item/docker-compose-production-template-postgresql-redis-nginx-backup.html</link>
+      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/docker-compose-production-template-postgresql-redis-nginx-backup.html</guid>
+      <pubDate>Wed, 18 Nov 2026 05:10:00 GMT</pubDate>
+      <description>&lt;p&gt;You have a hardened VPS (Article #1). Now you need a &lt;strong&gt;production-ready Docker Compose stack&lt;/strong&gt; that you can drop in and run. This template gives you:&lt;/p&gt; &lt;ul&gt; &lt;li&gt; &lt;strong&gt;PostgreSQL&lt;/strong&gt; with proper persistence, healthchecks, and backup&lt;/li&gt; &lt;li&gt; &lt;strong&gt;Redis&lt;/strong&gt; for cachi</description>
+    </item>
+    <item>
+      <title>Behind every Pay by Bank click: six API calls and a bank you didn't choose</title>
+      <link>https://signal-frontier.pages.dev/item/behind-every-pay-by-bank-click-six-api-calls-and-a-bank-you-didn.html</link>
+      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/behind-every-pay-by-bank-click-six-api-calls-and-a-bank-you-didn.html</guid>
+      <pubDate>Wed, 18 Nov 2026 05:09:49 GMT</pubDate>
+      <description>&lt;p&gt;When you add Pay by Bank to a checkout, you call one endpoint. Your provider gives you a link, the customer taps it, picks their bank, approves, and comes back. Done.&lt;/p&gt; &lt;p&gt;At the bank end, that one tap is about six API calls. And the bank isn't one you picked. Your customer picked it. If they b</description>
+    </item>
+    <item>
+      <title>Why LLM latency grows with conversation length, and the measured fix: a flat 0.1605 s to 0.1651 s step over 20,000 steps</title>
+      <link>https://signal-frontier.pages.dev/item/why-llm-latency-grows-with-conversation-length-and-the-measured-.html</link>
+      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/why-llm-latency-grows-with-conversation-length-and-the-measured-.html</guid>
+      <pubDate>Wed, 18 Nov 2026 05:09:35 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;LLM latency grows with conversation length because the prompt the model must read grows with it. If the host holds the state and shows the model the exact state instead of the history, the prompt stays the size of the state and the step time stays flat. Measured: a step took 0.1605 s earl</description>
+    </item>
+    <item>
+      <title>scale_vaapi: VAProfile not supported on Debian 12 Intel</title>
+      <link>https://signal-frontier.pages.dev/item/scale-vaapi-vaprofile-not-supported-on-debian-12-intel.html</link>
+      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/scale-vaapi-vaprofile-not-supported-on-debian-12-intel.html</guid>
+      <pubDate>Wed, 18 Nov 2026 05:09:29 GMT</pubDate>
+      <description>&lt;p&gt;&lt;em&gt;If ffmpeg's &lt;code&gt;scale_vaapi&lt;/code&gt; fails with "the requested VAProfile is not supported" on Debian 12 with a Gen9 Intel iGPU, one package swap, &lt;code&gt;intel-media-va-driver-non-free&lt;/code&gt;, brings hardware transcoding back: 1080p to 720p ran at 12.5x real time from an unprivileged account in</description>
+    </item>
+    <item>
+      <title>I Built a Floating Browser AI Desk Pet with Chrome Document Picture-in-Picture &amp; Web Audio</title>
+      <link>https://signal-frontier.pages.dev/item/i-built-a-floating-browser-ai-desk-pet-with-chrome-document-pict.html</link>
+      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/i-built-a-floating-browser-ai-desk-pet-with-chrome-document-pict.html</guid>
+      <pubDate>Wed, 18 Nov 2026 05:09:13 GMT</pubDate>
+      <description>&lt;p&gt;We all open 30 tabs, start a Pomodoro timer in one tab, lose it under VS Code five minutes later, and keep scattered todo thoughts in random scratchpads.&lt;/p&gt; &lt;p&gt;So I built &lt;strong&gt;&lt;a href="https://pochidesk.vercel.app" rel="noopener noreferrer"&gt;PochiDesk&lt;/a&gt;&lt;/strong&gt; — a 100% local-first pixel AI</description>
+    </item>
+    <item>
+      <title>LLM agent token cost: why a kept chat grows with the square of the steps, and the measured fix (prompt caching counted)</title>
+      <link>https://signal-frontier.pages.dev/item/llm-agent-token-cost-why-a-kept-chat-grows-with-the-square-of-th.html</link>
+      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/llm-agent-token-cost-why-a-kept-chat-grows-with-the-square-of-th.html</guid>
+      <pubDate>Wed, 18 Nov 2026 05:08:38 GMT</pubDate>
+      <description>&lt;p&gt;&lt;strong&gt;An agent that keeps its whole chat resends everything on every step, so the tokens it sends grow with the square of the number of steps. Holding the state on the host and showing the model the exact state keeps the prompt the size of the state. Measured on Gemini 3.8 Flash: 85 times fewer</description>
+    </item>
+    <item>
+      <title>Why is Gemini 4 Carbon taking so long?</title>
+      <link>https://signal-frontier.pages.dev/item/why-is-gemini-4-carbon-taking-so-long.html</link>
+      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/why-is-gemini-4-carbon-taking-so-long.html</guid>
+      <pubDate>Wed, 18 Nov 2026 04:14:04 GMT</pubDate>
+      <description></description>
+    </item>
+    <item>
+      <title>H-1B Executive Actions in 2026 [pdf]</title>
+      <link>https://signal-frontier.pages.dev/item/h-1b-executive-actions-in-2026-pdf.html</link>
+      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/h-1b-executive-actions-in-2026-pdf.html</guid>
+      <pubDate>Wed, 18 Nov 2026 03:37:35 GMT</pubDate>
+      <description></description>
+    </item>
+    <item>
+      <title>GoGoGrandparent (YC S16) Is a Front End JavaScript / TypeScript Engineer</title>
+      <link>https://signal-frontier.pages.dev/item/gogograndparent-yc-s16-is-a-front-end-javascript-typescript-engi.html</link>
+      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/gogograndparent-yc-s16-is-a-front-end-javascript-typescript-engi.html</guid>
+      <pubDate>Wed, 18 Nov 2026 03:35:47 GMT</pubDate>
+      <description></description>
+    </item>
     <item>
       <title>Understanding CSRF: How Attackers Trick Users Into Performing Unauthorized Actions</title>
       <link>https://signal-frontier.pages.dev/item/understanding-csrf-how-attackers-trick-users-into-performing-una.html</link>
@@ -110,111 +215,6 @@
       <guid isPermaLink="true">https://signal-frontier.pages.dev/item/google-s-ai-answers-reducing-search-traffic-by-40.html</guid>
       <pubDate>Wed, 18 Nov 2026 00:17:58 GMT</pubDate>
       <description></description>
-    </item>
-    <item>
-      <title>Archive Team is archiving the Apple Support Community (closes November 20, 2026)</title>
-      <link>https://signal-frontier.pages.dev/item/archive-team-is-archiving-the-apple-support-community-closes-nov.html</link>
-      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/archive-team-is-archiving-the-apple-support-community-closes-nov.html</guid>
-      <pubDate>Tue, 17 Nov 2026 23:32:58 GMT</pubDate>
-      <description></description>
-    </item>
-    <item>
-      <title>Microsoft's ONNX Runtime has disappeared from GitHub</title>
-      <link>https://signal-frontier.pages.dev/item/microsoft-s-onnx-runtime-has-disappeared-from-github.html</link>
-      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/microsoft-s-onnx-runtime-has-disappeared-from-github.html</guid>
-      <pubDate>Tue, 17 Nov 2026 23:18:49 GMT</pubDate>
-      <description></description>
-    </item>
-    <item>
-      <title>Latent Lattice Language Models</title>
-      <link>https://signal-frontier.pages.dev/item/latent-lattice-language-models.html</link>
-      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/latent-lattice-language-models.html</guid>
-      <pubDate>Tue, 17 Nov 2026 22:17:18 GMT</pubDate>
-      <description></description>
-    </item>
-    <item>
-      <title>Quad9's withdrawal from France: A canary in the coal mine</title>
-      <link>https://signal-frontier.pages.dev/item/quad9-s-withdrawal-from-france-a-canary-in-the-coal-mine.html</link>
-      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/quad9-s-withdrawal-from-france-a-canary-in-the-coal-mine.html</guid>
-      <pubDate>Tue, 17 Nov 2026 22:13:34 GMT</pubDate>
-      <description></description>
-    </item>
-    <item>
-      <title>Harvard researchers find AI coding agents shifted the bottleneck to code review</title>
-      <link>https://signal-frontier.pages.dev/item/harvard-researchers-find-ai-coding-agents-shifted-the-bottleneck.html</link>
-      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/harvard-researchers-find-ai-coding-agents-shifted-the-bottleneck.html</guid>
-      <pubDate>Tue, 17 Nov 2026 21:16:12 GMT</pubDate>
-      <description></description>
-    </item>
-    <item>
-      <title>Java4Shell: RCE in OpenJDK when processing Base64</title>
-      <link>https://signal-frontier.pages.dev/item/java4shell-rce-in-openjdk-when-processing-base64.html</link>
-      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/java4shell-rce-in-openjdk-when-processing-base64.html</guid>
-      <pubDate>Tue, 17 Nov 2026 21:11:28 GMT</pubDate>
-      <description></description>
-    </item>
-    <item>
-      <title>Tencent Hy4 Flash</title>
-      <link>https://signal-frontier.pages.dev/item/tencent-hy4-flash.html</link>
-      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/tencent-hy4-flash.html</guid>
-      <pubDate>Tue, 17 Nov 2026 21:06:08 GMT</pubDate>
-      <description></description>
-    </item>
-    <item>
-      <title>LLM de 1,2B offline no Android: seis lições de arquitetura além da quantização</title>
-      <link>https://signal-frontier.pages.dev/item/llm-de-1-2b-offline-no-android-seis-li-es-de-arquitetura-al-m-da.html</link>
-      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/llm-de-1-2b-offline-no-android-seis-li-es-de-arquitetura-al-m-da.html</guid>
-      <pubDate>Tue, 17 Nov 2026 21:03:23 GMT</pubDate>
-      <description>&lt;h1&gt; O que muda quando a IA de vendas roda no Android, sem depender da nuvem? &lt;/h1&gt; &lt;p&gt;Em um projeto de assistente comercial para pequenos negócios, a arquitetura parecia simples: receber uma pergunta, consultar as informações do vendedor e sugerir a resposta. O desafio real foi fazer isso &lt;strong&gt;n</description>
-    </item>
-    <item>
-      <title>I Built the Same Interactive Checkout in Figma, Rive, Lottie, GSAP and Spine. Here's What Each Tool Is Actually For.</title>
-      <link>https://signal-frontier.pages.dev/item/i-built-the-same-interactive-checkout-in-figma-rive-lottie-gsap-.html</link>
-      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/i-built-the-same-interactive-checkout-in-figma-rive-lottie-gsap-.html</guid>
-      <pubDate>Tue, 17 Nov 2026 21:02:02 GMT</pubDate>
-      <description>&lt;p&gt;Every few weeks someone asks me which motion tool they should standardise on. The honest answer is that they are not the same category of thing, so the comparison people want — "which one wins" — cannot be answered in the abstract.&lt;/p&gt; &lt;p&gt;So I ran the same brief through all five. Here is the brie</description>
-    </item>
-    <item>
-      <title>FreeScout Personal API Keys Still Depend on Mailbox Permissions</title>
-      <link>https://signal-frontier.pages.dev/item/freescout-personal-api-keys-still-depend-on-mailbox-permissions.html</link>
-      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/freescout-personal-api-keys-still-depend-on-mailbox-permissions.html</guid>
-      <pubDate>Tue, 17 Nov 2026 21:01:07 GMT</pubDate>
-      <description>&lt;h1&gt; FreeScout Personal API Keys Still Depend on Mailbox Permissions &lt;/h1&gt; &lt;p&gt;FreeScout is a self-hosted shared-mailbox helpdesk. A ZoomEye count-only query on November 18, 2026 found 1,746 matches for &lt;code&gt;title="FreeScout"&lt;/code&gt; and 1,260 for &lt;code&gt;app="FreeScout"&lt;/code&gt;. The difference suggests</description>
-    </item>
-    <item>
-      <title>Before You Print That App Download QR Code, Test Where It Goes</title>
-      <link>https://signal-frontier.pages.dev/item/before-you-print-that-app-download-qr-code-test-where-it-goes.html</link>
-      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/before-you-print-that-app-download-qr-code-test-where-it-goes.html</guid>
-      <pubDate>Tue, 17 Nov 2026 21:01:04 GMT</pubDate>
-      <description>&lt;p&gt;Your designer sends over a QR code for an upcoming app launch.&lt;/p&gt; &lt;p&gt;Someone scans it on an iPhone. The App Store opens. Looks good.&lt;/p&gt; &lt;p&gt;But what happens on Android? What does a laptop visitor see? And if someone changes the destination after the artwork has gone to print, will the same QR co</description>
-    </item>
-    <item>
-      <title>Why message 50 of your chatbot costs 19x more than message 1</title>
-      <link>https://signal-frontier.pages.dev/item/why-message-50-of-your-chatbot-costs-19x-more-than-message-1.html</link>
-      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/why-message-50-of-your-chatbot-costs-19x-more-than-message-1.html</guid>
-      <pubDate>Tue, 17 Nov 2026 21:01:00 GMT</pubDate>
-      <description>&lt;p&gt;You build a chatbot and quote the cost of one short message. The real bill arrives, and it is far higher. The reason is two ideas: tokens, and the context window. Here is the arithmetic.&lt;/p&gt; &lt;p&gt;All numbers below are made up for illustration.&lt;/p&gt; &lt;h2&gt; What is a token? &lt;/h2&gt; &lt;p&gt;A model does not rea</description>
-    </item>
-    <item>
-      <title>Microsoft Unveils Six MAI Models at Ignite With a Focus on Lower-Cost Frontier AI</title>
-      <link>https://signal-frontier.pages.dev/item/microsoft-unveils-six-mai-models-at-ignite-with-a-focus-on-lower.html</link>
-      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/microsoft-unveils-six-mai-models-at-ignite-with-a-focus-on-lower.html</guid>
-      <pubDate>Tue, 17 Nov 2026 21:00:30 GMT</pubDate>
-      <description>&lt;p&gt;Microsoft unveiled six new MAI models at Ignite 2026, expanding its in-house AI lineup across coding, cybersecurity, image editing, transcription and real-time voice. The announcement matters because Microsoft is positioning the models around &lt;strong&gt;frontier-level performance at lower cost&lt;/stro</description>
-    </item>
-    <item>
-      <title>One Order, Three Tracking Numbers: Stop Split Shipments From Flooding Your Inbox</title>
-      <link>https://signal-frontier.pages.dev/item/one-order-three-tracking-numbers-stop-split-shipments-from-flood.html</link>
-      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/one-order-three-tracking-numbers-stop-split-shipments-from-flood.html</guid>
-      <pubDate>Tue, 17 Nov 2026 21:00:05 GMT</pubDate>
-      <description>&lt;h2&gt; The first box arrives, and the panic starts &lt;/h2&gt; &lt;p&gt;A customer checks out once, pays once, and gets one order confirmation. A week later a small box arrives with one of the three items she bought. No note explains the rest. Her order page says "shipped," a second tracking number she does not r</description>
-    </item>
-    <item>
-      <title>Learn Rails 8 by Building Study Flow, Part 4: Associations, Scopes and Callbacks</title>
-      <link>https://signal-frontier.pages.dev/item/learn-rails-8-by-building-study-flow-part-4-associations-scopes-.html</link>
-      <guid isPermaLink="true">https://signal-frontier.pages.dev/item/learn-rails-8-by-building-study-flow-part-4-associations-scopes-.html</guid>
-      <pubDate>Tue, 17 Nov 2026 21:00:00 GMT</pubDate>
-      <description>&lt;p&gt;In &lt;a href="//#https://dev.to/shroukabozeid/learn-rails-8-by-building-study-flow-part-3-routes-controllers-and-your-first-crud-3902"&gt;Part 3&lt;/a&gt; we built study plans. A plan alone isn't much use, so now we give it structure:&lt;/p&gt; &lt;ul&gt; &lt;li&gt;A &lt;strong&gt;study plan&lt;/strong&gt; ("Learn SQL") has many &lt;strong</description>
     </item>
   </channel>
 </rss>
