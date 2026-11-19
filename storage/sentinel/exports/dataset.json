@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T09:23:54+00:00",
+  "generated_at": "2026-11-19T13:35:59+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -27,11 +27,11 @@
     },
     "by_topic": {
       "security": 113,
-      "ai": 71,
-      "dev": 48,
-      "hardware": 18,
+      "ai": 72,
+      "dev": 49,
+      "hardware": 19,
       "crypto": 11,
-      "biz": 7,
+      "biz": 8,
       "science": 6
     },
     "top_domains": [
@@ -1416,12 +1416,12 @@
       "title": "Aabyss-Team/Threat-Broadcast-Plus",
       "url": "https://github.com/Aabyss-Team/Threat-Broadcast-Plus",
       "ts": 1794800456.0,
-      "points": 104,
-      "comments": 23,
+      "points": 121,
+      "comments": 27,
       "author": "Aabyss-Team",
       "summary": "网络安全威胁情报播报-Plus升级版",
       "recipe": "github_sec",
-      "buzz": 183,
+      "buzz": 212,
       "topics": [],
       "date": "2026-11-16"
     },
@@ -1448,12 +1448,12 @@
       "title": "wildorigins/wildos",
       "url": "https://github.com/wildorigins/wildos",
       "ts": 1794169078.0,
-      "points": 105,
-      "comments": 6,
+      "points": 113,
+      "comments": 7,
       "author": "wildorigins",
       "summary": "A hardened Linux desktop, rebuilt from scratch, with your Windows apps built in. Free and open source.",
       "recipe": "github_sec",
-      "buzz": 123,
+      "buzz": 134,
       "topics": [],
       "date": "2026-11-08"
     },
@@ -1528,6 +1528,46 @@
       "date": "2026-11-19"
     },
     {
+      "uid": "rss:790246065cf7ca",
+      "source": "rss",
+      "title": "Everything Is a Web Application, Including Your Firewall",
+      "url": "https://thehackernews.com/2026/11/everything-is-web-application-including.html",
+      "ts": 1795089143.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "One of the early targets of PHP2Shell exploitation was the firewall. On October 28, Palo Alto Networks confirmed that attackers were exploiting the two PHP vulnerabilities, CVE-[phone] and CVE-[phone], against PAN-OS management interfaces exposed to the internet. Both flaws let anyone execute code on the web server without authentication. The disclosure itself went a little wrong.",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "rss:5f3922dcf6b921",
+      "source": "rss",
+      "title": "Hackers Breach N-able Cloud Server, Disrupting Email Security Management Across 3 Regions",
+      "url": "https://thehackernews.com/2026/11/n-able-confirms-hackers-accessed-cloud.html",
+      "ts": 1795080686.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "N-able on Wednesday disclosed that unknown threat actors gained unauthorized access to one of the servers in the Mail Assure and Spam Experts Hosted Cloud, causing it to disable management interfaces and APIs. \"We have taken steps to mitigate the threat and are continuing to harden our services to reduce the risk of recurrence,\" N-able said. \"The investigation is ongoing, but at this time we",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "biz",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-19"
+    },
+    {
       "uid": "rss:1226c4f144b6e5",
       "source": "rss",
       "title": "Ruby Releases Fixes for 7 Regex and String Flaws, Warns 5 Have Proof-of-Concept RCE",
@@ -1562,6 +1602,26 @@
         "dev",
         "security",
         "hardware"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "rss:13f87e68195d22",
+      "source": "rss",
+      "title": "CISA Warns of 4 Exploited Flaws Linked to Ransomware, Cryptomining, and LLMjacking Attacks",
+      "url": "https://thehackernews.com/2026/11/cisa-warns-of-4-exploited-flaws-linked.html",
+      "ts": 1795075200.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added four vulnerabilities impacting Synology DiskStation Manager (DSM), BerriAI LiteLLM, Apache Axis, and Vanderbilt University Research Electronic Data Capture (REDCap) to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation. The vulnerabilities are listed below -",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "crypto",
+        "security"
       ],
       "date": "2026-11-19"
     },
@@ -1658,78 +1718,6 @@
       "date": "2026-11-18"
     },
     {
-      "uid": "rss:186a434790fa0e",
-      "source": "rss",
-      "title": "New Attack Bypasses TPM Lockout to Crack Windows Hello and BitLocker PINs in Days, Not Years",
-      "url": "https://thehackernews.com/2026/11/flash-chip-attack-bypasses-tpm-lockout.html",
-      "ts": 1795004910.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "On AMD-based PCs and some Intel PCs, the TPM lockout for Windows Hello and BitLocker PINs can be reset by someone who opens the PC's case, researchers at Technische Universität Berlin say. That leaves short PINs open to guessing. In lab tests, the researchers found a four-digit Hello PIN on an AMD laptop and a 6-digit BitLocker PIN on an Intel laptop this way. Both PINs were set by the",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "dev"
-      ],
-      "date": "2026-11-18"
-    },
-    {
-      "uid": "rss:ef8d44482a5df2",
-      "source": "rss",
-      "title": "AI Pentesting Checklist for Web Apps: 15 Questions to Ask Before Choosing a Vendor",
-      "url": "https://thehackernews.com/2026/11/ai-pentesting-checklist-for-web-apps-15.html",
-      "ts": 1795004100.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "TL;DR Attackers move first. On average, exploitation now starts before a patch exists (Mandiant M-Trends 2026). In 1H 2026, 23% of vulnerabilities VulnCheck added to its exploited list were hit on or before disclosure day. AI pentesting vendors aren't interchangeable. Most look convincing in a demo. The gaps show up in your logged-in flows, your coverage, and your production safety. Make",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-18"
-    },
-    {
-      "uid": "rss:deec20c9952c51",
-      "source": "rss",
-      "title": "Java4Shell Flaw (CVE-2026-114938) Enables Pre-Auth RCE in Jira, Jenkins, Keycloak and More",
-      "url": "https://thehackernews.com/2026/11/java4shell-cve-2026-114938-enables-pre.html",
-      "ts": 1795002949.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "A Java flaw called Java4Shell can let attackers without an account run their own code on Jira, Jenkins, Keycloak, and three other widely used applications, says Calif, the security research firm that disclosed it this week. The flaw is present in Java 17.0.6 and later, and the vulnerable code runs only on x86-64 Intel and AMD chips that support the AVX-512 VBMI feature. Tracked as",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "dev",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-18"
-    },
-    {
-      "uid": "rss:d4449eb7ba22a3",
-      "source": "rss",
-      "title": "Quality Isn’t The Main Worry About AI Pentesting — Data Privacy and Production Safety Are",
-      "url": "https://thehackernews.com/2026/11/quality-isnt-main-worry-about-ai.html",
-      "ts": 1794999837.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "AI is speeding up how software is built, which means more code, more changes, and more chances for vulnerabilities to reach production. It's speeding up how attackers find and exploit them too, with time-to-exploit now down to a single day. Security testing has to keep up with both. AI pentesting has emerged as a way to run in-depth tests whenever teams need them, instead of waiting for the",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-18"
-    },
-    {
       "uid": "gh:BountyForge-xyz/pwn-skill",
       "source": "github",
       "title": "BountyForge-xyz/pwn-skill",
@@ -1753,12 +1741,12 @@
       "title": "rammahmagdy/Latch",
       "url": "https://github.com/rammahmagdy/Latch",
       "ts": 1794964122.0,
-      "points": 32,
+      "points": 33,
       "comments": 3,
       "author": "rammahmagdy",
       "summary": "Lock any app or folder behind Touch ID, Windows Hello or a password. Mac and Windows. Free for personal use.",
       "recipe": "github_sec",
-      "buzz": 71,
+      "buzz": 72,
       "topics": [],
       "date": "2026-11-18"
     },
@@ -1835,22 +1823,76 @@
       "date": "2026-11-17"
     },
     {
-      "uid": "rss:139fe93a86c6e7",
+      "uid": "rss:186a434790fa0e",
       "source": "rss",
-      "title": "Usable Security at Luxury Hotels",
-      "url": "https://www.schneier.com/blog/archives/2026/11/usable-security-at-luxury-hotels.html",
-      "ts": 1794830718.0,
+      "title": "New Attack Bypasses TPM Lockout to Crack Windows Hello and BitLocker PINs in Days, Not Years",
+      "url": "https://thehackernews.com/2026/11/flash-chip-attack-bypasses-tpm-lockout.html",
+      "ts": 1795004910.0,
       "points": 0,
       "comments": 0,
-      "author": "Bruce Schneier",
-      "summary": "<p>Interesting <a href=\"https://www.benthamsgaze.org/2026/11/11/phishing-at-the-front-desk-usable-security-in-luxury-hotels/\">case study</a> from luxury hotels. Attackers used a fake booking request to gain access to a reservations inbox, where they copied genuine refund requests and got fraudulent ones approved.</p> <p>This is a good illustration why &#8220;just don&#8217;t click on links&#8221;",
-      "recipe": "schneier",
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "On AMD-based PCs and some Intel PCs, the TPM lockout for Windows Hello and BitLocker PINs can be reset by someone who opens the PC's case, researchers at Technische Universität Berlin say. That leaves short PINs open to guessing. In lab tests, the researchers found a four-digit Hello PIN on an AMD laptop and a 6-digit BitLocker PIN on an Intel laptop this way. Both PINs were set by the",
+      "recipe": "hackersnews",
+      "buzz": 30,
+      "topics": [
+        "dev"
+      ],
+      "date": "2026-11-18"
+    },
+    {
+      "uid": "rss:ef8d44482a5df2",
+      "source": "rss",
+      "title": "AI Pentesting Checklist for Web Apps: 15 Questions to Ask Before Choosing a Vendor",
+      "url": "https://thehackernews.com/2026/11/ai-pentesting-checklist-for-web-apps-15.html",
+      "ts": 1795004100.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "TL;DR Attackers move first. On average, exploitation now starts before a patch exists (Mandiant M-Trends 2026). In 1H 2026, 23% of vulnerabilities VulnCheck added to its exploited list were hit on or before disclosure day. AI pentesting vendors aren't interchangeable. Most look convincing in a demo. The gaps show up in your logged-in flows, your coverage, and your production safety. Make",
+      "recipe": "hackersnews",
       "buzz": 30,
       "topics": [
         "ai",
         "security"
       ],
-      "date": "2026-11-16"
+      "date": "2026-11-18"
+    },
+    {
+      "uid": "rss:deec20c9952c51",
+      "source": "rss",
+      "title": "Java4Shell Flaw (CVE-2026-114938) Enables Pre-Auth RCE in Jira, Jenkins, Keycloak and More",
+      "url": "https://thehackernews.com/2026/11/java4shell-cve-2026-114938-enables-pre.html",
+      "ts": 1795002949.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "A Java flaw called Java4Shell can let attackers without an account run their own code on Jira, Jenkins, Keycloak, and three other widely used applications, says Calif, the security research firm that disclosed it this week. The flaw is present in Java 17.0.6 and later, and the vulnerable code runs only on x86-64 Intel and AMD chips that support the AVX-512 VBMI feature. Tracked as",
+      "recipe": "hackersnews",
+      "buzz": 30,
+      "topics": [
+        "dev",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-18"
+    },
+    {
+      "uid": "rss:d4449eb7ba22a3",
+      "source": "rss",
+      "title": "Quality Isn’t The Main Worry About AI Pentesting — Data Privacy and Production Safety Are",
+      "url": "https://thehackernews.com/2026/11/quality-isnt-main-worry-about-ai.html",
+      "ts": 1794999837.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "AI is speeding up how software is built, which means more code, more changes, and more chances for vulnerabilities to reach production. It's speeding up how attackers find and exploit them too, with time-to-exploit now down to a single day. Security testing has to keep up with both. AI pentesting has emerged as a way to run in-depth tests whenever teams need them, instead of waiting for the",
+      "recipe": "hackersnews",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-18"
     },
     {
       "uid": "rss:ebd59dd6f2271f",
@@ -2134,81 +2176,6 @@
       "date": "2026-11-16"
     },
     {
-      "uid": "rss:ef045dd0f58580",
-      "source": "rss",
-      "title": "⚡ Weekly Recap: N-able 0-Days, Windows 0-Days, Chrome 0-Days, Fridge 0-Days, and More Bad Days",
-      "url": "https://thehackernews.com/2026/11/weekly-recap-n-able-0-days-windows-0.html",
-      "ts": 1794835640.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "A default password opened doors it never should have. A trusted update delivered malware. Even a security feature became a way to break in. Different stories, same problem: the things meant to protect us aren't always doing their job. Meanwhile, AI is making bug hunting faster, old flaws are still paying off, and attackers keep finding easy ways in. Some attacks take real skill. Others barely",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-16"
-    },
-    {
-      "uid": "rss:d915d3970c878b",
-      "source": "rss",
-      "title": "Six Unpatched Danfoss Refrigeration Controller Flaws Could Allow Remote Takeover Without Login",
-      "url": "https://thehackernews.com/2026/11/six-unpatched-danfoss-refrigeration.html",
-      "ts": 1794832461.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Six flaws in Danfoss AK-SM800A refrigeration controllers could let a remote attacker take over a controller without logging in, Dutch security consultancy Midnight Blue said earlier this week. No patch is available, and the researchers say the newest firmware, version 5.4.0, does not fix the flaws. Government cybersecurity agencies in Belgium, Ireland and Germany told operators this week to",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-16"
-    },
-    {
-      "uid": "rss:be5d8dc6dee516",
-      "source": "rss",
-      "title": "Retadup Worm Resurfaces 7 Years After Takedown to Spread CoffeeLoader Malware",
-      "url": "https://thehackernews.com/2026/11/retadup-worm-resurfaces-7-years-after.html",
-      "ts": 1794832398.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Cybersecurity researchers have disclosed details of a new variant of CoffeeLoader, a malware designed to deliver additional payloads to infected machines. \"On launch, the NSIS-based installer executable dropped a file named '7z.dll' into a temporary directory and ran it through rundll32.exe,\" Kaspersky said in an analysis published today. \"The '7z.dll' file was a patched version of the",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-16"
-    },
-    {
-      "uid": "rss:83c4ecf04b85f1",
-      "source": "rss",
-      "title": "SANSAR Linux Cryptomining Malware Uses Modified NVIDIA Library to Hide GPU Activity",
-      "url": "https://thehackernews.com/2026/11/sansar-linux-cryptomining-malware-uses.html",
-      "ts": 1794821577.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "A financially motivated threat activity cluster tracked as REF3364 has been attributed to a Linux-focused cryptocurrency mining operation that tampers with the readings used to detect high GPU workloads. Central to the intrusion is a toolkit called SANSAR, a Rust-based orchestrator that receives commands over the TOR anonymity network to manage CPU and GPU miners. The activity was observed in",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "dev",
-        "crypto",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-16"
-    },
-    {
       "uid": "gh:humanethq/airgap-check",
       "source": "github",
       "title": "humanethq/airgap-check",
@@ -2224,6 +2191,24 @@
         "ai"
       ],
       "date": "2026-11-08"
+    },
+    {
+      "uid": "rss:139fe93a86c6e7",
+      "source": "rss",
+      "title": "Usable Security at Luxury Hotels",
+      "url": "https://www.schneier.com/blog/archives/2026/11/usable-security-at-luxury-hotels.html",
+      "ts": 1794830718.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Bruce Schneier",
+      "summary": "<p>Interesting <a href=\"https://www.benthamsgaze.org/2026/11/11/phishing-at-the-front-desk-usable-security-in-luxury-hotels/\">case study</a> from luxury hotels. Attackers used a fake booking request to gain access to a reservations inbox, where they copied genuine refund requests and got fraudulent ones approved.</p> <p>This is a good illustration why &#8220;just don&#8217;t click on links&#8221;",
+      "recipe": "schneier",
+      "buzz": 10,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-16"
     },
     {
       "uid": "rss:e109a4e996ba8e",
@@ -2277,22 +2262,23 @@
       "date": "2026-11-13"
     },
     {
-      "uid": "rss:e2006326489748",
+      "uid": "rss:ef045dd0f58580",
       "source": "rss",
-      "title": "Another Way Police Are Locating People from Their Smartphones",
-      "url": "https://www.schneier.com/blog/archives/2026/11/another-way-police-are-locating-people-from-their-smartphones.html",
-      "ts": 1794484990.0,
+      "title": "⚡ Weekly Recap: N-able 0-Days, Windows 0-Days, Chrome 0-Days, Fridge 0-Days, and More Bad Days",
+      "url": "https://thehackernews.com/2026/11/weekly-recap-n-able-0-days-windows-0.html",
+      "ts": 1794835640.0,
       "points": 0,
       "comments": 0,
-      "author": "Bruce Schneier",
-      "summary": "<p>Penlink&#8217;s Webloc is an application that <a href=\"https://www.bloomberg.com/features/2026-police-phone-tracking-advertising-tech/?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5Mzg4OTgyNSwiZXhwIjoxNzk0NDk0NjI1LCJhcnRpY2xlSWQiOiJUTzEyT0pUM0JaTUwwMCIsImJjb25uZWN0SWQiOiJCRkMyNTg1RUFENTA0RTM2OUU3MzBBNTBCNkVGRTk5RSJ9.uWvJBwAKCyQsXzSl",
-      "recipe": "schneier",
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "A default password opened doors it never should have. A trusted update delivered malware. Even a security feature became a way to break in. Different stories, same problem: the things meant to protect us aren't always doing their job. Meanwhile, AI is making bug hunting faster, old flaws are still paying off, and attackers keep finding easy ways in. Some attacks take real skill. Others barely",
+      "recipe": "hackersnews",
       "buzz": 10,
       "topics": [
         "ai",
-        "crypto"
+        "dev",
+        "security"
       ],
-      "date": "2026-11-12"
+      "date": "2026-11-16"
     },
     {
       "uid": "rss:a29bdb614c93f8",
@@ -2462,6 +2448,24 @@
         "security"
       ],
       "date": "2026-10-10"
+    },
+    {
+      "uid": "rss:e2006326489748",
+      "source": "rss",
+      "title": "Another Way Police Are Locating People from Their Smartphones",
+      "url": "https://www.schneier.com/blog/archives/2026/11/another-way-police-are-locating-people-from-their-smartphones.html",
+      "ts": 1794484990.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Bruce Schneier",
+      "summary": "<p>Penlink&#8217;s Webloc is an application that <a href=\"https://www.bloomberg.com/features/2026-police-phone-tracking-advertising-tech/?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5Mzg4OTgyNSwiZXhwIjoxNzk0NDk0NjI1LCJhcnRpY2xlSWQiOiJUTzEyT0pUM0JaTUwwMCIsImJjb25uZWN0SWQiOiJCRkMyNTg1RUFENTA0RTM2OUU3MzBBNTBCNkVGRTk5RSJ9.uWvJBwAKCyQsXzSl",
+      "recipe": "schneier",
+      "buzz": 0,
+      "topics": [
+        "ai",
+        "crypto"
+      ],
+      "date": "2026-11-12"
     },
     {
       "uid": "rss:0fefb47e915baa",
