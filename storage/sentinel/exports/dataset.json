@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T01:31:16+00:00",
+  "generated_at": "2026-11-19T05:23:17+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -22,13 +22,13 @@
       "gh_advisories": 30,
       "hackersnews": 30,
       "github_sec": 12,
-      "krebs": 10,
-      "schneier": 10
+      "schneier": 10,
+      "krebs": 10
     },
     "by_topic": {
-      "security": 111,
-      "ai": 69,
-      "dev": 50,
+      "security": 112,
+      "ai": 70,
+      "dev": 49,
       "hardware": 19,
       "crypto": 11,
       "biz": 8,
@@ -1411,21 +1411,6 @@
       "date": "2026-11-06"
     },
     {
-      "uid": "gh:Aabyss-Team/Threat-Broadcast-Plus",
-      "source": "github",
-      "title": "Aabyss-Team/Threat-Broadcast-Plus",
-      "url": "https://github.com/Aabyss-Team/Threat-Broadcast-Plus",
-      "ts": 1794800456.0,
-      "points": 74,
-      "comments": 14,
-      "author": "Aabyss-Team",
-      "summary": "网络安全威胁情报播报-Plus升级版",
-      "recipe": "github_sec",
-      "buzz": 146,
-      "topics": [],
-      "date": "2026-11-16"
-    },
-    {
       "uid": "gh:nestho/impacket-rs",
       "source": "github",
       "title": "nestho/impacket-rs",
@@ -1443,6 +1428,21 @@
       "date": "2026-11-11"
     },
     {
+      "uid": "gh:Aabyss-Team/Threat-Broadcast-Plus",
+      "source": "github",
+      "title": "Aabyss-Team/Threat-Broadcast-Plus",
+      "url": "https://github.com/Aabyss-Team/Threat-Broadcast-Plus",
+      "ts": 1794800456.0,
+      "points": 80,
+      "comments": 15,
+      "author": "Aabyss-Team",
+      "summary": "网络安全威胁情报播报-Plus升级版",
+      "recipe": "github_sec",
+      "buzz": 135,
+      "topics": [],
+      "date": "2026-11-16"
+    },
+    {
       "uid": "gh:zhidun2027/zhidun",
       "source": "github",
       "title": "zhidun2027/zhidun",
@@ -1453,7 +1453,7 @@
       "author": "zhidun2027",
       "summary": "Android APK hardening — DEX encryption, native shell engine, anti-tamper. Fully documented and auditable.",
       "recipe": "github_sec",
-      "buzz": 129,
+      "buzz": 119,
       "topics": [
         "security"
       ],
@@ -1465,12 +1465,12 @@
       "title": "wildorigins/wildos",
       "url": "https://github.com/wildorigins/wildos",
       "ts": 1794169078.0,
-      "points": 99,
+      "points": 102,
       "comments": 5,
       "author": "wildorigins",
       "summary": "A hardened Linux desktop, rebuilt from scratch, with your Windows apps built in. Free and open source.",
       "recipe": "github_sec",
-      "buzz": 114,
+      "buzz": 117,
       "topics": [],
       "date": "2026-11-08"
     },
@@ -1510,42 +1510,40 @@
       "date": "2026-11-15"
     },
     {
-      "uid": "rss:c077b9eec9aa33",
-      "source": "rss",
-      "title": "Attackers Used Optimizely to A/B Test Malware on Top Websites",
-      "url": "https://krebsonsecurity.com/2026/11/attackers-used-optimizely-to-a-b-test-malware-on-top-websites/",
-      "ts": 1794970324.0,
-      "points": 0,
-      "comments": 0,
-      "author": "BrianKrebs",
-      "summary": "At least 178 top web destinations unwittingly served a variety of malware exploits against visitors over the past 24 hours thanks to a security vulnerability involving Optimizely, a company that helps websites customize user experiences and test out new features. Experts say the incident, which saw data-stealing malicious software silently injected into sites like the BBC, CNN, Equifax, Ledger and",
-      "recipe": "krebs",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "dev",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-18"
-    },
-    {
       "uid": "rss:0a25269fdcdc3c",
       "source": "rss",
       "title": "France Is Blaming Iran for the Fridge Cyberattack",
       "url": "https://www.schneier.com/blog/archives/2026/11/france-is-blaming-iran-for-the-fridge-cyberattack.html",
-      "ts": 1795003594.0,
+      "ts": 1795058104.0,
       "points": 0,
       "comments": 0,
       "author": "Bruce Schneier",
-      "summary": "<p><a href=\"https://www.nytimes.com/2026/11/09/world/europe/france-iran-refrigerators-cyberattack.html\">Interesting</a>:</p> <blockquote><p>U.S. intelligence agencies have recently reached a &#8220;&#8221;ow confidence&#8221; assessment that Iran was responsible for the attacks in France, according to three U.S. officials who spoke on the condition of anonymity to discuss sensitive intelligence. A",
+      "summary": "<p><a href=\"https://www.nytimes.com/2026/11/09/world/europe/france-iran-refrigerators-cyberattack.html\">Interesting</a>:</p> <blockquote><p>U.S. intelligence agencies have recently reached a &#8220;low confidence&#8221; assessment that Iran was responsible for the attacks in France, according to three U.S. officials who spoke on the condition of anonymity to discuss sensitive intelligence. A &#822",
       "recipe": "schneier",
       "buzz": 80,
       "topics": [
         "ai",
         "dev"
       ],
-      "date": "2026-11-18"
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "rss:3117898b6ee8e2",
+      "source": "rss",
+      "title": "PHP Warns of Critical Security Flaws Affecting All Supported Versions, Fixes Coming November 19",
+      "url": "https://thehackernews.com/2026/11/php-warns-of-critical-security-flaws.html",
+      "ts": 1795062826.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "The maintainers of the PHP programming language on Wednesday issued an advisory announcing an upcoming security release that addresses critical flaws. The release is scheduled for November 19, 2026, between 2 and 2:30 p.m. UTC. \"These releases are part of PHP's regular four-week release cycle and will address security vulnerabilities affecting all supported PHP versions,\" the maintainers said.",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-19"
     },
     {
       "uid": "rss:a678fbb9471f9e",
@@ -1832,6 +1830,26 @@
       "buzz": 45,
       "topics": [],
       "date": "2026-11-14"
+    },
+    {
+      "uid": "rss:c077b9eec9aa33",
+      "source": "rss",
+      "title": "Attackers Used Optimizely to A/B Test Malware on Top Websites",
+      "url": "https://krebsonsecurity.com/2026/11/attackers-used-optimizely-to-a-b-test-malware-on-top-websites/",
+      "ts": 1794970324.0,
+      "points": 0,
+      "comments": 0,
+      "author": "BrianKrebs",
+      "summary": "At least 178 top web destinations unwittingly served a variety of malware exploits against visitors over the past 24 hours thanks to a security vulnerability involving Optimizely, a company that helps websites customize user experiences and test out new features. Experts say the incident, which saw data-stealing malicious software silently injected into sites like the BBC, CNN, Equifax, Ledger and",
+      "recipe": "krebs",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "dev",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-18"
     },
     {
       "uid": "rss:20cbd8174f0c08",
@@ -2276,23 +2294,6 @@
         "crypto"
       ],
       "date": "2026-11-12"
-    },
-    {
-      "uid": "rss:fb43e89fb20d8c",
-      "source": "rss",
-      "title": "Italy Fines Meta €805 Million Over Facebook's Android Gallery Access Without Explicit Consent",
-      "url": "https://thehackernews.com/2026/11/italy-fines-meta-805-million-over.html",
-      "ts": 1794742051.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Meta was fined €805 million in Italy yesterday over a Facebook for Android feature that suggests photos and videos from users' phone galleries for them to post. The Garante, Italy's data protection authority, found that the feature was enabled by default and that the app accessed Italian users' photos, videos, and related metadata without their explicit consent. The company has 60 days to",
-      "recipe": "hackersnews",
-      "buzz": 10,
-      "topics": [
-        "dev"
-      ],
-      "date": "2026-11-15"
     },
     {
       "uid": "rss:a29bdb614c93f8",
