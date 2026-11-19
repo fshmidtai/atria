@@ -5,7 +5,144 @@
     <link>https://sentinel-post.pages.dev</link>
     <description>Автономная радиостанция кибербезопасности: живые CVE, угрозы и защита — без сенсаций</description>
     <language>ru</language>
-    <lastBuildDate>Thu, 19 Nov 2026 13:35:59 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2026 17:21:00 GMT</lastBuildDate>
+    <item>
+      <title>CVE-2026-63412: Jane: Instantiation RCE via query parameter name -&gt; raw PHPDoc */ breakout (jane-php/open-api-3)</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-63412-jane-instantiation-rce-via-query-parameter-name-r.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-63412-jane-instantiation-rce-via-query-parameter-name-r.html</guid>
+      <pubDate>Thu, 19 Nov 2026 16:18:45 GMT</pubDate>
+      <description>Severity: critical. ### Summary
+jane-php (open-api-3) builds PHP via nikic/php-parser (AST), so string literals are escaped -- but PHPDoc comment text is emitted RAW. The generated Client/Endpoint method docblocks embed the query parameter name verbatim in a `@param array{ "&lt;name&gt;"?: ... }` block. A</description>
+    </item>
+    <item>
+      <title>CVE-2026-63413: Jane: Instantiation RCE via header parameter name -&gt; raw PHPDoc */ breakout (jane-php/open-api-3)</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-63413-jane-instantiation-rce-via-header-parameter-name-.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-63413-jane-instantiation-rce-via-header-parameter-name-.html</guid>
+      <pubDate>Thu, 19 Nov 2026 16:12:22 GMT</pubDate>
+      <description>Severity: critical. ### Summary
+jane-php (open-api-3) builds PHP via nikic/php-parser (AST), so string literals are escaped -- but PHPDoc comment text is emitted RAW. The generated Client/Endpoint method docblocks embed the header parameter name verbatim in a `@param array{ "&lt;name&gt;"?: ... }` block. </description>
+    </item>
+    <item>
+      <title>CVE-2026-63411: Jane: Instantiation RCE via parameter description -&gt; raw PHPDoc */ breakout (jane-php/open-api-3)</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-63411-jane-instantiation-rce-via-parameter-description-.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-63411-jane-instantiation-rce-via-parameter-description-.html</guid>
+      <pubDate>Thu, 19 Nov 2026 16:12:11 GMT</pubDate>
+      <description>Severity: critical. ### Summary
+jane-php (open-api-3) builds PHP via nikic/php-parser (AST), so string literals are escaped -- but PHPDoc comment text is emitted RAW. The generated Client/Endpoint method docblocks embed the parameter description verbatim in a `@param array{ "&lt;name&gt;"?: ... }` block. </description>
+    </item>
+    <item>
+      <title>CVE-2026-75518: DOMShell: domshell_eval classified as read-tier can execute side-effecting JavaScript without --allow-write</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-75518-domshell-domshell-eval-classified-as-read-tier-ca.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-75518-domshell-domshell-eval-classified-as-read-tier-ca.html</guid>
+      <pubDate>Thu, 19 Nov 2026 16:10:53 GMT</pubDate>
+      <description>Severity: medium. ### Summary
+
+The `domshell_eval` MCP tool (and the `eval` command inside `domshell_execute`) was classified as **read-tier**, allowing it to run without the `--allow-write` server flag. However, `eval` and the write-tier `js` command dispatch to the same handler in the extension an</description>
+    </item>
+    <item>
+      <title>CVE-2026-69139: djangocms-moderation: Moderation comments disclosed to non-participant staff via the admin changelist</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-69139-djangocms-moderation-moderation-comments-disclose.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-69139-djangocms-moderation-moderation-comments-disclose.html</guid>
+      <pubDate>Thu, 19 Nov 2026 16:09:30 GMT</pubDate>
+      <description>Severity: medium. ## Summary
+
+The Django admin views for moderation comments (`CollectionCommentAdmin` and `RequestCommentAdmin`) render the full comment body but scope access only by an attacker-controlled `id` in the URL and Django's model-level `view_*comment` permission. They perform no per-obje</description>
+    </item>
+    <item>
+      <title>CVE-2026-71535: Mareforma: Unsigned Claims Can Be Promoted to REPLICATED via Missing Signature Enforcement in Convergence Path</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-71535-mareforma-unsigned-claims-can-be-promoted-to-repl.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-71535-mareforma-unsigned-claims-can-be-promoted-to-repl.html</guid>
+      <pubDate>Thu, 19 Nov 2026 16:07:36 GMT</pubDate>
+      <description>Severity: high. ### Summary
+
+`mareforma` 0.3.3 contains a critical integrity flaw in the REPLICATED convergence logic (`_maybe_update_replicated_unlocked()` in `mareforma/db/core.py:1300-1319`). The peer-selection SQL query that determines whether two independent claims "agree" on the same anchor do</description>
+    </item>
+    <item>
+      <title>CVE-2026-71534: Mareforma: transparency_logged trusts the unsigned rekor block</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-71534-mareforma-transparency-logged-trusts-the-unsigned.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-71534-mareforma-transparency-logged-trusts-the-unsigned.html</guid>
+      <pubDate>Thu, 19 Nov 2026 16:05:07 GMT</pubDate>
+      <description>Severity: medium. ## What's wrong
+
+During restore, `transparency_logged` is recomputed as `1 if (toml_logged is not False and bundle_has_rekor) else 0`, where `bundle_has_rekor` comes only from a `rekor.uuid` field inside `signature_bundle`. That derivation is wrong in both directions.
+
+First, the r</description>
+    </item>
+    <item>
+      <title>CVE-2026-71500: Mareforma: invalidated claims still promote to REPLICATED</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-71500-mareforma-invalidated-claims-still-promote-to-rep.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-71500-mareforma-invalidated-claims-still-promote-to-rep.html</guid>
+      <pubDate>Thu, 19 Nov 2026 16:04:43 GMT</pubDate>
+      <description>Severity: medium. ## What's wrong
+
+`_maybe_update_replicated_unlocked` never checks `t_invalid`, so a claim that a signed contradiction verdict has marked invalid can still climb to REPLICATED through convergence detection, and it pulls an honest peer up with it.
+
+Three gaps line up:
+
+- The new-clai</description>
+    </item>
+    <item>
+      <title>CVE-2026-71536: Mareforma: verify_bundle never checks a per-claim signature</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-71536-mareforma-verify-bundle-never-checks-a-per-claim-.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-71536-mareforma-verify-bundle-never-checks-a-per-claim-.html</guid>
+      <pubDate>Thu, 19 Nov 2026 16:03:39 GMT</pubDate>
+      <description>Severity: high. ## What's wrong
+
+`verify_bundle` documents that it verifies "a bundle's DSSE envelope AND each per-claim signature", lists "per-claim signature failure" among its raised errors, and promises that partial verification never surfaces "an authenticated bundle that contains some invalid </description>
+    </item>
+    <item>
+      <title>CVE-2026-71533: Mareforma: search_claims skips verify-on-read, serving forged rows</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-71533-mareforma-search-claims-skips-verify-on-read-serv.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-71533-mareforma-search-claims-skips-verify-on-read-serv.html</guid>
+      <pubDate>Thu, 19 Nov 2026 16:00:52 GMT</pubDate>
+      <description>Severity: medium. ## What's wrong
+
+`search_claims` never calls `_row_verified_on_read`. Its row loop applies only the PRELIMINARY-unenrolled filter, then appends the row. `query_claims` runs the same projection but additionally re-verifies REPLICATED/ESTABLISHED signatures on read (line 4023) and dr</description>
+    </item>
+    <item>
+      <title>CVE-2026-58214: NATS Server MQTT subscribe permission bypass exposes internal QoS 2 metadata</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-58214-nats-server-mqtt-subscribe-permission-bypass-expo.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-58214-nats-server-mqtt-subscribe-permission-bypass-expo.html</guid>
+      <pubDate>Thu, 19 Nov 2026 16:00:12 GMT</pubDate>
+      <description>Severity: medium. ### Background
+
+NATS.io is a high performance open source pub-sub distributed communication technology, built for the cloud, on-premise, IoT and edge computing.
+
+The NATS Server MQTT support uses internal `$MQTT.*` subjects to implement MQTT protocol features such as QoS handling.
+</description>
+    </item>
+    <item>
+      <title>CVE-2026-58213: NATS Server: MQTT SUBSCRIBE Protocol Injection via Leaf Node/Route Forwarding allows arbitrary NATS command injection</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-58213-nats-server-mqtt-subscribe-protocol-injection-via.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-58213-nats-server-mqtt-subscribe-protocol-injection-via.html</guid>
+      <pubDate>Thu, 19 Nov 2026 15:56:55 GMT</pubDate>
+      <description>Severity: high. ### Background
+
+NATS.io is a high performance open source pub-sub distributed communication technology, built for the cloud, on-premise, IoT and edge computing.
+
+The NATS Server supports MQTT clients and can bridge MQTT activity into NATS subjects across routes and leafnode connectio</description>
+    </item>
+    <item>
+      <title>PHP Fixes 7 Critical Flaws, Including Bugs That Could Allow Remote Code Execution</title>
+      <link>https://sentinel-post.pages.dev/item/php-fixes-7-critical-flaws-including-bugs-that-could-allow-remot.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/php-fixes-7-critical-flaws-including-bugs-that-could-allow-remot.html</guid>
+      <pubDate>Thu, 19 Nov 2026 15:18:07 GMT</pubDate>
+      <description>The PHP Foundation has released security updates to address multiple critical security flaws that could be exploited to achieve remote code execution on affected deployments, including CVE-[phone]. The release of the patch follows an advance notice in which the project maintainers alerted users to m</description>
+    </item>
+    <item>
+      <title>Critical VMware vCenter Flaw (CVSS 9.8) Lets Network Attackers Bypass Authentication</title>
+      <link>https://sentinel-post.pages.dev/item/critical-vmware-vcenter-flaw-cvss-9-8-lets-network-attackers-byp.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/critical-vmware-vcenter-flaw-cvss-9-8-lets-network-attackers-byp.html</guid>
+      <pubDate>Thu, 19 Nov 2026 15:11:06 GMT</pubDate>
+      <description>A critical flaw in VMware vCenter lets an attacker with network access bypass authentication and gain unauthorized access to the system, Broadcom, which owns VMware, said in an advisory published today. Fixed versions are out for all supported branches, and the company lists no workaround. vCenter i</description>
+    </item>
+    <item>
+      <title>Drupal Patches Critical Installer Flaw That Could Give Unauthenticated Attackers Control of Sites</title>
+      <link>https://sentinel-post.pages.dev/item/drupal-patches-critical-installer-flaw-that-could-give-unauthent.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/drupal-patches-critical-installer-flaw-that-could-give-unauthent.html</guid>
+      <pubDate>Thu, 19 Nov 2026 14:33:06 GMT</pubDate>
+      <description>Under specific conditions, a critical vulnerability in Drupal core can allow an attacker without login credentials to use the built-in installer to attempt to reinstall a site. That can lead to a site takeover or remote code execution, and the project rates the vulnerable configurations as uncommon.</description>
+    </item>
     <item>
       <title>Everything Is a Web Application, Including Your Firewall</title>
       <link>https://sentinel-post.pages.dev/item/everything-is-a-web-application-including-your-firewall.html</link>
@@ -131,137 +268,6 @@ The `discard` and `edit_redirect` version transitions did not enforce a per-obje
       <description>Severity: high. ### Summary
 
 LLMKube's `ModelReconciler` accepts arbitrary absolute paths and `file://` URIs in the `Model.spec.source` field and propagates them to two distinct sinks without path allowlisting: (1) `os.Open()` inside the controller pod itself (`copyLocalModel`), and (2) a Kubernetes</description>
-    </item>
-    <item>
-      <title>CVE-2026-73864: install-artifact-from-github loads downloaded native artifacts without integrity verification</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-73864-install-artifact-from-github-loads-downloaded-nat.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-73864-install-artifact-from-github-loads-downloaded-nat.html</guid>
-      <pubDate>Wed, 18 Nov 2026 21:17:37 GMT</pubDate>
-      <description>Severity: high. ## Description
-
-`bin/install-from-cache.js` downloads a prebuilt native addon (`*.node`) over the network and writes it directly to the artifact path **with no cryptographic integrity verification of any kind** — no checksum manifest, no signature, no SRI. A scan of the whole package</description>
-    </item>
-    <item>
-      <title>CVE-2026-71861: Chainguard SDK: AWS SigV4 token replay in auth/aws.VerifyToken — Chainguard-Audience/Chainguard-Identity binding headers not required in SignedHeaders</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-71861-chainguard-sdk-aws-sigv4-token-replay-in-auth-aws.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-71861-chainguard-sdk-aws-sigv4-token-replay-in-auth-aws.html</guid>
-      <pubDate>Wed, 18 Nov 2026 21:16:44 GMT</pubDate>
-      <description>Severity: high. ### Summary
-
-The `auth/aws` package of the `chainguard.dev/sdk` Go library provides Chainguard's AWS-backed identity federation (an AWS workload proves its identity to Chainguard by signing an AWS STS `GetCallerIdentity` request). Its verifier, `VerifyToken`, reads the `Chainguard-Au</description>
-    </item>
-    <item>
-      <title>CVE-2026-71481: ALTCHA PHP: verifySolution bypasses HMAC signature check when challenge signature is absent</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-71481-altcha-php-verifysolution-bypasses-hmac-signature.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-71481-altcha-php-verifysolution-bypasses-hmac-signature.html</guid>
-      <pubDate>Wed, 18 Nov 2026 20:48:18 GMT</pubDate>
-      <description>Severity: high. In altcha-org/altcha v2, the verifySolution method skips HMAC signature verification when the signature field is absent from the challenge payload, even when hmacSignatureSecret is configured.
-
-An attacker who strips the signature key from the challenge JSON passes the condition as f</description>
-    </item>
-    <item>
-      <title>CVE-2026-71425: Outstatic: Authenticated GitHub REST proxy can send OAuth token to non-GitHub origins</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-71425-outstatic-authenticated-github-rest-proxy-can-sen.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-71425-outstatic-authenticated-github-rest-proxy-can-sen.html</guid>
-      <pubDate>Wed, 18 Nov 2026 20:43:43 GMT</pubDate>
-      <description>Severity: medium. ### Impact
-Outstatic’s authenticated GitHub REST proxy accepted an unvalidated endpoint parameter and constructed an upstream GitHub API URL by string concatenation while attaching the authenticated user’s GitHub OAuth token.
-
-A user with access to the Outstatic dashboard could cra</description>
-    </item>
-    <item>
-      <title>CVE-2026-69158: Atomic Server: Unauthenticated full-response SSRF in Atomic-Server /bookmark endpoint</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-69158-atomic-server-unauthenticated-full-response-ssrf-.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-69158-atomic-server-unauthenticated-full-response-ssrf-.html</guid>
-      <pubDate>Wed, 18 Nov 2026 20:42:50 GMT</pubDate>
-      <description>Severity: high. ## Summary
-
-Atomic-Server exposes a `GET /bookmark` endpoint that fetches an attacker-supplied URL server-side, parses the response, and reflects the fetched content back to the caller. The endpoint requires no authentication and performs no authorization of its own, and the underlyi</description>
-    </item>
-    <item>
-      <title>CVE-2026-69157: Atomic Server: Unauthenticated `/setup` invite grants write access to the entire Drive</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-69157-atomic-server-unauthenticated-setup-invite-grants.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-69157-atomic-server-unauthenticated-setup-invite-grants.html</guid>
-      <pubDate>Wed, 18 Nov 2026 20:42:33 GMT</pubDate>
-      <description>Severity: critical. ## Summary
-
-atomic-server provisions a well-known invite at `{server}/setup` with `write = true`, `target` = the Drive root, and `usagesLeft = 1`. Invite redemption **ignores the redeemer's identity** (`for_agent: _` in `server/src/plugins/invite.rs:22`), so possession of the URL</description>
-    </item>
-    <item>
-      <title>CVE-2026-69156: Atomic Server: Arbitrary file read via user-controlled `internalId` in the `/download` handler (leaks root agent private key)</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-69156-atomic-server-arbitrary-file-read-via-user-contro.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-69156-atomic-server-arbitrary-file-read-via-user-contro.html</guid>
-      <pubDate>Wed, 18 Nov 2026 20:42:15 GMT</pubDate>
-      <description>Severity: high. ## Summary
-
-The Commit apply path enforces **no allowlist of writable properties**, so any authenticated Agent can set the `internalId` string (datatype `string`, no character validation) on a resource it owns. The `/download` handler then uses that value **verbatim** as a filesystem</description>
-    </item>
-    <item>
-      <title>CVE-2026-69155: Atomic Server: Stored XSS via uploaded files served inline (same-origin) on `/download` → account takeover</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-69155-atomic-server-stored-xss-via-uploaded-files-serve.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-69155-atomic-server-stored-xss-via-uploaded-files-serve.html</guid>
-      <pubDate>Wed, 18 Nov 2026 20:41:46 GMT</pubDate>
-      <description>Severity: high. ## Summary
-
-Files uploaded via `POST /upload` are served back by `GET /download/{path}` using `actix_files::NamedFile`. For `text/html` and `image/svg+xml`, actix-files (0.6.6) sets `Content-Disposition: inline`, so the browser **renders** the file instead of downloading it. The `/do</description>
-    </item>
-    <item>
-      <title>10-Year-Old NGINX HTTP/2 Flaw Lets Unauthenticated Attackers Execute Code on Servers</title>
-      <link>https://sentinel-post.pages.dev/item/10-year-old-nginx-http-2-flaw-lets-unauthenticated-attackers-exe.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/10-year-old-nginx-http-2-flaw-lets-unauthenticated-attackers-exe.html</guid>
-      <pubDate>Wed, 18 Nov 2026 18:31:17 GMT</pubDate>
-      <description>A flaw in NGINX's HTTP/2 support can allow an attacker to run code on servers with HTTP/2 enabled, without needing to log in. The decade-old flaw, CVE-[phone], dubbed "nginx2root," has been present in NGINX's open-source code since version 1.9.5, released on September 22, 2015. Fixed versions 1.31.9</description>
-    </item>
-    <item>
-      <title>F5 Warns 6 Critical BIG-IP Flaws Can Crash Traffic in Specific Setups, May Allow RCE</title>
-      <link>https://sentinel-post.pages.dev/item/f5-warns-6-critical-big-ip-flaws-can-crash-traffic-in-specific-s.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/f5-warns-6-critical-big-ip-flaws-can-crash-traffic-in-specific-s.html</guid>
-      <pubDate>Wed, 18 Nov 2026 18:15:39 GMT</pubDate>
-      <description>Six critical vulnerabilities in F5 BIG-IP allow an attacker to crash the Traffic Management Microkernel (TMM) without logging in, disrupting traffic until the TMM restarts. Each flaw needs a specific setup on a virtual server: an iRule that uses a particular command, or an APM policy that includes t</description>
-    </item>
-    <item>
-      <title>Critical Apache Roller RCE Flaw Under Active Exploitation, No Authentication Required</title>
-      <link>https://sentinel-post.pages.dev/item/critical-apache-roller-rce-flaw-under-active-exploitation-no-aut.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/critical-apache-roller-rce-flaw-under-active-exploitation-no-aut.html</guid>
-      <pubDate>Wed, 18 Nov 2026 17:10:45 GMT</pubDate>
-      <description>A critical security flaw in Apache Roller, an open-source, Java-based blogging platform, has come under active exploitation in the wild, according to the Apache Software Foundation (ASF) The vulnerability, tracked as CVE-[phone] (CVSS score: 9.8), is a case of unauthenticated deserialization in the </description>
-    </item>
-    <item>
-      <title>CVE-2026-130001: Mustache for Ruby: RCE using built-in method access</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-130001-mustache-for-ruby-rce-using-built-in-method-acce.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-130001-mustache-for-ruby-rce-using-built-in-method-acce.html</guid>
-      <pubDate>Wed, 18 Nov 2026 16:28:29 GMT</pubDate>
-      <description>Severity: critical. &gt; [!NOTE]
-&gt; The vulnerability was fully disclosed to the maintainer in private prior to security advisories were enabled for the project.
-&gt; This advisory presents a limited information for initial release to provide a time window for installing updates. Full information with PoCs</description>
-    </item>
-    <item>
-      <title>CVE-2026-63496: augment-virShell allows Command Injection in `grep()` via Unsanitized `searchPattern`</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-63496-augment-virshell-allows-command-injection-in-grep.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-63496-augment-virshell-allows-command-injection-in-grep.html</guid>
-      <pubDate>Wed, 18 Nov 2026 16:15:52 GMT</pubDate>
-      <description>Severity: high. ## Shell Command Injection in `grep()` via Unsanitized `searchPattern`
-
-### Summary
-
-The `grep()` function exported by `@augment-vir/node` inserts caller-controlled search patterns directly into a double-quoted shell command string without sanitization (`grep.ts:310`). When the const</description>
-    </item>
-    <item>
-      <title>CVE-2026-61618: snark-verifier accepts non-canonical KZG accumulator limb encodings</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-61618-snark-verifier-accepts-non-canonical-kzg-accumula.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-61618-snark-verifier-accepts-non-canonical-kzg-accumula.html</guid>
-      <pubDate>Wed, 18 Nov 2026 16:13:34 GMT</pubDate>
-      <description>Severity: medium. ### Summary
-KZG accumulator public-instance limbs were decoded without consistently enforcing canonical limb bounds before reconstructing elliptic-curve coordinates.
-
-In the generated EVM verifier, accumulator coordinates were reconstructed from public-instance limbs using shifted </description>
-    </item>
-    <item>
-      <title>New EggStreme Malware Variant Goes Silent to Evade Security Tools in Government Attacks</title>
-      <link>https://sentinel-post.pages.dev/item/new-eggstreme-malware-variant-goes-silent-to-evade-security-tool.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/new-eggstreme-malware-variant-goes-silent-to-evade-security-tool.html</guid>
-      <pubDate>Wed, 18 Nov 2026 14:11:28 GMT</pubDate>
-      <description>The suspected Chinese advanced persistent threat (APT) group behind the sophisticated EggStreme malware has rebuilt its toolkit as it continues to target government organizations in the Philippines. "When attackers are exposed, the cheap response is to rotate," Bitdefender said in a technical report</description>
     </item>
   </channel>
 </rss>

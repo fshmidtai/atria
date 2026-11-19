@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T13:35:59+00:00",
+  "generated_at": "2026-11-19T17:21:00+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -26,11 +26,11 @@
       "krebs": 10
     },
     "by_topic": {
-      "security": 113,
-      "ai": 72,
-      "dev": 49,
-      "hardware": 19,
-      "crypto": 11,
+      "security": 112,
+      "ai": 69,
+      "dev": 45,
+      "hardware": 20,
+      "crypto": 9,
       "biz": 8,
       "science": 6
     },
@@ -174,6 +174,63 @@
       "date": "2025-03-24"
     },
     {
+      "uid": "cve:GHSA-q8v2-3j4h-xg2p",
+      "source": "cve",
+      "title": "CVE-2026-63412: Jane: Instantiation RCE via query parameter name -> raw PHPDoc */ breakout (jane-php/open-api-3)",
+      "url": "https://github.com/advisories/GHSA-q8v2-3j4h-xg2p",
+      "ts": 1795105125.0,
+      "points": 6000,
+      "comments": 0,
+      "author": "jane-php/open-api-3",
+      "summary": "Severity: critical. ### Summary\njane-php (open-api-3) builds PHP via nikic/php-parser (AST), so string literals are escaped -- but PHPDoc comment text is emitted RAW. The generated Client/Endpoint method docblocks embed the query parameter name verbatim in a `@param array{ \"<name>\"?: ... }` block. A `*/` in the query n",
+      "recipe": "gh_advisories",
+      "buzz": 6080,
+      "topics": [
+        "dev",
+        "science",
+        "security"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "cve:GHSA-x9xr-53qx-9qcf",
+      "source": "cve",
+      "title": "CVE-2026-63413: Jane: Instantiation RCE via header parameter name -> raw PHPDoc */ breakout (jane-php/open-api-3)",
+      "url": "https://github.com/advisories/GHSA-x9xr-53qx-9qcf",
+      "ts": 1795104742.0,
+      "points": 6000,
+      "comments": 0,
+      "author": "jane-php/open-api-3",
+      "summary": "Severity: critical. ### Summary\njane-php (open-api-3) builds PHP via nikic/php-parser (AST), so string literals are escaped -- but PHPDoc comment text is emitted RAW. The generated Client/Endpoint method docblocks embed the header parameter name verbatim in a `@param array{ \"<name>\"?: ... }` block. A `*/` in the header",
+      "recipe": "gh_advisories",
+      "buzz": 6080,
+      "topics": [
+        "dev",
+        "science",
+        "security"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "cve:GHSA-xwcw-j52r-34x4",
+      "source": "cve",
+      "title": "CVE-2026-63411: Jane: Instantiation RCE via parameter description -> raw PHPDoc */ breakout (jane-php/open-api-3)",
+      "url": "https://github.com/advisories/GHSA-xwcw-j52r-34x4",
+      "ts": 1795104731.0,
+      "points": 6000,
+      "comments": 0,
+      "author": "jane-php/open-api-3",
+      "summary": "Severity: critical. ### Summary\njane-php (open-api-3) builds PHP via nikic/php-parser (AST), so string literals are escaped -- but PHPDoc comment text is emitted RAW. The generated Client/Endpoint method docblocks embed the parameter description verbatim in a `@param array{ \"<name>\"?: ... }` block. A `*/` in the parame",
+      "recipe": "gh_advisories",
+      "buzz": 6080,
+      "topics": [
+        "dev",
+        "science",
+        "security"
+      ],
+      "date": "2026-11-19"
+    },
+    {
       "uid": "cve:GHSA-8fh7-7q4q-cq52",
       "source": "cve",
       "title": "CVE-2026-75521: Miren Runtime: Authentication bypass in RPC layer: unverified TLS client certificates grant cluster superuser access",
@@ -224,33 +281,13 @@
       "author": "mustache",
       "summary": "Severity: critical. > [!NOTE]\n> The vulnerability was fully disclosed to the maintainer in private prior to security advisories were enabled for the project.\n> This advisory presents a limited information for initial release to provide a time window for installing updates. Full information with PoCs would be added late",
       "recipe": "gh_advisories",
-      "buzz": 6080,
+      "buzz": 6030,
       "topics": [
         "ai",
         "dev",
         "security"
       ],
       "date": "2026-11-18"
-    },
-    {
-      "uid": "cve:GHSA-gfv3-m769-5xm3",
-      "source": "cve",
-      "title": "CVE-2026-53998: Phoenix: Format String Injection in applyChatTemplate",
-      "url": "https://github.com/advisories/GHSA-gfv3-m769-5xm3",
-      "ts": 1794945749.0,
-      "points": 6000,
-      "comments": 0,
-      "author": "arize-phoenix",
-      "summary": "Severity: critical. - Summary\n\nA format string injection vulnerability in the applyChatTemplate GraphQL endpoint allows an attacker to read server-side environment variables, cryptographic secrets, and internal module attributes directly from the API response. On default Phoenix installations where authentication is di",
-      "recipe": "gh_advisories",
-      "buzz": 6030,
-      "topics": [
-        "dev",
-        "crypto",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-17"
     },
     {
       "uid": "hn:48997548",
@@ -342,6 +379,60 @@
         "security"
       ],
       "date": "2021-01-11"
+    },
+    {
+      "uid": "cve:GHSA-8776-qf3h-26r3",
+      "source": "cve",
+      "title": "CVE-2026-71535: Mareforma: Unsigned Claims Can Be Promoted to REPLICATED via Missing Signature Enforcement in Convergence Path",
+      "url": "https://github.com/advisories/GHSA-8776-qf3h-26r3",
+      "ts": 1795104456.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "mareforma",
+      "summary": "Severity: high. ### Summary\n\n`mareforma` 0.3.3 contains a critical integrity flaw in the REPLICATED convergence logic (`_maybe_update_replicated_unlocked()` in `mareforma/db/core.py:1300-1319`). The peer-selection SQL query that determines whether two independent claims \"agree\" on the same anchor does not verify th",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "cve:GHSA-hxh5-gp44-rc6p",
+      "source": "cve",
+      "title": "CVE-2026-71536: Mareforma: verify_bundle never checks a per-claim signature",
+      "url": "https://github.com/advisories/GHSA-hxh5-gp44-rc6p",
+      "ts": 1795104219.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "mareforma",
+      "summary": "Severity: high. ## What's wrong\n\n`verify_bundle` documents that it verifies \"a bundle's DSSE envelope AND each per-claim signature\", lists \"per-claim signature failure\" among its raised errors, and promises that partial verification never surfaces \"an authenticated bundle that contains some invalid claims\" as succe",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "cve:GHSA-qrcv-3558-gj4f",
+      "source": "cve",
+      "title": "CVE-2026-58213: NATS Server: MQTT SUBSCRIBE Protocol Injection via Leaf Node/Route Forwarding allows arbitrary NATS command injection",
+      "url": "https://github.com/advisories/GHSA-qrcv-3558-gj4f",
+      "ts": 1795103815.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "github.com/nats-io/nats-server/v2",
+      "summary": "Severity: high. ### Background\n\nNATS.io is a high performance open source pub-sub distributed communication technology, built for the cloud, on-premise, IoT and edge computing.\n\nThe NATS Server supports MQTT clients and can bridge MQTT activity into NATS subjects across routes and leafnode connections.\n\n### Problem",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-19"
     },
     {
       "uid": "cve:GHSA-cvx8-9ff6-54xq",
@@ -512,23 +603,6 @@
       "date": "2026-11-18"
     },
     {
-      "uid": "cve:GHSA-xvcc-vqjv-phqh",
-      "source": "cve",
-      "title": "CVE-2026-63496: augment-virShell allows Command Injection in `grep()` via Unsanitized `searchPattern`",
-      "url": "https://github.com/advisories/GHSA-xvcc-vqjv-phqh",
-      "ts": 1795018552.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "@augment-vir/node",
-      "summary": "Severity: high. ## Shell Command Injection in `grep()` via Unsanitized `searchPattern`\n\n### Summary\n\nThe `grep()` function exported by `@augment-vir/node` inserts caller-controlled search patterns directly into a double-quoted shell command string without sanitization (`grep.ts:310`). When the constructed command i",
-      "recipe": "gh_advisories",
-      "buzz": 3580,
-      "topics": [
-        "security"
-      ],
-      "date": "2026-11-18"
-    },
-    {
       "uid": "hn:50172041",
       "source": "hn",
       "title": "Security advisory: Critical remote code execution vulnerabilities, update now",
@@ -546,96 +620,21 @@
       "date": "2026-10-20"
     },
     {
-      "uid": "cve:GHSA-x2vm-cf3p-m2w8",
+      "uid": "cve:GHSA-xvcc-vqjv-phqh",
       "source": "cve",
-      "title": "CVE-2026-119793: libp2p: gossipsub creates a permanent topics-map entry per distinct subscription with no cap in the default config",
-      "url": "https://github.com/advisories/GHSA-x2vm-cf3p-m2w8",
-      "ts": 1794949580.0,
+      "title": "CVE-2026-63496: augment-virShell allows Command Injection in `grep()` via Unsanitized `searchPattern`",
+      "url": "https://github.com/advisories/GHSA-xvcc-vqjv-phqh",
+      "ts": 1795018552.0,
       "points": 3500,
       "comments": 0,
-      "author": "@libp2p/gossipsub",
-      "summary": "Severity: high. ### Summary\nA single gossipsub peer can grow a node's `topics` map without bound by flooding subscription RPCs, because the default configuration has no global, per-peer, or topic-length cap and peer scoring does not penalise subscription volume. The peer is never greylisted, so the growth continues",
+      "author": "@augment-vir/node",
+      "summary": "Severity: high. ## Shell Command Injection in `grep()` via Unsanitized `searchPattern`\n\n### Summary\n\nThe `grep()` function exported by `@augment-vir/node` inserts caller-controlled search patterns directly into a double-quoted shell command string without sanitization (`grep.ts:310`). When the constructed command i",
       "recipe": "gh_advisories",
       "buzz": 3530,
       "topics": [
         "security"
       ],
-      "date": "2026-11-17"
-    },
-    {
-      "uid": "cve:GHSA-rvfr-cqwq-rc4j",
-      "source": "cve",
-      "title": "CVE-2026-110789: libp2p: ASN.1 DER decoder drives an unbounded synchronous loop on attacker-controlled length fields, stalling the Node event loop pre-auth",
-      "url": "https://github.com/advisories/GHSA-rvfr-cqwq-rc4j",
-      "ts": 1794949508.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "@libp2p/crypto",
-      "summary": "Severity: high. ### Summary\nA remote peer can stall a js-libp2p node's entire event loop for ~4–5 seconds per connection (and transiently allocate ~2 GB) by sending a ~15-byte crafted `publicKey` inside an Identify message. The malformed key reaches the DER decoder before any peer-id/signature check, so the attack",
-      "recipe": "gh_advisories",
-      "buzz": 3530,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-17"
-    },
-    {
-      "uid": "cve:GHSA-r7hw-jx6r-756g",
-      "source": "cve",
-      "title": "CVE-2026-110782: SAML2: Incomplete fix of CVE-2026-49283: unsigned embedded Response bypasses HTTP-Artifact signature verification (no embedded-Issuer binding)",
-      "url": "https://github.com/advisories/GHSA-r7hw-jx6r-756g",
-      "ts": 1794949258.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "simplesamlphp/saml2",
-      "summary": "Severity: high. ## Summary\nCVE-[phone] / GHSA-6929-8p9f-26jx (\"HTTP-Artifact TLS validator confusion allows cross-IdP authentication bypass\") was fixed so that `HTTPArtifact::receive()` verifies the embedded SAML `Response` using the IdP metadata signing keys. The current implementation (master `31c72c1d`, relea",
-      "recipe": "gh_advisories",
-      "buzz": 3530,
-      "topics": [
-        "ai",
-        "science",
-        "security"
-      ],
-      "date": "2026-11-17"
-    },
-    {
-      "uid": "cve:GHSA-xhv5-8fpq-g7hf",
-      "source": "cve",
-      "title": "CVE-2026-62336: qbee-agent: Local Privilege Escalation and Arbitrary File Tampering via Symlink Following in createFile helper",
-      "url": "https://github.com/advisories/GHSA-xhv5-8fpq-g7hf",
-      "ts": 1794948482.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "go.qbee.io/agent",
-      "summary": "Severity: high. This is a Local Privilege Escalation (LPE) vulnerability stemming from improper symlink handling (CWE-59: Link Following) and improper ownership management (CWE-282) inside the qbee-agent file manager logic.\n\n### Impact\n\nAny managed device running qbee-agent up to the affected versions. The impact m",
-      "recipe": "gh_advisories",
-      "buzz": 3530,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-17"
-    },
-    {
-      "uid": "cve:GHSA-c5q4-97jw-jggh",
-      "source": "cve",
-      "title": "CVE-2026-14265: AWS-advanced-jdbc-wrapper: Java Deserialization RCE via Cache Poisoning",
-      "url": "https://github.com/advisories/GHSA-c5q4-97jw-jggh",
-      "ts": 1794947961.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "software.amazon.jdbc:aws-advanced-jdbc-wrapper",
-      "summary": "Severity: high. ### Impact\nThe AWS Advanced JDBC Wrapper is an open-source JDBC driver wrapper that extends a JDBC driver to enable Amazon Aurora and AWS Cloud features such as failover handling and caching. We identified CVE-[phone], an issue in the RemoteQueryCachePlugin of the AWS Advanced JDBC Wrapper. When",
-      "recipe": "gh_advisories",
-      "buzz": 3530,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-17"
+      "date": "2026-11-18"
     },
     {
       "uid": "hn:32148218",
@@ -931,6 +930,116 @@
       "date": "2020-09-30"
     },
     {
+      "uid": "cve:GHSA-vg83-hcp4-5qcc",
+      "source": "cve",
+      "title": "CVE-2026-75518: DOMShell: domshell_eval classified as read-tier can execute side-effecting JavaScript without --allow-write",
+      "url": "https://github.com/advisories/GHSA-vg83-hcp4-5qcc",
+      "ts": 1795104653.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "@apireno/domshell",
+      "summary": "Severity: medium. ### Summary\n\nThe `domshell_eval` MCP tool (and the `eval` command inside `domshell_execute`) was classified as **read-tier**, allowing it to run without the `--allow-write` server flag. However, `eval` and the write-tier `js` command dispatch to the same handler in the extension and call CDP `Runtim",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "dev",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "cve:GHSA-pj7p-238h-76pv",
+      "source": "cve",
+      "title": "CVE-2026-69139: djangocms-moderation: Moderation comments disclosed to non-participant staff via the admin changelist",
+      "url": "https://github.com/advisories/GHSA-pj7p-238h-76pv",
+      "ts": 1795104570.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "djangocms-moderation",
+      "summary": "Severity: medium. ## Summary\n\nThe Django admin views for moderation comments (`CollectionCommentAdmin` and `RequestCommentAdmin`) render the full comment body but scope access only by an attacker-controlled `id` in the URL and Django's model-level `view_*comment` permission. They perform no per-object participant che",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "cve:GHSA-xfq4-8hf9-5h43",
+      "source": "cve",
+      "title": "CVE-2026-71534: Mareforma: transparency_logged trusts the unsigned rekor block",
+      "url": "https://github.com/advisories/GHSA-xfq4-8hf9-5h43",
+      "ts": 1795104307.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "mareforma",
+      "summary": "Severity: medium. ## What's wrong\n\nDuring restore, `transparency_logged` is recomputed as `1 if (toml_logged is not False and bundle_has_rekor) else 0`, where `bundle_has_rekor` comes only from a `rekor.uuid` field inside `signature_bundle`. That derivation is wrong in both directions.\n\nFirst, the rekor block is meta",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "cve:GHSA-rgg9-956j-3378",
+      "source": "cve",
+      "title": "CVE-2026-71500: Mareforma: invalidated claims still promote to REPLICATED",
+      "url": "https://github.com/advisories/GHSA-rgg9-956j-3378",
+      "ts": 1795104283.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "mareforma",
+      "summary": "Severity: medium. ## What's wrong\n\n`_maybe_update_replicated_unlocked` never checks `t_invalid`, so a claim that a signed contradiction verdict has marked invalid can still climb to REPLICATED through convergence detection, and it pulls an honest peer up with it.\n\nThree gaps line up:\n\n- The new-claim short-circuit re",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "cve:GHSA-m29v-3g7g-9c63",
+      "source": "cve",
+      "title": "CVE-2026-71533: Mareforma: search_claims skips verify-on-read, serving forged rows",
+      "url": "https://github.com/advisories/GHSA-m29v-3g7g-9c63",
+      "ts": 1795104052.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "mareforma",
+      "summary": "Severity: medium. ## What's wrong\n\n`search_claims` never calls `_row_verified_on_read`. Its row loop applies only the PRELIMINARY-unenrolled filter, then appends the row. `query_claims` runs the same projection but additionally re-verifies REPLICATED/ESTABLISHED signatures on read (line 4023) and drops any row that f",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "cve:GHSA-4g68-3pwx-5vfj",
+      "source": "cve",
+      "title": "CVE-2026-58214: NATS Server MQTT subscribe permission bypass exposes internal QoS 2 metadata",
+      "url": "https://github.com/advisories/GHSA-4g68-3pwx-5vfj",
+      "ts": 1795104012.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "github.com/nats-io/nats-server/v2",
+      "summary": "Severity: medium. ### Background\n\nNATS.io is a high performance open source pub-sub distributed communication technology, built for the cloud, on-premise, IoT and edge computing.\n\nThe NATS Server MQTT support uses internal `$MQTT.*` subjects to implement MQTT protocol features such as QoS handling.\n\n### Problem Descr",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-19"
+    },
+    {
       "uid": "cve:GHSA-jc42-994r-vvwp",
       "source": "cve",
       "title": "CVE-2026-73504: cassandra-jdbc-wrapper: Authentication Token Exposed in Logs",
@@ -1022,25 +1131,6 @@
       "date": "2026-11-18"
     },
     {
-      "uid": "cve:GHSA-265x-v3qf-ff6p",
-      "source": "cve",
-      "title": "CVE-2026-61618: snark-verifier accepts non-canonical KZG accumulator limb encodings",
-      "url": "https://github.com/advisories/GHSA-265x-v3qf-ff6p",
-      "ts": 1795018414.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "snark-verifier",
-      "summary": "Severity: medium. ### Summary\nKZG accumulator public-instance limbs were decoded without consistently enforcing canonical limb bounds before reconstructing elliptic-curve coordinates.\n\nIn the generated EVM verifier, accumulator coordinates were reconstructed from public-instance limbs using shifted additions before p",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "dev",
-        "science",
-        "security"
-      ],
-      "date": "2026-11-18"
-    },
-    {
       "uid": "hn:48166459",
       "source": "hn",
       "title": "Mozilla to UK regulators: VPNs are essential privacy and security tools",
@@ -1090,100 +1180,6 @@
         "security"
       ],
       "date": "2016-12-15"
-    },
-    {
-      "uid": "cve:GHSA-8vm9-f75m-5h2m",
-      "source": "cve",
-      "title": "CVE-2026-69241: Filament Curator: Stored XSS via unsanitized SVG upload served inline",
-      "url": "https://github.com/advisories/GHSA-8vm9-f75m-5h2m",
-      "ts": 1794948866.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "awcodes/filament-curator",
-      "summary": "Severity: medium. ## Summary\n\n  SVG files uploaded through the Curator media panel are stored and served inline without any\n  sanitization. An authenticated user with permission to upload media can upload an SVG\n  containing embedded JavaScript. When another panel user opens that file via the **View**\n  action (which",
-      "recipe": "gh_advisories",
-      "buzz": 1830,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-17"
-    },
-    {
-      "uid": "cve:GHSA-828w-6qgx-3rcf",
-      "source": "cve",
-      "title": "CVE-2026-63389: Filament Curator: Cross-tenant media metadata disclosure via Curator picker search",
-      "url": "https://github.com/advisories/GHSA-828w-6qgx-3rcf",
-      "ts": 1794948568.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "awcodes/filament-curator",
-      "summary": "Severity: medium. Summary\n\n  In multitenant Filament panels, an authenticated user could retrieve media metadata belonging to other tenants\n  by typing in the Curator media-picker search box. The search query omitted the tenant ownership scope that the\n  normal file listing applies.\n\n  Details\n\n  CuratorPanel::update",
-      "recipe": "gh_advisories",
-      "buzz": 1830,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-17"
-    },
-    {
-      "uid": "cve:GHSA-pr4x-6fj4-gm4h",
-      "source": "cve",
-      "title": "CVE-2026-63672: EGroupware: User-Controlled Identity Provider Selection in SAML Authentication",
-      "url": "https://github.com/advisories/GHSA-pr4x-6fj4-gm4h",
-      "ts": 1794948442.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "egroupware/egroupware",
-      "summary": "Severity: medium. ### Summary\nThe login() function at line 130 passes the raw user-supplied value `$_REQUEST['idp']` directly to SimpleSAMLphp's `requireAuth()` with only a regex check that the string starts with 'https://'. No validation is performed against a list of configured, trusted IdP entity IDs. An unauthent",
-      "recipe": "gh_advisories",
-      "buzz": 1830,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-17"
-    },
-    {
-      "uid": "cve:GHSA-v858-xh7w-8jr5",
-      "source": "cve",
-      "title": "CVE-2026-63634: pympp allows excessive sponsored transaction fees through padded calldata",
-      "url": "https://github.com/advisories/GHSA-v858-xh7w-8jr5",
-      "ts": 1794945896.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "pympp",
-      "summary": "Severity: medium. ### Details\nWhen the server acts as the fee_payer, `pympp` 0.8.0 validates calldata using `eth_abi` decoding, which is lenient about trailing bytes. The `FeePayerPolicy` caps `gas_limit` (≤ 2 M) and `max_fee_per_gas` (≤ 100 Gwei) but does **not** check calldata length.\n\nTempo uses legacy calldata ga",
-      "recipe": "gh_advisories",
-      "buzz": 1830,
-      "topics": [
-        "ai",
-        "dev",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-17"
-    },
-    {
-      "uid": "cve:GHSA-vc7v-qv4w-wrv8",
-      "source": "cve",
-      "title": "CVE-2026-119351: Next.js: Cache leak across root param values in nested 'use cache' functions via delayed inner stream metadata",
-      "url": "https://github.com/advisories/GHSA-vc7v-qv4w-wrv8",
-      "ts": 1794932006.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "next",
-      "summary": "Severity: medium. With Cache Components enabled, an outer `'use cache'` function can be keyed incorrectly even when its inner `'use cache'` call generates a fresh entry. If the inner function reads a root param (via `next/root-params`) and returns a value that still contains pending promises — for example an object w",
-      "recipe": "gh_advisories",
-      "buzz": 1830,
-      "topics": [
-        "ai",
-        "science",
-        "security"
-      ],
-      "date": "2026-11-17"
     },
     {
       "uid": "hn:25843874",
@@ -1398,12 +1394,12 @@
       "title": "arnold117/iOS-NOIR",
       "url": "https://github.com/arnold117/iOS-NOIR",
       "ts": 1793934227.0,
-      "points": 325,
+      "points": 326,
       "comments": 61,
       "author": "arnold117",
       "summary": "No-jailbreak iOS privacy, entitlement, sandbox & telemetry forensic auditor (inspired by Verlintas/NOIR)",
       "recipe": "github_sec",
-      "buzz": 508,
+      "buzz": 509,
       "topics": [
         "ai",
         "security"
@@ -1416,12 +1412,12 @@
       "title": "Aabyss-Team/Threat-Broadcast-Plus",
       "url": "https://github.com/Aabyss-Team/Threat-Broadcast-Plus",
       "ts": 1794800456.0,
-      "points": 121,
+      "points": 125,
       "comments": 27,
       "author": "Aabyss-Team",
       "summary": "网络安全威胁情报播报-Plus升级版",
       "recipe": "github_sec",
-      "buzz": 212,
+      "buzz": 216,
       "topics": [],
       "date": "2026-11-16"
     },
@@ -1448,12 +1444,12 @@
       "title": "wildorigins/wildos",
       "url": "https://github.com/wildorigins/wildos",
       "ts": 1794169078.0,
-      "points": 113,
+      "points": 118,
       "comments": 7,
       "author": "wildorigins",
       "summary": "A hardened Linux desktop, rebuilt from scratch, with your Windows apps built in. Free and open source.",
       "recipe": "github_sec",
-      "buzz": 134,
+      "buzz": 139,
       "topics": [],
       "date": "2026-11-08"
     },
@@ -1497,12 +1493,12 @@
       "title": "LoopGrubDolmen/wallet-security-desk",
       "url": "https://github.com/LoopGrubDolmen/wallet-security-desk",
       "ts": 1794768281.0,
-      "points": 92,
+      "points": 90,
       "comments": 0,
       "author": "LoopGrubDolmen",
       "summary": "Self-custody wallet hygiene desk — seed storage drills and phishing red flags.",
       "recipe": "github_sec",
-      "buzz": 102,
+      "buzz": 100,
       "topics": [
         "ai",
         "security"
@@ -1524,6 +1520,58 @@
       "topics": [
         "ai",
         "dev"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "rss:2aa68bdd4ec131",
+      "source": "rss",
+      "title": "PHP Fixes 7 Critical Flaws, Including Bugs That Could Allow Remote Code Execution",
+      "url": "https://thehackernews.com/2026/11/php-fixes-7-critical-flaws-including.html",
+      "ts": 1795101487.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "The PHP Foundation has released security updates to address multiple critical security flaws that could be exploited to achieve remote code execution on affected deployments, including CVE-[phone]. The release of the patch follows an advance notice in which the project maintainers alerted users to multiple critical vulnerabilities affecting all supported PHP versions under specific",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "rss:18306cc167b8fd",
+      "source": "rss",
+      "title": "Critical VMware vCenter Flaw (CVSS 9.8) Lets Network Attackers Bypass Authentication",
+      "url": "https://thehackernews.com/2026/11/critical-vmware-vcenter-flaw-cvss-98.html",
+      "ts": 1795101066.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "A critical flaw in VMware vCenter lets an attacker with network access bypass authentication and gain unauthorized access to the system, Broadcom, which owns VMware, said in an advisory published today. Fixed versions are out for all supported branches, and the company lists no workaround. vCenter is the central console for managing an organization's ESX hosts and virtual machines. The",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "rss:9bb7a0fdd0f7a3",
+      "source": "rss",
+      "title": "Drupal Patches Critical Installer Flaw That Could Give Unauthenticated Attackers Control of Sites",
+      "url": "https://thehackernews.com/2026/11/drupal-patches-critical-installer-flaw.html",
+      "ts": 1795098786.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Under specific conditions, a critical vulnerability in Drupal core can allow an attacker without login credentials to use the built-in installer to attempt to reinstall a site. That can lead to a site takeover or remote code execution, and the project rates the vulnerable configurations as uncommon. Fixed releases for all supported branches shipped yesterday. The Drupal Security Team disclosed",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "security"
       ],
       "date": "2026-11-19"
     },
@@ -1681,43 +1729,6 @@
       "date": "2026-11-18"
     },
     {
-      "uid": "rss:80c8ce0e2c3e95",
-      "source": "rss",
-      "title": "Critical Apache Roller RCE Flaw Under Active Exploitation, No Authentication Required",
-      "url": "https://thehackernews.com/2026/11/critical-apache-roller-rce-flaw-under.html",
-      "ts": 1795021845.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "A critical security flaw in Apache Roller, an open-source, Java-based blogging platform, has come under active exploitation in the wild, according to the Apache Software Foundation (ASF) The vulnerability, tracked as CVE-[phone] (CVSS score: 9.8), is a case of unauthenticated deserialization in the XML-RPC endpoint that could lead to remote code execution. \"Deserialization of Untrusted",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-18"
-    },
-    {
-      "uid": "rss:ec675127a0303a",
-      "source": "rss",
-      "title": "New EggStreme Malware Variant Goes Silent to Evade Security Tools in Government Attacks",
-      "url": "https://thehackernews.com/2026/11/eggstreme-hackers-rebuild-malware-with.html",
-      "ts": 1795011088.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "The suspected Chinese advanced persistent threat (APT) group behind the sophisticated EggStreme malware has rebuilt its toolkit as it continues to target government organizations in the Philippines. \"When attackers are exposed, the cheap response is to rotate,\" Bitdefender said in a technical report shared with The Hacker News. \"A file hash changes with every recompile, a domain costs a few",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-18"
-    },
-    {
       "uid": "gh:BountyForge-xyz/pwn-skill",
       "source": "github",
       "title": "BountyForge-xyz/pwn-skill",
@@ -1741,12 +1752,12 @@
       "title": "rammahmagdy/Latch",
       "url": "https://github.com/rammahmagdy/Latch",
       "ts": 1794964122.0,
-      "points": 33,
+      "points": 34,
       "comments": 3,
       "author": "rammahmagdy",
       "summary": "Lock any app or folder behind Touch ID, Windows Hello or a password. Mac and Windows. Free for personal use.",
       "recipe": "github_sec",
-      "buzz": 72,
+      "buzz": 73,
       "topics": [],
       "date": "2026-11-18"
     },
@@ -1821,6 +1832,43 @@
         "science"
       ],
       "date": "2026-11-17"
+    },
+    {
+      "uid": "rss:80c8ce0e2c3e95",
+      "source": "rss",
+      "title": "Critical Apache Roller RCE Flaw Under Active Exploitation, No Authentication Required",
+      "url": "https://thehackernews.com/2026/11/critical-apache-roller-rce-flaw-under.html",
+      "ts": 1795021845.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "A critical security flaw in Apache Roller, an open-source, Java-based blogging platform, has come under active exploitation in the wild, according to the Apache Software Foundation (ASF) The vulnerability, tracked as CVE-[phone] (CVSS score: 9.8), is a case of unauthenticated deserialization in the XML-RPC endpoint that could lead to remote code execution. \"Deserialization of Untrusted",
+      "recipe": "hackersnews",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-18"
+    },
+    {
+      "uid": "rss:ec675127a0303a",
+      "source": "rss",
+      "title": "New EggStreme Malware Variant Goes Silent to Evade Security Tools in Government Attacks",
+      "url": "https://thehackernews.com/2026/11/eggstreme-hackers-rebuild-malware-with.html",
+      "ts": 1795011088.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "The suspected Chinese advanced persistent threat (APT) group behind the sophisticated EggStreme malware has rebuilt its toolkit as it continues to target government organizations in the Philippines. \"When attackers are exposed, the cheap response is to rotate,\" Bitdefender said in a technical report shared with The Hacker News. \"A file hash changes with every recompile, a domain costs a few",
+      "recipe": "hackersnews",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-18"
     },
     {
       "uid": "rss:186a434790fa0e",
@@ -2138,44 +2186,6 @@
       "date": "2026-11-17"
     },
     {
-      "uid": "rss:b3c5657f82d0e1",
-      "source": "rss",
-      "title": "N-able Patches 17 N-central Flaws as Attackers Exploit Earlier Bugs to Deploy Crypto Miners",
-      "url": "https://thehackernews.com/2026/11/n-able-patches-17-n-central-flaws-as.html",
-      "ts": 1794891634.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "N-able has released a new security update to address additional critical security flaws impacting N-central. Describing N-central 2026.4 Hotfix 3 as a critical security update, the company said it includes a number of security patches and fixes that enhance the security of the Remote Monitoring and Management (RMM) and Unified Endpoint Management (UEM) platform. \"HF3 builds on the",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "crypto",
-        "security"
-      ],
-      "date": "2026-11-17"
-    },
-    {
-      "uid": "rss:a848b6775e4e6c",
-      "source": "rss",
-      "title": "Google Finds Hackers Using AI Agents to Build and Run Exploits From Software Patches",
-      "url": "https://thehackernews.com/2026/11/google-finds-hackers-using-ai-agents-to.html",
-      "ts": 1794837600.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Google on Monday revealed that adversarial use of artificial intelligence (AI) by threat actors has gone beyond manual prompting to deploying autonomous multi-agent offensive frameworks like ARTEX, CAIRN, CyberStrikeAI, and PentAGI to execute multi-stage intrusions at greater operational velocity. In tandem, threat actors are leveraging the power and capabilities of large language models (LLMs)",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-16"
-    },
-    {
       "uid": "gh:humanethq/airgap-check",
       "source": "github",
       "title": "humanethq/airgap-check",
@@ -2260,25 +2270,6 @@
         "ai"
       ],
       "date": "2026-11-13"
-    },
-    {
-      "uid": "rss:ef045dd0f58580",
-      "source": "rss",
-      "title": "⚡ Weekly Recap: N-able 0-Days, Windows 0-Days, Chrome 0-Days, Fridge 0-Days, and More Bad Days",
-      "url": "https://thehackernews.com/2026/11/weekly-recap-n-able-0-days-windows-0.html",
-      "ts": 1794835640.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "A default password opened doors it never should have. A trusted update delivered malware. Even a security feature became a way to break in. Different stories, same problem: the things meant to protect us aren't always doing their job. Meanwhile, AI is making bug hunting faster, old flaws are still paying off, and attackers keep finding easy ways in. Some attacks take real skill. Others barely",
-      "recipe": "hackersnews",
-      "buzz": 10,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-16"
     },
     {
       "uid": "rss:a29bdb614c93f8",
