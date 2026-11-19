@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T21:08:57+00:00",
+  "generated_at": "2026-11-19T01:31:16+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -10,34 +10,34 @@
     "rss"
   ],
   "totals": {
-    "items": 133,
+    "items": 132,
     "by_source": {
       "hn": 40,
       "cve": 30,
-      "github": 13,
+      "github": 12,
       "rss": 50
     },
     "by_recipe": {
       "hn_sec": 40,
       "gh_advisories": 30,
       "hackersnews": 30,
-      "github_sec": 13,
+      "github_sec": 12,
       "krebs": 10,
       "schneier": 10
     },
     "by_topic": {
       "security": 111,
-      "ai": 72,
-      "dev": 53,
+      "ai": 69,
+      "dev": 50,
       "hardware": 19,
-      "crypto": 8,
+      "crypto": 11,
       "biz": 8,
       "science": 6
     },
     "top_domains": [
       [
         "github.com",
-        45
+        44
       ],
       [
         "thehackernews.com",
@@ -172,6 +172,26 @@
         "security"
       ],
       "date": "2025-03-24"
+    },
+    {
+      "uid": "cve:GHSA-8fh7-7q4q-cq52",
+      "source": "cve",
+      "title": "CVE-2026-75521: Miren Runtime: Authentication bypass in RPC layer: unverified TLS client certificates grant cluster superuser access",
+      "url": "https://github.com/advisories/GHSA-8fh7-7q4q-cq52",
+      "ts": 1795049146.0,
+      "points": 6000,
+      "comments": 0,
+      "author": "miren.dev/runtime",
+      "summary": "Severity: critical. ### Summary\n\n  The Miren Runtime RPC server (QUIC/HTTP3, default port `:8443`) requested TLS\n  client certificates but never verified that a presented certificate chained to\n  the cluster Certificate Authority. Because a client-certificate identity is\n  granted a blanket RBAC bypass, any party able",
+      "recipe": "gh_advisories",
+      "buzz": 6080,
+      "topics": [
+        "ai",
+        "dev",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-19"
     },
     {
       "uid": "cve:GHSA-pfwx-xjp4-qxcj",
@@ -322,6 +342,100 @@
         "security"
       ],
       "date": "2021-01-11"
+    },
+    {
+      "uid": "cve:GHSA-cvx8-9ff6-54xq",
+      "source": "cve",
+      "title": "CVE-2026-76088: PGPainless: Unbounded Compressed Packet Descent in inline-detach and MessageInspector leads to Denial of Service (DoS)",
+      "url": "https://github.com/advisories/GHSA-cvx8-9ff6-54xq",
+      "ts": 1795049629.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "org.pgpainless:pgpainless-core",
+      "summary": "Severity: high. ### Summary\nAn architectural security boundary bypass in inline-detach and MessageInspector allows remote, unauthenticated attackers to force unbounded recursive decompression routines. By supplying a specially crafted OpenPGP message containing deeply nested compressed packet structures, an attacke",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "cve:GHSA-2m9m-6cr5-9x25",
+      "source": "cve",
+      "title": "CVE-2026-63129: mssql-mcp-core: SQL injection in mssql-mcp write tools via unparameterized table names and WHERE clauses",
+      "url": "https://github.com/advisories/GHSA-2m9m-6cr5-9x25",
+      "ts": 1795049198.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "@connorbritain/mssql-mcp-core",
+      "summary": "Severity: high. Several tools in `mssql-mcp-core` built T-SQL by string-interpolating caller-supplied identifiers and predicates directly into the statement passed to the node-mssql `Request.query()` batch API. Only data values were parameterized.\n\nAffected tools and inputs:\n- `update_data`, `delete_data`: `tableNa",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "cve:GHSA-jw3m-8q7m-f35r",
+      "source": "cve",
+      "title": "CVE-2026-68903: LLMKube: Arbitrary Host File Read via Model.spec.source hostPath Injection",
+      "url": "https://github.com/advisories/GHSA-jw3m-8q7m-f35r",
+      "ts": 1795036682.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "github.com/defilantech/llmkube",
+      "summary": "Severity: high. ### Summary\n\nLLMKube's `ModelReconciler` accepts arbitrary absolute paths and `file://` URIs in the `Model.spec.source` field and propagates them to two distinct sinks without path allowlisting: (1) `os.Open()` inside the controller pod itself (`copyLocalModel`), and (2) a Kubernetes `HostPathVolume",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-18"
+    },
+    {
+      "uid": "cve:GHSA-88q3-gch3-5396",
+      "source": "cve",
+      "title": "CVE-2026-73864: install-artifact-from-github loads downloaded native artifacts without integrity verification",
+      "url": "https://github.com/advisories/GHSA-88q3-gch3-5396",
+      "ts": 1795036657.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "install-artifact-from-github",
+      "summary": "Severity: high. ## Description\n\n`bin/install-from-cache.js` downloads a prebuilt native addon (`*.node`) over the network and writes it directly to the artifact path **with no cryptographic integrity verification of any kind** — no checksum manifest, no signature, no SRI. A scan of the whole package for `createHash",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "dev",
+        "crypto",
+        "security"
+      ],
+      "date": "2026-11-18"
+    },
+    {
+      "uid": "cve:GHSA-wq26-3j2m-4hvv",
+      "source": "cve",
+      "title": "CVE-2026-71861: Chainguard SDK: AWS SigV4 token replay in auth/aws.VerifyToken — Chainguard-Audience/Chainguard-Identity binding headers not required in SignedHeaders",
+      "url": "https://github.com/advisories/GHSA-wq26-3j2m-4hvv",
+      "ts": 1795036604.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "chainguard.dev/sdk",
+      "summary": "Severity: high. ### Summary\n\nThe `auth/aws` package of the `chainguard.dev/sdk` Go library provides Chainguard's AWS-backed identity federation (an AWS workload proves its identity to Chainguard by signing an AWS STS `GetCallerIdentity` request). Its verifier, `VerifyToken`, reads the `Chainguard-Audience` and `Cha",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "ai",
+        "dev",
+        "crypto",
+        "security"
+      ],
+      "date": "2026-11-18"
     },
     {
       "uid": "cve:GHSA-82w8-65qw-gch6",
@@ -522,25 +636,6 @@
         "security"
       ],
       "date": "2026-11-17"
-    },
-    {
-      "uid": "cve:GHSA-c94f-87xg-65wf",
-      "source": "cve",
-      "title": "CVE-2026-91115: Silverstripe Framework: RCE via i18nTextCollectorTask writer parameter",
-      "url": "https://github.com/advisories/GHSA-c94f-87xg-65wf",
-      "ts": 1794868512.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "silverstripe/framework",
-      "summary": "Severity: high. ### Impact\nThe writer option of the i18nTextCollectorTask dev task was passed to the injector without validation. A crafted dev task URL could create arbitrary objects with attacker-controlled constructor arguments and run code on the server. Because the dev task did not ask for confirmation, an adm",
-      "recipe": "gh_advisories",
-      "buzz": 3530,
-      "topics": [
-        "dev",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-16"
     },
     {
       "uid": "hn:32148218",
@@ -836,6 +931,78 @@
       "date": "2020-09-30"
     },
     {
+      "uid": "cve:GHSA-jc42-994r-vvwp",
+      "source": "cve",
+      "title": "CVE-2026-73504: cassandra-jdbc-wrapper: Authentication Token Exposed in Logs",
+      "url": "https://github.com/advisories/GHSA-jc42-994r-vvwp",
+      "ts": 1795049428.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "com.ing.data:cassandra-jdbc-wrapper",
+      "summary": "Severity: medium. ### Summary\nThe fix for [AIKIDO-[phone]](https://intel.aikido.dev/cve/AIKIDO-[phone]) (plaintext password logging) introduced two\nredaction helpers — `DriverUtil.toStringWithoutSensitiveValues()` and\n`DriverUtil.redactSensitiveValuesInJdbcUrl()` — but both helpers only redact\nthe `\"password\"`",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "dev",
+        "crypto",
+        "security"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "cve:GHSA-vc6p-m6vx-6cwq",
+      "source": "cve",
+      "title": "CVE-2026-75506: OliveTin: Second-Order OS Command Injection via shellAfterCompleted",
+      "url": "https://github.com/advisories/GHSA-vc6p-m6vx-6cwq",
+      "ts": 1795038909.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "github.com/OliveTin/OliveTin",
+      "summary": "Severity: medium. ## Summary\n\nOliveTin's `shellAfterCompleted` post-execution hook injects unsanitized variables — including arbitrary command output (`output`), the authenticated username (`ot_username`), and the exit code (`exitCode`) — directly into a shell command template processed by `sh -c`. Unlike the main ac",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-18"
+    },
+    {
+      "uid": "cve:GHSA-vf85-8ff2-3r9w",
+      "source": "cve",
+      "title": "CVE-2026-69131: django-filer: Missing per-object authorization on `discard` and `edit_redirect` version transitions",
+      "url": "https://github.com/advisories/GHSA-vf85-8ff2-3r9w",
+      "ts": 1795036842.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "django-filer",
+      "summary": "Severity: medium. ## Summary\n\nWhen django-filer's optional per-folder permission system is enabled (`FILER_ENABLE_PERMISSIONS=True`), the \"Delete files and/or folders\" admin action does **not** enforce per-folder edit permissions the way every other mutating action does. A staff user who is scoped **read-only** on a",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-11-18"
+    },
+    {
+      "uid": "cve:GHSA-5g9x-qwh5-33x4",
+      "source": "cve",
+      "title": "CVE-2026-69138: djangocms-versioning: Authorization Bypass Through User-Controlled Key and Missing Authorization",
+      "url": "https://github.com/advisories/GHSA-5g9x-qwh5-33x4",
+      "ts": 1795036744.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "djangocms-versioning",
+      "summary": "Severity: medium. ## Summary\n\nThe `discard` and `edit_redirect` version transitions did not enforce a per-object change-permission check, while the sibling transitions (`archive`, `publish`, `unpublish`, `revert`) all did. As a result a low-privileged staff user could **discard (delete) any draft version — and thereb",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-11-18"
+    },
+    {
       "uid": "cve:GHSA-7jvc-9xq8-frff",
       "source": "cve",
       "title": "CVE-2026-71425: Outstatic: Authenticated GitHub REST proxy can send OAuth token to non-GitHub origins",
@@ -1017,175 +1184,6 @@
         "security"
       ],
       "date": "2026-11-17"
-    },
-    {
-      "uid": "cve:GHSA-vx32-xf7g-9ghr",
-      "source": "cve",
-      "title": "CVE-2026-129237: qbee-agent: Docker Compose build context Zip Slip writes outside context directory",
-      "url": "https://github.com/advisories/GHSA-vx32-xf7g-9ghr",
-      "ts": 1794868540.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "go.qbee.io/agent",
-      "summary": "Severity: medium. ## Summary\n\n`qbee-agent` contains a Zip Slip vulnerability in `app/utils/tar.go`. The tar extractor checks whether an entry remains inside the destination directory with:\n\n```go\nstrings.HasPrefix(targetPath, destdirClean)\n```\n\nThis does not enforce a path separator boundary. If the destination direc",
-      "recipe": "gh_advisories",
-      "buzz": 1830,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-16"
-    },
-    {
-      "uid": "cve:GHSA-4qv2-g5vp-wjjw",
-      "source": "cve",
-      "title": "CVE-2026-91113: Silverstripe Framework: User-controlled ClassName allows unauthorized record type change",
-      "url": "https://github.com/advisories/GHSA-4qv2-g5vp-wjjw",
-      "ts": 1794868499.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "silverstripe/framework",
-      "summary": "Severity: medium. ### Impact\nA user who can edit a record through a GridField detail form could change the record to an unrelated class, without the permission checks for that class.\n\n### Reported by\nLachlan Davidson, Carapace",
-      "recipe": "gh_advisories",
-      "buzz": 1830,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-16"
-    },
-    {
-      "uid": "cve:GHSA-rg72-5958-c65m",
-      "source": "cve",
-      "title": "CVE-2026-91112: Silverstripe Framework: CMS_ACCESS_SecurityAdmin privilege escalation",
-      "url": "https://github.com/advisories/GHSA-rg72-5958-c65m",
-      "ts": 1794868242.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "silverstripe/framework",
-      "summary": "Severity: medium. ### Impact\nA user with access to the Security section (CMS_ACCESS_SecurityAdmin) but without the ADMIN permission could edit a group that grants ADMIN through a role or a parent group, and use it to escalate their own privileges.\n\n### Reported by\nLachlan Davidson, Carapace",
-      "recipe": "gh_advisories",
-      "buzz": 1830,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-16"
-    },
-    {
-      "uid": "cve:GHSA-3qh3-54qg-gpq3",
-      "source": "cve",
-      "title": "CVE-2026-88989: Silverstripe Framework: Auth bypass GridFieldDetailForm",
-      "url": "https://github.com/advisories/GHSA-3qh3-54qg-gpq3",
-      "ts": 1794868199.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "silverstripe/framework",
-      "summary": "Severity: medium. ### Impact\nA CMS user who can edit records through a GridField detail form could create new records without the permission to create them, by sending a save request directly.\n\n### Reported by\nHDWSec - https://hdwsec.fr",
-      "recipe": "gh_advisories",
-      "buzz": 1830,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-16"
-    },
-    {
-      "uid": "cve:GHSA-xwg4-8hqh-79jq",
-      "source": "cve",
-      "title": "CVE-2026-88988: Silverstripe Framework: XSS via SVG data URI",
-      "url": "https://github.com/advisories/GHSA-xwg4-8hqh-79jq",
-      "ts": 1794868066.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "silverstripe/framework",
-      "summary": "Severity: medium. ### Impact\nThe HTML sanitiser did not remove SVG data URIs. A CMS author could store content that runs JavaScript in the browser of another user who views it.\n\n### Reported by\nHDWSec - https://hdwsec.fr",
-      "recipe": "gh_advisories",
-      "buzz": 1830,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-16"
-    },
-    {
-      "uid": "cve:GHSA-qqrg-8jpm-8mph",
-      "source": "cve",
-      "title": "CVE-2026-88987: Silverstripe Framework: XSS via XHTML data URI",
-      "url": "https://github.com/advisories/GHSA-qqrg-8jpm-8mph",
-      "ts": 1794868057.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "silverstripe/framework",
-      "summary": "Severity: medium. ### Impact\nThe HTML sanitiser did not remove XHTML and XML data URIs. A CMS author could store content that runs JavaScript in the browser of another user who views it.\n\n### Reported by\nJack Wallace from Bastion Security",
-      "recipe": "gh_advisories",
-      "buzz": 1830,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-16"
-    },
-    {
-      "uid": "cve:GHSA-7h45-q5jx-7r87",
-      "source": "cve",
-      "title": "CVE-2026-129239: Directus: Share update allows reassigning user_created and role",
-      "url": "https://github.com/advisories/GHSA-7h45-q5jx-7r87",
-      "ts": 1794867953.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "directus",
-      "summary": "Severity: medium. ### Summary\n\nA non-admin user who can update their own shares can reassign a share's creator (`user_created`), `role`, `item`, and `collection` fields after the share is created. The update is authorized against the row as it existed before the change, and the resulting row is never revalidated, so",
-      "recipe": "gh_advisories",
-      "buzz": 1830,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-16"
-    },
-    {
-      "uid": "cve:GHSA-8cgq-x343-p74c",
-      "source": "cve",
-      "title": "CVE-2026-129301: mail-parser: One hostile attachment aborts `write_attachments()` and silently drops the rest of the batch",
-      "url": "https://github.com/advisories/GHSA-8cgq-x343-p74c",
-      "ts": 1794867733.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "mail-parser",
-      "summary": "Severity: medium. ### Impact\n\n`write_attachments()` called `_safe_attachment_filename()` and `write_sample()` inside its loop\nwith no guard, so a single crafted attachment raised out of the whole save. Every attachment\n**after** the malicious one was silently never written, with no error surfaced to a caller that\ncat",
-      "recipe": "gh_advisories",
-      "buzz": 1830,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-16"
-    },
-    {
-      "uid": "cve:GHSA-xhrq-2mqv-q8wx",
-      "source": "cve",
-      "title": "CVE-2026-129300: mail-parser: Uncaught `OverflowError` / `OSError` on an out-of-range `Received` date",
-      "url": "https://github.com/advisories/GHSA-xhrq-2mqv-q8wx",
-      "ts": 1794867632.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "mail-parser",
-      "summary": "Severity: medium. ### Impact\n\nA `Received` header whose trailing date carries an out-of-range year, or a timezone offset\nlarge enough to push the timestamp past the int64 epoch range, raises an exception that is\n**outside the `MailParser*` hierarchy**. A caller that catches only mail-parser exceptions\ndoes not catch",
-      "recipe": "gh_advisories",
-      "buzz": 1830,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-16"
     },
     {
       "uid": "hn:25843874",
@@ -1433,12 +1431,12 @@
       "title": "nestho/impacket-rs",
       "url": "https://github.com/nestho/impacket-rs",
       "ts": 1794373116.0,
-      "points": 98,
+      "points": 100,
       "comments": 14,
       "author": "nestho",
       "summary": "High-performance, memory-safe pure-Rust redesign of Impacket protocols and Active Directory tools for Linux, macOS, and Windows.",
       "recipe": "github_sec",
-      "buzz": 140,
+      "buzz": 142,
       "topics": [
         "dev"
       ],
@@ -1462,32 +1460,17 @@
       "date": "2026-11-12"
     },
     {
-      "uid": "gh:rammahmagdy/Latch",
-      "source": "github",
-      "title": "rammahmagdy/Latch",
-      "url": "https://github.com/rammahmagdy/Latch",
-      "ts": 1794964122.0,
-      "points": 29,
-      "comments": 2,
-      "author": "rammahmagdy",
-      "summary": "Lock any app or folder behind Touch ID, Windows Hello or a password. Mac and Windows. Free for personal use.",
-      "recipe": "github_sec",
-      "buzz": 115,
-      "topics": [],
-      "date": "2026-11-18"
-    },
-    {
       "uid": "gh:wildorigins/wildos",
       "source": "github",
       "title": "wildorigins/wildos",
       "url": "https://github.com/wildorigins/wildos",
       "ts": 1794169078.0,
-      "points": 93,
+      "points": 99,
       "comments": 5,
       "author": "wildorigins",
       "summary": "A hardened Linux desktop, rebuilt from scratch, with your Windows apps built in. Free and open source.",
       "recipe": "github_sec",
-      "buzz": 108,
+      "buzz": 114,
       "topics": [],
       "date": "2026-11-08"
     },
@@ -1804,6 +1787,21 @@
       "date": "2026-11-06"
     },
     {
+      "uid": "gh:rammahmagdy/Latch",
+      "source": "github",
+      "title": "rammahmagdy/Latch",
+      "url": "https://github.com/rammahmagdy/Latch",
+      "ts": 1794964122.0,
+      "points": 30,
+      "comments": 3,
+      "author": "rammahmagdy",
+      "summary": "Lock any app or folder behind Touch ID, Windows Hello or a password. Mac and Windows. Free for personal use.",
+      "recipe": "github_sec",
+      "buzz": 69,
+      "topics": [],
+      "date": "2026-11-18"
+    },
+    {
       "uid": "gh:NPCmillionaire/unredact.tools",
       "source": "github",
       "title": "NPCmillionaire/unredact.tools",
@@ -1826,31 +1824,14 @@
       "title": "khanh0209q/NextDNS-Config-Set-And-Forget",
       "url": "https://github.com/khanh0209q/NextDNS-Config-Set-And-Forget",
       "ts": 1794630951.0,
-      "points": 31,
+      "points": 32,
       "comments": 1,
       "author": "khanh0209q",
       "summary": "A zero-breakage, set-and-forget NextDNS configuration for Home & Office.",
       "recipe": "github_sec",
-      "buzz": 44,
+      "buzz": 45,
       "topics": [],
       "date": "2026-11-14"
-    },
-    {
-      "uid": "gh:BowSinceEnt/resocket-elden-ring-cheat-2026-trainer-mod-menu-tools",
-      "source": "github",
-      "title": "BowSinceEnt/resocket-elden-ring-cheat-2026-trainer-mod-menu-tools",
-      "url": "https://github.com/BowSinceEnt/resocket-elden-ring-cheat-2026-trainer-mod-menu-tools",
-      "ts": 1793879929.0,
-      "points": 32,
-      "comments": 0,
-      "author": "BowSinceEnt",
-      "summary": "Elden Ring Cheat 2026 — Single-player modding and gameplay toolkit concept featuring character build optimization, rune planning, weapon upgrades, boss strategies, save management and offline trainer research.",
-      "recipe": "github_sec",
-      "buzz": 32,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-05"
     },
     {
       "uid": "rss:20cbd8174f0c08",

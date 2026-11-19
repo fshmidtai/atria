@@ -1,6 +1,6 @@
 {
-  "generated_at": 1795036374.308551,
-  "elapsed_s": 310.22,
+  "generated_at": 1795052131.640717,
+  "elapsed_s": 346.7,
   "tick": {
     "ran": 10,
     "failed": 0,
@@ -18,7 +18,7 @@
       "role": "scout",
       "colony": "core",
       "status": "active",
-      "spawned": 1795036064.108333,
+      "spawned": 1795051784.9574373,
       "note": ""
     },
     {
@@ -27,7 +27,7 @@
       "role": "refinery",
       "colony": "core",
       "status": "active",
-      "spawned": 1795036064.111063,
+      "spawned": 1795051784.9591646,
       "note": ""
     },
     {
@@ -36,7 +36,7 @@
       "role": "writer",
       "colony": "core",
       "status": "active",
-      "spawned": 1795036064.113564,
+      "spawned": 1795051784.9607294,
       "note": ""
     },
     {
@@ -45,7 +45,7 @@
       "role": "trade",
       "colony": "core",
       "status": "active",
-      "spawned": 1795036064.116054,
+      "spawned": 1795051784.9623413,
       "note": ""
     }
   ],
@@ -249,9 +249,9 @@
         "indexnow_key": "703c9a540f4d657f217326ac9c8a5560"
       },
       "totals": {
-        "items": 132,
+        "items": 131,
         "by_source": {
-          "hn": 7,
+          "hn": 6,
           "github": 4,
           "rss": 81,
           "arxiv": 40
@@ -261,14 +261,14 @@
           "arxiv_qfin": 40,
           "cnbc_top": 30,
           "ft_home": 11,
-          "hn_fintech": 7,
+          "hn_fintech": 6,
           "github_fin": 4
         },
         "by_topic": {
-          "ai": 76,
-          "biz": 45,
-          "dev": 34,
-          "science": 18,
+          "ai": 77,
+          "biz": 46,
+          "dev": 32,
+          "science": 21,
           "hardware": 7,
           "crypto": 7,
           "security": 5
@@ -300,10 +300,6 @@
           ],
           [
             "realizefi.com",
-            1
-          ],
-          [
-            "finterm.ai",
             1
           ],
           [
@@ -399,30 +395,33 @@
           "topics": []
         },
         {
-          "title": "US tech outages blamed on rush to fix bugs found by AI",
+          "title": "Anthropic raises $81bn in record IPO",
           "source": "rss",
           "buzz": 80,
-          "url": "https://www.ft.com/content/96c565f1-f229-40b6-91e8-7a849ec4b208?syn-25a6b1a6=1",
+          "url": "https://www.ft.com/content/62c0510b-ca65-441e-9baf-675b93903b9e?syn-25a6b1a6=1",
+          "topics": [
+            "ai",
+            "science",
+            "biz"
+          ]
+        },
+        {
+          "title": "SoftBank regrets ‘mistake’ of not backing Anthropic, says Son",
+          "source": "rss",
+          "buzz": 80,
+          "url": "https://www.ft.com/content/08086201-6359-47ec-8854-70462ad5a4c0?syn-25a6b1a6=1",
           "topics": [
             "ai"
           ]
         },
         {
-          "title": "AI borrowing binge has ‘historic parallels’ with subprime bubble, says ECB",
+          "title": "Low-profile VCs set for $100bn windfall from Anthropic IPO",
           "source": "rss",
           "buzz": 80,
-          "url": "https://www.ft.com/content/d16475ce-efce-4dc1-b5a3-2f7c79e9dea9?syn-25a6b1a6=1",
+          "url": "https://www.ft.com/content/a3430f0d-0080-4970-8eec-2c14c8438b3d?syn-25a6b1a6=1",
           "topics": [
-            "ai"
-          ]
-        },
-        {
-          "title": "AI asked ‘better questions’ than KPMG accountants in pilot audit",
-          "source": "rss",
-          "buzz": 80,
-          "url": "https://www.ft.com/content/5168b3e9-75d0-4be0-9ccd-d327d6b16c05?syn-25a6b1a6=1",
-          "topics": [
-            "ai"
+            "ai",
+            "biz"
           ]
         },
         {
@@ -501,10 +500,10 @@
         },
         "by_topic": {
           "security": 55,
-          "ai": 42,
-          "dev": 36,
+          "ai": 40,
+          "dev": 33,
           "hardware": 15,
-          "crypto": 5,
+          "crypto": 8,
           "science": 4,
           "biz": 3
         },
@@ -534,6 +533,18 @@
         }
       },
       "top_items": [
+        {
+          "title": "CVE-2026-75521: Miren Runtime: Authentication bypass in RPC layer: unverified TLS client certificates grant cluster superuser access",
+          "source": "cve",
+          "buzz": 6080,
+          "url": "https://github.com/advisories/GHSA-8fh7-7q4q-cq52",
+          "topics": [
+            "ai",
+            "dev",
+            "security",
+            "hardware"
+          ]
+        },
         {
           "title": "CVE-2026-69157: Atomic Server: Unauthenticated `/setup` invite grants write access to the entire Drive",
           "source": "cve",
@@ -567,6 +578,60 @@
             "crypto",
             "security",
             "hardware"
+          ]
+        },
+        {
+          "title": "CVE-2026-76088: PGPainless: Unbounded Compressed Packet Descent in inline-detach and MessageInspector leads to Denial of Service (DoS)",
+          "source": "cve",
+          "buzz": 3580,
+          "url": "https://github.com/advisories/GHSA-cvx8-9ff6-54xq",
+          "topics": [
+            "ai",
+            "security"
+          ]
+        },
+        {
+          "title": "CVE-2026-63129: mssql-mcp-core: SQL injection in mssql-mcp write tools via unparameterized table names and WHERE clauses",
+          "source": "cve",
+          "buzz": 3580,
+          "url": "https://github.com/advisories/GHSA-2m9m-6cr5-9x25",
+          "topics": [
+            "dev",
+            "security"
+          ]
+        },
+        {
+          "title": "CVE-2026-68903: LLMKube: Arbitrary Host File Read via Model.spec.source hostPath Injection",
+          "source": "cve",
+          "buzz": 3580,
+          "url": "https://github.com/advisories/GHSA-jw3m-8q7m-f35r",
+          "topics": [
+            "ai",
+            "dev",
+            "security"
+          ]
+        },
+        {
+          "title": "CVE-2026-73864: install-artifact-from-github loads downloaded native artifacts without integrity verification",
+          "source": "cve",
+          "buzz": 3580,
+          "url": "https://github.com/advisories/GHSA-88q3-gch3-5396",
+          "topics": [
+            "dev",
+            "crypto",
+            "security"
+          ]
+        },
+        {
+          "title": "CVE-2026-71861: Chainguard SDK: AWS SigV4 token replay in auth/aws.VerifyToken — Chainguard-Audience/Chainguard-Identity binding headers not required in SignedHeaders",
+          "source": "cve",
+          "buzz": 3580,
+          "url": "https://github.com/advisories/GHSA-wq26-3j2m-4hvv",
+          "topics": [
+            "ai",
+            "dev",
+            "crypto",
+            "security"
           ]
         },
         {
@@ -626,71 +691,6 @@
           "buzz": 3530,
           "url": "https://github.com/advisories/GHSA-x2vm-cf3p-m2w8",
           "topics": [
-            "security"
-          ]
-        },
-        {
-          "title": "CVE-2026-110789: libp2p: ASN.1 DER decoder drives an unbounded synchronous loop on attacker-controlled length fields, stalling the Node event loop pre-auth",
-          "source": "cve",
-          "buzz": 3530,
-          "url": "https://github.com/advisories/GHSA-rvfr-cqwq-rc4j",
-          "topics": [
-            "dev",
-            "security"
-          ]
-        },
-        {
-          "title": "CVE-2026-110782: SAML2: Incomplete fix of CVE-2026-49283: unsigned embedded Response bypasses HTTP-Artifact signature verification (no embedded-Issuer binding)",
-          "source": "cve",
-          "buzz": 3530,
-          "url": "https://github.com/advisories/GHSA-r7hw-jx6r-756g",
-          "topics": [
-            "ai",
-            "science",
-            "security"
-          ]
-        },
-        {
-          "title": "CVE-2026-62336: qbee-agent: Local Privilege Escalation and Arbitrary File Tampering via Symlink Following in createFile helper",
-          "source": "cve",
-          "buzz": 3530,
-          "url": "https://github.com/advisories/GHSA-xhv5-8fpq-g7hf",
-          "topics": [
-            "ai",
-            "dev",
-            "security"
-          ]
-        },
-        {
-          "title": "CVE-2026-14265: AWS-advanced-jdbc-wrapper: Java Deserialization RCE via Cache Poisoning",
-          "source": "cve",
-          "buzz": 3530,
-          "url": "https://github.com/advisories/GHSA-c5q4-97jw-jggh",
-          "topics": [
-            "ai",
-            "dev",
-            "security"
-          ]
-        },
-        {
-          "title": "CVE-2026-91115: Silverstripe Framework: RCE via i18nTextCollectorTask writer parameter",
-          "source": "cve",
-          "buzz": 3530,
-          "url": "https://github.com/advisories/GHSA-c94f-87xg-65wf",
-          "topics": [
-            "dev",
-            "security",
-            "hardware"
-          ]
-        },
-        {
-          "title": "CVE-2026-71425: Outstatic: Authenticated GitHub REST proxy can send OAuth token to non-GitHub origins",
-          "source": "cve",
-          "buzz": 1880,
-          "url": "https://github.com/advisories/GHSA-7jvc-9xq8-frff",
-          "topics": [
-            "dev",
-            "crypto",
             "security"
           ]
         }
@@ -887,18 +887,18 @@
           "devto": 12
         },
         "by_topic": {
-          "ai": 111,
-          "dev": 68,
-          "science": 34,
-          "hardware": 28,
-          "biz": 18,
-          "security": 5,
-          "crypto": 1
+          "ai": 121,
+          "dev": 57,
+          "science": 25,
+          "biz": 17,
+          "hardware": 16,
+          "security": 6,
+          "crypto": 2
         },
         "top_domains": [
           [
             "arxiv.org",
-            61
+            60
           ],
           [
             "github.com",
@@ -917,15 +917,7 @@
             2
           ],
           [
-            "news.ycombinator.com",
-            2
-          ],
-          [
             "wiz.io",
-            1
-          ],
-          [
-            "techstackups.com",
             1
           ],
           [
@@ -933,11 +925,11 @@
             1
           ],
           [
-            "inside-db.com",
+            "techstackups.com",
             1
           ],
           [
-            "cam.ac.uk",
+            "inside-db.com",
             1
           ],
           [
@@ -945,19 +937,15 @@
             1
           ],
           [
+            "cam.ac.uk",
+            1
+          ],
+          [
             "cve.org",
             1
           ],
           [
-            "energy-based-reasoners.github.io",
-            1
-          ],
-          [
-            "sam.gov",
-            1
-          ],
-          [
-            "pikuma.com",
+            "violetpixel.com",
             1
           ],
           [
@@ -965,11 +953,15 @@
             1
           ],
           [
-            "rshekhar.com",
+            "exitpath-ruddy.vercel.app",
             1
           ],
           [
-            "exitpath-ruddy.vercel.app",
+            "lateblt.livejournal.com",
+            1
+          ],
+          [
+            "pikuma.com",
             1
           ],
           [
@@ -977,23 +969,31 @@
             1
           ],
           [
-            "jimmyhmiller.com",
-            1
-          ],
-          [
-            "onehouse.ai",
-            1
-          ],
-          [
             "radixark.com",
             1
           ],
           [
-            "searchbrowser.app",
+            "rshekhar.com",
             1
           ],
           [
-            "foss.life",
+            "jimmyhmiller.com",
+            1
+          ],
+          [
+            "news.ycombinator.com",
+            1
+          ],
+          [
+            "ruby-lang.org",
+            1
+          ],
+          [
+            "slowchronicle.com",
+            1
+          ],
+          [
+            "micjm.com",
             1
           ]
         ]
@@ -1011,18 +1011,9 @@
       },
       "top_items": [
         {
-          "title": "deepseek-ai/chat-demo",
-          "source": "github",
-          "buzz": 8027,
-          "url": "https://github.com/deepseek-ai/chat-demo",
-          "topics": [
-            "ai"
-          ]
-        },
-        {
           "title": "krisgfx9/Wireless-Device-Battery-Monitor",
           "source": "github",
-          "buzz": 4829,
+          "buzz": 5077,
           "url": "https://github.com/krisgfx9/Wireless-Device-Battery-Monitor",
           "topics": [
             "ai",
@@ -1030,19 +1021,9 @@
           ]
         },
         {
-          "title": "AIRzZ90/study-materials-fork",
-          "source": "github",
-          "buzz": 4456,
-          "url": "https://github.com/AIRzZ90/study-materials-fork",
-          "topics": [
-            "ai",
-            "science"
-          ]
-        },
-        {
           "title": "erkamyaman/rust-anything",
           "source": "github",
-          "buzz": 3953,
+          "buzz": 4246,
           "url": "https://github.com/erkamyaman/rust-anything",
           "topics": [
             "ai",
@@ -1053,7 +1034,7 @@
         {
           "title": "duwqijlk/muse-protocol",
           "source": "github",
-          "buzz": 3559,
+          "buzz": 3561,
           "url": "https://github.com/duwqijlk/muse-protocol",
           "topics": [
             "ai",
@@ -1061,41 +1042,19 @@
           ]
         },
         {
-          "title": "Noniv/abyssal-garden",
-          "source": "github",
-          "buzz": 3459,
-          "url": "https://github.com/Noniv/abyssal-garden",
+          "title": "Unauthenticated remote code execution in Nginx",
+          "source": "hn",
+          "buzz": 2726,
+          "url": "https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities",
           "topics": [
-            "ai",
-            "science",
-            "hardware"
-          ]
-        },
-        {
-          "title": "Immortal-Protocols/lastbook",
-          "source": "github",
-          "buzz": 2979,
-          "url": "https://github.com/Immortal-Protocols/lastbook",
-          "topics": [
-            "ai",
-            "dev",
-            "hardware"
+            "security"
           ]
         },
         {
           "title": "CzzzzzzJ/mdldm-maitian",
           "source": "github",
-          "buzz": 2532,
+          "buzz": 2569,
           "url": "https://github.com/CzzzzzzJ/mdldm-maitian",
-          "topics": [
-            "ai"
-          ]
-        },
-        {
-          "title": "ZiChuanLan/freebie-radar",
-          "source": "github",
-          "buzz": 2424,
-          "url": "https://github.com/ZiChuanLan/freebie-radar",
           "topics": [
             "ai"
           ]
@@ -1103,7 +1062,7 @@
         {
           "title": "haziqahmedqasmi/PeakCut",
           "source": "github",
-          "buzz": 2170,
+          "buzz": 2207,
           "url": "https://github.com/haziqahmedqasmi/PeakCut",
           "topics": [
             "ai",
@@ -1113,33 +1072,30 @@
         {
           "title": "Hut-hzf/ung220z-tool",
           "source": "github",
-          "buzz": 1934,
+          "buzz": 2149,
           "url": "https://github.com/Hut-hzf/ung220z-tool",
           "topics": []
         },
         {
-          "title": "Unauthenticated remote code execution in Nginx",
+          "title": "Gemini 4 Neon",
           "source": "hn",
-          "buzz": 1893,
-          "url": "https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities",
-          "topics": [
-            "security"
-          ]
+          "buzz": 1707,
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+          "topics": []
         },
         {
-          "title": "boringmarketer/boring-marketing-skills",
-          "source": "github",
-          "buzz": 1410,
-          "url": "https://github.com/boringmarketer/boring-marketing-skills",
+          "title": "Seven new models at scalable price-performance",
+          "source": "hn",
+          "buzz": 1457,
+          "url": "https://microsoft.ai/news/microsoft-ignite-2026/",
           "topics": [
-            "ai",
-            "biz"
+            "ai"
           ]
         },
         {
           "title": "sybil-solutions/inference-optimisation-skill",
           "source": "github",
-          "buzz": 1374,
+          "buzz": 1446,
           "url": "https://github.com/sybil-solutions/inference-optimisation-skill",
           "topics": [
             "ai",
@@ -1148,14 +1104,47 @@
           ]
         },
         {
+          "title": "boringmarketer/boring-marketing-skills",
+          "source": "github",
+          "buzz": 1433,
+          "url": "https://github.com/boringmarketer/boring-marketing-skills",
+          "topics": [
+            "ai",
+            "biz"
+          ]
+        },
+        {
+          "title": "DNS resolvers are the wrong place to fight piracy",
+          "source": "hn",
+          "buzz": 1344,
+          "url": "https://techstackups.com/articles/quad9-leaves-france-dns-blocking/",
+          "topics": []
+        },
+        {
+          "title": "Inside Deutsche Bank",
+          "source": "hn",
+          "buzz": 1210,
+          "url": "https://www.inside-db.com/",
+          "topics": [
+            "dev"
+          ]
+        },
+        {
           "title": "chuanqisun/spaceship",
           "source": "github",
-          "buzz": 1131,
+          "buzz": 1158,
           "url": "https://github.com/chuanqisun/spaceship",
           "topics": [
             "dev",
             "science"
           ]
+        },
+        {
+          "title": "joshpuckett/allo",
+          "source": "github",
+          "buzz": 1145,
+          "url": "https://github.com/joshpuckett/allo",
+          "topics": []
         }
       ]
     },
@@ -1196,18 +1185,18 @@
           "devto": 12
         },
         "by_topic": {
-          "ai": 97,
-          "dev": 66,
-          "science": 34,
-          "hardware": 26,
+          "ai": 104,
+          "dev": 55,
+          "science": 25,
+          "hardware": 15,
           "biz": 10,
           "security": 5,
-          "crypto": 1
+          "crypto": 2
         },
         "top_domains": [
           [
             "arxiv.org",
-            61
+            60
           ],
           [
             "github.com",
@@ -1222,15 +1211,7 @@
             2
           ],
           [
-            "news.ycombinator.com",
-            2
-          ],
-          [
             "wiz.io",
-            1
-          ],
-          [
-            "techstackups.com",
             1
           ],
           [
@@ -1238,11 +1219,11 @@
             1
           ],
           [
-            "inside-db.com",
+            "techstackups.com",
             1
           ],
           [
-            "cam.ac.uk",
+            "inside-db.com",
             1
           ],
           [
@@ -1250,19 +1231,15 @@
             1
           ],
           [
+            "cam.ac.uk",
+            1
+          ],
+          [
             "cve.org",
             1
           ],
           [
-            "energy-based-reasoners.github.io",
-            1
-          ],
-          [
-            "sam.gov",
-            1
-          ],
-          [
-            "pikuma.com",
+            "violetpixel.com",
             1
           ],
           [
@@ -1270,11 +1247,15 @@
             1
           ],
           [
-            "rshekhar.com",
+            "exitpath-ruddy.vercel.app",
             1
           ],
           [
-            "exitpath-ruddy.vercel.app",
+            "lateblt.livejournal.com",
+            1
+          ],
+          [
+            "pikuma.com",
             1
           ],
           [
@@ -1282,27 +1263,35 @@
             1
           ],
           [
-            "jimmyhmiller.com",
-            1
-          ],
-          [
-            "onehouse.ai",
-            1
-          ],
-          [
             "radixark.com",
             1
           ],
           [
-            "searchbrowser.app",
+            "rshekhar.com",
             1
           ],
           [
-            "foss.life",
+            "jimmyhmiller.com",
             1
           ],
           [
-            "lisper.cc",
+            "news.ycombinator.com",
+            1
+          ],
+          [
+            "ruby-lang.org",
+            1
+          ],
+          [
+            "slowchronicle.com",
+            1
+          ],
+          [
+            "micjm.com",
+            1
+          ],
+          [
+            "anthropic.com",
             1
           ]
         ]
@@ -1320,18 +1309,9 @@
       },
       "top_items": [
         {
-          "title": "deepseek-ai/chat-demo",
-          "source": "github",
-          "buzz": 8027,
-          "url": "https://github.com/deepseek-ai/chat-demo",
-          "topics": [
-            "ai"
-          ]
-        },
-        {
           "title": "krisgfx9/Wireless-Device-Battery-Monitor",
           "source": "github",
-          "buzz": 4829,
+          "buzz": 5077,
           "url": "https://github.com/krisgfx9/Wireless-Device-Battery-Monitor",
           "topics": [
             "ai",
@@ -1339,19 +1319,9 @@
           ]
         },
         {
-          "title": "AIRzZ90/study-materials-fork",
-          "source": "github",
-          "buzz": 4456,
-          "url": "https://github.com/AIRzZ90/study-materials-fork",
-          "topics": [
-            "ai",
-            "science"
-          ]
-        },
-        {
           "title": "erkamyaman/rust-anything",
           "source": "github",
-          "buzz": 3953,
+          "buzz": 4246,
           "url": "https://github.com/erkamyaman/rust-anything",
           "topics": [
             "ai",
@@ -1362,7 +1332,7 @@
         {
           "title": "duwqijlk/muse-protocol",
           "source": "github",
-          "buzz": 3559,
+          "buzz": 3561,
           "url": "https://github.com/duwqijlk/muse-protocol",
           "topics": [
             "ai",
@@ -1370,41 +1340,19 @@
           ]
         },
         {
-          "title": "Noniv/abyssal-garden",
-          "source": "github",
-          "buzz": 3459,
-          "url": "https://github.com/Noniv/abyssal-garden",
+          "title": "Unauthenticated remote code execution in Nginx",
+          "source": "hn",
+          "buzz": 2726,
+          "url": "https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities",
           "topics": [
-            "ai",
-            "science",
-            "hardware"
-          ]
-        },
-        {
-          "title": "Immortal-Protocols/lastbook",
-          "source": "github",
-          "buzz": 2979,
-          "url": "https://github.com/Immortal-Protocols/lastbook",
-          "topics": [
-            "ai",
-            "dev",
-            "hardware"
+            "security"
           ]
         },
         {
           "title": "CzzzzzzJ/mdldm-maitian",
           "source": "github",
-          "buzz": 2532,
+          "buzz": 2569,
           "url": "https://github.com/CzzzzzzJ/mdldm-maitian",
-          "topics": [
-            "ai"
-          ]
-        },
-        {
-          "title": "ZiChuanLan/freebie-radar",
-          "source": "github",
-          "buzz": 2424,
-          "url": "https://github.com/ZiChuanLan/freebie-radar",
           "topics": [
             "ai"
           ]
@@ -1412,7 +1360,7 @@
         {
           "title": "haziqahmedqasmi/PeakCut",
           "source": "github",
-          "buzz": 2170,
+          "buzz": 2207,
           "url": "https://github.com/haziqahmedqasmi/PeakCut",
           "topics": [
             "ai",
@@ -1422,33 +1370,30 @@
         {
           "title": "Hut-hzf/ung220z-tool",
           "source": "github",
-          "buzz": 1934,
+          "buzz": 2149,
           "url": "https://github.com/Hut-hzf/ung220z-tool",
           "topics": []
         },
         {
-          "title": "Unauthenticated remote code execution in Nginx",
+          "title": "Gemini 4 Neon",
           "source": "hn",
-          "buzz": 1893,
-          "url": "https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities",
-          "topics": [
-            "security"
-          ]
+          "buzz": 1707,
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+          "topics": []
         },
         {
-          "title": "boringmarketer/boring-marketing-skills",
-          "source": "github",
-          "buzz": 1410,
-          "url": "https://github.com/boringmarketer/boring-marketing-skills",
+          "title": "Seven new models at scalable price-performance",
+          "source": "hn",
+          "buzz": 1457,
+          "url": "https://microsoft.ai/news/microsoft-ignite-2026/",
           "topics": [
-            "ai",
-            "biz"
+            "ai"
           ]
         },
         {
           "title": "sybil-solutions/inference-optimisation-skill",
           "source": "github",
-          "buzz": 1374,
+          "buzz": 1446,
           "url": "https://github.com/sybil-solutions/inference-optimisation-skill",
           "topics": [
             "ai",
@@ -1457,14 +1402,47 @@
           ]
         },
         {
+          "title": "boringmarketer/boring-marketing-skills",
+          "source": "github",
+          "buzz": 1433,
+          "url": "https://github.com/boringmarketer/boring-marketing-skills",
+          "topics": [
+            "ai",
+            "biz"
+          ]
+        },
+        {
+          "title": "DNS resolvers are the wrong place to fight piracy",
+          "source": "hn",
+          "buzz": 1344,
+          "url": "https://techstackups.com/articles/quad9-leaves-france-dns-blocking/",
+          "topics": []
+        },
+        {
+          "title": "Inside Deutsche Bank",
+          "source": "hn",
+          "buzz": 1210,
+          "url": "https://www.inside-db.com/",
+          "topics": [
+            "dev"
+          ]
+        },
+        {
           "title": "chuanqisun/spaceship",
           "source": "github",
-          "buzz": 1131,
+          "buzz": 1158,
           "url": "https://github.com/chuanqisun/spaceship",
           "topics": [
             "dev",
             "science"
           ]
+        },
+        {
+          "title": "joshpuckett/allo",
+          "source": "github",
+          "buzz": 1145,
+          "url": "https://github.com/joshpuckett/allo",
+          "topics": []
         }
       ]
     },
@@ -1644,34 +1622,34 @@
         "indexnow_key": "6aa8e80f84e43d6e13f6e0b6a2edd4b4"
       },
       "totals": {
-        "items": 133,
+        "items": 132,
         "by_source": {
           "hn": 40,
           "cve": 30,
-          "github": 13,
+          "github": 12,
           "rss": 50
         },
         "by_recipe": {
           "hn_sec": 40,
           "gh_advisories": 30,
           "hackersnews": 30,
-          "github_sec": 13,
+          "github_sec": 12,
           "krebs": 10,
           "schneier": 10
         },
         "by_topic": {
           "security": 111,
-          "ai": 72,
-          "dev": 53,
+          "ai": 69,
+          "dev": 50,
           "hardware": 19,
-          "crypto": 8,
+          "crypto": 11,
           "biz": 8,
           "science": 6
         },
         "top_domains": [
           [
             "github.com",
-            45
+            44
           ],
           [
             "thehackernews.com",
@@ -1806,6 +1784,18 @@
           ]
         },
         {
+          "title": "CVE-2026-75521: Miren Runtime: Authentication bypass in RPC layer: unverified TLS client certificates grant cluster superuser access",
+          "source": "cve",
+          "buzz": 6080,
+          "url": "https://github.com/advisories/GHSA-8fh7-7q4q-cq52",
+          "topics": [
+            "ai",
+            "dev",
+            "security",
+            "hardware"
+          ]
+        },
+        {
           "title": "CVE-2026-69157: Atomic Server: Unauthenticated `/setup` invite grants write access to the entire Drive",
           "source": "cve",
           "buzz": 6080,
@@ -1892,53 +1882,44 @@
           ]
         },
         {
-          "title": "CVE-2026-71481: ALTCHA PHP: verifySolution bypasses HMAC signature check when challenge signature is absent",
+          "title": "CVE-2026-76088: PGPainless: Unbounded Compressed Packet Descent in inline-detach and MessageInspector leads to Denial of Service (DoS)",
           "source": "cve",
           "buzz": 3580,
-          "url": "https://github.com/advisories/GHSA-82w8-65qw-gch6",
+          "url": "https://github.com/advisories/GHSA-cvx8-9ff6-54xq",
           "topics": [
+            "ai",
             "security"
           ]
         },
         {
-          "title": "CVE-2026-69158: Atomic Server: Unauthenticated full-response SSRF in Atomic-Server /bookmark endpoint",
+          "title": "CVE-2026-63129: mssql-mcp-core: SQL injection in mssql-mcp write tools via unparameterized table names and WHERE clauses",
           "source": "cve",
           "buzz": 3580,
-          "url": "https://github.com/advisories/GHSA-ff87-73jp-f3v4",
+          "url": "https://github.com/advisories/GHSA-2m9m-6cr5-9x25",
           "topics": [
             "dev",
-            "security",
-            "hardware"
+            "security"
           ]
         },
         {
-          "title": "CVE-2026-69156: Atomic Server: Arbitrary file read via user-controlled `internalId` in the `/download` handler (leaks root agent private key)",
+          "title": "CVE-2026-68903: LLMKube: Arbitrary Host File Read via Model.spec.source hostPath Injection",
           "source": "cve",
           "buzz": 3580,
-          "url": "https://github.com/advisories/GHSA-8vc4-8hjq-988p",
+          "url": "https://github.com/advisories/GHSA-jw3m-8q7m-f35r",
           "topics": [
             "ai",
-            "security",
-            "hardware"
+            "dev",
+            "security"
           ]
         },
         {
-          "title": "CVE-2026-69155: Atomic Server: Stored XSS via uploaded files served inline (same-origin) on `/download` → account takeover",
+          "title": "CVE-2026-73864: install-artifact-from-github loads downloaded native artifacts without integrity verification",
           "source": "cve",
           "buzz": 3580,
-          "url": "https://github.com/advisories/GHSA-x277-3wcg-g9r2",
+          "url": "https://github.com/advisories/GHSA-88q3-gch3-5396",
           "topics": [
-            "ai",
-            "security",
-            "hardware"
-          ]
-        },
-        {
-          "title": "CVE-2026-63496: augment-virShell allows Command Injection in `grep()` via Unsanitized `searchPattern`",
-          "source": "cve",
-          "buzz": 3580,
-          "url": "https://github.com/advisories/GHSA-xvcc-vqjv-phqh",
-          "topics": [
+            "dev",
+            "crypto",
             "security"
           ]
         }
@@ -1975,9 +1956,8 @@
           "html": 13
         },
         "by_recipe": {
-          "freetender_med": 4,
-          "freetender_rf": 2,
-          "freetender_supply": 2,
+          "freetender_med": 5,
+          "freetender_supply": 3,
           "freetender_it": 2,
           "freetender_constr": 2,
           "freetender_edu": 1
@@ -2002,13 +1982,6 @@
         }
       },
       "top_items": [
-        {
-          "title": "Изделия медицинского назначения для аппарата Prismaflex",
-          "source": "html",
-          "buzz": 80,
-          "url": "https://freetender.net/tender/prismaflex-0320200003926000245",
-          "topics": []
-        },
         {
           "title": "Поставка информационных знаков и знаков пожарной безопасности",
           "source": "html",
@@ -2056,6 +2029,13 @@
           "source": "html",
           "buzz": 80,
           "url": "https://freetender.net/tender/2026-142-114-0132300026726000034",
+          "topics": []
+        },
+        {
+          "title": "Изделия медицинского назначения для аппарата Prismaflex",
+          "source": "html",
+          "buzz": 80,
+          "url": "https://freetender.net/tender/prismaflex-0320200003926000245",
           "topics": []
         },
         {
@@ -2131,12 +2111,12 @@
           "github_llm": 5
         },
         "by_topic": {
-          "ai": 73,
+          "ai": 76,
           "dev": 38,
           "science": 15,
-          "biz": 12,
-          "hardware": 6,
-          "security": 4
+          "biz": 11,
+          "security": 5,
+          "hardware": 5
         },
         "top_domains": [
           [
@@ -2367,7 +2347,7 @@
         {
           "title": "agentes-chat/agentes-chat",
           "source": "github",
-          "buzz": 2662,
+          "buzz": 2687,
           "url": "https://github.com/agentes-chat/agentes-chat",
           "topics": [
             "ai",

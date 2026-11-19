@@ -1,7 +1,13 @@
 cve_id,severity,package,title,url,date
+CVE-2026-75521,critical,miren.dev/runtime,CVE-2026-75521: Miren Runtime: Authentication bypass in RPC layer: unverified TLS client certificates grant cluster superuser access,https://github.com/advisories/GHSA-8fh7-7q4q-cq52,2026-11-19
 CVE-2026-69157,critical,atomic-server,CVE-2026-69157: Atomic Server: Unauthenticated `/setup` invite grants write access to the entire Drive,https://github.com/advisories/GHSA-pfwx-xjp4-qxcj,2026-11-18
 CVE-2026-130001,critical,mustache,CVE-2026-130001: Mustache for Ruby: RCE using built-in method access,https://github.com/advisories/GHSA-5hrj-7fc3-cmx9,2026-11-18
 CVE-2026-53998,critical,arize-phoenix,CVE-2026-53998: Phoenix: Format String Injection in applyChatTemplate,https://github.com/advisories/GHSA-gfv3-m769-5xm3,2026-11-17
+CVE-2026-76088,high,org.pgpainless:pgpainless-core,CVE-2026-76088: PGPainless: Unbounded Compressed Packet Descent in inline-detach and MessageInspector leads to Denial of Service (DoS),https://github.com/advisories/GHSA-cvx8-9ff6-54xq,2026-11-19
+CVE-2026-63129,high,@connorbritain/mssql-mcp-core,CVE-2026-63129: mssql-mcp-core: SQL injection in mssql-mcp write tools via unparameterized table names and WHERE clauses,https://github.com/advisories/GHSA-2m9m-6cr5-9x25,2026-11-19
+CVE-2026-68903,high,github.com/defilantech/llmkube,CVE-2026-68903: LLMKube: Arbitrary Host File Read via Model.spec.source hostPath Injection,https://github.com/advisories/GHSA-jw3m-8q7m-f35r,2026-11-18
+CVE-2026-73864,high,install-artifact-from-github,CVE-2026-73864: install-artifact-from-github loads downloaded native artifacts without integrity verification,https://github.com/advisories/GHSA-88q3-gch3-5396,2026-11-18
+CVE-2026-71861,high,chainguard.dev/sdk,CVE-2026-71861: Chainguard SDK: AWS SigV4 token replay in auth/aws.VerifyToken — Chainguard-Audience/Chainguard-Identity binding headers not required in SignedHeaders,https://github.com/advisories/GHSA-wq26-3j2m-4hvv,2026-11-18
 CVE-2026-71481,high,altcha-org/altcha,CVE-2026-71481: ALTCHA PHP: verifySolution bypasses HMAC signature check when challenge signature is absent,https://github.com/advisories/GHSA-82w8-65qw-gch6,2026-11-18
 CVE-2026-69158,high,atomic-server,CVE-2026-69158: Atomic Server: Unauthenticated full-response SSRF in Atomic-Server /bookmark endpoint,https://github.com/advisories/GHSA-ff87-73jp-f3v4,2026-11-18
 CVE-2026-69156,high,atomic-server,CVE-2026-69156: Atomic Server: Arbitrary file read via user-controlled `internalId` in the `/download` handler (leaks root agent private key),https://github.com/advisories/GHSA-8vc4-8hjq-988p,2026-11-18
@@ -12,7 +18,10 @@ CVE-2026-110789,high,@libp2p/crypto,"CVE-2026-110789: libp2p: ASN.1 DER decoder 
 CVE-2026-110782,high,simplesamlphp/saml2,CVE-2026-110782: SAML2: Incomplete fix of CVE-2026-49283: unsigned embedded Response bypasses HTTP-Artifact signature verification (no embedded-Issuer binding),https://github.com/advisories/GHSA-r7hw-jx6r-756g,2026-11-17
 CVE-2026-62336,high,go.qbee.io/agent,CVE-2026-62336: qbee-agent: Local Privilege Escalation and Arbitrary File Tampering via Symlink Following in createFile helper,https://github.com/advisories/GHSA-xhv5-8fpq-g7hf,2026-11-17
 CVE-2026-14265,high,software.amazon.jdbc:aws-advanced-jdbc-wrapper,CVE-2026-14265: AWS-advanced-jdbc-wrapper: Java Deserialization RCE via Cache Poisoning,https://github.com/advisories/GHSA-c5q4-97jw-jggh,2026-11-17
-CVE-2026-91115,high,silverstripe/framework,CVE-2026-91115: Silverstripe Framework: RCE via i18nTextCollectorTask writer parameter,https://github.com/advisories/GHSA-c94f-87xg-65wf,2026-11-16
+CVE-2026-73504,medium,com.ing.data:cassandra-jdbc-wrapper,CVE-2026-73504: cassandra-jdbc-wrapper: Authentication Token Exposed in Logs,https://github.com/advisories/GHSA-jc42-994r-vvwp,2026-11-19
+CVE-2026-75506,medium,github.com/OliveTin/OliveTin,CVE-2026-75506: OliveTin: Second-Order OS Command Injection via shellAfterCompleted,https://github.com/advisories/GHSA-vc6p-m6vx-6cwq,2026-11-18
+CVE-2026-69131,medium,django-filer,CVE-2026-69131: django-filer: Missing per-object authorization on `discard` and `edit_redirect` version transitions,https://github.com/advisories/GHSA-vf85-8ff2-3r9w,2026-11-18
+CVE-2026-69138,medium,djangocms-versioning,CVE-2026-69138: djangocms-versioning: Authorization Bypass Through User-Controlled Key and Missing Authorization,https://github.com/advisories/GHSA-5g9x-qwh5-33x4,2026-11-18
 CVE-2026-71425,medium,outstatic,CVE-2026-71425: Outstatic: Authenticated GitHub REST proxy can send OAuth token to non-GitHub origins,https://github.com/advisories/GHSA-7jvc-9xq8-frff,2026-11-18
 CVE-2026-61618,medium,snark-verifier,CVE-2026-61618: snark-verifier accepts non-canonical KZG accumulator limb encodings,https://github.com/advisories/GHSA-265x-v3qf-ff6p,2026-11-18
 CVE-2026-69241,medium,awcodes/filament-curator,CVE-2026-69241: Filament Curator: Stored XSS via unsanitized SVG upload served inline,https://github.com/advisories/GHSA-8vm9-f75m-5h2m,2026-11-17
@@ -20,12 +29,3 @@ CVE-2026-63389,medium,awcodes/filament-curator,CVE-2026-63389: Filament Curator:
 CVE-2026-63672,medium,egroupware/egroupware,CVE-2026-63672: EGroupware: User-Controlled Identity Provider Selection in SAML Authentication,https://github.com/advisories/GHSA-pr4x-6fj4-gm4h,2026-11-17
 CVE-2026-63634,medium,pympp,CVE-2026-63634: pympp allows excessive sponsored transaction fees through padded calldata,https://github.com/advisories/GHSA-v858-xh7w-8jr5,2026-11-17
 CVE-2026-119351,medium,next,CVE-2026-119351: Next.js: Cache leak across root param values in nested 'use cache' functions via delayed inner stream metadata,https://github.com/advisories/GHSA-vc7v-qv4w-wrv8,2026-11-17
-CVE-2026-129237,medium,go.qbee.io/agent,CVE-2026-129237: qbee-agent: Docker Compose build context Zip Slip writes outside context directory,https://github.com/advisories/GHSA-vx32-xf7g-9ghr,2026-11-16
-CVE-2026-91113,medium,silverstripe/framework,CVE-2026-91113: Silverstripe Framework: User-controlled ClassName allows unauthorized record type change,https://github.com/advisories/GHSA-4qv2-g5vp-wjjw,2026-11-16
-CVE-2026-91112,medium,silverstripe/framework,CVE-2026-91112: Silverstripe Framework: CMS_ACCESS_SecurityAdmin privilege escalation,https://github.com/advisories/GHSA-rg72-5958-c65m,2026-11-16
-CVE-2026-88989,medium,silverstripe/framework,CVE-2026-88989: Silverstripe Framework: Auth bypass GridFieldDetailForm,https://github.com/advisories/GHSA-3qh3-54qg-gpq3,2026-11-16
-CVE-2026-88988,medium,silverstripe/framework,CVE-2026-88988: Silverstripe Framework: XSS via SVG data URI,https://github.com/advisories/GHSA-xwg4-8hqh-79jq,2026-11-16
-CVE-2026-88987,medium,silverstripe/framework,CVE-2026-88987: Silverstripe Framework: XSS via XHTML data URI,https://github.com/advisories/GHSA-qqrg-8jpm-8mph,2026-11-16
-CVE-2026-129239,medium,directus,CVE-2026-129239: Directus: Share update allows reassigning user_created and role,https://github.com/advisories/GHSA-7h45-q5jx-7r87,2026-11-16
-CVE-2026-129301,medium,mail-parser,CVE-2026-129301: mail-parser: One hostile attachment aborts `write_attachments()` and silently drops the rest of the batch,https://github.com/advisories/GHSA-8cgq-x343-p74c,2026-11-16
-CVE-2026-129300,medium,mail-parser,CVE-2026-129300: mail-parser: Uncaught `OverflowError` / `OSError` on an out-of-range `Received` date,https://github.com/advisories/GHSA-xhrq-2mqv-q8wx,2026-11-16
