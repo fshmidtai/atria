@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T05:23:17+00:00",
+  "generated_at": "2026-11-19T09:23:54+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -26,12 +26,12 @@
       "krebs": 10
     },
     "by_topic": {
-      "security": 112,
-      "ai": 70,
-      "dev": 49,
-      "hardware": 19,
+      "security": 113,
+      "ai": 71,
+      "dev": 48,
+      "hardware": 18,
       "crypto": 11,
-      "biz": 8,
+      "biz": 7,
       "science": 6
     },
     "top_domains": [
@@ -1398,17 +1398,32 @@
       "title": "arnold117/iOS-NOIR",
       "url": "https://github.com/arnold117/iOS-NOIR",
       "ts": 1793934227.0,
-      "points": 324,
+      "points": 325,
       "comments": 61,
       "author": "arnold117",
       "summary": "No-jailbreak iOS privacy, entitlement, sandbox & telemetry forensic auditor (inspired by Verlintas/NOIR)",
       "recipe": "github_sec",
-      "buzz": 507,
+      "buzz": 508,
       "topics": [
         "ai",
         "security"
       ],
       "date": "2026-11-06"
+    },
+    {
+      "uid": "gh:Aabyss-Team/Threat-Broadcast-Plus",
+      "source": "github",
+      "title": "Aabyss-Team/Threat-Broadcast-Plus",
+      "url": "https://github.com/Aabyss-Team/Threat-Broadcast-Plus",
+      "ts": 1794800456.0,
+      "points": 104,
+      "comments": 23,
+      "author": "Aabyss-Team",
+      "summary": "网络安全威胁情报播报-Plus升级版",
+      "recipe": "github_sec",
+      "buzz": 183,
+      "topics": [],
+      "date": "2026-11-16"
     },
     {
       "uid": "gh:nestho/impacket-rs",
@@ -1417,30 +1432,30 @@
       "url": "https://github.com/nestho/impacket-rs",
       "ts": 1794373116.0,
       "points": 100,
-      "comments": 14,
+      "comments": 15,
       "author": "nestho",
       "summary": "High-performance, memory-safe pure-Rust redesign of Impacket protocols and Active Directory tools for Linux, macOS, and Windows.",
       "recipe": "github_sec",
-      "buzz": 142,
+      "buzz": 145,
       "topics": [
         "dev"
       ],
       "date": "2026-11-11"
     },
     {
-      "uid": "gh:Aabyss-Team/Threat-Broadcast-Plus",
+      "uid": "gh:wildorigins/wildos",
       "source": "github",
-      "title": "Aabyss-Team/Threat-Broadcast-Plus",
-      "url": "https://github.com/Aabyss-Team/Threat-Broadcast-Plus",
-      "ts": 1794800456.0,
-      "points": 80,
-      "comments": 15,
-      "author": "Aabyss-Team",
-      "summary": "网络安全威胁情报播报-Plus升级版",
+      "title": "wildorigins/wildos",
+      "url": "https://github.com/wildorigins/wildos",
+      "ts": 1794169078.0,
+      "points": 105,
+      "comments": 6,
+      "author": "wildorigins",
+      "summary": "A hardened Linux desktop, rebuilt from scratch, with your Windows apps built in. Free and open source.",
       "recipe": "github_sec",
-      "buzz": 135,
+      "buzz": 123,
       "topics": [],
-      "date": "2026-11-16"
+      "date": "2026-11-08"
     },
     {
       "uid": "gh:zhidun2027/zhidun",
@@ -1458,21 +1473,6 @@
         "security"
       ],
       "date": "2026-11-12"
-    },
-    {
-      "uid": "gh:wildorigins/wildos",
-      "source": "github",
-      "title": "wildorigins/wildos",
-      "url": "https://github.com/wildorigins/wildos",
-      "ts": 1794169078.0,
-      "points": 102,
-      "comments": 5,
-      "author": "wildorigins",
-      "summary": "A hardened Linux desktop, rebuilt from scratch, with your Windows apps built in. Free and open source.",
-      "recipe": "github_sec",
-      "buzz": 117,
-      "topics": [],
-      "date": "2026-11-08"
     },
     {
       "uid": "gh:raca2024/ashampoo-undelete-recovery",
@@ -1524,6 +1524,44 @@
       "topics": [
         "ai",
         "dev"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "rss:1226c4f144b6e5",
+      "source": "rss",
+      "title": "Ruby Releases Fixes for 7 Regex and String Flaws, Warns 5 Have Proof-of-Concept RCE",
+      "url": "https://thehackernews.com/2026/11/ruby-releases-fixes-for-7-regex-and.html",
+      "ts": 1795077731.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Ruby contains seven memory-safety flaws in its regular expression engine and its string case-conversion code. For five of them, its maintainers say, proof-of-concept exploits, or PoCs, have shown that crafted input can run code on the machine. \"We are aware of PoCs that prove some of them can be used to trigger remote code execution,\" the maintainers said. The project released fixed versions",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "rss:1fbf5b9ef3a877",
+      "source": "rss",
+      "title": "Researcher Demonstrates Database RCE Exploits Affecting PostgreSQL, MySQL and Oracle",
+      "url": "https://thehackernews.com/2026/11/researcher-demonstrates-database-rce.html",
+      "ts": 1795076040.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Low-privilege database accounts that cannot read a single application table can still be used to run code on the database server itself, a researcher has shown, by reaching memory-corruption bugs in the engine code behind ordinary SQL. The exploits, published yesterday, are the researcher's proofs of concept against PostgreSQL, MySQL and ClickHouse, plus a separate Oracle chain that needs no",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "security",
+        "hardware"
       ],
       "date": "2026-11-19"
     },
@@ -1692,81 +1730,6 @@
       "date": "2026-11-18"
     },
     {
-      "uid": "rss:ebd59dd6f2271f",
-      "source": "rss",
-      "title": "Hackers Exploiting Critical Puppet RCE Flaw Affecting Enterprise Management Servers",
-      "url": "https://thehackernews.com/2026/11/hackers-exploiting-critical-puppet-rce.html",
-      "ts": 1794990271.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added a critical security flaw impacting Perforce Puppet, an enterprise infrastructure-as-code (IaC) and configuration management platform, to its Known Exploited Vulnerabilities (KEV) catalog, citing reports of active exploitation. The vulnerability, tracked as CVE-[phone] (CVSS score: 9.4), is a case of",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-18"
-    },
-    {
-      "uid": "rss:dd81c2f42ccc53",
-      "source": "rss",
-      "title": "CISA Urges Immediate Patching of Java4Shell Flaw That Could Allow Remote Code Execution",
-      "url": "https://thehackernews.com/2026/11/cisa-urges-immediate-patching-of.html",
-      "ts": 1794990263.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has urged organizations to immediately patch a newly disclosed critical security flaw impacting Oracle Java. The flaw, tracked as CVE-[phone] (CVSS score: 8.1), refers to a case of out-of-bounds write that can lead to denial-of-service (DoS) or remote code execution under certain conditions. \"This critical memory-corruption",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-18"
-    },
-    {
-      "uid": "rss:eb400c4d4b568d",
-      "source": "rss",
-      "title": "Attackers Compromise Microsoft's Agent Framework PyPI Package to Steal Cloud Credentials",
-      "url": "https://thehackernews.com/2026/11/attackers-compromise-microsofts-agent.html",
-      "ts": 1794984326.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Threat actors have compromised Microsoft's agent-framework package to push a credential stealer, according to reports from Aikido, Chainguard, Endor Labs, OX Security, SafeDep, Socket, StepSecurity, and Google-owned Wiz. The malicious versions, 1.26.1 and 1.26.2, were published 33 minutes apart on November 17, 2026, and are designed to run a credential stealer on every Python start. As of",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-18"
-    },
-    {
-      "uid": "rss:a64d85f43b086d",
-      "source": "rss",
-      "title": "Russian COLD RELIC Hackers Use Stolen Google Workspace Data to Breach Second U.S. Organization",
-      "url": "https://thehackernews.com/2026/11/russian-cold-relic-hackers-use-stolen.html",
-      "ts": 1794981484.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "The Russia-linked cyber espionage group known as Cold Relic (formerly COLDRIVER and UNC4057) has been observed weaponizing a single cloud compromise into a launchpad for a series of linked intrusions resulting in third-party compromise. Google's Mandiant and Threat Intelligence Group (GTIG) said it investigated a 2026 compromise at a U.S.-based organization in which the adversary leveraged",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "science",
-        "biz",
-        "security"
-      ],
-      "date": "2026-11-18"
-    },
-    {
       "uid": "gh:BountyForge-xyz/pwn-skill",
       "source": "github",
       "title": "BountyForge-xyz/pwn-skill",
@@ -1790,12 +1753,12 @@
       "title": "rammahmagdy/Latch",
       "url": "https://github.com/rammahmagdy/Latch",
       "ts": 1794964122.0,
-      "points": 30,
+      "points": 32,
       "comments": 3,
       "author": "rammahmagdy",
       "summary": "Lock any app or folder behind Touch ID, Windows Hello or a password. Mac and Windows. Free for personal use.",
       "recipe": "github_sec",
-      "buzz": 69,
+      "buzz": 71,
       "topics": [],
       "date": "2026-11-18"
     },
@@ -1888,6 +1851,81 @@
         "security"
       ],
       "date": "2026-11-16"
+    },
+    {
+      "uid": "rss:ebd59dd6f2271f",
+      "source": "rss",
+      "title": "Hackers Exploiting Critical Puppet RCE Flaw Affecting Enterprise Management Servers",
+      "url": "https://thehackernews.com/2026/11/hackers-exploiting-critical-puppet-rce.html",
+      "ts": 1794990271.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added a critical security flaw impacting Perforce Puppet, an enterprise infrastructure-as-code (IaC) and configuration management platform, to its Known Exploited Vulnerabilities (KEV) catalog, citing reports of active exploitation. The vulnerability, tracked as CVE-[phone] (CVSS score: 9.4), is a case of",
+      "recipe": "hackersnews",
+      "buzz": 30,
+      "topics": [
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-18"
+    },
+    {
+      "uid": "rss:dd81c2f42ccc53",
+      "source": "rss",
+      "title": "CISA Urges Immediate Patching of Java4Shell Flaw That Could Allow Remote Code Execution",
+      "url": "https://thehackernews.com/2026/11/cisa-urges-immediate-patching-of.html",
+      "ts": 1794990263.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has urged organizations to immediately patch a newly disclosed critical security flaw impacting Oracle Java. The flaw, tracked as CVE-[phone] (CVSS score: 8.1), refers to a case of out-of-bounds write that can lead to denial-of-service (DoS) or remote code execution under certain conditions. \"This critical memory-corruption",
+      "recipe": "hackersnews",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-18"
+    },
+    {
+      "uid": "rss:eb400c4d4b568d",
+      "source": "rss",
+      "title": "Attackers Compromise Microsoft's Agent Framework PyPI Package to Steal Cloud Credentials",
+      "url": "https://thehackernews.com/2026/11/attackers-compromise-microsofts-agent.html",
+      "ts": 1794984326.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Threat actors have compromised Microsoft's agent-framework package to push a credential stealer, according to reports from Aikido, Chainguard, Endor Labs, OX Security, SafeDep, Socket, StepSecurity, and Google-owned Wiz. The malicious versions, 1.26.1 and 1.26.2, were published 33 minutes apart on November 17, 2026, and are designed to run a credential stealer on every Python start. As of",
+      "recipe": "hackersnews",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-18"
+    },
+    {
+      "uid": "rss:a64d85f43b086d",
+      "source": "rss",
+      "title": "Russian COLD RELIC Hackers Use Stolen Google Workspace Data to Breach Second U.S. Organization",
+      "url": "https://thehackernews.com/2026/11/russian-cold-relic-hackers-use-stolen.html",
+      "ts": 1794981484.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "The Russia-linked cyber espionage group known as Cold Relic (formerly COLDRIVER and UNC4057) has been observed weaponizing a single cloud compromise into a launchpad for a series of linked intrusions resulting in third-party compromise. Google's Mandiant and Threat Intelligence Group (GTIG) said it investigated a 2026 compromise at a U.S.-based organization in which the adversary leveraged",
+      "recipe": "hackersnews",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "science",
+        "biz",
+        "security"
+      ],
+      "date": "2026-11-18"
     },
     {
       "uid": "rss:2041eca737d343",
@@ -2165,45 +2203,6 @@
       "topics": [
         "dev",
         "crypto",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-16"
-    },
-    {
-      "uid": "rss:67bb3d5c3273f9",
-      "source": "rss",
-      "title": "Amazon Uncovers AI Agent Campaign Targeting LiteLLM, Dify, and Other Apps for API Keys",
-      "url": "https://thehackernews.com/2026/11/amazon-uncovers-ai-agent-campaign.html",
-      "ts": 1794814461.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Attackers' AI agents have been hunting for weak spots in internet-exposed AI apps such as LiteLLM, One API, and Dify to steal the AI provider keys stored inside, according to the agents' own records. The records, which Amazon's threat intelligence team captured with decoy servers, describe stolen keys being used to run the AI models that powered the search for more keys. The team said this",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "dev",
-        "hardware"
-      ],
-      "date": "2026-11-16"
-    },
-    {
-      "uid": "rss:fdb8ff73358b89",
-      "source": "rss",
-      "title": "BO Team Exploits Log4Shell in VMware vCenter, Compromises Russian Firm's Code-Signing Server",
-      "url": "https://thehackernews.com/2026/11/bo-team-exploits-log4shell-in-vmware.html",
-      "ts": 1794812014.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "An investigation into suspicious activity within a Russian software developer's network has uncovered a months-long compromise of its development infrastructure and a software code-signing server. The activity, documented by Kaspersky's ICS CERT team after it was contacted by the affected developer in June 2025, has been attributed to a threat actor named BO Team (aka Black Owl, Hoody Hyena,",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "dev",
-        "biz",
         "security",
         "hardware"
       ],
