@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T17:25:20+00:00",
+  "generated_at": "2026-11-19T21:09:53+00:00",
   "sources_used": [
     "hn_search",
     "github_search",
@@ -23,10 +23,10 @@
     },
     "by_topic": {
       "ai": 78,
-      "dev": 41,
+      "dev": 42,
       "science": 15,
       "biz": 8,
-      "security": 5,
+      "security": 6,
       "hardware": 4
     },
     "top_domains": [
@@ -342,6 +342,24 @@
       "date": "2021-02-26"
     },
     {
+      "uid": "gh:agentes-chat/agentes-chat",
+      "source": "github",
+      "title": "agentes-chat/agentes-chat",
+      "url": "https://github.com/agentes-chat/agentes-chat",
+      "ts": 1794185428.0,
+      "points": 1751,
+      "comments": 325,
+      "author": "agentes-chat",
+      "summary": "Open-source, self-hosted Slack alternative where your team and AI agents work together in channels and DMs. Agents run on Claude, ChatGPT/Codex, Gemini or Grok, with MCP tools, their own computer and browser, routines, memory and approvals. Web, desktop and phone apps. Docker Compose + Postgres. AGPL-3.0.",
+      "recipe": "github_llm",
+      "buzz": 2726,
+      "topics": [
+        "ai",
+        "dev"
+      ],
+      "date": "2026-11-09"
+    },
+    {
       "uid": "hn:24696658",
       "source": "hn",
       "title": "Show HN: I made a site where you practice typing by retyping entire novels",
@@ -355,24 +373,6 @@
       "buzz": 2723,
       "topics": [],
       "date": "2020-10-06"
-    },
-    {
-      "uid": "gh:agentes-chat/agentes-chat",
-      "source": "github",
-      "title": "agentes-chat/agentes-chat",
-      "url": "https://github.com/agentes-chat/agentes-chat",
-      "ts": 1794185428.0,
-      "points": 1742,
-      "comments": 322,
-      "author": "agentes-chat",
-      "summary": "Open-source, self-hosted Slack alternative where your team and AI agents work together in channels and DMs. Agents run on Claude, ChatGPT/Codex, Gemini or Grok, with MCP tools, their own computer and browser, routines, memory and approvals. Web, desktop and phone apps. Docker Compose + Postgres. AGPL-3.0.",
-      "recipe": "github_llm",
-      "buzz": 2708,
-      "topics": [
-        "ai",
-        "dev"
-      ],
-      "date": "2026-11-09"
     },
     {
       "uid": "hn:21231208",
@@ -1093,6 +1093,25 @@
       "date": "2022-02-07"
     },
     {
+      "uid": "gh:sybil-solutions/inference-optimisation-skill",
+      "source": "github",
+      "title": "sybil-solutions/inference-optimisation-skill",
+      "url": "https://github.com/sybil-solutions/inference-optimisation-skill",
+      "ts": 1794854404.0,
+      "points": 1249,
+      "comments": 113,
+      "author": "sybil-solutions",
+      "summary": "Agent skill for hill-climbing local LLM serving speed (decode, speculative decoding, prefill, KV, startup, TTFT) on any hardware and quantization",
+      "recipe": "github_llm",
+      "buzz": 1598,
+      "topics": [
+        "ai",
+        "dev",
+        "biz"
+      ],
+      "date": "2026-11-16"
+    },
+    {
       "uid": "hn:12612246",
       "source": "hn",
       "title": "Show HN: Wave function collapse algorithm",
@@ -1106,25 +1125,6 @@
       "buzz": 1592,
       "topics": [],
       "date": "2016-09-30"
-    },
-    {
-      "uid": "gh:sybil-solutions/inference-optimisation-skill",
-      "source": "github",
-      "title": "sybil-solutions/inference-optimisation-skill",
-      "url": "https://github.com/sybil-solutions/inference-optimisation-skill",
-      "ts": 1794854404.0,
-      "points": 1223,
-      "comments": 111,
-      "author": "sybil-solutions",
-      "summary": "Agent skill for hill-climbing local LLM serving speed (decode, speculative decoding, prefill, KV, startup, TTFT) on any hardware and quantization",
-      "recipe": "github_llm",
-      "buzz": 1586,
-      "topics": [
-        "ai",
-        "dev",
-        "biz"
-      ],
-      "date": "2026-11-16"
     },
     {
       "uid": "hn:10204018",
@@ -1270,12 +1270,12 @@
       "title": "Dodaios/ste80-humanizer",
       "url": "https://github.com/Dodaios/ste80-humanizer",
       "ts": 1794244739.0,
-      "points": 964,
-      "comments": 67,
+      "points": 971,
+      "comments": 68,
       "author": "Dodaios",
       "summary": "STE80 Humanizer: agent skill that removes AI tells and rewrites text 80% of the way to ASD-STE100 (Simplified Technical English), the method Andrej Karpathy shared.",
       "recipe": "github_llm",
-      "buzz": 1165,
+      "buzz": 1175,
       "topics": [
         "ai"
       ],
@@ -1394,12 +1394,12 @@
       "title": "ysunyang4/Nexus",
       "url": "https://github.com/ysunyang4/Nexus",
       "ts": 1794577581.0,
-      "points": 430,
+      "points": 431,
       "comments": 76,
       "author": "ysunyang4",
       "summary": "Connect web AI assistants to local files, terminals, Git, and desktop tools through MCP, with user-controlled permissions.",
       "recipe": "github_llm",
-      "buzz": 668,
+      "buzz": 669,
       "topics": [
         "ai",
         "dev"
@@ -1467,6 +1467,23 @@
       "points": 472,
       "comments": 0,
       "author": "TypeTyrantScheme",
+      "summary": "Chain region scanner: find proxy configs that get you into Google AI Studio and Gemini (signed-in browser check, anti-DPI, Windows/macOS/Linux/Android)",
+      "recipe": "github_ai",
+      "buzz": 482,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-11-15"
+    },
+    {
+      "uid": "gh:WinnerSpecialist/Gemini-Config-Checker-",
+      "source": "github",
+      "title": "WinnerSpecialist/Gemini-Config-Checker-",
+      "url": "https://github.com/WinnerSpecialist/Gemini-Config-Checker-",
+      "ts": 1794761237.0,
+      "points": 472,
+      "comments": 0,
+      "author": "WinnerSpecialist",
       "summary": "Chain region scanner: find proxy configs that get you into Google AI Studio and Gemini (signed-in browser check, anti-DPI, Windows/macOS/Linux/Android)",
       "recipe": "github_ai",
       "buzz": 482,
@@ -1562,14 +1579,14 @@
       "date": "2026-11-15"
     },
     {
-      "uid": "gh:WinnerSpecialist/Gemini-Config-Checker-",
+      "uid": "gh:WireProvostPucker/Gemini-Config-Checker-",
       "source": "github",
-      "title": "WinnerSpecialist/Gemini-Config-Checker-",
-      "url": "https://github.com/WinnerSpecialist/Gemini-Config-Checker-",
-      "ts": 1794761237.0,
+      "title": "WireProvostPucker/Gemini-Config-Checker-",
+      "url": "https://github.com/WireProvostPucker/Gemini-Config-Checker-",
+      "ts": 1794761295.0,
       "points": 472,
       "comments": 0,
-      "author": "WinnerSpecialist",
+      "author": "WireProvostPucker",
       "summary": "Chain region scanner: find proxy configs that get you into Google AI Studio and Gemini (signed-in browser check, anti-DPI, Windows/macOS/Linux/Android)",
       "recipe": "github_ai",
       "buzz": 482,
@@ -1596,14 +1613,14 @@
       "date": "2026-11-15"
     },
     {
-      "uid": "gh:WireProvostPucker/Gemini-Config-Checker-",
+      "uid": "gh:WharfBoulderColander/Gemini-Config-Checker-",
       "source": "github",
-      "title": "WireProvostPucker/Gemini-Config-Checker-",
-      "url": "https://github.com/WireProvostPucker/Gemini-Config-Checker-",
-      "ts": 1794761295.0,
+      "title": "WharfBoulderColander/Gemini-Config-Checker-",
+      "url": "https://github.com/WharfBoulderColander/Gemini-Config-Checker-",
+      "ts": 1794761232.0,
       "points": 472,
       "comments": 0,
-      "author": "WireProvostPucker",
+      "author": "WharfBoulderColander",
       "summary": "Chain region scanner: find proxy configs that get you into Google AI Studio and Gemini (signed-in browser check, anti-DPI, Windows/macOS/Linux/Android)",
       "recipe": "github_ai",
       "buzz": 482,
@@ -1698,23 +1715,6 @@
       "date": "2026-11-15"
     },
     {
-      "uid": "gh:WharfBoulderColander/Gemini-Config-Checker-",
-      "source": "github",
-      "title": "WharfBoulderColander/Gemini-Config-Checker-",
-      "url": "https://github.com/WharfBoulderColander/Gemini-Config-Checker-",
-      "ts": 1794761232.0,
-      "points": 472,
-      "comments": 0,
-      "author": "WharfBoulderColander",
-      "summary": "Chain region scanner: find proxy configs that get you into Google AI Studio and Gemini (signed-in browser check, anti-DPI, Windows/macOS/Linux/Android)",
-      "recipe": "github_ai",
-      "buzz": 482,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-15"
-    },
-    {
       "uid": "gh:WyrmClimberManacle/Gemini-Config-Checker-",
       "source": "github",
       "title": "WyrmClimberManacle/Gemini-Config-Checker-",
@@ -1789,12 +1789,12 @@
       "title": "thesysdev/opendashboards",
       "url": "https://github.com/thesysdev/opendashboards",
       "ts": 1793990237.0,
-      "points": 307,
-      "comments": 41,
+      "points": 312,
+      "comments": 43,
       "author": "thesysdev",
       "summary": "Open Source Claude Dashboards",
       "recipe": "github_ai",
-      "buzz": 430,
+      "buzz": 441,
       "topics": [
         "dev"
       ],
@@ -1909,6 +1909,77 @@
       "date": "2026-11-13"
     },
     {
+      "uid": "rss:1761ecaf8c5d36",
+      "source": "rss",
+      "title": "The unfolding Jensen Huang scandal: a timeline",
+      "url": "https://techcrunch.com/2026/11/19/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/",
+      "ts": 1795119529.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Amanda Silberling",
+      "summary": "Jensen Huang has resigned from Nvidia following an affair, which could have ramifications for national security as the U.S. and China race to develop the most advanced AI infrastructure.",
+      "recipe": "tc_ai",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "rss:38cbde179199e5",
+      "source": "rss",
+      "title": "Anthropic’s IPO could deliver $156 billion to charity",
+      "url": "https://techcrunch.com/2026/11/19/anthropics-ipo-could-deliver-156-billion-to-charity/",
+      "ts": 1795115445.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Tim Fernholz",
+      "summary": "At a stock price of $95, the frontier lab's Public Benefit Foundation, its employee donations, and the company's match tot up to $156 billion.",
+      "recipe": "tc_ai",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "biz"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "rss:ffcfd7e32e09e7",
+      "source": "rss",
+      "title": "Google gives Gemini the ability to use your Mac for you",
+      "url": "https://techcrunch.com/2026/11/19/google-gives-gemini-the-ability-to-use-your-mac-for-you/",
+      "ts": 1795111751.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Sarah Perez",
+      "summary": "Google's latest update to Gemini brings an AI agent to the Mac that can organize files, fill out forms, and tackle multistep workflows.",
+      "recipe": "tc_ai",
+      "buzz": 80,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "rss:4e6c3fbd0dea1b",
+      "source": "rss",
+      "title": "Meta’s AI agent Muse is mixing up conversations and could be exposing private data, report says",
+      "url": "https://techcrunch.com/2026/11/19/metas-ai-agent-muse-is-mixing-up-conversations-and-exposing-private-data-report-says/",
+      "ts": 1795109920.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Aisha Malik",
+      "summary": "In some of these instances, employees said Muse surfaced messages about childcare requests they never made, career advice they never asked for, product orders they never placed, and bank account balances that didn't belong to them.",
+      "recipe": "tc_ai",
+      "buzz": 80,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-11-19"
+    },
+    {
       "uid": "rss:bd72c3200d90bc",
       "source": "rss",
       "title": "Former Alibaba exec’s Everful raises $48.5M to connect retailers with Chinese factories",
@@ -1928,7 +1999,7 @@
     {
       "uid": "rss:e73ee03b16d6d0",
       "source": "rss",
-      "title": "Anthropic hits NASDAQ exchanges at $111, 33% above IPO price",
+      "title": "Anthropic hits Nasdaq exchanges at $111, 33% above IPO price",
       "url": "https://techcrunch.com/2026/11/19/anthropic-hits-nasdaq-exchanges-at-110-27-above-ipo-price/",
       "ts": 1795107563.0,
       "points": 0,
@@ -1989,7 +2060,7 @@
       "points": 0,
       "comments": 0,
       "author": "Ivan Mehta",
-      "summary": "Superhuman is making Go its central agent and making it available in Docs and Mail",
+      "summary": "Superhuman is making Go its central agent and making it available in Docs and Mail.",
       "recipe": "tc_ai",
       "buzz": 80,
       "topics": [
@@ -2163,7 +2234,7 @@
       "author": "Amanda Silberling",
       "summary": "\"It doesn't feel like it's in like the top 10 weirdest things about my life,\" Altman said.",
       "recipe": "tc_ai",
-      "buzz": 80,
+      "buzz": 30,
       "topics": [
         "ai"
       ],
@@ -2180,79 +2251,10 @@
       "author": "Aisha Malik",
       "summary": "Lens creators can describe the Lens they want in plain language, and their AI assistant handles the process from start to finish, Snapchat says.",
       "recipe": "tc_ai",
-      "buzz": 80,
+      "buzz": 30,
       "topics": [
         "ai",
         "dev"
-      ],
-      "date": "2026-11-18"
-    },
-    {
-      "uid": "rss:aa624a0de54a33",
-      "source": "rss",
-      "title": "Google’s AI feature in Search gets its own incognito mode",
-      "url": "https://techcrunch.com/2026/11/18/googles-ai-feature-in-search-gets-its-own-incognito-mode/",
-      "ts": 1795025045.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Sarah Perez",
-      "summary": "Google's new temporary threads let users have conversations in AI Mode without adding them to their search history or influencing future recommendations.",
-      "recipe": "tc_ai",
-      "buzz": 80,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-18"
-    },
-    {
-      "uid": "rss:a402e5afc7430d",
-      "source": "rss",
-      "title": "More banks say customers using AI agents are on their own — even if they get hacked",
-      "url": "https://techcrunch.com/2026/11/18/more-banks-says-customers-using-ai-agents-are-on-their-own-even-if-they-get-hacked/",
-      "ts": 1795023130.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Tim Fernholz",
-      "summary": "Citi is the latest major financial institution to put the breaks on personal finance AI agents.",
-      "recipe": "tc_ai",
-      "buzz": 80,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-18"
-    },
-    {
-      "uid": "rss:b26bbd76c789e3",
-      "source": "rss",
-      "title": "Sam Altman warns against a future where AI, not humans, calls the shots",
-      "url": "https://techcrunch.com/2026/11/18/sam-altman-warns-against-a-future-where-ai-not-humans-calls-the-shots/",
-      "ts": 1795021140.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Sarah Perez",
-      "summary": "Sam Altman and Greg Brockman pushed back against Silicon Valley's growing debate over an AI takeover, while acknowledging the challenges of keeping advanced models under human control.",
-      "recipe": "tc_ai",
-      "buzz": 30,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-18"
-    },
-    {
-      "uid": "rss:74375866510a89",
-      "source": "rss",
-      "title": "OpenAI CEO Sam Altman says it’s ‘hard to imagine the AI industry without Jensen’",
-      "url": "https://techcrunch.com/2026/11/18/openai-ceo-sam-altman-says-its-hard-to-imagine-the-ai-industry-without-jensen/",
-      "ts": 1795018449.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Amanda Silberling",
-      "summary": "Nvidia founder and former CEO Jensen Huang stepped down last week amid several scandals, including an affair with an alleged Chinese spy.",
-      "recipe": "tc_ai",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "biz"
       ],
       "date": "2026-11-18"
     }

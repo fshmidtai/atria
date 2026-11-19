@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T17:21:00+00:00",
+  "generated_at": "2026-11-19T21:05:48+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -26,13 +26,13 @@
       "krebs": 10
     },
     "by_topic": {
-      "security": 112,
-      "ai": 69,
-      "dev": 45,
+      "security": 113,
+      "ai": 67,
+      "dev": 43,
       "hardware": 20,
-      "crypto": 9,
-      "biz": 8,
-      "science": 6
+      "crypto": 8,
+      "science": 7,
+      "biz": 7
     },
     "top_domains": [
       [
@@ -174,6 +174,24 @@
       "date": "2025-03-24"
     },
     {
+      "uid": "cve:GHSA-833v-v58w-294h",
+      "source": "cve",
+      "title": "CVE-2026-76807: Todoist MCP Server: Browser DNS rebinding lets websites write and delete Todoist data through local MCP server",
+      "url": "https://github.com/advisories/GHSA-833v-v58w-294h",
+      "ts": 1795120715.0,
+      "points": 6000,
+      "comments": 0,
+      "author": "@doist/todoist-mcp",
+      "summary": "Severity: critical. The self-hosted `todoist-mcp-http` server accepts browser-origin MCP requests with attacker-controlled `Host` and `Origin` headers. A malicious website can use DNS rebinding to route its own origin to a victim's local `127.0.0.1` MCP server, then invoke Todoist MCP tools without a caller credential.",
+      "recipe": "gh_advisories",
+      "buzz": 6080,
+      "topics": [
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-19"
+    },
+    {
       "uid": "cve:GHSA-q8v2-3j4h-xg2p",
       "source": "cve",
       "title": "CVE-2026-63412: Jane: Instantiation RCE via query parameter name -> raw PHPDoc */ breakout (jane-php/open-api-3)",
@@ -229,65 +247,6 @@
         "security"
       ],
       "date": "2026-11-19"
-    },
-    {
-      "uid": "cve:GHSA-8fh7-7q4q-cq52",
-      "source": "cve",
-      "title": "CVE-2026-75521: Miren Runtime: Authentication bypass in RPC layer: unverified TLS client certificates grant cluster superuser access",
-      "url": "https://github.com/advisories/GHSA-8fh7-7q4q-cq52",
-      "ts": 1795049146.0,
-      "points": 6000,
-      "comments": 0,
-      "author": "miren.dev/runtime",
-      "summary": "Severity: critical. ### Summary\n\n  The Miren Runtime RPC server (QUIC/HTTP3, default port `:8443`) requested TLS\n  client certificates but never verified that a presented certificate chained to\n  the cluster Certificate Authority. Because a client-certificate identity is\n  granted a blanket RBAC bypass, any party able",
-      "recipe": "gh_advisories",
-      "buzz": 6080,
-      "topics": [
-        "ai",
-        "dev",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-19"
-    },
-    {
-      "uid": "cve:GHSA-pfwx-xjp4-qxcj",
-      "source": "cve",
-      "title": "CVE-2026-69157: Atomic Server: Unauthenticated `/setup` invite grants write access to the entire Drive",
-      "url": "https://github.com/advisories/GHSA-pfwx-xjp4-qxcj",
-      "ts": 1795034553.0,
-      "points": 6000,
-      "comments": 0,
-      "author": "atomic-server",
-      "summary": "Severity: critical. ## Summary\n\natomic-server provisions a well-known invite at `{server}/setup` with `write = true`, `target` = the Drive root, and `usagesLeft = 1`. Invite redemption **ignores the redeemer's identity** (`for_agent: _` in `server/src/plugins/invite.rs:22`), so possession of the URL is the only require",
-      "recipe": "gh_advisories",
-      "buzz": 6080,
-      "topics": [
-        "ai",
-        "dev",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-18"
-    },
-    {
-      "uid": "cve:GHSA-5hrj-7fc3-cmx9",
-      "source": "cve",
-      "title": "CVE-2026-130001: Mustache for Ruby: RCE using built-in method access",
-      "url": "https://github.com/advisories/GHSA-5hrj-7fc3-cmx9",
-      "ts": 1795019309.0,
-      "points": 6000,
-      "comments": 0,
-      "author": "mustache",
-      "summary": "Severity: critical. > [!NOTE]\n> The vulnerability was fully disclosed to the maintainer in private prior to security advisories were enabled for the project.\n> This advisory presents a limited information for initial release to provide a time window for installing updates. Full information with PoCs would be added late",
-      "recipe": "gh_advisories",
-      "buzz": 6030,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-18"
     },
     {
       "uid": "hn:48997548",
@@ -381,6 +340,227 @@
       "date": "2021-01-11"
     },
     {
+      "uid": "cve:GHSA-7589-6fvf-x4pw",
+      "source": "cve",
+      "title": "CVE-2026-121707: Effect: ReDoS in Schema.TemplateLiteral compiled regex",
+      "url": "https://github.com/advisories/GHSA-7589-6fvf-x4pw",
+      "ts": 1795121461.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "effect",
+      "summary": "Severity: high. ### Impact\n\n`Schema.TemplateLiteral` compiles each `Schema.String` span to the lazy wildcard `[\\s\\S]*?` and decodes input by running the resulting regular expression against it. When a template has two or more `Schema.String` spans, for example:\n\n```ts\nSchema.TemplateLiteral(Schema.String, \":\", Sche",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "cve:GHSA-5hj8-q7fv-qrj6",
+      "source": "cve",
+      "title": "CVE-2026-128073: gosaml2: Unauthenticated panic decrypting an EncryptedAssertion with a short or empty CipherValue",
+      "url": "https://github.com/advisories/GHSA-5hj8-q7fv-qrj6",
+      "ts": 1795121376.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "github.com/russellhaering/gosaml2",
+      "summary": "Severity: high. ### Summary\n\nAn attacker who can supply a crafted SAML Response for parsing can crash a `gosaml2` service provider by sending an `EncryptedAssertion` with AES-GCM encryption metadata and a `CipherValue` shorter than the GCM nonce size (12 bytes). The library panics with `slice bounds out of range` b",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "cve:GHSA-464h-4j8h-q5mf",
+      "source": "cve",
+      "title": "CVE-2026-102529: HtmlSanitizer: CSS Removal DoS",
+      "url": "https://github.com/advisories/GHSA-464h-4j8h-q5mf",
+      "ts": 1795121341.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "HtmlSanitizer",
+      "summary": "Severity: high. ### Impact\n\nAn unauthenticated request can occupy one synchronous application worker for seconds. Concurrent requests add CPU cost and can keep all workers busy, sustaining denial of service without user interaction.\n\n### Patches\n\nThe issue has been patched in versions  9.0.967 and 9.1.968-beta.\n\n##",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "ai",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "cve:GHSA-pxh3-4qqv-58mg",
+      "source": "cve",
+      "title": "CVE-2026-61713: Servo Sandbox bypass: declarative refresh can auto-navigate a sandboxed iframe",
+      "url": "https://github.com/advisories/GHSA-pxh3-4qqv-58mg",
+      "ts": 1795121122.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "servo",
+      "summary": "Severity: high. A sandboxed iframe can auto-navigate itself via declarative refresh even when automatic features should be blocked. This allows attacker-controlled embedded content to redirect itself without user action.\n\n### Summary\nServo allows a sandboxed iframe to auto-navigate itself via declarative refresh in",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "cve:GHSA-jmmc-wjpc-pg34",
+      "source": "cve",
+      "title": "CVE-2026-61689: XWiki Platform: HQL injection in search allows unauthenticated database extraction including password hashes",
+      "url": "https://github.com/advisories/GHSA-jmmc-wjpc-pg34",
+      "ts": 1795121072.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "org.xwiki.platform:xwiki-platform-rest-server",
+      "summary": "Severity: high. ### Impact\nThe query REST API allows executing HQL queries to filter the listed pages. While this properly checks access rights for the current user, the query can be used to combine when clauses and blind queries, to recover values, through FROM clause injection to join BaseObject and StringPropert",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "cve:GHSA-3h63-w8jq-rrf2",
+      "source": "cve",
+      "title": "CVE-2026-59975: SharpIppNext: Unbounded IPP Document Stream Buffering Leads to Denial of Service",
+      "url": "https://github.com/advisories/GHSA-3h63-w8jq-rrf2",
+      "ts": 1795120981.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "SharpIppNext",
+      "summary": "Severity: high. ### Summary\n\nSharpIppNext's `IppProtocol.ReadIppRequestAsync()` unconditionally copies the entire attacker-supplied IPP document payload into an unbounded `MemoryStream` with no size limit. Because this behavior is enabled by default (`ReadDocumentStream = true`) and the official server documentatio",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "cve:GHSA-mx6p-3fg7-v6pj",
+      "source": "cve",
+      "title": "CVE-2026-77283: obsidian-sync-mcp: Missing Host/Origin validation lets a public website drive a victim's Obsidian vault via DNS rebinding (no-auth mode)",
+      "url": "https://github.com/advisories/GHSA-mx6p-3fg7-v6pj",
+      "ts": 1795120878.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "obsidian-sync-mcp",
+      "summary": "Severity: high. When obsidian-sync-mcp runs without MCP_AUTH_TOKEN (the documented no-auth mode for local use), the HTTP MCP endpoint does not validate the Host or Origin header before dispatching MCP methods (CWE-350). The no-auth mode's \"local network only\" assumption therefore does not hold: a malicious web page",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "crypto",
+        "security"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "cve:GHSA-gpcc-36pq-8qxr",
+      "source": "cve",
+      "title": "CVE-2026-76090: Tapir: Construction/decode RCE via property name -> raw case-class field (tapir-openapi-codegen)",
+      "url": "https://github.com/advisories/GHSA-gpcc-36pq-8qxr",
+      "ts": 1795120767.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "com.softwaremill.sttp.tapir:tapir-openapi-codegen-core",
+      "summary": "Severity: high. The OpenAPI code generator (tapir-openapi-codegen-core) builds Scala source by string templating and emitted several names/values from the (untrusted) OpenAPI document without escaping or validation, allowing injection of arbitrary Scala that runs at generated-code compile time and/or endpoint-assem",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "dev",
+        "science",
+        "security"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "cve:GHSA-w42c-h7hr-f67p",
+      "source": "cve",
+      "title": "CVE-2026-62964: Gortex: Arbitrary file write / repo-confinement escape in `write_file` / `edit_file` / `move_inline` MCP tools → code execution",
+      "url": "https://github.com/advisories/GHSA-w42c-h7hr-f67p",
+      "ts": 1795120591.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "github.com/zzet/gortex",
+      "summary": "Severity: high. ### Summary\nGortex is an MCP server exposing `write_file`, `edit_file`, and `move_inline` tools. `resolveFilePath` **exempts absolute paths** from confinement, and the write handlers — unlike `read_file` / `get_symbol_source` — **never call `guardSymlinkWithinRepo`**. A single MCP `write_file` call",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "ai",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "cve:GHSA-4c2f-96cf-f5fc",
+      "source": "cve",
+      "title": "CVE-2026-75522: OpenID4VP: X.509 chain validation accepts a forged certificate that reuses a trusted anchor's Subject DN without verifying its signature",
+      "url": "https://github.com/advisories/GHSA-4c2f-96cf-f5fc",
+      "ts": 1795120557.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "@openeudi/openid4vp",
+      "summary": "Severity: high. ## Summary\n\n`ChainBuilder` (the private RFC 5280 validator behind `TrustEvaluator` and the public credential-parsing API) terminated chain building on **Subject Distinguished Name string equality** rather than on cryptographic closure to a trust anchor. A certificate whose Subject DN string matched",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "ai",
+        "dev",
+        "crypto",
+        "security"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "cve:GHSA-j282-pjg5-j643",
+      "source": "cve",
+      "title": "CVE-2026-76101: keystore-go: Keystore integrity and password verification bypass via stripped trailing digest in Decode()",
+      "url": "https://github.com/advisories/GHSA-j282-pjg5-j643",
+      "ts": 1795120535.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "github.com/pavel-v-chernykh/keystore-go",
+      "summary": "Severity: high. ### Summary\n`keystore.Decode()` fails to check the error returned when reading the trailing SHA-1 integrity digest of a JKS keystore. If an attacker removes the final 20 bytes from a `.jks` file, the digest read returns an empty slice and the byte-comparison loop never executes, so `Decode()` return",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "cve:GHSA-r7wg-f7r2-8wf7",
+      "source": "cve",
+      "title": "CVE-2026-76818: Axon: Download of Code Without Integrity Check in axon-mcp",
+      "url": "https://github.com/advisories/GHSA-r7wg-f7r2-8wf7",
+      "ts": 1795120493.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "axon-mcp",
+      "summary": "Severity: high. ### Summary\naxon rtk-install downloads a pre-built rtkx binary from GitHub releases and executes it via subprocess.run() on every text-compression call, without verifying its integrity — no checksum, signature, or attestation check anywhere in the download/install path. If the release pipeline or a",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-19"
+    },
+    {
       "uid": "cve:GHSA-8776-qf3h-26r3",
       "source": "cve",
       "title": "CVE-2026-71535: Mareforma: Unsigned Claims Can Be Promoted to REPLICATED via Missing Signature Enforcement in Convergence Path",
@@ -453,156 +633,6 @@
       "date": "2026-11-19"
     },
     {
-      "uid": "cve:GHSA-2m9m-6cr5-9x25",
-      "source": "cve",
-      "title": "CVE-2026-63129: mssql-mcp-core: SQL injection in mssql-mcp write tools via unparameterized table names and WHERE clauses",
-      "url": "https://github.com/advisories/GHSA-2m9m-6cr5-9x25",
-      "ts": 1795049198.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "@connorbritain/mssql-mcp-core",
-      "summary": "Severity: high. Several tools in `mssql-mcp-core` built T-SQL by string-interpolating caller-supplied identifiers and predicates directly into the statement passed to the node-mssql `Request.query()` batch API. Only data values were parameterized.\n\nAffected tools and inputs:\n- `update_data`, `delete_data`: `tableNa",
-      "recipe": "gh_advisories",
-      "buzz": 3580,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-19"
-    },
-    {
-      "uid": "cve:GHSA-jw3m-8q7m-f35r",
-      "source": "cve",
-      "title": "CVE-2026-68903: LLMKube: Arbitrary Host File Read via Model.spec.source hostPath Injection",
-      "url": "https://github.com/advisories/GHSA-jw3m-8q7m-f35r",
-      "ts": 1795036682.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "github.com/defilantech/llmkube",
-      "summary": "Severity: high. ### Summary\n\nLLMKube's `ModelReconciler` accepts arbitrary absolute paths and `file://` URIs in the `Model.spec.source` field and propagates them to two distinct sinks without path allowlisting: (1) `os.Open()` inside the controller pod itself (`copyLocalModel`), and (2) a Kubernetes `HostPathVolume",
-      "recipe": "gh_advisories",
-      "buzz": 3580,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-18"
-    },
-    {
-      "uid": "cve:GHSA-88q3-gch3-5396",
-      "source": "cve",
-      "title": "CVE-2026-73864: install-artifact-from-github loads downloaded native artifacts without integrity verification",
-      "url": "https://github.com/advisories/GHSA-88q3-gch3-5396",
-      "ts": 1795036657.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "install-artifact-from-github",
-      "summary": "Severity: high. ## Description\n\n`bin/install-from-cache.js` downloads a prebuilt native addon (`*.node`) over the network and writes it directly to the artifact path **with no cryptographic integrity verification of any kind** — no checksum manifest, no signature, no SRI. A scan of the whole package for `createHash",
-      "recipe": "gh_advisories",
-      "buzz": 3580,
-      "topics": [
-        "dev",
-        "crypto",
-        "security"
-      ],
-      "date": "2026-11-18"
-    },
-    {
-      "uid": "cve:GHSA-wq26-3j2m-4hvv",
-      "source": "cve",
-      "title": "CVE-2026-71861: Chainguard SDK: AWS SigV4 token replay in auth/aws.VerifyToken — Chainguard-Audience/Chainguard-Identity binding headers not required in SignedHeaders",
-      "url": "https://github.com/advisories/GHSA-wq26-3j2m-4hvv",
-      "ts": 1795036604.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "chainguard.dev/sdk",
-      "summary": "Severity: high. ### Summary\n\nThe `auth/aws` package of the `chainguard.dev/sdk` Go library provides Chainguard's AWS-backed identity federation (an AWS workload proves its identity to Chainguard by signing an AWS STS `GetCallerIdentity` request). Its verifier, `VerifyToken`, reads the `Chainguard-Audience` and `Cha",
-      "recipe": "gh_advisories",
-      "buzz": 3580,
-      "topics": [
-        "ai",
-        "dev",
-        "crypto",
-        "security"
-      ],
-      "date": "2026-11-18"
-    },
-    {
-      "uid": "cve:GHSA-82w8-65qw-gch6",
-      "source": "cve",
-      "title": "CVE-2026-71481: ALTCHA PHP: verifySolution bypasses HMAC signature check when challenge signature is absent",
-      "url": "https://github.com/advisories/GHSA-82w8-65qw-gch6",
-      "ts": 1795034898.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "altcha-org/altcha",
-      "summary": "Severity: high. In altcha-org/altcha v2, the verifySolution method skips HMAC signature verification when the signature field is absent from the challenge payload, even when hmacSignatureSecret is configured.\n\nAn attacker who strips the signature key from the challenge JSON passes the condition as false, bypassing",
-      "recipe": "gh_advisories",
-      "buzz": 3580,
-      "topics": [
-        "security"
-      ],
-      "date": "2026-11-18"
-    },
-    {
-      "uid": "cve:GHSA-ff87-73jp-f3v4",
-      "source": "cve",
-      "title": "CVE-2026-69158: Atomic Server: Unauthenticated full-response SSRF in Atomic-Server /bookmark endpoint",
-      "url": "https://github.com/advisories/GHSA-ff87-73jp-f3v4",
-      "ts": 1795034570.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "atomic-server",
-      "summary": "Severity: high. ## Summary\n\nAtomic-Server exposes a `GET /bookmark` endpoint that fetches an attacker-supplied URL server-side, parses the response, and reflects the fetched content back to the caller. The endpoint requires no authentication and performs no authorization of its own, and the underlying fetch helper",
-      "recipe": "gh_advisories",
-      "buzz": 3580,
-      "topics": [
-        "dev",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-18"
-    },
-    {
-      "uid": "cve:GHSA-8vc4-8hjq-988p",
-      "source": "cve",
-      "title": "CVE-2026-69156: Atomic Server: Arbitrary file read via user-controlled `internalId` in the `/download` handler (leaks root agent private key)",
-      "url": "https://github.com/advisories/GHSA-8vc4-8hjq-988p",
-      "ts": 1795034535.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "atomic-server",
-      "summary": "Severity: high. ## Summary\n\nThe Commit apply path enforces **no allowlist of writable properties**, so any authenticated Agent can set the `internalId` string (datatype `string`, no character validation) on a resource it owns. The `/download` handler then uses that value **verbatim** as a filesystem path — `file_pa",
-      "recipe": "gh_advisories",
-      "buzz": 3580,
-      "topics": [
-        "ai",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-18"
-    },
-    {
-      "uid": "cve:GHSA-x277-3wcg-g9r2",
-      "source": "cve",
-      "title": "CVE-2026-69155: Atomic Server: Stored XSS via uploaded files served inline (same-origin) on `/download` → account takeover",
-      "url": "https://github.com/advisories/GHSA-x277-3wcg-g9r2",
-      "ts": 1795034506.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "atomic-server",
-      "summary": "Severity: high. ## Summary\n\nFiles uploaded via `POST /upload` are served back by `GET /download/{path}` using `actix_files::NamedFile`. For `text/html` and `image/svg+xml`, actix-files (0.6.6) sets `Content-Disposition: inline`, so the browser **renders** the file instead of downloading it. The `/download` route se",
-      "recipe": "gh_advisories",
-      "buzz": 3580,
-      "topics": [
-        "ai",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-18"
-    },
-    {
       "uid": "hn:50172041",
       "source": "hn",
       "title": "Security advisory: Critical remote code execution vulnerabilities, update now",
@@ -618,23 +648,6 @@
         "security"
       ],
       "date": "2026-10-20"
-    },
-    {
-      "uid": "cve:GHSA-xvcc-vqjv-phqh",
-      "source": "cve",
-      "title": "CVE-2026-63496: augment-virShell allows Command Injection in `grep()` via Unsanitized `searchPattern`",
-      "url": "https://github.com/advisories/GHSA-xvcc-vqjv-phqh",
-      "ts": 1795018552.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "@augment-vir/node",
-      "summary": "Severity: high. ## Shell Command Injection in `grep()` via Unsanitized `searchPattern`\n\n### Summary\n\nThe `grep()` function exported by `@augment-vir/node` inserts caller-controlled search patterns directly into a double-quoted shell command string without sanitization (`grep.ts:310`). When the constructed command i",
-      "recipe": "gh_advisories",
-      "buzz": 3530,
-      "topics": [
-        "security"
-      ],
-      "date": "2026-11-18"
     },
     {
       "uid": "hn:32148218",
@@ -930,6 +943,62 @@
       "date": "2020-09-30"
     },
     {
+      "uid": "cve:GHSA-h5m9-42h9-vcq6",
+      "source": "cve",
+      "title": "CVE-2026-115472: Doorkeeper: When using public clients, any client can revoke any access token",
+      "url": "https://github.com/advisories/GHSA-h5m9-42h9-vcq6",
+      "ts": 1795121245.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "doorkeeper",
+      "summary": "Severity: medium. ### Summary\n\nAn improper authorization issue affects Doorkeeper's OAuth token revocation flow when public (non-confidential) clients are in use. This vulnerability can lead to tokens being revoked without correct authorization. The issue is fixed in Doorkeeper 5.9.1.",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "dev",
+        "crypto",
+        "security"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "cve:GHSA-w3w6-9m25-g88p",
+      "source": "cve",
+      "title": "CVE-2026-109549: OmniFaces: SSE push channels are not bound to their owning HTTP session",
+      "url": "https://github.com/advisories/GHSA-w3w6-9m25-g88p",
+      "ts": 1795121222.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "org.omnifaces:omnifaces",
+      "summary": "Severity: medium. ## Summary\n\n[GHSA-fp43-vj7g-pg92](https://github.com/omnifaces/omnifaces/security/advisories/GHSA-fp43-vj7g-pg92) (fixed 5.4.2) bound session- and view-scoped **WebSocket** (`o:socket`) push channels to the HTTP session that registered them, so a leaked channel ID can no longer be connected to from",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "cve:GHSA-mqwx-84vv-mp26",
+      "source": "cve",
+      "title": "CVE-2026-63193: October: Media Library Crop Handler Bypasses Upload Extension Allowlist",
+      "url": "https://github.com/advisories/GHSA-mqwx-84vv-mp26",
+      "ts": 1795121196.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "october/october",
+      "summary": "Severity: medium. The Media Library upload handler validates the destination filename against an extension allowlist (`default_extensions`), rejecting types such as `php`, `phtml`, `html`, and `htm`. The image crop handler (`MediaManager::onCropImage` / `cropImage`) did not perform this check. The destination filenam",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-19"
+    },
+    {
       "uid": "cve:GHSA-vg83-hcp4-5qcc",
       "source": "cve",
       "title": "CVE-2026-75518: DOMShell: domshell_eval classified as read-tier can execute side-effecting JavaScript without --allow-write",
@@ -1038,97 +1107,6 @@
         "hardware"
       ],
       "date": "2026-11-19"
-    },
-    {
-      "uid": "cve:GHSA-jc42-994r-vvwp",
-      "source": "cve",
-      "title": "CVE-2026-73504: cassandra-jdbc-wrapper: Authentication Token Exposed in Logs",
-      "url": "https://github.com/advisories/GHSA-jc42-994r-vvwp",
-      "ts": 1795049428.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "com.ing.data:cassandra-jdbc-wrapper",
-      "summary": "Severity: medium. ### Summary\nThe fix for [AIKIDO-[phone]](https://intel.aikido.dev/cve/AIKIDO-[phone]) (plaintext password logging) introduced two\nredaction helpers — `DriverUtil.toStringWithoutSensitiveValues()` and\n`DriverUtil.redactSensitiveValuesInJdbcUrl()` — but both helpers only redact\nthe `\"password\"`",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "dev",
-        "crypto",
-        "security"
-      ],
-      "date": "2026-11-19"
-    },
-    {
-      "uid": "cve:GHSA-vc6p-m6vx-6cwq",
-      "source": "cve",
-      "title": "CVE-2026-75506: OliveTin: Second-Order OS Command Injection via shellAfterCompleted",
-      "url": "https://github.com/advisories/GHSA-vc6p-m6vx-6cwq",
-      "ts": 1795038909.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "github.com/OliveTin/OliveTin",
-      "summary": "Severity: medium. ## Summary\n\nOliveTin's `shellAfterCompleted` post-execution hook injects unsanitized variables — including arbitrary command output (`output`), the authenticated username (`ot_username`), and the exit code (`exitCode`) — directly into a shell command template processed by `sh -c`. Unlike the main ac",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-18"
-    },
-    {
-      "uid": "cve:GHSA-vf85-8ff2-3r9w",
-      "source": "cve",
-      "title": "CVE-2026-69131: django-filer: Missing per-object authorization on `discard` and `edit_redirect` version transitions",
-      "url": "https://github.com/advisories/GHSA-vf85-8ff2-3r9w",
-      "ts": 1795036842.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "django-filer",
-      "summary": "Severity: medium. ## Summary\n\nWhen django-filer's optional per-folder permission system is enabled (`FILER_ENABLE_PERMISSIONS=True`), the \"Delete files and/or folders\" admin action does **not** enforce per-folder edit permissions the way every other mutating action does. A staff user who is scoped **read-only** on a",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "security"
-      ],
-      "date": "2026-11-18"
-    },
-    {
-      "uid": "cve:GHSA-5g9x-qwh5-33x4",
-      "source": "cve",
-      "title": "CVE-2026-69138: djangocms-versioning: Authorization Bypass Through User-Controlled Key and Missing Authorization",
-      "url": "https://github.com/advisories/GHSA-5g9x-qwh5-33x4",
-      "ts": 1795036744.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "djangocms-versioning",
-      "summary": "Severity: medium. ## Summary\n\nThe `discard` and `edit_redirect` version transitions did not enforce a per-object change-permission check, while the sibling transitions (`archive`, `publish`, `unpublish`, `revert`) all did. As a result a low-privileged staff user could **discard (delete) any draft version — and thereb",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "security"
-      ],
-      "date": "2026-11-18"
-    },
-    {
-      "uid": "cve:GHSA-7jvc-9xq8-frff",
-      "source": "cve",
-      "title": "CVE-2026-71425: Outstatic: Authenticated GitHub REST proxy can send OAuth token to non-GitHub origins",
-      "url": "https://github.com/advisories/GHSA-7jvc-9xq8-frff",
-      "ts": 1795034623.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "outstatic",
-      "summary": "Severity: medium. ### Impact\nOutstatic’s authenticated GitHub REST proxy accepted an unvalidated endpoint parameter and constructed an upstream GitHub API URL by string concatenation while attaching the authenticated user’s GitHub OAuth token.\n\nA user with access to the Outstatic dashboard could craft a request that",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "dev",
-        "crypto",
-        "security"
-      ],
-      "date": "2026-11-18"
     },
     {
       "uid": "hn:48166459",
@@ -1389,6 +1367,24 @@
       "date": "2019-07-18"
     },
     {
+      "uid": "cve:GHSA-56v3-jrq2-4q9m",
+      "source": "cve",
+      "title": "CVE-2026-77597: iSponsorBlockTV: SSRF via Malicious SSDP Response Spoofing in Local Device Discovery",
+      "url": "https://github.com/advisories/GHSA-56v3-jrq2-4q9m",
+      "ts": 1795121412.0,
+      "points": 700,
+      "comments": 0,
+      "author": "iSponsorBlockTV",
+      "summary": "Severity: low. ### Summary\niSponsorBlockTV discovers local smart TV devices via SSDP (Simple Service Discovery Protocol). The `LOCATION` URL from SSDP responses is used to fetch device capabilities without URL validation. A local network attacker can craft a malicious SSDP response with a `LOCATION` pointing to an",
+      "recipe": "gh_advisories",
+      "buzz": 780,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-19"
+    },
+    {
       "uid": "gh:arnold117/iOS-NOIR",
       "source": "github",
       "title": "arnold117/iOS-NOIR",
@@ -1444,12 +1440,12 @@
       "title": "wildorigins/wildos",
       "url": "https://github.com/wildorigins/wildos",
       "ts": 1794169078.0,
-      "points": 118,
+      "points": 121,
       "comments": 7,
       "author": "wildorigins",
       "summary": "A hardened Linux desktop, rebuilt from scratch, with your Windows apps built in. Free and open source.",
       "recipe": "github_sec",
-      "buzz": 139,
+      "buzz": 142,
       "topics": [],
       "date": "2026-11-08"
     },
@@ -1520,6 +1516,43 @@
       "topics": [
         "ai",
         "dev"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "rss:18c8f3fb68f9f2",
+      "source": "rss",
+      "title": "ThreatsDay: GPT-6.2 Jailbreak Flaws, BubbleLoader PNG Malware, $500M Ransom Demands + 17 More Stories",
+      "url": "https://thehackernews.com/2026/11/threatsday-gpt-62-jailbreak-flaws.html",
+      "ts": 1795114078.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "The easiest way to fool someone is to give them something they already expect. A job offer. A message about a service outage. A familiar app. Nothing looks strange at first. And that's the problem. This week's stories show how ordinary things are being used to steal data, spread malware, and get people to hand over access. There's another shift worth watching. AI is making some attacks easier",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "rss:299fae081fb406",
+      "source": "rss",
+      "title": "phpAfterShell Explained: How Hackers Could Turn a PHP Session Flaw Into Code Execution",
+      "url": "https://thehackernews.com/2026/11/phpaftershell-explained-how-hackers.html",
+      "ts": 1795107596.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "PHP's default file-based session storage can be made to return objects an attacker chose, by cutting off a session write at the right moment. When combined with a second weakness, such as a suitable gadget chain in the app, those objects can allow the attacker to run code on the server. Today's PHP releases fix the flaw, called phpAfterShell. The flaw is tracked as CVE-[phone] and rated",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "security",
+        "hardware"
       ],
       "date": "2026-11-19"
     },
@@ -1692,43 +1725,6 @@
       "date": "2026-11-19"
     },
     {
-      "uid": "rss:a678fbb9471f9e",
-      "source": "rss",
-      "title": "10-Year-Old NGINX HTTP/2 Flaw Lets Unauthenticated Attackers Execute Code on Servers",
-      "url": "https://thehackernews.com/2026/11/10-year-old-nginx-http2-flaw-lets.html",
-      "ts": 1795026677.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "A flaw in NGINX's HTTP/2 support can allow an attacker to run code on servers with HTTP/2 enabled, without needing to log in. The decade-old flaw, CVE-[phone], dubbed \"nginx2root,\" has been present in NGINX's open-source code since version 1.9.5, released on September 22, 2015. Fixed versions 1.31.9 and 1.30.7 came out today. F5, the company behind NGINX, says attackers can run code where",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-18"
-    },
-    {
-      "uid": "rss:e51e69194c3dc7",
-      "source": "rss",
-      "title": "F5 Warns 6 Critical BIG-IP Flaws Can Crash Traffic in Specific Setups, May Allow RCE",
-      "url": "https://thehackernews.com/2026/11/f5-warns-6-critical-big-ip-flaws-can.html",
-      "ts": 1795025739.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Six critical vulnerabilities in F5 BIG-IP allow an attacker to crash the Traffic Management Microkernel (TMM) without logging in, disrupting traffic until the TMM restarts. Each flaw needs a specific setup on a virtual server: an iRule that uses a particular command, or an APM policy that includes two particular kinds of agent. F5, which makes BIG-IP, disclosed the flaws today and says they",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-18"
-    },
-    {
       "uid": "gh:BountyForge-xyz/pwn-skill",
       "source": "github",
       "title": "BountyForge-xyz/pwn-skill",
@@ -1772,7 +1768,7 @@
       "author": "NPCmillionaire",
       "summary": "See what your files leak (GPS, serials, authors, failed redactions, deleted text, watermarks), then scrub them.",
       "recipe": "github_sec",
-      "buzz": 60,
+      "buzz": 50,
       "topics": [
         "ai"
       ],
@@ -1832,6 +1828,43 @@
         "science"
       ],
       "date": "2026-11-17"
+    },
+    {
+      "uid": "rss:a678fbb9471f9e",
+      "source": "rss",
+      "title": "10-Year-Old NGINX HTTP/2 Flaw Lets Unauthenticated Attackers Execute Code on Servers",
+      "url": "https://thehackernews.com/2026/11/10-year-old-nginx-http2-flaw-lets.html",
+      "ts": 1795026677.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "A flaw in NGINX's HTTP/2 support can allow an attacker to run code on servers with HTTP/2 enabled, without needing to log in. The decade-old flaw, CVE-[phone], dubbed \"nginx2root,\" has been present in NGINX's open-source code since version 1.9.5, released on September 22, 2015. Fixed versions 1.31.9 and 1.30.7 came out today. F5, the company behind NGINX, says attackers can run code where",
+      "recipe": "hackersnews",
+      "buzz": 30,
+      "topics": [
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-18"
+    },
+    {
+      "uid": "rss:e51e69194c3dc7",
+      "source": "rss",
+      "title": "F5 Warns 6 Critical BIG-IP Flaws Can Crash Traffic in Specific Setups, May Allow RCE",
+      "url": "https://thehackernews.com/2026/11/f5-warns-6-critical-big-ip-flaws-can.html",
+      "ts": 1795025739.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Six critical vulnerabilities in F5 BIG-IP allow an attacker to crash the Traffic Management Microkernel (TMM) without logging in, disrupting traffic until the TMM restarts. Each flaw needs a specific setup on a virtual server: an iRule that uses a particular command, or an APM policy that includes two particular kinds of agent. F5, which makes BIG-IP, disclosed the flaws today and says they",
+      "recipe": "hackersnews",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-18"
     },
     {
       "uid": "rss:80c8ce0e2c3e95",
@@ -2145,43 +2178,6 @@
         "ai",
         "dev",
         "security"
-      ],
-      "date": "2026-11-17"
-    },
-    {
-      "uid": "rss:ab3ce7e511f8c6",
-      "source": "rss",
-      "title": "Hijacked Optimizely Scripts Served Card Skimmer and iOS Exploit Kits to CNN, BBC and Zoom Visitors",
-      "url": "https://thehackernews.com/2026/11/hijacked-optimizely-scripts-served-card.html",
-      "ts": 1794899533.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "An attacker exploited a flaw in Optimizely Web Experimentation to plant malicious code in some of the scripts that customers' websites load from the service, Optimizely said early today. Visitors to sites run by at least 178 organizations, including CNN, the BBC and Zoom, received the code yesterday, according to Report URI, a firm that monitors the scripts websites run. The code was built to",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-17"
-    },
-    {
-      "uid": "rss:1478251080c724",
-      "source": "rss",
-      "title": "ConnectWise Warns ScreenConnect Attacks Continue as SCKit Targets Unpatched Systems",
-      "url": "https://thehackernews.com/2026/11/connectwise-warns-screenconnect-attacks.html",
-      "ts": 1794896967.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "ConnectWise on Monday said it completed its investigation into unauthorized access targeting partner ScreenConnect environments, and recommended customers to ensure that the technician client is running version 26.6.5 or later. The company said additional activity targeting on-premises environments continues to be reported where the identified third-party extensions remain enabled and",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "dev",
-        "biz"
       ],
       "date": "2026-11-17"
     },

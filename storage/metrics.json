@@ -1,6 +1,6 @@
 {
-  "generated_at": 1795109122.4217606,
-  "elapsed_s": 406.58,
+  "generated_at": 1795122594.9494305,
+  "elapsed_s": 324.19,
   "tick": {
     "ran": 10,
     "failed": 0,
@@ -9,7 +9,7 @@
   "tg": {
     "chats": 1,
     "updates": 0,
-    "sent": 10
+    "sent": 9
   },
   "agents": [
     {
@@ -18,7 +18,7 @@
       "role": "scout",
       "colony": "core",
       "status": "active",
-      "spawned": 1795108715.8555257,
+      "spawned": 1795122270.7825058,
       "note": ""
     },
     {
@@ -27,7 +27,7 @@
       "role": "refinery",
       "colony": "core",
       "status": "active",
-      "spawned": 1795108715.856858,
+      "spawned": 1795122270.7842827,
       "note": ""
     },
     {
@@ -36,7 +36,7 @@
       "role": "writer",
       "colony": "core",
       "status": "active",
-      "spawned": 1795108715.857987,
+      "spawned": 1795122270.7860446,
       "note": ""
     },
     {
@@ -45,7 +45,7 @@
       "role": "trade",
       "colony": "core",
       "status": "active",
-      "spawned": 1795108715.8590486,
+      "spawned": 1795122270.7877746,
       "note": ""
     }
   ],
@@ -256,31 +256,37 @@
         "indexnow_key": "703c9a540f4d657f217326ac9c8a5560"
       },
       "totals": {
-        "items": 93,
+        "items": 131,
         "by_source": {
           "hn": 7,
           "github": 4,
-          "rss": 82
+          "rss": 80,
+          "arxiv": 40
         },
         "by_recipe": {
           "economist_fn": 40,
+          "arxiv_qfin": 40,
           "cnbc_top": 30,
-          "ft_home": 12,
+          "ft_home": 10,
           "hn_fintech": 7,
           "github_fin": 4
         },
         "by_topic": {
-          "ai": 52,
-          "biz": 29,
-          "dev": 12,
-          "hardware": 5,
-          "science": 4,
-          "crypto": 3,
-          "security": 1
+          "ai": 83,
+          "biz": 42,
+          "dev": 38,
+          "science": 16,
+          "hardware": 12,
+          "crypto": 7,
+          "security": 6
         },
         "top_domains": [
           [
             "economist.com",
+            40
+          ],
+          [
+            "arxiv.org",
             40
           ],
           [
@@ -289,7 +295,7 @@
           ],
           [
             "ft.com",
-            12
+            10
           ],
           [
             "github.com",
@@ -388,7 +394,7 @@
         {
           "title": "centaurexecutorhonor/metatrader-ea-notes",
           "source": "github",
-          "buzz": 101,
+          "buzz": 100,
           "url": "https://github.com/centaurexecutorhonor/metatrader-ea-notes",
           "topics": []
         },
@@ -417,14 +423,7 @@
           ]
         },
         {
-          "title": "Meet the European Central Bank’s new squad",
-          "source": "rss",
-          "buzz": 80,
-          "url": "https://www.economist.com/finance-and-economics/2026/11/18/meet-the-european-central-banks-new-squad",
-          "topics": []
-        },
-        {
-          "title": "Anthropic pops 34% in Wall Street debut",
+          "title": "Anthropic soars in Wall Street debut",
           "source": "rss",
           "buzz": 80,
           "url": "https://www.ft.com/content/7a6b211d-c73b-4953-97ee-ed92dab8ee07?syn-25a6b1a6=1",
@@ -453,12 +452,23 @@
           ]
         },
         {
-          "title": "Xi, Trump and Putin hail ‘groundbreaking’ meeting",
+          "title": "US companies turn to robots to ease labour shortage crisis",
           "source": "rss",
           "buzz": 80,
-          "url": "https://www.ft.com/content/3fde6008-d9c4-46a3-89f8-0f7611cd9b3a?syn-25a6b1a6=1",
+          "url": "https://www.ft.com/content/747f5533-1bab-4143-a78b-ed4e2b575340?syn-25a6b1a6=1",
           "topics": [
-            "ai"
+            "hardware"
+          ]
+        },
+        {
+          "title": "Angry America and its housing market",
+          "source": "rss",
+          "buzz": 80,
+          "url": "https://www.ft.com/content/9450175e-3da3-4df3-bd93-050683bbb98a?syn-25a6b1a6=1",
+          "topics": [
+            "ai",
+            "dev",
+            "biz"
           ]
         }
       ]
@@ -499,13 +509,13 @@
           "the_hacker_news": 30
         },
         "by_topic": {
-          "security": 56,
-          "ai": 40,
-          "dev": 28,
+          "security": 57,
+          "ai": 38,
+          "dev": 26,
           "hardware": 16,
-          "crypto": 6,
-          "science": 4,
-          "biz": 3
+          "science": 5,
+          "crypto": 5,
+          "biz": 2
         },
         "top_domains": [
           [
@@ -533,6 +543,16 @@
         }
       },
       "top_items": [
+        {
+          "title": "CVE-2026-76807: Todoist MCP Server: Browser DNS rebinding lets websites write and delete Todoist data through local MCP server",
+          "source": "cve",
+          "buzz": 6080,
+          "url": "https://github.com/advisories/GHSA-833v-v58w-294h",
+          "topics": [
+            "security",
+            "hardware"
+          ]
+        },
         {
           "title": "CVE-2026-63412: Jane: Instantiation RCE via query parameter name -> raw PHPDoc */ breakout (jane-php/open-api-3)",
           "source": "cve",
@@ -567,117 +587,103 @@
           ]
         },
         {
-          "title": "CVE-2026-75521: Miren Runtime: Authentication bypass in RPC layer: unverified TLS client certificates grant cluster superuser access",
+          "title": "CVE-2026-121707: Effect: ReDoS in Schema.TemplateLiteral compiled regex",
           "source": "cve",
-          "buzz": 6080,
-          "url": "https://github.com/advisories/GHSA-8fh7-7q4q-cq52",
+          "buzz": 3580,
+          "url": "https://github.com/advisories/GHSA-7589-6fvf-x4pw",
+          "topics": [
+            "ai",
+            "security"
+          ]
+        },
+        {
+          "title": "CVE-2026-128073: gosaml2: Unauthenticated panic decrypting an EncryptedAssertion with a short or empty CipherValue",
+          "source": "cve",
+          "buzz": 3580,
+          "url": "https://github.com/advisories/GHSA-5hj8-q7fv-qrj6",
           "topics": [
             "ai",
             "dev",
+            "security"
+          ]
+        },
+        {
+          "title": "CVE-2026-102529: HtmlSanitizer: CSS Removal DoS",
+          "source": "cve",
+          "buzz": 3580,
+          "url": "https://github.com/advisories/GHSA-464h-4j8h-q5mf",
+          "topics": [
+            "ai",
             "security",
             "hardware"
           ]
         },
         {
-          "title": "CVE-2026-69157: Atomic Server: Unauthenticated `/setup` invite grants write access to the entire Drive",
+          "title": "CVE-2026-61713: Servo Sandbox bypass: declarative refresh can auto-navigate a sandboxed iframe",
           "source": "cve",
-          "buzz": 6080,
-          "url": "https://github.com/advisories/GHSA-pfwx-xjp4-qxcj",
+          "buzz": 3580,
+          "url": "https://github.com/advisories/GHSA-pxh3-4qqv-58mg",
           "topics": [
-            "ai",
-            "dev",
-            "security",
-            "hardware"
+            "security"
           ]
         },
         {
-          "title": "CVE-2026-130001: Mustache for Ruby: RCE using built-in method access",
+          "title": "CVE-2026-61689: XWiki Platform: HQL injection in search allows unauthenticated database extraction including password hashes",
           "source": "cve",
-          "buzz": 6030,
-          "url": "https://github.com/advisories/GHSA-5hrj-7fc3-cmx9",
+          "buzz": 3580,
+          "url": "https://github.com/advisories/GHSA-jmmc-wjpc-pg34",
           "topics": [
-            "ai",
             "dev",
             "security"
           ]
         },
         {
-          "title": "CVE-2026-71535: Mareforma: Unsigned Claims Can Be Promoted to REPLICATED via Missing Signature Enforcement in Convergence Path",
+          "title": "CVE-2026-59975: SharpIppNext: Unbounded IPP Document Stream Buffering Leads to Denial of Service",
           "source": "cve",
           "buzz": 3580,
-          "url": "https://github.com/advisories/GHSA-8776-qf3h-26r3",
-          "topics": [
-            "ai",
-            "security"
-          ]
-        },
-        {
-          "title": "CVE-2026-71536: Mareforma: verify_bundle never checks a per-claim signature",
-          "source": "cve",
-          "buzz": 3580,
-          "url": "https://github.com/advisories/GHSA-hxh5-gp44-rc6p",
-          "topics": [
-            "ai",
-            "security"
-          ]
-        },
-        {
-          "title": "CVE-2026-58213: NATS Server: MQTT SUBSCRIBE Protocol Injection via Leaf Node/Route Forwarding allows arbitrary NATS command injection",
-          "source": "cve",
-          "buzz": 3580,
-          "url": "https://github.com/advisories/GHSA-qrcv-3558-gj4f",
+          "url": "https://github.com/advisories/GHSA-3h63-w8jq-rrf2",
           "topics": [
             "security",
             "hardware"
           ]
         },
         {
-          "title": "CVE-2026-76088: PGPainless: Unbounded Compressed Packet Descent in inline-detach and MessageInspector leads to Denial of Service (DoS)",
+          "title": "CVE-2026-77283: obsidian-sync-mcp: Missing Host/Origin validation lets a public website drive a victim's Obsidian vault via DNS rebinding (no-auth mode)",
           "source": "cve",
           "buzz": 3580,
-          "url": "https://github.com/advisories/GHSA-cvx8-9ff6-54xq",
+          "url": "https://github.com/advisories/GHSA-mx6p-3fg7-v6pj",
           "topics": [
-            "ai",
-            "security"
-          ]
-        },
-        {
-          "title": "CVE-2026-63129: mssql-mcp-core: SQL injection in mssql-mcp write tools via unparameterized table names and WHERE clauses",
-          "source": "cve",
-          "buzz": 3580,
-          "url": "https://github.com/advisories/GHSA-2m9m-6cr5-9x25",
-          "topics": [
-            "dev",
-            "security"
-          ]
-        },
-        {
-          "title": "CVE-2026-68903: LLMKube: Arbitrary Host File Read via Model.spec.source hostPath Injection",
-          "source": "cve",
-          "buzz": 3580,
-          "url": "https://github.com/advisories/GHSA-jw3m-8q7m-f35r",
-          "topics": [
-            "ai",
-            "dev",
-            "security"
-          ]
-        },
-        {
-          "title": "CVE-2026-73864: install-artifact-from-github loads downloaded native artifacts without integrity verification",
-          "source": "cve",
-          "buzz": 3580,
-          "url": "https://github.com/advisories/GHSA-88q3-gch3-5396",
-          "topics": [
-            "dev",
             "crypto",
             "security"
           ]
         },
         {
-          "title": "CVE-2026-71861: Chainguard SDK: AWS SigV4 token replay in auth/aws.VerifyToken — Chainguard-Audience/Chainguard-Identity binding headers not required in SignedHeaders",
+          "title": "CVE-2026-76090: Tapir: Construction/decode RCE via property name -> raw case-class field (tapir-openapi-codegen)",
           "source": "cve",
           "buzz": 3580,
-          "url": "https://github.com/advisories/GHSA-wq26-3j2m-4hvv",
+          "url": "https://github.com/advisories/GHSA-gpcc-36pq-8qxr",
+          "topics": [
+            "dev",
+            "science",
+            "security"
+          ]
+        },
+        {
+          "title": "CVE-2026-62964: Gortex: Arbitrary file write / repo-confinement escape in `write_file` / `edit_file` / `move_inline` MCP tools → code execution",
+          "source": "cve",
+          "buzz": 3580,
+          "url": "https://github.com/advisories/GHSA-w42c-h7hr-f67p",
+          "topics": [
+            "ai",
+            "security",
+            "hardware"
+          ]
+        },
+        {
+          "title": "CVE-2026-75522: OpenID4VP: X.509 chain validation accepts a forged certificate that reuses a trusted anchor's Subject DN without verifying its signature",
+          "source": "cve",
+          "buzz": 3580,
+          "url": "https://github.com/advisories/GHSA-4c2f-96cf-f5fc",
           "topics": [
             "ai",
             "dev",
@@ -686,11 +692,12 @@
           ]
         },
         {
-          "title": "CVE-2026-71481: ALTCHA PHP: verifySolution bypasses HMAC signature check when challenge signature is absent",
+          "title": "CVE-2026-76101: keystore-go: Keystore integrity and password verification bypass via stripped trailing digest in Decode()",
           "source": "cve",
           "buzz": 3580,
-          "url": "https://github.com/advisories/GHSA-82w8-65qw-gch6",
+          "url": "https://github.com/advisories/GHSA-j282-pjg5-j643",
           "topics": [
+            "ai",
             "security"
           ]
         }
@@ -893,31 +900,37 @@
         "indexnow_key": "a25fa1b212ed720f9eca9bac90f6c8a0"
       },
       "totals": {
-        "items": 102,
+        "items": 162,
         "by_source": {
           "github": 40,
           "hn": 30,
-          "rss": 32
+          "rss": 32,
+          "arxiv": 60
         },
         "by_recipe": {
+          "arxiv": 60,
           "github_search": 40,
           "hn_front": 30,
           "tc_ai": 20,
           "devto": 12
         },
         "by_topic": {
-          "ai": 65,
-          "dev": 27,
-          "biz": 11,
-          "hardware": 8,
-          "science": 4,
-          "security": 3,
-          "crypto": 1
+          "ai": 125,
+          "dev": 63,
+          "science": 37,
+          "biz": 22,
+          "hardware": 12,
+          "security": 8,
+          "crypto": 3
         },
         "top_domains": [
           [
+            "arxiv.org",
+            60
+          ],
+          [
             "github.com",
-            42
+            43
           ],
           [
             "techcrunch.com",
@@ -928,6 +941,14 @@
             12
           ],
           [
+            "youtube.com",
+            2
+          ],
+          [
+            "reuters.com",
+            1
+          ],
+          [
             "element.io",
             1
           ],
@@ -936,7 +957,7 @@
             1
           ],
           [
-            "drivevault.io",
+            "macanorak.com",
             1
           ],
           [
@@ -944,7 +965,7 @@
             1
           ],
           [
-            "php.net",
+            "lastbook.org",
             1
           ],
           [
@@ -952,23 +973,7 @@
             1
           ],
           [
-            "kapteko.com",
-            1
-          ],
-          [
-            "lastbook.org",
-            1
-          ],
-          [
-            "techcentral.ie",
-            1
-          ],
-          [
-            "zerodha.tech",
-            1
-          ],
-          [
-            "youtube.com",
+            "ounapuu.ee",
             1
           ],
           [
@@ -976,7 +981,23 @@
             1
           ],
           [
+            "php.net",
+            1
+          ],
+          [
+            "anthropic.com",
+            1
+          ],
+          [
+            "kapteko.com",
+            1
+          ],
+          [
             "fastcompany.com",
+            1
+          ],
+          [
+            "zerodha.tech",
             1
           ],
           [
@@ -984,23 +1005,15 @@
             1
           ],
           [
-            "krthr.co",
-            1
-          ],
-          [
-            "blog.plover.com",
-            1
-          ],
-          [
-            "moq.dev",
-            1
-          ],
-          [
             "cornholenews.news",
             1
           ],
           [
-            "levineuwirth.org",
+            "krthr.co",
+            1
+          ],
+          [
+            "newscientist.com",
             1
           ],
           [
@@ -1008,11 +1021,7 @@
             1
           ],
           [
-            "quuxplusone.github.io",
-            1
-          ],
-          [
-            "macanorak.com",
+            "perishablepress.com",
             1
           ]
         ]
@@ -1032,7 +1041,7 @@
         {
           "title": "erkamyaman/rust-anything",
           "source": "github",
-          "buzz": 5987,
+          "buzz": 6242,
           "url": "https://github.com/erkamyaman/rust-anything",
           "topics": [
             "ai",
@@ -1043,7 +1052,7 @@
         {
           "title": "krisgfx9/Wireless-Device-Battery-Monitor",
           "source": "github",
-          "buzz": 5678,
+          "buzz": 5795,
           "url": "https://github.com/krisgfx9/Wireless-Device-Battery-Monitor",
           "topics": [
             "ai",
@@ -1053,7 +1062,7 @@
         {
           "title": "duwqijlk/muse-protocol",
           "source": "github",
-          "buzz": 3620,
+          "buzz": 3629,
           "url": "https://github.com/duwqijlk/muse-protocol",
           "topics": [
             "ai",
@@ -1061,9 +1070,18 @@
           ]
         },
         {
+          "title": "Anthropic hits $2T in Nasdaq debut",
+          "source": "hn",
+          "buzz": 3459,
+          "url": "https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/",
+          "topics": [
+            "ai"
+          ]
+        },
+        {
           "title": "CzzzzzzJ/mdldm-maitian",
           "source": "github",
-          "buzz": 3015,
+          "buzz": 3026,
           "url": "https://github.com/CzzzzzzJ/mdldm-maitian",
           "topics": [
             "ai"
@@ -1072,14 +1090,14 @@
         {
           "title": "Hut-hzf/ung220z-tool",
           "source": "github",
-          "buzz": 2923,
+          "buzz": 2940,
           "url": "https://github.com/Hut-hzf/ung220z-tool",
           "topics": []
         },
         {
           "title": "haziqahmedqasmi/PeakCut",
           "source": "github",
-          "buzz": 2615,
+          "buzz": 2696,
           "url": "https://github.com/haziqahmedqasmi/PeakCut",
           "topics": [
             "ai",
@@ -1089,14 +1107,14 @@
         {
           "title": "gylive/google-ultra",
           "source": "github",
-          "buzz": 2561,
+          "buzz": 2581,
           "url": "https://github.com/gylive/google-ultra",
           "topics": []
         },
         {
           "title": "sybil-solutions/inference-optimisation-skill",
           "source": "github",
-          "buzz": 1585,
+          "buzz": 1598,
           "url": "https://github.com/sybil-solutions/inference-optimisation-skill",
           "topics": [
             "ai",
@@ -1105,9 +1123,16 @@
           ]
         },
         {
+          "title": "How the European Commission rolled out Matrix to more than 40k staff",
+          "source": "hn",
+          "buzz": 1571,
+          "url": "https://element.io/blog/how-the-european-commission-rolled-out-matrix-to-more-than-40-000-staff/",
+          "topics": []
+        },
+        {
           "title": "boringmarketer/boring-marketing-skills",
           "source": "github",
-          "buzz": 1498,
+          "buzz": 1506,
           "url": "https://github.com/boringmarketer/boring-marketing-skills",
           "topics": [
             "ai",
@@ -1115,55 +1140,39 @@
           ]
         },
         {
-          "title": "How the European Commission rolled out Matrix to more than 40k staff",
+          "title": "Garage Door Spam",
           "source": "hn",
-          "buzz": 1393,
-          "url": "https://element.io/blog/how-the-european-commission-rolled-out-matrix-to-more-than-40-000-staff/",
-          "topics": []
+          "buzz": 1429,
+          "url": "https://blog.harrison.page/garage-door-spam/",
+          "topics": [
+            "ai"
+          ]
         },
         {
           "title": "zephyr4123/snug",
           "source": "github",
-          "buzz": 1354,
+          "buzz": 1359,
           "url": "https://github.com/zephyr4123/snug",
           "topics": [
             "dev"
           ]
         },
         {
+          "title": "Bodila51/gtavi-claudecode",
+          "source": "github",
+          "buzz": 1251,
+          "url": "https://github.com/Bodila51/gtavi-claudecode",
+          "topics": [
+            "ai",
+            "dev"
+          ]
+        },
+        {
           "title": "joshpuckett/allo",
           "source": "github",
-          "buzz": 1231,
+          "buzz": 1243,
           "url": "https://github.com/joshpuckett/allo",
           "topics": []
-        },
-        {
-          "title": "chuanqisun/spaceship",
-          "source": "github",
-          "buzz": 1222,
-          "url": "https://github.com/chuanqisun/spaceship",
-          "topics": [
-            "dev",
-            "science"
-          ]
-        },
-        {
-          "title": "n4ze3m/tiny-voca",
-          "source": "github",
-          "buzz": 1067,
-          "url": "https://github.com/n4ze3m/tiny-voca",
-          "topics": [
-            "ai"
-          ]
-        },
-        {
-          "title": "Garage Door Spam",
-          "source": "hn",
-          "buzz": 1065,
-          "url": "https://blog.harrison.page/garage-door-spam/",
-          "topics": [
-            "ai"
-          ]
         }
       ]
     },
@@ -1190,34 +1199,48 @@
         "indexnow_key": "24a2a3be6c9916e5d406ab9f8ff51e4d"
       },
       "totals": {
-        "items": 82,
+        "items": 142,
         "by_source": {
           "github": 40,
           "hn": 30,
-          "rss": 12
+          "rss": 12,
+          "arxiv": 60
         },
         "by_recipe": {
+          "arxiv": 60,
           "github_search": 40,
           "hn_front": 30,
           "devto": 12
         },
         "by_topic": {
-          "ai": 46,
-          "dev": 23,
-          "hardware": 8,
-          "biz": 6,
-          "science": 4,
-          "security": 2,
-          "crypto": 1
+          "ai": 106,
+          "dev": 58,
+          "science": 37,
+          "biz": 17,
+          "hardware": 12,
+          "security": 6,
+          "crypto": 3
         },
         "top_domains": [
           [
+            "arxiv.org",
+            60
+          ],
+          [
             "github.com",
-            42
+            43
           ],
           [
             "dev.to",
             12
+          ],
+          [
+            "youtube.com",
+            2
+          ],
+          [
+            "reuters.com",
+            1
           ],
           [
             "element.io",
@@ -1228,7 +1251,7 @@
             1
           ],
           [
-            "drivevault.io",
+            "macanorak.com",
             1
           ],
           [
@@ -1236,7 +1259,7 @@
             1
           ],
           [
-            "php.net",
+            "lastbook.org",
             1
           ],
           [
@@ -1244,23 +1267,7 @@
             1
           ],
           [
-            "kapteko.com",
-            1
-          ],
-          [
-            "lastbook.org",
-            1
-          ],
-          [
-            "techcentral.ie",
-            1
-          ],
-          [
-            "zerodha.tech",
-            1
-          ],
-          [
-            "youtube.com",
+            "ounapuu.ee",
             1
           ],
           [
@@ -1268,7 +1275,23 @@
             1
           ],
           [
+            "php.net",
+            1
+          ],
+          [
+            "anthropic.com",
+            1
+          ],
+          [
+            "kapteko.com",
+            1
+          ],
+          [
             "fastcompany.com",
+            1
+          ],
+          [
+            "zerodha.tech",
             1
           ],
           [
@@ -1276,23 +1299,15 @@
             1
           ],
           [
-            "krthr.co",
-            1
-          ],
-          [
-            "blog.plover.com",
-            1
-          ],
-          [
-            "moq.dev",
-            1
-          ],
-          [
             "cornholenews.news",
             1
           ],
           [
-            "levineuwirth.org",
+            "krthr.co",
+            1
+          ],
+          [
+            "newscientist.com",
             1
           ],
           [
@@ -1300,15 +1315,11 @@
             1
           ],
           [
-            "quuxplusone.github.io",
+            "perishablepress.com",
             1
           ],
           [
-            "macanorak.com",
-            1
-          ],
-          [
-            "lithub.com",
+            "globalcommercegraph.com",
             1
           ]
         ]
@@ -1328,7 +1339,7 @@
         {
           "title": "erkamyaman/rust-anything",
           "source": "github",
-          "buzz": 5987,
+          "buzz": 6242,
           "url": "https://github.com/erkamyaman/rust-anything",
           "topics": [
             "ai",
@@ -1339,7 +1350,7 @@
         {
           "title": "krisgfx9/Wireless-Device-Battery-Monitor",
           "source": "github",
-          "buzz": 5678,
+          "buzz": 5795,
           "url": "https://github.com/krisgfx9/Wireless-Device-Battery-Monitor",
           "topics": [
             "ai",
@@ -1349,7 +1360,7 @@
         {
           "title": "duwqijlk/muse-protocol",
           "source": "github",
-          "buzz": 3620,
+          "buzz": 3629,
           "url": "https://github.com/duwqijlk/muse-protocol",
           "topics": [
             "ai",
@@ -1357,9 +1368,18 @@
           ]
         },
         {
+          "title": "Anthropic hits $2T in Nasdaq debut",
+          "source": "hn",
+          "buzz": 3459,
+          "url": "https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/",
+          "topics": [
+            "ai"
+          ]
+        },
+        {
           "title": "CzzzzzzJ/mdldm-maitian",
           "source": "github",
-          "buzz": 3015,
+          "buzz": 3026,
           "url": "https://github.com/CzzzzzzJ/mdldm-maitian",
           "topics": [
             "ai"
@@ -1368,14 +1388,14 @@
         {
           "title": "Hut-hzf/ung220z-tool",
           "source": "github",
-          "buzz": 2923,
+          "buzz": 2940,
           "url": "https://github.com/Hut-hzf/ung220z-tool",
           "topics": []
         },
         {
           "title": "haziqahmedqasmi/PeakCut",
           "source": "github",
-          "buzz": 2615,
+          "buzz": 2696,
           "url": "https://github.com/haziqahmedqasmi/PeakCut",
           "topics": [
             "ai",
@@ -1385,14 +1405,14 @@
         {
           "title": "gylive/google-ultra",
           "source": "github",
-          "buzz": 2561,
+          "buzz": 2581,
           "url": "https://github.com/gylive/google-ultra",
           "topics": []
         },
         {
           "title": "sybil-solutions/inference-optimisation-skill",
           "source": "github",
-          "buzz": 1585,
+          "buzz": 1598,
           "url": "https://github.com/sybil-solutions/inference-optimisation-skill",
           "topics": [
             "ai",
@@ -1401,9 +1421,16 @@
           ]
         },
         {
+          "title": "How the European Commission rolled out Matrix to more than 40k staff",
+          "source": "hn",
+          "buzz": 1571,
+          "url": "https://element.io/blog/how-the-european-commission-rolled-out-matrix-to-more-than-40-000-staff/",
+          "topics": []
+        },
+        {
           "title": "boringmarketer/boring-marketing-skills",
           "source": "github",
-          "buzz": 1498,
+          "buzz": 1506,
           "url": "https://github.com/boringmarketer/boring-marketing-skills",
           "topics": [
             "ai",
@@ -1411,55 +1438,39 @@
           ]
         },
         {
-          "title": "How the European Commission rolled out Matrix to more than 40k staff",
+          "title": "Garage Door Spam",
           "source": "hn",
-          "buzz": 1393,
-          "url": "https://element.io/blog/how-the-european-commission-rolled-out-matrix-to-more-than-40-000-staff/",
-          "topics": []
+          "buzz": 1429,
+          "url": "https://blog.harrison.page/garage-door-spam/",
+          "topics": [
+            "ai"
+          ]
         },
         {
           "title": "zephyr4123/snug",
           "source": "github",
-          "buzz": 1354,
+          "buzz": 1359,
           "url": "https://github.com/zephyr4123/snug",
           "topics": [
             "dev"
           ]
         },
         {
+          "title": "Bodila51/gtavi-claudecode",
+          "source": "github",
+          "buzz": 1251,
+          "url": "https://github.com/Bodila51/gtavi-claudecode",
+          "topics": [
+            "ai",
+            "dev"
+          ]
+        },
+        {
           "title": "joshpuckett/allo",
           "source": "github",
-          "buzz": 1231,
+          "buzz": 1243,
           "url": "https://github.com/joshpuckett/allo",
           "topics": []
-        },
-        {
-          "title": "chuanqisun/spaceship",
-          "source": "github",
-          "buzz": 1222,
-          "url": "https://github.com/chuanqisun/spaceship",
-          "topics": [
-            "dev",
-            "science"
-          ]
-        },
-        {
-          "title": "n4ze3m/tiny-voca",
-          "source": "github",
-          "buzz": 1067,
-          "url": "https://github.com/n4ze3m/tiny-voca",
-          "topics": [
-            "ai"
-          ]
-        },
-        {
-          "title": "Garage Door Spam",
-          "source": "hn",
-          "buzz": 1065,
-          "url": "https://blog.harrison.page/garage-door-spam/",
-          "topics": [
-            "ai"
-          ]
         }
       ]
     },
@@ -1676,13 +1687,13 @@
           "krebs": 10
         },
         "by_topic": {
-          "security": 112,
-          "ai": 69,
-          "dev": 45,
+          "security": 113,
+          "ai": 67,
+          "dev": 43,
           "hardware": 20,
-          "crypto": 9,
-          "biz": 8,
-          "science": 6
+          "crypto": 8,
+          "science": 7,
+          "biz": 7
         },
         "top_domains": [
           [
@@ -1822,6 +1833,16 @@
           ]
         },
         {
+          "title": "CVE-2026-76807: Todoist MCP Server: Browser DNS rebinding lets websites write and delete Todoist data through local MCP server",
+          "source": "cve",
+          "buzz": 6080,
+          "url": "https://github.com/advisories/GHSA-833v-v58w-294h",
+          "topics": [
+            "security",
+            "hardware"
+          ]
+        },
+        {
           "title": "CVE-2026-63412: Jane: Instantiation RCE via query parameter name -> raw PHPDoc */ breakout (jane-php/open-api-3)",
           "source": "cve",
           "buzz": 6080,
@@ -1851,41 +1872,6 @@
           "topics": [
             "dev",
             "science",
-            "security"
-          ]
-        },
-        {
-          "title": "CVE-2026-75521: Miren Runtime: Authentication bypass in RPC layer: unverified TLS client certificates grant cluster superuser access",
-          "source": "cve",
-          "buzz": 6080,
-          "url": "https://github.com/advisories/GHSA-8fh7-7q4q-cq52",
-          "topics": [
-            "ai",
-            "dev",
-            "security",
-            "hardware"
-          ]
-        },
-        {
-          "title": "CVE-2026-69157: Atomic Server: Unauthenticated `/setup` invite grants write access to the entire Drive",
-          "source": "cve",
-          "buzz": 6080,
-          "url": "https://github.com/advisories/GHSA-pfwx-xjp4-qxcj",
-          "topics": [
-            "ai",
-            "dev",
-            "security",
-            "hardware"
-          ]
-        },
-        {
-          "title": "CVE-2026-130001: Mustache for Ruby: RCE using built-in method access",
-          "source": "cve",
-          "buzz": 6030,
-          "url": "https://github.com/advisories/GHSA-5hrj-7fc3-cmx9",
-          "topics": [
-            "ai",
-            "dev",
             "security"
           ]
         },
@@ -1941,22 +1927,43 @@
           ]
         },
         {
-          "title": "CVE-2026-71535: Mareforma: Unsigned Claims Can Be Promoted to REPLICATED via Missing Signature Enforcement in Convergence Path",
+          "title": "CVE-2026-121707: Effect: ReDoS in Schema.TemplateLiteral compiled regex",
           "source": "cve",
           "buzz": 3580,
-          "url": "https://github.com/advisories/GHSA-8776-qf3h-26r3",
+          "url": "https://github.com/advisories/GHSA-7589-6fvf-x4pw",
           "topics": [
             "ai",
             "security"
           ]
         },
         {
-          "title": "CVE-2026-71536: Mareforma: verify_bundle never checks a per-claim signature",
+          "title": "CVE-2026-128073: gosaml2: Unauthenticated panic decrypting an EncryptedAssertion with a short or empty CipherValue",
           "source": "cve",
           "buzz": 3580,
-          "url": "https://github.com/advisories/GHSA-hxh5-gp44-rc6p",
+          "url": "https://github.com/advisories/GHSA-5hj8-q7fv-qrj6",
           "topics": [
             "ai",
+            "dev",
+            "security"
+          ]
+        },
+        {
+          "title": "CVE-2026-102529: HtmlSanitizer: CSS Removal DoS",
+          "source": "cve",
+          "buzz": 3580,
+          "url": "https://github.com/advisories/GHSA-464h-4j8h-q5mf",
+          "topics": [
+            "ai",
+            "security",
+            "hardware"
+          ]
+        },
+        {
+          "title": "CVE-2026-61713: Servo Sandbox bypass: declarative refresh can auto-navigate a sandboxed iframe",
+          "source": "cve",
+          "buzz": 3580,
+          "url": "https://github.com/advisories/GHSA-pxh3-4qqv-58mg",
+          "topics": [
             "security"
           ]
         }
@@ -2169,10 +2176,10 @@
         },
         "by_topic": {
           "ai": 78,
-          "dev": 41,
+          "dev": 42,
           "science": 15,
           "biz": 8,
-          "security": 5,
+          "security": 6,
           "hardware": 4
         },
         "top_domains": [
@@ -2395,21 +2402,21 @@
           ]
         },
         {
-          "title": "Show HN: I made a site where you practice typing by retyping entire novels",
-          "source": "hn",
-          "buzz": 2723,
-          "url": "http://typelit.io",
-          "topics": []
-        },
-        {
           "title": "agentes-chat/agentes-chat",
           "source": "github",
-          "buzz": 2708,
+          "buzz": 2726,
           "url": "https://github.com/agentes-chat/agentes-chat",
           "topics": [
             "ai",
             "dev"
           ]
+        },
+        {
+          "title": "Show HN: I made a site where you practice typing by retyping entire novels",
+          "source": "hn",
+          "buzz": 2723,
+          "url": "http://typelit.io",
+          "topics": []
         }
       ]
     }
