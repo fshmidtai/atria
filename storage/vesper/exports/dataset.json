@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T01:30:45+00:00",
+  "generated_at": "2026-11-20T05:24:14+00:00",
   "sources_used": [
     "hn_search",
     "github_search",
@@ -9,22 +9,22 @@
     "rss"
   ],
   "totals": {
-    "items": 126,
+    "items": 127,
     "by_source": {
       "hn": 60,
-      "github": 46,
+      "github": 47,
       "rss": 20
     },
     "by_recipe": {
       "show_hn": 60,
       "github_ai": 40,
       "tc_ai": 20,
-      "github_llm": 6
+      "github_llm": 7
     },
     "by_topic": {
-      "ai": 80,
+      "ai": 81,
       "dev": 44,
-      "science": 16,
+      "science": 17,
       "biz": 8,
       "security": 6,
       "hardware": 5
@@ -32,7 +32,7 @@
     "top_domains": [
       [
         "github.com",
-        52
+        53
       ],
       [
         "techcrunch.com",
@@ -325,6 +325,24 @@
       "date": "2026-11-01"
     },
     {
+      "uid": "gh:agentes-chat/agentes-chat",
+      "source": "github",
+      "title": "agentes-chat/agentes-chat",
+      "url": "https://github.com/agentes-chat/agentes-chat",
+      "ts": 1794185428.0,
+      "points": 1766,
+      "comments": 331,
+      "author": "agentes-chat",
+      "summary": "Open-source, self-hosted Slack alternative where your team and AI agents work together in channels and DMs. Agents run on Claude, ChatGPT/Codex, Gemini or Grok, with MCP tools, their own computer and browser, routines, memory and approvals. Web, desktop and phone apps. Docker Compose + Postgres. AGPL-3.0.",
+      "recipe": "github_llm",
+      "buzz": 2759,
+      "topics": [
+        "ai",
+        "dev"
+      ],
+      "date": "2026-11-09"
+    },
+    {
       "uid": "hn:26271117",
       "source": "hn",
       "title": "Show HN: Redbean – Single-file distributable web server",
@@ -340,24 +358,6 @@
         "hardware"
       ],
       "date": "2021-02-26"
-    },
-    {
-      "uid": "gh:agentes-chat/agentes-chat",
-      "source": "github",
-      "title": "agentes-chat/agentes-chat",
-      "url": "https://github.com/agentes-chat/agentes-chat",
-      "ts": 1794185428.0,
-      "points": 1758,
-      "comments": 329,
-      "author": "agentes-chat",
-      "summary": "Open-source, self-hosted Slack alternative where your team and AI agents work together in channels and DMs. Agents run on Claude, ChatGPT/Codex, Gemini or Grok, with MCP tools, their own computer and browser, routines, memory and approvals. Web, desktop and phone apps. Docker Compose + Postgres. AGPL-3.0.",
-      "recipe": "github_llm",
-      "buzz": 2745,
-      "topics": [
-        "ai",
-        "dev"
-      ],
-      "date": "2026-11-09"
     },
     {
       "uid": "hn:24696658",
@@ -1098,12 +1098,12 @@
       "title": "sybil-solutions/inference-optimisation-skill",
       "url": "https://github.com/sybil-solutions/inference-optimisation-skill",
       "ts": 1794854404.0,
-      "points": 1262,
+      "points": 1272,
       "comments": 114,
       "author": "sybil-solutions",
       "summary": "Agent skill for hill-climbing local LLM serving speed (decode, speculative decoding, prefill, KV, startup, TTFT) on any hardware and quantization",
       "recipe": "github_llm",
-      "buzz": 1614,
+      "buzz": 1624,
       "topics": [
         "ai",
         "dev",
@@ -1270,12 +1270,12 @@
       "title": "Dodaios/ste80-humanizer",
       "url": "https://github.com/Dodaios/ste80-humanizer",
       "ts": 1794244739.0,
-      "points": 982,
+      "points": 992,
       "comments": 68,
       "author": "Dodaios",
       "summary": "STE80 Humanizer: agent skill that removes AI tells and rewrites text 80% of the way to ASD-STE100 (Simplified Technical English), the method Andrej Karpathy shared.",
       "recipe": "github_llm",
-      "buzz": 1186,
+      "buzz": 1196,
       "topics": [
         "ai"
       ],
@@ -1354,6 +1354,42 @@
       "date": "2026-11-14"
     },
     {
+      "uid": "gh:bookwjitchieni1986/blender-ai-mcp-addon",
+      "source": "github",
+      "title": "bookwjitchieni1986/blender-ai-mcp-addon",
+      "url": "https://github.com/bookwjitchieni1986/blender-ai-mcp-addon",
+      "ts": 1795099390.0,
+      "points": 798,
+      "comments": 1,
+      "author": "bookwjitchieni1986",
+      "summary": "AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with ChatGPT/GPT, Claude, Gemini, Ollama, OpenCode. Blender AI addon, copilot for 3D, bpy Python scripting, MCP integration.",
+      "recipe": "github_llm",
+      "buzz": 881,
+      "topics": [
+        "ai",
+        "dev",
+        "hardware"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "gh:beiwocaishijia/gezhi-sheets",
+      "source": "github",
+      "title": "beiwocaishijia/gezhi-sheets",
+      "url": "https://github.com/beiwocaishijia/gezhi-sheets",
+      "ts": 1794194963.0,
+      "points": 445,
+      "comments": 142,
+      "author": "beiwocaishijia",
+      "summary": "格知 AI · Gezhi Sheets｜让表格听懂你的话。支持 GLM、Kimi、豆包、DeepSeek、Qwen 的本地 AI 表格助手。",
+      "recipe": "github_ai",
+      "buzz": 871,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-11-09"
+    },
+    {
       "uid": "gh:TurquoiseConsultant/GitHub-Copilot-app",
       "source": "github",
       "title": "TurquoiseConsultant/GitHub-Copilot-app",
@@ -1372,58 +1408,22 @@
       "date": "2026-11-14"
     },
     {
-      "uid": "gh:beiwocaishijia/gezhi-sheets",
-      "source": "github",
-      "title": "beiwocaishijia/gezhi-sheets",
-      "url": "https://github.com/beiwocaishijia/gezhi-sheets",
-      "ts": 1794194963.0,
-      "points": 420,
-      "comments": 142,
-      "author": "beiwocaishijia",
-      "summary": "格知 AI · Gezhi Sheets｜让表格听懂你的话。支持 GLM、Kimi、豆包、DeepSeek、Qwen 的本地 AI 表格助手。",
-      "recipe": "github_ai",
-      "buzz": 846,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-09"
-    },
-    {
       "uid": "gh:ysunyang4/Nexus",
       "source": "github",
       "title": "ysunyang4/Nexus",
       "url": "https://github.com/ysunyang4/Nexus",
       "ts": 1794577581.0,
-      "points": 432,
-      "comments": 76,
+      "points": 440,
+      "comments": 78,
       "author": "ysunyang4",
       "summary": "Connect web AI assistants to local files, terminals, Git, and desktop tools through MCP, with user-controlled permissions.",
       "recipe": "github_llm",
-      "buzz": 670,
+      "buzz": 684,
       "topics": [
         "ai",
         "dev"
       ],
       "date": "2026-11-13"
-    },
-    {
-      "uid": "gh:bookwjitchieni1986/blender-ai-mcp-addon",
-      "source": "github",
-      "title": "bookwjitchieni1986/blender-ai-mcp-addon",
-      "url": "https://github.com/bookwjitchieni1986/blender-ai-mcp-addon",
-      "ts": 1795099390.0,
-      "points": 574,
-      "comments": 1,
-      "author": "bookwjitchieni1986",
-      "summary": "AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with ChatGPT/GPT, Claude, Gemini, Ollama, OpenCode. Blender AI addon, copilot for 3D, bpy Python scripting, MCP integration.",
-      "recipe": "github_llm",
-      "buzz": 657,
-      "topics": [
-        "ai",
-        "dev",
-        "hardware"
-      ],
-      "date": "2026-11-19"
     },
     {
       "uid": "gh:YellowLaborerMarket/Gemini-Config-Checker-",
@@ -1546,14 +1546,14 @@
       "date": "2026-11-15"
     },
     {
-      "uid": "gh:weldbladesmithwharf/Gemini-Config-Checker-",
+      "uid": "gh:VortexHostFeel/Gemini-Config-Checker-",
       "source": "github",
-      "title": "weldbladesmithwharf/Gemini-Config-Checker-",
-      "url": "https://github.com/weldbladesmithwharf/Gemini-Config-Checker-",
-      "ts": 1794761231.0,
+      "title": "VortexHostFeel/Gemini-Config-Checker-",
+      "url": "https://github.com/VortexHostFeel/Gemini-Config-Checker-",
+      "ts": 1794761167.0,
       "points": 472,
       "comments": 0,
-      "author": "weldbladesmithwharf",
+      "author": "VortexHostFeel",
       "summary": "Chain region scanner: find proxy configs that get you into Google AI Studio and Gemini (signed-in browser check, anti-DPI, Windows/macOS/Linux/Android)",
       "recipe": "github_ai",
       "buzz": 482,
@@ -1563,14 +1563,14 @@
       "date": "2026-11-15"
     },
     {
-      "uid": "gh:VortexHostFeel/Gemini-Config-Checker-",
+      "uid": "gh:weldbladesmithwharf/Gemini-Config-Checker-",
       "source": "github",
-      "title": "VortexHostFeel/Gemini-Config-Checker-",
-      "url": "https://github.com/VortexHostFeel/Gemini-Config-Checker-",
-      "ts": 1794761167.0,
+      "title": "weldbladesmithwharf/Gemini-Config-Checker-",
+      "url": "https://github.com/weldbladesmithwharf/Gemini-Config-Checker-",
+      "ts": 1794761231.0,
       "points": 472,
       "comments": 0,
-      "author": "VortexHostFeel",
+      "author": "weldbladesmithwharf",
       "summary": "Chain region scanner: find proxy configs that get you into Google AI Studio and Gemini (signed-in browser check, anti-DPI, Windows/macOS/Linux/Android)",
       "recipe": "github_ai",
       "buzz": 482,
@@ -1783,6 +1783,24 @@
         "ai"
       ],
       "date": "2026-11-15"
+    },
+    {
+      "uid": "gh:molly554/whiteboard-ai-tutor",
+      "source": "github",
+      "title": "molly554/whiteboard-ai-tutor",
+      "url": "https://github.com/molly554/whiteboard-ai-tutor",
+      "ts": 1794396141.0,
+      "points": 394,
+      "comments": 20,
+      "author": "molly554",
+      "summary": "Open-source whiteboard AI tutor with animated lessons and interactive playback. Compare Claude, Gemini & DeepSeek across 288 generation runs and 64 blind-reviewed boards.",
+      "recipe": "github_llm",
+      "buzz": 454,
+      "topics": [
+        "ai",
+        "science"
+      ],
+      "date": "2026-11-11"
     },
     {
       "uid": "gh:huawei-csl/MACaQ",
