@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T13:30:20+00:00",
+  "generated_at": "2026-11-20T17:15:16+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -10,34 +10,34 @@
     "rss"
   ],
   "totals": {
-    "items": 133,
+    "items": 135,
     "by_source": {
       "hn": 40,
       "cve": 30,
-      "github": 13,
+      "github": 15,
       "rss": 50
     },
     "by_recipe": {
       "hn_sec": 40,
       "gh_advisories": 30,
       "hackersnews": 30,
-      "github_sec": 13,
+      "github_sec": 15,
       "schneier": 10,
       "krebs": 10
     },
     "by_topic": {
       "security": 113,
-      "ai": 55,
-      "dev": 44,
-      "hardware": 25,
-      "science": 8,
+      "ai": 62,
+      "dev": 48,
+      "hardware": 21,
       "biz": 7,
-      "crypto": 6
+      "crypto": 7,
+      "science": 7
     },
     "top_domains": [
       [
         "github.com",
-        45
+        47
       ],
       [
         "thehackernews.com",
@@ -174,6 +174,23 @@
       "date": "2025-03-24"
     },
     {
+      "uid": "cve:GHSA-4hrh-34w3-5ww8",
+      "source": "cve",
+      "title": "CVE-2026-104099: Fabio: Access-control bypass through unnormalized request paths",
+      "url": "https://github.com/advisories/GHSA-4hrh-34w3-5ww8",
+      "ts": 1795186285.0,
+      "points": 6000,
+      "comments": 0,
+      "author": "github.com/fabiolb/fabio",
+      "summary": "Severity: critical. ## Summary\n\nRoute selection uses the raw un-normalized request path, and the per-route ACL and basic-auth gates hang off that selection, so a dot-segment, encoded-dot, or double-slash variant of a protected path selects a different route, skips both gates, and is forwarded to the backend which norma",
+      "recipe": "gh_advisories",
+      "buzz": 6080,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-11-20"
+    },
+    {
       "uid": "cve:GHSA-mc8w-wjhw-45x5",
       "source": "cve",
       "title": "CVE-2026-114516: Etherpad: Pre-auth arbitrary file read",
@@ -188,132 +205,6 @@
       "topics": [
         "security",
         "hardware"
-      ],
-      "date": "2026-11-20"
-    },
-    {
-      "uid": "cve:GHSA-wj7x-58c2-5793",
-      "source": "cve",
-      "title": "CVE-2026-77369: Daptin: Broken Access Control (IDOR) in the generic YJS collaboration endpoint",
-      "url": "https://github.com/advisories/GHSA-wj7x-58c2-5793",
-      "ts": 1795133654.0,
-      "points": 6000,
-      "comments": 0,
-      "author": "github.com/daptin/daptin",
-      "summary": "Severity: critical. ### Summary\n\nDaptin registers a generic WebSocket endpoint, `GET /yjs/:documentName`, for real-time collaborative\ndocument editing (YJS/CRDT). Unlike its purpose-built sibling route, this generic endpoint performs\nno per-resource authorization check - it only verifies that *some* user session exists",
-      "recipe": "gh_advisories",
-      "buzz": 6080,
-      "topics": [
-        "science",
-        "security"
-      ],
-      "date": "2026-11-20"
-    },
-    {
-      "uid": "cve:GHSA-hq2p-f2vj-v3cm",
-      "source": "cve",
-      "title": "CVE-2026-77367: Daptin: Unauthenticated SQL Injection via the `sort` query parameter on every entity list endpoint",
-      "url": "https://github.com/advisories/GHSA-hq2p-f2vj-v3cm",
-      "ts": 1795133599.0,
-      "points": 6000,
-      "comments": 0,
-      "author": "github.com/daptin/daptin",
-      "summary": "Severity: critical. ### Summary\n\nAn unauthenticated attacker can inject arbitrary SQL through the `sort` query parameter accepted by\nDaptin's generic entity list endpoint (`GET /api/<entity>`), which every table in a Daptin instance\nexposes. The parameter is concatenated into raw SQL identifiers with no validation that",
-      "recipe": "gh_advisories",
-      "buzz": 6080,
-      "topics": [
-        "dev",
-        "science",
-        "security"
-      ],
-      "date": "2026-11-20"
-    },
-    {
-      "uid": "cve:GHSA-9x8x-crjq-g64h",
-      "source": "cve",
-      "title": "CVE-2026-77359: Jupyter MCP Server: Browser DNS rebinding can hijack the Jupyter backend through management routes",
-      "url": "https://github.com/advisories/GHSA-9x8x-crjq-g64h",
-      "ts": 1795133571.0,
-      "points": 6000,
-      "comments": 0,
-      "author": "jupyter-mcp-server",
-      "summary": "Severity: critical. Standalone `streamable-http` mode in `datalayer/jupyter-mcp-server` rejects forged `Host` and `Origin` headers on `/mcp`, but custom management routes mounted on the same application do not get the same browser-origin protection. A malicious website can keep an attacker origin while its hostname res",
-      "recipe": "gh_advisories",
-      "buzz": 6080,
-      "topics": [
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-20"
-    },
-    {
-      "uid": "cve:GHSA-p34x-fmph-9fjx",
-      "source": "cve",
-      "title": "CVE-2026-77312: Flyto2 Core: Arbitrary file write via unguarded data.*/file.* modules (incomplete fix of CVE-2026-67429)",
-      "url": "https://github.com/advisories/GHSA-p34x-fmph-9fjx",
-      "ts": 1795133342.0,
-      "points": 6000,
-      "comments": 0,
-      "author": "flyto-core",
-      "summary": "Severity: critical. # [CRITICAL] Arbitrary file write via unguarded `data.*` / `file.*` write modules — incomplete fix of GHSA-2956\n\n- **CWE:** CWE-22 (Path Traversal) / CWE-73 (External Control of File Name or Path); impact reaches CWE-94 (code execution via file overwrite).\n- **CVSS v3.1:** `AV:N/AC:L/PR:L/UI:N/S:C/C",
-      "recipe": "gh_advisories",
-      "buzz": 6080,
-      "topics": [
-        "security"
-      ],
-      "date": "2026-11-20"
-    },
-    {
-      "uid": "cve:GHSA-p32v-8v8j-j534",
-      "source": "cve",
-      "title": "CVE-2026-63344: Refitter allows arbitrary code execution through unescaped OpenAPI content-type values",
-      "url": "https://github.com/advisories/GHSA-p32v-8v8j-j534",
-      "ts": 1795133212.0,
-      "points": 6000,
-      "comments": 0,
-      "author": "Refitter",
-      "summary": "Severity: critical. ### Summary\n\nRefitter emits the spec's content-type key (content map key in requestBody/responses) verbatim into a Refit `[Headers(\"Accept: <ct>\", \"Content-Type: <ct>\")]` attribute string without escaping\n`\"`. A crafted value survives Refitter's default OpenAPI validation, breaks out of the attribut",
-      "recipe": "gh_advisories",
-      "buzz": 6080,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-20"
-    },
-    {
-      "uid": "cve:GHSA-58x9-vjvp-6mx8",
-      "source": "cve",
-      "title": "CVE-2026-63346: Refitter allows code execution through unescaped OpenAPI header parameter names",
-      "url": "https://github.com/advisories/GHSA-58x9-vjvp-6mx8",
-      "ts": 1795133188.0,
-      "points": 6000,
-      "comments": 0,
-      "author": "Refitter",
-      "summary": "Severity: critical. ### Summary\n\nRefitter emits the spec's header parameter name (parameters[].name with in: header) verbatim into a Refit `[Header(\"<name>\")]` attribute string without escaping\n`\"`. A crafted value survives Refitter's default OpenAPI validation, breaks out of the attribute and\nthe enclosing interface +",
-      "recipe": "gh_advisories",
-      "buzz": 6080,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-20"
-    },
-    {
-      "uid": "cve:GHSA-3fhm-p725-h3g3",
-      "source": "cve",
-      "title": "CVE-2026-63345: Refitter allows arbitrary code execution through unescaped OpenAPI paths",
-      "url": "https://github.com/advisories/GHSA-3fhm-p725-h3g3",
-      "ts": 1795133164.0,
-      "points": 6000,
-      "comments": 0,
-      "author": "Refitter",
-      "summary": "Severity: critical. ### Summary\n\nRefitter emits each OpenAPI path (the paths-object key) verbatim into a Refit `[Get(\"<path>\")]`\nattribute string, without escaping `\"` or restricting characters. A crafted single-line, /-prefixed\npath survives Refitter's default OpenAPI validation yet closes the attribute string and the",
-      "recipe": "gh_advisories",
-      "buzz": 6080,
-      "topics": [
-        "dev",
-        "security"
       ],
       "date": "2026-11-20"
     },
@@ -409,6 +300,247 @@
       "date": "2021-01-11"
     },
     {
+      "uid": "cve:GHSA-x72p-hmqp-46hw",
+      "source": "cve",
+      "title": "CVE-2026-105803: Git LFS may execute arbitrary commands via crafted Git LFS configurations",
+      "url": "https://github.com/advisories/GHSA-x72p-hmqp-46hw",
+      "ts": 1795186780.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "github.com/git-lfs/git-lfs",
+      "summary": "Severity: high. ### Impact\n\nWhen fetching objects from a malicious repository, Git LFS may execute an arbitrary command or binary after failing to sufficiently restrict the set of configuration options defined in an `.lfsconfig` file in the repository.\n\nGit LFS permits a limited set of configuration options to be d",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "ai",
+        "dev",
+        "crypto",
+        "security"
+      ],
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "cve:GHSA-xrgv-7vx6-5vx6",
+      "source": "cve",
+      "title": "CVE-2026-105802: Git LFS may execute arbitrary commands via crafted Git configurations",
+      "url": "https://github.com/advisories/GHSA-xrgv-7vx6-5vx6",
+      "ts": 1795186733.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "github.com/git-lfs/git-lfs",
+      "summary": "Severity: high. ### Impact\n\nWhen fetching objects from a malicious repository, Git LFS may execute an arbitrary command or binary after incorrectly parsing the Git configuration options defined for a submodule.\n\nGit LFS reads Git configuration options without checking for embedded line-ending control characters.  B",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "dev",
+        "crypto",
+        "security"
+      ],
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "cve:GHSA-prhx-9q2h-ph2x",
+      "source": "cve",
+      "title": "CVE-2026-103026: Paymenter: Unauthenticated arbitrary method invocation in Livewire components",
+      "url": "https://github.com/advisories/GHSA-prhx-9q2h-ph2x",
+      "ts": 1795186563.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "paymenter/paymenter",
+      "summary": "Severity: high. ### Summary\n\nA Livewire function allowed attackers to call any public function, allowing attackers to call any public method on the component. Because an attacker can call any function, they can also overwrite locked data.\n\n### Technical Details\n\n`app/Livewire/Traits/HasConfirmation.php` exposed a p",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "cve:GHSA-wcqj-wx85-c75p",
+      "source": "cve",
+      "title": "CVE-2026-130176: aMQTT: Denial of Service (DoS) via Memory Leak in Unmanaged QoS 2 Session Handshakes",
+      "url": "https://github.com/advisories/GHSA-wcqj-wx85-c75p",
+      "ts": 1795186490.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "amqtt",
+      "summary": "Severity: high. ### Impact\n\n`amqtt` is vulnerable to a remote denial of service caused by incomplete MQTT QoS 2 transactions remaining allocated after the associated client disconnects.\n\nMQTT QoS 2 uses a four-step handshake to provide exactly-once delivery. If a client begins a QoS 2 transaction but disconnects be",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "cve:GHSA-9657-8vc2-7g2p",
+      "source": "cve",
+      "title": "CVE-2026-115463: Poweradmin: The email second factor is an mt_rand() six-digit code verified with no attempt limit or lockout, so an attacker holding the password can brute-force it within the validity window",
+      "url": "https://github.com/advisories/GHSA-9657-8vc2-7g2p",
+      "ts": 1795186353.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "poweradmin/poweradmin",
+      "summary": "Severity: high. ### Summary\n\nThe email second factor is an mt_rand() six-digit code verified with no attempt limit or lockout\n\nThe email second factor is a six-digit code drawn from `mt_rand()` and verified with no attempt limit, so an attacker who already has the password can brute-force it inside its validity win",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "cve:GHSA-x7xj-4j4f-88xr",
+      "source": "cve",
+      "title": "CVE-2026-69261: Git LFS may leak HTTP headers after redirections",
+      "url": "https://github.com/advisories/GHSA-x7xj-4j4f-88xr",
+      "ts": 1795186187.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "github.com/git-lfs/git-lfs",
+      "summary": "Severity: high. ### Impact\n\nAfter receiving an HTTP redirection, Git LFS may forward certain HTTP headers to a host other than the one for which they were intended.  While `Authorization` headers are never forwarded to inappropriate hosts, `Cookie` headers may be forwarded incorrectly.\n\nGit LFS has resolved this is",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "cve:GHSA-w3f2-pr6x-wwjc",
+      "source": "cve",
+      "title": "CVE-2026-69260: Git LFS may attempt arbitrary remote commands via crafted SSH URLs",
+      "url": "https://github.com/advisories/GHSA-w3f2-pr6x-wwjc",
+      "ts": 1795186021.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "github.com/git-lfs/git-lfs",
+      "summary": "Severity: high. ### Impact\n\nWhen Git LFS makes object transfer or authentication requests to a remote host via SSH, it passes the path component of the remote's SSH URL as part of a command to be executed, but does not properly format the URL's path component as a single argument.  By inserting shell meta-character",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "cve:GHSA-66q9-mxf2-xqw6",
+      "source": "cve",
+      "title": "CVE-2026-103035: TeamPass folder re-parenting authorization bypass",
+      "url": "https://github.com/advisories/GHSA-66q9-mxf2-xqw6",
+      "ts": 1795185904.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "nilsteampassnet/TeamPass",
+      "summary": "Severity: high. ## Summary\n\nMissing authorization in the update_folder action: any authenticated non-read-only user can rename, re-parent and convert to personal any folder in the instance, moving another team's credential subtree into their own personal space and removing it from the organization. Confirmed at HEA",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "science",
+        "security"
+      ],
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "cve:GHSA-2hjf-7455-w946",
+      "source": "cve",
+      "title": "CVE-2026-104199: aMQTT: Inefficient Regular Expression Complexity and Uncontrolled Resource Consumption and Improper Input Validation",
+      "url": "https://github.com/advisories/GHSA-2hjf-7455-w946",
+      "ts": 1795185821.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "amqtt",
+      "summary": "Severity: high. ### Impact\n\n`amqtt` is vulnerable to a remote denial of service caused by improper MQTT topic-filter validation combined with catastrophic regular-expression backtracking.\n\nA single client can freeze the entire broker by sending one specially crafted `SUBSCRIBE` packet followed by one `PUBLISH` pack",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "cve:GHSA-hghq-53p7-c582",
+      "source": "cve",
+      "title": "CVE-2026-115578: go-guerrilla crashes on a bare XCLIENT command (7-byte slice off-by-one panic)",
+      "url": "https://github.com/advisories/GHSA-hghq-53p7-c582",
+      "ts": 1795185738.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "github.com/phires/go-guerrilla",
+      "summary": "Severity: high. The defect\n----------\nConfirmed at HEAD. server.go: cmdXCLIENT = []byte(\"XCLIENT\") is 7 bytes (line 78), so the dispatch match cmdXCLIENT.match(cmd) only guarantees len(input) >= 7. The handler then slices input[8:] (line 586):\n\n    case sc.XClientOn && cmdXCLIENT.match(cmd):\n        if toks := byte",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "cve:GHSA-v9v2-98xq-627c",
+      "source": "cve",
+      "title": "CVE-2026-104129: pREST _groupby function-expression SQL injection (incomplete fix of CVE-2025-58450)",
+      "url": "https://github.com/advisories/GHSA-v9v2-98xq-627c",
+      "ts": 1795185702.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "github.com/prest/prest",
+      "summary": "Severity: high. What the fix did and the gap\n----------------------------\nThe v2.3.0 fix (commit e88dabb) routed the _select field through a strict new gate, sanitizeSelectField (postgres.go:947/1003/2097). The sibling _groupby path was left on the far weaker isSafeSQLExpression. adapters/postgres/postgres.go, Grou",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "cve:GHSA-x6w4-f264-3vvr",
+      "source": "cve",
+      "title": "CVE-2026-63184: Refitter: Unrestricted OpenAPI references permit build-host SSRF and file inclusion",
+      "url": "https://github.com/advisories/GHSA-x6w4-f264-3vvr",
+      "ts": 1795185329.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "Refitter",
+      "summary": "Severity: high. ### Summary\n\nRefitter (the `refitter` dotnet tool, built on NJsonSchema for `$ref` resolution) fetches remote\n`http(s)` URLs and reads local files (including absolute paths and `../` traversal outside the input\ndirectory), inlining the referenced schema into the generated Refit interface/contracts.",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "dev",
+        "science",
+        "security"
+      ],
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "cve:GHSA-jwgx-mp9m-jwcr",
+      "source": "cve",
+      "title": "CVE-2026-58192: appium allows unauthenticated arbitrary file/directory deletion in @appium/storage-plugin",
+      "url": "https://github.com/advisories/GHSA-jwgx-mp9m-jwcr",
+      "ts": 1795185270.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "@appium/storage-plugin",
+      "summary": "Severity: high. ## Summary\n\nThe Appium storage plugin exposes an HTTP endpoint `POST /storage/delete` that takes a user-supplied `name` and deletes it from the server storage folder. The handler passes `name` straight into `path.join(storageRoot, name)` and then `fs.rimraf()` **without any path sanitization**. By s",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "ai",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-20"
+    },
+    {
       "uid": "cve:GHSA-7hvw-3c2q-45qg",
       "source": "cve",
       "title": "CVE-2026-103025: bep/imagemeta: Unbounded memory allocation decoding PNG `zTXt` \"Raw profile type iptc\" chunks",
@@ -443,152 +575,6 @@
         "security"
       ],
       "date": "2026-11-20"
-    },
-    {
-      "uid": "cve:GHSA-24pw-rf5p-mgp7",
-      "source": "cve",
-      "title": "CVE-2026-77318: Jupyter MCP Server: Unauthenticated management routes can hijack the Jupyter backend in standalone HTTP mode",
-      "url": "https://github.com/advisories/GHSA-24pw-rf5p-mgp7",
-      "ts": 1795133534.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "jupyter-mcp-server",
-      "summary": "Severity: high. Standalone `streamable-http` mode in `datalayer/jupyter-mcp-server` requires `MCP_TOKEN` for `/mcp`, but the custom management routes mounted on the same application do not enforce that token. An unauthenticated network caller can invoke `PUT /api/connect`, choose the Jupyter backend URL and token f",
-      "recipe": "gh_advisories",
-      "buzz": 3580,
-      "topics": [
-        "dev",
-        "crypto",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-20"
-    },
-    {
-      "uid": "cve:GHSA-6pm8-6f34-9v3g",
-      "source": "cve",
-      "title": "CVE-2026-77316: Flyto2 Core: SSRF guard bypass via DNS rebinding (validate_url_ssrf resolves-then-connects without pinning)",
-      "url": "https://github.com/advisories/GHSA-6pm8-6f34-9v3g",
-      "ts": 1795133484.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "flyto-core",
-      "summary": "Severity: high. # [MEDIUM] SSRF guard bypass via DNS rebinding — validate_url_ssrf resolves-then-connects without pinning\n\n- **CWE:** CWE-918 (SSRF) / CWE-367 (TOCTOU).\n- **CVSS v3.1:** `AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:L/A:N` = **6.8 Medium** (AC:H — needs attacker-controlled DNS with a low/zero TTL and to flip the a",
-      "recipe": "gh_advisories",
-      "buzz": 3580,
-      "topics": [
-        "security"
-      ],
-      "date": "2026-11-20"
-    },
-    {
-      "uid": "cve:GHSA-2mr3-rxrq-238c",
-      "source": "cve",
-      "title": "CVE-2026-77315: Flyto2 Core: http.paginate follows server-supplied next-page URLs (Link header / cursor) without SSRF revalidation",
-      "url": "https://github.com/advisories/GHSA-2mr3-rxrq-238c",
-      "ts": 1795133414.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "flyto-core",
-      "summary": "Severity: high. ## Summary\n`http.paginate` validates only the initial `base_url`, then follows server-supplied pagination targets (RFC 5988 `Link: rel=\"next\"` headers, cursor/offset URLs) in a loop **without revalidating each follow-up URL**. An attacker's first-page response can point `next` at an internal address",
-      "recipe": "gh_advisories",
-      "buzz": 3580,
-      "topics": [
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-20"
-    },
-    {
-      "uid": "cve:GHSA-pfg2-w999-497v",
-      "source": "cve",
-      "title": "CVE-2026-77313: Flyto2 Core: SSRF guard validates the resolved IP but connects by hostname, allowing DNS-rebinding TOCTOU",
-      "url": "https://github.com/advisories/GHSA-pfg2-w999-497v",
-      "ts": 1795133363.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "flyto-core",
-      "summary": "Severity: high. ## Summary\n`validate_url_ssrf` resolves the hostname, checks the IP against private ranges, then **discards the IP and returns the hostname URL string**. aiohttp performs a fresh, independent DNS resolution at connect time. An attacker controlling DNS for a hostname (TTL 0, alternating public IP and",
-      "recipe": "gh_advisories",
-      "buzz": 3580,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-20"
-    },
-    {
-      "uid": "cve:GHSA-86mf-q4h5-69gp",
-      "source": "cve",
-      "title": "CVE-2026-59988: django-docutils unsafe Docutils defaults allow local file disclosure, SSRF, and stored XSS",
-      "url": "https://github.com/advisories/GHSA-86mf-q4h5-69gp",
-      "ts": 1795133292.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "django-docutils",
-      "summary": "Severity: high. ## Summary\n\ndjango-docutils before `0.30.0` rendered reStructuredText through Docutils without protected web-safe defaults. Public rendering paths, including `publish_doctree`, `publish_html_from_source`, `publish_html_from_doctree`, `publish_parts_from_doctree`, the `{% rst %}` template tag, the `r",
-      "recipe": "gh_advisories",
-      "buzz": 3580,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-20"
-    },
-    {
-      "uid": "cve:GHSA-c3cj-3p6p-j822",
-      "source": "cve",
-      "title": "CVE-2026-63415: Jane: $ref resolution performs SSRF + LFI (path traversal) at code-generation time (jane-php)",
-      "url": "https://github.com/advisories/GHSA-c3cj-3p6p-j822",
-      "ts": 1795133252.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "jane-php/open-api-3",
-      "summary": "Severity: high. ### Summary\njane-php resolves external `$ref` targets at code-generation time via `file_get_contents($ref)` (jane-php/json-schema-runtime/Reference.php::doResolve) with no scheme/path restriction. An attacker-controlled OpenAPI document can therefore cause: `$ref: 'http://attacker/x'` -> SSRF (HTTP",
-      "recipe": "gh_advisories",
-      "buzz": 3580,
-      "topics": [
-        "dev",
-        "science",
-        "security"
-      ],
-      "date": "2026-11-20"
-    },
-    {
-      "uid": "cve:GHSA-r72h-j7qq-v6qg",
-      "source": "cve",
-      "title": "CVE-2026-58210: NATS Server allows unauthenticated memory exhaustion through incomplete MQTT CONNECT packets",
-      "url": "https://github.com/advisories/GHSA-r72h-j7qq-v6qg",
-      "ts": 1795133086.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "github.com/nats-io/nats-server/v2",
-      "summary": "Severity: high. ### Background\n\nNATS.io is a high performance open source pub-sub distributed communication technology, built for the cloud, on-premise, IoT and edge computing.\n\nThe NATS Server supports MQTT clients, including authentication and parsing of MQTT `CONNECT` packets.\n\n### Problem Description\n\nAn unauth",
-      "recipe": "gh_advisories",
-      "buzz": 3580,
-      "topics": [
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-20"
-    },
-    {
-      "uid": "cve:GHSA-wr3g-j6qj-xpgh",
-      "source": "cve",
-      "title": "CVE-2026-128135: NLTK: ZIP package extraction follows in-root hardlinks and overwrites files outside the NLTK data root",
-      "url": "https://github.com/advisories/GHSA-wr3g-j6qj-xpgh",
-      "ts": 1795132755.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "nltk",
-      "summary": "Severity: high. ## Summary\n\nNLTK ships a security wrapper, `nltk.pathsec.ZipFile`, that is meant to confine archive extraction to trusted data roots and to block link-based escapes. When `nltk.download()` installs a package, the extraction write opens each member's target path without checking whether that path is",
-      "recipe": "gh_advisories",
-      "buzz": 3580,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-19"
     },
     {
       "uid": "hn:50172041",
@@ -901,6 +887,138 @@
       "date": "2020-09-30"
     },
     {
+      "uid": "cve:GHSA-9rv8-9hvg-92mq",
+      "source": "cve",
+      "title": "CVE-2026-35376: chcon: recursive relabel not anchored to traversal dirfd (TOCTOU)",
+      "url": "https://github.com/advisories/GHSA-9rv8-9hvg-92mq",
+      "ts": 1795192774.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "uu_chcon",
+      "summary": "Severity: medium. `chcon` resolved recursive targets from `fts_accpath` with a fresh path lookup, so traversal and the SELinux get/set were not bound to traversal directory state. A privileged recursive relabel can be redirected to unintended objects under rename/symlink races. Fix opens targets with `openat` against",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "cve:GHSA-fjjq-8hw5-cf9f",
+      "source": "cve",
+      "title": "CVE-2026-35374: split: TOCTOU output-open allows truncating a swapped file",
+      "url": "https://github.com/advisories/GHSA-fjjq-8hw5-cf9f",
+      "ts": 1795192407.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "uu_split",
+      "summary": "Severity: medium. `split` checks input/output identity by path before opening the output, then opens with truncation, leaving a race window on mutable path components. GNU opens first and compares the opened output inode against the input before truncating. The race can cause `split` to truncate/write a file differen",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "cve:GHSA-6499-jgj4-2wpf",
+      "source": "cve",
+      "title": "CVE-2026-104773: CKAN: Session Fixation in Registration View",
+      "url": "https://github.com/advisories/GHSA-6499-jgj4-2wpf",
+      "ts": 1795191926.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "ckan",
+      "summary": "Severity: medium. ## Description\n\nWeb user registration form is vulnerable to session fixation if the site is configured with server-side session storage (CKAN uses cookie-based session storage by default). The attacker would need to either set a cookie on the victim's browser or steal the victim's currently valid se",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "dev",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "cve:GHSA-cg26-4c6j-2x8h",
+      "source": "cve",
+      "title": "CVE-2026-69133: netty-incubator-codec-ohttp: OHTTP codecs retain consumed outer cumulation buffers after completed exchanges",
+      "url": "https://github.com/advisories/GHSA-cg26-4c6j-2x8h",
+      "ts": 1795191729.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "io.netty.incubator:netty-incubator-codec-ohttp",
+      "summary": "Severity: medium. ## Summary:\n\nOHttpClientCodec and OHttpServerCodec retain the encrypted outer HttpContent in a handler-level cumulationBuffer. After a valid OHTTP exchange completes, the OHTTP request/response context is destroyed, but the outer cumulationBuffer is not released or reset. It remains referenced by th",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "cve:GHSA-3h6w-xcw3-9xjj",
+      "source": "cve",
+      "title": "CVE-2026-104885: OpenRemote: Cross-realm MQTT session disconnect without authorization",
+      "url": "https://github.com/advisories/GHSA-3h6w-xcw3-9xjj",
+      "ts": 1795186618.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "io.openremote:openremote-manager",
+      "summary": "Severity: medium. ### Summary\n\nCross-realm MQTT session disconnect without authorization\n\n## Vulnerability\n\nThe `disconnectUserSession` endpoint in `UserResourceImpl.java` (line 443) accepts a `realm` path parameter but ignores it entirely, performing no authorization or realm-boundary check before force-disconnectin",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "cve:GHSA-vcx7-pfrh-mcfg",
+      "source": "cve",
+      "title": "CVE-2026-115565: storyblok-backup: Stored path traversal via unsanitized Storyblok component names in backup output",
+      "url": "https://github.com/advisories/GHSA-vcx7-pfrh-mcfg",
+      "ts": 1795186518.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "storyblok-backup",
+      "summary": "Severity: medium. ### Summary\nstoryblok-backup writes files using unsanitized names for Storyblok components, which are content type or schema definitions. This allows a component name containing path traversal sequences to cause backup files to be written outside the intended backup directory. Anyone with component",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "dev",
+        "crypto",
+        "security"
+      ],
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "cve:GHSA-3g82-77xr-68x5",
+      "source": "cve",
+      "title": "CVE-2026-63386: js-toml allows uncontrolled recursion in `load()` leading `RangeError` (stack exhaustion) on deeply nested input",
+      "url": "https://github.com/advisories/GHSA-3g82-77xr-68x5",
+      "ts": 1795185645.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "js-toml",
+      "summary": "Severity: medium. ## Summary\n\n`load()` parses untrusted TOML using a recursive-descent parser (Chevrotain) and a\nrecursive tree-walking interpreter. Neither the parser nor the interpreter enforces a\nmaximum nesting / key depth. A small, attacker-controlled document with deep nesting\n(arrays, inline tables) or a long",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-20"
+    },
+    {
       "uid": "cve:GHSA-gfwj-45pc-w6r5",
       "source": "cve",
       "title": "CVE-2026-103033: ALTCHA: Nil-map panic (pre-verification DoS) in v1 parseServerSignature on malformed VerificationData",
@@ -989,136 +1107,6 @@
       "topics": [
         "dev",
         "science",
-        "security"
-      ],
-      "date": "2026-11-20"
-    },
-    {
-      "uid": "cve:GHSA-3xjf-9q55-vxw4",
-      "source": "cve",
-      "title": "CVE-2026-77380: Bolt: Prevent SSRF due to unchecked followed redirects",
-      "url": "https://github.com/advisories/GHSA-3xjf-9q55-vxw4",
-      "ts": 1795133744.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "bolt/core",
-      "summary": "Severity: medium. ### Impact\n\nThe `/bolt/async/upload-url` and `/bolt/async/embed` endpoints validated only the **submitted** URL before fetching it server-side, but the fetch then **followed redirects to destinations that were never re-validated**. This allowed an authenticated user to bypass the SSRF guard (`UrlSaf",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "dev",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-20"
-    },
-    {
-      "uid": "cve:GHSA-6358-jg5p-hmjj",
-      "source": "cve",
-      "title": "CVE-2026-77379: Bolt: Information disclosure through unfiltered public relation API endpoint",
-      "url": "https://github.com/advisories/GHSA-6358-jg5p-hmjj",
-      "ts": 1795133723.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "bolt/core",
-      "summary": "Severity: medium. ### Impact\n\nA missing access-control filter in the public Relation API allowed unauthenticated users to discover metadata about unpublished, draft, and viewless content through REST and GraphQL endpoints.\n\n### Patches\n\nThis has been patched in Bolt 6.1.4.",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-20"
-    },
-    {
-      "uid": "cve:GHSA-2535-j2pq-qq4r",
-      "source": "cve",
-      "title": "CVE-2026-77377: Bolt: Server-Side Request Forgery (SSRF) in URL-upload and embed endpoints",
-      "url": "https://github.com/advisories/GHSA-2535-j2pq-qq4r",
-      "ts": 1795133682.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "bolt/core",
-      "summary": "Severity: medium. ### Impact\n\nTwo authenticated backend endpoints fetched a user-supplied URL server-side with no protection against internal targets.\n\n### Patches\n\nThis has been patched in Bolt 6.1.4.",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "dev",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-20"
-    },
-    {
-      "uid": "cve:GHSA-xr6g-7g83-j865",
-      "source": "cve",
-      "title": "CVE-2026-77376: Bolt: Open redirect enables post-authentication redirection to arbitrary domains",
-      "url": "https://github.com/advisories/GHSA-xr6g-7g83-j865",
-      "ts": 1795133671.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "bolt/core",
-      "summary": "Severity: medium. ### Impact\n\nOpen redirect vulnerabilities in LoginFormAuthenticator allow attackers to redirect users to attacker-controlled domains after login success or login failure, enabling phishing attacks and potential token theft.\n\n### Patches\n\nThis has been patched in Bolt 6.1.4.",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "crypto",
-        "security"
-      ],
-      "date": "2026-11-20"
-    },
-    {
-      "uid": "cve:GHSA-p957-7v2w-g93g",
-      "source": "cve",
-      "title": "CVE-2026-58208: NATS Server: MQTT-over-WebSocket Path Can Crash WebSocket-Only JetStream Servers Before MQTT Is Enabled",
-      "url": "https://github.com/advisories/GHSA-p957-7v2w-g93g",
-      "ts": 1795133117.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "github.com/nats-io/nats-server/v2",
-      "summary": "Severity: medium. ### Background\n\nNATS.io is a high performance open source pub-sub distributed communication technology, built for the cloud, on-premise, IoT and edge computing.\n\nThe NATS Server can accept client connections over WebSocket and can also support MQTT over WebSocket when MQTT is configured.\n\n### Proble",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-20"
-    },
-    {
-      "uid": "cve:GHSA-7qmq-8cc4-hxwg",
-      "source": "cve",
-      "title": "CVE-2026-58209: NATS Server MQTT retained messages and QoS replay bypass subscription deny rules",
-      "url": "https://github.com/advisories/GHSA-7qmq-8cc4-hxwg",
-      "ts": 1795133067.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "github.com/nats-io/nats-server/v2",
-      "summary": "Severity: medium. ### Background\n\nNATS.io is a high performance open source pub-sub distributed communication technology, built for the cloud, on-premise, IoT and edge computing.\n\nThe NATS Server MQTT support includes retained messages and QoS1+ durable delivery. NATS subscription permissions can allow broad wildcard",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-20"
-    },
-    {
-      "uid": "cve:GHSA-x26x-7f4v-cqx7",
-      "source": "cve",
-      "title": "CVE-2026-62337: snark-verifier: Halo 2 aggregation circuit mishandles point-at-infinity proof elements",
-      "url": "https://github.com/advisories/GHSA-x26x-7f4v-cqx7",
-      "ts": 1795132919.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "snark-verifier",
-      "summary": "Severity: medium. ### Summary\nThe Halo 2 aggregation circuit could mishandle proof elements encoded as the point at infinity.\n\nWhen an assigned proof point appeared in an MSM term with constant scalar one, the Halo 2 loader used a scalar-one shortcut that passed the assigned point directly into the EC sum helper. The",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
         "security"
       ],
       "date": "2026-11-20"
@@ -1382,6 +1370,24 @@
       "date": "2019-07-18"
     },
     {
+      "uid": "cve:GHSA-xhrc-7f76-vh96",
+      "source": "cve",
+      "title": "CVE-2026-35377:  uu_env incorrectly rejects backslashes within single-quoted strings accepted by GNU env",
+      "url": "https://github.com/advisories/GHSA-xhrc-7f76-vh96",
+      "ts": 1795192591.0,
+      "points": 700,
+      "comments": 0,
+      "author": "uu_env",
+      "summary": "Severity: low. In `env -S`, GNU keeps backslashes literal inside single quotes (except `\\\\` and `\\'`); uutils errors on sequences like `\\a`. This is the backslash-handling issue of the broader `-S`/`--split-string` parsing divergence.\n```\nenv -S\"printf %s '\\''\\\\x'\\''\"   # GNU prints \\x ; uutils: invalid sequence '",
+      "recipe": "gh_advisories",
+      "buzz": 780,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-20"
+    },
+    {
       "uid": "gh:Aabyss-Team/Threat-Broadcast-Plus",
       "source": "github",
       "title": "Aabyss-Team/Threat-Broadcast-Plus",
@@ -1397,17 +1403,49 @@
       "date": "2026-11-16"
     },
     {
+      "uid": "gh:elmati279/http2shell-brotli-impact-review",
+      "source": "github",
+      "title": "elmati279/http2shell-brotli-impact-review",
+      "url": "https://github.com/elmati279/http2shell-brotli-impact-review",
+      "ts": 1795182140.0,
+      "points": 93,
+      "comments": 0,
+      "author": "elmati279",
+      "summary": "HTTP/2 shell transport, Brotli impact assessed — evidence reviewed, findings documented.",
+      "recipe": "github_sec",
+      "buzz": 173,
+      "topics": [
+        "dev"
+      ],
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "gh:maxnyakundi23-del/java4shell-exposure-audit",
+      "source": "github",
+      "title": "maxnyakundi23-del/java4shell-exposure-audit",
+      "url": "https://github.com/maxnyakundi23-del/java4shell-exposure-audit",
+      "ts": 1795181987.0,
+      "points": 93,
+      "comments": 0,
+      "author": "maxnyakundi23-del",
+      "summary": "Detects Java deserialization exposure through shell-oriented audit checks.",
+      "recipe": "github_sec",
+      "buzz": 173,
+      "topics": [],
+      "date": "2026-11-20"
+    },
+    {
       "uid": "gh:wildorigins/wildos",
       "source": "github",
       "title": "wildorigins/wildos",
       "url": "https://github.com/wildorigins/wildos",
       "ts": 1794169078.0,
-      "points": 132,
+      "points": 137,
       "comments": 7,
       "author": "wildorigins",
       "summary": "A hardened Linux desktop, rebuilt from scratch, with your Windows apps built in. Free and open source.",
       "recipe": "github_sec",
-      "buzz": 153,
+      "buzz": 158,
       "topics": [],
       "date": "2026-11-08"
     },
@@ -1662,78 +1700,6 @@
       "date": "2026-11-19"
     },
     {
-      "uid": "rss:299fae081fb406",
-      "source": "rss",
-      "title": "phpAfterShell Explained: How Hackers Could Turn a PHP Session Flaw Into Code Execution",
-      "url": "https://thehackernews.com/2026/11/phpaftershell-explained-how-hackers.html",
-      "ts": 1795107596.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "PHP's default file-based session storage can be made to return objects an attacker chose, by cutting off a session write at the right moment. When combined with a second weakness, such as a suitable gadget chain in the app, those objects can allow the attacker to run code on the server. Today's PHP releases fix the flaw, called phpAfterShell. The flaw is tracked as CVE-[phone] and rated",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-19"
-    },
-    {
-      "uid": "rss:2aa68bdd4ec131",
-      "source": "rss",
-      "title": "PHP Fixes 7 Critical Flaws, Including Bugs That Could Allow Remote Code Execution",
-      "url": "https://thehackernews.com/2026/11/php-fixes-7-critical-flaws-including.html",
-      "ts": 1795101487.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "The PHP Foundation has released security updates to address multiple critical security flaws that could be exploited to achieve remote code execution on affected deployments, including CVE-[phone]. The release of the patch follows an advance notice in which the project maintainers alerted users to multiple critical vulnerabilities affecting all supported PHP versions under specific",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-19"
-    },
-    {
-      "uid": "rss:18306cc167b8fd",
-      "source": "rss",
-      "title": "Critical VMware vCenter Zero-Day Flaw Lets Network Attackers Bypass Authentication",
-      "url": "https://thehackernews.com/2026/11/critical-vmware-vcenter-flaw-cvss-98.html",
-      "ts": 1795101066.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "A critical flaw in VMware vCenter lets an attacker with network access bypass authentication and gain unauthorized access to the system, Broadcom, which owns VMware, said in an advisory published today. Fixed versions are out for all supported branches, and the company lists no workaround. vCenter is the central console for managing an organization's ESX hosts and virtual machines. The",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-19"
-    },
-    {
-      "uid": "rss:9bb7a0fdd0f7a3",
-      "source": "rss",
-      "title": "Drupal Patches Critical Installer Flaw That Could Give Unauthenticated Attackers Control of Sites",
-      "url": "https://thehackernews.com/2026/11/drupal-patches-critical-installer-flaw.html",
-      "ts": 1795098786.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Under specific conditions, a critical vulnerability in Drupal core can allow an attacker without login credentials to use the built-in installer to attempt to reinstall a site. That can lead to a site takeover or remote code execution, and the project rates the vulnerable configurations as uncommon. Fixed releases for all supported branches shipped yesterday. The Drupal Security Team disclosed",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "security"
-      ],
-      "date": "2026-11-19"
-    },
-    {
       "uid": "gh:rammahmagdy/Latch",
       "source": "github",
       "title": "rammahmagdy/Latch",
@@ -1786,12 +1752,12 @@
       "title": "vulnix0x4/a-better-antivirus",
       "url": "https://github.com/vulnix0x4/a-better-antivirus",
       "ts": 1794885574.0,
-      "points": 25,
+      "points": 31,
       "comments": 2,
       "author": "vulnix0x4",
       "summary": "Catches infostealers in the act on Windows: plants fake passwords, wallets and app data that only malware would read, and freezes whatever touches them.",
       "recipe": "github_sec",
-      "buzz": 41,
+      "buzz": 47,
       "topics": [
         "security"
       ],
@@ -1803,12 +1769,12 @@
       "title": "spatie/laravel-suspicious-login",
       "url": "https://github.com/spatie/laravel-suspicious-login",
       "ts": 1794917088.0,
-      "points": 26,
+      "points": 29,
       "comments": 0,
       "author": "spatie",
       "summary": "Detect suspicious logins in your Laravel app",
       "recipe": "github_sec",
-      "buzz": 36,
+      "buzz": 39,
       "topics": [],
       "date": "2026-11-17"
     },
@@ -1847,6 +1813,78 @@
       "topics": [
         "ai",
         "dev"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "rss:299fae081fb406",
+      "source": "rss",
+      "title": "phpAfterShell Explained: How Hackers Could Turn a PHP Session Flaw Into Code Execution",
+      "url": "https://thehackernews.com/2026/11/phpaftershell-explained-how-hackers.html",
+      "ts": 1795107596.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "PHP's default file-based session storage can be made to return objects an attacker chose, by cutting off a session write at the right moment. When combined with a second weakness, such as a suitable gadget chain in the app, those objects can allow the attacker to run code on the server. Today's PHP releases fix the flaw, called phpAfterShell. The flaw is tracked as CVE-[phone] and rated",
+      "recipe": "hackersnews",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "rss:2aa68bdd4ec131",
+      "source": "rss",
+      "title": "PHP Fixes 7 Critical Flaws, Including Bugs That Could Allow Remote Code Execution",
+      "url": "https://thehackernews.com/2026/11/php-fixes-7-critical-flaws-including.html",
+      "ts": 1795101487.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "The PHP Foundation has released security updates to address multiple critical security flaws that could be exploited to achieve remote code execution on affected deployments, including CVE-[phone]. The release of the patch follows an advance notice in which the project maintainers alerted users to multiple critical vulnerabilities affecting all supported PHP versions under specific",
+      "recipe": "hackersnews",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "rss:18306cc167b8fd",
+      "source": "rss",
+      "title": "Critical VMware vCenter Zero-Day Flaw Lets Network Attackers Bypass Authentication",
+      "url": "https://thehackernews.com/2026/11/critical-vmware-vcenter-flaw-cvss-98.html",
+      "ts": 1795101066.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "A critical flaw in VMware vCenter lets an attacker with network access bypass authentication and gain unauthorized access to the system, Broadcom, which owns VMware, said in an advisory published today. Fixed versions are out for all supported branches, and the company lists no workaround. vCenter is the central console for managing an organization's ESX hosts and virtual machines. The",
+      "recipe": "hackersnews",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "rss:9bb7a0fdd0f7a3",
+      "source": "rss",
+      "title": "Drupal Patches Critical Installer Flaw That Could Give Unauthenticated Attackers Control of Sites",
+      "url": "https://thehackernews.com/2026/11/drupal-patches-critical-installer-flaw.html",
+      "ts": 1795098786.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Under specific conditions, a critical vulnerability in Drupal core can allow an attacker without login credentials to use the built-in installer to attempt to reinstall a site. That can lead to a site takeover or remote code execution, and the project rates the vulnerable configurations as uncommon. Fixed releases for all supported branches shipped yesterday. The Drupal Security Team disclosed",
+      "recipe": "hackersnews",
+      "buzz": 30,
+      "topics": [
+        "security"
       ],
       "date": "2026-11-19"
     },

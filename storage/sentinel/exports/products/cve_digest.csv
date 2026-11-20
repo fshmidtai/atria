@@ -1,31 +1,31 @@
 cve_id,severity,package,title,url,date
+CVE-2026-104099,critical,github.com/fabiolb/fabio,CVE-2026-104099: Fabio: Access-control bypass through unnormalized request paths,https://github.com/advisories/GHSA-4hrh-34w3-5ww8,2026-11-20
 CVE-2026-114516,critical,ep_etherpad-lite,CVE-2026-114516: Etherpad: Pre-auth arbitrary file read,https://github.com/advisories/GHSA-mc8w-wjhw-45x5,2026-11-20
-CVE-2026-77369,critical,github.com/daptin/daptin,CVE-2026-77369: Daptin: Broken Access Control (IDOR) in the generic YJS collaboration endpoint,https://github.com/advisories/GHSA-wj7x-58c2-5793,2026-11-20
-CVE-2026-77367,critical,github.com/daptin/daptin,CVE-2026-77367: Daptin: Unauthenticated SQL Injection via the `sort` query parameter on every entity list endpoint,https://github.com/advisories/GHSA-hq2p-f2vj-v3cm,2026-11-20
-CVE-2026-77359,critical,jupyter-mcp-server,CVE-2026-77359: Jupyter MCP Server: Browser DNS rebinding can hijack the Jupyter backend through management routes,https://github.com/advisories/GHSA-9x8x-crjq-g64h,2026-11-20
-CVE-2026-77312,critical,flyto-core,CVE-2026-77312: Flyto2 Core: Arbitrary file write via unguarded data.*/file.* modules (incomplete fix of CVE-2026-67429),https://github.com/advisories/GHSA-p34x-fmph-9fjx,2026-11-20
-CVE-2026-63344,critical,Refitter,CVE-2026-63344: Refitter allows arbitrary code execution through unescaped OpenAPI content-type values,https://github.com/advisories/GHSA-p32v-8v8j-j534,2026-11-20
-CVE-2026-63346,critical,Refitter,CVE-2026-63346: Refitter allows code execution through unescaped OpenAPI header parameter names,https://github.com/advisories/GHSA-58x9-vjvp-6mx8,2026-11-20
-CVE-2026-63345,critical,Refitter,CVE-2026-63345: Refitter allows arbitrary code execution through unescaped OpenAPI paths,https://github.com/advisories/GHSA-3fhm-p725-h3g3,2026-11-20
+CVE-2026-105803,high,github.com/git-lfs/git-lfs,CVE-2026-105803: Git LFS may execute arbitrary commands via crafted Git LFS configurations,https://github.com/advisories/GHSA-x72p-hmqp-46hw,2026-11-20
+CVE-2026-105802,high,github.com/git-lfs/git-lfs,CVE-2026-105802: Git LFS may execute arbitrary commands via crafted Git configurations,https://github.com/advisories/GHSA-xrgv-7vx6-5vx6,2026-11-20
+CVE-2026-103026,high,paymenter/paymenter,CVE-2026-103026: Paymenter: Unauthenticated arbitrary method invocation in Livewire components,https://github.com/advisories/GHSA-prhx-9q2h-ph2x,2026-11-20
+CVE-2026-130176,high,amqtt,CVE-2026-130176: aMQTT: Denial of Service (DoS) via Memory Leak in Unmanaged QoS 2 Session Handshakes,https://github.com/advisories/GHSA-wcqj-wx85-c75p,2026-11-20
+CVE-2026-115463,high,poweradmin/poweradmin,"CVE-2026-115463: Poweradmin: The email second factor is an mt_rand() six-digit code verified with no attempt limit or lockout, so an attacker holding the password can brute-force it within the validity window",https://github.com/advisories/GHSA-9657-8vc2-7g2p,2026-11-20
+CVE-2026-69261,high,github.com/git-lfs/git-lfs,CVE-2026-69261: Git LFS may leak HTTP headers after redirections,https://github.com/advisories/GHSA-x7xj-4j4f-88xr,2026-11-20
+CVE-2026-69260,high,github.com/git-lfs/git-lfs,CVE-2026-69260: Git LFS may attempt arbitrary remote commands via crafted SSH URLs,https://github.com/advisories/GHSA-w3f2-pr6x-wwjc,2026-11-20
+CVE-2026-103035,high,nilsteampassnet/TeamPass,CVE-2026-103035: TeamPass folder re-parenting authorization bypass,https://github.com/advisories/GHSA-66q9-mxf2-xqw6,2026-11-20
+CVE-2026-104199,high,amqtt,CVE-2026-104199: aMQTT: Inefficient Regular Expression Complexity and Uncontrolled Resource Consumption and Improper Input Validation,https://github.com/advisories/GHSA-2hjf-7455-w946,2026-11-20
+CVE-2026-115578,high,github.com/phires/go-guerrilla,CVE-2026-115578: go-guerrilla crashes on a bare XCLIENT command (7-byte slice off-by-one panic),https://github.com/advisories/GHSA-hghq-53p7-c582,2026-11-20
+CVE-2026-104129,high,github.com/prest/prest,CVE-2026-104129: pREST _groupby function-expression SQL injection (incomplete fix of CVE-2025-58450),https://github.com/advisories/GHSA-v9v2-98xq-627c,2026-11-20
+CVE-2026-63184,high,Refitter,CVE-2026-63184: Refitter: Unrestricted OpenAPI references permit build-host SSRF and file inclusion,https://github.com/advisories/GHSA-x6w4-f264-3vvr,2026-11-20
+CVE-2026-58192,high,@appium/storage-plugin,CVE-2026-58192: appium allows unauthenticated arbitrary file/directory deletion in @appium/storage-plugin,https://github.com/advisories/GHSA-jwgx-mp9m-jwcr,2026-11-20
 CVE-2026-103025,high,github.com/bep/imagemeta,"CVE-2026-103025: bep/imagemeta: Unbounded memory allocation decoding PNG `zTXt` ""Raw profile type iptc"" chunks",https://github.com/advisories/GHSA-7hvw-3c2q-45qg,2026-11-20
 CVE-2026-62955,high,baserproject/baser-core,CVE-2026-62955: baserCMS: Path Traversal Bypass via realpath() in BcThemeFileService (CVE-2026-30940 Patch Bypass),https://github.com/advisories/GHSA-2pj4-v76f-wjvx,2026-11-20
-CVE-2026-77318,high,jupyter-mcp-server,CVE-2026-77318: Jupyter MCP Server: Unauthenticated management routes can hijack the Jupyter backend in standalone HTTP mode,https://github.com/advisories/GHSA-24pw-rf5p-mgp7,2026-11-20
-CVE-2026-77316,high,flyto-core,CVE-2026-77316: Flyto2 Core: SSRF guard bypass via DNS rebinding (validate_url_ssrf resolves-then-connects without pinning),https://github.com/advisories/GHSA-6pm8-6f34-9v3g,2026-11-20
-CVE-2026-77315,high,flyto-core,CVE-2026-77315: Flyto2 Core: http.paginate follows server-supplied next-page URLs (Link header / cursor) without SSRF revalidation,https://github.com/advisories/GHSA-2mr3-rxrq-238c,2026-11-20
-CVE-2026-77313,high,flyto-core,"CVE-2026-77313: Flyto2 Core: SSRF guard validates the resolved IP but connects by hostname, allowing DNS-rebinding TOCTOU",https://github.com/advisories/GHSA-pfg2-w999-497v,2026-11-20
-CVE-2026-59988,high,django-docutils,"CVE-2026-59988: django-docutils unsafe Docutils defaults allow local file disclosure, SSRF, and stored XSS",https://github.com/advisories/GHSA-86mf-q4h5-69gp,2026-11-20
-CVE-2026-63415,high,jane-php/open-api-3,CVE-2026-63415: Jane: $ref resolution performs SSRF + LFI (path traversal) at code-generation time (jane-php),https://github.com/advisories/GHSA-c3cj-3p6p-j822,2026-11-20
-CVE-2026-58210,high,github.com/nats-io/nats-server/v2,CVE-2026-58210: NATS Server allows unauthenticated memory exhaustion through incomplete MQTT CONNECT packets,https://github.com/advisories/GHSA-r72h-j7qq-v6qg,2026-11-20
-CVE-2026-128135,high,nltk,CVE-2026-128135: NLTK: ZIP package extraction follows in-root hardlinks and overwrites files outside the NLTK data root,https://github.com/advisories/GHSA-wr3g-j6qj-xpgh,2026-11-19
+CVE-2026-35376,medium,uu_chcon,CVE-2026-35376: chcon: recursive relabel not anchored to traversal dirfd (TOCTOU),https://github.com/advisories/GHSA-9rv8-9hvg-92mq,2026-11-20
+CVE-2026-35374,medium,uu_split,CVE-2026-35374: split: TOCTOU output-open allows truncating a swapped file,https://github.com/advisories/GHSA-fjjq-8hw5-cf9f,2026-11-20
+CVE-2026-104773,medium,ckan,CVE-2026-104773: CKAN: Session Fixation in Registration View,https://github.com/advisories/GHSA-6499-jgj4-2wpf,2026-11-20
+CVE-2026-69133,medium,io.netty.incubator:netty-incubator-codec-ohttp,CVE-2026-69133: netty-incubator-codec-ohttp: OHTTP codecs retain consumed outer cumulation buffers after completed exchanges,https://github.com/advisories/GHSA-cg26-4c6j-2x8h,2026-11-20
+CVE-2026-104885,medium,io.openremote:openremote-manager,CVE-2026-104885: OpenRemote: Cross-realm MQTT session disconnect without authorization,https://github.com/advisories/GHSA-3h6w-xcw3-9xjj,2026-11-20
+CVE-2026-115565,medium,storyblok-backup,CVE-2026-115565: storyblok-backup: Stored path traversal via unsanitized Storyblok component names in backup output,https://github.com/advisories/GHSA-vcx7-pfrh-mcfg,2026-11-20
+CVE-2026-63386,medium,js-toml,CVE-2026-63386: js-toml allows uncontrolled recursion in `load()` leading `RangeError` (stack exhaustion) on deeply nested input,https://github.com/advisories/GHSA-3g82-77xr-68x5,2026-11-20
 CVE-2026-103033,medium,github.com/altcha-org/altcha-lib-go/v2,CVE-2026-103033: ALTCHA: Nil-map panic (pre-verification DoS) in v1 parseServerSignature on malformed VerificationData,https://github.com/advisories/GHSA-gfwj-45pc-w6r5,2026-11-20
 CVE-2026-102945,medium,github.com/omec-project/amf,CVE-2026-102945: Aether Project amf: panic on an unrecovered NGAP goroutine,https://github.com/advisories/GHSA-v6w5-38cf-pcv8,2026-11-20
 CVE-2026-63012,medium,baserproject/baser-core,CVE-2026-63012: baserCMS administrative API authorization bypass through session fallback,https://github.com/advisories/GHSA-wgvx-x5g3-9v29,2026-11-20
 CVE-2026-77382,medium,falcon-rust,"CVE-2026-77382: falcon-rust: Discrete-Gaussian sampler runs at 2^-33 precision, far below Falcon's requirement (reference KAT vectors no longer pass)",https://github.com/advisories/GHSA-25rm-9wvm-m38v,2026-11-20
 CVE-2026-77378,medium,bolt/core,CVE-2026-77378: Bolt ListFormatHelper SQL injection,https://github.com/advisories/GHSA-r7h9-qx4h-77j5,2026-11-20
-CVE-2026-77380,medium,bolt/core,CVE-2026-77380: Bolt: Prevent SSRF due to unchecked followed redirects,https://github.com/advisories/GHSA-3xjf-9q55-vxw4,2026-11-20
-CVE-2026-77379,medium,bolt/core,CVE-2026-77379: Bolt: Information disclosure through unfiltered public relation API endpoint,https://github.com/advisories/GHSA-6358-jg5p-hmjj,2026-11-20
-CVE-2026-77377,medium,bolt/core,CVE-2026-77377: Bolt: Server-Side Request Forgery (SSRF) in URL-upload and embed endpoints,https://github.com/advisories/GHSA-2535-j2pq-qq4r,2026-11-20
-CVE-2026-77376,medium,bolt/core,CVE-2026-77376: Bolt: Open redirect enables post-authentication redirection to arbitrary domains,https://github.com/advisories/GHSA-xr6g-7g83-j865,2026-11-20
-CVE-2026-58208,medium,github.com/nats-io/nats-server/v2,CVE-2026-58208: NATS Server: MQTT-over-WebSocket Path Can Crash WebSocket-Only JetStream Servers Before MQTT Is Enabled,https://github.com/advisories/GHSA-p957-7v2w-g93g,2026-11-20
-CVE-2026-58209,medium,github.com/nats-io/nats-server/v2,CVE-2026-58209: NATS Server MQTT retained messages and QoS replay bypass subscription deny rules,https://github.com/advisories/GHSA-7qmq-8cc4-hxwg,2026-11-20
-CVE-2026-62337,medium,snark-verifier,CVE-2026-62337: snark-verifier: Halo 2 aggregation circuit mishandles point-at-infinity proof elements,https://github.com/advisories/GHSA-x26x-7f4v-cqx7,2026-11-20
+CVE-2026-35377,low,uu_env,CVE-2026-35377:  uu_env incorrectly rejects backslashes within single-quoted strings accepted by GNU env,https://github.com/advisories/GHSA-xhrc-7f76-vh96,2026-11-20

@@ -1,29 +1,28 @@
 uid,source,title,url,buzz,date,topics
 hn:37392676,hn,Ask HN: I’m an FCC Commissioner proposing regulation of IoT security updates,https://news.ycombinator.com/item?id=37392676,6162,2023-09-05,dev|security
 hn:43462783,hn,U.S. national-security leaders included me in a group chat,https://www.theatlantic.com/politics/archive/2025/03/trump-administration-accidentally-texted-me-its-war-plans/682151/,6156,2025-03-24,security
+cve:GHSA-4hrh-34w3-5ww8,cve,CVE-2026-104099: Fabio: Access-control bypass through unnormalized request paths,https://github.com/advisories/GHSA-4hrh-34w3-5ww8,6080,2026-11-20,security
 cve:GHSA-mc8w-wjhw-45x5,cve,CVE-2026-114516: Etherpad: Pre-auth arbitrary file read,https://github.com/advisories/GHSA-mc8w-wjhw-45x5,6080,2026-11-20,security|hardware
-cve:GHSA-wj7x-58c2-5793,cve,CVE-2026-77369: Daptin: Broken Access Control (IDOR) in the generic YJS collaboration endpoint,https://github.com/advisories/GHSA-wj7x-58c2-5793,6080,2026-11-20,science|security
-cve:GHSA-hq2p-f2vj-v3cm,cve,CVE-2026-77367: Daptin: Unauthenticated SQL Injection via the `sort` query parameter on every entity list endpoint,https://github.com/advisories/GHSA-hq2p-f2vj-v3cm,6080,2026-11-20,dev|science|security
-cve:GHSA-9x8x-crjq-g64h,cve,CVE-2026-77359: Jupyter MCP Server: Browser DNS rebinding can hijack the Jupyter backend through management routes,https://github.com/advisories/GHSA-9x8x-crjq-g64h,6080,2026-11-20,security|hardware
-cve:GHSA-p34x-fmph-9fjx,cve,CVE-2026-77312: Flyto2 Core: Arbitrary file write via unguarded data.*/file.* modules (incomplete fix of CVE-2026-67429),https://github.com/advisories/GHSA-p34x-fmph-9fjx,6080,2026-11-20,security
-cve:GHSA-p32v-8v8j-j534,cve,CVE-2026-63344: Refitter allows arbitrary code execution through unescaped OpenAPI content-type values,https://github.com/advisories/GHSA-p32v-8v8j-j534,6080,2026-11-20,dev|security
-cve:GHSA-58x9-vjvp-6mx8,cve,CVE-2026-63346: Refitter allows code execution through unescaped OpenAPI header parameter names,https://github.com/advisories/GHSA-58x9-vjvp-6mx8,6080,2026-11-20,dev|security
-cve:GHSA-3fhm-p725-h3g3,cve,CVE-2026-63345: Refitter allows arbitrary code execution through unescaped OpenAPI paths,https://github.com/advisories/GHSA-3fhm-p725-h3g3,6080,2026-11-20,dev|security
 hn:48997548,hn,OpenAI and Hugging Face address security incident during model evaluation,https://openai.com/index/hugging-face-model-evaluation-security-incident/,5103,2026-07-21,ai|dev|biz|security
 hn:43128253,hn,Apple pulls data protection tool after UK government security row,https://www.bbc.com/news/articles/cgj54eq4vejo,4974,2025-02-21,security
 hn:39452494,hn,"Insecure vehicles should be banned, not security tools like the Flipper Zero",https://saveflipper.ca/,4130,2024-02-21,security
 hn:30051054,hn,Ask HN: Gmail account security,https://news.ycombinator.com/item?id=30051054,3830,2022-01-23,ai|dev|security
 hn:25729088,hn,"70TB of Parler users’ messages, videos, and posts leaked by security researchers",https://cybernews.com/news/70tb-of-parler-users-messages-videos-and-posts-leaked-by-security-researchers/,3745,2021-01-11,dev|security
+cve:GHSA-x72p-hmqp-46hw,cve,CVE-2026-105803: Git LFS may execute arbitrary commands via crafted Git LFS configurations,https://github.com/advisories/GHSA-x72p-hmqp-46hw,3580,2026-11-20,ai|dev|crypto|security
+cve:GHSA-xrgv-7vx6-5vx6,cve,CVE-2026-105802: Git LFS may execute arbitrary commands via crafted Git configurations,https://github.com/advisories/GHSA-xrgv-7vx6-5vx6,3580,2026-11-20,dev|crypto|security
+cve:GHSA-prhx-9q2h-ph2x,cve,CVE-2026-103026: Paymenter: Unauthenticated arbitrary method invocation in Livewire components,https://github.com/advisories/GHSA-prhx-9q2h-ph2x,3580,2026-11-20,ai|security
+cve:GHSA-wcqj-wx85-c75p,cve,CVE-2026-130176: aMQTT: Denial of Service (DoS) via Memory Leak in Unmanaged QoS 2 Session Handshakes,https://github.com/advisories/GHSA-wcqj-wx85-c75p,3580,2026-11-20,ai|dev|security
+cve:GHSA-9657-8vc2-7g2p,cve,"CVE-2026-115463: Poweradmin: The email second factor is an mt_rand() six-digit code verified with no attempt limit or lockout, so an attacker holding the password can brute-force it within the validity window",https://github.com/advisories/GHSA-9657-8vc2-7g2p,3580,2026-11-20,ai|dev|security
+cve:GHSA-x7xj-4j4f-88xr,cve,CVE-2026-69261: Git LFS may leak HTTP headers after redirections,https://github.com/advisories/GHSA-x7xj-4j4f-88xr,3580,2026-11-20,ai|dev|security
+cve:GHSA-w3f2-pr6x-wwjc,cve,CVE-2026-69260: Git LFS may attempt arbitrary remote commands via crafted SSH URLs,https://github.com/advisories/GHSA-w3f2-pr6x-wwjc,3580,2026-11-20,dev|security
+cve:GHSA-66q9-mxf2-xqw6,cve,CVE-2026-103035: TeamPass folder re-parenting authorization bypass,https://github.com/advisories/GHSA-66q9-mxf2-xqw6,3580,2026-11-20,science|security
+cve:GHSA-2hjf-7455-w946,cve,CVE-2026-104199: aMQTT: Inefficient Regular Expression Complexity and Uncontrolled Resource Consumption and Improper Input Validation,https://github.com/advisories/GHSA-2hjf-7455-w946,3580,2026-11-20,security
+cve:GHSA-hghq-53p7-c582,cve,CVE-2026-115578: go-guerrilla crashes on a bare XCLIENT command (7-byte slice off-by-one panic),https://github.com/advisories/GHSA-hghq-53p7-c582,3580,2026-11-20,security|hardware
+cve:GHSA-v9v2-98xq-627c,cve,CVE-2026-104129: pREST _groupby function-expression SQL injection (incomplete fix of CVE-2025-58450),https://github.com/advisories/GHSA-v9v2-98xq-627c,3580,2026-11-20,dev|security
+cve:GHSA-x6w4-f264-3vvr,cve,CVE-2026-63184: Refitter: Unrestricted OpenAPI references permit build-host SSRF and file inclusion,https://github.com/advisories/GHSA-x6w4-f264-3vvr,3580,2026-11-20,dev|science|security
+cve:GHSA-jwgx-mp9m-jwcr,cve,CVE-2026-58192: appium allows unauthenticated arbitrary file/directory deletion in @appium/storage-plugin,https://github.com/advisories/GHSA-jwgx-mp9m-jwcr,3580,2026-11-20,ai|security|hardware
 cve:GHSA-7hvw-3c2q-45qg,cve,"CVE-2026-103025: bep/imagemeta: Unbounded memory allocation decoding PNG `zTXt` ""Raw profile type iptc"" chunks",https://github.com/advisories/GHSA-7hvw-3c2q-45qg,3580,2026-11-20,dev|security
 cve:GHSA-2pj4-v76f-wjvx,cve,CVE-2026-62955: baserCMS: Path Traversal Bypass via realpath() in BcThemeFileService (CVE-2026-30940 Patch Bypass),https://github.com/advisories/GHSA-2pj4-v76f-wjvx,3580,2026-11-20,dev|security
-cve:GHSA-24pw-rf5p-mgp7,cve,CVE-2026-77318: Jupyter MCP Server: Unauthenticated management routes can hijack the Jupyter backend in standalone HTTP mode,https://github.com/advisories/GHSA-24pw-rf5p-mgp7,3580,2026-11-20,dev|crypto|security|hardware
-cve:GHSA-6pm8-6f34-9v3g,cve,CVE-2026-77316: Flyto2 Core: SSRF guard bypass via DNS rebinding (validate_url_ssrf resolves-then-connects without pinning),https://github.com/advisories/GHSA-6pm8-6f34-9v3g,3580,2026-11-20,security
-cve:GHSA-2mr3-rxrq-238c,cve,CVE-2026-77315: Flyto2 Core: http.paginate follows server-supplied next-page URLs (Link header / cursor) without SSRF revalidation,https://github.com/advisories/GHSA-2mr3-rxrq-238c,3580,2026-11-20,security|hardware
-cve:GHSA-pfg2-w999-497v,cve,"CVE-2026-77313: Flyto2 Core: SSRF guard validates the resolved IP but connects by hostname, allowing DNS-rebinding TOCTOU",https://github.com/advisories/GHSA-pfg2-w999-497v,3580,2026-11-20,ai|security
-cve:GHSA-86mf-q4h5-69gp,cve,"CVE-2026-59988: django-docutils unsafe Docutils defaults allow local file disclosure, SSRF, and stored XSS",https://github.com/advisories/GHSA-86mf-q4h5-69gp,3580,2026-11-20,ai|security
-cve:GHSA-c3cj-3p6p-j822,cve,CVE-2026-63415: Jane: $ref resolution performs SSRF + LFI (path traversal) at code-generation time (jane-php),https://github.com/advisories/GHSA-c3cj-3p6p-j822,3580,2026-11-20,dev|science|security
-cve:GHSA-r72h-j7qq-v6qg,cve,CVE-2026-58210: NATS Server allows unauthenticated memory exhaustion through incomplete MQTT CONNECT packets,https://github.com/advisories/GHSA-r72h-j7qq-v6qg,3580,2026-11-20,security|hardware
-cve:GHSA-wr3g-j6qj-xpgh,cve,CVE-2026-128135: NLTK: ZIP package extraction follows in-root hardlinks and overwrites files outside the NLTK data root,https://github.com/advisories/GHSA-wr3g-j6qj-xpgh,3580,2026-11-19,dev|security
 hn:50172041,hn,"Security advisory: Critical remote code execution vulnerabilities, update now",https://www.php.net/archive/2026.php#2026-10-21-5,3538,2026-10-20,security
 hn:32148218,hn,FCC: TikTok is unacceptable security risk and should be removed from app stores,https://blog.malwarebytes.com/privacy-2/2022/07/tiktok-is-unacceptable-security-risk-and-should-be-removed-from-app-stores-says-fcc/,3376,2022-07-19,security
 hn:41392128,hn,Bypassing airport security via SQL injection,https://ian.sh/tsa,3324,2024-08-29,ai|security
@@ -42,10 +41,11 @@ hn:23180975,hn,Security Flaws in Adobe Acrobat Reader Allow Gaining Root on macO
 hn:50182987,hn,"Today's PHP security release, and how we're strengthening security",https://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security/,2034,2026-10-21,security
 hn:17592422,hn,Google: Security Keys Neutralized Employee Phishing,https://krebsonsecurity.com/2018/07/google-security-keys-neutered-employee-phishing/,2002,2018-07-23,security
 hn:24636166,hn,Apple’s T2 security chip jailbreak,https://reportcybercrime.com/hackers-jailbreak-apples-t2-security-chip-powered-by-bridgeos/,1881,2020-09-30,ai|security|hardware
+cve:GHSA-9rv8-9hvg-92mq,cve,CVE-2026-35376: chcon: recursive relabel not anchored to traversal dirfd (TOCTOU),https://github.com/advisories/GHSA-9rv8-9hvg-92mq,1880,2026-11-20,ai|security
+cve:GHSA-fjjq-8hw5-cf9f,cve,CVE-2026-35374: split: TOCTOU output-open allows truncating a swapped file,https://github.com/advisories/GHSA-fjjq-8hw5-cf9f,1880,2026-11-20,ai|dev|security
+cve:GHSA-6499-jgj4-2wpf,cve,CVE-2026-104773: CKAN: Session Fixation in Registration View,https://github.com/advisories/GHSA-6499-jgj4-2wpf,1880,2026-11-20,ai|dev|security|hardware
+cve:GHSA-cg26-4c6j-2x8h,cve,CVE-2026-69133: netty-incubator-codec-ohttp: OHTTP codecs retain consumed outer cumulation buffers after completed exchanges,https://github.com/advisories/GHSA-cg26-4c6j-2x8h,1880,2026-11-20,ai|security|hardware
+cve:GHSA-3h6w-xcw3-9xjj,cve,CVE-2026-104885: OpenRemote: Cross-realm MQTT session disconnect without authorization,https://github.com/advisories/GHSA-3h6w-xcw3-9xjj,1880,2026-11-20,security
+cve:GHSA-vcx7-pfrh-mcfg,cve,CVE-2026-115565: storyblok-backup: Stored path traversal via unsanitized Storyblok component names in backup output,https://github.com/advisories/GHSA-vcx7-pfrh-mcfg,1880,2026-11-20,ai|dev|crypto|security
+cve:GHSA-3g82-77xr-68x5,cve,CVE-2026-63386: js-toml allows uncontrolled recursion in `load()` leading `RangeError` (stack exhaustion) on deeply nested input,https://github.com/advisories/GHSA-3g82-77xr-68x5,1880,2026-11-20,ai|dev|security
 cve:GHSA-gfwj-45pc-w6r5,cve,CVE-2026-103033: ALTCHA: Nil-map panic (pre-verification DoS) in v1 parseServerSignature on malformed VerificationData,https://github.com/advisories/GHSA-gfwj-45pc-w6r5,1880,2026-11-20,ai|dev|security|hardware
-cve:GHSA-v6w5-38cf-pcv8,cve,CVE-2026-102945: Aether Project amf: panic on an unrecovered NGAP goroutine,https://github.com/advisories/GHSA-v6w5-38cf-pcv8,1880,2026-11-20,security
-cve:GHSA-wgvx-x5g3-9v29,cve,CVE-2026-63012: baserCMS administrative API authorization bypass through session fallback,https://github.com/advisories/GHSA-wgvx-x5g3-9v29,1880,2026-11-20,ai|dev|security
-cve:GHSA-25rm-9wvm-m38v,cve,"CVE-2026-77382: falcon-rust: Discrete-Gaussian sampler runs at 2^-33 precision, far below Falcon's requirement (reference KAT vectors no longer pass)",https://github.com/advisories/GHSA-25rm-9wvm-m38v,1880,2026-11-20,dev|security
-cve:GHSA-r7h9-qx4h-77j5,cve,CVE-2026-77378: Bolt ListFormatHelper SQL injection,https://github.com/advisories/GHSA-r7h9-qx4h-77j5,1880,2026-11-20,dev|science|security
-cve:GHSA-3xjf-9q55-vxw4,cve,CVE-2026-77380: Bolt: Prevent SSRF due to unchecked followed redirects,https://github.com/advisories/GHSA-3xjf-9q55-vxw4,1880,2026-11-20,dev|security|hardware
-cve:GHSA-6358-jg5p-hmjj,cve,CVE-2026-77379: Bolt: Information disclosure through unfiltered public relation API endpoint,https://github.com/advisories/GHSA-6358-jg5p-hmjj,1880,2026-11-20,dev|security
