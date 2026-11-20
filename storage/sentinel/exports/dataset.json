@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T17:15:16+00:00",
+  "generated_at": "2026-11-20T21:04:56+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -27,12 +27,12 @@
     },
     "by_topic": {
       "security": 113,
-      "ai": 62,
+      "ai": 61,
       "dev": 48,
       "hardware": 21,
       "biz": 7,
       "crypto": 7,
-      "science": 7
+      "science": 6
     },
     "top_domains": [
       [
@@ -1393,12 +1393,12 @@
       "title": "Aabyss-Team/Threat-Broadcast-Plus",
       "url": "https://github.com/Aabyss-Team/Threat-Broadcast-Plus",
       "ts": 1794800456.0,
-      "points": 139,
+      "points": 142,
       "comments": 31,
       "author": "Aabyss-Team",
       "summary": "网络安全威胁情报播报-Plus升级版",
       "recipe": "github_sec",
-      "buzz": 242,
+      "buzz": 245,
       "topics": [],
       "date": "2026-11-16"
     },
@@ -1441,11 +1441,11 @@
       "url": "https://github.com/wildorigins/wildos",
       "ts": 1794169078.0,
       "points": 137,
-      "comments": 7,
+      "comments": 8,
       "author": "wildorigins",
       "summary": "A hardened Linux desktop, rebuilt from scratch, with your Windows apps built in. Free and open source.",
       "recipe": "github_sec",
-      "buzz": 158,
+      "buzz": 161,
       "topics": [],
       "date": "2026-11-08"
     },
@@ -1467,38 +1467,38 @@
       "date": "2026-11-11"
     },
     {
-      "uid": "gh:zhidun2027/zhidun",
-      "source": "github",
-      "title": "zhidun2027/zhidun",
-      "url": "https://github.com/zhidun2027/zhidun",
-      "ts": 1794458402.0,
-      "points": 100,
-      "comments": 8,
-      "author": "zhidun2027",
-      "summary": "Android APK hardening — DEX encryption, native shell engine, anti-tamper. Fully documented and auditable.",
-      "recipe": "github_sec",
-      "buzz": 124,
-      "topics": [
-        "security"
-      ],
-      "date": "2026-11-12"
-    },
-    {
       "uid": "gh:balikunsh-bot/keepassxc-talroora",
       "source": "github",
       "title": "balikunsh-bot/keepassxc-talroora",
       "url": "https://github.com/balikunsh-bot/keepassxc-talroora",
       "ts": 1795032603.0,
-      "points": 92,
+      "points": 93,
       "comments": 0,
       "author": "balikunsh-bot",
       "summary": "Keepassxc Talroora organizes credential records and manages encrypted password databases.",
       "recipe": "github_sec",
-      "buzz": 122,
+      "buzz": 123,
       "topics": [
         "dev"
       ],
       "date": "2026-11-18"
+    },
+    {
+      "uid": "gh:zhidun2027/zhidun",
+      "source": "github",
+      "title": "zhidun2027/zhidun",
+      "url": "https://github.com/zhidun2027/zhidun",
+      "ts": 1794458402.0,
+      "points": 90,
+      "comments": 8,
+      "author": "zhidun2027",
+      "summary": "Android APK hardening — DEX encryption, native shell engine, anti-tamper. Fully documented and auditable.",
+      "recipe": "github_sec",
+      "buzz": 114,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-11-12"
     },
     {
       "uid": "gh:raca2024/ashampoo-undelete-recovery",
@@ -1548,6 +1548,43 @@
       "recipe": "schneier",
       "buzz": 80,
       "topics": [],
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "rss:58eefaa33e7ec3",
+      "source": "rss",
+      "title": "WhatsApp Patches 3 Security Flaws, Including Android Bug Suspected of Use in Scams",
+      "url": "https://thehackernews.com/2026/11/whatsapp-patches-3-security-flaws.html",
+      "ts": 1795197440.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Meta-owned WhatsApp has addressed security vulnerabilities, including one impacting its Android app that it suspects may have been exploited in connection with scam messages. The vulnerability, tracked as CVE-[phone], has been described as a case of incomplete validation of external ad-reply URLs in WhatsApp for Android and WhatsApp Business for Android before 2.26.17.4. The issue could",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "rss:9ab8a41daf1f07",
+      "source": "rss",
+      "title": "Bazuka Android Malware Uses Fake Screen Overlays to Hide Credential Theft and Device Control",
+      "url": "https://thehackernews.com/2026/11/bazuka-android-malware-uses-fake-screen.html",
+      "ts": 1795193896.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Cybersecurity researchers have disclosed details of a previously unknown Android malware framework called Bazuka that offers large language model (LLM) integration for victim management and control at scale. Dutch mobile security company ThreatFabric said it discovered the threat in late October 2026 during an investigation into an NFC-relay banking Trojan. \"Bazuka is a full malware framework,",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "biz",
+        "security"
+      ],
       "date": "2026-11-20"
     },
     {
@@ -1682,24 +1719,6 @@
       "date": "2026-11-20"
     },
     {
-      "uid": "rss:18c8f3fb68f9f2",
-      "source": "rss",
-      "title": "ThreatsDay: GPT-6.2 Jailbreak Flaws, BubbleLoader PNG Malware, $500M Ransom Demands + 17 More Stories",
-      "url": "https://thehackernews.com/2026/11/threatsday-gpt-62-jailbreak-flaws.html",
-      "ts": 1795114078.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "The easiest way to fool someone is to give them something they already expect. A job offer. A message about a service outage. A familiar app. Nothing looks strange at first. And that's the problem. This week's stories show how ordinary things are being used to steal data, spread malware, and get people to hand over access. There's another shift worth watching. AI is making some attacks easier",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-19"
-    },
-    {
       "uid": "gh:rammahmagdy/Latch",
       "source": "github",
       "title": "rammahmagdy/Latch",
@@ -1713,6 +1732,23 @@
       "buzz": 73,
       "topics": [],
       "date": "2026-11-18"
+    },
+    {
+      "uid": "gh:vulnix0x4/a-better-antivirus",
+      "source": "github",
+      "title": "vulnix0x4/a-better-antivirus",
+      "url": "https://github.com/vulnix0x4/a-better-antivirus",
+      "ts": 1794885574.0,
+      "points": 41,
+      "comments": 2,
+      "author": "vulnix0x4",
+      "summary": "Catches infostealers in the act on Windows: plants fake passwords, wallets and app data that only malware would read, and freezes whatever touches them.",
+      "recipe": "github_sec",
+      "buzz": 57,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-11-17"
     },
     {
       "uid": "gh:NPCmillionaire/unredact.tools",
@@ -1747,34 +1783,17 @@
       "date": "2026-11-14"
     },
     {
-      "uid": "gh:vulnix0x4/a-better-antivirus",
-      "source": "github",
-      "title": "vulnix0x4/a-better-antivirus",
-      "url": "https://github.com/vulnix0x4/a-better-antivirus",
-      "ts": 1794885574.0,
-      "points": 31,
-      "comments": 2,
-      "author": "vulnix0x4",
-      "summary": "Catches infostealers in the act on Windows: plants fake passwords, wallets and app data that only malware would read, and freezes whatever touches them.",
-      "recipe": "github_sec",
-      "buzz": 47,
-      "topics": [
-        "security"
-      ],
-      "date": "2026-11-17"
-    },
-    {
       "uid": "gh:spatie/laravel-suspicious-login",
       "source": "github",
       "title": "spatie/laravel-suspicious-login",
       "url": "https://github.com/spatie/laravel-suspicious-login",
       "ts": 1794917088.0,
-      "points": 29,
+      "points": 30,
       "comments": 0,
       "author": "spatie",
       "summary": "Detect suspicious logins in your Laravel app",
       "recipe": "github_sec",
-      "buzz": 39,
+      "buzz": 40,
       "topics": [],
       "date": "2026-11-17"
     },
@@ -1813,6 +1832,24 @@
       "topics": [
         "ai",
         "dev"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "rss:18c8f3fb68f9f2",
+      "source": "rss",
+      "title": "ThreatsDay: GPT-6.2 Jailbreak Flaws, BubbleLoader PNG Malware, $500M Ransom Demands + 17 More Stories",
+      "url": "https://thehackernews.com/2026/11/threatsday-gpt-62-jailbreak-flaws.html",
+      "ts": 1795114078.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "The easiest way to fool someone is to give them something they already expect. A job offer. A message about a service outage. A familiar app. Nothing looks strange at first. And that's the problem. This week's stories show how ordinary things are being used to steal data, spread malware, and get people to hand over access. There's another shift worth watching. AI is making some attacks easier",
+      "recipe": "hackersnews",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "security"
       ],
       "date": "2026-11-19"
     },
@@ -2182,45 +2219,6 @@
       "buzz": 30,
       "topics": [
         "ai",
-        "security"
-      ],
-      "date": "2026-11-18"
-    },
-    {
-      "uid": "rss:eb400c4d4b568d",
-      "source": "rss",
-      "title": "Attackers Compromise Microsoft's Agent Framework PyPI Package to Steal Cloud Credentials",
-      "url": "https://thehackernews.com/2026/11/attackers-compromise-microsofts-agent.html",
-      "ts": 1794984326.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Threat actors have compromised Microsoft's agent-framework package to push a credential stealer, according to reports from Aikido, Chainguard, Endor Labs, OX Security, SafeDep, Socket, StepSecurity, and Google-owned Wiz. The malicious versions, 1.26.1 and 1.26.2, were published 33 minutes apart on November 17, 2026, and are designed to run a credential stealer on every Python start. As of",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-18"
-    },
-    {
-      "uid": "rss:a64d85f43b086d",
-      "source": "rss",
-      "title": "Russian COLD RELIC Hackers Use Stolen Google Workspace Data to Breach Second U.S. Organization",
-      "url": "https://thehackernews.com/2026/11/russian-cold-relic-hackers-use-stolen.html",
-      "ts": 1794981484.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "The Russia-linked cyber espionage group known as Cold Relic (formerly COLDRIVER and UNC4057) has been observed weaponizing a single cloud compromise into a launchpad for a series of linked intrusions resulting in third-party compromise. Google's Mandiant and Threat Intelligence Group (GTIG) said it investigated a 2026 compromise at a U.S.-based organization in which the adversary leveraged",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "science",
-        "biz",
         "security"
       ],
       "date": "2026-11-18"
