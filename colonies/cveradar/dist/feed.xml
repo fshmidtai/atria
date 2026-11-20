@@ -5,273 +5,312 @@
     <link>https://cveradar-ah3.pages.dev</link>
     <description>Живые CVE и уязвимости на русском: автономный перевод угроз в понятные дайджесты для DevOps и небольшого SecOps</description>
     <language>ru</language>
-    <lastBuildDate>Thu, 19 Nov 2026 21:05:25 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 20 Nov 2026 01:26:00 GMT</lastBuildDate>
     <item>
-      <title>CVE-2026-121707: Effect: ReDoS in Schema.TemplateLiteral compiled regex</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-121707-effect-redos-in-schema-templateliteral-compiled-.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-121707-effect-redos-in-schema-templateliteral-compiled-.html</guid>
-      <pubDate>Thu, 19 Nov 2026 20:51:01 GMT</pubDate>
-      <description>Severity: high. ### Impact
+      <title>CVE-2026-114516: Etherpad: Pre-auth arbitrary file read</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-114516-etherpad-pre-auth-arbitrary-file-read.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-114516-etherpad-pre-auth-arbitrary-file-read.html</guid>
+      <pubDate>Fri, 20 Nov 2026 00:23:45 GMT</pubDate>
+      <description>Severity: critical. ### Summary
 
-`Schema.TemplateLiteral` compiles each `Schema.String` span to the lazy wildcard `[\s\S]*?` and decodes input by running the resulting regular expression against it. When a template has two or more `Schema.String` spans, for example:
-
-```ts
-Schema.TemplateLiteral(Schema.S</description>
+An unauthenticated path‑traversal / arbitrary file read vulnerability in Etherpad's /static/* handler allows any remote, unauthenticated user to read any file on the server's filesystem (e.g. GET /static/plugins/ep_etherpad-lite/static/..%5C..%5C..%5C..%5C..%5C..%5C.</description>
     </item>
     <item>
-      <title>CVE-2026-77597: iSponsorBlockTV: SSRF via Malicious SSDP Response Spoofing in Local Device Discovery</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-77597-isponsorblocktv-ssrf-via-malicious-ssdp-response-.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-77597-isponsorblocktv-ssrf-via-malicious-ssdp-response-.html</guid>
-      <pubDate>Thu, 19 Nov 2026 20:50:12 GMT</pubDate>
-      <description>Severity: low. ### Summary
-iSponsorBlockTV discovers local smart TV devices via SSDP (Simple Service Discovery Protocol). The `LOCATION` URL from SSDP responses is used to fetch device capabilities without URL validation. A local network attacker can craft a malicious SSDP response with a `LOCATION`</description>
+      <title>CVE-2026-103033: ALTCHA: Nil-map panic (pre-verification DoS) in v1 parseServerSignature on malformed VerificationData</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-103033-altcha-nil-map-panic-pre-verification-dos-in-v1-.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-103033-altcha-nil-map-panic-pre-verification-dos-in-v1-.html</guid>
+      <pubDate>Fri, 20 Nov 2026 00:21:19 GMT</pubDate>
+      <description>Severity: medium. ### Summary
+
+`parseServerSignature` in the v1 module only initializes `ServerSignatureVerificationData.Extra` inside the `if err == nil` branch after `url.ParseQuery(parsedPayload.VerificationData)`. Go's `url.ParseQuery` returns the successfully-parsed pairs together with a non-ni</description>
     </item>
     <item>
-      <title>CVE-2026-128073: gosaml2: Unauthenticated panic decrypting an EncryptedAssertion with a short or empty CipherValue</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-128073-gosaml2-unauthenticated-panic-decrypting-an-encr.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-128073-gosaml2-unauthenticated-panic-decrypting-an-encr.html</guid>
-      <pubDate>Thu, 19 Nov 2026 20:49:36 GMT</pubDate>
+      <title>CVE-2026-103025: bep/imagemeta: Unbounded memory allocation decoding PNG `zTXt` "Raw profile type iptc" chunks</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-103025-bep-imagemeta-unbounded-memory-allocation-decodi.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-103025-bep-imagemeta-unbounded-memory-allocation-decodi.html</guid>
+      <pubDate>Fri, 20 Nov 2026 00:20:52 GMT</pubDate>
+      <description>Severity: high. A crafted PNG can make `imagemeta.Decode` allocate memory far in excess of the input file's size, leading to memory exhaustion. Two separate paths in the `zTXt` "Raw profile type iptc" branch are affected: the declared chunk length drives an allocation directly, and the embedded zlib</description>
+    </item>
+    <item>
+      <title>CVE-2026-102945: Aether Project amf: panic on an unrecovered NGAP goroutine</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-102945-aether-project-amf-panic-on-an-unrecovered-ngap-.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-102945-aether-project-amf-panic-on-an-unrecovered-ngap-.html</guid>
+      <pubDate>Fri, 20 Nov 2026 00:20:38 GMT</pubDate>
+      <description>Severity: medium. ## Summary
+
+HandlePathSwitchRequest guards the UESecurityCapabilities IE for presence but never for length, and the extensible APER type silently yields an empty bit string, so six unguarded index-zero reads panic on an unrecovered goroutine and terminate the AMF. The AMF is the co</description>
+    </item>
+    <item>
+      <title>CVE-2026-63012: baserCMS administrative API authorization bypass through session fallback</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-63012-basercms-administrative-api-authorization-bypass-.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-63012-basercms-administrative-api-authorization-bypass-.html</guid>
+      <pubDate>Fri, 20 Nov 2026 00:18:35 GMT</pubDate>
+      <description>Severity: medium. ### Summary
+
+An authorization bypass occurs against the API endpoint `/baser/api/admin/` by abusing the session authentication fallback.
+
+### Details
+
+The mail settings are used here as an example.
+
+Admin side:
+
+https://github.com/baserproject/basercms/blob/master/plugins/baser-cor</description>
+    </item>
+    <item>
+      <title>CVE-2026-62955: baserCMS: Path Traversal Bypass via realpath() in BcThemeFileService (CVE-2026-30940 Patch Bypass)</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-62955-basercms-path-traversal-bypass-via-realpath-in-bc.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-62955-basercms-path-traversal-bypass-via-realpath-in-bc.html</guid>
+      <pubDate>Fri, 20 Nov 2026 00:17:47 GMT</pubDate>
       <description>Severity: high. ### Summary
 
-An attacker who can supply a crafted SAML Response for parsing can crash a `gosaml2` service provider by sending an `EncryptedAssertion` with AES-GCM encryption metadata and a `CipherValue` shorter than the GCM nonce size (12 bytes). The library panics with `slice bounds</description>
+The security patch introduced in baserCMS 5.2.3 to address CVE-[phone] / [GHSA-c5c6-37vq-pjcq](https://github.com/baserproject/basercms/security/advisories/GHSA-c5c6-37vq-pjcq) is **incomplete**. The patch added a `realpath()`-based directory traversal check in `BcThemeF</description>
     </item>
     <item>
-      <title>CVE-2026-102529: HtmlSanitizer: CSS Removal DoS</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-102529-htmlsanitizer-css-removal-dos.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-102529-htmlsanitizer-css-removal-dos.html</guid>
-      <pubDate>Thu, 19 Nov 2026 20:49:01 GMT</pubDate>
-      <description>Severity: high. ### Impact
+      <title>CVE-2026-77382: falcon-rust: Discrete-Gaussian sampler runs at 2^-33 precision, far below Falcon's requirement (reference KAT vectors no longer pass)</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-77382-falcon-rust-discrete-gaussian-sampler-runs-at-2-3.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-77382-falcon-rust-discrete-gaussian-sampler-runs-at-2-3.html</guid>
+      <pubDate>Fri, 20 Nov 2026 00:17:04 GMT</pubDate>
+      <description>Severity: medium. **Reporter:** Connor Webber
+**Package:** `falcon-rust` (crates.io), repository `github.com/aszepieniec/falcon-rust`
+**Affected:** v0.1.3 and the current `master` (HEAD `cfa1b35`). Regression introduced in commit `bf2cf00`.
+**Component:** discrete-Gaussian sampler, `src/samplerz.rs`</description>
+    </item>
+    <item>
+      <title>CVE-2026-77378: Bolt ListFormatHelper SQL injection</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-77378-bolt-listformathelper-sql-injection.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-77378-bolt-listformathelper-sql-injection.html</guid>
+      <pubDate>Fri, 20 Nov 2026 00:15:55 GMT</pubDate>
+      <description>Severity: medium. ### Impact
 
-An unauthenticated request can occupy one synchronous application worker for seconds. Concurrent requests add CPU cost and can keep all workers busy, sustaining denial of service without user interaction.
+SQL Injection in ListFormatHelper allows authenticated users with the upload permission to execute arbitrary SQL queries and exfiltrate sensitive database contents through the /async/select-options endpoint when general/caching/list_format is enabled.
 
 ### Patches
 
-The issue has been patched in versions  9.0.967 and 9</description>
+This</description>
     </item>
     <item>
-      <title>CVE-2026-115472: Doorkeeper: When using public clients, any client can revoke any access token</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-115472-doorkeeper-when-using-public-clients-any-client-.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-115472-doorkeeper-when-using-public-clients-any-client-.html</guid>
-      <pubDate>Thu, 19 Nov 2026 20:47:25 GMT</pubDate>
-      <description>Severity: medium. ### Summary
+      <title>CVE-2026-77380: Bolt: Prevent SSRF due to unchecked followed redirects</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-77380-bolt-prevent-ssrf-due-to-unchecked-followed-redir.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-77380-bolt-prevent-ssrf-due-to-unchecked-followed-redir.html</guid>
+      <pubDate>Fri, 20 Nov 2026 00:15:44 GMT</pubDate>
+      <description>Severity: medium. ### Impact
 
-An improper authorization issue affects Doorkeeper's OAuth token revocation flow when public (non-confidential) clients are in use. This vulnerability can lead to tokens being revoked without correct authorization. The issue is fixed in Doorkeeper 5.9.1.</description>
+The `/bolt/async/upload-url` and `/bolt/async/embed` endpoints validated only the **submitted** URL before fetching it server-side, but the fetch then **followed redirects to destinations that were never re-validated**. This allowed an authenticated user to bypass the S</description>
     </item>
     <item>
-      <title>CVE-2026-109549: OmniFaces: SSE push channels are not bound to their owning HTTP session</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-109549-omnifaces-sse-push-channels-are-not-bound-to-the.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-109549-omnifaces-sse-push-channels-are-not-bound-to-the.html</guid>
-      <pubDate>Thu, 19 Nov 2026 20:47:02 GMT</pubDate>
-      <description>Severity: medium. ## Summary
+      <title>CVE-2026-77379: Bolt: Information disclosure through unfiltered public relation API endpoint</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-77379-bolt-information-disclosure-through-unfiltered-pu.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-77379-bolt-information-disclosure-through-unfiltered-pu.html</guid>
+      <pubDate>Fri, 20 Nov 2026 00:15:23 GMT</pubDate>
+      <description>Severity: medium. ### Impact
 
-[GHSA-fp43-vj7g-pg92](https://github.com/omnifaces/omnifaces/security/advisories/GHSA-fp43-vj7g-pg92) (fixed 5.4.2) bound session- and view-scoped **WebSocket** (`o:socket`) push channels to the HTTP session that registered them, so a leaked channel ID can no longer be </description>
-    </item>
-    <item>
-      <title>CVE-2026-63193: October: Media Library Crop Handler Bypasses Upload Extension Allowlist</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-63193-october-media-library-crop-handler-bypasses-uploa.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-63193-october-media-library-crop-handler-bypasses-uploa.html</guid>
-      <pubDate>Thu, 19 Nov 2026 20:46:36 GMT</pubDate>
-      <description>Severity: medium. The Media Library upload handler validates the destination filename against an extension allowlist (`default_extensions`), rejecting types such as `php`, `phtml`, `html`, and `htm`. The image crop handler (`MediaManager::onCropImage` / `cropImage`) did not perform this check. The d</description>
-    </item>
-    <item>
-      <title>CVE-2026-61713: Servo Sandbox bypass: declarative refresh can auto-navigate a sandboxed iframe</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-61713-servo-sandbox-bypass-declarative-refresh-can-auto.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-61713-servo-sandbox-bypass-declarative-refresh-can-auto.html</guid>
-      <pubDate>Thu, 19 Nov 2026 20:45:22 GMT</pubDate>
-      <description>Severity: high. A sandboxed iframe can auto-navigate itself via declarative refresh even when automatic features should be blocked. This allows attacker-controlled embedded content to redirect itself without user action.
+A missing access-control filter in the public Relation API allowed unauthenticated users to discover metadata about unpublished, draft, and viewless content through REST and GraphQL endpoints.
 
-### Summary
-Servo allows a sandboxed iframe to auto-navigate itself via declar</description>
-    </item>
-    <item>
-      <title>CVE-2026-61689: XWiki Platform: HQL injection in search allows unauthenticated database extraction including password hashes</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-61689-xwiki-platform-hql-injection-in-search-allows-una.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-61689-xwiki-platform-hql-injection-in-search-allows-una.html</guid>
-      <pubDate>Thu, 19 Nov 2026 20:44:32 GMT</pubDate>
-      <description>Severity: high. ### Impact
-The query REST API allows executing HQL queries to filter the listed pages. While this properly checks access rights for the current user, the query can be used to combine when clauses and blind queries, to recover values, through FROM clause injection to join BaseObject a</description>
-    </item>
-    <item>
-      <title>CVE-2026-59975: SharpIppNext: Unbounded IPP Document Stream Buffering Leads to Denial of Service</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-59975-sharpippnext-unbounded-ipp-document-stream-buffer.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-59975-sharpippnext-unbounded-ipp-document-stream-buffer.html</guid>
-      <pubDate>Thu, 19 Nov 2026 20:43:01 GMT</pubDate>
-      <description>Severity: high. ### Summary
+### Patches
 
-SharpIppNext's `IppProtocol.ReadIppRequestAsync()` unconditionally copies the entire attacker-supplied IPP document payload into an unbounded `MemoryStream` with no size limit. Because this behavior is enabled by default (`ReadDocumentStream = true`) and the official ser</description>
+This has been patched in Bolt 6.1.4.</description>
     </item>
     <item>
-      <title>CVE-2026-77283: obsidian-sync-mcp: Missing Host/Origin validation lets a public website drive a victim's Obsidian vault via DNS rebinding (no-auth mode)</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-77283-obsidian-sync-mcp-missing-host-origin-validation-.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-77283-obsidian-sync-mcp-missing-host-origin-validation-.html</guid>
-      <pubDate>Thu, 19 Nov 2026 20:41:18 GMT</pubDate>
-      <description>Severity: high. When obsidian-sync-mcp runs without MCP_AUTH_TOKEN (the documented no-auth mode for local use), the HTTP MCP endpoint does not validate the Host or Origin header before dispatching MCP methods (CWE-350). The no-auth mode's "local network only" assumption therefore does not hold: a ma</description>
+      <title>CVE-2026-77377: Bolt: Server-Side Request Forgery (SSRF) in URL-upload and embed endpoints</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-77377-bolt-server-side-request-forgery-ssrf-in-url-uplo.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-77377-bolt-server-side-request-forgery-ssrf-in-url-uplo.html</guid>
+      <pubDate>Fri, 20 Nov 2026 00:14:42 GMT</pubDate>
+      <description>Severity: medium. ### Impact
+
+Two authenticated backend endpoints fetched a user-supplied URL server-side with no protection against internal targets.
+
+### Patches
+
+This has been patched in Bolt 6.1.4.</description>
     </item>
     <item>
-      <title>CVE-2026-76090: Tapir: Construction/decode RCE via property name -&gt; raw case-class field (tapir-openapi-codegen)</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-76090-tapir-construction-decode-rce-via-property-name-r.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-76090-tapir-construction-decode-rce-via-property-name-r.html</guid>
-      <pubDate>Thu, 19 Nov 2026 20:39:27 GMT</pubDate>
-      <description>Severity: high. The OpenAPI code generator (tapir-openapi-codegen-core) builds Scala source by string templating and emitted several names/values from the (untrusted) OpenAPI document without escaping or validation, allowing injection of arbitrary Scala that runs at generated-code compile time and/o</description>
+      <title>CVE-2026-77376: Bolt: Open redirect enables post-authentication redirection to arbitrary domains</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-77376-bolt-open-redirect-enables-post-authentication-re.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-77376-bolt-open-redirect-enables-post-authentication-re.html</guid>
+      <pubDate>Fri, 20 Nov 2026 00:14:31 GMT</pubDate>
+      <description>Severity: medium. ### Impact
+
+Open redirect vulnerabilities in LoginFormAuthenticator allow attackers to redirect users to attacker-controlled domains after login success or login failure, enabling phishing attacks and potential token theft.
+
+### Patches
+
+This has been patched in Bolt 6.1.4.</description>
     </item>
     <item>
-      <title>CVE-2026-76807: Todoist MCP Server: Browser DNS rebinding lets websites write and delete Todoist data through local MCP server</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-76807-todoist-mcp-server-browser-dns-rebinding-lets-web.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-76807-todoist-mcp-server-browser-dns-rebinding-lets-web.html</guid>
-      <pubDate>Thu, 19 Nov 2026 20:38:35 GMT</pubDate>
-      <description>Severity: critical. The self-hosted `todoist-mcp-http` server accepts browser-origin MCP requests with attacker-controlled `Host` and `Origin` headers. A malicious website can use DNS rebinding to route its own origin to a victim's local `127.0.0.1` MCP server, then invoke Todoist MCP tools without </description>
+      <title>CVE-2026-77369: Daptin: Broken Access Control (IDOR) in the generic YJS collaboration endpoint</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-77369-daptin-broken-access-control-idor-in-the-generic-.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-77369-daptin-broken-access-control-idor-in-the-generic-.html</guid>
+      <pubDate>Fri, 20 Nov 2026 00:14:14 GMT</pubDate>
+      <description>Severity: critical. ### Summary
+
+Daptin registers a generic WebSocket endpoint, `GET /yjs/:documentName`, for real-time collaborative
+document editing (YJS/CRDT). Unlike its purpose-built sibling route, this generic endpoint performs
+no per-resource authorization check - it only verifies that *some*</description>
     </item>
     <item>
-      <title>CVE-2026-62964: Gortex: Arbitrary file write / repo-confinement escape in `write_file` / `edit_file` / `move_inline` MCP tools → code execution</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-62964-gortex-arbitrary-file-write-repo-confinement-esca.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-62964-gortex-arbitrary-file-write-repo-confinement-esca.html</guid>
-      <pubDate>Thu, 19 Nov 2026 20:36:31 GMT</pubDate>
-      <description>Severity: high. ### Summary
-Gortex is an MCP server exposing `write_file`, `edit_file`, and `move_inline` tools. `resolveFilePath` **exempts absolute paths** from confinement, and the write handlers — unlike `read_file` / `get_symbol_source` — **never call `guardSymlinkWithinRepo`**. A single MCP `w</description>
+      <title>CVE-2026-77367: Daptin: Unauthenticated SQL Injection via the `sort` query parameter on every entity list endpoint</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-77367-daptin-unauthenticated-sql-injection-via-the-sort.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-77367-daptin-unauthenticated-sql-injection-via-the-sort.html</guid>
+      <pubDate>Fri, 20 Nov 2026 00:13:19 GMT</pubDate>
+      <description>Severity: critical. ### Summary
+
+An unauthenticated attacker can inject arbitrary SQL through the `sort` query parameter accepted by
+Daptin's generic entity list endpoint (`GET /api/&lt;entity&gt;`), which every table in a Daptin instance
+exposes. The parameter is concatenated into raw SQL identifiers wit</description>
     </item>
     <item>
-      <title>CVE-2026-75522: OpenID4VP: X.509 chain validation accepts a forged certificate that reuses a trusted anchor's Subject DN without verifying its signature</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-75522-openid4vp-x-509-chain-validation-accepts-a-forged.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-75522-openid4vp-x-509-chain-validation-accepts-a-forged.html</guid>
-      <pubDate>Thu, 19 Nov 2026 20:35:57 GMT</pubDate>
+      <title>CVE-2026-77359: Jupyter MCP Server: Browser DNS rebinding can hijack the Jupyter backend through management routes</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-77359-jupyter-mcp-server-browser-dns-rebinding-can-hija.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-77359-jupyter-mcp-server-browser-dns-rebinding-can-hija.html</guid>
+      <pubDate>Fri, 20 Nov 2026 00:12:51 GMT</pubDate>
+      <description>Severity: critical. Standalone `streamable-http` mode in `datalayer/jupyter-mcp-server` rejects forged `Host` and `Origin` headers on `/mcp`, but custom management routes mounted on the same application do not get the same browser-origin protection. A malicious website can keep an attacker origin wh</description>
+    </item>
+    <item>
+      <title>CVE-2026-77318: Jupyter MCP Server: Unauthenticated management routes can hijack the Jupyter backend in standalone HTTP mode</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-77318-jupyter-mcp-server-unauthenticated-management-rou.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-77318-jupyter-mcp-server-unauthenticated-management-rou.html</guid>
+      <pubDate>Fri, 20 Nov 2026 00:12:14 GMT</pubDate>
+      <description>Severity: high. Standalone `streamable-http` mode in `datalayer/jupyter-mcp-server` requires `MCP_TOKEN` for `/mcp`, but the custom management routes mounted on the same application do not enforce that token. An unauthenticated network caller can invoke `PUT /api/connect`, choose the Jupyter backend</description>
+    </item>
+    <item>
+      <title>CVE-2026-77316: Flyto2 Core: SSRF guard bypass via DNS rebinding (validate_url_ssrf resolves-then-connects without pinning)</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-77316-flyto2-core-ssrf-guard-bypass-via-dns-rebinding-v.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-77316-flyto2-core-ssrf-guard-bypass-via-dns-rebinding-v.html</guid>
+      <pubDate>Fri, 20 Nov 2026 00:11:24 GMT</pubDate>
+      <description>Severity: high. # [MEDIUM] SSRF guard bypass via DNS rebinding — validate_url_ssrf resolves-then-connects without pinning
+
+- **CWE:** CWE-918 (SSRF) / CWE-367 (TOCTOU).
+- **CVSS v3.1:** `AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:L/A:N` = **6.8 Medium** (AC:H — needs attacker-controlled DNS with a low/zero TTL a</description>
+    </item>
+    <item>
+      <title>CVE-2026-77315: Flyto2 Core: http.paginate follows server-supplied next-page URLs (Link header / cursor) without SSRF revalidation</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-77315-flyto2-core-http-paginate-follows-server-supplied.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-77315-flyto2-core-http-paginate-follows-server-supplied.html</guid>
+      <pubDate>Fri, 20 Nov 2026 00:10:14 GMT</pubDate>
+      <description>Severity: high. ## Summary
+`http.paginate` validates only the initial `base_url`, then follows server-supplied pagination targets (RFC 5988 `Link: rel="next"` headers, cursor/offset URLs) in a loop **without revalidating each follow-up URL**. An attacker's first-page response can point `next` at an </description>
+    </item>
+    <item>
+      <title>CVE-2026-77313: Flyto2 Core: SSRF guard validates the resolved IP but connects by hostname, allowing DNS-rebinding TOCTOU</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-77313-flyto2-core-ssrf-guard-validates-the-resolved-ip-.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-77313-flyto2-core-ssrf-guard-validates-the-resolved-ip-.html</guid>
+      <pubDate>Fri, 20 Nov 2026 00:09:23 GMT</pubDate>
+      <description>Severity: high. ## Summary
+`validate_url_ssrf` resolves the hostname, checks the IP against private ranges, then **discards the IP and returns the hostname URL string**. aiohttp performs a fresh, independent DNS resolution at connect time. An attacker controlling DNS for a hostname (TTL 0, alternati</description>
+    </item>
+    <item>
+      <title>CVE-2026-77312: Flyto2 Core: Arbitrary file write via unguarded data.*/file.* modules (incomplete fix of CVE-2026-67429)</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-77312-flyto2-core-arbitrary-file-write-via-unguarded-da.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-77312-flyto2-core-arbitrary-file-write-via-unguarded-da.html</guid>
+      <pubDate>Fri, 20 Nov 2026 00:09:02 GMT</pubDate>
+      <description>Severity: critical. # [CRITICAL] Arbitrary file write via unguarded `data.*` / `file.*` write modules — incomplete fix of GHSA-2956
+
+- **CWE:** CWE-22 (Path Traversal) / CWE-73 (External Control of File Name or Path); impact reaches CWE-94 (code execution via file overwrite).
+- **CVSS v3.1:** `AV:N/</description>
+    </item>
+    <item>
+      <title>CVE-2026-59988: django-docutils unsafe Docutils defaults allow local file disclosure, SSRF, and stored XSS</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-59988-django-docutils-unsafe-docutils-defaults-allow-lo.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-59988-django-docutils-unsafe-docutils-defaults-allow-lo.html</guid>
+      <pubDate>Fri, 20 Nov 2026 00:08:12 GMT</pubDate>
       <description>Severity: high. ## Summary
 
-`ChainBuilder` (the private RFC 5280 validator behind `TrustEvaluator` and the public credential-parsing API) terminated chain building on **Subject Distinguished Name string equality** rather than on cryptographic closure to a trust anchor. A certificate whose Subject DN</description>
+django-docutils before `0.30.0` rendered reStructuredText through Docutils without protected web-safe defaults. Public rendering paths, including `publish_doctree`, `publish_html_from_source`, `publish_html_from_doctree`, `publish_parts_from_doctree`, the `{% rst %}` temp</description>
     </item>
     <item>
-      <title>CVE-2026-76101: keystore-go: Keystore integrity and password verification bypass via stripped trailing digest in Decode()</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-76101-keystore-go-keystore-integrity-and-password-verif.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-76101-keystore-go-keystore-integrity-and-password-verif.html</guid>
-      <pubDate>Thu, 19 Nov 2026 20:35:35 GMT</pubDate>
+      <title>CVE-2026-63415: Jane: $ref resolution performs SSRF + LFI (path traversal) at code-generation time (jane-php)</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-63415-jane-ref-resolution-performs-ssrf-lfi-path-traver.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-63415-jane-ref-resolution-performs-ssrf-lfi-path-traver.html</guid>
+      <pubDate>Fri, 20 Nov 2026 00:07:32 GMT</pubDate>
       <description>Severity: high. ### Summary
-`keystore.Decode()` fails to check the error returned when reading the trailing SHA-1 integrity digest of a JKS keystore. If an attacker removes the final 20 bytes from a `.jks` file, the digest read returns an empty slice and the byte-comparison loop never executes, so `</description>
+jane-php resolves external `$ref` targets at code-generation time via `file_get_contents($ref)` (jane-php/json-schema-runtime/Reference.php::doResolve) with no scheme/path restriction. An attacker-controlled OpenAPI document can therefore cause: `$ref: 'http://attacker/x'</description>
     </item>
     <item>
-      <title>CVE-2026-76818: Axon: Download of Code Without Integrity Check in axon-mcp</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-76818-axon-download-of-code-without-integrity-check-in-.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-76818-axon-download-of-code-without-integrity-check-in-.html</guid>
-      <pubDate>Thu, 19 Nov 2026 20:34:53 GMT</pubDate>
-      <description>Severity: high. ### Summary
-axon rtk-install downloads a pre-built rtkx binary from GitHub releases and executes it via subprocess.run() on every text-compression call, without verifying its integrity — no checksum, signature, or attestation check anywhere in the download/install path. If the releas</description>
-    </item>
-    <item>
-      <title>ThreatsDay: GPT-6.2 Jailbreak Flaws, BubbleLoader PNG Malware, $500M Ransom Demands + 17 More Stories</title>
-      <link>https://cveradar-ah3.pages.dev/item/threatsday-gpt-6-2-jailbreak-flaws-bubbleloader-png-malware-500m.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/threatsday-gpt-6-2-jailbreak-flaws-bubbleloader-png-malware-500m.html</guid>
-      <pubDate>Thu, 19 Nov 2026 18:47:58 GMT</pubDate>
-      <description>The easiest way to fool someone is to give them something they already expect. A job offer. A message about a service outage. A familiar app. Nothing looks strange at first. And that's the problem. This week's stories show how ordinary things are being used to steal data, spread malware, and get peo</description>
-    </item>
-    <item>
-      <title>phpAfterShell Explained: How Hackers Could Turn a PHP Session Flaw Into Code Execution</title>
-      <link>https://cveradar-ah3.pages.dev/item/phpaftershell-explained-how-hackers-could-turn-a-php-session-fla.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/phpaftershell-explained-how-hackers-could-turn-a-php-session-fla.html</guid>
-      <pubDate>Thu, 19 Nov 2026 16:59:56 GMT</pubDate>
-      <description>PHP's default file-based session storage can be made to return objects an attacker chose, by cutting off a session write at the right moment. When combined with a second weakness, such as a suitable gadget chain in the app, those objects can allow the attacker to run code on the server. Today's PHP </description>
-    </item>
-    <item>
-      <title>CVE-2026-63412: Jane: Instantiation RCE via query parameter name -&gt; raw PHPDoc */ breakout (jane-php/open-api-3)</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-63412-jane-instantiation-rce-via-query-parameter-name-r.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-63412-jane-instantiation-rce-via-query-parameter-name-r.html</guid>
-      <pubDate>Thu, 19 Nov 2026 16:18:45 GMT</pubDate>
+      <title>CVE-2026-63344: Refitter allows arbitrary code execution through unescaped OpenAPI content-type values</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-63344-refitter-allows-arbitrary-code-execution-through-.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-63344-refitter-allows-arbitrary-code-execution-through-.html</guid>
+      <pubDate>Fri, 20 Nov 2026 00:06:52 GMT</pubDate>
       <description>Severity: critical. ### Summary
-jane-php (open-api-3) builds PHP via nikic/php-parser (AST), so string literals are escaped -- but PHPDoc comment text is emitted RAW. The generated Client/Endpoint method docblocks embed the query parameter name verbatim in a `@param array{ "&lt;name&gt;"?: ... }` block. A</description>
+
+Refitter emits the spec's content-type key (content map key in requestBody/responses) verbatim into a Refit `[Headers("Accept: &lt;ct&gt;", "Content-Type: &lt;ct&gt;")]` attribute string without escaping
+`"`. A crafted value survives Refitter's default OpenAPI validation, breaks</description>
     </item>
     <item>
-      <title>CVE-2026-63413: Jane: Instantiation RCE via header parameter name -&gt; raw PHPDoc */ breakout (jane-php/open-api-3)</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-63413-jane-instantiation-rce-via-header-parameter-name-.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-63413-jane-instantiation-rce-via-header-parameter-name-.html</guid>
-      <pubDate>Thu, 19 Nov 2026 16:12:22 GMT</pubDate>
+      <title>CVE-2026-63346: Refitter allows code execution through unescaped OpenAPI header parameter names</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-63346-refitter-allows-code-execution-through-unescaped-.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-63346-refitter-allows-code-execution-through-unescaped-.html</guid>
+      <pubDate>Fri, 20 Nov 2026 00:06:28 GMT</pubDate>
       <description>Severity: critical. ### Summary
-jane-php (open-api-3) builds PHP via nikic/php-parser (AST), so string literals are escaped -- but PHPDoc comment text is emitted RAW. The generated Client/Endpoint method docblocks embed the header parameter name verbatim in a `@param array{ "&lt;name&gt;"?: ... }` block. </description>
+
+Refitter emits the spec's header parameter name (parameters[].name with in: header) verbatim into a Refit `[Header("&lt;name&gt;")]` attribute string without escaping
+`"`. A crafted value survives Refitter's default OpenAPI validation, breaks out of the attribute and
+the e</description>
     </item>
     <item>
-      <title>CVE-2026-63411: Jane: Instantiation RCE via parameter description -&gt; raw PHPDoc */ breakout (jane-php/open-api-3)</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-63411-jane-instantiation-rce-via-parameter-description-.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-63411-jane-instantiation-rce-via-parameter-description-.html</guid>
-      <pubDate>Thu, 19 Nov 2026 16:12:11 GMT</pubDate>
+      <title>CVE-2026-63345: Refitter allows arbitrary code execution through unescaped OpenAPI paths</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-63345-refitter-allows-arbitrary-code-execution-through-.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-63345-refitter-allows-arbitrary-code-execution-through-.html</guid>
+      <pubDate>Fri, 20 Nov 2026 00:06:04 GMT</pubDate>
       <description>Severity: critical. ### Summary
-jane-php (open-api-3) builds PHP via nikic/php-parser (AST), so string literals are escaped -- but PHPDoc comment text is emitted RAW. The generated Client/Endpoint method docblocks embed the parameter description verbatim in a `@param array{ "&lt;name&gt;"?: ... }` block. </description>
+
+Refitter emits each OpenAPI path (the paths-object key) verbatim into a Refit `[Get("&lt;path&gt;")]`
+attribute string, without escaping `"` or restricting characters. A crafted single-line, /-prefixed
+path survives Refitter's default OpenAPI validation yet closes the attr</description>
     </item>
     <item>
-      <title>CVE-2026-75518: DOMShell: domshell_eval classified as read-tier can execute side-effecting JavaScript without --allow-write</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-75518-domshell-domshell-eval-classified-as-read-tier-ca.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-75518-domshell-domshell-eval-classified-as-read-tier-ca.html</guid>
-      <pubDate>Thu, 19 Nov 2026 16:10:53 GMT</pubDate>
-      <description>Severity: medium. ### Summary
-
-The `domshell_eval` MCP tool (and the `eval` command inside `domshell_execute`) was classified as **read-tier**, allowing it to run without the `--allow-write` server flag. However, `eval` and the write-tier `js` command dispatch to the same handler in the extension an</description>
-    </item>
-    <item>
-      <title>CVE-2026-69139: djangocms-moderation: Moderation comments disclosed to non-participant staff via the admin changelist</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-69139-djangocms-moderation-moderation-comments-disclose.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-69139-djangocms-moderation-moderation-comments-disclose.html</guid>
-      <pubDate>Thu, 19 Nov 2026 16:09:30 GMT</pubDate>
-      <description>Severity: medium. ## Summary
-
-The Django admin views for moderation comments (`CollectionCommentAdmin` and `RequestCommentAdmin`) render the full comment body but scope access only by an attacker-controlled `id` in the URL and Django's model-level `view_*comment` permission. They perform no per-obje</description>
-    </item>
-    <item>
-      <title>CVE-2026-71535: Mareforma: Unsigned Claims Can Be Promoted to REPLICATED via Missing Signature Enforcement in Convergence Path</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-71535-mareforma-unsigned-claims-can-be-promoted-to-repl.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-71535-mareforma-unsigned-claims-can-be-promoted-to-repl.html</guid>
-      <pubDate>Thu, 19 Nov 2026 16:07:36 GMT</pubDate>
-      <description>Severity: high. ### Summary
-
-`mareforma` 0.3.3 contains a critical integrity flaw in the REPLICATED convergence logic (`_maybe_update_replicated_unlocked()` in `mareforma/db/core.py:1300-1319`). The peer-selection SQL query that determines whether two independent claims "agree" on the same anchor do</description>
-    </item>
-    <item>
-      <title>CVE-2026-71534: Mareforma: transparency_logged trusts the unsigned rekor block</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-71534-mareforma-transparency-logged-trusts-the-unsigned.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-71534-mareforma-transparency-logged-trusts-the-unsigned.html</guid>
-      <pubDate>Thu, 19 Nov 2026 16:05:07 GMT</pubDate>
-      <description>Severity: medium. ## What's wrong
-
-During restore, `transparency_logged` is recomputed as `1 if (toml_logged is not False and bundle_has_rekor) else 0`, where `bundle_has_rekor` comes only from a `rekor.uuid` field inside `signature_bundle`. That derivation is wrong in both directions.
-
-First, the r</description>
-    </item>
-    <item>
-      <title>CVE-2026-71500: Mareforma: invalidated claims still promote to REPLICATED</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-71500-mareforma-invalidated-claims-still-promote-to-rep.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-71500-mareforma-invalidated-claims-still-promote-to-rep.html</guid>
-      <pubDate>Thu, 19 Nov 2026 16:04:43 GMT</pubDate>
-      <description>Severity: medium. ## What's wrong
-
-`_maybe_update_replicated_unlocked` never checks `t_invalid`, so a claim that a signed contradiction verdict has marked invalid can still climb to REPLICATED through convergence detection, and it pulls an honest peer up with it.
-
-Three gaps line up:
-
-- The new-clai</description>
-    </item>
-    <item>
-      <title>CVE-2026-71536: Mareforma: verify_bundle never checks a per-claim signature</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-71536-mareforma-verify-bundle-never-checks-a-per-claim-.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-71536-mareforma-verify-bundle-never-checks-a-per-claim-.html</guid>
-      <pubDate>Thu, 19 Nov 2026 16:03:39 GMT</pubDate>
-      <description>Severity: high. ## What's wrong
-
-`verify_bundle` documents that it verifies "a bundle's DSSE envelope AND each per-claim signature", lists "per-claim signature failure" among its raised errors, and promises that partial verification never surfaces "an authenticated bundle that contains some invalid </description>
-    </item>
-    <item>
-      <title>CVE-2026-71533: Mareforma: search_claims skips verify-on-read, serving forged rows</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-71533-mareforma-search-claims-skips-verify-on-read-serv.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-71533-mareforma-search-claims-skips-verify-on-read-serv.html</guid>
-      <pubDate>Thu, 19 Nov 2026 16:00:52 GMT</pubDate>
-      <description>Severity: medium. ## What's wrong
-
-`search_claims` never calls `_row_verified_on_read`. Its row loop applies only the PRELIMINARY-unenrolled filter, then appends the row. `query_claims` runs the same projection but additionally re-verifies REPLICATED/ESTABLISHED signatures on read (line 4023) and dr</description>
-    </item>
-    <item>
-      <title>CVE-2026-58214: NATS Server MQTT subscribe permission bypass exposes internal QoS 2 metadata</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-58214-nats-server-mqtt-subscribe-permission-bypass-expo.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-58214-nats-server-mqtt-subscribe-permission-bypass-expo.html</guid>
-      <pubDate>Thu, 19 Nov 2026 16:00:12 GMT</pubDate>
+      <title>CVE-2026-58208: NATS Server: MQTT-over-WebSocket Path Can Crash WebSocket-Only JetStream Servers Before MQTT Is Enabled</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-58208-nats-server-mqtt-over-websocket-path-can-crash-we.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-58208-nats-server-mqtt-over-websocket-path-can-crash-we.html</guid>
+      <pubDate>Fri, 20 Nov 2026 00:05:17 GMT</pubDate>
       <description>Severity: medium. ### Background
 
 NATS.io is a high performance open source pub-sub distributed communication technology, built for the cloud, on-premise, IoT and edge computing.
 
-The NATS Server MQTT support uses internal `$MQTT.*` subjects to implement MQTT protocol features such as QoS handling.
-</description>
+The NATS Server can accept client connections over WebSocket and can also support MQTT over WebSocket when MQTT is confi</description>
+    </item>
+    <item>
+      <title>CVE-2026-58210: NATS Server allows unauthenticated memory exhaustion through incomplete MQTT CONNECT packets</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-58210-nats-server-allows-unauthenticated-memory-exhaust.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-58210-nats-server-allows-unauthenticated-memory-exhaust.html</guid>
+      <pubDate>Fri, 20 Nov 2026 00:04:46 GMT</pubDate>
+      <description>Severity: high. ### Background
+
+NATS.io is a high performance open source pub-sub distributed communication technology, built for the cloud, on-premise, IoT and edge computing.
+
+The NATS Server supports MQTT clients, including authentication and parsing of MQTT `CONNECT` packets.
+
+### Problem Descri</description>
+    </item>
+    <item>
+      <title>CVE-2026-58209: NATS Server MQTT retained messages and QoS replay bypass subscription deny rules</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-58209-nats-server-mqtt-retained-messages-and-qos-replay.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-58209-nats-server-mqtt-retained-messages-and-qos-replay.html</guid>
+      <pubDate>Fri, 20 Nov 2026 00:04:27 GMT</pubDate>
+      <description>Severity: medium. ### Background
+
+NATS.io is a high performance open source pub-sub distributed communication technology, built for the cloud, on-premise, IoT and edge computing.
+
+The NATS Server MQTT support includes retained messages and QoS1+ durable delivery. NATS subscription permissions can al</description>
+    </item>
+    <item>
+      <title>CVE-2026-62337: snark-verifier: Halo 2 aggregation circuit mishandles point-at-infinity proof elements</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-62337-snark-verifier-halo-2-aggregation-circuit-mishand.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-62337-snark-verifier-halo-2-aggregation-circuit-mishand.html</guid>
+      <pubDate>Fri, 20 Nov 2026 00:01:59 GMT</pubDate>
+      <description>Severity: medium. ### Summary
+The Halo 2 aggregation circuit could mishandle proof elements encoded as the point at infinity.
+
+When an assigned proof point appeared in an MSM term with constant scalar one, the Halo 2 loader used a scalar-one shortcut that passed the assigned point directly into the </description>
+    </item>
+    <item>
+      <title>CVE-2026-128135: NLTK: ZIP package extraction follows in-root hardlinks and overwrites files outside the NLTK data root</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-128135-nltk-zip-package-extraction-follows-in-root-hard.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-128135-nltk-zip-package-extraction-follows-in-root-hard.html</guid>
+      <pubDate>Thu, 19 Nov 2026 23:59:15 GMT</pubDate>
+      <description>Severity: high. ## Summary
+
+NLTK ships a security wrapper, `nltk.pathsec.ZipFile`, that is meant to confine archive extraction to trusted data roots and to block link-based escapes. When `nltk.download()` installs a package, the extraction write opens each member's target path without checking wheth</description>
     </item>
   </channel>
 </rss>

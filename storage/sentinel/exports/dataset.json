@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T21:05:48+00:00",
+  "generated_at": "2026-11-20T01:26:29+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -10,34 +10,34 @@
     "rss"
   ],
   "totals": {
-    "items": 132,
+    "items": 131,
     "by_source": {
       "hn": 40,
       "cve": 30,
-      "github": 12,
+      "github": 11,
       "rss": 50
     },
     "by_recipe": {
       "hn_sec": 40,
       "gh_advisories": 30,
       "hackersnews": 30,
-      "github_sec": 12,
+      "github_sec": 11,
       "schneier": 10,
       "krebs": 10
     },
     "by_topic": {
-      "security": 113,
-      "ai": 67,
-      "dev": 43,
-      "hardware": 20,
-      "crypto": 8,
+      "security": 111,
+      "ai": 58,
+      "dev": 46,
+      "hardware": 23,
       "science": 7,
-      "biz": 7
+      "biz": 7,
+      "crypto": 7
     },
     "top_domains": [
       [
         "github.com",
-        44
+        43
       ],
       [
         "thehackernews.com",
@@ -174,33 +174,51 @@
       "date": "2025-03-24"
     },
     {
-      "uid": "cve:GHSA-833v-v58w-294h",
+      "uid": "cve:GHSA-mc8w-wjhw-45x5",
       "source": "cve",
-      "title": "CVE-2026-76807: Todoist MCP Server: Browser DNS rebinding lets websites write and delete Todoist data through local MCP server",
-      "url": "https://github.com/advisories/GHSA-833v-v58w-294h",
-      "ts": 1795120715.0,
+      "title": "CVE-2026-114516: Etherpad: Pre-auth arbitrary file read",
+      "url": "https://github.com/advisories/GHSA-mc8w-wjhw-45x5",
+      "ts": 1795134225.0,
       "points": 6000,
       "comments": 0,
-      "author": "@doist/todoist-mcp",
-      "summary": "Severity: critical. The self-hosted `todoist-mcp-http` server accepts browser-origin MCP requests with attacker-controlled `Host` and `Origin` headers. A malicious website can use DNS rebinding to route its own origin to a victim's local `127.0.0.1` MCP server, then invoke Todoist MCP tools without a caller credential.",
+      "author": "ep_etherpad-lite",
+      "summary": "Severity: critical. ### Summary\n\nAn unauthenticated path‑traversal / arbitrary file read vulnerability in Etherpad's /static/* handler allows any remote, unauthenticated user to read any file on the server's filesystem (e.g. GET /static/plugins/ep_etherpad-lite/static/..%5C..%5C..%5C..%5C..%5C..%5C..%5Cetc/passwd retur",
       "recipe": "gh_advisories",
       "buzz": 6080,
       "topics": [
         "security",
         "hardware"
       ],
-      "date": "2026-11-19"
+      "date": "2026-11-20"
     },
     {
-      "uid": "cve:GHSA-q8v2-3j4h-xg2p",
+      "uid": "cve:GHSA-wj7x-58c2-5793",
       "source": "cve",
-      "title": "CVE-2026-63412: Jane: Instantiation RCE via query parameter name -> raw PHPDoc */ breakout (jane-php/open-api-3)",
-      "url": "https://github.com/advisories/GHSA-q8v2-3j4h-xg2p",
-      "ts": 1795105125.0,
+      "title": "CVE-2026-77369: Daptin: Broken Access Control (IDOR) in the generic YJS collaboration endpoint",
+      "url": "https://github.com/advisories/GHSA-wj7x-58c2-5793",
+      "ts": 1795133654.0,
       "points": 6000,
       "comments": 0,
-      "author": "jane-php/open-api-3",
-      "summary": "Severity: critical. ### Summary\njane-php (open-api-3) builds PHP via nikic/php-parser (AST), so string literals are escaped -- but PHPDoc comment text is emitted RAW. The generated Client/Endpoint method docblocks embed the query parameter name verbatim in a `@param array{ \"<name>\"?: ... }` block. A `*/` in the query n",
+      "author": "github.com/daptin/daptin",
+      "summary": "Severity: critical. ### Summary\n\nDaptin registers a generic WebSocket endpoint, `GET /yjs/:documentName`, for real-time collaborative\ndocument editing (YJS/CRDT). Unlike its purpose-built sibling route, this generic endpoint performs\nno per-resource authorization check - it only verifies that *some* user session exists",
+      "recipe": "gh_advisories",
+      "buzz": 6080,
+      "topics": [
+        "science",
+        "security"
+      ],
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "cve:GHSA-hq2p-f2vj-v3cm",
+      "source": "cve",
+      "title": "CVE-2026-77367: Daptin: Unauthenticated SQL Injection via the `sort` query parameter on every entity list endpoint",
+      "url": "https://github.com/advisories/GHSA-hq2p-f2vj-v3cm",
+      "ts": 1795133599.0,
+      "points": 6000,
+      "comments": 0,
+      "author": "github.com/daptin/daptin",
+      "summary": "Severity: critical. ### Summary\n\nAn unauthenticated attacker can inject arbitrary SQL through the `sort` query parameter accepted by\nDaptin's generic entity list endpoint (`GET /api/<entity>`), which every table in a Daptin instance\nexposes. The parameter is concatenated into raw SQL identifiers with no validation that",
       "recipe": "gh_advisories",
       "buzz": 6080,
       "topics": [
@@ -208,45 +226,96 @@
         "science",
         "security"
       ],
-      "date": "2026-11-19"
+      "date": "2026-11-20"
     },
     {
-      "uid": "cve:GHSA-x9xr-53qx-9qcf",
+      "uid": "cve:GHSA-9x8x-crjq-g64h",
       "source": "cve",
-      "title": "CVE-2026-63413: Jane: Instantiation RCE via header parameter name -> raw PHPDoc */ breakout (jane-php/open-api-3)",
-      "url": "https://github.com/advisories/GHSA-x9xr-53qx-9qcf",
-      "ts": 1795104742.0,
+      "title": "CVE-2026-77359: Jupyter MCP Server: Browser DNS rebinding can hijack the Jupyter backend through management routes",
+      "url": "https://github.com/advisories/GHSA-9x8x-crjq-g64h",
+      "ts": 1795133571.0,
       "points": 6000,
       "comments": 0,
-      "author": "jane-php/open-api-3",
-      "summary": "Severity: critical. ### Summary\njane-php (open-api-3) builds PHP via nikic/php-parser (AST), so string literals are escaped -- but PHPDoc comment text is emitted RAW. The generated Client/Endpoint method docblocks embed the header parameter name verbatim in a `@param array{ \"<name>\"?: ... }` block. A `*/` in the header",
+      "author": "jupyter-mcp-server",
+      "summary": "Severity: critical. Standalone `streamable-http` mode in `datalayer/jupyter-mcp-server` rejects forged `Host` and `Origin` headers on `/mcp`, but custom management routes mounted on the same application do not get the same browser-origin protection. A malicious website can keep an attacker origin while its hostname res",
+      "recipe": "gh_advisories",
+      "buzz": 6080,
+      "topics": [
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "cve:GHSA-p34x-fmph-9fjx",
+      "source": "cve",
+      "title": "CVE-2026-77312: Flyto2 Core: Arbitrary file write via unguarded data.*/file.* modules (incomplete fix of CVE-2026-67429)",
+      "url": "https://github.com/advisories/GHSA-p34x-fmph-9fjx",
+      "ts": 1795133342.0,
+      "points": 6000,
+      "comments": 0,
+      "author": "flyto-core",
+      "summary": "Severity: critical. # [CRITICAL] Arbitrary file write via unguarded `data.*` / `file.*` write modules — incomplete fix of GHSA-2956\n\n- **CWE:** CWE-22 (Path Traversal) / CWE-73 (External Control of File Name or Path); impact reaches CWE-94 (code execution via file overwrite).\n- **CVSS v3.1:** `AV:N/AC:L/PR:L/UI:N/S:C/C",
+      "recipe": "gh_advisories",
+      "buzz": 6080,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "cve:GHSA-p32v-8v8j-j534",
+      "source": "cve",
+      "title": "CVE-2026-63344: Refitter allows arbitrary code execution through unescaped OpenAPI content-type values",
+      "url": "https://github.com/advisories/GHSA-p32v-8v8j-j534",
+      "ts": 1795133212.0,
+      "points": 6000,
+      "comments": 0,
+      "author": "Refitter",
+      "summary": "Severity: critical. ### Summary\n\nRefitter emits the spec's content-type key (content map key in requestBody/responses) verbatim into a Refit `[Headers(\"Accept: <ct>\", \"Content-Type: <ct>\")]` attribute string without escaping\n`\"`. A crafted value survives Refitter's default OpenAPI validation, breaks out of the attribut",
       "recipe": "gh_advisories",
       "buzz": 6080,
       "topics": [
         "dev",
-        "science",
         "security"
       ],
-      "date": "2026-11-19"
+      "date": "2026-11-20"
     },
     {
-      "uid": "cve:GHSA-xwcw-j52r-34x4",
+      "uid": "cve:GHSA-58x9-vjvp-6mx8",
       "source": "cve",
-      "title": "CVE-2026-63411: Jane: Instantiation RCE via parameter description -> raw PHPDoc */ breakout (jane-php/open-api-3)",
-      "url": "https://github.com/advisories/GHSA-xwcw-j52r-34x4",
-      "ts": 1795104731.0,
+      "title": "CVE-2026-63346: Refitter allows code execution through unescaped OpenAPI header parameter names",
+      "url": "https://github.com/advisories/GHSA-58x9-vjvp-6mx8",
+      "ts": 1795133188.0,
       "points": 6000,
       "comments": 0,
-      "author": "jane-php/open-api-3",
-      "summary": "Severity: critical. ### Summary\njane-php (open-api-3) builds PHP via nikic/php-parser (AST), so string literals are escaped -- but PHPDoc comment text is emitted RAW. The generated Client/Endpoint method docblocks embed the parameter description verbatim in a `@param array{ \"<name>\"?: ... }` block. A `*/` in the parame",
+      "author": "Refitter",
+      "summary": "Severity: critical. ### Summary\n\nRefitter emits the spec's header parameter name (parameters[].name with in: header) verbatim into a Refit `[Header(\"<name>\")]` attribute string without escaping\n`\"`. A crafted value survives Refitter's default OpenAPI validation, breaks out of the attribute and\nthe enclosing interface +",
       "recipe": "gh_advisories",
       "buzz": 6080,
       "topics": [
         "dev",
-        "science",
         "security"
       ],
-      "date": "2026-11-19"
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "cve:GHSA-3fhm-p725-h3g3",
+      "source": "cve",
+      "title": "CVE-2026-63345: Refitter allows arbitrary code execution through unescaped OpenAPI paths",
+      "url": "https://github.com/advisories/GHSA-3fhm-p725-h3g3",
+      "ts": 1795133164.0,
+      "points": 6000,
+      "comments": 0,
+      "author": "Refitter",
+      "summary": "Severity: critical. ### Summary\n\nRefitter emits each OpenAPI path (the paths-object key) verbatim into a Refit `[Get(\"<path>\")]`\nattribute string, without escaping `\"` or restricting characters. A crafted single-line, /-prefixed\npath survives Refitter's default OpenAPI validation yet closes the attribute string and the",
+      "recipe": "gh_advisories",
+      "buzz": 6080,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-20"
     },
     {
       "uid": "hn:48997548",
@@ -340,142 +409,142 @@
       "date": "2021-01-11"
     },
     {
-      "uid": "cve:GHSA-7589-6fvf-x4pw",
+      "uid": "cve:GHSA-7hvw-3c2q-45qg",
       "source": "cve",
-      "title": "CVE-2026-121707: Effect: ReDoS in Schema.TemplateLiteral compiled regex",
-      "url": "https://github.com/advisories/GHSA-7589-6fvf-x4pw",
-      "ts": 1795121461.0,
+      "title": "CVE-2026-103025: bep/imagemeta: Unbounded memory allocation decoding PNG `zTXt` \"Raw profile type iptc\" chunks",
+      "url": "https://github.com/advisories/GHSA-7hvw-3c2q-45qg",
+      "ts": 1795134052.0,
       "points": 3500,
       "comments": 0,
-      "author": "effect",
-      "summary": "Severity: high. ### Impact\n\n`Schema.TemplateLiteral` compiles each `Schema.String` span to the lazy wildcard `[\\s\\S]*?` and decodes input by running the resulting regular expression against it. When a template has two or more `Schema.String` spans, for example:\n\n```ts\nSchema.TemplateLiteral(Schema.String, \":\", Sche",
-      "recipe": "gh_advisories",
-      "buzz": 3580,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-19"
-    },
-    {
-      "uid": "cve:GHSA-5hj8-q7fv-qrj6",
-      "source": "cve",
-      "title": "CVE-2026-128073: gosaml2: Unauthenticated panic decrypting an EncryptedAssertion with a short or empty CipherValue",
-      "url": "https://github.com/advisories/GHSA-5hj8-q7fv-qrj6",
-      "ts": 1795121376.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "github.com/russellhaering/gosaml2",
-      "summary": "Severity: high. ### Summary\n\nAn attacker who can supply a crafted SAML Response for parsing can crash a `gosaml2` service provider by sending an `EncryptedAssertion` with AES-GCM encryption metadata and a `CipherValue` shorter than the GCM nonce size (12 bytes). The library panics with `slice bounds out of range` b",
-      "recipe": "gh_advisories",
-      "buzz": 3580,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-19"
-    },
-    {
-      "uid": "cve:GHSA-464h-4j8h-q5mf",
-      "source": "cve",
-      "title": "CVE-2026-102529: HtmlSanitizer: CSS Removal DoS",
-      "url": "https://github.com/advisories/GHSA-464h-4j8h-q5mf",
-      "ts": 1795121341.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "HtmlSanitizer",
-      "summary": "Severity: high. ### Impact\n\nAn unauthenticated request can occupy one synchronous application worker for seconds. Concurrent requests add CPU cost and can keep all workers busy, sustaining denial of service without user interaction.\n\n### Patches\n\nThe issue has been patched in versions  9.0.967 and 9.1.968-beta.\n\n##",
-      "recipe": "gh_advisories",
-      "buzz": 3580,
-      "topics": [
-        "ai",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-19"
-    },
-    {
-      "uid": "cve:GHSA-pxh3-4qqv-58mg",
-      "source": "cve",
-      "title": "CVE-2026-61713: Servo Sandbox bypass: declarative refresh can auto-navigate a sandboxed iframe",
-      "url": "https://github.com/advisories/GHSA-pxh3-4qqv-58mg",
-      "ts": 1795121122.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "servo",
-      "summary": "Severity: high. A sandboxed iframe can auto-navigate itself via declarative refresh even when automatic features should be blocked. This allows attacker-controlled embedded content to redirect itself without user action.\n\n### Summary\nServo allows a sandboxed iframe to auto-navigate itself via declarative refresh in",
-      "recipe": "gh_advisories",
-      "buzz": 3580,
-      "topics": [
-        "security"
-      ],
-      "date": "2026-11-19"
-    },
-    {
-      "uid": "cve:GHSA-jmmc-wjpc-pg34",
-      "source": "cve",
-      "title": "CVE-2026-61689: XWiki Platform: HQL injection in search allows unauthenticated database extraction including password hashes",
-      "url": "https://github.com/advisories/GHSA-jmmc-wjpc-pg34",
-      "ts": 1795121072.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "org.xwiki.platform:xwiki-platform-rest-server",
-      "summary": "Severity: high. ### Impact\nThe query REST API allows executing HQL queries to filter the listed pages. While this properly checks access rights for the current user, the query can be used to combine when clauses and blind queries, to recover values, through FROM clause injection to join BaseObject and StringPropert",
+      "author": "github.com/bep/imagemeta",
+      "summary": "Severity: high. A crafted PNG can make `imagemeta.Decode` allocate memory far in excess of the input file's size, leading to memory exhaustion. Two separate paths in the `zTXt` \"Raw profile type iptc\" branch are affected: the declared chunk length drives an allocation directly, and the embedded zlib stream is decom",
       "recipe": "gh_advisories",
       "buzz": 3580,
       "topics": [
         "dev",
         "security"
       ],
-      "date": "2026-11-19"
+      "date": "2026-11-20"
     },
     {
-      "uid": "cve:GHSA-3h63-w8jq-rrf2",
+      "uid": "cve:GHSA-2pj4-v76f-wjvx",
       "source": "cve",
-      "title": "CVE-2026-59975: SharpIppNext: Unbounded IPP Document Stream Buffering Leads to Denial of Service",
-      "url": "https://github.com/advisories/GHSA-3h63-w8jq-rrf2",
-      "ts": 1795120981.0,
+      "title": "CVE-2026-62955: baserCMS: Path Traversal Bypass via realpath() in BcThemeFileService (CVE-2026-30940 Patch Bypass)",
+      "url": "https://github.com/advisories/GHSA-2pj4-v76f-wjvx",
+      "ts": 1795133867.0,
       "points": 3500,
       "comments": 0,
-      "author": "SharpIppNext",
-      "summary": "Severity: high. ### Summary\n\nSharpIppNext's `IppProtocol.ReadIppRequestAsync()` unconditionally copies the entire attacker-supplied IPP document payload into an unbounded `MemoryStream` with no size limit. Because this behavior is enabled by default (`ReadDocumentStream = true`) and the official server documentatio",
+      "author": "baserproject/baser-core",
+      "summary": "Severity: high. ### Summary\n\nThe security patch introduced in baserCMS 5.2.3 to address CVE-[phone] / [GHSA-c5c6-37vq-pjcq](https://github.com/baserproject/basercms/security/advisories/GHSA-c5c6-37vq-pjcq) is **incomplete**. The patch added a `realpath()`-based directory traversal check in `BcThemeFileService::g",
       "recipe": "gh_advisories",
       "buzz": 3580,
       "topics": [
-        "security",
-        "hardware"
+        "dev",
+        "security"
       ],
-      "date": "2026-11-19"
+      "date": "2026-11-20"
     },
     {
-      "uid": "cve:GHSA-mx6p-3fg7-v6pj",
+      "uid": "cve:GHSA-24pw-rf5p-mgp7",
       "source": "cve",
-      "title": "CVE-2026-77283: obsidian-sync-mcp: Missing Host/Origin validation lets a public website drive a victim's Obsidian vault via DNS rebinding (no-auth mode)",
-      "url": "https://github.com/advisories/GHSA-mx6p-3fg7-v6pj",
-      "ts": 1795120878.0,
+      "title": "CVE-2026-77318: Jupyter MCP Server: Unauthenticated management routes can hijack the Jupyter backend in standalone HTTP mode",
+      "url": "https://github.com/advisories/GHSA-24pw-rf5p-mgp7",
+      "ts": 1795133534.0,
       "points": 3500,
       "comments": 0,
-      "author": "obsidian-sync-mcp",
-      "summary": "Severity: high. When obsidian-sync-mcp runs without MCP_AUTH_TOKEN (the documented no-auth mode for local use), the HTTP MCP endpoint does not validate the Host or Origin header before dispatching MCP methods (CWE-350). The no-auth mode's \"local network only\" assumption therefore does not hold: a malicious web page",
+      "author": "jupyter-mcp-server",
+      "summary": "Severity: high. Standalone `streamable-http` mode in `datalayer/jupyter-mcp-server` requires `MCP_TOKEN` for `/mcp`, but the custom management routes mounted on the same application do not enforce that token. An unauthenticated network caller can invoke `PUT /api/connect`, choose the Jupyter backend URL and token f",
       "recipe": "gh_advisories",
       "buzz": 3580,
       "topics": [
+        "dev",
         "crypto",
-        "security"
+        "security",
+        "hardware"
       ],
-      "date": "2026-11-19"
+      "date": "2026-11-20"
     },
     {
-      "uid": "cve:GHSA-gpcc-36pq-8qxr",
+      "uid": "cve:GHSA-6pm8-6f34-9v3g",
       "source": "cve",
-      "title": "CVE-2026-76090: Tapir: Construction/decode RCE via property name -> raw case-class field (tapir-openapi-codegen)",
-      "url": "https://github.com/advisories/GHSA-gpcc-36pq-8qxr",
-      "ts": 1795120767.0,
+      "title": "CVE-2026-77316: Flyto2 Core: SSRF guard bypass via DNS rebinding (validate_url_ssrf resolves-then-connects without pinning)",
+      "url": "https://github.com/advisories/GHSA-6pm8-6f34-9v3g",
+      "ts": 1795133484.0,
       "points": 3500,
       "comments": 0,
-      "author": "com.softwaremill.sttp.tapir:tapir-openapi-codegen-core",
-      "summary": "Severity: high. The OpenAPI code generator (tapir-openapi-codegen-core) builds Scala source by string templating and emitted several names/values from the (untrusted) OpenAPI document without escaping or validation, allowing injection of arbitrary Scala that runs at generated-code compile time and/or endpoint-assem",
+      "author": "flyto-core",
+      "summary": "Severity: high. # [MEDIUM] SSRF guard bypass via DNS rebinding — validate_url_ssrf resolves-then-connects without pinning\n\n- **CWE:** CWE-918 (SSRF) / CWE-367 (TOCTOU).\n- **CVSS v3.1:** `AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:L/A:N` = **6.8 Medium** (AC:H — needs attacker-controlled DNS with a low/zero TTL and to flip the a",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "cve:GHSA-2mr3-rxrq-238c",
+      "source": "cve",
+      "title": "CVE-2026-77315: Flyto2 Core: http.paginate follows server-supplied next-page URLs (Link header / cursor) without SSRF revalidation",
+      "url": "https://github.com/advisories/GHSA-2mr3-rxrq-238c",
+      "ts": 1795133414.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "flyto-core",
+      "summary": "Severity: high. ## Summary\n`http.paginate` validates only the initial `base_url`, then follows server-supplied pagination targets (RFC 5988 `Link: rel=\"next\"` headers, cursor/offset URLs) in a loop **without revalidating each follow-up URL**. An attacker's first-page response can point `next` at an internal address",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "cve:GHSA-pfg2-w999-497v",
+      "source": "cve",
+      "title": "CVE-2026-77313: Flyto2 Core: SSRF guard validates the resolved IP but connects by hostname, allowing DNS-rebinding TOCTOU",
+      "url": "https://github.com/advisories/GHSA-pfg2-w999-497v",
+      "ts": 1795133363.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "flyto-core",
+      "summary": "Severity: high. ## Summary\n`validate_url_ssrf` resolves the hostname, checks the IP against private ranges, then **discards the IP and returns the hostname URL string**. aiohttp performs a fresh, independent DNS resolution at connect time. An attacker controlling DNS for a hostname (TTL 0, alternating public IP and",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "cve:GHSA-86mf-q4h5-69gp",
+      "source": "cve",
+      "title": "CVE-2026-59988: django-docutils unsafe Docutils defaults allow local file disclosure, SSRF, and stored XSS",
+      "url": "https://github.com/advisories/GHSA-86mf-q4h5-69gp",
+      "ts": 1795133292.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "django-docutils",
+      "summary": "Severity: high. ## Summary\n\ndjango-docutils before `0.30.0` rendered reStructuredText through Docutils without protected web-safe defaults. Public rendering paths, including `publish_doctree`, `publish_html_from_source`, `publish_html_from_doctree`, `publish_parts_from_doctree`, the `{% rst %}` template tag, the `r",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "cve:GHSA-c3cj-3p6p-j822",
+      "source": "cve",
+      "title": "CVE-2026-63415: Jane: $ref resolution performs SSRF + LFI (path traversal) at code-generation time (jane-php)",
+      "url": "https://github.com/advisories/GHSA-c3cj-3p6p-j822",
+      "ts": 1795133252.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "jane-php/open-api-3",
+      "summary": "Severity: high. ### Summary\njane-php resolves external `$ref` targets at code-generation time via `file_get_contents($ref)` (jane-php/json-schema-runtime/Reference.php::doResolve) with no scheme/path restriction. An attacker-controlled OpenAPI document can therefore cause: `$ref: 'http://attacker/x'` -> SSRF (HTTP",
       "recipe": "gh_advisories",
       "buzz": 3580,
       "topics": [
@@ -483,151 +552,40 @@
         "science",
         "security"
       ],
-      "date": "2026-11-19"
+      "date": "2026-11-20"
     },
     {
-      "uid": "cve:GHSA-w42c-h7hr-f67p",
+      "uid": "cve:GHSA-r72h-j7qq-v6qg",
       "source": "cve",
-      "title": "CVE-2026-62964: Gortex: Arbitrary file write / repo-confinement escape in `write_file` / `edit_file` / `move_inline` MCP tools → code execution",
-      "url": "https://github.com/advisories/GHSA-w42c-h7hr-f67p",
-      "ts": 1795120591.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "github.com/zzet/gortex",
-      "summary": "Severity: high. ### Summary\nGortex is an MCP server exposing `write_file`, `edit_file`, and `move_inline` tools. `resolveFilePath` **exempts absolute paths** from confinement, and the write handlers — unlike `read_file` / `get_symbol_source` — **never call `guardSymlinkWithinRepo`**. A single MCP `write_file` call",
-      "recipe": "gh_advisories",
-      "buzz": 3580,
-      "topics": [
-        "ai",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-19"
-    },
-    {
-      "uid": "cve:GHSA-4c2f-96cf-f5fc",
-      "source": "cve",
-      "title": "CVE-2026-75522: OpenID4VP: X.509 chain validation accepts a forged certificate that reuses a trusted anchor's Subject DN without verifying its signature",
-      "url": "https://github.com/advisories/GHSA-4c2f-96cf-f5fc",
-      "ts": 1795120557.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "@openeudi/openid4vp",
-      "summary": "Severity: high. ## Summary\n\n`ChainBuilder` (the private RFC 5280 validator behind `TrustEvaluator` and the public credential-parsing API) terminated chain building on **Subject Distinguished Name string equality** rather than on cryptographic closure to a trust anchor. A certificate whose Subject DN string matched",
-      "recipe": "gh_advisories",
-      "buzz": 3580,
-      "topics": [
-        "ai",
-        "dev",
-        "crypto",
-        "security"
-      ],
-      "date": "2026-11-19"
-    },
-    {
-      "uid": "cve:GHSA-j282-pjg5-j643",
-      "source": "cve",
-      "title": "CVE-2026-76101: keystore-go: Keystore integrity and password verification bypass via stripped trailing digest in Decode()",
-      "url": "https://github.com/advisories/GHSA-j282-pjg5-j643",
-      "ts": 1795120535.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "github.com/pavel-v-chernykh/keystore-go",
-      "summary": "Severity: high. ### Summary\n`keystore.Decode()` fails to check the error returned when reading the trailing SHA-1 integrity digest of a JKS keystore. If an attacker removes the final 20 bytes from a `.jks` file, the digest read returns an empty slice and the byte-comparison loop never executes, so `Decode()` return",
-      "recipe": "gh_advisories",
-      "buzz": 3580,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-19"
-    },
-    {
-      "uid": "cve:GHSA-r7wg-f7r2-8wf7",
-      "source": "cve",
-      "title": "CVE-2026-76818: Axon: Download of Code Without Integrity Check in axon-mcp",
-      "url": "https://github.com/advisories/GHSA-r7wg-f7r2-8wf7",
-      "ts": 1795120493.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "axon-mcp",
-      "summary": "Severity: high. ### Summary\naxon rtk-install downloads a pre-built rtkx binary from GitHub releases and executes it via subprocess.run() on every text-compression call, without verifying its integrity — no checksum, signature, or attestation check anywhere in the download/install path. If the release pipeline or a",
-      "recipe": "gh_advisories",
-      "buzz": 3580,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-19"
-    },
-    {
-      "uid": "cve:GHSA-8776-qf3h-26r3",
-      "source": "cve",
-      "title": "CVE-2026-71535: Mareforma: Unsigned Claims Can Be Promoted to REPLICATED via Missing Signature Enforcement in Convergence Path",
-      "url": "https://github.com/advisories/GHSA-8776-qf3h-26r3",
-      "ts": 1795104456.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "mareforma",
-      "summary": "Severity: high. ### Summary\n\n`mareforma` 0.3.3 contains a critical integrity flaw in the REPLICATED convergence logic (`_maybe_update_replicated_unlocked()` in `mareforma/db/core.py:1300-1319`). The peer-selection SQL query that determines whether two independent claims \"agree\" on the same anchor does not verify th",
-      "recipe": "gh_advisories",
-      "buzz": 3580,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-19"
-    },
-    {
-      "uid": "cve:GHSA-hxh5-gp44-rc6p",
-      "source": "cve",
-      "title": "CVE-2026-71536: Mareforma: verify_bundle never checks a per-claim signature",
-      "url": "https://github.com/advisories/GHSA-hxh5-gp44-rc6p",
-      "ts": 1795104219.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "mareforma",
-      "summary": "Severity: high. ## What's wrong\n\n`verify_bundle` documents that it verifies \"a bundle's DSSE envelope AND each per-claim signature\", lists \"per-claim signature failure\" among its raised errors, and promises that partial verification never surfaces \"an authenticated bundle that contains some invalid claims\" as succe",
-      "recipe": "gh_advisories",
-      "buzz": 3580,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-19"
-    },
-    {
-      "uid": "cve:GHSA-qrcv-3558-gj4f",
-      "source": "cve",
-      "title": "CVE-2026-58213: NATS Server: MQTT SUBSCRIBE Protocol Injection via Leaf Node/Route Forwarding allows arbitrary NATS command injection",
-      "url": "https://github.com/advisories/GHSA-qrcv-3558-gj4f",
-      "ts": 1795103815.0,
+      "title": "CVE-2026-58210: NATS Server allows unauthenticated memory exhaustion through incomplete MQTT CONNECT packets",
+      "url": "https://github.com/advisories/GHSA-r72h-j7qq-v6qg",
+      "ts": 1795133086.0,
       "points": 3500,
       "comments": 0,
       "author": "github.com/nats-io/nats-server/v2",
-      "summary": "Severity: high. ### Background\n\nNATS.io is a high performance open source pub-sub distributed communication technology, built for the cloud, on-premise, IoT and edge computing.\n\nThe NATS Server supports MQTT clients and can bridge MQTT activity into NATS subjects across routes and leafnode connections.\n\n### Problem",
+      "summary": "Severity: high. ### Background\n\nNATS.io is a high performance open source pub-sub distributed communication technology, built for the cloud, on-premise, IoT and edge computing.\n\nThe NATS Server supports MQTT clients, including authentication and parsing of MQTT `CONNECT` packets.\n\n### Problem Description\n\nAn unauth",
       "recipe": "gh_advisories",
       "buzz": 3580,
       "topics": [
         "security",
         "hardware"
       ],
-      "date": "2026-11-19"
+      "date": "2026-11-20"
     },
     {
-      "uid": "cve:GHSA-cvx8-9ff6-54xq",
+      "uid": "cve:GHSA-wr3g-j6qj-xpgh",
       "source": "cve",
-      "title": "CVE-2026-76088: PGPainless: Unbounded Compressed Packet Descent in inline-detach and MessageInspector leads to Denial of Service (DoS)",
-      "url": "https://github.com/advisories/GHSA-cvx8-9ff6-54xq",
-      "ts": 1795049629.0,
+      "title": "CVE-2026-128135: NLTK: ZIP package extraction follows in-root hardlinks and overwrites files outside the NLTK data root",
+      "url": "https://github.com/advisories/GHSA-wr3g-j6qj-xpgh",
+      "ts": 1795132755.0,
       "points": 3500,
       "comments": 0,
-      "author": "org.pgpainless:pgpainless-core",
-      "summary": "Severity: high. ### Summary\nAn architectural security boundary bypass in inline-detach and MessageInspector allows remote, unauthenticated attackers to force unbounded recursive decompression routines. By supplying a specially crafted OpenPGP message containing deeply nested compressed packet structures, an attacke",
+      "author": "nltk",
+      "summary": "Severity: high. ## Summary\n\nNLTK ships a security wrapper, `nltk.pathsec.ZipFile`, that is meant to confine archive extraction to trusted data roots and to block link-based escapes. When `nltk.download()` installs a package, the extraction write opens each member's target path without checking whether that path is",
       "recipe": "gh_advisories",
       "buzz": 3580,
       "topics": [
-        "ai",
+        "dev",
         "security"
       ],
       "date": "2026-11-19"
@@ -943,170 +901,227 @@
       "date": "2020-09-30"
     },
     {
-      "uid": "cve:GHSA-h5m9-42h9-vcq6",
+      "uid": "cve:GHSA-gfwj-45pc-w6r5",
       "source": "cve",
-      "title": "CVE-2026-115472: Doorkeeper: When using public clients, any client can revoke any access token",
-      "url": "https://github.com/advisories/GHSA-h5m9-42h9-vcq6",
-      "ts": 1795121245.0,
+      "title": "CVE-2026-103033: ALTCHA: Nil-map panic (pre-verification DoS) in v1 parseServerSignature on malformed VerificationData",
+      "url": "https://github.com/advisories/GHSA-gfwj-45pc-w6r5",
+      "ts": 1795134079.0,
       "points": 1800,
       "comments": 0,
-      "author": "doorkeeper",
-      "summary": "Severity: medium. ### Summary\n\nAn improper authorization issue affects Doorkeeper's OAuth token revocation flow when public (non-confidential) clients are in use. This vulnerability can lead to tokens being revoked without correct authorization. The issue is fixed in Doorkeeper 5.9.1.",
+      "author": "github.com/altcha-org/altcha-lib-go/v2",
+      "summary": "Severity: medium. ### Summary\n\n`parseServerSignature` in the v1 module only initializes `ServerSignatureVerificationData.Extra` inside the `if err == nil` branch after `url.ParseQuery(parsedPayload.VerificationData)`. Go's `url.ParseQuery` returns the successfully-parsed pairs together with a non-nil error when the q",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "dev",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "cve:GHSA-v6w5-38cf-pcv8",
+      "source": "cve",
+      "title": "CVE-2026-102945: Aether Project amf: panic on an unrecovered NGAP goroutine",
+      "url": "https://github.com/advisories/GHSA-v6w5-38cf-pcv8",
+      "ts": 1795134038.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "github.com/omec-project/amf",
+      "summary": "Severity: medium. ## Summary\n\nHandlePathSwitchRequest guards the UESecurityCapabilities IE for presence but never for length, and the extensible APER type silently yields an empty bit string, so six unguarded index-zero reads panic on an unrecovered goroutine and terminate the AMF. The AMF is the control-plane entry",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "cve:GHSA-wgvx-x5g3-9v29",
+      "source": "cve",
+      "title": "CVE-2026-63012: baserCMS administrative API authorization bypass through session fallback",
+      "url": "https://github.com/advisories/GHSA-wgvx-x5g3-9v29",
+      "ts": 1795133915.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "baserproject/baser-core",
+      "summary": "Severity: medium. ### Summary\n\nAn authorization bypass occurs against the API endpoint `/baser/api/admin/` by abusing the session authentication fallback.\n\n### Details\n\nThe mail settings are used here as an example.\n\nAdmin side:\n\nhttps://github.com/baserproject/basercms/blob/master/plugins/baser-core/config/permissio",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "cve:GHSA-25rm-9wvm-m38v",
+      "source": "cve",
+      "title": "CVE-2026-77382: falcon-rust: Discrete-Gaussian sampler runs at 2^-33 precision, far below Falcon's requirement (reference KAT vectors no longer pass)",
+      "url": "https://github.com/advisories/GHSA-25rm-9wvm-m38v",
+      "ts": 1795133824.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "falcon-rust",
+      "summary": "Severity: medium. **Reporter:** Connor Webber\n**Package:** `falcon-rust` (crates.io), repository `github.com/aszepieniec/falcon-rust`\n**Affected:** v0.1.3 and the current `master` (HEAD `cfa1b35`). Regression introduced in commit `bf2cf00`.\n**Component:** discrete-Gaussian sampler, `src/samplerz.rs` (`approx_exp`, `b",
       "recipe": "gh_advisories",
       "buzz": 1880,
       "topics": [
         "dev",
+        "security"
+      ],
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "cve:GHSA-r7h9-qx4h-77j5",
+      "source": "cve",
+      "title": "CVE-2026-77378: Bolt ListFormatHelper SQL injection",
+      "url": "https://github.com/advisories/GHSA-r7h9-qx4h-77j5",
+      "ts": 1795133755.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "bolt/core",
+      "summary": "Severity: medium. ### Impact\n\nSQL Injection in ListFormatHelper allows authenticated users with the upload permission to execute arbitrary SQL queries and exfiltrate sensitive database contents through the /async/select-options endpoint when general/caching/list_format is enabled.\n\n### Patches\n\nThis has been patched",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "dev",
+        "science",
+        "security"
+      ],
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "cve:GHSA-3xjf-9q55-vxw4",
+      "source": "cve",
+      "title": "CVE-2026-77380: Bolt: Prevent SSRF due to unchecked followed redirects",
+      "url": "https://github.com/advisories/GHSA-3xjf-9q55-vxw4",
+      "ts": 1795133744.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "bolt/core",
+      "summary": "Severity: medium. ### Impact\n\nThe `/bolt/async/upload-url` and `/bolt/async/embed` endpoints validated only the **submitted** URL before fetching it server-side, but the fetch then **followed redirects to destinations that were never re-validated**. This allowed an authenticated user to bypass the SSRF guard (`UrlSaf",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "dev",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "cve:GHSA-6358-jg5p-hmjj",
+      "source": "cve",
+      "title": "CVE-2026-77379: Bolt: Information disclosure through unfiltered public relation API endpoint",
+      "url": "https://github.com/advisories/GHSA-6358-jg5p-hmjj",
+      "ts": 1795133723.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "bolt/core",
+      "summary": "Severity: medium. ### Impact\n\nA missing access-control filter in the public Relation API allowed unauthenticated users to discover metadata about unpublished, draft, and viewless content through REST and GraphQL endpoints.\n\n### Patches\n\nThis has been patched in Bolt 6.1.4.",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "cve:GHSA-2535-j2pq-qq4r",
+      "source": "cve",
+      "title": "CVE-2026-77377: Bolt: Server-Side Request Forgery (SSRF) in URL-upload and embed endpoints",
+      "url": "https://github.com/advisories/GHSA-2535-j2pq-qq4r",
+      "ts": 1795133682.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "bolt/core",
+      "summary": "Severity: medium. ### Impact\n\nTwo authenticated backend endpoints fetched a user-supplied URL server-side with no protection against internal targets.\n\n### Patches\n\nThis has been patched in Bolt 6.1.4.",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "dev",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "cve:GHSA-xr6g-7g83-j865",
+      "source": "cve",
+      "title": "CVE-2026-77376: Bolt: Open redirect enables post-authentication redirection to arbitrary domains",
+      "url": "https://github.com/advisories/GHSA-xr6g-7g83-j865",
+      "ts": 1795133671.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "bolt/core",
+      "summary": "Severity: medium. ### Impact\n\nOpen redirect vulnerabilities in LoginFormAuthenticator allow attackers to redirect users to attacker-controlled domains after login success or login failure, enabling phishing attacks and potential token theft.\n\n### Patches\n\nThis has been patched in Bolt 6.1.4.",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
         "crypto",
         "security"
       ],
-      "date": "2026-11-19"
+      "date": "2026-11-20"
     },
     {
-      "uid": "cve:GHSA-w3w6-9m25-g88p",
+      "uid": "cve:GHSA-p957-7v2w-g93g",
       "source": "cve",
-      "title": "CVE-2026-109549: OmniFaces: SSE push channels are not bound to their owning HTTP session",
-      "url": "https://github.com/advisories/GHSA-w3w6-9m25-g88p",
-      "ts": 1795121222.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "org.omnifaces:omnifaces",
-      "summary": "Severity: medium. ## Summary\n\n[GHSA-fp43-vj7g-pg92](https://github.com/omnifaces/omnifaces/security/advisories/GHSA-fp43-vj7g-pg92) (fixed 5.4.2) bound session- and view-scoped **WebSocket** (`o:socket`) push channels to the HTTP session that registered them, so a leaked channel ID can no longer be connected to from",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-19"
-    },
-    {
-      "uid": "cve:GHSA-mqwx-84vv-mp26",
-      "source": "cve",
-      "title": "CVE-2026-63193: October: Media Library Crop Handler Bypasses Upload Extension Allowlist",
-      "url": "https://github.com/advisories/GHSA-mqwx-84vv-mp26",
-      "ts": 1795121196.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "october/october",
-      "summary": "Severity: medium. The Media Library upload handler validates the destination filename against an extension allowlist (`default_extensions`), rejecting types such as `php`, `phtml`, `html`, and `htm`. The image crop handler (`MediaManager::onCropImage` / `cropImage`) did not perform this check. The destination filenam",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-19"
-    },
-    {
-      "uid": "cve:GHSA-vg83-hcp4-5qcc",
-      "source": "cve",
-      "title": "CVE-2026-75518: DOMShell: domshell_eval classified as read-tier can execute side-effecting JavaScript without --allow-write",
-      "url": "https://github.com/advisories/GHSA-vg83-hcp4-5qcc",
-      "ts": 1795104653.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "@apireno/domshell",
-      "summary": "Severity: medium. ### Summary\n\nThe `domshell_eval` MCP tool (and the `eval` command inside `domshell_execute`) was classified as **read-tier**, allowing it to run without the `--allow-write` server flag. However, `eval` and the write-tier `js` command dispatch to the same handler in the extension and call CDP `Runtim",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "dev",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-19"
-    },
-    {
-      "uid": "cve:GHSA-pj7p-238h-76pv",
-      "source": "cve",
-      "title": "CVE-2026-69139: djangocms-moderation: Moderation comments disclosed to non-participant staff via the admin changelist",
-      "url": "https://github.com/advisories/GHSA-pj7p-238h-76pv",
-      "ts": 1795104570.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "djangocms-moderation",
-      "summary": "Severity: medium. ## Summary\n\nThe Django admin views for moderation comments (`CollectionCommentAdmin` and `RequestCommentAdmin`) render the full comment body but scope access only by an attacker-controlled `id` in the URL and Django's model-level `view_*comment` permission. They perform no per-object participant che",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-19"
-    },
-    {
-      "uid": "cve:GHSA-xfq4-8hf9-5h43",
-      "source": "cve",
-      "title": "CVE-2026-71534: Mareforma: transparency_logged trusts the unsigned rekor block",
-      "url": "https://github.com/advisories/GHSA-xfq4-8hf9-5h43",
-      "ts": 1795104307.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "mareforma",
-      "summary": "Severity: medium. ## What's wrong\n\nDuring restore, `transparency_logged` is recomputed as `1 if (toml_logged is not False and bundle_has_rekor) else 0`, where `bundle_has_rekor` comes only from a `rekor.uuid` field inside `signature_bundle`. That derivation is wrong in both directions.\n\nFirst, the rekor block is meta",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-19"
-    },
-    {
-      "uid": "cve:GHSA-rgg9-956j-3378",
-      "source": "cve",
-      "title": "CVE-2026-71500: Mareforma: invalidated claims still promote to REPLICATED",
-      "url": "https://github.com/advisories/GHSA-rgg9-956j-3378",
-      "ts": 1795104283.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "mareforma",
-      "summary": "Severity: medium. ## What's wrong\n\n`_maybe_update_replicated_unlocked` never checks `t_invalid`, so a claim that a signed contradiction verdict has marked invalid can still climb to REPLICATED through convergence detection, and it pulls an honest peer up with it.\n\nThree gaps line up:\n\n- The new-claim short-circuit re",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-19"
-    },
-    {
-      "uid": "cve:GHSA-m29v-3g7g-9c63",
-      "source": "cve",
-      "title": "CVE-2026-71533: Mareforma: search_claims skips verify-on-read, serving forged rows",
-      "url": "https://github.com/advisories/GHSA-m29v-3g7g-9c63",
-      "ts": 1795104052.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "mareforma",
-      "summary": "Severity: medium. ## What's wrong\n\n`search_claims` never calls `_row_verified_on_read`. Its row loop applies only the PRELIMINARY-unenrolled filter, then appends the row. `query_claims` runs the same projection but additionally re-verifies REPLICATED/ESTABLISHED signatures on read (line 4023) and drops any row that f",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-19"
-    },
-    {
-      "uid": "cve:GHSA-4g68-3pwx-5vfj",
-      "source": "cve",
-      "title": "CVE-2026-58214: NATS Server MQTT subscribe permission bypass exposes internal QoS 2 metadata",
-      "url": "https://github.com/advisories/GHSA-4g68-3pwx-5vfj",
-      "ts": 1795104012.0,
+      "title": "CVE-2026-58208: NATS Server: MQTT-over-WebSocket Path Can Crash WebSocket-Only JetStream Servers Before MQTT Is Enabled",
+      "url": "https://github.com/advisories/GHSA-p957-7v2w-g93g",
+      "ts": 1795133117.0,
       "points": 1800,
       "comments": 0,
       "author": "github.com/nats-io/nats-server/v2",
-      "summary": "Severity: medium. ### Background\n\nNATS.io is a high performance open source pub-sub distributed communication technology, built for the cloud, on-premise, IoT and edge computing.\n\nThe NATS Server MQTT support uses internal `$MQTT.*` subjects to implement MQTT protocol features such as QoS handling.\n\n### Problem Descr",
+      "summary": "Severity: medium. ### Background\n\nNATS.io is a high performance open source pub-sub distributed communication technology, built for the cloud, on-premise, IoT and edge computing.\n\nThe NATS Server can accept client connections over WebSocket and can also support MQTT over WebSocket when MQTT is configured.\n\n### Proble",
       "recipe": "gh_advisories",
       "buzz": 1880,
       "topics": [
         "security",
         "hardware"
       ],
-      "date": "2026-11-19"
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "cve:GHSA-7qmq-8cc4-hxwg",
+      "source": "cve",
+      "title": "CVE-2026-58209: NATS Server MQTT retained messages and QoS replay bypass subscription deny rules",
+      "url": "https://github.com/advisories/GHSA-7qmq-8cc4-hxwg",
+      "ts": 1795133067.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "github.com/nats-io/nats-server/v2",
+      "summary": "Severity: medium. ### Background\n\nNATS.io is a high performance open source pub-sub distributed communication technology, built for the cloud, on-premise, IoT and edge computing.\n\nThe NATS Server MQTT support includes retained messages and QoS1+ durable delivery. NATS subscription permissions can allow broad wildcard",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "cve:GHSA-x26x-7f4v-cqx7",
+      "source": "cve",
+      "title": "CVE-2026-62337: snark-verifier: Halo 2 aggregation circuit mishandles point-at-infinity proof elements",
+      "url": "https://github.com/advisories/GHSA-x26x-7f4v-cqx7",
+      "ts": 1795132919.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "snark-verifier",
+      "summary": "Severity: medium. ### Summary\nThe Halo 2 aggregation circuit could mishandle proof elements encoded as the point at infinity.\n\nWhen an assigned proof point appeared in an MSM term with constant scalar one, the Halo 2 loader used a scalar-one shortcut that passed the assigned point directly into the EC sum helper. The",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-11-20"
     },
     {
       "uid": "hn:48166459",
@@ -1367,55 +1382,34 @@
       "date": "2019-07-18"
     },
     {
-      "uid": "cve:GHSA-56v3-jrq2-4q9m",
-      "source": "cve",
-      "title": "CVE-2026-77597: iSponsorBlockTV: SSRF via Malicious SSDP Response Spoofing in Local Device Discovery",
-      "url": "https://github.com/advisories/GHSA-56v3-jrq2-4q9m",
-      "ts": 1795121412.0,
-      "points": 700,
-      "comments": 0,
-      "author": "iSponsorBlockTV",
-      "summary": "Severity: low. ### Summary\niSponsorBlockTV discovers local smart TV devices via SSDP (Simple Service Discovery Protocol). The `LOCATION` URL from SSDP responses is used to fetch device capabilities without URL validation. A local network attacker can craft a malicious SSDP response with a `LOCATION` pointing to an",
-      "recipe": "gh_advisories",
-      "buzz": 780,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-19"
-    },
-    {
-      "uid": "gh:arnold117/iOS-NOIR",
-      "source": "github",
-      "title": "arnold117/iOS-NOIR",
-      "url": "https://github.com/arnold117/iOS-NOIR",
-      "ts": 1793934227.0,
-      "points": 326,
-      "comments": 61,
-      "author": "arnold117",
-      "summary": "No-jailbreak iOS privacy, entitlement, sandbox & telemetry forensic auditor (inspired by Verlintas/NOIR)",
-      "recipe": "github_sec",
-      "buzz": 509,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-06"
-    },
-    {
       "uid": "gh:Aabyss-Team/Threat-Broadcast-Plus",
       "source": "github",
       "title": "Aabyss-Team/Threat-Broadcast-Plus",
       "url": "https://github.com/Aabyss-Team/Threat-Broadcast-Plus",
       "ts": 1794800456.0,
-      "points": 125,
-      "comments": 27,
+      "points": 130,
+      "comments": 28,
       "author": "Aabyss-Team",
       "summary": "网络安全威胁情报播报-Plus升级版",
       "recipe": "github_sec",
-      "buzz": 216,
+      "buzz": 224,
       "topics": [],
       "date": "2026-11-16"
+    },
+    {
+      "uid": "gh:wildorigins/wildos",
+      "source": "github",
+      "title": "wildorigins/wildos",
+      "url": "https://github.com/wildorigins/wildos",
+      "ts": 1794169078.0,
+      "points": 125,
+      "comments": 7,
+      "author": "wildorigins",
+      "summary": "A hardened Linux desktop, rebuilt from scratch, with your Windows apps built in. Free and open source.",
+      "recipe": "github_sec",
+      "buzz": 146,
+      "topics": [],
+      "date": "2026-11-08"
     },
     {
       "uid": "gh:nestho/impacket-rs",
@@ -1435,36 +1429,38 @@
       "date": "2026-11-11"
     },
     {
-      "uid": "gh:wildorigins/wildos",
-      "source": "github",
-      "title": "wildorigins/wildos",
-      "url": "https://github.com/wildorigins/wildos",
-      "ts": 1794169078.0,
-      "points": 121,
-      "comments": 7,
-      "author": "wildorigins",
-      "summary": "A hardened Linux desktop, rebuilt from scratch, with your Windows apps built in. Free and open source.",
-      "recipe": "github_sec",
-      "buzz": 142,
-      "topics": [],
-      "date": "2026-11-08"
-    },
-    {
       "uid": "gh:zhidun2027/zhidun",
       "source": "github",
       "title": "zhidun2027/zhidun",
       "url": "https://github.com/zhidun2027/zhidun",
       "ts": 1794458402.0,
-      "points": 95,
+      "points": 98,
       "comments": 8,
       "author": "zhidun2027",
       "summary": "Android APK hardening — DEX encryption, native shell engine, anti-tamper. Fully documented and auditable.",
       "recipe": "github_sec",
-      "buzz": 119,
+      "buzz": 122,
       "topics": [
         "security"
       ],
       "date": "2026-11-12"
+    },
+    {
+      "uid": "gh:balikunsh-bot/keepassxc-talroora",
+      "source": "github",
+      "title": "balikunsh-bot/keepassxc-talroora",
+      "url": "https://github.com/balikunsh-bot/keepassxc-talroora",
+      "ts": 1795032603.0,
+      "points": 92,
+      "comments": 0,
+      "author": "balikunsh-bot",
+      "summary": "Keepassxc Talroora organizes credential records and manages encrypted password databases.",
+      "recipe": "github_sec",
+      "buzz": 122,
+      "topics": [
+        "dev"
+      ],
+      "date": "2026-11-18"
     },
     {
       "uid": "gh:raca2024/ashampoo-undelete-recovery",
@@ -1725,24 +1721,6 @@
       "date": "2026-11-19"
     },
     {
-      "uid": "gh:BountyForge-xyz/pwn-skill",
-      "source": "github",
-      "title": "BountyForge-xyz/pwn-skill",
-      "url": "https://github.com/BountyForge-xyz/pwn-skill",
-      "ts": 1793960371.0,
-      "points": 55,
-      "comments": 6,
-      "author": "BountyForge-xyz",
-      "summary": "Agent skill for binary exploitation and CTF pwn — stack, heap, format string, kernel, seccomp bypass.",
-      "recipe": "github_sec",
-      "buzz": 73,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-06"
-    },
-    {
       "uid": "gh:rammahmagdy/Latch",
       "source": "github",
       "title": "rammahmagdy/Latch",
@@ -1780,12 +1758,12 @@
       "title": "khanh0209q/NextDNS-Config-Set-And-Forget",
       "url": "https://github.com/khanh0209q/NextDNS-Config-Set-And-Forget",
       "ts": 1794630951.0,
-      "points": 32,
+      "points": 33,
       "comments": 1,
       "author": "khanh0209q",
       "summary": "A zero-breakage, set-and-forget NextDNS configuration for Home & Office.",
       "recipe": "github_sec",
-      "buzz": 45,
+      "buzz": 46,
       "topics": [],
       "date": "2026-11-14"
     },
