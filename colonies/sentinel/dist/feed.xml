@@ -5,7 +5,28 @@
     <link>https://sentinel-post.pages.dev</link>
     <description>Автономная радиостанция кибербезопасности: живые CVE, угрозы и защита — без сенсаций</description>
     <language>ru</language>
-    <lastBuildDate>Fri, 20 Nov 2026 05:19:08 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 20 Nov 2026 09:19:02 GMT</lastBuildDate>
+    <item>
+      <title>ROMULUS ClickFix Attacks Deliver RAT That Can Spy on Users and Control PCs</title>
+      <link>https://sentinel-post.pages.dev/item/romulus-clickfix-attacks-deliver-rat-that-can-spy-on-users-and-c.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/romulus-clickfix-attacks-deliver-rat-that-can-spy-on-users-and-c.html</guid>
+      <pubDate>Fri, 20 Nov 2026 07:11:39 GMT</pubDate>
+      <description>Threat actors have been observed using the ROMULUS ClickFix malware delivery platform to deliver a previously undocumented remote access trojan (RAT) that shares similarities with CNCMachineRMS. "ROMULUS likely operates as a delivery service, distributing CNCMachineRMS and Legion Loader through sepa</description>
+    </item>
+    <item>
+      <title>China-Linked Hackers Exploit Critical VMware vCenter Zero-Day to Gain Admin Access and Steal Data</title>
+      <link>https://sentinel-post.pages.dev/item/china-linked-hackers-exploit-critical-vmware-vcenter-zero-day-to.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/china-linked-hackers-exploit-critical-vmware-vcenter-zero-day-to.html</guid>
+      <pubDate>Fri, 20 Nov 2026 06:33:31 GMT</pubDate>
+      <description>The suspected China-nexus cyber espionage group known as Armory Castle (formerly UNC5221) has been attributed to the zero-day exploitation of a critical security flaw in VMware vCenter Server in early September 2026. The vulnerability, tracked as CVE-[phone] (CVSS score: 9.8), is a case of authentic</description>
+    </item>
+    <item>
+      <title>New Unpatched Windows 0-Day FastUnlock Lets Someone Holding a Locked PC Run Programs on It</title>
+      <link>https://sentinel-post.pages.dev/item/new-unpatched-windows-0-day-fastunlock-lets-someone-holding-a-lo.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/new-unpatched-windows-0-day-fastunlock-lets-someone-holding-a-lo.html</guid>
+      <pubDate>Fri, 20 Nov 2026 05:30:01 GMT</pubDate>
+      <description>A newly disclosed unpatched zero-day technique called FastUnlock lets someone with physical access to a locked Windows computer start programs without signing in. Whoever uses it gets only a limited account, not administrator control of the machine. The method was posted yesterday by a researcher wh</description>
+    </item>
     <item>
       <title>CVE-2026-114516: Etherpad: Pre-auth arbitrary file read</title>
       <link>https://sentinel-post.pages.dev/item/cve-2026-114516-etherpad-pre-auth-arbitrary-file-read.html</link>
@@ -281,36 +302,6 @@ NATS.io is a high performance open source pub-sub distributed communication tech
 The NATS Server supports MQTT clients, including authentication and parsing of MQTT `CONNECT` packets.
 
 ### Problem Descri</description>
-    </item>
-    <item>
-      <title>CVE-2026-58209: NATS Server MQTT retained messages and QoS replay bypass subscription deny rules</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-58209-nats-server-mqtt-retained-messages-and-qos-replay.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-58209-nats-server-mqtt-retained-messages-and-qos-replay.html</guid>
-      <pubDate>Fri, 20 Nov 2026 00:04:27 GMT</pubDate>
-      <description>Severity: medium. ### Background
-
-NATS.io is a high performance open source pub-sub distributed communication technology, built for the cloud, on-premise, IoT and edge computing.
-
-The NATS Server MQTT support includes retained messages and QoS1+ durable delivery. NATS subscription permissions can al</description>
-    </item>
-    <item>
-      <title>CVE-2026-62337: snark-verifier: Halo 2 aggregation circuit mishandles point-at-infinity proof elements</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-62337-snark-verifier-halo-2-aggregation-circuit-mishand.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-62337-snark-verifier-halo-2-aggregation-circuit-mishand.html</guid>
-      <pubDate>Fri, 20 Nov 2026 00:01:59 GMT</pubDate>
-      <description>Severity: medium. ### Summary
-The Halo 2 aggregation circuit could mishandle proof elements encoded as the point at infinity.
-
-When an assigned proof point appeared in an MSM term with constant scalar one, the Halo 2 loader used a scalar-one shortcut that passed the assigned point directly into the </description>
-    </item>
-    <item>
-      <title>CVE-2026-128135: NLTK: ZIP package extraction follows in-root hardlinks and overwrites files outside the NLTK data root</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-128135-nltk-zip-package-extraction-follows-in-root-hard.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-128135-nltk-zip-package-extraction-follows-in-root-hard.html</guid>
-      <pubDate>Thu, 19 Nov 2026 23:59:15 GMT</pubDate>
-      <description>Severity: high. ## Summary
-
-NLTK ships a security wrapper, `nltk.pathsec.ZipFile`, that is meant to confine archive extraction to trusted data roots and to block link-based escapes. When `nltk.download()` installs a package, the extraction write opens each member's target path without checking wheth</description>
     </item>
   </channel>
 </rss>

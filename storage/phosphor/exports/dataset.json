@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T05:18:57+00:00",
+  "generated_at": "2026-11-20T09:18:50+00:00",
   "sources_used": [
     "hn_front",
     "arxiv",
@@ -9,26 +9,33 @@
     "rss"
   ],
   "totals": {
-    "items": 82,
+    "items": 142,
     "by_source": {
       "hn": 30,
       "github": 40,
+      "arxiv": 60,
       "rss": 12
     },
     "by_recipe": {
+      "arxiv": 60,
       "github_search": 40,
       "hn_front": 30,
       "devto": 12
     },
     "by_topic": {
-      "ai": 48,
-      "dev": 27,
-      "hardware": 8,
-      "biz": 4,
-      "security": 4,
-      "science": 4
+      "ai": 99,
+      "dev": 65,
+      "science": 33,
+      "hardware": 13,
+      "biz": 12,
+      "security": 9,
+      "crypto": 3
     },
     "top_domains": [
+      [
+        "arxiv.org",
+        60
+      ],
       [
         "github.com",
         43
@@ -36,10 +43,6 @@
       [
         "dev.to",
         12
-      ],
-      [
-        "youtube.com",
-        2
       ],
       [
         "reuters.com",
@@ -62,7 +65,11 @@
         1
       ],
       [
-        "git-aarvin.github.io",
+        "thedataexchange.media",
+        1
+      ],
+      [
+        "youtube.com",
         1
       ],
       [
@@ -70,15 +77,7 @@
         1
       ],
       [
-        "fastcompany.com",
-        1
-      ],
-      [
         "cornholenews.news",
-        1
-      ],
-      [
-        "krthr.co",
         1
       ],
       [
@@ -86,19 +85,23 @@
         1
       ],
       [
+        "krthr.co",
+        1
+      ],
+      [
         "ocw.mit.edu",
         1
       ],
       [
-        "wsj.com",
+        "em-online.bearblog.dev",
         1
       ],
       [
-        "regexr.com",
+        "institute.deepmind.com",
         1
       ],
       [
-        "blog.platypush.tech",
+        "ethanlowman.com",
         1
       ],
       [
@@ -106,11 +109,7 @@
         1
       ],
       [
-        "databricks.com",
-        1
-      ],
-      [
-        "gimp.org",
+        "regexr.com",
         1
       ],
       [
@@ -118,11 +117,15 @@
         1
       ],
       [
-        "snowflake.com",
+        "ffmpeg.org",
         1
       ],
       [
         "bxfoundry.com",
+        1
+      ],
+      [
+        "snowflake.com",
         1
       ],
       [
@@ -138,12 +141,12 @@
       "title": "Anthropic’s Nasdaq debut",
       "url": "https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/",
       "ts": 1795107760.0,
-      "points": 1014,
-      "comments": 1999,
+      "points": 1071,
+      "comments": 2113,
       "author": "wslh",
       "summary": "",
       "recipe": "hn_front",
-      "buzz": 7091,
+      "buzz": 7490,
       "topics": [
         "ai"
       ],
@@ -155,12 +158,12 @@
       "title": "erkamyaman/rust-anything",
       "url": "https://github.com/erkamyaman/rust-anything",
       "ts": 1794831036.0,
-      "points": 5462,
-      "comments": 442,
+      "points": 5770,
+      "comments": 460,
       "author": "erkamyaman",
       "summary": "Rewrite your whole app in Rust, one piece at a time, checked against the original's recorded behavior at every step. CLIs, HTTP servers and libraries in TypeScript, Python, C, Go, Ruby and Java.",
       "recipe": "github_search",
-      "buzz": 6798,
+      "buzz": 7160,
       "topics": [
         "ai",
         "dev",
@@ -174,12 +177,12 @@
       "title": "krisgfx9/Wireless-Device-Battery-Monitor",
       "url": "https://github.com/krisgfx9/Wireless-Device-Battery-Monitor",
       "ts": 1794857309.0,
-      "points": 4742,
-      "comments": 407,
+      "points": 4864,
+      "comments": 413,
       "author": "krisgfx9",
       "summary": "Show the battery level of wireless mice, headsets, keyboards and controllers on the Windows 10/11 taskbar. Lightweight tray app, no vendor software needed. Supports Logitech, Razer, SteelSeries, Corsair, HyperX, Glorious, PS4/PS5 DualSense, Xbox and Bluetooth devices.",
       "recipe": "github_search",
-      "buzz": 5973,
+      "buzz": 6113,
       "topics": [
         "ai",
         "dev"
@@ -192,12 +195,12 @@
       "title": "duwqijlk/muse-protocol",
       "url": "https://github.com/duwqijlk/muse-protocol",
       "ts": 1794619498.0,
-      "points": 1662,
-      "comments": 657,
+      "points": 1673,
+      "comments": 659,
       "author": "duwqijlk",
       "summary": "muse.ai 注册与邀请码兑换协议研究（纯 HTTP Python 实现）",
       "recipe": "github_search",
-      "buzz": 3643,
+      "buzz": 3660,
       "topics": [
         "ai",
         "dev"
@@ -210,12 +213,12 @@
       "title": "Hut-hzf/ung220z-tool",
       "url": "https://github.com/Hut-hzf/ung220z-tool",
       "ts": 1794741406.0,
-      "points": 1813,
-      "comments": 421,
+      "points": 1875,
+      "comments": 432,
       "author": "Hut-hzf",
       "summary": "ung220z-tool 是一个针对 UNG220Z（九联/Unionman 中国移动光猫）的一键凭据提取工具，仅限在你自己的设备上用于找回忘记的管理密码、迁移宽带配置或安全自查。",
       "recipe": "github_search",
-      "buzz": 3086,
+      "buzz": 3181,
       "topics": [],
       "date": "2026-11-15"
     },
@@ -225,12 +228,12 @@
       "title": "CzzzzzzJ/mdldm-maitian",
       "url": "https://github.com/CzzzzzzJ/mdldm-maitian",
       "ts": 1794628762.0,
-      "points": 1634,
-      "comments": 480,
+      "points": 1664,
+      "comments": 489,
       "author": "CzzzzzzJ",
       "summary": "麦田：自媒体多平台发布中控与数据监控（B站/抖音/小红书/视频号/YouTube/X），飞书卡片通知 + 数据大屏",
       "recipe": "github_search",
-      "buzz": 3084,
+      "buzz": 3141,
       "topics": [
         "ai"
       ],
@@ -242,12 +245,12 @@
       "title": "haziqahmedqasmi/PeakCut",
       "url": "https://github.com/haziqahmedqasmi/PeakCut",
       "ts": 1794641900.0,
-      "points": 1377,
-      "comments": 465,
+      "points": 1420,
+      "comments": 473,
       "author": "haziqahmedqasmi",
       "summary": "AI clipping for long videos and live streams. Self-hosted, bring your own AI key.",
       "recipe": "github_search",
-      "buzz": 2782,
+      "buzz": 2849,
       "topics": [
         "ai",
         "dev"
@@ -260,12 +263,12 @@
       "title": "gylive/google-ultra",
       "url": "https://github.com/gylive/google-ultra",
       "ts": 1794910914.0,
-      "points": 2472,
-      "comments": 45,
+      "points": 2495,
+      "comments": 51,
       "author": "gylive",
       "summary": "",
       "recipe": "github_search",
-      "buzz": 2637,
+      "buzz": 2678,
       "topics": [],
       "date": "2026-11-17"
     },
@@ -275,34 +278,16 @@
       "title": "Garage Door Spam",
       "url": "https://blog.harrison.page/garage-door-spam/",
       "ts": 1794845616.0,
-      "points": 800,
-      "comments": 335,
+      "points": 856,
+      "comments": 356,
       "author": "harrisonpage",
       "summary": "",
       "recipe": "hn_front",
-      "buzz": 1815,
+      "buzz": 1934,
       "topics": [
         "ai"
       ],
       "date": "2026-11-16"
-    },
-    {
-      "uid": "gh:Bodila51/gtavi-claudecode",
-      "source": "github",
-      "title": "Bodila51/gtavi-claudecode",
-      "url": "https://github.com/Bodila51/gtavi-claudecode",
-      "ts": 1795024469.0,
-      "points": 986,
-      "comments": 219,
-      "author": "Bodila51",
-      "summary": "Claude Code plugin that turns GTA 6 streams into paid vertical clips: live campaigns, trending videos, best moments, 9:16 cuts with hooks, captions and credits.",
-      "recipe": "github_search",
-      "buzz": 1673,
-      "topics": [
-        "ai",
-        "dev"
-      ],
-      "date": "2026-11-18"
     },
     {
       "uid": "gh:sybil-solutions/inference-optimisation-skill",
@@ -310,33 +295,15 @@
       "title": "sybil-solutions/inference-optimisation-skill",
       "url": "https://github.com/sybil-solutions/inference-optimisation-skill",
       "ts": 1794854404.0,
-      "points": 1272,
+      "points": 1281,
       "comments": 114,
       "author": "sybil-solutions",
       "summary": "Agent skill for hill-climbing local LLM serving speed (decode, speculative decoding, prefill, KV, startup, TTFT) on any hardware and quantization",
       "recipe": "github_search",
-      "buzz": 1624,
+      "buzz": 1633,
       "topics": [
         "ai",
         "dev",
-        "biz"
-      ],
-      "date": "2026-11-16"
-    },
-    {
-      "uid": "gh:boringmarketer/boring-marketing-skills",
-      "source": "github",
-      "title": "boringmarketer/boring-marketing-skills",
-      "url": "https://github.com/boringmarketer/boring-marketing-skills",
-      "ts": 1794841786.0,
-      "points": 723,
-      "comments": 264,
-      "author": "boringmarketer",
-      "summary": "32 free marketing skills for your AI agent: research, positioning, copy, pages, SEO, AI search, ads, email and content, plus a deep local-business pack. MIT.",
-      "recipe": "github_search",
-      "buzz": 1525,
-      "topics": [
-        "ai",
         "biz"
       ],
       "date": "2026-11-16"
@@ -347,16 +314,34 @@
       "title": "UK government forced to admit it issued Apple a secret encryption order",
       "url": "https://macanorak.com/uk-government-forced-to-admit-it-issued-apple-a-secret-encryption-order/",
       "ts": 1795105263.0,
-      "points": 576,
-      "comments": 260,
+      "points": 640,
+      "comments": 287,
       "author": "Terretta",
       "summary": "",
       "recipe": "hn_front",
-      "buzz": 1436,
+      "buzz": 1581,
       "topics": [
         "security"
       ],
       "date": "2026-11-19"
+    },
+    {
+      "uid": "gh:boringmarketer/boring-marketing-skills",
+      "source": "github",
+      "title": "boringmarketer/boring-marketing-skills",
+      "url": "https://github.com/boringmarketer/boring-marketing-skills",
+      "ts": 1794841786.0,
+      "points": 728,
+      "comments": 267,
+      "author": "boringmarketer",
+      "summary": "32 free marketing skills for your AI agent: research, positioning, copy, pages, SEO, AI search, ads, email and content, plus a deep local-business pack. MIT.",
+      "recipe": "github_search",
+      "buzz": 1539,
+      "topics": [
+        "ai",
+        "biz"
+      ],
+      "date": "2026-11-16"
     },
     {
       "uid": "gh:joshpuckett/allo",
@@ -364,12 +349,12 @@
       "title": "joshpuckett/allo",
       "url": "https://github.com/joshpuckett/allo",
       "ts": 1794764022.0,
-      "points": 1167,
-      "comments": 31,
+      "points": 1182,
+      "comments": 32,
       "author": "joshpuckett",
       "summary": "Allo is your friendly neighborhood typeface, free and open source",
       "recipe": "github_search",
-      "buzz": 1270,
+      "buzz": 1288,
       "topics": [],
       "date": "2026-11-15"
     },
@@ -379,12 +364,12 @@
       "title": "chuanqisun/spaceship",
       "url": "https://github.com/chuanqisun/spaceship",
       "ts": 1794840225.0,
-      "points": 955,
-      "comments": 100,
+      "points": 965,
+      "comments": 101,
       "author": "chuanqisun",
       "summary": "Steer ideas like a space pilot!",
       "recipe": "github_search",
-      "buzz": 1265,
+      "buzz": 1278,
       "topics": [
         "dev",
         "science"
@@ -392,55 +377,17 @@
       "date": "2026-11-16"
     },
     {
-      "uid": "gh:sourmitocand1987/VividFrame-GPU",
-      "source": "github",
-      "title": "sourmitocand1987/VividFrame-GPU",
-      "url": "https://github.com/sourmitocand1987/VividFrame-GPU",
-      "ts": 1795017060.0,
-      "points": 1111,
-      "comments": 23,
-      "author": "sourmitocand1987",
-      "summary": "Any source. One real-time GPU enhancement pipeline. · video enhancer · gpu video · real-time video enhancement · hdr · super-resolution · game-streaming · moonlight · dolby-vision · frame-interpolation · video-player · media-player · video-super-resolution · video-processing · upscaling · rife · vulkan · nvidia · windows · video-enhancement · ncnn",
-      "recipe": "github_search",
-      "buzz": 1210,
-      "topics": [
-        "dev",
-        "hardware"
-      ],
-      "date": "2026-11-18"
-    },
-    {
-      "uid": "gh:bothaggsigym1988/frameglide",
-      "source": "github",
-      "title": "bothaggsigym1988/frameglide",
-      "url": "https://github.com/bothaggsigym1988/frameglide",
-      "ts": 1795016402.0,
-      "points": 1055,
-      "comments": 21,
-      "author": "bothaggsigym1988",
-      "summary": "From a 30 fps console stream to 60–120 fps on your PC. · frame-interpolation · frame-generation · nvidia · windows · dlss · super-resolution · vulkan · dlss5 · upscaling · rife · neural-rendering · ps5 · rtx · remote-play · pytorch · video · chiaki · optical-flow · video-frame-interpolation · amd · tensorrt · fsr · rtx-vsr · video-upscaling",
-      "recipe": "github_search",
-      "buzz": 1148,
-      "topics": [
-        "ai",
-        "dev",
-        "science",
-        "hardware"
-      ],
-      "date": "2026-11-18"
-    },
-    {
       "uid": "hn:50563148",
       "source": "hn",
       "title": "Claude solves two open problems in the physics of black holes",
       "url": "https://www.anthropic.com/research/claude-black-hole-physics",
       "ts": 1795109444.0,
-      "points": 440,
-      "comments": 203,
+      "points": 494,
+      "comments": 226,
       "author": "cybermango",
       "summary": "",
       "recipe": "hn_front",
-      "buzz": 1129,
+      "buzz": 1252,
       "topics": [
         "science"
       ],
@@ -452,12 +399,12 @@
       "title": "Pancreatic cancer halted by virus injection in three patients",
       "url": "https://www.newscientist.com/article/2528235-pancreatic-cancer-halted-by-virus-injection-in-three-patients/",
       "ts": 1795109133.0,
-      "points": 690,
-      "comments": 108,
+      "points": 765,
+      "comments": 129,
       "author": "cybermango",
-      "summary": "<a href=\"https:&#x2F;&#x2F;archive.ph&#x2F;2Et0x\" rel=\"nofollow\">https:&#x2F;&#x2F;archive.ph&#x2F;2Et0x</a>",
+      "summary": "<a href=\"https:&#x2F;&#x2F;archive.ph&#x2F;2Et0x\" rel=\"nofollow\">https:&#x2F;&#x2F;archive.ph&#x2F;2Et0x</a><p><a href=\"https:&#x2F;&#x2F;clinicaltrials.gov&#x2F;study&#x2F;NCT[phone]\" rel=\"nofollow\">https:&#x2F;&#x2F;clinicaltrials.gov&#x2F;study&#x2F;NCT[phone]</a>",
       "recipe": "hn_front",
-      "buzz": 1094,
+      "buzz": 1232,
       "topics": [],
       "date": "2026-11-19"
     },
@@ -467,16 +414,35 @@
       "title": "n4ze3m/tiny-voca",
       "url": "https://github.com/n4ze3m/tiny-voca",
       "ts": 1794672176.0,
-      "points": 775,
+      "points": 778,
       "comments": 98,
       "author": "n4ze3m",
       "summary": "A 4.5M-parameter two-voice English text-to-speech model, trained from scratch",
       "recipe": "github_search",
-      "buzz": 1079,
+      "buzz": 1082,
       "topics": [
         "ai"
       ],
       "date": "2026-11-14"
+    },
+    {
+      "uid": "gh:bookwjitchieni1986/blender-ai-mcp-addon",
+      "source": "github",
+      "title": "bookwjitchieni1986/blender-ai-mcp-addon",
+      "url": "https://github.com/bookwjitchieni1986/blender-ai-mcp-addon",
+      "ts": 1795099390.0,
+      "points": 978,
+      "comments": 1,
+      "author": "bookwjitchieni1986",
+      "summary": "AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with ChatGPT/GPT, Claude, Gemini, Ollama, OpenCode. Blender AI addon, copilot for 3D, bpy Python scripting, MCP integration.",
+      "recipe": "github_search",
+      "buzz": 1061,
+      "topics": [
+        "ai",
+        "dev",
+        "hardware"
+      ],
+      "date": "2026-11-19"
     },
     {
       "uid": "gh:yetanotherbrowser/yab",
@@ -484,27 +450,27 @@
       "title": "yetanotherbrowser/yab",
       "url": "https://github.com/yetanotherbrowser/yab",
       "ts": 1794700592.0,
-      "points": 740,
-      "comments": 77,
+      "points": 744,
+      "comments": 78,
       "author": "yetanotherbrowser",
       "summary": "Yab, yet another browser: a fast native macOS browser with an iPhone and Android companion",
       "recipe": "github_search",
-      "buzz": 981,
+      "buzz": 988,
       "topics": [],
       "date": "2026-11-14"
     },
     {
-      "uid": "hn:50568130",
+      "uid": "hn:50561508",
       "source": "hn",
-      "title": "Gemini 4 Neon is the new #1 on the Models Engineering Index",
-      "url": "https://git-aarvin.github.io/mei/",
-      "ts": 1795131335.0,
-      "points": 311,
-      "comments": 179,
-      "author": "hn-aarvin",
+      "title": "Pete Warden on local AI, open models, voice interfaces, the future of hardware",
+      "url": "https://thedataexchange.media/pete-warden-moonshine/",
+      "ts": 1795102692.0,
+      "points": 238,
+      "comments": 213,
+      "author": "datascientist",
       "summary": "",
       "recipe": "hn_front",
-      "buzz": 928,
+      "buzz": 957,
       "topics": [
         "ai"
       ],
@@ -516,31 +482,29 @@
       "title": "siliconjungle/shapeshift-labs-ink-studio",
       "url": "https://github.com/siliconjungle/shapeshift-labs-ink-studio",
       "ts": 1794815040.0,
-      "points": 721,
-      "comments": 56,
+      "points": 743,
+      "comments": 58,
       "author": "siliconjungle",
       "summary": "Sculpting, animation and simulation toolkit for pixel-art Gaussian splats",
       "recipe": "github_search",
-      "buzz": 899,
+      "buzz": 927,
       "topics": [],
       "date": "2026-11-16"
     },
     {
-      "uid": "gh:bookwjitchieni1986/blender-ai-mcp-addon",
+      "uid": "gh:iamajmeena/neonclipping",
       "source": "github",
-      "title": "bookwjitchieni1986/blender-ai-mcp-addon",
-      "url": "https://github.com/bookwjitchieni1986/blender-ai-mcp-addon",
-      "ts": 1795099390.0,
-      "points": 791,
-      "comments": 1,
-      "author": "bookwjitchieni1986",
-      "summary": "AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with ChatGPT/GPT, Claude, Gemini, Ollama, OpenCode. Blender AI addon, copilot for 3D, bpy Python scripting, MCP integration.",
+      "title": "iamajmeena/neonclipping",
+      "url": "https://github.com/iamajmeena/neonclipping",
+      "ts": 1795082443.0,
+      "points": 750,
+      "comments": 30,
+      "author": "iamajmeena",
+      "summary": "Paste a link, get captioned 9:16 clips in ~2 min. Free, local, open-source clipping engine (audio-first, YouTube captions, local LLM).",
       "recipe": "github_search",
-      "buzz": 874,
+      "buzz": 920,
       "topics": [
-        "ai",
-        "dev",
-        "hardware"
+        "ai"
       ],
       "date": "2026-11-19"
     },
@@ -550,12 +514,12 @@
       "title": "0marContreras/gta6recomp",
       "url": "https://github.com/0marContreras/gta6recomp",
       "ts": 1795020595.0,
-      "points": 685,
-      "comments": 38,
+      "points": 713,
+      "comments": 41,
       "author": "0marContreras",
       "summary": "A GTA VI PC Port",
       "recipe": "github_search",
-      "buzz": 829,
+      "buzz": 866,
       "topics": [],
       "date": "2026-11-18"
     },
@@ -565,13 +529,31 @@
       "title": "Someone reported java4shell bug in September 2026",
       "url": "https://github.com/openjdk/jdk/pull/32781",
       "ts": 1795088823.0,
-      "points": 396,
-      "comments": 107,
+      "points": 425,
+      "comments": 115,
       "author": "notmine1337",
       "summary": "",
       "recipe": "hn_front",
-      "buzz": 797,
+      "buzz": 850,
       "topics": [],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "hn:50564366",
+      "source": "hn",
+      "title": "Should governments slow frontier AI? Jacob Coxon and Robin Hanson debate [video]",
+      "url": "https://www.youtube.com/watch?v=lwfewYL7X0o",
+      "ts": 1795114036.0,
+      "points": 103,
+      "comments": 206,
+      "author": "sandslash",
+      "summary": "",
+      "recipe": "hn_front",
+      "buzz": 801,
+      "topics": [
+        "ai",
+        "dev"
+      ],
       "date": "2026-11-19"
     },
     {
@@ -580,52 +562,48 @@
       "title": "The 98% Slot Machine: How Paid Advertising Became an Extraction Tax",
       "url": "https://globalcommercegraph.com/writing/the-ninety-eight-percent-slot-machine",
       "ts": 1795113317.0,
-      "points": 239,
-      "comments": 133,
+      "points": 280,
+      "comments": 146,
       "author": "dev1one1",
       "summary": "",
       "recipe": "hn_front",
-      "buzz": 718,
+      "buzz": 798,
       "topics": [
         "ai"
       ],
       "date": "2026-11-19"
     },
     {
-      "uid": "hn:50536950",
+      "uid": "hn:50569226",
       "source": "hn",
-      "title": "An Oregon library ditched Dewey Decimal and got people excited about books again",
-      "url": "https://www.fastcompany.com/91597520/oregon-library-ditched-dewey-decimal-wayfinding-system",
-      "ts": 1794944112.0,
-      "points": 217,
-      "comments": 156,
-      "author": "bookofjoe",
+      "title": "OpenSSL: Buffer overflow in EVP_EncodeBlock() (CVE-2026-121481, CVSS 9.8)",
+      "url": "https://github.com/openssl/openssl/pull/33652",
+      "ts": 1795140069.0,
+      "points": 219,
+      "comments": 165,
+      "author": "JacobHenner",
       "summary": "",
       "recipe": "hn_front",
-      "buzz": 715,
+      "buzz": 794,
       "topics": [
-        "ai",
-        "dev"
+        "security"
       ],
-      "date": "2026-11-17"
+      "date": "2026-11-20"
     },
     {
-      "uid": "hn:50564366",
-      "source": "hn",
-      "title": "Should governments slow frontier AI? Jacob Coxon and Robin Hanson debate [video]",
-      "url": "https://www.youtube.com/watch?v=lwfewYL7X0o",
-      "ts": 1795114036.0,
-      "points": 90,
-      "comments": 174,
-      "author": "sandslash",
+      "uid": "gh:0xkaka/homeport",
+      "source": "github",
+      "title": "0xkaka/homeport",
+      "url": "https://github.com/0xkaka/homeport",
+      "ts": 1794893986.0,
+      "points": 502,
+      "comments": 89,
+      "author": "0xkaka",
       "summary": "",
-      "recipe": "hn_front",
-      "buzz": 692,
-      "topics": [
-        "ai",
-        "dev"
-      ],
-      "date": "2026-11-19"
+      "recipe": "github_search",
+      "buzz": 779,
+      "topics": [],
+      "date": "2026-11-17"
     },
     {
       "uid": "gh:nilbuild/stick-scene",
@@ -633,48 +611,31 @@
       "title": "nilbuild/stick-scene",
       "url": "https://github.com/nilbuild/stick-scene",
       "ts": 1794701860.0,
-      "points": 507,
-      "comments": 54,
+      "points": 515,
+      "comments": 55,
       "author": "nilbuild",
       "summary": "Skill to draw stick figure animated visuals",
       "recipe": "github_search",
-      "buzz": 679,
+      "buzz": 690,
       "topics": [],
       "date": "2026-11-15"
     },
     {
-      "uid": "gh:iamajmeena/neonclipping",
+      "uid": "gh:Lemxy/WinRust",
       "source": "github",
-      "title": "iamajmeena/neonclipping",
-      "url": "https://github.com/iamajmeena/neonclipping",
-      "ts": 1795082443.0,
-      "points": 497,
-      "comments": 21,
-      "author": "iamajmeena",
-      "summary": "Paste a link, get captioned 9:16 clips in ~2 min. Free, local, open-source clipping engine (audio-first, YouTube captions, local LLM).",
+      "title": "Lemxy/WinRust",
+      "url": "https://github.com/Lemxy/WinRust",
+      "ts": 1794925626.0,
+      "points": 547,
+      "comments": 27,
+      "author": "Lemxy",
+      "summary": "Windows shell replacement in Rust: taskbar, file manager, NTFS search, task manager, disk cleaner. One installer exe.",
       "recipe": "github_search",
-      "buzz": 640,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-19"
-    },
-    {
-      "uid": "hn:50547048",
-      "source": "hn",
-      "title": "Nintendo takes Picofly firmware down from GitHub [video]",
-      "url": "https://www.youtube.com/watch?v=-TLCGUpoD6c",
-      "ts": 1795013764.0,
-      "points": 273,
-      "comments": 108,
-      "author": "cowlevel",
-      "summary": "",
-      "recipe": "hn_front",
-      "buzz": 627,
+      "buzz": 658,
       "topics": [
         "dev"
       ],
-      "date": "2026-11-18"
+      "date": "2026-11-17"
     },
     {
       "uid": "gh:mankidev/antialgorithm",
@@ -682,12 +643,12 @@
       "title": "mankidev/antialgorithm",
       "url": "https://github.com/mankidev/antialgorithm",
       "ts": 1794649703.0,
-      "points": 510,
+      "points": 524,
       "comments": 33,
       "author": "mankidev",
       "summary": "Claude Code skill that steers the model away from its first, most average pick in creative work: names, ideas, posters, UI.",
       "recipe": "github_search",
-      "buzz": 619,
+      "buzz": 633,
       "topics": [
         "ai",
         "dev"
@@ -700,13 +661,30 @@
       "title": "Show HN: Cornhole News – A Hacker News inspired site for news across the Midwest",
       "url": "https://cornholenews.news",
       "ts": 1795102712.0,
-      "points": 203,
-      "comments": 95,
+      "points": 222,
+      "comments": 102,
       "author": "cornholemedia",
       "summary": "",
       "recipe": "hn_front",
-      "buzz": 568,
+      "buzz": 608,
       "topics": [],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "hn:50567209",
+      "source": "hn",
+      "title": "Synology Security Advisory",
+      "url": "https://www.synology.com/en-uk/security/advisory/Synology_SA_26_21",
+      "ts": 1795126420.0,
+      "points": 142,
+      "comments": 114,
+      "author": "choult",
+      "summary": "",
+      "recipe": "hn_front",
+      "buzz": 564,
+      "topics": [
+        "security"
+      ],
       "date": "2026-11-19"
     },
     {
@@ -715,14 +693,29 @@
       "title": "Making 8-page foldable zines from a single A4 sheet in the browser",
       "url": "https://krthr.co/paper-folds-and-whats-new-in-fanzines-app/",
       "ts": 1795094291.0,
-      "points": 267,
-      "comments": 60,
+      "points": 298,
+      "comments": 61,
       "author": "krthr",
       "summary": "",
       "recipe": "hn_front",
-      "buzz": 527,
+      "buzz": 561,
       "topics": [],
       "date": "2026-11-19"
+    },
+    {
+      "uid": "hn:50528119",
+      "source": "hn",
+      "title": "How to CAD Almost Anything",
+      "url": "https://ocw.mit.edu/courses/res-16-002-how-to-cad-almost-anything-january-iap-2024/",
+      "ts": 1794896997.0,
+      "points": 254,
+      "comments": 85,
+      "author": "o4c",
+      "summary": "",
+      "recipe": "hn_front",
+      "buzz": 519,
+      "topics": [],
+      "date": "2026-11-17"
     },
     {
       "uid": "gh:YellowLaborerMarket/Gemini-Config-Checker-",
@@ -1033,21 +1026,36 @@
       "date": "2026-11-15"
     },
     {
-      "uid": "hn:50567209",
+      "uid": "gh:WharfBoulderColander/Gemini-Config-Checker-",
+      "source": "github",
+      "title": "WharfBoulderColander/Gemini-Config-Checker-",
+      "url": "https://github.com/WharfBoulderColander/Gemini-Config-Checker-",
+      "ts": 1794761232.0,
+      "points": 472,
+      "comments": 0,
+      "author": "WharfBoulderColander",
+      "summary": "Chain region scanner: find proxy configs that get you into Google AI Studio and Gemini (signed-in browser check, anti-DPI, Windows/macOS/Linux/Android)",
+      "recipe": "github_search",
+      "buzz": 482,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-11-15"
+    },
+    {
+      "uid": "hn:50571189",
       "source": "hn",
-      "title": "Synology Security Advisory",
-      "url": "https://www.synology.com/en-uk/security/advisory/Synology_SA_26_21",
-      "ts": 1795126420.0,
-      "points": 125,
-      "comments": 90,
-      "author": "choult",
+      "title": "\"I can tell you wrote this yourself\"",
+      "url": "https://em-online.bearblog.dev/i-can-tell-you-wrote-this-yourself/",
+      "ts": 1795158801.0,
+      "points": 93,
+      "comments": 94,
+      "author": "BrunoBernardino",
       "summary": "",
       "recipe": "hn_front",
-      "buzz": 475,
-      "topics": [
-        "security"
-      ],
-      "date": "2026-11-19"
+      "buzz": 455,
+      "topics": [],
+      "date": "2026-11-20"
     },
     {
       "uid": "hn:50562320",
@@ -1055,12 +1063,12 @@
       "title": "Launch HN: Onlook (YC W25) – An open-source developer tool for designers",
       "url": "https://github.com/onlook-dev/onlook/",
       "ts": 1795106044.0,
-      "points": 98,
-      "comments": 72,
+      "points": 116,
+      "comments": 82,
       "author": "D_R_Farrell",
       "summary": "Hey HN, I&#x27;m Daniel, founder of Onlook (<a href=\"https:&#x2F;&#x2F;github.com&#x2F;onlook-dev&#x2F;onlook\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;onlook-dev&#x2F;onlook</a> and onlook.com).<p>Onlook is a desktop app that puts a canvas on top of your real codebase, letting you design directly in code with the agent you already use. Over 25,000 designers and developers have supported t",
       "recipe": "hn_front",
-      "buzz": 394,
+      "buzz": 442,
       "topics": [
         "ai",
         "dev",
@@ -1069,50 +1077,48 @@
       "date": "2026-11-19"
     },
     {
-      "uid": "hn:50528119",
+      "uid": "hn:50569519",
       "source": "hn",
-      "title": "How to CAD Almost Anything",
-      "url": "https://ocw.mit.edu/courses/res-16-002-how-to-cad-almost-anything-january-iap-2024/",
-      "ts": 1794896997.0,
-      "points": 186,
-      "comments": 56,
-      "author": "o4c",
+      "title": "What Comes After AGI?",
+      "url": "https://institute.deepmind.com/essays/what-comes-after-agi/",
+      "ts": 1795142653.0,
+      "points": 42,
+      "comments": 82,
+      "author": "jdkee",
       "summary": "",
       "recipe": "hn_front",
-      "buzz": 384,
+      "buzz": 368,
       "topics": [],
-      "date": "2026-11-17"
+      "date": "2026-11-20"
     },
     {
-      "uid": "hn:50568082",
+      "uid": "hn:50570628",
       "source": "hn",
-      "title": "Visa, Mastercard and JPMorgan Customer Data Leaked by Hackers",
-      "url": "https://www.wsj.com/finance/banking/visa-mastercard-and-jpmorgan-customer-data-leaked-by-hackers-3b5a0f87",
-      "ts": 1795131131.0,
-      "points": 151,
-      "comments": 40,
-      "author": "mikhael",
+      "title": "Jujutsu Primer",
+      "url": "https://ethanlowman.com/posts/jj-primer/",
+      "ts": 1795153561.0,
+      "points": 99,
+      "comments": 62,
+      "author": "renehsz",
       "summary": "",
       "recipe": "hn_front",
-      "buzz": 351,
+      "buzz": 365,
       "topics": [],
-      "date": "2026-11-19"
+      "date": "2026-11-20"
     },
     {
-      "uid": "hn:50569226",
+      "uid": "hn:50568861",
       "source": "hn",
-      "title": "OpenSSL: Buffer overflow in EVP_EncodeBlock() (CVE-2026-121481, CVSS 9.8)",
-      "url": "https://github.com/openssl/openssl/pull/33652",
-      "ts": 1795140069.0,
-      "points": 75,
+      "title": "Vint Cerf on why TCP/IP was never patented",
+      "url": "https://seremot.com/p/vint-cerf-on-why-tcpip-was-never",
+      "ts": 1795136772.0,
+      "points": 101,
       "comments": 43,
-      "author": "JacobHenner",
+      "author": "emot",
       "summary": "",
       "recipe": "hn_front",
-      "buzz": 284,
-      "topics": [
-        "security"
-      ],
+      "buzz": 310,
+      "topics": [],
       "date": "2026-11-20"
     },
     {
@@ -1121,77 +1127,14 @@
       "title": "RegExr: Temporarily Offline",
       "url": "https://regexr.com/",
       "ts": 1795127227.0,
-      "points": 66,
-      "comments": 35,
+      "points": 79,
+      "comments": 38,
       "author": "somebudyelse",
       "summary": "",
       "recipe": "hn_front",
-      "buzz": 251,
+      "buzz": 273,
       "topics": [],
       "date": "2026-11-19"
-    },
-    {
-      "uid": "hn:50566261",
-      "source": "hn",
-      "title": "Rebuilding my local voice assistant pipeline",
-      "url": "https://blog.platypush.tech/article/Rewriting-my-voice-assistant-pipeline",
-      "ts": 1795121834.0,
-      "points": 81,
-      "comments": 14,
-      "author": "todsacerdoti",
-      "summary": "",
-      "recipe": "hn_front",
-      "buzz": 203,
-      "topics": [],
-      "date": "2026-11-19"
-    },
-    {
-      "uid": "hn:50568861",
-      "source": "hn",
-      "title": "Vint Cerf on why TCP/IP was never patented",
-      "url": "https://seremot.com/p/vint-cerf-on-why-tcpip-was-never",
-      "ts": 1795136772.0,
-      "points": 61,
-      "comments": 12,
-      "author": "emot",
-      "summary": "",
-      "recipe": "hn_front",
-      "buzz": 177,
-      "topics": [],
-      "date": "2026-11-20"
-    },
-    {
-      "uid": "hn:50568643",
-      "source": "hn",
-      "title": "Postgres 19 is out, and it's available on Neon and Databricks Lakebase",
-      "url": "https://www.databricks.com/blog/postgresql-19-available-lakebase",
-      "ts": 1795135051.0,
-      "points": 34,
-      "comments": 17,
-      "author": "sp_from_db",
-      "summary": "",
-      "recipe": "hn_front",
-      "buzz": 165,
-      "topics": [
-        "ai",
-        "dev"
-      ],
-      "date": "2026-11-20"
-    },
-    {
-      "uid": "hn:50569985",
-      "source": "hn",
-      "title": "GIMP now has UI tests",
-      "url": "https://www.gimp.org/news/2026/11/16/gimp-ui-tests/",
-      "ts": 1795147224.0,
-      "points": 20,
-      "comments": 5,
-      "author": "qtqtqt",
-      "summary": "",
-      "recipe": "hn_front",
-      "buzz": 115,
-      "topics": [],
-      "date": "2026-11-20"
     },
     {
       "uid": "hn:50569890",
@@ -1199,14 +1142,46 @@
       "title": "PostgreSQL 19",
       "url": "https://www.postgresql.org/docs/release/19.0/",
       "ts": 1795146345.0,
-      "points": 31,
-      "comments": 1,
+      "points": 159,
+      "comments": 7,
       "author": "linzhangrun",
       "summary": "",
       "recipe": "hn_front",
-      "buzz": 114,
+      "buzz": 260,
       "topics": [
         "dev"
+      ],
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "hn:50569998",
+      "source": "hn",
+      "title": "FFmpeg 9.1 'Gauss'",
+      "url": "https://ffmpeg.org/download.html#release_9.1",
+      "ts": 1795147359.0,
+      "points": 113,
+      "comments": 22,
+      "author": "gyan",
+      "summary": "",
+      "recipe": "hn_front",
+      "buzz": 259,
+      "topics": [],
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "hn:50568548",
+      "source": "hn",
+      "title": "ChatGPT for SNES",
+      "url": "https://www.bxfoundry.com/chatgpt_snes/",
+      "ts": 1795134359.0,
+      "points": 75,
+      "comments": 22,
+      "author": "evan_",
+      "summary": "",
+      "recipe": "hn_front",
+      "buzz": 221,
+      "topics": [
+        "ai"
       ],
       "date": "2026-11-20"
     },
@@ -1216,241 +1191,15 @@
       "title": "Postgres 19 Repack: Faster, Built-In Table Bloat Cleanup",
       "url": "https://www.snowflake.com/en/blog/engineering/postgres-19-repack-table-bloat/",
       "ts": 1795142629.0,
-      "points": 27,
-      "comments": 1,
+      "points": 88,
+      "comments": 9,
       "author": "craigkerstiens",
       "summary": "",
       "recipe": "hn_front",
-      "buzz": 110,
+      "buzz": 195,
       "topics": [
         "dev"
       ],
-      "date": "2026-11-20"
-    },
-    {
-      "uid": "hn:50568548",
-      "source": "hn",
-      "title": "ChatGPT for SNES",
-      "url": "https://www.bxfoundry.com/chatgpt_snes/",
-      "ts": 1795134359.0,
-      "points": 18,
-      "comments": 4,
-      "author": "evan_",
-      "summary": "",
-      "recipe": "hn_front",
-      "buzz": 110,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-20"
-    },
-    {
-      "uid": "rss:ad5ea7e3d8efcb",
-      "source": "rss",
-      "title": "iOS App Testing Guide (2026): Types, Tools, and Step-by-Step Process",
-      "url": "https://dev.to/ankit_sinha_39958d4c20c84/ios-app-testing-guide-2026-types-tools-and-step-by-step-process-462n",
-      "ts": 1795151417.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Ankit Sinha",
-      "summary": "<p>iOS apps are expected to deliver a seamless, high-quality experience across devices, networks, and usage conditions. Even small issues like crashes, slow performance, or inconsistent UI can quickly impact user trust and App Store ratings. This makes iOS app testing a critical part of the development lifecycle, not just a final step before release. By <strong><a href=\"https://www.headspin.io/blo",
-      "recipe": "devto",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "dev"
-      ],
-      "date": "2026-11-20"
-    },
-    {
-      "uid": "rss:f868b52ea998ce",
-      "source": "rss",
-      "title": "IndexedDB in React: Offline-First Apps with WatermelonDB",
-      "url": "https://dev.to/muhammadmoiz269/indexeddb-in-react-offline-first-apps-with-watermelondb-28hp",
-      "ts": 1795151375.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Muhammad Moiz",
-      "summary": "<p><em>Originally published at <a href=\"https://muhammadmoiz.dev/blog/indexeddb\" rel=\"noopener noreferrer\">muhammadmoiz.dev</a>.</em></p> <p>IndexedDB is the browser's built-in database. It is the right place to keep the data a React app needs to keep working when the network drops. You can use it directly through a small wrapper like <code>idb</code> for simple caching. If you need relations, rea",
-      "recipe": "devto",
-      "buzz": 80,
-      "topics": [
-        "dev"
-      ],
-      "date": "2026-11-20"
-    },
-    {
-      "uid": "rss:8312b3b6fa87fc",
-      "source": "rss",
-      "title": "GitHub Copilot cloud sandboxes start drawing from Actions compute on November 23",
-      "url": "https://dev.to/uulab/github-copilot-cloud-sandboxes-start-drawing-from-actions-compute-on-november-23-4497",
-      "ts": 1795151357.0,
-      "points": 0,
-      "comments": 0,
-      "author": "UULab",
-      "summary": "<p>A long-running coding agent uses more than model credits. In a November 19 update, GitHub said <strong>cloud sandbox billing starts November 23, 2026</strong>. CPU and memory draw from the compute allowance shared with eligible Actions jobs; retained snapshots are metered separately. The announcement gives no rollout time or timezone.</p> <h2> 01. Check whether your session is in scope </h2> <p",
-      "recipe": "devto",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "dev",
-        "hardware"
-      ],
-      "date": "2026-11-20"
-    },
-    {
-      "uid": "rss:435e44c15b2541",
-      "source": "rss",
-      "title": "The Graph Behind a Four-Letter Word Ladder",
-      "url": "https://dev.to/poopleunlimited/the-graph-behind-a-four-letter-word-ladder-4a7b",
-      "ts": 1795151354.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Nora Vale",
-      "summary": "<p>A four-letter word ladder looks like a word game. Underneath, it is a shortest-path problem on an unweighted graph, and thinking about it that way explains most of the difficulty.</p> <p>The graph has every valid four-letter word as a node. Two nodes share an edge if they differ in exactly one letter. The daily puzzle picks a start word, fixes the target (POOP), and asks for a route. Par is the",
-      "recipe": "devto",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "hardware"
-      ],
-      "date": "2026-11-20"
-    },
-    {
-      "uid": "rss:26057e56b1c092",
-      "source": "rss",
-      "title": "How to Test a Resistor, Diode, LED and Capacitor with a Multimeter (Before You Blame Your Code)",
-      "url": "https://dev.to/electrodai/how-to-test-a-resistor-diode-led-and-capacitor-with-a-multimeter-before-you-blame-your-code-3fgi",
-      "ts": 1795151196.0,
-      "points": 0,
-      "comments": 0,
-      "author": "ElectroDai",
-      "summary": "<p>If you write code for Arduino or ESP32, you have probably spent an evening debugging a sketch that was fine all along. The real bug was a dead LED, a reversed diode or a dried-out capacitor.</p> <p>A cheap digital multimeter catches all of these in about two minutes. Here are the four checks I teach every beginner: <strong>resistor, diode, LED and capacitor</strong>. For each one: which mode, w",
-      "recipe": "devto",
-      "buzz": 80,
-      "topics": [
-        "dev"
-      ],
-      "date": "2026-11-20"
-    },
-    {
-      "uid": "rss:8177350ed1c60b",
-      "source": "rss",
-      "title": "Loopback Is Not a Trust Boundary for Todoist's HTTP MCP Server",
-      "url": "https://dev.to/sorrelthorncroft/loopback-is-not-a-trust-boundary-for-todoists-http-mcp-server-25i3",
-      "ts": 1795151181.0,
-      "points": 0,
-      "comments": 0,
-      "author": "SorrelThorncroft",
-      "summary": "<h1> Loopback Is Not a Trust Boundary for Todoist's HTTP MCP Server </h1> <p>Local AI tool servers are often treated as safe because they bind to <code>127.0.0.1</code>. CVE-[phone] shows why network location and caller identity are different controls.</p> <h2> What went wrong </h2> <p>Todoist MCP versions through 10.3.2 exposed an optional <code>todoist-mcp-http</code> server. The server accep",
-      "recipe": "devto",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "dev",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-20"
-    },
-    {
-      "uid": "rss:113dc84ca7e433",
-      "source": "rss",
-      "title": "The Invisible Type: Three Escapes of size_t from Linux CI",
-      "url": "https://dev.to/flude_team/the-invisible-type-three-escapes-of-sizet-from-linux-ci-2o18",
-      "ts": 1795151174.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Flude team",
-      "summary": "<p>Unlike <code>int</code> or <code>float</code>, in C++ the <code>size_t</code> type is not a built-in language keyword. It is a regular <code>typedef</code> that lives in system header files (for example, <code>&lt;cstddef&gt;</code>). However, in real projects, developers often use <code>size_t</code> \"naked,\" without an explicit <code>#include</code>, relying on transitive inclusion from other",
-      "recipe": "devto",
-      "buzz": 80,
-      "topics": [
-        "dev"
-      ],
-      "date": "2026-11-20"
-    },
-    {
-      "uid": "rss:e483445982b9bc",
-      "source": "rss",
-      "title": "7,472 write bursts and 48,216 rows: what a prediction log can and cannot prove",
-      "url": "https://dev.to/soccerdream_ai/7472-write-bursts-and-48216-rows-what-a-prediction-log-can-and-cannot-prove-ml2",
-      "ts": 1795151139.0,
-      "points": 0,
-      "comments": 0,
-      "author": "SoccerDream AI",
-      "summary": "<p>Every prediction platform eventually has to answer one question from a customer, a regulator, or its own postmortem: <em>was this row produced by an analysis of this match, or was it replayed?</em></p> <p>The model card describes intent, not execution. The only artifact describing execution is the row itself — its write time, its measured duration, its payload. So I treated our own production l",
-      "recipe": "devto",
-      "buzz": 80,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-20"
-    },
-    {
-      "uid": "rss:eb77e0eb1bd9e0",
-      "source": "rss",
-      "title": "Who Deleted the File? Practical auditd Rules That Actually Answer It",
-      "url": "https://dev.to/lyraalishaikh/who-deleted-the-file-practical-auditd-rules-that-actually-answer-it-49n",
-      "ts": 1795151137.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Lyra",
-      "summary": "<p>The config file is gone. You know roughly when. You run:<br> </p> <div class=\"highlight js-code-highlight\"> <pre class=\"highlight shell\"><code>ausearch -f /etc/nginx/nginx.conf -i </code></pre> </div> <p><code>&lt;no matches&gt;</code></p> <p>Nothing is broken. auditd is doing exactly what it was told — which was nothing. Audit rules are prospective: they describe what to record <em>before</em>",
-      "recipe": "devto",
-      "buzz": 80,
-      "topics": [],
-      "date": "2026-11-20"
-    },
-    {
-      "uid": "rss:4f5925ba61f659",
-      "source": "rss",
-      "title": "Secure AI Agent Tools at the Server Boundary: Authorization, Idempotency, and Audit Trails",
-      "url": "https://dev.to/rengond/secure-ai-agent-tools-at-the-server-boundary-authorization-idempotency-and-audit-trails-3l4o",
-      "ts": 1795151086.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Renaldi",
-      "summary": "<p>An agent can produce a convincing explanation for an action. That explanation is not an authorization decision.</p> <p>This distinction matters as soon as a model can call tools that change state: create a ticket, update a record, issue a refund, deploy a service, or send a message. A prompt can describe the intended workflow, and the model can select the right function, while the application s",
-      "recipe": "devto",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "dev",
-        "hardware"
-      ],
-      "date": "2026-11-20"
-    },
-    {
-      "uid": "rss:743bc8a9ac4f62",
-      "source": "rss",
-      "title": "React Hook useEffect Has a Missing Dependency: Every Fix",
-      "url": "https://dev.to/kausarraza/react-hook-useeffect-has-a-missing-dependency-every-fix-1lmg",
-      "ts": 1795151051.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Kausar Raza",
-      "summary": "<p>The warning looks like this, and if you work in React or Next.js you have seen it many times:<br> </p> <div class=\"highlight js-code-highlight\"> <pre class=\"highlight plaintext\"><code>React Hook useEffect has a missing dependency: 'userId'. Either include it or remove the dependency array react-hooks/exhaustive-deps </code></pre> </div> <p>It comes from the <code>react-hooks/exhaustive-deps</co",
-      "recipe": "devto",
-      "buzz": 80,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-20"
-    },
-    {
-      "uid": "rss:67ea98d11ab825",
-      "source": "rss",
-      "title": "A review bot should earn every message it sends",
-      "url": "https://dev.to/omerbinsaleem/a-review-bot-should-earn-every-message-it-sends-4ig7",
-      "ts": 1795150961.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Omer Saleem",
-      "summary": "<p><em>Originally published at <a href=\"https://www.omerbinsaleem.com/hacks/a-review-bot-should-earn-every-message/\" rel=\"noopener noreferrer\">omerbinsaleem.com</a> by Omer Bin Saleem (Omer Saleem).</em></p> <p>The findings were fine, the volume was the problem. Cutting our review bot down to one card per thread took two moves: edit in place, and ignore events that were never requests.</p> <h2> Wh",
-      "recipe": "devto",
-      "buzz": 80,
-      "topics": [],
       "date": "2026-11-20"
     },
     {
@@ -1459,12 +1208,12 @@
       "title": "Weight-Space Programming builds neural networks like a 1990s researcher",
       "url": "https://notesbylex.com/weight-space-programming-1990s",
       "ts": 1794953506.0,
-      "points": 42,
-      "comments": 2,
+      "points": 81,
+      "comments": 5,
       "author": "lexandstuff",
       "summary": "",
       "recipe": "hn_front",
-      "buzz": 78,
+      "buzz": 126,
       "topics": [
         "ai",
         "science"
@@ -1472,34 +1221,1335 @@
       "date": "2026-11-17"
     },
     {
-      "uid": "hn:50530132",
-      "source": "hn",
-      "title": "Talking Venice with Mahesh Subramony at AMD In-Depth",
-      "url": "https://chipsandcheese.com/p/talking-venice-with-mahesh-subramony",
-      "ts": 1794915668.0,
-      "points": 22,
+      "uid": "arxiv:2611.26627v1",
+      "source": "arxiv",
+      "title": "RL Post-Training in Diffusion Transformers Is Activation Steering",
+      "url": "https://arxiv.org/abs/2611.26627v1",
+      "ts": 1795114793.0,
+      "points": 0,
       "comments": 0,
-      "author": "rbanffy",
-      "summary": "",
-      "recipe": "hn_front",
-      "buzz": 52,
-      "topics": [],
-      "date": "2026-11-17"
+      "author": "Tuna Han Salih Meral",
+      "summary": "Reinforcement learning (RL) post-training substantially improves the visual quality, text rendering, and compositional accuracy of diffusion transformers. Because capabilities such as rendering requested text or composing multiple objects are inherently prompt-dependent, a natural hypothesis is that improving them requires learning complex, input-dependent transformations. To isolate how much of t",
+      "recipe": "arxiv",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "science"
+      ],
+      "date": "2026-11-19"
     },
     {
-      "uid": "hn:50544546",
+      "uid": "arxiv:2611.26624v1",
+      "source": "arxiv",
+      "title": "PlayCraft: Designing Engaging Games from Agent Play Experience",
+      "url": "https://arxiv.org/abs/2611.26624v1",
+      "ts": 1795114774.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Weihao Cheng",
+      "summary": "Recent AI agents can generate playable games, but these games are not necessarily engaging. Mastery is a key source of engagement, yet designing for it requires extensive human play and tuning. We propose PlayCraft, an automated framework that uses a vision-based agent to play games and draws on its detailed play experience to revise them for mastery. Starting from an initial game, PlayCraft alter",
+      "recipe": "arxiv",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "science"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "arxiv:2611.26619v1",
+      "source": "arxiv",
+      "title": "TideCache: Efficient Hybrid LLM Serving with Transparent Cache Management and Layer-Wise Streaming",
+      "url": "https://arxiv.org/abs/2611.26619v1",
+      "ts": 1795114711.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Jinbin Luo",
+      "summary": "Hybrid architectures have become mainstream among open-weight language models. Their global-attention and bounded-state layers maintain heterogeneous caches whose demands vary with context length and concurrency. We present TideCache, a serving system on CPU--GPU superchips with three components for allocating GPU memory among caches and managing their residency across GPU and host memory. The Tra",
+      "recipe": "arxiv",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "science",
+        "hardware"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "arxiv:2611.26617v1",
+      "source": "arxiv",
+      "title": "One Prior, Two Dynamics: Repurposing Video Diffusion Transformers for Self-Supervised Latent Action Learning",
+      "url": "https://arxiv.org/abs/2611.26617v1",
+      "ts": 1795114694.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Yuxin Jiang",
+      "summary": "Videos reveal how the world changes, but rarely the actions that cause those changes. Latent action learning recovers such supervision from visual transitions, yet often learns the underlying dynamics largely from scratch. We ask whether a pretrained video generator can instead provide the prior for both inverse and forward dynamics. We introduce O$^{2}$LaF, built on a simple principle: one prior,",
+      "recipe": "arxiv",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "science"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "arxiv:2611.26613v1",
+      "source": "arxiv",
+      "title": "AgentRoboCritic: Understanding the Capability of Frontier Agents on Direct Robot Control",
+      "url": "https://arxiv.org/abs/2611.26613v1",
+      "ts": 1795114645.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Yiyang Du",
+      "summary": "Frontier multimodal language agents such as GPT-6 Astra have demonstrated strong capabilities in controlling robots directly via low-level numerical actions without high-level primitives. However, existing benchmarks report only episode-level success rates, which show neither how these agents succeed nor where they fail. In this paper, we present a systematic action-level analysis of frontier agen",
+      "recipe": "arxiv",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "science",
+        "hardware"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "arxiv:2611.26607v1",
+      "source": "arxiv",
+      "title": "Bio-PM-Guided Synthetic IMU Generation",
+      "url": "https://arxiv.org/abs/2611.26607v1",
+      "ts": 1795114585.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Deepali Singh",
+      "summary": "Collecting and labeling inertial measurement unit (IMU) data for human activity recognition (HAR) is expensive, and models trained on one group of subjects often fail to generalize to unseen individuals. Even with balanced data, classifiers struggle to distinguish dynamically similar activity classes and benefit from targeted augmentation. We explore whether synthetic IMU data generated in the rep",
+      "recipe": "arxiv",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "science"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "arxiv:2611.26603v1",
+      "source": "arxiv",
+      "title": "Depth Pro 2: Sharp and Temporally Consistent Metric Monocular Depth",
+      "url": "https://arxiv.org/abs/2611.26603v1",
+      "ts": 1795114541.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Peiyun Hu",
+      "summary": "We present Depth Pro 2, an approach to estimating dense metric depth for images and video at full resolution. By analyzing prior methods for monocular depth estimation, we find that they commonly trade off temporal consistency and boundary sharpness: multi-frame methods favor consistency, single-frame methods favor sharpness. To overcome this trade-off, we train a single, scalable network that pro",
+      "recipe": "arxiv",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "arxiv:2611.26601v1",
+      "source": "arxiv",
+      "title": "SoK: Assessing the Evolution of LLM Capability in Software Vulnerability Research",
+      "url": "https://arxiv.org/abs/2611.26601v1",
+      "ts": 1795114459.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Amine Lbath",
+      "summary": "LLM-based agents are becoming increasingly capable at discovering, validating and patching vulnerabilities in real software, and vendors and researchers report that this is already changing how vulnerabilities are found and fixed. These claims, however, are scattered across papers, vendor reports and disclosures and are rarely comparable. We introduce a framework that rates these capabilities on a",
+      "recipe": "arxiv",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "science",
+        "security"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "arxiv:2611.26598v1",
+      "source": "arxiv",
+      "title": "Active Feature Acquisition by Distilling an Oracle Teacher",
+      "url": "https://arxiv.org/abs/2611.26598v1",
+      "ts": 1795114377.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Yang Meng",
+      "summary": "Acquiring every feature of an instance is often costly: a measurement can carry a monetary price, a time delay, or a privacy cost. Active Feature Acquisition (AFA) addresses this by learning a policy that decides, per instance, which features to acquire under a budget. Existing AFA methods train this policy by optimizing a self-constructed utility target rather than distilling an explicit teacher.",
+      "recipe": "arxiv",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "biz",
+        "security"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "arxiv:2611.26596v1",
+      "source": "arxiv",
+      "title": "PGX: Physically Grounded Execution for Long-Horizon Humanoid Loco-Manipulation",
+      "url": "https://arxiv.org/abs/2611.26596v1",
+      "ts": 1795114338.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Kai Lu",
+      "summary": "Robotic vision-language-action (VLA) models can execute diverse individual manipulation skills, yet they still struggle with long-horizon loco-manipulation tasks, where temporal structure, skills, and precision are tightly coupled within a monolithic model. We propose Physically Grounded Execution (PGX), a framework that offloads temporal and precision control to two classical training-free compon",
+      "recipe": "arxiv",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "hardware"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "arxiv:2611.26592v1",
+      "source": "arxiv",
+      "title": "Realized versus Population Reliability: Anytime-Valid Self-Consistency Certification under Correlated Reasoning",
+      "url": "https://arxiv.org/abs/2611.26592v1",
+      "ts": 1795114071.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Terence D. Agbeyegbe",
+      "summary": "Self-consistency certification treats repeated sampling from a language model as sequential evidence accumulation and stops when an anytime-valid e-process crosses a threshold, guaranteeing finite-sample Type I error control by Ville's inequality. Prior constructions assume sampled rollouts are conditionally independent. We show this assumption fails in practice: reasoning streams are positively c",
+      "recipe": "arxiv",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "arxiv:2611.26590v1",
+      "source": "arxiv",
+      "title": "Probing the \"Conscious\" Mind: Selective Access and Global Workspace in Vision-Language Models",
+      "url": "https://arxiv.org/abs/2611.26590v1",
+      "ts": 1795114010.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Jiahao Huang",
+      "summary": "Vision-language models (VLMs) integrate visual and textual information, but their outputs do not reveal internal concept representations. Global workspace theory (GWT) proposes that information is selected from parallel brain processes, integrated in a shared workspace, and made available to specialised processes. We introduce the Multimodal Concept Lens (MC-Lens), a multimodal Jacobian lens, to s",
+      "recipe": "arxiv",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "science"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "arxiv:2611.26588v1",
+      "source": "arxiv",
+      "title": "Verify the Verifier: Specification-Grounded LLM Cross-Checking for Bugs That Escape UVM Scoreboards",
+      "url": "https://arxiv.org/abs/2611.26588v1",
+      "ts": 1795113954.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Ana E. Sanchez Villalobos",
+      "summary": "A passing UVM regression shows the design agrees with the reference model on what the scoreboard checks, not that it meets the specification. Bugs that pass every test yet violate the specification, termed scoreboard escapes, survive mature testbenches. We present Verify the Verifier, to our knowledge the first framework whose LLM-based Anomaly Cross-Checker examines a passing regression's traces",
+      "recipe": "arxiv",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "hardware"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "arxiv:2611.26586v1",
+      "source": "arxiv",
+      "title": "ProtoDiffusion: Token-per-Layer Generative Modeling of Multi-Layer Images",
+      "url": "https://arxiv.org/abs/2611.26586v1",
+      "ts": 1795113931.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Adrià Ciurana Lanau",
+      "summary": "Graphic designs are ordered compositions of RGBA layers whose separation enables selection, movement, and reuse. Existing layered models represent each layer with a full-canvas or region-sized spatial latent grid, so representation size grows with the cumulative spatial extent of the layers. We present ProtoDiffusion, a latent-diffusion framework built on ProtoVAE, a multi-layer variational autoen",
+      "recipe": "arxiv",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "crypto",
+        "science"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "arxiv:2611.26584v1",
+      "source": "arxiv",
+      "title": "Represented but misread: Post-training changes how language models read out what they represent",
+      "url": "https://arxiv.org/abs/2611.26584v1",
+      "ts": 1795113836.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Jochen Laubrock",
+      "summary": "Does post-training change what a language model represents, or how this representation is read out into an answer? We compared linear probes with the models' own answers, analyzed with signal detection theory, in six open-weight base models and their post-trained versions. For judgments of whether German texts were written by a human or an AI, probes and word n-gram classifiers separated the class",
+      "recipe": "arxiv",
+      "buzz": 80,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "arxiv:2611.26569v1",
+      "source": "arxiv",
+      "title": "Text-Aware, Vision-Blind: How Multimodal Image Editing Systems Handle Unsafe Inputs",
+      "url": "https://arxiv.org/abs/2611.26569v1",
+      "ts": 1795113379.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Ziqing Yang",
+      "summary": "Multimodal image generation systems have made rapid progress and increasingly emphasize content safety. However, their safety mechanisms tend to rely on a single modality and lack joint consideration of both visual content and text prompts, particularly in instruction-guided image editing, where the uploaded image may itself carry risk. We thus introduce EditSafetyBench, a benchmark that measures",
+      "recipe": "arxiv",
+      "buzz": 80,
+      "topics": [
+        "dev",
+        "science"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "arxiv:2611.26564v1",
+      "source": "arxiv",
+      "title": "GEOHunter: Mapping a Generative Engine Optimization Network in the Wild",
+      "url": "https://arxiv.org/abs/2611.26564v1",
+      "ts": 1795113222.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Sean Tang",
+      "summary": "Generative engines synthesize retrieved web pages into answers, recommendations, and rankings. Generative engine optimization (GEO) services sell visibility in these answers by publishing promotional articles on user-generated-content (UGC) platforms for paying clients. Such promotion raises concerns in medical and financial domains, where misleading advice can cause harm. To study the severity of",
+      "recipe": "arxiv",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "science"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "arxiv:2611.26562v1",
+      "source": "arxiv",
+      "title": "Multi-institutional grading of Barrett's esophagus dysplasia without stain normalization using a pathology foundation model and multiple instance learning",
+      "url": "https://arxiv.org/abs/2611.26562v1",
+      "ts": 1795112879.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Amirali Khosravi",
+      "summary": "Barrett's esophagus dysplasia grading suffers substantial inter-observer variability, particularly for low-grade dysplasia, complicating clinical decision-making. We conducted a retrospective multi-institutional diagnostic accuracy study of a foundation model-based deep learning system for dysplasia grading, using 969 H\\&E-stained whole slide images from four institutions. Patch-level classifiers",
+      "recipe": "arxiv",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "hardware"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "arxiv:2611.26557v1",
+      "source": "arxiv",
+      "title": "MM-SystemOneBias: Evaluating Bias in Multimodal Jev-Style System One Decision Models",
+      "url": "https://arxiv.org/abs/2611.26557v1",
+      "ts": 1795112741.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Jinzhe Li",
+      "summary": "When multimodal decision models determine actions, moderation outcomes, or quality judgments, their reliability depends on preserving semantic decisions across presentation changes, ignoring irrelevant additions, and distinguishing information consistent with task evidence from information that conflicts with it. Existing evaluations study decision-interface biases and multimodal model behavior in",
+      "recipe": "arxiv",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "biz"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "arxiv:2611.26553v1",
+      "source": "arxiv",
+      "title": "Replication of Agentic Security Events: Audit and Investigation (ROGUE-AI)",
+      "url": "https://arxiv.org/abs/2611.26553v1",
+      "ts": 1795112615.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Mengxiao Wang",
+      "summary": "Agents based on large language models (LLMs) can now delete files and send payments on behalf of their users. News media reports routinely describe failures of these agents (e.g., Replit's coding agent deleting a production database), but a report often only says what went wrong and rarely (in)validates the incident or finds its root cause. Incident catalogs collect these reports, and benchmarks r",
+      "recipe": "arxiv",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "biz",
+        "security"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "arxiv:2611.26545v1",
+      "source": "arxiv",
+      "title": "The Geometry of Lies: Knowledge and Persona Directions for Detecting Deception in Large Language Models",
+      "url": "https://arxiv.org/abs/2611.26545v1",
+      "ts": 1795112401.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Md. Abdullah Al Zami",
+      "summary": "Linear probes are the cheapest LLM lie detectors but often fail to transfer across kinds of lie. Label-free directions from honest and deceptive role-play are untested at 70B scale and on lies about knowledge, where a lie and an honest denial can be identical. We widen a published persona bank with roles that deny knowledge they have, plus honest counterparts. At each model's middle layer the resu",
+      "recipe": "arxiv",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "hardware"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "arxiv:2611.26540v1",
+      "source": "arxiv",
+      "title": "AURA: AUdio-dRiven streaming Avatar",
+      "url": "https://arxiv.org/abs/2611.26540v1",
+      "ts": 1795112258.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Nathaniel Cohen",
+      "summary": "Current audio-driven video diffusion models can synthesize realistic talking-head videos but generally require dozens of diffusion denoising steps over multi-second video chunks, making them unsuitable for streaming applications such as voice assistants and virtual avatars, where low-latency and online causal generation are required properties. AURA generates video chunk by chunk with a rolling KV",
+      "recipe": "arxiv",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "science"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "arxiv:2611.26538v1",
+      "source": "arxiv",
+      "title": "LLM GerryMandering: Separating Interactions from Additive Effects in LLM Audits",
+      "url": "https://arxiv.org/abs/2611.26538v1",
+      "ts": 1795112200.0,
+      "points": 0,
+      "comments": 0,
+      "author": "George Rahul",
+      "summary": "Intersectional bias arises when a model treats people who hold several marginalised identities at once differently from what their separate identities would predict. Auditing such intersectional subgroups remains a challenge: their number grows quadratically, and there is no agreed baseline for what independent attributes would predict. Without such a baseline, many existing audits flag a subgroup",
+      "recipe": "arxiv",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "arxiv:2611.26531v1",
+      "source": "arxiv",
+      "title": "Cost-Aware Agentic Feature Optimization System for Fleet-Scale Ranking Models",
+      "url": "https://arxiv.org/abs/2611.26531v1",
+      "ts": 1795111924.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Chang Yang",
+      "summary": "Large Web platforms operate large fleets of ranking models, each selecting features from a shared pool of tens of thousands. We present an end-to-end agentic system that optimizes features across the fleet under resource constraints shared across models and those set per model, such as feature pipeline cost and serving throughput (QPS), respectively. In this system, LLM agents propose hypotheses,",
+      "recipe": "arxiv",
+      "buzz": 80,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "arxiv:2611.26525v1",
+      "source": "arxiv",
+      "title": "Backtracking Agent Applications Security Incidents",
+      "url": "https://arxiv.org/abs/2611.26525v1",
+      "ts": 1795111288.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Yicheng Cai",
+      "summary": "Agent applications are increasingly deployed, yet agent-specific attacks pose real threats to them. Upon a security incident, organizations backtrack to identify the CEP (compromise entry point), remediate the damage, and prevent its recurrence. The main artifacts available for backtracking are trajectory logs, which record agent functionalities, and source code; app(lication)-specific function ca",
+      "recipe": "arxiv",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "arxiv:2611.26522v1",
+      "source": "arxiv",
+      "title": "Deterministic Temporal Embedding for Calcium Imaging Trace Extraction",
+      "url": "https://arxiv.org/abs/2611.26522v1",
+      "ts": 1795111235.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Qi Gao",
+      "summary": "Reliable extraction of calcium-dependent fluorescence traces in calcium imaging sequences requires identifying pixels whose fluorescence intensity reflects the same underlying cellular activity. We present a deterministic temporal embedding framework that maps pixel-wise fluorescence traces to a low-dimensional representation in which temporally coherent sources form spatially coherent regions. St",
+      "recipe": "arxiv",
+      "buzz": 80,
+      "topics": [
+        "dev"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "arxiv:2611.26521v1",
+      "source": "arxiv",
+      "title": "The Window Lever: Longer Observation Windows Outweigh the Observed Effects of Data, Capacity, and Architecture in Customer Behavior Forecasting",
+      "url": "https://arxiv.org/abs/2611.26521v1",
+      "ts": 1795111211.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Tara Sowrirajan",
+      "summary": "In our experiments on long-horizon customer-behavior forecasting, a longer observation window outweighed the observed effects of more data, more capacity and newer architectures. The window is the weeks of history a model sees before the week it forecasts from. Going from an 8- to a 16-week window adds a raw +0.070 to 0.107 log-space $R^2$ in every family at 1M. Matched test cohorts, which score t",
+      "recipe": "arxiv",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "science"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "arxiv:2611.26515v1",
+      "source": "arxiv",
+      "title": "Simple Private Noisy SGD is Minimax-Optimal under Population Strong Convexity",
+      "url": "https://arxiv.org/abs/2611.26515v1",
+      "ts": 1795111131.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Valentin Roth",
+      "summary": "Stochastic gradient descent (SGD) is at the center of modern machine learning and is known to be statistically minimax-optimal in many regression settings, e.g., for convex Generalized Linear Models (GLMs). Yet, it is unknown whether its simplest differentially private Noisy SGD counterpart fulfills similar favorable guarantees even on strongly convex losses. We resolve this question affirmatively",
+      "recipe": "arxiv",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "science"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "arxiv:2611.26514v1",
+      "source": "arxiv",
+      "title": "Hybrid Retrieval for Government Scheme Search in English and Marathi",
+      "url": "https://arxiv.org/abs/2611.26514v1",
+      "ts": 1795111119.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Aishwarya Gunjal",
+      "summary": "Retrieving government schemes requires matching citizens' information needs to formal administrative descriptions, often across languages and terminology. We present a bilingual search system for Maharashtra government schemes and public services that combines BM25 retrieval with sentence-embedding similarity through equal-weight score fusion. The system indexes aligned English-Marathi scheme desc",
+      "recipe": "arxiv",
+      "buzz": 80,
+      "topics": [
+        "science"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "arxiv:2611.26510v1",
+      "source": "arxiv",
+      "title": "AutoMaster: Autonomous Post-Training by Making the Same Model a Better Teacher",
+      "url": "https://arxiv.org/abs/2611.26510v1",
+      "ts": 1795111079.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Guoxin Chen",
+      "summary": "Task success alone does not specify which behaviors post-training should reinforce. Even successful teacher trajectories can contain unsupported assumptions, unproductive repetition, or superficial verification. We propose Skill-FT (Skill-Guided Fine-Tuning), which uses natural-language skills to suppress undesirable habits and elicit underrepresented effective behaviors during teacher rollouts, t",
+      "recipe": "arxiv",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "arxiv:2611.26509v1",
+      "source": "arxiv",
+      "title": "GLiDE: A Fast, Calibrated Decision Model Distilled from Reasoning Teachers",
+      "url": "https://arxiv.org/abs/2611.26509v1",
+      "ts": 1795111004.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Sahibzada Allahyar",
+      "summary": "Decision models enable fast, confidence-aware decisions by scoring candidate answers in a single forward pass, without generating text or intermediate reasoning. Yet reasoning can substantially improve decision quality, raising the question of whether its benefits can be retained without the cost of generating it. We investigate this question with \\textbf{GLiDE}, a family of decision models spanni",
+      "recipe": "arxiv",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "science",
+        "biz"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "arxiv:2611.26504v1",
+      "source": "arxiv",
+      "title": "Grid Cells as Spectral Successor Features: A Reusable Basis for Continual Reinforcement Learning",
+      "url": "https://arxiv.org/abs/2611.26504v1",
+      "ts": 1795110844.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Élodie Côté-Gauthier",
+      "summary": "Continual reinforcement learning requires agents to adapt when the task changes while reusing what they know about the environment. Successor features separate dynamics from task-specific reward, but their effectiveness depends on the choice of base features. Taking the identification of entorhinal grid cells with eigenvectors of the successor representation as a design principle, we build this ba",
+      "recipe": "arxiv",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "arxiv:2611.26492v1",
+      "source": "arxiv",
+      "title": "Multimodal Error Detection in Chest X-ray Reports: A Large Language Model Reading Image Evidence",
+      "url": "https://arxiv.org/abs/2611.26492v1",
+      "ts": 1795110402.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Yanda Cheng",
+      "summary": "Rad-Linter checks chest X-ray reports against image-derived evidence to flag potential errors for review. A pretrained image classifier supplies scores for nine pathologies, and a 1.5B-parameter language model, fine-tuned with LoRA on 1,816 examples, checks their consistency with the report. We compare it with a keyword-and-negation rule baseline given the same reports and scores. Evaluation uses",
+      "recipe": "arxiv",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "biz"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "arxiv:2611.26491v1",
+      "source": "arxiv",
+      "title": "FLUID: Flexible, Evidence-Grounded Situated Task Guidance",
+      "url": "https://arxiv.org/abs/2611.26491v1",
+      "ts": 1795110307.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Yunqi Zhao",
+      "summary": "Real-time task guidance is inherently flexible: when an agent guides a user through a task, multiple responses and timings can be appropriate, and sometimes the best action is to remain silent. Existing benchmarks often miss this flexibility by treating synthesized dialogues as fixed targets for what to say and when to say it. We introduce FLUID (Flexible, Evidence-Grounded Situated Task Guidance)",
+      "recipe": "arxiv",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "arxiv:2611.26476v1",
+      "source": "arxiv",
+      "title": "Anticipating Future Build Results with BuildPredictor",
+      "url": "https://arxiv.org/abs/2611.26476v1",
+      "ts": 1795109744.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Christian Macho",
+      "summary": "Continuous Integration (CI) is a popular programming practice for the seamless integration of code changes into the code base. Using CI, developers benefit from automated assembling and testing of the code after each commit. However, while the frequent integration and building supports developers, it also comes at the high costs of wasting time and resources for minimal changes. In this work, we i",
+      "recipe": "arxiv",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "arxiv:2611.26475v1",
+      "source": "arxiv",
+      "title": "A new algorithmic approach for finding flat minima: critically damped Polyak stepsizes",
+      "url": "https://arxiv.org/abs/2611.26475v1",
+      "ts": 1795109737.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Francesco Caporali",
+      "summary": "We present a new adaptive stepsize rule that biases gradient descent toward flatter minima in both theory and practice, and establish the first uniform-in-time guarantees for both sharpness and loss reduction for a broad class of locally quadratic objectives. Our critically damped Polyak (CDP) stepsizes multiply the classical Polyak rule by $4$ and a mild damping factor. The factor $4$ is critical",
+      "recipe": "arxiv",
+      "buzz": 80,
+      "topics": [],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "arxiv:2611.26464v1",
+      "source": "arxiv",
+      "title": "Monte Carlo Pass Search for Setpieces",
+      "url": "https://arxiv.org/abs/2611.26464v1",
+      "ts": 1795109198.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Andrew Kang",
+      "summary": "Set pieces produce about a third of non-penalty expected goals (xG), yet they are usually evaluated by what happened next. We present Monte Carlo Pass Search (MCPS) for set pieces, which treats a corner or a lofted free kick as a distribution over plausible executions and plausible futures instead of a single realised event. From the pre-kick state, MCPS proposes counterfactual deliveries and coun",
+      "recipe": "arxiv",
+      "buzz": 80,
+      "topics": [],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "arxiv:2611.26463v1",
+      "source": "arxiv",
+      "title": "Neural Conditional Gaussian Model: Efficient Data Assimilation with Sequential Uncertainty Quantification for Nonlinear Dynamics",
+      "url": "https://arxiv.org/abs/2611.26463v1",
+      "ts": 1795109151.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Chuanqi Chen",
+      "summary": "Data assimilation (DA) in partially observed nonlinear systems requires repeated estimation of both hidden states and their uncertainty. Conventional nonlinear filtering can be computationally expensive and often relies on an explicit dynamical model. In this paper, we develop the Neural Conditional Gaussian Model (Neural CGM), a data-driven dynamical model that maps unobserved physical states int",
+      "recipe": "arxiv",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "science"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "arxiv:2611.26459v1",
+      "source": "arxiv",
+      "title": "Bayesian optimization on amortized search space",
+      "url": "https://arxiv.org/abs/2611.26459v1",
+      "ts": 1795108959.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Tristan Fauvel",
+      "summary": "In real-world black-box optimization problems, a mechanistic simulator is often available that approximately predicts the behavior of the system as a function of the parameters being optimized. Here, we show how an amortized inverse map of such a simulator can be used in Bayesian optimization to restrict the search space while using a Gaussian process kernel that is aware of the original problem g",
+      "recipe": "arxiv",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "science"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "arxiv:2611.26450v1",
+      "source": "arxiv",
+      "title": "A CPU Inside an LLM: Zero-Gradient Compilation of Exact Circuits into Pretrained Weights",
+      "url": "https://arxiv.org/abs/2611.26450v1",
+      "ts": 1795108718.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Tanmay Sah",
+      "summary": "Pretrained language models (LMs) remain unreliable on exact multi-digit arithmetic without gradient fine-tuning or external tool interpreters. We introduce closed-form, zero-gradient circuit-grafting primitives that compile deterministic computation directly into pretrained LM weights using zero training examples and zero runtime hooks, while bounding per-layer normalization drift and preserving n",
+      "recipe": "arxiv",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "hardware"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "arxiv:2611.26447v1",
+      "source": "arxiv",
+      "title": "Scaling classical hardware for accurate real-time quantum error correction",
+      "url": "https://arxiv.org/abs/2611.26447v1",
+      "ts": 1795108581.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Chenyang Jin",
+      "summary": "Fault-tolerant quantum computation requires a classical decoder fast enough to process syndrome measurements at the rate at which they are generated, and to return its decisions with low latency. This is most demanding for superconducting processors, whose fast syndrome cycles force a trade-off between decoding speed and accuracy. Decoders fast enough to keep up sacrifice accuracy, which must be c",
+      "recipe": "arxiv",
+      "buzz": 80,
+      "topics": [
+        "dev",
+        "science"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "arxiv:2611.26444v1",
+      "source": "arxiv",
+      "title": "Mind2Act World: A Diagnostic Benchmark for Embodied Mind, Physical Action, and Mind-Action Composition in Robotic Manipulation",
+      "url": "https://arxiv.org/abs/2611.26444v1",
+      "ts": 1795108538.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Yuzhi Huang",
+      "summary": "Embodied intelligence aims to let robots perform complex physical tasks with human-like adaptability and reliability, which requires three complementary capabilities: history-based cognitive reasoning, precise and timely physical execution, and the composition of reasoning and execution through environmental feedback. Yet existing benchmarks either evaluate reasoning and execution within the same",
+      "recipe": "arxiv",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "hardware"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "arxiv:2611.26441v1",
+      "source": "arxiv",
+      "title": "Should Belgians Install an Advanced Energy Management System in Their Electrified Dwelling ?",
+      "url": "https://arxiv.org/abs/2611.26441v1",
+      "ts": 1795108453.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Julian Ruddick",
+      "summary": "As dwellings electrify and more complex electricity pricing spreads in Belgium, the question arises: What are the potential benefits of installing an advanced energy management systems in an electrified Belgian dwelling ? To answer this question, we simulate 500 representative Belgian dwellings in which fossil systems are replaced by controllable electric technologies: space heating via air-to-air",
+      "recipe": "arxiv",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "science"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "arxiv:2611.26440v1",
+      "source": "arxiv",
+      "title": "Learning to Defer under Expert Drift",
+      "url": "https://arxiv.org/abs/2611.26440v1",
+      "ts": 1795108438.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Ziyao Mou",
+      "summary": "The learning to defer (L2D) framework enables safety in machine learning and AI systems by allocating difficult or critical decisions to a human expert. However, most prior work on L2D assumes fixed expert reliability, overlooking temporal fluctuations in human performance due to factors such as fatigue and cognitive biases. Humans commonly exhibit such substantial, systematic performance shifts a",
+      "recipe": "arxiv",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "arxiv:2611.26437v1",
+      "source": "arxiv",
+      "title": "Asuka-FM: A System-Architectural Co-Design Framework for Efficient Text-to-Image Pretraining on Consumer Hardware",
+      "url": "https://arxiv.org/abs/2611.26437v1",
+      "ts": 1795108354.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Víctor Rodrigo González",
+      "summary": "Frontier text-to-image (T2I) foundation models predominantly rely on multi-billion parameter Diffusion Transformers (DiTs) pretrained across massive compute clusters, creating an accessibility barrier for academic laboratories. When training DiTs from scratch on single consumer GPUs (e.g., an NVIDIA RTX 4090 with 24\\,GB VRAM), practitioners encounter three primary bottlenecks: quadratic attention",
+      "recipe": "arxiv",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "science",
+        "hardware"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "arxiv:2611.26427v1",
+      "source": "arxiv",
+      "title": "MemFolder: Structure-Guided Memory Folding for Efficient Agent Memory Management",
+      "url": "https://arxiv.org/abs/2611.26427v1",
+      "ts": 1795107955.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Xuyang Liu",
+      "summary": "Long-term agents accumulate large external memory stores as interactions unfold, increasing the costs of storage, retrieval, and response generation. Efficiency is constrained by two coupled factors: a growing record count increases retrieval overhead, while longer retrieved contexts increase prefill computation and decoding-time attention costs. Existing methods prune or consolidate records, but",
+      "recipe": "arxiv",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "science"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "arxiv:2611.26426v1",
+      "source": "arxiv",
+      "title": "Exact Bayesian layers via characteristic functions",
+      "url": "https://arxiv.org/abs/2611.26426v1",
+      "ts": 1795107870.0,
+      "points": 0,
+      "comments": 0,
+      "author": "William H. W. Thompson",
+      "summary": "Bayesian neural networks provide principled uncertainty estimates, but training them with Monte Carlo sampling can be expensive. Sampling-free variational inference algorithms make training Bayesian neural networks feasible, but existing approaches assume a Gaussian output distribution, which can be inaccurate in applied problems. Here, we introduce CF-Prop, an uncertainty propagation method that",
+      "recipe": "arxiv",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "arxiv:2611.26423v1",
+      "source": "arxiv",
+      "title": "Seer: Guiding Small Deep-Research Agents with Shared Decision Models",
+      "url": "https://arxiv.org/abs/2611.26423v1",
+      "ts": 1795107804.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Yuhao Zhou",
+      "summary": "Deep-research agents repeatedly decide what to search, read, and verify, often using large cloud-hosted language models for action proposal. However, privacy and local control motivate running agents on users' devices, where limited memory and compute favor smaller models and complicate on-device training. Yet inference-time guidance faces three obstacles: exploring alternatives through real execu",
+      "recipe": "arxiv",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "arxiv:2611.26422v1",
+      "source": "arxiv",
+      "title": "Reasoning-Trace Analysis Using Large Language Models for Interpretable Q-Matrix Construction",
+      "url": "https://arxiv.org/abs/2611.26422v1",
+      "ts": 1795107796.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Jihong Zhang",
+      "summary": "Large language models (LLMs) can generate Q-matrices for diagnostic classification models that approximate expert specifications, but evaluations have focused on the final matrices, leaving the basis of individual item-attribute assignments unexamined. This opacity limits the responsible use of AI in measurement. We propose Reasoning-Trace Analysis (RTA), a framework in which an LLM generates attr",
+      "recipe": "arxiv",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "science",
+        "biz"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "arxiv:2611.26420v1",
+      "source": "arxiv",
+      "title": "Awaken-HI: Scaling Humanoid Intelligence with Whole-Body Human Experience",
+      "url": "https://arxiv.org/abs/2611.26420v1",
+      "ts": 1795107783.0,
+      "points": 0,
+      "comments": 0,
+      "author": "EngineAI",
+      "summary": "A central goal of humanoid robotics is for robots to perform the everyday work people do in homes and workplaces. Existing egocentric video datasets cover many of these activities but provide little synchronized whole-body motion data for learning loco-manipulation at scale. We build Awaken-Human, which pairs approximately 50,000 hours of egocentric stereo video with synchronized whole-body human",
+      "recipe": "arxiv",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "hardware"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "arxiv:2611.26419v1",
+      "source": "arxiv",
+      "title": "FEA solver integration of a composite World Model with a Spiking Neural Network memory Block for computationally efficient modelling of defects and variabilities",
+      "url": "https://arxiv.org/abs/2611.26419v1",
+      "ts": 1795107749.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Bassam El Said",
+      "summary": "Each fibre-reinforced composite structure has a unique material architecture. The manufacturing methods used and the presence of defects lead to local variations which require material-scale models that can resolve the response in real time at every location in the structure. Concurrent multi-scale schemes provide this capability, but at a prohibitive computational cost for large structures as the",
+      "recipe": "arxiv",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "science"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "arxiv:2611.26414v1",
+      "source": "arxiv",
+      "title": "ZeroVLN: Learning to Navigate without Supervised Fine-Tuning of the VLM Brain",
+      "url": "https://arxiv.org/abs/2611.26414v1",
+      "ts": 1795107660.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Zixuan Huang",
+      "summary": "Representative vision-language navigation (VLN) methods typically couple a vision-language model (VLM) brain with a learnable action head and fine-tune the VLM brain on navigation-domain data to predict geometric goals. However, such adaptation can substantially alter base VLM weights and degrade general visual capabilities. We introduce ZeroVLN, a slow-fast navigation framework that achieves effe",
+      "recipe": "arxiv",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "science"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "arxiv:2611.26413v1",
+      "source": "arxiv",
+      "title": "Sequential Anytime Valid Tests for Efficient Inference-Time Alignment",
+      "url": "https://arxiv.org/abs/2611.26413v1",
+      "ts": 1795107642.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Vishesh Kumar Singh",
+      "summary": "Inference-time alignment methods, such as Best-of-N (BoN), improve language model outputs by generating multiple candidates per prompt and selecting among them using a reward model. Much of this cost is wasted: a fixed budget is applied to every prompt, although the computation required by prompts varies widely. Adaptive methods halt once sampled answers appear settled, but their thresholds are tu",
+      "recipe": "arxiv",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "science"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "arxiv:2611.26412v1",
+      "source": "arxiv",
+      "title": "How to Effectively Manage the Energy in Residential Systems: Development and Comparison of Methods",
+      "url": "https://arxiv.org/abs/2611.26412v1",
+      "ts": 1795107598.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Julian Ruddick",
+      "summary": "The transition from fossil fuels presents significant challenges in energy management. To ensure a sustainable energy future, it is crucial to reduce energy consumption when possible and to synchronize electricity consumption and storage with the production from sources with low greenhouse gas emissions. This thesis explores a variety of energy management methods used to manage batteries, heat pum",
+      "recipe": "arxiv",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "arxiv:2611.26410v1",
+      "source": "arxiv",
+      "title": "Statistical Inference with Ill-Conditioned Random Weight Neural Network Sieves",
+      "url": "https://arxiv.org/abs/2611.26410v1",
+      "ts": 1795107574.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Giovanni Ballarin",
+      "summary": "Random weight neural networks (RWNNs) are shallow networks whose hidden-layer parameters are randomly generated and then kept fixed, while only the output coefficients are estimated. Conditional on the sampled parameters, RWNN regression is a linear sieve problem with random approximation space. We show that such random sieves cannot remain uniformly well-conditioned as their dimension grows. For",
+      "recipe": "arxiv",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "science"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "arxiv:2611.26407v1",
+      "source": "arxiv",
+      "title": "Flow Matching from Non-Gaussian Sources: A Theory of Efficient Sampling",
+      "url": "https://arxiv.org/abs/2611.26407v1",
+      "ts": 1795107243.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Yuchen Zhou",
+      "summary": "Flow matching is a versatile framework for generative modeling that transports a source distribution to a target data distribution. A key advantage is its flexibility in the choice of source distribution, such as heavy-tailed and multimodal sources. Yet finite-step sampling guarantees for non-Gaussian sources remain limited. We establish a nonasymptotic convergence theory for Euler discretization",
+      "recipe": "arxiv",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "science"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "arxiv:2611.26398v1",
+      "source": "arxiv",
+      "title": "Democratizing Cross-Project Knowledge for Transforming Water Governance and Climate Resilience: an Agentic AI Ecosystem",
+      "url": "https://arxiv.org/abs/2611.26398v1",
+      "ts": 1795106944.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Oriol Alàs",
+      "summary": "EU-funded projects produce extensive evidence in the form of deliverables, reports, and case studies. However, this knowledge is typically scattered across projects and document structures, making it difficult to locate relevant, contextual information when making decisions. This paper introduces an Agentic AI Ecosystem that consolidates heterogeneous project documentation into a domain-aware know",
+      "recipe": "arxiv",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "science",
+        "hardware"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "arxiv:2611.26391v1",
+      "source": "arxiv",
+      "title": "Simulation-pretrained autoencoders versus PCA for compressing multimode fibre transmission matrices",
+      "url": "https://arxiv.org/abs/2611.26391v1",
+      "ts": 1795106705.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Callum J. Wilson",
+      "summary": "Multimode optical fibres can image through a thin, flexible probe once their transmission matrix (TM) has been measured, but a TM is large and must be re-measured whenever the fibre moves. A compact model of feasible TMs would make storing and re-estimating them cheaper, so we ask how compactly TMs can be represented, and from how few measured TMs. Here we benchmark a permutation-equivariant autoe",
+      "recipe": "arxiv",
+      "buzz": 80,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "arxiv:2611.26384v1",
+      "source": "arxiv",
+      "title": "A Complete Geometric Message-Passing Architecture for Point Clouds",
+      "url": "https://arxiv.org/abs/2611.26384v1",
+      "ts": 1795106426.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Nadav Dym",
+      "summary": "Three-dimensional point clouds are a fundamental data modality, and a large family of machine learning architectures has been developed to respect their natural symmetries to rigid motions and permutations. A principled way to compare these architectures, which vary widely in complexity and cost, is through their expressive power. That is, an architecture is complete if it can distinguish any two",
+      "recipe": "arxiv",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "arxiv:2611.26383v1",
+      "source": "arxiv",
+      "title": "Evidence from a Multi-Regime Causal Discovery Benchmark: UCMT Algorithms, Comparative Performance, and Controlled Ablation Studies",
+      "url": "https://arxiv.org/abs/2611.26383v1",
+      "ts": 1795106416.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Mahyar Eslami",
+      "summary": "We present an internal, pre-registered evaluation of the UCMT causal discovery algorithm family alongside established alternatives across heterogeneous benchmark regimes, complemented by a separately pre-registered, controlled study of UCMT v2 Global components. The contribution is both empirical and methodological: a family-stratified comparison of three actively developed algorithm configuration",
+      "recipe": "arxiv",
+      "buzz": 80,
+      "topics": [
+        "dev",
+        "science",
+        "biz"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "rss:c3d5530e2ff1a5",
+      "source": "rss",
+      "title": "111 sites ship the same HSTS header. 28 still answer http:// with a byte-identical page.",
+      "url": "https://dev.to/tong_zhang_142dabd4f2b865/111-sites-ship-the-same-hsts-header-28-still-answer-http-with-a-byte-identical-page-28p6",
+      "ts": 1795165844.0,
+      "points": 0,
+      "comments": 0,
+      "author": "tong zhang",
+      "summary": "<p>One hundred and eleven of these 112 sites send the exact same <code>Strict-Transport-Security</code> header: <code>max-age=[phone]</code>. Not one of them sends <code>includeSubDomains</code>. Not one sends <code>preload</code>. And not one sends any other security header at all — no <code>Content-Security-Policy</code>, no <code>X-Content-Type-Options</code>, no <code>Referrer-Policy</code>,",
+      "recipe": "devto",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "rss:b2254bb612d275",
+      "source": "rss",
+      "title": "GenAnywhere vs. TopoExport: File Formats, Georeferencing, and the Boundary Between Site Data and Design State",
+      "url": "https://dev.to/maptomodel/genanywhere-vs-topoexport-file-formats-georeferencing-and-the-boundary-between-site-data-and-hkk",
+      "ts": 1795165824.0,
+      "points": 0,
+      "comments": 0,
+      "author": "MapToModel",
+      "summary": "<p>Two systems, two state models. TopoExport holds <em>site data</em>: geometry derived from geographic sources, positioned on the earth, changing only when the earth's records change. GenAnywhere holds <em>design state</em>: scenes authored to express a proposal, changing every time someone has a better idea. The integration problem between them is not \"which tool wins.\" It is a data-handling pro",
+      "recipe": "devto",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev"
+      ],
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "rss:17d30628a2dab6",
+      "source": "rss",
+      "title": "Before Automating Everything, Ask This: Is Your Business Process Actually Ready for AI?",
+      "url": "https://dev.to/syed_ali_automation/before-automating-everything-ask-this-is-your-business-process-actually-ready-for-ai-26j8",
+      "ts": 1795165791.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Syed Ali",
+      "summary": "<h1> Before Automating Everything, Ask This: Is Your Business Process Actually Ready for AI? </h1> <p>Artificial intelligence is changing how businesses approach everyday operations.</p> <p>From responding to customer inquiries to managing internal tasks, processing documents, and updating business systems, AI-powered automation is becoming increasingly accessible.</p> <p>Many companies are now ex",
+      "recipe": "devto",
+      "buzz": 80,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "rss:a260803574010d",
+      "source": "rss",
+      "title": "Stop Deploying to ECS Just to See If Your Code Works",
+      "url": "https://dev.to/metalbear/stop-deploying-to-ecs-just-to-see-if-your-code-works-3fc4",
+      "ts": 1795165758.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Eyal Bukchin",
+      "summary": "<p><em>Originally published on <a href=\"https://metalbear.com/blog/stop-deploying-to-ecs/\" rel=\"noopener noreferrer\">metalbear.com</a>.</em></p> <p>On ECS, the usual way to find out whether a change works is to deploy it. You build the image, push it, register a new task definition revision, wait for the rollout and look at what happened, then do it all again if it's wrong. A loop like that might",
+      "recipe": "devto",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "crypto"
+      ],
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "rss:ee12c7fcc60bc3",
+      "source": "rss",
+      "title": "Why has it become harder and harder to type one-handed on smartphones these days?",
+      "url": "https://dev.to/qlittleboy/why-has-it-become-harder-and-harder-to-type-one-handed-on-smartphones-these-days-neg",
+      "ts": 1795165710.0,
+      "points": 0,
+      "comments": 0,
+      "author": "cheng qian",
+      "summary": "<p>Phones keep getting bigger, but our hands stay the same size.<br> I’m not sure when it started, but every product launch now seems to compete over who has the larger screen, and reviewers keep talking about “immersive experience.” Yet a phone is, after all, something you hold in your hand. Spec sheets grow longer and longer, while hardly anyone talks about how comfortable it is to grip.<br> It",
+      "recipe": "devto",
+      "buzz": 80,
+      "topics": [],
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "rss:1acb1376b45c85",
+      "source": "rss",
+      "title": "Semantic Cache with Redis to Cut AI API Costs",
+      "url": "https://dev.to/veduis/semantic-cache-with-redis-to-cut-ai-api-costs-5bef",
+      "ts": 1795165699.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Veduis",
+      "summary": "<p>A semantic cache in Redis is the cheapest way to cut AI API costs in production, and it is also the easiest way to serve a confidently wrong answer to a customer who asked something slightly different. I have built both versions: the one that saved a company five figures a year, and the one that answered \"how do I downgrade\" with the enterprise upgrade instructions for three weeks before anyone",
+      "recipe": "devto",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev"
+      ],
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "rss:477d70ab5088c1",
+      "source": "rss",
+      "title": "랩트 모네로 붕괴: 익숙한 신뢰 배신 이야기",
+      "url": "https://dev.to/record0x/raebteu-monero-bunggoe-igsughan-sinroe-baesin-iyagi-4j8",
+      "ts": 1795165696.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Record0x",
+      "summary": "<p>지난 30년간 지켜본 암호화폐 시장은 참으로 가혹한 스승이다. 날카롭고 고통스러운 조정장을 통해 우리에게 뼈아픈 교훈을 안겨주곤 했다.</p> <p>2026년 11월 20일 금요일, 우리는 랩트 모네로(wXMR)의 처참한 붕괴로 또 하나의 교훈을 목격했다. 발행자 연결 지갑이 1,350만 달러어치를 매도하면서 wXMR의 가치는 무려 99%나 증발해버렸다.</p> <p>이는 단순한 시장 하락이 아니다. 구조적인 실패이며, 중앙화된 랩트 자산, 특히 기저 자산이 프라이버시를 위해 설계된 경우에 내재된 거래 상대방 위험을 생생하게 일깨워주는 사건이었다.</p> <h2> 서론 </h2> <p>지난 30년간 지켜본 암호화폐 시장은 참으로 가혹한 스승이다. 날카롭고 고통스러운 조정장을 통해 우리에게 뼈아픈 교훈을",
+      "recipe": "devto",
+      "buzz": 80,
+      "topics": [],
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "rss:360641c8fd9fe3",
+      "source": "rss",
+      "title": "I Let AI Agents Rebrand My Entire OSS Ecosystem in One Night. Two Pipelines Were Silently Dead.",
+      "url": "https://dev.to/ofri-peretz/i-let-ai-agents-rebrand-my-entire-oss-ecosystem-in-one-night-two-pipelines-were-silently-dead-49i6",
+      "ts": 1795165679.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Ofri Peretz",
+      "summary": "<p>Two of my five repositories had delivery pipelines that were silently dead. Not failing loudly — <em>dead</em>. One site had served a two-week-old build while every deploy \"ran\". One repo had merged four PRs with zero CI checks since May.</p> <p>I found out because of a rebrand. In one night, AI agents and I merged 13 pull requests across those five repos and repainted it from Tailwind violet t",
+      "recipe": "devto",
+      "buzz": 80,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "rss:4dad533faa8213",
+      "source": "rss",
+      "title": "npm ERESOLVE: --legacy-peer-deps vs --force (What Each Really Does)",
+      "url": "https://dev.to/kausarraza/npm-eresolve-legacy-peer-deps-vs-force-what-each-really-does-1n3p",
+      "ts": 1795165676.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Kausar Raza",
+      "summary": "<p>npm has two messages with \"ERESOLVE\" in them, and they're easy to mix up. One is an <strong>error</strong> and the install stops. The other is a <strong>warning</strong> and the install carries on. The usual advice for both is \"add <code>--legacy-peer-deps</code>\" or \"add <code>--force</code>\", but the two flags don't do the same thing, and neither one fixes the conflict.</p> <p>I wanted to see",
+      "recipe": "devto",
+      "buzz": 80,
+      "topics": [],
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "rss:ffa784b7325d92",
+      "source": "rss",
+      "title": "Ranking 60 LLM APIs by Quality per Dollar: What a Value Score Can and Cannot Tell You",
+      "url": "https://dev.to/siddharthsbhadauria/ranking-60-llm-apis-by-quality-per-dollar-what-a-value-score-can-and-cannot-tell-you-af8",
+      "ts": 1795165646.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Siddharth Singh Bhadauria",
+      "summary": "<p><em>Dividing a benchmark score by a blended token price gives you a useful daily shortlist, as long as you treat it as a cost filter, keep guessed scores out of the picks and never mistake it for a model selection strategy.</em></p> <h2> The Real Problem / Why Naive Approaches Fail </h2> <p>Model pricing pages change constantly. A provider cuts output prices on a Tuesday, a new open-weights mod",
+      "recipe": "devto",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "crypto"
+      ],
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "rss:79bca3311af05e",
+      "source": "rss",
+      "title": "Roast My Dev Desktop: Zero Minimalism, Maximum Chaos",
+      "url": "https://dev.to/quantumtechcoder/roast-my-dev-desktop-zero-minimalism-maximum-chaos-2paa",
+      "ts": 1795165642.0,
+      "points": 0,
+      "comments": 0,
+      "author": "QuantumTechCoder",
+      "summary": "<p><a href=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fyjikkdz41fm0tei6brlp.jpg\" class=\"article-body-image-wrapper\"><img src=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us",
+      "recipe": "devto",
+      "buzz": 80,
+      "topics": [
+        "dev"
+      ],
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "rss:0dde00c0e3f94b",
+      "source": "rss",
+      "title": "How to Get Upcoming Luma (lu.ma) Events for Any City or Calendar with Python (No API Key)",
+      "url": "https://dev.to/webobsidians/how-to-get-upcoming-luma-luma-events-for-any-city-or-calendar-with-python-no-api-key-16f1",
+      "ts": 1795165635.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Web Obsidians",
+      "summary": "<p>Luma (lu.ma) has become the default place for tech meetups, AI events and startup parties. Its official API needs a paid plan and only covers calendars you manage, but the public event lists that anyone can browse on lu.ma are served as plain JSON. You do not need an account or an API key to read them. This post shows two ways to do it: a short Python script, and a no-code option for when you n",
+      "recipe": "devto",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "biz"
+      ],
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "hn:50523241",
       "source": "hn",
-      "title": "IRA Velinsky, industrial designer for Commodore and Atari",
-      "url": "https://dfarq.homeip.net/ira-velinsky-industrial-designer-of-the-commodore-64/",
-      "ts": 1794998356.0,
-      "points": 12,
-      "comments": 1,
-      "author": "onename",
+      "title": "The Strongest Sokoban Solver",
+      "url": "https://healeycodes.com/introducing-the-worlds-strongest-sokoban-solver",
+      "ts": 1794863041.0,
+      "points": 32,
+      "comments": 6,
+      "author": "ibobev",
       "summary": "",
       "recipe": "hn_front",
-      "buzz": 45,
+      "buzz": 60,
       "topics": [],
-      "date": "2026-11-18"
+      "date": "2026-11-16"
     },
     {
       "uid": "hn:50537492",
@@ -1507,16 +2557,61 @@
       "title": "Automatic Checking of Compiler Correctness with E-Graphs",
       "url": "https://stng.substack.com/p/automatic-checking-of-compiler-correctness",
       "ts": 1794946354.0,
-      "points": 6,
+      "points": 27,
       "comments": 0,
       "author": "g0xA52A2A",
       "summary": "",
       "recipe": "hn_front",
-      "buzz": 36,
+      "buzz": 57,
       "topics": [
         "dev"
       ],
       "date": "2026-11-17"
+    },
+    {
+      "uid": "hn:50521512",
+      "source": "hn",
+      "title": "Bit Shifting in Basic",
+      "url": "https://subethasoftware.com/2020/06/11/bit-shifting-in-basic/",
+      "ts": 1794855876.0,
+      "points": 38,
+      "comments": 2,
+      "author": "efren6",
+      "summary": "",
+      "recipe": "hn_front",
+      "buzz": 54,
+      "topics": [],
+      "date": "2026-11-16"
+    },
+    {
+      "uid": "hn:50522471",
+      "source": "hn",
+      "title": "Frankenstein PBC – Animation, bestowed upon lifeless matter",
+      "url": "https://www.frankensteinpbc.com/",
+      "ts": 1794859838.0,
+      "points": 23,
+      "comments": 7,
+      "author": "ano-ther",
+      "summary": "",
+      "recipe": "hn_front",
+      "buzz": 54,
+      "topics": [],
+      "date": "2026-11-16"
+    },
+    {
+      "uid": "hn:50545818",
+      "source": "hn",
+      "title": "µ-Wire – USB on an ATtiny 10",
+      "url": "https://cpldcpu.com/2014/03/19/%c2%b5-wire-usb-on-an-attiny-10/",
+      "ts": 1795006928.0,
+      "points": 8,
+      "comments": 1,
+      "author": "mofosyne",
+      "summary": "",
+      "recipe": "hn_front",
+      "buzz": 41,
+      "topics": [],
+      "date": "2026-11-18"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T05:18:06+00:00",
+  "generated_at": "2026-11-20T09:18:26+00:00",
   "sources_used": [
     "rss",
     "rss",
@@ -11,31 +11,37 @@
     "rss"
   ],
   "totals": {
-    "items": 96,
+    "items": 132,
     "by_source": {
-      "hn": 7,
+      "hn": 5,
       "github": 7,
-      "rss": 82
+      "rss": 80,
+      "arxiv": 40
     },
     "by_recipe": {
       "economist_fn": 40,
+      "arxiv_qfin": 40,
       "cnbc_top": 30,
-      "ft_home": 12,
-      "hn_fintech": 7,
-      "github_fin": 7
+      "ft_home": 10,
+      "github_fin": 7,
+      "hn_fintech": 5
     },
     "by_topic": {
-      "ai": 52,
-      "biz": 32,
-      "dev": 14,
-      "hardware": 8,
-      "science": 5,
-      "crypto": 4,
-      "security": 3
+      "ai": 78,
+      "biz": 43,
+      "dev": 35,
+      "science": 16,
+      "hardware": 10,
+      "crypto": 5,
+      "security": 5
     },
     "top_domains": [
       [
         "economist.com",
+        40
+      ],
+      [
+        "arxiv.org",
         40
       ],
       [
@@ -44,7 +50,7 @@
       ],
       [
         "ft.com",
-        12
+        10
       ],
       [
         "github.com",
@@ -52,14 +58,10 @@
       ],
       [
         "news.ycombinator.com",
-        3
+        2
       ],
       [
         "realizefi.com",
-        1
-      ],
-      [
-        "finterm.ai",
         1
       ],
       [
@@ -288,56 +290,123 @@
       "date": "2026-11-19"
     },
     {
-      "uid": "rss:9b47e507e7f16b",
+      "uid": "rss:993cba16d0c3e0",
       "source": "rss",
-      "title": "Anthropic shares jump 17% after record Wall Street listing",
-      "url": "https://www.ft.com/content/2b203097-7c61-464f-810f-962912a133dd?syn-25a6b1a6=1",
-      "ts": 1795122129.0,
+      "title": "Tech stocks fall as Anthropic IPO fails to reignite AI trade",
+      "url": "https://www.ft.com/content/c7ad2e0c-efd1-40c2-a5a8-819ced8acf5b?syn-25a6b1a6=1",
+      "ts": 1795159788.0,
       "points": 0,
       "comments": 0,
       "author": "",
-      "summary": "AI group led by Dario Amodei raises $81bn in upsized public offering",
-      "recipe": "ft_home",
-      "buzz": 80,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-19"
-    },
-    {
-      "uid": "rss:1aca7f80cfd0fe",
-      "source": "rss",
-      "title": "The key to Anthropic’s value",
-      "url": "https://www.ft.com/content/aa8290dc-a20a-45af-97ab-1e71f97f236a?syn-25a6b1a6=1",
-      "ts": 1795096020.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "The AI company needs to become a full enterprise technology platform after IPO",
+      "summary": "Markets in Europe and Asia follow Wall Street lower despite Claude AI maker’s record listing",
       "recipe": "ft_home",
       "buzz": 80,
       "topics": [
         "ai",
         "biz"
       ],
-      "date": "2026-11-19"
+      "date": "2026-11-20"
     },
     {
-      "uid": "rss:13b5d431656c87",
+      "uid": "rss:2b61824b0895b3",
       "source": "rss",
-      "title": "Anthropic is a ‘must own’",
-      "url": "https://www.ft.com/content/4224e2ed-116c-466b-97f4-54a5ef43a54e",
-      "ts": 1795086368.0,
+      "title": "So, Anthropic is finally a public company. What now?",
+      "url": "https://www.ft.com/content/017044a9-76dc-4cb4-9259-a844a96f2757",
+      "ts": 1795151975.0,
       "points": 0,
       "comments": 0,
       "author": "",
-      "summary": "Is that good?",
+      "summary": "A blockbuster IPO postmortem",
       "recipe": "ft_home",
       "buzz": 80,
       "topics": [
-        "ai"
+        "ai",
+        "biz"
       ],
-      "date": "2026-11-19"
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "rss:39f4e34046e90b",
+      "source": "rss",
+      "title": "Pensions are eating everything",
+      "url": "https://www.ft.com/content/6986a3b5-12ed-4aad-ac61-f86ded3e6fa3?syn-25a6b1a6=1",
+      "ts": 1795150808.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "Retirees are more affluent than ever in high-income countries. Why are states still giving them so much?",
+      "recipe": "ft_home",
+      "buzz": 80,
+      "topics": [],
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "rss:5e287ae5de1099",
+      "source": "rss",
+      "title": "China revels in Xi’s ‘Yalta 2.0’ moment",
+      "url": "https://www.ft.com/content/c1c540af-f9ba-479a-8473-4b7619859453?syn-25a6b1a6=1",
+      "ts": 1795153511.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "Trilateral summit with Donald Trump and Vladimir Putin projected Beijing’s global leadership role, analysts say",
+      "recipe": "ft_home",
+      "buzz": 80,
+      "topics": [],
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "rss:cc8a8a7f6728d7",
+      "source": "rss",
+      "title": "The dangers of Nvidia’s role as AI’s quasi-central bank",
+      "url": "https://www.ft.com/content/c1f1c0d2-466e-46b9-b346-5ce4677c55ea?syn-25a6b1a6=1",
+      "ts": 1795150817.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "The chip giant’s position is reminiscent of the insurance company AIG’s before the subprime mortgage bubble",
+      "recipe": "ft_home",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "hardware"
+      ],
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "rss:95be8f26021fd0",
+      "source": "rss",
+      "title": "Oil loses grip on bond markets as inflation ‘virus’ spreads",
+      "url": "https://www.ft.com/content/562e278e-1e12-49d2-b7f7-91a289ffd660?syn-25a6b1a6=1",
+      "ts": 1795150826.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "Tight correlation between crude prices and borrowing costs has broken down",
+      "recipe": "ft_home",
+      "buzz": 80,
+      "topics": [
+        "biz"
+      ],
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "rss:d7d7d4035a0d3d",
+      "source": "rss",
+      "title": "White House replaces top cyber security official",
+      "url": "https://www.ft.com/content/6333f2e6-98da-4491-bd2e-30237d7bfbf5?syn-25a6b1a6=1",
+      "ts": 1795163639.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "Kirsten Davies joins from the Pentagon to succeed Sean Cairncross after string of online outages",
+      "recipe": "ft_home",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-20"
     },
     {
       "uid": "rss:bc5d927ef09d6d",
@@ -360,48 +429,30 @@
       "date": "2026-11-20"
     },
     {
-      "uid": "rss:f6fe3311c3e5d4",
+      "uid": "rss:16ae6837b4d5e1",
       "source": "rss",
-      "title": "The Xi, Trump, Putin meeting and the dawn of a post-western world",
-      "url": "https://www.ft.com/content/01dde30c-977c-4f21-8838-4c3955dfacb7?syn-25a6b1a6=1",
-      "ts": 1795115984.0,
+      "title": "Burnham to agree EU reset deal in Brussels",
+      "url": "https://www.ft.com/content/8515b514-2067-43eb-a7f5-b5aa20ec4cc3",
+      "ts": 1795160981.0,
       "points": 0,
       "comments": 0,
       "author": "",
-      "summary": "The symbolism was the substance in Shenzhen",
+      "summary": "Deal will lead to closer ties including freer trade in food and drink and a youth experience scheme",
       "recipe": "ft_home",
       "buzz": 80,
       "topics": [],
-      "date": "2026-11-19"
+      "date": "2026-11-20"
     },
     {
-      "uid": "rss:ec6dd122484870",
+      "uid": "rss:a98c9ded098a9d",
       "source": "rss",
-      "title": "The dangers of AI ‘handoverism’",
-      "url": "https://www.ft.com/content/45194ea4-4fa7-4c38-a5b2-137eb7402d57?syn-25a6b1a6=1",
-      "ts": 1795097049.0,
+      "title": "Rejoining the EU would boost UK economy twice as much as Swiss-style deal",
+      "url": "https://www.ft.com/content/22c052bf-a9dc-49f3-a18b-02b5dc490635?syn-25a6b1a6=1",
+      "ts": 1795150817.0,
       "points": 0,
       "comments": 0,
       "author": "",
-      "summary": "Even some of Silicon Valley’s most enthusiastic capitalists are alarmed about how far and fast the technology is moving",
-      "recipe": "ft_home",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "dev"
-      ],
-      "date": "2026-11-19"
-    },
-    {
-      "uid": "rss:993cba16d0c3e0",
-      "source": "rss",
-      "title": "Tech stocks fall as Anthropic IPO fails to stem broader AI sell-off",
-      "url": "https://www.ft.com/content/c7ad2e0c-efd1-40c2-a5a8-819ced8acf5b?syn-25a6b1a6=1",
-      "ts": 1795146690.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "Asian markets follow Wall Street lower despite Claude AI maker’s record listing",
+      "summary": "Much of the benefit would come from a rebound in business investment, which was damaged by Brexit-related uncertainty",
       "recipe": "ft_home",
       "buzz": 80,
       "topics": [
@@ -411,83 +462,118 @@
       "date": "2026-11-20"
     },
     {
-      "uid": "rss:9ba8e1f7bb48dc",
-      "source": "rss",
-      "title": "US approved sale of Nvidia and AMD chips to Chinese companies",
-      "url": "https://www.ft.com/content/76342072-2781-4b16-ba3b-816a25214483?syn-25a6b1a6=1",
-      "ts": 1795135364.0,
+      "uid": "arxiv:2611.26365v1",
+      "source": "arxiv",
+      "title": "Interpreting the Morbidity Gap",
+      "url": "https://arxiv.org/abs/2611.26365v1",
+      "ts": 1795105941.0,
       "points": 0,
       "comments": 0,
-      "author": "",
-      "summary": "Pentagon believes some of the groups were associated with the People’s Liberation Army",
-      "recipe": "ft_home",
-      "buzz": 80,
-      "topics": [
-        "hardware"
-      ],
-      "date": "2026-11-20"
-    },
-    {
-      "uid": "rss:1d1a72c8e5b3d6",
-      "source": "rss",
-      "title": "AMD shares fall after short seller report on China links",
-      "url": "https://www.ft.com/content/69fd7870-a2cf-4e75-88bc-a1c4036efded?syn-25a6b1a6=1",
-      "ts": 1795113623.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "Chipmaker down by as much as 11% following warnings by Hunterbrook in the aftermath of Nvidia scandal",
-      "recipe": "ft_home",
-      "buzz": 80,
-      "topics": [
-        "science",
-        "hardware"
-      ],
-      "date": "2026-11-19"
-    },
-    {
-      "uid": "rss:0f24762dcf8a39",
-      "source": "rss",
-      "title": "UK and EU poised to finalise deal to ‘reset’ relations",
-      "url": "https://www.ft.com/content/912a7730-2428-4d4c-8dde-9c41a99ab562?syn-25a6b1a6=1",
-      "ts": 1795128296.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "Andy Burnham due to seal accord that will improve British trade with the bloc after dispute resolved with France",
-      "recipe": "ft_home",
+      "author": "Alec Morton",
+      "summary": "The Global Burden of Disease (GBD) study now reports the morbidity gap (MG), life expectancy minus healthy life expectancy, as an indicator in its own right. Writing MG as the expected cumulative rate of years lived with disability (YLDs) at the life-table age at death, we use stochastic dominance results to show what MG measures, how it responds to mortality and how it relates to the YLDs of the",
+      "recipe": "arxiv_qfin",
       "buzz": 80,
       "topics": [],
       "date": "2026-11-19"
     },
     {
-      "uid": "rss:966562c840822a",
-      "source": "rss",
-      "title": "Xi, Trump and Putin hail ‘groundbreaking’ meeting",
-      "url": "https://www.ft.com/content/3fde6008-d9c4-46a3-89f8-0f7611cd9b3a?syn-25a6b1a6=1",
-      "ts": 1795093244.0,
+      "uid": "arxiv:2611.26338v1",
+      "source": "arxiv",
+      "title": "Structural economic change under the digital transformation",
+      "url": "https://arxiv.org/abs/2611.26338v1",
+      "ts": 1795104995.0,
       "points": 0,
       "comments": 0,
-      "author": "",
-      "summary": "The world’s three largest nuclear powers agree to talks on preventing proliferation",
-      "recipe": "ft_home",
+      "author": "Marco Dueñas",
+      "summary": "Productivity improvements in digital industries could massively reshape the structure of production networks and drive significant labour reallocation across sectors. We examine these adjustments using a calibrated agent-based model of the global economy. We consider two scenarios with the same cumulative increase in digital-supplier productivity, which differ in how digital inputs in exposed indu",
+      "recipe": "arxiv_qfin",
       "buzz": 80,
       "topics": [
-        "ai"
+        "ai",
+        "dev"
       ],
       "date": "2026-11-19"
     },
     {
-      "uid": "rss:b6683728fbfcc9",
+      "uid": "arxiv:2611.26197v1",
+      "source": "arxiv",
+      "title": "Equity and Aggregate Ambiguity",
+      "url": "https://arxiv.org/abs/2611.26197v1",
+      "ts": 1795099382.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Jose Blanchet",
+      "summary": "Equitable resource allocations in the context of symmetric risk exposures are intuitively desirable and sometimes even expected in public planning. However, public planners generally are also concerned with mitigating risk and, more generally, uncertainty and ambiguity. We study a fundamental conflict between equity and ambiguity avoidance in public risk allocation problems. Our main results are f",
+      "recipe": "arxiv_qfin",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "science"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "arxiv:2611.26168v1",
+      "source": "arxiv",
+      "title": "Globally promoting legumes by production or use subsidies",
+      "url": "https://arxiv.org/abs/2611.26168v1",
+      "ts": 1795097975.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Pablo de la Vega",
+      "summary": "Despite consensus on the positive economic, environmental, and health effects of expanding legume production and consumption, the share of cropland devoted to them remains relatively small, and their share of human consumption is negligible compared with other protein sources such as meat. The presence of externalities associated with legume production and consumption gives room for policy interve",
+      "recipe": "arxiv_qfin",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "science"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "arxiv:2611.26119v1",
+      "source": "arxiv",
+      "title": "Feasible sub-replicating portfolios for basket options via the block rearrangement algorithm",
+      "url": "https://arxiv.org/abs/2611.26119v1",
+      "ts": 1795096011.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Mohamad Hassan Abou Daya",
+      "summary": "We construct sub-replicating portfolios of vanilla options for a basket call when the marginal distributions of the underlying assets are known and their dependence is not. To do so, we reduce the n-asset problem to n two-asset problems of the type solved by Hobson, Laurence, and Wang (2005a), and use the Block Rearrangement Algorithm1 (BRA) to approximate the minimising dependence among the asset",
+      "recipe": "arxiv_qfin",
+      "buzz": 80,
+      "topics": [],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "arxiv:2611.25869v1",
+      "source": "arxiv",
+      "title": "Persistence and Change in National Production Networks",
+      "url": "https://arxiv.org/abs/2611.25869v1",
+      "ts": 1795083650.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Haojie Liu",
+      "summary": "Many country-years in multi-country input-output databases have no national table. We study the kernel of domestic intermediate transactions, the part that rescaling to new industry totals cannot update. Among 25 economies with a national table every year, the latest table misplaces 6.6 percent of the kernel one year ahead and 21.2 percent ten years ahead, while the five most similar economies mis",
+      "recipe": "arxiv_qfin",
+      "buzz": 80,
+      "topics": [
+        "dev"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "rss:bd04ebc4742e3e",
       "source": "rss",
-      "title": "Australia PM and China’s Xi hail ‘turnaround’ despite iron ore tensions",
-      "url": "https://www.ft.com/content/ddbf0f75-047a-421a-87c0-3e60bf42ed22?syn-25a6b1a6=1",
-      "ts": 1795148416.0,
+      "title": "SoftBank suffers worst day in over two years as AI sell-off hits Asian tech stocks",
+      "url": "https://www.cnbc.com/2026/11/20/softbank-ai-tech-stocks-slide-anthropic-debut.html",
+      "ts": 1795159386.0,
       "points": 0,
       "comments": 0,
       "author": "",
-      "summary": "Beijing’s increasing influence over commodity’s price has stoked concerns ahead of Apec summit",
-      "recipe": "ft_home",
+      "summary": "The declines in Asia come after the tech-heavy Nasdaq Composite fell more than 2% overnight following Anthropic's highly anticipated Wall Street debut.",
+      "recipe": "cnbc_top",
       "buzz": 80,
       "topics": [
         "ai"
@@ -513,15 +599,15 @@
       "date": "2026-11-20"
     },
     {
-      "uid": "rss:847f35089dfeb6",
+      "uid": "rss:c0efaa87f644f2",
       "source": "rss",
-      "title": "Anthropic IPO 'exactly what the markets need,' but analysts warn of volatility",
-      "url": "https://www.cnbc.com/2026/11/20/anthropic-ipo-stocks-market.html",
-      "ts": 1795150288.0,
+      "title": "Forget Anthropic: In Europe, the IPO hype is about a blue lagoon",
+      "url": "https://www.cnbc.com/2026/11/20/anthropic-ipo-iceland-blue-lagoon.html",
+      "ts": 1795154401.0,
       "points": 0,
       "comments": 0,
       "author": "",
-      "summary": "The Anthropic IPO is \"what the markets need.\" However, analysts say its shares will be volatile in the coming weeks.",
+      "summary": "Iceland’s famed Blue Lagoon geothermal spa is going public in a $110 million IPO, tapping investor interest in tourism and the booming wellness industry.",
       "recipe": "cnbc_top",
       "buzz": 80,
       "topics": [
@@ -544,6 +630,24 @@
       "buzz": 80,
       "topics": [
         "ai"
+      ],
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "rss:8dc0a98ac8ef12",
+      "source": "rss",
+      "title": "AI is changing software engineering — and some developers miss the struggle",
+      "url": "https://www.cnbc.com/2026/11/20/ai-coding-tools-software-engineers.html",
+      "ts": 1795154401.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "AI coding tools are making software engineers faster, but developers tell CNBC the work has lost its \"sense of joy and fun.\"",
+      "recipe": "cnbc_top",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev"
       ],
       "date": "2026-11-20"
     },
@@ -583,21 +687,72 @@
       "date": "2026-11-20"
     },
     {
-      "uid": "rss:bd04ebc4742e3e",
+      "uid": "rss:6c9e8acd56e08e",
       "source": "rss",
-      "title": "SoftBank plunges over 16% as AI sell-off hits Asian tech stocks following Anthropic debut",
-      "url": "https://www.cnbc.com/2026/11/20/softbank-ai-tech-stocks-slide-anthropic-debut.html",
-      "ts": 1795145434.0,
+      "title": "Walmart hikes outlook as CEO tells CNBC retailer aims to keep prices low despite soaring fuel costs",
+      "url": "https://www.cnbc.com/2026/11/19/walmart-wmt-q3-2026-earnings.html",
+      "ts": 1795118310.0,
       "points": 0,
       "comments": 0,
       "author": "",
-      "summary": "The declines in Asia come after the tech-heavy Nasdaq Composite fell more than 2% overnight following Anthropic's highly anticipated Wall Street debut.",
+      "summary": "Walmart said it saw strength with store-fulfilled pickup and delivery in its fiscal third quarter.",
       "recipe": "cnbc_top",
       "buzz": 80,
       "topics": [
         "ai"
       ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "rss:ea815260d8c98b",
+      "source": "rss",
+      "title": "‘More than just a game’: How GTA VI’s blockbuster launch fuels a booming content economy",
+      "url": "https://www.cnbc.com/2026/11/20/gta-vi-launch-streaming-content-economy.html",
+      "ts": 1795158516.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "GTA VI’s blockbuster launch is creating a wider economy around livestreams, social clips and high-volume content farms as millions tune in to watch others play.",
+      "recipe": "cnbc_top",
+      "buzz": 80,
+      "topics": [
+        "dev"
+      ],
       "date": "2026-11-20"
+    },
+    {
+      "uid": "rss:e75d5e6832eb38",
+      "source": "rss",
+      "title": "Jensen Huang's — and Nvidia's — legal exposure balloons",
+      "url": "https://www.cnbc.com/2026/11/19/nvidia-jensen-huang-legal.html",
+      "ts": 1795113874.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "\"It's not going to get any better for Jensen Huang; it's going to get far worse,\" said Salvatore Graziano, a New York securities litigation attorney.",
+      "recipe": "cnbc_top",
+      "buzz": 80,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "rss:42cdfd3d8a1d50",
+      "source": "rss",
+      "title": "APEC final day in photos: Trump, Xi and Putin shake hands; Takaichi kept at a distance",
+      "url": "https://www.cnbc.com/2026/11/19/trump-xi-putin-photos-us-china-russia-trilateral-.html",
+      "ts": 1795085647.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "Leaders gathered Thursday for the second day of the economic summit, ahead of a historic trilateral meeting between the U.S., Russia and China.",
+      "recipe": "cnbc_top",
+      "buzz": 80,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-11-19"
     },
     {
       "uid": "rss:9f3ae3a7636a96",
@@ -637,40 +792,6 @@
       "date": "2026-11-20"
     },
     {
-      "uid": "rss:42cdfd3d8a1d50",
-      "source": "rss",
-      "title": "APEC final day in photos: Trump, Xi and Putin shake hands; Takaichi kept at a distance",
-      "url": "https://www.cnbc.com/2026/11/19/trump-xi-putin-photos-us-china-russia-trilateral-.html",
-      "ts": 1795085647.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "Leaders gathered Thursday for the second day of the economic summit, ahead of a historic trilateral meeting between the U.S., Russia and China.",
-      "recipe": "cnbc_top",
-      "buzz": 80,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-19"
-    },
-    {
-      "uid": "rss:6c9e8acd56e08e",
-      "source": "rss",
-      "title": "Walmart hikes outlook as CEO tells CNBC retailer aims to keep prices low despite soaring fuel costs",
-      "url": "https://www.cnbc.com/2026/11/19/walmart-wmt-q3-2026-earnings.html",
-      "ts": 1795118310.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "Walmart said it saw strength with store-fulfilled pickup and delivery in its fiscal third quarter.",
-      "recipe": "cnbc_top",
-      "buzz": 80,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-19"
-    },
-    {
       "uid": "rss:39bcced1fe9615",
       "source": "rss",
       "title": "Japan core inflation soars to highest this year as energy subsidy expiry pushes up consumer prices",
@@ -705,23 +826,6 @@
       "date": "2026-11-19"
     },
     {
-      "uid": "rss:e75d5e6832eb38",
-      "source": "rss",
-      "title": "Jensen Huang's — and Nvidia's — legal exposure balloons",
-      "url": "https://www.cnbc.com/2026/11/19/nvidia-jensen-huang-legal.html",
-      "ts": 1795113874.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "\"It's not going to get any better for Jensen Huang; it's going to get far worse,\" said Salvatore Graziano, a New York securities litigation attorney.",
-      "recipe": "cnbc_top",
-      "buzz": 80,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-19"
-    },
-    {
       "uid": "rss:cd7157c541677c",
       "source": "rss",
       "title": "Intuit to sell Mailchimp to Bending Spoons for $3.68 billion",
@@ -731,6 +835,24 @@
       "comments": 0,
       "author": "",
       "summary": "Intuit is offloading a segment that has slowed down revenue growth, for less than a third of what it paid to acquire Mailchimp in 2021.",
+      "recipe": "cnbc_top",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "biz"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "rss:52ec65c8e20337",
+      "source": "rss",
+      "title": "S&P 500 heads for 6th straight decline. Plus, J&J advances two key products",
+      "url": "https://www.cnbc.com/investingclub/2026/11/19/sp-500-heads-for-6th-straight-decline-plus-jj-advances-two-key-products.html",
+      "ts": 1795119021.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "Every weekday, the Investing Club releases the Homestretch; an actionable afternoon update just in time for the last hour of trading.",
       "recipe": "cnbc_top",
       "buzz": 80,
       "topics": [
@@ -772,24 +894,6 @@
       "buzz": 80,
       "topics": [
         "ai"
-      ],
-      "date": "2026-11-19"
-    },
-    {
-      "uid": "rss:52ec65c8e20337",
-      "source": "rss",
-      "title": "S&P 500 heads for 6th straight decline. Plus, J&J advances two key products",
-      "url": "https://www.cnbc.com/investingclub/2026/11/19/sp-500-heads-for-6th-straight-decline-plus-jj-advances-two-key-products.html",
-      "ts": 1795119021.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "Every weekday, the Investing Club releases the Homestretch; an actionable afternoon update just in time for the last hour of trading.",
-      "recipe": "cnbc_top",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "biz"
       ],
       "date": "2026-11-19"
     },
@@ -952,42 +1056,6 @@
       "date": "2026-11-19"
     },
     {
-      "uid": "rss:c1718667c0a1a4",
-      "source": "rss",
-      "title": "Trump, Xi, Putin said they plan to boost oil production, revamp UN after trilateral talks",
-      "url": "https://www.cnbc.com/2026/11/19/trump-xi-putin-trilateral-meeting-china.html",
-      "ts": 1795107701.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "The leaders of the U.S., China and Russia met in Shenzhen, China on Thursday for a rare trilateral gathering.",
-      "recipe": "cnbc_top",
-      "buzz": 80,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-19"
-    },
-    {
-      "uid": "rss:e1ca4d2d8d96a3",
-      "source": "rss",
-      "title": "Denmark ratifies Trump security deal over Greenland after months of diplomatic tensions",
-      "url": "https://www.cnbc.com/2026/11/19/greenland-denmark-trump-security-military-bases.html",
-      "ts": 1795089728.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "It follows months of tensions after President Donald Trump repeatedly said the U.S. should take control of Greenland for national security reasons.",
-      "recipe": "cnbc_top",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-19"
-    },
-    {
       "uid": "rss:41b04809f126b5",
       "source": "rss",
       "title": "Meet the European Central Bank’s new squad",
@@ -1033,6 +1101,316 @@
       "buzz": 30,
       "topics": [],
       "date": "2026-11-17"
+    },
+    {
+      "uid": "arxiv:2611.25762v1",
+      "source": "arxiv",
+      "title": "Trading Before a Committed Rebalance",
+      "url": "https://arxiv.org/abs/2611.25762v1",
+      "ts": 1795078954.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Khizar Qureshi",
+      "summary": "An institution must complete a portfolio adjustment, but traders who prepare inventory for it can choose whether to participate. We study how public forecasts affect the institution's cost in a Bayesian execution game with optional activation, transient impact, and uniform-price terminal completion. The curvature of equilibrium cost as a function of the posterior target mean determines the value o",
+      "recipe": "arxiv_qfin",
+      "buzz": 30,
+      "topics": [
+        "dev"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "arxiv:2611.25732v1",
+      "source": "arxiv",
+      "title": "Auto-Alpha: A Framework for Autonomous Factor Research",
+      "url": "https://arxiv.org/abs/2611.25732v1",
+      "ts": 1795077841.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Hui Cai",
+      "summary": "Autonomous factor research requires generating economic hypotheses as well as implementing and testing them. We present Auto-Alpha, a framework that connects report-guided initialization to self-directed research through a test-driven implementation loop. An idea agent proposes economic mechanisms and signal constructions; a research agent develops them with backtest feedback. Semantic audit, quan",
+      "recipe": "arxiv_qfin",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "dev",
+        "science"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "arxiv:2611.25344v1",
+      "source": "arxiv",
+      "title": "Quantum Calibration of Local-Volatility Surfaces from Sparse Option Quotes",
+      "url": "https://arxiv.org/abs/2611.25344v1",
+      "ts": 1795051963.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Kentaro Hoshisashi",
+      "summary": "Calibrating a volatility surface from sparse option prices requires repeated solutions of a pricing equation as the volatility parameters change. We implement a hybrid quantum and classical method for this inverse problem using the Dupire local-volatility model. A positive coefficient representation specifies the local variance, and linear combinations of Hamiltonian simulations approximate the as",
+      "recipe": "arxiv_qfin",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "science"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "arxiv:2611.25218v1",
+      "source": "arxiv",
+      "title": "The American Medical Directory Panel: Comparing AI-Assisted and LLM Transcription with Manual Data Entry at Scale",
+      "url": "https://arxiv.org/abs/2611.25218v1",
+      "ts": 1795038250.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Christian M. Dahl",
+      "summary": "How closely does machine transcription agree with manual double-entry data? We digitize the 1912 and 1921 editions of the American Medical Directory, a national register of US physicians with roughly 140,000 and 150,000 entries in the two volumes, and compare five machine-extraction workflows with a full-count double-entered manual transcription. Like many historical directories, the AMD is semi-s",
+      "recipe": "arxiv_qfin",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "dev"
+      ],
+      "date": "2026-11-18"
+    },
+    {
+      "uid": "arxiv:2611.24912v1",
+      "source": "arxiv",
+      "title": "Stock bubbles in limited participation models with power utilities",
+      "url": "https://arxiv.org/abs/2611.24912v1",
+      "ts": 1795027636.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Kasper Larsen",
+      "summary": "We prove that the equilibrium state-price deflated cum-dividend stock-price process in Guasoni, Larsen, and Leoni (2025) is a strict local martingale. Our result is based on proving that the unrestricted trader faces an endogenously complete model.",
+      "recipe": "arxiv_qfin",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "dev"
+      ],
+      "date": "2026-11-18"
+    },
+    {
+      "uid": "arxiv:2611.24845v1",
+      "source": "arxiv",
+      "title": "Vibe-Trading: Towards Agent-Native Trading",
+      "url": "https://arxiv.org/abs/2611.24845v1",
+      "ts": 1795025277.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Haozhe Wu",
+      "summary": "Existing AI agents can retrieve information, call tools, run experiments, and produce multi-step outputs. Yet most are built around relatively static workflows and struggle to preserve reliable state as the environment changes. Financial trading makes this limitation especially consequential: prices, news, market conditions, portfolio positions, and available capital evolve continuously. A result",
+      "recipe": "arxiv_qfin",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "dev",
+        "biz"
+      ],
+      "date": "2026-11-18"
+    },
+    {
+      "uid": "arxiv:2611.24714v1",
+      "source": "arxiv",
+      "title": "The Structural Number of Parties: An Electoral-Outcome-Independent Baseline for Comparing Party-System Scale",
+      "url": "https://arxiv.org/abs/2611.24714v1",
+      "ts": 1795019884.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Adama Nouboukpo",
+      "summary": "How many parties can a country structurally sustain? Standard measures such as the effective number of parties (ENP) cannot answer this question. They are descriptive and post hoc: they summarize competition only after an election, and they depend on electoral returns that are often missing, interrupted, or unreliable in many developing democracies, particularly in Africa. They also offer no commo",
+      "recipe": "arxiv_qfin",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "dev"
+      ],
+      "date": "2026-11-18"
+    },
+    {
+      "uid": "arxiv:2611.24266v1",
+      "source": "arxiv",
+      "title": "Sensitivity analysis in real options studies: systematic review and recommendations",
+      "url": "https://arxiv.org/abs/2611.24266v1",
+      "ts": 1795002355.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Mariia Kozlova",
+      "summary": "Real options (RO) modeling provides a powerful framework for valuing managerial flexibility under uncertainty in capital-intensive investments across various industries, including climate, energy, and transportation. However, the transparency and usefulness of such models depends heavily on sensitivity analysis (SA). This study reviews over 100 peer-reviewed RO journal articles to examine the exte",
+      "recipe": "arxiv_qfin",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "dev",
+        "science",
+        "biz"
+      ],
+      "date": "2026-11-18"
+    },
+    {
+      "uid": "arxiv:2611.24028v1",
+      "source": "arxiv",
+      "title": "Algorithmic Market Making Can Lead to Rough Volatility Through the Order Book",
+      "url": "https://arxiv.org/abs/2611.24028v1",
+      "ts": 1794989782.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Sai Niranjan Ramachandran",
+      "summary": "Existing work suggests that markets can show volatility with paths rougher than those of Brownian motion. In theory this can happen when the order flow is close to instability with memory that decays as a power law. However, it is not fully clear how such order flow could arise from the predominantly algorithmic market making that characterizes order book dynamics. We show one such consistent mech",
+      "recipe": "arxiv_qfin",
+      "buzz": 30,
+      "topics": [
+        "biz"
+      ],
+      "date": "2026-11-18"
+    },
+    {
+      "uid": "arxiv:2611.23723v1",
+      "source": "arxiv",
+      "title": "When Price Charts Rhyme: Historical Visual Retrieval for Stock Return Prediction",
+      "url": "https://arxiv.org/abs/2611.23723v1",
+      "ts": 1794968832.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Hui Chen",
+      "summary": "We study whether visually similar price histories predict similar future returns, using a vision model to retrieve each stock's most similar charts from three decades of U.S. price histories. A representation pretrained only on natural images already retrieves neighbors whose realized returns predict the cross-section of stock returns. Aligning the representation with subsequent returns more than",
+      "recipe": "arxiv_qfin",
+      "buzz": 30,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-11-18"
+    },
+    {
+      "uid": "arxiv:2611.23587v1",
+      "source": "arxiv",
+      "title": "Spectral Pricing of Corridor Products under Layered Local Volatility",
+      "url": "https://arxiv.org/abs/2611.23587v1",
+      "ts": 1794955088.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Andrey Itkin",
+      "summary": "We price corridor products under a $N$-layered local volatility, piecewise constant in the price and in time, with knock-out barriers. A spatial scale transformation and the GIT method reduce the killed Green's function to a symmetric tridiagonal system of fixed size $N-1$. With equal scaled layer widths the spectrum follows from one tridiagonal eigen-decomposition together with the explicit eigen",
+      "recipe": "arxiv_qfin",
+      "buzz": 30,
+      "topics": [
+        "dev"
+      ],
+      "date": "2026-11-17"
+    },
+    {
+      "uid": "arxiv:2611.23126v1",
+      "source": "arxiv",
+      "title": "Which Past Matters? Training History and Multi-Forecast Horizon in Equity Transformers",
+      "url": "https://arxiv.org/abs/2611.23126v1",
+      "ts": 1794937481.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Chariton Chalvatzis",
+      "summary": "More historical data can improve estimation while introducing relationships that transfer poorly to current market conditions. We therefore examine how training quantity and historical selection interact with forecast horizon in intraday equity prediction. We deploy twelve configurations which combine four sampling and validation policies with 6, 12 and 24 month training quantities under a fixed c",
+      "recipe": "arxiv_qfin",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "biz"
+      ],
+      "date": "2026-11-17"
+    },
+    {
+      "uid": "arxiv:2611.23354v1",
+      "source": "arxiv",
+      "title": "AI, Specialization, and the Organization of Knowledge Work: Evidence from Legal Services",
+      "url": "https://arxiv.org/abs/2611.23354v1",
+      "ts": 1794924420.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Liu Zhang",
+      "summary": "Artificial intelligence makes specialized knowledge cheaper to use, but its effects on professional-service firms depend on how clients reallocate work and how suppliers respond. We develop a framework linking individual self-provision, enterprise make-or-buy decisions, and pricing by specialist firms. As AI improves lower-priced alternatives, clients may reallocate work across outside providers w",
+      "recipe": "arxiv_qfin",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "dev",
+        "hardware"
+      ],
+      "date": "2026-11-17"
+    },
+    {
+      "uid": "arxiv:2611.22793v1",
+      "source": "arxiv",
+      "title": "Does the AI Reviewer Alleviate or Aggravate the Maintenance Burden? Evidence from GitHub Copilot Reviewer",
+      "url": "https://arxiv.org/abs/2611.22793v1",
+      "ts": 1794923743.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Feiyang",
+      "summary": "This study examines how AI-based code reviewers reshape contribution behavior and maintenance dynamics in open-source software (OSS) communities. AI reviewers provide scalable, fast, and standardized evaluations. They reshape contributions as well as maintainers' workload. Leveraging the introduction of GitHub Copilot Reviewer on GitHub as a natural experiment in 2025, we investigate how AI review",
+      "recipe": "arxiv_qfin",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "dev",
+        "biz"
+      ],
+      "date": "2026-11-17"
+    },
+    {
+      "uid": "arxiv:2611.22604v1",
+      "source": "arxiv",
+      "title": "Beyond Strike Remapping: Conditional-Gamma Pricing of Leveraged ETF Options under Local Volatility",
+      "url": "https://arxiv.org/abs/2611.22604v1",
+      "ts": 1794914508.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Guolin Chen",
+      "summary": "Options on leveraged ETFs (LETFs) are priced and hedged off the LETF volatility surface, but path-dependent variance drag makes that surface difficult to build consistently with the underlying index smile. We study three methods for constructing it: a closed-form first-order strike remapping, a new conditional-Gamma method, and a two-dimensional joint-law PDE that makes no distributional assumptio",
+      "recipe": "arxiv_qfin",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "hardware"
+      ],
+      "date": "2026-11-17"
+    },
+    {
+      "uid": "arxiv:2611.22517v1",
+      "source": "arxiv",
+      "title": "Clicks, Carbon, and Risk: Climate Attention, Persistent Financial Risk, and Real-Sector Activity",
+      "url": "https://arxiv.org/abs/2611.22517v1",
+      "ts": 1794910207.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Giovanni Angelini",
+      "summary": "Do shifts in public climate concern alter persistent financial risk and subsequently matter for real activity? We combine daily U.S. sectoral equity returns with a monthly Climate Concern Index (CCI) constructed from internet search intensity and decomposed into adverse and transition-oriented components. GARCH-MIDAS estimates reveal substantial heterogeneity: adverse climate concern raises persis",
+      "recipe": "arxiv_qfin",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "science"
+      ],
+      "date": "2026-11-17"
+    },
+    {
+      "uid": "arxiv:2611.20242v2",
+      "source": "arxiv",
+      "title": "Markets for Compute and Inference: Structure, Financing, and Risk Transfer",
+      "url": "https://arxiv.org/abs/2611.20242v2",
+      "ts": 1795018106.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Dr Gabriel Borrageiro",
+      "summary": "Capacity to run large language models is rented by the accelerator-hour, and their output is sold by the million tokens. Both goods now have published price indices, an over-the-counter forward has traded on one, compute futures are listed offshore, and CME and ICE have specified futures on rental indices that await the United States regulator. We ask what in these two markets can be hedged, by wh",
+      "recipe": "arxiv_qfin",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "crypto",
+        "biz",
+        "hardware"
+      ],
+      "date": "2026-11-18"
     },
     {
       "uid": "rss:f2787988130b5e",
@@ -1086,23 +1464,277 @@
       "date": "2026-11-16"
     },
     {
-      "uid": "hn:48896257",
-      "source": "hn",
-      "title": "Show HN: Finterm.ai Bloomberg terminal for Claude Code",
-      "url": "https://finterm.ai/",
-      "ts": 1783965130.0,
-      "points": 6,
+      "uid": "arxiv:2611.22033v1",
+      "source": "arxiv",
+      "title": "Thinking Harder Doesn't Lead to Better Choices: Reasoning Effort Increases the Confidence but Not the Correctness of LLM Shopping Agents",
+      "url": "https://arxiv.org/abs/2611.22033v1",
+      "ts": 1794876958.0,
+      "points": 0,
       "comments": 0,
-      "author": "cheeseblubber",
-      "summary": "Hi, my name is Kam, and today my cofounder Josh and I are shipping Finterm, a CLI that\ngives coding agents direct access to financial data: stock prices, options data, SEC\nfilings, and Ticker Deep Research, a filtered ticker news search. I’m a developer and have been a full-time trader for the past few years.Recently I have been using LLMs more and more in my trading and strategy.\nI always found i",
-      "recipe": "hn_fintech",
-      "buzz": 6,
+      "author": "Adi Krishnamoorthy",
+      "summary": "Large language models (LLMs) are increasingly deployed as autonomous shopping agents that process multimodal product listings (consisting of visual and text data) and recommend purchases on behalf of consumers. Naturally, one might assume that models with more thinking power would make higher-quality purchasing decisions. To test this belief, we ask two questions about such agents: does asking a m",
+      "recipe": "arxiv_qfin",
+      "buzz": 10,
+      "topics": [
+        "ai",
+        "dev"
+      ],
+      "date": "2026-11-17"
+    },
+    {
+      "uid": "arxiv:2611.21568v1",
+      "source": "arxiv",
+      "title": "The Geoengineering Put: Ecological Debt, Termination Risk, and Asset Prices",
+      "url": "https://arxiv.org/abs/2611.21568v1",
+      "ts": 1794854543.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Samuel Hartzmark",
+      "summary": "Solar geoengineering offers an inexpensive and fast-acting way to lower global temperatures without removing carbon from the atmosphere. As warming intensifies, climate-vulnerable countries face growing incentives to deploy geoengineering unilaterally. The economic and financial consequences of this prospect remain largely overlooked. We develop a general equilibrium macro-finance framework in whi",
+      "recipe": "arxiv_qfin",
+      "buzz": 10,
       "topics": [
         "ai",
         "dev",
+        "science",
+        "security"
+      ],
+      "date": "2026-11-16"
+    },
+    {
+      "uid": "arxiv:2611.21364v1",
+      "source": "arxiv",
+      "title": "A Game of Throngs: How Spotlight Tourism Reshapes Local Economies",
+      "url": "https://arxiv.org/abs/2611.21364v1",
+      "ts": 1794846868.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Mafalda Batalha",
+      "summary": "In July 2017, San Juan de Gaztelugatxe, a modest chapel in the Basque Country, appeared as \"Dragonstone\" in Game of Thrones, transforming a locally known site with limited tourism activity into a global tourist destination overnight. We exploit this exogenous spotlight shock to estimate its causal effects on the local economy using a novel administrative dataset and a Synthetic Control approach. W",
+      "recipe": "arxiv_qfin",
+      "buzz": 10,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-16"
+    },
+    {
+      "uid": "arxiv:2611.21070v1",
+      "source": "arxiv",
+      "title": "Trade Tensions Meet the Gig Economy: Evidence from the 2025 Halving of Chinese Travel to Japan",
+      "url": "https://arxiv.org/abs/2611.21070v1",
+      "ts": 1794835389.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Suguru Otani",
+      "summary": "How do geopolitical shocks to services exports reach local labor markets? Using China's November 2025 Japan travel advisory and postings on Japan's largest spot-work platform, we provide the first such evidence for the gig economy. Posted hourly wages fall immediately and persistently in prefectures more dependent on Chinese visitors, relative to others, whereas postings, hours, and employment sho",
+      "recipe": "arxiv_qfin",
+      "buzz": 10,
+      "topics": [
+        "dev",
         "biz"
       ],
-      "date": "2026-07-13"
+      "date": "2026-11-16"
+    },
+    {
+      "uid": "arxiv:2611.20550v1",
+      "source": "arxiv",
+      "title": "Mollification Regularization and Asymptotic Correction for Analytical Expansion of BSDEs with Non-Smooth Terminal Conditions. I. Theory",
+      "url": "https://arxiv.org/abs/2611.20550v1",
+      "ts": 1794806939.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Liangliang Zhang",
+      "summary": "The analytical expansion method for BSDEs of Zhang (2017) breaks down when the terminal condition psi has kinks or discontinuities. We replace psi by psi_epsilon = psi * rho_epsilon and derive a joint error decomposition whose expansion constants explicitly track the derivative blow-up as epsilon tends to 0. For symmetric mollifiers the leading weak bias cancels. The associated balanced rates are",
+      "recipe": "arxiv_qfin",
+      "buzz": 10,
+      "topics": [
+        "dev"
+      ],
+      "date": "2026-11-16"
+    },
+    {
+      "uid": "arxiv:2611.19937v1",
+      "source": "arxiv",
+      "title": "AllocFlow: End-to-End Portfolio Trading Action Generation from Raw Market Data",
+      "url": "https://arxiv.org/abs/2611.19937v1",
+      "ts": 1794741037.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Annan Wang",
+      "summary": "Real-world portfolio management requires converting noisy market observations into coordinated, simultaneous allocations across multiple assets under shared capital constraints. Advances in forecasting models and alpha discovery help identify opportunities. However, traditional pipelines often decouple signal forecasting from portfolio construction, potentially misaligning learning with allocation",
+      "recipe": "arxiv_qfin",
+      "buzz": 10,
+      "topics": [
+        "ai",
+        "dev",
+        "science",
+        "biz"
+      ],
+      "date": "2026-11-15"
+    },
+    {
+      "uid": "arxiv:2611.19792v1",
+      "source": "arxiv",
+      "title": "PIRanNN: Random-Feature Pricing and Calibration under Jump-Diffusion and Stochastic-Volatility Models",
+      "url": "https://arxiv.org/abs/2611.19792v1",
+      "ts": 1794718042.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Saurabh Bansal",
+      "summary": "We study a random-feature method for pricing and calibrating European options under jump-diffusion (Merton, Kou) and stochastic-volatility (Heston, SABR) models. The network has one hidden layer with a probit activation and fixed random inner weights, so fitting it to the pricing equation, the payoff and the boundary conditions is a single regularised least-squares problem, with no iterative train",
+      "recipe": "arxiv_qfin",
+      "buzz": 10,
+      "topics": [
+        "ai",
+        "science"
+      ],
+      "date": "2026-11-15"
+    },
+    {
+      "uid": "arxiv:2611.19662v1",
+      "source": "arxiv",
+      "title": "Identifying Time Preference Shocks: Stated and Revealed Preferences after an Italian Earthquake",
+      "url": "https://arxiv.org/abs/2611.19662v1",
+      "ts": 1794698281.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Krisztina Molnar",
+      "summary": "Identifying time preference shocks is challenging: shocks large enough to shift survey-elicited stated impatience also tighten financial resources, confounding the interpretation of stated time preference. Jointly examining stated and revealed preferences resolves this identification problem: impatience shocks and reductions in financial resources generate opposite consumption responses, even thou",
+      "recipe": "arxiv_qfin",
+      "buzz": 10,
+      "topics": [
+        "dev",
+        "science"
+      ],
+      "date": "2026-11-14"
+    },
+    {
+      "uid": "arxiv:2611.19068v1",
+      "source": "arxiv",
+      "title": "Corporate Stances on Societal Issues in the US",
+      "url": "https://arxiv.org/abs/2611.19068v1",
+      "ts": 1794619287.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Jacob Conway",
+      "summary": "When do firms take public positions on divisive societal issues and why? We assemble a comprehensive dataset on corporate stance-taking in the United States, using large language models to read 52,000 news articles and press releases about 836 companies that belonged to the S&P 500 at any point between 2008 and 2025. We identify 9,917 stances on nine partisan issues such as climate change, abortio",
+      "recipe": "arxiv_qfin",
+      "buzz": 10,
+      "topics": [
+        "ai",
+        "dev",
+        "science"
+      ],
+      "date": "2026-11-14"
+    },
+    {
+      "uid": "arxiv:2611.18934v1",
+      "source": "arxiv",
+      "title": "Short Windows, Unmodelled Costs, Unknown Cutoffs: A Pre-Registered Evidence Audit of 91 LLM Trading Papers",
+      "url": "https://arxiv.org/abs/2611.18934v1",
+      "ts": 1794602262.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Henry Zhang",
+      "summary": "Papers on large-language-model (LLM) trading agents and alpha mining report Sharpe ratios that would be remarkable in any other part of empirical finance. We audit the evidence behind those numbers. Before coding a single paper we pre-registered a population of 91 papers from a curated corpus of LLM trading research, a ten-field coding rubric, an analysis script and five directional hypotheses, an",
+      "recipe": "arxiv_qfin",
+      "buzz": 10,
+      "topics": [
+        "ai",
+        "dev",
+        "science"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "uid": "arxiv:2611.18872v1",
+      "source": "arxiv",
+      "title": "The opposing informational effects of AI trading",
+      "url": "https://arxiv.org/abs/2611.18872v1",
+      "ts": 1794597660.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Hajime Shimao",
+      "summary": "Better artificial intelligence (AI) can improve individual forecasts without making prices better at revealing new information. In a competitive market with resource-constrained forecasting, more capable algorithms can substitute analysis of public records for private observations, reducing the private information aggregated into prices. The same trades can convey sophisticated public-data analysi",
+      "recipe": "arxiv_qfin",
+      "buzz": 10,
+      "topics": [
+        "ai",
+        "biz"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "uid": "arxiv:2611.21672v1",
+      "source": "arxiv",
+      "title": "Who sees the sea? Sea-view potential by façade and floor from cadastral LoD1 models on the Costa del Sol",
+      "url": "https://arxiv.org/abs/2611.21672v1",
+      "ts": 1794585231.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Gabriel Rojo",
+      "summary": "Views are among the most valued and least measured attributes of a home. We present an open-data method that estimates the sea-view potential of every free façade of every residential building at three floors (ground, middle and top; other floors take the nearest of them), from cadastral footprints with floor counts and a national terrain model. Run for 158,060 buildings of 21 municipalities on Sp",
+      "recipe": "arxiv_qfin",
+      "buzz": 10,
+      "topics": [
+        "ai",
+        "dev"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "uid": "arxiv:2611.18214v1",
+      "source": "arxiv",
+      "title": "Local Stochastic Volatility Iterations",
+      "url": "https://arxiv.org/abs/2611.18214v1",
+      "ts": 1794579527.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Christian Bayer",
+      "summary": "We propose a calibration method for local stochastic volatility models that determines the leverage factor by a fixed-point iteration. Each iteration simulates the model with the current leverage factor and approximates the conditional expectation of the stochastic variance given the spot by a single regression in time and state, with a quasi-likelihood loss for positive responses. The resulting l",
+      "recipe": "arxiv_qfin",
+      "buzz": 10,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "uid": "arxiv:2611.18150v1",
+      "source": "arxiv",
+      "title": "Who Should Be on the Panel? Task-Conditioned Persona Selection for LLM Trading Agents",
+      "url": "https://arxiv.org/abs/2611.18150v1",
+      "ts": 1794576331.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Boming Yang",
+      "summary": "Multi-agent LLM systems are built by fixing a cast of roles and then designing how the cast coordinates. Which agents should make up the group for a given task is left to the designer, and the same cast is reused for every task. Financial trading makes the cost of that choice visible: stocks trade differently, and the trading styles suited to one need not suit another. We study task-conditioned pe",
+      "recipe": "arxiv_qfin",
+      "buzz": 10,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "uid": "arxiv:2611.17984v1",
+      "source": "arxiv",
+      "title": "Menu Design Meets Market Design: Strategic Simplicity vs. Choice Complexity",
+      "url": "https://arxiv.org/abs/2611.17984v1",
+      "ts": 1794564752.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Gian Caspari",
+      "summary": "Strategic simplicity removes the incentive to misreport preferences, but it does not ensure that participants can identify what they prefer. We study this distinction in a laboratory experiment on serial dictatorships, where optimal play only requires choosing one's favorite bundle of real-effort tasks. Participants make fifteen incentivized choices among bundles that vary in how many tasks they c",
+      "recipe": "arxiv_qfin",
+      "buzz": 10,
+      "topics": [
+        "dev",
+        "biz"
+      ],
+      "date": "2026-11-13"
     },
     {
       "uid": "hn:47278733",
@@ -1122,24 +1754,6 @@
         "biz"
       ],
       "date": "2026-03-06"
-    },
-    {
-      "uid": "hn:45990088",
-      "source": "hn",
-      "title": "Ask HN: How do you build a \"trust layer\" for your platform?",
-      "url": "https://news.ycombinator.com/item?id=45990088",
-      "ts": 1763625243.0,
-      "points": 2,
-      "comments": 0,
-      "author": "gokulnair2001",
-      "summary": "I&#x27;m trying to understand how different teams handle platform integrity and user trust as they scale.<p>For those running consumer apps, marketplaces, fintech products, or any platform with significant user activity:\nHow do you currently build your “trust layer”?<p>Specifically:\n-&gt; How do you detect fake users, bots, device farms, or automated signups?\n-&gt; What early signals do you rely o",
-      "recipe": "hn_fintech",
-      "buzz": 2,
-      "topics": [
-        "dev",
-        "biz"
-      ],
-      "date": "2025-11-20"
     },
     {
       "uid": "hn:33629711",
@@ -1701,6 +2315,41 @@
       "buzz": 0,
       "topics": [],
       "date": "2026-10-12"
+    },
+    {
+      "uid": "arxiv:2611.17530v1",
+      "source": "arxiv",
+      "title": "AI and the Two Margins of Work: Why Job Losses Show Up Before Job Creation",
+      "url": "https://arxiv.org/abs/2611.17530v1",
+      "ts": 1794519133.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Mark Esposito",
+      "summary": "Technological change acts on labor demand at two margins: adjustment within established activities and the creation of additional activities, often by new firms. Payroll statistics record the first promptly and the second late. In the computing era, firms that entered in 1978 or later held 42 percent of payroll by 1998 and entering cohorts kept about 80 percent of their payroll after five years; i",
+      "recipe": "arxiv_qfin",
+      "buzz": 0,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-11-12"
+    },
+    {
+      "uid": "arxiv:2611.17515v1",
+      "source": "arxiv",
+      "title": "A Push Down the Mountain: Framing Effects and Internal State Interventions on Collusive Behavior in a Long-Horizon LLM Agent",
+      "url": "https://arxiv.org/abs/2611.17515v1",
+      "ts": 1794517783.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Harrison C. Margolin",
+      "summary": "Can sustained gain-loss (valence) framing sway an LLM agent toward market manipulation? We place Gemma 3 12B into the seat of a defendant in the London silver-fixing litigation, in a market simulation built from real case transcripts. Across 260 simulations, the agent is asked to collude on the price of silver by a counterparty. We draw from behavioral economics to vary the counterparty's requests",
+      "recipe": "arxiv_qfin",
+      "buzz": 0,
+      "topics": [
+        "ai",
+        "biz"
+      ],
+      "date": "2026-11-12"
     }
   ]
 }
