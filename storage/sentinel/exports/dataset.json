@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T09:19:02+00:00",
+  "generated_at": "2026-11-20T13:30:20+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -10,34 +10,34 @@
     "rss"
   ],
   "totals": {
-    "items": 131,
+    "items": 133,
     "by_source": {
       "hn": 40,
       "cve": 30,
-      "github": 11,
+      "github": 13,
       "rss": 50
     },
     "by_recipe": {
       "hn_sec": 40,
       "gh_advisories": 30,
       "hackersnews": 30,
-      "github_sec": 11,
-      "krebs": 10,
-      "schneier": 10
+      "github_sec": 13,
+      "schneier": 10,
+      "krebs": 10
     },
     "by_topic": {
-      "security": 112,
-      "ai": 57,
-      "dev": 45,
-      "hardware": 24,
-      "science": 7,
+      "security": 113,
+      "ai": 55,
+      "dev": 44,
+      "hardware": 25,
+      "science": 8,
       "biz": 7,
-      "crypto": 7
+      "crypto": 6
     },
     "top_domains": [
       [
         "github.com",
-        43
+        45
       ],
       [
         "thehackernews.com",
@@ -1387,12 +1387,12 @@
       "title": "Aabyss-Team/Threat-Broadcast-Plus",
       "url": "https://github.com/Aabyss-Team/Threat-Broadcast-Plus",
       "ts": 1794800456.0,
-      "points": 138,
+      "points": 139,
       "comments": 31,
       "author": "Aabyss-Team",
       "summary": "网络安全威胁情报播报-Plus升级版",
       "recipe": "github_sec",
-      "buzz": 241,
+      "buzz": 242,
       "topics": [],
       "date": "2026-11-16"
     },
@@ -1402,12 +1402,12 @@
       "title": "wildorigins/wildos",
       "url": "https://github.com/wildorigins/wildos",
       "ts": 1794169078.0,
-      "points": 130,
+      "points": 132,
       "comments": 7,
       "author": "wildorigins",
       "summary": "A hardened Linux desktop, rebuilt from scratch, with your Windows apps built in. Free and open source.",
       "recipe": "github_sec",
-      "buzz": 151,
+      "buzz": 153,
       "topics": [],
       "date": "2026-11-08"
     },
@@ -1498,6 +1498,116 @@
       "date": "2026-11-15"
     },
     {
+      "uid": "rss:7e3e423acf869a",
+      "source": "rss",
+      "title": "Opening a 400-Year-Old Cryptex",
+      "url": "https://www.schneier.com/blog/archives/2026/11/opening-a-400-year-old-cryptex.html",
+      "ts": 1795176294.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Bruce Schneier",
+      "summary": "<p>Researchers used CT scanning technology to recover the code and <a href=\"https://www.bbc.com/news/articles/c69qz9jzq4jro\">open</a> a 400-year-old cryptex padlock.</p> <p>You can buy a USB-drive <a href=\"https://puzzleboxworld.com/products/cryptex-antique-gold-color-usb-flash-drive-16-gb\">cryptex</a>.</p>",
+      "recipe": "schneier",
+      "buzz": 80,
+      "topics": [],
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "rss:bf49fa089ac3b6",
+      "source": "rss",
+      "title": "Linux KVM Flaw CVE-2026-99312 Lets Guest VMs Access Host Memory on AMD Hosts",
+      "url": "https://thehackernews.com/2026/11/new-linux-kvm-flaw-cve-2026-99312-lets.html",
+      "ts": 1795177200.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "A flaw in KVM, the hypervisor built into the Linux kernel, let researchers read about 127 GB of a cloud server's memory from inside a virtual machine of their own on DigitalOcean. On a shared server, that memory can include other customers' virtual machines. The flaw, tracked as CVE-[phone], affects only hosts with AMD processors and nested virtualization enabled. Fixed kernels shipped",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "dev",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "rss:fb4a18f34f813f",
+      "source": "rss",
+      "title": "The Path to AI Autonomy in the SOC",
+      "url": "https://thehackernews.com/2026/11/the-path-to-ai-autonomy-in-soc.html",
+      "ts": 1795176000.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Security leaders are about to hand AI agents a lot more authority. In a recent a16z survey of CISOs at organizations with more than 1,000 employees, 36% said they are comfortable today letting AI agents act autonomously on low-risk security actions. In 12 months from now, 60% expect to be comfortable at that level. Overall, AI SOC was the highest ranking initiative for 2027. The pressure",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "rss:ad718c0cc3d823",
+      "source": "rss",
+      "title": "SonicWall Warns Gen 6 Firewalls Won't Get Security Patches, Even for Critical Flaws",
+      "url": "https://thehackernews.com/2026/11/sonicwall-warns-gen-6-firewalls-wont.html",
+      "ts": 1795171102.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "SonicWall has urged all customers still running Generation 6 firewalls to retire and replace them immediately and stop exposing the devices on the internet edge, citing security risks fueled by AI-assisted attacks. \"Attackers now use automation and AI to find and exploit unsupported edge devices faster than ever,\" SonicWall said. \"We expect internet-facing Gen 6 firewalls to be actively",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "science",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "rss:2c70ac04df1b40",
+      "source": "rss",
+      "title": "Hackers Exploit Critical Cisco Expressway Flaw, Breach Four Devices and Reach Internal Network",
+      "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-cisco.html",
+      "ts": 1795170770.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Threat actors have been observed exploiting a recently disclosed critical security flaw in Cisco Expressway to breach a Russian organization shortly after the public release of a proof-of-concept (PoC) exploit. The activity involves the exploitation of CVE-[phone] (CVSS score: 9.8), a vulnerability that could allow an unauthenticated, remote attacker with network access to a Cisco Expressway",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "rss:c179de6fc560a3",
+      "source": "rss",
+      "title": "China-Linked Hackers Exploit Critical VMware vCenter Zero-Day to Gain Admin Access and Steal Data",
+      "url": "https://thehackernews.com/2026/11/china-linked-hackers-exploit-critical.html",
+      "ts": 1795167495.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "The suspected China-nexus cyber espionage group known as Armory Castle (formerly UNC5221) has been attributed to the zero-day exploitation of a critical security flaw in VMware vCenter Server in early September 2026. The vulnerability, tracked as CVE-[phone] (CVSS score: 9.8), is a case of authentication bypass in the VMware Directory Service that could be exploited to gain unauthorized",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-20"
+    },
+    {
       "uid": "rss:a2af5d67b2b2a2",
       "source": "rss",
       "title": "ROMULUS ClickFix Attacks Deliver RAT That Can Spy on Users and Control PCs",
@@ -1513,25 +1623,6 @@
         "ai",
         "dev",
         "security"
-      ],
-      "date": "2026-11-20"
-    },
-    {
-      "uid": "rss:c179de6fc560a3",
-      "source": "rss",
-      "title": "China-Linked Hackers Exploit Critical VMware vCenter Zero-Day to Gain Admin Access and Steal Data",
-      "url": "https://thehackernews.com/2026/11/china-linked-hackers-exploit-critical.html",
-      "ts": 1795156411.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "The suspected China-nexus cyber espionage group known as Armory Castle (formerly UNC5221) has been attributed to the zero-day exploitation of a critical security flaw in VMware vCenter Server in early September 2026. The vulnerability, tracked as CVE-[phone] (CVSS score: 9.8), is a case of authentication bypass in the VMware Directory Service that could be exploited to gain unauthorized",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "security",
-        "hardware"
       ],
       "date": "2026-11-20"
     },
@@ -1643,46 +1734,6 @@
       "date": "2026-11-19"
     },
     {
-      "uid": "rss:790246065cf7ca",
-      "source": "rss",
-      "title": "Everything Is a Web Application, Including Your Firewall",
-      "url": "https://thehackernews.com/2026/11/everything-is-web-application-including.html",
-      "ts": 1795089143.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "One of the early targets of PHP2Shell exploitation was the firewall. On October 28, Palo Alto Networks confirmed that attackers were exploiting the two PHP vulnerabilities, CVE-[phone] and CVE-[phone], against PAN-OS management interfaces exposed to the internet. Both flaws let anyone execute code on the web server without authentication. The disclosure itself went a little wrong.",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-19"
-    },
-    {
-      "uid": "rss:5f3922dcf6b921",
-      "source": "rss",
-      "title": "Hackers Breach N-able Cloud Server, Disrupting Email Security Management Across 3 Regions",
-      "url": "https://thehackernews.com/2026/11/n-able-confirms-hackers-accessed-cloud.html",
-      "ts": 1795080686.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "N-able on Wednesday disclosed that unknown threat actors gained unauthorized access to one of the servers in the Mail Assure and Spam Experts Hosted Cloud, causing it to disable management interfaces and APIs. \"We have taken steps to mitigate the threat and are continuing to harden our services to reduce the risk of recurrence,\" N-able said. \"The investigation is ongoing, but at this time we",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "dev",
-        "biz",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-19"
-    },
-    {
       "uid": "gh:rammahmagdy/Latch",
       "source": "github",
       "title": "rammahmagdy/Latch",
@@ -1703,12 +1754,12 @@
       "title": "NPCmillionaire/unredact.tools",
       "url": "https://github.com/NPCmillionaire/unredact.tools",
       "ts": 1794511431.0,
-      "points": 45,
+      "points": 46,
       "comments": 2,
       "author": "NPCmillionaire",
       "summary": "See what your files leak (GPS, serials, authors, failed redactions, deleted text, watermarks), then scrub them.",
       "recipe": "github_sec",
-      "buzz": 51,
+      "buzz": 52,
       "topics": [
         "ai"
       ],
@@ -1728,6 +1779,38 @@
       "buzz": 47,
       "topics": [],
       "date": "2026-11-14"
+    },
+    {
+      "uid": "gh:vulnix0x4/a-better-antivirus",
+      "source": "github",
+      "title": "vulnix0x4/a-better-antivirus",
+      "url": "https://github.com/vulnix0x4/a-better-antivirus",
+      "ts": 1794885574.0,
+      "points": 25,
+      "comments": 2,
+      "author": "vulnix0x4",
+      "summary": "Catches infostealers in the act on Windows: plants fake passwords, wallets and app data that only malware would read, and freezes whatever touches them.",
+      "recipe": "github_sec",
+      "buzz": 41,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-11-17"
+    },
+    {
+      "uid": "gh:spatie/laravel-suspicious-login",
+      "source": "github",
+      "title": "spatie/laravel-suspicious-login",
+      "url": "https://github.com/spatie/laravel-suspicious-login",
+      "ts": 1794917088.0,
+      "points": 26,
+      "comments": 0,
+      "author": "spatie",
+      "summary": "Detect suspicious logins in your Laravel app",
+      "recipe": "github_sec",
+      "buzz": 36,
+      "topics": [],
+      "date": "2026-11-17"
     },
     {
       "uid": "rss:c077b9eec9aa33",
@@ -1768,24 +1851,44 @@
       "date": "2026-11-19"
     },
     {
-      "uid": "rss:20cbd8174f0c08",
+      "uid": "rss:790246065cf7ca",
       "source": "rss",
-      "title": "Formal Verification of the Signal Protocol Using AI",
-      "url": "https://www.schneier.com/blog/archives/2026/11/formal-verification-of-the-signal-protocol-using-ai.html",
-      "ts": 1794917197.0,
+      "title": "Everything Is a Web Application, Including Your Firewall",
+      "url": "https://thehackernews.com/2026/11/everything-is-web-application-including.html",
+      "ts": 1795089143.0,
       "points": 0,
       "comments": 0,
-      "author": "Bruce Schneier",
-      "summary": "<p><a href=\"https://www.wired.com/story/a-new-ai-tool-from-google-deepmind-formally-verified-the-signal-protocol/\">This</a> seems like a good thing:</p> <blockquote><p>Google Deepmind researchers used agentic AI to mathematically prove, or “formally verify,” a number of the Signal protocol’s key cryptographic guarantees­a landmark development for the widely used cryptography and AI itself.</p> <p>",
-      "recipe": "schneier",
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "One of the early targets of PHP2Shell exploitation was the firewall. On October 28, Palo Alto Networks confirmed that attackers were exploiting the two PHP vulnerabilities, CVE-[phone] and CVE-[phone], against PAN-OS management interfaces exposed to the internet. Both flaws let anyone execute code on the web server without authentication. The disclosure itself went a little wrong.",
+      "recipe": "hackersnews",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "rss:5f3922dcf6b921",
+      "source": "rss",
+      "title": "Hackers Breach N-able Cloud Server, Disrupting Email Security Management Across 3 Regions",
+      "url": "https://thehackernews.com/2026/11/n-able-confirms-hackers-accessed-cloud.html",
+      "ts": 1795080686.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "N-able on Wednesday disclosed that unknown threat actors gained unauthorized access to one of the servers in the Mail Assure and Spam Experts Hosted Cloud, causing it to disable management interfaces and APIs. \"We have taken steps to mitigate the threat and are continuing to harden our services to reduce the risk of recurrence,\" N-able said. \"The investigation is ongoing, but at this time we",
+      "recipe": "hackersnews",
       "buzz": 30,
       "topics": [
         "ai",
         "dev",
-        "crypto",
-        "science"
+        "biz",
+        "security",
+        "hardware"
       ],
-      "date": "2026-11-17"
+      "date": "2026-11-19"
     },
     {
       "uid": "rss:1226c4f144b6e5",
@@ -2085,81 +2188,6 @@
       "date": "2026-11-18"
     },
     {
-      "uid": "rss:2041eca737d343",
-      "source": "rss",
-      "title": "Researchers Claim Two RCE Exploits That Bypass Telegram’s New Android Defenses",
-      "url": "https://thehackernews.com/2026/11/researchers-claim-two-rce-exploits-that.html",
-      "ts": 1794944060.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "A malicious widget can bypass the security filter that Telegram added to its Android app last week and run code outside it, according to NebuSec, a security company. Widgets are small interactive blocks that bots send inside chat messages, and their JavaScript runs on the user's phone. The researchers ran their demonstration on a Telegram test server, because only approved bots can send",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "dev",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-17"
-    },
-    {
-      "uid": "rss:03ac2339a65ac4",
-      "source": "rss",
-      "title": "Oracle to Patch 11 Java Flaws Today as Critical OpenJDK RCE (CVE-2026-114938) Report Emerges",
-      "url": "https://thehackernews.com/2026/11/oracle-to-patch-11-java-flaws-today-as.html",
-      "ts": 1794928656.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Oracle is preparing to release security patches for 11 vulnerabilities in Java SE on Tuesday, November 17, 2026, all of which may be exploited remotely without authentication, as separate reports warn of a potentially critical remote code execution (RCE) flaw affecting OpenJDK. The 11 vulnerabilities carry a maximum CVSS 3.1 severity score of 8.1, according to Oracle's advance security notice.",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "security"
-      ],
-      "date": "2026-11-17"
-    },
-    {
-      "uid": "rss:f53039a88443dd",
-      "source": "rss",
-      "title": "Trigram Campaign Impersonates About 50 AI and Blockchain Brands to Target Devs with Infostealers",
-      "url": "https://thehackernews.com/2026/11/trigram-campaign-impersonates-about-50.html",
-      "ts": 1794928648.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Artificial intelligence (AI), blockchain, and logistics sectors across Europe and the U.S. have emerged as the target of a large-scale, industrialized campaign dubbed Trigram. \"Trigram is a large-scale campaign that impersonates about 50 brands in the blockchain and AI sectors, to trick developers into executing an infostealer themselves,\" Stormshield said in a deep-dive technical report",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "dev",
-        "crypto"
-      ],
-      "date": "2026-11-17"
-    },
-    {
-      "uid": "rss:1c024142ae254b",
-      "source": "rss",
-      "title": "Hackers Found a Way Around GitHub SHA Pinning. This Webinar Explains How to Close the Gap",
-      "url": "https://thehackernews.com/2026/11/hackers-found-way-around-github-sha.html",
-      "ts": 1794918306.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Pinning GitHub Actions to an exact version of their code, known as SHA pinning, has become the go-to defense against software supply chain attacks. Attackers have already found a way around it. In March 2026, the hackers who hijacked Trivy, a widely used open-source security scanner, planted malicious code that looked like it came from GitHub's official checkout tool. They even labeled it a",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-17"
-    },
-    {
       "uid": "gh:humanethq/airgap-check",
       "source": "github",
       "title": "humanethq/airgap-check",
@@ -2175,6 +2203,26 @@
         "ai"
       ],
       "date": "2026-11-08"
+    },
+    {
+      "uid": "rss:20cbd8174f0c08",
+      "source": "rss",
+      "title": "Formal Verification of the Signal Protocol Using AI",
+      "url": "https://www.schneier.com/blog/archives/2026/11/formal-verification-of-the-signal-protocol-using-ai.html",
+      "ts": 1794917197.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Bruce Schneier",
+      "summary": "<p><a href=\"https://www.wired.com/story/a-new-ai-tool-from-google-deepmind-formally-verified-the-signal-protocol/\">This</a> seems like a good thing:</p> <blockquote><p>Google Deepmind researchers used agentic AI to mathematically prove, or “formally verify,” a number of the Signal protocol’s key cryptographic guarantees­a landmark development for the widely used cryptography and AI itself.</p> <p>",
+      "recipe": "schneier",
+      "buzz": 10,
+      "topics": [
+        "ai",
+        "dev",
+        "crypto",
+        "science"
+      ],
+      "date": "2026-11-17"
     },
     {
       "uid": "rss:139fe93a86c6e7",
@@ -2225,23 +2273,6 @@
         "ai",
         "science",
         "security"
-      ],
-      "date": "2026-11-13"
-    },
-    {
-      "uid": "rss:1d8b68bb6887db",
-      "source": "rss",
-      "title": "AI Doesn’t Have to Go Rogue to Break the World",
-      "url": "https://www.schneier.com/blog/archives/2026/11/ai-doesnt-have-to-go-rogue-to-break-the-world.html",
-      "ts": 1794571424.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Bruce Schneier",
-      "summary": "<p><em>This essay is adapted from <a href=\"https://www.youtube.com/watch?v=eEBv0STiYhI\">a keynote speech</a> delivered at the DEF CON 34 conference in Las Vegas on August 7, 2026. The essay originally appeared in <a href=\"https://www.schneier.com/essays/archives/2026/11/ai-doesnt-have-to-go-rogue-to-break-the-world.html\">CyberScoop</a>.</em></p> <p>I want to talk about AI hacking. There are three",
-      "recipe": "schneier",
-      "buzz": 10,
-      "topics": [
-        "ai"
       ],
       "date": "2026-11-13"
     },
@@ -2415,6 +2446,23 @@
       "date": "2026-10-10"
     },
     {
+      "uid": "rss:1d8b68bb6887db",
+      "source": "rss",
+      "title": "AI Doesn’t Have to Go Rogue to Break the World",
+      "url": "https://www.schneier.com/blog/archives/2026/11/ai-doesnt-have-to-go-rogue-to-break-the-world.html",
+      "ts": 1794571424.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Bruce Schneier",
+      "summary": "<p><em>This essay is adapted from <a href=\"https://www.youtube.com/watch?v=eEBv0STiYhI\">a keynote speech</a> delivered at the DEF CON 34 conference in Las Vegas on August 7, 2026. The essay originally appeared in <a href=\"https://www.schneier.com/essays/archives/2026/11/ai-doesnt-have-to-go-rogue-to-break-the-world.html\">CyberScoop</a>.</em></p> <p>I want to talk about AI hacking. There are three",
+      "recipe": "schneier",
+      "buzz": 0,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-11-13"
+    },
+    {
       "uid": "rss:e2006326489748",
       "source": "rss",
       "title": "Another Way Police Are Locating People from Their Smartphones",
@@ -2466,25 +2514,6 @@
         "security"
       ],
       "date": "2026-11-10"
-    },
-    {
-      "uid": "rss:951b96997c00dd",
-      "source": "rss",
-      "title": "AI Security",
-      "url": "https://www.schneier.com/blog/archives/2026/11/ai-security.html",
-      "ts": 1794225994.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Bruce Schneier",
-      "summary": "<p>Two weeks ago, I attended the <a href=\"https://unpromptedcon.org/\">[un]prompted</a> AI security conference in San Francisco. It was an excellent event: three days of very dense talks about all aspects of AI security. (My talk was about integrous AI, and I will post it when it is online.)</p> <p>AI security can be divided into three broad topics. It&#8217;s important for researchers to understan",
-      "recipe": "schneier",
-      "buzz": 0,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-09"
     }
   ]
 }
