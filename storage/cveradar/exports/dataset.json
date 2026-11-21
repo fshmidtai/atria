@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T21:04:25+00:00",
+  "generated_at": "2026-11-21T01:29:55+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -19,11 +19,11 @@
     },
     "by_topic": {
       "security": 59,
-      "ai": 35,
+      "ai": 44,
       "dev": 30,
-      "hardware": 17,
+      "hardware": 16,
       "crypto": 4,
-      "science": 4,
+      "science": 3,
       "biz": 2
     },
     "top_domains": [
@@ -56,20 +56,116 @@
       "date": "2026-11-20"
     },
     {
-      "uid": "cve:GHSA-mc8w-wjhw-45x5",
+      "uid": "cve:GHSA-25qc-m4pw-2w8r",
       "source": "cve",
-      "title": "CVE-2026-114516: Etherpad: Pre-auth arbitrary file read",
-      "url": "https://github.com/advisories/GHSA-mc8w-wjhw-45x5",
-      "ts": 1795134225.0,
-      "points": 6000,
+      "title": "CVE-2026-122247: Budibase: Unauthenticated global-admin & database creation via tenant-confusion bypass of the one-time init guard (`POST /api/global/users/init`)",
+      "url": "https://github.com/advisories/GHSA-25qc-m4pw-2w8r",
+      "ts": 1795218601.0,
+      "points": 3500,
       "comments": 0,
-      "author": "ep_etherpad-lite",
-      "summary": "Severity: critical. ### Summary\n\nAn unauthenticated path‑traversal / arbitrary file read vulnerability in Etherpad's /static/* handler allows any remote, unauthenticated user to read any file on the server's filesystem (e.g. GET /static/plugins/ep_etherpad-lite/static/..%5C..%5C..%5C..%5C..%5C..%5C..%5Cetc/passwd retur",
+      "author": "@budibase/server",
+      "summary": "Severity: high. ## Description\n\n### Summary\n\nOn a self-hosted, single-tenant Budibase instance (`multiTenancy:false`), the public bootstrap endpoint `POST /api/global/users/init` remains fully exploitable **after** the instance has been provisioned. Its \"already initialised\" guard (`checkAnyUserExists()`) is evalua",
       "recipe": "gh_advisories",
-      "buzz": 6080,
+      "buzz": 3580,
       "topics": [
+        "ai",
+        "dev",
+        "science",
+        "security"
+      ],
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "cve:GHSA-r2q3-7m4h-63qg",
+      "source": "cve",
+      "title": "CVE-2026-122244: Budibase: Cross-privilege Stored XSS in the Budibase Builder via broken HTML-escaping in `jsonFormatter.format()` rendered through `{@html}` in the CSP-less Builder origin",
+      "url": "https://github.com/advisories/GHSA-r2q3-7m4h-63qg",
+      "ts": 1795218587.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "@budibase/server",
+      "summary": "Severity: high. ## Description\n\n### Summary\n\nA **low-privileged application end-user** (role `BASIC` - **not** a builder or admin, and on a public data-collection form, an unauthenticated visitor) can store an HTML/JavaScript payload in ordinary row data. When a **builder or admin** later opens that table in the Bu",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "cve:GHSA-555j-qj3j-c8jv",
+      "source": "cve",
+      "title": "CVE-2026-132275: svglib: Exponential resource consumption via nested <use> references in svg2rlg",
+      "url": "https://github.com/advisories/GHSA-555j-qj3j-c8jv",
+      "ts": 1795218478.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "svglib",
+      "summary": "Severity: high. # Summary\n\n`svg2rlg()` expands `<use>` references without any limit on the total number of expansions. Only direct cycles are rejected (`CircularRefError`). A group containing N `<use>` elements that point to another such group multiplies the work by N per nesting level, so an SVG of about 1.4 KB ma",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "cve:GHSA-r9qp-pqx5-8369",
+      "source": "cve",
+      "title": "CVE-2026-104883: contao/core-bundle: Non-admin users can self-grant permissions that implicitly make them administrators",
+      "url": "https://github.com/advisories/GHSA-r9qp-pqx5-8369",
+      "ts": 1795218341.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "contao/core-bundle",
+      "summary": "Severity: high. Commit `2b83a60f7763` (5.7.3) hardened the template editor: it added `TemplateEditorModuleVoter` + `CheckTemplateEditorSaveListener` so a non-admin cannot self-grant the `tpl_editor` backend module (editable PHP-capable templates permit server-side code execution). That voter supports only the `modu",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "dev",
         "security",
         "hardware"
+      ],
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "cve:GHSA-jrjx-9jjw-747m",
+      "source": "cve",
+      "title": "CVE-2026-77309: AIT-GUI route chain allows unauthenticated Python execution in server process",
+      "url": "https://github.com/advisories/GHSA-jrjx-9jjw-747m",
+      "ts": 1795217801.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "ait-gui",
+      "summary": "Severity: high. ## Summary\nA security issue exists where unauthenticated callers can instruct the AIT-GUI server to execute arbitrary Python scripts. The attack vector involves obtaining a session cookie through GET /, followed by a malicious POST /script/run request containing an absolute file path that bypasses t",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "ai",
+        "dev",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "cve:GHSA-xxqp-5qx8-gj5q",
+      "source": "cve",
+      "title": "CVE-2026-63341: Aedes has Uncaught Exception and Uncontrolled Resource Consumption",
+      "url": "https://github.com/advisories/GHSA-xxqp-5qx8-gj5q",
+      "ts": 1795217555.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "aedes",
+      "summary": "Severity: high. ### Summary\nA remote Denial of Service (DoS) vulnerability, allows any remote client to cause a complete crash of the Aedes MQTT broker process. This is achieved by sending a specially crafted MQTT message (via PUBLISH or SUBSCRIBE), or by setting a Will message with such a topic, containing a highl",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "ai",
+        "security"
       ],
       "date": "2026-11-20"
     },
@@ -206,147 +302,132 @@
       "date": "2026-11-20"
     },
     {
-      "uid": "cve:GHSA-66q9-mxf2-xqw6",
+      "uid": "cve:GHSA-53pm-wgxf-c6qf",
       "source": "cve",
-      "title": "CVE-2026-103035: TeamPass folder re-parenting authorization bypass",
-      "url": "https://github.com/advisories/GHSA-66q9-mxf2-xqw6",
-      "ts": 1795185904.0,
-      "points": 3500,
+      "title": "CVE-2026-132276: wcmatch: Polynomial-time ReDoS when matching untrusted names against multi-star patterns (default flags)",
+      "url": "https://github.com/advisories/GHSA-53pm-wgxf-c6qf",
+      "ts": 1795218558.0,
+      "points": 1800,
       "comments": 0,
-      "author": "nilsteampassnet/TeamPass",
-      "summary": "Severity: high. ## Summary\n\nMissing authorization in the update_folder action: any authenticated non-read-only user can rename, re-parent and convert to personal any folder in the instance, moving another team's credential subtree into their own personal space and removing it from the organization. Confirmed at HEA",
+      "author": "wcmatch",
+      "summary": "Severity: medium. # Summary\n\nWith default flags, a pattern that contains several `*` wildcards takes polynomial time, O(n^k) for k stars, to reject a crafted file name. The pattern is an ordinary developer constant such as `*_*_*_*_*.csv`; only the string being matched comes from the attacker. A 255-byte file name (t",
       "recipe": "gh_advisories",
-      "buzz": 3580,
-      "topics": [
-        "science",
-        "security"
-      ],
-      "date": "2026-11-20"
-    },
-    {
-      "uid": "cve:GHSA-2hjf-7455-w946",
-      "source": "cve",
-      "title": "CVE-2026-104199: aMQTT: Inefficient Regular Expression Complexity and Uncontrolled Resource Consumption and Improper Input Validation",
-      "url": "https://github.com/advisories/GHSA-2hjf-7455-w946",
-      "ts": 1795185821.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "amqtt",
-      "summary": "Severity: high. ### Impact\n\n`amqtt` is vulnerable to a remote denial of service caused by improper MQTT topic-filter validation combined with catastrophic regular-expression backtracking.\n\nA single client can freeze the entire broker by sending one specially crafted `SUBSCRIBE` packet followed by one `PUBLISH` pack",
-      "recipe": "gh_advisories",
-      "buzz": 3580,
-      "topics": [
-        "security"
-      ],
-      "date": "2026-11-20"
-    },
-    {
-      "uid": "cve:GHSA-hghq-53p7-c582",
-      "source": "cve",
-      "title": "CVE-2026-115578: go-guerrilla crashes on a bare XCLIENT command (7-byte slice off-by-one panic)",
-      "url": "https://github.com/advisories/GHSA-hghq-53p7-c582",
-      "ts": 1795185738.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "github.com/phires/go-guerrilla",
-      "summary": "Severity: high. The defect\n----------\nConfirmed at HEAD. server.go: cmdXCLIENT = []byte(\"XCLIENT\") is 7 bytes (line 78), so the dispatch match cmdXCLIENT.match(cmd) only guarantees len(input) >= 7. The handler then slices input[8:] (line 586):\n\n    case sc.XClientOn && cmdXCLIENT.match(cmd):\n        if toks := byte",
-      "recipe": "gh_advisories",
-      "buzz": 3580,
-      "topics": [
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-20"
-    },
-    {
-      "uid": "cve:GHSA-v9v2-98xq-627c",
-      "source": "cve",
-      "title": "CVE-2026-104129: pREST _groupby function-expression SQL injection (incomplete fix of CVE-2025-58450)",
-      "url": "https://github.com/advisories/GHSA-v9v2-98xq-627c",
-      "ts": 1795185702.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "github.com/prest/prest",
-      "summary": "Severity: high. What the fix did and the gap\n----------------------------\nThe v2.3.0 fix (commit e88dabb) routed the _select field through a strict new gate, sanitizeSelectField (postgres.go:947/1003/2097). The sibling _groupby path was left on the far weaker isSafeSQLExpression. adapters/postgres/postgres.go, Grou",
-      "recipe": "gh_advisories",
-      "buzz": 3580,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-20"
-    },
-    {
-      "uid": "cve:GHSA-x6w4-f264-3vvr",
-      "source": "cve",
-      "title": "CVE-2026-63184: Refitter: Unrestricted OpenAPI references permit build-host SSRF and file inclusion",
-      "url": "https://github.com/advisories/GHSA-x6w4-f264-3vvr",
-      "ts": 1795185329.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "Refitter",
-      "summary": "Severity: high. ### Summary\n\nRefitter (the `refitter` dotnet tool, built on NJsonSchema for `$ref` resolution) fetches remote\n`http(s)` URLs and reads local files (including absolute paths and `../` traversal outside the input\ndirectory), inlining the referenced schema into the generated Refit interface/contracts.",
-      "recipe": "gh_advisories",
-      "buzz": 3580,
-      "topics": [
-        "dev",
-        "science",
-        "security"
-      ],
-      "date": "2026-11-20"
-    },
-    {
-      "uid": "cve:GHSA-jwgx-mp9m-jwcr",
-      "source": "cve",
-      "title": "CVE-2026-58192: appium allows unauthenticated arbitrary file/directory deletion in @appium/storage-plugin",
-      "url": "https://github.com/advisories/GHSA-jwgx-mp9m-jwcr",
-      "ts": 1795185270.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "@appium/storage-plugin",
-      "summary": "Severity: high. ## Summary\n\nThe Appium storage plugin exposes an HTTP endpoint `POST /storage/delete` that takes a user-supplied `name` and deletes it from the server storage folder. The handler passes `name` straight into `path.join(storageRoot, name)` and then `fs.rimraf()` **without any path sanitization**. By s",
-      "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 1880,
       "topics": [
         "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "cve:GHSA-q87h-c5m7-659j",
+      "source": "cve",
+      "title": "CVE-2026-132277: Inscriptis: Quadratic memory growth from sibling <table> elements in get_text()",
+      "url": "https://github.com/advisories/GHSA-q87h-c5m7-659j",
+      "ts": 1795218531.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "inscriptis",
+      "summary": "Severity: medium. # Summary\n\nEvery sibling `<table>` adds another level of the parent's indentation, so the size of `get_text()` output grows quadratically with the number of tables. In the measurements below, a 240 KB HTML document produces about 1 billion characters and uses about 1 GB of memory.\n\n# Details\n\n`table",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "cve:GHSA-h57j-5f5m-789v",
+      "source": "cve",
+      "title": "CVE-2026-104884: contao/core-bundle: Cross-site scripting in the frontend search results",
+      "url": "https://github.com/advisories/GHSA-h57j-5f5m-789v",
+      "ts": 1795218416.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "contao/core-bundle",
+      "summary": "Severity: medium. Commit `23e8cca3136a` hardened the search-result title against insert-tag/XSS by setting `$objTemplate->title = StringUtil::specialchars(StringUtil::stripInsertTags($arrResult[$i]['title']))`. But the legacy HTML5 template does not use that `title` variable - it prints the raw `link` variable, which",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "cve:GHSA-23w9-4pg3-xwm3",
+      "source": "cve",
+      "title": "CVE-2026-104882: contao/core-bundle: Improper access control in the CSV import wizard",
+      "url": "https://github.com/advisories/GHSA-23w9-4pg3-xwm3",
+      "ts": 1795218273.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "contao/core-bundle",
+      "summary": "Severity: medium. Custom backend module \"key\" actions are dispatched in `Backend::getBackendModule()` (Backend.php:322-327) after only the module-level `USER_CAN_ACCESS_MODULE` check - no per-record voter runs.\n\n## Impact\n\nA non-admin editor scoped to certain pages/forms can overwrite the tableitems/listitems/options",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "cve:GHSA-3r9g-pfhv-3228",
+      "source": "cve",
+      "title": "CVE-2026-104881: contao/newsletter-bundle: Contao newsletter custom actions bypass channel-scoped authorization",
+      "url": "https://github.com/advisories/GHSA-3r9g-pfhv-3228",
+      "ts": 1795218206.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "contao/newsletter-bundle",
+      "summary": "Severity: medium. Channel access is enforced only by the DataContainer voters (`NewsletterChannelAccessVoter` / `NewsletterRecipientsAccessVoter`, requiring USER_CAN_EDIT_CHANNEL), whose `supportsType()` fires exclusively for Create/Read/Update/DeleteAction subjects dispatched inside DC_Table's create/edit/delete met",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "cve:GHSA-qh76-45cr-8xrc",
+      "source": "cve",
+      "title": "CVE-2026-61725: sevenz-rust2: decompress builds each output path as dest.join(entry.name()) with no traversal guard, allowing a crafted .7z to write files outside the destination (Zip-Slip)",
+      "url": "https://github.com/advisories/GHSA-qh76-45cr-8xrc",
+      "ts": 1795217594.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "sevenz-rust2",
+      "summary": "Severity: medium. ### Summary\n\nExtracting an attacker-supplied 7z archive can write files outside the destination directory. The 7z header stores each entry's path as a UTF-16 name with nothing constraining it to a relative, in-tree path. The extractor joins that name onto the destination and writes to the result wit",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "cve:GHSA-p3j5-5hrq-p75h",
+      "source": "cve",
+      "title": "CVE-2026-58254: nats-server Leaf node connections bypass Nats-Trace-Dest permission check",
+      "url": "https://github.com/advisories/GHSA-p3j5-5hrq-p75h",
+      "ts": 1795217519.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "github.com/nats-io/nats-server/v2",
+      "summary": "Severity: medium. ### Background\n\nNATS.io is a high performance open source pub-sub distributed communication technology, built for the cloud, on-premise, IoT and edge computing.\n\nThe NATS Server supports leafnode connections between servers and message tracing through NATS headers.\n\n### Problem Description\n\nMessage",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
         "security",
         "hardware"
-      ],
-      "date": "2026-11-20"
-    },
-    {
-      "uid": "cve:GHSA-7hvw-3c2q-45qg",
-      "source": "cve",
-      "title": "CVE-2026-103025: bep/imagemeta: Unbounded memory allocation decoding PNG `zTXt` \"Raw profile type iptc\" chunks",
-      "url": "https://github.com/advisories/GHSA-7hvw-3c2q-45qg",
-      "ts": 1795134052.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "github.com/bep/imagemeta",
-      "summary": "Severity: high. A crafted PNG can make `imagemeta.Decode` allocate memory far in excess of the input file's size, leading to memory exhaustion. Two separate paths in the `zTXt` \"Raw profile type iptc\" branch are affected: the declared chunk length drives an allocation directly, and the embedded zlib stream is decom",
-      "recipe": "gh_advisories",
-      "buzz": 3580,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-20"
-    },
-    {
-      "uid": "cve:GHSA-2pj4-v76f-wjvx",
-      "source": "cve",
-      "title": "CVE-2026-62955: baserCMS: Path Traversal Bypass via realpath() in BcThemeFileService (CVE-2026-30940 Patch Bypass)",
-      "url": "https://github.com/advisories/GHSA-2pj4-v76f-wjvx",
-      "ts": 1795133867.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "baserproject/baser-core",
-      "summary": "Severity: high. ### Summary\n\nThe security patch introduced in baserCMS 5.2.3 to address CVE-[phone] / [GHSA-c5c6-37vq-pjcq](https://github.com/baserproject/basercms/security/advisories/GHSA-c5c6-37vq-pjcq) is **incomplete**. The patch added a `realpath()`-based directory traversal check in `BcThemeFileService::g",
-      "recipe": "gh_advisories",
-      "buzz": 3580,
-      "topics": [
-        "dev",
-        "security"
       ],
       "date": "2026-11-20"
     },
@@ -464,113 +545,39 @@
       "date": "2026-11-20"
     },
     {
-      "uid": "cve:GHSA-3g82-77xr-68x5",
+      "uid": "cve:GHSA-72jh-722p-rqr3",
       "source": "cve",
-      "title": "CVE-2026-63386: js-toml allows uncontrolled recursion in `load()` leading `RangeError` (stack exhaustion) on deeply nested input",
-      "url": "https://github.com/advisories/GHSA-3g82-77xr-68x5",
-      "ts": 1795185645.0,
-      "points": 1800,
+      "title": "CVE-2026-77331: memtomem-stm: Concurrent LTM recovery can duplicate reconnects or reuse a cancelled transport session",
+      "url": "https://github.com/advisories/GHSA-72jh-722p-rqr3",
+      "ts": 1795217895.0,
+      "points": 700,
       "comments": 0,
-      "author": "js-toml",
-      "summary": "Severity: medium. ## Summary\n\n`load()` parses untrusted TOML using a recursive-descent parser (Chevrotain) and a\nrecursive tree-walking interpreter. Neither the parser nor the interpreter enforces a\nmaximum nesting / key depth. A small, attacker-controlled document with deep nesting\n(arrays, inline tables) or a long",
+      "author": "memtomem-stm",
+      "summary": "Severity: low. Concurrent surfacing RPC failures can trigger more than one reconnect for the same dirty session, and cancellation during a post-reconnect retry can leave the replacement session reusable despite an interrupted protocol exchange. The private fix introduces monotonic session generations, one shielded",
       "recipe": "gh_advisories",
-      "buzz": 1880,
+      "buzz": 780,
       "topics": [
         "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-20"
-    },
-    {
-      "uid": "cve:GHSA-gfwj-45pc-w6r5",
-      "source": "cve",
-      "title": "CVE-2026-103033: ALTCHA: Nil-map panic (pre-verification DoS) in v1 parseServerSignature on malformed VerificationData",
-      "url": "https://github.com/advisories/GHSA-gfwj-45pc-w6r5",
-      "ts": 1795134079.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "github.com/altcha-org/altcha-lib-go/v2",
-      "summary": "Severity: medium. ### Summary\n\n`parseServerSignature` in the v1 module only initializes `ServerSignatureVerificationData.Extra` inside the `if err == nil` branch after `url.ParseQuery(parsedPayload.VerificationData)`. Go's `url.ParseQuery` returns the successfully-parsed pairs together with a non-nil error when the q",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "dev",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-20"
-    },
-    {
-      "uid": "cve:GHSA-v6w5-38cf-pcv8",
-      "source": "cve",
-      "title": "CVE-2026-102945: Aether Project amf: panic on an unrecovered NGAP goroutine",
-      "url": "https://github.com/advisories/GHSA-v6w5-38cf-pcv8",
-      "ts": 1795134038.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "github.com/omec-project/amf",
-      "summary": "Severity: medium. ## Summary\n\nHandlePathSwitchRequest guards the UESecurityCapabilities IE for presence but never for length, and the extensible APER type silently yields an empty bit string, so six unguarded index-zero reads panic on an unrecovered goroutine and terminate the AMF. The AMF is the control-plane entry",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "security"
-      ],
-      "date": "2026-11-20"
-    },
-    {
-      "uid": "cve:GHSA-wgvx-x5g3-9v29",
-      "source": "cve",
-      "title": "CVE-2026-63012: baserCMS administrative API authorization bypass through session fallback",
-      "url": "https://github.com/advisories/GHSA-wgvx-x5g3-9v29",
-      "ts": 1795133915.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "baserproject/baser-core",
-      "summary": "Severity: medium. ### Summary\n\nAn authorization bypass occurs against the API endpoint `/baser/api/admin/` by abusing the session authentication fallback.\n\n### Details\n\nThe mail settings are used here as an example.\n\nAdmin side:\n\nhttps://github.com/baserproject/basercms/blob/master/plugins/baser-core/config/permissio",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-20"
-    },
-    {
-      "uid": "cve:GHSA-25rm-9wvm-m38v",
-      "source": "cve",
-      "title": "CVE-2026-77382: falcon-rust: Discrete-Gaussian sampler runs at 2^-33 precision, far below Falcon's requirement (reference KAT vectors no longer pass)",
-      "url": "https://github.com/advisories/GHSA-25rm-9wvm-m38v",
-      "ts": 1795133824.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "falcon-rust",
-      "summary": "Severity: medium. **Reporter:** Connor Webber\n**Package:** `falcon-rust` (crates.io), repository `github.com/aszepieniec/falcon-rust`\n**Affected:** v0.1.3 and the current `master` (HEAD `cfa1b35`). Regression introduced in commit `bf2cf00`.\n**Component:** discrete-Gaussian sampler, `src/samplerz.rs` (`approx_exp`, `b",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-20"
-    },
-    {
-      "uid": "cve:GHSA-r7h9-qx4h-77j5",
-      "source": "cve",
-      "title": "CVE-2026-77378: Bolt ListFormatHelper SQL injection",
-      "url": "https://github.com/advisories/GHSA-r7h9-qx4h-77j5",
-      "ts": 1795133755.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "bolt/core",
-      "summary": "Severity: medium. ### Impact\n\nSQL Injection in ListFormatHelper allows authenticated users with the upload permission to execute arbitrary SQL queries and exfiltrate sensitive database contents through the /async/select-options endpoint when general/caching/list_format is enabled.\n\n### Patches\n\nThis has been patched",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "dev",
         "science",
+        "security"
+      ],
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "cve:GHSA-43hx-xm7w-3mhj",
+      "source": "cve",
+      "title": "CVE-2026-77332: memtomem-stm: Surfaced memory data can escape the Markdown compatibility boundary",
+      "url": "https://github.com/advisories/GHSA-43hx-xm7w-3mhj",
+      "ts": 1795217859.0,
+      "points": 700,
+      "comments": 0,
+      "author": "memtomem-stm",
+      "summary": "Severity: low. Untrusted long-term and working-memory fields can introduce Markdown or HTML-compatible structure into the surfaced-memory envelope. A crafted memory may create misleading structural boundaries or visually conceal content. The private fix serializes every untrusted field as inert single-line data, v",
+      "recipe": "gh_advisories",
+      "buzz": 780,
+      "topics": [
+        "ai",
+        "dev",
         "security"
       ],
       "date": "2026-11-20"
