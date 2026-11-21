@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T13:16:28+00:00",
+  "generated_at": "2026-11-21T17:00:57+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -10,34 +10,34 @@
     "rss"
   ],
   "totals": {
-    "items": 135,
+    "items": 136,
     "by_source": {
       "hn": 40,
       "cve": 30,
-      "github": 15,
+      "github": 16,
       "rss": 50
     },
     "by_recipe": {
       "hn_sec": 40,
       "gh_advisories": 30,
       "hackersnews": 30,
-      "github_sec": 15,
+      "github_sec": 16,
       "krebs": 10,
       "schneier": 10
     },
     "by_topic": {
       "security": 111,
-      "ai": 69,
-      "dev": 52,
+      "ai": 70,
+      "dev": 53,
       "hardware": 19,
-      "crypto": 8,
+      "crypto": 9,
       "biz": 7,
       "science": 5
     },
     "top_domains": [
       [
         "github.com",
-        47
+        48
       ],
       [
         "thehackernews.com",
@@ -184,7 +184,7 @@
       "author": "github.com/fabiolb/fabio",
       "summary": "Severity: critical. ## Summary\n\nRoute selection uses the raw un-normalized request path, and the per-route ACL and basic-auth gates hang off that selection, so a dot-segment, encoded-dot, or double-slash variant of a protected path selects a different route, skips both gates, and is forwarded to the backend which norma",
       "recipe": "gh_advisories",
-      "buzz": 6080,
+      "buzz": 6030,
       "topics": [
         "security"
       ],
@@ -396,6 +396,23 @@
       "date": "2026-11-20"
     },
     {
+      "uid": "hn:50172041",
+      "source": "hn",
+      "title": "Security advisory: Critical remote code execution vulnerabilities, update now",
+      "url": "https://www.php.net/archive/2026.php#2026-10-21-5",
+      "ts": 1792527350.0,
+      "points": 1561,
+      "comments": 659,
+      "author": "xd",
+      "summary": "<a href=\"https:&#x2F;&#x2F;cert.europa.eu&#x2F;publications&#x2F;security-advisories&#x2F;2026-018&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;cert.europa.eu&#x2F;publications&#x2F;security-advisories&#x2F;2026...</a><p><a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=[phone]\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=[phone]</a>",
+      "recipe": "hn_sec",
+      "buzz": 3538,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-10-20"
+    },
+    {
       "uid": "cve:GHSA-x72p-hmqp-46hw",
       "source": "cve",
       "title": "CVE-2026-105803: Git LFS may execute arbitrary commands via crafted Git LFS configurations",
@@ -406,7 +423,7 @@
       "author": "github.com/git-lfs/git-lfs",
       "summary": "Severity: high. ### Impact\n\nWhen fetching objects from a malicious repository, Git LFS may execute an arbitrary command or binary after failing to sufficiently restrict the set of configuration options defined in an `.lfsconfig` file in the repository.\n\nGit LFS permits a limited set of configuration options to be d",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "ai",
         "dev",
@@ -426,7 +443,7 @@
       "author": "github.com/git-lfs/git-lfs",
       "summary": "Severity: high. ### Impact\n\nWhen fetching objects from a malicious repository, Git LFS may execute an arbitrary command or binary after incorrectly parsing the Git configuration options defined for a submodule.\n\nGit LFS reads Git configuration options without checking for embedded line-ending control characters.  B",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "dev",
         "crypto",
@@ -445,7 +462,7 @@
       "author": "paymenter/paymenter",
       "summary": "Severity: high. ### Summary\n\nA Livewire function allowed attackers to call any public function, allowing attackers to call any public method on the component. Because an attacker can call any function, they can also overwrite locked data.\n\n### Technical Details\n\n`app/Livewire/Traits/HasConfirmation.php` exposed a p",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "ai",
         "security"
@@ -463,7 +480,7 @@
       "author": "amqtt",
       "summary": "Severity: high. ### Impact\n\n`amqtt` is vulnerable to a remote denial of service caused by incomplete MQTT QoS 2 transactions remaining allocated after the associated client disconnects.\n\nMQTT QoS 2 uses a four-step handshake to provide exactly-once delivery. If a client begins a QoS 2 transaction but disconnects be",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "ai",
         "dev",
@@ -482,7 +499,7 @@
       "author": "poweradmin/poweradmin",
       "summary": "Severity: high. ### Summary\n\nThe email second factor is an mt_rand() six-digit code verified with no attempt limit or lockout\n\nThe email second factor is a six-digit code drawn from `mt_rand()` and verified with no attempt limit, so an attacker who already has the password can brute-force it inside its validity win",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "ai",
         "dev",
@@ -501,7 +518,7 @@
       "author": "github.com/git-lfs/git-lfs",
       "summary": "Severity: high. ### Impact\n\nAfter receiving an HTTP redirection, Git LFS may forward certain HTTP headers to a host other than the one for which they were intended.  While `Authorization` headers are never forwarded to inappropriate hosts, `Cookie` headers may be forwarded incorrectly.\n\nGit LFS has resolved this is",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "ai",
         "dev",
@@ -520,29 +537,12 @@
       "author": "github.com/git-lfs/git-lfs",
       "summary": "Severity: high. ### Impact\n\nWhen Git LFS makes object transfer or authentication requests to a remote host via SSH, it passes the path component of the remote's SSH URL as part of a command to be executed, but does not properly format the URL's path component as a single argument.  By inserting shell meta-character",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "dev",
         "security"
       ],
       "date": "2026-11-20"
-    },
-    {
-      "uid": "hn:50172041",
-      "source": "hn",
-      "title": "Security advisory: Critical remote code execution vulnerabilities, update now",
-      "url": "https://www.php.net/archive/2026.php#2026-10-21-5",
-      "ts": 1792527350.0,
-      "points": 1561,
-      "comments": 659,
-      "author": "xd",
-      "summary": "<a href=\"https:&#x2F;&#x2F;cert.europa.eu&#x2F;publications&#x2F;security-advisories&#x2F;2026-018&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;cert.europa.eu&#x2F;publications&#x2F;security-advisories&#x2F;2026...</a><p><a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=[phone]\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=[phone]</a>",
-      "recipe": "hn_sec",
-      "buzz": 3538,
-      "topics": [
-        "security"
-      ],
-      "date": "2026-10-20"
     },
     {
       "uid": "hn:32148218",
@@ -968,119 +968,6 @@
       "date": "2026-11-20"
     },
     {
-      "uid": "cve:GHSA-9rv8-9hvg-92mq",
-      "source": "cve",
-      "title": "CVE-2026-35376: chcon: recursive relabel not anchored to traversal dirfd (TOCTOU)",
-      "url": "https://github.com/advisories/GHSA-9rv8-9hvg-92mq",
-      "ts": 1795192774.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "uu_chcon",
-      "summary": "Severity: medium. `chcon` resolved recursive targets from `fts_accpath` with a fresh path lookup, so traversal and the SELinux get/set were not bound to traversal directory state. A privileged recursive relabel can be redirected to unintended objects under rename/symlink races. Fix opens targets with `openat` against",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-20"
-    },
-    {
-      "uid": "cve:GHSA-fjjq-8hw5-cf9f",
-      "source": "cve",
-      "title": "CVE-2026-35374: split: TOCTOU output-open allows truncating a swapped file",
-      "url": "https://github.com/advisories/GHSA-fjjq-8hw5-cf9f",
-      "ts": 1795192407.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "uu_split",
-      "summary": "Severity: medium. `split` checks input/output identity by path before opening the output, then opens with truncation, leaving a race window on mutable path components. GNU opens first and compares the opened output inode against the input before truncating. The race can cause `split` to truncate/write a file differen",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-20"
-    },
-    {
-      "uid": "cve:GHSA-6499-jgj4-2wpf",
-      "source": "cve",
-      "title": "CVE-2026-104773: CKAN: Session Fixation in Registration View",
-      "url": "https://github.com/advisories/GHSA-6499-jgj4-2wpf",
-      "ts": 1795191926.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "ckan",
-      "summary": "Severity: medium. ## Description\n\nWeb user registration form is vulnerable to session fixation if the site is configured with server-side session storage (CKAN uses cookie-based session storage by default). The attacker would need to either set a cookie on the victim's browser or steal the victim's currently valid se",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "dev",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-20"
-    },
-    {
-      "uid": "cve:GHSA-cg26-4c6j-2x8h",
-      "source": "cve",
-      "title": "CVE-2026-69133: netty-incubator-codec-ohttp: OHTTP codecs retain consumed outer cumulation buffers after completed exchanges",
-      "url": "https://github.com/advisories/GHSA-cg26-4c6j-2x8h",
-      "ts": 1795191729.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "io.netty.incubator:netty-incubator-codec-ohttp",
-      "summary": "Severity: medium. ## Summary:\n\nOHttpClientCodec and OHttpServerCodec retain the encrypted outer HttpContent in a handler-level cumulationBuffer. After a valid OHTTP exchange completes, the OHTTP request/response context is destroyed, but the outer cumulationBuffer is not released or reset. It remains referenced by th",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-20"
-    },
-    {
-      "uid": "cve:GHSA-3h6w-xcw3-9xjj",
-      "source": "cve",
-      "title": "CVE-2026-104885: OpenRemote: Cross-realm MQTT session disconnect without authorization",
-      "url": "https://github.com/advisories/GHSA-3h6w-xcw3-9xjj",
-      "ts": 1795186618.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "io.openremote:openremote-manager",
-      "summary": "Severity: medium. ### Summary\n\nCross-realm MQTT session disconnect without authorization\n\n## Vulnerability\n\nThe `disconnectUserSession` endpoint in `UserResourceImpl.java` (line 443) accepts a `realm` path parameter but ignores it entirely, performing no authorization or realm-boundary check before force-disconnectin",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "security"
-      ],
-      "date": "2026-11-20"
-    },
-    {
-      "uid": "cve:GHSA-vcx7-pfrh-mcfg",
-      "source": "cve",
-      "title": "CVE-2026-115565: storyblok-backup: Stored path traversal via unsanitized Storyblok component names in backup output",
-      "url": "https://github.com/advisories/GHSA-vcx7-pfrh-mcfg",
-      "ts": 1795186518.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "storyblok-backup",
-      "summary": "Severity: medium. ### Summary\nstoryblok-backup writes files using unsanitized names for Storyblok components, which are content type or schema definitions. This allows a component name containing path traversal sequences to cause backup files to be written outside the intended backup directory. Anyone with component",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "dev",
-        "crypto",
-        "security"
-      ],
-      "date": "2026-11-20"
-    },
-    {
       "uid": "hn:48166459",
       "source": "hn",
       "title": "Mozilla to UK regulators: VPNs are essential privacy and security tools",
@@ -1130,6 +1017,119 @@
         "security"
       ],
       "date": "2016-12-15"
+    },
+    {
+      "uid": "cve:GHSA-9rv8-9hvg-92mq",
+      "source": "cve",
+      "title": "CVE-2026-35376: chcon: recursive relabel not anchored to traversal dirfd (TOCTOU)",
+      "url": "https://github.com/advisories/GHSA-9rv8-9hvg-92mq",
+      "ts": 1795192774.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "uu_chcon",
+      "summary": "Severity: medium. `chcon` resolved recursive targets from `fts_accpath` with a fresh path lookup, so traversal and the SELinux get/set were not bound to traversal directory state. A privileged recursive relabel can be redirected to unintended objects under rename/symlink races. Fix opens targets with `openat` against",
+      "recipe": "gh_advisories",
+      "buzz": 1830,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "cve:GHSA-fjjq-8hw5-cf9f",
+      "source": "cve",
+      "title": "CVE-2026-35374: split: TOCTOU output-open allows truncating a swapped file",
+      "url": "https://github.com/advisories/GHSA-fjjq-8hw5-cf9f",
+      "ts": 1795192407.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "uu_split",
+      "summary": "Severity: medium. `split` checks input/output identity by path before opening the output, then opens with truncation, leaving a race window on mutable path components. GNU opens first and compares the opened output inode against the input before truncating. The race can cause `split` to truncate/write a file differen",
+      "recipe": "gh_advisories",
+      "buzz": 1830,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "cve:GHSA-6499-jgj4-2wpf",
+      "source": "cve",
+      "title": "CVE-2026-104773: CKAN: Session Fixation in Registration View",
+      "url": "https://github.com/advisories/GHSA-6499-jgj4-2wpf",
+      "ts": 1795191926.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "ckan",
+      "summary": "Severity: medium. ## Description\n\nWeb user registration form is vulnerable to session fixation if the site is configured with server-side session storage (CKAN uses cookie-based session storage by default). The attacker would need to either set a cookie on the victim's browser or steal the victim's currently valid se",
+      "recipe": "gh_advisories",
+      "buzz": 1830,
+      "topics": [
+        "ai",
+        "dev",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "cve:GHSA-cg26-4c6j-2x8h",
+      "source": "cve",
+      "title": "CVE-2026-69133: netty-incubator-codec-ohttp: OHTTP codecs retain consumed outer cumulation buffers after completed exchanges",
+      "url": "https://github.com/advisories/GHSA-cg26-4c6j-2x8h",
+      "ts": 1795191729.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "io.netty.incubator:netty-incubator-codec-ohttp",
+      "summary": "Severity: medium. ## Summary:\n\nOHttpClientCodec and OHttpServerCodec retain the encrypted outer HttpContent in a handler-level cumulationBuffer. After a valid OHTTP exchange completes, the OHTTP request/response context is destroyed, but the outer cumulationBuffer is not released or reset. It remains referenced by th",
+      "recipe": "gh_advisories",
+      "buzz": 1830,
+      "topics": [
+        "ai",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "cve:GHSA-3h6w-xcw3-9xjj",
+      "source": "cve",
+      "title": "CVE-2026-104885: OpenRemote: Cross-realm MQTT session disconnect without authorization",
+      "url": "https://github.com/advisories/GHSA-3h6w-xcw3-9xjj",
+      "ts": 1795186618.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "io.openremote:openremote-manager",
+      "summary": "Severity: medium. ### Summary\n\nCross-realm MQTT session disconnect without authorization\n\n## Vulnerability\n\nThe `disconnectUserSession` endpoint in `UserResourceImpl.java` (line 443) accepts a `realm` path parameter but ignores it entirely, performing no authorization or realm-boundary check before force-disconnectin",
+      "recipe": "gh_advisories",
+      "buzz": 1830,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-11-20"
+    },
+    {
+      "uid": "cve:GHSA-vcx7-pfrh-mcfg",
+      "source": "cve",
+      "title": "CVE-2026-115565: storyblok-backup: Stored path traversal via unsanitized Storyblok component names in backup output",
+      "url": "https://github.com/advisories/GHSA-vcx7-pfrh-mcfg",
+      "ts": 1795186518.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "storyblok-backup",
+      "summary": "Severity: medium. ### Summary\nstoryblok-backup writes files using unsanitized names for Storyblok components, which are content type or schema definitions. This allows a component name containing path traversal sequences to cause backup files to be written outside the intended backup directory. Anyone with component",
+      "recipe": "gh_advisories",
+      "buzz": 1830,
+      "topics": [
+        "ai",
+        "dev",
+        "crypto",
+        "security"
+      ],
+      "date": "2026-11-20"
     },
     {
       "uid": "hn:25843874",
@@ -1387,7 +1387,7 @@
       "author": "uu_env",
       "summary": "Severity: low. In `env -S`, GNU keeps backslashes literal inside single quotes (except `\\\\` and `\\'`); uutils errors on sequences like `\\a`. This is the backslash-handling issue of the broader `-S`/`--split-string` parsing divergence.\n```\nenv -S\"printf %s '\\''\\\\x'\\''\"   # GNU prints \\x ; uutils: invalid sequence '",
       "recipe": "gh_advisories",
-      "buzz": 780,
+      "buzz": 730,
       "topics": [
         "dev",
         "security"
@@ -1420,7 +1420,7 @@
       "author": "elmati279",
       "summary": "HTTP/2 shell transport, Brotli impact assessed — evidence reviewed, findings documented.",
       "recipe": "github_sec",
-      "buzz": 233,
+      "buzz": 183,
       "topics": [
         "dev"
       ],
@@ -1437,7 +1437,7 @@
       "author": "maxnyakundi23-del",
       "summary": "Detects Java deserialization exposure through shell-oriented audit checks.",
       "recipe": "github_sec",
-      "buzz": 233,
+      "buzz": 183,
       "topics": [],
       "date": "2026-11-20"
     },
@@ -1464,14 +1464,31 @@
       "title": "wildorigins/wildos",
       "url": "https://github.com/wildorigins/wildos",
       "ts": 1794169078.0,
-      "points": 145,
+      "points": 146,
       "comments": 8,
       "author": "wildorigins",
       "summary": "A hardened Linux desktop, rebuilt from scratch, with your Windows apps built in. Free and open source.",
       "recipe": "github_sec",
-      "buzz": 169,
+      "buzz": 170,
       "topics": [],
       "date": "2026-11-08"
+    },
+    {
+      "uid": "gh:vulnix0x4/a-better-antivirus",
+      "source": "github",
+      "title": "vulnix0x4/a-better-antivirus",
+      "url": "https://github.com/vulnix0x4/a-better-antivirus",
+      "ts": 1794885574.0,
+      "points": 115,
+      "comments": 8,
+      "author": "vulnix0x4",
+      "summary": "Catches infostealers in the act on Windows: plants fake passwords, wallets and app data that only malware would read, and freezes whatever touches them.",
+      "recipe": "github_sec",
+      "buzz": 149,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-11-17"
     },
     {
       "uid": "gh:nestho/impacket-rs",
@@ -1489,23 +1506,6 @@
         "dev"
       ],
       "date": "2026-11-11"
-    },
-    {
-      "uid": "gh:vulnix0x4/a-better-antivirus",
-      "source": "github",
-      "title": "vulnix0x4/a-better-antivirus",
-      "url": "https://github.com/vulnix0x4/a-better-antivirus",
-      "ts": 1794885574.0,
-      "points": 108,
-      "comments": 8,
-      "author": "vulnix0x4",
-      "summary": "Catches infostealers in the act on Windows: plants fake passwords, wallets and app data that only malware would read, and freezes whatever touches them.",
-      "recipe": "github_sec",
-      "buzz": 142,
-      "topics": [
-        "security"
-      ],
-      "date": "2026-11-17"
     },
     {
       "uid": "gh:raca2024/ashampoo-undelete-recovery",
@@ -1706,24 +1706,40 @@
       "date": "2026-11-20"
     },
     {
-      "uid": "rss:9ab8a41daf1f07",
-      "source": "rss",
-      "title": "Bazuka Android Malware Uses Fake Screen Overlays to Hide Credential Theft and Device Control",
-      "url": "https://thehackernews.com/2026/11/bazuka-android-malware-uses-fake-screen.html",
-      "ts": 1795193896.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Cybersecurity researchers have disclosed details of a previously unknown Android malware framework called Bazuka that offers large language model (LLM) integration for victim management and control at scale. Dutch mobile security company ThreatFabric said it discovered the threat in late October 2026 during an investigation into an NFC-relay banking Trojan. \"Bazuka is a full malware framework,",
-      "recipe": "hackersnews",
-      "buzz": 80,
+      "uid": "gh:NPCmillionaire/unredact.tools",
+      "source": "github",
+      "title": "NPCmillionaire/unredact.tools",
+      "url": "https://github.com/NPCmillionaire/unredact.tools",
+      "ts": 1794511431.0,
+      "points": 47,
+      "comments": 2,
+      "author": "NPCmillionaire",
+      "summary": "See what your files leak (GPS, serials, authors, failed redactions, deleted text, watermarks), then scrub them.",
+      "recipe": "github_sec",
+      "buzz": 53,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-11-12"
+    },
+    {
+      "uid": "gh:tokensafe-dev/tokensafe",
+      "source": "github",
+      "title": "tokensafe-dev/tokensafe",
+      "url": "https://github.com/tokensafe-dev/tokensafe",
+      "ts": 1794097849.0,
+      "points": 47,
+      "comments": 2,
+      "author": "tokensafe-dev",
+      "summary": "Your AI agent is smart enough to code all day. Now it actually can. Local runtime firewall & zero-loss context optimizer for AI coding agents.",
+      "recipe": "github_sec",
+      "buzz": 53,
       "topics": [
         "ai",
         "dev",
-        "biz",
-        "security"
+        "crypto"
       ],
-      "date": "2026-11-20"
+      "date": "2026-11-08"
     },
     {
       "uid": "gh:rammahmagdy/Latch",
@@ -1741,34 +1757,17 @@
       "date": "2026-11-18"
     },
     {
-      "uid": "gh:NPCmillionaire/unredact.tools",
-      "source": "github",
-      "title": "NPCmillionaire/unredact.tools",
-      "url": "https://github.com/NPCmillionaire/unredact.tools",
-      "ts": 1794511431.0,
-      "points": 46,
-      "comments": 2,
-      "author": "NPCmillionaire",
-      "summary": "See what your files leak (GPS, serials, authors, failed redactions, deleted text, watermarks), then scrub them.",
-      "recipe": "github_sec",
-      "buzz": 52,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-12"
-    },
-    {
       "uid": "gh:spatie/laravel-suspicious-login",
       "source": "github",
       "title": "spatie/laravel-suspicious-login",
       "url": "https://github.com/spatie/laravel-suspicious-login",
       "ts": 1794917088.0,
-      "points": 37,
+      "points": 38,
       "comments": 1,
       "author": "spatie",
       "summary": "Detect suspicious logins in your Laravel app",
       "recipe": "github_sec",
-      "buzz": 50,
+      "buzz": 51,
       "topics": [],
       "date": "2026-11-17"
     },
@@ -1819,6 +1818,26 @@
         "dev"
       ],
       "date": "2026-11-19"
+    },
+    {
+      "uid": "rss:9ab8a41daf1f07",
+      "source": "rss",
+      "title": "Bazuka Android Malware Uses Fake Screen Overlays to Hide Credential Theft and Device Control",
+      "url": "https://thehackernews.com/2026/11/bazuka-android-malware-uses-fake-screen.html",
+      "ts": 1795193896.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Cybersecurity researchers have disclosed details of a previously unknown Android malware framework called Bazuka that offers large language model (LLM) integration for victim management and control at scale. Dutch mobile security company ThreatFabric said it discovered the threat in late October 2026 during an investigation into an NFC-relay banking Trojan. \"Bazuka is a full malware framework,",
+      "recipe": "hackersnews",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "dev",
+        "biz",
+        "security"
+      ],
+      "date": "2026-11-20"
     },
     {
       "uid": "rss:bf49fa089ac3b6",
@@ -2214,24 +2233,6 @@
       "date": "2026-11-18"
     },
     {
-      "uid": "rss:ec675127a0303a",
-      "source": "rss",
-      "title": "New EggStreme Malware Variant Goes Silent to Evade Security Tools in Government Attacks",
-      "url": "https://thehackernews.com/2026/11/eggstreme-hackers-rebuild-malware-with.html",
-      "ts": 1795011088.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "The suspected Chinese advanced persistent threat (APT) group behind the sophisticated EggStreme malware has rebuilt its toolkit as it continues to target government organizations in the Philippines. \"When attackers are exposed, the cheap response is to rotate,\" Bitdefender said in a technical report shared with The Hacker News. \"A file hash changes with every recompile, a domain costs a few",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-18"
-    },
-    {
       "uid": "gh:humanethq/airgap-check",
       "source": "github",
       "title": "humanethq/airgap-check",
@@ -2320,6 +2321,24 @@
       "buzz": 10,
       "topics": [],
       "date": "2026-11-14"
+    },
+    {
+      "uid": "rss:ec675127a0303a",
+      "source": "rss",
+      "title": "New EggStreme Malware Variant Goes Silent to Evade Security Tools in Government Attacks",
+      "url": "https://thehackernews.com/2026/11/eggstreme-hackers-rebuild-malware-with.html",
+      "ts": 1795011088.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "The suspected Chinese advanced persistent threat (APT) group behind the sophisticated EggStreme malware has rebuilt its toolkit as it continues to target government organizations in the Philippines. \"When attackers are exposed, the cheap response is to rotate,\" Bitdefender said in a technical report shared with The Hacker News. \"A file hash changes with every recompile, a domain costs a few",
+      "recipe": "hackersnews",
+      "buzz": 10,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-18"
     },
     {
       "uid": "rss:186a434790fa0e",
