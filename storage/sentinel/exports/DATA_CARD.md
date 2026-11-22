@@ -5,7 +5,7 @@ pretty_name: Phosphor Tech Buzz Radar
 task_categories: [text-classification, summarization]
 ---
 
-# Phosphor — Tech Buzz Radar (2026-11-21T20:57:10+00:00)
+# Phosphor — Tech Buzz Radar (2026-11-22T01:27:47+00:00)
 
 Ежедневный снимок резонансных публикаций tech-экосистемы:
 
