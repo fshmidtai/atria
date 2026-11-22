@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T13:14:46+00:00",
+  "generated_at": "2026-11-22T17:01:14+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -1400,12 +1400,12 @@
       "title": "hendersonbharat/avast-premium-security-win",
       "url": "https://github.com/hendersonbharat/avast-premium-security-win",
       "ts": 1795267373.0,
-      "points": 247,
+      "points": 301,
       "comments": 0,
       "author": "hendersonbharat",
       "summary": "Avast - antivirus and internet security suite for real-time threat detection, firewall protection and ransomware shielding on Windows 10/11",
       "recipe": "github_sec",
-      "buzz": 327,
+      "buzz": 331,
       "topics": [
         "security"
       ],
@@ -1464,12 +1464,12 @@
       "title": "vulnix0x4/a-better-antivirus",
       "url": "https://github.com/vulnix0x4/a-better-antivirus",
       "ts": 1794885574.0,
-      "points": 134,
+      "points": 139,
       "comments": 10,
       "author": "vulnix0x4",
       "summary": "Catches infostealers in the act on Windows: plants fake passwords, wallets and app data that only malware would read, and freezes whatever touches them.",
       "recipe": "github_sec",
-      "buzz": 174,
+      "buzz": 179,
       "topics": [
         "security"
       ],
@@ -1498,12 +1498,12 @@
       "title": "nestho/impacket-rs",
       "url": "https://github.com/nestho/impacket-rs",
       "ts": 1794373116.0,
-      "points": 102,
+      "points": 103,
       "comments": 15,
       "author": "nestho",
       "summary": "High-performance, memory-safe pure-Rust redesign of Impacket protocols and Active Directory tools for Linux, macOS, and Windows.",
       "recipe": "github_sec",
-      "buzz": 147,
+      "buzz": 148,
       "topics": [
         "dev"
       ],
@@ -1637,12 +1637,12 @@
       "title": "spatie/laravel-suspicious-login",
       "url": "https://github.com/spatie/laravel-suspicious-login",
       "ts": 1794917088.0,
-      "points": 38,
+      "points": 39,
       "comments": 1,
       "author": "spatie",
       "summary": "Detect suspicious logins in your Laravel app",
       "recipe": "github_sec",
-      "buzz": 51,
+      "buzz": 52,
       "topics": [],
       "date": "2026-11-17"
     },
@@ -1992,78 +1992,6 @@
       "date": "2026-11-19"
     },
     {
-      "uid": "rss:299fae081fb406",
-      "source": "rss",
-      "title": "phpAfterShell Explained: How Hackers Could Turn a PHP Session Flaw Into Code Execution",
-      "url": "https://thehackernews.com/2026/11/phpaftershell-explained-how-hackers.html",
-      "ts": 1795107596.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "PHP's default file-based session storage can be made to return objects an attacker chose, by cutting off a session write at the right moment. When combined with a second weakness, such as a suitable gadget chain in the app, those objects can allow the attacker to run code on the server. Today's PHP releases fix the flaw, called phpAfterShell. The flaw is tracked as CVE-[phone] and rated",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-19"
-    },
-    {
-      "uid": "rss:2aa68bdd4ec131",
-      "source": "rss",
-      "title": "PHP Fixes 7 Critical Flaws, Including Bugs That Could Allow Remote Code Execution",
-      "url": "https://thehackernews.com/2026/11/php-fixes-7-critical-flaws-including.html",
-      "ts": 1795101487.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "The PHP Foundation has released security updates to address multiple critical security flaws that could be exploited to achieve remote code execution on affected deployments, including CVE-[phone]. The release of the patch follows an advance notice in which the project maintainers alerted users to multiple critical vulnerabilities affecting all supported PHP versions under specific",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-19"
-    },
-    {
-      "uid": "rss:18306cc167b8fd",
-      "source": "rss",
-      "title": "Critical VMware vCenter Zero-Day Flaw Lets Network Attackers Bypass Authentication",
-      "url": "https://thehackernews.com/2026/11/critical-vmware-vcenter-flaw-cvss-98.html",
-      "ts": 1795101066.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "A critical flaw in VMware vCenter lets an attacker with network access bypass authentication and gain unauthorized access to the system, Broadcom, which owns VMware, said in an advisory published today. Fixed versions are out for all supported branches, and the company lists no workaround. vCenter is the central console for managing an organization's ESX hosts and virtual machines. The",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-19"
-    },
-    {
-      "uid": "rss:9bb7a0fdd0f7a3",
-      "source": "rss",
-      "title": "Drupal Patches Critical Installer Flaw That Could Give Unauthenticated Attackers Control of Sites",
-      "url": "https://thehackernews.com/2026/11/drupal-patches-critical-installer-flaw.html",
-      "ts": 1795098786.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Under specific conditions, a critical vulnerability in Drupal core can allow an attacker without login credentials to use the built-in installer to attempt to reinstall a site. That can lead to a site takeover or remote code execution, and the project rates the vulnerable configurations as uncommon. Fixed releases for all supported branches shipped yesterday. The Drupal Security Team disclosed",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "security"
-      ],
-      "date": "2026-11-19"
-    },
-    {
       "uid": "gh:Voidsaintcontact/AVG-Internet-Security-Professional-Edition",
       "source": "github",
       "title": "Voidsaintcontact/AVG-Internet-Security-Professional-Edition",
@@ -2156,6 +2084,78 @@
         "security"
       ],
       "date": "2026-11-16"
+    },
+    {
+      "uid": "rss:299fae081fb406",
+      "source": "rss",
+      "title": "phpAfterShell Explained: How Hackers Could Turn a PHP Session Flaw Into Code Execution",
+      "url": "https://thehackernews.com/2026/11/phpaftershell-explained-how-hackers.html",
+      "ts": 1795107596.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "PHP's default file-based session storage can be made to return objects an attacker chose, by cutting off a session write at the right moment. When combined with a second weakness, such as a suitable gadget chain in the app, those objects can allow the attacker to run code on the server. Today's PHP releases fix the flaw, called phpAfterShell. The flaw is tracked as CVE-[phone] and rated",
+      "recipe": "hackersnews",
+      "buzz": 10,
+      "topics": [
+        "ai",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "rss:2aa68bdd4ec131",
+      "source": "rss",
+      "title": "PHP Fixes 7 Critical Flaws, Including Bugs That Could Allow Remote Code Execution",
+      "url": "https://thehackernews.com/2026/11/php-fixes-7-critical-flaws-including.html",
+      "ts": 1795101487.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "The PHP Foundation has released security updates to address multiple critical security flaws that could be exploited to achieve remote code execution on affected deployments, including CVE-[phone]. The release of the patch follows an advance notice in which the project maintainers alerted users to multiple critical vulnerabilities affecting all supported PHP versions under specific",
+      "recipe": "hackersnews",
+      "buzz": 10,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "rss:18306cc167b8fd",
+      "source": "rss",
+      "title": "Critical VMware vCenter Zero-Day Flaw Lets Network Attackers Bypass Authentication",
+      "url": "https://thehackernews.com/2026/11/critical-vmware-vcenter-flaw-cvss-98.html",
+      "ts": 1795101066.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "A critical flaw in VMware vCenter lets an attacker with network access bypass authentication and gain unauthorized access to the system, Broadcom, which owns VMware, said in an advisory published today. Fixed versions are out for all supported branches, and the company lists no workaround. vCenter is the central console for managing an organization's ESX hosts and virtual machines. The",
+      "recipe": "hackersnews",
+      "buzz": 10,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-19"
+    },
+    {
+      "uid": "rss:9bb7a0fdd0f7a3",
+      "source": "rss",
+      "title": "Drupal Patches Critical Installer Flaw That Could Give Unauthenticated Attackers Control of Sites",
+      "url": "https://thehackernews.com/2026/11/drupal-patches-critical-installer-flaw.html",
+      "ts": 1795098786.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Under specific conditions, a critical vulnerability in Drupal core can allow an attacker without login credentials to use the built-in installer to attempt to reinstall a site. That can lead to a site takeover or remote code execution, and the project rates the vulnerable configurations as uncommon. Fixed releases for all supported branches shipped yesterday. The Drupal Security Team disclosed",
+      "recipe": "hackersnews",
+      "buzz": 10,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-11-19"
     },
     {
       "uid": "rss:790246065cf7ca",
