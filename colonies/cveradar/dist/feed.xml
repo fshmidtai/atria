@@ -5,7 +5,21 @@
     <link>https://cveradar-ah3.pages.dev</link>
     <description>Живые CVE и уязвимости на русском: автономный перевод угроз в понятные дайджесты для DevOps и небольшого SecOps</description>
     <language>ru</language>
-    <lastBuildDate>Sun, 22 Nov 2026 05:12:48 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 22 Nov 2026 09:01:28 GMT</lastBuildDate>
+    <item>
+      <title>OpenRouter Drops 3 Providers After Researchers Catch Months of Prompt Theft at AI Hosting Firms</title>
+      <link>https://cveradar-ah3.pages.dev/item/openrouter-drops-3-providers-after-researchers-catch-months-of-p.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/openrouter-drops-3-providers-after-researchers-catch-months-of-p.html</guid>
+      <pubDate>Sun, 22 Nov 2026 05:06:55 GMT</pubDate>
+      <description>Attackers stole data from inside three AI inference providers for months, and none of the three knew until researchers told them, the industrial cybersecurity company Dragos said this week. Some of the stolen requests were flagged as Zero Data Retention, the setting that is supposed to mean a prompt</description>
+    </item>
+    <item>
+      <title>Researchers Demonstrate Ghostscript Sandbox-Escape RCE via Crafted File Uploads in Popular Apps</title>
+      <link>https://cveradar-ah3.pages.dev/item/researchers-demonstrate-ghostscript-sandbox-escape-rce-via-craft.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/researchers-demonstrate-ghostscript-sandbox-escape-rce-via-craft.html</guid>
+      <pubDate>Sun, 22 Nov 2026 05:03:41 GMT</pubDate>
+      <description>A now-patched flaw in Ghostscript allows a crafted file to escape the program's security sandbox and run commands on the server that processes it. Ghostscript is the interpreter that many Linux servers use to convert uploaded PDFs, PostScript files, and images into other formats, often without the a</description>
+    </item>
     <item>
       <title>A Single Malicious Webpage Let Researchers Hijack Meta Muse and Access Private Chats</title>
       <link>https://cveradar-ah3.pages.dev/item/a-single-malicious-webpage-let-researchers-hijack-meta-muse-and-.html</link>
@@ -240,30 +254,6 @@ OHttpClientCodec and OHttpServerCodec retain the encrypted outer HttpContent in 
 When fetching objects from a malicious repository, Git LFS may execute an arbitrary command or binary after failing to sufficiently restrict the set of configuration options defined in an `.lfsconfig` file in the repository.
 
 Git LFS permits a limited set of configuration</description>
-    </item>
-    <item>
-      <title>CVE-2026-105802: Git LFS may execute arbitrary commands via crafted Git configurations</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-105802-git-lfs-may-execute-arbitrary-commands-via-craft.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-105802-git-lfs-may-execute-arbitrary-commands-via-craft.html</guid>
-      <pubDate>Fri, 20 Nov 2026 14:58:53 GMT</pubDate>
-      <description>Severity: high. ### Impact
-
-When fetching objects from a malicious repository, Git LFS may execute an arbitrary command or binary after incorrectly parsing the Git configuration options defined for a submodule.
-
-Git LFS reads Git configuration options without checking for embedded line-ending contro</description>
-    </item>
-    <item>
-      <title>CVE-2026-104885: OpenRemote: Cross-realm MQTT session disconnect without authorization</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-104885-openremote-cross-realm-mqtt-session-disconnect-w.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-104885-openremote-cross-realm-mqtt-session-disconnect-w.html</guid>
-      <pubDate>Fri, 20 Nov 2026 14:56:58 GMT</pubDate>
-      <description>Severity: medium. ### Summary
-
-Cross-realm MQTT session disconnect without authorization
-
-## Vulnerability
-
-The `disconnectUserSession` endpoint in `UserResourceImpl.java` (line 443) accepts a `realm` path parameter but ignores it entirely, performing no authorization or realm-boundary check before </description>
     </item>
   </channel>
 </rss>

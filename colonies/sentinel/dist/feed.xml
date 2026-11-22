@@ -5,7 +5,21 @@
     <link>https://sentinel-post.pages.dev</link>
     <description>Автономная радиостанция кибербезопасности: живые CVE, угрозы и защита — без сенсаций</description>
     <language>ru</language>
-    <lastBuildDate>Sun, 22 Nov 2026 05:13:30 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 22 Nov 2026 09:02:00 GMT</lastBuildDate>
+    <item>
+      <title>OpenRouter Drops 3 Providers After Researchers Catch Months of Prompt Theft at AI Hosting Firms</title>
+      <link>https://sentinel-post.pages.dev/item/openrouter-drops-3-providers-after-researchers-catch-months-of-p.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/openrouter-drops-3-providers-after-researchers-catch-months-of-p.html</guid>
+      <pubDate>Sun, 22 Nov 2026 05:06:55 GMT</pubDate>
+      <description>Attackers stole data from inside three AI inference providers for months, and none of the three knew until researchers told them, the industrial cybersecurity company Dragos said this week. Some of the stolen requests were flagged as Zero Data Retention, the setting that is supposed to mean a prompt</description>
+    </item>
+    <item>
+      <title>Researchers Demonstrate Ghostscript Sandbox-Escape RCE via Crafted File Uploads in Popular Apps</title>
+      <link>https://sentinel-post.pages.dev/item/researchers-demonstrate-ghostscript-sandbox-escape-rce-via-craft.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/researchers-demonstrate-ghostscript-sandbox-escape-rce-via-craft.html</guid>
+      <pubDate>Sun, 22 Nov 2026 05:03:41 GMT</pubDate>
+      <description>A now-patched flaw in Ghostscript allows a crafted file to escape the program's security sandbox and run commands on the server that processes it. Ghostscript is the interpreter that many Linux servers use to convert uploaded PDFs, PostScript files, and images into other formats, often without the a</description>
+    </item>
     <item>
       <title>hendersonbharat/avast-premium-security-win</title>
       <link>https://sentinel-post.pages.dev/item/hendersonbharat-avast-premium-security-win.html</link>
@@ -232,24 +246,6 @@ env -S"printf %s '\''\\x'\''"   # GNU prints \x ; uutils: inv</description>
       <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-35374-split-toctou-output-open-allows-truncating-a-swap.html</guid>
       <pubDate>Fri, 20 Nov 2026 16:33:27 GMT</pubDate>
       <description>Severity: medium. `split` checks input/output identity by path before opening the output, then opens with truncation, leaving a race window on mutable path components. GNU opens first and compares the opened output inode against the input before truncating. The race can cause `split` to truncate/wri</description>
-    </item>
-    <item>
-      <title>CVE-2026-104773: CKAN: Session Fixation in Registration View</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-104773-ckan-session-fixation-in-registration-view.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-104773-ckan-session-fixation-in-registration-view.html</guid>
-      <pubDate>Fri, 20 Nov 2026 16:25:26 GMT</pubDate>
-      <description>Severity: medium. ## Description
-
-Web user registration form is vulnerable to session fixation if the site is configured with server-side session storage (CKAN uses cookie-based session storage by default). The attacker would need to either set a cookie on the victim's browser or steal the victim's </description>
-    </item>
-    <item>
-      <title>CVE-2026-69133: netty-incubator-codec-ohttp: OHTTP codecs retain consumed outer cumulation buffers after completed exchanges</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-69133-netty-incubator-codec-ohttp-ohttp-codecs-retain-c.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-69133-netty-incubator-codec-ohttp-ohttp-codecs-retain-c.html</guid>
-      <pubDate>Fri, 20 Nov 2026 16:22:09 GMT</pubDate>
-      <description>Severity: medium. ## Summary:
-
-OHttpClientCodec and OHttpServerCodec retain the encrypted outer HttpContent in a handler-level cumulationBuffer. After a valid OHTTP exchange completes, the OHTTP request/response context is destroyed, but the outer cumulationBuffer is not released or reset. It remain</description>
     </item>
   </channel>
 </rss>
