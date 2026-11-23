@@ -5,11 +5,39 @@
     <link>https://cveradar-ah3.pages.dev</link>
     <description>Живые CVE и уязвимости на русском: автономный перевод угроз в понятные дайджесты для DevOps и небольшого SecOps</description>
     <language>ru</language>
-    <lastBuildDate>Mon, 23 Nov 2026 09:40:33 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 23 Nov 2026 13:38:51 GMT</lastBuildDate>
     <item>
-      <title>AI-Assisted Cyberattacks Trigger Unauthorized Payments at Indian Banks and Fintech Firms</title>
-      <link>https://cveradar-ah3.pages.dev/item/ai-assisted-cyberattacks-trigger-unauthorized-payments-at-indian.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/ai-assisted-cyberattacks-trigger-unauthorized-payments-at-indian.html</guid>
+      <title>Hackers Exploit Critical ScreenConnect Flaw to Hijack MSP Technician PCs Without Warning</title>
+      <link>https://cveradar-ah3.pages.dev/item/hackers-exploit-critical-screenconnect-flaw-to-hijack-msp-techni.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/hackers-exploit-critical-screenconnect-flaw-to-hijack-msp-techni.html</guid>
+      <pubDate>Mon, 23 Nov 2026 12:41:04 GMT</pubDate>
+      <description>Threat actors are exploiting a now-patched security flaw in ConnectWise ScreenConnect to target managed service provider (MSP) servers. The activity revolves around CVE-[phone] (CVSS score: 9.9), a critical ScreenConnect client flaw that allows a guest to transfer and execute a malicious payload on </description>
+    </item>
+    <item>
+      <title>N-able Discloses Critical Mail Assure Vulnerability Found During Breach Investigation</title>
+      <link>https://cveradar-ah3.pages.dev/item/n-able-discloses-critical-mail-assure-vulnerability-found-during.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/n-able-discloses-critical-mail-assure-vulnerability-found-during.html</guid>
+      <pubDate>Mon, 23 Nov 2026 12:28:09 GMT</pubDate>
+      <description>N-able yesterday disclosed a critical flaw it found while investigating the breach of its Mail Assure and SpamExperts Hosted Cloud, an email filtering service it runs for managed service providers. The bug, tracked as CVE-[phone], is a server-side request forgery (SSRF) flaw. It allowed a user with </description>
+    </item>
+    <item>
+      <title>Hackers Exploit Critical ASP.NET Anti-CSRF Library Flaw Allowing Unauthenticated RCE</title>
+      <link>https://cveradar-ah3.pages.dev/item/hackers-exploit-critical-asp-net-anti-csrf-library-flaw-allowing.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/hackers-exploit-critical-asp-net-anti-csrf-library-flaw-allowing.html</guid>
+      <pubDate>Mon, 23 Nov 2026 09:11:56 GMT</pubDate>
+      <description>Cybersecurity researchers have urged users to discontinue using a legacy ASP.NET anti-CSRF library named Idunno.AntiCsrf ("Idunno.AntiCsrf.dll") following the discovery of a critical vulnerability that has been exploited in the wild. The vulnerability, tracked as CVE-[phone], carries a CVSS score of</description>
+    </item>
+    <item>
+      <title>Hackers Exploited GL.iNet Cloud Flaw to Install Malware on Routers and KVM Devices</title>
+      <link>https://cveradar-ah3.pages.dev/item/hackers-exploited-gl-inet-cloud-flaw-to-install-malware-on-route.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/hackers-exploited-gl-inet-cloud-flaw-to-install-malware-on-route.html</guid>
+      <pubDate>Mon, 23 Nov 2026 09:04:08 GMT</pubDate>
+      <description>Hackers exploited a vulnerability in GL.iNet's GoodCloud remote management service to install malware on some customer routers and KVM devices, the maker of travel routers and remote-access KVM hardware said in a security notice updated today. The company identified and fixed the flaw on Friday and </description>
+    </item>
+    <item>
+      <title>AI-Assisted Cyber Attacks Trigger Unauthorized Payments at Indian Banks and Fintech Firms</title>
+      <link>https://cveradar-ah3.pages.dev/item/ai-assisted-cyber-attacks-trigger-unauthorized-payments-at-india.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/ai-assisted-cyber-attacks-trigger-unauthorized-payments-at-india.html</guid>
       <pubDate>Mon, 23 Nov 2026 08:24:15 GMT</pubDate>
       <description>The Indian Computer Emergency Response Team (CERT-In) has warned that threat actors are carrying out artificial intelligence (AI)-assisted cyber attacks targeting information and communication technology (ICT) assets in the country. This unsanctioned activity has resulted in unauthorized financial t</description>
     </item>
@@ -216,40 +244,6 @@ The NATS Server supports leafnode connections between servers and message tracin
       <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-35376-chcon-recursive-relabel-not-anchored-to-traversal.html</guid>
       <pubDate>Fri, 20 Nov 2026 16:39:34 GMT</pubDate>
       <description>Severity: medium. `chcon` resolved recursive targets from `fts_accpath` with a fresh path lookup, so traversal and the SELinux get/set were not bound to traversal directory state. A privileged recursive relabel can be redirected to unintended objects under rename/symlink races. Fix opens targets wit</description>
-    </item>
-    <item>
-      <title>CVE-2026-35377:  uu_env incorrectly rejects backslashes within single-quoted strings accepted by GNU env</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-35377-uu-env-incorrectly-rejects-backslashes-within-sin.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-35377-uu-env-incorrectly-rejects-backslashes-within-sin.html</guid>
-      <pubDate>Fri, 20 Nov 2026 16:36:31 GMT</pubDate>
-      <description>Severity: low. In `env -S`, GNU keeps backslashes literal inside single quotes (except `\\` and `\'`); uutils errors on sequences like `\a`. This is the backslash-handling issue of the broader `-S`/`--split-string` parsing divergence.
-```
-env -S"printf %s '\''\\x'\''"   # GNU prints \x ; uutils: inv</description>
-    </item>
-    <item>
-      <title>CVE-2026-35374: split: TOCTOU output-open allows truncating a swapped file</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-35374-split-toctou-output-open-allows-truncating-a-swap.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-35374-split-toctou-output-open-allows-truncating-a-swap.html</guid>
-      <pubDate>Fri, 20 Nov 2026 16:33:27 GMT</pubDate>
-      <description>Severity: medium. `split` checks input/output identity by path before opening the output, then opens with truncation, leaving a race window on mutable path components. GNU opens first and compares the opened output inode against the input before truncating. The race can cause `split` to truncate/wri</description>
-    </item>
-    <item>
-      <title>CVE-2026-104773: CKAN: Session Fixation in Registration View</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-104773-ckan-session-fixation-in-registration-view.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-104773-ckan-session-fixation-in-registration-view.html</guid>
-      <pubDate>Fri, 20 Nov 2026 16:25:26 GMT</pubDate>
-      <description>Severity: medium. ## Description
-
-Web user registration form is vulnerable to session fixation if the site is configured with server-side session storage (CKAN uses cookie-based session storage by default). The attacker would need to either set a cookie on the victim's browser or steal the victim's </description>
-    </item>
-    <item>
-      <title>CVE-2026-69133: netty-incubator-codec-ohttp: OHTTP codecs retain consumed outer cumulation buffers after completed exchanges</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-69133-netty-incubator-codec-ohttp-ohttp-codecs-retain-c.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-69133-netty-incubator-codec-ohttp-ohttp-codecs-retain-c.html</guid>
-      <pubDate>Fri, 20 Nov 2026 16:22:09 GMT</pubDate>
-      <description>Severity: medium. ## Summary:
-
-OHttpClientCodec and OHttpServerCodec retain the encrypted outer HttpContent in a handler-level cumulationBuffer. After a valid OHTTP exchange completes, the OHTTP request/response context is destroyed, but the outer cumulationBuffer is not released or reset. It remain</description>
     </item>
   </channel>
 </rss>

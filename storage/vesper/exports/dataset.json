@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T09:46:20+00:00",
+  "generated_at": "2026-11-23T13:43:01+00:00",
   "sources_used": [
     "hn_search",
     "github_search",
@@ -9,30 +9,31 @@
     "rss"
   ],
   "totals": {
-    "items": 127,
+    "items": 129,
     "by_source": {
       "hn": 60,
-      "github": 47,
+      "github": 49,
       "rss": 20
     },
     "by_recipe": {
       "show_hn": 60,
       "github_ai": 40,
       "tc_ai": 20,
-      "github_llm": 7
+      "github_llm": 9
     },
     "by_topic": {
-      "ai": 79,
-      "dev": 48,
-      "science": 20,
+      "ai": 81,
+      "dev": 45,
+      "science": 22,
+      "hardware": 9,
       "biz": 9,
-      "hardware": 8,
-      "security": 6
+      "security": 6,
+      "crypto": 1
     },
     "top_domains": [
       [
         "github.com",
-        53
+        55
       ],
       [
         "techcrunch.com",
@@ -253,12 +254,12 @@
       "title": "XinaTian/MROffice",
       "url": "https://github.com/XinaTian/MROffice",
       "ts": 1794333247.0,
-      "points": 2589,
-      "comments": 299,
+      "points": 2703,
+      "comments": 313,
       "author": "XinaTian",
       "summary": "MR Office — the open-source editors of the AI office suite closest to Microsoft Office: documents, spreadsheets, presentations, PDF and code in the browser. Copilot in every editor edits real Word, Excel and PowerPoint files with you; an MCP server lets Claude, ChatGPT, Cursor and Codex create and edit them; embed it in your app with one line.",
       "recipe": "github_ai",
-      "buzz": 3486,
+      "buzz": 3642,
       "topics": [
         "ai",
         "dev",
@@ -335,11 +336,11 @@
       "url": "https://github.com/bookwjitchieni1986/blender-ai-mcp-addon",
       "ts": 1795099390.0,
       "points": 2760,
-      "comments": 39,
+      "comments": 40,
       "author": "bookwjitchieni1986",
       "summary": "AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with ChatGPT/GPT, Claude, Gemini, Ollama, OpenCode. Blender AI addon, copilot for 3D, bpy Python scripting, MCP integration.",
       "recipe": "github_llm",
-      "buzz": 2887,
+      "buzz": 2890,
       "topics": [
         "ai",
         "dev",
@@ -447,6 +448,25 @@
       "date": "2025-12-20"
     },
     {
+      "uid": "gh:sybil-solutions/inference-optimisation-skill",
+      "source": "github",
+      "title": "sybil-solutions/inference-optimisation-skill",
+      "url": "https://github.com/sybil-solutions/inference-optimisation-skill",
+      "ts": 1794854404.0,
+      "points": 2055,
+      "comments": 193,
+      "author": "sybil-solutions",
+      "summary": "Agent skill for hill-climbing local LLM serving speed (decode, speculative decoding, prefill, KV, startup, TTFT) on any hardware and quantization",
+      "recipe": "github_llm",
+      "buzz": 2644,
+      "topics": [
+        "ai",
+        "dev",
+        "biz"
+      ],
+      "date": "2026-11-16"
+    },
+    {
       "uid": "hn:35543668",
       "source": "hn",
       "title": "Show HN: GPT-4-powered web searches for developers",
@@ -482,25 +502,6 @@
         "hardware"
       ],
       "date": "2017-01-06"
-    },
-    {
-      "uid": "gh:sybil-solutions/inference-optimisation-skill",
-      "source": "github",
-      "title": "sybil-solutions/inference-optimisation-skill",
-      "url": "https://github.com/sybil-solutions/inference-optimisation-skill",
-      "ts": 1794854404.0,
-      "points": 2020,
-      "comments": 189,
-      "author": "sybil-solutions",
-      "summary": "Agent skill for hill-climbing local LLM serving speed (decode, speculative decoding, prefill, KV, startup, TTFT) on any hardware and quantization",
-      "recipe": "github_llm",
-      "buzz": 2597,
-      "topics": [
-        "ai",
-        "dev",
-        "biz"
-      ],
-      "date": "2026-11-16"
     },
     {
       "uid": "hn:33357197",
@@ -1182,12 +1183,12 @@
       "title": "pierridotite/mobile-agent-testers",
       "url": "https://github.com/pierridotite/mobile-agent-testers",
       "ts": 1794856304.0,
-      "points": 1024,
-      "comments": 101,
+      "points": 1197,
+      "comments": 116,
       "author": "pierridotite",
       "summary": "20 AI testers on 20 different phones, in parallel, on GitHub's free runners: Claude Code agents on iOS Simulators and Android emulators that find broken flows, translation, layout and accessibility bugs",
       "recipe": "github_llm",
-      "buzz": 1337,
+      "buzz": 1555,
       "topics": [
         "ai",
         "dev"
@@ -1200,12 +1201,102 @@
       "title": "violetkomodolimit/ai--manus2.0",
       "url": "https://github.com/violetkomodolimit/ai--manus2.0",
       "ts": 1794684322.0,
-      "points": 368,
+      "points": 367,
       "comments": 296,
       "author": "violetkomodolimit",
       "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
       "recipe": "github_ai",
-      "buzz": 1256,
+      "buzz": 1255,
+      "topics": [
+        "ai",
+        "science"
+      ],
+      "date": "2026-11-14"
+    },
+    {
+      "uid": "gh:trackersnailgrip/ai--manus2.0",
+      "source": "github",
+      "title": "trackersnailgrip/ai--manus2.0",
+      "url": "https://github.com/trackersnailgrip/ai--manus2.0",
+      "ts": 1794684317.0,
+      "points": 365,
+      "comments": 295,
+      "author": "trackersnailgrip",
+      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
+      "recipe": "github_ai",
+      "buzz": 1250,
+      "topics": [
+        "ai",
+        "science"
+      ],
+      "date": "2026-11-14"
+    },
+    {
+      "uid": "gh:taboospecialistblade/ai--manus2.0",
+      "source": "github",
+      "title": "taboospecialistblade/ai--manus2.0",
+      "url": "https://github.com/taboospecialistblade/ai--manus2.0",
+      "ts": 1794684317.0,
+      "points": 363,
+      "comments": 294,
+      "author": "taboospecialistblade",
+      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
+      "recipe": "github_ai",
+      "buzz": 1245,
+      "topics": [
+        "ai",
+        "science"
+      ],
+      "date": "2026-11-14"
+    },
+    {
+      "uid": "gh:TrapBladesmith/ai--manus2.0",
+      "source": "github",
+      "title": "TrapBladesmith/ai--manus2.0",
+      "url": "https://github.com/TrapBladesmith/ai--manus2.0",
+      "ts": 1794684317.0,
+      "points": 362,
+      "comments": 293,
+      "author": "TrapBladesmith",
+      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
+      "recipe": "github_ai",
+      "buzz": 1241,
+      "topics": [
+        "ai",
+        "science"
+      ],
+      "date": "2026-11-14"
+    },
+    {
+      "uid": "gh:Tonephorepair/ai--manus2.0",
+      "source": "github",
+      "title": "Tonephorepair/ai--manus2.0",
+      "url": "https://github.com/Tonephorepair/ai--manus2.0",
+      "ts": 1794684315.0,
+      "points": 362,
+      "comments": 293,
+      "author": "Tonephorepair",
+      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
+      "recipe": "github_ai",
+      "buzz": 1241,
+      "topics": [
+        "ai",
+        "science"
+      ],
+      "date": "2026-11-14"
+    },
+    {
+      "uid": "gh:Ultimateakiln/ai--manus2.0",
+      "source": "github",
+      "title": "Ultimateakiln/ai--manus2.0",
+      "url": "https://github.com/Ultimateakiln/ai--manus2.0",
+      "ts": 1794684317.0,
+      "points": 363,
+      "comments": 292,
+      "author": "Ultimateakiln",
+      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
+      "recipe": "github_ai",
+      "buzz": 1239,
       "topics": [
         "ai",
         "science"
@@ -1218,12 +1309,12 @@
       "title": "TarantulaCorrect/GitHub-Copilot-app",
       "url": "https://github.com/TarantulaCorrect/GitHub-Copilot-app",
       "ts": 1794684319.0,
-      "points": 371,
-      "comments": 191,
+      "points": 370,
+      "comments": 190,
       "author": "TarantulaCorrect",
       "summary": "The GitHub Copilot app is an agent-native desktop experience for finding, running, steering, and landing software work across your GitHub repositories.",
       "recipe": "github_ai",
-      "buzz": 944,
+      "buzz": 940,
       "topics": [
         "ai",
         "dev"
@@ -1236,12 +1327,12 @@
       "title": "Trapkrostride/GitHub-Copilot-app",
       "url": "https://github.com/Trapkrostride/GitHub-Copilot-app",
       "ts": 1794684319.0,
-      "points": 368,
-      "comments": 192,
+      "points": 367,
+      "comments": 191,
       "author": "Trapkrostride",
       "summary": "The GitHub Copilot app is an agent-native desktop experience for finding, running, steering, and landing software work across your GitHub repositories.",
       "recipe": "github_ai",
-      "buzz": 944,
+      "buzz": 940,
       "topics": [
         "ai",
         "dev"
@@ -1249,17 +1340,17 @@
       "date": "2026-11-14"
     },
     {
-      "uid": "gh:toppatronweave/GitHub-Copilot-app",
+      "uid": "gh:topconstableinlet67/GitHub-Copilot-app",
       "source": "github",
-      "title": "toppatronweave/GitHub-Copilot-app",
-      "url": "https://github.com/toppatronweave/GitHub-Copilot-app",
-      "ts": 1794684320.0,
-      "points": 374,
-      "comments": 171,
-      "author": "toppatronweave",
+      "title": "topconstableinlet67/GitHub-Copilot-app",
+      "url": "https://github.com/topconstableinlet67/GitHub-Copilot-app",
+      "ts": 1794684319.0,
+      "points": 367,
+      "comments": 188,
+      "author": "topconstableinlet67",
       "summary": "The GitHub Copilot app is an agent-native desktop experience for finding, running, steering, and landing software work across your GitHub repositories.",
       "recipe": "github_ai",
-      "buzz": 887,
+      "buzz": 931,
       "topics": [
         "ai",
         "dev"
@@ -1272,12 +1363,30 @@
       "title": "mankidev/antialgorithm",
       "url": "https://github.com/mankidev/antialgorithm",
       "ts": 1794649703.0,
-      "points": 742,
-      "comments": 41,
+      "points": 757,
+      "comments": 45,
       "author": "mankidev",
       "summary": "Agent skill that steers the model away from its first, most average pick in creative work: names, ideas, logo, posters, UI.",
       "recipe": "github_llm",
-      "buzz": 865,
+      "buzz": 892,
+      "topics": [
+        "ai",
+        "dev"
+      ],
+      "date": "2026-11-14"
+    },
+    {
+      "uid": "gh:toppatronweave/GitHub-Copilot-app",
+      "source": "github",
+      "title": "toppatronweave/GitHub-Copilot-app",
+      "url": "https://github.com/toppatronweave/GitHub-Copilot-app",
+      "ts": 1794684320.0,
+      "points": 373,
+      "comments": 170,
+      "author": "toppatronweave",
+      "summary": "The GitHub Copilot app is an agent-native desktop experience for finding, running, steering, and landing software work across your GitHub repositories.",
+      "recipe": "github_ai",
+      "buzz": 883,
       "topics": [
         "ai",
         "dev"
@@ -1290,12 +1399,12 @@
       "title": "TurquoiseConsultant/GitHub-Copilot-app",
       "url": "https://github.com/TurquoiseConsultant/GitHub-Copilot-app",
       "ts": 1794684320.0,
-      "points": 371,
-      "comments": 151,
+      "points": 370,
+      "comments": 150,
       "author": "TurquoiseConsultant",
       "summary": "The GitHub Copilot app is an agent-native desktop experience for finding, running, steering, and landing software work across your GitHub repositories.",
       "recipe": "github_ai",
-      "buzz": 824,
+      "buzz": 820,
       "topics": [
         "ai",
         "dev"
@@ -1308,12 +1417,12 @@
       "title": "ysunyang4/Nexus",
       "url": "https://github.com/ysunyang4/Nexus",
       "ts": 1794577581.0,
-      "points": 494,
+      "points": 495,
       "comments": 88,
       "author": "ysunyang4",
       "summary": "Connect web AI assistants to local files, terminals, Git, and desktop tools through MCP, with user-controlled permissions.",
       "recipe": "github_llm",
-      "buzz": 758,
+      "buzz": 759,
       "topics": [
         "ai",
         "dev"
@@ -1326,16 +1435,35 @@
       "title": "w01fb0ss/PiBot",
       "url": "https://github.com/w01fb0ss/PiBot",
       "ts": 1795244064.0,
-      "points": 459,
-      "comments": 62,
+      "points": 476,
+      "comments": 66,
       "author": "w01fb0ss",
       "summary": "Open-source, local-first AI agent team for your desktop: multi-agent group chats, computer use, browser, MCP, routines and approvals. macOS, Windows, Linux + Android. Built on pi.",
       "recipe": "github_llm",
-      "buzz": 675,
+      "buzz": 704,
       "topics": [
         "ai"
       ],
       "date": "2026-11-21"
+    },
+    {
+      "uid": "gh:jackson-cmd/risk-aware-trading-agents",
+      "source": "github",
+      "title": "jackson-cmd/risk-aware-trading-agents",
+      "url": "https://github.com/jackson-cmd/risk-aware-trading-agents",
+      "ts": 1794450571.0,
+      "points": 444,
+      "comments": 80,
+      "author": "jackson-cmd",
+      "summary": "AI trading agents for US stocks with news backtesting that can't see the future: a public LLM trading agent leaderboard (rta-bench-1), frozen point-in-time 2020/2022/2026 markets (prices, VIX, news), a look-ahead check on every run, LLM agents over MCP, and paper/live trading on 10 brokers. 风险感知美股交易智能体 · 新闻回测 · LLM 榜单",
+      "recipe": "github_llm",
+      "buzz": 684,
+      "topics": [
+        "ai",
+        "science",
+        "biz"
+      ],
+      "date": "2026-11-12"
     },
     {
       "uid": "gh:molly554/whiteboard-ai-tutor",
@@ -1356,57 +1484,23 @@
       "date": "2026-11-11"
     },
     {
-      "uid": "gh:WyrmClimberManacle/Gemini-Config-Checker-",
+      "uid": "gh:logitcai/tinybrain",
       "source": "github",
-      "title": "WyrmClimberManacle/Gemini-Config-Checker-",
-      "url": "https://github.com/WyrmClimberManacle/Gemini-Config-Checker-",
-      "ts": 1794761298.0,
-      "points": 466,
-      "comments": 1,
-      "author": "WyrmClimberManacle",
-      "summary": "Chain region scanner: find proxy configs that get you into Google AI Studio and Gemini (signed-in browser check, anti-DPI, Windows/macOS/Linux/Android)",
-      "recipe": "github_ai",
-      "buzz": 469,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-15"
-    },
-    {
-      "uid": "gh:Morriswawan05/elevenlabs-pro-win",
-      "source": "github",
-      "title": "Morriswawan05/elevenlabs-pro-win",
-      "url": "https://github.com/Morriswawan05/elevenlabs-pro-win",
-      "ts": 1795272430.0,
-      "points": 439,
-      "comments": 0,
-      "author": "Morriswawan05",
-      "summary": "ElevenLabs - AI voice synthesis platform for text-to-speech generation, voice cloning and multilingual dubbing on Windows 10/11",
-      "recipe": "github_ai",
-      "buzz": 469,
+      "title": "logitcai/tinybrain",
+      "url": "https://github.com/logitcai/tinybrain",
+      "ts": 1794553012.0,
+      "points": 433,
+      "comments": 19,
+      "author": "logitcai",
+      "summary": "A Chinese-first small language model built from scratch: open 60B-token dataset, tokenizer, mHC + Engram + MoE model, pretraining through RL, all in PyTorch. 从零做中文小模型，数据和代码全部开源",
+      "recipe": "github_llm",
+      "buzz": 490,
       "topics": [
         "ai",
-        "science"
+        "dev",
+        "crypto"
       ],
-      "date": "2026-11-21"
-    },
-    {
-      "uid": "gh:Juanlabs1989/descript-pro-win",
-      "source": "github",
-      "title": "Juanlabs1989/descript-pro-win",
-      "url": "https://github.com/Juanlabs1989/descript-pro-win",
-      "ts": 1795276975.0,
-      "points": 439,
-      "comments": 0,
-      "author": "Juanlabs1989",
-      "summary": "Descript - AI-powered video and podcast editor for text-based editing, transcription and screen recording on Windows 10/11",
-      "recipe": "github_ai",
-      "buzz": 469,
-      "topics": [
-        "ai",
-        "dev"
-      ],
-      "date": "2026-11-21"
+      "date": "2026-11-13"
     },
     {
       "uid": "gh:YellowLaborerMarket/Gemini-Config-Checker-",
@@ -1427,31 +1521,31 @@
       "date": "2026-11-15"
     },
     {
-      "uid": "gh:weightcashiercupola/Gemini-Config-Checker-",
+      "uid": "gh:WyrmClimberManacle/Gemini-Config-Checker-",
       "source": "github",
-      "title": "weightcashiercupola/Gemini-Config-Checker-",
-      "url": "https://github.com/weightcashiercupola/Gemini-Config-Checker-",
-      "ts": 1794761231.0,
-      "points": 467,
-      "comments": 0,
-      "author": "weightcashiercupola",
+      "title": "WyrmClimberManacle/Gemini-Config-Checker-",
+      "url": "https://github.com/WyrmClimberManacle/Gemini-Config-Checker-",
+      "ts": 1794761298.0,
+      "points": 465,
+      "comments": 1,
+      "author": "WyrmClimberManacle",
       "summary": "Chain region scanner: find proxy configs that get you into Google AI Studio and Gemini (signed-in browser check, anti-DPI, Windows/macOS/Linux/Android)",
       "recipe": "github_ai",
-      "buzz": 467,
+      "buzz": 468,
       "topics": [
         "ai"
       ],
       "date": "2026-11-15"
     },
     {
-      "uid": "gh:WingDataVacuum/Gemini-Config-Checker-",
+      "uid": "gh:weightcashiercupola/Gemini-Config-Checker-",
       "source": "github",
-      "title": "WingDataVacuum/Gemini-Config-Checker-",
-      "url": "https://github.com/WingDataVacuum/Gemini-Config-Checker-",
-      "ts": 1794761237.0,
+      "title": "weightcashiercupola/Gemini-Config-Checker-",
+      "url": "https://github.com/weightcashiercupola/Gemini-Config-Checker-",
+      "ts": 1794761231.0,
       "points": 466,
       "comments": 0,
-      "author": "WingDataVacuum",
+      "author": "weightcashiercupola",
       "summary": "Chain region scanner: find proxy configs that get you into Google AI Studio and Gemini (signed-in browser check, anti-DPI, Windows/macOS/Linux/Android)",
       "recipe": "github_ai",
       "buzz": 466,
@@ -1466,29 +1560,29 @@
       "title": "TypeTyrantScheme/Gemini-Config-Checker-",
       "url": "https://github.com/TypeTyrantScheme/Gemini-Config-Checker-",
       "ts": 1794761164.0,
-      "points": 466,
+      "points": 465,
       "comments": 0,
       "author": "TypeTyrantScheme",
       "summary": "Chain region scanner: find proxy configs that get you into Google AI Studio and Gemini (signed-in browser check, anti-DPI, Windows/macOS/Linux/Android)",
       "recipe": "github_ai",
-      "buzz": 466,
+      "buzz": 465,
       "topics": [
         "ai"
       ],
       "date": "2026-11-15"
     },
     {
-      "uid": "gh:WinnerSpecialist/Gemini-Config-Checker-",
+      "uid": "gh:WingDataVacuum/Gemini-Config-Checker-",
       "source": "github",
-      "title": "WinnerSpecialist/Gemini-Config-Checker-",
-      "url": "https://github.com/WinnerSpecialist/Gemini-Config-Checker-",
+      "title": "WingDataVacuum/Gemini-Config-Checker-",
+      "url": "https://github.com/WingDataVacuum/Gemini-Config-Checker-",
       "ts": 1794761237.0,
-      "points": 466,
+      "points": 465,
       "comments": 0,
-      "author": "WinnerSpecialist",
+      "author": "WingDataVacuum",
       "summary": "Chain region scanner: find proxy configs that get you into Google AI Studio and Gemini (signed-in browser check, anti-DPI, Windows/macOS/Linux/Android)",
       "recipe": "github_ai",
-      "buzz": 466,
+      "buzz": 465,
       "topics": [
         "ai"
       ],
@@ -1500,29 +1594,29 @@
       "title": "Violetnyudress/Gemini-Config-Checker-",
       "url": "https://github.com/Violetnyudress/Gemini-Config-Checker-",
       "ts": 1794761164.0,
-      "points": 466,
+      "points": 465,
       "comments": 0,
       "author": "Violetnyudress",
       "summary": "Chain region scanner: find proxy configs that get you into Google AI Studio and Gemini (signed-in browser check, anti-DPI, Windows/macOS/Linux/Android)",
       "recipe": "github_ai",
-      "buzz": 466,
+      "buzz": 465,
       "topics": [
         "ai"
       ],
       "date": "2026-11-15"
     },
     {
-      "uid": "gh:VortexHostFeel/Gemini-Config-Checker-",
+      "uid": "gh:WinnerSpecialist/Gemini-Config-Checker-",
       "source": "github",
-      "title": "VortexHostFeel/Gemini-Config-Checker-",
-      "url": "https://github.com/VortexHostFeel/Gemini-Config-Checker-",
-      "ts": 1794761167.0,
-      "points": 466,
+      "title": "WinnerSpecialist/Gemini-Config-Checker-",
+      "url": "https://github.com/WinnerSpecialist/Gemini-Config-Checker-",
+      "ts": 1794761237.0,
+      "points": 465,
       "comments": 0,
-      "author": "VortexHostFeel",
+      "author": "WinnerSpecialist",
       "summary": "Chain region scanner: find proxy configs that get you into Google AI Studio and Gemini (signed-in browser check, anti-DPI, Windows/macOS/Linux/Android)",
       "recipe": "github_ai",
-      "buzz": 466,
+      "buzz": 465,
       "topics": [
         "ai"
       ],
@@ -1534,12 +1628,12 @@
       "title": "Visionbeyondtrack/Gemini-Config-Checker-",
       "url": "https://github.com/Visionbeyondtrack/Gemini-Config-Checker-",
       "ts": 1794761165.0,
-      "points": 466,
+      "points": 465,
       "comments": 0,
       "author": "Visionbeyondtrack",
       "summary": "Chain region scanner: find proxy configs that get you into Google AI Studio and Gemini (signed-in browser check, anti-DPI, Windows/macOS/Linux/Android)",
       "recipe": "github_ai",
-      "buzz": 466,
+      "buzz": 465,
       "topics": [
         "ai"
       ],
@@ -1551,29 +1645,29 @@
       "title": "weldbladesmithwharf/Gemini-Config-Checker-",
       "url": "https://github.com/weldbladesmithwharf/Gemini-Config-Checker-",
       "ts": 1794761231.0,
-      "points": 466,
+      "points": 465,
       "comments": 0,
       "author": "weldbladesmithwharf",
       "summary": "Chain region scanner: find proxy configs that get you into Google AI Studio and Gemini (signed-in browser check, anti-DPI, Windows/macOS/Linux/Android)",
       "recipe": "github_ai",
-      "buzz": 466,
+      "buzz": 465,
       "topics": [
         "ai"
       ],
       "date": "2026-11-15"
     },
     {
-      "uid": "gh:WireProvostPucker/Gemini-Config-Checker-",
+      "uid": "gh:VortexHostFeel/Gemini-Config-Checker-",
       "source": "github",
-      "title": "WireProvostPucker/Gemini-Config-Checker-",
-      "url": "https://github.com/WireProvostPucker/Gemini-Config-Checker-",
-      "ts": 1794761295.0,
-      "points": 466,
+      "title": "VortexHostFeel/Gemini-Config-Checker-",
+      "url": "https://github.com/VortexHostFeel/Gemini-Config-Checker-",
+      "ts": 1794761167.0,
+      "points": 465,
       "comments": 0,
-      "author": "WireProvostPucker",
+      "author": "VortexHostFeel",
       "summary": "Chain region scanner: find proxy configs that get you into Google AI Studio and Gemini (signed-in browser check, anti-DPI, Windows/macOS/Linux/Android)",
       "recipe": "github_ai",
-      "buzz": 466,
+      "buzz": 465,
       "topics": [
         "ai"
       ],
@@ -1585,15 +1679,32 @@
       "title": "TurtleReside/Gemini-Config-Checker-",
       "url": "https://github.com/TurtleReside/Gemini-Config-Checker-",
       "ts": 1794761164.0,
-      "points": 466,
+      "points": 465,
       "comments": 0,
       "author": "TurtleReside",
       "summary": "Chain region scanner: find proxy configs that get you into Google AI Studio and Gemini (signed-in browser check, anti-DPI, Windows/macOS/Linux/Android)",
       "recipe": "github_ai",
-      "buzz": 466,
+      "buzz": 465,
       "topics": [
         "ai",
         "dev"
+      ],
+      "date": "2026-11-15"
+    },
+    {
+      "uid": "gh:WireProvostPucker/Gemini-Config-Checker-",
+      "source": "github",
+      "title": "WireProvostPucker/Gemini-Config-Checker-",
+      "url": "https://github.com/WireProvostPucker/Gemini-Config-Checker-",
+      "ts": 1794761295.0,
+      "points": 465,
+      "comments": 0,
+      "author": "WireProvostPucker",
+      "summary": "Chain region scanner: find proxy configs that get you into Google AI Studio and Gemini (signed-in browser check, anti-DPI, Windows/macOS/Linux/Android)",
+      "recipe": "github_ai",
+      "buzz": 465,
+      "topics": [
+        "ai"
       ],
       "date": "2026-11-15"
     },
@@ -1603,12 +1714,12 @@
       "title": "TrooperFilter/Gemini-Config-Checker-",
       "url": "https://github.com/TrooperFilter/Gemini-Config-Checker-",
       "ts": 1794761164.0,
-      "points": 466,
+      "points": 465,
       "comments": 0,
       "author": "TrooperFilter",
       "summary": "Chain region scanner: find proxy configs that get you into Google AI Studio and Gemini (signed-in browser check, anti-DPI, Windows/macOS/Linux/Android)",
       "recipe": "github_ai",
-      "buzz": 466,
+      "buzz": 465,
       "topics": [
         "ai"
       ],
@@ -1620,12 +1731,12 @@
       "title": "WindGatorRise37/Gemini-Config-Checker-",
       "url": "https://github.com/WindGatorRise37/Gemini-Config-Checker-",
       "ts": 1794761237.0,
-      "points": 466,
+      "points": 465,
       "comments": 0,
       "author": "WindGatorRise37",
       "summary": "Chain region scanner: find proxy configs that get you into Google AI Studio and Gemini (signed-in browser check, anti-DPI, Windows/macOS/Linux/Android)",
       "recipe": "github_ai",
-      "buzz": 466,
+      "buzz": 465,
       "topics": [
         "ai"
       ],
@@ -1637,12 +1748,12 @@
       "title": "WestLocksmithSpout/Gemini-Config-Checker-",
       "url": "https://github.com/WestLocksmithSpout/Gemini-Config-Checker-",
       "ts": 1794761232.0,
-      "points": 466,
+      "points": 465,
       "comments": 0,
       "author": "WestLocksmithSpout",
       "summary": "Chain region scanner: find proxy configs that get you into Google AI Studio and Gemini (signed-in browser check, anti-DPI, Windows/macOS/Linux/Android)",
       "recipe": "github_ai",
-      "buzz": 466,
+      "buzz": 465,
       "topics": [
         "ai"
       ],
@@ -1654,12 +1765,12 @@
       "title": "VisionWormStudio/Gemini-Config-Checker-",
       "url": "https://github.com/VisionWormStudio/Gemini-Config-Checker-",
       "ts": 1794761164.0,
-      "points": 466,
+      "points": 465,
       "comments": 0,
       "author": "VisionWormStudio",
       "summary": "Chain region scanner: find proxy configs that get you into Google AI Studio and Gemini (signed-in browser check, anti-DPI, Windows/macOS/Linux/Android)",
       "recipe": "github_ai",
-      "buzz": 466,
+      "buzz": 465,
       "topics": [
         "ai"
       ],
@@ -1671,12 +1782,12 @@
       "title": "wisemeadowlarkspike/Gemini-Config-Checker-",
       "url": "https://github.com/wisemeadowlarkspike/Gemini-Config-Checker-",
       "ts": 1794761298.0,
-      "points": 466,
+      "points": 465,
       "comments": 0,
       "author": "wisemeadowlarkspike",
       "summary": "Chain region scanner: find proxy configs that get you into Google AI Studio and Gemini (signed-in browser check, anti-DPI, Windows/macOS/Linux/Android)",
       "recipe": "github_ai",
-      "buzz": 466,
+      "buzz": 465,
       "topics": [
         "ai"
       ],
@@ -1688,12 +1799,12 @@
       "title": "Watchlespeed/Gemini-Config-Checker-",
       "url": "https://github.com/Watchlespeed/Gemini-Config-Checker-",
       "ts": 1794761231.0,
-      "points": 466,
+      "points": 465,
       "comments": 0,
       "author": "Watchlespeed",
       "summary": "Chain region scanner: find proxy configs that get you into Google AI Studio and Gemini (signed-in browser check, anti-DPI, Windows/macOS/Linux/Android)",
       "recipe": "github_ai",
-      "buzz": 466,
+      "buzz": 465,
       "topics": [
         "ai"
       ],
@@ -1705,29 +1816,12 @@
       "title": "WharfBoulderColander/Gemini-Config-Checker-",
       "url": "https://github.com/WharfBoulderColander/Gemini-Config-Checker-",
       "ts": 1794761232.0,
-      "points": 466,
+      "points": 465,
       "comments": 0,
       "author": "WharfBoulderColander",
       "summary": "Chain region scanner: find proxy configs that get you into Google AI Studio and Gemini (signed-in browser check, anti-DPI, Windows/macOS/Linux/Android)",
       "recipe": "github_ai",
-      "buzz": 466,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-15"
-    },
-    {
-      "uid": "gh:WindowStaffGate11/Gemini-Config-Checker-",
-      "source": "github",
-      "title": "WindowStaffGate11/Gemini-Config-Checker-",
-      "url": "https://github.com/WindowStaffGate11/Gemini-Config-Checker-",
-      "ts": 1794761238.0,
-      "points": 466,
-      "comments": 0,
-      "author": "WindowStaffGate11",
-      "summary": "Chain region scanner: find proxy configs that get you into Google AI Studio and Gemini (signed-in browser check, anti-DPI, Windows/macOS/Linux/Android)",
-      "recipe": "github_ai",
-      "buzz": 466,
+      "buzz": 465,
       "topics": [
         "ai"
       ],
@@ -1739,127 +1833,33 @@
       "title": "WerewolfEmuHub/Gemini-Config-Checker-",
       "url": "https://github.com/WerewolfEmuHub/Gemini-Config-Checker-",
       "ts": 1794761231.0,
-      "points": 466,
+      "points": 465,
       "comments": 0,
       "author": "WerewolfEmuHub",
       "summary": "Chain region scanner: find proxy configs that get you into Google AI Studio and Gemini (signed-in browser check, anti-DPI, Windows/macOS/Linux/Android)",
       "recipe": "github_ai",
-      "buzz": 466,
+      "buzz": 465,
       "topics": [
         "ai"
       ],
       "date": "2026-11-15"
     },
     {
-      "uid": "gh:JieFedorov81/runway-ml-pro-win",
+      "uid": "gh:WindowStaffGate11/Gemini-Config-Checker-",
       "source": "github",
-      "title": "JieFedorov81/runway-ml-pro-win",
-      "url": "https://github.com/JieFedorov81/runway-ml-pro-win",
-      "ts": 1795263162.0,
-      "points": 436,
+      "title": "WindowStaffGate11/Gemini-Config-Checker-",
+      "url": "https://github.com/WindowStaffGate11/Gemini-Config-Checker-",
+      "ts": 1794761238.0,
+      "points": 465,
       "comments": 0,
-      "author": "JieFedorov81",
-      "summary": "Runway - AI video generation platform for text-to-video synthesis, image animation and motion brush editing on Windows 10/11",
-      "recipe": "github_ai",
-      "buzz": 466,
-      "topics": [
-        "ai",
-        "dev",
-        "science"
-      ],
-      "date": "2026-11-21"
-    },
-    {
-      "uid": "gh:Cloudcode04/runway-ml-pro-win",
-      "source": "github",
-      "title": "Cloudcode04/runway-ml-pro-win",
-      "url": "https://github.com/Cloudcode04/runway-ml-pro-win",
-      "ts": 1795274237.0,
-      "points": 436,
-      "comments": 0,
-      "author": "Cloudcode04",
-      "summary": "Runway - AI video generation platform for text-to-video synthesis, image animation and motion brush editing on Windows 10/11",
-      "recipe": "github_ai",
-      "buzz": 466,
-      "topics": [
-        "ai",
-        "dev",
-        "science"
-      ],
-      "date": "2026-11-21"
-    },
-    {
-      "uid": "gh:debugdigital677/descript-pro-win",
-      "source": "github",
-      "title": "debugdigital677/descript-pro-win",
-      "url": "https://github.com/debugdigital677/descript-pro-win",
-      "ts": 1795263716.0,
-      "points": 435,
-      "comments": 0,
-      "author": "debugdigital677",
-      "summary": "Descript - AI-powered video and podcast editor for text-based editing, transcription and screen recording on Windows 10/11",
+      "author": "WindowStaffGate11",
+      "summary": "Chain region scanner: find proxy configs that get you into Google AI Studio and Gemini (signed-in browser check, anti-DPI, Windows/macOS/Linux/Android)",
       "recipe": "github_ai",
       "buzz": 465,
       "topics": [
-        "ai",
-        "dev"
+        "ai"
       ],
-      "date": "2026-11-21"
-    },
-    {
-      "uid": "gh:GuzmanJacqueline93/copy-ai-pro-win",
-      "source": "github",
-      "title": "GuzmanJacqueline93/copy-ai-pro-win",
-      "url": "https://github.com/GuzmanJacqueline93/copy-ai-pro-win",
-      "ts": 1795280663.0,
-      "points": 433,
-      "comments": 0,
-      "author": "GuzmanJacqueline93",
-      "summary": "Copy Ai Pro - AI copywriting assistant for content generation, tone rewriting and SEO text optimization on Windows 10/11",
-      "recipe": "github_ai",
-      "buzz": 463,
-      "topics": [
-        "ai",
-        "science"
-      ],
-      "date": "2026-11-21"
-    },
-    {
-      "uid": "gh:suryacode04/jasper-ai-win",
-      "source": "github",
-      "title": "suryacode04/jasper-ai-win",
-      "url": "https://github.com/suryacode04/jasper-ai-win",
-      "ts": 1795276971.0,
-      "points": 417,
-      "comments": 0,
-      "author": "suryacode04",
-      "summary": "Jasper AI - AI content generation platform for marketing copy creation, brand voice customization and long-form article drafting on Windows 10/11",
-      "recipe": "github_ai",
-      "buzz": 447,
-      "topics": [
-        "ai",
-        "science",
-        "biz"
-      ],
-      "date": "2026-11-21"
-    },
-    {
-      "uid": "gh:isanders5152/descript-pro-win",
-      "source": "github",
-      "title": "isanders5152/descript-pro-win",
-      "url": "https://github.com/isanders5152/descript-pro-win",
-      "ts": 1795273646.0,
-      "points": 413,
-      "comments": 0,
-      "author": "isanders5152",
-      "summary": "Descript - AI-powered video and podcast editor for text-based editing, transcription and screen recording on Windows 10/11",
-      "recipe": "github_ai",
-      "buzz": 443,
-      "topics": [
-        "ai",
-        "dev"
-      ],
-      "date": "2026-11-21"
+      "date": "2026-11-15"
     },
     {
       "uid": "gh:trackersnailgrip/GitHub-Copilot-app",
@@ -1867,12 +1867,12 @@
       "title": "trackersnailgrip/GitHub-Copilot-app",
       "url": "https://github.com/trackersnailgrip/GitHub-Copilot-app",
       "ts": 1794683801.0,
-      "points": 378,
+      "points": 377,
       "comments": 6,
       "author": "trackersnailgrip",
       "summary": "The GitHub Copilot app is an agent-native desktop experience for finding, running, steering, and landing software work across your GitHub repositories.",
       "recipe": "github_ai",
-      "buzz": 396,
+      "buzz": 395,
       "topics": [
         "ai",
         "dev"
@@ -1885,12 +1885,12 @@
       "title": "topapothecarycanal/ai--manus2.0",
       "url": "https://github.com/topapothecarycanal/ai--manus2.0",
       "ts": 1794683724.0,
-      "points": 374,
+      "points": 373,
       "comments": 6,
       "author": "topapothecarycanal",
       "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
       "recipe": "github_ai",
-      "buzz": 392,
+      "buzz": 391,
       "topics": [
         "ai",
         "science"
@@ -1903,12 +1903,12 @@
       "title": "TrapBladesmith/GitHub-Copilot-app",
       "url": "https://github.com/TrapBladesmith/GitHub-Copilot-app",
       "ts": 1794683810.0,
-      "points": 372,
+      "points": 371,
       "comments": 6,
       "author": "TrapBladesmith",
       "summary": "The GitHub Copilot app is an agent-native desktop experience for finding, running, steering, and landing software work across your GitHub repositories.",
       "recipe": "github_ai",
-      "buzz": 390,
+      "buzz": 389,
       "topics": [
         "ai",
         "dev"
@@ -1921,12 +1921,12 @@
       "title": "toppatronweave/ai--manus2.0",
       "url": "https://github.com/toppatronweave/ai--manus2.0",
       "ts": 1794683725.0,
-      "points": 372,
+      "points": 371,
       "comments": 3,
       "author": "toppatronweave",
       "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
       "recipe": "github_ai",
-      "buzz": 381,
+      "buzz": 380,
       "topics": [
         "ai",
         "science"
@@ -1939,17 +1939,53 @@
       "title": "topconstableinlet67/ai--manus2.0",
       "url": "https://github.com/topconstableinlet67/ai--manus2.0",
       "ts": 1794683724.0,
-      "points": 371,
+      "points": 370,
       "comments": 3,
       "author": "topconstableinlet67",
       "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
       "recipe": "github_ai",
-      "buzz": 380,
+      "buzz": 379,
       "topics": [
         "ai",
         "science"
       ],
       "date": "2026-11-14"
+    },
+    {
+      "uid": "gh:google-deepmind/robotics-antigravity-plugin",
+      "source": "github",
+      "title": "google-deepmind/robotics-antigravity-plugin",
+      "url": "https://github.com/google-deepmind/robotics-antigravity-plugin",
+      "ts": 1794855028.0,
+      "points": 238,
+      "comments": 23,
+      "author": "google-deepmind",
+      "summary": "GDM Robotics Skills for agentic robotics workflows across simulation and real robots.",
+      "recipe": "github_ai",
+      "buzz": 317,
+      "topics": [
+        "ai",
+        "hardware"
+      ],
+      "date": "2026-11-16"
+    },
+    {
+      "uid": "gh:xombiensar/ai--manus",
+      "source": "github",
+      "title": "xombiensar/ai--manus",
+      "url": "https://github.com/xombiensar/ai--manus",
+      "ts": 1794581045.0,
+      "points": 194,
+      "comments": 0,
+      "author": "xombiensar",
+      "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
+      "recipe": "github_ai",
+      "buzz": 194,
+      "topics": [
+        "ai",
+        "science"
+      ],
+      "date": "2026-11-13"
     },
     {
       "uid": "rss:ca5d392ce76c89",
