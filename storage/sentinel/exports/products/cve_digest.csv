@@ -1,5 +1,7 @@
 cve_id,severity,package,title,url,date
 CVE-2026-104099,critical,github.com/fabiolb/fabio,CVE-2026-104099: Fabio: Access-control bypass through unnormalized request paths,https://github.com/advisories/GHSA-4hrh-34w3-5ww8,2026-11-20
+CVE-2026-22865,high,org.gradle:gradle-core,CVE-2026-22865: Gradle causes failure to disable repositories exposing builds to malicious artifacts,https://github.com/advisories/GHSA-mqwm-5m85-gmcv,2026-11-23
+CVE-2026-22816,high,org.gradle:gradle-core,CVE-2026-22816: Gradle causes Failure to disable repositories can expose builds to malicious artifacts,https://github.com/advisories/GHSA-w78c-w6vf-rw82,2026-11-23
 CVE-2026-122247,high,@budibase/server,CVE-2026-122247: Budibase: Unauthenticated global-admin & database creation via tenant-confusion bypass of the one-time init guard (`POST /api/global/users/init`),https://github.com/advisories/GHSA-25qc-m4pw-2w8r,2026-11-20
 CVE-2026-122244,high,@budibase/server,CVE-2026-122244: Budibase: Cross-privilege Stored XSS in the Budibase Builder via broken HTML-escaping in `jsonFormatter.format()` rendered through `{@html}` in the CSP-less Builder origin,https://github.com/advisories/GHSA-r2q3-7m4h-63qg,2026-11-20
 CVE-2026-132275,high,svglib,CVE-2026-132275: svglib: Exponential resource consumption via nested <use> references in svg2rlg,https://github.com/advisories/GHSA-555j-qj3j-c8jv,2026-11-20
@@ -11,8 +13,6 @@ CVE-2026-105802,high,github.com/git-lfs/git-lfs,CVE-2026-105802: Git LFS may exe
 CVE-2026-103026,high,paymenter/paymenter,CVE-2026-103026: Paymenter: Unauthenticated arbitrary method invocation in Livewire components,https://github.com/advisories/GHSA-prhx-9q2h-ph2x,2026-11-20
 CVE-2026-130176,high,amqtt,CVE-2026-130176: aMQTT: Denial of Service (DoS) via Memory Leak in Unmanaged QoS 2 Session Handshakes,https://github.com/advisories/GHSA-wcqj-wx85-c75p,2026-11-20
 CVE-2026-115463,high,poweradmin/poweradmin,"CVE-2026-115463: Poweradmin: The email second factor is an mt_rand() six-digit code verified with no attempt limit or lockout, so an attacker holding the password can brute-force it within the validity window",https://github.com/advisories/GHSA-9657-8vc2-7g2p,2026-11-20
-CVE-2026-69261,high,github.com/git-lfs/git-lfs,CVE-2026-69261: Git LFS may leak HTTP headers after redirections,https://github.com/advisories/GHSA-x7xj-4j4f-88xr,2026-11-20
-CVE-2026-69260,high,github.com/git-lfs/git-lfs,CVE-2026-69260: Git LFS may attempt arbitrary remote commands via crafted SSH URLs,https://github.com/advisories/GHSA-w3f2-pr6x-wwjc,2026-11-20
 CVE-2026-132276,medium,wcmatch,CVE-2026-132276: wcmatch: Polynomial-time ReDoS when matching untrusted names against multi-star patterns (default flags),https://github.com/advisories/GHSA-53pm-wgxf-c6qf,2026-11-20
 CVE-2026-132277,medium,inscriptis,CVE-2026-132277: Inscriptis: Quadratic memory growth from sibling <table> elements in get_text(),https://github.com/advisories/GHSA-q87h-c5m7-659j,2026-11-20
 CVE-2026-104884,medium,contao/core-bundle,CVE-2026-104884: contao/core-bundle: Cross-site scripting in the frontend search results,https://github.com/advisories/GHSA-h57j-5f5m-789v,2026-11-20

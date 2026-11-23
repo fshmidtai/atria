@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T13:39:16+00:00",
+  "generated_at": "2026-11-23T17:18:36+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -10,34 +10,34 @@
     "rss"
   ],
   "totals": {
-    "items": 137,
+    "items": 135,
     "by_source": {
       "hn": 40,
       "cve": 30,
-      "github": 17,
+      "github": 15,
       "rss": 50
     },
     "by_recipe": {
       "hn_sec": 40,
       "gh_advisories": 30,
       "hackersnews": 30,
-      "github_sec": 17,
+      "github_sec": 15,
       "schneier": 10,
       "krebs": 10
     },
     "by_topic": {
       "security": 113,
       "ai": 70,
-      "dev": 56,
-      "hardware": 20,
+      "dev": 54,
+      "hardware": 19,
       "biz": 8,
-      "crypto": 7,
+      "crypto": 8,
       "science": 5
     },
     "top_domains": [
       [
         "github.com",
-        49
+        47
       ],
       [
         "thehackernews.com",
@@ -184,7 +184,7 @@
       "author": "github.com/fabiolb/fabio",
       "summary": "Severity: critical. ## Summary\n\nRoute selection uses the raw un-normalized request path, and the per-route ACL and basic-auth gates hang off that selection, so a dot-segment, encoded-dot, or double-slash variant of a protected path selects a different route, skips both gates, and is forwarded to the backend which norma",
       "recipe": "gh_advisories",
-      "buzz": 6030,
+      "buzz": 6010,
       "topics": [
         "security"
       ],
@@ -280,6 +280,42 @@
         "security"
       ],
       "date": "2021-01-11"
+    },
+    {
+      "uid": "cve:GHSA-mqwm-5m85-gmcv",
+      "source": "cve",
+      "title": "CVE-2026-22865: Gradle causes failure to disable repositories exposing builds to malicious artifacts",
+      "url": "https://github.com/advisories/GHSA-mqwm-5m85-gmcv",
+      "ts": 1795448517.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "org.gradle:gradle-core",
+      "summary": "Severity: high. ### Impact\n\nWhen resolving dependencies, Gradle searches repositories in declaration order. If it encounters connection errors, Gradle will disable the repository and fail dependency resolution. This is necessary for both reproducibility and security reasons to prevent dependencies from being resolv",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-23"
+    },
+    {
+      "uid": "cve:GHSA-w78c-w6vf-rw82",
+      "source": "cve",
+      "title": "CVE-2026-22816: Gradle causes Failure to disable repositories can expose builds to malicious artifacts",
+      "url": "https://github.com/advisories/GHSA-w78c-w6vf-rw82",
+      "ts": 1795448014.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "org.gradle:gradle-core",
+      "summary": "Severity: high. ### Impact\n\nWhen resolving dependencies, Gradle searches repositories in declaration order. If it encounters connection errors, Gradle will disable the repository and fail dependency resolution. This is necessary for both reproducibility and security reasons to prevent dependencies from being resolv",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-23"
     },
     {
       "uid": "hn:50172041",
@@ -423,7 +459,7 @@
       "author": "github.com/git-lfs/git-lfs",
       "summary": "Severity: high. ### Impact\n\nWhen fetching objects from a malicious repository, Git LFS may execute an arbitrary command or binary after failing to sufficiently restrict the set of configuration options defined in an `.lfsconfig` file in the repository.\n\nGit LFS permits a limited set of configuration options to be d",
       "recipe": "gh_advisories",
-      "buzz": 3530,
+      "buzz": 3510,
       "topics": [
         "ai",
         "dev",
@@ -443,7 +479,7 @@
       "author": "github.com/git-lfs/git-lfs",
       "summary": "Severity: high. ### Impact\n\nWhen fetching objects from a malicious repository, Git LFS may execute an arbitrary command or binary after incorrectly parsing the Git configuration options defined for a submodule.\n\nGit LFS reads Git configuration options without checking for embedded line-ending control characters.  B",
       "recipe": "gh_advisories",
-      "buzz": 3530,
+      "buzz": 3510,
       "topics": [
         "dev",
         "crypto",
@@ -462,7 +498,7 @@
       "author": "paymenter/paymenter",
       "summary": "Severity: high. ### Summary\n\nA Livewire function allowed attackers to call any public function, allowing attackers to call any public method on the component. Because an attacker can call any function, they can also overwrite locked data.\n\n### Technical Details\n\n`app/Livewire/Traits/HasConfirmation.php` exposed a p",
       "recipe": "gh_advisories",
-      "buzz": 3530,
+      "buzz": 3510,
       "topics": [
         "ai",
         "security"
@@ -480,7 +516,7 @@
       "author": "amqtt",
       "summary": "Severity: high. ### Impact\n\n`amqtt` is vulnerable to a remote denial of service caused by incomplete MQTT QoS 2 transactions remaining allocated after the associated client disconnects.\n\nMQTT QoS 2 uses a four-step handshake to provide exactly-once delivery. If a client begins a QoS 2 transaction but disconnects be",
       "recipe": "gh_advisories",
-      "buzz": 3530,
+      "buzz": 3510,
       "topics": [
         "ai",
         "dev",
@@ -499,46 +535,9 @@
       "author": "poweradmin/poweradmin",
       "summary": "Severity: high. ### Summary\n\nThe email second factor is an mt_rand() six-digit code verified with no attempt limit or lockout\n\nThe email second factor is a six-digit code drawn from `mt_rand()` and verified with no attempt limit, so an attacker who already has the password can brute-force it inside its validity win",
       "recipe": "gh_advisories",
-      "buzz": 3530,
+      "buzz": 3510,
       "topics": [
         "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-20"
-    },
-    {
-      "uid": "cve:GHSA-x7xj-4j4f-88xr",
-      "source": "cve",
-      "title": "CVE-2026-69261: Git LFS may leak HTTP headers after redirections",
-      "url": "https://github.com/advisories/GHSA-x7xj-4j4f-88xr",
-      "ts": 1795186187.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "github.com/git-lfs/git-lfs",
-      "summary": "Severity: high. ### Impact\n\nAfter receiving an HTTP redirection, Git LFS may forward certain HTTP headers to a host other than the one for which they were intended.  While `Authorization` headers are never forwarded to inappropriate hosts, `Cookie` headers may be forwarded incorrectly.\n\nGit LFS has resolved this is",
-      "recipe": "gh_advisories",
-      "buzz": 3530,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-20"
-    },
-    {
-      "uid": "cve:GHSA-w3f2-pr6x-wwjc",
-      "source": "cve",
-      "title": "CVE-2026-69260: Git LFS may attempt arbitrary remote commands via crafted SSH URLs",
-      "url": "https://github.com/advisories/GHSA-w3f2-pr6x-wwjc",
-      "ts": 1795186021.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "github.com/git-lfs/git-lfs",
-      "summary": "Severity: high. ### Impact\n\nWhen Git LFS makes object transfer or authentication requests to a remote host via SSH, it passes the path component of the remote's SSH URL as part of a command to be executed, but does not properly format the URL's path component as a single argument.  By inserting shell meta-character",
-      "recipe": "gh_advisories",
-      "buzz": 3530,
-      "topics": [
         "dev",
         "security"
       ],
@@ -1029,7 +1028,7 @@
       "author": "uu_chcon",
       "summary": "Severity: medium. `chcon` resolved recursive targets from `fts_accpath` with a fresh path lookup, so traversal and the SELinux get/set were not bound to traversal directory state. A privileged recursive relabel can be redirected to unintended objects under rename/symlink races. Fix opens targets with `openat` against",
       "recipe": "gh_advisories",
-      "buzz": 1830,
+      "buzz": 1810,
       "topics": [
         "ai",
         "security"
@@ -1047,7 +1046,7 @@
       "author": "uu_split",
       "summary": "Severity: medium. `split` checks input/output identity by path before opening the output, then opens with truncation, leaving a race window on mutable path components. GNU opens first and compares the opened output inode against the input before truncating. The race can cause `split` to truncate/write a file differen",
       "recipe": "gh_advisories",
-      "buzz": 1830,
+      "buzz": 1810,
       "topics": [
         "ai",
         "dev",
@@ -1066,7 +1065,7 @@
       "author": "ckan",
       "summary": "Severity: medium. ## Description\n\nWeb user registration form is vulnerable to session fixation if the site is configured with server-side session storage (CKAN uses cookie-based session storage by default). The attacker would need to either set a cookie on the victim's browser or steal the victim's currently valid se",
       "recipe": "gh_advisories",
-      "buzz": 1830,
+      "buzz": 1810,
       "topics": [
         "ai",
         "dev",
@@ -1086,7 +1085,7 @@
       "author": "io.netty.incubator:netty-incubator-codec-ohttp",
       "summary": "Severity: medium. ## Summary:\n\nOHttpClientCodec and OHttpServerCodec retain the encrypted outer HttpContent in a handler-level cumulationBuffer. After a valid OHTTP exchange completes, the OHTTP request/response context is destroyed, but the outer cumulationBuffer is not released or reset. It remains referenced by th",
       "recipe": "gh_advisories",
-      "buzz": 1830,
+      "buzz": 1810,
       "topics": [
         "ai",
         "security",
@@ -1105,7 +1104,7 @@
       "author": "io.openremote:openremote-manager",
       "summary": "Severity: medium. ### Summary\n\nCross-realm MQTT session disconnect without authorization\n\n## Vulnerability\n\nThe `disconnectUserSession` endpoint in `UserResourceImpl.java` (line 443) accepts a `realm` path parameter but ignores it entirely, performing no authorization or realm-boundary check before force-disconnectin",
       "recipe": "gh_advisories",
-      "buzz": 1830,
+      "buzz": 1810,
       "topics": [
         "security"
       ],
@@ -1122,7 +1121,7 @@
       "author": "storyblok-backup",
       "summary": "Severity: medium. ### Summary\nstoryblok-backup writes files using unsanitized names for Storyblok components, which are content type or schema definitions. This allows a component name containing path traversal sequences to cause backup files to be written outside the intended backup directory. Anyone with component",
       "recipe": "gh_advisories",
-      "buzz": 1830,
+      "buzz": 1810,
       "topics": [
         "ai",
         "dev",
@@ -1387,7 +1386,7 @@
       "author": "uu_env",
       "summary": "Severity: low. In `env -S`, GNU keeps backslashes literal inside single quotes (except `\\\\` and `\\'`); uutils errors on sequences like `\\a`. This is the backslash-handling issue of the broader `-S`/`--split-string` parsing divergence.\n```\nenv -S\"printf %s '\\''\\\\x'\\''\"   # GNU prints \\x ; uutils: invalid sequence '",
       "recipe": "gh_advisories",
-      "buzz": 730,
+      "buzz": 710,
       "topics": [
         "dev",
         "security"
@@ -1400,12 +1399,12 @@
       "title": "erkamyaman/safe-anything",
       "url": "https://github.com/erkamyaman/safe-anything",
       "ts": 1795365850.0,
-      "points": 319,
-      "comments": 20,
+      "points": 391,
+      "comments": 27,
       "author": "erkamyaman",
       "summary": "Find the holes before someone else does. A fast, 100% Rust vulnerability scanner: XSS, SQL injection, leaked secrets, dependency CVEs and AI agent setups.",
       "recipe": "github_sec",
-      "buzz": 459,
+      "buzz": 502,
       "topics": [
         "ai",
         "dev",
@@ -1420,11 +1419,11 @@
       "url": "https://github.com/Aabyss-Team/Threat-Broadcast-Plus",
       "ts": 1794800456.0,
       "points": 154,
-      "comments": 31,
+      "comments": 32,
       "author": "Aabyss-Team",
       "summary": "网络安全威胁情报播报-Plus升级版",
       "recipe": "github_sec",
-      "buzz": 247,
+      "buzz": 250,
       "topics": [],
       "date": "2026-11-16"
     },
@@ -1434,48 +1433,16 @@
       "title": "vulnix0x4/a-better-antivirus",
       "url": "https://github.com/vulnix0x4/a-better-antivirus",
       "ts": 1794885574.0,
-      "points": 152,
+      "points": 159,
       "comments": 12,
       "author": "vulnix0x4",
       "summary": "Catches infostealers in the act on Windows: plants fake passwords, wallets and app data that only malware would read, and freezes whatever touches them.",
       "recipe": "github_sec",
-      "buzz": 198,
+      "buzz": 205,
       "topics": [
         "security"
       ],
       "date": "2026-11-17"
-    },
-    {
-      "uid": "gh:elmati279/http2shell-brotli-impact-review",
-      "source": "github",
-      "title": "elmati279/http2shell-brotli-impact-review",
-      "url": "https://github.com/elmati279/http2shell-brotli-impact-review",
-      "ts": 1795182140.0,
-      "points": 146,
-      "comments": 0,
-      "author": "elmati279",
-      "summary": "HTTP/2 shell transport, Brotli impact assessed — evidence reviewed, findings documented.",
-      "recipe": "github_sec",
-      "buzz": 176,
-      "topics": [
-        "dev"
-      ],
-      "date": "2026-11-20"
-    },
-    {
-      "uid": "gh:maxnyakundi23-del/java4shell-exposure-audit",
-      "source": "github",
-      "title": "maxnyakundi23-del/java4shell-exposure-audit",
-      "url": "https://github.com/maxnyakundi23-del/java4shell-exposure-audit",
-      "ts": 1795181987.0,
-      "points": 146,
-      "comments": 0,
-      "author": "maxnyakundi23-del",
-      "summary": "Detects Java deserialization exposure through shell-oriented audit checks.",
-      "recipe": "github_sec",
-      "buzz": 176,
-      "topics": [],
-      "date": "2026-11-20"
     },
     {
       "uid": "gh:balikunsh-bot/keepassxc-talroora",
@@ -1483,12 +1450,12 @@
       "title": "balikunsh-bot/keepassxc-talroora",
       "url": "https://github.com/balikunsh-bot/keepassxc-talroora",
       "ts": 1795032603.0,
-      "points": 145,
+      "points": 143,
       "comments": 0,
       "author": "balikunsh-bot",
       "summary": "Keepassxc Talroora organizes credential records and manages encrypted password databases.",
       "recipe": "github_sec",
-      "buzz": 155,
+      "buzz": 153,
       "topics": [
         "dev"
       ],
@@ -1607,6 +1574,44 @@
       "buzz": 80,
       "topics": [
         "ai"
+      ],
+      "date": "2026-11-23"
+    },
+    {
+      "uid": "rss:fa05141b817760",
+      "source": "rss",
+      "title": "⚡ Weekly Recap: VMware 0-Day, Java4Shell, NGINX2Root, Ruby2Shell, and a Whole Lot of Shell Trouble",
+      "url": "https://thehackernews.com/2026/11/weekly-recap-vmware-0-day-java4shell.html",
+      "ts": 1795446648.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "A stolen key. A trusted message. A routine update. None of these looks like the start of a major security problem. That's partly why they work. Attackers don't always need to break down a door. Sometimes they just use one that's already open. This week's stories show how quickly a small opening can turn into a much bigger mess. One breach helps attackers reach another target. Tools people rely",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-23"
+    },
+    {
+      "uid": "rss:c6f205647bbd2a",
+      "source": "rss",
+      "title": "Critical binary-parser Flaw Enables JavaScript Injection via Malicious Parser Definitions",
+      "url": "https://thehackernews.com/2026/11/critical-binary-parser-flaw-enables.html",
+      "ts": 1795440140.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "A critical security flaw has been disclosed in the popular binary-parser library that could allow an attacker who controls parser definitions to execute arbitrary code. The vulnerability, tracked as CVE-[phone] (CVSS score: 9.2 / 8.1), is a case of code injection impacting binary-parser versions prior to 2.3.1. \"Binary-parser before 2.3.1 contains a code injection vulnerability that allows",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "crypto",
+        "security"
       ],
       "date": "2026-11-23"
     },
@@ -1952,26 +1957,6 @@
       "date": "2026-11-20"
     },
     {
-      "uid": "rss:9ab8a41daf1f07",
-      "source": "rss",
-      "title": "Bazuka Android Malware Uses Fake Screen Overlays to Hide Credential Theft and Device Control",
-      "url": "https://thehackernews.com/2026/11/bazuka-android-malware-uses-fake-screen.html",
-      "ts": 1795193896.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Cybersecurity researchers have disclosed details of a previously unknown Android malware framework called Bazuka that offers large language model (LLM) integration for victim management and control at scale. Dutch mobile security company ThreatFabric said it discovered the threat in late October 2026 during an investigation into an NFC-relay banking Trojan. \"Bazuka is a full malware framework,",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "dev",
-        "biz",
-        "security"
-      ],
-      "date": "2026-11-20"
-    },
-    {
       "uid": "gh:Voidsaintcontact/AVG-Internet-Security-Professional-Edition",
       "source": "github",
       "title": "Voidsaintcontact/AVG-Internet-Security-Professional-Edition",
@@ -2061,6 +2046,26 @@
         "science"
       ],
       "date": "2026-11-17"
+    },
+    {
+      "uid": "rss:9ab8a41daf1f07",
+      "source": "rss",
+      "title": "Bazuka Android Malware Uses Fake Screen Overlays to Hide Credential Theft and Device Control",
+      "url": "https://thehackernews.com/2026/11/bazuka-android-malware-uses-fake-screen.html",
+      "ts": 1795193896.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Cybersecurity researchers have disclosed details of a previously unknown Android malware framework called Bazuka that offers large language model (LLM) integration for victim management and control at scale. Dutch mobile security company ThreatFabric said it discovered the threat in late October 2026 during an investigation into an NFC-relay banking Trojan. \"Bazuka is a full malware framework,",
+      "recipe": "hackersnews",
+      "buzz": 10,
+      "topics": [
+        "ai",
+        "dev",
+        "biz",
+        "security"
+      ],
+      "date": "2026-11-20"
     },
     {
       "uid": "rss:bf49fa089ac3b6",
@@ -2318,44 +2323,6 @@
         "ai",
         "dev",
         "biz",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-19"
-    },
-    {
-      "uid": "rss:1226c4f144b6e5",
-      "source": "rss",
-      "title": "Ruby Ships Fixes for 7 Flaws, Including Critical Ruby2Shell, Said to Hit Default Rails Apps Pre-Auth",
-      "url": "https://thehackernews.com/2026/11/ruby-releases-fixes-for-7-regex-and.html",
-      "ts": 1795077731.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Ruby contains seven memory-safety flaws in its regular expression engine and its string case-conversion code. For five of them, its maintainers say, proof-of-concept exploits, or PoCs, have shown that crafted input can run code on the machine. \"We are aware of PoCs that prove some of them can be used to trigger remote code execution,\" the maintainers said. The project released fixed versions",
-      "recipe": "hackersnews",
-      "buzz": 10,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-19"
-    },
-    {
-      "uid": "rss:1fbf5b9ef3a877",
-      "source": "rss",
-      "title": "Researcher Demonstrates Database RCE Exploits Affecting PostgreSQL, MySQL and Oracle",
-      "url": "https://thehackernews.com/2026/11/researcher-demonstrates-database-rce.html",
-      "ts": 1795076040.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Low-privilege database accounts that cannot read a single application table can still be used to run code on the database server itself, a researcher has shown, by reaching memory-corruption bugs in the engine code behind ordinary SQL. The exploits, published yesterday, are the researcher's proofs of concept against PostgreSQL, MySQL and ClickHouse, plus a separate Oracle chain that needs no",
-      "recipe": "hackersnews",
-      "buzz": 10,
-      "topics": [
-        "ai",
-        "dev",
         "security",
         "hardware"
       ],

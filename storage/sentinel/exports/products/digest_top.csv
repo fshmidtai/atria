@@ -1,12 +1,14 @@
 uid,source,title,url,buzz,date,topics
 hn:37392676,hn,Ask HN: I’m an FCC Commissioner proposing regulation of IoT security updates,https://news.ycombinator.com/item?id=37392676,6162,2023-09-05,dev|security
 hn:43462783,hn,U.S. national-security leaders included me in a group chat,https://www.theatlantic.com/politics/archive/2025/03/trump-administration-accidentally-texted-me-its-war-plans/682151/,6156,2025-03-24,security
-cve:GHSA-4hrh-34w3-5ww8,cve,CVE-2026-104099: Fabio: Access-control bypass through unnormalized request paths,https://github.com/advisories/GHSA-4hrh-34w3-5ww8,6030,2026-11-20,security
+cve:GHSA-4hrh-34w3-5ww8,cve,CVE-2026-104099: Fabio: Access-control bypass through unnormalized request paths,https://github.com/advisories/GHSA-4hrh-34w3-5ww8,6010,2026-11-20,security
 hn:48997548,hn,OpenAI and Hugging Face address security incident during model evaluation,https://openai.com/index/hugging-face-model-evaluation-security-incident/,5103,2026-07-21,ai|dev|biz|security
 hn:43128253,hn,Apple pulls data protection tool after UK government security row,https://www.bbc.com/news/articles/cgj54eq4vejo,4974,2025-02-21,security
 hn:39452494,hn,"Insecure vehicles should be banned, not security tools like the Flipper Zero",https://saveflipper.ca/,4130,2024-02-21,security
 hn:30051054,hn,Ask HN: Gmail account security,https://news.ycombinator.com/item?id=30051054,3830,2022-01-23,ai|dev|security
 hn:25729088,hn,"70TB of Parler users’ messages, videos, and posts leaked by security researchers",https://cybernews.com/news/70tb-of-parler-users-messages-videos-and-posts-leaked-by-security-researchers/,3745,2021-01-11,dev|security
+cve:GHSA-mqwm-5m85-gmcv,cve,CVE-2026-22865: Gradle causes failure to disable repositories exposing builds to malicious artifacts,https://github.com/advisories/GHSA-mqwm-5m85-gmcv,3580,2026-11-23,ai|security
+cve:GHSA-w78c-w6vf-rw82,cve,CVE-2026-22816: Gradle causes Failure to disable repositories can expose builds to malicious artifacts,https://github.com/advisories/GHSA-w78c-w6vf-rw82,3580,2026-11-23,ai|security
 hn:50172041,hn,"Security advisory: Critical remote code execution vulnerabilities, update now",https://www.php.net/archive/2026.php#2026-10-21-5,3538,2026-10-20,security
 cve:GHSA-25qc-m4pw-2w8r,cve,CVE-2026-122247: Budibase: Unauthenticated global-admin & database creation via tenant-confusion bypass of the one-time init guard (`POST /api/global/users/init`),https://github.com/advisories/GHSA-25qc-m4pw-2w8r,3530,2026-11-20,ai|dev|science|security
 cve:GHSA-r2q3-7m4h-63qg,cve,CVE-2026-122244: Budibase: Cross-privilege Stored XSS in the Budibase Builder via broken HTML-escaping in `jsonFormatter.format()` rendered through `{@html}` in the CSP-less Builder origin,https://github.com/advisories/GHSA-r2q3-7m4h-63qg,3530,2026-11-20,ai|dev|security
@@ -14,13 +16,11 @@ cve:GHSA-555j-qj3j-c8jv,cve,CVE-2026-132275: svglib: Exponential resource consum
 cve:GHSA-r9qp-pqx5-8369,cve,CVE-2026-104883: contao/core-bundle: Non-admin users can self-grant permissions that implicitly make them administrators,https://github.com/advisories/GHSA-r9qp-pqx5-8369,3530,2026-11-20,dev|security|hardware
 cve:GHSA-jrjx-9jjw-747m,cve,CVE-2026-77309: AIT-GUI route chain allows unauthenticated Python execution in server process,https://github.com/advisories/GHSA-jrjx-9jjw-747m,3530,2026-11-20,ai|dev|security|hardware
 cve:GHSA-xxqp-5qx8-gj5q,cve,CVE-2026-63341: Aedes has Uncaught Exception and Uncontrolled Resource Consumption,https://github.com/advisories/GHSA-xxqp-5qx8-gj5q,3530,2026-11-20,ai|security
-cve:GHSA-x72p-hmqp-46hw,cve,CVE-2026-105803: Git LFS may execute arbitrary commands via crafted Git LFS configurations,https://github.com/advisories/GHSA-x72p-hmqp-46hw,3530,2026-11-20,ai|dev|crypto|security
-cve:GHSA-xrgv-7vx6-5vx6,cve,CVE-2026-105802: Git LFS may execute arbitrary commands via crafted Git configurations,https://github.com/advisories/GHSA-xrgv-7vx6-5vx6,3530,2026-11-20,dev|crypto|security
-cve:GHSA-prhx-9q2h-ph2x,cve,CVE-2026-103026: Paymenter: Unauthenticated arbitrary method invocation in Livewire components,https://github.com/advisories/GHSA-prhx-9q2h-ph2x,3530,2026-11-20,ai|security
-cve:GHSA-wcqj-wx85-c75p,cve,CVE-2026-130176: aMQTT: Denial of Service (DoS) via Memory Leak in Unmanaged QoS 2 Session Handshakes,https://github.com/advisories/GHSA-wcqj-wx85-c75p,3530,2026-11-20,ai|dev|security
-cve:GHSA-9657-8vc2-7g2p,cve,"CVE-2026-115463: Poweradmin: The email second factor is an mt_rand() six-digit code verified with no attempt limit or lockout, so an attacker holding the password can brute-force it within the validity window",https://github.com/advisories/GHSA-9657-8vc2-7g2p,3530,2026-11-20,ai|dev|security
-cve:GHSA-x7xj-4j4f-88xr,cve,CVE-2026-69261: Git LFS may leak HTTP headers after redirections,https://github.com/advisories/GHSA-x7xj-4j4f-88xr,3530,2026-11-20,ai|dev|security
-cve:GHSA-w3f2-pr6x-wwjc,cve,CVE-2026-69260: Git LFS may attempt arbitrary remote commands via crafted SSH URLs,https://github.com/advisories/GHSA-w3f2-pr6x-wwjc,3530,2026-11-20,dev|security
+cve:GHSA-x72p-hmqp-46hw,cve,CVE-2026-105803: Git LFS may execute arbitrary commands via crafted Git LFS configurations,https://github.com/advisories/GHSA-x72p-hmqp-46hw,3510,2026-11-20,ai|dev|crypto|security
+cve:GHSA-xrgv-7vx6-5vx6,cve,CVE-2026-105802: Git LFS may execute arbitrary commands via crafted Git configurations,https://github.com/advisories/GHSA-xrgv-7vx6-5vx6,3510,2026-11-20,dev|crypto|security
+cve:GHSA-prhx-9q2h-ph2x,cve,CVE-2026-103026: Paymenter: Unauthenticated arbitrary method invocation in Livewire components,https://github.com/advisories/GHSA-prhx-9q2h-ph2x,3510,2026-11-20,ai|security
+cve:GHSA-wcqj-wx85-c75p,cve,CVE-2026-130176: aMQTT: Denial of Service (DoS) via Memory Leak in Unmanaged QoS 2 Session Handshakes,https://github.com/advisories/GHSA-wcqj-wx85-c75p,3510,2026-11-20,ai|dev|security
+cve:GHSA-9657-8vc2-7g2p,cve,"CVE-2026-115463: Poweradmin: The email second factor is an mt_rand() six-digit code verified with no attempt limit or lockout, so an attacker holding the password can brute-force it within the validity window",https://github.com/advisories/GHSA-9657-8vc2-7g2p,3510,2026-11-20,ai|dev|security
 hn:32148218,hn,FCC: TikTok is unacceptable security risk and should be removed from app stores,https://blog.malwarebytes.com/privacy-2/2022/07/tiktok-is-unacceptable-security-risk-and-should-be-removed-from-app-stores-says-fcc/,3376,2022-07-19,security
 hn:41392128,hn,Bypassing airport security via SQL injection,https://ian.sh/tsa,3324,2024-08-29,ai|security
 hn:41792500,hn,Internet Archive: Security breach alert,https://www.theverge.com/2024/10/9/24266419/internet-archive-ddos-attack-pop-up-message,2912,2024-10-09,security
@@ -48,4 +48,4 @@ cve:GHSA-23w9-4pg3-xwm3,cve,CVE-2026-104882: contao/core-bundle: Improper access
 cve:GHSA-3r9g-pfhv-3228,cve,CVE-2026-104881: contao/newsletter-bundle: Contao newsletter custom actions bypass channel-scoped authorization,https://github.com/advisories/GHSA-3r9g-pfhv-3228,1830,2026-11-20,ai|dev|security
 cve:GHSA-qh76-45cr-8xrc,cve,"CVE-2026-61725: sevenz-rust2: decompress builds each output path as dest.join(entry.name()) with no traversal guard, allowing a crafted .7z to write files outside the destination (Zip-Slip)",https://github.com/advisories/GHSA-qh76-45cr-8xrc,1830,2026-11-20,ai|dev|security
 cve:GHSA-p3j5-5hrq-p75h,cve,CVE-2026-58254: nats-server Leaf node connections bypass Nats-Trace-Dest permission check,https://github.com/advisories/GHSA-p3j5-5hrq-p75h,1830,2026-11-20,security|hardware
-cve:GHSA-9rv8-9hvg-92mq,cve,CVE-2026-35376: chcon: recursive relabel not anchored to traversal dirfd (TOCTOU),https://github.com/advisories/GHSA-9rv8-9hvg-92mq,1830,2026-11-20,ai|security
+cve:GHSA-9rv8-9hvg-92mq,cve,CVE-2026-35376: chcon: recursive relabel not anchored to traversal dirfd (TOCTOU),https://github.com/advisories/GHSA-9rv8-9hvg-92mq,1810,2026-11-20,ai|security

@@ -5,7 +5,39 @@
     <link>https://cveradar-ah3.pages.dev</link>
     <description>Живые CVE и уязвимости на русском: автономный перевод угроз в понятные дайджесты для DevOps и небольшого SecOps</description>
     <language>ru</language>
-    <lastBuildDate>Mon, 23 Nov 2026 13:38:51 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 23 Nov 2026 17:18:04 GMT</lastBuildDate>
+    <item>
+      <title>CVE-2026-22865: Gradle causes failure to disable repositories exposing builds to malicious artifacts</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-22865-gradle-causes-failure-to-disable-repositories-exp.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-22865-gradle-causes-failure-to-disable-repositories-exp.html</guid>
+      <pubDate>Mon, 23 Nov 2026 15:41:57 GMT</pubDate>
+      <description>Severity: high. ### Impact
+
+When resolving dependencies, Gradle searches repositories in declaration order. If it encounters connection errors, Gradle will disable the repository and fail dependency resolution. This is necessary for both reproducibility and security reasons to prevent dependencies f</description>
+    </item>
+    <item>
+      <title>CVE-2026-22816: Gradle causes Failure to disable repositories can expose builds to malicious artifacts</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-22816-gradle-causes-failure-to-disable-repositories-can.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-22816-gradle-causes-failure-to-disable-repositories-can.html</guid>
+      <pubDate>Mon, 23 Nov 2026 15:33:34 GMT</pubDate>
+      <description>Severity: high. ### Impact
+
+When resolving dependencies, Gradle searches repositories in declaration order. If it encounters connection errors, Gradle will disable the repository and fail dependency resolution. This is necessary for both reproducibility and security reasons to prevent dependencies f</description>
+    </item>
+    <item>
+      <title>⚡ Weekly Recap: VMware 0-Day, Java4Shell, NGINX2Root, Ruby2Shell, and a Whole Lot of Shell Trouble</title>
+      <link>https://cveradar-ah3.pages.dev/item/weekly-recap-vmware-0-day-java4shell-nginx2root-ruby2shell-and-a.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/weekly-recap-vmware-0-day-java4shell-nginx2root-ruby2shell-and-a.html</guid>
+      <pubDate>Mon, 23 Nov 2026 15:10:48 GMT</pubDate>
+      <description>A stolen key. A trusted message. A routine update. None of these looks like the start of a major security problem. That's partly why they work. Attackers don't always need to break down a door. Sometimes they just use one that's already open. This week's stories show how quickly a small opening can </description>
+    </item>
+    <item>
+      <title>Critical binary-parser Flaw Enables JavaScript Injection via Malicious Parser Definitions</title>
+      <link>https://cveradar-ah3.pages.dev/item/critical-binary-parser-flaw-enables-javascript-injection-via-mal.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/critical-binary-parser-flaw-enables-javascript-injection-via-mal.html</guid>
+      <pubDate>Mon, 23 Nov 2026 13:22:20 GMT</pubDate>
+      <description>A critical security flaw has been disclosed in the popular binary-parser library that could allow an attacker who controls parser definitions to execute arbitrary code. The vulnerability, tracked as CVE-[phone] (CVSS score: 9.2 / 8.1), is a case of code injection impacting binary-parser versions pri</description>
+    </item>
     <item>
       <title>Hackers Exploit Critical ScreenConnect Flaw to Hijack MSP Technician PCs Without Warning</title>
       <link>https://cveradar-ah3.pages.dev/item/hackers-exploit-critical-screenconnect-flaw-to-hijack-msp-techni.html</link>
@@ -210,40 +242,6 @@ Extracting an attacker-supplied 7z archive can write files outside the destinati
       <pubDate>Fri, 20 Nov 2026 23:32:35 GMT</pubDate>
       <description>Severity: high. ### Summary
 A remote Denial of Service (DoS) vulnerability, allows any remote client to cause a complete crash of the Aedes MQTT broker process. This is achieved by sending a specially crafted MQTT message (via PUBLISH or SUBSCRIBE), or by setting a Will message with such a topic, co</description>
-    </item>
-    <item>
-      <title>CVE-2026-58254: nats-server Leaf node connections bypass Nats-Trace-Dest permission check</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-58254-nats-server-leaf-node-connections-bypass-nats-tra.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-58254-nats-server-leaf-node-connections-bypass-nats-tra.html</guid>
-      <pubDate>Fri, 20 Nov 2026 23:31:59 GMT</pubDate>
-      <description>Severity: medium. ### Background
-
-NATS.io is a high performance open source pub-sub distributed communication technology, built for the cloud, on-premise, IoT and edge computing.
-
-The NATS Server supports leafnode connections between servers and message tracing through NATS headers.
-
-### Problem Des</description>
-    </item>
-    <item>
-      <title>WhatsApp Patches 3 Security Flaws, Including Android Bug Suspected of Use in Scams</title>
-      <link>https://cveradar-ah3.pages.dev/item/whatsapp-patches-3-security-flaws-including-android-bug-suspecte.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/whatsapp-patches-3-security-flaws-including-android-bug-suspecte.html</guid>
-      <pubDate>Fri, 20 Nov 2026 17:57:20 GMT</pubDate>
-      <description>Meta-owned WhatsApp has addressed security vulnerabilities, including one impacting its Android app that it suspects may have been exploited in connection with scam messages. The vulnerability, tracked as CVE-[phone] (CVSS score: 3.5), has been described as a case of incomplete validation of externa</description>
-    </item>
-    <item>
-      <title>Bazuka Android Malware Uses Fake Screen Overlays to Hide Credential Theft and Device Control</title>
-      <link>https://cveradar-ah3.pages.dev/item/bazuka-android-malware-uses-fake-screen-overlays-to-hide-credent.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/bazuka-android-malware-uses-fake-screen-overlays-to-hide-credent.html</guid>
-      <pubDate>Fri, 20 Nov 2026 16:58:16 GMT</pubDate>
-      <description>Cybersecurity researchers have disclosed details of a previously unknown Android malware framework called Bazuka that offers large language model (LLM) integration for victim management and control at scale. Dutch mobile security company ThreatFabric said it discovered the threat in late October 202</description>
-    </item>
-    <item>
-      <title>CVE-2026-35376: chcon: recursive relabel not anchored to traversal dirfd (TOCTOU)</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-35376-chcon-recursive-relabel-not-anchored-to-traversal.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-35376-chcon-recursive-relabel-not-anchored-to-traversal.html</guid>
-      <pubDate>Fri, 20 Nov 2026 16:39:34 GMT</pubDate>
-      <description>Severity: medium. `chcon` resolved recursive targets from `fts_accpath` with a fresh path lookup, so traversal and the SELinux get/set were not bound to traversal directory state. A privileged recursive relabel can be redirected to unintended objects under rename/symlink races. Fix opens targets wit</description>
     </item>
   </channel>
 </rss>
