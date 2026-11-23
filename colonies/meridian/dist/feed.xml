@@ -5,7 +5,175 @@
     <link>https://meridian-radar.pages.dev</link>
     <description>Autonomous radar of tech and science: what is gaining resonance right now</description>
     <language>en</language>
-    <lastBuildDate>Sun, 22 Nov 2026 20:58:25 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 23 Nov 2026 01:32:39 GMT</lastBuildDate>
+    <item>
+      <title>Streaming 1 GiB CSV Diffs in a Web Worker Without Corrupting Leading Zeros</title>
+      <link>https://meridian-radar.pages.dev/item/streaming-1-gib-csv-diffs-in-a-web-worker-without-corrupting-lea.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/streaming-1-gib-csv-diffs-in-a-web-worker-without-corrupting-lea.html</guid>
+      <pubDate>Mon, 23 Nov 2026 01:32:10 GMT</pubDate>
+      <description>&lt;p&gt;Reconciling two large CSV exports in the browser usually fails in one of three ways:&lt;/p&gt; &lt;ol&gt; &lt;li&gt;Calling &lt;code&gt;await file.text()&lt;/code&gt; on two 400 MB files blows past the tab heap limit before parsing even starts.&lt;/li&gt; &lt;li&gt;Coercing cells with &lt;code&gt;Number()&lt;/code&gt; or &lt;code&gt;parseFloat()&lt;/code&gt; tu</description>
+    </item>
+    <item>
+      <title>How Multi-Route Failover Makes AI Video Generation Production-Ready</title>
+      <link>https://meridian-radar.pages.dev/item/how-multi-route-failover-makes-ai-video-generation-production-re.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/how-multi-route-failover-makes-ai-video-generation-production-re.html</guid>
+      <pubDate>Mon, 23 Nov 2026 01:32:01 GMT</pubDate>
+      <description>&lt;p&gt;Most AI video tutorials show a happy path: send a prompt, get a video. Production is different. Upstreams go down, queues back up, and rate limits hit at the worst time. The difference between a demo and a product is automatic failover across multiple routes.&lt;/p&gt; &lt;p&gt;A multi-route design works lik</description>
+    </item>
+    <item>
+      <title>Aborting Mid-Token: Streaming Chat with the Vercel AI SDK and React 19</title>
+      <link>https://meridian-radar.pages.dev/item/aborting-mid-token-streaming-chat-with-the-vercel-ai-sdk-and-rea.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/aborting-mid-token-streaming-chat-with-the-vercel-ai-sdk-and-rea.html</guid>
+      <pubDate>Mon, 23 Nov 2026 01:30:44 GMT</pubDate>
+      <description>&lt;h1&gt; Aborting Mid-Token: Streaming Chat with the Vercel AI SDK and React 19 &lt;/h1&gt; &lt;p&gt;At 3:12 a.m. the page is not a model outage. A tab never released its SSE reader after a relay blip, so Chrome sits pegged while a half-rendered assistant message freezes the thread. Quota cuts look the same from th</description>
+    </item>
+    <item>
+      <title>A Crypto Wallet Risk Score Is Not a Verdict: What Developers Should Actually Look For</title>
+      <link>https://meridian-radar.pages.dev/item/a-crypto-wallet-risk-score-is-not-a-verdict-what-developers-shou.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/a-crypto-wallet-risk-score-is-not-a-verdict-what-developers-shou.html</guid>
+      <pubDate>Mon, 23 Nov 2026 01:30:35 GMT</pubDate>
+      <description>&lt;p&gt;&lt;a href="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fnli2055nof37n2w0x6dv.png" class="article-body-image-wrapper"&gt;&lt;img src="https://media2.dev.to/dynamic/image/</description>
+    </item>
+    <item>
+      <title>Why your translated video gets no views (it is not the translation)</title>
+      <link>https://meridian-radar.pages.dev/item/why-your-translated-video-gets-no-views-it-is-not-the-translatio.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/why-your-translated-video-gets-no-views-it-is-not-the-translatio.html</guid>
+      <pubDate>Mon, 23 Nov 2026 01:28:51 GMT</pubDate>
+      <description>&lt;p&gt;You translated the video. You published it. It got 40 views, all from your existing subscribers, none from the market you translated for.&lt;/p&gt; &lt;p&gt;I have watched this failure enough times to see the pattern. It is almost never the translation.&lt;/p&gt; &lt;h2&gt; Mistake 1: publishing to the wrong surface &lt;/h</description>
+    </item>
+    <item>
+      <title>Node.js Retrieval Architecture: Metadata Pre- vs Post-Filters (Choose Pre-Filtering at 10M)</title>
+      <link>https://meridian-radar.pages.dev/item/node-js-retrieval-architecture-metadata-pre-vs-post-filters-choo.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/node-js-retrieval-architecture-metadata-pre-vs-post-filters-choo.html</guid>
+      <pubDate>Mon, 23 Nov 2026 01:28:28 GMT</pubDate>
+      <description>&lt;h2&gt; TL;DR &lt;/h2&gt; &lt;p&gt;Choose metadata pre-filtering for a multi-tenant customer-support knowledge base once the corpus approaches 10 million chunks, because tenant, entitlement, locale, product, and validity constraints should reduce both the candidate set and the amount of duplicated index state befo</description>
+    </item>
+    <item>
+      <title>A checklist for reviewing a pull request an AI agent wrote</title>
+      <link>https://meridian-radar.pages.dev/item/a-checklist-for-reviewing-a-pull-request-an-ai-agent-wrote.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/a-checklist-for-reviewing-a-pull-request-an-ai-agent-wrote.html</guid>
+      <pubDate>Mon, 23 Nov 2026 01:28:20 GMT</pubDate>
+      <description>&lt;p&gt;Reviewing a pull request from a colleague, you lean on context: you know how they work, what they were asked to do, and where they usually cut corners. A PR from a coding agent has none of that. It is often tidy, confidently described, and correct-looking at a glance, which is exactly why it need</description>
+    </item>
+    <item>
+      <title>Handling Uncaught Exceptions with Nested Error Boundaries in Next.js</title>
+      <link>https://meridian-radar.pages.dev/item/handling-uncaught-exceptions-with-nested-error-boundaries-in-nex.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/handling-uncaught-exceptions-with-nested-error-boundaries-in-nex.html</guid>
+      <pubDate>Mon, 23 Nov 2026 01:28:00 GMT</pubDate>
+      <description>&lt;p&gt;Uncaught exceptions are unexpected errors that indicate bugs or issues that should not occur during the normal flow of your application. These should be handled by throwing errors, which will then be caught by error boundaries.&lt;/p&gt; &lt;p&gt;Nested error boundaries&lt;br&gt; Next.js uses error boundaries to h</description>
+    </item>
+    <item>
+      <title>Open-source Windows app for solo crypto mining</title>
+      <link>https://meridian-radar.pages.dev/item/open-source-windows-app-for-solo-crypto-mining.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/open-source-windows-app-for-solo-crypto-mining.html</guid>
+      <pubDate>Mon, 23 Nov 2026 01:27:53 GMT</pubDate>
+      <description>&lt;p&gt;Hi everyone!&lt;/p&gt; &lt;p&gt;Recently, I started working on a project called &lt;strong&gt;Easy Block Finder 4000 (EBF4000)&lt;/strong&gt;.&lt;/p&gt; &lt;p&gt;I wanted to build a simple Windows application for people who want to experiment with solo cryptocurrency mining.&lt;/p&gt; &lt;p&gt;There are already many good mining programs, but I</description>
+    </item>
+    <item>
+      <title>Implementing Soft Deletes and a Retention Policy for Cross-Border Order Records</title>
+      <link>https://meridian-radar.pages.dev/item/implementing-soft-deletes-and-a-retention-policy-for-cross-borde.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/implementing-soft-deletes-and-a-retention-policy-for-cross-borde.html</guid>
+      <pubDate>Mon, 23 Nov 2026 01:27:17 GMT</pubDate>
+      <description>&lt;h1&gt; Implementing Soft Deletes and a Retention Policy for Cross-Border Order Records &lt;/h1&gt; &lt;p&gt;Deleting an order row feels clean. In a cross-border storefront it is usually a mistake.&lt;/p&gt; &lt;p&gt;We learned this the hard way at Taocarts, the platform behind a reverse-shopping storefront that lets overseas</description>
+    </item>
+    <item>
+      <title>ElevenLabs Review for Developers: One Credit Pool, Six Meters and the Feature Gates That Really Pick Your Plan</title>
+      <link>https://meridian-radar.pages.dev/item/elevenlabs-review-for-developers-one-credit-pool-six-meters-and-.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/elevenlabs-review-for-developers-one-credit-pool-six-meters-and-.html</guid>
+      <pubDate>Mon, 23 Nov 2026 01:27:14 GMT</pubDate>
+      <description>&lt;p&gt;&lt;em&gt;#ad #ElevenAgentsPartner&lt;/em&gt;&lt;/p&gt; &lt;p&gt;Disclosure: I'm an ElevenLabs affiliate partner. This post links only to my own site, &lt;a href="https://infinityme.dev/" rel="noopener noreferrer"&gt;infinityme.dev&lt;/a&gt;, and some pages there contain affiliate links to ElevenLabs. If you buy through them I may </description>
+    </item>
+    <item>
+      <title>How to stop a user's regex from freezing a browser tab, and two other log-viewer traps</title>
+      <link>https://meridian-radar.pages.dev/item/how-to-stop-a-user-s-regex-from-freezing-a-browser-tab-and-two-o.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/how-to-stop-a-user-s-regex-from-freezing-a-browser-tab-and-two-o.html</guid>
+      <pubDate>Mon, 23 Nov 2026 01:27:06 GMT</pubDate>
+      <description>&lt;blockquote&gt; &lt;p&gt;&lt;strong&gt;In short.&lt;/strong&gt; Refuse regexes with nested quantifiers before they run, and run every other search in a Web Worker you terminate after 2 seconds. Mask a secret as a fixed &lt;code&gt;********&lt;/code&gt; plus its public prefix, never as stars of the same length. Validate JSON with &lt;c</description>
+    </item>
+    <item>
+      <title>How Notable Capital, GIC, and Baillie Gifford bet big on Anthropic before its IPO</title>
+      <link>https://meridian-radar.pages.dev/item/how-notable-capital-gic-and-baillie-gifford-bet-big-on-anthropic.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/how-notable-capital-gic-and-baillie-gifford-bet-big-on-anthropic.html</guid>
+      <pubDate>Mon, 23 Nov 2026 01:25:53 GMT</pubDate>
+      <description>Three significant backers share what gave them conviction to bet billions on Anthropic.</description>
+    </item>
+    <item>
+      <title>Nespresso's project to reduce grams of coffee per capsule</title>
+      <link>https://meridian-radar.pages.dev/item/nespresso-s-project-to-reduce-grams-of-coffee-per-capsule.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/nespresso-s-project-to-reduce-grams-of-coffee-per-capsule.html</guid>
+      <pubDate>Sun, 22 Nov 2026 23:57:45 GMT</pubDate>
+      <description></description>
+    </item>
+    <item>
+      <title>What should AAA game devs do</title>
+      <link>https://meridian-radar.pages.dev/item/what-should-aaa-game-devs-do.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/what-should-aaa-game-devs-do.html</guid>
+      <pubDate>Sun, 22 Nov 2026 23:51:00 GMT</pubDate>
+      <description></description>
+    </item>
+    <item>
+      <title>Progress map for the Lean formalization of Alessandro Masullo's manuscript</title>
+      <link>https://meridian-radar.pages.dev/item/progress-map-for-the-lean-formalization-of-alessandro-masullo-s-.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/progress-map-for-the-lean-formalization-of-alessandro-masullo-s-.html</guid>
+      <pubDate>Sun, 22 Nov 2026 23:12:10 GMT</pubDate>
+      <description></description>
+    </item>
+    <item>
+      <title>GL.iNet Security Notice 2026-11-20</title>
+      <link>https://meridian-radar.pages.dev/item/gl-inet-security-notice-2026-11-20.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/gl-inet-security-notice-2026-11-20.html</guid>
+      <pubDate>Sun, 22 Nov 2026 23:06:37 GMT</pubDate>
+      <description></description>
+    </item>
+    <item>
+      <title>Localcode, open source agentic coding on your Mac with one command</title>
+      <link>https://meridian-radar.pages.dev/item/localcode-open-source-agentic-coding-on-your-mac-with-one-comman.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/localcode-open-source-agentic-coding-on-your-mac-with-one-comman.html</guid>
+      <pubDate>Sun, 22 Nov 2026 22:18:48 GMT</pubDate>
+      <description></description>
+    </item>
+    <item>
+      <title>The Usefulness of Useless Knowledge [pdf] (1939)</title>
+      <link>https://meridian-radar.pages.dev/item/the-usefulness-of-useless-knowledge-pdf-1939.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/the-usefulness-of-useless-knowledge-pdf-1939.html</guid>
+      <pubDate>Sun, 22 Nov 2026 22:10:58 GMT</pubDate>
+      <description></description>
+    </item>
+    <item>
+      <title>Agent swarm trying to solve P vs. NP</title>
+      <link>https://meridian-radar.pages.dev/item/agent-swarm-trying-to-solve-p-vs-np.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/agent-swarm-trying-to-solve-p-vs-np.html</guid>
+      <pubDate>Sun, 22 Nov 2026 21:53:45 GMT</pubDate>
+      <description></description>
+    </item>
+    <item>
+      <title>The struggle for freedom: How BSD escaped AT&amp;T licensing</title>
+      <link>https://meridian-radar.pages.dev/item/the-struggle-for-freedom-how-bsd-escaped-at-t-licensing.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/the-struggle-for-freedom-how-bsd-escaped-at-t-licensing.html</guid>
+      <pubDate>Sun, 22 Nov 2026 21:33:12 GMT</pubDate>
+      <description></description>
+    </item>
+    <item>
+      <title>OpenAI’s chief scientist has thoughts on how to limit AI development</title>
+      <link>https://meridian-radar.pages.dev/item/openai-s-chief-scientist-has-thoughts-on-how-to-limit-ai-develop.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/openai-s-chief-scientist-has-thoughts-on-how-to-limit-ai-develop.html</guid>
+      <pubDate>Sun, 22 Nov 2026 21:14:07 GMT</pubDate>
+      <description>To establish a speed limit on AI development, you need to agree on how to measure speed.</description>
+    </item>
+    <item>
+      <title>Will the first approved psychedelic become a blockbuster?</title>
+      <link>https://meridian-radar.pages.dev/item/will-the-first-approved-psychedelic-become-a-blockbuster.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/will-the-first-approved-psychedelic-become-a-blockbuster.html</guid>
+      <pubDate>Sun, 22 Nov 2026 21:13:10 GMT</pubDate>
+      <description></description>
+    </item>
+    <item>
+      <title>A Beginner's Guide to Local AI with Inkling, Qwen, and Unsloth</title>
+      <link>https://meridian-radar.pages.dev/item/a-beginner-s-guide-to-local-ai-with-inkling-qwen-and-unsloth.html</link>
+      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/a-beginner-s-guide-to-local-ai-with-inkling-qwen-and-unsloth.html</guid>
+      <pubDate>Sun, 22 Nov 2026 21:01:16 GMT</pubDate>
+      <description></description>
+    </item>
     <item>
       <title>Dry-run your ECR lifecycle policy before it deletes a multi-arch image you still run</title>
       <link>https://meridian-radar.pages.dev/item/dry-run-your-ecr-lifecycle-policy-before-it-deletes-a-multi-arch.html</link>
@@ -47,174 +215,6 @@
       <guid isPermaLink="true">https://meridian-radar.pages.dev/item/stale-rag-answers-debugging-reindex-failures-after-updating-docs.html</guid>
       <pubDate>Sun, 22 Nov 2026 20:46:23 GMT</pubDate>
       <description>&lt;p&gt;When RAG answers stay stale after updating docs, debug the reindex as a versioned delivery pipeline: attach one revision ID to the page fetch, running queue job, index commit, retrieval result, and answer citation. If a property-management wiki assistant still quotes an old leasing-policy page, f</description>
-    </item>
-    <item>
-      <title>Inference Skill Adds Gates to Local LLM Tuning</title>
-      <link>https://meridian-radar.pages.dev/item/inference-skill-adds-gates-to-local-llm-tuning.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/inference-skill-adds-gates-to-local-llm-tuning.html</guid>
-      <pubDate>Sun, 22 Nov 2026 20:43:54 GMT</pubDate>
-      <description>&lt;p&gt;Sybil Solutions has published &lt;strong&gt;inference-optimisation-skill&lt;/strong&gt;, an agent skill for tuning local LLM serving across decode, speculative decoding, prefill, KV-cache capacity, startup and time to first token. The project describes the procedure as hardware- and quantization-agnostic, bu</description>
-    </item>
-    <item>
-      <title>What a grid bot backtest usually leaves out: fees, funding and liquidation</title>
-      <link>https://meridian-radar.pages.dev/item/what-a-grid-bot-backtest-usually-leaves-out-fees-funding-and-liq.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/what-a-grid-bot-backtest-usually-leaves-out-fees-funding-and-liq.html</guid>
-      <pubDate>Sun, 22 Nov 2026 20:42:09 GMT</pubDate>
-      <description>&lt;p&gt;Most grid bot backtests count one thing: how many times price crossed a grid line. Multiply by profit per grid, done. That number is almost always too optimistic. Here's what it misses, and how I model it in a simulator.&lt;/p&gt; &lt;h2&gt; 1. Fees are paid on every fill, not every round trip &lt;/h2&gt; &lt;p&gt;A gri</description>
-    </item>
-    <item>
-      <title>CVE-2026-123039 Recovery: Webshells, Persistence and Post-Exploitation Evidence</title>
-      <link>https://meridian-radar.pages.dev/item/cve-2026-123039-recovery-webshells-persistence-and-post-exploita.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/cve-2026-123039-recovery-webshells-persistence-and-post-exploita.html</guid>
-      <pubDate>Sun, 22 Nov 2026 20:41:35 GMT</pubDate>
-      <description>&lt;h1&gt; CVE-[phone] Recovery: Webshells, Persistence and Post-Exploitation Evidence &lt;/h1&gt; &lt;p&gt;Installing a fixed Check Point build addresses CVE-[phone]. It does not remove files, accounts or trust changes created while an attacker held root. The recovery record should show whether the appliance was mer</description>
-    </item>
-    <item>
-      <title>Scraping App Store reviews across countries without proxies (and turning them into a sentiment dataset)</title>
-      <link>https://meridian-radar.pages.dev/item/scraping-app-store-reviews-across-countries-without-proxies-and-.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/scraping-app-store-reviews-across-countries-without-proxies-and-.html</guid>
-      <pubDate>Sun, 22 Nov 2026 20:40:16 GMT</pubDate>
-      <description>&lt;blockquote&gt; &lt;p&gt;&lt;strong&gt;AI disclosure:&lt;/strong&gt; This article was written with AI assistance (Claude). The code is condensed from a scraper I maintain, and every number in the output sections came from actually running the scripts below on 2026-11-20/22.&lt;/p&gt; &lt;/blockquote&gt; &lt;p&gt;If you want to know what </description>
-    </item>
-    <item>
-      <title>How to Forecast in Databricks SQL with ai_forecast</title>
-      <link>https://meridian-radar.pages.dev/item/how-to-forecast-in-databricks-sql-with-ai-forecast.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/how-to-forecast-in-databricks-sql-with-ai-forecast.html</guid>
-      <pubDate>Sun, 22 Nov 2026 20:38:02 GMT</pubDate>
-      <description>&lt;p&gt;Forecasting usually means exporting data, training a model and writing the results back, so many teams skip it. The &lt;code&gt;ai_forecast&lt;/code&gt; function in Databricks SQL does the forecast in one query, and version 2 adds holiday support, covariates and non-negative forecasts on top of a time series</description>
-    </item>
-    <item>
-      <title>Nyx, the Oldest Internet Service Provider</title>
-      <link>https://meridian-radar.pages.dev/item/nyx-the-oldest-internet-service-provider.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/nyx-the-oldest-internet-service-provider.html</guid>
-      <pubDate>Sun, 22 Nov 2026 20:15:59 GMT</pubDate>
-      <description></description>
-    </item>
-    <item>
-      <title>All Delta Flights Through Atlanta Delayed as Automated System Falters</title>
-      <link>https://meridian-radar.pages.dev/item/all-delta-flights-through-atlanta-delayed-as-automated-system-fa.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/all-delta-flights-through-atlanta-delayed-as-automated-system-fa.html</guid>
-      <pubDate>Sun, 22 Nov 2026 19:51:46 GMT</pubDate>
-      <description></description>
-    </item>
-    <item>
-      <title>What Happened to Silicon Valley?</title>
-      <link>https://meridian-radar.pages.dev/item/what-happened-to-silicon-valley.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/what-happened-to-silicon-valley.html</guid>
-      <pubDate>Sun, 22 Nov 2026 19:20:15 GMT</pubDate>
-      <description></description>
-    </item>
-    <item>
-      <title>The Birds of GTA 6: A Field Guide to Vice City and Leonida's Wildlife</title>
-      <link>https://meridian-radar.pages.dev/item/the-birds-of-gta-6-a-field-guide-to-vice-city-and-leonida-s-wild.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/the-birds-of-gta-6-a-field-guide-to-vice-city-and-leonida-s-wild.html</guid>
-      <pubDate>Sun, 22 Nov 2026 19:10:34 GMT</pubDate>
-      <description></description>
-    </item>
-    <item>
-      <title>Dirac's Theorem at a Dinner Party</title>
-      <link>https://meridian-radar.pages.dev/item/dirac-s-theorem-at-a-dinner-party.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/dirac-s-theorem-at-a-dinner-party.html</guid>
-      <pubDate>Sun, 22 Nov 2026 18:50:27 GMT</pubDate>
-      <description></description>
-    </item>
-    <item>
-      <title>Why data centers are at the center of the Big Tech backlash</title>
-      <link>https://meridian-radar.pages.dev/item/why-data-centers-are-at-the-center-of-the-big-tech-backlash.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/why-data-centers-are-at-the-center-of-the-big-tech-backlash.html</guid>
-      <pubDate>Sun, 22 Nov 2026 18:08:43 GMT</pubDate>
-      <description>Journalist Paris Marx unpacks his new book "Hyperscale."</description>
-    </item>
-    <item>
-      <title>Was software just always too complex for humans?</title>
-      <link>https://meridian-radar.pages.dev/item/was-software-just-always-too-complex-for-humans.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/was-software-just-always-too-complex-for-humans.html</guid>
-      <pubDate>Sun, 22 Nov 2026 17:32:41 GMT</pubDate>
-      <description></description>
-    </item>
-    <item>
-      <title>Perplexity and Intelligence</title>
-      <link>https://meridian-radar.pages.dev/item/perplexity-and-intelligence.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/perplexity-and-intelligence.html</guid>
-      <pubDate>Sun, 22 Nov 2026 17:06:27 GMT</pubDate>
-      <description></description>
-    </item>
-    <item>
-      <title>Validating the pass4SymmKey Mitigation for CVE-2026-76536</title>
-      <link>https://meridian-radar.pages.dev/item/validating-the-pass4symmkey-mitigation-for-cve-2026-76536.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/validating-the-pass4symmkey-mitigation-for-cve-2026-76536.html</guid>
-      <pubDate>Sun, 22 Nov 2026 17:00:40 GMT</pubDate>
-      <description>&lt;h1&gt; Validating the pass4SymmKey Mitigation for CVE-[phone] &lt;/h1&gt; &lt;p&gt;CVE-[phone] exposes a configuration state that is easy to miss: an empty clustering shared secret on a standalone Splunk Enterprise instance with clustering disabled. The empty value can satisfy a flawed shared-authentication check</description>
-    </item>
-    <item>
-      <title>System Design, Plainly — Season 2, Part 3: Distributed Transactions &amp; 2PC</title>
-      <link>https://meridian-radar.pages.dev/item/system-design-plainly-season-2-part-3-distributed-transactions-2.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/system-design-plainly-season-2-part-3-distributed-transactions-2.html</guid>
-      <pubDate>Sun, 22 Nov 2026 17:00:38 GMT</pubDate>
-      <description>&lt;p&gt;Part 2 gave the cluster one log that everyone agrees on. This part asks what happens when one write has to land in &lt;em&gt;two&lt;/em&gt; places at once — and both places have to say yes, or neither does.&lt;/p&gt; &lt;p&gt;Move $100 from your checking account to your savings account. The debit lives on one shard, the</description>
-    </item>
-    <item>
-      <title>I modeled the hidden task and operation math behind Zapier vs Make vs n8n vs Pipedream (1k to 500k runs)</title>
-      <link>https://meridian-radar.pages.dev/item/i-modeled-the-hidden-task-and-operation-math-behind-zapier-vs-ma.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/i-modeled-the-hidden-task-and-operation-math-behind-zapier-vs-ma.html</guid>
-      <pubDate>Sun, 22 Nov 2026 17:00:06 GMT</pubDate>
-      <description>&lt;p&gt;Most workflow automation comparisons just list the starter plan price ($19.99 vs $9/mo) and ignore what happens when a real production flow scales.&lt;/p&gt; &lt;p&gt;Once a single webhook triggers a 6-step pipeline (enrichment + LLM call + CRM update + Slack alert + error logging), the billing unit each pla</description>
-    </item>
-    <item>
-      <title>⁧فهرسة RAG تدريجية دون أن تخسر الفهرس القديم⁩</title>
-      <link>https://meridian-radar.pages.dev/item/rag.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/rag.html</guid>
-      <pubDate>Sun, 22 Nov 2026 17:00:00 GMT</pubDate>
-      <description>&lt;p&gt;&lt;em&gt;⁧إعادة الفهرسة سهلة حين تكون المجموعة صغيرة ولا يستخدمها أحد. الأصعب أن تغيّر فهرسًا حيًّا بينما قد تفشل المستندات والمحللات وخدمات التضمين ومخزن المتجهات، كلٌّ في نقطة مختلفة. والأمثلة من Project Pavilion، الذي يفهرس سجلات مشاريعه في Qdrant على ⁦.NET 9⁩.⁩&lt;/em&gt;&lt;/p&gt; &lt;h2&gt; ⁧عامِل الفهرسة كانتقال</description>
-    </item>
-    <item>
-      <title>Conteúdo e repositório no TOGAF | Do requisito à evidência no banco</title>
-      <link>https://meridian-radar.pages.dev/item/conte-do-e-reposit-rio-no-togaf-do-requisito-evid-ncia-no-banco.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/conte-do-e-reposit-rio-no-togaf-do-requisito-evid-ncia-no-banco.html</guid>
-      <pubDate>Sun, 22 Nov 2026 17:00:00 GMT</pubDate>
-      <description>&lt;p&gt;&lt;em&gt;Fotografia em plongée de inspiração Nova Visão. Uma trilha de luz liga uma peça de quebra-cabeça dourada, uma maquete arquitetônica e um cilindro de metal, perto de uma prancheta marcada. A luz representa o caminho de verificação entre requisito, definição e registro de implementação.&lt;/em&gt;&lt;/p</description>
-    </item>
-    <item>
-      <title>AI-Assisted Code Review: How to Integrate LLM Linters into Your GitHub Actions Pipeline</title>
-      <link>https://meridian-radar.pages.dev/item/ai-assisted-code-review-how-to-integrate-llm-linters-into-your-g.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/ai-assisted-code-review-how-to-integrate-llm-linters-into-your-g.html</guid>
-      <pubDate>Sun, 22 Nov 2026 17:00:00 GMT</pubDate>
-      <description>&lt;p&gt;Traditional linters are excellent at what they can express as rules, formatting, unused variables, known-bad patterns. They are blind to everything else, a retry loop that can duplicate a payment, a query that's correct but will scan a million rows, a function whose name promises one thing and do</description>
-    </item>
-    <item>
-      <title>PHP2Shell: How to Identify Vulnerable PHP Backends Through Mobile App Security Testing</title>
-      <link>https://meridian-radar.pages.dev/item/php2shell-how-to-identify-vulnerable-php-backends-through-mobile.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/php2shell-how-to-identify-vulnerable-php-backends-through-mobile.html</guid>
-      <pubDate>Sun, 22 Nov 2026 16:56:11 GMT</pubDate>
-      <description>&lt;p&gt;PHP2Shell: How to Identify Vulnerable PHP Backends Through Mobile App Security Testing&lt;/p&gt; &lt;p&gt;Mobile applications are often treated as standalone products, but most modern applications depend heavily on backend APIs.&lt;/p&gt; &lt;p&gt;You can have a securely implemented Android or iOS application and still </description>
-    </item>
-    <item>
-      <title>What actually goes wrong when you hardcode a proxy creation code</title>
-      <link>https://meridian-radar.pages.dev/item/what-actually-goes-wrong-when-you-hardcode-a-proxy-creation-code.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/what-actually-goes-wrong-when-you-hardcode-a-proxy-creation-code.html</guid>
-      <pubDate>Sun, 22 Nov 2026 16:56:06 GMT</pubDate>
-      <description>&lt;p&gt;There is a way to lose money on an EVM chain that never once tells you something went wrong. No revert. No failed transaction. Nothing in the logs, because nothing failed. You derive a Safe proxy address, it passes every check you have, you put it on an invoice, a customer pays it, and the contra</description>
-    </item>
-    <item>
-      <title>Telegram Shipped Bot Widgets. Researchers Broke Out of the Sandbox in Days</title>
-      <link>https://meridian-radar.pages.dev/item/telegram-shipped-bot-widgets-researchers-broke-out-of-the-sandbo.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/telegram-shipped-bot-widgets-researchers-broke-out-of-the-sandbo.html</guid>
-      <pubDate>Sun, 22 Nov 2026 16:55:41 GMT</pubDate>
-      <description>&lt;h1&gt; Telegram Shipped Bot Widgets. Researchers Broke Out of the Sandbox in Days &lt;/h1&gt; &lt;p&gt;Last week Telegram gave bots a new power: widgets. Small interactive blocks a bot can send inside a chat, with JavaScript that runs on the user's phone. Two days later, an account called V12 posted a video on X </description>
-    </item>
-    <item>
-      <title>My dependency map exists, is 51 days stale, and draws 2.7% of it</title>
-      <link>https://meridian-radar.pages.dev/item/my-dependency-map-exists-is-51-days-stale-and-draws-2-7-of-it.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/my-dependency-map-exists-is-51-days-stale-and-draws-2-7-of-it.html</guid>
-      <pubDate>Sun, 22 Nov 2026 16:53:54 GMT</pubDate>
-      <description>&lt;p&gt;&lt;strong&gt;He asked for a detective's board of his microservices. It is built, it is 128 KB on disk - and it has not been redrawn for 51 days. The red string covers 2.7% of the wall&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;Anton's post: another of his pains, one he has, so to speak, screwed around with. A "vibe-coder" screw</description>
-    </item>
-    <item>
-      <title>Embeddable math games in 7 languages: seeded Dart dots, measured iframes and a one-character noindex bug</title>
-      <link>https://meridian-radar.pages.dev/item/embeddable-math-games-in-7-languages-seeded-dart-dots-measured-i.html</link>
-      <guid isPermaLink="true">https://meridian-radar.pages.dev/item/embeddable-math-games-in-7-languages-seeded-dart-dots-measured-i.html</guid>
-      <pubDate>Sun, 22 Nov 2026 16:52:26 GMT</pubDate>
-      <description>&lt;p&gt;We build &lt;a href="https://dyscalculia.io/" rel="noopener noreferrer"&gt;Dyscalculia.io&lt;/a&gt;, a site with a free number-sense screening test and a paid daily practice program. The screening test is made of five small games: count a flash of dots, pick the bigger number, pick the group with more dots, </description>
     </item>
   </channel>
 </rss>

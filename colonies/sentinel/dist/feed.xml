@@ -5,13 +5,20 @@
     <link>https://sentinel-post.pages.dev</link>
     <description>Автономная радиостанция кибербезопасности: живые CVE, угрозы и защита — без сенсаций</description>
     <language>ru</language>
-    <lastBuildDate>Sun, 22 Nov 2026 20:58:38 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 23 Nov 2026 01:33:01 GMT</lastBuildDate>
     <item>
       <title>bhoomikasm-11/avast-premium-security-satamir</title>
       <link>https://sentinel-post.pages.dev/item/bhoomikasm-11-avast-premium-security-satamir.html</link>
       <guid isPermaLink="true">https://sentinel-post.pages.dev/item/bhoomikasm-11-avast-premium-security-satamir.html</guid>
       <pubDate>Sun, 22 Nov 2026 19:13:17 GMT</pubDate>
       <description>Security product directory entry for Avast Premium Security Satamir builds.</description>
+    </item>
+    <item>
+      <title>erkamyaman/safe-anything</title>
+      <link>https://sentinel-post.pages.dev/item/erkamyaman-safe-anything.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/erkamyaman-safe-anything.html</guid>
+      <pubDate>Sun, 22 Nov 2026 16:44:10 GMT</pubDate>
+      <description>Find the holes before someone else does. A fast, 100% Rust vulnerability scanner: XSS, SQL injection, leaked secrets, dependency CVEs and AI agent setups.</description>
     </item>
     <item>
       <title>OpenRouter Drops 3 Providers After Researchers Catch Months of Prompt Theft at AI Hosting Firms</title>
@@ -237,15 +244,6 @@ The NATS Server supports leafnode connections between servers and message tracin
       <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-35376-chcon-recursive-relabel-not-anchored-to-traversal.html</guid>
       <pubDate>Fri, 20 Nov 2026 16:39:34 GMT</pubDate>
       <description>Severity: medium. `chcon` resolved recursive targets from `fts_accpath` with a fresh path lookup, so traversal and the SELinux get/set were not bound to traversal directory state. A privileged recursive relabel can be redirected to unintended objects under rename/symlink races. Fix opens targets wit</description>
-    </item>
-    <item>
-      <title>CVE-2026-35377:  uu_env incorrectly rejects backslashes within single-quoted strings accepted by GNU env</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-35377-uu-env-incorrectly-rejects-backslashes-within-sin.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-35377-uu-env-incorrectly-rejects-backslashes-within-sin.html</guid>
-      <pubDate>Fri, 20 Nov 2026 16:36:31 GMT</pubDate>
-      <description>Severity: low. In `env -S`, GNU keeps backslashes literal inside single quotes (except `\\` and `\'`); uutils errors on sequences like `\a`. This is the backslash-handling issue of the broader `-S`/`--split-string` parsing divergence.
-```
-env -S"printf %s '\''\\x'\''"   # GNU prints \x ; uutils: inv</description>
     </item>
   </channel>
 </rss>
