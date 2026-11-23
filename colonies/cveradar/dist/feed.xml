@@ -5,7 +5,62 @@
     <link>https://cveradar-ah3.pages.dev</link>
     <description>Живые CVE и уязвимости на русском: автономный перевод угроз в понятные дайджесты для DevOps и небольшого SecOps</description>
     <language>ru</language>
-    <lastBuildDate>Mon, 23 Nov 2026 17:18:04 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 23 Nov 2026 21:04:57 GMT</lastBuildDate>
+    <item>
+      <title>CVE-2026-77423: jline3 leads to ReDoS in Built-in Less Viewer Search</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-77423-jline3-leads-to-redos-in-built-in-less-viewer-sea.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-77423-jline3-leads-to-redos-in-built-in-less-viewer-sea.html</guid>
+      <pubDate>Mon, 23 Nov 2026 21:02:03 GMT</pubDate>
+      <description>Severity: high. ### Summary
+
+The JLine3 built-in `less` pager compiles user-supplied search patterns directly as
+Java regular expressions with no sanitization, timeout, or backtracking bound. A
+malicious pattern such as `(a+)+b` can trigger catastrophic backtracking and hang the
+session thread at 10</description>
+    </item>
+    <item>
+      <title>CVE-2026-63410: secp256k1-native has a compiler-induced timing side channel in scalar multiplication</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-63410-secp256k1-native-has-a-compiler-induced-timing-si.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-63410-secp256k1-native-has-a-compiler-induced-timing-si.html</guid>
+      <pubDate>Mon, 23 Nov 2026 20:59:48 GMT</pubDate>
+      <description>Severity: medium. ## Summary
+
+`Point#mul` — the default, constant-time scalar multiplication and the library's headline secret-scalar operation — could leak timing information about the secret scalar (a private key or ECDSA-style nonce in a downstream consumer) **not because of a source-level bug, b</description>
+    </item>
+    <item>
+      <title>CVE-2026-58262: Klever Go counts bitmap padding bits toward BLS quorum, allowing blocks with insufficient signatures</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-58262-klever-go-counts-bitmap-padding-bits-toward-bls-q.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-58262-klever-go-counts-bitmap-padding-bits-toward-bls-q.html</guid>
+      <pubDate>Mon, 23 Nov 2026 20:55:35 GMT</pubDate>
+      <description>Severity: high. ## Summary
+
+When validating an incoming block header, `HeaderSigVerifier.verifyConsensusSize` counts *every* set bit in `PubKeysBitmap` — including bits that correspond to no validator (the padding bits of the final byte, which exist whenever the consensus group size is not a multipl</description>
+    </item>
+    <item>
+      <title>CVE-2026-63402: i18next deepExtend recurses into inherited built-ins, allowing corruption of shared built-in objects (DoS)</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-63402-i18next-deepextend-recurses-into-inherited-built-.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-63402-i18next-deepextend-recurses-into-inherited-built-.html</guid>
+      <pubDate>Mon, 23 Nov 2026 20:53:00 GMT</pubDate>
+      <description>Severity: medium. ### Summary
+
+`deepExtend` in `src/utils.js` (reached via the public `addResourceBundle(lng, ns, data, deep, overwrite)` API) checked key existence with the `in` operator, which walks the prototype chain. A source key matching an inherited built-in (e.g. `hasOwnProperty`, `toString`</description>
+    </item>
+    <item>
+      <title>Webworm Suspected of Modifying SoftEther VPN to Evade Detection and Hide Remote Access</title>
+      <link>https://cveradar-ah3.pages.dev/item/webworm-suspected-of-modifying-softether-vpn-to-evade-detection-.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/webworm-suspected-of-modifying-softether-vpn-to-evade-detection-.html</guid>
+      <pubDate>Mon, 23 Nov 2026 17:45:15 GMT</pubDate>
+      <description>The China-aligned threat actor known as Webworm is suspected to be using a custom version of the open-source SoftEther VPN Bridge tool in an attempt to remove recognizable detection fingerprints, while disguising it as network-monitoring software to establish covert remote access to compromised netw</description>
+    </item>
+    <item>
+      <title>CVE-2026-133469: Xen Orchestra: Empty-object login token</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-133469-xen-orchestra-empty-object-login-token.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-133469-xen-orchestra-empty-object-login-token.html</guid>
+      <pubDate>Mon, 23 Nov 2026 17:29:29 GMT</pubDate>
+      <description>Severity: critical. ### Summary
+
+REST cookie parsing turns `authenticationToken=j:%7B%7D` into `{}`. REST authentication passes that object to the XO token provider without requiring a string. The token collection treats `{}` as an unfiltered lookup and returns its first token; the provider authenti</description>
+    </item>
     <item>
       <title>CVE-2026-22865: Gradle causes failure to disable repositories exposing builds to malicious artifacts</title>
       <link>https://cveradar-ah3.pages.dev/item/cve-2026-22865-gradle-causes-failure-to-disable-repositories-exp.html</link>
@@ -196,52 +251,6 @@ Every sibling `&lt;table&gt;` adds another level of the parent's indentation, so
 ## Impact
 
 A non-admin editor scoped to certain pages/forms can overwrite the tableitems</description>
-    </item>
-    <item>
-      <title>CVE-2026-104881: contao/newsletter-bundle: Contao newsletter custom actions bypass channel-scoped authorization</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-104881-contao-newsletter-bundle-contao-newsletter-custo.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-104881-contao-newsletter-bundle-contao-newsletter-custo.html</guid>
-      <pubDate>Fri, 20 Nov 2026 23:43:26 GMT</pubDate>
-      <description>Severity: medium. Channel access is enforced only by the DataContainer voters (`NewsletterChannelAccessVoter` / `NewsletterRecipientsAccessVoter`, requiring USER_CAN_EDIT_CHANNEL), whose `supportsType()` fires exclusively for Create/Read/Update/DeleteAction subjects dispatched inside DC_Table's crea</description>
-    </item>
-    <item>
-      <title>CVE-2026-77331: memtomem-stm: Concurrent LTM recovery can duplicate reconnects or reuse a cancelled transport session</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-77331-memtomem-stm-concurrent-ltm-recovery-can-duplicat.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-77331-memtomem-stm-concurrent-ltm-recovery-can-duplicat.html</guid>
-      <pubDate>Fri, 20 Nov 2026 23:38:15 GMT</pubDate>
-      <description>Severity: low. Concurrent surfacing RPC failures can trigger more than one reconnect for the same dirty session, and cancellation during a post-reconnect retry can leave the replacement session reusable despite an interrupted protocol exchange. The private fix introduces monotonic session generation</description>
-    </item>
-    <item>
-      <title>CVE-2026-77332: memtomem-stm: Surfaced memory data can escape the Markdown compatibility boundary</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-77332-memtomem-stm-surfaced-memory-data-can-escape-the-.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-77332-memtomem-stm-surfaced-memory-data-can-escape-the-.html</guid>
-      <pubDate>Fri, 20 Nov 2026 23:37:39 GMT</pubDate>
-      <description>Severity: low. Untrusted long-term and working-memory fields can introduce Markdown or HTML-compatible structure into the surfaced-memory envelope. A crafted memory may create misleading structural boundaries or visually conceal content. The private fix serializes every untrusted field as inert sing</description>
-    </item>
-    <item>
-      <title>CVE-2026-77309: AIT-GUI route chain allows unauthenticated Python execution in server process</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-77309-ait-gui-route-chain-allows-unauthenticated-python.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-77309-ait-gui-route-chain-allows-unauthenticated-python.html</guid>
-      <pubDate>Fri, 20 Nov 2026 23:36:41 GMT</pubDate>
-      <description>Severity: high. ## Summary
-A security issue exists where unauthenticated callers can instruct the AIT-GUI server to execute arbitrary Python scripts. The attack vector involves obtaining a session cookie through GET /, followed by a malicious POST /script/run request containing an absolute file path</description>
-    </item>
-    <item>
-      <title>CVE-2026-61725: sevenz-rust2: decompress builds each output path as dest.join(entry.name()) with no traversal guard, allowing a crafted .7z to write files outside the destination (Zip-Slip)</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-61725-sevenz-rust2-decompress-builds-each-output-path-a.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-61725-sevenz-rust2-decompress-builds-each-output-path-a.html</guid>
-      <pubDate>Fri, 20 Nov 2026 23:33:14 GMT</pubDate>
-      <description>Severity: medium. ### Summary
-
-Extracting an attacker-supplied 7z archive can write files outside the destination directory. The 7z header stores each entry's path as a UTF-16 name with nothing constraining it to a relative, in-tree path. The extractor joins that name onto the destination and writes</description>
-    </item>
-    <item>
-      <title>CVE-2026-63341: Aedes has Uncaught Exception and Uncontrolled Resource Consumption</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-63341-aedes-has-uncaught-exception-and-uncontrolled-res.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-63341-aedes-has-uncaught-exception-and-uncontrolled-res.html</guid>
-      <pubDate>Fri, 20 Nov 2026 23:32:35 GMT</pubDate>
-      <description>Severity: high. ### Summary
-A remote Denial of Service (DoS) vulnerability, allows any remote client to cause a complete crash of the Aedes MQTT broker process. This is achieved by sending a specially crafted MQTT message (via PUBLISH or SUBSCRIBE), or by setting a Will message with such a topic, co</description>
     </item>
   </channel>
 </rss>

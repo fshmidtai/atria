@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T17:18:04+00:00",
+  "generated_at": "2026-11-23T21:04:57+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -19,12 +19,12 @@
     },
     "by_topic": {
       "security": 57,
-      "ai": 43,
+      "ai": 39,
       "dev": 36,
       "hardware": 15,
       "crypto": 4,
       "science": 3,
-      "biz": 3
+      "biz": 2
     },
     "top_domains": [
       [
@@ -39,21 +39,58 @@
   },
   "items": [
     {
-      "uid": "cve:GHSA-4hrh-34w3-5ww8",
+      "uid": "cve:GHSA-2r3w-c2vx-fv5g",
       "source": "cve",
-      "title": "CVE-2026-104099: Fabio: Access-control bypass through unnormalized request paths",
-      "url": "https://github.com/advisories/GHSA-4hrh-34w3-5ww8",
-      "ts": 1795186285.0,
+      "title": "CVE-2026-133469: Xen Orchestra: Empty-object login token",
+      "url": "https://github.com/advisories/GHSA-2r3w-c2vx-fv5g",
+      "ts": 1795454969.0,
       "points": 6000,
       "comments": 0,
-      "author": "github.com/fabiolb/fabio",
-      "summary": "Severity: critical. ## Summary\n\nRoute selection uses the raw un-normalized request path, and the per-route ACL and basic-auth gates hang off that selection, so a dot-segment, encoded-dot, or double-slash variant of a protected path selects a different route, skips both gates, and is forwarded to the backend which norma",
+      "author": "xo-server",
+      "summary": "Severity: critical. ### Summary\n\nREST cookie parsing turns `authenticationToken=j:%7B%7D` into `{}`. REST authentication passes that object to the XO token provider without requiring a string. The token collection treats `{}` as an unfiltered lookup and returns its first token; the provider authenticates as that token'",
       "recipe": "gh_advisories",
-      "buzz": 6010,
+      "buzz": 6080,
+      "topics": [
+        "dev",
+        "crypto",
+        "security"
+      ],
+      "date": "2026-11-23"
+    },
+    {
+      "uid": "cve:GHSA-2v9w-34q6-wpqx",
+      "source": "cve",
+      "title": "CVE-2026-77423: jline3 leads to ReDoS in Built-in Less Viewer Search",
+      "url": "https://github.com/advisories/GHSA-2v9w-34q6-wpqx",
+      "ts": 1795467723.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "org.jline:jline-builtins",
+      "summary": "Severity: high. ### Summary\n\nThe JLine3 built-in `less` pager compiles user-supplied search patterns directly as\nJava regular expressions with no sanitization, timeout, or backtracking bound. A\nmalicious pattern such as `(a+)+b` can trigger catastrophic backtracking and hang the\nsession thread at 100% CPU. In deplo",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-23"
+    },
+    {
+      "uid": "cve:GHSA-f9h7-4mmq-vgcq",
+      "source": "cve",
+      "title": "CVE-2026-58262: Klever Go counts bitmap padding bits toward BLS quorum, allowing blocks with insufficient signatures",
+      "url": "https://github.com/advisories/GHSA-f9h7-4mmq-vgcq",
+      "ts": 1795467335.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "github.com/klever-io/klever-go",
+      "summary": "Severity: high. ## Summary\n\nWhen validating an incoming block header, `HeaderSigVerifier.verifyConsensusSize` counts *every* set bit in `PubKeysBitmap` — including bits that correspond to no validator (the padding bits of the final byte, which exist whenever the consensus group size is not a multiple of 8). The sub",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
       "topics": [
         "security"
       ],
-      "date": "2026-11-20"
+      "date": "2026-11-23"
     },
     {
       "uid": "cve:GHSA-mqwm-5m85-gmcv",
@@ -245,60 +282,41 @@
       "date": "2026-11-20"
     },
     {
-      "uid": "cve:GHSA-prhx-9q2h-ph2x",
+      "uid": "cve:GHSA-vp2j-gqfm-r3cf",
       "source": "cve",
-      "title": "CVE-2026-103026: Paymenter: Unauthenticated arbitrary method invocation in Livewire components",
-      "url": "https://github.com/advisories/GHSA-prhx-9q2h-ph2x",
-      "ts": 1795186563.0,
-      "points": 3500,
+      "title": "CVE-2026-63410: secp256k1-native has a compiler-induced timing side channel in scalar multiplication",
+      "url": "https://github.com/advisories/GHSA-vp2j-gqfm-r3cf",
+      "ts": 1795467588.0,
+      "points": 1800,
       "comments": 0,
-      "author": "paymenter/paymenter",
-      "summary": "Severity: high. ### Summary\n\nA Livewire function allowed attackers to call any public function, allowing attackers to call any public method on the component. Because an attacker can call any function, they can also overwrite locked data.\n\n### Technical Details\n\n`app/Livewire/Traits/HasConfirmation.php` exposed a p",
+      "author": "secp256k1-native",
+      "summary": "Severity: medium. ## Summary\n\n`Point#mul` — the default, constant-time scalar multiplication and the library's headline secret-scalar operation — could leak timing information about the secret scalar (a private key or ECDSA-style nonce in a downstream consumer) **not because of a source-level bug, but because the com",
       "recipe": "gh_advisories",
-      "buzz": 3510,
+      "buzz": 1880,
       "topics": [
-        "ai",
+        "dev",
         "security"
       ],
-      "date": "2026-11-20"
+      "date": "2026-11-23"
     },
     {
-      "uid": "cve:GHSA-wcqj-wx85-c75p",
+      "uid": "cve:GHSA-6jcc-5g8w-32mx",
       "source": "cve",
-      "title": "CVE-2026-130176: aMQTT: Denial of Service (DoS) via Memory Leak in Unmanaged QoS 2 Session Handshakes",
-      "url": "https://github.com/advisories/GHSA-wcqj-wx85-c75p",
-      "ts": 1795186490.0,
-      "points": 3500,
+      "title": "CVE-2026-63402: i18next deepExtend recurses into inherited built-ins, allowing corruption of shared built-in objects (DoS)",
+      "url": "https://github.com/advisories/GHSA-6jcc-5g8w-32mx",
+      "ts": 1795467180.0,
+      "points": 1800,
       "comments": 0,
-      "author": "amqtt",
-      "summary": "Severity: high. ### Impact\n\n`amqtt` is vulnerable to a remote denial of service caused by incomplete MQTT QoS 2 transactions remaining allocated after the associated client disconnects.\n\nMQTT QoS 2 uses a four-step handshake to provide exactly-once delivery. If a client begins a QoS 2 transaction but disconnects be",
+      "author": "i18next",
+      "summary": "Severity: medium. ### Summary\n\n`deepExtend` in `src/utils.js` (reached via the public `addResourceBundle(lng, ns, data, deep, overwrite)` API) checked key existence with the `in` operator, which walks the prototype chain. A source key matching an inherited built-in (e.g. `hasOwnProperty`, `toString`, `valueOf`) there",
       "recipe": "gh_advisories",
-      "buzz": 3510,
+      "buzz": 1880,
       "topics": [
         "ai",
         "dev",
         "security"
       ],
-      "date": "2026-11-20"
-    },
-    {
-      "uid": "cve:GHSA-9657-8vc2-7g2p",
-      "source": "cve",
-      "title": "CVE-2026-115463: Poweradmin: The email second factor is an mt_rand() six-digit code verified with no attempt limit or lockout, so an attacker holding the password can brute-force it within the validity window",
-      "url": "https://github.com/advisories/GHSA-9657-8vc2-7g2p",
-      "ts": 1795186353.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "poweradmin/poweradmin",
-      "summary": "Severity: high. ### Summary\n\nThe email second factor is an mt_rand() six-digit code verified with no attempt limit or lockout\n\nThe email second factor is a six-digit code drawn from `mt_rand()` and verified with no attempt limit, so an attacker who already has the password can brute-force it inside its validity win",
-      "recipe": "gh_advisories",
-      "buzz": 3510,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-20"
+      "date": "2026-11-23"
     },
     {
       "uid": "cve:GHSA-53pm-wgxf-c6qf",
@@ -524,26 +542,6 @@
       "date": "2026-11-20"
     },
     {
-      "uid": "cve:GHSA-vcx7-pfrh-mcfg",
-      "source": "cve",
-      "title": "CVE-2026-115565: storyblok-backup: Stored path traversal via unsanitized Storyblok component names in backup output",
-      "url": "https://github.com/advisories/GHSA-vcx7-pfrh-mcfg",
-      "ts": 1795186518.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "storyblok-backup",
-      "summary": "Severity: medium. ### Summary\nstoryblok-backup writes files using unsanitized names for Storyblok components, which are content type or schema definitions. This allows a component name containing path traversal sequences to cause backup files to be written outside the intended backup directory. Anyone with component",
-      "recipe": "gh_advisories",
-      "buzz": 1810,
-      "topics": [
-        "ai",
-        "dev",
-        "crypto",
-        "security"
-      ],
-      "date": "2026-11-20"
-    },
-    {
       "uid": "cve:GHSA-72jh-722p-rqr3",
       "source": "cve",
       "title": "CVE-2026-77331: memtomem-stm: Concurrent LTM recovery can duplicate reconnects or reuse a cancelled transport session",
@@ -598,6 +596,24 @@
         "security"
       ],
       "date": "2026-11-20"
+    },
+    {
+      "uid": "rss:179c48d5c34feb",
+      "source": "rss",
+      "title": "Webworm Suspected of Modifying SoftEther VPN to Evade Detection and Hide Remote Access",
+      "url": "https://thehackernews.com/2026/11/webworm-suspected-of-modifying.html",
+      "ts": 1795455915.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "The China-aligned threat actor known as Webworm is suspected to be using a custom version of the open-source SoftEther VPN Bridge tool in an attempt to remove recognizable detection fingerprints, while disguising it as network-monitoring software to establish covert remote access to compromised networks. The modified variant \"implements various tricks to hide itself from security tools,\"",
+      "recipe": "the_hacker_news",
+      "buzz": 80,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-23"
     },
     {
       "uid": "rss:fa05141b817760",
@@ -872,7 +888,7 @@
       "author": "info@thehackernews.com (The Hacker News)",
       "summary": "Meta-owned WhatsApp has addressed security vulnerabilities, including one impacting its Android app that it suspects may have been exploited in connection with scam messages. The vulnerability, tracked as CVE-[phone] (CVSS score: 3.5), has been described as a case of incomplete validation of external ad-reply URLs in WhatsApp for Android and WhatsApp Business for Android before 2.26.17.4.",
       "recipe": "the_hacker_news",
-      "buzz": 30,
+      "buzz": 10,
       "topics": [
         "security"
       ],
@@ -1133,27 +1149,6 @@
       "buzz": 10,
       "topics": [
         "ai",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-19"
-    },
-    {
-      "uid": "rss:5f3922dcf6b921",
-      "source": "rss",
-      "title": "Hackers Breach N-able Cloud Server, Disrupting Email Security Management Across 3 Regions",
-      "url": "https://thehackernews.com/2026/11/n-able-confirms-hackers-accessed-cloud.html",
-      "ts": 1795080686.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "N-able on Wednesday disclosed that unknown threat actors gained unauthorized access to one of the servers in the Mail Assure and Spam Experts Hosted Cloud, causing it to disable management interfaces and APIs. \"We have taken steps to mitigate the threat and are continuing to harden our services to reduce the risk of recurrence,\" N-able said. \"The investigation is ongoing, but at this time we",
-      "recipe": "the_hacker_news",
-      "buzz": 10,
-      "topics": [
-        "ai",
-        "dev",
-        "biz",
         "security",
         "hardware"
       ],
