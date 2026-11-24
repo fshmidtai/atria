@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T05:23:15+00:00",
+  "generated_at": "2026-11-24T09:26:20+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -27,8 +27,8 @@
     },
     "by_topic": {
       "security": 113,
-      "ai": 66,
-      "dev": 55,
+      "ai": 67,
+      "dev": 56,
       "hardware": 20,
       "crypto": 7,
       "biz": 7,
@@ -1398,12 +1398,12 @@
       "title": "erkamyaman/safe-anything",
       "url": "https://github.com/erkamyaman/safe-anything",
       "ts": 1795365850.0,
-      "points": 520,
-      "comments": 38,
+      "points": 546,
+      "comments": 40,
       "author": "erkamyaman",
       "summary": "Find the holes before someone else does. A fast, 100% Rust vulnerability scanner: XSS, SQL injection, leaked secrets, dependency CVEs and AI agent setups.",
       "recipe": "github_sec",
-      "buzz": 664,
+      "buzz": 696,
       "topics": [
         "ai",
         "dev",
@@ -1432,12 +1432,12 @@
       "title": "vulnix0x4/a-better-antivirus",
       "url": "https://github.com/vulnix0x4/a-better-antivirus",
       "ts": 1794885574.0,
-      "points": 169,
+      "points": 170,
       "comments": 13,
       "author": "vulnix0x4",
       "summary": "Catches infostealers in the act on Windows: plants fake passwords, wallets and app data that only malware would read, and freezes whatever touches them.",
       "recipe": "github_sec",
-      "buzz": 208,
+      "buzz": 209,
       "topics": [
         "security"
       ],
@@ -1560,6 +1560,44 @@
       "date": "2026-11-23"
     },
     {
+      "uid": "rss:b5a82861484d12",
+      "source": "rss",
+      "title": "OpenAI and Cisco Unveil AI-Assisted Linux Security Tool to Block Exploits Before Patching",
+      "url": "https://thehackernews.com/2026/11/openai-and-cisco-unveil-ai-assisted.html",
+      "ts": 1795500177.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "OpenAI and Cisco have teamed up to launch Shirudo (meaning \"shield\" in Japanese), an open-source Linux runtime that allows artificial intelligence (AI) agents to defend systems without downtime. \"It lets agents write dynamic eBPF controls to shield systems from exploits, giving defenders more time to test and roll out patches,\" OpenAI said in a post on X. The AI upstart called the initiative a",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-24"
+    },
+    {
+      "uid": "rss:9134bb1d772836",
+      "source": "rss",
+      "title": "Hackers Exploit N-able MailAssure Flaw While AI Agents Exploit MONAI Label Zero-Day",
+      "url": "https://thehackernews.com/2026/11/hackers-exploit-n-able-mailassure-flaw.html",
+      "ts": 1795500165.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Monday added two flaws impacting N-able MailAssure and MONAI Label to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation. The critical vulnerabilities are listed below - CVE-[phone] (CVSS score: 9.3) - A server-side request forgery (SSRF) vulnerability in N-able MailAssure's LDAP",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-24"
+    },
+    {
       "uid": "rss:179c48d5c34feb",
       "source": "rss",
       "title": "Webworm Suspected of Modifying SoftEther VPN to Evade Detection and Hide Remote Access",
@@ -1656,61 +1694,6 @@
       "date": "2026-11-23"
     },
     {
-      "uid": "rss:4b4ed5dc11dc0f",
-      "source": "rss",
-      "title": "Hackers Exploit Critical ASP.NET Anti-CSRF Library Flaw Allowing Unauthenticated RCE",
-      "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-aspnet-anti.html",
-      "ts": 1795425116.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Cybersecurity researchers have urged users to discontinue using a legacy ASP.NET anti-CSRF library named Idunno.AntiCsrf (\"Idunno.AntiCsrf.dll\") following the discovery of a critical vulnerability that has been exploited in the wild. The vulnerability, tracked as CVE-[phone], carries a CVSS score of 9.3 out of 10.0. The issue affects versions 0.9.1.0 and 0.9.1 Beta, and relates to an",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-23"
-    },
-    {
-      "uid": "rss:c72e0e6689b080",
-      "source": "rss",
-      "title": "Hackers Exploited GL.iNet Cloud Flaw to Install Malware on Routers and KVM Devices",
-      "url": "https://thehackernews.com/2026/11/hackers-exploited-glinet-cloud-flaw-to.html",
-      "ts": 1795424648.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Hackers exploited a vulnerability in GL.iNet's GoodCloud remote management service to install malware on some customer routers and KVM devices, the maker of travel routers and remote-access KVM hardware said in a security notice updated today. The company identified and fixed the flaw on Friday and blocked the access the attacker used, so devices can no longer be infected through this route.",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-23"
-    },
-    {
-      "uid": "rss:805957bc90428a",
-      "source": "rss",
-      "title": "AI-Assisted Cyber Attacks Trigger Unauthorized Payments at Indian Banks and Fintech Firms",
-      "url": "https://thehackernews.com/2026/11/ai-assisted-cyberattacks-trigger.html",
-      "ts": 1795422255.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "The Indian Computer Emergency Response Team (CERT-In) has warned that threat actors are carrying out artificial intelligence (AI)-assisted cyber attacks targeting information and communication technology (ICT) assets in the country. This unsanctioned activity has resulted in unauthorized financial transactions at banking and financial services entities, as well as technology service providers",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "dev"
-      ],
-      "date": "2026-11-23"
-    },
-    {
       "uid": "gh:balikunsh-bot/keepassxc-talroora",
       "source": "github",
       "title": "balikunsh-bot/keepassxc-talroora",
@@ -1733,12 +1716,12 @@
       "title": "spatie/laravel-suspicious-login",
       "url": "https://github.com/spatie/laravel-suspicious-login",
       "ts": 1794917088.0,
-      "points": 45,
+      "points": 47,
       "comments": 1,
       "author": "spatie",
       "summary": "Detect suspicious logins in your Laravel app",
       "recipe": "github_sec",
-      "buzz": 58,
+      "buzz": 60,
       "topics": [],
       "date": "2026-11-17"
     },
@@ -1788,6 +1771,61 @@
       "buzz": 39,
       "topics": [],
       "date": "2026-11-14"
+    },
+    {
+      "uid": "rss:4b4ed5dc11dc0f",
+      "source": "rss",
+      "title": "Hackers Exploit Critical ASP.NET Anti-CSRF Library Flaw Allowing Unauthenticated RCE",
+      "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-aspnet-anti.html",
+      "ts": 1795425116.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Cybersecurity researchers have urged users to discontinue using a legacy ASP.NET anti-CSRF library named Idunno.AntiCsrf (\"Idunno.AntiCsrf.dll\") following the discovery of a critical vulnerability that has been exploited in the wild. The vulnerability, tracked as CVE-[phone], carries a CVSS score of 9.3 out of 10.0. The issue affects versions 0.9.1.0 and 0.9.1 Beta, and relates to an",
+      "recipe": "hackersnews",
+      "buzz": 30,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-23"
+    },
+    {
+      "uid": "rss:c72e0e6689b080",
+      "source": "rss",
+      "title": "Hackers Exploited GL.iNet Cloud Flaw to Install Malware on Routers and KVM Devices",
+      "url": "https://thehackernews.com/2026/11/hackers-exploited-glinet-cloud-flaw-to.html",
+      "ts": 1795424648.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Hackers exploited a vulnerability in GL.iNet's GoodCloud remote management service to install malware on some customer routers and KVM devices, the maker of travel routers and remote-access KVM hardware said in a security notice updated today. The company identified and fixed the flaw on Friday and blocked the access the attacker used, so devices can no longer be infected through this route.",
+      "recipe": "hackersnews",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-23"
+    },
+    {
+      "uid": "rss:805957bc90428a",
+      "source": "rss",
+      "title": "AI-Assisted Cyber Attacks Trigger Unauthorized Payments at Indian Banks and Fintech Firms",
+      "url": "https://thehackernews.com/2026/11/ai-assisted-cyberattacks-trigger.html",
+      "ts": 1795422255.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "The Indian Computer Emergency Response Team (CERT-In) has warned that threat actors are carrying out artificial intelligence (AI)-assisted cyber attacks targeting information and communication technology (ICT) assets in the country. This unsanctioned activity has resulted in unauthorized financial transactions at banking and financial services entities, as well as technology service providers",
+      "recipe": "hackersnews",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "dev"
+      ],
+      "date": "2026-11-23"
     },
     {
       "uid": "rss:ae6e92c39a9e03",
@@ -1879,42 +1917,6 @@
         "dev",
         "security",
         "hardware"
-      ],
-      "date": "2026-11-21"
-    },
-    {
-      "uid": "rss:8d9dc4557329cc",
-      "source": "rss",
-      "title": "Signal Blocks AI Agents From Reading Private Chats via Screenshots on Android and iOS",
-      "url": "https://thehackernews.com/2026/11/signal-blocks-ai-agents-from-reading.html",
-      "ts": 1795250960.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Signal has announced that it will restrict screenshots by default to stop artificial intelligence (AI) agents from reading private chats on Android and iOS devices, but conceded that the protection is \"incomplete.\" The feature applies to agentic systems built into iOS 27 and on Android versions where the encrypted messaging platform can detect an AI assistant attempting to read the Signal",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "dev"
-      ],
-      "date": "2026-11-21"
-    },
-    {
-      "uid": "rss:612e47d069e2e7",
-      "source": "rss",
-      "title": "Hackers Exploit Critical VMware, Cisco, and Apache Flaws as Espionage Attacks Emerge",
-      "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-vmware-cisco.html",
-      "ts": 1795250953.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added four flaws impacting Apache Roller, Cisco Expressway, SAP NetWeaver, and Broadcom VMware vCenter to its Known Exploited Vulnerabilities (KEV), citing evidence of active exploitation. The vulnerabilities are listed below - CVE-[phone] (CVSS score: 9.8) - A deserialization of untrusted data vulnerability in",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "dev",
-        "security"
       ],
       "date": "2026-11-21"
     },
@@ -2046,6 +2048,42 @@
         "science"
       ],
       "date": "2026-11-17"
+    },
+    {
+      "uid": "rss:8d9dc4557329cc",
+      "source": "rss",
+      "title": "Signal Blocks AI Agents From Reading Private Chats via Screenshots on Android and iOS",
+      "url": "https://thehackernews.com/2026/11/signal-blocks-ai-agents-from-reading.html",
+      "ts": 1795250960.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Signal has announced that it will restrict screenshots by default to stop artificial intelligence (AI) agents from reading private chats on Android and iOS devices, but conceded that the protection is \"incomplete.\" The feature applies to agentic systems built into iOS 27 and on Android versions where the encrypted messaging platform can detect an AI assistant attempting to read the Signal",
+      "recipe": "hackersnews",
+      "buzz": 10,
+      "topics": [
+        "ai",
+        "dev"
+      ],
+      "date": "2026-11-21"
+    },
+    {
+      "uid": "rss:612e47d069e2e7",
+      "source": "rss",
+      "title": "Hackers Exploit Critical VMware, Cisco, and Apache Flaws as Espionage Attacks Emerge",
+      "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-vmware-cisco.html",
+      "ts": 1795250953.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added four flaws impacting Apache Roller, Cisco Expressway, SAP NetWeaver, and Broadcom VMware vCenter to its Known Exploited Vulnerabilities (KEV), citing evidence of active exploitation. The vulnerabilities are listed below - CVE-[phone] (CVSS score: 9.8) - A deserialization of untrusted data vulnerability in",
+      "recipe": "hackersnews",
+      "buzz": 10,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-21"
     },
     {
       "uid": "rss:58eefaa33e7ec3",
@@ -2285,42 +2323,6 @@
       "topics": [
         "ai",
         "security"
-      ],
-      "date": "2026-11-19"
-    },
-    {
-      "uid": "rss:9bb7a0fdd0f7a3",
-      "source": "rss",
-      "title": "Drupal Patches Critical Installer Flaw That Could Give Unauthenticated Attackers Control of Sites",
-      "url": "https://thehackernews.com/2026/11/drupal-patches-critical-installer-flaw.html",
-      "ts": 1795098786.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Under specific conditions, a critical vulnerability in Drupal core can allow an attacker without login credentials to use the built-in installer to attempt to reinstall a site. That can lead to a site takeover or remote code execution, and the project rates the vulnerable configurations as uncommon. Fixed releases for all supported branches shipped yesterday. The Drupal Security Team disclosed",
-      "recipe": "hackersnews",
-      "buzz": 10,
-      "topics": [
-        "security"
-      ],
-      "date": "2026-11-19"
-    },
-    {
-      "uid": "rss:790246065cf7ca",
-      "source": "rss",
-      "title": "Everything Is a Web Application, Including Your Firewall",
-      "url": "https://thehackernews.com/2026/11/everything-is-web-application-including.html",
-      "ts": 1795089143.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "One of the early targets of PHP2Shell exploitation was the firewall. On October 28, Palo Alto Networks confirmed that attackers were exploiting the two PHP vulnerabilities, CVE-[phone] and CVE-[phone], against PAN-OS management interfaces exposed to the internet. Both flaws let anyone execute code on the web server without authentication. The disclosure itself went a little wrong.",
-      "recipe": "hackersnews",
-      "buzz": 10,
-      "topics": [
-        "ai",
-        "security",
-        "hardware"
       ],
       "date": "2026-11-19"
     },

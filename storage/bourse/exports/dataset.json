@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T05:22:43+00:00",
+  "generated_at": "2026-11-24T09:25:44+00:00",
   "sources_used": [
     "rss",
     "rss",
@@ -11,37 +11,37 @@
     "rss"
   ],
   "totals": {
-    "items": 129,
+    "items": 131,
     "by_source": {
-      "hn": 5,
+      "hn": 7,
       "rss": 81,
-      "github": 3,
-      "arxiv": 40
+      "arxiv": 40,
+      "github": 3
     },
     "by_recipe": {
-      "economist_fn": 40,
       "arxiv_qfin": 40,
+      "economist_fn": 40,
       "cnbc_top": 30,
       "ft_home": 11,
-      "hn_fintech": 5,
+      "hn_fintech": 7,
       "github_fin": 3
     },
     "by_topic": {
-      "ai": 74,
-      "dev": 42,
-      "biz": 41,
-      "science": 14,
-      "hardware": 10,
-      "crypto": 4,
-      "security": 3
+      "ai": 73,
+      "dev": 45,
+      "biz": 40,
+      "science": 17,
+      "hardware": 7,
+      "security": 6,
+      "crypto": 6
     },
     "top_domains": [
       [
-        "economist.com",
+        "arxiv.org",
         40
       ],
       [
-        "arxiv.org",
+        "economist.com",
         40
       ],
       [
@@ -53,15 +53,19 @@
         11
       ],
       [
+        "news.ycombinator.com",
+        3
+      ],
+      [
         "github.com",
         3
       ],
       [
-        "news.ycombinator.com",
-        2
+        "realizefi.com",
+        1
       ],
       [
-        "realizefi.com",
+        "finterm.ai",
         1
       ],
       [
@@ -131,7 +135,7 @@
     {
       "uid": "rss:c1f3e8d8c8ce76",
       "source": "rss",
-      "title": "Inside the ‘war room’ that lobbied Trump to bring back ousted tech boss",
+      "title": "Inside the ‘war room’ that lobbied Trump to bring back Jensen Huang",
       "url": "https://www.ft.com/content/82d3be02-8ac7-4acb-aefa-6e3722ee05cc?syn-25a6b1a6=1",
       "ts": 1795473974.0,
       "points": 0,
@@ -183,7 +187,7 @@
     {
       "uid": "rss:ab8e440c2369c9",
       "source": "rss",
-      "title": "The spies are coming for Big Tech",
+      "title": "Big Tech’s blind spot",
       "url": "https://www.ft.com/content/c96c40c5-6b07-4433-b65f-19105e9ccb44?syn-25a6b1a6=1",
       "ts": 1795496416.0,
       "points": 0,
@@ -234,13 +238,13 @@
     {
       "uid": "rss:b140cd1b34961a",
       "source": "rss",
-      "title": "Asian tech stocks surge after Jensen Huang’s return",
+      "title": "Tech stocks surge on Jensen Huang’s return",
       "url": "https://www.ft.com/content/c0cb932a-076e-4471-8009-91749fde5f47?syn-25a6b1a6=1",
-      "ts": 1795491985.0,
+      "ts": 1795510826.0,
       "points": 0,
       "comments": 0,
       "author": "",
-      "summary": "Region’s markets follow Wall Street higher on Nvidia chief’s reinstatement",
+      "summary": "Asian markets follow Wall Street higher after Nvidia chief’s reinstatement",
       "recipe": "ft_home",
       "buzz": 80,
       "topics": [
@@ -253,7 +257,7 @@
       "source": "rss",
       "title": "Singapore is no backdoor for US chips, PM says",
       "url": "https://www.ft.com/content/6ca21b39-ff62-42e0-9695-9220b438f7eb?syn-25a6b1a6=1",
-      "ts": 1795492002.0,
+      "ts": 1795500740.0,
       "points": 0,
       "comments": 0,
       "author": "",
@@ -301,21 +305,205 @@
       "date": "2026-11-24"
     },
     {
-      "uid": "rss:9900744a7aa63a",
+      "uid": "rss:a21c8f3d9e0c40",
       "source": "rss",
-      "title": "‘Unthinkable’ for Britain to rejoin EU without referendum, says Burnham",
-      "url": "https://www.ft.com/content/46fa4178-055f-44ca-b043-773428e8e986?syn-25a6b1a6=1",
-      "ts": 1795460438.0,
+      "title": "Top Fed official probed over whether she breached ‘blackout period’",
+      "url": "https://www.ft.com/content/2c1fcdc0-eb16-4cee-9041-736527c2ae83?syn-25a6b1a6=1",
+      "ts": 1795475935.0,
       "points": 0,
       "comments": 0,
       "author": "",
-      "summary": "Prime minister insists he does not have a ‘fixed opinion’ about the UK’s future relationship with the bloc",
+      "summary": "Michelle Bowman spoke at an invitation-only Bank of America dinner just hours after a central bank meeting",
       "recipe": "ft_home",
+      "buzz": 80,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-11-23"
+    },
+    {
+      "uid": "arxiv:2611.31190v1",
+      "source": "arxiv",
+      "title": "Know When to Abstain: Conformal Confidence Estimation for Text-to-SQL",
+      "url": "https://arxiv.org/abs/2611.31190v1",
+      "ts": 1795459374.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Avinash Kumar Singh",
+      "summary": "Text-to-SQL systems often return queries that execute successfully but answer the wrong question. Detecting these errors at deployment is hard because execution correctness is defined against a gold query, which exists only in labeled data. We formulate confidence estimation for Text-to-SQL as probabilistic query validation under a latent correctness variable that is observable at calibration time",
+      "recipe": "arxiv_qfin",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "crypto"
+      ],
+      "date": "2026-11-23"
+    },
+    {
+      "uid": "arxiv:2611.31100v1",
+      "source": "arxiv",
+      "title": "Place-Based Policy from Space: Evidence from Italy's Inner Areas",
+      "url": "https://arxiv.org/abs/2611.31100v1",
+      "ts": 1795455680.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Nicola Caravaggio",
+      "summary": "This paper evaluates a place-based policy, Italy's National Strategy for Inner Areas (SNAI), using satellite nighttime lights. Targeting structurally fragile and peripheral municipalities, SNAI invests in essential services and economic activities. Staggered difference-in-differences compares 941 funded municipalities with 3,112 eligible controls over 2011--2022. Funding is associated with an expa",
+      "recipe": "arxiv_qfin",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "science",
+        "biz"
+      ],
+      "date": "2026-11-23"
+    },
+    {
+      "uid": "arxiv:2611.31083v1",
+      "source": "arxiv",
+      "title": "AI-Assisted Programming and Labor Demand",
+      "url": "https://arxiv.org/abs/2611.31083v1",
+      "ts": 1795455202.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Lindsey Raymond",
+      "summary": "Generative AI has demonstrated human-level performance on technical work tasks, yet evidence on how these task-level capabilities are changing labor demand remains scarce. We study the firm-level adoption of GitHub Copilot, an AI coding assistant, across 5,414 multinational firms accounting for 38% of the U.S. programming workforce. To identify causal effects, we exploit a natural experiment gener",
+      "recipe": "arxiv_qfin",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "science",
+        "security"
+      ],
+      "date": "2026-11-23"
+    },
+    {
+      "uid": "arxiv:2611.30982v1",
+      "source": "arxiv",
+      "title": "Design an Algorithmic Stablecoin based on a Predictive PID Controller",
+      "url": "https://arxiv.org/abs/2611.30982v1",
+      "ts": 1795452051.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Yuqiao Zhao",
+      "summary": "Cryptocurrencies issued based on blockchain technology have attracted increasing attention in recent years. However, their high volatility makes it difficult for them to become circulating currencies. This led to the creation of stablecoins. Existing stablecoins can be divided into three main categories: stablecoins pegged to fiat currencies, stablecoins collateralized by crypto assets, and algori",
+      "recipe": "arxiv_qfin",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "crypto"
+      ],
+      "date": "2026-11-23"
+    },
+    {
+      "uid": "arxiv:2611.30880v1",
+      "source": "arxiv",
+      "title": "Critical step size of stochastic gradient descent for a linear neuron: an exact solution and the role of the input spectrum",
+      "url": "https://arxiv.org/abs/2611.30880v1",
+      "ts": 1795448863.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Sébastien Valeyre",
+      "summary": "We study online stochastic gradient descent for a single linear neuron in a teacher-student setting with Gaussian inputs of arbitrary covariance. The mean-square errors of the $N$ weights obey a closed linear recursion of dimension $N$, which we solve exactly. We prove that the dynamics converges if and only if the step size is below a critical value $λ_c$, given by an explicit scalar equation tha",
+      "recipe": "arxiv_qfin",
+      "buzz": 80,
+      "topics": [],
+      "date": "2026-11-23"
+    },
+    {
+      "uid": "arxiv:2611.30737v1",
+      "source": "arxiv",
+      "title": "CCFinance: Reconstructing Financial News Samples from Web Archives",
+      "url": "https://arxiv.org/abs/2611.30737v1",
+      "ts": 1795443213.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Marcus Gawronsky",
+      "summary": "Proprietary news archives assign stories to firms, so reproducing a financial study often requires access to both the articles and the vendor's assignments. CCFinance lets researchers reconstruct firm coverage under different selection rules by recording which version of a story was captured, which issuers it names and how often each appears. From 14.8 million English-language records in Fine News",
+      "recipe": "arxiv_qfin",
       "buzz": 80,
       "topics": [
         "ai"
       ],
       "date": "2026-11-23"
+    },
+    {
+      "uid": "arxiv:2611.30735v1",
+      "source": "arxiv",
+      "title": "The Private Production of Safety Outside Options and the Burden of Protection",
+      "url": "https://arxiv.org/abs/2611.30735v1",
+      "ts": 1795443180.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Elena Pisanelli",
+      "summary": "Protective interventions are typically evaluated by their ability to prevent harm. Yet protection also raises a distinct question: who bears the burden of adjusting to violence? I examine this allocation of protective adjustment using four randomized interventions in the United States. An offer of permanent housing assistance increases separation from a baseline partner combined with stable indepe",
+      "recipe": "arxiv_qfin",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev"
+      ],
+      "date": "2026-11-23"
+    },
+    {
+      "uid": "arxiv:2611.30584v1",
+      "source": "arxiv",
+      "title": "Do Candlestick Charts Suffice? The Incremental Economic Value of Technical Indicators in Stock Return Prediction",
+      "url": "https://arxiv.org/abs/2611.30584v1",
+      "ts": 1795436764.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Peng Liu",
+      "summary": "Although technical analysis remains widely used in practice, the need for manually constructed indicators is increasingly questioned as deep learning models can extract features directly from OHLC price data. This paper examines the standalone economic value of trading volume and manually constructed technical-indicator groups and whether adding these groups to OHLC candlestick charts provides inc",
+      "recipe": "arxiv_qfin",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "science"
+      ],
+      "date": "2026-11-23"
+    },
+    {
+      "uid": "arxiv:2611.27210v2",
+      "source": "arxiv",
+      "title": "The Rise of Agents and the Labor Market",
+      "url": "https://arxiv.org/abs/2611.27210v2",
+      "ts": 1795436621.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Nicola Borri",
+      "summary": "We provide the first economy-wide and cross-AI model evidence on the effects of agentic AI on labor demand. We combine proprietary OpenRouter data covering about two quadrillion tokens of realized AI consumption (2 percent of global AI token consumption) across more than 400 AI models, including 1.1 quadrillion agentic tokens, with the full text of 34.8 million U.S. job postings for public firms f",
+      "recipe": "arxiv_qfin",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "crypto",
+        "biz"
+      ],
+      "date": "2026-11-23"
+    },
+    {
+      "uid": "rss:cd0ab57e83764a",
+      "source": "rss",
+      "title": "Six key questions raised by Jensen Huang's return to Nvidia",
+      "url": "https://www.cnbc.com/2026/11/24/nvidia-jensen-huang-politics-market.html",
+      "ts": 1795504353.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "As Jensen Huang returns to Nvidia, questions remained around the board's reversal, Trump's involvement and the tech giant's future.",
+      "recipe": "cnbc_top",
+      "buzz": 80,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-11-24"
     },
     {
       "uid": "rss:366912756c5af1",
@@ -336,6 +524,41 @@
       "date": "2026-11-23"
     },
     {
+      "uid": "rss:00cb2304380549",
+      "source": "rss",
+      "title": "Jensen Huang is ‘too big to fire,’ putting Nvidia’s governance in focus: analysts",
+      "url": "https://www.cnbc.com/2026/11/24/nvidia-jensen-huang-governance.html",
+      "ts": 1795509316.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "Jensen Huang’s return has underscored Nvidia’s deep reliance on its founder, putting the company's board oversight and corporate governance under scrutiny.",
+      "recipe": "cnbc_top",
+      "buzz": 80,
+      "topics": [
+        "biz"
+      ],
+      "date": "2026-11-24"
+    },
+    {
+      "uid": "rss:3133516e4c3800",
+      "source": "rss",
+      "title": "Signal joins United Airlines, banks in limiting AI agents over customer risks",
+      "url": "https://www.cnbc.com/2026/11/24/signal-airlines-banks-ai-limit.html",
+      "ts": 1795505141.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "Privacy-focused messaging application Signal has joined United Airlines and JPMorgan Chase in implementing restrictions around artificial intelligence agents.",
+      "recipe": "cnbc_top",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-24"
+    },
+    {
       "uid": "rss:aa6494388967ac",
       "source": "rss",
       "title": "Iran says three tankers hit mines in Hormuz despite U.S. escort, as Treasury widens sanctions",
@@ -354,19 +577,19 @@
       "date": "2026-11-24"
     },
     {
-      "uid": "rss:00cb2304380549",
+      "uid": "rss:294cc07c21420f",
       "source": "rss",
-      "title": "Jensen Huang is ‘too big to fire,’ putting Nvidia’s governance in focus: analysts",
-      "url": "https://www.cnbc.com/2026/11/24/nvidia-jensen-huang-governance.html",
-      "ts": 1795496974.0,
+      "title": "Why France is at risk of recession — and what could keep it out of one",
+      "url": "https://www.cnbc.com/2026/11/24/france-recession-risk-pmi.html",
+      "ts": 1795503336.0,
       "points": 0,
       "comments": 0,
       "author": "",
-      "summary": "Jensen Huang’s return has underscored Nvidia’s deep reliance on its founder, putting the company's board oversight and corporate governance under scrutiny.",
+      "summary": "Bank of France Governor Emmanuel Moulin told CNBC he still expects growth, pointing to resilience in sectors including defense, aerospace and electricity.",
       "recipe": "cnbc_top",
       "buzz": 80,
       "topics": [
-        "biz"
+        "science"
       ],
       "date": "2026-11-24"
     },
@@ -403,6 +626,25 @@
       "buzz": 80,
       "topics": [],
       "date": "2026-11-24"
+    },
+    {
+      "uid": "rss:70fd82cea908a5",
+      "source": "rss",
+      "title": "CNBC's The China Connection newsletter: AI race spreads from robots to smartphones",
+      "url": "https://www.cnbc.com/2026/11/23/cnbcs-the-china-connection-newsletter-ai-race-spreads-to-smartphones.html",
+      "ts": 1795474801.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "More powerful artificial intelligence models are raising expectations for more powerful on-device chips that can run on devices from robots to smartphones.",
+      "recipe": "cnbc_top",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "hardware"
+      ],
+      "date": "2026-11-23"
     },
     {
       "uid": "rss:40962899b9ade1",
@@ -471,42 +713,6 @@
       "date": "2026-11-24"
     },
     {
-      "uid": "rss:70fd82cea908a5",
-      "source": "rss",
-      "title": "CNBC's The China Connection newsletter: AI race spreads from robots to smartphones",
-      "url": "https://www.cnbc.com/2026/11/23/cnbcs-the-china-connection-newsletter-ai-race-spreads-to-smartphones.html",
-      "ts": 1795474801.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "More powerful artificial intelligence models are raising expectations for more powerful on-device chips that can run on devices from robots to smartphones.",
-      "recipe": "cnbc_top",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "dev",
-        "hardware"
-      ],
-      "date": "2026-11-23"
-    },
-    {
-      "uid": "rss:cd0ab57e83764a",
-      "source": "rss",
-      "title": "Six key questions raised by Jensen Huang's return to Nvidia",
-      "url": "https://www.cnbc.com/2026/11/24/nvidia-jensen-huang-politics-market.html",
-      "ts": 1795489549.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "As Jensen Huang returns to Nvidia, questions remained around the board's reversal, Trump's involvement and the tech giant's future.",
-      "recipe": "cnbc_top",
-      "buzz": 80,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-24"
-    },
-    {
       "uid": "rss:f0e7bbc5cbf2ec",
       "source": "rss",
       "title": "Trump administration proposes rule that could curb ESG investing in 401(k)s",
@@ -524,11 +730,29 @@
       "date": "2026-11-23"
     },
     {
+      "uid": "rss:cf83e452a38a9b",
+      "source": "rss",
+      "title": "Investors are missing the bigger picture in CrowdStrike's deal to buy Zscaler",
+      "url": "https://www.cnbc.com/investingclub/2026/11/23/crowdstrikes-zscaler-deal-investors-are-missing-the-bigger-picture.html",
+      "ts": 1795465599.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "CrowdStrike's quarterly results, released alongside the deal's announcement, show a company acting from a position of strength rather than weakness.",
+      "recipe": "cnbc_top",
+      "buzz": 80,
+      "topics": [
+        "dev",
+        "biz"
+      ],
+      "date": "2026-11-23"
+    },
+    {
       "uid": "rss:0055385786713e",
       "source": "rss",
       "title": "Asian Nvidia-related stocks jump after Huang's return, with Taiwan's near price limits",
       "url": "https://www.cnbc.com/2026/11/24/nvidia-jensen-huang-asia-chip-stocks.html",
-      "ts": 1795486836.0,
+      "ts": 1795508038.0,
       "points": 0,
       "comments": 0,
       "author": "",
@@ -557,24 +781,6 @@
         "ai",
         "dev",
         "security"
-      ],
-      "date": "2026-11-23"
-    },
-    {
-      "uid": "rss:cf83e452a38a9b",
-      "source": "rss",
-      "title": "Investors are missing the bigger picture in CrowdStrike's deal to buy Zscaler",
-      "url": "https://www.cnbc.com/investingclub/2026/11/23/crowdstrikes-zscaler-deal-investors-are-missing-the-bigger-picture.html",
-      "ts": 1795465599.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "CrowdStrike's quarterly results, released alongside the deal's announcement, show a company acting from a position of strength rather than weakness.",
-      "recipe": "cnbc_top",
-      "buzz": 80,
-      "topics": [
-        "dev",
-        "biz"
       ],
       "date": "2026-11-23"
     },
@@ -799,43 +1005,6 @@
       "topics": [
         "ai",
         "science"
-      ],
-      "date": "2026-11-23"
-    },
-    {
-      "uid": "rss:64bd718a154ee9",
-      "source": "rss",
-      "title": "Amazon to acquire AI startup Decart's chip software, hire founders",
-      "url": "https://www.cnbc.com/2026/11/23/amazon-decarts-ai-acquisition.html",
-      "ts": 1795462478.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "Decart, founded in 2023, is best known for its software that lets developers sync their AI models across different chips.",
-      "recipe": "cnbc_top",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "dev",
-        "biz",
-        "hardware"
-      ],
-      "date": "2026-11-23"
-    },
-    {
-      "uid": "rss:4cd427308f132d",
-      "source": "rss",
-      "title": "CrowdStrike to buy Zscaler in $44 billion deal as AI supercharges cyberattacks",
-      "url": "https://www.cnbc.com/2026/11/23/crowdstrike-zscaler-aquisition-ai-cyberattacks.html",
-      "ts": 1795467843.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "CrowdStrike and competitors have shelled out billions to ramp up defenses in the wake of AI cyberattacks.",
-      "recipe": "cnbc_top",
-      "buzz": 80,
-      "topics": [
-        "ai"
       ],
       "date": "2026-11-23"
     },
@@ -1066,24 +1235,6 @@
       "date": "2026-11-22"
     },
     {
-      "uid": "arxiv:2611.22033v2",
-      "source": "arxiv",
-      "title": "Thinking Harder Doesn't Lead to Better Choices: Reasoning Effort Increases the Confidence but Not the Correctness of LLM Shopping Agents",
-      "url": "https://arxiv.org/abs/2611.22033v2",
-      "ts": 1795311843.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Adi Krishnamoorthy",
-      "summary": "Large language models (LLMs) are increasingly deployed as autonomous shopping agents that process multimodal product listings (consisting of visual and text data) and recommend purchases on behalf of consumers. Naturally, one might assume that models with more thinking power would make higher-quality purchasing decisions. To test this belief, we ask two questions about such agents: does asking a m",
-      "recipe": "arxiv_qfin",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "dev"
-      ],
-      "date": "2026-11-22"
-    },
-    {
       "uid": "rss:91097fae2e882f",
       "source": "rss",
       "title": "Bond yields are rising everywhere—except China",
@@ -1211,26 +1362,6 @@
         "ai",
         "dev",
         "science"
-      ],
-      "date": "2026-11-20"
-    },
-    {
-      "uid": "arxiv:2611.27210v1",
-      "source": "arxiv",
-      "title": "The Rise of Agents and the Human Labor Market",
-      "url": "https://arxiv.org/abs/2611.27210v1",
-      "ts": 1795157423.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Nicola Borri",
-      "summary": "We provide the first economy-wide and cross-AI model evidence on the effects of agentic AI on labor demand. We combine proprietary OpenRouter data covering about two quadrillion tokens of realized AI consumption (2 percent of global AI token consumption) across more than 400 AI models, including 1.1 quadrillion agentic tokens, with the full text of 34.8 million U.S. job postings for public firms f",
-      "recipe": "arxiv_qfin",
-      "buzz": 10,
-      "topics": [
-        "ai",
-        "dev",
-        "crypto",
-        "biz"
       ],
       "date": "2026-11-20"
     },
@@ -1611,131 +1742,23 @@
       "date": "2026-11-18"
     },
     {
-      "uid": "arxiv:2611.23587v1",
-      "source": "arxiv",
-      "title": "Spectral Pricing of Corridor Products under Layered Local Volatility",
-      "url": "https://arxiv.org/abs/2611.23587v1",
-      "ts": 1794955088.0,
-      "points": 0,
+      "uid": "hn:48896257",
+      "source": "hn",
+      "title": "Show HN: Finterm.ai Bloomberg terminal for Claude Code",
+      "url": "https://finterm.ai/",
+      "ts": 1783965130.0,
+      "points": 6,
       "comments": 0,
-      "author": "Andrey Itkin",
-      "summary": "We price corridor products under a $N$-layered local volatility, piecewise constant in the price and in time, with knock-out barriers. A spatial scale transformation and the GIT method reduce the killed Green's function to a symmetric tridiagonal system of fixed size $N-1$. With equal scaled layer widths the spectrum follows from one tridiagonal eigen-decomposition together with the explicit eigen",
-      "recipe": "arxiv_qfin",
-      "buzz": 10,
-      "topics": [
-        "dev"
-      ],
-      "date": "2026-11-17"
-    },
-    {
-      "uid": "arxiv:2611.23126v1",
-      "source": "arxiv",
-      "title": "Which Past Matters? Training History and Multi-Forecast Horizon in Equity Transformers",
-      "url": "https://arxiv.org/abs/2611.23126v1",
-      "ts": 1794937481.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Chariton Chalvatzis",
-      "summary": "More historical data can improve estimation while introducing relationships that transfer poorly to current market conditions. We therefore examine how training quantity and historical selection interact with forecast horizon in intraday equity prediction. We deploy twelve configurations which combine four sampling and validation policies with 6, 12 and 24 month training quantities under a fixed c",
-      "recipe": "arxiv_qfin",
-      "buzz": 10,
-      "topics": [
-        "ai",
-        "biz"
-      ],
-      "date": "2026-11-17"
-    },
-    {
-      "uid": "arxiv:2611.23354v2",
-      "source": "arxiv",
-      "title": "AI, Specialization, and the Organization of Knowledge Work: Evidence from Legal Services",
-      "url": "https://arxiv.org/abs/2611.23354v2",
-      "ts": 1795131177.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Liu Zhang",
-      "summary": "Artificial intelligence makes specialized knowledge cheaper to use, but its effects on professional-service firms depend on how clients reallocate work and how suppliers respond. We develop a framework linking individual self-provision, enterprise make-or-buy decisions, and pricing by specialist firms. As AI improves lower-priced alternatives, clients may reallocate work across outside providers w",
-      "recipe": "arxiv_qfin",
-      "buzz": 10,
-      "topics": [
-        "ai",
-        "dev",
-        "hardware"
-      ],
-      "date": "2026-11-19"
-    },
-    {
-      "uid": "arxiv:2611.22793v1",
-      "source": "arxiv",
-      "title": "Does the AI Reviewer Alleviate or Aggravate the Maintenance Burden? Evidence from GitHub Copilot Reviewer",
-      "url": "https://arxiv.org/abs/2611.22793v1",
-      "ts": 1794923743.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Feiyang",
-      "summary": "This study examines how AI-based code reviewers reshape contribution behavior and maintenance dynamics in open-source software (OSS) communities. AI reviewers provide scalable, fast, and standardized evaluations. They reshape contributions as well as maintainers' workload. Leveraging the introduction of GitHub Copilot Reviewer on GitHub as a natural experiment in 2025, we investigate how AI review",
-      "recipe": "arxiv_qfin",
-      "buzz": 10,
+      "author": "cheeseblubber",
+      "summary": "Hi, my name is Kam, and today my cofounder Josh and I are shipping Finterm, a CLI that\ngives coding agents direct access to financial data: stock prices, options data, SEC\nfilings, and Ticker Deep Research, a filtered ticker news search. I’m a developer and have been a full-time trader for the past few years.Recently I have been using LLMs more and more in my trading and strategy.\nI always found i",
+      "recipe": "hn_fintech",
+      "buzz": 6,
       "topics": [
         "ai",
         "dev",
         "biz"
       ],
-      "date": "2026-11-17"
-    },
-    {
-      "uid": "arxiv:2611.26652v1",
-      "source": "arxiv",
-      "title": "Distributional Deep Hedging",
-      "url": "https://arxiv.org/abs/2611.26652v1",
-      "ts": 1794920771.0,
-      "points": 0,
-      "comments": 0,
-      "author": "El-Amine Cherrat",
-      "summary": "Deep hedging learns a hedging strategy by optimising a risk preference over a neural-network policy. The preference is fixed before training, so each new preference requires a new policy and, in actor-critic methods, a new critic. We propose distributional deep hedging, in which the distribution of the hedging profit and loss is learned through its quantiles and the risk preference is applied afte",
-      "recipe": "arxiv_qfin",
-      "buzz": 10,
-      "topics": [
-        "ai",
-        "biz"
-      ],
-      "date": "2026-11-17"
-    },
-    {
-      "uid": "arxiv:2611.22604v1",
-      "source": "arxiv",
-      "title": "Beyond Strike Remapping: Conditional-Gamma Pricing of Leveraged ETF Options under Local Volatility",
-      "url": "https://arxiv.org/abs/2611.22604v1",
-      "ts": 1794914508.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Guolin Chen",
-      "summary": "Options on leveraged ETFs (LETFs) are priced and hedged off the LETF volatility surface, but path-dependent variance drag makes that surface difficult to build consistently with the underlying index smile. We study three methods for constructing it: a closed-form first-order strike remapping, a new conditional-Gamma method, and a two-dimensional joint-law PDE that makes no distributional assumptio",
-      "recipe": "arxiv_qfin",
-      "buzz": 10,
-      "topics": [
-        "ai",
-        "hardware"
-      ],
-      "date": "2026-11-17"
-    },
-    {
-      "uid": "arxiv:2611.22517v1",
-      "source": "arxiv",
-      "title": "Clicks, Carbon, and Risk: Climate Attention, Persistent Financial Risk, and Real-Sector Activity",
-      "url": "https://arxiv.org/abs/2611.22517v1",
-      "ts": 1794910207.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Giovanni Angelini",
-      "summary": "Do shifts in public climate concern alter persistent financial risk and subsequently matter for real activity? We combine daily U.S. sectoral equity returns with a monthly Climate Concern Index (CCI) constructed from internet search intensity and decomposed into adverse and transition-oriented components. GARCH-MIDAS estimates reveal substantial heterogeneity: adverse climate concern raises persis",
-      "recipe": "arxiv_qfin",
-      "buzz": 10,
-      "topics": [
-        "ai",
-        "science"
-      ],
-      "date": "2026-11-17"
+      "date": "2026-07-13"
     },
     {
       "uid": "hn:47278733",
@@ -1755,6 +1778,24 @@
         "biz"
       ],
       "date": "2026-03-06"
+    },
+    {
+      "uid": "hn:45990088",
+      "source": "hn",
+      "title": "Ask HN: How do you build a \"trust layer\" for your platform?",
+      "url": "https://news.ycombinator.com/item?id=45990088",
+      "ts": 1763625243.0,
+      "points": 2,
+      "comments": 0,
+      "author": "gokulnair2001",
+      "summary": "I&#x27;m trying to understand how different teams handle platform integrity and user trust as they scale.<p>For those running consumer apps, marketplaces, fintech products, or any platform with significant user activity:\nHow do you currently build your “trust layer”?<p>Specifically:\n-&gt; How do you detect fake users, bots, device farms, or automated signups?\n-&gt; What early signals do you rely o",
+      "recipe": "hn_fintech",
+      "buzz": 2,
+      "topics": [
+        "dev",
+        "biz"
+      ],
+      "date": "2025-11-20"
     },
     {
       "uid": "hn:33629711",
