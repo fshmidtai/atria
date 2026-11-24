@@ -1,6 +1,8 @@
 cve_id,severity,package,title,url,date
+CVE-2026-59726,critical,ruflo,CVE-2026-59726: ruflo MCP bridge allows unauthenticated remote code execution in default Docker Compose deployments,https://github.com/advisories/GHSA-c4hm-4h84-2cf3,2026-11-24
 CVE-2026-133469,critical,xo-server,CVE-2026-133469: Xen Orchestra: Empty-object login token,https://github.com/advisories/GHSA-2r3w-c2vx-fv5g,2026-11-23
-CVE-2026-63492,high,wwbn/avideo,CVE-2026-63492: AVideo API vulnerable to OS command injection through an unescaped FFmpeg process keyword,https://github.com/advisories/GHSA-j44m-77cc-p3cc,2026-11-23
+CVE-2026-63305,high,wwbn/avideo,CVE-2026-63305: AVideo API FFmpeg process permits OS command injection via notifyCode/callback,https://github.com/advisories/GHSA-g9x9-q7qj-6mv5,2026-11-24
+CVE-2026-63304,high,wwbn/avideo,CVE-2026-63304: AVideo API vulnerable to OS command injection through an unescaped FFmpeg process keyword,https://github.com/advisories/GHSA-j44m-77cc-p3cc,2026-11-23
 CVE-2026-77423,high,org.jline:jline-builtins,CVE-2026-77423: jline3 leads to ReDoS in Built-in Less Viewer Search,https://github.com/advisories/GHSA-2v9w-34q6-wpqx,2026-11-23
 CVE-2026-58262,high,github.com/klever-io/klever-go,"CVE-2026-58262: Klever Go counts bitmap padding bits toward BLS quorum, allowing blocks with insufficient signatures",https://github.com/advisories/GHSA-f9h7-4mmq-vgcq,2026-11-23
 CVE-2026-22865,high,org.gradle:gradle-core,CVE-2026-22865: Gradle causes failure to disable repositories exposing builds to malicious artifacts,https://github.com/advisories/GHSA-mqwm-5m85-gmcv,2026-11-23
@@ -11,7 +13,7 @@ CVE-2026-132275,high,svglib,CVE-2026-132275: svglib: Exponential resource consum
 CVE-2026-104883,high,contao/core-bundle,CVE-2026-104883: contao/core-bundle: Non-admin users can self-grant permissions that implicitly make them administrators,https://github.com/advisories/GHSA-r9qp-pqx5-8369,2026-11-20
 CVE-2026-77309,high,ait-gui,CVE-2026-77309: AIT-GUI route chain allows unauthenticated Python execution in server process,https://github.com/advisories/GHSA-jrjx-9jjw-747m,2026-11-20
 CVE-2026-63341,high,aedes,CVE-2026-63341: Aedes has Uncaught Exception and Uncontrolled Resource Consumption,https://github.com/advisories/GHSA-xxqp-5qx8-gj5q,2026-11-20
-CVE-2026-105803,high,github.com/git-lfs/git-lfs,CVE-2026-105803: Git LFS may execute arbitrary commands via crafted Git LFS configurations,https://github.com/advisories/GHSA-x72p-hmqp-46hw,2026-11-20
+CVE-2026-59192,medium,cakephp/twig-view,CVE-2026-59192: Cakephp twig-view unserialize Twig filter allows arbitrary object deserialization,https://github.com/advisories/GHSA-48qj-5wxh-m8hc,2026-11-24
 CVE-2026-63476,medium,isomorphic-git,CVE-2026-63476: isomorphic-git allows unbounded memory allocation from attacker-controlled delta target size (DoS),https://github.com/advisories/GHSA-9x82-4j54-863h,2026-11-23
 CVE-2026-63410,medium,secp256k1-native,CVE-2026-63410: secp256k1-native has a compiler-induced timing side channel in scalar multiplication,https://github.com/advisories/GHSA-vp2j-gqfm-r3cf,2026-11-23
 CVE-2026-63402,medium,i18next,"CVE-2026-63402: i18next deepExtend recurses into inherited built-ins, allowing corruption of shared built-in objects (DoS)",https://github.com/advisories/GHSA-6jcc-5g8w-32mx,2026-11-23
@@ -24,8 +26,6 @@ CVE-2026-61725,medium,sevenz-rust2,"CVE-2026-61725: sevenz-rust2: decompress bui
 CVE-2026-58254,medium,github.com/nats-io/nats-server/v2,CVE-2026-58254: nats-server Leaf node connections bypass Nats-Trace-Dest permission check,https://github.com/advisories/GHSA-p3j5-5hrq-p75h,2026-11-20
 CVE-2026-35376,medium,uu_chcon,CVE-2026-35376: chcon: recursive relabel not anchored to traversal dirfd (TOCTOU),https://github.com/advisories/GHSA-9rv8-9hvg-92mq,2026-11-20
 CVE-2026-35374,medium,uu_split,CVE-2026-35374: split: TOCTOU output-open allows truncating a swapped file,https://github.com/advisories/GHSA-fjjq-8hw5-cf9f,2026-11-20
-CVE-2026-104773,medium,ckan,CVE-2026-104773: CKAN: Session Fixation in Registration View,https://github.com/advisories/GHSA-6499-jgj4-2wpf,2026-11-20
-CVE-2026-69133,medium,io.netty.incubator:netty-incubator-codec-ohttp,CVE-2026-69133: netty-incubator-codec-ohttp: OHTTP codecs retain consumed outer cumulation buffers after completed exchanges,https://github.com/advisories/GHSA-cg26-4c6j-2x8h,2026-11-20
 CVE-2026-77331,low,memtomem-stm,CVE-2026-77331: memtomem-stm: Concurrent LTM recovery can duplicate reconnects or reuse a cancelled transport session,https://github.com/advisories/GHSA-72jh-722p-rqr3,2026-11-20
 CVE-2026-77332,low,memtomem-stm,CVE-2026-77332: memtomem-stm: Surfaced memory data can escape the Markdown compatibility boundary,https://github.com/advisories/GHSA-43hx-xm7w-3mhj,2026-11-20
 CVE-2026-35377,low,uu_env,CVE-2026-35377:  uu_env incorrectly rejects backslashes within single-quoted strings accepted by GNU env,https://github.com/advisories/GHSA-xhrc-7f76-vh96,2026-11-20

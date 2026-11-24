@@ -5,7 +5,41 @@
     <link>https://sentinel-post.pages.dev</link>
     <description>Автономная радиостанция кибербезопасности: живые CVE, угрозы и защита — без сенсаций</description>
     <language>ru</language>
-    <lastBuildDate>Tue, 24 Nov 2026 17:17:13 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 21:09:15 GMT</lastBuildDate>
+    <item>
+      <title>CVE-2026-59726: ruflo MCP bridge allows unauthenticated remote code execution in default Docker Compose deployments</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-59726-ruflo-mcp-bridge-allows-unauthenticated-remote-co.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-59726-ruflo-mcp-bridge-allows-unauthenticated-remote-co.html</guid>
+      <pubDate>Tue, 24 Nov 2026 21:01:10 GMT</pubDate>
+      <description>Severity: critical. The MCP bridge shipping in ruflo/docker-compose.yml exposed POST /mcp with no authentication. The docker-compose defaults bound the bridge and MongoDB to all interfaces. Combined, an unauthenticated network attacker could invoke tools/call → terminal_execute inside the bridge con</description>
+    </item>
+    <item>
+      <title>CVE-2026-63305: AVideo API FFmpeg process permits OS command injection via notifyCode/callback</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-63305-avideo-api-ffmpeg-process-permits-os-command-inje.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-63305-avideo-api-ffmpeg-process-permits-os-command-inje.html</guid>
+      <pubDate>Tue, 24 Nov 2026 20:53:28 GMT</pubDate>
+      <description>Severity: high. ### Summary
+
+The standalone FFmpeg execution endpoint `plugin/API/standAlone/ffmpeg.json.php` builds a shell command string that is passed to `execAsync()` and run via `nohup sh -c "&lt;command&gt;"`. When the decrypted `codeToExec` payload produces a non-empty `avideoPath`, the endpoint a</description>
+    </item>
+    <item>
+      <title>CVE-2026-59192: Cakephp twig-view unserialize Twig filter allows arbitrary object deserialization</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-59192-cakephp-twig-view-unserialize-twig-filter-allows-.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-59192-cakephp-twig-view-unserialize-twig-filter-allows-.html</guid>
+      <pubDate>Tue, 24 Nov 2026 17:42:51 GMT</pubDate>
+      <description>Severity: medium. ### Impact
+The `unserialize` filter has no restriction on which classes are allowed. This can be used as a deserialization remote-code-execution gadget.
+
+### Patches
+1.3.3 and 2.1.2 contain a fix for this issue. The fix may impact backwards compatibility if you are relying on deser</description>
+    </item>
+    <item>
+      <title>Iran-Aligned Volant Manticore Uses IPFS-Based KuboShell Backdoor in Espionage Campaigns</title>
+      <link>https://sentinel-post.pages.dev/item/iran-aligned-volant-manticore-uses-ipfs-based-kuboshell-backdoor.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/iran-aligned-volant-manticore-uses-ipfs-based-kuboshell-backdoor.html</guid>
+      <pubDate>Tue, 24 Nov 2026 16:54:07 GMT</pubDate>
+      <description>A previously undocumented Iran-aligned cyber espionage group called Volant Manticore has targeted telecommunications companies, airlines, and critical infrastructure in Cyprus. Central to the group's operations is a backdoor called KuboShell that uses the InterPlanetary File System (IPFS) for comman</description>
+    </item>
     <item>
       <title>VMware vCenter Hit by Another Critical 9.8-Rated Auth Bypass Flaw After Zero-Day Exploitation</title>
       <link>https://sentinel-post.pages.dev/item/vmware-vcenter-hit-by-another-critical-9-8-rated-auth-bypass-fla.html</link>
@@ -84,9 +118,9 @@
       <description>The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Monday added two flaws impacting N-able MailAssure and MONAI Label to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation. The critical vulnerabilities are listed below - CVE-[phone] (CVSS score</description>
     </item>
     <item>
-      <title>CVE-2026-63492: AVideo API vulnerable to OS command injection through an unescaped FFmpeg process keyword</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-63492-avideo-api-vulnerable-to-os-command-injection-thr.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-63492-avideo-api-vulnerable-to-os-command-injection-thr.html</guid>
+      <title>CVE-2026-63304: AVideo API vulnerable to OS command injection through an unescaped FFmpeg process keyword</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-63304-avideo-api-vulnerable-to-os-command-injection-thr.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-63304-avideo-api-vulnerable-to-os-command-injection-thr.html</guid>
       <pubDate>Mon, 23 Nov 2026 22:06:28 GMT</pubDate>
       <description>Severity: high. ### Summary
 
@@ -214,34 +248,6 @@ When resolving dependencies, Gradle searches repositories in declaration order. 
       <guid isPermaLink="true">https://sentinel-post.pages.dev/item/hackers-exploit-critical-screenconnect-flaw-to-hijack-msp-techni.html</guid>
       <pubDate>Mon, 23 Nov 2026 12:41:04 GMT</pubDate>
       <description>Threat actors are exploiting a now-patched security flaw in ConnectWise ScreenConnect to target managed service provider (MSP) servers. The activity revolves around CVE-[phone] (CVSS score: 9.9), a critical ScreenConnect client flaw that allows a guest to transfer and execute a malicious payload on </description>
-    </item>
-    <item>
-      <title>N-able Discloses Critical Mail Assure Vulnerability Found During Breach Investigation</title>
-      <link>https://sentinel-post.pages.dev/item/n-able-discloses-critical-mail-assure-vulnerability-found-during.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/n-able-discloses-critical-mail-assure-vulnerability-found-during.html</guid>
-      <pubDate>Mon, 23 Nov 2026 12:28:09 GMT</pubDate>
-      <description>N-able yesterday disclosed a critical flaw it found while investigating the breach of its Mail Assure and SpamExperts Hosted Cloud, an email filtering service it runs for managed service providers. The bug, tracked as CVE-[phone], is a server-side request forgery (SSRF) flaw. It allowed a user with </description>
-    </item>
-    <item>
-      <title>Humans Have Rights. Machines Do Not.</title>
-      <link>https://sentinel-post.pages.dev/item/humans-have-rights-machines-do-not.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/humans-have-rights-machines-do-not.html</guid>
-      <pubDate>Mon, 23 Nov 2026 12:01:45 GMT</pubDate>
-      <description>&lt;p&gt;&lt;em&gt;This essay originally appeared in &lt;a href="https://www.techpolicy.press/humans-have-rights-machines-do-not/"&gt;Tech Policy Press&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt; &lt;p&gt;Last year, Character.AI &lt;a href="https://storage.courtlistener.com/recap/gov.uscourts.flmd.433581/gov.uscourts.flmd.[phone].0.pdf"&gt;asked&lt;/a&gt; a federa</description>
-    </item>
-    <item>
-      <title>hertzurchincutters/VaultAuth-Desktop2FATOTP</title>
-      <link>https://sentinel-post.pages.dev/item/hertzurchincutters-vaultauth-desktop2fatotp.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/hertzurchincutters-vaultauth-desktop2fatotp.html</guid>
-      <pubDate>Mon, 23 Nov 2026 11:39:31 GMT</pubDate>
-      <description>Offline AES-256 encrypted 2FA TOTP authenticator for Windows: scan QR codes from screen, import Google Authenticator exports, and copy codes in 1 click.</description>
-    </item>
-    <item>
-      <title>Microshareanimate/ExifScrub-PhotoMetadataCleaner</title>
-      <link>https://sentinel-post.pages.dev/item/microshareanimate-exifscrub-photometadatacleaner.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/microshareanimate-exifscrub-photometadatacleaner.html</guid>
-      <pubDate>Mon, 23 Nov 2026 11:36:39 GMT</pubDate>
-      <description>Strip GPS location, EXIF camera serial numbers, and PDF author metadata from photos and documents offline on Windows before sharing.</description>
     </item>
   </channel>
 </rss>

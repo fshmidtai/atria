@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T17:16:47+00:00",
+  "generated_at": "2026-11-24T21:08:53+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -18,12 +18,12 @@
       "the_hacker_news": 30
     },
     "by_topic": {
-      "security": 54,
+      "security": 53,
       "dev": 42,
       "ai": 37,
-      "hardware": 14,
-      "crypto": 4,
+      "hardware": 12,
       "science": 4,
+      "crypto": 3,
       "biz": 3
     },
     "top_domains": [
@@ -39,6 +39,25 @@
   },
   "items": [
     {
+      "uid": "cve:GHSA-c4hm-4h84-2cf3",
+      "source": "cve",
+      "title": "CVE-2026-59726: ruflo MCP bridge allows unauthenticated remote code execution in default Docker Compose deployments",
+      "url": "https://github.com/advisories/GHSA-c4hm-4h84-2cf3",
+      "ts": 1795554070.0,
+      "points": 6000,
+      "comments": 0,
+      "author": "ruflo",
+      "summary": "Severity: critical. The MCP bridge shipping in ruflo/docker-compose.yml exposed POST /mcp with no authentication. The docker-compose defaults bound the bridge and MongoDB to all interfaces. Combined, an unauthenticated network attacker could invoke tools/call → terminal_execute inside the bridge container, obtain a she",
+      "recipe": "gh_advisories",
+      "buzz": 6080,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-24"
+    },
+    {
       "uid": "cve:GHSA-2r3w-c2vx-fv5g",
       "source": "cve",
       "title": "CVE-2026-133469: Xen Orchestra: Empty-object login token",
@@ -49,7 +68,7 @@
       "author": "xo-server",
       "summary": "Severity: critical. ### Summary\n\nREST cookie parsing turns `authenticationToken=j:%7B%7D` into `{}`. REST authentication passes that object to the XO token provider without requiring a string. The token collection treats `{}` as an unfiltered lookup and returns its first token; the provider authenticates as that token'",
       "recipe": "gh_advisories",
-      "buzz": 6080,
+      "buzz": 6030,
       "topics": [
         "dev",
         "crypto",
@@ -58,9 +77,27 @@
       "date": "2026-11-23"
     },
     {
+      "uid": "cve:GHSA-g9x9-q7qj-6mv5",
+      "source": "cve",
+      "title": "CVE-2026-63305: AVideo API FFmpeg process permits OS command injection via notifyCode/callback",
+      "url": "https://github.com/advisories/GHSA-g9x9-q7qj-6mv5",
+      "ts": 1795553608.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "wwbn/avideo",
+      "summary": "Severity: high. ### Summary\n\nThe standalone FFmpeg execution endpoint `plugin/API/standAlone/ffmpeg.json.php` builds a shell command string that is passed to `execAsync()` and run via `nohup sh -c \"<command>\"`. When the decrypted `codeToExec` payload produces a non-empty `avideoPath`, the endpoint appends a complet",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-24"
+    },
+    {
       "uid": "cve:GHSA-j44m-77cc-p3cc",
       "source": "cve",
-      "title": "CVE-2026-63492: AVideo API vulnerable to OS command injection through an unescaped FFmpeg process keyword",
+      "title": "CVE-2026-63304: AVideo API vulnerable to OS command injection through an unescaped FFmpeg process keyword",
       "url": "https://github.com/advisories/GHSA-j44m-77cc-p3cc",
       "ts": 1795471588.0,
       "points": 3500,
@@ -86,7 +123,7 @@
       "author": "org.jline:jline-builtins",
       "summary": "Severity: high. ### Summary\n\nThe JLine3 built-in `less` pager compiles user-supplied search patterns directly as\nJava regular expressions with no sanitization, timeout, or backtracking bound. A\nmalicious pattern such as `(a+)+b` can trigger catastrophic backtracking and hang the\nsession thread at 100% CPU. In deplo",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "security",
         "hardware"
@@ -104,7 +141,7 @@
       "author": "github.com/klever-io/klever-go",
       "summary": "Severity: high. ## Summary\n\nWhen validating an incoming block header, `HeaderSigVerifier.verifyConsensusSize` counts *every* set bit in `PubKeysBitmap` — including bits that correspond to no validator (the padding bits of the final byte, which exist whenever the consensus group size is not a multiple of 8). The sub",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "security"
       ],
@@ -261,24 +298,22 @@
       "date": "2026-11-20"
     },
     {
-      "uid": "cve:GHSA-x72p-hmqp-46hw",
+      "uid": "cve:GHSA-48qj-5wxh-m8hc",
       "source": "cve",
-      "title": "CVE-2026-105803: Git LFS may execute arbitrary commands via crafted Git LFS configurations",
-      "url": "https://github.com/advisories/GHSA-x72p-hmqp-46hw",
-      "ts": 1795186780.0,
-      "points": 3500,
+      "title": "CVE-2026-59192: Cakephp twig-view unserialize Twig filter allows arbitrary object deserialization",
+      "url": "https://github.com/advisories/GHSA-48qj-5wxh-m8hc",
+      "ts": 1795542171.0,
+      "points": 1800,
       "comments": 0,
-      "author": "github.com/git-lfs/git-lfs",
-      "summary": "Severity: high. ### Impact\n\nWhen fetching objects from a malicious repository, Git LFS may execute an arbitrary command or binary after failing to sufficiently restrict the set of configuration options defined in an `.lfsconfig` file in the repository.\n\nGit LFS permits a limited set of configuration options to be d",
+      "author": "cakephp/twig-view",
+      "summary": "Severity: medium. ### Impact\nThe `unserialize` filter has no restriction on which classes are allowed. This can be used as a deserialization remote-code-execution gadget.\n\n### Patches\n1.3.3 and 2.1.2 contain a fix for this issue. The fix may impact backwards compatibility if you are relying on deserializing PHP objec",
       "recipe": "gh_advisories",
-      "buzz": 3510,
+      "buzz": 1880,
       "topics": [
         "ai",
-        "dev",
-        "crypto",
         "security"
       ],
-      "date": "2026-11-20"
+      "date": "2026-11-24"
     },
     {
       "uid": "cve:GHSA-9x82-4j54-863h",
@@ -291,7 +326,7 @@
       "author": "isomorphic-git",
       "summary": "Severity: medium. ### Summary\nWhen applying a delta object from a packfile, isomorphic-git reads a **server-controlled** `targetSize` and calls `Buffer.alloc(targetSize)` with no upper bound. A single malicious HTTP response to `git.clone()`/`git.fetch()` can force a ~2 GB allocation → memory exhaustion / DoS (proces",
       "recipe": "gh_advisories",
-      "buzz": 1880,
+      "buzz": 1830,
       "topics": [
         "dev",
         "security",
@@ -310,7 +345,7 @@
       "author": "secp256k1-native",
       "summary": "Severity: medium. ## Summary\n\n`Point#mul` — the default, constant-time scalar multiplication and the library's headline secret-scalar operation — could leak timing information about the secret scalar (a private key or ECDSA-style nonce in a downstream consumer) **not because of a source-level bug, but because the com",
       "recipe": "gh_advisories",
-      "buzz": 1880,
+      "buzz": 1830,
       "topics": [
         "dev",
         "security"
@@ -328,7 +363,7 @@
       "author": "i18next",
       "summary": "Severity: medium. ### Summary\n\n`deepExtend` in `src/utils.js` (reached via the public `addResourceBundle(lng, ns, data, deep, overwrite)` API) checked key existence with the `in` operator, which walks the prototype chain. A source key matching an inherited built-in (e.g. `hasOwnProperty`, `toString`, `valueOf`) there",
       "recipe": "gh_advisories",
-      "buzz": 1880,
+      "buzz": 1830,
       "topics": [
         "ai",
         "dev",
@@ -504,45 +539,6 @@
       "date": "2026-11-20"
     },
     {
-      "uid": "cve:GHSA-6499-jgj4-2wpf",
-      "source": "cve",
-      "title": "CVE-2026-104773: CKAN: Session Fixation in Registration View",
-      "url": "https://github.com/advisories/GHSA-6499-jgj4-2wpf",
-      "ts": 1795191926.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "ckan",
-      "summary": "Severity: medium. ## Description\n\nWeb user registration form is vulnerable to session fixation if the site is configured with server-side session storage (CKAN uses cookie-based session storage by default). The attacker would need to either set a cookie on the victim's browser or steal the victim's currently valid se",
-      "recipe": "gh_advisories",
-      "buzz": 1810,
-      "topics": [
-        "ai",
-        "dev",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-20"
-    },
-    {
-      "uid": "cve:GHSA-cg26-4c6j-2x8h",
-      "source": "cve",
-      "title": "CVE-2026-69133: netty-incubator-codec-ohttp: OHTTP codecs retain consumed outer cumulation buffers after completed exchanges",
-      "url": "https://github.com/advisories/GHSA-cg26-4c6j-2x8h",
-      "ts": 1795191729.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "io.netty.incubator:netty-incubator-codec-ohttp",
-      "summary": "Severity: medium. ## Summary:\n\nOHttpClientCodec and OHttpServerCodec retain the encrypted outer HttpContent in a handler-level cumulationBuffer. After a valid OHTTP exchange completes, the OHTTP request/response context is destroyed, but the outer cumulationBuffer is not released or reset. It remains referenced by th",
-      "recipe": "gh_advisories",
-      "buzz": 1810,
-      "topics": [
-        "ai",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-20"
-    },
-    {
       "uid": "cve:GHSA-72jh-722p-rqr3",
       "source": "cve",
       "title": "CVE-2026-77331: memtomem-stm: Concurrent LTM recovery can duplicate reconnects or reuse a cancelled transport session",
@@ -597,6 +593,24 @@
         "security"
       ],
       "date": "2026-11-20"
+    },
+    {
+      "uid": "rss:1b79e713cb453f",
+      "source": "rss",
+      "title": "Iran-Aligned Volant Manticore Uses IPFS-Based KuboShell Backdoor in Espionage Campaigns",
+      "url": "https://thehackernews.com/2026/11/iran-aligned-volant-manticore-uses-ipfs.html",
+      "ts": 1795539247.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "A previously undocumented Iran-aligned cyber espionage group called Volant Manticore has targeted telecommunications companies, airlines, and critical infrastructure in Cyprus. Central to the group's operations is a backdoor called KuboShell that uses the InterPlanetary File System (IPFS) for command-and-control (C2) and deploys Homa, a post-compromise framework that's a reimplementation of",
+      "recipe": "the_hacker_news",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev"
+      ],
+      "date": "2026-11-24"
     },
     {
       "uid": "rss:a8772c3cfced45",
@@ -773,7 +787,7 @@
       "author": "info@thehackernews.com (The Hacker News)",
       "summary": "The China-aligned threat actor known as Webworm is suspected to be using a custom version of the open-source SoftEther VPN Bridge tool in an attempt to remove recognizable detection fingerprints, while disguising it as network-monitoring software to establish covert remote access to compromised networks. The modified variant \"implements various tricks to hide itself from security tools,\"",
       "recipe": "the_hacker_news",
-      "buzz": 80,
+      "buzz": 30,
       "topics": [
         "dev",
         "security"
@@ -1134,24 +1148,6 @@
         "science",
         "security",
         "hardware"
-      ],
-      "date": "2026-11-20"
-    },
-    {
-      "uid": "rss:2c70ac04df1b40",
-      "source": "rss",
-      "title": "Hackers Exploit Critical Cisco Expressway Flaw, Breach Four Devices and Reach Internal Network",
-      "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-cisco.html",
-      "ts": 1795170770.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Threat actors have been observed exploiting a recently disclosed critical security flaw in Cisco Expressway to breach a Russian organization shortly after the public release of a proof-of-concept (PoC) exploit. The activity involves the exploitation of CVE-[phone] (CVSS score: 9.8), a vulnerability that could allow an unauthenticated, remote attacker with network access to a Cisco Expressway",
-      "recipe": "the_hacker_news",
-      "buzz": 10,
-      "topics": [
-        "dev",
-        "security"
       ],
       "date": "2026-11-20"
     }
