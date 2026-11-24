@@ -1,5 +1,6 @@
 cve_id,severity,package,title,url,date
 CVE-2026-133469,critical,xo-server,CVE-2026-133469: Xen Orchestra: Empty-object login token,https://github.com/advisories/GHSA-2r3w-c2vx-fv5g,2026-11-23
+CVE-2026-63492,high,wwbn/avideo,CVE-2026-63492: AVideo API vulnerable to OS command injection through an unescaped FFmpeg process keyword,https://github.com/advisories/GHSA-j44m-77cc-p3cc,2026-11-23
 CVE-2026-77423,high,org.jline:jline-builtins,CVE-2026-77423: jline3 leads to ReDoS in Built-in Less Viewer Search,https://github.com/advisories/GHSA-2v9w-34q6-wpqx,2026-11-23
 CVE-2026-58262,high,github.com/klever-io/klever-go,"CVE-2026-58262: Klever Go counts bitmap padding bits toward BLS quorum, allowing blocks with insufficient signatures",https://github.com/advisories/GHSA-f9h7-4mmq-vgcq,2026-11-23
 CVE-2026-22865,high,org.gradle:gradle-core,CVE-2026-22865: Gradle causes failure to disable repositories exposing builds to malicious artifacts,https://github.com/advisories/GHSA-mqwm-5m85-gmcv,2026-11-23
@@ -11,7 +12,7 @@ CVE-2026-104883,high,contao/core-bundle,CVE-2026-104883: contao/core-bundle: Non
 CVE-2026-77309,high,ait-gui,CVE-2026-77309: AIT-GUI route chain allows unauthenticated Python execution in server process,https://github.com/advisories/GHSA-jrjx-9jjw-747m,2026-11-20
 CVE-2026-63341,high,aedes,CVE-2026-63341: Aedes has Uncaught Exception and Uncontrolled Resource Consumption,https://github.com/advisories/GHSA-xxqp-5qx8-gj5q,2026-11-20
 CVE-2026-105803,high,github.com/git-lfs/git-lfs,CVE-2026-105803: Git LFS may execute arbitrary commands via crafted Git LFS configurations,https://github.com/advisories/GHSA-x72p-hmqp-46hw,2026-11-20
-CVE-2026-105802,high,github.com/git-lfs/git-lfs,CVE-2026-105802: Git LFS may execute arbitrary commands via crafted Git configurations,https://github.com/advisories/GHSA-xrgv-7vx6-5vx6,2026-11-20
+CVE-2026-63476,medium,isomorphic-git,CVE-2026-63476: isomorphic-git allows unbounded memory allocation from attacker-controlled delta target size (DoS),https://github.com/advisories/GHSA-9x82-4j54-863h,2026-11-23
 CVE-2026-63410,medium,secp256k1-native,CVE-2026-63410: secp256k1-native has a compiler-induced timing side channel in scalar multiplication,https://github.com/advisories/GHSA-vp2j-gqfm-r3cf,2026-11-23
 CVE-2026-63402,medium,i18next,"CVE-2026-63402: i18next deepExtend recurses into inherited built-ins, allowing corruption of shared built-in objects (DoS)",https://github.com/advisories/GHSA-6jcc-5g8w-32mx,2026-11-23
 CVE-2026-132276,medium,wcmatch,CVE-2026-132276: wcmatch: Polynomial-time ReDoS when matching untrusted names against multi-star patterns (default flags),https://github.com/advisories/GHSA-53pm-wgxf-c6qf,2026-11-20
@@ -25,7 +26,6 @@ CVE-2026-35376,medium,uu_chcon,CVE-2026-35376: chcon: recursive relabel not anch
 CVE-2026-35374,medium,uu_split,CVE-2026-35374: split: TOCTOU output-open allows truncating a swapped file,https://github.com/advisories/GHSA-fjjq-8hw5-cf9f,2026-11-20
 CVE-2026-104773,medium,ckan,CVE-2026-104773: CKAN: Session Fixation in Registration View,https://github.com/advisories/GHSA-6499-jgj4-2wpf,2026-11-20
 CVE-2026-69133,medium,io.netty.incubator:netty-incubator-codec-ohttp,CVE-2026-69133: netty-incubator-codec-ohttp: OHTTP codecs retain consumed outer cumulation buffers after completed exchanges,https://github.com/advisories/GHSA-cg26-4c6j-2x8h,2026-11-20
-CVE-2026-104885,medium,io.openremote:openremote-manager,CVE-2026-104885: OpenRemote: Cross-realm MQTT session disconnect without authorization,https://github.com/advisories/GHSA-3h6w-xcw3-9xjj,2026-11-20
 CVE-2026-77331,low,memtomem-stm,CVE-2026-77331: memtomem-stm: Concurrent LTM recovery can duplicate reconnects or reuse a cancelled transport session,https://github.com/advisories/GHSA-72jh-722p-rqr3,2026-11-20
 CVE-2026-77332,low,memtomem-stm,CVE-2026-77332: memtomem-stm: Surfaced memory data can escape the Markdown compatibility boundary,https://github.com/advisories/GHSA-43hx-xm7w-3mhj,2026-11-20
 CVE-2026-35377,low,uu_env,CVE-2026-35377:  uu_env incorrectly rejects backslashes within single-quoted strings accepted by GNU env,https://github.com/advisories/GHSA-xhrc-7f76-vh96,2026-11-20

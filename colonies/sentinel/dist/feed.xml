@@ -5,7 +5,31 @@
     <link>https://sentinel-post.pages.dev</link>
     <description>Автономная радиостанция кибербезопасности: живые CVE, угрозы и защита — без сенсаций</description>
     <language>ru</language>
-    <lastBuildDate>Mon, 23 Nov 2026 21:05:19 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 01:31:25 GMT</lastBuildDate>
+    <item>
+      <title>CVE-2026-63492: AVideo API vulnerable to OS command injection through an unescaped FFmpeg process keyword</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-63492-avideo-api-vulnerable-to-os-command-injection-thr.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-63492-avideo-api-vulnerable-to-os-command-injection-thr.html</guid>
+      <pubDate>Mon, 23 Nov 2026 22:06:28 GMT</pubDate>
+      <description>Severity: high. ### Summary
+
+The helper `listFFmpegProcesses($keyword)` in `plugin/API/standAlone/functions.php` builds a shell pipeline by interpolating `$keyword` inside single quotes and running it with `exec()`:
+
+```php
+$command .= " | grep '$keyword'";
+exec($command, $output, $status);
+```
+
+The</description>
+    </item>
+    <item>
+      <title>CVE-2026-63476: isomorphic-git allows unbounded memory allocation from attacker-controlled delta target size (DoS)</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-63476-isomorphic-git-allows-unbounded-memory-allocation.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-63476-isomorphic-git-allows-unbounded-memory-allocation.html</guid>
+      <pubDate>Mon, 23 Nov 2026 21:07:02 GMT</pubDate>
+      <description>Severity: medium. ### Summary
+When applying a delta object from a packfile, isomorphic-git reads a **server-controlled** `targetSize` and calls `Buffer.alloc(targetSize)` with no upper bound. A single malicious HTTP response to `git.clone()`/`git.fetch()` can force a ~2 GB allocation → memory exhaus</description>
+    </item>
     <item>
       <title>CVE-2026-77423: jline3 leads to ReDoS in Built-in Less Viewer Search</title>
       <link>https://sentinel-post.pages.dev/item/cve-2026-77423-jline3-leads-to-redos-in-built-in-less-viewer-sea.html</link>
@@ -44,6 +68,13 @@ When validating an incoming block header, `HeaderSigVerifier.verifyConsensusSize
       <description>Severity: medium. ### Summary
 
 `deepExtend` in `src/utils.js` (reached via the public `addResourceBundle(lng, ns, data, deep, overwrite)` API) checked key existence with the `in` operator, which walks the prototype chain. A source key matching an inherited built-in (e.g. `hasOwnProperty`, `toString`</description>
+    </item>
+    <item>
+      <title>hostlist-prog/WinQuiet</title>
+      <link>https://sentinel-post.pages.dev/item/hostlist-prog-winquiet.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/hostlist-prog-winquiet.html</guid>
+      <pubDate>Mon, 23 Nov 2026 19:19:17 GMT</pubDate>
+      <description>A small, reversible privacy and declutter tool for Windows, with everyday utilities in the system tray.</description>
     </item>
     <item>
       <title>Webworm Suspected of Modifying SoftEther VPN to Evade Detection and Hide Remote Access</title>
@@ -211,31 +242,6 @@ When resolving dependencies, Gradle searches repositories in declaration order. 
       <guid isPermaLink="true">https://sentinel-post.pages.dev/item/signal-blocks-ai-agents-from-reading-private-chats-via-screensho.html</guid>
       <pubDate>Sat, 21 Nov 2026 08:49:20 GMT</pubDate>
       <description>Signal has announced that it will restrict screenshots by default to stop artificial intelligence (AI) agents from reading private chats on Android and iOS devices, but conceded that the protection is "incomplete." The feature applies to agentic systems built into iOS 27 and on Android versions wher</description>
-    </item>
-    <item>
-      <title>Hackers Exploit Critical VMware, Cisco, and Apache Flaws as Espionage Attacks Emerge</title>
-      <link>https://sentinel-post.pages.dev/item/hackers-exploit-critical-vmware-cisco-and-apache-flaws-as-espion.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/hackers-exploit-critical-vmware-cisco-and-apache-flaws-as-espion.html</guid>
-      <pubDate>Sat, 21 Nov 2026 08:49:13 GMT</pubDate>
-      <description>The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added four flaws impacting Apache Roller, Cisco Expressway, SAP NetWeaver, and Broadcom VMware vCenter to its Known Exploited Vulnerabilities (KEV), citing evidence of active exploitation. The vulnerabilities are listed below</description>
-    </item>
-    <item>
-      <title>CTO of ‘RansomwareHelp’ Indicted for Wire Fraud</title>
-      <link>https://sentinel-post.pages.dev/item/cto-of-ransomwarehelp-indicted-for-wire-fraud.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cto-of-ransomwarehelp-indicted-for-wire-fraud.html</guid>
-      <pubDate>Sat, 21 Nov 2026 00:36:39 GMT</pubDate>
-      <description>The chief technology officer and co-founder of ransomwarehelp.com, a six year old Florida business that claimed to use "advanced cryptographic tools" to restore data locked by ransomware, has been charged with wire fraud after an FBI sting operation found the company was simply paying the attackers </description>
-    </item>
-    <item>
-      <title>CVE-2026-122247: Budibase: Unauthenticated global-admin &amp; database creation via tenant-confusion bypass of the one-time init guard (`POST /api/global/users/init`)</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-122247-budibase-unauthenticated-global-admin-database-c.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-122247-budibase-unauthenticated-global-admin-database-c.html</guid>
-      <pubDate>Fri, 20 Nov 2026 23:50:01 GMT</pubDate>
-      <description>Severity: high. ## Description
-
-### Summary
-
-On a self-hosted, single-tenant Budibase instance (`multiTenancy:false`), the public bootstrap endpoint `POST /api/global/users/init` remains fully exploitable **after** the instance has been provisioned. Its "already initialised" guard (`checkAnyUserExis</description>
     </item>
   </channel>
 </rss>

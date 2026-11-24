@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T21:04:57+00:00",
+  "generated_at": "2026-11-24T01:30:57+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -20,9 +20,9 @@
     "by_topic": {
       "security": 57,
       "ai": 39,
-      "dev": 36,
-      "hardware": 15,
-      "crypto": 4,
+      "dev": 37,
+      "hardware": 16,
+      "crypto": 3,
       "science": 3,
       "biz": 2
     },
@@ -53,6 +53,24 @@
       "topics": [
         "dev",
         "crypto",
+        "security"
+      ],
+      "date": "2026-11-23"
+    },
+    {
+      "uid": "cve:GHSA-j44m-77cc-p3cc",
+      "source": "cve",
+      "title": "CVE-2026-63492: AVideo API vulnerable to OS command injection through an unescaped FFmpeg process keyword",
+      "url": "https://github.com/advisories/GHSA-j44m-77cc-p3cc",
+      "ts": 1795471588.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "wwbn/avideo",
+      "summary": "Severity: high. ### Summary\n\nThe helper `listFFmpegProcesses($keyword)` in `plugin/API/standAlone/functions.php` builds a shell pipeline by interpolating `$keyword` inside single quotes and running it with `exec()`:\n\n```php\n$command .= \" | grep '$keyword'\";\nexec($command, $output, $status);\n```\n\nThe two callers in",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "dev",
         "security"
       ],
       "date": "2026-11-23"
@@ -139,7 +157,7 @@
       "author": "@budibase/server",
       "summary": "Severity: high. ## Description\n\n### Summary\n\nOn a self-hosted, single-tenant Budibase instance (`multiTenancy:false`), the public bootstrap endpoint `POST /api/global/users/init` remains fully exploitable **after** the instance has been provisioned. Its \"already initialised\" guard (`checkAnyUserExists()`) is evalua",
       "recipe": "gh_advisories",
-      "buzz": 3530,
+      "buzz": 3510,
       "topics": [
         "ai",
         "dev",
@@ -159,7 +177,7 @@
       "author": "@budibase/server",
       "summary": "Severity: high. ## Description\n\n### Summary\n\nA **low-privileged application end-user** (role `BASIC` - **not** a builder or admin, and on a public data-collection form, an unauthenticated visitor) can store an HTML/JavaScript payload in ordinary row data. When a **builder or admin** later opens that table in the Bu",
       "recipe": "gh_advisories",
-      "buzz": 3530,
+      "buzz": 3510,
       "topics": [
         "ai",
         "dev",
@@ -178,7 +196,7 @@
       "author": "svglib",
       "summary": "Severity: high. # Summary\n\n`svg2rlg()` expands `<use>` references without any limit on the total number of expansions. Only direct cycles are rejected (`CircularRefError`). A group containing N `<use>` elements that point to another such group multiplies the work by N per nesting level, so an SVG of about 1.4 KB ma",
       "recipe": "gh_advisories",
-      "buzz": 3530,
+      "buzz": 3510,
       "topics": [
         "ai",
         "security"
@@ -196,7 +214,7 @@
       "author": "contao/core-bundle",
       "summary": "Severity: high. Commit `2b83a60f7763` (5.7.3) hardened the template editor: it added `TemplateEditorModuleVoter` + `CheckTemplateEditorSaveListener` so a non-admin cannot self-grant the `tpl_editor` backend module (editable PHP-capable templates permit server-side code execution). That voter supports only the `modu",
       "recipe": "gh_advisories",
-      "buzz": 3530,
+      "buzz": 3510,
       "topics": [
         "dev",
         "security",
@@ -215,7 +233,7 @@
       "author": "ait-gui",
       "summary": "Severity: high. ## Summary\nA security issue exists where unauthenticated callers can instruct the AIT-GUI server to execute arbitrary Python scripts. The attack vector involves obtaining a session cookie through GET /, followed by a malicious POST /script/run request containing an absolute file path that bypasses t",
       "recipe": "gh_advisories",
-      "buzz": 3530,
+      "buzz": 3510,
       "topics": [
         "ai",
         "dev",
@@ -235,7 +253,7 @@
       "author": "aedes",
       "summary": "Severity: high. ### Summary\nA remote Denial of Service (DoS) vulnerability, allows any remote client to cause a complete crash of the Aedes MQTT broker process. This is achieved by sending a specially crafted MQTT message (via PUBLISH or SUBSCRIBE), or by setting a Will message with such a topic, containing a highl",
       "recipe": "gh_advisories",
-      "buzz": 3530,
+      "buzz": 3510,
       "topics": [
         "ai",
         "security"
@@ -263,23 +281,23 @@
       "date": "2026-11-20"
     },
     {
-      "uid": "cve:GHSA-xrgv-7vx6-5vx6",
+      "uid": "cve:GHSA-9x82-4j54-863h",
       "source": "cve",
-      "title": "CVE-2026-105802: Git LFS may execute arbitrary commands via crafted Git configurations",
-      "url": "https://github.com/advisories/GHSA-xrgv-7vx6-5vx6",
-      "ts": 1795186733.0,
-      "points": 3500,
+      "title": "CVE-2026-63476: isomorphic-git allows unbounded memory allocation from attacker-controlled delta target size (DoS)",
+      "url": "https://github.com/advisories/GHSA-9x82-4j54-863h",
+      "ts": 1795468022.0,
+      "points": 1800,
       "comments": 0,
-      "author": "github.com/git-lfs/git-lfs",
-      "summary": "Severity: high. ### Impact\n\nWhen fetching objects from a malicious repository, Git LFS may execute an arbitrary command or binary after incorrectly parsing the Git configuration options defined for a submodule.\n\nGit LFS reads Git configuration options without checking for embedded line-ending control characters.  B",
+      "author": "isomorphic-git",
+      "summary": "Severity: medium. ### Summary\nWhen applying a delta object from a packfile, isomorphic-git reads a **server-controlled** `targetSize` and calls `Buffer.alloc(targetSize)` with no upper bound. A single malicious HTTP response to `git.clone()`/`git.fetch()` can force a ~2 GB allocation → memory exhaustion / DoS (proces",
       "recipe": "gh_advisories",
-      "buzz": 3510,
+      "buzz": 1880,
       "topics": [
         "dev",
-        "crypto",
-        "security"
+        "security",
+        "hardware"
       ],
-      "date": "2026-11-20"
+      "date": "2026-11-23"
     },
     {
       "uid": "cve:GHSA-vp2j-gqfm-r3cf",
@@ -329,7 +347,7 @@
       "author": "wcmatch",
       "summary": "Severity: medium. # Summary\n\nWith default flags, a pattern that contains several `*` wildcards takes polynomial time, O(n^k) for k stars, to reject a crafted file name. The pattern is an ordinary developer constant such as `*_*_*_*_*.csv`; only the string being matched comes from the attacker. A 255-byte file name (t",
       "recipe": "gh_advisories",
-      "buzz": 1830,
+      "buzz": 1810,
       "topics": [
         "ai",
         "dev",
@@ -348,7 +366,7 @@
       "author": "inscriptis",
       "summary": "Severity: medium. # Summary\n\nEvery sibling `<table>` adds another level of the parent's indentation, so the size of `get_text()` output grows quadratically with the number of tables. In the measurements below, a 240 KB HTML document produces about 1 billion characters and uses about 1 GB of memory.\n\n# Details\n\n`table",
       "recipe": "gh_advisories",
-      "buzz": 1830,
+      "buzz": 1810,
       "topics": [
         "ai",
         "security"
@@ -366,7 +384,7 @@
       "author": "contao/core-bundle",
       "summary": "Severity: medium. Commit `23e8cca3136a` hardened the search-result title against insert-tag/XSS by setting `$objTemplate->title = StringUtil::specialchars(StringUtil::stripInsertTags($arrResult[$i]['title']))`. But the legacy HTML5 template does not use that `title` variable - it prints the raw `link` variable, which",
       "recipe": "gh_advisories",
-      "buzz": 1830,
+      "buzz": 1810,
       "topics": [
         "ai",
         "security"
@@ -384,7 +402,7 @@
       "author": "contao/core-bundle",
       "summary": "Severity: medium. Custom backend module \"key\" actions are dispatched in `Backend::getBackendModule()` (Backend.php:322-327) after only the module-level `USER_CAN_ACCESS_MODULE` check - no per-record voter runs.\n\n## Impact\n\nA non-admin editor scoped to certain pages/forms can overwrite the tableitems/listitems/options",
       "recipe": "gh_advisories",
-      "buzz": 1830,
+      "buzz": 1810,
       "topics": [
         "ai",
         "dev",
@@ -403,7 +421,7 @@
       "author": "contao/newsletter-bundle",
       "summary": "Severity: medium. Channel access is enforced only by the DataContainer voters (`NewsletterChannelAccessVoter` / `NewsletterRecipientsAccessVoter`, requiring USER_CAN_EDIT_CHANNEL), whose `supportsType()` fires exclusively for Create/Read/Update/DeleteAction subjects dispatched inside DC_Table's create/edit/delete met",
       "recipe": "gh_advisories",
-      "buzz": 1830,
+      "buzz": 1810,
       "topics": [
         "ai",
         "dev",
@@ -422,7 +440,7 @@
       "author": "sevenz-rust2",
       "summary": "Severity: medium. ### Summary\n\nExtracting an attacker-supplied 7z archive can write files outside the destination directory. The 7z header stores each entry's path as a UTF-16 name with nothing constraining it to a relative, in-tree path. The extractor joins that name onto the destination and writes to the result wit",
       "recipe": "gh_advisories",
-      "buzz": 1830,
+      "buzz": 1810,
       "topics": [
         "ai",
         "dev",
@@ -441,7 +459,7 @@
       "author": "github.com/nats-io/nats-server/v2",
       "summary": "Severity: medium. ### Background\n\nNATS.io is a high performance open source pub-sub distributed communication technology, built for the cloud, on-premise, IoT and edge computing.\n\nThe NATS Server supports leafnode connections between servers and message tracing through NATS headers.\n\n### Problem Description\n\nMessage",
       "recipe": "gh_advisories",
-      "buzz": 1830,
+      "buzz": 1810,
       "topics": [
         "security",
         "hardware"
@@ -525,23 +543,6 @@
       "date": "2026-11-20"
     },
     {
-      "uid": "cve:GHSA-3h6w-xcw3-9xjj",
-      "source": "cve",
-      "title": "CVE-2026-104885: OpenRemote: Cross-realm MQTT session disconnect without authorization",
-      "url": "https://github.com/advisories/GHSA-3h6w-xcw3-9xjj",
-      "ts": 1795186618.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "io.openremote:openremote-manager",
-      "summary": "Severity: medium. ### Summary\n\nCross-realm MQTT session disconnect without authorization\n\n## Vulnerability\n\nThe `disconnectUserSession` endpoint in `UserResourceImpl.java` (line 443) accepts a `realm` path parameter but ignores it entirely, performing no authorization or realm-boundary check before force-disconnectin",
-      "recipe": "gh_advisories",
-      "buzz": 1810,
-      "topics": [
-        "security"
-      ],
-      "date": "2026-11-20"
-    },
-    {
       "uid": "cve:GHSA-72jh-722p-rqr3",
       "source": "cve",
       "title": "CVE-2026-77331: memtomem-stm: Concurrent LTM recovery can duplicate reconnects or reuse a cancelled transport session",
@@ -552,7 +553,7 @@
       "author": "memtomem-stm",
       "summary": "Severity: low. Concurrent surfacing RPC failures can trigger more than one reconnect for the same dirty session, and cancellation during a post-reconnect retry can leave the replacement session reusable despite an interrupted protocol exchange. The private fix introduces monotonic session generations, one shielded",
       "recipe": "gh_advisories",
-      "buzz": 730,
+      "buzz": 710,
       "topics": [
         "ai",
         "science",
@@ -571,7 +572,7 @@
       "author": "memtomem-stm",
       "summary": "Severity: low. Untrusted long-term and working-memory fields can introduce Markdown or HTML-compatible structure into the surfaced-memory envelope. A crafted memory may create misleading structural boundaries or visually conceal content. The private fix serializes every untrusted field as inert single-line data, v",
       "recipe": "gh_advisories",
-      "buzz": 730,
+      "buzz": 710,
       "topics": [
         "ai",
         "dev",

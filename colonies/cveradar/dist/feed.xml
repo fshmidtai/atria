@@ -5,7 +5,31 @@
     <link>https://cveradar-ah3.pages.dev</link>
     <description>Живые CVE и уязвимости на русском: автономный перевод угроз в понятные дайджесты для DevOps и небольшого SecOps</description>
     <language>ru</language>
-    <lastBuildDate>Mon, 23 Nov 2026 21:04:57 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 01:30:57 GMT</lastBuildDate>
+    <item>
+      <title>CVE-2026-63492: AVideo API vulnerable to OS command injection through an unescaped FFmpeg process keyword</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-63492-avideo-api-vulnerable-to-os-command-injection-thr.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-63492-avideo-api-vulnerable-to-os-command-injection-thr.html</guid>
+      <pubDate>Mon, 23 Nov 2026 22:06:28 GMT</pubDate>
+      <description>Severity: high. ### Summary
+
+The helper `listFFmpegProcesses($keyword)` in `plugin/API/standAlone/functions.php` builds a shell pipeline by interpolating `$keyword` inside single quotes and running it with `exec()`:
+
+```php
+$command .= " | grep '$keyword'";
+exec($command, $output, $status);
+```
+
+The</description>
+    </item>
+    <item>
+      <title>CVE-2026-63476: isomorphic-git allows unbounded memory allocation from attacker-controlled delta target size (DoS)</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-63476-isomorphic-git-allows-unbounded-memory-allocation.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-63476-isomorphic-git-allows-unbounded-memory-allocation.html</guid>
+      <pubDate>Mon, 23 Nov 2026 21:07:02 GMT</pubDate>
+      <description>Severity: medium. ### Summary
+When applying a delta object from a packfile, isomorphic-git reads a **server-controlled** `targetSize` and calls `Buffer.alloc(targetSize)` with no upper bound. A single malicious HTTP response to `git.clone()`/`git.fetch()` can force a ~2 GB allocation → memory exhaus</description>
+    </item>
     <item>
       <title>CVE-2026-77423: jline3 leads to ReDoS in Built-in Less Viewer Search</title>
       <link>https://cveradar-ah3.pages.dev/item/cve-2026-77423-jline3-leads-to-redos-in-built-in-less-viewer-sea.html</link>
@@ -233,24 +257,6 @@ Every sibling `&lt;table&gt;` adds another level of the parent's indentation, so
       <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-104884-contao-core-bundle-cross-site-scripting-in-the-f.html</guid>
       <pubDate>Fri, 20 Nov 2026 23:46:56 GMT</pubDate>
       <description>Severity: medium. Commit `23e8cca3136a` hardened the search-result title against insert-tag/XSS by setting `$objTemplate-&gt;title = StringUtil::specialchars(StringUtil::stripInsertTags($arrResult[$i]['title']))`. But the legacy HTML5 template does not use that `title` variable - it prints the raw `lin</description>
-    </item>
-    <item>
-      <title>CVE-2026-104883: contao/core-bundle: Non-admin users can self-grant permissions that implicitly make them administrators</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-104883-contao-core-bundle-non-admin-users-can-self-gran.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-104883-contao-core-bundle-non-admin-users-can-self-gran.html</guid>
-      <pubDate>Fri, 20 Nov 2026 23:45:41 GMT</pubDate>
-      <description>Severity: high. Commit `2b83a60f7763` (5.7.3) hardened the template editor: it added `TemplateEditorModuleVoter` + `CheckTemplateEditorSaveListener` so a non-admin cannot self-grant the `tpl_editor` backend module (editable PHP-capable templates permit server-side code execution). That voter support</description>
-    </item>
-    <item>
-      <title>CVE-2026-104882: contao/core-bundle: Improper access control in the CSV import wizard</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-104882-contao-core-bundle-improper-access-control-in-th.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-104882-contao-core-bundle-improper-access-control-in-th.html</guid>
-      <pubDate>Fri, 20 Nov 2026 23:44:33 GMT</pubDate>
-      <description>Severity: medium. Custom backend module "key" actions are dispatched in `Backend::getBackendModule()` (Backend.php:322-327) after only the module-level `USER_CAN_ACCESS_MODULE` check - no per-record voter runs.
-
-## Impact
-
-A non-admin editor scoped to certain pages/forms can overwrite the tableitems</description>
     </item>
   </channel>
 </rss>
