@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T13:34:04+00:00",
+  "generated_at": "2026-11-24T17:17:13+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -26,13 +26,13 @@
       "krebs": 10
     },
     "by_topic": {
-      "security": 113,
-      "ai": 68,
+      "security": 112,
+      "ai": 67,
       "dev": 60,
-      "hardware": 19,
+      "hardware": 18,
       "biz": 8,
       "crypto": 7,
-      "science": 6
+      "science": 7
     },
     "top_domains": [
       [
@@ -337,6 +337,23 @@
       "date": "2026-11-23"
     },
     {
+      "uid": "hn:50172041",
+      "source": "hn",
+      "title": "Security advisory: Critical remote code execution vulnerabilities, update now",
+      "url": "https://www.php.net/archive/2026.php#2026-10-21-5",
+      "ts": 1792527350.0,
+      "points": 1561,
+      "comments": 659,
+      "author": "xd",
+      "summary": "<a href=\"https:&#x2F;&#x2F;cert.europa.eu&#x2F;publications&#x2F;security-advisories&#x2F;2026-018&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;cert.europa.eu&#x2F;publications&#x2F;security-advisories&#x2F;2026...</a><p><a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=[phone]\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=[phone]</a>",
+      "recipe": "hn_sec",
+      "buzz": 3538,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-10-20"
+    },
+    {
       "uid": "cve:GHSA-mqwm-5m85-gmcv",
       "source": "cve",
       "title": "CVE-2026-22865: Gradle causes failure to disable repositories exposing builds to malicious artifacts",
@@ -347,7 +364,7 @@
       "author": "org.gradle:gradle-core",
       "summary": "Severity: high. ### Impact\n\nWhen resolving dependencies, Gradle searches repositories in declaration order. If it encounters connection errors, Gradle will disable the repository and fail dependency resolution. This is necessary for both reproducibility and security reasons to prevent dependencies from being resolv",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "ai",
         "security"
@@ -365,29 +382,12 @@
       "author": "org.gradle:gradle-core",
       "summary": "Severity: high. ### Impact\n\nWhen resolving dependencies, Gradle searches repositories in declaration order. If it encounters connection errors, Gradle will disable the repository and fail dependency resolution. This is necessary for both reproducibility and security reasons to prevent dependencies from being resolv",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "ai",
         "security"
       ],
       "date": "2026-11-23"
-    },
-    {
-      "uid": "hn:50172041",
-      "source": "hn",
-      "title": "Security advisory: Critical remote code execution vulnerabilities, update now",
-      "url": "https://www.php.net/archive/2026.php#2026-10-21-5",
-      "ts": 1792527350.0,
-      "points": 1561,
-      "comments": 659,
-      "author": "xd",
-      "summary": "<a href=\"https:&#x2F;&#x2F;cert.europa.eu&#x2F;publications&#x2F;security-advisories&#x2F;2026-018&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;cert.europa.eu&#x2F;publications&#x2F;security-advisories&#x2F;2026...</a><p><a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=[phone]\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=[phone]</a>",
-      "recipe": "hn_sec",
-      "buzz": 3538,
-      "topics": [
-        "security"
-      ],
-      "date": "2026-10-20"
     },
     {
       "uid": "cve:GHSA-25qc-m4pw-2w8r",
@@ -1342,12 +1342,12 @@
       "title": "erkamyaman/safe-anything",
       "url": "https://github.com/erkamyaman/safe-anything",
       "ts": 1795365850.0,
-      "points": 580,
-      "comments": 45,
+      "points": 600,
+      "comments": 52,
       "author": "erkamyaman",
       "summary": "Find the holes before someone else does. A fast, 100% Rust vulnerability scanner: XSS, SQL injection, leaked secrets, dependency CVEs and AI agent setups.",
       "recipe": "github_sec",
-      "buzz": 745,
+      "buzz": 786,
       "topics": [
         "ai",
         "dev",
@@ -1450,33 +1450,16 @@
       "title": "vulnix0x4/a-better-antivirus",
       "url": "https://github.com/vulnix0x4/a-better-antivirus",
       "ts": 1794885574.0,
-      "points": 170,
+      "points": 172,
       "comments": 13,
       "author": "vulnix0x4",
       "summary": "Catches infostealers in the act on Windows: plants fake passwords, wallets and app data that only malware would read, and freezes whatever touches them.",
       "recipe": "github_sec",
-      "buzz": 209,
+      "buzz": 211,
       "topics": [
         "security"
       ],
       "date": "2026-11-17"
-    },
-    {
-      "uid": "gh:hostlist-prog/WinQuiet",
-      "source": "github",
-      "title": "hostlist-prog/WinQuiet",
-      "url": "https://github.com/hostlist-prog/WinQuiet",
-      "ts": 1795461557.0,
-      "points": 25,
-      "comments": 17,
-      "author": "hostlist-prog",
-      "summary": "A small, reversible privacy and declutter tool for Windows, with everyday utilities in the system tray.",
-      "recipe": "github_sec",
-      "buzz": 156,
-      "topics": [
-        "security"
-      ],
-      "date": "2026-11-23"
     },
     {
       "uid": "gh:nestho/impacket-rs",
@@ -1547,6 +1530,40 @@
         "science",
         "security"
       ],
+      "date": "2026-11-24"
+    },
+    {
+      "uid": "rss:a8772c3cfced45",
+      "source": "rss",
+      "title": "VMware vCenter Hit by Another Critical 9.8-Rated Auth Bypass Flaw After Zero-Day Exploitation",
+      "url": "https://thehackernews.com/2026/11/vmware-vcenter-hit-by-another-critical.html",
+      "ts": 1795526906.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Broadcom has shipped patches to address 23 vulnerabilities impacting VMware ESX, vCenter, Workstation, Fusion, and Avi Load Balancer, including one critical bug that could be abused to bypass authentication. The critical vulnerability, tracked as CVE-[phone], is rated 9.8 out of 10.0 on the CVSS scoring system. It resides in the VMware Directory Service (\"vmdir\"). \"A malicious actor with",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "dev",
+        "science",
+        "security"
+      ],
+      "date": "2026-11-24"
+    },
+    {
+      "uid": "rss:4c2b395a7adf58",
+      "source": "rss",
+      "title": "Okta Links ShinyHunters-Associated Vishing Group to New INCEPTION Data Leak Site",
+      "url": "https://thehackernews.com/2026/11/okta-links-shinyhunters-associated.html",
+      "ts": 1795526901.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "A threat cluster previously assessed to be affiliated with the ShinyHunters extortion crew may have rebranded and continued operations under a new name called INCEPTION, according to Okta's Threat Intelligence team. The cluster, dubbed O-UNC-053, is characterized by the use of voice phishing (aka vishing) attacks to trick targets into entering credentials in phishing pages and approving",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [],
       "date": "2026-11-24"
     },
     {
@@ -1698,24 +1715,6 @@
       "date": "2026-11-23"
     },
     {
-      "uid": "rss:fa05141b817760",
-      "source": "rss",
-      "title": "⚡ Weekly Recap: VMware 0-Day, Java4Shell, NGINX2Root, Ruby2Shell, and a Whole Lot of Shell Trouble",
-      "url": "https://thehackernews.com/2026/11/weekly-recap-vmware-0-day-java4shell.html",
-      "ts": 1795446648.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "A stolen key. A trusted message. A routine update. None of these looks like the start of a major security problem. That's partly why they work. Attackers don't always need to break down a door. Sometimes they just use one that's already open. This week's stories show how quickly a small opening can turn into a much bigger mess. One breach helps attackers reach another target. Tools people rely",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-23"
-    },
-    {
       "uid": "gh:balikunsh-bot/keepassxc-talroora",
       "source": "github",
       "title": "balikunsh-bot/keepassxc-talroora",
@@ -1731,6 +1730,24 @@
         "dev"
       ],
       "date": "2026-11-18"
+    },
+    {
+      "uid": "gh:CybeDefend/cybedefend",
+      "source": "github",
+      "title": "CybeDefend/cybedefend",
+      "url": "https://github.com/CybeDefend/cybedefend",
+      "ts": 1795448166.0,
+      "points": 26,
+      "comments": 4,
+      "author": "CybeDefend",
+      "summary": "Agentic ASPM, the open source Snyk alternative. A full security audit in one command",
+      "recipe": "github_sec",
+      "buzz": 68,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-23"
     },
     {
       "uid": "gh:hertzurchincutters/VaultAuth-Desktop2FATOTP",
@@ -1800,12 +1817,12 @@
       "title": "spatie/laravel-suspicious-login",
       "url": "https://github.com/spatie/laravel-suspicious-login",
       "ts": 1794917088.0,
-      "points": 47,
+      "points": 49,
       "comments": 1,
       "author": "spatie",
       "summary": "Detect suspicious logins in your Laravel app",
       "recipe": "github_sec",
-      "buzz": 50,
+      "buzz": 52,
       "topics": [],
       "date": "2026-11-17"
     },
@@ -1855,6 +1872,24 @@
       "buzz": 30,
       "topics": [
         "ai"
+      ],
+      "date": "2026-11-23"
+    },
+    {
+      "uid": "rss:fa05141b817760",
+      "source": "rss",
+      "title": "⚡ Weekly Recap: VMware 0-Day, Java4Shell, NGINX2Root, Ruby2Shell, and a Whole Lot of Shell Trouble",
+      "url": "https://thehackernews.com/2026/11/weekly-recap-vmware-0-day-java4shell.html",
+      "ts": 1795446648.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "A stolen key. A trusted message. A routine update. None of these looks like the start of a major security problem. That's partly why they work. Attackers don't always need to break down a door. Sometimes they just use one that's already open. This week's stories show how quickly a small opening can turn into a much bigger mess. One breach helps attackers reach another target. Tools people rely",
+      "recipe": "hackersnews",
+      "buzz": 30,
+      "topics": [
+        "dev",
+        "security"
       ],
       "date": "2026-11-23"
     },
@@ -2319,44 +2354,6 @@
       "recipe": "hackersnews",
       "buzz": 10,
       "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-20"
-    },
-    {
-      "uid": "rss:c179de6fc560a3",
-      "source": "rss",
-      "title": "China-Linked Hackers Exploit Critical VMware vCenter Zero-Day to Gain Admin Access and Steal Data",
-      "url": "https://thehackernews.com/2026/11/china-linked-hackers-exploit-critical.html",
-      "ts": 1795167495.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "The suspected China-nexus cyber espionage group known as Armory Castle (formerly UNC5221) has been attributed to the zero-day exploitation of a critical security flaw in VMware vCenter Server in early September 2026. The vulnerability, tracked as CVE-[phone] (CVSS score: 9.8), is a case of authentication bypass in the VMware Directory Service that could be exploited to gain unauthorized",
-      "recipe": "hackersnews",
-      "buzz": 10,
-      "topics": [
-        "ai",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-20"
-    },
-    {
-      "uid": "rss:a2af5d67b2b2a2",
-      "source": "rss",
-      "title": "ROMULUS ClickFix Attacks Deliver RAT That Can Spy on Users and Control PCs",
-      "url": "https://thehackernews.com/2026/11/romulus-clickfix-attacks-deliver-rat.html",
-      "ts": 1795158699.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Threat actors have been observed using the ROMULUS ClickFix malware delivery platform to deliver a previously undocumented remote access trojan (RAT) that shares similarities with CNCMachineRMS. \"ROMULUS likely operates as a delivery service, distributing CNCMachineRMS and Legion Loader through separate chains while retaining ClickFix and signed binary sideloading techniques,\" Blackpoint",
-      "recipe": "hackersnews",
-      "buzz": 10,
-      "topics": [
-        "ai",
         "dev",
         "security"
       ],
