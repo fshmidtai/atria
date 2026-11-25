@@ -2,17 +2,19 @@ uid,source,title,url,buzz,points,comments,author,date,topics
 hn:37392676,hn,Ask HN: I’m an FCC Commissioner proposing regulation of IoT security updates,https://news.ycombinator.com/item?id=37392676,6162,3387,925,SimingtonFCC,2023-09-05,dev|security
 hn:43462783,hn,U.S. national-security leaders included me in a group chat,https://www.theatlantic.com/politics/archive/2025/03/trump-administration-accidentally-texted-me-its-war-plans/682151/,6156,2283,1291,_tk_,2025-03-24,security
 cve:GHSA-crj3-q72p-ggqm,cve,CVE-2026-64670: @waline/client vulnerable to stored XSS through unsanitized comment edit previews,https://github.com/advisories/GHSA-crj3-q72p-ggqm,6080,6000,0,@waline/client,2026-11-25,ai|dev|security
-cve:GHSA-c4hm-4h84-2cf3,cve,CVE-2026-59726: ruflo MCP bridge allows unauthenticated remote code execution in default Docker Compose deployments,https://github.com/advisories/GHSA-c4hm-4h84-2cf3,6080,6000,0,ruflo,2026-11-24,ai|dev|security
+cve:GHSA-c4hm-4h84-2cf3,cve,CVE-2026-59726: ruflo MCP bridge allows unauthenticated remote code execution in default Docker Compose deployments,https://github.com/advisories/GHSA-c4hm-4h84-2cf3,6030,6000,0,ruflo,2026-11-24,ai|dev|security
 cve:GHSA-2r3w-c2vx-fv5g,cve,CVE-2026-133469: Xen Orchestra: Empty-object login token,https://github.com/advisories/GHSA-2r3w-c2vx-fv5g,6030,6000,0,xo-server,2026-11-23,dev|crypto|security
 hn:48997548,hn,OpenAI and Hugging Face address security incident during model evaluation,https://openai.com/index/hugging-face-model-evaluation-security-incident/,5103,1632,1157,mfiguiere,2026-07-21,ai|dev|biz|security
 hn:43128253,hn,Apple pulls data protection tool after UK government security row,https://www.bbc.com/news/articles/cgj54eq4vejo,4974,1770,1068,helsinkiandrew,2025-02-21,security
 hn:39452494,hn,"Insecure vehicles should be banned, not security tools like the Flipper Zero",https://saveflipper.ca/,4130,1496,878,pabs3,2024-02-21,security
 hn:30051054,hn,Ask HN: Gmail account security,https://news.ycombinator.com/item?id=30051054,3830,1508,774,caseyf7,2022-01-23,ai|dev|security
 hn:25729088,hn,"70TB of Parler users’ messages, videos, and posts leaked by security researchers",https://cybernews.com/news/70tb-of-parler-users-messages-videos-and-posts-leaked-by-security-researchers/,3745,892,951,joiguru,2021-01-11,dev|security
+cve:GHSA-vw2v-g4x7-xcqg,cve,CVE-2026-68539: fulgur allows Unbounded string-set value accumulation causes memory/CPU exhaustion (denial of service),https://github.com/advisories/GHSA-vw2v-g4x7-xcqg,3580,3500,0,fulgur,2026-11-25,ai|dev|security|hardware
+cve:GHSA-7fgc-3h6c-698r,cve,CVE-2026-65971: livewire-powergrid: SQL injection via sortDirection in naturalSort queries,https://github.com/advisories/GHSA-7fgc-3h6c-698r,3580,3500,0,power-components/livewire-powergrid,2026-11-25,security
 cve:GHSA-859w-52fx-hcm6,cve,CVE-2026-64855: soapbar: verify_envelope_bsp accepts an unauthenticated embedded certificate (signature forgery / authentication bypass),https://github.com/advisories/GHSA-859w-52fx-hcm6,3580,3500,0,soapbar,2026-11-24,ai|dev|crypto|security
-cve:GHSA-jp3c-6v3g-mpxv,cve,GHSA-jp3c-6v3g-mpxv: github.com/insomniacslk/dhcp permits denial of service through a malformed IPv4 payload length,https://github.com/advisories/GHSA-jp3c-6v3g-mpxv,3580,3500,0,github.com/insomniacslk/dhcp,2026-11-24,dev
-cve:GHSA-g9x9-q7qj-6mv5,cve,CVE-2026-63305: AVideo API FFmpeg process permits OS command injection via notifyCode/callback,https://github.com/advisories/GHSA-g9x9-q7qj-6mv5,3580,3500,0,wwbn/avideo,2026-11-24,dev|security
 hn:50172041,hn,"Security advisory: Critical remote code execution vulnerabilities, update now",https://www.php.net/archive/2026.php#2026-10-21-5,3538,1561,659,xd,2026-10-20,security
+cve:GHSA-jp3c-6v3g-mpxv,cve,GHSA-jp3c-6v3g-mpxv: github.com/insomniacslk/dhcp permits denial of service through a malformed IPv4 payload length,https://github.com/advisories/GHSA-jp3c-6v3g-mpxv,3530,3500,0,github.com/insomniacslk/dhcp,2026-11-24,dev
+cve:GHSA-g9x9-q7qj-6mv5,cve,CVE-2026-63305: AVideo API FFmpeg process permits OS command injection via notifyCode/callback,https://github.com/advisories/GHSA-g9x9-q7qj-6mv5,3530,3500,0,wwbn/avideo,2026-11-24,dev|security
 cve:GHSA-j44m-77cc-p3cc,cve,CVE-2026-63304: AVideo API vulnerable to OS command injection through an unescaped FFmpeg process keyword,https://github.com/advisories/GHSA-j44m-77cc-p3cc,3530,3500,0,wwbn/avideo,2026-11-23,dev|security
 cve:GHSA-2v9w-34q6-wpqx,cve,CVE-2026-77423: jline3 leads to ReDoS in Built-in Less Viewer Search,https://github.com/advisories/GHSA-2v9w-34q6-wpqx,3530,3500,0,org.jline:jline-builtins,2026-11-23,security|hardware
 cve:GHSA-f9h7-4mmq-vgcq,cve,"CVE-2026-58262: Klever Go counts bitmap padding bits toward BLS quorum, allowing blocks with insufficient signatures",https://github.com/advisories/GHSA-f9h7-4mmq-vgcq,3530,3500,0,github.com/klever-io/klever-go,2026-11-23,security
@@ -22,7 +24,6 @@ cve:GHSA-25qc-m4pw-2w8r,cve,CVE-2026-122247: Budibase: Unauthenticated global-ad
 cve:GHSA-r2q3-7m4h-63qg,cve,CVE-2026-122244: Budibase: Cross-privilege Stored XSS in the Budibase Builder via broken HTML-escaping in `jsonFormatter.format()` rendered through `{@html}` in the CSP-less Builder origin,https://github.com/advisories/GHSA-r2q3-7m4h-63qg,3510,3500,0,@budibase/server,2026-11-20,ai|dev|security
 cve:GHSA-555j-qj3j-c8jv,cve,CVE-2026-132275: svglib: Exponential resource consumption via nested <use> references in svg2rlg,https://github.com/advisories/GHSA-555j-qj3j-c8jv,3510,3500,0,svglib,2026-11-20,ai|security
 cve:GHSA-r9qp-pqx5-8369,cve,CVE-2026-104883: contao/core-bundle: Non-admin users can self-grant permissions that implicitly make them administrators,https://github.com/advisories/GHSA-r9qp-pqx5-8369,3510,3500,0,contao/core-bundle,2026-11-20,dev|security|hardware
-cve:GHSA-jrjx-9jjw-747m,cve,CVE-2026-77309: AIT-GUI route chain allows unauthenticated Python execution in server process,https://github.com/advisories/GHSA-jrjx-9jjw-747m,3510,3500,0,ait-gui,2026-11-20,ai|dev|security|hardware
 hn:32148218,hn,FCC: TikTok is unacceptable security risk and should be removed from app stores,https://blog.malwarebytes.com/privacy-2/2022/07/tiktok-is-unacceptable-security-risk-and-should-be-removed-from-app-stores-says-fcc/,3376,835,847,scanr,2022-07-19,security
 hn:41392128,hn,Bypassing airport security via SQL injection,https://ian.sh/tsa,3324,2004,440,iancarroll,2024-08-29,ai|security
 hn:41792500,hn,Internet Archive: Security breach alert,https://www.theverge.com/2024/10/9/24266419/internet-archive-ddos-attack-pop-up-message,2912,1091,607,ewenjo,2024-10-09,security
@@ -40,13 +41,14 @@ hn:23180975,hn,Security Flaws in Adobe Acrobat Reader Allow Gaining Root on macO
 hn:50182987,hn,"Today's PHP security release, and how we're strengthening security",https://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security/,2034,816,406,ejohnso49,2026-10-21,security
 hn:17592422,hn,Google: Security Keys Neutralized Employee Phishing,https://krebsonsecurity.com/2018/07/google-security-keys-neutered-employee-phishing/,2002,775,409,sohkamyung,2018-07-23,security
 hn:24636166,hn,Apple’s T2 security chip jailbreak,https://reportcybercrime.com/hackers-jailbreak-apples-t2-security-chip-powered-by-bridgeos/,1881,741,380,Yeri,2020-09-30,ai|security|hardware
+cve:GHSA-h746-qpxh-ph7g,cve,CVE-2026-65973: laradocs  Command injection via unescaped Node.js binary path in KaTeX SSR,https://github.com/advisories/GHSA-h746-qpxh-ph7g,1880,1800,0,petebishwhip/laradocs,2026-11-25,dev|science|security|hardware
 cve:GHSA-hq9r-72jq-2pxp,cve,CVE-2026-59191: TwigView FileLoader may allow arbitrary file reads through user-controlled template paths,https://github.com/advisories/GHSA-hq9r-72jq-2pxp,1880,1800,0,cakephp/twig-view,2026-11-24,ai|security
 cve:GHSA-8cg3-r6g9-fpg2,cve,CVE-2026-59831: GitHub CLI gh codespace jupyter may allow code execution via unvalidated URLs from malicious Codespaces,https://github.com/advisories/GHSA-8cg3-r6g9-fpg2,1880,1800,0,github.com/cli/cli/v2,2026-11-24,dev|science|security
-cve:GHSA-3wh4-j44w-pg92,cve,CVE-2026-59818: etcd: CRL enforcement bypass on gRPC listener when `--listen-client-http-urls` is configured,https://github.com/advisories/GHSA-3wh4-j44w-pg92,1880,1800,0,go.etcd.io/etcd/v3,2026-11-24,security
-cve:GHSA-48qj-5wxh-m8hc,cve,CVE-2026-59192: Cakephp twig-view unserialize Twig filter allows arbitrary object deserialization,https://github.com/advisories/GHSA-48qj-5wxh-m8hc,1880,1800,0,cakephp/twig-view,2026-11-24,ai|security
 hn:48166459,hn,Mozilla to UK regulators: VPNs are essential privacy and security tools,https://blog.mozilla.org/netpolicy/2026/05/15/mozilla-to-uk-regulators-vpns-are-essential-privacy-and-security-tools-and-should-not-be-undermined/,1876,808,356,WithinReason,2026-05-17,security
 hn:6944118,hn,Secret contract tied NSA and security industry pioneer,http://www.reuters.com/article/2013/12/20/us-usa-security-rsa-idUSBRE9BJ1C220131220,1859,899,320,bbatsell,2013-12-20,security
 hn:13182120,hn,Yahoo installed a backdoor for the NSA behind the back of the security team,https://diracdeltas.github.io/blog/surveillance/,1849,1009,280,xenophonf,2016-12-15,security
+cve:GHSA-3wh4-j44w-pg92,cve,CVE-2026-59818: etcd: CRL enforcement bypass on gRPC listener when `--listen-client-http-urls` is configured,https://github.com/advisories/GHSA-3wh4-j44w-pg92,1830,1800,0,go.etcd.io/etcd/v3,2026-11-24,security
+cve:GHSA-48qj-5wxh-m8hc,cve,CVE-2026-59192: Cakephp twig-view unserialize Twig filter allows arbitrary object deserialization,https://github.com/advisories/GHSA-48qj-5wxh-m8hc,1830,1800,0,cakephp/twig-view,2026-11-24,ai|security
 cve:GHSA-9x82-4j54-863h,cve,CVE-2026-63476: isomorphic-git allows unbounded memory allocation from attacker-controlled delta target size (DoS),https://github.com/advisories/GHSA-9x82-4j54-863h,1830,1800,0,isomorphic-git,2026-11-23,dev|security|hardware
 cve:GHSA-vp2j-gqfm-r3cf,cve,CVE-2026-63410: secp256k1-native has a compiler-induced timing side channel in scalar multiplication,https://github.com/advisories/GHSA-vp2j-gqfm-r3cf,1830,1800,0,secp256k1-native,2026-11-23,dev|security
 cve:GHSA-6jcc-5g8w-32mx,cve,"CVE-2026-63402: i18next deepExtend recurses into inherited built-ins, allowing corruption of shared built-in objects (DoS)",https://github.com/advisories/GHSA-6jcc-5g8w-32mx,1830,1800,0,i18next,2026-11-23,ai|dev|security
@@ -56,6 +58,7 @@ cve:GHSA-h57j-5f5m-789v,cve,CVE-2026-104884: contao/core-bundle: Cross-site scri
 cve:GHSA-23w9-4pg3-xwm3,cve,CVE-2026-104882: contao/core-bundle: Improper access control in the CSV import wizard,https://github.com/advisories/GHSA-23w9-4pg3-xwm3,1810,1800,0,contao/core-bundle,2026-11-20,ai|dev|security
 cve:GHSA-3r9g-pfhv-3228,cve,CVE-2026-104881: contao/newsletter-bundle: Contao newsletter custom actions bypass channel-scoped authorization,https://github.com/advisories/GHSA-3r9g-pfhv-3228,1810,1800,0,contao/newsletter-bundle,2026-11-20,ai|dev|security
 hn:25843874,hn,Kids find a security flaw in Linux Mint by mashing keys,https://github.com/linuxmint/cinnamon-screensaver/issues/354,1765,778,329,subins2000,2021-01-20,security
+hn:50644817,hn,1Password Security Incident,https://1password.com/blog/update-on-nov-2026-security-incident,1764,751,311,lxhrstn,2026-11-25,dev|security
 hn:11422531,hn,Freedom and security issues on x86 platforms,http://mail.fsfeurope.org/pipermail/discussion/2016-April/010912.html,1535,713,274,stargrave,2016-04-04,security
 hn:12071098,hn,Pokemon Go is a huge security risk,http://adamreeve.tumblr.com/post/147120922009/pokemon-go-is-a-huge-security-risk,1533,780,251,patchoulol,2016-07-11,security
 hn:21322517,hn,Equifax securities fraud class action [pdf],http://securities.stanford.edu/filings-documents/1063/EI00_15/2019128_r01x_17CV03463.pdf,1414,757,219,bookofjoe,2019-10-22,
@@ -66,15 +69,12 @@ hn:26455493,hn,Security.txt,https://securitytxt.org/,1241,746,165,tosh,2021-03-1
 hn:21766137,hn,ACLU sues Homeland Security over 'stingray' cell phone surveillance,https://techcrunch.com/2019/12/11/aclu-cbp-ice-stingray-surveillance/,1189,730,153,mindgam3,2019-12-11,security
 hn:639976,hn,How I Hacked Hacker News (with arc security advisory),https://news.ycombinator.com/item?id=639976,1162,928,78,dfranke,2009-06-03,ai|dev|security|hardware
 hn:12140477,hn,A practical security guide for web developers,https://github.com/FallibleInc/security-guide-for-developers,1098,894,68,zianwar,2016-07-21,dev|security
-hn:20468845,hn,HTTP Security Headers – A Complete Guide,https://nullsweep.com/http-security-headers-a-complete-guide/,943,709,78,BCharlie,2019-07-18,dev|security
-gh:erkamyaman/safe-anything,github,erkamyaman/safe-anything,https://github.com/erkamyaman/safe-anything,893,685,66,erkamyaman,2026-11-22,ai|dev|security
-cve:GHSA-72jh-722p-rqr3,cve,CVE-2026-77331: memtomem-stm: Concurrent LTM recovery can duplicate reconnects or reuse a cancelled transport session,https://github.com/advisories/GHSA-72jh-722p-rqr3,710,700,0,memtomem-stm,2026-11-20,ai|science|security
-cve:GHSA-43hx-xm7w-3mhj,cve,CVE-2026-77332: memtomem-stm: Surfaced memory data can escape the Markdown compatibility boundary,https://github.com/advisories/GHSA-43hx-xm7w-3mhj,710,700,0,memtomem-stm,2026-11-20,ai|dev|security
+gh:erkamyaman/safe-anything,github,erkamyaman/safe-anything,https://github.com/erkamyaman/safe-anything,916,696,70,erkamyaman,2026-11-22,ai|dev|security
 gh:Aabyss-Team/Threat-Broadcast-Plus,github,Aabyss-Team/Threat-Broadcast-Plus,https://github.com/Aabyss-Team/Threat-Broadcast-Plus,260,155,35,Aabyss-Team,2026-11-16,
 gh:vulnix0x4/a-better-antivirus,github,vulnix0x4/a-better-antivirus,https://github.com/vulnix0x4/a-better-antivirus,213,174,13,vulnix0x4,2026-11-17,security
-gh:RobustaStudio/semsec,github,RobustaStudio/semsec,https://github.com/RobustaStudio/semsec,180,73,9,RobustaStudio,2026-11-25,ai|dev|security
+gh:RobustaStudio/semsec,github,RobustaStudio/semsec,https://github.com/RobustaStudio/semsec,197,87,10,RobustaStudio,2026-11-25,ai|dev|security
 gh:HavocSaif/avast-premium-security-kacerin,github,HavocSaif/avast-premium-security-kacerin,https://github.com/HavocSaif/avast-premium-security-kacerin,118,88,0,HavocSaif,2026-11-24,ai|security
-gh:CybeDefend/cybedefend,github,CybeDefend/cybedefend,https://github.com/CybeDefend/cybedefend,98,50,6,CybeDefend,2026-11-23,ai|security
+gh:CybeDefend/cybedefend,github,CybeDefend/cybedefend,https://github.com/CybeDefend/cybedefend,105,57,6,CybeDefend,2026-11-23,ai|security
 gh:zhidun2027/zhidun,github,zhidun2027/zhidun,https://github.com/zhidun2027/zhidun,89,74,5,zhidun2027,2026-11-12,security
 gh:LoopGrubDolmen/wallet-security-desk,github,LoopGrubDolmen/wallet-security-desk,https://github.com/LoopGrubDolmen/wallet-security-desk,87,87,0,LoopGrubDolmen,2026-11-15,ai|security
 rss:d4ba949bbfe1b1,rss,Tracking Incidents of Hacking Using AI Tools,https://www.schneier.com/blog/archives/2026/11/tracking-incidents-of-hacking-using-ai-tools.html,80,0,0,Bruce Schneier,2026-11-25,ai|dev
@@ -88,12 +88,13 @@ rss:cb8d1c0913cff9,rss,Hackers Compromise 24 Check Point Management Servers in S
 rss:00a1bb4a053530,rss,Com-Affiliated Hackers Hijack Cloud Accounts via Vishing for Data Theft and Extortion,https://thehackernews.com/2026/11/com-affiliated-hackers-hijack-cloud.html,80,0,0,info@thehackernews.com (The Hacker News),2026-11-25,
 rss:40bb701a9f7ce0,rss,WordPress Blocks Six Backdoored WP Connect Plugins Before Malicious Releases Go Live,https://thehackernews.com/2026/11/wordpress-blocks-six-backdoored-wp.html,80,0,0,info@thehackernews.com (The Hacker News),2026-11-25,dev
 gh:dinosn/CVE-2026-123890,github,dinosn/CVE-2026-123890,https://github.com/dinosn/CVE-2026-123890,70,25,5,dinosn,2026-11-23,ai|security
+gh:spatie/laravel-suspicious-login,github,spatie/laravel-suspicious-login,https://github.com/spatie/laravel-suspicious-login,63,60,1,spatie,2026-11-17,
 gh:hertzurchincutters/VaultAuth-Desktop2FATOTP,github,hertzurchincutters/VaultAuth-Desktop2FATOTP,https://github.com/hertzurchincutters/VaultAuth-Desktop2FATOTP,63,33,0,hertzurchincutters,2026-11-23,
 gh:Microshareanimate/ExifScrub-PhotoMetadataCleaner,github,Microshareanimate/ExifScrub-PhotoMetadataCleaner,https://github.com/Microshareanimate/ExifScrub-PhotoMetadataCleaner,63,33,0,Microshareanimate,2026-11-23,
-gh:spatie/laravel-suspicious-login,github,spatie/laravel-suspicious-login,https://github.com/spatie/laravel-suspicious-login,62,59,1,spatie,2026-11-17,
-gh:prepaid-host/hvpatch,github,prepaid-host/hvpatch,https://github.com/prepaid-host/hvpatch,61,31,0,prepaid-host,2026-11-23,ai|security
-gh:balikunsh-bot/keepassxc-talroora,github,balikunsh-bot/keepassxc-talroora,https://github.com/balikunsh-bot/keepassxc-talroora,58,48,0,balikunsh-bot,2026-11-18,dev
+gh:prepaid-host/hvpatch,github,prepaid-host/hvpatch,https://github.com/prepaid-host/hvpatch,62,32,0,prepaid-host,2026-11-23,ai|security
+gh:Black-Ghost-Corp/Gaia-harden,github,Black-Ghost-Corp/Gaia-harden,https://github.com/Black-Ghost-Corp/Gaia-harden,59,23,2,Black-Ghost-Corp,2026-11-24,ai|dev|security|hardware
 gh:NPCmillionaire/unredact.tools,github,NPCmillionaire/unredact.tools,https://github.com/NPCmillionaire/unredact.tools,55,49,2,NPCmillionaire,2026-11-12,ai
+gh:balikunsh-bot/keepassxc-talroora,github,balikunsh-bot/keepassxc-talroora,https://github.com/balikunsh-bot/keepassxc-talroora,48,48,0,balikunsh-bot,2026-11-18,dev
 gh:xiaotianya14/apk-reverse-skill,github,xiaotianya14/apk-reverse-skill,https://github.com/xiaotianya14/apk-reverse-skill,48,21,9,xiaotianya14,2026-11-14,ai
 gh:rammahmagdy/Latch,github,rammahmagdy/Latch,https://github.com/rammahmagdy/Latch,43,34,3,rammahmagdy,2026-11-18,
 gh:khanh0209q/NextDNS-Config-Set-And-Forget,github,khanh0209q/NextDNS-Config-Set-And-Forget,https://github.com/khanh0209q/NextDNS-Config-Set-And-Forget,39,36,1,khanh0209q,2026-11-14,

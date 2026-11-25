@@ -2,6 +2,8 @@ cve_id,severity,package,title,url,date
 CVE-2026-64670,critical,@waline/client,CVE-2026-64670: @waline/client vulnerable to stored XSS through unsanitized comment edit previews,https://github.com/advisories/GHSA-crj3-q72p-ggqm,2026-11-25
 CVE-2026-59726,critical,ruflo,CVE-2026-59726: ruflo MCP bridge allows unauthenticated remote code execution in default Docker Compose deployments,https://github.com/advisories/GHSA-c4hm-4h84-2cf3,2026-11-24
 CVE-2026-133469,critical,xo-server,CVE-2026-133469: Xen Orchestra: Empty-object login token,https://github.com/advisories/GHSA-2r3w-c2vx-fv5g,2026-11-23
+CVE-2026-68539,high,fulgur,CVE-2026-68539: fulgur allows Unbounded string-set value accumulation causes memory/CPU exhaustion (denial of service),https://github.com/advisories/GHSA-vw2v-g4x7-xcqg,2026-11-25
+CVE-2026-65971,high,power-components/livewire-powergrid,CVE-2026-65971: livewire-powergrid: SQL injection via sortDirection in naturalSort queries,https://github.com/advisories/GHSA-7fgc-3h6c-698r,2026-11-25
 CVE-2026-64855,high,soapbar,CVE-2026-64855: soapbar: verify_envelope_bsp accepts an unauthenticated embedded certificate (signature forgery / authentication bypass),https://github.com/advisories/GHSA-859w-52fx-hcm6,2026-11-24
 GHSA-jp3c-6v3g-mpxv,high,github.com/insomniacslk/dhcp,GHSA-jp3c-6v3g-mpxv: github.com/insomniacslk/dhcp permits denial of service through a malformed IPv4 payload length,https://github.com/advisories/GHSA-jp3c-6v3g-mpxv,2026-11-24
 CVE-2026-63305,high,wwbn/avideo,CVE-2026-63305: AVideo API FFmpeg process permits OS command injection via notifyCode/callback,https://github.com/advisories/GHSA-g9x9-q7qj-6mv5,2026-11-24
@@ -14,7 +16,7 @@ CVE-2026-122247,high,@budibase/server,CVE-2026-122247: Budibase: Unauthenticated
 CVE-2026-122244,high,@budibase/server,CVE-2026-122244: Budibase: Cross-privilege Stored XSS in the Budibase Builder via broken HTML-escaping in `jsonFormatter.format()` rendered through `{@html}` in the CSP-less Builder origin,https://github.com/advisories/GHSA-r2q3-7m4h-63qg,2026-11-20
 CVE-2026-132275,high,svglib,CVE-2026-132275: svglib: Exponential resource consumption via nested <use> references in svg2rlg,https://github.com/advisories/GHSA-555j-qj3j-c8jv,2026-11-20
 CVE-2026-104883,high,contao/core-bundle,CVE-2026-104883: contao/core-bundle: Non-admin users can self-grant permissions that implicitly make them administrators,https://github.com/advisories/GHSA-r9qp-pqx5-8369,2026-11-20
-CVE-2026-77309,high,ait-gui,CVE-2026-77309: AIT-GUI route chain allows unauthenticated Python execution in server process,https://github.com/advisories/GHSA-jrjx-9jjw-747m,2026-11-20
+CVE-2026-65973,medium,petebishwhip/laradocs,CVE-2026-65973: laradocs  Command injection via unescaped Node.js binary path in KaTeX SSR,https://github.com/advisories/GHSA-h746-qpxh-ph7g,2026-11-25
 CVE-2026-59191,medium,cakephp/twig-view,CVE-2026-59191: TwigView FileLoader may allow arbitrary file reads through user-controlled template paths,https://github.com/advisories/GHSA-hq9r-72jq-2pxp,2026-11-24
 CVE-2026-59831,medium,github.com/cli/cli/v2,CVE-2026-59831: GitHub CLI gh codespace jupyter may allow code execution via unvalidated URLs from malicious Codespaces,https://github.com/advisories/GHSA-8cg3-r6g9-fpg2,2026-11-24
 CVE-2026-59818,medium,go.etcd.io/etcd/v3,CVE-2026-59818: etcd: CRL enforcement bypass on gRPC listener when `--listen-client-http-urls` is configured,https://github.com/advisories/GHSA-3wh4-j44w-pg92,2026-11-24
@@ -27,5 +29,3 @@ CVE-2026-132277,medium,inscriptis,CVE-2026-132277: Inscriptis: Quadratic memory 
 CVE-2026-104884,medium,contao/core-bundle,CVE-2026-104884: contao/core-bundle: Cross-site scripting in the frontend search results,https://github.com/advisories/GHSA-h57j-5f5m-789v,2026-11-20
 CVE-2026-104882,medium,contao/core-bundle,CVE-2026-104882: contao/core-bundle: Improper access control in the CSV import wizard,https://github.com/advisories/GHSA-23w9-4pg3-xwm3,2026-11-20
 CVE-2026-104881,medium,contao/newsletter-bundle,CVE-2026-104881: contao/newsletter-bundle: Contao newsletter custom actions bypass channel-scoped authorization,https://github.com/advisories/GHSA-3r9g-pfhv-3228,2026-11-20
-CVE-2026-77331,low,memtomem-stm,CVE-2026-77331: memtomem-stm: Concurrent LTM recovery can duplicate reconnects or reuse a cancelled transport session,https://github.com/advisories/GHSA-72jh-722p-rqr3,2026-11-20
-CVE-2026-77332,low,memtomem-stm,CVE-2026-77332: memtomem-stm: Surfaced memory data can escape the Markdown compatibility boundary,https://github.com/advisories/GHSA-43hx-xm7w-3mhj,2026-11-20

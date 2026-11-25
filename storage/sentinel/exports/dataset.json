@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-25T17:18:25+00:00",
+  "generated_at": "2026-11-25T21:14:05+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -10,26 +10,26 @@
     "rss"
   ],
   "totals": {
-    "items": 139,
+    "items": 140,
     "by_source": {
       "hn": 40,
       "cve": 30,
-      "github": 19,
+      "github": 20,
       "rss": 50
     },
     "by_recipe": {
       "hn_sec": 40,
       "gh_advisories": 30,
       "hackersnews": 30,
-      "github_sec": 19,
+      "github_sec": 20,
       "schneier": 10,
       "krebs": 10
     },
     "by_topic": {
-      "security": 110,
-      "ai": 70,
-      "dev": 60,
-      "hardware": 15,
+      "security": 111,
+      "ai": 69,
+      "dev": 61,
+      "hardware": 17,
       "crypto": 7,
       "biz": 7,
       "science": 7
@@ -37,7 +37,7 @@
     "top_domains": [
       [
         "github.com",
-        51
+        52
       ],
       [
         "thehackernews.com",
@@ -203,7 +203,7 @@
       "author": "ruflo",
       "summary": "Severity: critical. The MCP bridge shipping in ruflo/docker-compose.yml exposed POST /mcp with no authentication. The docker-compose defaults bound the bridge and MongoDB to all interfaces. Combined, an unauthenticated network attacker could invoke tools/call → terminal_execute inside the bridge container, obtain a she",
       "recipe": "gh_advisories",
-      "buzz": 6080,
+      "buzz": 6030,
       "topics": [
         "ai",
         "dev",
@@ -322,6 +322,43 @@
       "date": "2021-01-11"
     },
     {
+      "uid": "cve:GHSA-vw2v-g4x7-xcqg",
+      "source": "cve",
+      "title": "CVE-2026-68539: fulgur allows Unbounded string-set value accumulation causes memory/CPU exhaustion (denial of service)",
+      "url": "https://github.com/advisories/GHSA-vw2v-g4x7-xcqg",
+      "ts": 1795636005.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "fulgur",
+      "summary": "Severity: high. `fulgur` converts untrusted HTML/CSS into PDF, commonly on a server that\nprocesses input supplied by many tenants. In versions from 0.4.4 up to (but not\nincluding) the patched release, the CSS `string-set` named-string values\nresolved from a document were accumulated per element with no memory budge",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "ai",
+        "dev",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-25"
+    },
+    {
+      "uid": "cve:GHSA-7fgc-3h6c-698r",
+      "source": "cve",
+      "title": "CVE-2026-65971: livewire-powergrid: SQL injection via sortDirection in naturalSort queries",
+      "url": "https://github.com/advisories/GHSA-7fgc-3h6c-698r",
+      "ts": 1795635897.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "power-components/livewire-powergrid",
+      "summary": "Severity: high. ## [Description]\n\nThe public Livewire property `sortDirection` is interpolated **verbatim** into a\nraw SQL `ORDER BY` clause and is not restricted to `asc`/`desc`, allowing arbitrary\nSQL injection through `POST /livewire/update`.\n\n**Data flow**\n\n- **Source** — `src/Concerns/Sorting.php`: `public str",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-11-25"
+    },
+    {
       "uid": "cve:GHSA-859w-52fx-hcm6",
       "source": "cve",
       "title": "CVE-2026-64855: soapbar: verify_envelope_bsp accepts an unauthenticated embedded certificate (signature forgery / authentication bypass)",
@@ -342,6 +379,23 @@
       "date": "2026-11-24"
     },
     {
+      "uid": "hn:50172041",
+      "source": "hn",
+      "title": "Security advisory: Critical remote code execution vulnerabilities, update now",
+      "url": "https://www.php.net/archive/2026.php#2026-10-21-5",
+      "ts": 1792527350.0,
+      "points": 1561,
+      "comments": 659,
+      "author": "xd",
+      "summary": "<a href=\"https:&#x2F;&#x2F;cert.europa.eu&#x2F;publications&#x2F;security-advisories&#x2F;2026-018&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;cert.europa.eu&#x2F;publications&#x2F;security-advisories&#x2F;2026...</a><p><a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=[phone]\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=[phone]</a>",
+      "recipe": "hn_sec",
+      "buzz": 3538,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-10-20"
+    },
+    {
       "uid": "cve:GHSA-jp3c-6v3g-mpxv",
       "source": "cve",
       "title": "GHSA-jp3c-6v3g-mpxv: github.com/insomniacslk/dhcp permits denial of service through a malformed IPv4 payload length",
@@ -352,7 +406,7 @@
       "author": "github.com/insomniacslk/dhcp",
       "summary": "Severity: high. In github.com/insomniacslk/dhcp/dhcpv4/nclient4, BroadcastRawUDPConn.ReadFrom does not validate that the IPv4 payload length is sufficient to hold a UDP header before calculating the DHCP payload length. A frame with an IPv4 total-length field specifying fewer than eight payload bytes results in a n",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "dev"
       ],
@@ -369,29 +423,12 @@
       "author": "wwbn/avideo",
       "summary": "Severity: high. ### Summary\n\nThe standalone FFmpeg execution endpoint `plugin/API/standAlone/ffmpeg.json.php` builds a shell command string that is passed to `execAsync()` and run via `nohup sh -c \"<command>\"`. When the decrypted `codeToExec` payload produces a non-empty `avideoPath`, the endpoint appends a complet",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "dev",
         "security"
       ],
       "date": "2026-11-24"
-    },
-    {
-      "uid": "hn:50172041",
-      "source": "hn",
-      "title": "Security advisory: Critical remote code execution vulnerabilities, update now",
-      "url": "https://www.php.net/archive/2026.php#2026-10-21-5",
-      "ts": 1792527350.0,
-      "points": 1561,
-      "comments": 659,
-      "author": "xd",
-      "summary": "<a href=\"https:&#x2F;&#x2F;cert.europa.eu&#x2F;publications&#x2F;security-advisories&#x2F;2026-018&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;cert.europa.eu&#x2F;publications&#x2F;security-advisories&#x2F;2026...</a><p><a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=[phone]\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=[phone]</a>",
-      "recipe": "hn_sec",
-      "buzz": 3538,
-      "topics": [
-        "security"
-      ],
-      "date": "2026-10-20"
     },
     {
       "uid": "cve:GHSA-j44m-77cc-p3cc",
@@ -552,26 +589,6 @@
       "recipe": "gh_advisories",
       "buzz": 3510,
       "topics": [
-        "dev",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-20"
-    },
-    {
-      "uid": "cve:GHSA-jrjx-9jjw-747m",
-      "source": "cve",
-      "title": "CVE-2026-77309: AIT-GUI route chain allows unauthenticated Python execution in server process",
-      "url": "https://github.com/advisories/GHSA-jrjx-9jjw-747m",
-      "ts": 1795217801.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "ait-gui",
-      "summary": "Severity: high. ## Summary\nA security issue exists where unauthenticated callers can instruct the AIT-GUI server to execute arbitrary Python scripts. The attack vector involves obtaining a session cookie through GET /, followed by a malicious POST /script/run request containing an absolute file path that bypasses t",
-      "recipe": "gh_advisories",
-      "buzz": 3510,
-      "topics": [
-        "ai",
         "dev",
         "security",
         "hardware"
@@ -872,6 +889,26 @@
       "date": "2020-09-30"
     },
     {
+      "uid": "cve:GHSA-h746-qpxh-ph7g",
+      "source": "cve",
+      "title": "CVE-2026-65973: laradocs  Command injection via unescaped Node.js binary path in KaTeX SSR",
+      "url": "https://github.com/advisories/GHSA-h746-qpxh-ph7g",
+      "ts": 1795635713.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "petebishwhip/laradocs",
+      "summary": "Severity: medium. ### Summary\nLocal command injection (CWE-78) in server-side KaTeX rendering via an unescaped Node.js binary path in a `proc_open()` command string.\n\n### Affected versions\n>= 0.4.0, < 1.0.0\n\n### Patched versions\n>= 1.0.0 (fixed in commit `100cb1e`)\n\n### Impact\nWhen rendering KaTeX math **server-side*",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "dev",
+        "science",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-25"
+    },
+    {
       "uid": "cve:GHSA-hq9r-72jq-2pxp",
       "source": "cve",
       "title": "CVE-2026-59191: TwigView FileLoader may allow arbitrary file reads through user-controlled template paths",
@@ -904,41 +941,6 @@
       "topics": [
         "dev",
         "science",
-        "security"
-      ],
-      "date": "2026-11-24"
-    },
-    {
-      "uid": "cve:GHSA-3wh4-j44w-pg92",
-      "source": "cve",
-      "title": "CVE-2026-59818: etcd: CRL enforcement bypass on gRPC listener when `--listen-client-http-urls` is configured",
-      "url": "https://github.com/advisories/GHSA-3wh4-j44w-pg92",
-      "ts": 1795554578.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "go.etcd.io/etcd/v3",
-      "summary": "Severity: medium. ### Impact\n_What kind of vulnerability is it? Who is impacted?_\n\nWhen etcd is configured with `--listen-client-http-urls` to split the HTTP and gRPC client endpoints onto separate listeners, the `--client-crl-file` Certificate Revocation List is not enforced on the gRPC listener. A client presenting",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "security"
-      ],
-      "date": "2026-11-24"
-    },
-    {
-      "uid": "cve:GHSA-48qj-5wxh-m8hc",
-      "source": "cve",
-      "title": "CVE-2026-59192: Cakephp twig-view unserialize Twig filter allows arbitrary object deserialization",
-      "url": "https://github.com/advisories/GHSA-48qj-5wxh-m8hc",
-      "ts": 1795542171.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "cakephp/twig-view",
-      "summary": "Severity: medium. ### Impact\nThe `unserialize` filter has no restriction on which classes are allowed. This can be used as a deserialization remote-code-execution gadget.\n\n### Patches\n1.3.3 and 2.1.2 contain a fix for this issue. The fix may impact backwards compatibility if you are relying on deserializing PHP objec",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
         "security"
       ],
       "date": "2026-11-24"
@@ -993,6 +995,41 @@
         "security"
       ],
       "date": "2016-12-15"
+    },
+    {
+      "uid": "cve:GHSA-3wh4-j44w-pg92",
+      "source": "cve",
+      "title": "CVE-2026-59818: etcd: CRL enforcement bypass on gRPC listener when `--listen-client-http-urls` is configured",
+      "url": "https://github.com/advisories/GHSA-3wh4-j44w-pg92",
+      "ts": 1795554578.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "go.etcd.io/etcd/v3",
+      "summary": "Severity: medium. ### Impact\n_What kind of vulnerability is it? Who is impacted?_\n\nWhen etcd is configured with `--listen-client-http-urls` to split the HTTP and gRPC client endpoints onto separate listeners, the `--client-crl-file` Certificate Revocation List is not enforced on the gRPC listener. A client presenting",
+      "recipe": "gh_advisories",
+      "buzz": 1830,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-11-24"
+    },
+    {
+      "uid": "cve:GHSA-48qj-5wxh-m8hc",
+      "source": "cve",
+      "title": "CVE-2026-59192: Cakephp twig-view unserialize Twig filter allows arbitrary object deserialization",
+      "url": "https://github.com/advisories/GHSA-48qj-5wxh-m8hc",
+      "ts": 1795542171.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "cakephp/twig-view",
+      "summary": "Severity: medium. ### Impact\nThe `unserialize` filter has no restriction on which classes are allowed. This can be used as a deserialization remote-code-execution gadget.\n\n### Patches\n1.3.3 and 2.1.2 contain a fix for this issue. The fix may impact backwards compatibility if you are relying on deserializing PHP objec",
+      "recipe": "gh_advisories",
+      "buzz": 1830,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-24"
     },
     {
       "uid": "cve:GHSA-9x82-4j54-863h",
@@ -1159,6 +1196,24 @@
         "security"
       ],
       "date": "2021-01-20"
+    },
+    {
+      "uid": "hn:50644817",
+      "source": "hn",
+      "title": "1Password Security Incident",
+      "url": "https://1password.com/blog/update-on-nov-2026-security-incident",
+      "ts": 1795627106.0,
+      "points": 751,
+      "comments": 311,
+      "author": "lxhrstn",
+      "summary": "",
+      "recipe": "hn_sec",
+      "buzz": 1764,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-25"
     },
     {
       "uid": "hn:11422531",
@@ -1333,79 +1388,23 @@
       "date": "2016-07-21"
     },
     {
-      "uid": "hn:20468845",
-      "source": "hn",
-      "title": "HTTP Security Headers – A Complete Guide",
-      "url": "https://nullsweep.com/http-security-headers-a-complete-guide/",
-      "ts": 1563451151.0,
-      "points": 709,
-      "comments": 78,
-      "author": "BCharlie",
-      "summary": "",
-      "recipe": "hn_sec",
-      "buzz": 943,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2019-07-18"
-    },
-    {
       "uid": "gh:erkamyaman/safe-anything",
       "source": "github",
       "title": "erkamyaman/safe-anything",
       "url": "https://github.com/erkamyaman/safe-anything",
       "ts": 1795365850.0,
-      "points": 685,
-      "comments": 66,
+      "points": 696,
+      "comments": 70,
       "author": "erkamyaman",
       "summary": "Find the holes before someone else does. A fast, 100% Rust vulnerability scanner: XSS, SQL injection, leaked secrets, dependency CVEs and AI agent setups.",
       "recipe": "github_sec",
-      "buzz": 893,
+      "buzz": 916,
       "topics": [
         "ai",
         "dev",
         "security"
       ],
       "date": "2026-11-22"
-    },
-    {
-      "uid": "cve:GHSA-72jh-722p-rqr3",
-      "source": "cve",
-      "title": "CVE-2026-77331: memtomem-stm: Concurrent LTM recovery can duplicate reconnects or reuse a cancelled transport session",
-      "url": "https://github.com/advisories/GHSA-72jh-722p-rqr3",
-      "ts": 1795217895.0,
-      "points": 700,
-      "comments": 0,
-      "author": "memtomem-stm",
-      "summary": "Severity: low. Concurrent surfacing RPC failures can trigger more than one reconnect for the same dirty session, and cancellation during a post-reconnect retry can leave the replacement session reusable despite an interrupted protocol exchange. The private fix introduces monotonic session generations, one shielded",
-      "recipe": "gh_advisories",
-      "buzz": 710,
-      "topics": [
-        "ai",
-        "science",
-        "security"
-      ],
-      "date": "2026-11-20"
-    },
-    {
-      "uid": "cve:GHSA-43hx-xm7w-3mhj",
-      "source": "cve",
-      "title": "CVE-2026-77332: memtomem-stm: Surfaced memory data can escape the Markdown compatibility boundary",
-      "url": "https://github.com/advisories/GHSA-43hx-xm7w-3mhj",
-      "ts": 1795217859.0,
-      "points": 700,
-      "comments": 0,
-      "author": "memtomem-stm",
-      "summary": "Severity: low. Untrusted long-term and working-memory fields can introduce Markdown or HTML-compatible structure into the surfaced-memory envelope. A crafted memory may create misleading structural boundaries or visually conceal content. The private fix serializes every untrusted field as inert single-line data, v",
-      "recipe": "gh_advisories",
-      "buzz": 710,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-20"
     },
     {
       "uid": "gh:Aabyss-Team/Threat-Broadcast-Plus",
@@ -1445,12 +1444,12 @@
       "title": "RobustaStudio/semsec",
       "url": "https://github.com/RobustaStudio/semsec",
       "ts": 1795605022.0,
-      "points": 73,
-      "comments": 9,
+      "points": 87,
+      "comments": 10,
       "author": "RobustaStudio",
       "summary": "High-precision Semgrep security rules — 146 taint-tracking and secret detection rules for Python, JavaScript, Java, PHP covering 75 providers. By Robusta Studio.",
       "recipe": "github_sec",
-      "buzz": 180,
+      "buzz": 197,
       "topics": [
         "ai",
         "dev",
@@ -1482,12 +1481,12 @@
       "title": "CybeDefend/cybedefend",
       "url": "https://github.com/CybeDefend/cybedefend",
       "ts": 1795448166.0,
-      "points": 50,
+      "points": 57,
       "comments": 6,
       "author": "CybeDefend",
       "summary": "Agentic ASPM, the open source Snyk alternative. A full security audit in one command",
       "recipe": "github_sec",
-      "buzz": 98,
+      "buzz": 105,
       "topics": [
         "ai",
         "security"
@@ -1728,6 +1727,21 @@
       "date": "2026-11-23"
     },
     {
+      "uid": "gh:spatie/laravel-suspicious-login",
+      "source": "github",
+      "title": "spatie/laravel-suspicious-login",
+      "url": "https://github.com/spatie/laravel-suspicious-login",
+      "ts": 1794917088.0,
+      "points": 60,
+      "comments": 1,
+      "author": "spatie",
+      "summary": "Detect suspicious logins in your Laravel app",
+      "recipe": "github_sec",
+      "buzz": 63,
+      "topics": [],
+      "date": "2026-11-17"
+    },
+    {
       "uid": "gh:hertzurchincutters/VaultAuth-Desktop2FATOTP",
       "source": "github",
       "title": "hertzurchincutters/VaultAuth-Desktop2FATOTP",
@@ -1758,32 +1772,17 @@
       "date": "2026-11-23"
     },
     {
-      "uid": "gh:spatie/laravel-suspicious-login",
-      "source": "github",
-      "title": "spatie/laravel-suspicious-login",
-      "url": "https://github.com/spatie/laravel-suspicious-login",
-      "ts": 1794917088.0,
-      "points": 59,
-      "comments": 1,
-      "author": "spatie",
-      "summary": "Detect suspicious logins in your Laravel app",
-      "recipe": "github_sec",
-      "buzz": 62,
-      "topics": [],
-      "date": "2026-11-17"
-    },
-    {
       "uid": "gh:prepaid-host/hvpatch",
       "source": "github",
       "title": "prepaid-host/hvpatch",
       "url": "https://github.com/prepaid-host/hvpatch",
       "ts": 1795428035.0,
-      "points": 31,
+      "points": 32,
       "comments": 0,
       "author": "prepaid-host",
       "summary": "Kernel livepatching for Proxmox VE hypervisors: klp-build modules checked against the shipped kernel, reviewed CVE catalog, verifying node agent",
       "recipe": "github_sec",
-      "buzz": 61,
+      "buzz": 62,
       "topics": [
         "ai",
         "security"
@@ -1791,21 +1790,24 @@
       "date": "2026-11-23"
     },
     {
-      "uid": "gh:balikunsh-bot/keepassxc-talroora",
+      "uid": "gh:Black-Ghost-Corp/Gaia-harden",
       "source": "github",
-      "title": "balikunsh-bot/keepassxc-talroora",
-      "url": "https://github.com/balikunsh-bot/keepassxc-talroora",
-      "ts": 1795032603.0,
-      "points": 48,
-      "comments": 0,
-      "author": "balikunsh-bot",
-      "summary": "Keepassxc Talroora organizes credential records and manages encrypted password databases.",
+      "title": "Black-Ghost-Corp/Gaia-harden",
+      "url": "https://github.com/Black-Ghost-Corp/Gaia-harden",
+      "ts": 1795528541.0,
+      "points": 23,
+      "comments": 2,
+      "author": "Black-Ghost-Corp",
+      "summary": "Harden a fresh Ubuntu/Debian server with one command: admin with SSH keys, locked-down SSH, ufw, fail2ban, security updates, kernel hardening, optional Docker/Caddy. Dry-run, idempotent, JSON report, AI-agent skill. Pure Bash.",
       "recipe": "github_sec",
-      "buzz": 58,
+      "buzz": 59,
       "topics": [
-        "dev"
+        "ai",
+        "dev",
+        "security",
+        "hardware"
       ],
-      "date": "2026-11-18"
+      "date": "2026-11-24"
     },
     {
       "uid": "gh:NPCmillionaire/unredact.tools",
@@ -1823,6 +1825,23 @@
         "ai"
       ],
       "date": "2026-11-12"
+    },
+    {
+      "uid": "gh:balikunsh-bot/keepassxc-talroora",
+      "source": "github",
+      "title": "balikunsh-bot/keepassxc-talroora",
+      "url": "https://github.com/balikunsh-bot/keepassxc-talroora",
+      "ts": 1795032603.0,
+      "points": 48,
+      "comments": 0,
+      "author": "balikunsh-bot",
+      "summary": "Keepassxc Talroora organizes credential records and manages encrypted password databases.",
+      "recipe": "github_sec",
+      "buzz": 48,
+      "topics": [
+        "dev"
+      ],
+      "date": "2026-11-18"
     },
     {
       "uid": "gh:xiaotianya14/apk-reverse-skill",

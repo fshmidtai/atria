@@ -5,7 +5,56 @@
     <link>https://sentinel-post.pages.dev</link>
     <description>Автономная радиостанция кибербезопасности: живые CVE, угрозы и защита — без сенсаций</description>
     <language>ru</language>
-    <lastBuildDate>Wed, 25 Nov 2026 17:18:25 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 21:14:06 GMT</lastBuildDate>
+    <item>
+      <title>CVE-2026-68539: fulgur allows Unbounded string-set value accumulation causes memory/CPU exhaustion (denial of service)</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-68539-fulgur-allows-unbounded-string-set-value-accumula.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-68539-fulgur-allows-unbounded-string-set-value-accumula.html</guid>
+      <pubDate>Wed, 25 Nov 2026 19:46:45 GMT</pubDate>
+      <description>Severity: high. `fulgur` converts untrusted HTML/CSS into PDF, commonly on a server that
+processes input supplied by many tenants. In versions from 0.4.4 up to (but not
+including) the patched release, the CSS `string-set` named-string values
+resolved from a document were accumulated per element with</description>
+    </item>
+    <item>
+      <title>CVE-2026-65971: livewire-powergrid: SQL injection via sortDirection in naturalSort queries</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-65971-livewire-powergrid-sql-injection-via-sortdirectio.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-65971-livewire-powergrid-sql-injection-via-sortdirectio.html</guid>
+      <pubDate>Wed, 25 Nov 2026 19:44:57 GMT</pubDate>
+      <description>Severity: high. ## [Description]
+
+The public Livewire property `sortDirection` is interpolated **verbatim** into a
+raw SQL `ORDER BY` clause and is not restricted to `asc`/`desc`, allowing arbitrary
+SQL injection through `POST /livewire/update`.
+
+**Data flow**
+
+- **Source** — `src/Concerns/Sorting.p</description>
+    </item>
+    <item>
+      <title>CVE-2026-65973: laradocs  Command injection via unescaped Node.js binary path in KaTeX SSR</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-65973-laradocs-command-injection-via-unescaped-node-js-.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-65973-laradocs-command-injection-via-unescaped-node-js-.html</guid>
+      <pubDate>Wed, 25 Nov 2026 19:41:53 GMT</pubDate>
+      <description>Severity: medium. ### Summary
+Local command injection (CWE-78) in server-side KaTeX rendering via an unescaped Node.js binary path in a `proc_open()` command string.
+
+### Affected versions
+&gt;= 0.4.0, &lt; 1.0.0
+
+### Patched versions
+&gt;= 1.0.0 (fixed in commit `100cb1e`)
+
+### Impact
+When rendering KaTeX m</description>
+    </item>
+    <item>
+      <title>1Password Security Incident</title>
+      <link>https://sentinel-post.pages.dev/item/1password-security-incident.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/1password-security-incident.html</guid>
+      <pubDate>Wed, 25 Nov 2026 17:18:26 GMT</pubDate>
+      <description></description>
+    </item>
     <item>
       <title>CVE-2026-64670: @waline/client vulnerable to stored XSS through unsanitized comment edit previews</title>
       <link>https://sentinel-post.pages.dev/item/cve-2026-64670-waline-client-vulnerable-to-stored-xss-through-un.html</link>
@@ -183,6 +232,13 @@ The `unserialize` filter has no restriction on which classes are allowed. This c
       <description>A previously undocumented Iran-aligned cyber espionage group called Volant Manticore has targeted telecommunications companies, airlines, and critical infrastructure in Cyprus. Central to the group's operations is a backdoor called KuboShell that uses the InterPlanetary File System (IPFS) for comman</description>
     </item>
     <item>
+      <title>Black-Ghost-Corp/Gaia-harden</title>
+      <link>https://sentinel-post.pages.dev/item/black-ghost-corp-gaia-harden.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/black-ghost-corp-gaia-harden.html</guid>
+      <pubDate>Tue, 24 Nov 2026 13:55:41 GMT</pubDate>
+      <description>Harden a fresh Ubuntu/Debian server with one command: admin with SSH keys, locked-down SSH, ufw, fail2ban, security updates, kernel hardening, optional Docker/Caddy. Dry-run, idempotent, JSON report, AI-agent skill. Pure Bash.</description>
+    </item>
+    <item>
       <title>VMware vCenter Hit by Another Critical 9.8-Rated Auth Bypass Flaw After Zero-Day Exploitation</title>
       <link>https://sentinel-post.pages.dev/item/vmware-vcenter-hit-by-another-critical-9-8-rated-auth-bypass-fla.html</link>
       <guid isPermaLink="true">https://sentinel-post.pages.dev/item/vmware-vcenter-hit-by-another-critical-9-8-rated-auth-bypass-fla.html</guid>
@@ -209,41 +265,6 @@ The `unserialize` filter has no restriction on which classes are allowed. This c
       <guid isPermaLink="true">https://sentinel-post.pages.dev/item/we-get-the-infrastructure-we-pay-for.html</guid>
       <pubDate>Tue, 24 Nov 2026 12:06:54 GMT</pubDate>
       <description>&lt;p&gt;&lt;em&gt;This essay originally appeared as part of a &lt;a href="https://www.thefp.com/p/cybersecurity-terrorism-iran-china-russia-apocalypse"&gt;round table&lt;/a&gt; in &lt;cite&gt;The Free Press&lt;/cite&gt; entitled &amp;#8220;Is America’s Infrastructure Under Attack?&amp;#8221;&lt;/em&gt;&lt;/p&gt; &lt;p&gt;Microsoft, the FAA, banks, United Airl</description>
-    </item>
-    <item>
-      <title>Google Researcher Shows How a Single Bit Change in .NET Files Bypassed Windows Code Integrity</title>
-      <link>https://sentinel-post.pages.dev/item/google-researcher-shows-how-a-single-bit-change-in-net-files-byp.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/google-researcher-shows-how-a-single-bit-change-in-net-files-byp.html</guid>
-      <pubDate>Tue, 24 Nov 2026 12:02:00 GMT</pubDate>
-      <description>A quirk in how the .NET Framework loads a program file let a local attacker run untrusted code past two separate protections on Windows built to block it, Google Project Zero researcher James Forshaw showed in a write-up published yesterday. The same loading behavior bypassed Oracle VirtualBox's pro</description>
-    </item>
-    <item>
-      <title>2027 SOC Budget Reset: 5 Priorities to Cut Costs and Reduce Cyber Risk</title>
-      <link>https://sentinel-post.pages.dev/item/2027-soc-budget-reset-5-priorities-to-cut-costs-and-reduce-cyber.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/2027-soc-budget-reset-5-priorities-to-cut-costs-and-reduce-cyber.html</guid>
-      <pubDate>Tue, 24 Nov 2026 12:01:54 GMT</pubDate>
-      <description>What if your biggest SOC budget problem isn't how much you spend, but how much analyst time you lose? According to ANY.RUN's estimates, SOC teams could recover 450 analyst hours per 1,000 investigated alerts through faster threat analysis and IOC research. That's a significant opportunity as manual </description>
-    </item>
-    <item>
-      <title>Microsoft Fixes Azure API Management Classic Flaw as Actor Targets Customer Secrets</title>
-      <link>https://sentinel-post.pages.dev/item/microsoft-fixes-azure-api-management-classic-flaw-as-actor-targe.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/microsoft-fixes-azure-api-management-classic-flaw-as-actor-targe.html</guid>
-      <pubDate>Tue, 24 Nov 2026 10:44:49 GMT</pubDate>
-      <description>Norway's National Security Authority (NSM) has disclosed that it became aware of a security vulnerability in Microsoft's Azure API Management (APIM) that has affected multiple businesses in the country, including energy companies Equinor and Skagerak Energi. "An unknown actor has been actively looki</description>
-    </item>
-    <item>
-      <title>WHMCS SQL Injection Could Expose Customer Data and Admin Password Hashes without Login</title>
-      <link>https://sentinel-post.pages.dev/item/whmcs-sql-injection-could-expose-customer-data-and-admin-passwor.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/whmcs-sql-injection-could-expose-customer-data-and-admin-passwor.html</guid>
-      <pubDate>Tue, 24 Nov 2026 08:34:20 GMT</pubDate>
-      <description>A flaw in WHMCS's shopping cart, the billing and automation platform many web hosting companies use to run their businesses, could allow anyone on the internet to retrieve customer records and administrator password hashes from an installation's database. No login is needed. The company disclosed th</description>
-    </item>
-    <item>
-      <title>HavocSaif/avast-premium-security-kacerin</title>
-      <link>https://sentinel-post.pages.dev/item/havocsaif-avast-premium-security-kacerin.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/havocsaif-avast-premium-security-kacerin.html</guid>
-      <pubDate>Tue, 24 Nov 2026 07:35:46 GMT</pubDate>
-      <description>Directory listing for the Avast Premium Security Kacerin project.</description>
     </item>
   </channel>
 </rss>
