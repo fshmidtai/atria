@@ -8,9 +8,11 @@ hn:43128253,hn,Apple pulls data protection tool after UK government security row
 hn:39452494,hn,"Insecure vehicles should be banned, not security tools like the Flipper Zero",https://saveflipper.ca/,4130,2024-02-21,security
 hn:30051054,hn,Ask HN: Gmail account security,https://news.ycombinator.com/item?id=30051054,3830,2022-01-23,ai|dev|security
 hn:25729088,hn,"70TB of Parler users’ messages, videos, and posts leaked by security researchers",https://cybernews.com/news/70tb-of-parler-users-messages-videos-and-posts-leaked-by-security-researchers/,3745,2021-01-11,dev|security
+cve:GHSA-859w-52fx-hcm6,cve,CVE-2026-64855: soapbar: verify_envelope_bsp accepts an unauthenticated embedded certificate (signature forgery / authentication bypass),https://github.com/advisories/GHSA-859w-52fx-hcm6,3580,2026-11-24,ai|dev|crypto|security
+cve:GHSA-jp3c-6v3g-mpxv,cve,GHSA-jp3c-6v3g-mpxv: github.com/insomniacslk/dhcp permits denial of service through a malformed IPv4 payload length,https://github.com/advisories/GHSA-jp3c-6v3g-mpxv,3580,2026-11-24,dev
 cve:GHSA-g9x9-q7qj-6mv5,cve,CVE-2026-63305: AVideo API FFmpeg process permits OS command injection via notifyCode/callback,https://github.com/advisories/GHSA-g9x9-q7qj-6mv5,3580,2026-11-24,dev|security
-cve:GHSA-j44m-77cc-p3cc,cve,CVE-2026-63304: AVideo API vulnerable to OS command injection through an unescaped FFmpeg process keyword,https://github.com/advisories/GHSA-j44m-77cc-p3cc,3580,2026-11-23,dev|security
 hn:50172041,hn,"Security advisory: Critical remote code execution vulnerabilities, update now",https://www.php.net/archive/2026.php#2026-10-21-5,3538,2026-10-20,security
+cve:GHSA-j44m-77cc-p3cc,cve,CVE-2026-63304: AVideo API vulnerable to OS command injection through an unescaped FFmpeg process keyword,https://github.com/advisories/GHSA-j44m-77cc-p3cc,3530,2026-11-23,dev|security
 cve:GHSA-2v9w-34q6-wpqx,cve,CVE-2026-77423: jline3 leads to ReDoS in Built-in Less Viewer Search,https://github.com/advisories/GHSA-2v9w-34q6-wpqx,3530,2026-11-23,security|hardware
 cve:GHSA-f9h7-4mmq-vgcq,cve,"CVE-2026-58262: Klever Go counts bitmap padding bits toward BLS quorum, allowing blocks with insufficient signatures",https://github.com/advisories/GHSA-f9h7-4mmq-vgcq,3530,2026-11-23,security
 cve:GHSA-mqwm-5m85-gmcv,cve,CVE-2026-22865: Gradle causes failure to disable repositories exposing builds to malicious artifacts,https://github.com/advisories/GHSA-mqwm-5m85-gmcv,3530,2026-11-23,ai|security
@@ -20,7 +22,6 @@ cve:GHSA-r2q3-7m4h-63qg,cve,CVE-2026-122244: Budibase: Cross-privilege Stored XS
 cve:GHSA-555j-qj3j-c8jv,cve,CVE-2026-132275: svglib: Exponential resource consumption via nested <use> references in svg2rlg,https://github.com/advisories/GHSA-555j-qj3j-c8jv,3510,2026-11-20,ai|security
 cve:GHSA-r9qp-pqx5-8369,cve,CVE-2026-104883: contao/core-bundle: Non-admin users can self-grant permissions that implicitly make them administrators,https://github.com/advisories/GHSA-r9qp-pqx5-8369,3510,2026-11-20,dev|security|hardware
 cve:GHSA-jrjx-9jjw-747m,cve,CVE-2026-77309: AIT-GUI route chain allows unauthenticated Python execution in server process,https://github.com/advisories/GHSA-jrjx-9jjw-747m,3510,2026-11-20,ai|dev|security|hardware
-cve:GHSA-xxqp-5qx8-gj5q,cve,CVE-2026-63341: Aedes has Uncaught Exception and Uncontrolled Resource Consumption,https://github.com/advisories/GHSA-xxqp-5qx8-gj5q,3510,2026-11-20,ai|security
 hn:32148218,hn,FCC: TikTok is unacceptable security risk and should be removed from app stores,https://blog.malwarebytes.com/privacy-2/2022/07/tiktok-is-unacceptable-security-risk-and-should-be-removed-from-app-stores-says-fcc/,3376,2022-07-19,security
 hn:41392128,hn,Bypassing airport security via SQL injection,https://ian.sh/tsa,3324,2024-08-29,ai|security
 hn:41792500,hn,Internet Archive: Security breach alert,https://www.theverge.com/2024/10/9/24266419/internet-archive-ddos-attack-pop-up-message,2912,2024-10-09,security
@@ -38,6 +39,9 @@ hn:23180975,hn,Security Flaws in Adobe Acrobat Reader Allow Gaining Root on macO
 hn:50182987,hn,"Today's PHP security release, and how we're strengthening security",https://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security/,2034,2026-10-21,security
 hn:17592422,hn,Google: Security Keys Neutralized Employee Phishing,https://krebsonsecurity.com/2018/07/google-security-keys-neutered-employee-phishing/,2002,2018-07-23,security
 hn:24636166,hn,Apple’s T2 security chip jailbreak,https://reportcybercrime.com/hackers-jailbreak-apples-t2-security-chip-powered-by-bridgeos/,1881,2020-09-30,ai|security|hardware
+cve:GHSA-hq9r-72jq-2pxp,cve,CVE-2026-59191: TwigView FileLoader may allow arbitrary file reads through user-controlled template paths,https://github.com/advisories/GHSA-hq9r-72jq-2pxp,1880,2026-11-24,ai|security
+cve:GHSA-8cg3-r6g9-fpg2,cve,CVE-2026-59831: GitHub CLI gh codespace jupyter may allow code execution via unvalidated URLs from malicious Codespaces,https://github.com/advisories/GHSA-8cg3-r6g9-fpg2,1880,2026-11-24,dev|science|security
+cve:GHSA-3wh4-j44w-pg92,cve,CVE-2026-59818: etcd: CRL enforcement bypass on gRPC listener when `--listen-client-http-urls` is configured,https://github.com/advisories/GHSA-3wh4-j44w-pg92,1880,2026-11-24,security
 cve:GHSA-48qj-5wxh-m8hc,cve,CVE-2026-59192: Cakephp twig-view unserialize Twig filter allows arbitrary object deserialization,https://github.com/advisories/GHSA-48qj-5wxh-m8hc,1880,2026-11-24,ai|security
 hn:48166459,hn,Mozilla to UK regulators: VPNs are essential privacy and security tools,https://blog.mozilla.org/netpolicy/2026/05/15/mozilla-to-uk-regulators-vpns-are-essential-privacy-and-security-tools-and-should-not-be-undermined/,1876,2026-05-17,security
 hn:6944118,hn,Secret contract tied NSA and security industry pioneer,http://www.reuters.com/article/2013/12/20/us-usa-security-rsa-idUSBRE9BJ1C220131220,1859,2013-12-20,security
@@ -45,7 +49,3 @@ hn:13182120,hn,Yahoo installed a backdoor for the NSA behind the back of the sec
 cve:GHSA-9x82-4j54-863h,cve,CVE-2026-63476: isomorphic-git allows unbounded memory allocation from attacker-controlled delta target size (DoS),https://github.com/advisories/GHSA-9x82-4j54-863h,1830,2026-11-23,dev|security|hardware
 cve:GHSA-vp2j-gqfm-r3cf,cve,CVE-2026-63410: secp256k1-native has a compiler-induced timing side channel in scalar multiplication,https://github.com/advisories/GHSA-vp2j-gqfm-r3cf,1830,2026-11-23,dev|security
 cve:GHSA-6jcc-5g8w-32mx,cve,"CVE-2026-63402: i18next deepExtend recurses into inherited built-ins, allowing corruption of shared built-in objects (DoS)",https://github.com/advisories/GHSA-6jcc-5g8w-32mx,1830,2026-11-23,ai|dev|security
-cve:GHSA-53pm-wgxf-c6qf,cve,CVE-2026-132276: wcmatch: Polynomial-time ReDoS when matching untrusted names against multi-star patterns (default flags),https://github.com/advisories/GHSA-53pm-wgxf-c6qf,1810,2026-11-20,ai|dev|security
-cve:GHSA-q87h-c5m7-659j,cve,CVE-2026-132277: Inscriptis: Quadratic memory growth from sibling <table> elements in get_text(),https://github.com/advisories/GHSA-q87h-c5m7-659j,1810,2026-11-20,ai|security
-cve:GHSA-h57j-5f5m-789v,cve,CVE-2026-104884: contao/core-bundle: Cross-site scripting in the frontend search results,https://github.com/advisories/GHSA-h57j-5f5m-789v,1810,2026-11-20,ai|security
-cve:GHSA-23w9-4pg3-xwm3,cve,CVE-2026-104882: contao/core-bundle: Improper access control in the CSV import wizard,https://github.com/advisories/GHSA-23w9-4pg3-xwm3,1810,2026-11-20,ai|dev|security

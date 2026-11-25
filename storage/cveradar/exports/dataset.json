@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T21:08:53+00:00",
+  "generated_at": "2026-11-25T01:36:26+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -18,12 +18,12 @@
       "the_hacker_news": 30
     },
     "by_topic": {
-      "security": 53,
-      "dev": 42,
-      "ai": 37,
-      "hardware": 12,
-      "science": 4,
-      "crypto": 3,
+      "security": 52,
+      "dev": 43,
+      "ai": 36,
+      "hardware": 11,
+      "science": 5,
+      "crypto": 4,
       "biz": 3
     },
     "top_domains": [
@@ -77,6 +77,43 @@
       "date": "2026-11-23"
     },
     {
+      "uid": "cve:GHSA-859w-52fx-hcm6",
+      "source": "cve",
+      "title": "CVE-2026-64855: soapbar: verify_envelope_bsp accepts an unauthenticated embedded certificate (signature forgery / authentication bypass)",
+      "url": "https://github.com/advisories/GHSA-859w-52fx-hcm6",
+      "ts": 1795560104.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "soapbar",
+      "summary": "Severity: high. ### Impact\n\n`verify_envelope_bsp()` derived its trust anchor from the message it was\nverifying. It read the X.509 certificate out of the caller-untrusted\n`wsse:BinarySecurityToken`, validated **only** that certificate's not-before /\nnot-after dates, and then verified the signature against that same",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "ai",
+        "dev",
+        "crypto",
+        "security"
+      ],
+      "date": "2026-11-24"
+    },
+    {
+      "uid": "cve:GHSA-jp3c-6v3g-mpxv",
+      "source": "cve",
+      "title": "GHSA-jp3c-6v3g-mpxv: github.com/insomniacslk/dhcp permits denial of service through a malformed IPv4 payload length",
+      "url": "https://github.com/advisories/GHSA-jp3c-6v3g-mpxv",
+      "ts": 1795554817.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "github.com/insomniacslk/dhcp",
+      "summary": "Severity: high. In github.com/insomniacslk/dhcp/dhcpv4/nclient4, BroadcastRawUDPConn.ReadFrom does not validate that the IPv4 payload length is sufficient to hold a UDP header before calculating the DHCP payload length. A frame with an IPv4 total-length field specifying fewer than eight payload bytes results in a n",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "dev"
+      ],
+      "date": "2026-11-24"
+    },
+    {
       "uid": "cve:GHSA-g9x9-q7qj-6mv5",
       "source": "cve",
       "title": "CVE-2026-63305: AVideo API FFmpeg process permits OS command injection via notifyCode/callback",
@@ -105,7 +142,7 @@
       "author": "wwbn/avideo",
       "summary": "Severity: high. ### Summary\n\nThe helper `listFFmpegProcesses($keyword)` in `plugin/API/standAlone/functions.php` builds a shell pipeline by interpolating `$keyword` inside single quotes and running it with `exec()`:\n\n```php\n$command .= \" | grep '$keyword'\";\nexec($command, $output, $status);\n```\n\nThe two callers in",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "dev",
         "security"
@@ -280,22 +317,58 @@
       "date": "2026-11-20"
     },
     {
-      "uid": "cve:GHSA-xxqp-5qx8-gj5q",
+      "uid": "cve:GHSA-hq9r-72jq-2pxp",
       "source": "cve",
-      "title": "CVE-2026-63341: Aedes has Uncaught Exception and Uncontrolled Resource Consumption",
-      "url": "https://github.com/advisories/GHSA-xxqp-5qx8-gj5q",
-      "ts": 1795217555.0,
-      "points": 3500,
+      "title": "CVE-2026-59191: TwigView FileLoader may allow arbitrary file reads through user-controlled template paths",
+      "url": "https://github.com/advisories/GHSA-hq9r-72jq-2pxp",
+      "ts": 1795559963.0,
+      "points": 1800,
       "comments": 0,
-      "author": "aedes",
-      "summary": "Severity: high. ### Summary\nA remote Denial of Service (DoS) vulnerability, allows any remote client to cause a complete crash of the Aedes MQTT broker process. This is achieved by sending a specially crafted MQTT message (via PUBLISH or SUBSCRIBE), or by setting a Will message with such a topic, containing a highl",
+      "author": "cakephp/twig-view",
+      "summary": "Severity: medium. ### Impact\nIf `FileLoader::findTemplate()` is supplied un-validated user controlled data, arbitrary files can be read.\n\n### Patches\n1.3.3 and 2.1.2 contain a fix for this issue.\n\n### Workarounds\nDon't supply user controlled data to `include` and `extends` tags.",
       "recipe": "gh_advisories",
-      "buzz": 3510,
+      "buzz": 1880,
       "topics": [
         "ai",
         "security"
       ],
-      "date": "2026-11-20"
+      "date": "2026-11-24"
+    },
+    {
+      "uid": "cve:GHSA-8cg3-r6g9-fpg2",
+      "source": "cve",
+      "title": "CVE-2026-59831: GitHub CLI gh codespace jupyter may allow code execution via unvalidated URLs from malicious Codespaces",
+      "url": "https://github.com/advisories/GHSA-8cg3-r6g9-fpg2",
+      "ts": 1795559185.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "github.com/cli/cli/v2",
+      "summary": "Severity: medium. ### Summary\n\nA security vulnerability has been identified in GitHub CLI that could allow remote code execution when users connect to a malicious Codespace using the `gh codespace jupyter` command. The command opens JupyterLab by launching a URL in the user's browser, but that URL is supplied by a pr",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "dev",
+        "science",
+        "security"
+      ],
+      "date": "2026-11-24"
+    },
+    {
+      "uid": "cve:GHSA-3wh4-j44w-pg92",
+      "source": "cve",
+      "title": "CVE-2026-59818: etcd: CRL enforcement bypass on gRPC listener when `--listen-client-http-urls` is configured",
+      "url": "https://github.com/advisories/GHSA-3wh4-j44w-pg92",
+      "ts": 1795554578.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "go.etcd.io/etcd/v3",
+      "summary": "Severity: medium. ### Impact\n_What kind of vulnerability is it? Who is impacted?_\n\nWhen etcd is configured with `--listen-client-http-urls` to split the HTTP and gRPC client endpoints onto separate listeners, the `--client-crl-file` Certificate Revocation List is not enforced on the gRPC listener. A client presenting",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-11-24"
     },
     {
       "uid": "cve:GHSA-48qj-5wxh-m8hc",
@@ -484,61 +557,6 @@
       "date": "2026-11-20"
     },
     {
-      "uid": "cve:GHSA-p3j5-5hrq-p75h",
-      "source": "cve",
-      "title": "CVE-2026-58254: nats-server Leaf node connections bypass Nats-Trace-Dest permission check",
-      "url": "https://github.com/advisories/GHSA-p3j5-5hrq-p75h",
-      "ts": 1795217519.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "github.com/nats-io/nats-server/v2",
-      "summary": "Severity: medium. ### Background\n\nNATS.io is a high performance open source pub-sub distributed communication technology, built for the cloud, on-premise, IoT and edge computing.\n\nThe NATS Server supports leafnode connections between servers and message tracing through NATS headers.\n\n### Problem Description\n\nMessage",
-      "recipe": "gh_advisories",
-      "buzz": 1810,
-      "topics": [
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-20"
-    },
-    {
-      "uid": "cve:GHSA-9rv8-9hvg-92mq",
-      "source": "cve",
-      "title": "CVE-2026-35376: chcon: recursive relabel not anchored to traversal dirfd (TOCTOU)",
-      "url": "https://github.com/advisories/GHSA-9rv8-9hvg-92mq",
-      "ts": 1795192774.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "uu_chcon",
-      "summary": "Severity: medium. `chcon` resolved recursive targets from `fts_accpath` with a fresh path lookup, so traversal and the SELinux get/set were not bound to traversal directory state. A privileged recursive relabel can be redirected to unintended objects under rename/symlink races. Fix opens targets with `openat` against",
-      "recipe": "gh_advisories",
-      "buzz": 1810,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-20"
-    },
-    {
-      "uid": "cve:GHSA-fjjq-8hw5-cf9f",
-      "source": "cve",
-      "title": "CVE-2026-35374: split: TOCTOU output-open allows truncating a swapped file",
-      "url": "https://github.com/advisories/GHSA-fjjq-8hw5-cf9f",
-      "ts": 1795192407.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "uu_split",
-      "summary": "Severity: medium. `split` checks input/output identity by path before opening the output, then opens with truncation, leaving a race window on mutable path components. GNU opens first and compares the opened output inode against the input before truncating. The race can cause `split` to truncate/write a file differen",
-      "recipe": "gh_advisories",
-      "buzz": 1810,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-20"
-    },
-    {
       "uid": "cve:GHSA-72jh-722p-rqr3",
       "source": "cve",
       "title": "CVE-2026-77331: memtomem-stm: Concurrent LTM recovery can duplicate reconnects or reuse a cancelled transport session",
@@ -571,24 +589,6 @@
       "buzz": 710,
       "topics": [
         "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-20"
-    },
-    {
-      "uid": "cve:GHSA-xhrc-7f76-vh96",
-      "source": "cve",
-      "title": "CVE-2026-35377:  uu_env incorrectly rejects backslashes within single-quoted strings accepted by GNU env",
-      "url": "https://github.com/advisories/GHSA-xhrc-7f76-vh96",
-      "ts": 1795192591.0,
-      "points": 700,
-      "comments": 0,
-      "author": "uu_env",
-      "summary": "Severity: low. In `env -S`, GNU keeps backslashes literal inside single quotes (except `\\\\` and `\\'`); uutils errors on sequences like `\\a`. This is the backslash-handling issue of the broader `-S`/`--split-string` parsing divergence.\n```\nenv -S\"printf %s '\\''\\\\x'\\''\"   # GNU prints \\x ; uutils: invalid sequence '",
-      "recipe": "gh_advisories",
-      "buzz": 710,
-      "topics": [
         "dev",
         "security"
       ],

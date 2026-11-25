@@ -5,7 +5,59 @@
     <link>https://cveradar-ah3.pages.dev</link>
     <description>Живые CVE и уязвимости на русском: автономный перевод угроз в понятные дайджесты для DevOps и небольшого SecOps</description>
     <language>ru</language>
-    <lastBuildDate>Tue, 24 Nov 2026 21:08:54 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 01:36:26 GMT</lastBuildDate>
+    <item>
+      <title>CVE-2026-64855: soapbar: verify_envelope_bsp accepts an unauthenticated embedded certificate (signature forgery / authentication bypass)</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-64855-soapbar-verify-envelope-bsp-accepts-an-unauthenti.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-64855-soapbar-verify-envelope-bsp-accepts-an-unauthenti.html</guid>
+      <pubDate>Tue, 24 Nov 2026 22:41:44 GMT</pubDate>
+      <description>Severity: high. ### Impact
+
+`verify_envelope_bsp()` derived its trust anchor from the message it was
+verifying. It read the X.509 certificate out of the caller-untrusted
+`wsse:BinarySecurityToken`, validated **only** that certificate's not-before /
+not-after dates, and then verified the signature ag</description>
+    </item>
+    <item>
+      <title>CVE-2026-59191: TwigView FileLoader may allow arbitrary file reads through user-controlled template paths</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-59191-twigview-fileloader-may-allow-arbitrary-file-read.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-59191-twigview-fileloader-may-allow-arbitrary-file-read.html</guid>
+      <pubDate>Tue, 24 Nov 2026 22:39:23 GMT</pubDate>
+      <description>Severity: medium. ### Impact
+If `FileLoader::findTemplate()` is supplied un-validated user controlled data, arbitrary files can be read.
+
+### Patches
+1.3.3 and 2.1.2 contain a fix for this issue.
+
+### Workarounds
+Don't supply user controlled data to `include` and `extends` tags.</description>
+    </item>
+    <item>
+      <title>CVE-2026-59831: GitHub CLI gh codespace jupyter may allow code execution via unvalidated URLs from malicious Codespaces</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-59831-github-cli-gh-codespace-jupyter-may-allow-code-ex.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-59831-github-cli-gh-codespace-jupyter-may-allow-code-ex.html</guid>
+      <pubDate>Tue, 24 Nov 2026 22:26:25 GMT</pubDate>
+      <description>Severity: medium. ### Summary
+
+A security vulnerability has been identified in GitHub CLI that could allow remote code execution when users connect to a malicious Codespace using the `gh codespace jupyter` command. The command opens JupyterLab by launching a URL in the user's browser, but that URL i</description>
+    </item>
+    <item>
+      <title>GHSA-jp3c-6v3g-mpxv: github.com/insomniacslk/dhcp permits denial of service through a malformed IPv4 payload length</title>
+      <link>https://cveradar-ah3.pages.dev/item/ghsa-jp3c-6v3g-mpxv-github-com-insomniacslk-dhcp-permits-denial-.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/ghsa-jp3c-6v3g-mpxv-github-com-insomniacslk-dhcp-permits-denial-.html</guid>
+      <pubDate>Tue, 24 Nov 2026 21:13:37 GMT</pubDate>
+      <description>Severity: high. In github.com/insomniacslk/dhcp/dhcpv4/nclient4, BroadcastRawUDPConn.ReadFrom does not validate that the IPv4 payload length is sufficient to hold a UDP header before calculating the DHCP payload length. A frame with an IPv4 total-length field specifying fewer than eight payload byte</description>
+    </item>
+    <item>
+      <title>CVE-2026-59818: etcd: CRL enforcement bypass on gRPC listener when `--listen-client-http-urls` is configured</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-59818-etcd-crl-enforcement-bypass-on-grpc-listener-when.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-59818-etcd-crl-enforcement-bypass-on-grpc-listener-when.html</guid>
+      <pubDate>Tue, 24 Nov 2026 21:09:38 GMT</pubDate>
+      <description>Severity: medium. ### Impact
+_What kind of vulnerability is it? Who is impacted?_
+
+When etcd is configured with `--listen-client-http-urls` to split the HTTP and gRPC client endpoints onto separate listeners, the `--client-crl-file` Certificate Revocation List is not enforced on the gRPC listener. A</description>
+    </item>
     <item>
       <title>CVE-2026-59726: ruflo MCP bridge allows unauthenticated remote code execution in default Docker Compose deployments</title>
       <link>https://cveradar-ah3.pages.dev/item/cve-2026-59726-ruflo-mcp-bridge-allows-unauthenticated-remote-co.html</link>
@@ -213,41 +265,6 @@ When resolving dependencies, Gradle searches repositories in declaration order. 
       <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/critical-binary-parser-flaw-enables-javascript-injection-via-mal.html</guid>
       <pubDate>Mon, 23 Nov 2026 13:22:20 GMT</pubDate>
       <description>A critical security flaw has been disclosed in the popular binary-parser library that could allow an attacker who controls parser definitions to execute arbitrary code. The vulnerability, tracked as CVE-[phone] (CVSS score: 9.2 / 8.1), is a case of code injection impacting binary-parser versions pri</description>
-    </item>
-    <item>
-      <title>Hackers Exploit Critical ScreenConnect Flaw to Hijack MSP Technician PCs Without Warning</title>
-      <link>https://cveradar-ah3.pages.dev/item/hackers-exploit-critical-screenconnect-flaw-to-hijack-msp-techni.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/hackers-exploit-critical-screenconnect-flaw-to-hijack-msp-techni.html</guid>
-      <pubDate>Mon, 23 Nov 2026 12:41:04 GMT</pubDate>
-      <description>Threat actors are exploiting a now-patched security flaw in ConnectWise ScreenConnect to target managed service provider (MSP) servers. The activity revolves around CVE-[phone] (CVSS score: 9.9), a critical ScreenConnect client flaw that allows a guest to transfer and execute a malicious payload on </description>
-    </item>
-    <item>
-      <title>N-able Discloses Critical Mail Assure Vulnerability Found During Breach Investigation</title>
-      <link>https://cveradar-ah3.pages.dev/item/n-able-discloses-critical-mail-assure-vulnerability-found-during.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/n-able-discloses-critical-mail-assure-vulnerability-found-during.html</guid>
-      <pubDate>Mon, 23 Nov 2026 12:28:09 GMT</pubDate>
-      <description>N-able yesterday disclosed a critical flaw it found while investigating the breach of its Mail Assure and SpamExperts Hosted Cloud, an email filtering service it runs for managed service providers. The bug, tracked as CVE-[phone], is a server-side request forgery (SSRF) flaw. It allowed a user with </description>
-    </item>
-    <item>
-      <title>Hackers Exploit Critical ASP.NET Anti-CSRF Library Flaw Allowing Unauthenticated RCE</title>
-      <link>https://cveradar-ah3.pages.dev/item/hackers-exploit-critical-asp-net-anti-csrf-library-flaw-allowing.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/hackers-exploit-critical-asp-net-anti-csrf-library-flaw-allowing.html</guid>
-      <pubDate>Mon, 23 Nov 2026 09:11:56 GMT</pubDate>
-      <description>Cybersecurity researchers have urged users to discontinue using a legacy ASP.NET anti-CSRF library named Idunno.AntiCsrf ("Idunno.AntiCsrf.dll") following the discovery of a critical vulnerability that has been exploited in the wild. The vulnerability, tracked as CVE-[phone], carries a CVSS score of</description>
-    </item>
-    <item>
-      <title>Hackers Exploited GL.iNet Cloud Flaw to Install Malware on Routers and KVM Devices</title>
-      <link>https://cveradar-ah3.pages.dev/item/hackers-exploited-gl-inet-cloud-flaw-to-install-malware-on-route.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/hackers-exploited-gl-inet-cloud-flaw-to-install-malware-on-route.html</guid>
-      <pubDate>Mon, 23 Nov 2026 09:04:08 GMT</pubDate>
-      <description>Hackers exploited a vulnerability in GL.iNet's GoodCloud remote management service to install malware on some customer routers and KVM devices, the maker of travel routers and remote-access KVM hardware said in a security notice updated today. The company identified and fixed the flaw on Friday and </description>
-    </item>
-    <item>
-      <title>AI-Assisted Cyber Attacks Trigger Unauthorized Payments at Indian Banks and Fintech Firms</title>
-      <link>https://cveradar-ah3.pages.dev/item/ai-assisted-cyber-attacks-trigger-unauthorized-payments-at-india.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/ai-assisted-cyber-attacks-trigger-unauthorized-payments-at-india.html</guid>
-      <pubDate>Mon, 23 Nov 2026 08:24:15 GMT</pubDate>
-      <description>The Indian Computer Emergency Response Team (CERT-In) has warned that threat actors are carrying out artificial intelligence (AI)-assisted cyber attacks targeting information and communication technology (ICT) assets in the country. This unsanctioned activity has resulted in unauthorized financial t</description>
     </item>
   </channel>
 </rss>
