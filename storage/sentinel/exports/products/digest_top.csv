@@ -1,6 +1,7 @@
 uid,source,title,url,buzz,date,topics
 hn:37392676,hn,Ask HN: I’m an FCC Commissioner proposing regulation of IoT security updates,https://news.ycombinator.com/item?id=37392676,6162,2023-09-05,dev|security
 hn:43462783,hn,U.S. national-security leaders included me in a group chat,https://www.theatlantic.com/politics/archive/2025/03/trump-administration-accidentally-texted-me-its-war-plans/682151/,6156,2025-03-24,security
+cve:GHSA-crj3-q72p-ggqm,cve,CVE-2026-64670: @waline/client vulnerable to stored XSS through unsanitized comment edit previews,https://github.com/advisories/GHSA-crj3-q72p-ggqm,6080,2026-11-25,ai|dev|security
 cve:GHSA-c4hm-4h84-2cf3,cve,CVE-2026-59726: ruflo MCP bridge allows unauthenticated remote code execution in default Docker Compose deployments,https://github.com/advisories/GHSA-c4hm-4h84-2cf3,6080,2026-11-24,ai|dev|security
 cve:GHSA-2r3w-c2vx-fv5g,cve,CVE-2026-133469: Xen Orchestra: Empty-object login token,https://github.com/advisories/GHSA-2r3w-c2vx-fv5g,6030,2026-11-23,dev|crypto|security
 hn:48997548,hn,OpenAI and Hugging Face address security incident during model evaluation,https://openai.com/index/hugging-face-model-evaluation-security-incident/,5103,2026-07-21,ai|dev|biz|security
@@ -48,4 +49,3 @@ hn:6944118,hn,Secret contract tied NSA and security industry pioneer,http://www.
 hn:13182120,hn,Yahoo installed a backdoor for the NSA behind the back of the security team,https://diracdeltas.github.io/blog/surveillance/,1849,2016-12-15,security
 cve:GHSA-9x82-4j54-863h,cve,CVE-2026-63476: isomorphic-git allows unbounded memory allocation from attacker-controlled delta target size (DoS),https://github.com/advisories/GHSA-9x82-4j54-863h,1830,2026-11-23,dev|security|hardware
 cve:GHSA-vp2j-gqfm-r3cf,cve,CVE-2026-63410: secp256k1-native has a compiler-induced timing side channel in scalar multiplication,https://github.com/advisories/GHSA-vp2j-gqfm-r3cf,1830,2026-11-23,dev|security
-cve:GHSA-6jcc-5g8w-32mx,cve,"CVE-2026-63402: i18next deepExtend recurses into inherited built-ins, allowing corruption of shared built-in objects (DoS)",https://github.com/advisories/GHSA-6jcc-5g8w-32mx,1830,2026-11-23,ai|dev|security

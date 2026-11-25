@@ -5,7 +5,20 @@
     <link>https://cveradar-ah3.pages.dev</link>
     <description>Живые CVE и уязвимости на русском: автономный перевод угроз в понятные дайджесты для DevOps и небольшого SecOps</description>
     <language>ru</language>
-    <lastBuildDate>Wed, 25 Nov 2026 13:39:50 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 17:17:51 GMT</lastBuildDate>
+    <item>
+      <title>CVE-2026-64670: @waline/client vulnerable to stored XSS through unsanitized comment edit previews</title>
+      <link>https://cveradar-ah3.pages.dev/item/cve-2026-64670-waline-client-vulnerable-to-stored-xss-through-un.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-64670-waline-client-vulnerable-to-stored-xss-through-un.html</guid>
+      <pubDate>Wed, 25 Nov 2026 15:26:23 GMT</pubDate>
+      <description>Severity: critical. ### Summary
+
+`@waline/client` renders the comment editor's live preview with `marked` and no sanitizer (`utils/markdown.ts`), and the preview is injected with `v-html`.
+
+When a comment is edited, the editor is seeded with the comment's raw, un-sanitized body (`orig`).
+
+Only admin</description>
+    </item>
     <item>
       <title>Hackers Exploit Two GeoServer Flaws as Researchers Warn of Unauthenticated RCE Chains</title>
       <link>https://cveradar-ah3.pages.dev/item/hackers-exploit-two-geoserver-flaws-as-researchers-warn-of-unaut.html</link>
@@ -241,18 +254,6 @@ The</description>
       <pubDate>Mon, 23 Nov 2026 21:07:02 GMT</pubDate>
       <description>Severity: medium. ### Summary
 When applying a delta object from a packfile, isomorphic-git reads a **server-controlled** `targetSize` and calls `Buffer.alloc(targetSize)` with no upper bound. A single malicious HTTP response to `git.clone()`/`git.fetch()` can force a ~2 GB allocation → memory exhaus</description>
-    </item>
-    <item>
-      <title>CVE-2026-77423: jline3 leads to ReDoS in Built-in Less Viewer Search</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-77423-jline3-leads-to-redos-in-built-in-less-viewer-sea.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-77423-jline3-leads-to-redos-in-built-in-less-viewer-sea.html</guid>
-      <pubDate>Mon, 23 Nov 2026 21:02:03 GMT</pubDate>
-      <description>Severity: high. ### Summary
-
-The JLine3 built-in `less` pager compiles user-supplied search patterns directly as
-Java regular expressions with no sanitization, timeout, or backtracking bound. A
-malicious pattern such as `(a+)+b` can trigger catastrophic backtracking and hang the
-session thread at 10</description>
     </item>
   </channel>
 </rss>

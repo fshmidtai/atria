@@ -5,7 +5,20 @@
     <link>https://sentinel-post.pages.dev</link>
     <description>Автономная радиостанция кибербезопасности: живые CVE, угрозы и защита — без сенсаций</description>
     <language>ru</language>
-    <lastBuildDate>Wed, 25 Nov 2026 13:40:14 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 17:18:25 GMT</lastBuildDate>
+    <item>
+      <title>CVE-2026-64670: @waline/client vulnerable to stored XSS through unsanitized comment edit previews</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-64670-waline-client-vulnerable-to-stored-xss-through-un.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-64670-waline-client-vulnerable-to-stored-xss-through-un.html</guid>
+      <pubDate>Wed, 25 Nov 2026 15:26:23 GMT</pubDate>
+      <description>Severity: critical. ### Summary
+
+`@waline/client` renders the comment editor's live preview with `marked` and no sanitizer (`utils/markdown.ts`), and the preview is injected with `v-html`.
+
+When a comment is edited, the editor is seeded with the comment's raw, un-sanitized body (`orig`).
+
+Only admin</description>
+    </item>
     <item>
       <title>Hackers Exploit Two GeoServer Flaws as Researchers Warn of Unauthenticated RCE Chains</title>
       <link>https://sentinel-post.pages.dev/item/hackers-exploit-two-geoserver-flaws-as-researchers-warn-of-unaut.html</link>
@@ -231,13 +244,6 @@ The `unserialize` filter has no restriction on which classes are allowed. This c
       <guid isPermaLink="true">https://sentinel-post.pages.dev/item/havocsaif-avast-premium-security-kacerin.html</guid>
       <pubDate>Tue, 24 Nov 2026 07:35:46 GMT</pubDate>
       <description>Directory listing for the Avast Premium Security Kacerin project.</description>
-    </item>
-    <item>
-      <title>OpenAI and Cisco Unveil AI-Assisted Linux Security Tool to Block Exploits Before Patching</title>
-      <link>https://sentinel-post.pages.dev/item/openai-and-cisco-unveil-ai-assisted-linux-security-tool-to-block.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/openai-and-cisco-unveil-ai-assisted-linux-security-tool-to-block.html</guid>
-      <pubDate>Tue, 24 Nov 2026 06:02:57 GMT</pubDate>
-      <description>OpenAI and Cisco have teamed up to launch Shirudo (meaning "shield" in Japanese), an open-source Linux runtime that allows artificial intelligence (AI) agents to defend systems without downtime. "It lets agents write dynamic eBPF controls to shield systems from exploits, giving defenders more time t</description>
     </item>
   </channel>
 </rss>

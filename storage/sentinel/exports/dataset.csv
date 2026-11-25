@@ -1,6 +1,7 @@
 uid,source,title,url,buzz,points,comments,author,date,topics
 hn:37392676,hn,Ask HN: I’m an FCC Commissioner proposing regulation of IoT security updates,https://news.ycombinator.com/item?id=37392676,6162,3387,925,SimingtonFCC,2023-09-05,dev|security
 hn:43462783,hn,U.S. national-security leaders included me in a group chat,https://www.theatlantic.com/politics/archive/2025/03/trump-administration-accidentally-texted-me-its-war-plans/682151/,6156,2283,1291,_tk_,2025-03-24,security
+cve:GHSA-crj3-q72p-ggqm,cve,CVE-2026-64670: @waline/client vulnerable to stored XSS through unsanitized comment edit previews,https://github.com/advisories/GHSA-crj3-q72p-ggqm,6080,6000,0,@waline/client,2026-11-25,ai|dev|security
 cve:GHSA-c4hm-4h84-2cf3,cve,CVE-2026-59726: ruflo MCP bridge allows unauthenticated remote code execution in default Docker Compose deployments,https://github.com/advisories/GHSA-c4hm-4h84-2cf3,6080,6000,0,ruflo,2026-11-24,ai|dev|security
 cve:GHSA-2r3w-c2vx-fv5g,cve,CVE-2026-133469: Xen Orchestra: Empty-object login token,https://github.com/advisories/GHSA-2r3w-c2vx-fv5g,6030,6000,0,xo-server,2026-11-23,dev|crypto|security
 hn:48997548,hn,OpenAI and Hugging Face address security incident during model evaluation,https://openai.com/index/hugging-face-model-evaluation-security-incident/,5103,1632,1157,mfiguiere,2026-07-21,ai|dev|biz|security
@@ -54,7 +55,6 @@ cve:GHSA-q87h-c5m7-659j,cve,CVE-2026-132277: Inscriptis: Quadratic memory growth
 cve:GHSA-h57j-5f5m-789v,cve,CVE-2026-104884: contao/core-bundle: Cross-site scripting in the frontend search results,https://github.com/advisories/GHSA-h57j-5f5m-789v,1810,1800,0,contao/core-bundle,2026-11-20,ai|security
 cve:GHSA-23w9-4pg3-xwm3,cve,CVE-2026-104882: contao/core-bundle: Improper access control in the CSV import wizard,https://github.com/advisories/GHSA-23w9-4pg3-xwm3,1810,1800,0,contao/core-bundle,2026-11-20,ai|dev|security
 cve:GHSA-3r9g-pfhv-3228,cve,CVE-2026-104881: contao/newsletter-bundle: Contao newsletter custom actions bypass channel-scoped authorization,https://github.com/advisories/GHSA-3r9g-pfhv-3228,1810,1800,0,contao/newsletter-bundle,2026-11-20,ai|dev|security
-cve:GHSA-qh76-45cr-8xrc,cve,"CVE-2026-61725: sevenz-rust2: decompress builds each output path as dest.join(entry.name()) with no traversal guard, allowing a crafted .7z to write files outside the destination (Zip-Slip)",https://github.com/advisories/GHSA-qh76-45cr-8xrc,1810,1800,0,sevenz-rust2,2026-11-20,ai|dev|security
 hn:25843874,hn,Kids find a security flaw in Linux Mint by mashing keys,https://github.com/linuxmint/cinnamon-screensaver/issues/354,1765,778,329,subins2000,2021-01-20,security
 hn:11422531,hn,Freedom and security issues on x86 platforms,http://mail.fsfeurope.org/pipermail/discussion/2016-April/010912.html,1535,713,274,stargrave,2016-04-04,security
 hn:12071098,hn,Pokemon Go is a huge security risk,http://adamreeve.tumblr.com/post/147120922009/pokemon-go-is-a-huge-security-risk,1533,780,251,patchoulol,2016-07-11,security
@@ -67,15 +67,15 @@ hn:21766137,hn,ACLU sues Homeland Security over 'stingray' cell phone surveillan
 hn:639976,hn,How I Hacked Hacker News (with arc security advisory),https://news.ycombinator.com/item?id=639976,1162,928,78,dfranke,2009-06-03,ai|dev|security|hardware
 hn:12140477,hn,A practical security guide for web developers,https://github.com/FallibleInc/security-guide-for-developers,1098,894,68,zianwar,2016-07-21,dev|security
 hn:20468845,hn,HTTP Security Headers – A Complete Guide,https://nullsweep.com/http-security-headers-a-complete-guide/,943,709,78,BCharlie,2019-07-18,dev|security
-gh:erkamyaman/safe-anything,github,erkamyaman/safe-anything,https://github.com/erkamyaman/safe-anything,885,669,62,erkamyaman,2026-11-22,ai|dev|security
+gh:erkamyaman/safe-anything,github,erkamyaman/safe-anything,https://github.com/erkamyaman/safe-anything,893,685,66,erkamyaman,2026-11-22,ai|dev|security
 cve:GHSA-72jh-722p-rqr3,cve,CVE-2026-77331: memtomem-stm: Concurrent LTM recovery can duplicate reconnects or reuse a cancelled transport session,https://github.com/advisories/GHSA-72jh-722p-rqr3,710,700,0,memtomem-stm,2026-11-20,ai|science|security
 cve:GHSA-43hx-xm7w-3mhj,cve,CVE-2026-77332: memtomem-stm: Surfaced memory data can escape the Markdown compatibility boundary,https://github.com/advisories/GHSA-43hx-xm7w-3mhj,710,700,0,memtomem-stm,2026-11-20,ai|dev|security
 gh:Aabyss-Team/Threat-Broadcast-Plus,github,Aabyss-Team/Threat-Broadcast-Plus,https://github.com/Aabyss-Team/Threat-Broadcast-Plus,260,155,35,Aabyss-Team,2026-11-16,
-gh:vulnix0x4/a-better-antivirus,github,vulnix0x4/a-better-antivirus,https://github.com/vulnix0x4/a-better-antivirus,211,172,13,vulnix0x4,2026-11-17,security
-gh:RobustaStudio/semsec,github,RobustaStudio/semsec,https://github.com/RobustaStudio/semsec,147,46,7,RobustaStudio,2026-11-25,ai|dev|security
+gh:vulnix0x4/a-better-antivirus,github,vulnix0x4/a-better-antivirus,https://github.com/vulnix0x4/a-better-antivirus,213,174,13,vulnix0x4,2026-11-17,security
+gh:RobustaStudio/semsec,github,RobustaStudio/semsec,https://github.com/RobustaStudio/semsec,180,73,9,RobustaStudio,2026-11-25,ai|dev|security
 gh:HavocSaif/avast-premium-security-kacerin,github,HavocSaif/avast-premium-security-kacerin,https://github.com/HavocSaif/avast-premium-security-kacerin,118,88,0,HavocSaif,2026-11-24,ai|security
+gh:CybeDefend/cybedefend,github,CybeDefend/cybedefend,https://github.com/CybeDefend/cybedefend,98,50,6,CybeDefend,2026-11-23,ai|security
 gh:zhidun2027/zhidun,github,zhidun2027/zhidun,https://github.com/zhidun2027/zhidun,89,74,5,zhidun2027,2026-11-12,security
-gh:CybeDefend/cybedefend,github,CybeDefend/cybedefend,https://github.com/CybeDefend/cybedefend,89,41,6,CybeDefend,2026-11-23,ai|security
 gh:LoopGrubDolmen/wallet-security-desk,github,LoopGrubDolmen/wallet-security-desk,https://github.com/LoopGrubDolmen/wallet-security-desk,87,87,0,LoopGrubDolmen,2026-11-15,ai|security
 rss:d4ba949bbfe1b1,rss,Tracking Incidents of Hacking Using AI Tools,https://www.schneier.com/blog/archives/2026/11/tracking-incidents-of-hacking-using-ai-tools.html,80,0,0,Bruce Schneier,2026-11-25,ai|dev
 rss:4024942716e979,rss,Hackers Exploit Two GeoServer Flaws as Researchers Warn of Unauthenticated RCE Chains,https://thehackernews.com/2026/11/hackers-exploit-two-geoserver-flaws-as.html,80,0,0,info@thehackernews.com (The Hacker News),2026-11-25,ai|security|hardware
@@ -87,12 +87,11 @@ rss:858eff86ddc4f9,rss,Hackers Exploited CVSS 10.0 Hex.pm RCE Flaw to Compromise
 rss:cb8d1c0913cff9,rss,Hackers Compromise 24 Check Point Management Servers in Suspected AI-Driven Attack Campaign,https://thehackernews.com/2026/11/hackers-compromise-24-check-point.html,80,0,0,info@thehackernews.com (The Hacker News),2026-11-25,ai|security|hardware
 rss:00a1bb4a053530,rss,Com-Affiliated Hackers Hijack Cloud Accounts via Vishing for Data Theft and Extortion,https://thehackernews.com/2026/11/com-affiliated-hackers-hijack-cloud.html,80,0,0,info@thehackernews.com (The Hacker News),2026-11-25,
 rss:40bb701a9f7ce0,rss,WordPress Blocks Six Backdoored WP Connect Plugins Before Malicious Releases Go Live,https://thehackernews.com/2026/11/wordpress-blocks-six-backdoored-wp.html,80,0,0,info@thehackernews.com (The Hacker News),2026-11-25,dev
-rss:1b79e713cb453f,rss,Iran-Aligned Volant Manticore Uses IPFS-Based KuboShell Backdoor in Espionage Campaigns,https://thehackernews.com/2026/11/iran-aligned-volant-manticore-uses-ipfs.html,80,0,0,info@thehackernews.com (The Hacker News),2026-11-24,ai|dev
-gh:dinosn/CVE-2026-123890,github,dinosn/CVE-2026-123890,https://github.com/dinosn/CVE-2026-123890,68,23,5,dinosn,2026-11-23,ai|security
+gh:dinosn/CVE-2026-123890,github,dinosn/CVE-2026-123890,https://github.com/dinosn/CVE-2026-123890,70,25,5,dinosn,2026-11-23,ai|security
 gh:hertzurchincutters/VaultAuth-Desktop2FATOTP,github,hertzurchincutters/VaultAuth-Desktop2FATOTP,https://github.com/hertzurchincutters/VaultAuth-Desktop2FATOTP,63,33,0,hertzurchincutters,2026-11-23,
 gh:Microshareanimate/ExifScrub-PhotoMetadataCleaner,github,Microshareanimate/ExifScrub-PhotoMetadataCleaner,https://github.com/Microshareanimate/ExifScrub-PhotoMetadataCleaner,63,33,0,Microshareanimate,2026-11-23,
 gh:spatie/laravel-suspicious-login,github,spatie/laravel-suspicious-login,https://github.com/spatie/laravel-suspicious-login,62,59,1,spatie,2026-11-17,
-gh:prepaid-host/hvpatch,github,prepaid-host/hvpatch,https://github.com/prepaid-host/hvpatch,60,30,0,prepaid-host,2026-11-23,ai|security
+gh:prepaid-host/hvpatch,github,prepaid-host/hvpatch,https://github.com/prepaid-host/hvpatch,61,31,0,prepaid-host,2026-11-23,ai|security
 gh:balikunsh-bot/keepassxc-talroora,github,balikunsh-bot/keepassxc-talroora,https://github.com/balikunsh-bot/keepassxc-talroora,58,48,0,balikunsh-bot,2026-11-18,dev
 gh:NPCmillionaire/unredact.tools,github,NPCmillionaire/unredact.tools,https://github.com/NPCmillionaire/unredact.tools,55,49,2,NPCmillionaire,2026-11-12,ai
 gh:xiaotianya14/apk-reverse-skill,github,xiaotianya14/apk-reverse-skill,https://github.com/xiaotianya14/apk-reverse-skill,48,21,9,xiaotianya14,2026-11-14,ai
@@ -100,6 +99,7 @@ gh:rammahmagdy/Latch,github,rammahmagdy/Latch,https://github.com/rammahmagdy/Lat
 gh:khanh0209q/NextDNS-Config-Set-And-Forget,github,khanh0209q/NextDNS-Config-Set-And-Forget,https://github.com/khanh0209q/NextDNS-Config-Set-And-Forget,39,36,1,khanh0209q,2026-11-14,
 rss:ac5a917a6d460b,rss,We Get the Infrastructure We Pay For,https://www.schneier.com/blog/archives/2026/11/we-get-the-infrastructure-we-pay-for.html,30,0,0,Bruce Schneier,2026-11-24,ai|science|security
 rss:dcb1e49d6f398d,rss,Humans Have Rights. Machines Do Not.,https://www.schneier.com/blog/archives/2026/11/humans-have-rights-machines-do-not.html,30,0,0,Bruce Schneier,2026-11-23,ai
+rss:1b79e713cb453f,rss,Iran-Aligned Volant Manticore Uses IPFS-Based KuboShell Backdoor in Espionage Campaigns,https://thehackernews.com/2026/11/iran-aligned-volant-manticore-uses-ipfs.html,30,0,0,info@thehackernews.com (The Hacker News),2026-11-24,ai|dev
 rss:a8772c3cfced45,rss,VMware vCenter Hit by Another Critical 9.8-Rated Auth Bypass Flaw After Zero-Day Exploitation,https://thehackernews.com/2026/11/vmware-vcenter-hit-by-another-critical.html,30,0,0,info@thehackernews.com (The Hacker News),2026-11-24,dev|science|security
 rss:4c2b395a7adf58,rss,Okta Links ShinyHunters-Associated Vishing Group to New INCEPTION Data Leak Site,https://thehackernews.com/2026/11/okta-links-shinyhunters-associated.html,30,0,0,info@thehackernews.com (The Hacker News),2026-11-24,
 rss:1c024142ae254b,rss,Hackers Found a Way Around GitHub SHA Pinning. This Webinar Explains How to Close the Gap,https://thehackernews.com/2026/11/hackers-found-way-around-github-sha.html,30,0,0,info@thehackernews.com (The Hacker News),2026-11-24,ai|dev|security

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-25T13:40:14+00:00",
+  "generated_at": "2026-11-25T17:18:25+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -172,6 +172,25 @@
         "security"
       ],
       "date": "2025-03-24"
+    },
+    {
+      "uid": "cve:GHSA-crj3-q72p-ggqm",
+      "source": "cve",
+      "title": "CVE-2026-64670: @waline/client vulnerable to stored XSS through unsanitized comment edit previews",
+      "url": "https://github.com/advisories/GHSA-crj3-q72p-ggqm",
+      "ts": 1795620383.0,
+      "points": 6000,
+      "comments": 0,
+      "author": "@waline/client",
+      "summary": "Severity: critical. ### Summary\n\n`@waline/client` renders the comment editor's live preview with `marked` and no sanitizer (`utils/markdown.ts`), and the preview is injected with `v-html`.\n\nWhen a comment is edited, the editor is seeded with the comment's raw, un-sanitized body (`orig`).\n\nOnly administrators and the co",
+      "recipe": "gh_advisories",
+      "buzz": 6080,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-25"
     },
     {
       "uid": "cve:GHSA-c4hm-4h84-2cf3",
@@ -1125,25 +1144,6 @@
       "date": "2026-11-20"
     },
     {
-      "uid": "cve:GHSA-qh76-45cr-8xrc",
-      "source": "cve",
-      "title": "CVE-2026-61725: sevenz-rust2: decompress builds each output path as dest.join(entry.name()) with no traversal guard, allowing a crafted .7z to write files outside the destination (Zip-Slip)",
-      "url": "https://github.com/advisories/GHSA-qh76-45cr-8xrc",
-      "ts": 1795217594.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "sevenz-rust2",
-      "summary": "Severity: medium. ### Summary\n\nExtracting an attacker-supplied 7z archive can write files outside the destination directory. The 7z header stores each entry's path as a UTF-16 name with nothing constraining it to a relative, in-tree path. The extractor joins that name onto the destination and writes to the result wit",
-      "recipe": "gh_advisories",
-      "buzz": 1810,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-20"
-    },
-    {
       "uid": "hn:25843874",
       "source": "hn",
       "title": "Kids find a security flaw in Linux Mint by mashing keys",
@@ -1356,12 +1356,12 @@
       "title": "erkamyaman/safe-anything",
       "url": "https://github.com/erkamyaman/safe-anything",
       "ts": 1795365850.0,
-      "points": 669,
-      "comments": 62,
+      "points": 685,
+      "comments": 66,
       "author": "erkamyaman",
       "summary": "Find the holes before someone else does. A fast, 100% Rust vulnerability scanner: XSS, SQL injection, leaked secrets, dependency CVEs and AI agent setups.",
       "recipe": "github_sec",
-      "buzz": 885,
+      "buzz": 893,
       "topics": [
         "ai",
         "dev",
@@ -1428,12 +1428,12 @@
       "title": "vulnix0x4/a-better-antivirus",
       "url": "https://github.com/vulnix0x4/a-better-antivirus",
       "ts": 1794885574.0,
-      "points": 172,
+      "points": 174,
       "comments": 13,
       "author": "vulnix0x4",
       "summary": "Catches infostealers in the act on Windows: plants fake passwords, wallets and app data that only malware would read, and freezes whatever touches them.",
       "recipe": "github_sec",
-      "buzz": 211,
+      "buzz": 213,
       "topics": [
         "security"
       ],
@@ -1445,12 +1445,12 @@
       "title": "RobustaStudio/semsec",
       "url": "https://github.com/RobustaStudio/semsec",
       "ts": 1795605022.0,
-      "points": 46,
-      "comments": 7,
+      "points": 73,
+      "comments": 9,
       "author": "RobustaStudio",
       "summary": "High-precision Semgrep security rules — 146 taint-tracking and secret detection rules for Python, JavaScript, Java, PHP covering 75 providers. By Robusta Studio.",
       "recipe": "github_sec",
-      "buzz": 147,
+      "buzz": 180,
       "topics": [
         "ai",
         "dev",
@@ -1477,6 +1477,24 @@
       "date": "2026-11-24"
     },
     {
+      "uid": "gh:CybeDefend/cybedefend",
+      "source": "github",
+      "title": "CybeDefend/cybedefend",
+      "url": "https://github.com/CybeDefend/cybedefend",
+      "ts": 1795448166.0,
+      "points": 50,
+      "comments": 6,
+      "author": "CybeDefend",
+      "summary": "Agentic ASPM, the open source Snyk alternative. A full security audit in one command",
+      "recipe": "github_sec",
+      "buzz": 98,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-23"
+    },
+    {
       "uid": "gh:zhidun2027/zhidun",
       "source": "github",
       "title": "zhidun2027/zhidun",
@@ -1492,24 +1510,6 @@
         "security"
       ],
       "date": "2026-11-12"
-    },
-    {
-      "uid": "gh:CybeDefend/cybedefend",
-      "source": "github",
-      "title": "CybeDefend/cybedefend",
-      "url": "https://github.com/CybeDefend/cybedefend",
-      "ts": 1795448166.0,
-      "points": 41,
-      "comments": 6,
-      "author": "CybeDefend",
-      "summary": "Agentic ASPM, the open source Snyk alternative. A full security audit in one command",
-      "recipe": "github_sec",
-      "buzz": 89,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-23"
     },
     {
       "uid": "gh:LoopGrubDolmen/wallet-security-desk",
@@ -1710,35 +1710,17 @@
       "date": "2026-11-25"
     },
     {
-      "uid": "rss:1b79e713cb453f",
-      "source": "rss",
-      "title": "Iran-Aligned Volant Manticore Uses IPFS-Based KuboShell Backdoor in Espionage Campaigns",
-      "url": "https://thehackernews.com/2026/11/iran-aligned-volant-manticore-uses-ipfs.html",
-      "ts": 1795539247.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "A previously undocumented Iran-aligned cyber espionage group called Volant Manticore has targeted telecommunications companies, airlines, and critical infrastructure in Cyprus. Central to the group's operations is a backdoor called KuboShell that uses the InterPlanetary File System (IPFS) for command-and-control (C2) and deploys Homa, a post-compromise framework that's a reimplementation of",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "dev"
-      ],
-      "date": "2026-11-24"
-    },
-    {
       "uid": "gh:dinosn/CVE-2026-123890",
       "source": "github",
       "title": "dinosn/CVE-2026-123890",
       "url": "https://github.com/dinosn/CVE-2026-123890",
       "ts": 1795409774.0,
-      "points": 23,
+      "points": 25,
       "comments": 5,
       "author": "dinosn",
       "summary": "PoC for CVE-[phone]: unauthenticated SRP-6a session-key disclosure in VMware vCenter vmdird DCE/RPC (TCP 2012). Bind -> rpc_srp_verifier new -> get_session_key -> K leaked without password; optional verify_session completes an [email] session.",
       "recipe": "github_sec",
-      "buzz": 68,
+      "buzz": 70,
       "topics": [
         "ai",
         "security"
@@ -1796,12 +1778,12 @@
       "title": "prepaid-host/hvpatch",
       "url": "https://github.com/prepaid-host/hvpatch",
       "ts": 1795428035.0,
-      "points": 30,
+      "points": 31,
       "comments": 0,
       "author": "prepaid-host",
       "summary": "Kernel livepatching for Proxmox VE hypervisors: klp-build modules checked against the shipped kernel, reviewed CVE catalog, verifying node agent",
       "recipe": "github_sec",
-      "buzz": 60,
+      "buzz": 61,
       "topics": [
         "ai",
         "security"
@@ -1924,6 +1906,24 @@
         "ai"
       ],
       "date": "2026-11-23"
+    },
+    {
+      "uid": "rss:1b79e713cb453f",
+      "source": "rss",
+      "title": "Iran-Aligned Volant Manticore Uses IPFS-Based KuboShell Backdoor in Espionage Campaigns",
+      "url": "https://thehackernews.com/2026/11/iran-aligned-volant-manticore-uses-ipfs.html",
+      "ts": 1795539247.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "A previously undocumented Iran-aligned cyber espionage group called Volant Manticore has targeted telecommunications companies, airlines, and critical infrastructure in Cyprus. Central to the group's operations is a backdoor called KuboShell that uses the InterPlanetary File System (IPFS) for command-and-control (C2) and deploys Homa, a post-compromise framework that's a reimplementation of",
+      "recipe": "hackersnews",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "dev"
+      ],
+      "date": "2026-11-24"
     },
     {
       "uid": "rss:a8772c3cfced45",

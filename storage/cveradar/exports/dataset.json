@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-25T13:39:50+00:00",
+  "generated_at": "2026-11-25T17:17:51+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -38,6 +38,25 @@
     ]
   },
   "items": [
+    {
+      "uid": "cve:GHSA-crj3-q72p-ggqm",
+      "source": "cve",
+      "title": "CVE-2026-64670: @waline/client vulnerable to stored XSS through unsanitized comment edit previews",
+      "url": "https://github.com/advisories/GHSA-crj3-q72p-ggqm",
+      "ts": 1795620383.0,
+      "points": 6000,
+      "comments": 0,
+      "author": "@waline/client",
+      "summary": "Severity: critical. ### Summary\n\n`@waline/client` renders the comment editor's live preview with `marked` and no sanitizer (`utils/markdown.ts`), and the preview is injected with `v-html`.\n\nWhen a comment is edited, the editor is seeded with the comment's raw, un-sanitized body (`orig`).\n\nOnly administrators and the co",
+      "recipe": "gh_advisories",
+      "buzz": 6080,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-25"
+    },
     {
       "uid": "cve:GHSA-c4hm-4h84-2cf3",
       "source": "cve",
@@ -538,25 +557,6 @@
       "date": "2026-11-20"
     },
     {
-      "uid": "cve:GHSA-qh76-45cr-8xrc",
-      "source": "cve",
-      "title": "CVE-2026-61725: sevenz-rust2: decompress builds each output path as dest.join(entry.name()) with no traversal guard, allowing a crafted .7z to write files outside the destination (Zip-Slip)",
-      "url": "https://github.com/advisories/GHSA-qh76-45cr-8xrc",
-      "ts": 1795217594.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "sevenz-rust2",
-      "summary": "Severity: medium. ### Summary\n\nExtracting an attacker-supplied 7z archive can write files outside the destination directory. The 7z header stores each entry's path as a UTF-16 name with nothing constraining it to a relative, in-tree path. The extractor joins that name onto the destination and writes to the result wit",
-      "recipe": "gh_advisories",
-      "buzz": 1810,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-20"
-    },
-    {
       "uid": "cve:GHSA-72jh-722p-rqr3",
       "source": "cve",
       "title": "CVE-2026-77331: memtomem-stm: Concurrent LTM recovery can duplicate reconnects or reuse a cancelled transport session",
@@ -767,7 +767,7 @@
       "author": "info@thehackernews.com (The Hacker News)",
       "summary": "A previously undocumented Iran-aligned cyber espionage group called Volant Manticore has targeted telecommunications companies, airlines, and critical infrastructure in Cyprus. Central to the group's operations is a backdoor called KuboShell that uses the InterPlanetary File System (IPFS) for command-and-control (C2) and deploys Homa, a post-compromise framework that's a reimplementation of",
       "recipe": "the_hacker_news",
-      "buzz": 80,
+      "buzz": 30,
       "topics": [
         "ai",
         "dev"

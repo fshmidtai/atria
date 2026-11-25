@@ -1,4 +1,5 @@
 cve_id,severity,package,title,url,date
+CVE-2026-64670,critical,@waline/client,CVE-2026-64670: @waline/client vulnerable to stored XSS through unsanitized comment edit previews,https://github.com/advisories/GHSA-crj3-q72p-ggqm,2026-11-25
 CVE-2026-59726,critical,ruflo,CVE-2026-59726: ruflo MCP bridge allows unauthenticated remote code execution in default Docker Compose deployments,https://github.com/advisories/GHSA-c4hm-4h84-2cf3,2026-11-24
 CVE-2026-133469,critical,xo-server,CVE-2026-133469: Xen Orchestra: Empty-object login token,https://github.com/advisories/GHSA-2r3w-c2vx-fv5g,2026-11-23
 CVE-2026-64855,high,soapbar,CVE-2026-64855: soapbar: verify_envelope_bsp accepts an unauthenticated embedded certificate (signature forgery / authentication bypass),https://github.com/advisories/GHSA-859w-52fx-hcm6,2026-11-24
@@ -26,6 +27,5 @@ CVE-2026-132277,medium,inscriptis,CVE-2026-132277: Inscriptis: Quadratic memory 
 CVE-2026-104884,medium,contao/core-bundle,CVE-2026-104884: contao/core-bundle: Cross-site scripting in the frontend search results,https://github.com/advisories/GHSA-h57j-5f5m-789v,2026-11-20
 CVE-2026-104882,medium,contao/core-bundle,CVE-2026-104882: contao/core-bundle: Improper access control in the CSV import wizard,https://github.com/advisories/GHSA-23w9-4pg3-xwm3,2026-11-20
 CVE-2026-104881,medium,contao/newsletter-bundle,CVE-2026-104881: contao/newsletter-bundle: Contao newsletter custom actions bypass channel-scoped authorization,https://github.com/advisories/GHSA-3r9g-pfhv-3228,2026-11-20
-CVE-2026-61725,medium,sevenz-rust2,"CVE-2026-61725: sevenz-rust2: decompress builds each output path as dest.join(entry.name()) with no traversal guard, allowing a crafted .7z to write files outside the destination (Zip-Slip)",https://github.com/advisories/GHSA-qh76-45cr-8xrc,2026-11-20
 CVE-2026-77331,low,memtomem-stm,CVE-2026-77331: memtomem-stm: Concurrent LTM recovery can duplicate reconnects or reuse a cancelled transport session,https://github.com/advisories/GHSA-72jh-722p-rqr3,2026-11-20
 CVE-2026-77332,low,memtomem-stm,CVE-2026-77332: memtomem-stm: Surfaced memory data can escape the Markdown compatibility boundary,https://github.com/advisories/GHSA-43hx-xm7w-3mhj,2026-11-20
