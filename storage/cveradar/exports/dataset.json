@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T13:39:01+00:00",
+  "generated_at": "2026-11-26T17:23:18+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -20,9 +20,9 @@
     "by_topic": {
       "security": 51,
       "dev": 38,
-      "ai": 36,
+      "ai": 37,
       "hardware": 11,
-      "crypto": 4,
+      "crypto": 5,
       "science": 4,
       "biz": 2
     },
@@ -87,7 +87,7 @@
       "author": "@waline/client",
       "summary": "Severity: critical. ### Summary\n\n`@waline/client` renders the comment editor's live preview with `marked` and no sanitizer (`utils/markdown.ts`), and the preview is injected with `v-html`.\n\nWhen a comment is edited, the editor is seeded with the comment's raw, un-sanitized body (`orig`).\n\nOnly administrators and the co",
       "recipe": "gh_advisories",
-      "buzz": 6080,
+      "buzz": 6030,
       "topics": [
         "ai",
         "dev",
@@ -308,7 +308,7 @@
       "author": "org.gradle:gradle-core",
       "summary": "Severity: high. ### Impact\n\nWhen resolving dependencies, Gradle searches repositories in declaration order. If it encounters connection errors, Gradle will disable the repository and fail dependency resolution. This is necessary for both reproducibility and security reasons to prevent dependencies from being resolv",
       "recipe": "gh_advisories",
-      "buzz": 3530,
+      "buzz": 3510,
       "topics": [
         "ai",
         "security"
@@ -326,7 +326,7 @@
       "author": "org.gradle:gradle-core",
       "summary": "Severity: high. ### Impact\n\nWhen resolving dependencies, Gradle searches repositories in declaration order. If it encounters connection errors, Gradle will disable the repository and fail dependency resolution. This is necessary for both reproducibility and security reasons to prevent dependencies from being resolv",
       "recipe": "gh_advisories",
-      "buzz": 3530,
+      "buzz": 3510,
       "topics": [
         "ai",
         "security"
@@ -592,6 +592,26 @@
         "security"
       ],
       "date": "2026-11-20"
+    },
+    {
+      "uid": "rss:30a2f68c277b74",
+      "source": "rss",
+      "title": "North Korea-Linked PolinRider Poisons Over 7,600 GitHub Repositories to Spread Malware",
+      "url": "https://thehackernews.com/2026/11/north-korea-linked-polinrider-poisons.html",
+      "ts": 1795706021.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "The threat actors behind the PolinRider campaign have been observed planting a Python loader in GitHub repositories, as evidence emerges that the activity may have started as far back as February 2025. \"The loader hides in a small utils package or in conftest.py,\" SafeDep said in a report published this week. \"When Python imports the file, the loader reads the newest transaction that an",
+      "recipe": "the_hacker_news",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "crypto",
+        "security"
+      ],
+      "date": "2026-11-26"
     },
     {
       "uid": "rss:6318b6c7f69240",
@@ -1057,7 +1077,7 @@
       "author": "info@thehackernews.com (The Hacker News)",
       "summary": "A stolen key. A trusted message. A routine update. None of these looks like the start of a major security problem. That's partly why they work. Attackers don't always need to break down a door. Sometimes they just use one that's already open. This week's stories show how quickly a small opening can turn into a much bigger mess. One breach helps attackers reach another target. Tools people rely",
       "recipe": "the_hacker_news",
-      "buzz": 30,
+      "buzz": 10,
       "topics": [
         "dev",
         "security"
@@ -1121,24 +1141,6 @@
         "biz",
         "security",
         "hardware"
-      ],
-      "date": "2026-11-23"
-    },
-    {
-      "uid": "rss:4b4ed5dc11dc0f",
-      "source": "rss",
-      "title": "Hackers Exploit Critical ASP.NET Anti-CSRF Library Flaw Allowing Unauthenticated RCE",
-      "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-aspnet-anti.html",
-      "ts": 1795425116.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Cybersecurity researchers have urged users to discontinue using a legacy ASP.NET anti-CSRF library named Idunno.AntiCsrf (\"Idunno.AntiCsrf.dll\") following the discovery of a critical vulnerability that has been exploited in the wild. The vulnerability, tracked as CVE-[phone], carries a CVSS score of 9.3 out of 10.0. The issue affects versions 0.9.1.0 and 0.9.1 Beta, and relates to an",
-      "recipe": "the_hacker_news",
-      "buzz": 10,
-      "topics": [
-        "dev",
-        "security"
       ],
       "date": "2026-11-23"
     }

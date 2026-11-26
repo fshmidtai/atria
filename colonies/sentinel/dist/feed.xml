@@ -5,7 +5,14 @@
     <link>https://sentinel-post.pages.dev</link>
     <description>Автономная радиостанция кибербезопасности: живые CVE, угрозы и защита — без сенсаций</description>
     <language>ru</language>
-    <lastBuildDate>Thu, 26 Nov 2026 13:39:30 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 17:23:47 GMT</lastBuildDate>
+    <item>
+      <title>North Korea-Linked PolinRider Poisons Over 7,600 GitHub Repositories to Spread Malware</title>
+      <link>https://sentinel-post.pages.dev/item/north-korea-linked-polinrider-poisons-over-7-600-github-reposito.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/north-korea-linked-polinrider-poisons-over-7-600-github-reposito.html</guid>
+      <pubDate>Thu, 26 Nov 2026 15:13:41 GMT</pubDate>
+      <description>The threat actors behind the PolinRider campaign have been observed planting a Python loader in GitHub repositories, as evidence emerges that the activity may have started as far back as February 2025. "The loader hides in a small utils package or in conftest.py," SafeDep said in a report published </description>
+    </item>
     <item>
       <title>Most Wanted: The Phishing Kits and Techniques Getting Past Security Controls</title>
       <link>https://sentinel-post.pages.dev/item/most-wanted-the-phishing-kits-and-techniques-getting-past-securi.html</link>
@@ -285,13 +292,6 @@ Don't supply user controlled data to `include` and `extends` tags.</description>
       <description>Severity: medium. ### Summary
 
 A security vulnerability has been identified in GitHub CLI that could allow remote code execution when users connect to a malicious Codespace using the `gh codespace jupyter` command. The command opens JupyterLab by launching a URL in the user's browser, but that URL i</description>
-    </item>
-    <item>
-      <title>GHSA-jp3c-6v3g-mpxv: github.com/insomniacslk/dhcp permits denial of service through a malformed IPv4 payload length</title>
-      <link>https://sentinel-post.pages.dev/item/ghsa-jp3c-6v3g-mpxv-github-com-insomniacslk-dhcp-permits-denial-.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/ghsa-jp3c-6v3g-mpxv-github-com-insomniacslk-dhcp-permits-denial-.html</guid>
-      <pubDate>Tue, 24 Nov 2026 21:13:37 GMT</pubDate>
-      <description>Severity: high. In github.com/insomniacslk/dhcp/dhcpv4/nclient4, BroadcastRawUDPConn.ReadFrom does not validate that the IPv4 payload length is sufficient to hold a UDP header before calculating the DHCP payload length. A frame with an IPv4 total-length field specifying fewer than eight payload byte</description>
     </item>
   </channel>
 </rss>

@@ -5,7 +5,14 @@
     <link>https://cveradar-ah3.pages.dev</link>
     <description>Живые CVE и уязвимости на русском: автономный перевод угроз в понятные дайджесты для DevOps и небольшого SecOps</description>
     <language>ru</language>
-    <lastBuildDate>Thu, 26 Nov 2026 13:39:01 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 17:23:19 GMT</lastBuildDate>
+    <item>
+      <title>North Korea-Linked PolinRider Poisons Over 7,600 GitHub Repositories to Spread Malware</title>
+      <link>https://cveradar-ah3.pages.dev/item/north-korea-linked-polinrider-poisons-over-7-600-github-reposito.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/north-korea-linked-polinrider-poisons-over-7-600-github-reposito.html</guid>
+      <pubDate>Thu, 26 Nov 2026 15:13:41 GMT</pubDate>
+      <description>The threat actors behind the PolinRider campaign have been observed planting a Python loader in GitHub repositories, as evidence emerges that the activity may have started as far back as February 2025. "The loader hides in a small utils package or in conftest.py," SafeDep said in a report published </description>
+    </item>
     <item>
       <title>Most Wanted: The Phishing Kits and Techniques Getting Past Security Controls</title>
       <link>https://cveradar-ah3.pages.dev/item/most-wanted-the-phishing-kits-and-techniques-getting-past-securi.html</link>
@@ -290,17 +297,6 @@ When etcd is configured with `--listen-client-http-urls` to split the HTTP and g
       <description>Severity: high. ### Summary
 
 The standalone FFmpeg execution endpoint `plugin/API/standAlone/ffmpeg.json.php` builds a shell command string that is passed to `execAsync()` and run via `nohup sh -c "&lt;command&gt;"`. When the decrypted `codeToExec` payload produces a non-empty `avideoPath`, the endpoint a</description>
-    </item>
-    <item>
-      <title>CVE-2026-59192: Cakephp twig-view unserialize Twig filter allows arbitrary object deserialization</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-59192-cakephp-twig-view-unserialize-twig-filter-allows-.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-59192-cakephp-twig-view-unserialize-twig-filter-allows-.html</guid>
-      <pubDate>Tue, 24 Nov 2026 17:42:51 GMT</pubDate>
-      <description>Severity: medium. ### Impact
-The `unserialize` filter has no restriction on which classes are allowed. This can be used as a deserialization remote-code-execution gadget.
-
-### Patches
-1.3.3 and 2.1.2 contain a fix for this issue. The fix may impact backwards compatibility if you are relying on deser</description>
     </item>
   </channel>
 </rss>

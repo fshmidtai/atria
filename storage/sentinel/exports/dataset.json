@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T13:39:30+00:00",
+  "generated_at": "2026-11-26T17:23:47+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -27,10 +27,10 @@
     },
     "by_topic": {
       "security": 113,
-      "ai": 71,
+      "ai": 72,
       "dev": 60,
       "hardware": 16,
-      "crypto": 7,
+      "crypto": 8,
       "biz": 7,
       "science": 7
     },
@@ -222,7 +222,7 @@
       "author": "@waline/client",
       "summary": "Severity: critical. ### Summary\n\n`@waline/client` renders the comment editor's live preview with `marked` and no sanitizer (`utils/markdown.ts`), and the preview is injected with `v-html`.\n\nWhen a comment is edited, the editor is seeded with the comment's raw, un-sanitized body (`orig`).\n\nOnly administrators and the co",
       "recipe": "gh_advisories",
-      "buzz": 6080,
+      "buzz": 6030,
       "topics": [
         "ai",
         "dev",
@@ -360,6 +360,24 @@
       "date": "2021-01-11"
     },
     {
+      "uid": "hn:50644817",
+      "source": "hn",
+      "title": "1Password Security Incident",
+      "url": "https://1password.com/blog/update-on-nov-2026-security-incident",
+      "ts": 1795627106.0,
+      "points": 1594,
+      "comments": 692,
+      "author": "lxhrstn",
+      "summary": "",
+      "recipe": "hn_sec",
+      "buzz": 3700,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-25"
+    },
+    {
       "uid": "cve:GHSA-rj59-9f77-mvg5",
       "source": "cve",
       "title": "CVE-2026-69181: TastyIgniter permits Path Traversal in Media Upload",
@@ -411,24 +429,6 @@
       "recipe": "gh_advisories",
       "buzz": 3580,
       "topics": [
-        "security"
-      ],
-      "date": "2026-11-25"
-    },
-    {
-      "uid": "hn:50644817",
-      "source": "hn",
-      "title": "1Password Security Incident",
-      "url": "https://1password.com/blog/update-on-nov-2026-security-incident",
-      "ts": 1795627106.0,
-      "points": 1513,
-      "comments": 651,
-      "author": "lxhrstn",
-      "summary": "",
-      "recipe": "hn_sec",
-      "buzz": 3546,
-      "topics": [
-        "dev",
         "security"
       ],
       "date": "2026-11-25"
@@ -569,7 +569,7 @@
       "author": "org.gradle:gradle-core",
       "summary": "Severity: high. ### Impact\n\nWhen resolving dependencies, Gradle searches repositories in declaration order. If it encounters connection errors, Gradle will disable the repository and fail dependency resolution. This is necessary for both reproducibility and security reasons to prevent dependencies from being resolv",
       "recipe": "gh_advisories",
-      "buzz": 3530,
+      "buzz": 3510,
       "topics": [
         "ai",
         "security"
@@ -587,7 +587,7 @@
       "author": "org.gradle:gradle-core",
       "summary": "Severity: high. ### Impact\n\nWhen resolving dependencies, Gradle searches repositories in declaration order. If it encounters connection errors, Gradle will disable the repository and fail dependency resolution. This is necessary for both reproducibility and security reasons to prevent dependencies from being resolv",
       "recipe": "gh_advisories",
-      "buzz": 3530,
+      "buzz": 3510,
       "topics": [
         "ai",
         "security"
@@ -1393,12 +1393,12 @@
       "title": "erkamyaman/safe-anything",
       "url": "https://github.com/erkamyaman/safe-anything",
       "ts": 1795365850.0,
-      "points": 753,
-      "comments": 77,
+      "points": 771,
+      "comments": 80,
       "author": "erkamyaman",
       "summary": "Find the holes before someone else does. A fast, 100% Rust vulnerability scanner: XSS, SQL injection, leaked secrets, dependency CVEs and AI agent setups.",
       "recipe": "github_sec",
-      "buzz": 994,
+      "buzz": 1021,
       "topics": [
         "ai",
         "dev",
@@ -1427,16 +1427,35 @@
       "title": "vulnix0x4/a-better-antivirus",
       "url": "https://github.com/vulnix0x4/a-better-antivirus",
       "ts": 1794885574.0,
-      "points": 188,
+      "points": 199,
       "comments": 14,
       "author": "vulnix0x4",
       "summary": "Catches infostealers in the act on Windows: plants fake passwords, wallets and app data that only malware would read, and freezes whatever touches them.",
       "recipe": "github_sec",
-      "buzz": 230,
+      "buzz": 241,
       "topics": [
         "security"
       ],
       "date": "2026-11-17"
+    },
+    {
+      "uid": "gh:RobustaStudio/semsec",
+      "source": "github",
+      "title": "RobustaStudio/semsec",
+      "url": "https://github.com/RobustaStudio/semsec",
+      "ts": 1795605022.0,
+      "points": 125,
+      "comments": 10,
+      "author": "RobustaStudio",
+      "summary": "High-precision Semgrep security rules — 146 taint-tracking and secret detection rules for Python, JavaScript, Java, PHP covering 75 providers. By Robusta Studio.",
+      "recipe": "github_sec",
+      "buzz": 185,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-25"
     },
     {
       "uid": "gh:agivanttechnologies/SlopSquatShield",
@@ -1457,36 +1476,17 @@
       "date": "2026-11-22"
     },
     {
-      "uid": "gh:RobustaStudio/semsec",
-      "source": "github",
-      "title": "RobustaStudio/semsec",
-      "url": "https://github.com/RobustaStudio/semsec",
-      "ts": 1795605022.0,
-      "points": 115,
-      "comments": 10,
-      "author": "RobustaStudio",
-      "summary": "High-precision Semgrep security rules — 146 taint-tracking and secret detection rules for Python, JavaScript, Java, PHP covering 75 providers. By Robusta Studio.",
-      "recipe": "github_sec",
-      "buzz": 175,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-25"
-    },
-    {
       "uid": "gh:CybeDefend/cybedefend",
       "source": "github",
       "title": "CybeDefend/cybedefend",
       "url": "https://github.com/CybeDefend/cybedefend",
       "ts": 1795448166.0,
-      "points": 76,
-      "comments": 9,
+      "points": 85,
+      "comments": 11,
       "author": "CybeDefend",
       "summary": "Agentic ASPM, the open source Snyk alternative. A full security audit in one command",
       "recipe": "github_sec",
-      "buzz": 133,
+      "buzz": 128,
       "topics": [
         "ai",
         "security"
@@ -1528,6 +1528,26 @@
         "security"
       ],
       "date": "2026-11-15"
+    },
+    {
+      "uid": "rss:30a2f68c277b74",
+      "source": "rss",
+      "title": "North Korea-Linked PolinRider Poisons Over 7,600 GitHub Repositories to Spread Malware",
+      "url": "https://thehackernews.com/2026/11/north-korea-linked-polinrider-poisons.html",
+      "ts": 1795706021.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "The threat actors behind the PolinRider campaign have been observed planting a Python loader in GitHub repositories, as evidence emerges that the activity may have started as far back as February 2025. \"The loader hides in a small utils package or in conftest.py,\" SafeDep said in a report published this week. \"When Python imports the file, the loader reads the newest transaction that an",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "crypto",
+        "security"
+      ],
+      "date": "2026-11-26"
     },
     {
       "uid": "rss:6318b6c7f69240",
@@ -1621,6 +1641,23 @@
       "date": "2026-11-26"
     },
     {
+      "uid": "gh:hyscaler/HyScribe",
+      "source": "github",
+      "title": "hyscaler/HyScribe",
+      "url": "https://github.com/hyscaler/HyScribe",
+      "ts": 1795580911.0,
+      "points": 44,
+      "comments": 0,
+      "author": "hyscaler",
+      "summary": "A Rust drop-in replacement for WordPress",
+      "recipe": "github_sec",
+      "buzz": 74,
+      "topics": [
+        "dev"
+      ],
+      "date": "2026-11-25"
+    },
+    {
       "uid": "gh:spatie/laravel-suspicious-login",
       "source": "github",
       "title": "spatie/laravel-suspicious-login",
@@ -1636,34 +1673,17 @@
       "date": "2026-11-17"
     },
     {
-      "uid": "gh:hyscaler/HyScribe",
-      "source": "github",
-      "title": "hyscaler/HyScribe",
-      "url": "https://github.com/hyscaler/HyScribe",
-      "ts": 1795580911.0,
-      "points": 40,
-      "comments": 0,
-      "author": "hyscaler",
-      "summary": "A Rust drop-in replacement for WordPress",
-      "recipe": "github_sec",
-      "buzz": 70,
-      "topics": [
-        "dev"
-      ],
-      "date": "2026-11-25"
-    },
-    {
       "uid": "gh:Black-Ghost-Corp/Gaia-harden",
       "source": "github",
       "title": "Black-Ghost-Corp/Gaia-harden",
       "url": "https://github.com/Black-Ghost-Corp/Gaia-harden",
       "ts": 1795528541.0,
-      "points": 31,
+      "points": 33,
       "comments": 2,
       "author": "Black-Ghost-Corp",
       "summary": "Harden a fresh Ubuntu/Debian server with one command: admin with SSH keys, locked-down SSH, ufw, fail2ban, security updates, kernel hardening, optional Docker/Caddy. Dry-run, idempotent, JSON report, AI-agent skill. Pure Bash.",
       "recipe": "github_sec",
-      "buzz": 67,
+      "buzz": 69,
       "topics": [
         "ai",
         "dev",
@@ -1793,12 +1813,12 @@
       "title": "streichsbaer/tldrcve",
       "url": "https://github.com/streichsbaer/tldrcve",
       "ts": 1795141659.0,
-      "points": 22,
+      "points": 23,
       "comments": 3,
       "author": "streichsbaer",
       "summary": "The vulnerabilities everyone's talking about, in plain English. Are you affected, and what should you do?",
       "recipe": "github_sec",
-      "buzz": 41,
+      "buzz": 42,
       "topics": [
         "ai",
         "security"
@@ -1811,12 +1831,12 @@
       "title": "khanh0209q/NextDNS-Config-Set-And-Forget",
       "url": "https://github.com/khanh0209q/NextDNS-Config-Set-And-Forget",
       "ts": 1794630951.0,
-      "points": 37,
+      "points": 38,
       "comments": 1,
       "author": "khanh0209q",
       "summary": "A zero-breakage, set-and-forget NextDNS configuration for Home & Office.",
       "recipe": "github_sec",
-      "buzz": 40,
+      "buzz": 41,
       "topics": [],
       "date": "2026-11-14"
     },
@@ -2220,24 +2240,6 @@
       "date": "2026-11-23"
     },
     {
-      "uid": "rss:fa05141b817760",
-      "source": "rss",
-      "title": "⚡ Weekly Recap: VMware 0-Day, Java4Shell, NGINX2Root, Ruby2Shell, and a Whole Lot of Shell Trouble",
-      "url": "https://thehackernews.com/2026/11/weekly-recap-vmware-0-day-java4shell.html",
-      "ts": 1795446648.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "A stolen key. A trusted message. A routine update. None of these looks like the start of a major security problem. That's partly why they work. Attackers don't always need to break down a door. Sometimes they just use one that's already open. This week's stories show how quickly a small opening can turn into a much bigger mess. One breach helps attackers reach another target. Tools people rely",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-23"
-    },
-    {
       "uid": "gh:Voidsaintcontact/AVG-Internet-Security-Professional-Edition",
       "source": "github",
       "title": "Voidsaintcontact/AVG-Internet-Security-Professional-Edition",
@@ -2326,6 +2328,24 @@
       "date": "2026-11-20"
     },
     {
+      "uid": "rss:fa05141b817760",
+      "source": "rss",
+      "title": "⚡ Weekly Recap: VMware 0-Day, Java4Shell, NGINX2Root, Ruby2Shell, and a Whole Lot of Shell Trouble",
+      "url": "https://thehackernews.com/2026/11/weekly-recap-vmware-0-day-java4shell.html",
+      "ts": 1795446648.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "A stolen key. A trusted message. A routine update. None of these looks like the start of a major security problem. That's partly why they work. Attackers don't always need to break down a door. Sometimes they just use one that's already open. This week's stories show how quickly a small opening can turn into a much bigger mess. One breach helps attackers reach another target. Tools people rely",
+      "recipe": "hackersnews",
+      "buzz": 10,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-23"
+    },
+    {
       "uid": "rss:c6f205647bbd2a",
       "source": "rss",
       "title": "Critical binary-parser Flaw Enables JavaScript Injection via Malicious Parser Definitions",
@@ -2382,24 +2402,6 @@
         "biz",
         "security",
         "hardware"
-      ],
-      "date": "2026-11-23"
-    },
-    {
-      "uid": "rss:4b4ed5dc11dc0f",
-      "source": "rss",
-      "title": "Hackers Exploit Critical ASP.NET Anti-CSRF Library Flaw Allowing Unauthenticated RCE",
-      "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-aspnet-anti.html",
-      "ts": 1795425116.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Cybersecurity researchers have urged users to discontinue using a legacy ASP.NET anti-CSRF library named Idunno.AntiCsrf (\"Idunno.AntiCsrf.dll\") following the discovery of a critical vulnerability that has been exploited in the wild. The vulnerability, tracked as CVE-[phone], carries a CVSS score of 9.3 out of 10.0. The issue affects versions 0.9.1.0 and 0.9.1 Beta, and relates to an",
-      "recipe": "hackersnews",
-      "buzz": 10,
-      "topics": [
-        "dev",
-        "security"
       ],
       "date": "2026-11-23"
     },
