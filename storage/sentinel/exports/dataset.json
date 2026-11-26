@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T17:23:47+00:00",
+  "generated_at": "2026-11-26T21:08:27+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -26,13 +26,13 @@
       "krebs": 10
     },
     "by_topic": {
-      "security": 113,
+      "security": 112,
       "ai": 72,
-      "dev": 60,
+      "dev": 59,
       "hardware": 16,
       "crypto": 8,
-      "biz": 7,
-      "science": 7
+      "science": 7,
+      "biz": 6
     },
     "top_domains": [
       [
@@ -260,7 +260,7 @@
       "author": "xo-server",
       "summary": "Severity: critical. ### Summary\n\nREST cookie parsing turns `authenticationToken=j:%7B%7D` into `{}`. REST authentication passes that object to the XO token provider without requiring a string. The token collection treats `{}` as an unfiltered lookup and returns its first token; the provider authenticates as that token'",
       "recipe": "gh_advisories",
-      "buzz": 6030,
+      "buzz": 6010,
       "topics": [
         "dev",
         "crypto",
@@ -365,12 +365,12 @@
       "title": "1Password Security Incident",
       "url": "https://1password.com/blog/update-on-nov-2026-security-incident",
       "ts": 1795627106.0,
-      "points": 1594,
-      "comments": 692,
+      "points": 1620,
+      "comments": 698,
       "author": "lxhrstn",
       "summary": "",
       "recipe": "hn_sec",
-      "buzz": 3700,
+      "buzz": 3744,
       "topics": [
         "dev",
         "security"
@@ -397,6 +397,23 @@
       "date": "2026-11-25"
     },
     {
+      "uid": "hn:50172041",
+      "source": "hn",
+      "title": "Security advisory: Critical remote code execution vulnerabilities, update now",
+      "url": "https://www.php.net/archive/2026.php#2026-10-21-5",
+      "ts": 1792527350.0,
+      "points": 1561,
+      "comments": 659,
+      "author": "xd",
+      "summary": "<a href=\"https:&#x2F;&#x2F;cert.europa.eu&#x2F;publications&#x2F;security-advisories&#x2F;2026-018&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;cert.europa.eu&#x2F;publications&#x2F;security-advisories&#x2F;2026...</a><p><a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=[phone]\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=[phone]</a>",
+      "recipe": "hn_sec",
+      "buzz": 3538,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-10-20"
+    },
+    {
       "uid": "cve:GHSA-vw2v-g4x7-xcqg",
       "source": "cve",
       "title": "CVE-2026-68539: fulgur allows Unbounded string-set value accumulation causes memory/CPU exhaustion (denial of service)",
@@ -407,7 +424,7 @@
       "author": "fulgur",
       "summary": "Severity: high. `fulgur` converts untrusted HTML/CSS into PDF, commonly on a server that\nprocesses input supplied by many tenants. In versions from 0.4.4 up to (but not\nincluding) the patched release, the CSS `string-set` named-string values\nresolved from a document were accumulated per element with no memory budge",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "ai",
         "dev",
@@ -427,28 +444,11 @@
       "author": "power-components/livewire-powergrid",
       "summary": "Severity: high. ## [Description]\n\nThe public Livewire property `sortDirection` is interpolated **verbatim** into a\nraw SQL `ORDER BY` clause and is not restricted to `asc`/`desc`, allowing arbitrary\nSQL injection through `POST /livewire/update`.\n\n**Data flow**\n\n- **Source** — `src/Concerns/Sorting.php`: `public str",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "security"
       ],
       "date": "2026-11-25"
-    },
-    {
-      "uid": "hn:50172041",
-      "source": "hn",
-      "title": "Security advisory: Critical remote code execution vulnerabilities, update now",
-      "url": "https://www.php.net/archive/2026.php#2026-10-21-5",
-      "ts": 1792527350.0,
-      "points": 1561,
-      "comments": 659,
-      "author": "xd",
-      "summary": "<a href=\"https:&#x2F;&#x2F;cert.europa.eu&#x2F;publications&#x2F;security-advisories&#x2F;2026-018&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;cert.europa.eu&#x2F;publications&#x2F;security-advisories&#x2F;2026...</a><p><a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=[phone]\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=[phone]</a>",
-      "recipe": "hn_sec",
-      "buzz": 3538,
-      "topics": [
-        "security"
-      ],
-      "date": "2026-10-20"
     },
     {
       "uid": "cve:GHSA-859w-52fx-hcm6",
@@ -534,7 +534,7 @@
       "author": "org.jline:jline-builtins",
       "summary": "Severity: high. ### Summary\n\nThe JLine3 built-in `less` pager compiles user-supplied search patterns directly as\nJava regular expressions with no sanitization, timeout, or backtracking bound. A\nmalicious pattern such as `(a+)+b` can trigger catastrophic backtracking and hang the\nsession thread at 100% CPU. In deplo",
       "recipe": "gh_advisories",
-      "buzz": 3530,
+      "buzz": 3510,
       "topics": [
         "security",
         "hardware"
@@ -552,7 +552,7 @@
       "author": "github.com/klever-io/klever-go",
       "summary": "Severity: high. ## Summary\n\nWhen validating an incoming block header, `HeaderSigVerifier.verifyConsensusSize` counts *every* set bit in `PubKeysBitmap` — including bits that correspond to no validator (the padding bits of the final byte, which exist whenever the consensus group size is not a multiple of 8). The sub",
       "recipe": "gh_advisories",
-      "buzz": 3530,
+      "buzz": 3510,
       "topics": [
         "security"
       ],
@@ -963,26 +963,6 @@
       "date": "2026-11-25"
     },
     {
-      "uid": "cve:GHSA-h746-qpxh-ph7g",
-      "source": "cve",
-      "title": "CVE-2026-65973: laradocs  Command injection via unescaped Node.js binary path in KaTeX SSR",
-      "url": "https://github.com/advisories/GHSA-h746-qpxh-ph7g",
-      "ts": 1795635713.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "petebishwhip/laradocs",
-      "summary": "Severity: medium. ### Summary\nLocal command injection (CWE-78) in server-side KaTeX rendering via an unescaped Node.js binary path in a `proc_open()` command string.\n\n### Affected versions\n>= 0.4.0, < 1.0.0\n\n### Patched versions\n>= 1.0.0 (fixed in commit `100cb1e`)\n\n### Impact\nWhen rendering KaTeX math **server-side*",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "dev",
-        "science",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-25"
-    },
-    {
       "uid": "hn:48166459",
       "source": "hn",
       "title": "Mozilla to UK regulators: VPNs are essential privacy and security tools",
@@ -1032,6 +1012,26 @@
         "security"
       ],
       "date": "2016-12-15"
+    },
+    {
+      "uid": "cve:GHSA-h746-qpxh-ph7g",
+      "source": "cve",
+      "title": "CVE-2026-65973: laradocs  Command injection via unescaped Node.js binary path in KaTeX SSR",
+      "url": "https://github.com/advisories/GHSA-h746-qpxh-ph7g",
+      "ts": 1795635713.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "petebishwhip/laradocs",
+      "summary": "Severity: medium. ### Summary\nLocal command injection (CWE-78) in server-side KaTeX rendering via an unescaped Node.js binary path in a `proc_open()` command string.\n\n### Affected versions\n>= 0.4.0, < 1.0.0\n\n### Patched versions\n>= 1.0.0 (fixed in commit `100cb1e`)\n\n### Impact\nWhen rendering KaTeX math **server-side*",
+      "recipe": "gh_advisories",
+      "buzz": 1830,
+      "topics": [
+        "dev",
+        "science",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-25"
     },
     {
       "uid": "cve:GHSA-hq9r-72jq-2pxp",
@@ -1116,7 +1116,7 @@
       "author": "isomorphic-git",
       "summary": "Severity: medium. ### Summary\nWhen applying a delta object from a packfile, isomorphic-git reads a **server-controlled** `targetSize` and calls `Buffer.alloc(targetSize)` with no upper bound. A single malicious HTTP response to `git.clone()`/`git.fetch()` can force a ~2 GB allocation → memory exhaustion / DoS (proces",
       "recipe": "gh_advisories",
-      "buzz": 1830,
+      "buzz": 1810,
       "topics": [
         "dev",
         "security",
@@ -1135,7 +1135,7 @@
       "author": "secp256k1-native",
       "summary": "Severity: medium. ## Summary\n\n`Point#mul` — the default, constant-time scalar multiplication and the library's headline secret-scalar operation — could leak timing information about the secret scalar (a private key or ECDSA-style nonce in a downstream consumer) **not because of a source-level bug, but because the com",
       "recipe": "gh_advisories",
-      "buzz": 1830,
+      "buzz": 1810,
       "topics": [
         "dev",
         "security"
@@ -1153,7 +1153,7 @@
       "author": "i18next",
       "summary": "Severity: medium. ### Summary\n\n`deepExtend` in `src/utils.js` (reached via the public `addResourceBundle(lng, ns, data, deep, overwrite)` API) checked key existence with the `in` operator, which walks the prototype chain. A source key matching an inherited built-in (e.g. `hasOwnProperty`, `toString`, `valueOf`) there",
       "recipe": "gh_advisories",
-      "buzz": 1830,
+      "buzz": 1810,
       "topics": [
         "ai",
         "dev",
@@ -1393,12 +1393,12 @@
       "title": "erkamyaman/safe-anything",
       "url": "https://github.com/erkamyaman/safe-anything",
       "ts": 1795365850.0,
-      "points": 771,
-      "comments": 80,
+      "points": 782,
+      "comments": 82,
       "author": "erkamyaman",
       "summary": "Find the holes before someone else does. A fast, 100% Rust vulnerability scanner: XSS, SQL injection, leaked secrets, dependency CVEs and AI agent setups.",
       "recipe": "github_sec",
-      "buzz": 1021,
+      "buzz": 1038,
       "topics": [
         "ai",
         "dev",
@@ -1427,12 +1427,12 @@
       "title": "vulnix0x4/a-better-antivirus",
       "url": "https://github.com/vulnix0x4/a-better-antivirus",
       "ts": 1794885574.0,
-      "points": 199,
+      "points": 207,
       "comments": 14,
       "author": "vulnix0x4",
       "summary": "Catches infostealers in the act on Windows: plants fake passwords, wallets and app data that only malware would read, and freezes whatever touches them.",
       "recipe": "github_sec",
-      "buzz": 241,
+      "buzz": 249,
       "topics": [
         "security"
       ],
@@ -1444,12 +1444,12 @@
       "title": "RobustaStudio/semsec",
       "url": "https://github.com/RobustaStudio/semsec",
       "ts": 1795605022.0,
-      "points": 125,
+      "points": 131,
       "comments": 10,
       "author": "RobustaStudio",
       "summary": "High-precision Semgrep security rules — 146 taint-tracking and secret detection rules for Python, JavaScript, Java, PHP covering 75 providers. By Robusta Studio.",
       "recipe": "github_sec",
-      "buzz": 185,
+      "buzz": 191,
       "topics": [
         "ai",
         "dev",
@@ -1481,12 +1481,12 @@
       "title": "CybeDefend/cybedefend",
       "url": "https://github.com/CybeDefend/cybedefend",
       "ts": 1795448166.0,
-      "points": 85,
-      "comments": 11,
+      "points": 87,
+      "comments": 12,
       "author": "CybeDefend",
       "summary": "Agentic ASPM, the open source Snyk alternative. A full security audit in one command",
       "recipe": "github_sec",
-      "buzz": 128,
+      "buzz": 133,
       "topics": [
         "ai",
         "security"
@@ -1528,6 +1528,24 @@
         "security"
       ],
       "date": "2026-11-15"
+    },
+    {
+      "uid": "rss:e197281605052c",
+      "source": "rss",
+      "title": "ThreatsDay: 10M NGINX Services at Risk, 250+ Malicious Extensions, AI Server Hijacking + 17 More Stories",
+      "url": "https://thehackernews.com/2026/11/threatsday-250-rogue-extensions-10m.html",
+      "ts": 1795721997.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "A website can look perfectly fine to the person running it. Log out, visit the same page, and things might look different. Something similar is happening with browser extensions, where even the way you find and install one can change what it does. Checking whether software works as expected only tells you so much. Then there’s the question of who gets to use what. Stolen logins are opening",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "hardware"
+      ],
+      "date": "2026-11-26"
     },
     {
       "uid": "rss:30a2f68c277b74",
@@ -1641,36 +1659,36 @@
       "date": "2026-11-26"
     },
     {
-      "uid": "gh:hyscaler/HyScribe",
-      "source": "github",
-      "title": "hyscaler/HyScribe",
-      "url": "https://github.com/hyscaler/HyScribe",
-      "ts": 1795580911.0,
-      "points": 44,
-      "comments": 0,
-      "author": "hyscaler",
-      "summary": "A Rust drop-in replacement for WordPress",
-      "recipe": "github_sec",
-      "buzz": 74,
-      "topics": [
-        "dev"
-      ],
-      "date": "2026-11-25"
-    },
-    {
       "uid": "gh:spatie/laravel-suspicious-login",
       "source": "github",
       "title": "spatie/laravel-suspicious-login",
       "url": "https://github.com/spatie/laravel-suspicious-login",
       "ts": 1794917088.0,
-      "points": 70,
-      "comments": 1,
+      "points": 72,
+      "comments": 2,
       "author": "spatie",
       "summary": "Detect suspicious logins in your Laravel app",
       "recipe": "github_sec",
-      "buzz": 73,
+      "buzz": 78,
       "topics": [],
       "date": "2026-11-17"
+    },
+    {
+      "uid": "gh:hyscaler/HyScribe",
+      "source": "github",
+      "title": "hyscaler/HyScribe",
+      "url": "https://github.com/hyscaler/HyScribe",
+      "ts": 1795580911.0,
+      "points": 45,
+      "comments": 0,
+      "author": "hyscaler",
+      "summary": "A Rust drop-in replacement for WordPress",
+      "recipe": "github_sec",
+      "buzz": 75,
+      "topics": [
+        "dev"
+      ],
+      "date": "2026-11-25"
     },
     {
       "uid": "gh:Black-Ghost-Corp/Gaia-harden",
@@ -1691,6 +1709,24 @@
         "hardware"
       ],
       "date": "2026-11-24"
+    },
+    {
+      "uid": "gh:prepaid-host/hvpatch",
+      "source": "github",
+      "title": "prepaid-host/hvpatch",
+      "url": "https://github.com/prepaid-host/hvpatch",
+      "ts": 1795428035.0,
+      "points": 41,
+      "comments": 0,
+      "author": "prepaid-host",
+      "summary": "Kernel livepatching for Proxmox VE hypervisors: klp-build modules checked against the shipped kernel, reviewed CVE catalog, verifying node agent",
+      "recipe": "github_sec",
+      "buzz": 51,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-23"
     },
     {
       "uid": "gh:dinosn/CVE-2026-123890",
@@ -1726,24 +1762,6 @@
         "ai"
       ],
       "date": "2026-11-14"
-    },
-    {
-      "uid": "gh:prepaid-host/hvpatch",
-      "source": "github",
-      "title": "prepaid-host/hvpatch",
-      "url": "https://github.com/prepaid-host/hvpatch",
-      "ts": 1795428035.0,
-      "points": 39,
-      "comments": 0,
-      "author": "prepaid-host",
-      "summary": "Kernel livepatching for Proxmox VE hypervisors: klp-build modules checked against the shipped kernel, reviewed CVE catalog, verifying node agent",
-      "recipe": "github_sec",
-      "buzz": 49,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-23"
     },
     {
       "uid": "gh:balikunsh-bot/keepassxc-talroora",
@@ -2222,24 +2240,6 @@
       "date": "2026-11-24"
     },
     {
-      "uid": "rss:179c48d5c34feb",
-      "source": "rss",
-      "title": "Webworm Suspected of Modifying SoftEther VPN to Evade Detection and Hide Remote Access",
-      "url": "https://thehackernews.com/2026/11/webworm-suspected-of-modifying.html",
-      "ts": 1795455915.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "The China-aligned threat actor known as Webworm is suspected to be using a custom version of the open-source SoftEther VPN Bridge tool in an attempt to remove recognizable detection fingerprints, while disguising it as network-monitoring software to establish covert remote access to compromised networks. The modified variant \"implements various tricks to hide itself from security tools,\"",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-23"
-    },
-    {
       "uid": "gh:Voidsaintcontact/AVG-Internet-Security-Professional-Edition",
       "source": "github",
       "title": "Voidsaintcontact/AVG-Internet-Security-Professional-Edition",
@@ -2328,6 +2328,24 @@
       "date": "2026-11-20"
     },
     {
+      "uid": "rss:179c48d5c34feb",
+      "source": "rss",
+      "title": "Webworm Suspected of Modifying SoftEther VPN to Evade Detection and Hide Remote Access",
+      "url": "https://thehackernews.com/2026/11/webworm-suspected-of-modifying.html",
+      "ts": 1795455915.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "The China-aligned threat actor known as Webworm is suspected to be using a custom version of the open-source SoftEther VPN Bridge tool in an attempt to remove recognizable detection fingerprints, while disguising it as network-monitoring software to establish covert remote access to compromised networks. The modified variant \"implements various tricks to hide itself from security tools,\"",
+      "recipe": "hackersnews",
+      "buzz": 10,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-23"
+    },
+    {
       "uid": "rss:fa05141b817760",
       "source": "rss",
       "title": "⚡ Weekly Recap: VMware 0-Day, Java4Shell, NGINX2Root, Ruby2Shell, and a Whole Lot of Shell Trouble",
@@ -2379,27 +2397,6 @@
       "buzz": 10,
       "topics": [
         "dev",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-23"
-    },
-    {
-      "uid": "rss:5d512064a59c0f",
-      "source": "rss",
-      "title": "N-able Discloses Critical Mail Assure Vulnerability Found During Breach Investigation",
-      "url": "https://thehackernews.com/2026/11/n-able-discloses-critical-mail-assure.html",
-      "ts": 1795436889.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "N-able yesterday disclosed a critical flaw it found while investigating the breach of its Mail Assure and SpamExperts Hosted Cloud, an email filtering service it runs for managed service providers. The bug, tracked as CVE-[phone], is a server-side request forgery (SSRF) flaw. It allowed a user with high-level API access to open connections to internal systems of the user's choosing on the",
-      "recipe": "hackersnews",
-      "buzz": 10,
-      "topics": [
-        "ai",
-        "dev",
-        "biz",
         "security",
         "hardware"
       ],
