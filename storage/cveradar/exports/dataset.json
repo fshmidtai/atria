@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T05:26:23+00:00",
+  "generated_at": "2026-11-26T09:27:19+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -18,9 +18,9 @@
       "the_hacker_news": 30
     },
     "by_topic": {
-      "security": 50,
-      "dev": 41,
-      "ai": 37,
+      "security": 51,
+      "dev": 39,
+      "ai": 36,
       "hardware": 11,
       "crypto": 4,
       "science": 4,
@@ -594,6 +594,41 @@
       "date": "2026-11-20"
     },
     {
+      "uid": "rss:c6ac5ef89ac91a",
+      "source": "rss",
+      "title": "Drupal Warns of New Highly Critical Site Takeover Vulnerability Under Active Exploitation",
+      "url": "https://thehackernews.com/2026/11/drupal-warns-of-new-highly-critical.html",
+      "ts": 1795676554.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Drupal has warned of a new \"highly critical\" security flaw impacting Drupal core that it said has been exploited in the wild. The vulnerability, tracked as CVE-[phone] (CVSS score: N/A), has been described as a case of improper checking for unusual or exceptional conditions. It also relates to CVE-[phone] aka Fail2Install in that it addresses remaining vulnerable installation states",
+      "recipe": "the_hacker_news",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-26"
+    },
+    {
+      "uid": "rss:4d0181698ad051",
+      "source": "rss",
+      "title": "Hackers Exploit 10 Vulnerabilities Across Mitel, Juniper, Vates, and Danfoss Products",
+      "url": "https://thehackernews.com/2026/11/hackers-exploit-10-vulnerabilities.html",
+      "ts": 1795675486.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added 10 security flaws to its Known Exploited Vulnerabilities (KEV) catalog, including five vulnerabilities impacting Mitel MiCollab that were disclosed last week. The Mitel MiCollab vulnerabilities are listed below - CVE-[phone] (CVSS score: 5.3) - An arbitrary file upload vulnerability in the Audio, Web and",
+      "recipe": "the_hacker_news",
+      "buzz": 80,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-11-26"
+    },
+    {
       "uid": "rss:a37df458e204b2",
       "source": "rss",
       "title": "1Password Hacked, Customer Data and Source Code Stolen in GitHub Account Breach",
@@ -733,7 +768,7 @@
       "author": "info@thehackernews.com (The Hacker News)",
       "summary": "An attacker ran operating system commands on Monday on six production servers of Hex.pm, the package registry that Elixir and Erlang developers fetch their dependencies from. The flaw used in the attack had been in the registry's code since February 2016, and the team that maintains the service had every server on a patched build within about 15 minutes of the first malicious request. Checks",
       "recipe": "the_hacker_news",
-      "buzz": 80,
+      "buzz": 30,
       "topics": [
         "ai",
         "dev",
@@ -753,7 +788,7 @@
       "author": "info@thehackernews.com (The Hacker News)",
       "summary": "An unknown threat actor has been using artificial intelligence (AI)-driven offensive tooling in a campaign targeting Check Point Security Management servers, impacting 22 distinct organizations across the world. The intrusion activity, tracked by GreyNoise under the moniker GreyNoise Threat 13 (GT13), is assessed to have targeted organizations in the financial services, energy, government,",
       "recipe": "the_hacker_news",
-      "buzz": 80,
+      "buzz": 30,
       "topics": [
         "ai",
         "security",
@@ -772,7 +807,7 @@
       "author": "info@thehackernews.com (The Hacker News)",
       "summary": "Palo Alto Networks Unit 42 has disclosed that it's tracking and has responded to \"numerous waves of vishing attacks\" orchestrated by Com-affiliated threat actors since August 2026 that have led to data theft and extortion attempts. The attacks have targeted financial services, healthcare, and legal services located in the U.S., the U.K., and Australia. Other targets include construction,",
       "recipe": "the_hacker_news",
-      "buzz": 80,
+      "buzz": 30,
       "topics": [],
       "date": "2026-11-25"
     },
@@ -787,7 +822,7 @@
       "author": "info@thehackernews.com (The Hacker News)",
       "summary": "WordPress has removed six WordPress plugins developed by WP Connect after they were backdoored on November 22, 2026, to enable arbitrary code execution on sites that have them installed, following a suspected compromise of the developer's account. The WordPress plugins team has proactively detected and blocked the threat before it could be officially released. Visiting each plugin listing now",
       "recipe": "the_hacker_news",
-      "buzz": 80,
+      "buzz": 30,
       "topics": [
         "dev"
       ],
@@ -1082,7 +1117,7 @@
       "author": "info@thehackernews.com (The Hacker News)",
       "summary": "Cybersecurity researchers have urged users to discontinue using a legacy ASP.NET anti-CSRF library named Idunno.AntiCsrf (\"Idunno.AntiCsrf.dll\") following the discovery of a critical vulnerability that has been exploited in the wild. The vulnerability, tracked as CVE-[phone], carries a CVSS score of 9.3 out of 10.0. The issue affects versions 0.9.1.0 and 0.9.1 Beta, and relates to an",
       "recipe": "the_hacker_news",
-      "buzz": 30,
+      "buzz": 10,
       "topics": [
         "dev",
         "security"
@@ -1100,50 +1135,13 @@
       "author": "info@thehackernews.com (The Hacker News)",
       "summary": "Hackers exploited a vulnerability in GL.iNet's GoodCloud remote management service to install malware on some customer routers and KVM devices, the maker of travel routers and remote-access KVM hardware said in a security notice updated today. The company identified and fixed the flaw on Friday and blocked the access the attacker used, so devices can no longer be infected through this route.",
       "recipe": "the_hacker_news",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-23"
-    },
-    {
-      "uid": "rss:805957bc90428a",
-      "source": "rss",
-      "title": "AI-Assisted Cyber Attacks Trigger Unauthorized Payments at Indian Banks and Fintech Firms",
-      "url": "https://thehackernews.com/2026/11/ai-assisted-cyberattacks-trigger.html",
-      "ts": 1795422255.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "The Indian Computer Emergency Response Team (CERT-In) has warned that threat actors are carrying out artificial intelligence (AI)-assisted cyber attacks targeting information and communication technology (ICT) assets in the country. This unsanctioned activity has resulted in unauthorized financial transactions at banking and financial services entities, as well as technology service providers",
-      "recipe": "the_hacker_news",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "dev"
-      ],
-      "date": "2026-11-23"
-    },
-    {
-      "uid": "rss:ae6e92c39a9e03",
-      "source": "rss",
-      "title": "OpenRouter Drops 3 Providers After Researchers Catch Months of Prompt Theft at AI Hosting Firms",
-      "url": "https://thehackernews.com/2026/11/openrouter-drops-3-providers-after.html",
-      "ts": 1795324015.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Attackers stole data from inside three AI inference providers for months, and none of the three knew until researchers told them, the industrial cybersecurity company Dragos said this week. Some of the stolen requests were flagged as Zero Data Retention, the setting that is supposed to mean a prompt is never stored. OpenRouter, a gateway that routes customers' AI requests to a pool of",
-      "recipe": "the_hacker_news",
       "buzz": 10,
       "topics": [
         "ai",
         "dev",
         "security"
       ],
-      "date": "2026-11-22"
+      "date": "2026-11-23"
     }
   ]
 }
