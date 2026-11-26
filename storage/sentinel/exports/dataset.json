@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-25T21:14:05+00:00",
+  "generated_at": "2026-11-26T01:37:01+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -10,25 +10,25 @@
     "rss"
   ],
   "totals": {
-    "items": 140,
+    "items": 138,
     "by_source": {
       "hn": 40,
       "cve": 30,
-      "github": 20,
+      "github": 18,
       "rss": 50
     },
     "by_recipe": {
       "hn_sec": 40,
       "gh_advisories": 30,
       "hackersnews": 30,
-      "github_sec": 20,
+      "github_sec": 18,
       "schneier": 10,
       "krebs": 10
     },
     "by_topic": {
-      "security": 111,
+      "security": 110,
       "ai": 69,
-      "dev": 61,
+      "dev": 60,
       "hardware": 17,
       "crypto": 7,
       "biz": 7,
@@ -37,7 +37,7 @@
     "top_domains": [
       [
         "github.com",
-        52
+        50
       ],
       [
         "thehackernews.com",
@@ -96,6 +96,10 @@
         1
       ],
       [
+        "1password.com",
+        1
+      ],
+      [
         "washingtonpost.com",
         1
       ],
@@ -129,10 +133,6 @@
       ],
       [
         "grapheneos.social",
-        1
-      ],
-      [
-        "rekken.github.io",
         1
       ]
     ]
@@ -172,6 +172,44 @@
         "security"
       ],
       "date": "2025-03-24"
+    },
+    {
+      "uid": "cve:GHSA-7wwv-x6mc-pxqx",
+      "source": "cve",
+      "title": "CVE-2026-69179: TastyIgniter allows Remote Code Execution (RCE) via Unrestricted file upload in Media Manager",
+      "url": "https://github.com/advisories/GHSA-7wwv-x6mc-pxqx",
+      "ts": 1795645476.0,
+      "points": 6000,
+      "comments": 0,
+      "author": "tastyigniter/tastyigniter",
+      "summary": "Severity: critical. ### Summary\nMedia manager accepts `.htaccess` file which can be used to perform RCE.\n\n### Details\nThe file upload functionality from media manager somehow accepts `.htaccess` file. This file could be used to allow any extension to run PHP command. By doing so, it is possible to perform RCE.\n\n### PoC",
+      "recipe": "gh_advisories",
+      "buzz": 6080,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-25"
+    },
+    {
+      "uid": "cve:GHSA-743w-g9pf-8p94",
+      "source": "cve",
+      "title": "CVE-2026-69178: TastyIgniter mail template editor allows remote code execution via server-side template injection",
+      "url": "https://github.com/advisories/GHSA-743w-g9pf-8p94",
+      "ts": 1795645453.0,
+      "points": 6000,
+      "comments": 0,
+      "author": "tastyigniter/tastyigniter",
+      "summary": "Severity: critical. ### Summary\n**Where:** `POST /admin/mail_templates/edit/{id}` → body field  \n**Who can trigger:** Any admin user with `Admin.MailTemplates` permission  \n**Impact:** Arbitrary PHP execution on the server — full RCE\n\n### Details\nThe Mail templates is vulnerable to SSTI and did not perform an validatio",
+      "recipe": "gh_advisories",
+      "buzz": 6080,
+      "topics": [
+        "ai",
+        "dev",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-25"
     },
     {
       "uid": "cve:GHSA-crj3-q72p-ggqm",
@@ -322,6 +360,25 @@
       "date": "2021-01-11"
     },
     {
+      "uid": "cve:GHSA-rj59-9f77-mvg5",
+      "source": "cve",
+      "title": "CVE-2026-69181: TastyIgniter permits Path Traversal in Media Upload",
+      "url": "https://github.com/advisories/GHSA-rj59-9f77-mvg5",
+      "ts": 1795647270.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "tastyigniter/tastyigniter",
+      "summary": "Severity: high. ### Summary\nArbitrary file write outside `media/uploads/`\n\n### Details\nIt is possible to perform Path Traversal in Media Manager file upload function as admin.\n\n\n### PoC\n- login as admin\n- upload a image but in the request, change the path from `/` to `/../../`.\n\nRequest\n```http\nPOST /admin/media_ma",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-25"
+    },
+    {
       "uid": "cve:GHSA-vw2v-g4x7-xcqg",
       "source": "cve",
       "title": "CVE-2026-68539: fulgur allows Unbounded string-set value accumulation causes memory/CPU exhaustion (denial of service)",
@@ -359,26 +416,6 @@
       "date": "2026-11-25"
     },
     {
-      "uid": "cve:GHSA-859w-52fx-hcm6",
-      "source": "cve",
-      "title": "CVE-2026-64855: soapbar: verify_envelope_bsp accepts an unauthenticated embedded certificate (signature forgery / authentication bypass)",
-      "url": "https://github.com/advisories/GHSA-859w-52fx-hcm6",
-      "ts": 1795560104.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "soapbar",
-      "summary": "Severity: high. ### Impact\n\n`verify_envelope_bsp()` derived its trust anchor from the message it was\nverifying. It read the X.509 certificate out of the caller-untrusted\n`wsse:BinarySecurityToken`, validated **only** that certificate's not-before /\nnot-after dates, and then verified the signature against that same",
-      "recipe": "gh_advisories",
-      "buzz": 3580,
-      "topics": [
-        "ai",
-        "dev",
-        "crypto",
-        "security"
-      ],
-      "date": "2026-11-24"
-    },
-    {
       "uid": "hn:50172041",
       "source": "hn",
       "title": "Security advisory: Critical remote code execution vulnerabilities, update now",
@@ -394,6 +431,26 @@
         "security"
       ],
       "date": "2026-10-20"
+    },
+    {
+      "uid": "cve:GHSA-859w-52fx-hcm6",
+      "source": "cve",
+      "title": "CVE-2026-64855: soapbar: verify_envelope_bsp accepts an unauthenticated embedded certificate (signature forgery / authentication bypass)",
+      "url": "https://github.com/advisories/GHSA-859w-52fx-hcm6",
+      "ts": 1795560104.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "soapbar",
+      "summary": "Severity: high. ### Impact\n\n`verify_envelope_bsp()` derived its trust anchor from the message it was\nverifying. It read the X.509 certificate out of the caller-untrusted\n`wsse:BinarySecurityToken`, validated **only** that certificate's not-before /\nnot-after dates, and then verified the signature against that same",
+      "recipe": "gh_advisories",
+      "buzz": 3530,
+      "topics": [
+        "ai",
+        "dev",
+        "crypto",
+        "security"
+      ],
+      "date": "2026-11-24"
     },
     {
       "uid": "cve:GHSA-jp3c-6v3g-mpxv",
@@ -577,25 +634,6 @@
       "date": "2026-11-20"
     },
     {
-      "uid": "cve:GHSA-r9qp-pqx5-8369",
-      "source": "cve",
-      "title": "CVE-2026-104883: contao/core-bundle: Non-admin users can self-grant permissions that implicitly make them administrators",
-      "url": "https://github.com/advisories/GHSA-r9qp-pqx5-8369",
-      "ts": 1795218341.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "contao/core-bundle",
-      "summary": "Severity: high. Commit `2b83a60f7763` (5.7.3) hardened the template editor: it added `TemplateEditorModuleVoter` + `CheckTemplateEditorSaveListener` so a non-admin cannot self-grant the `tpl_editor` backend module (editable PHP-capable templates permit server-side code execution). That voter supports only the `modu",
-      "recipe": "gh_advisories",
-      "buzz": 3510,
-      "topics": [
-        "dev",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-20"
-    },
-    {
       "uid": "hn:32148218",
       "source": "hn",
       "title": "FCC: TikTok is unacceptable security risk and should be removed from app stores",
@@ -646,6 +684,24 @@
         "security"
       ],
       "date": "2024-10-09"
+    },
+    {
+      "uid": "hn:50644817",
+      "source": "hn",
+      "title": "1Password Security Incident",
+      "url": "https://1password.com/blog/update-on-nov-2026-security-incident",
+      "ts": 1795627106.0,
+      "points": 1128,
+      "comments": 486,
+      "author": "lxhrstn",
+      "summary": "",
+      "recipe": "hn_sec",
+      "buzz": 2666,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-25"
     },
     {
       "uid": "hn:15657887",
@@ -889,6 +945,24 @@
       "date": "2020-09-30"
     },
     {
+      "uid": "cve:GHSA-mqg7-fw3f-mhp7",
+      "source": "cve",
+      "title": "CVE-2026-69177: TastyIgniter allows stored XSS via file upload",
+      "url": "https://github.com/advisories/GHSA-mqg7-fw3f-mhp7",
+      "ts": 1795643535.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "tastyigniter/tastyigniter",
+      "summary": "Severity: medium. ### Summary\nStored XSS via uploading SVG files \n\n### Details\nIt is possible to upload SVG files that contains XSS.\n\n### PoC\n\n- login as admin\n- create the following SVG file\n\n```\n<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"400\" height=\"400\" viewBox=\"0 0 124 124\" fill=\"none\">\n<rect width=\"124\" hei",
+      "recipe": "gh_advisories",
+      "buzz": 1880,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-25"
+    },
+    {
       "uid": "cve:GHSA-h746-qpxh-ph7g",
       "source": "cve",
       "title": "CVE-2026-65973: laradocs  Command injection via unescaped Node.js binary path in KaTeX SSR",
@@ -907,43 +981,6 @@
         "hardware"
       ],
       "date": "2026-11-25"
-    },
-    {
-      "uid": "cve:GHSA-hq9r-72jq-2pxp",
-      "source": "cve",
-      "title": "CVE-2026-59191: TwigView FileLoader may allow arbitrary file reads through user-controlled template paths",
-      "url": "https://github.com/advisories/GHSA-hq9r-72jq-2pxp",
-      "ts": 1795559963.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "cakephp/twig-view",
-      "summary": "Severity: medium. ### Impact\nIf `FileLoader::findTemplate()` is supplied un-validated user controlled data, arbitrary files can be read.\n\n### Patches\n1.3.3 and 2.1.2 contain a fix for this issue.\n\n### Workarounds\nDon't supply user controlled data to `include` and `extends` tags.",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-24"
-    },
-    {
-      "uid": "cve:GHSA-8cg3-r6g9-fpg2",
-      "source": "cve",
-      "title": "CVE-2026-59831: GitHub CLI gh codespace jupyter may allow code execution via unvalidated URLs from malicious Codespaces",
-      "url": "https://github.com/advisories/GHSA-8cg3-r6g9-fpg2",
-      "ts": 1795559185.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "github.com/cli/cli/v2",
-      "summary": "Severity: medium. ### Summary\n\nA security vulnerability has been identified in GitHub CLI that could allow remote code execution when users connect to a malicious Codespace using the `gh codespace jupyter` command. The command opens JupyterLab by launching a URL in the user's browser, but that URL is supplied by a pr",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "dev",
-        "science",
-        "security"
-      ],
-      "date": "2026-11-24"
     },
     {
       "uid": "hn:48166459",
@@ -995,6 +1032,43 @@
         "security"
       ],
       "date": "2016-12-15"
+    },
+    {
+      "uid": "cve:GHSA-hq9r-72jq-2pxp",
+      "source": "cve",
+      "title": "CVE-2026-59191: TwigView FileLoader may allow arbitrary file reads through user-controlled template paths",
+      "url": "https://github.com/advisories/GHSA-hq9r-72jq-2pxp",
+      "ts": 1795559963.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "cakephp/twig-view",
+      "summary": "Severity: medium. ### Impact\nIf `FileLoader::findTemplate()` is supplied un-validated user controlled data, arbitrary files can be read.\n\n### Patches\n1.3.3 and 2.1.2 contain a fix for this issue.\n\n### Workarounds\nDon't supply user controlled data to `include` and `extends` tags.",
+      "recipe": "gh_advisories",
+      "buzz": 1830,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-24"
+    },
+    {
+      "uid": "cve:GHSA-8cg3-r6g9-fpg2",
+      "source": "cve",
+      "title": "CVE-2026-59831: GitHub CLI gh codespace jupyter may allow code execution via unvalidated URLs from malicious Codespaces",
+      "url": "https://github.com/advisories/GHSA-8cg3-r6g9-fpg2",
+      "ts": 1795559185.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "github.com/cli/cli/v2",
+      "summary": "Severity: medium. ### Summary\n\nA security vulnerability has been identified in GitHub CLI that could allow remote code execution when users connect to a malicious Codespace using the `gh codespace jupyter` command. The command opens JupyterLab by launching a URL in the user's browser, but that URL is supplied by a pr",
+      "recipe": "gh_advisories",
+      "buzz": 1830,
+      "topics": [
+        "dev",
+        "science",
+        "security"
+      ],
+      "date": "2026-11-24"
     },
     {
       "uid": "cve:GHSA-3wh4-j44w-pg92",
@@ -1125,62 +1199,6 @@
       "date": "2026-11-20"
     },
     {
-      "uid": "cve:GHSA-h57j-5f5m-789v",
-      "source": "cve",
-      "title": "CVE-2026-104884: contao/core-bundle: Cross-site scripting in the frontend search results",
-      "url": "https://github.com/advisories/GHSA-h57j-5f5m-789v",
-      "ts": 1795218416.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "contao/core-bundle",
-      "summary": "Severity: medium. Commit `23e8cca3136a` hardened the search-result title against insert-tag/XSS by setting `$objTemplate->title = StringUtil::specialchars(StringUtil::stripInsertTags($arrResult[$i]['title']))`. But the legacy HTML5 template does not use that `title` variable - it prints the raw `link` variable, which",
-      "recipe": "gh_advisories",
-      "buzz": 1810,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-20"
-    },
-    {
-      "uid": "cve:GHSA-23w9-4pg3-xwm3",
-      "source": "cve",
-      "title": "CVE-2026-104882: contao/core-bundle: Improper access control in the CSV import wizard",
-      "url": "https://github.com/advisories/GHSA-23w9-4pg3-xwm3",
-      "ts": 1795218273.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "contao/core-bundle",
-      "summary": "Severity: medium. Custom backend module \"key\" actions are dispatched in `Backend::getBackendModule()` (Backend.php:322-327) after only the module-level `USER_CAN_ACCESS_MODULE` check - no per-record voter runs.\n\n## Impact\n\nA non-admin editor scoped to certain pages/forms can overwrite the tableitems/listitems/options",
-      "recipe": "gh_advisories",
-      "buzz": 1810,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-20"
-    },
-    {
-      "uid": "cve:GHSA-3r9g-pfhv-3228",
-      "source": "cve",
-      "title": "CVE-2026-104881: contao/newsletter-bundle: Contao newsletter custom actions bypass channel-scoped authorization",
-      "url": "https://github.com/advisories/GHSA-3r9g-pfhv-3228",
-      "ts": 1795218206.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "contao/newsletter-bundle",
-      "summary": "Severity: medium. Channel access is enforced only by the DataContainer voters (`NewsletterChannelAccessVoter` / `NewsletterRecipientsAccessVoter`, requiring USER_CAN_EDIT_CHANNEL), whose `supportsType()` fires exclusively for Create/Read/Update/DeleteAction subjects dispatched inside DC_Table's create/edit/delete met",
-      "recipe": "gh_advisories",
-      "buzz": 1810,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-20"
-    },
-    {
       "uid": "hn:25843874",
       "source": "hn",
       "title": "Kids find a security flaw in Linux Mint by mashing keys",
@@ -1196,24 +1214,6 @@
         "security"
       ],
       "date": "2021-01-20"
-    },
-    {
-      "uid": "hn:50644817",
-      "source": "hn",
-      "title": "1Password Security Incident",
-      "url": "https://1password.com/blog/update-on-nov-2026-security-incident",
-      "ts": 1795627106.0,
-      "points": 751,
-      "comments": 311,
-      "author": "lxhrstn",
-      "summary": "",
-      "recipe": "hn_sec",
-      "buzz": 1764,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-25"
     },
     {
       "uid": "hn:11422531",
@@ -1393,12 +1393,12 @@
       "title": "erkamyaman/safe-anything",
       "url": "https://github.com/erkamyaman/safe-anything",
       "ts": 1795365850.0,
-      "points": 696,
-      "comments": 70,
+      "points": 709,
+      "comments": 71,
       "author": "erkamyaman",
       "summary": "Find the holes before someone else does. A fast, 100% Rust vulnerability scanner: XSS, SQL injection, leaked secrets, dependency CVEs and AI agent setups.",
       "recipe": "github_sec",
-      "buzz": 916,
+      "buzz": 932,
       "topics": [
         "ai",
         "dev",
@@ -1444,12 +1444,12 @@
       "title": "RobustaStudio/semsec",
       "url": "https://github.com/RobustaStudio/semsec",
       "ts": 1795605022.0,
-      "points": 87,
+      "points": 98,
       "comments": 10,
       "author": "RobustaStudio",
       "summary": "High-precision Semgrep security rules — 146 taint-tracking and secret detection rules for Python, JavaScript, Java, PHP covering 75 providers. By Robusta Studio.",
       "recipe": "github_sec",
-      "buzz": 197,
+      "buzz": 208,
       "topics": [
         "ai",
         "dev",
@@ -1481,34 +1481,17 @@
       "title": "CybeDefend/cybedefend",
       "url": "https://github.com/CybeDefend/cybedefend",
       "ts": 1795448166.0,
-      "points": 57,
-      "comments": 6,
+      "points": 61,
+      "comments": 7,
       "author": "CybeDefend",
       "summary": "Agentic ASPM, the open source Snyk alternative. A full security audit in one command",
       "recipe": "github_sec",
-      "buzz": 105,
+      "buzz": 112,
       "topics": [
         "ai",
         "security"
       ],
       "date": "2026-11-23"
-    },
-    {
-      "uid": "gh:zhidun2027/zhidun",
-      "source": "github",
-      "title": "zhidun2027/zhidun",
-      "url": "https://github.com/zhidun2027/zhidun",
-      "ts": 1794458402.0,
-      "points": 74,
-      "comments": 5,
-      "author": "zhidun2027",
-      "summary": "Android APK hardening — DEX encryption, native shell engine, anti-tamper. Fully documented and auditable.",
-      "recipe": "github_sec",
-      "buzz": 89,
-      "topics": [
-        "security"
-      ],
-      "date": "2026-11-12"
     },
     {
       "uid": "gh:LoopGrubDolmen/wallet-security-desk",
@@ -1742,6 +1725,24 @@
       "date": "2026-11-17"
     },
     {
+      "uid": "gh:prepaid-host/hvpatch",
+      "source": "github",
+      "title": "prepaid-host/hvpatch",
+      "url": "https://github.com/prepaid-host/hvpatch",
+      "ts": 1795428035.0,
+      "points": 33,
+      "comments": 0,
+      "author": "prepaid-host",
+      "summary": "Kernel livepatching for Proxmox VE hypervisors: klp-build modules checked against the shipped kernel, reviewed CVE catalog, verifying node agent",
+      "recipe": "github_sec",
+      "buzz": 63,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-23"
+    },
+    {
       "uid": "gh:hertzurchincutters/VaultAuth-Desktop2FATOTP",
       "source": "github",
       "title": "hertzurchincutters/VaultAuth-Desktop2FATOTP",
@@ -1772,35 +1773,17 @@
       "date": "2026-11-23"
     },
     {
-      "uid": "gh:prepaid-host/hvpatch",
-      "source": "github",
-      "title": "prepaid-host/hvpatch",
-      "url": "https://github.com/prepaid-host/hvpatch",
-      "ts": 1795428035.0,
-      "points": 32,
-      "comments": 0,
-      "author": "prepaid-host",
-      "summary": "Kernel livepatching for Proxmox VE hypervisors: klp-build modules checked against the shipped kernel, reviewed CVE catalog, verifying node agent",
-      "recipe": "github_sec",
-      "buzz": 62,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-23"
-    },
-    {
       "uid": "gh:Black-Ghost-Corp/Gaia-harden",
       "source": "github",
       "title": "Black-Ghost-Corp/Gaia-harden",
       "url": "https://github.com/Black-Ghost-Corp/Gaia-harden",
       "ts": 1795528541.0,
-      "points": 23,
+      "points": 24,
       "comments": 2,
       "author": "Black-Ghost-Corp",
       "summary": "Harden a fresh Ubuntu/Debian server with one command: admin with SSH keys, locked-down SSH, ufw, fail2ban, security updates, kernel hardening, optional Docker/Caddy. Dry-run, idempotent, JSON report, AI-agent skill. Pure Bash.",
       "recipe": "github_sec",
-      "buzz": 59,
+      "buzz": 60,
       "topics": [
         "ai",
         "dev",
@@ -1810,21 +1793,21 @@
       "date": "2026-11-24"
     },
     {
-      "uid": "gh:NPCmillionaire/unredact.tools",
+      "uid": "gh:xiaotianya14/apk-reverse-skill",
       "source": "github",
-      "title": "NPCmillionaire/unredact.tools",
-      "url": "https://github.com/NPCmillionaire/unredact.tools",
-      "ts": 1794511431.0,
-      "points": 49,
-      "comments": 2,
-      "author": "NPCmillionaire",
-      "summary": "See what your files leak (GPS, serials, authors, failed redactions, deleted text, watermarks), then scrub them.",
+      "title": "xiaotianya14/apk-reverse-skill",
+      "url": "https://github.com/xiaotianya14/apk-reverse-skill",
+      "ts": 1794680510.0,
+      "points": 22,
+      "comments": 9,
+      "author": "xiaotianya14",
+      "summary": "手机版逆向skill —— Android APK 逆向研究技能包：解包、反编译、安全审计、补丁重签、真机验证；跑在手机版Agent工具上的开源项目，工具链按需下载。",
       "recipe": "github_sec",
-      "buzz": 55,
+      "buzz": 49,
       "topics": [
         "ai"
       ],
-      "date": "2026-11-12"
+      "date": "2026-11-14"
     },
     {
       "uid": "gh:balikunsh-bot/keepassxc-talroora",
@@ -1842,23 +1825,6 @@
         "dev"
       ],
       "date": "2026-11-18"
-    },
-    {
-      "uid": "gh:xiaotianya14/apk-reverse-skill",
-      "source": "github",
-      "title": "xiaotianya14/apk-reverse-skill",
-      "url": "https://github.com/xiaotianya14/apk-reverse-skill",
-      "ts": 1794680510.0,
-      "points": 21,
-      "comments": 9,
-      "author": "xiaotianya14",
-      "summary": "手机版逆向skill —— Android APK 逆向研究技能包：解包、反编译、安全审计、补丁重签、真机验证；跑在手机版Agent工具上的开源项目，工具链按需下载。",
-      "recipe": "github_sec",
-      "buzz": 48,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-14"
     },
     {
       "uid": "gh:rammahmagdy/Latch",
@@ -1881,12 +1847,12 @@
       "title": "khanh0209q/NextDNS-Config-Set-And-Forget",
       "url": "https://github.com/khanh0209q/NextDNS-Config-Set-And-Forget",
       "ts": 1794630951.0,
-      "points": 36,
+      "points": 37,
       "comments": 1,
       "author": "khanh0209q",
       "summary": "A zero-breakage, set-and-forget NextDNS configuration for Home & Office.",
       "recipe": "github_sec",
-      "buzz": 39,
+      "buzz": 40,
       "topics": [],
       "date": "2026-11-14"
     },

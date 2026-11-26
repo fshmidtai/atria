@@ -1,7 +1,10 @@
 cve_id,severity,package,title,url,date
+CVE-2026-69179,critical,tastyigniter/tastyigniter,CVE-2026-69179: TastyIgniter allows Remote Code Execution (RCE) via Unrestricted file upload in Media Manager,https://github.com/advisories/GHSA-7wwv-x6mc-pxqx,2026-11-25
+CVE-2026-69178,critical,tastyigniter/tastyigniter,CVE-2026-69178: TastyIgniter mail template editor allows remote code execution via server-side template injection,https://github.com/advisories/GHSA-743w-g9pf-8p94,2026-11-25
 CVE-2026-64670,critical,@waline/client,CVE-2026-64670: @waline/client vulnerable to stored XSS through unsanitized comment edit previews,https://github.com/advisories/GHSA-crj3-q72p-ggqm,2026-11-25
 CVE-2026-59726,critical,ruflo,CVE-2026-59726: ruflo MCP bridge allows unauthenticated remote code execution in default Docker Compose deployments,https://github.com/advisories/GHSA-c4hm-4h84-2cf3,2026-11-24
 CVE-2026-133469,critical,xo-server,CVE-2026-133469: Xen Orchestra: Empty-object login token,https://github.com/advisories/GHSA-2r3w-c2vx-fv5g,2026-11-23
+CVE-2026-69181,high,tastyigniter/tastyigniter,CVE-2026-69181: TastyIgniter permits Path Traversal in Media Upload,https://github.com/advisories/GHSA-rj59-9f77-mvg5,2026-11-25
 CVE-2026-68539,high,fulgur,CVE-2026-68539: fulgur allows Unbounded string-set value accumulation causes memory/CPU exhaustion (denial of service),https://github.com/advisories/GHSA-vw2v-g4x7-xcqg,2026-11-25
 CVE-2026-65971,high,power-components/livewire-powergrid,CVE-2026-65971: livewire-powergrid: SQL injection via sortDirection in naturalSort queries,https://github.com/advisories/GHSA-7fgc-3h6c-698r,2026-11-25
 CVE-2026-64855,high,soapbar,CVE-2026-64855: soapbar: verify_envelope_bsp accepts an unauthenticated embedded certificate (signature forgery / authentication bypass),https://github.com/advisories/GHSA-859w-52fx-hcm6,2026-11-24
@@ -15,7 +18,7 @@ CVE-2026-22816,high,org.gradle:gradle-core,CVE-2026-22816: Gradle causes Failure
 CVE-2026-122247,high,@budibase/server,CVE-2026-122247: Budibase: Unauthenticated global-admin & database creation via tenant-confusion bypass of the one-time init guard (`POST /api/global/users/init`),https://github.com/advisories/GHSA-25qc-m4pw-2w8r,2026-11-20
 CVE-2026-122244,high,@budibase/server,CVE-2026-122244: Budibase: Cross-privilege Stored XSS in the Budibase Builder via broken HTML-escaping in `jsonFormatter.format()` rendered through `{@html}` in the CSP-less Builder origin,https://github.com/advisories/GHSA-r2q3-7m4h-63qg,2026-11-20
 CVE-2026-132275,high,svglib,CVE-2026-132275: svglib: Exponential resource consumption via nested <use> references in svg2rlg,https://github.com/advisories/GHSA-555j-qj3j-c8jv,2026-11-20
-CVE-2026-104883,high,contao/core-bundle,CVE-2026-104883: contao/core-bundle: Non-admin users can self-grant permissions that implicitly make them administrators,https://github.com/advisories/GHSA-r9qp-pqx5-8369,2026-11-20
+CVE-2026-69177,medium,tastyigniter/tastyigniter,CVE-2026-69177: TastyIgniter allows stored XSS via file upload,https://github.com/advisories/GHSA-mqg7-fw3f-mhp7,2026-11-25
 CVE-2026-65973,medium,petebishwhip/laradocs,CVE-2026-65973: laradocs  Command injection via unescaped Node.js binary path in KaTeX SSR,https://github.com/advisories/GHSA-h746-qpxh-ph7g,2026-11-25
 CVE-2026-59191,medium,cakephp/twig-view,CVE-2026-59191: TwigView FileLoader may allow arbitrary file reads through user-controlled template paths,https://github.com/advisories/GHSA-hq9r-72jq-2pxp,2026-11-24
 CVE-2026-59831,medium,github.com/cli/cli/v2,CVE-2026-59831: GitHub CLI gh codespace jupyter may allow code execution via unvalidated URLs from malicious Codespaces,https://github.com/advisories/GHSA-8cg3-r6g9-fpg2,2026-11-24
@@ -26,6 +29,3 @@ CVE-2026-63410,medium,secp256k1-native,CVE-2026-63410: secp256k1-native has a co
 CVE-2026-63402,medium,i18next,"CVE-2026-63402: i18next deepExtend recurses into inherited built-ins, allowing corruption of shared built-in objects (DoS)",https://github.com/advisories/GHSA-6jcc-5g8w-32mx,2026-11-23
 CVE-2026-132276,medium,wcmatch,CVE-2026-132276: wcmatch: Polynomial-time ReDoS when matching untrusted names against multi-star patterns (default flags),https://github.com/advisories/GHSA-53pm-wgxf-c6qf,2026-11-20
 CVE-2026-132277,medium,inscriptis,CVE-2026-132277: Inscriptis: Quadratic memory growth from sibling <table> elements in get_text(),https://github.com/advisories/GHSA-q87h-c5m7-659j,2026-11-20
-CVE-2026-104884,medium,contao/core-bundle,CVE-2026-104884: contao/core-bundle: Cross-site scripting in the frontend search results,https://github.com/advisories/GHSA-h57j-5f5m-789v,2026-11-20
-CVE-2026-104882,medium,contao/core-bundle,CVE-2026-104882: contao/core-bundle: Improper access control in the CSV import wizard,https://github.com/advisories/GHSA-23w9-4pg3-xwm3,2026-11-20
-CVE-2026-104881,medium,contao/newsletter-bundle,CVE-2026-104881: contao/newsletter-bundle: Contao newsletter custom actions bypass channel-scoped authorization,https://github.com/advisories/GHSA-3r9g-pfhv-3228,2026-11-20

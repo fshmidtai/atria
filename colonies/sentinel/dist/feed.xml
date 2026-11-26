@@ -5,7 +5,71 @@
     <link>https://sentinel-post.pages.dev</link>
     <description>Автономная радиостанция кибербезопасности: живые CVE, угрозы и защита — без сенсаций</description>
     <language>ru</language>
-    <lastBuildDate>Wed, 25 Nov 2026 21:14:06 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 01:37:01 GMT</lastBuildDate>
+    <item>
+      <title>CVE-2026-69181: TastyIgniter permits Path Traversal in Media Upload</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-69181-tastyigniter-permits-path-traversal-in-media-uplo.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-69181-tastyigniter-permits-path-traversal-in-media-uplo.html</guid>
+      <pubDate>Wed, 25 Nov 2026 22:54:30 GMT</pubDate>
+      <description>Severity: high. ### Summary
+Arbitrary file write outside `media/uploads/`
+
+### Details
+It is possible to perform Path Traversal in Media Manager file upload function as admin.
+
+
+### PoC
+- login as admin
+- upload a image but in the request, change the path from `/` to `/../../`.
+
+Request
+```http
+POST</description>
+    </item>
+    <item>
+      <title>CVE-2026-69179: TastyIgniter allows Remote Code Execution (RCE) via Unrestricted file upload in Media Manager</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-69179-tastyigniter-allows-remote-code-execution-rce-via.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-69179-tastyigniter-allows-remote-code-execution-rce-via.html</guid>
+      <pubDate>Wed, 25 Nov 2026 22:24:36 GMT</pubDate>
+      <description>Severity: critical. ### Summary
+Media manager accepts `.htaccess` file which can be used to perform RCE.
+
+### Details
+The file upload functionality from media manager somehow accepts `.htaccess` file. This file could be used to allow any extension to run PHP command. By doing so, it is possible to p</description>
+    </item>
+    <item>
+      <title>CVE-2026-69178: TastyIgniter mail template editor allows remote code execution via server-side template injection</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-69178-tastyigniter-mail-template-editor-allows-remote-c.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-69178-tastyigniter-mail-template-editor-allows-remote-c.html</guid>
+      <pubDate>Wed, 25 Nov 2026 22:24:13 GMT</pubDate>
+      <description>Severity: critical. ### Summary
+**Where:** `POST /admin/mail_templates/edit/{id}` → body field  
+**Who can trigger:** Any admin user with `Admin.MailTemplates` permission  
+**Impact:** Arbitrary PHP execution on the server — full RCE
+
+### Details
+The Mail templates is vulnerable to SSTI and did not </description>
+    </item>
+    <item>
+      <title>CVE-2026-69177: TastyIgniter allows stored XSS via file upload</title>
+      <link>https://sentinel-post.pages.dev/item/cve-2026-69177-tastyigniter-allows-stored-xss-via-file-upload.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-69177-tastyigniter-allows-stored-xss-via-file-upload.html</guid>
+      <pubDate>Wed, 25 Nov 2026 21:52:15 GMT</pubDate>
+      <description>Severity: medium. ### Summary
+Stored XSS via uploading SVG files 
+
+### Details
+It is possible to upload SVG files that contains XSS.
+
+### PoC
+
+- login as admin
+- create the following SVG file
+
+```
+&lt;svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 124 124" fill="none"&gt;
+&lt;re</description>
+    </item>
     <item>
       <title>CVE-2026-68539: fulgur allows Unbounded string-set value accumulation causes memory/CPU exhaustion (denial of service)</title>
       <link>https://sentinel-post.pages.dev/item/cve-2026-68539-fulgur-allows-unbounded-string-set-value-accumula.html</link>
@@ -237,34 +301,6 @@ The `unserialize` filter has no restriction on which classes are allowed. This c
       <guid isPermaLink="true">https://sentinel-post.pages.dev/item/black-ghost-corp-gaia-harden.html</guid>
       <pubDate>Tue, 24 Nov 2026 13:55:41 GMT</pubDate>
       <description>Harden a fresh Ubuntu/Debian server with one command: admin with SSH keys, locked-down SSH, ufw, fail2ban, security updates, kernel hardening, optional Docker/Caddy. Dry-run, idempotent, JSON report, AI-agent skill. Pure Bash.</description>
-    </item>
-    <item>
-      <title>VMware vCenter Hit by Another Critical 9.8-Rated Auth Bypass Flaw After Zero-Day Exploitation</title>
-      <link>https://sentinel-post.pages.dev/item/vmware-vcenter-hit-by-another-critical-9-8-rated-auth-bypass-fla.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/vmware-vcenter-hit-by-another-critical-9-8-rated-auth-bypass-fla.html</guid>
-      <pubDate>Tue, 24 Nov 2026 13:28:26 GMT</pubDate>
-      <description>Broadcom has shipped patches to address 23 vulnerabilities impacting VMware ESX, vCenter, Workstation, Fusion, and Avi Load Balancer, including one critical bug that could be abused to bypass authentication. The critical vulnerability, tracked as CVE-[phone], is rated 9.8 out of 10.0 on the CVSS sco</description>
-    </item>
-    <item>
-      <title>Okta Links ShinyHunters-Associated Vishing Group to New INCEPTION Data Leak Site</title>
-      <link>https://sentinel-post.pages.dev/item/okta-links-shinyhunters-associated-vishing-group-to-new-inceptio.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/okta-links-shinyhunters-associated-vishing-group-to-new-inceptio.html</guid>
-      <pubDate>Tue, 24 Nov 2026 13:28:21 GMT</pubDate>
-      <description>A threat cluster previously assessed to be affiliated with the ShinyHunters extortion crew may have rebranded and continued operations under a new name called INCEPTION, according to Okta's Threat Intelligence team. The cluster, dubbed O-UNC-053, is characterized by the use of voice phishing (aka vi</description>
-    </item>
-    <item>
-      <title>Hackers Found a Way Around GitHub SHA Pinning. This Webinar Explains How to Close the Gap</title>
-      <link>https://sentinel-post.pages.dev/item/hackers-found-a-way-around-github-sha-pinning-this-webinar-expla.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/hackers-found-a-way-around-github-sha-pinning-this-webinar-expla.html</guid>
-      <pubDate>Tue, 24 Nov 2026 12:42:09 GMT</pubDate>
-      <description>Pinning GitHub Actions to an exact version of their code, known as SHA pinning, has become the go-to defense against software supply chain attacks. Attackers have already found a way around it. In March 2026, the hackers who hijacked Trivy, a widely used open-source security scanner, planted malicio</description>
-    </item>
-    <item>
-      <title>We Get the Infrastructure We Pay For</title>
-      <link>https://sentinel-post.pages.dev/item/we-get-the-infrastructure-we-pay-for.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/we-get-the-infrastructure-we-pay-for.html</guid>
-      <pubDate>Tue, 24 Nov 2026 12:06:54 GMT</pubDate>
-      <description>&lt;p&gt;&lt;em&gt;This essay originally appeared as part of a &lt;a href="https://www.thefp.com/p/cybersecurity-terrorism-iran-china-russia-apocalypse"&gt;round table&lt;/a&gt; in &lt;cite&gt;The Free Press&lt;/cite&gt; entitled &amp;#8220;Is America’s Infrastructure Under Attack?&amp;#8221;&lt;/em&gt;&lt;/p&gt; &lt;p&gt;Microsoft, the FAA, banks, United Airl</description>
     </item>
   </channel>
 </rss>

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-25T21:13:39+00:00",
+  "generated_at": "2026-11-26T01:36:33+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -19,8 +19,8 @@
     },
     "by_topic": {
       "security": 49,
-      "dev": 41,
-      "ai": 35,
+      "dev": 40,
+      "ai": 36,
       "hardware": 12,
       "crypto": 4,
       "science": 4,
@@ -38,6 +38,44 @@
     ]
   },
   "items": [
+    {
+      "uid": "cve:GHSA-7wwv-x6mc-pxqx",
+      "source": "cve",
+      "title": "CVE-2026-69179: TastyIgniter allows Remote Code Execution (RCE) via Unrestricted file upload in Media Manager",
+      "url": "https://github.com/advisories/GHSA-7wwv-x6mc-pxqx",
+      "ts": 1795645476.0,
+      "points": 6000,
+      "comments": 0,
+      "author": "tastyigniter/tastyigniter",
+      "summary": "Severity: critical. ### Summary\nMedia manager accepts `.htaccess` file which can be used to perform RCE.\n\n### Details\nThe file upload functionality from media manager somehow accepts `.htaccess` file. This file could be used to allow any extension to run PHP command. By doing so, it is possible to perform RCE.\n\n### PoC",
+      "recipe": "gh_advisories",
+      "buzz": 6080,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-25"
+    },
+    {
+      "uid": "cve:GHSA-743w-g9pf-8p94",
+      "source": "cve",
+      "title": "CVE-2026-69178: TastyIgniter mail template editor allows remote code execution via server-side template injection",
+      "url": "https://github.com/advisories/GHSA-743w-g9pf-8p94",
+      "ts": 1795645453.0,
+      "points": 6000,
+      "comments": 0,
+      "author": "tastyigniter/tastyigniter",
+      "summary": "Severity: critical. ### Summary\n**Where:** `POST /admin/mail_templates/edit/{id}` → body field  \n**Who can trigger:** Any admin user with `Admin.MailTemplates` permission  \n**Impact:** Arbitrary PHP execution on the server — full RCE\n\n### Details\nThe Mail templates is vulnerable to SSTI and did not perform an validatio",
+      "recipe": "gh_advisories",
+      "buzz": 6080,
+      "topics": [
+        "ai",
+        "dev",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-25"
+    },
     {
       "uid": "cve:GHSA-crj3-q72p-ggqm",
       "source": "cve",
@@ -96,6 +134,25 @@
       "date": "2026-11-23"
     },
     {
+      "uid": "cve:GHSA-rj59-9f77-mvg5",
+      "source": "cve",
+      "title": "CVE-2026-69181: TastyIgniter permits Path Traversal in Media Upload",
+      "url": "https://github.com/advisories/GHSA-rj59-9f77-mvg5",
+      "ts": 1795647270.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "tastyigniter/tastyigniter",
+      "summary": "Severity: high. ### Summary\nArbitrary file write outside `media/uploads/`\n\n### Details\nIt is possible to perform Path Traversal in Media Manager file upload function as admin.\n\n\n### PoC\n- login as admin\n- upload a image but in the request, change the path from `/` to `/../../`.\n\nRequest\n```http\nPOST /admin/media_ma",
+      "recipe": "gh_advisories",
+      "buzz": 3580,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-25"
+    },
+    {
       "uid": "cve:GHSA-vw2v-g4x7-xcqg",
       "source": "cve",
       "title": "CVE-2026-68539: fulgur allows Unbounded string-set value accumulation causes memory/CPU exhaustion (denial of service)",
@@ -143,7 +200,7 @@
       "author": "soapbar",
       "summary": "Severity: high. ### Impact\n\n`verify_envelope_bsp()` derived its trust anchor from the message it was\nverifying. It read the X.509 certificate out of the caller-untrusted\n`wsse:BinarySecurityToken`, validated **only** that certificate's not-before /\nnot-after dates, and then verified the signature against that same",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "ai",
         "dev",
@@ -334,23 +391,22 @@
       "date": "2026-11-20"
     },
     {
-      "uid": "cve:GHSA-r9qp-pqx5-8369",
+      "uid": "cve:GHSA-mqg7-fw3f-mhp7",
       "source": "cve",
-      "title": "CVE-2026-104883: contao/core-bundle: Non-admin users can self-grant permissions that implicitly make them administrators",
-      "url": "https://github.com/advisories/GHSA-r9qp-pqx5-8369",
-      "ts": 1795218341.0,
-      "points": 3500,
+      "title": "CVE-2026-69177: TastyIgniter allows stored XSS via file upload",
+      "url": "https://github.com/advisories/GHSA-mqg7-fw3f-mhp7",
+      "ts": 1795643535.0,
+      "points": 1800,
       "comments": 0,
-      "author": "contao/core-bundle",
-      "summary": "Severity: high. Commit `2b83a60f7763` (5.7.3) hardened the template editor: it added `TemplateEditorModuleVoter` + `CheckTemplateEditorSaveListener` so a non-admin cannot self-grant the `tpl_editor` backend module (editable PHP-capable templates permit server-side code execution). That voter supports only the `modu",
+      "author": "tastyigniter/tastyigniter",
+      "summary": "Severity: medium. ### Summary\nStored XSS via uploading SVG files \n\n### Details\nIt is possible to upload SVG files that contains XSS.\n\n### PoC\n\n- login as admin\n- create the following SVG file\n\n```\n<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"400\" height=\"400\" viewBox=\"0 0 124 124\" fill=\"none\">\n<rect width=\"124\" hei",
       "recipe": "gh_advisories",
-      "buzz": 3510,
+      "buzz": 1880,
       "topics": [
-        "dev",
-        "security",
-        "hardware"
+        "ai",
+        "security"
       ],
-      "date": "2026-11-20"
+      "date": "2026-11-25"
     },
     {
       "uid": "cve:GHSA-h746-qpxh-ph7g",
@@ -383,7 +439,7 @@
       "author": "cakephp/twig-view",
       "summary": "Severity: medium. ### Impact\nIf `FileLoader::findTemplate()` is supplied un-validated user controlled data, arbitrary files can be read.\n\n### Patches\n1.3.3 and 2.1.2 contain a fix for this issue.\n\n### Workarounds\nDon't supply user controlled data to `include` and `extends` tags.",
       "recipe": "gh_advisories",
-      "buzz": 1880,
+      "buzz": 1830,
       "topics": [
         "ai",
         "security"
@@ -401,7 +457,7 @@
       "author": "github.com/cli/cli/v2",
       "summary": "Severity: medium. ### Summary\n\nA security vulnerability has been identified in GitHub CLI that could allow remote code execution when users connect to a malicious Codespace using the `gh codespace jupyter` command. The command opens JupyterLab by launching a URL in the user's browser, but that URL is supplied by a pr",
       "recipe": "gh_advisories",
-      "buzz": 1880,
+      "buzz": 1830,
       "topics": [
         "dev",
         "science",
@@ -533,62 +589,6 @@
       "buzz": 1810,
       "topics": [
         "ai",
-        "security"
-      ],
-      "date": "2026-11-20"
-    },
-    {
-      "uid": "cve:GHSA-h57j-5f5m-789v",
-      "source": "cve",
-      "title": "CVE-2026-104884: contao/core-bundle: Cross-site scripting in the frontend search results",
-      "url": "https://github.com/advisories/GHSA-h57j-5f5m-789v",
-      "ts": 1795218416.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "contao/core-bundle",
-      "summary": "Severity: medium. Commit `23e8cca3136a` hardened the search-result title against insert-tag/XSS by setting `$objTemplate->title = StringUtil::specialchars(StringUtil::stripInsertTags($arrResult[$i]['title']))`. But the legacy HTML5 template does not use that `title` variable - it prints the raw `link` variable, which",
-      "recipe": "gh_advisories",
-      "buzz": 1810,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-20"
-    },
-    {
-      "uid": "cve:GHSA-23w9-4pg3-xwm3",
-      "source": "cve",
-      "title": "CVE-2026-104882: contao/core-bundle: Improper access control in the CSV import wizard",
-      "url": "https://github.com/advisories/GHSA-23w9-4pg3-xwm3",
-      "ts": 1795218273.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "contao/core-bundle",
-      "summary": "Severity: medium. Custom backend module \"key\" actions are dispatched in `Backend::getBackendModule()` (Backend.php:322-327) after only the module-level `USER_CAN_ACCESS_MODULE` check - no per-record voter runs.\n\n## Impact\n\nA non-admin editor scoped to certain pages/forms can overwrite the tableitems/listitems/options",
-      "recipe": "gh_advisories",
-      "buzz": 1810,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-20"
-    },
-    {
-      "uid": "cve:GHSA-3r9g-pfhv-3228",
-      "source": "cve",
-      "title": "CVE-2026-104881: contao/newsletter-bundle: Contao newsletter custom actions bypass channel-scoped authorization",
-      "url": "https://github.com/advisories/GHSA-3r9g-pfhv-3228",
-      "ts": 1795218206.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "contao/newsletter-bundle",
-      "summary": "Severity: medium. Channel access is enforced only by the DataContainer voters (`NewsletterChannelAccessVoter` / `NewsletterRecipientsAccessVoter`, requiring USER_CAN_EDIT_CHANNEL), whose `supportsType()` fires exclusively for Create/Read/Update/DeleteAction subjects dispatched inside DC_Table's create/edit/delete met",
-      "recipe": "gh_advisories",
-      "buzz": 1810,
-      "topics": [
-        "ai",
-        "dev",
         "security"
       ],
       "date": "2026-11-20"
