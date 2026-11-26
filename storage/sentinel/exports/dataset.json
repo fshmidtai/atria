@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T01:37:01+00:00",
+  "generated_at": "2026-11-26T05:26:47+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -10,26 +10,26 @@
     "rss"
   ],
   "totals": {
-    "items": 138,
+    "items": 140,
     "by_source": {
       "hn": 40,
       "cve": 30,
-      "github": 18,
+      "github": 20,
       "rss": 50
     },
     "by_recipe": {
       "hn_sec": 40,
       "gh_advisories": 30,
       "hackersnews": 30,
-      "github_sec": 18,
+      "github_sec": 20,
       "schneier": 10,
       "krebs": 10
     },
     "by_topic": {
-      "security": 110,
-      "ai": 69,
-      "dev": 60,
-      "hardware": 17,
+      "security": 112,
+      "ai": 72,
+      "dev": 62,
+      "hardware": 16,
       "crypto": 7,
       "biz": 7,
       "science": 7
@@ -37,7 +37,7 @@
     "top_domains": [
       [
         "github.com",
-        50
+        52
       ],
       [
         "thehackernews.com",
@@ -92,11 +92,11 @@
         1
       ],
       [
-        "theverge.com",
+        "1password.com",
         1
       ],
       [
-        "1password.com",
+        "theverge.com",
         1
       ],
       [
@@ -669,6 +669,24 @@
       "date": "2024-08-29"
     },
     {
+      "uid": "hn:50644817",
+      "source": "hn",
+      "title": "1Password Security Incident",
+      "url": "https://1password.com/blog/update-on-nov-2026-security-incident",
+      "ts": 1795627106.0,
+      "points": 1286,
+      "comments": 544,
+      "author": "lxhrstn",
+      "summary": "",
+      "recipe": "hn_sec",
+      "buzz": 2998,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-25"
+    },
+    {
       "uid": "hn:41792500",
       "source": "hn",
       "title": "Internet Archive: Security breach alert",
@@ -684,24 +702,6 @@
         "security"
       ],
       "date": "2024-10-09"
-    },
-    {
-      "uid": "hn:50644817",
-      "source": "hn",
-      "title": "1Password Security Incident",
-      "url": "https://1password.com/blog/update-on-nov-2026-security-incident",
-      "ts": 1795627106.0,
-      "points": 1128,
-      "comments": 486,
-      "author": "lxhrstn",
-      "summary": "",
-      "recipe": "hn_sec",
-      "buzz": 2666,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-25"
     },
     {
       "uid": "hn:15657887",
@@ -1393,12 +1393,12 @@
       "title": "erkamyaman/safe-anything",
       "url": "https://github.com/erkamyaman/safe-anything",
       "ts": 1795365850.0,
-      "points": 709,
-      "comments": 71,
+      "points": 729,
+      "comments": 74,
       "author": "erkamyaman",
       "summary": "Find the holes before someone else does. A fast, 100% Rust vulnerability scanner: XSS, SQL injection, leaked secrets, dependency CVEs and AI agent setups.",
       "recipe": "github_sec",
-      "buzz": 932,
+      "buzz": 961,
       "topics": [
         "ai",
         "dev",
@@ -1427,12 +1427,12 @@
       "title": "vulnix0x4/a-better-antivirus",
       "url": "https://github.com/vulnix0x4/a-better-antivirus",
       "ts": 1794885574.0,
-      "points": 174,
+      "points": 175,
       "comments": 13,
       "author": "vulnix0x4",
       "summary": "Catches infostealers in the act on Windows: plants fake passwords, wallets and app data that only malware would read, and freezes whatever touches them.",
       "recipe": "github_sec",
-      "buzz": 213,
+      "buzz": 214,
       "topics": [
         "security"
       ],
@@ -1444,18 +1444,36 @@
       "title": "RobustaStudio/semsec",
       "url": "https://github.com/RobustaStudio/semsec",
       "ts": 1795605022.0,
-      "points": 98,
+      "points": 101,
       "comments": 10,
       "author": "RobustaStudio",
       "summary": "High-precision Semgrep security rules — 146 taint-tracking and secret detection rules for Python, JavaScript, Java, PHP covering 75 providers. By Robusta Studio.",
       "recipe": "github_sec",
-      "buzz": 208,
+      "buzz": 211,
       "topics": [
         "ai",
         "dev",
         "security"
       ],
       "date": "2026-11-25"
+    },
+    {
+      "uid": "gh:agivanttechnologies/SlopSquatShield",
+      "source": "github",
+      "title": "agivanttechnologies/SlopSquatShield",
+      "url": "https://github.com/agivanttechnologies/SlopSquatShield",
+      "ts": 1795348235.0,
+      "points": 44,
+      "comments": 36,
+      "author": "agivanttechnologies",
+      "summary": "SlopSquatShield checks the packages that you or your AI coding agent install, and blocks names that don't exist or look like slopsquatting traps. It supports npm, PyPI and Maven, and it runs in your terminal, in AI agent hooks, on git commit and in your IDE.",
+      "recipe": "github_sec",
+      "buzz": 162,
+      "topics": [
+        "ai",
+        "dev"
+      ],
+      "date": "2026-11-22"
     },
     {
       "uid": "gh:HavocSaif/avast-premium-security-kacerin",
@@ -1481,12 +1499,12 @@
       "title": "CybeDefend/cybedefend",
       "url": "https://github.com/CybeDefend/cybedefend",
       "ts": 1795448166.0,
-      "points": 61,
-      "comments": 7,
+      "points": 62,
+      "comments": 8,
       "author": "CybeDefend",
       "summary": "Agentic ASPM, the open source Snyk alternative. A full security audit in one command",
       "recipe": "github_sec",
-      "buzz": 112,
+      "buzz": 116,
       "topics": [
         "ai",
         "security"
@@ -1528,6 +1546,44 @@
         "dev"
       ],
       "date": "2026-11-25"
+    },
+    {
+      "uid": "rss:a37df458e204b2",
+      "source": "rss",
+      "title": "1Password Hacked, Customer Data and Source Code Stolen in GitHub Account Breach",
+      "url": "https://thehackernews.com/2026/11/1password-hacked-customer-data-and.html",
+      "ts": 1795666822.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Popular password management software 1Password on Wednesday disclosed a security incident involving its backend systems that led to the unauthorized access of some customer information, but emphasized that customer password vaults and other secrets were not accessed. \"While we took immediate steps to contain the incident, the attacker gained access to some of our backend systems and accessed a",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-26"
+    },
+    {
+      "uid": "rss:661925b8f8d6c7",
+      "source": "rss",
+      "title": "13 Malicious NuGet Packages Turn Fake .NET Job Assessments Into Malware Delivery Traps",
+      "url": "https://thehackernews.com/2026/11/13-malicious-nuget-packages-turn-fake.html",
+      "ts": 1795664932.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Cybersecurity researchers have discovered 13 malicious NuGet packages that are designed to target Windows .NET developers under the guise of a fake take-home job assessment. \"Most of the packages pose as WinUI 3 and WPF [Windows Presentation Foundation] button controls,\" Socket security researcher Kush Pandya said in a technical write-up. \"In the versions we analyzed, building or running a",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-26"
     },
     {
       "uid": "rss:4024942716e979",
@@ -1692,17 +1748,17 @@
       "date": "2026-11-25"
     },
     {
-      "uid": "gh:dinosn/CVE-2026-123890",
+      "uid": "gh:prepaid-host/hvpatch",
       "source": "github",
-      "title": "dinosn/CVE-2026-123890",
-      "url": "https://github.com/dinosn/CVE-2026-123890",
-      "ts": 1795409774.0,
-      "points": 25,
-      "comments": 5,
-      "author": "dinosn",
-      "summary": "PoC for CVE-[phone]: unauthenticated SRP-6a session-key disclosure in VMware vCenter vmdird DCE/RPC (TCP 2012). Bind -> rpc_srp_verifier new -> get_session_key -> K leaked without password; optional verify_session completes an [email] session.",
+      "title": "prepaid-host/hvpatch",
+      "url": "https://github.com/prepaid-host/hvpatch",
+      "ts": 1795428035.0,
+      "points": 35,
+      "comments": 0,
+      "author": "prepaid-host",
+      "summary": "Kernel livepatching for Proxmox VE hypervisors: klp-build modules checked against the shipped kernel, reviewed CVE catalog, verifying node agent",
       "recipe": "github_sec",
-      "buzz": 70,
+      "buzz": 65,
       "topics": [
         "ai",
         "security"
@@ -1723,24 +1779,6 @@
       "buzz": 63,
       "topics": [],
       "date": "2026-11-17"
-    },
-    {
-      "uid": "gh:prepaid-host/hvpatch",
-      "source": "github",
-      "title": "prepaid-host/hvpatch",
-      "url": "https://github.com/prepaid-host/hvpatch",
-      "ts": 1795428035.0,
-      "points": 33,
-      "comments": 0,
-      "author": "prepaid-host",
-      "summary": "Kernel livepatching for Proxmox VE hypervisors: klp-build modules checked against the shipped kernel, reviewed CVE catalog, verifying node agent",
-      "recipe": "github_sec",
-      "buzz": 63,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-23"
     },
     {
       "uid": "gh:hertzurchincutters/VaultAuth-Desktop2FATOTP",
@@ -1778,12 +1816,12 @@
       "title": "Black-Ghost-Corp/Gaia-harden",
       "url": "https://github.com/Black-Ghost-Corp/Gaia-harden",
       "ts": 1795528541.0,
-      "points": 24,
+      "points": 26,
       "comments": 2,
       "author": "Black-Ghost-Corp",
       "summary": "Harden a fresh Ubuntu/Debian server with one command: admin with SSH keys, locked-down SSH, ufw, fail2ban, security updates, kernel hardening, optional Docker/Caddy. Dry-run, idempotent, JSON report, AI-agent skill. Pure Bash.",
       "recipe": "github_sec",
-      "buzz": 60,
+      "buzz": 62,
       "topics": [
         "ai",
         "dev",
@@ -1791,6 +1829,24 @@
         "hardware"
       ],
       "date": "2026-11-24"
+    },
+    {
+      "uid": "gh:dinosn/CVE-2026-123890",
+      "source": "github",
+      "title": "dinosn/CVE-2026-123890",
+      "url": "https://github.com/dinosn/CVE-2026-123890",
+      "ts": 1795409774.0,
+      "points": 25,
+      "comments": 5,
+      "author": "dinosn",
+      "summary": "PoC for CVE-[phone]: unauthenticated SRP-6a session-key disclosure in VMware vCenter vmdird DCE/RPC (TCP 2012). Bind -> rpc_srp_verifier new -> get_session_key -> K leaked without password; optional verify_session completes an [email] session.",
+      "recipe": "github_sec",
+      "buzz": 50,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-23"
     },
     {
       "uid": "gh:xiaotianya14/apk-reverse-skill",
@@ -1855,6 +1911,24 @@
       "buzz": 40,
       "topics": [],
       "date": "2026-11-14"
+    },
+    {
+      "uid": "gh:streichsbaer/tldrcve",
+      "source": "github",
+      "title": "streichsbaer/tldrcve",
+      "url": "https://github.com/streichsbaer/tldrcve",
+      "ts": 1795141659.0,
+      "points": 21,
+      "comments": 2,
+      "author": "streichsbaer",
+      "summary": "The vulnerabilities everyone's talking about, in plain English. Are you affected, and what should you do?",
+      "recipe": "github_sec",
+      "buzz": 37,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-20"
     },
     {
       "uid": "rss:ac5a917a6d460b",
@@ -2297,24 +2371,6 @@
       "date": "2026-11-20"
     },
     {
-      "uid": "rss:0a25269fdcdc3c",
-      "source": "rss",
-      "title": "France Is Blaming Iran for the Fridge Cyberattack",
-      "url": "https://www.schneier.com/blog/archives/2026/11/france-is-blaming-iran-for-the-fridge-cyberattack.html",
-      "ts": 1795058104.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Bruce Schneier",
-      "summary": "<p><a href=\"https://www.nytimes.com/2026/11/09/world/europe/france-iran-refrigerators-cyberattack.html\">Interesting</a>:</p> <blockquote><p>U.S. intelligence agencies have recently reached a &#8220;low confidence&#8221; assessment that Iran was responsible for the attacks in France, according to three U.S. officials who spoke on the condition of anonymity to discuss sensitive intelligence. A &#822",
-      "recipe": "schneier",
-      "buzz": 10,
-      "topics": [
-        "ai",
-        "dev"
-      ],
-      "date": "2026-11-19"
-    },
-    {
       "uid": "rss:ae6e92c39a9e03",
       "source": "rss",
       "title": "OpenRouter Drops 3 Providers After Researchers Catch Months of Prompt Theft at AI Hosting Firms",
@@ -2332,42 +2388,6 @@
         "security"
       ],
       "date": "2026-11-22"
-    },
-    {
-      "uid": "rss:52d1eca4da7f04",
-      "source": "rss",
-      "title": "Researchers Demonstrate Ghostscript Sandbox-Escape RCE via Crafted File Uploads in Popular Apps",
-      "url": "https://thehackernews.com/2026/11/researchers-demonstrate-ghostscript.html",
-      "ts": 1795323821.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "A now-patched flaw in Ghostscript allows a crafted file to escape the program's security sandbox and run commands on the server that processes it. Ghostscript is the interpreter that many Linux servers use to convert uploaded PDFs, PostScript files, and images into other formats, often without the application calling it directly. Security firm pwn.ai showed this week that ordinary upload,",
-      "recipe": "hackersnews",
-      "buzz": 10,
-      "topics": [
-        "ai",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-22"
-    },
-    {
-      "uid": "rss:1673f2e5258941",
-      "source": "rss",
-      "title": "A Single Malicious Webpage Let Researchers Hijack Meta Muse and Access Private Chats",
-      "url": "https://thehackernews.com/2026/11/a-single-malicious-webpage-let.html",
-      "ts": 1795261987.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "A malicious webpage could extract a Meta Muse user's private conversations and stored memories from the assistant without triggering any approval prompt, researchers have shown. The same attack could be extended to reach the credentials Muse stores for the user's connected accounts. The work was a laboratory demonstration, not an attack on real users, and it stayed inside the individual user's",
-      "recipe": "hackersnews",
-      "buzz": 10,
-      "topics": [
-        "dev"
-      ],
-      "date": "2026-11-21"
     },
     {
       "uid": "rss:c077b9eec9aa33",
@@ -2538,6 +2558,24 @@
         "security"
       ],
       "date": "2026-10-13"
+    },
+    {
+      "uid": "rss:0a25269fdcdc3c",
+      "source": "rss",
+      "title": "France Is Blaming Iran for the Fridge Cyberattack",
+      "url": "https://www.schneier.com/blog/archives/2026/11/france-is-blaming-iran-for-the-fridge-cyberattack.html",
+      "ts": 1795058104.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Bruce Schneier",
+      "summary": "<p><a href=\"https://www.nytimes.com/2026/11/09/world/europe/france-iran-refrigerators-cyberattack.html\">Interesting</a>:</p> <blockquote><p>U.S. intelligence agencies have recently reached a &#8220;low confidence&#8221; assessment that Iran was responsible for the attacks in France, according to three U.S. officials who spoke on the condition of anonymity to discuss sensitive intelligence. A &#822",
+      "recipe": "schneier",
+      "buzz": 0,
+      "topics": [
+        "ai",
+        "dev"
+      ],
+      "date": "2026-11-19"
     },
     {
       "uid": "rss:20cbd8174f0c08",
