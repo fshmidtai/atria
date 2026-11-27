@@ -5,7 +5,28 @@
     <link>https://cveradar-ah3.pages.dev</link>
     <description>Живые CVE и уязвимости на русском: автономный перевод угроз в понятные дайджесты для DevOps и небольшого SecOps</description>
     <language>ru</language>
-    <lastBuildDate>Fri, 27 Nov 2026 09:28:08 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 13:34:29 GMT</lastBuildDate>
+    <item>
+      <title>Microsoft Store App Found Delivering Vinci RAT Capable of Remote System Control</title>
+      <link>https://cveradar-ah3.pages.dev/item/microsoft-store-app-found-delivering-vinci-rat-capable-of-remote.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/microsoft-store-app-found-delivering-vinci-rat-capable-of-remote.html</guid>
+      <pubDate>Fri, 27 Nov 2026 11:49:34 GMT</pubDate>
+      <description>Cybersecurity researchers have disclosed details of a cyber attack in which a threat actor leveraged a Microsoft Store application to deliver a remote access trojan (RAT) called Vinci RAT. The intrusion, according to eSentire, begins with a redirection to a bogus site for a sniping tool ("snipp.code</description>
+    </item>
+    <item>
+      <title>How to Keep Your Security Picture Current When Attackers Move at AI Speed</title>
+      <link>https://cveradar-ah3.pages.dev/item/how-to-keep-your-security-picture-current-when-attackers-move-at.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/how-to-keep-your-security-picture-current-when-attackers-move-at.html</guid>
+      <pubDate>Fri, 27 Nov 2026 10:32:18 GMT</pubDate>
+      <description>Most security metrics are not built to be used. They are built to be shown. Somewhere between the quarterly review and the next status update, a set of numbers gets assembled that looks reassuring in a room and tells almost no one what is actually happening across the environment that week. Someone </description>
+    </item>
+    <item>
+      <title>Hackers Trojanize Official Q-Dir and DesktopOK Downloads to Deliver Remote Access Malware</title>
+      <link>https://cveradar-ah3.pages.dev/item/hackers-trojanize-official-q-dir-and-desktopok-downloads-to-deli.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/hackers-trojanize-official-q-dir-and-desktopok-downloads-to-deli.html</guid>
+      <pubDate>Fri, 27 Nov 2026 09:29:30 GMT</pubDate>
+      <description>Cybersecurity researchers have disclosed details of a software supply chain attack that has tampered with Q-Dir and DesktopOK installation files distributed via the official SoftwareOK website. "Evidence indicates that malicious files were generated not only when users downloaded the programs direct</description>
+    </item>
     <item>
       <title>Switzerland Confirms AI-Assisted Cyberattacks Breached Critical Infrastructure Operators</title>
       <link>https://cveradar-ah3.pages.dev/item/switzerland-confirms-ai-assisted-cyberattacks-breached-critical-.html</link>
@@ -32,7 +53,7 @@
       <link>https://cveradar-ah3.pages.dev/item/north-korea-linked-polinrider-poisons-over-7-600-github-reposito.html</link>
       <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/north-korea-linked-polinrider-poisons-over-7-600-github-reposito.html</guid>
       <pubDate>Thu, 26 Nov 2026 15:13:41 GMT</pubDate>
-      <description>The threat actors behind the PolinRider campaign have been observed planting a Python loader in GitHub repositories, as evidence emerges that the activity may have started as far back as February 2025. "The loader hides in a small utils package or in conftest.py," SafeDep said in a report published </description>
+      <description>The threat actors behind the PolinRider campaign have compromised over 7,600 GitHub repositories, in some cases planting a Python loader capable of delivering next-stage payloads, as evidence emerges that the activity may have started as far back as February 2025. "These are real developers, not thr</description>
     </item>
     <item>
       <title>Most Wanted: The Phishing Kits and Techniques Getting Past Security Controls</title>
@@ -262,36 +283,6 @@ Only admin</description>
 verifying. It read the X.509 certificate out of the caller-untrusted
 `wsse:BinarySecurityToken`, validated **only** that certificate's not-before /
 not-after dates, and then verified the signature ag</description>
-    </item>
-    <item>
-      <title>CVE-2026-59191: TwigView FileLoader may allow arbitrary file reads through user-controlled template paths</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-59191-twigview-fileloader-may-allow-arbitrary-file-read.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-59191-twigview-fileloader-may-allow-arbitrary-file-read.html</guid>
-      <pubDate>Tue, 24 Nov 2026 22:39:23 GMT</pubDate>
-      <description>Severity: medium. ### Impact
-If `FileLoader::findTemplate()` is supplied un-validated user controlled data, arbitrary files can be read.
-
-### Patches
-1.3.3 and 2.1.2 contain a fix for this issue.
-
-### Workarounds
-Don't supply user controlled data to `include` and `extends` tags.</description>
-    </item>
-    <item>
-      <title>CVE-2026-59831: GitHub CLI gh codespace jupyter may allow code execution via unvalidated URLs from malicious Codespaces</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-59831-github-cli-gh-codespace-jupyter-may-allow-code-ex.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-59831-github-cli-gh-codespace-jupyter-may-allow-code-ex.html</guid>
-      <pubDate>Tue, 24 Nov 2026 22:26:25 GMT</pubDate>
-      <description>Severity: medium. ### Summary
-
-A security vulnerability has been identified in GitHub CLI that could allow remote code execution when users connect to a malicious Codespace using the `gh codespace jupyter` command. The command opens JupyterLab by launching a URL in the user's browser, but that URL i</description>
-    </item>
-    <item>
-      <title>GHSA-jp3c-6v3g-mpxv: github.com/insomniacslk/dhcp permits denial of service through a malformed IPv4 payload length</title>
-      <link>https://cveradar-ah3.pages.dev/item/ghsa-jp3c-6v3g-mpxv-github-com-insomniacslk-dhcp-permits-denial-.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/ghsa-jp3c-6v3g-mpxv-github-com-insomniacslk-dhcp-permits-denial-.html</guid>
-      <pubDate>Tue, 24 Nov 2026 21:13:37 GMT</pubDate>
-      <description>Severity: high. In github.com/insomniacslk/dhcp/dhcpv4/nclient4, BroadcastRawUDPConn.ReadFrom does not validate that the IPv4 payload length is sufficient to hold a UDP header before calculating the DHCP payload length. A frame with an IPv4 total-length field specifying fewer than eight payload byte</description>
     </item>
   </channel>
 </rss>

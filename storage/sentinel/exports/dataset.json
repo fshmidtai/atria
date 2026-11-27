@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T09:28:31+00:00",
+  "generated_at": "2026-11-27T13:34:48+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -10,34 +10,34 @@
     "rss"
   ],
   "totals": {
-    "items": 141,
+    "items": 140,
     "by_source": {
       "hn": 40,
       "cve": 30,
-      "github": 21,
+      "github": 20,
       "rss": 50
     },
     "by_recipe": {
       "hn_sec": 40,
       "gh_advisories": 30,
       "hackersnews": 30,
-      "github_sec": 21,
+      "github_sec": 20,
       "schneier": 10,
       "krebs": 10
     },
     "by_topic": {
-      "security": 110,
-      "ai": 72,
-      "dev": 59,
-      "hardware": 16,
-      "crypto": 7,
+      "security": 108,
+      "ai": 73,
+      "dev": 57,
+      "hardware": 15,
       "science": 7,
+      "crypto": 6,
       "biz": 6
     },
     "top_domains": [
       [
         "github.com",
-        53
+        52
       ],
       [
         "thehackernews.com",
@@ -323,6 +323,24 @@
       "date": "2024-02-21"
     },
     {
+      "uid": "hn:50644817",
+      "source": "hn",
+      "title": "1Password Security Incident",
+      "url": "https://1password.com/blog/update-on-nov-2026-security-incident",
+      "ts": 1795627106.0,
+      "points": 1680,
+      "comments": 717,
+      "author": "lxhrstn",
+      "summary": "",
+      "recipe": "hn_sec",
+      "buzz": 3861,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-25"
+    },
+    {
       "uid": "hn:30051054",
       "source": "hn",
       "title": "Ask HN: Gmail account security",
@@ -340,24 +358,6 @@
         "security"
       ],
       "date": "2022-01-23"
-    },
-    {
-      "uid": "hn:50644817",
-      "source": "hn",
-      "title": "1Password Security Incident",
-      "url": "https://1password.com/blog/update-on-nov-2026-security-incident",
-      "ts": 1795627106.0,
-      "points": 1663,
-      "comments": 712,
-      "author": "lxhrstn",
-      "summary": "",
-      "recipe": "hn_sec",
-      "buzz": 3829,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-25"
     },
     {
       "uid": "hn:25729088",
@@ -1393,36 +1393,18 @@
       "title": "erkamyaman/safe-anything",
       "url": "https://github.com/erkamyaman/safe-anything",
       "ts": 1795365850.0,
-      "points": 805,
-      "comments": 89,
+      "points": 811,
+      "comments": 90,
       "author": "erkamyaman",
       "summary": "Find the holes before someone else does. A fast, 100% Rust vulnerability scanner: XSS, SQL injection, leaked secrets, dependency CVEs and AI agent setups.",
       "recipe": "github_sec",
-      "buzz": 1082,
+      "buzz": 1091,
       "topics": [
         "ai",
         "dev",
         "security"
       ],
       "date": "2026-11-22"
-    },
-    {
-      "uid": "gh:HavocSaif/avast-premium-security-kacerin",
-      "source": "github",
-      "title": "HavocSaif/avast-premium-security-kacerin",
-      "url": "https://github.com/HavocSaif/avast-premium-security-kacerin",
-      "ts": 1795505746.0,
-      "points": 266,
-      "comments": 0,
-      "author": "HavocSaif",
-      "summary": "Directory listing for the Avast Premium Security Kacerin project.",
-      "recipe": "github_sec",
-      "buzz": 276,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-24"
     },
     {
       "uid": "gh:vulnix0x4/a-better-antivirus",
@@ -1462,12 +1444,12 @@
       "title": "RobustaStudio/semsec",
       "url": "https://github.com/RobustaStudio/semsec",
       "ts": 1795605022.0,
-      "points": 141,
+      "points": 146,
       "comments": 10,
       "author": "RobustaStudio",
       "summary": "High-precision Semgrep security rules — 146 taint-tracking and secret detection rules for Python, JavaScript, Java, PHP covering 75 providers. By Robusta Studio.",
       "recipe": "github_sec",
-      "buzz": 201,
+      "buzz": 206,
       "topics": [
         "ai",
         "dev",
@@ -1481,12 +1463,12 @@
       "title": "balikunsh-bot/keepassxc-talroora",
       "url": "https://github.com/balikunsh-bot/keepassxc-talroora",
       "ts": 1795032603.0,
-      "points": 199,
+      "points": 193,
       "comments": 0,
       "author": "balikunsh-bot",
       "summary": "Keepassxc Talroora organizes credential records and manages encrypted password databases.",
       "recipe": "github_sec",
-      "buzz": 199,
+      "buzz": 193,
       "topics": [
         "dev"
       ],
@@ -1511,17 +1493,34 @@
       "date": "2026-11-22"
     },
     {
+      "uid": "gh:sresarehumantoo/ARTEX-CC",
+      "source": "github",
+      "title": "sresarehumantoo/ARTEX-CC",
+      "url": "https://github.com/sresarehumantoo/ARTEX-CC",
+      "ts": 1795276774.0,
+      "points": 89,
+      "comments": 28,
+      "author": "sresarehumantoo",
+      "summary": "Autonomous penetration testing platform for Claude Code. 65 MCP tools, dual-graph architecture, multi-instance coordination, web UI, recording proxy, and evidence capture.",
+      "recipe": "github_sec",
+      "buzz": 183,
+      "topics": [
+        "dev"
+      ],
+      "date": "2026-11-21"
+    },
+    {
       "uid": "gh:CybeDefend/cybedefend",
       "source": "github",
       "title": "CybeDefend/cybedefend",
       "url": "https://github.com/CybeDefend/cybedefend",
       "ts": 1795448166.0,
-      "points": 99,
+      "points": 111,
       "comments": 13,
       "author": "CybeDefend",
       "summary": "Agentic ASPM, the open source Snyk alternative. A full security audit in one command",
       "recipe": "github_sec",
-      "buzz": 148,
+      "buzz": 160,
       "topics": [
         "ai",
         "security"
@@ -1534,31 +1533,87 @@
       "title": "spatie/laravel-suspicious-login",
       "url": "https://github.com/spatie/laravel-suspicious-login",
       "ts": 1794917088.0,
-      "points": 75,
+      "points": 77,
       "comments": 2,
       "author": "spatie",
       "summary": "Detect suspicious logins in your Laravel app",
       "recipe": "github_sec",
-      "buzz": 81,
+      "buzz": 83,
       "topics": [],
       "date": "2026-11-17"
     },
     {
-      "uid": "gh:sresarehumantoo/ARTEX-CC",
-      "source": "github",
-      "title": "sresarehumantoo/ARTEX-CC",
-      "url": "https://github.com/sresarehumantoo/ARTEX-CC",
-      "ts": 1795276774.0,
-      "points": 47,
-      "comments": 8,
-      "author": "sresarehumantoo",
-      "summary": "Autonomous penetration testing platform for Claude Code. 65 MCP tools, dual-graph architecture, multi-instance coordination, web UI, recording proxy, and evidence capture.",
-      "recipe": "github_sec",
-      "buzz": 81,
+      "uid": "rss:a3bf705fdb15b4",
+      "source": "rss",
+      "title": "Recent Outages Have Economic Causes",
+      "url": "https://www.schneier.com/blog/archives/2026/11/recent-outages-have-economic-causes.html",
+      "ts": 1795780969.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Bruce Schneier",
+      "summary": "<p><em>This essay originally appeared in <a href=\"https://www.theguardian.com/commentisfree/2026/nov/20/cyber-attacks-outages-blame-economy\">The Guardian</a>. It&#8217;s an expanded version of the one I posted as &#8220;<a href=\"https://www.schneier.com/blog/archives/2026/11/we-get-the-infrastructure-we-pay-for.html\">We Get the Infrastructure We Pay For</a>.&#8221;</em></p> <p>It&#8217;s been a ba",
+      "recipe": "schneier",
+      "buzz": 80,
       "topics": [
-        "dev"
+        "ai"
       ],
-      "date": "2026-11-21"
+      "date": "2026-11-27"
+    },
+    {
+      "uid": "rss:3a3c26de87b9ce",
+      "source": "rss",
+      "title": "Microsoft Store App Found Delivering Vinci RAT Capable of Remote System Control",
+      "url": "https://thehackernews.com/2026/11/microsoft-store-app-found-delivering.html",
+      "ts": 1795780174.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Cybersecurity researchers have disclosed details of a cyber attack in which a threat actor leveraged a Microsoft Store application to deliver a remote access trojan (RAT) called Vinci RAT. The intrusion, according to eSentire, begins with a redirection to a bogus site for a sniping tool (\"snipp.codes-team[.]com\"), from where a Microsoft-signed installer called \"Snipping-Tool.exe\" is",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-27"
+    },
+    {
+      "uid": "rss:9c0c1b12fdb994",
+      "source": "rss",
+      "title": "How to Keep Your Security Picture Current When Attackers Move at AI Speed",
+      "url": "https://thehackernews.com/2026/11/how-to-keep-your-security-picture.html",
+      "ts": 1795775538.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Most security metrics are not built to be used. They are built to be shown. Somewhere between the quarterly review and the next status update, a set of numbers gets assembled that looks reassuring in a room and tells almost no one what is actually happening across the environment that week. Someone pulls them together the week before, cleans them up, and presents a picture of a program that is,",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-27"
+    },
+    {
+      "uid": "rss:e612ed6ea17872",
+      "source": "rss",
+      "title": "Hackers Trojanize Official Q-Dir and DesktopOK Downloads to Deliver Remote Access Malware",
+      "url": "https://thehackernews.com/2026/11/hackers-trojanize-official-q-dir-and.html",
+      "ts": 1795771770.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Cybersecurity researchers have disclosed details of a software supply chain attack that has tampered with Q-Dir and DesktopOK installation files distributed via the official SoftwareOK website. \"Evidence indicates that malicious files were generated not only when users downloaded the programs directly from the official download page but also during the update process of previously installed",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "science",
+        "security"
+      ],
+      "date": "2026-11-27"
     },
     {
       "uid": "rss:0a6f3c178aecde",
@@ -1625,45 +1680,7 @@
       "points": 0,
       "comments": 0,
       "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "The threat actors behind the PolinRider campaign have been observed planting a Python loader in GitHub repositories, as evidence emerges that the activity may have started as far back as February 2025. \"The loader hides in a small utils package or in conftest.py,\" SafeDep said in a report published this week. \"When Python imports the file, the loader reads the newest transaction that an",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "dev",
-        "crypto",
-        "security"
-      ],
-      "date": "2026-11-26"
-    },
-    {
-      "uid": "rss:6318b6c7f69240",
-      "source": "rss",
-      "title": "Most Wanted: The Phishing Kits and Techniques Getting Past Security Controls",
-      "url": "https://thehackernews.com/2026/11/most-wanted-phishing-kits-and.html",
-      "ts": 1795690675.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Every phishing attack has to get past email security, web filtering, and safe browsing before it reaches an employee. Some kits manage that far more often than others, and those are the kits that security teams need to know about. At Push Security, we measure this as breakthrough rate: The share of attacks that get past email security, web gateways, and safe browsing to reach the user. How an",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-26"
-    },
-    {
-      "uid": "rss:a37df458e204b2",
-      "source": "rss",
-      "title": "1Password Hacked, Customer Data and Source Code Stolen in GitHub Account Breach",
-      "url": "https://thehackernews.com/2026/11/1password-hacked-customer-data-and.html",
-      "ts": 1795690645.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Popular password management software 1Password on Wednesday disclosed a security incident involving its backend systems that led to the unauthorized access of some customer information, but emphasized that customer password vaults and other secrets were not accessed. \"While we took immediate steps to contain the incident, the attacker gained access to some of our backend systems and accessed a",
+      "summary": "The threat actors behind the PolinRider campaign have compromised over 7,600 GitHub repositories, in some cases planting a Python loader capable of delivering next-stage payloads, as evidence emerges that the activity may have started as far back as February 2025. \"These are real developers, not throwaway accounts,\" Apiiro researcher Shmulik Cohen said. \"6,541 of the 7,609 repos (86%) belong",
       "recipe": "hackersnews",
       "buzz": 80,
       "topics": [
@@ -1696,12 +1713,12 @@
       "title": "Black-Ghost-Corp/Gaia-harden",
       "url": "https://github.com/Black-Ghost-Corp/Gaia-harden",
       "ts": 1795528541.0,
-      "points": 34,
+      "points": 36,
       "comments": 2,
       "author": "Black-Ghost-Corp",
       "summary": "Harden a fresh Ubuntu/Debian server with one command: admin with SSH keys, locked-down SSH, ufw, fail2ban, security updates, kernel hardening, optional Docker/Caddy. Dry-run, idempotent, JSON report, AI-agent skill. Pure Bash.",
       "recipe": "github_sec",
-      "buzz": 70,
+      "buzz": 72,
       "topics": [
         "ai",
         "dev",
@@ -1746,39 +1763,39 @@
       "date": "2026-11-15"
     },
     {
-      "uid": "gh:dinosn/CVE-2026-123890",
-      "source": "github",
-      "title": "dinosn/CVE-2026-123890",
-      "url": "https://github.com/dinosn/CVE-2026-123890",
-      "ts": 1795409774.0,
-      "points": 25,
-      "comments": 6,
-      "author": "dinosn",
-      "summary": "PoC for CVE-[phone]: unauthenticated SRP-6a session-key disclosure in VMware vCenter vmdird DCE/RPC (TCP 2012). Bind -> rpc_srp_verifier new -> get_session_key -> K leaked without password; optional verify_session completes an [email] session.",
-      "recipe": "github_sec",
-      "buzz": 53,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-23"
-    },
-    {
       "uid": "gh:xiaotianya14/apk-reverse-skill",
       "source": "github",
       "title": "xiaotianya14/apk-reverse-skill",
       "url": "https://github.com/xiaotianya14/apk-reverse-skill",
       "ts": 1794680510.0,
       "points": 25,
-      "comments": 9,
+      "comments": 10,
       "author": "xiaotianya14",
       "summary": "手机版逆向skill —— Android APK 逆向研究技能包：解包、反编译、安全审计、补丁重签、真机验证；跑在手机版Agent工具上的开源项目，工具链按需下载。",
       "recipe": "github_sec",
-      "buzz": 52,
+      "buzz": 55,
       "topics": [
         "ai"
       ],
       "date": "2026-11-14"
+    },
+    {
+      "uid": "gh:dinosn/CVE-2026-123890",
+      "source": "github",
+      "title": "dinosn/CVE-2026-123890",
+      "url": "https://github.com/dinosn/CVE-2026-123890",
+      "ts": 1795409774.0,
+      "points": 26,
+      "comments": 6,
+      "author": "dinosn",
+      "summary": "PoC for CVE-[phone]: unauthenticated SRP-6a session-key disclosure in VMware vCenter vmdird DCE/RPC (TCP 2012). Bind -> rpc_srp_verifier new -> get_session_key -> K leaked without password; optional verify_session completes an [email] session.",
+      "recipe": "github_sec",
+      "buzz": 54,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-23"
     },
     {
       "uid": "gh:rammahmagdy/Latch",
@@ -1877,23 +1894,41 @@
       "date": "2026-11-25"
     },
     {
-      "uid": "rss:ac5a917a6d460b",
+      "uid": "rss:6318b6c7f69240",
       "source": "rss",
-      "title": "We Get the Infrastructure We Pay For",
-      "url": "https://www.schneier.com/blog/archives/2026/11/we-get-the-infrastructure-we-pay-for.html",
-      "ts": 1795522014.0,
+      "title": "Most Wanted: The Phishing Kits and Techniques Getting Past Security Controls",
+      "url": "https://thehackernews.com/2026/11/most-wanted-phishing-kits-and.html",
+      "ts": 1795690675.0,
       "points": 0,
       "comments": 0,
-      "author": "Bruce Schneier",
-      "summary": "<p><em>This essay originally appeared as part of a <a href=\"https://www.thefp.com/p/cybersecurity-terrorism-iran-china-russia-apocalypse\">round table</a> in <cite>The Free Press</cite> entitled &#8220;Is America’s Infrastructure Under Attack?&#8221;</em></p> <p>Microsoft, the FAA, banks, United Airlines, the NSA&#8212;it&#8217;s been a really bad week in cyberspace. But, amazing as it might seem,",
-      "recipe": "schneier",
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Every phishing attack has to get past email security, web filtering, and safe browsing before it reaches an employee. Some kits manage that far more often than others, and those are the kits that security teams need to know about. At Push Security, we measure this as breakthrough rate: The share of attacks that get past email security, web gateways, and safe browsing to reach the user. How an",
+      "recipe": "hackersnews",
       "buzz": 30,
       "topics": [
         "ai",
-        "science",
         "security"
       ],
-      "date": "2026-11-24"
+      "date": "2026-11-26"
+    },
+    {
+      "uid": "rss:a37df458e204b2",
+      "source": "rss",
+      "title": "1Password Hacked, Customer Data and Source Code Stolen in GitHub Account Breach",
+      "url": "https://thehackernews.com/2026/11/1password-hacked-customer-data-and.html",
+      "ts": 1795690645.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Popular password management software 1Password on Wednesday disclosed a security incident involving its backend systems that led to the unauthorized access of some customer information, but emphasized that customer password vaults and other secrets were not accessed. \"While we took immediate steps to contain the incident, the attacker gained access to some of our backend systems and accessed a",
+      "recipe": "hackersnews",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-26"
     },
     {
       "uid": "rss:c6ac5ef89ac91a",
@@ -2130,115 +2165,6 @@
       "date": "2026-11-24"
     },
     {
-      "uid": "rss:a8772c3cfced45",
-      "source": "rss",
-      "title": "VMware vCenter Hit by Another Critical 9.8-Rated Auth Bypass Flaw After Zero-Day Exploitation",
-      "url": "https://thehackernews.com/2026/11/vmware-vcenter-hit-by-another-critical.html",
-      "ts": 1795526906.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Broadcom has shipped patches to address 23 vulnerabilities impacting VMware ESX, vCenter, Workstation, Fusion, and Avi Load Balancer, including one critical bug that could be abused to bypass authentication. The critical vulnerability, tracked as CVE-[phone], is rated 9.8 out of 10.0 on the CVSS scoring system. It resides in the VMware Directory Service (\"vmdir\"). \"A malicious actor with",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "dev",
-        "science",
-        "security"
-      ],
-      "date": "2026-11-24"
-    },
-    {
-      "uid": "rss:4c2b395a7adf58",
-      "source": "rss",
-      "title": "Okta Links ShinyHunters-Associated Vishing Group to New INCEPTION Data Leak Site",
-      "url": "https://thehackernews.com/2026/11/okta-links-shinyhunters-associated.html",
-      "ts": 1795526901.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "A threat cluster previously assessed to be affiliated with the ShinyHunters extortion crew may have rebranded and continued operations under a new name called INCEPTION, according to Okta's Threat Intelligence team. The cluster, dubbed O-UNC-053, is characterized by the use of voice phishing (aka vishing) attacks to trick targets into entering credentials in phishing pages and approving",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [],
-      "date": "2026-11-24"
-    },
-    {
-      "uid": "rss:1c024142ae254b",
-      "source": "rss",
-      "title": "Hackers Found a Way Around GitHub SHA Pinning. This Webinar Explains How to Close the Gap",
-      "url": "https://thehackernews.com/2026/11/hackers-found-way-around-github-sha.html",
-      "ts": 1795524129.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Pinning GitHub Actions to an exact version of their code, known as SHA pinning, has become the go-to defense against software supply chain attacks. Attackers have already found a way around it. In March 2026, the hackers who hijacked Trivy, a widely used open-source security scanner, planted malicious code that looked like it came from GitHub's official checkout tool. They even labeled it a",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-24"
-    },
-    {
-      "uid": "rss:cefd60cf014142",
-      "source": "rss",
-      "title": "Google Researcher Shows How a Single Bit Change in .NET Files Bypassed Windows Code Integrity",
-      "url": "https://thehackernews.com/2026/11/google-researcher-shows-how-single-bit.html",
-      "ts": 1795521720.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "A quirk in how the .NET Framework loads a program file let a local attacker run untrusted code past two separate protections on Windows built to block it, Google Project Zero researcher James Forshaw showed in a write-up published yesterday. The same loading behavior bypassed Oracle VirtualBox's process hardening on Windows hosts, tracked as CVE-[phone], and Windows code integrity, tracked",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-24"
-    },
-    {
-      "uid": "rss:eb7477221dfab0",
-      "source": "rss",
-      "title": "2027 SOC Budget Reset: 5 Priorities to Cut Costs and Reduce Cyber Risk",
-      "url": "https://thehackernews.com/2026/11/2027-soc-budget-reset-5-priorities-to.html",
-      "ts": 1795521714.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "What if your biggest SOC budget problem isn't how much you spend, but how much analyst time you lose? According to ANY.RUN's estimates, SOC teams could recover 450 analyst hours per 1,000 investigated alerts through faster threat analysis and IOC research. That's a significant opportunity as manual investigations, repeated checks, and unnecessary escalations continue to drain resources. As",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "biz"
-      ],
-      "date": "2026-11-24"
-    },
-    {
-      "uid": "rss:6977820a8ad746",
-      "source": "rss",
-      "title": "Microsoft Fixes Azure API Management Classic Flaw as Actor Targets Customer Secrets",
-      "url": "https://thehackernews.com/2026/11/microsoft-fixes-azure-api-management.html",
-      "ts": 1795517089.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Norway's National Security Authority (NSM) has disclosed that it became aware of a security vulnerability in Microsoft's Azure API Management (APIM) that has affected multiple businesses in the country, including energy companies Equinor and Skagerak Energi. \"An unknown actor has been actively looking for access tokens, secrets, and named values ​​in APIM,\" NSM said. \"It is still uncertain how",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "dev",
-        "crypto",
-        "security"
-      ],
-      "date": "2026-11-24"
-    },
-    {
       "uid": "rss:5e6da20d451a8e",
       "source": "rss",
       "title": "CTO of ‘RansomwareHelp’ Indicted for Wire Fraud",
@@ -2257,6 +2183,25 @@
         "security"
       ],
       "date": "2026-11-21"
+    },
+    {
+      "uid": "rss:ac5a917a6d460b",
+      "source": "rss",
+      "title": "We Get the Infrastructure We Pay For",
+      "url": "https://www.schneier.com/blog/archives/2026/11/we-get-the-infrastructure-we-pay-for.html",
+      "ts": 1795522014.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Bruce Schneier",
+      "summary": "<p><em>This essay originally appeared as part of a <a href=\"https://www.thefp.com/p/cybersecurity-terrorism-iran-china-russia-apocalypse\">round table</a> in <cite>The Free Press</cite> entitled &#8220;Is America’s Infrastructure Under Attack?&#8221;</em></p> <p>Microsoft, the FAA, banks, United Airlines, the NSA&#8212;it&#8217;s been a really bad week in cyberspace. But, amazing as it might seem,",
+      "recipe": "schneier",
+      "buzz": 10,
+      "topics": [
+        "ai",
+        "science",
+        "security"
+      ],
+      "date": "2026-11-24"
     },
     {
       "uid": "rss:dcb1e49d6f398d",
@@ -2294,19 +2239,113 @@
       "date": "2026-11-20"
     },
     {
-      "uid": "rss:7e3e423acf869a",
+      "uid": "rss:a8772c3cfced45",
       "source": "rss",
-      "title": "Opening a 400-Year-Old Cryptex",
-      "url": "https://www.schneier.com/blog/archives/2026/11/opening-a-400-year-old-cryptex.html",
-      "ts": 1795176294.0,
+      "title": "VMware vCenter Hit by Another Critical 9.8-Rated Auth Bypass Flaw After Zero-Day Exploitation",
+      "url": "https://thehackernews.com/2026/11/vmware-vcenter-hit-by-another-critical.html",
+      "ts": 1795526906.0,
       "points": 0,
       "comments": 0,
-      "author": "Bruce Schneier",
-      "summary": "<p>Researchers used CT scanning technology to recover the code and <a href=\"https://www.bbc.com/news/articles/c69qz9jzq4jro\">open</a> a 400-year-old cryptex padlock.</p> <p>You can buy a USB-drive <a href=\"https://puzzleboxworld.com/products/cryptex-antique-gold-color-usb-flash-drive-16-gb\">cryptex</a>.</p>",
-      "recipe": "schneier",
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Broadcom has shipped patches to address 23 vulnerabilities impacting VMware ESX, vCenter, Workstation, Fusion, and Avi Load Balancer, including one critical bug that could be abused to bypass authentication. The critical vulnerability, tracked as CVE-[phone], is rated 9.8 out of 10.0 on the CVSS scoring system. It resides in the VMware Directory Service (\"vmdir\"). \"A malicious actor with",
+      "recipe": "hackersnews",
+      "buzz": 10,
+      "topics": [
+        "dev",
+        "science",
+        "security"
+      ],
+      "date": "2026-11-24"
+    },
+    {
+      "uid": "rss:4c2b395a7adf58",
+      "source": "rss",
+      "title": "Okta Links ShinyHunters-Associated Vishing Group to New INCEPTION Data Leak Site",
+      "url": "https://thehackernews.com/2026/11/okta-links-shinyhunters-associated.html",
+      "ts": 1795526901.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "A threat cluster previously assessed to be affiliated with the ShinyHunters extortion crew may have rebranded and continued operations under a new name called INCEPTION, according to Okta's Threat Intelligence team. The cluster, dubbed O-UNC-053, is characterized by the use of voice phishing (aka vishing) attacks to trick targets into entering credentials in phishing pages and approving",
+      "recipe": "hackersnews",
       "buzz": 10,
       "topics": [],
-      "date": "2026-11-20"
+      "date": "2026-11-24"
+    },
+    {
+      "uid": "rss:1c024142ae254b",
+      "source": "rss",
+      "title": "Hackers Found a Way Around GitHub SHA Pinning. This Webinar Explains How to Close the Gap",
+      "url": "https://thehackernews.com/2026/11/hackers-found-way-around-github-sha.html",
+      "ts": 1795524129.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Pinning GitHub Actions to an exact version of their code, known as SHA pinning, has become the go-to defense against software supply chain attacks. Attackers have already found a way around it. In March 2026, the hackers who hijacked Trivy, a widely used open-source security scanner, planted malicious code that looked like it came from GitHub's official checkout tool. They even labeled it a",
+      "recipe": "hackersnews",
+      "buzz": 10,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-24"
+    },
+    {
+      "uid": "rss:cefd60cf014142",
+      "source": "rss",
+      "title": "Google Researcher Shows How a Single Bit Change in .NET Files Bypassed Windows Code Integrity",
+      "url": "https://thehackernews.com/2026/11/google-researcher-shows-how-single-bit.html",
+      "ts": 1795521720.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "A quirk in how the .NET Framework loads a program file let a local attacker run untrusted code past two separate protections on Windows built to block it, Google Project Zero researcher James Forshaw showed in a write-up published yesterday. The same loading behavior bypassed Oracle VirtualBox's process hardening on Windows hosts, tracked as CVE-[phone], and Windows code integrity, tracked",
+      "recipe": "hackersnews",
+      "buzz": 10,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-24"
+    },
+    {
+      "uid": "rss:eb7477221dfab0",
+      "source": "rss",
+      "title": "2027 SOC Budget Reset: 5 Priorities to Cut Costs and Reduce Cyber Risk",
+      "url": "https://thehackernews.com/2026/11/2027-soc-budget-reset-5-priorities-to.html",
+      "ts": 1795521714.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "What if your biggest SOC budget problem isn't how much you spend, but how much analyst time you lose? According to ANY.RUN's estimates, SOC teams could recover 450 analyst hours per 1,000 investigated alerts through faster threat analysis and IOC research. That's a significant opportunity as manual investigations, repeated checks, and unnecessary escalations continue to drain resources. As",
+      "recipe": "hackersnews",
+      "buzz": 10,
+      "topics": [
+        "ai",
+        "biz"
+      ],
+      "date": "2026-11-24"
+    },
+    {
+      "uid": "rss:6977820a8ad746",
+      "source": "rss",
+      "title": "Microsoft Fixes Azure API Management Classic Flaw as Actor Targets Customer Secrets",
+      "url": "https://thehackernews.com/2026/11/microsoft-fixes-azure-api-management.html",
+      "ts": 1795517089.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Norway's National Security Authority (NSM) has disclosed that it became aware of a security vulnerability in Microsoft's Azure API Management (APIM) that has affected multiple businesses in the country, including energy companies Equinor and Skagerak Energi. \"An unknown actor has been actively looking for access tokens, secrets, and named values ​​in APIM,\" NSM said. \"It is still uncertain how",
+      "recipe": "hackersnews",
+      "buzz": 10,
+      "topics": [
+        "ai",
+        "dev",
+        "crypto",
+        "security"
+      ],
+      "date": "2026-11-24"
     },
     {
       "uid": "rss:3665ae60487fca",
@@ -2342,62 +2381,6 @@
         "security"
       ],
       "date": "2026-11-24"
-    },
-    {
-      "uid": "rss:9134bb1d772836",
-      "source": "rss",
-      "title": "Hackers Exploit N-able MailAssure Flaw While AI Agents Exploit MONAI Label Zero-Day",
-      "url": "https://thehackernews.com/2026/11/hackers-exploit-n-able-mailassure-flaw.html",
-      "ts": 1795500165.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Monday added two flaws impacting N-able MailAssure and MONAI Label to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation. The critical vulnerabilities are listed below - CVE-[phone] (CVSS score: 9.3) - A server-side request forgery (SSRF) vulnerability in N-able MailAssure's LDAP",
-      "recipe": "hackersnews",
-      "buzz": 10,
-      "topics": [
-        "ai",
-        "dev",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-24"
-    },
-    {
-      "uid": "rss:179c48d5c34feb",
-      "source": "rss",
-      "title": "Webworm Suspected of Modifying SoftEther VPN to Evade Detection and Hide Remote Access",
-      "url": "https://thehackernews.com/2026/11/webworm-suspected-of-modifying.html",
-      "ts": 1795455915.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "The China-aligned threat actor known as Webworm is suspected to be using a custom version of the open-source SoftEther VPN Bridge tool in an attempt to remove recognizable detection fingerprints, while disguising it as network-monitoring software to establish covert remote access to compromised networks. The modified variant \"implements various tricks to hide itself from security tools,\"",
-      "recipe": "hackersnews",
-      "buzz": 10,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-23"
-    },
-    {
-      "uid": "rss:fa05141b817760",
-      "source": "rss",
-      "title": "⚡ Weekly Recap: VMware 0-Day, Java4Shell, NGINX2Root, Ruby2Shell, and a Whole Lot of Shell Trouble",
-      "url": "https://thehackernews.com/2026/11/weekly-recap-vmware-0-day-java4shell.html",
-      "ts": 1795446648.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "A stolen key. A trusted message. A routine update. None of these looks like the start of a major security problem. That's partly why they work. Attackers don't always need to break down a door. Sometimes they just use one that's already open. This week's stories show how quickly a small opening can turn into a much bigger mess. One breach helps attackers reach another target. Tools people rely",
-      "recipe": "hackersnews",
-      "buzz": 10,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-23"
     },
     {
       "uid": "rss:c077b9eec9aa33",
@@ -2570,6 +2553,21 @@
       "date": "2026-10-13"
     },
     {
+      "uid": "rss:7e3e423acf869a",
+      "source": "rss",
+      "title": "Opening a 400-Year-Old Cryptex",
+      "url": "https://www.schneier.com/blog/archives/2026/11/opening-a-400-year-old-cryptex.html",
+      "ts": 1795176294.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Bruce Schneier",
+      "summary": "<p>Researchers used CT scanning technology to recover the code and <a href=\"https://www.bbc.com/news/articles/c69qz9jzq4jro\">open</a> a 400-year-old cryptex padlock.</p> <p>You can buy a USB-drive <a href=\"https://puzzleboxworld.com/products/cryptex-antique-gold-color-usb-flash-drive-16-gb\">cryptex</a>.</p>",
+      "recipe": "schneier",
+      "buzz": 0,
+      "topics": [],
+      "date": "2026-11-20"
+    },
+    {
       "uid": "rss:0a25269fdcdc3c",
       "source": "rss",
       "title": "France Is Blaming Iran for the Fridge Cyberattack",
@@ -2639,25 +2637,6 @@
       "buzz": 0,
       "topics": [],
       "date": "2026-11-14"
-    },
-    {
-      "uid": "rss:1da07c9934607e",
-      "source": "rss",
-      "title": "Friday Squid Blogging: Pacific Flying Squid Populations Dropping in Korean Waters",
-      "url": "https://www.schneier.com/blog/archives/2026/11/friday-squid-blogging-pacific-flying-squid-populations-dropping-in-korean-waters.html",
-      "ts": 1794607249.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Bruce Schneier",
-      "summary": "<p>Climate change is the <a href=\"https://news.mongabay.com/2026/11/south-koreas-beloved-squid-may-vanish-from-its-waters-due-to-climate-change-heat-waves/\">issue</a>.</p> <p>As usual, you can also use this squid post to talk about the security stories in the news that I haven&#8217;t covered.</p> <p><a href=\"https://www.schneier.com/blog/archives/2024/06/new-blog-moderation-policy.html\">Blog mode",
-      "recipe": "schneier",
-      "buzz": 0,
-      "topics": [
-        "ai",
-        "science",
-        "security"
-      ],
-      "date": "2026-11-13"
     }
   ]
 }
