@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T17:23:44+00:00",
+  "generated_at": "2026-11-27T21:12:37+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -241,7 +241,7 @@
       "author": "ruflo",
       "summary": "Severity: critical. The MCP bridge shipping in ruflo/docker-compose.yml exposed POST /mcp with no authentication. The docker-compose defaults bound the bridge and MongoDB to all interfaces. Combined, an unauthenticated network attacker could invoke tools/call → terminal_execute inside the bridge container, obtain a she",
       "recipe": "gh_advisories",
-      "buzz": 6030,
+      "buzz": 6010,
       "topics": [
         "ai",
         "dev",
@@ -328,12 +328,12 @@
       "title": "1Password Security Incident",
       "url": "https://1password.com/blog/update-on-nov-2026-security-incident",
       "ts": 1795627106.0,
-      "points": 1690,
-      "comments": 720,
+      "points": 1695,
+      "comments": 724,
       "author": "lxhrstn",
       "summary": "",
       "recipe": "hn_sec",
-      "buzz": 3880,
+      "buzz": 3897,
       "topics": [
         "dev",
         "security"
@@ -498,7 +498,7 @@
       "author": "wwbn/avideo",
       "summary": "Severity: high. ### Summary\n\nThe standalone FFmpeg execution endpoint `plugin/API/standAlone/ffmpeg.json.php` builds a shell command string that is passed to `execAsync()` and run via `nohup sh -c \"<command>\"`. When the decrypted `codeToExec` payload produces a non-empty `avideoPath`, the endpoint appends a complet",
       "recipe": "gh_advisories",
-      "buzz": 3530,
+      "buzz": 3510,
       "topics": [
         "dev",
         "security"
@@ -1081,7 +1081,7 @@
       "author": "go.etcd.io/etcd/v3",
       "summary": "Severity: medium. ### Impact\n_What kind of vulnerability is it? Who is impacted?_\n\nWhen etcd is configured with `--listen-client-http-urls` to split the HTTP and gRPC client endpoints onto separate listeners, the `--client-crl-file` Certificate Revocation List is not enforced on the gRPC listener. A client presenting",
       "recipe": "gh_advisories",
-      "buzz": 1830,
+      "buzz": 1810,
       "topics": [
         "security"
       ],
@@ -1098,7 +1098,7 @@
       "author": "cakephp/twig-view",
       "summary": "Severity: medium. ### Impact\nThe `unserialize` filter has no restriction on which classes are allowed. This can be used as a deserialization remote-code-execution gadget.\n\n### Patches\n1.3.3 and 2.1.2 contain a fix for this issue. The fix may impact backwards compatibility if you are relying on deserializing PHP objec",
       "recipe": "gh_advisories",
-      "buzz": 1830,
+      "buzz": 1810,
       "topics": [
         "ai",
         "security"
@@ -1370,6 +1370,25 @@
       "date": "2009-06-03"
     },
     {
+      "uid": "gh:erkamyaman/safe-anything",
+      "source": "github",
+      "title": "erkamyaman/safe-anything",
+      "url": "https://github.com/erkamyaman/safe-anything",
+      "ts": 1795365850.0,
+      "points": 825,
+      "comments": 93,
+      "author": "erkamyaman",
+      "summary": "Find the holes before someone else does. A fast, 100% Rust vulnerability scanner: XSS, SQL injection, leaked secrets, dependency CVEs and AI agent setups.",
+      "recipe": "github_sec",
+      "buzz": 1114,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-22"
+    },
+    {
       "uid": "hn:12140477",
       "source": "hn",
       "title": "A practical security guide for web developers",
@@ -1388,36 +1407,17 @@
       "date": "2016-07-21"
     },
     {
-      "uid": "gh:erkamyaman/safe-anything",
-      "source": "github",
-      "title": "erkamyaman/safe-anything",
-      "url": "https://github.com/erkamyaman/safe-anything",
-      "ts": 1795365850.0,
-      "points": 818,
-      "comments": 90,
-      "author": "erkamyaman",
-      "summary": "Find the holes before someone else does. A fast, 100% Rust vulnerability scanner: XSS, SQL injection, leaked secrets, dependency CVEs and AI agent setups.",
-      "recipe": "github_sec",
-      "buzz": 1098,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-22"
-    },
-    {
       "uid": "gh:sresarehumantoo/ARTEX-CC",
       "source": "github",
       "title": "sresarehumantoo/ARTEX-CC",
       "url": "https://github.com/sresarehumantoo/ARTEX-CC",
       "ts": 1795276774.0,
-      "points": 142,
-      "comments": 47,
+      "points": 196,
+      "comments": 64,
       "author": "sresarehumantoo",
       "summary": "Autonomous penetration testing platform for Claude Code. 65 MCP tools, dual-graph architecture, multi-instance coordination, web UI, recording proxy, and evidence capture.",
       "recipe": "github_sec",
-      "buzz": 293,
+      "buzz": 398,
       "topics": [
         "dev"
       ],
@@ -1429,12 +1429,12 @@
       "title": "vulnix0x4/a-better-antivirus",
       "url": "https://github.com/vulnix0x4/a-better-antivirus",
       "ts": 1794885574.0,
-      "points": 224,
+      "points": 226,
       "comments": 15,
       "author": "vulnix0x4",
       "summary": "Catches infostealers in the act on Windows: plants fake passwords, wallets and app data that only malware would read, and freezes whatever touches them.",
       "recipe": "github_sec",
-      "buzz": 269,
+      "buzz": 271,
       "topics": [
         "security"
       ],
@@ -1456,34 +1456,17 @@
       "date": "2026-11-16"
     },
     {
-      "uid": "gh:testcompupa-sketch/avast-premium-security-fadalan",
-      "source": "github",
-      "title": "testcompupa-sketch/avast-premium-security-fadalan",
-      "url": "https://github.com/testcompupa-sketch/avast-premium-security-fadalan",
-      "ts": 1795792476.0,
-      "points": 153,
-      "comments": 0,
-      "author": "testcompupa-sketch",
-      "summary": "Deploy Avast Premium Security Fadalan, then document configuration and runtime status.",
-      "recipe": "github_sec",
-      "buzz": 233,
-      "topics": [
-        "security"
-      ],
-      "date": "2026-11-27"
-    },
-    {
       "uid": "gh:RobustaStudio/semsec",
       "source": "github",
       "title": "RobustaStudio/semsec",
       "url": "https://github.com/RobustaStudio/semsec",
       "ts": 1795605022.0,
-      "points": 154,
-      "comments": 10,
+      "points": 160,
+      "comments": 11,
       "author": "RobustaStudio",
       "summary": "High-precision Semgrep security rules — 146 taint-tracking and secret detection rules for Python, JavaScript, Java, PHP covering 75 providers. By Robusta Studio.",
       "recipe": "github_sec",
-      "buzz": 214,
+      "buzz": 223,
       "topics": [
         "ai",
         "dev",
@@ -1492,21 +1475,21 @@
       "date": "2026-11-25"
     },
     {
-      "uid": "gh:balikunsh-bot/keepassxc-talroora",
+      "uid": "gh:testcompupa-sketch/avast-premium-security-fadalan",
       "source": "github",
-      "title": "balikunsh-bot/keepassxc-talroora",
-      "url": "https://github.com/balikunsh-bot/keepassxc-talroora",
-      "ts": 1795032603.0,
-      "points": 193,
+      "title": "testcompupa-sketch/avast-premium-security-fadalan",
+      "url": "https://github.com/testcompupa-sketch/avast-premium-security-fadalan",
+      "ts": 1795792476.0,
+      "points": 118,
       "comments": 0,
-      "author": "balikunsh-bot",
-      "summary": "Keepassxc Talroora organizes credential records and manages encrypted password databases.",
+      "author": "testcompupa-sketch",
+      "summary": "Deploy Avast Premium Security Fadalan, then document configuration and runtime status.",
       "recipe": "github_sec",
-      "buzz": 193,
+      "buzz": 198,
       "topics": [
-        "dev"
+        "security"
       ],
-      "date": "2026-11-18"
+      "date": "2026-11-27"
     },
     {
       "uid": "gh:agivanttechnologies/SlopSquatShield",
@@ -1532,17 +1515,34 @@
       "title": "CybeDefend/cybedefend",
       "url": "https://github.com/CybeDefend/cybedefend",
       "ts": 1795448166.0,
-      "points": 118,
-      "comments": 13,
+      "points": 124,
+      "comments": 14,
       "author": "CybeDefend",
       "summary": "Agentic ASPM, the open source Snyk alternative. A full security audit in one command",
       "recipe": "github_sec",
-      "buzz": 167,
+      "buzz": 176,
       "topics": [
         "ai",
         "security"
       ],
       "date": "2026-11-23"
+    },
+    {
+      "uid": "gh:balikunsh-bot/keepassxc-talroora",
+      "source": "github",
+      "title": "balikunsh-bot/keepassxc-talroora",
+      "url": "https://github.com/balikunsh-bot/keepassxc-talroora",
+      "ts": 1795032603.0,
+      "points": 158,
+      "comments": 0,
+      "author": "balikunsh-bot",
+      "summary": "Keepassxc Talroora organizes credential records and manages encrypted password databases.",
+      "recipe": "github_sec",
+      "buzz": 158,
+      "topics": [
+        "dev"
+      ],
+      "date": "2026-11-18"
     },
     {
       "uid": "gh:spatie/laravel-suspicious-login",
@@ -1688,24 +1688,6 @@
       "date": "2026-11-27"
     },
     {
-      "uid": "rss:e197281605052c",
-      "source": "rss",
-      "title": "ThreatsDay: 10M NGINX Services at Risk, 250+ Malicious Extensions, AI Server Hijacking + 17 More Stories",
-      "url": "https://thehackernews.com/2026/11/threatsday-250-rogue-extensions-10m.html",
-      "ts": 1795721997.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "A website can look perfectly fine to the person running it. Log out, visit the same page, and things might look different. Something similar is happening with browser extensions, where even the way you find and install one can change what it does. Checking whether software works as expected only tells you so much. Then there’s the question of who gets to use what. Stolen logins are opening",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "hardware"
-      ],
-      "date": "2026-11-26"
-    },
-    {
       "uid": "gh:hyscaler/HyScribe",
       "source": "github",
       "title": "hyscaler/HyScribe",
@@ -1728,12 +1710,12 @@
       "title": "prepaid-host/hvpatch",
       "url": "https://github.com/prepaid-host/hvpatch",
       "ts": 1795428035.0,
-      "points": 45,
+      "points": 46,
       "comments": 1,
       "author": "prepaid-host",
       "summary": "Kernel livepatching for Proxmox VE hypervisors: klp-build modules checked against the shipped kernel, reviewed CVE catalog, verifying node agent",
       "recipe": "github_sec",
-      "buzz": 58,
+      "buzz": 59,
       "topics": [
         "ai",
         "security"
@@ -1811,6 +1793,24 @@
         "hardware"
       ],
       "date": "2026-11-24"
+    },
+    {
+      "uid": "gh:peleda-app/favicons",
+      "source": "github",
+      "title": "peleda-app/favicons",
+      "url": "https://github.com/peleda-app/favicons",
+      "ts": 1795122395.0,
+      "points": 49,
+      "comments": 0,
+      "author": "peleda-app",
+      "summary": "Free, privacy-first favicon & logo API: any site's icon as a clean, sandboxed SVG with light/dark theme colours. One Rust binary, self-hostable.",
+      "recipe": "github_sec",
+      "buzz": 49,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-19"
     },
     {
       "uid": "gh:rammahmagdy/Latch",
@@ -1891,24 +1891,6 @@
       "date": "2026-11-20"
     },
     {
-      "uid": "gh:peleda-app/favicons",
-      "source": "github",
-      "title": "peleda-app/favicons",
-      "url": "https://github.com/peleda-app/favicons",
-      "ts": 1795122395.0,
-      "points": 34,
-      "comments": 0,
-      "author": "peleda-app",
-      "summary": "Free, privacy-first favicon & logo API: any site's icon as a clean, sandboxed SVG with light/dark theme colours. One Rust binary, self-hostable.",
-      "recipe": "github_sec",
-      "buzz": 34,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-19"
-    },
-    {
       "uid": "rss:d4ba949bbfe1b1",
       "source": "rss",
       "title": "Tracking Incidents of Hacking Using AI Tools",
@@ -1925,6 +1907,24 @@
         "dev"
       ],
       "date": "2026-11-25"
+    },
+    {
+      "uid": "rss:e197281605052c",
+      "source": "rss",
+      "title": "ThreatsDay: 10M NGINX Services at Risk, 250+ Malicious Extensions, AI Server Hijacking + 17 More Stories",
+      "url": "https://thehackernews.com/2026/11/threatsday-250-rogue-extensions-10m.html",
+      "ts": 1795721997.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "A website can look perfectly fine to the person running it. Log out, visit the same page, and things might look different. Something similar is happening with browser extensions, where even the way you find and install one can change what it does. Checking whether software works as expected only tells you so much. Then there’s the question of who gets to use what. Stolen logins are opening",
+      "recipe": "hackersnews",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "hardware"
+      ],
+      "date": "2026-11-26"
     },
     {
       "uid": "rss:30a2f68c277b74",
