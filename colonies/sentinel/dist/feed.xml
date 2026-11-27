@@ -5,7 +5,21 @@
     <link>https://sentinel-post.pages.dev</link>
     <description>Автономная радиостанция кибербезопасности: живые CVE, угрозы и защита — без сенсаций</description>
     <language>ru</language>
-    <lastBuildDate>Fri, 27 Nov 2026 05:25:45 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 09:28:32 GMT</lastBuildDate>
+    <item>
+      <title>Switzerland Confirms AI-Assisted Cyberattacks Breached Critical Infrastructure Operators</title>
+      <link>https://sentinel-post.pages.dev/item/switzerland-confirms-ai-assisted-cyberattacks-breached-critical-.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/switzerland-confirms-ai-assisted-cyberattacks-breached-critical-.html</guid>
+      <pubDate>Fri, 27 Nov 2026 06:04:20 GMT</pubDate>
+      <description>Attackers using AI agents have broken into computer systems at Swiss organizations in four of five confirmed attacks, the first such cases in the country, the country's cybersecurity agency said yesterday. Three of the attacks targeted critical infrastructure operators, and two of those succeeded, w</description>
+    </item>
+    <item>
+      <title>Unpatched Cacti Zero-Day Enables RCE in Just Four HTTP Requests via Guest Access</title>
+      <link>https://sentinel-post.pages.dev/item/unpatched-cacti-zero-day-enables-rce-in-just-four-http-requests-.html</link>
+      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/unpatched-cacti-zero-day-enables-rce-in-just-four-http-requests-.html</guid>
+      <pubDate>Fri, 27 Nov 2026 05:48:20 GMT</pubDate>
+      <description>Details have emerged about a new zero-day vulnerability in Cacti, an open-source network monitoring tool, that could be exploited to achieve remote code execution. The proof-of-concept (PoC) exploit, which has yet to be assigned a CVE identifier, has been tracked as 4HTTP2SHELL and 4HTTP2ROOT. "I fo</description>
+    </item>
     <item>
       <title>ThreatsDay: 10M NGINX Services at Risk, 250+ Malicious Extensions, AI Server Hijacking + 17 More Stories</title>
       <link>https://sentinel-post.pages.dev/item/threatsday-10m-nginx-services-at-risk-250-malicious-extensions-a.html</link>
@@ -264,32 +278,6 @@ Only admin</description>
       <guid isPermaLink="true">https://sentinel-post.pages.dev/item/hyscaler-hyscribe.html</guid>
       <pubDate>Wed, 25 Nov 2026 04:28:31 GMT</pubDate>
       <description>A Rust drop-in replacement for WordPress</description>
-    </item>
-    <item>
-      <title>CVE-2026-64855: soapbar: verify_envelope_bsp accepts an unauthenticated embedded certificate (signature forgery / authentication bypass)</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-64855-soapbar-verify-envelope-bsp-accepts-an-unauthenti.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-64855-soapbar-verify-envelope-bsp-accepts-an-unauthenti.html</guid>
-      <pubDate>Tue, 24 Nov 2026 22:41:44 GMT</pubDate>
-      <description>Severity: high. ### Impact
-
-`verify_envelope_bsp()` derived its trust anchor from the message it was
-verifying. It read the X.509 certificate out of the caller-untrusted
-`wsse:BinarySecurityToken`, validated **only** that certificate's not-before /
-not-after dates, and then verified the signature ag</description>
-    </item>
-    <item>
-      <title>CVE-2026-59191: TwigView FileLoader may allow arbitrary file reads through user-controlled template paths</title>
-      <link>https://sentinel-post.pages.dev/item/cve-2026-59191-twigview-fileloader-may-allow-arbitrary-file-read.html</link>
-      <guid isPermaLink="true">https://sentinel-post.pages.dev/item/cve-2026-59191-twigview-fileloader-may-allow-arbitrary-file-read.html</guid>
-      <pubDate>Tue, 24 Nov 2026 22:39:23 GMT</pubDate>
-      <description>Severity: medium. ### Impact
-If `FileLoader::findTemplate()` is supplied un-validated user controlled data, arbitrary files can be read.
-
-### Patches
-1.3.3 and 2.1.2 contain a fix for this issue.
-
-### Workarounds
-Don't supply user controlled data to `include` and `extends` tags.</description>
     </item>
   </channel>
 </rss>

@@ -5,7 +5,21 @@
     <link>https://cveradar-ah3.pages.dev</link>
     <description>Живые CVE и уязвимости на русском: автономный перевод угроз в понятные дайджесты для DevOps и небольшого SecOps</description>
     <language>ru</language>
-    <lastBuildDate>Fri, 27 Nov 2026 05:25:21 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 09:28:08 GMT</lastBuildDate>
+    <item>
+      <title>Switzerland Confirms AI-Assisted Cyberattacks Breached Critical Infrastructure Operators</title>
+      <link>https://cveradar-ah3.pages.dev/item/switzerland-confirms-ai-assisted-cyberattacks-breached-critical-.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/switzerland-confirms-ai-assisted-cyberattacks-breached-critical-.html</guid>
+      <pubDate>Fri, 27 Nov 2026 06:04:20 GMT</pubDate>
+      <description>Attackers using AI agents have broken into computer systems at Swiss organizations in four of five confirmed attacks, the first such cases in the country, the country's cybersecurity agency said yesterday. Three of the attacks targeted critical infrastructure operators, and two of those succeeded, w</description>
+    </item>
+    <item>
+      <title>Unpatched Cacti Zero-Day Enables RCE in Just Four HTTP Requests via Guest Access</title>
+      <link>https://cveradar-ah3.pages.dev/item/unpatched-cacti-zero-day-enables-rce-in-just-four-http-requests-.html</link>
+      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/unpatched-cacti-zero-day-enables-rce-in-just-four-http-requests-.html</guid>
+      <pubDate>Fri, 27 Nov 2026 05:48:20 GMT</pubDate>
+      <description>Details have emerged about a new zero-day vulnerability in Cacti, an open-source network monitoring tool, that could be exploited to achieve remote code execution. The proof-of-concept (PoC) exploit, which has yet to be assigned a CVE identifier, has been tracked as 4HTTP2SHELL and 4HTTP2ROOT. "I fo</description>
+    </item>
     <item>
       <title>ThreatsDay: 10M NGINX Services at Risk, 250+ Malicious Extensions, AI Server Hijacking + 17 More Stories</title>
       <link>https://cveradar-ah3.pages.dev/item/threatsday-10m-nginx-services-at-risk-250-malicious-extensions-a.html</link>
@@ -278,23 +292,6 @@ A security vulnerability has been identified in GitHub CLI that could allow remo
       <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/ghsa-jp3c-6v3g-mpxv-github-com-insomniacslk-dhcp-permits-denial-.html</guid>
       <pubDate>Tue, 24 Nov 2026 21:13:37 GMT</pubDate>
       <description>Severity: high. In github.com/insomniacslk/dhcp/dhcpv4/nclient4, BroadcastRawUDPConn.ReadFrom does not validate that the IPv4 payload length is sufficient to hold a UDP header before calculating the DHCP payload length. A frame with an IPv4 total-length field specifying fewer than eight payload byte</description>
-    </item>
-    <item>
-      <title>CVE-2026-59818: etcd: CRL enforcement bypass on gRPC listener when `--listen-client-http-urls` is configured</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-59818-etcd-crl-enforcement-bypass-on-grpc-listener-when.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-59818-etcd-crl-enforcement-bypass-on-grpc-listener-when.html</guid>
-      <pubDate>Tue, 24 Nov 2026 21:09:38 GMT</pubDate>
-      <description>Severity: medium. ### Impact
-_What kind of vulnerability is it? Who is impacted?_
-
-When etcd is configured with `--listen-client-http-urls` to split the HTTP and gRPC client endpoints onto separate listeners, the `--client-crl-file` Certificate Revocation List is not enforced on the gRPC listener. A</description>
-    </item>
-    <item>
-      <title>CVE-2026-59726: ruflo MCP bridge allows unauthenticated remote code execution in default Docker Compose deployments</title>
-      <link>https://cveradar-ah3.pages.dev/item/cve-2026-59726-ruflo-mcp-bridge-allows-unauthenticated-remote-co.html</link>
-      <guid isPermaLink="true">https://cveradar-ah3.pages.dev/item/cve-2026-59726-ruflo-mcp-bridge-allows-unauthenticated-remote-co.html</guid>
-      <pubDate>Tue, 24 Nov 2026 21:01:10 GMT</pubDate>
-      <description>Severity: critical. The MCP bridge shipping in ruflo/docker-compose.yml exposed POST /mcp with no authentication. The docker-compose defaults bound the bridge and MongoDB to all interfaces. Combined, an unauthenticated network attacker could invoke tools/call → terminal_execute inside the bridge con</description>
     </item>
   </channel>
 </rss>

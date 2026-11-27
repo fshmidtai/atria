@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T05:25:45+00:00",
+  "generated_at": "2026-11-27T09:28:31+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -10,34 +10,34 @@
     "rss"
   ],
   "totals": {
-    "items": 140,
+    "items": 141,
     "by_source": {
       "hn": 40,
       "cve": 30,
-      "github": 20,
+      "github": 21,
       "rss": 50
     },
     "by_recipe": {
       "hn_sec": 40,
       "gh_advisories": 30,
       "hackersnews": 30,
-      "github_sec": 20,
+      "github_sec": 21,
       "schneier": 10,
       "krebs": 10
     },
     "by_topic": {
       "security": 110,
-      "ai": 71,
+      "ai": 72,
       "dev": 59,
       "hardware": 16,
-      "crypto": 8,
+      "crypto": 7,
       "science": 7,
       "biz": 6
     },
     "top_domains": [
       [
         "github.com",
-        52
+        53
       ],
       [
         "thehackernews.com",
@@ -347,12 +347,12 @@
       "title": "1Password Security Incident",
       "url": "https://1password.com/blog/update-on-nov-2026-security-incident",
       "ts": 1795627106.0,
-      "points": 1647,
-      "comments": 708,
+      "points": 1663,
+      "comments": 712,
       "author": "lxhrstn",
       "summary": "",
       "recipe": "hn_sec",
-      "buzz": 3801,
+      "buzz": 3829,
       "topics": [
         "dev",
         "security"
@@ -1393,12 +1393,12 @@
       "title": "erkamyaman/safe-anything",
       "url": "https://github.com/erkamyaman/safe-anything",
       "ts": 1795365850.0,
-      "points": 797,
-      "comments": 87,
+      "points": 805,
+      "comments": 89,
       "author": "erkamyaman",
       "summary": "Find the holes before someone else does. A fast, 100% Rust vulnerability scanner: XSS, SQL injection, leaked secrets, dependency CVEs and AI agent setups.",
       "recipe": "github_sec",
-      "buzz": 1068,
+      "buzz": 1082,
       "topics": [
         "ai",
         "dev",
@@ -1417,7 +1417,7 @@
       "author": "HavocSaif",
       "summary": "Directory listing for the Avast Premium Security Kacerin project.",
       "recipe": "github_sec",
-      "buzz": 296,
+      "buzz": 276,
       "topics": [
         "ai",
         "security"
@@ -1430,12 +1430,12 @@
       "title": "vulnix0x4/a-better-antivirus",
       "url": "https://github.com/vulnix0x4/a-better-antivirus",
       "ts": 1794885574.0,
-      "points": 220,
+      "points": 224,
       "comments": 15,
       "author": "vulnix0x4",
       "summary": "Catches infostealers in the act on Windows: plants fake passwords, wallets and app data that only malware would read, and freezes whatever touches them.",
       "recipe": "github_sec",
-      "buzz": 265,
+      "buzz": 269,
       "topics": [
         "security"
       ],
@@ -1447,14 +1447,33 @@
       "title": "Aabyss-Team/Threat-Broadcast-Plus",
       "url": "https://github.com/Aabyss-Team/Threat-Broadcast-Plus",
       "ts": 1794800456.0,
-      "points": 156,
+      "points": 158,
       "comments": 35,
       "author": "Aabyss-Team",
       "summary": "网络安全威胁情报播报-Plus升级版",
       "recipe": "github_sec",
-      "buzz": 261,
+      "buzz": 263,
       "topics": [],
       "date": "2026-11-16"
+    },
+    {
+      "uid": "gh:RobustaStudio/semsec",
+      "source": "github",
+      "title": "RobustaStudio/semsec",
+      "url": "https://github.com/RobustaStudio/semsec",
+      "ts": 1795605022.0,
+      "points": 141,
+      "comments": 10,
+      "author": "RobustaStudio",
+      "summary": "High-precision Semgrep security rules — 146 taint-tracking and secret detection rules for Python, JavaScript, Java, PHP covering 75 providers. By Robusta Studio.",
+      "recipe": "github_sec",
+      "buzz": 201,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-25"
     },
     {
       "uid": "gh:balikunsh-bot/keepassxc-talroora",
@@ -1474,36 +1493,17 @@
       "date": "2026-11-18"
     },
     {
-      "uid": "gh:RobustaStudio/semsec",
-      "source": "github",
-      "title": "RobustaStudio/semsec",
-      "url": "https://github.com/RobustaStudio/semsec",
-      "ts": 1795605022.0,
-      "points": 139,
-      "comments": 10,
-      "author": "RobustaStudio",
-      "summary": "High-precision Semgrep security rules — 146 taint-tracking and secret detection rules for Python, JavaScript, Java, PHP covering 75 providers. By Robusta Studio.",
-      "recipe": "github_sec",
-      "buzz": 199,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-25"
-    },
-    {
       "uid": "gh:agivanttechnologies/SlopSquatShield",
       "source": "github",
       "title": "agivanttechnologies/SlopSquatShield",
       "url": "https://github.com/agivanttechnologies/SlopSquatShield",
       "ts": 1795348235.0,
-      "points": 52,
+      "points": 53,
       "comments": 41,
       "author": "agivanttechnologies",
       "summary": "SlopSquatShield checks the packages that you or your AI coding agent install, and blocks names that don't exist or look like slopsquatting traps. It supports npm, PyPI and Maven, and it runs in your terminal, in AI agent hooks, on git commit and in your IDE.",
       "recipe": "github_sec",
-      "buzz": 185,
+      "buzz": 186,
       "topics": [
         "ai",
         "dev"
@@ -1516,12 +1516,12 @@
       "title": "CybeDefend/cybedefend",
       "url": "https://github.com/CybeDefend/cybedefend",
       "ts": 1795448166.0,
-      "points": 94,
-      "comments": 12,
+      "points": 99,
+      "comments": 13,
       "author": "CybeDefend",
       "summary": "Agentic ASPM, the open source Snyk alternative. A full security audit in one command",
       "recipe": "github_sec",
-      "buzz": 140,
+      "buzz": 148,
       "topics": [
         "ai",
         "security"
@@ -1534,14 +1534,69 @@
       "title": "spatie/laravel-suspicious-login",
       "url": "https://github.com/spatie/laravel-suspicious-login",
       "ts": 1794917088.0,
-      "points": 74,
+      "points": 75,
       "comments": 2,
       "author": "spatie",
       "summary": "Detect suspicious logins in your Laravel app",
       "recipe": "github_sec",
-      "buzz": 80,
+      "buzz": 81,
       "topics": [],
       "date": "2026-11-17"
+    },
+    {
+      "uid": "gh:sresarehumantoo/ARTEX-CC",
+      "source": "github",
+      "title": "sresarehumantoo/ARTEX-CC",
+      "url": "https://github.com/sresarehumantoo/ARTEX-CC",
+      "ts": 1795276774.0,
+      "points": 47,
+      "comments": 8,
+      "author": "sresarehumantoo",
+      "summary": "Autonomous penetration testing platform for Claude Code. 65 MCP tools, dual-graph architecture, multi-instance coordination, web UI, recording proxy, and evidence capture.",
+      "recipe": "github_sec",
+      "buzz": 81,
+      "topics": [
+        "dev"
+      ],
+      "date": "2026-11-21"
+    },
+    {
+      "uid": "rss:0a6f3c178aecde",
+      "source": "rss",
+      "title": "Switzerland Confirms AI-Assisted Cyberattacks Breached Critical Infrastructure Operators",
+      "url": "https://thehackernews.com/2026/11/switzerland-confirms-ai-assisted.html",
+      "ts": 1795759460.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Attackers using AI agents have broken into computer systems at Swiss organizations in four of five confirmed attacks, the first such cases in the country, the country's cybersecurity agency said yesterday. Three of the attacks targeted critical infrastructure operators, and two of those succeeded, with no major disruptions reported. The victims have not been named, and it is not known who is",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-27"
+    },
+    {
+      "uid": "rss:2c58dff3b66325",
+      "source": "rss",
+      "title": "Unpatched Cacti Zero-Day Enables RCE in Just Four HTTP Requests via Guest Access",
+      "url": "https://thehackernews.com/2026/11/unpatched-cacti-zero-day-enables-rce-in.html",
+      "ts": 1795758500.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Details have emerged about a new zero-day vulnerability in Cacti, an open-source network monitoring tool, that could be exploited to achieve remote code execution. The proof-of-concept (PoC) exploit, which has yet to be assigned a CVE identifier, has been tracked as 4HTTP2SHELL and 4HTTP2ROOT. \"I found a path from a fresh, unauthenticated HTTP session to command execution as the Cacti server",
+      "recipe": "hackersnews",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "dev",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-27"
     },
     {
       "uid": "rss:e197281605052c",
@@ -1619,41 +1674,6 @@
       "date": "2026-11-26"
     },
     {
-      "uid": "rss:c6ac5ef89ac91a",
-      "source": "rss",
-      "title": "Drupal Warns of New Highly Critical Site Takeover Vulnerability Under Active Exploitation",
-      "url": "https://thehackernews.com/2026/11/drupal-warns-of-new-highly-critical.html",
-      "ts": 1795676554.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Drupal has warned of a new \"highly critical\" security flaw impacting Drupal core that it said has been exploited in the wild. The vulnerability, tracked as CVE-[phone] (CVSS score: N/A), has been described as a case of improper checking for unusual or exceptional conditions. It also relates to CVE-[phone] aka Fail2Install in that it addresses remaining vulnerable installation states",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-26"
-    },
-    {
-      "uid": "rss:4d0181698ad051",
-      "source": "rss",
-      "title": "Hackers Exploit 10 Vulnerabilities Across Mitel, Juniper, Vates, and Danfoss Products",
-      "url": "https://thehackernews.com/2026/11/hackers-exploit-10-vulnerabilities.html",
-      "ts": 1795675486.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added 10 security flaws to its Known Exploited Vulnerabilities (KEV) catalog, including five vulnerabilities impacting Mitel MiCollab that were disclosed last week. The Mitel MiCollab vulnerabilities are listed below - CVE-[phone] (CVSS score: 5.3) - An arbitrary file upload vulnerability in the Audio, Web and",
-      "recipe": "hackersnews",
-      "buzz": 80,
-      "topics": [
-        "security"
-      ],
-      "date": "2026-11-26"
-    },
-    {
       "uid": "gh:hyscaler/HyScribe",
       "source": "github",
       "title": "hyscaler/HyScribe",
@@ -1691,6 +1711,24 @@
       "date": "2026-11-24"
     },
     {
+      "uid": "gh:prepaid-host/hvpatch",
+      "source": "github",
+      "title": "prepaid-host/hvpatch",
+      "url": "https://github.com/prepaid-host/hvpatch",
+      "ts": 1795428035.0,
+      "points": 45,
+      "comments": 1,
+      "author": "prepaid-host",
+      "summary": "Kernel livepatching for Proxmox VE hypervisors: klp-build modules checked against the shipped kernel, reviewed CVE catalog, verifying node agent",
+      "recipe": "github_sec",
+      "buzz": 58,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-23"
+    },
+    {
       "uid": "gh:agenticslabs-xyz/lurensic",
       "source": "github",
       "title": "agenticslabs-xyz/lurensic",
@@ -1706,24 +1744,6 @@
         "ai"
       ],
       "date": "2026-11-15"
-    },
-    {
-      "uid": "gh:prepaid-host/hvpatch",
-      "source": "github",
-      "title": "prepaid-host/hvpatch",
-      "url": "https://github.com/prepaid-host/hvpatch",
-      "ts": 1795428035.0,
-      "points": 43,
-      "comments": 0,
-      "author": "prepaid-host",
-      "summary": "Kernel livepatching for Proxmox VE hypervisors: klp-build modules checked against the shipped kernel, reviewed CVE catalog, verifying node agent",
-      "recipe": "github_sec",
-      "buzz": 53,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-23"
     },
     {
       "uid": "gh:dinosn/CVE-2026-123890",
@@ -1749,12 +1769,12 @@
       "title": "xiaotianya14/apk-reverse-skill",
       "url": "https://github.com/xiaotianya14/apk-reverse-skill",
       "ts": 1794680510.0,
-      "points": 24,
+      "points": 25,
       "comments": 9,
       "author": "xiaotianya14",
       "summary": "手机版逆向skill —— Android APK 逆向研究技能包：解包、反编译、安全审计、补丁重签、真机验证；跑在手机版Agent工具上的开源项目，工具链按需下载。",
       "recipe": "github_sec",
-      "buzz": 51,
+      "buzz": 52,
       "topics": [
         "ai"
       ],
@@ -1827,11 +1847,11 @@
       "url": "https://github.com/streichsbaer/tldrcve",
       "ts": 1795141659.0,
       "points": 23,
-      "comments": 3,
+      "comments": 4,
       "author": "streichsbaer",
       "summary": "The vulnerabilities everyone's talking about, in plain English. Are you affected, and what should you do?",
       "recipe": "github_sec",
-      "buzz": 32,
+      "buzz": 35,
       "topics": [
         "ai",
         "security"
@@ -1874,6 +1894,41 @@
         "security"
       ],
       "date": "2026-11-24"
+    },
+    {
+      "uid": "rss:c6ac5ef89ac91a",
+      "source": "rss",
+      "title": "Drupal Warns of New Highly Critical Site Takeover Vulnerability Under Active Exploitation",
+      "url": "https://thehackernews.com/2026/11/drupal-warns-of-new-highly-critical.html",
+      "ts": 1795676554.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "Drupal has warned of a new \"highly critical\" security flaw impacting Drupal core that it said has been exploited in the wild. The vulnerability, tracked as CVE-[phone] (CVSS score: N/A), has been described as a case of improper checking for unusual or exceptional conditions. It also relates to CVE-[phone] aka Fail2Install in that it addresses remaining vulnerable installation states",
+      "recipe": "hackersnews",
+      "buzz": 30,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-26"
+    },
+    {
+      "uid": "rss:4d0181698ad051",
+      "source": "rss",
+      "title": "Hackers Exploit 10 Vulnerabilities Across Mitel, Juniper, Vates, and Danfoss Products",
+      "url": "https://thehackernews.com/2026/11/hackers-exploit-10-vulnerabilities.html",
+      "ts": 1795675486.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added 10 security flaws to its Known Exploited Vulnerabilities (KEV) catalog, including five vulnerabilities impacting Mitel MiCollab that were disclosed last week. The Mitel MiCollab vulnerabilities are listed below - CVE-[phone] (CVSS score: 5.3) - An arbitrary file upload vulnerability in the Audio, Web and",
+      "recipe": "hackersnews",
+      "buzz": 30,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-11-26"
     },
     {
       "uid": "rss:661925b8f8d6c7",
@@ -2184,61 +2239,6 @@
       "date": "2026-11-24"
     },
     {
-      "uid": "rss:3665ae60487fca",
-      "source": "rss",
-      "title": "WHMCS SQL Injection Could Expose Customer Data and Admin Password Hashes without Login",
-      "url": "https://thehackernews.com/2026/11/whmcs-sql-injection-flaw-could-expose.html",
-      "ts": 1795509260.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "A flaw in WHMCS's shopping cart, the billing and automation platform many web hosting companies use to run their businesses, could allow anyone on the internet to retrieve customer records and administrator password hashes from an installation's database. No login is needed. The company disclosed the SQL injection yesterday along with two other flaws that need a logged-in client, and released",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "dev"
-      ],
-      "date": "2026-11-24"
-    },
-    {
-      "uid": "rss:b5a82861484d12",
-      "source": "rss",
-      "title": "OpenAI and Cisco Unveil AI-Assisted Linux Security Tool to Block Exploits Before Patching",
-      "url": "https://thehackernews.com/2026/11/openai-and-cisco-unveil-ai-assisted.html",
-      "ts": 1795500177.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "OpenAI and Cisco have teamed up to launch Shirudo (meaning \"shield\" in Japanese), an open-source Linux runtime that allows artificial intelligence (AI) agents to defend systems without downtime. \"It lets agents write dynamic eBPF controls to shield systems from exploits, giving defenders more time to test and roll out patches,\" OpenAI said in a post on X. The AI upstart called the initiative a",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-24"
-    },
-    {
-      "uid": "rss:9134bb1d772836",
-      "source": "rss",
-      "title": "Hackers Exploit N-able MailAssure Flaw While AI Agents Exploit MONAI Label Zero-Day",
-      "url": "https://thehackernews.com/2026/11/hackers-exploit-n-able-mailassure-flaw.html",
-      "ts": 1795500165.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Monday added two flaws impacting N-able MailAssure and MONAI Label to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation. The critical vulnerabilities are listed below - CVE-[phone] (CVSS score: 9.3) - A server-side request forgery (SSRF) vulnerability in N-able MailAssure's LDAP",
-      "recipe": "hackersnews",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "dev",
-        "security",
-        "hardware"
-      ],
-      "date": "2026-11-24"
-    },
-    {
       "uid": "rss:5e6da20d451a8e",
       "source": "rss",
       "title": "CTO of ‘RansomwareHelp’ Indicted for Wire Fraud",
@@ -2309,6 +2309,61 @@
       "date": "2026-11-20"
     },
     {
+      "uid": "rss:3665ae60487fca",
+      "source": "rss",
+      "title": "WHMCS SQL Injection Could Expose Customer Data and Admin Password Hashes without Login",
+      "url": "https://thehackernews.com/2026/11/whmcs-sql-injection-flaw-could-expose.html",
+      "ts": 1795509260.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "A flaw in WHMCS's shopping cart, the billing and automation platform many web hosting companies use to run their businesses, could allow anyone on the internet to retrieve customer records and administrator password hashes from an installation's database. No login is needed. The company disclosed the SQL injection yesterday along with two other flaws that need a logged-in client, and released",
+      "recipe": "hackersnews",
+      "buzz": 10,
+      "topics": [
+        "dev"
+      ],
+      "date": "2026-11-24"
+    },
+    {
+      "uid": "rss:b5a82861484d12",
+      "source": "rss",
+      "title": "OpenAI and Cisco Unveil AI-Assisted Linux Security Tool to Block Exploits Before Patching",
+      "url": "https://thehackernews.com/2026/11/openai-and-cisco-unveil-ai-assisted.html",
+      "ts": 1795500177.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "OpenAI and Cisco have teamed up to launch Shirudo (meaning \"shield\" in Japanese), an open-source Linux runtime that allows artificial intelligence (AI) agents to defend systems without downtime. \"It lets agents write dynamic eBPF controls to shield systems from exploits, giving defenders more time to test and roll out patches,\" OpenAI said in a post on X. The AI upstart called the initiative a",
+      "recipe": "hackersnews",
+      "buzz": 10,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-24"
+    },
+    {
+      "uid": "rss:9134bb1d772836",
+      "source": "rss",
+      "title": "Hackers Exploit N-able MailAssure Flaw While AI Agents Exploit MONAI Label Zero-Day",
+      "url": "https://thehackernews.com/2026/11/hackers-exploit-n-able-mailassure-flaw.html",
+      "ts": 1795500165.0,
+      "points": 0,
+      "comments": 0,
+      "author": "info@thehackernews.com (The Hacker News)",
+      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Monday added two flaws impacting N-able MailAssure and MONAI Label to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation. The critical vulnerabilities are listed below - CVE-[phone] (CVSS score: 9.3) - A server-side request forgery (SSRF) vulnerability in N-able MailAssure's LDAP",
+      "recipe": "hackersnews",
+      "buzz": 10,
+      "topics": [
+        "ai",
+        "dev",
+        "security",
+        "hardware"
+      ],
+      "date": "2026-11-24"
+    },
+    {
       "uid": "rss:179c48d5c34feb",
       "source": "rss",
       "title": "Webworm Suspected of Modifying SoftEther VPN to Evade Detection and Hide Remote Access",
@@ -2341,45 +2396,6 @@
       "topics": [
         "dev",
         "security"
-      ],
-      "date": "2026-11-23"
-    },
-    {
-      "uid": "rss:c6f205647bbd2a",
-      "source": "rss",
-      "title": "Critical binary-parser Flaw Enables JavaScript Injection via Malicious Parser Definitions",
-      "url": "https://thehackernews.com/2026/11/critical-binary-parser-flaw-enables.html",
-      "ts": 1795440140.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "A critical security flaw has been disclosed in the popular binary-parser library that could allow an attacker who controls parser definitions to execute arbitrary code. The vulnerability, tracked as CVE-[phone] (CVSS score: 9.2 / 8.1), is a case of code injection impacting binary-parser versions prior to 2.3.1. \"Binary-parser before 2.3.1 contains a code injection vulnerability that allows",
-      "recipe": "hackersnews",
-      "buzz": 10,
-      "topics": [
-        "ai",
-        "dev",
-        "crypto",
-        "security"
-      ],
-      "date": "2026-11-23"
-    },
-    {
-      "uid": "rss:8a35ce07bd0077",
-      "source": "rss",
-      "title": "Hackers Exploit Critical ScreenConnect Flaw to Hijack MSP Technician PCs Without Warning",
-      "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-screenconnect.html",
-      "ts": 1795437664.0,
-      "points": 0,
-      "comments": 0,
-      "author": "info@thehackernews.com (The Hacker News)",
-      "summary": "Threat actors are exploiting a now-patched security flaw in ConnectWise ScreenConnect to target managed service provider (MSP) servers. The activity revolves around CVE-[phone] (CVSS score: 9.9), a critical ScreenConnect client flaw that allows a guest to transfer and execute a malicious payload on a connecting technician's host. \"On November 12, 2026, we observed one managed service",
-      "recipe": "hackersnews",
-      "buzz": 10,
-      "topics": [
-        "dev",
-        "security",
-        "hardware"
       ],
       "date": "2026-11-23"
     },
