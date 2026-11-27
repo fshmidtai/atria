@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T21:08:01+00:00",
+  "generated_at": "2026-11-27T01:39:06+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -49,7 +49,7 @@
       "author": "tastyigniter/tastyigniter",
       "summary": "Severity: critical. ### Summary\nMedia manager accepts `.htaccess` file which can be used to perform RCE.\n\n### Details\nThe file upload functionality from media manager somehow accepts `.htaccess` file. This file could be used to allow any extension to run PHP command. By doing so, it is possible to perform RCE.\n\n### PoC",
       "recipe": "gh_advisories",
-      "buzz": 6080,
+      "buzz": 6030,
       "topics": [
         "ai",
         "security"
@@ -67,7 +67,7 @@
       "author": "tastyigniter/tastyigniter",
       "summary": "Severity: critical. ### Summary\n**Where:** `POST /admin/mail_templates/edit/{id}` → body field  \n**Who can trigger:** Any admin user with `Admin.MailTemplates` permission  \n**Impact:** Arbitrary PHP execution on the server — full RCE\n\n### Details\nThe Mail templates is vulnerable to SSTI and did not perform an validatio",
       "recipe": "gh_advisories",
-      "buzz": 6080,
+      "buzz": 6030,
       "topics": [
         "ai",
         "dev",
@@ -144,7 +144,7 @@
       "author": "tastyigniter/tastyigniter",
       "summary": "Severity: high. ### Summary\nArbitrary file write outside `media/uploads/`\n\n### Details\nIt is possible to perform Path Traversal in Media Manager file upload function as admin.\n\n\n### PoC\n- login as admin\n- upload a image but in the request, change the path from `/` to `/../../`.\n\nRequest\n```http\nPOST /admin/media_ma",
       "recipe": "gh_advisories",
-      "buzz": 3580,
+      "buzz": 3530,
       "topics": [
         "ai",
         "dev",
@@ -255,7 +255,7 @@
       "author": "wwbn/avideo",
       "summary": "Severity: high. ### Summary\n\nThe helper `listFFmpegProcesses($keyword)` in `plugin/API/standAlone/functions.php` builds a shell pipeline by interpolating `$keyword` inside single quotes and running it with `exec()`:\n\n```php\n$command .= \" | grep '$keyword'\";\nexec($command, $output, $status);\n```\n\nThe two callers in",
       "recipe": "gh_advisories",
-      "buzz": 3530,
+      "buzz": 3510,
       "topics": [
         "dev",
         "security"
@@ -401,7 +401,7 @@
       "author": "tastyigniter/tastyigniter",
       "summary": "Severity: medium. ### Summary\nStored XSS via uploading SVG files \n\n### Details\nIt is possible to upload SVG files that contains XSS.\n\n### PoC\n\n- login as admin\n- create the following SVG file\n\n```\n<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"400\" height=\"400\" viewBox=\"0 0 124 124\" fill=\"none\">\n<rect width=\"124\" hei",
       "recipe": "gh_advisories",
-      "buzz": 1880,
+      "buzz": 1830,
       "topics": [
         "ai",
         "security"

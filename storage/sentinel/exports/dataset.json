@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T21:08:27+00:00",
+  "generated_at": "2026-11-27T01:39:33+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -10,24 +10,24 @@
     "rss"
   ],
   "totals": {
-    "items": 141,
+    "items": 140,
     "by_source": {
       "hn": 40,
       "cve": 30,
-      "github": 21,
+      "github": 20,
       "rss": 50
     },
     "by_recipe": {
       "hn_sec": 40,
       "gh_advisories": 30,
       "hackersnews": 30,
-      "github_sec": 21,
+      "github_sec": 20,
       "schneier": 10,
       "krebs": 10
     },
     "by_topic": {
-      "security": 112,
-      "ai": 72,
+      "security": 110,
+      "ai": 71,
       "dev": 59,
       "hardware": 16,
       "crypto": 8,
@@ -37,7 +37,7 @@
     "top_domains": [
       [
         "github.com",
-        53
+        52
       ],
       [
         "thehackernews.com",
@@ -76,11 +76,11 @@
         1
       ],
       [
-        "cybernews.com",
+        "1password.com",
         1
       ],
       [
-        "1password.com",
+        "cybernews.com",
         1
       ],
       [
@@ -184,7 +184,7 @@
       "author": "tastyigniter/tastyigniter",
       "summary": "Severity: critical. ### Summary\nMedia manager accepts `.htaccess` file which can be used to perform RCE.\n\n### Details\nThe file upload functionality from media manager somehow accepts `.htaccess` file. This file could be used to allow any extension to run PHP command. By doing so, it is possible to perform RCE.\n\n### PoC",
       "recipe": "gh_advisories",
-      "buzz": 6080,
+      "buzz": 6030,
       "topics": [
         "ai",
         "security"
@@ -202,7 +202,7 @@
       "author": "tastyigniter/tastyigniter",
       "summary": "Severity: critical. ### Summary\n**Where:** `POST /admin/mail_templates/edit/{id}` → body field  \n**Who can trigger:** Any admin user with `Admin.MailTemplates` permission  \n**Impact:** Arbitrary PHP execution on the server — full RCE\n\n### Details\nThe Mail templates is vulnerable to SSTI and did not perform an validatio",
       "recipe": "gh_advisories",
-      "buzz": 6080,
+      "buzz": 6030,
       "topics": [
         "ai",
         "dev",
@@ -342,6 +342,24 @@
       "date": "2022-01-23"
     },
     {
+      "uid": "hn:50644817",
+      "source": "hn",
+      "title": "1Password Security Incident",
+      "url": "https://1password.com/blog/update-on-nov-2026-security-incident",
+      "ts": 1795627106.0,
+      "points": 1634,
+      "comments": 706,
+      "author": "lxhrstn",
+      "summary": "",
+      "recipe": "hn_sec",
+      "buzz": 3782,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-25"
+    },
+    {
       "uid": "hn:25729088",
       "source": "hn",
       "title": "70TB of Parler users’ messages, videos, and posts leaked by security researchers",
@@ -360,43 +378,6 @@
       "date": "2021-01-11"
     },
     {
-      "uid": "hn:50644817",
-      "source": "hn",
-      "title": "1Password Security Incident",
-      "url": "https://1password.com/blog/update-on-nov-2026-security-incident",
-      "ts": 1795627106.0,
-      "points": 1620,
-      "comments": 698,
-      "author": "lxhrstn",
-      "summary": "",
-      "recipe": "hn_sec",
-      "buzz": 3744,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-25"
-    },
-    {
-      "uid": "cve:GHSA-rj59-9f77-mvg5",
-      "source": "cve",
-      "title": "CVE-2026-69181: TastyIgniter permits Path Traversal in Media Upload",
-      "url": "https://github.com/advisories/GHSA-rj59-9f77-mvg5",
-      "ts": 1795647270.0,
-      "points": 3500,
-      "comments": 0,
-      "author": "tastyigniter/tastyigniter",
-      "summary": "Severity: high. ### Summary\nArbitrary file write outside `media/uploads/`\n\n### Details\nIt is possible to perform Path Traversal in Media Manager file upload function as admin.\n\n\n### PoC\n- login as admin\n- upload a image but in the request, change the path from `/` to `/../../`.\n\nRequest\n```http\nPOST /admin/media_ma",
-      "recipe": "gh_advisories",
-      "buzz": 3580,
-      "topics": [
-        "ai",
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-25"
-    },
-    {
       "uid": "hn:50172041",
       "source": "hn",
       "title": "Security advisory: Critical remote code execution vulnerabilities, update now",
@@ -412,6 +393,25 @@
         "security"
       ],
       "date": "2026-10-20"
+    },
+    {
+      "uid": "cve:GHSA-rj59-9f77-mvg5",
+      "source": "cve",
+      "title": "CVE-2026-69181: TastyIgniter permits Path Traversal in Media Upload",
+      "url": "https://github.com/advisories/GHSA-rj59-9f77-mvg5",
+      "ts": 1795647270.0,
+      "points": 3500,
+      "comments": 0,
+      "author": "tastyigniter/tastyigniter",
+      "summary": "Severity: high. ### Summary\nArbitrary file write outside `media/uploads/`\n\n### Details\nIt is possible to perform Path Traversal in Media Manager file upload function as admin.\n\n\n### PoC\n- login as admin\n- upload a image but in the request, change the path from `/` to `/../../`.\n\nRequest\n```http\nPOST /admin/media_ma",
+      "recipe": "gh_advisories",
+      "buzz": 3530,
+      "topics": [
+        "ai",
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-25"
     },
     {
       "uid": "cve:GHSA-vw2v-g4x7-xcqg",
@@ -516,7 +516,7 @@
       "author": "wwbn/avideo",
       "summary": "Severity: high. ### Summary\n\nThe helper `listFFmpegProcesses($keyword)` in `plugin/API/standAlone/functions.php` builds a shell pipeline by interpolating `$keyword` inside single quotes and running it with `exec()`:\n\n```php\n$command .= \" | grep '$keyword'\";\nexec($command, $output, $status);\n```\n\nThe two callers in",
       "recipe": "gh_advisories",
-      "buzz": 3530,
+      "buzz": 3510,
       "topics": [
         "dev",
         "security"
@@ -945,24 +945,6 @@
       "date": "2020-09-30"
     },
     {
-      "uid": "cve:GHSA-mqg7-fw3f-mhp7",
-      "source": "cve",
-      "title": "CVE-2026-69177: TastyIgniter allows stored XSS via file upload",
-      "url": "https://github.com/advisories/GHSA-mqg7-fw3f-mhp7",
-      "ts": 1795643535.0,
-      "points": 1800,
-      "comments": 0,
-      "author": "tastyigniter/tastyigniter",
-      "summary": "Severity: medium. ### Summary\nStored XSS via uploading SVG files \n\n### Details\nIt is possible to upload SVG files that contains XSS.\n\n### PoC\n\n- login as admin\n- create the following SVG file\n\n```\n<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"400\" height=\"400\" viewBox=\"0 0 124 124\" fill=\"none\">\n<rect width=\"124\" hei",
-      "recipe": "gh_advisories",
-      "buzz": 1880,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-25"
-    },
-    {
       "uid": "hn:48166459",
       "source": "hn",
       "title": "Mozilla to UK regulators: VPNs are essential privacy and security tools",
@@ -1012,6 +994,24 @@
         "security"
       ],
       "date": "2016-12-15"
+    },
+    {
+      "uid": "cve:GHSA-mqg7-fw3f-mhp7",
+      "source": "cve",
+      "title": "CVE-2026-69177: TastyIgniter allows stored XSS via file upload",
+      "url": "https://github.com/advisories/GHSA-mqg7-fw3f-mhp7",
+      "ts": 1795643535.0,
+      "points": 1800,
+      "comments": 0,
+      "author": "tastyigniter/tastyigniter",
+      "summary": "Severity: medium. ### Summary\nStored XSS via uploading SVG files \n\n### Details\nIt is possible to upload SVG files that contains XSS.\n\n### PoC\n\n- login as admin\n- create the following SVG file\n\n```\n<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"400\" height=\"400\" viewBox=\"0 0 124 124\" fill=\"none\">\n<rect width=\"124\" hei",
+      "recipe": "gh_advisories",
+      "buzz": 1830,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-25"
     },
     {
       "uid": "cve:GHSA-h746-qpxh-ph7g",
@@ -1393,18 +1393,35 @@
       "title": "erkamyaman/safe-anything",
       "url": "https://github.com/erkamyaman/safe-anything",
       "ts": 1795365850.0,
-      "points": 782,
-      "comments": 82,
+      "points": 789,
+      "comments": 84,
       "author": "erkamyaman",
       "summary": "Find the holes before someone else does. A fast, 100% Rust vulnerability scanner: XSS, SQL injection, leaked secrets, dependency CVEs and AI agent setups.",
       "recipe": "github_sec",
-      "buzz": 1038,
+      "buzz": 1051,
       "topics": [
         "ai",
         "dev",
         "security"
       ],
       "date": "2026-11-22"
+    },
+    {
+      "uid": "gh:vulnix0x4/a-better-antivirus",
+      "source": "github",
+      "title": "vulnix0x4/a-better-antivirus",
+      "url": "https://github.com/vulnix0x4/a-better-antivirus",
+      "ts": 1794885574.0,
+      "points": 219,
+      "comments": 15,
+      "author": "vulnix0x4",
+      "summary": "Catches infostealers in the act on Windows: plants fake passwords, wallets and app data that only malware would read, and freezes whatever touches them.",
+      "recipe": "github_sec",
+      "buzz": 264,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-11-17"
     },
     {
       "uid": "gh:Aabyss-Team/Threat-Broadcast-Plus",
@@ -1422,34 +1439,17 @@
       "date": "2026-11-16"
     },
     {
-      "uid": "gh:vulnix0x4/a-better-antivirus",
-      "source": "github",
-      "title": "vulnix0x4/a-better-antivirus",
-      "url": "https://github.com/vulnix0x4/a-better-antivirus",
-      "ts": 1794885574.0,
-      "points": 207,
-      "comments": 14,
-      "author": "vulnix0x4",
-      "summary": "Catches infostealers in the act on Windows: plants fake passwords, wallets and app data that only malware would read, and freezes whatever touches them.",
-      "recipe": "github_sec",
-      "buzz": 249,
-      "topics": [
-        "security"
-      ],
-      "date": "2026-11-17"
-    },
-    {
       "uid": "gh:RobustaStudio/semsec",
       "source": "github",
       "title": "RobustaStudio/semsec",
       "url": "https://github.com/RobustaStudio/semsec",
       "ts": 1795605022.0,
-      "points": 131,
+      "points": 135,
       "comments": 10,
       "author": "RobustaStudio",
       "summary": "High-precision Semgrep security rules — 146 taint-tracking and secret detection rules for Python, JavaScript, Java, PHP covering 75 providers. By Robusta Studio.",
       "recipe": "github_sec",
-      "buzz": 191,
+      "buzz": 195,
       "topics": [
         "ai",
         "dev",
@@ -1481,12 +1481,12 @@
       "title": "CybeDefend/cybedefend",
       "url": "https://github.com/CybeDefend/cybedefend",
       "ts": 1795448166.0,
-      "points": 87,
+      "points": 94,
       "comments": 12,
       "author": "CybeDefend",
       "summary": "Agentic ASPM, the open source Snyk alternative. A full security audit in one command",
       "recipe": "github_sec",
-      "buzz": 133,
+      "buzz": 140,
       "topics": [
         "ai",
         "security"
@@ -1512,22 +1512,19 @@
       "date": "2026-11-24"
     },
     {
-      "uid": "gh:LoopGrubDolmen/wallet-security-desk",
+      "uid": "gh:spatie/laravel-suspicious-login",
       "source": "github",
-      "title": "LoopGrubDolmen/wallet-security-desk",
-      "url": "https://github.com/LoopGrubDolmen/wallet-security-desk",
-      "ts": 1794768281.0,
-      "points": 86,
-      "comments": 0,
-      "author": "LoopGrubDolmen",
-      "summary": "Self-custody wallet hygiene desk — seed storage drills and phishing red flags.",
+      "title": "spatie/laravel-suspicious-login",
+      "url": "https://github.com/spatie/laravel-suspicious-login",
+      "ts": 1794917088.0,
+      "points": 74,
+      "comments": 2,
+      "author": "spatie",
+      "summary": "Detect suspicious logins in your Laravel app",
       "recipe": "github_sec",
-      "buzz": 86,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-15"
+      "buzz": 80,
+      "topics": [],
+      "date": "2026-11-17"
     },
     {
       "uid": "rss:e197281605052c",
@@ -1659,21 +1656,6 @@
       "date": "2026-11-26"
     },
     {
-      "uid": "gh:spatie/laravel-suspicious-login",
-      "source": "github",
-      "title": "spatie/laravel-suspicious-login",
-      "url": "https://github.com/spatie/laravel-suspicious-login",
-      "ts": 1794917088.0,
-      "points": 72,
-      "comments": 2,
-      "author": "spatie",
-      "summary": "Detect suspicious logins in your Laravel app",
-      "recipe": "github_sec",
-      "buzz": 78,
-      "topics": [],
-      "date": "2026-11-17"
-    },
-    {
       "uid": "gh:hyscaler/HyScribe",
       "source": "github",
       "title": "hyscaler/HyScribe",
@@ -1696,12 +1678,12 @@
       "title": "Black-Ghost-Corp/Gaia-harden",
       "url": "https://github.com/Black-Ghost-Corp/Gaia-harden",
       "ts": 1795528541.0,
-      "points": 33,
+      "points": 34,
       "comments": 2,
       "author": "Black-Ghost-Corp",
       "summary": "Harden a fresh Ubuntu/Debian server with one command: admin with SSH keys, locked-down SSH, ufw, fail2ban, security updates, kernel hardening, optional Docker/Caddy. Dry-run, idempotent, JSON report, AI-agent skill. Pure Bash.",
       "recipe": "github_sec",
-      "buzz": 69,
+      "buzz": 70,
       "topics": [
         "ai",
         "dev",
@@ -1711,17 +1693,17 @@
       "date": "2026-11-24"
     },
     {
-      "uid": "gh:prepaid-host/hvpatch",
+      "uid": "gh:dinosn/CVE-2026-123890",
       "source": "github",
-      "title": "prepaid-host/hvpatch",
-      "url": "https://github.com/prepaid-host/hvpatch",
-      "ts": 1795428035.0,
-      "points": 41,
-      "comments": 0,
-      "author": "prepaid-host",
-      "summary": "Kernel livepatching for Proxmox VE hypervisors: klp-build modules checked against the shipped kernel, reviewed CVE catalog, verifying node agent",
+      "title": "dinosn/CVE-2026-123890",
+      "url": "https://github.com/dinosn/CVE-2026-123890",
+      "ts": 1795409774.0,
+      "points": 25,
+      "comments": 6,
+      "author": "dinosn",
+      "summary": "PoC for CVE-[phone]: unauthenticated SRP-6a session-key disclosure in VMware vCenter vmdird DCE/RPC (TCP 2012). Bind -> rpc_srp_verifier new -> get_session_key -> K leaked without password; optional verify_session completes an [email] session.",
       "recipe": "github_sec",
-      "buzz": 51,
+      "buzz": 53,
       "topics": [
         "ai",
         "security"
@@ -1729,17 +1711,34 @@
       "date": "2026-11-23"
     },
     {
-      "uid": "gh:dinosn/CVE-2026-123890",
+      "uid": "gh:agenticslabs-xyz/lurensic",
       "source": "github",
-      "title": "dinosn/CVE-2026-123890",
-      "url": "https://github.com/dinosn/CVE-2026-123890",
-      "ts": 1795409774.0,
-      "points": 25,
-      "comments": 5,
-      "author": "dinosn",
-      "summary": "PoC for CVE-[phone]: unauthenticated SRP-6a session-key disclosure in VMware vCenter vmdird DCE/RPC (TCP 2012). Bind -> rpc_srp_verifier new -> get_session_key -> K leaked without password; optional verify_session completes an [email] session.",
+      "title": "agenticslabs-xyz/lurensic",
+      "url": "https://github.com/agenticslabs-xyz/lurensic",
+      "ts": 1794731655.0,
+      "points": 49,
+      "comments": 1,
+      "author": "agenticslabs-xyz",
+      "summary": "Deception-based defence against AI-driven attacks",
       "recipe": "github_sec",
-      "buzz": 50,
+      "buzz": 52,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-11-15"
+    },
+    {
+      "uid": "gh:prepaid-host/hvpatch",
+      "source": "github",
+      "title": "prepaid-host/hvpatch",
+      "url": "https://github.com/prepaid-host/hvpatch",
+      "ts": 1795428035.0,
+      "points": 42,
+      "comments": 0,
+      "author": "prepaid-host",
+      "summary": "Kernel livepatching for Proxmox VE hypervisors: klp-build modules checked against the shipped kernel, reviewed CVE catalog, verifying node agent",
+      "recipe": "github_sec",
+      "buzz": 52,
       "topics": [
         "ai",
         "security"
@@ -2238,24 +2237,6 @@
         "hardware"
       ],
       "date": "2026-11-24"
-    },
-    {
-      "uid": "gh:Voidsaintcontact/AVG-Internet-Security-Professional-Edition",
-      "source": "github",
-      "title": "Voidsaintcontact/AVG-Internet-Security-Professional-Edition",
-      "url": "https://github.com/Voidsaintcontact/AVG-Internet-Security-Professional-Edition",
-      "ts": 1794559993.0,
-      "points": 24,
-      "comments": 0,
-      "author": "Voidsaintcontact",
-      "summary": "avg internet security edition windows — AVG Internet Security Edition for Windows 11 and 10. README covers system management, configuration, and daily desktop use.",
-      "recipe": "github_sec",
-      "buzz": 24,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-13"
     },
     {
       "uid": "rss:5e6da20d451a8e",
