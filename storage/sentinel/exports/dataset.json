@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T21:12:37+00:00",
+  "generated_at": "2026-11-28T01:33:37+00:00",
   "sources_used": [
     "github_advisories",
     "rss",
@@ -10,23 +10,23 @@
     "rss"
   ],
   "totals": {
-    "items": 142,
+    "items": 141,
     "by_source": {
       "hn": 40,
       "cve": 30,
-      "github": 22,
+      "github": 21,
       "rss": 50
     },
     "by_recipe": {
       "hn_sec": 40,
       "gh_advisories": 30,
       "hackersnews": 30,
-      "github_sec": 22,
+      "github_sec": 21,
       "schneier": 10,
       "krebs": 10
     },
     "by_topic": {
-      "security": 109,
+      "security": 111,
       "ai": 73,
       "dev": 58,
       "hardware": 15,
@@ -37,7 +37,7 @@
     "top_domains": [
       [
         "github.com",
-        54
+        53
       ],
       [
         "thehackernews.com",
@@ -328,12 +328,12 @@
       "title": "1Password Security Incident",
       "url": "https://1password.com/blog/update-on-nov-2026-security-incident",
       "ts": 1795627106.0,
-      "points": 1695,
+      "points": 1702,
       "comments": 724,
       "author": "lxhrstn",
       "summary": "",
       "recipe": "hn_sec",
-      "buzz": 3897,
+      "buzz": 3904,
       "topics": [
         "dev",
         "security"
@@ -461,7 +461,7 @@
       "author": "soapbar",
       "summary": "Severity: high. ### Impact\n\n`verify_envelope_bsp()` derived its trust anchor from the message it was\nverifying. It read the X.509 certificate out of the caller-untrusted\n`wsse:BinarySecurityToken`, validated **only** that certificate's not-before /\nnot-after dates, and then verified the signature against that same",
       "recipe": "gh_advisories",
-      "buzz": 3530,
+      "buzz": 3510,
       "topics": [
         "ai",
         "dev",
@@ -481,7 +481,7 @@
       "author": "github.com/insomniacslk/dhcp",
       "summary": "Severity: high. In github.com/insomniacslk/dhcp/dhcpv4/nclient4, BroadcastRawUDPConn.ReadFrom does not validate that the IPv4 payload length is sufficient to hold a UDP header before calculating the DHCP payload length. A frame with an IPv4 total-length field specifying fewer than eight payload bytes results in a n",
       "recipe": "gh_advisories",
-      "buzz": 3530,
+      "buzz": 3510,
       "topics": [
         "dev"
       ],
@@ -605,7 +605,7 @@
       "author": "@budibase/server",
       "summary": "Severity: high. ## Description\n\n### Summary\n\nOn a self-hosted, single-tenant Budibase instance (`multiTenancy:false`), the public bootstrap endpoint `POST /api/global/users/init` remains fully exploitable **after** the instance has been provisioned. Its \"already initialised\" guard (`checkAnyUserExists()`) is evalua",
       "recipe": "gh_advisories",
-      "buzz": 3510,
+      "buzz": 3500,
       "topics": [
         "ai",
         "dev",
@@ -625,7 +625,7 @@
       "author": "@budibase/server",
       "summary": "Severity: high. ## Description\n\n### Summary\n\nA **low-privileged application end-user** (role `BASIC` - **not** a builder or admin, and on a public data-collection form, an unauthenticated visitor) can store an HTML/JavaScript payload in ordinary row data. When a **builder or admin** later opens that table in the Bu",
       "recipe": "gh_advisories",
-      "buzz": 3510,
+      "buzz": 3500,
       "topics": [
         "ai",
         "dev",
@@ -644,7 +644,7 @@
       "author": "svglib",
       "summary": "Severity: high. # Summary\n\n`svg2rlg()` expands `<use>` references without any limit on the total number of expansions. Only direct cycles are rejected (`CircularRefError`). A group containing N `<use>` elements that point to another such group multiplies the work by N per nesting level, so an SVG of about 1.4 KB ma",
       "recipe": "gh_advisories",
-      "buzz": 3510,
+      "buzz": 3500,
       "topics": [
         "ai",
         "security"
@@ -1044,7 +1044,7 @@
       "author": "cakephp/twig-view",
       "summary": "Severity: medium. ### Impact\nIf `FileLoader::findTemplate()` is supplied un-validated user controlled data, arbitrary files can be read.\n\n### Patches\n1.3.3 and 2.1.2 contain a fix for this issue.\n\n### Workarounds\nDon't supply user controlled data to `include` and `extends` tags.",
       "recipe": "gh_advisories",
-      "buzz": 1830,
+      "buzz": 1810,
       "topics": [
         "ai",
         "security"
@@ -1062,7 +1062,7 @@
       "author": "github.com/cli/cli/v2",
       "summary": "Severity: medium. ### Summary\n\nA security vulnerability has been identified in GitHub CLI that could allow remote code execution when users connect to a malicious Codespace using the `gh codespace jupyter` command. The command opens JupyterLab by launching a URL in the user's browser, but that URL is supplied by a pr",
       "recipe": "gh_advisories",
-      "buzz": 1830,
+      "buzz": 1810,
       "topics": [
         "dev",
         "science",
@@ -1172,7 +1172,7 @@
       "author": "wcmatch",
       "summary": "Severity: medium. # Summary\n\nWith default flags, a pattern that contains several `*` wildcards takes polynomial time, O(n^k) for k stars, to reject a crafted file name. The pattern is an ordinary developer constant such as `*_*_*_*_*.csv`; only the string being matched comes from the attacker. A 255-byte file name (t",
       "recipe": "gh_advisories",
-      "buzz": 1810,
+      "buzz": 1800,
       "topics": [
         "ai",
         "dev",
@@ -1191,7 +1191,7 @@
       "author": "inscriptis",
       "summary": "Severity: medium. # Summary\n\nEvery sibling `<table>` adds another level of the parent's indentation, so the size of `get_text()` output grows quadratically with the number of tables. In the measurements below, a 240 KB HTML document produces about 1 billion characters and uses about 1 GB of memory.\n\n# Details\n\n`table",
       "recipe": "gh_advisories",
-      "buzz": 1810,
+      "buzz": 1800,
       "topics": [
         "ai",
         "security"
@@ -1375,12 +1375,12 @@
       "title": "erkamyaman/safe-anything",
       "url": "https://github.com/erkamyaman/safe-anything",
       "ts": 1795365850.0,
-      "points": 825,
-      "comments": 93,
+      "points": 829,
+      "comments": 95,
       "author": "erkamyaman",
       "summary": "Find the holes before someone else does. A fast, 100% Rust vulnerability scanner: XSS, SQL injection, leaked secrets, dependency CVEs and AI agent setups.",
       "recipe": "github_sec",
-      "buzz": 1114,
+      "buzz": 1124,
       "topics": [
         "ai",
         "dev",
@@ -1412,12 +1412,12 @@
       "title": "sresarehumantoo/ARTEX-CC",
       "url": "https://github.com/sresarehumantoo/ARTEX-CC",
       "ts": 1795276774.0,
-      "points": 196,
-      "comments": 64,
+      "points": 224,
+      "comments": 74,
       "author": "sresarehumantoo",
       "summary": "Autonomous penetration testing platform for Claude Code. 65 MCP tools, dual-graph architecture, multi-instance coordination, web UI, recording proxy, and evidence capture.",
       "recipe": "github_sec",
-      "buzz": 398,
+      "buzz": 456,
       "topics": [
         "dev"
       ],
@@ -1461,12 +1461,12 @@
       "title": "RobustaStudio/semsec",
       "url": "https://github.com/RobustaStudio/semsec",
       "ts": 1795605022.0,
-      "points": 160,
+      "points": 163,
       "comments": 11,
       "author": "RobustaStudio",
       "summary": "High-precision Semgrep security rules — 146 taint-tracking and secret detection rules for Python, JavaScript, Java, PHP covering 75 providers. By Robusta Studio.",
       "recipe": "github_sec",
-      "buzz": 223,
+      "buzz": 226,
       "topics": [
         "ai",
         "dev",
@@ -1497,12 +1497,12 @@
       "title": "agivanttechnologies/SlopSquatShield",
       "url": "https://github.com/agivanttechnologies/SlopSquatShield",
       "ts": 1795348235.0,
-      "points": 55,
+      "points": 56,
       "comments": 41,
       "author": "agivanttechnologies",
       "summary": "SlopSquatShield checks the packages that you or your AI coding agent install, and blocks names that don't exist or look like slopsquatting traps. It supports npm, PyPI and Maven, and it runs in your terminal, in AI agent hooks, on git commit and in your IDE.",
       "recipe": "github_sec",
-      "buzz": 188,
+      "buzz": 189,
       "topics": [
         "ai",
         "dev"
@@ -1515,12 +1515,12 @@
       "title": "CybeDefend/cybedefend",
       "url": "https://github.com/CybeDefend/cybedefend",
       "ts": 1795448166.0,
-      "points": 124,
+      "points": 125,
       "comments": 14,
       "author": "CybeDefend",
       "summary": "Agentic ASPM, the open source Snyk alternative. A full security audit in one command",
       "recipe": "github_sec",
-      "buzz": 176,
+      "buzz": 177,
       "topics": [
         "ai",
         "security"
@@ -1545,6 +1545,23 @@
       "date": "2026-11-18"
     },
     {
+      "uid": "gh:kolline17-cell/noid-privacy-hardening-tool",
+      "source": "github",
+      "title": "kolline17-cell/noid-privacy-hardening-tool",
+      "url": "https://github.com/kolline17-cell/noid-privacy-hardening-tool",
+      "ts": 1795733273.0,
+      "points": 56,
+      "comments": 0,
+      "author": "kolline17-cell",
+      "summary": "Hardening Tool: Windows 11 Security Configuration and Hardening Modules",
+      "recipe": "github_sec",
+      "buzz": 86,
+      "topics": [
+        "security"
+      ],
+      "date": "2026-11-26"
+    },
+    {
       "uid": "gh:spatie/laravel-suspicious-login",
       "source": "github",
       "title": "spatie/laravel-suspicious-login",
@@ -1558,6 +1575,24 @@
       "buzz": 83,
       "topics": [],
       "date": "2026-11-17"
+    },
+    {
+      "uid": "rss:29d02281f8d484",
+      "source": "rss",
+      "title": "Friday Squid Blogging: Giant Squid in Newfoundland",
+      "url": "https://www.schneier.com/blog/archives/2026/11/friday-squid-blogging-giant-squid-in-newfoundland.html",
+      "ts": 1795816940.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Bruce Schneier",
+      "summary": "<p>The two have an <a href=\"https://theconversation.com/what-lurks-below-newfoundland-waters-a-marine-biologist-explains-the-science-behind-the-show-295615\">interesting history</a>.</p> <p>As usual, you can also use this squid post to talk about the security stories in the news that I haven&#8217;t covered.</p> <p><a href=\"https://www.schneier.com/blog/archives/2024/06/new-blog-moderation-policy.h",
+      "recipe": "schneier",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-27"
     },
     {
       "uid": "rss:a3bf705fdb15b4",
@@ -1705,6 +1740,24 @@
       "date": "2026-11-25"
     },
     {
+      "uid": "gh:peleda-app/favicons",
+      "source": "github",
+      "title": "peleda-app/favicons",
+      "url": "https://github.com/peleda-app/favicons",
+      "ts": 1795122395.0,
+      "points": 60,
+      "comments": 0,
+      "author": "peleda-app",
+      "summary": "Free, privacy-first favicon & logo API: any site's icon as a clean, sandboxed SVG with light/dark theme colours. One Rust binary, self-hostable.",
+      "recipe": "github_sec",
+      "buzz": 60,
+      "topics": [
+        "dev",
+        "security"
+      ],
+      "date": "2026-11-19"
+    },
+    {
       "uid": "gh:prepaid-host/hvpatch",
       "source": "github",
       "title": "prepaid-host/hvpatch",
@@ -1738,23 +1791,6 @@
         "ai"
       ],
       "date": "2026-11-15"
-    },
-    {
-      "uid": "gh:xiaotianya14/apk-reverse-skill",
-      "source": "github",
-      "title": "xiaotianya14/apk-reverse-skill",
-      "url": "https://github.com/xiaotianya14/apk-reverse-skill",
-      "ts": 1794680510.0,
-      "points": 25,
-      "comments": 10,
-      "author": "xiaotianya14",
-      "summary": "手机版逆向skill —— Android APK 逆向研究技能包：解包、反编译、安全审计、补丁重签、真机验证；跑在手机版Agent工具上的开源项目，工具链按需下载。",
-      "recipe": "github_sec",
-      "buzz": 55,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-14"
     },
     {
       "uid": "gh:dinosn/CVE-2026-123890",
@@ -1793,24 +1829,6 @@
         "hardware"
       ],
       "date": "2026-11-24"
-    },
-    {
-      "uid": "gh:peleda-app/favicons",
-      "source": "github",
-      "title": "peleda-app/favicons",
-      "url": "https://github.com/peleda-app/favicons",
-      "ts": 1795122395.0,
-      "points": 49,
-      "comments": 0,
-      "author": "peleda-app",
-      "summary": "Free, privacy-first favicon & logo API: any site's icon as a clean, sandboxed SVG with light/dark theme colours. One Rust binary, self-hostable.",
-      "recipe": "github_sec",
-      "buzz": 49,
-      "topics": [
-        "dev",
-        "security"
-      ],
-      "date": "2026-11-19"
     },
     {
       "uid": "gh:rammahmagdy/Latch",
@@ -1856,21 +1874,6 @@
       "buzz": 43,
       "topics": [],
       "date": "2026-11-23"
-    },
-    {
-      "uid": "gh:khanh0209q/NextDNS-Config-Set-And-Forget",
-      "source": "github",
-      "title": "khanh0209q/NextDNS-Config-Set-And-Forget",
-      "url": "https://github.com/khanh0209q/NextDNS-Config-Set-And-Forget",
-      "ts": 1794630951.0,
-      "points": 38,
-      "comments": 1,
-      "author": "khanh0209q",
-      "summary": "A zero-breakage, set-and-forget NextDNS configuration for Home & Office.",
-      "recipe": "github_sec",
-      "buzz": 41,
-      "topics": [],
-      "date": "2026-11-14"
     },
     {
       "uid": "gh:streichsbaer/tldrcve",
@@ -2199,26 +2202,6 @@
       "date": "2026-11-25"
     },
     {
-      "uid": "rss:5e6da20d451a8e",
-      "source": "rss",
-      "title": "CTO of ‘RansomwareHelp’ Indicted for Wire Fraud",
-      "url": "https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud/",
-      "ts": 1795221399.0,
-      "points": 0,
-      "comments": 0,
-      "author": "BrianKrebs",
-      "summary": "The chief technology officer and co-founder of ransomwarehelp.com, a six year old Florida business that claimed to use \"advanced cryptographic tools\" to restore data locked by ransomware, has been charged with wire fraud after an FBI sting operation found the company was simply paying the attackers for a decryption key and charging victims a markup for work that was never performed.",
-      "recipe": "krebs",
-      "buzz": 10,
-      "topics": [
-        "ai",
-        "crypto",
-        "biz",
-        "security"
-      ],
-      "date": "2026-11-21"
-    },
-    {
       "uid": "rss:ac5a917a6d460b",
       "source": "rss",
       "title": "We Get the Infrastructure We Pay For",
@@ -2253,24 +2236,6 @@
         "ai"
       ],
       "date": "2026-11-23"
-    },
-    {
-      "uid": "rss:3d6600dba4617d",
-      "source": "rss",
-      "title": "Friday Squid Blogging: The Largest Squid Ever Filmed",
-      "url": "https://www.schneier.com/blog/archives/2026/11/friday-squid-blogging-the-largest-squid-ever-filmed.html",
-      "ts": 1795212270.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Bruce Schneier",
-      "summary": "<p>This <a href=\"https://www.worldatlas.com/oceans/the-largest-squid-ever-filmed.html\"> is the story</a> of the largest squid ever filmed, in December 2006 near Japan&#8217;s Ogasawara Islands.</p> <p>As usual, you can also use this squid post to talk about the security stories in the news that I haven&#8217;t covered.</p> <p><a href=\"https://www.schneier.com/blog/archives/2024/06/new-blog-moderat",
-      "recipe": "schneier",
-      "buzz": 10,
-      "topics": [
-        "ai",
-        "security"
-      ],
-      "date": "2026-11-20"
     },
     {
       "uid": "rss:1b79e713cb453f",
@@ -2415,6 +2380,26 @@
         "dev"
       ],
       "date": "2026-11-24"
+    },
+    {
+      "uid": "rss:5e6da20d451a8e",
+      "source": "rss",
+      "title": "CTO of ‘RansomwareHelp’ Indicted for Wire Fraud",
+      "url": "https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud/",
+      "ts": 1795221399.0,
+      "points": 0,
+      "comments": 0,
+      "author": "BrianKrebs",
+      "summary": "The chief technology officer and co-founder of ransomwarehelp.com, a six year old Florida business that claimed to use \"advanced cryptographic tools\" to restore data locked by ransomware, has been charged with wire fraud after an FBI sting operation found the company was simply paying the attackers for a decryption key and charging victims a markup for work that was never performed.",
+      "recipe": "krebs",
+      "buzz": 0,
+      "topics": [
+        "ai",
+        "crypto",
+        "biz",
+        "security"
+      ],
+      "date": "2026-11-21"
     },
     {
       "uid": "rss:c077b9eec9aa33",
@@ -2587,6 +2572,24 @@
       "date": "2026-10-13"
     },
     {
+      "uid": "rss:3d6600dba4617d",
+      "source": "rss",
+      "title": "Friday Squid Blogging: The Largest Squid Ever Filmed",
+      "url": "https://www.schneier.com/blog/archives/2026/11/friday-squid-blogging-the-largest-squid-ever-filmed.html",
+      "ts": 1795212270.0,
+      "points": 0,
+      "comments": 0,
+      "author": "Bruce Schneier",
+      "summary": "<p>This <a href=\"https://www.worldatlas.com/oceans/the-largest-squid-ever-filmed.html\"> is the story</a> of the largest squid ever filmed, in December 2006 near Japan&#8217;s Ogasawara Islands.</p> <p>As usual, you can also use this squid post to talk about the security stories in the news that I haven&#8217;t covered.</p> <p><a href=\"https://www.schneier.com/blog/archives/2024/06/new-blog-moderat",
+      "recipe": "schneier",
+      "buzz": 0,
+      "topics": [
+        "ai",
+        "security"
+      ],
+      "date": "2026-11-20"
+    },
+    {
       "uid": "rss:7e3e423acf869a",
       "source": "rss",
       "title": "Opening a 400-Year-Old Cryptex",
@@ -2656,21 +2659,6 @@
         "security"
       ],
       "date": "2026-11-16"
-    },
-    {
-      "uid": "rss:e109a4e996ba8e",
-      "source": "rss",
-      "title": "Upcoming Speaking Engagements",
-      "url": "https://www.schneier.com/blog/archives/2026/11/upcoming-speaking-engagements-62.html",
-      "ts": 1794675766.0,
-      "points": 0,
-      "comments": 0,
-      "author": "Bruce Schneier",
-      "summary": "<p>This is a current list of where and when I am scheduled to speak:</p> <ul> <li>I’m speaking at the <a href=\"https://luma.com/a3pk9zbg\">Catalyst Summit</a> in Brampton, Ontario, Canada, on Wednesday, November 18, 2026.</li> <li>I’m speaking at <a href=\"https://queertech.org/en/events/qonference/qtq-2026\">QT Qonference 2026</a> in Toronto, Ontario, Canada, on Thursday, November 19, 2026.</li> </u",
-      "recipe": "schneier",
-      "buzz": 0,
-      "topics": [],
-      "date": "2026-11-14"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T21:12:01+00:00",
+  "generated_at": "2026-11-28T01:33:02+00:00",
   "sources_used": [
     "rss",
     "rss",
@@ -11,27 +11,29 @@
     "rss"
   ],
   "totals": {
-    "items": 126,
+    "items": 128,
     "by_source": {
       "hn": 7,
-      "rss": 79,
+      "github": 1,
+      "rss": 80,
       "arxiv": 40
     },
     "by_recipe": {
       "economist_fn": 40,
       "arxiv_qfin": 40,
       "cnbc_top": 30,
-      "ft_home": 9,
-      "hn_fintech": 7
+      "ft_home": 10,
+      "hn_fintech": 7,
+      "github_fin": 1
     },
     "by_topic": {
-      "ai": 80,
-      "dev": 41,
-      "biz": 40,
+      "ai": 82,
+      "biz": 41,
+      "dev": 40,
       "science": 20,
-      "hardware": 8,
-      "crypto": 6,
-      "security": 4
+      "hardware": 9,
+      "crypto": 7,
+      "security": 5
     },
     "top_domains": [
       [
@@ -48,7 +50,7 @@
       ],
       [
         "ft.com",
-        9
+        10
       ],
       [
         "news.ycombinator.com",
@@ -56,6 +58,10 @@
       ],
       [
         "realizefi.com",
+        1
+      ],
+      [
+        "github.com",
         1
       ],
       [
@@ -127,6 +133,21 @@
       "date": "2022-11-30"
     },
     {
+      "uid": "gh:Viomh42/a-w-strategies-indicator",
+      "source": "github",
+      "title": "Viomh42/a-w-strategies-indicator",
+      "url": "https://github.com/Viomh42/a-w-strategies-indicator",
+      "ts": 1795722573.0,
+      "points": 51,
+      "comments": 0,
+      "author": "Viomh42",
+      "summary": "A.W. Strategies Indicator: Rules-Based Intraday Futures Strategy with Options-Data Pipeline",
+      "recipe": "github_fin",
+      "buzz": 81,
+      "topics": [],
+      "date": "2026-11-26"
+    },
+    {
       "uid": "rss:afe55d58a63047",
       "source": "rss",
       "title": "Wave of cyber incidents rattles western economies",
@@ -145,19 +166,20 @@
       "date": "2026-11-27"
     },
     {
-      "uid": "rss:3db5f5bc8080d5",
+      "uid": "rss:423b6b3072b300",
       "source": "rss",
-      "title": "Marine Le Pen: the woman who could break the EU",
-      "url": "https://www.ft.com/content/9bbd926e-ccef-4717-9044-48a23c9353ba?syn-25a6b1a6=1",
-      "ts": 1795755613.0,
+      "title": "Can AI crack encryption?",
+      "url": "https://www.ft.com/content/1a29e62d-b18d-4bad-937d-34f3eae0587a?syn-25a6b1a6=1",
+      "ts": 1795803411.0,
       "points": 0,
       "comments": 0,
       "author": "",
-      "summary": "The far-right frontrunner for the French presidency is the biggest populist challenge in the bloc’s history",
+      "summary": "New models’ advancing capabilities raise concerns over the risks of data leaks in banking and commerce",
       "recipe": "ft_home",
       "buzz": 80,
       "topics": [
-        "dev"
+        "ai",
+        "security"
       ],
       "date": "2026-11-27"
     },
@@ -247,19 +269,19 @@
       "date": "2026-11-27"
     },
     {
-      "uid": "rss:78f5c315c4e6de",
+      "uid": "rss:4586e6a315670d",
       "source": "rss",
-      "title": "OpenAI countersues Apple for stealing trade secrets",
-      "url": "https://www.ft.com/content/af599e07-d44c-4068-ab84-6ee3c85551d4?syn-25a6b1a6=1",
-      "ts": 1795803605.0,
+      "title": "S&P cuts France outlook to negative",
+      "url": "https://www.ft.com/content/4e16110a-9604-4455-8557-4edece5df01a?syn-25a6b1a6=1",
+      "ts": 1795819536.0,
       "points": 0,
       "comments": 0,
       "author": "",
-      "summary": "The ChatGPT maker also accuses the tech giant of ‘coercing and threatening’ suppliers who work with both companies, as legal battle escalates",
+      "summary": "Rating agency says political instability will make it harder for the country to tackle its public deficit",
       "recipe": "ft_home",
       "buzz": 80,
       "topics": [
-        "ai"
+        "crypto"
       ],
       "date": "2026-11-27"
     },
@@ -278,6 +300,40 @@
       "topics": [
         "ai",
         "dev"
+      ],
+      "date": "2026-11-27"
+    },
+    {
+      "uid": "rss:78f5c315c4e6de",
+      "source": "rss",
+      "title": "OpenAI countersues Apple for stealing trade secrets",
+      "url": "https://www.ft.com/content/af599e07-d44c-4068-ab84-6ee3c85551d4?syn-25a6b1a6=1",
+      "ts": 1795820408.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "The ChatGPT maker also accuses the tech giant of ‘coercing and threatening’ suppliers who work with both companies, as legal battle escalates",
+      "recipe": "ft_home",
+      "buzz": 80,
+      "topics": [
+        "ai"
+      ],
+      "date": "2026-11-27"
+    },
+    {
+      "uid": "rss:2832b0c1df7d27",
+      "source": "rss",
+      "title": "Inflation has shoppers hunting for value. That bodes well for Black Friday",
+      "url": "https://www.cnbc.com/2026/11/27/black-friday-2026-inflation-value-deals.html",
+      "ts": 1795816857.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "Even as consumers face macroeconomic headwinds, retailers are expecting robust holiday spending through Black Friday and beyond.",
+      "recipe": "cnbc_top",
+      "buzz": 80,
+      "topics": [
+        "ai"
       ],
       "date": "2026-11-27"
     },
@@ -318,23 +374,6 @@
       "date": "2026-11-27"
     },
     {
-      "uid": "rss:b37a4fb681cf00",
-      "source": "rss",
-      "title": "AI shopping agents are having a moment, but Amazon and a growing number of sites threaten to stunt their growth",
-      "url": "https://www.cnbc.com/2026/11/27/ai-shopping-agents-retailer-blocks.html",
-      "ts": 1795797794.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "AI shopping agents from OpenAI, Meta, Google and Instinct promise to help users shop, but they're hitting roadblocks at Amazon and other retailers.",
-      "recipe": "cnbc_top",
-      "buzz": 80,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-27"
-    },
-    {
       "uid": "rss:db363f7cd87eaf",
       "source": "rss",
       "title": "Budget airline Norse Atlantic files for bankruptcy in Europe after failing to secure funding",
@@ -349,6 +388,42 @@
       "topics": [
         "ai",
         "biz"
+      ],
+      "date": "2026-11-27"
+    },
+    {
+      "uid": "rss:c0efb2aa1cfdf9",
+      "source": "rss",
+      "title": "Chinese chip stocks notch biggest ever one-day gains as Beijing signals broader market support",
+      "url": "https://www.cnbc.com/2026/11/27/china-chip-stocks-beijing-market-support.html",
+      "ts": 1795774424.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "Chinese stocks rebounded sharply after a rare intraday state media readout cheered investors as top policymakers pledged market liquidity support.",
+      "recipe": "cnbc_top",
+      "buzz": 80,
+      "topics": [
+        "ai",
+        "biz",
+        "hardware"
+      ],
+      "date": "2026-11-27"
+    },
+    {
+      "uid": "rss:3e2284870f117c",
+      "source": "rss",
+      "title": "New car prices are at a record high. Here's where to look for deals",
+      "url": "https://www.cnbc.com/2026/11/27/new-car-buying-deals-buying-tips.html",
+      "ts": 1795785301.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "While the average price of a new car hit $51,109 in October, according to Kelley Blue Book, many buyers are spending far less on their purchase. Here's how.",
+      "recipe": "cnbc_top",
+      "buzz": 80,
+      "topics": [
+        "ai"
       ],
       "date": "2026-11-27"
     },
@@ -380,23 +455,6 @@
       "comments": 0,
       "author": "",
       "summary": "EU leaders failed to break a deadlock over the bloc’s budget, with talks set to resume in December as a key deadline looms.",
-      "recipe": "cnbc_top",
-      "buzz": 80,
-      "topics": [
-        "ai"
-      ],
-      "date": "2026-11-27"
-    },
-    {
-      "uid": "rss:3e2284870f117c",
-      "source": "rss",
-      "title": "New car prices are at a record high. Here's where to look for deals",
-      "url": "https://www.cnbc.com/2026/11/27/new-car-buying-deals-buying-tips.html",
-      "ts": 1795785301.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "While the average price of a new car hit $51,109 in October, according to Kelley Blue Book, many buyers are spending far less on their purchase. Here's how.",
       "recipe": "cnbc_top",
       "buzz": 80,
       "topics": [
@@ -595,23 +653,6 @@
       "date": "2026-11-27"
     },
     {
-      "uid": "rss:a4441d3484c2ef",
-      "source": "rss",
-      "title": "Sovereign wealth funds are acting more like private equity giants — and inheriting their risks",
-      "url": "https://www.cnbc.com/2026/11/27/swf-private-equity-risks.html",
-      "ts": 1795738949.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "Sovereign wealth funds are increasingly originating deals, taking controlling stakes and building their own investment platforms.",
-      "recipe": "cnbc_top",
-      "buzz": 80,
-      "topics": [
-        "biz"
-      ],
-      "date": "2026-11-27"
-    },
-    {
       "uid": "rss:df46185e6f1691",
       "source": "rss",
       "title": "History’s warning lesson for Anthropic",
@@ -753,24 +794,6 @@
       "date": "2026-11-25"
     },
     {
-      "uid": "arxiv:2611.33593v1",
-      "source": "arxiv",
-      "title": "Optimization of a Hybrid Solar-Biogas-Battery Energy Storage Microgrid: A Case Study",
-      "url": "https://arxiv.org/abs/2611.33593v1",
-      "ts": 1795568954.0,
-      "points": 0,
-      "comments": 0,
-      "author": "John Elomunait",
-      "summary": "Low-income regions like eastern Uganda often lack reliable grid power. This paper presents the techno-economic optimization of the Soroti Integrated Renewable Energy Microgrid (SIREM), a hybrid renewable system for grid-access expansion where Soroti District household grid access stands at 16.7\\%. The microgrid integrates concentrating solar power (CSP) with thermal storage, biogas combined cycle",
-      "recipe": "arxiv_qfin",
-      "buzz": 30,
-      "topics": [
-        "ai",
-        "science"
-      ],
-      "date": "2026-11-25"
-    },
-    {
       "uid": "rss:32e6217a2c79c8",
       "source": "rss",
       "title": "Liesman: Why Greenspan could bet on productivity — and Warsh needs to hike",
@@ -780,21 +803,6 @@
       "comments": 0,
       "author": "",
       "summary": "Alan Greenspan famously held the line on interest rates because he believed in the productivity promise of the internet boom. Why can't Kevin Warsh do the same?",
-      "recipe": "cnbc_top",
-      "buzz": 30,
-      "topics": [],
-      "date": "2026-11-25"
-    },
-    {
-      "uid": "rss:bc349b0efa1966",
-      "source": "rss",
-      "title": "Even the price of toys is on the rise. How Americans are scaling back holiday plans",
-      "url": "https://www.cnbc.com/2026/11/25/holiday-inflation-thanksgiving-travel-food-gifts.html",
-      "ts": 1795623433.0,
-      "points": 0,
-      "comments": 0,
-      "author": "",
-      "summary": "U.S. consumers face higher food, travel and gift costs in 2026 as inflation and Iran-war energy shocks pressure holiday budgets.",
       "recipe": "cnbc_top",
       "buzz": 30,
       "topics": [],
@@ -939,6 +947,23 @@
       "date": "2026-11-26"
     },
     {
+      "uid": "rss:a4441d3484c2ef",
+      "source": "rss",
+      "title": "Sovereign wealth funds are acting more like private equity giants — and inheriting their risks",
+      "url": "https://www.cnbc.com/2026/11/27/swf-private-equity-risks.html",
+      "ts": 1795738949.0,
+      "points": 0,
+      "comments": 0,
+      "author": "",
+      "summary": "Sovereign wealth funds are increasingly originating deals, taking controlling stakes and building their own investment platforms.",
+      "recipe": "cnbc_top",
+      "buzz": 30,
+      "topics": [
+        "biz"
+      ],
+      "date": "2026-11-27"
+    },
+    {
       "uid": "rss:918f3249e3c9a7",
       "source": "rss",
       "title": "Microdrama apps chase profits as Hollywood moves into short-form, vertical video",
@@ -1028,6 +1053,24 @@
         "biz"
       ],
       "date": "2026-11-22"
+    },
+    {
+      "uid": "arxiv:2611.33593v1",
+      "source": "arxiv",
+      "title": "Optimization of a Hybrid Solar-Biogas-Battery Energy Storage Microgrid: A Case Study",
+      "url": "https://arxiv.org/abs/2611.33593v1",
+      "ts": 1795568954.0,
+      "points": 0,
+      "comments": 0,
+      "author": "John Elomunait",
+      "summary": "Low-income regions like eastern Uganda often lack reliable grid power. This paper presents the techno-economic optimization of the Soroti Integrated Renewable Energy Microgrid (SIREM), a hybrid renewable system for grid-access expansion where Soroti District household grid access stands at 16.7\\%. The microgrid integrates concentrating solar power (CSP) with thermal storage, biogas combined cycle",
+      "recipe": "arxiv_qfin",
+      "buzz": 10,
+      "topics": [
+        "ai",
+        "science"
+      ],
+      "date": "2026-11-25"
     },
     {
       "uid": "arxiv:2611.33050v1",
